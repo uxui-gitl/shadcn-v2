@@ -1,4 +1,3 @@
-import Container from "@/components/Container";
 import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
 import Subscribe from "@/components/Subscribe";
