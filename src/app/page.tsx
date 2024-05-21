@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import DesktopNavbar from "@/components/DesktopNavbar";
 import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
+import HubExpertise from "@/components/HubExpertise";
 import Robot from "@/components/Robot";
 import Subscribe from "@/components/Subscribe";
 import Image from "next/image";
@@ -14,6 +15,8 @@ export default function Home() {
       <HeroIntro />
       <ClientLogos />
       <Robot />
+      <HubExpertise />
+
       <Container className="header-container mt-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, tempore
         voluptas. Veritatis, doloremque obcaecati. Quae totam, laborum vel quo
