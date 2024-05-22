@@ -1,3 +1,4 @@
+import CardsSection from "@/components/CardsSection";
 import ClientLogos from "@/components/ClientLogos";
 import Container from "@/components/Container";
 import DesktopNavbar from "@/components/DesktopNavbar";
@@ -18,12 +19,14 @@ export default function Home() {
       <ClientLogos />
       <Robot />
 
-      <Container className="header-container mt-8">
+      <Container className="hidden header-container mt-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, tempore
         voluptas. Veritatis, doloremque obcaecati. Quae totam, laborum vel quo
         blanditiis consectetur perspiciatis deleniti obcaecati vitae quisquam
         assumenda ratione inventore autem.
       </Container>
+      <CardsSection />
+
       <OfferingsSlider />
 
       <Container className=" mt-8 flex-col px-10 " tag="section">
