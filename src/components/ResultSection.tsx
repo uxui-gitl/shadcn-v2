@@ -1,8 +1,11 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 
-const ResultSection = () => {
+interface ResultSectionProps {}
+
+const ResultSection: React.FC<ResultSectionProps> = () => {
   return (
     <div className="">
       <div className="  ">
