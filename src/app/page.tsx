@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
 import Robot from "@/components/Robot";
 import Subscribe from "@/components/Subscribe";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import React from "react";
 
@@ -21,6 +22,29 @@ export default function Home() {
         blanditiis consectetur perspiciatis deleniti obcaecati vitae quisquam
         assumenda ratione inventore autem.
       </Container>
+      <InfiniteMovingCards
+        items={[
+          {
+            quote:
+              "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+            name: "IT Director,",
+            title: "Cooling Facility Management Company",
+          },
+          {
+            quote:
+              "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+            name: "IT Director,",
+            title: "Cooling Facility Management Company",
+          },
+          {
+            quote:
+              "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+            name: "IT Director,",
+            title: "Cooling Facility Management Company",
+          },
+        ]}
+      />
+
       <div className="mt-8 flex-col px-10 ">
         <Subscribe />
       </div>
