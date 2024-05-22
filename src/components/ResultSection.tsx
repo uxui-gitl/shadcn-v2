@@ -9,7 +9,7 @@ const ResultSection: React.FC<ResultSectionProps> = () => {
   return (
     <div className="">
       <div className="  ">
-        <div className="flex flex-col pt-10 items-center justify-center">
+        <div className="flex flex-col pt-32 items-center justify-center">
           <h2 className=" font-semibold text-[60px] leading-[70px] text-[#fff] text-center text-2xl mb-2 ">
             Delivering <br />
             Results that Matters

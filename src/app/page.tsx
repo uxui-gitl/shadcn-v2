@@ -29,31 +29,33 @@ export default function Home() {
 
       <OfferingsSlider />
 
-      <Container className=" mt-8 flex-col px-10 " tag="section">
-        <ResultSection />
-      </Container>
-      <InfiniteMovingCards
-        items={[
-          {
-            quote:
-              "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-            name: "IT Director,",
-            title: "Cooling Facility Management Company",
-          },
-          {
-            quote:
-              "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-            name: "IT Director,",
-            title: "Cooling Facility Management Company",
-          },
-          {
-            quote:
-              "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-            name: "IT Director,",
-            title: "Cooling Facility Management Company",
-          },
-        ]}
-      />
+      <div className="dv-gradientbg">
+        <Container className=" flex-col px-10 " tag="section">
+          <ResultSection />
+        </Container>
+        <InfiniteMovingCards
+          items={[
+            {
+              quote:
+                "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+              name: "IT Director,",
+              title: "Cooling Facility Management Company",
+            },
+            {
+              quote:
+                "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+              name: "IT Director,",
+              title: "Cooling Facility Management Company",
+            },
+            {
+              quote:
+                "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+              name: "IT Director,",
+              title: "Cooling Facility Management Company",
+            },
+          ]}
+        />
+      </div>
 
       <div className="mt-8 flex-col px-10 ">
         <Subscribe />
