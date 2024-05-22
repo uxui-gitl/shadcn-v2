@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import DesktopNavbar from "@/components/DesktopNavbar";
 import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
+import OfferingsSlider from "@/components/OfferingsSlider";
 import ResultSection from "@/components/ResultSection";
 import Robot from "@/components/Robot";
 import Subscribe from "@/components/Subscribe";
@@ -23,6 +24,8 @@ export default function Home() {
         blanditiis consectetur perspiciatis deleniti obcaecati vitae quisquam
         assumenda ratione inventore autem.
       </Container>
+      <OfferingsSlider />
+
       <Container className=" mt-8 flex-col px-10 " tag="section">
         <ResultSection />
       </Container>
