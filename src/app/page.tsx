@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import DesktopNavbar from "@/components/DesktopNavbar";
 import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
+import ResultSection from "@/components/ResultSection";
 import Robot from "@/components/Robot";
 import Subscribe from "@/components/Subscribe";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
@@ -21,6 +22,9 @@ export default function Home() {
         voluptas. Veritatis, doloremque obcaecati. Quae totam, laborum vel quo
         blanditiis consectetur perspiciatis deleniti obcaecati vitae quisquam
         assumenda ratione inventore autem.
+      </Container>
+      <Container className=" mt-8 flex-col px-10 " tag="section">
+        <ResultSection />
       </Container>
       <InfiniteMovingCards
         items={[
