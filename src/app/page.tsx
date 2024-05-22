@@ -14,6 +14,7 @@ export default function Home() {
       <HeroIntro />
       <ClientLogos />
       <Robot />
+
       <Container className="header-container mt-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, tempore
         voluptas. Veritatis, doloremque obcaecati. Quae totam, laborum vel quo
