@@ -13,7 +13,7 @@ const HubExpertise = () => {
   const ref2 = useRef<HTMLDivElement>(null);
   const count = useScrollTriggeredCountUp(ref, 25); // Count-up from 0 to 25
   const count1 = useScrollTriggeredCountUp(ref1, 500); // Count-up from 0 to 500
-  const count2 = useScrollTriggeredCountUp(ref2, 15); // Count-up from 0 to 15
+  const count2 = useScrollTriggeredCountUp(ref2, 15); // Count-up from 0 to 15000 (15k)
 
   return (
     <div className="bg-[rgb(0,59,153)] bg-[linear-gradient(180deg,_rgba(0,59,153,1)_0%,_rgba(0,98,255,0.5)_47%,_rgba(132,42,203,1)_100%)]">
