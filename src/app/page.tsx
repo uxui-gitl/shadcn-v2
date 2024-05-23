@@ -1,6 +1,7 @@
 import CardsSection from "@/components/CardsSection";
 import ClientLogos from "@/components/ClientLogos";
 import Container from "@/components/Container";
+import DesktopNavbar from "@/components/DesktopNavbar";
 // import DesktopNavbar from "@/components/DesktopNavbar";
 import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
@@ -16,6 +17,9 @@ import React from "react";
 export default function Home() {
   return (
     <>
+      <Container className="header-container mt-8" tag="header">
+        <DesktopNavbar />
+      </Container>
       <HeroIntro />
       <ClientLogos />
       <Robot />
