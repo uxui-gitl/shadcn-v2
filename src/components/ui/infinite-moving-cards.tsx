@@ -102,23 +102,23 @@ export const InfiniteMovingCards = ({
         >
           {items.map((item, idx) => (
             <li
-              className="w-[350px] border-transparent border-[2.5px] shadow-sm max-w-full relative rounded-2xl flex-shrink-0   md:w-[450px] bg-[rgb(137,40,200)] bg-[linear-gradient(90deg,_rgba(137,40,200,0.1)_0%,_rgba(83,57,229,1)_40%,_rgba(195,21,169,0.5)_100%)] "
+              className="w-[350px] border-transparent border-[2.5px] shadow-sm max-w-full relative rounded-2xl flex-shrink-0   md:w-[700px] bg-transparent bg-[linear-gradient(90deg,_rgba(195,21,169,0.4)_0%,_rgba(137,40,200,0.1)_50%,_rgba(83,57,229,0.4)_100%)]"
               key={item.name}
             >
-              <blockquote className="  rounded-[14px] px-8 py-6 bg-[rgb(195,_21,_169)] bg-[linear-gradient(_90deg,_rgba(195,_21,_169,_0.39548319327731096)_0%,_rgba(137,_40,_200,_0.1)_50%,_rgba(83,_57,_229,_0.4)_100%_)]  text-white">
+              <blockquote className="  rounded-[14px] py-14 px-24  text-gray-100 ">
                 <div
                   aria-hidden="true"
                   className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                 ></div>
-                <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+                <span className=" relative z-20 text-sm leading-[24px] text-gray-100 font-normal">
                   {item.quote}
                 </span>
                 <div className="relative z-20 mt-6 flex flex-row items-center">
                   <span className="flex flex-col gap-1">
-                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                    <span className=" text-sm  leading-[24px] text-gray-400 font-normal">
                       {item.name}
                     </span>
-                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                    <span className=" text-sm  leading-[24px] text-gray-400 font-normal">
                       {item.title}
                     </span>
                   </span>

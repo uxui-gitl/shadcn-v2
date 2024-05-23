@@ -1,9 +1,10 @@
 import CardsSection from "@/components/CardsSection";
 import ClientLogos from "@/components/ClientLogos";
 import Container from "@/components/Container";
-import DesktopNavbar from "@/components/DesktopNavbar";
+// import DesktopNavbar from "@/components/DesktopNavbar";
 import Footer from "@/components/Footer";
 import HeroIntro from "@/components/HeroIntro";
+import HubExpertise from "@/components/HubExpertise";
 import OfferingsSlider from "@/components/OfferingsSlider";
 import ResultSection from "@/components/ResultSection";
 import Robot from "@/components/Robot";
@@ -26,6 +27,7 @@ export default function Home() {
         assumenda ratione inventore autem.
       </Container>
       <CardsSection />
+      <HubExpertise />
 
       <OfferingsSlider />
 
