@@ -79,6 +79,13 @@
     animation-play-state: paused;
   }
 }
+
+.primary-btn{
+  background: linear-gradient(90deg, #C315A9 0%, #8928C8 50%, #5339E5 100%);
+  border-radius: 32px;
+  padding: 20px 30px;
+}
+
 .navbar {
   width: 100%;
   background: var(--background);
@@ -92,13 +99,13 @@
   font-weight: 700;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
   font-family: inter, sans-serif;
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 /* Testing */
 

@@ -14,23 +14,22 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import React from "react";
 
+import CardSectionNew from "@/components/CardsSectionNew";
+
+import Announcement from "@/components/Announcement";
+
 export default function Home() {
   return (
     <>
-      <Container className="header-container mt-8" tag="header">
+      <Announcement />
+
         <DesktopNavbar />
-      </Container>
       <HeroIntro />
       <ClientLogos />
-      <Robot />
+      {/* <Robot /> */}
 
-      <Container className="hidden header-container mt-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, tempore
-        voluptas. Veritatis, doloremque obcaecati. Quae totam, laborum vel quo
-        blanditiis consectetur perspiciatis deleniti obcaecati vitae quisquam
-        assumenda ratione inventore autem.
-      </Container>
-      <CardsSection />
+      {/* <CardsSection /> */}
+      <CardSectionNew />
       <HubExpertise />
 
       <OfferingsSlider />

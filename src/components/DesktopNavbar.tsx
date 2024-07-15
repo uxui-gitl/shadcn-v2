@@ -89,7 +89,7 @@ const DesktopNavbar = (props: any) => {
   return (
     <motion.div
       // className="w-full z-[999] hidden sm:flex container fixed top-0  items-center justify-between flex-row mb-8 "
-      className="w-full z-[999] hidden sm:flex container fixed top-0  items-center justify-between flex-row mb-8 glass-nav left-0 right-0 px-24 py-8  border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur  min-w-full  mx-0  "
+      className="w-full z-[999] hidden sm:flex items-center justify-between flex-row mb-8 glass-nav left-0 right-0 px-24 py-8  border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur  min-w-full  mx-0  "
       animate={{ y: isInView ? 0 : -slideDistance }}
       transition={{ duration: 0.2, delay: 0.25, ease: "easeInOut" }}
       style={{ height: slideDistance }}

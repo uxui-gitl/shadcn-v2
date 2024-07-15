@@ -17,7 +17,11 @@ const HeroIntro = () => {
         />
       </video>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 className="text-white text-center sm:text-8xl leading-none select-none tracking-tightest font-semibold">
+        <h1 className="text-[44px] sm:text-[92px] text-center font-semibold leading-tight">
+          Automation<br></br>
+          Cloud & Transformation
+        </h1>
+        {/* <h1 className="text-white text-center sm:text-8xl leading-none select-none tracking-tightest font-semibold">
           <span
             data-content="Automation."
             className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center dark:before:text-white before:text-black before:animate-gradient-background-1"
@@ -45,20 +49,19 @@ const HeroIntro = () => {
               Transformation.
             </span>
           </span>
-        </h1>
+        </h1> */}
 
         <div className="flex flex-col text-center gap-y-10 justify-center items-center">
-          <p className="mt-4 mx-auto text-[20px] leading-6 font-[500] max-w-[80%] text-center text-gray-500 dark:text-gray-400">
+          <p className="mt-6 mx-auto text-[20px] leading-6 font-[500] max-w-[80%] text-center text-white leading-7">
             Revolutionize your business operations, save time and boost
             productivity with our cutting-edge offerings.
           </p>
 
           <Link
-            className="group w-fit relative inline-flex rounded-full items-center overflow-hidden bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+            className=" primary-btn"
             href="#"
           >
-            <span className="text-sm font-medium transition-all">
-              {" "}
+            <span className=" text-sm font-medium transition-all">
               Let&apos;s Connect and Transform
             </span>
           </Link>

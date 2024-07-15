@@ -6,7 +6,7 @@ const OfferingsSlider = () => {
   return (
     <>
       {/*  */}
-      <div className=" bg-[#1D162B]">
+      <div className="bg-[#1D162B]">
         <div className="flex flex-col pt-10 items-center justify-center">
           <h2 className=" font-semibold text-[60px] leading-[70px] text-[#FFFFF] text-center text-2xl mb-2 ">
             Our Offerings
