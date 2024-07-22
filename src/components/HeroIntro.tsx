@@ -3,9 +3,9 @@ import React from "react";
 
 const HeroIntro = () => {
   return (
-    <div className="relative">
+    <div className="relative newvideoclass">
       <video
-        className="w-full h-[100vh] object-cover"
+        className="w-full h-[calc(100vh_-_77px)] object-cover"
         autoPlay
         loop
         muted
@@ -68,6 +68,8 @@ const HeroIntro = () => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 

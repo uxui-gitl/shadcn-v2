@@ -99,6 +99,13 @@
   font-weight: 700;
 }
 
+.newvideoclass::after{
+  content: '';
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.326), rgba(255, 255, 0, 0.584));
+}
+
 /* h1,
 h2,
 h3 {

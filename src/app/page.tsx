@@ -15,18 +15,18 @@ import Image from "next/image";
 import React from "react";
 
 import CardSectionNew from "@/components/CardsSectionNew";
-
+import Navbar from "@/components/navbar";
 import Announcement from "@/components/Announcement";
 
 export default function Home() {
   return (
     <>
       <Announcement />
-
-        <DesktopNavbar />
+      <Navbar />
+      {/* <DesktopNavbar /> */}
       <HeroIntro />
       <ClientLogos />
-      {/* <Robot /> */}
+      <Robot />
 
       {/* <CardsSection /> */}
       <CardSectionNew />

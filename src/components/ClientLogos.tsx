@@ -4,18 +4,17 @@ import React from "react";
 const ClientLogos = () => {
   return (
     <section
-      className=" text-white pt-32 pb-4"
-      style={{ backgroundColor: " #5F22D9;" }}
+      className=" text-white pt-32 pb-40 bg-[url('/cur.png')] h-lvh flex flex-col justify-center"
     >
-      <h2 className=" hidden text-center text-2xl mb-2 font-bold leading-8 ">
+      {/* <h2 className=" hidden text-center text-2xl mb-2 font-bold leading-8 ">
         Our Clients
-      </h2>
+      </h2> */}
       <p className="text-center text-[#D4BEFF] text-xl font-[500] leading-8 ">
         500 + organisations trust our exceptional expertise. <br /> Join us
         today!
-      </p>{" "}
+      </p>
       {/* <div className="logos group relative overflow-hidden whitespace-nowrap  pt-12 pb-40 [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]"> */}
-      <div className="pt-12 pb-40 flex justify-center align-middle flex-col sm:flex-row align-middle">
+      <div className="pt-12 flex justify-center align-middle flex-col sm:flex-row align-middle">
         <Image
           width={158}
           height={48}
