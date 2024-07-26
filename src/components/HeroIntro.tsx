@@ -12,7 +12,7 @@ const HeroIntro = () => {
         playsInline
       >
         <source
-          src="https://deployednext.vercel.app/GITLBanner.mp4"
+          src="./1.mp4"
           type="video/mp4"
         />
       </video>

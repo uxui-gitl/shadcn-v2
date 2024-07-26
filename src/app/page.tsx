@@ -25,8 +25,17 @@ export default function Home() {
       <Navbar />
       {/* <DesktopNavbar /> */}
       <HeroIntro />
-      <ClientLogos />
-      <Robot />
+      <div className="common-section-client-robot bg-[url('/curvedl1.png')]">
+        <div>
+          <ClientLogos></ClientLogos>
+        </div>
+        <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16">
+          Building Tomorrow's <br /> Solutions Today
+        </div>
+
+        {/* <ClientLogos /> */}
+        <Robot />
+      </div>
 
       {/* <CardsSection /> */}
       <CardSectionNew />

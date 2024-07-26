@@ -1,0 +1,126 @@
+.navbarWrapper {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 30px;
+  overflow: visible;
+}
+
+.navbarWrapper .navitemwrapper {
+  display: flex;
+}
+
+.navbarWrapper .navitemwrapper .item {
+  padding: 30px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbarWrapper .navitemwrapper .item .submenu {
+  display: none;
+  position: absolute;
+  top: 85px;
+  min-width: 400px;
+  min-height: 200px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  left: -10px;
+  transition: 0.25s;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.navbarWrapper .navitemwrapper .item.active .submenu {
+  display: block;
+  z-index: 1;
+}
+
+.navbarWrapper .navitemwrapper .item .submenu .submenuitem {
+  padding: 10px 5px;
+  color: black;
+}
+
+.navbarWrapper .navitemwrapper .item .submenu .submenuitem :hover {
+  padding: 12px 5px;
+  color: blueviolet;
+}
+
+/* css for solution submenu section */
+
+.submenu .submenusection {
+  display: flex;
+}
+
+.div1,
+.div2,
+.div3 {
+  display: none;
+}
+
+.div2.active {
+  display: block;
+}
+
+.submenu .submenusection .submenusectionleft {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 2px solid #d3d3d3;
+}
+
+.mobilenavbarwrapper {
+  display: none;
+}
+
+.navitemwrappermobile{
+    display: none;
+}
+
+@media only screen and (max-width: 676px) {
+    .navbarWrapper{
+        display: none;
+    }
+  .mobilenavbarwrapper {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px 23px;
+  }
+
+  /* .navbarWrapper {
+    display: none;
+  } */
+
+  .navitemwrappermobile {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    background-color: beige;
+  }
+
+  /* img {
+    max-width: 50px;
+  } */
+
+  .navitemwrappermobile .item {
+    padding: 15px 23px;
+  }
+
+  .navitemwrappermobile .submenu {
+    padding: 20px;
+    background-color: chocolate;
+    margin: 20px 0px;
+  }
+
+  .navitemwrappermobile .submenuitem {
+    padding: 15px 20px;
+  }
+
+  .submenu .submenusection {
+  }
+}

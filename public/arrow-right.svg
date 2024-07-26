@@ -1,5 +1,5 @@
-<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="arrow-right" opacity="0.7">
-<path id="Icon" d="M26.8866 26.8854L49.0275 49.0263M49.0275 49.0263L49.0275 26.8854M49.0275 49.0263L26.8866 49.0263" stroke="#EDF7FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Icon" d="M11.6667 28.0001L44.3334 28.0001M44.3334 28.0001L28 11.6667M44.3334 28.0001L28 44.3334" stroke="#946BE6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>

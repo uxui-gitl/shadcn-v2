@@ -4,7 +4,7 @@ import React from "react";
 const ClientLogos = () => {
   return (
     <section
-      className=" text-white pt-32 pb-40 bg-[url('/cur.png')] h-lvh flex flex-col justify-center"
+      className=" text-white pt-32 pb-40 flex flex-col justify-center"
     >
       {/* <h2 className=" hidden text-center text-2xl mb-2 font-bold leading-8 ">
         Our Clients

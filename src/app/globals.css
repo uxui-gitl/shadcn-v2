@@ -106,6 +106,57 @@
   background-image: linear-gradient(rgba(255, 0, 0, 0.326), rgba(255, 255, 0, 0.584));
 }
 
+.common-section-client-robot{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.embrace-card{
+
+}
+
+.embrace-card .card:hover{
+  background: linear-gradient(180deg, #5F22D9 62.5%, #E0028E 100%);
+}
+
+.embrace-card .card:hover .heading{
+  transition-timing-function: ease-in;
+  transition: 0.4s;
+  font-size: 42px;
+}
+
+.embrace-card .card .spacification-text{
+  display: none;
+}
+
+.embrace-card .card:hover .spacification-text{
+  transition-timing-function: ease-in;
+  transition: 5s;
+  transition-duration: 2s;
+  display: block;
+}
+
+
+
+.embrace-card .card .clickarrow2{
+  display: none;
+}
+
+.embrace-card .card .clickarrow1{
+  display: block;
+}
+
+.embrace-card .card:hover .clickarrow1{
+  display: none;
+}
+
+.embrace-card .card:hover .clickarrow2{
+  display: block;
+  cursor: pointer;
+}
+
 /* h1,
 h2,
 h3 {
