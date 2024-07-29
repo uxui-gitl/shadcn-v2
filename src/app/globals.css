@@ -212,6 +212,22 @@
   display: none;
 }
 
+
+.messageToasterCard:hover{
+  background-color: #946BE6 !important;
+  color: #EFE9FB;
+}
+.messageToasterCard .img {
+  filter: brightness(0);
+}
+.messageToasterCard:hover .img {
+  filter: brightness(100);
+}
+
+.messageToasterCard:hover .text {
+  color: #EFE9FB !important;
+}
+
 /* h1,
 h2,
 h3 {

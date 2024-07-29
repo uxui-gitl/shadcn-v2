@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar";
 import HeroIntro from "@/components/HeroIntro";
 import ClientLogos from "@/components/ClientLogos";
 import Robot from "@/components/Robot";
+import Robot2 from "@/components/Robot2"
 import EmbraceCard from "@/components/EmbraceCard";
 import HubExpertise from "@/components/HubExpertise";
 import OfferingsSlider from "@/components/OfferingsSlider";
@@ -27,10 +28,12 @@ export default function Home() {
         <div>
           <ClientLogos></ClientLogos>
         </div>
-        <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16">
+        <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16" style={{color:"#CDBAF3"}}>
           Building Tomorrow's <br /> Solutions Today
         </div>
-        <Robot />
+        {/* <Robot /> */}
+        <Robot2 />
+
       </div>
 
       <EmbraceCard />
@@ -68,7 +71,7 @@ export default function Home() {
           ]}
         /> */}
 
-        <InfiniteMovingCards />
+        <InfiniteMovingCards items={[]}/>
       </div>
 
       <div className="mt-8 flex-col px-10 ">
