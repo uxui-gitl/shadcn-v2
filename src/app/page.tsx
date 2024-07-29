@@ -1,29 +1,27 @@
-import CardsSection from "@/components/CardsSection";
-import ClientLogos from "@/components/ClientLogos";
-import Container from "@/components/Container";
-import DesktopNavbar from "@/components/DesktopNavbar";
-// import DesktopNavbar from "@/components/DesktopNavbar";
-import Footer from "@/components/Footer";
+// system import
+import Image from "next/image";
+import React from "react";
+// component import
+import Announcement from "@/components/Announcement";
+import Navbar from "@/components/navbar";
 import HeroIntro from "@/components/HeroIntro";
+import ClientLogos from "@/components/ClientLogos";
+import Robot from "@/components/Robot";
+import EmbraceCard from "@/components/EmbraceCard";
 import HubExpertise from "@/components/HubExpertise";
 import OfferingsSlider from "@/components/OfferingsSlider";
 import ResultSection from "@/components/ResultSection";
-import Robot from "@/components/Robot";
-import Subscribe from "@/components/Subscribe";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import Image from "next/image";
-import React from "react";
-
-import CardSectionNew from "@/components/CardsSectionNew";
-import Navbar from "@/components/navbar";
-import Announcement from "@/components/Announcement";
+import Subscribe from "@/components/Subscribe";
+import Footer from "@/components/Footer";
+import Container from "@/components/Container";
+import OfferingCards from "@/components/OfferingCards";
 
 export default function Home() {
   return (
     <>
       <Announcement />
       <Navbar />
-      {/* <DesktopNavbar /> */}
       <HeroIntro />
       <div className="common-section-client-robot bg-[url('/curvedl1.png')]">
         <div>
@@ -32,22 +30,22 @@ export default function Home() {
         <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16">
           Building Tomorrow's <br /> Solutions Today
         </div>
-
-        {/* <ClientLogos /> */}
         <Robot />
       </div>
 
-      {/* <CardsSection /> */}
-      <CardSectionNew />
+      <EmbraceCard />
       <HubExpertise />
+      <OfferingCards></OfferingCards>
 
-      <OfferingsSlider />
+      {/* <OfferingsSlider /> */}
+
+      
 
       <div className="dv-gradientbg">
         <Container className=" flex-col px-10 " tag="section">
           <ResultSection />
         </Container>
-        <InfiniteMovingCards
+        {/* <InfiniteMovingCards
           items={[
             {
               quote:
@@ -68,7 +66,9 @@ export default function Home() {
               title: "Cooling Facility Management Company",
             },
           ]}
-        />
+        /> */}
+
+        <InfiniteMovingCards />
       </div>
 
       <div className="mt-8 flex-col px-10 ">

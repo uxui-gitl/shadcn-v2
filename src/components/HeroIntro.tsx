@@ -58,7 +58,7 @@ const HeroIntro = () => {
           </p>
 
           <Link
-            className=" primary-btn"
+            className="primary-btn"
             href="#"
           >
             <span className=" text-sm font-medium transition-all">

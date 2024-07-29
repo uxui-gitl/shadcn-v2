@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -20,7 +21,51 @@ const ResultSection: React.FC<ResultSectionProps> = () => {
           </p>{" "}
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-x-16 py-20 h-auto sm:h-screen md:h-auto relative w-full">
+
+      <div className="offering-card container mt-24 card-wrapper flex flex-col sm:flex-row justify-between">
+        {[1, 2, 3].map((item) => (
+          <>
+            <div
+              key={item}
+              style={{backgroundColor:'transparent', border: '2px solid #B599EE', borderRadius:'24px'}}
+              className="card min-w-full min-h-[300px] sm:min-h-[300px] sm:max-w-[396px] sm:min-w-[396px] relative mb-6"
+            >
+
+               
+              <div className="card-body" style={{padding:'37px 22px'}}>
+                <div className="card-header text-left" >
+                  <div className="inline-block text-left font-semibold" style={{color:'#EFE9FB', fontSize:'16px'}}>
+                  Cloud
+                  </div>
+                </div>
+                <div className="card-content mt-8 text-left">
+                  <div className="heading text-2xl sm:text-[28px] font-normal leading-[36px]">
+                  Prominent American Watch Brand Thrives through Migration 
+                  </div>
+                  {/* <div className="spacification-text mt-6 text-base">
+                    We are committed to provide, secure, cost-effective &
+                    scalable cloud implementation, cloud migration & cloud
+                    support services to our customers.
+                  </div> */}
+
+                  <div
+                    className="absolute right-3 bottom-3"
+                  >
+                     <Image
+                      src="/whiteCircleClick.svg"
+                      width={50}
+                      height={50}
+                      alt="Picture of the author"
+                      className="clickarrow2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        ))}
+      </div>
+      {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-16 py-20 h-auto sm:h-screen md:h-auto relative w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-4">
           <div className="row-span-2">
             <motion.article className="flex flex-col rounded-xl bg-gradient-to-r h-full from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
@@ -126,7 +171,7 @@ const ResultSection: React.FC<ResultSectionProps> = () => {
             </motion.article>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

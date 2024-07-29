@@ -10,7 +10,7 @@ function Navbar() {
   }
   return (
     <>
-      <div className="navbar-wrapper bg-[#04192d] mt-1 sm:mt-2 sticky top-0 z-50">
+      <div className="navbar-wrapper bg-[#020812] mt-1 sm:mt-2 sticky top-0 z-50">
         <div className="flex justify-between items-center pl-16 pr-16">
           <div className="">
             <Image
@@ -27,7 +27,7 @@ function Navbar() {
             <div className="mr-8 text-sm">Industry Focus</div>
             <div className="mr-8 text-sm">About us</div>
             <div className="mr-8 text-sm">Careers</div>
-            <button className="rounded-full">Save Changes</button>
+            <button className="primary-btn !px-[20px] !py-[13px]">Get In Touch</button>
           </div>
           <div className="flex sm:hidden" onClick={() => desktopMenuClickHandle()}>
             <Image
