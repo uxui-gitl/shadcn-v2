@@ -134,7 +134,7 @@
 .embrace-card .card:hover .spacification-text{
   transition-timing-function: ease-in;
   transition: 5s;
-  transition-duration: 2s;
+  transition-duration: 6s;
   display: block;
 }
 
@@ -155,6 +155,61 @@
 .embrace-card .card:hover .clickarrow2{
   display: block;
   cursor: pointer;
+}
+
+.result-card .card:hover{
+  background-color: #EFE9FB !important;
+  border: 0px solid transparent !important;
+  transition-timing-function: ease-in;
+  transition: 0.4s;
+  min-height: 406px;
+}
+.result-card .card:hover .card-header{
+  color: #000 !important;
+}
+
+.result-card .card .card-header{
+  color: "#EFE9FB",
+}
+
+.result-card .card .card-header{
+  color: "#EFE9FB",
+}
+.result-card .card:hover .clickarrow1{
+  display: none;
+}
+
+.result-card .card:hover .clickarrow2{
+  display: block;
+  transition-timing-function: ease-in;
+  transition: 0.4s;
+}
+
+
+.result-card .card .clickarrow1{
+  display: block;
+}
+
+.result-card .card .clickarrow2{
+  display: none;
+
+}
+
+
+
+
+.result-card .card:hover .heading{
+  color: #000 !important;
+}
+
+.result-card .card:hover .spacification-text{
+  color: #000 !important;
+  display: block;
+}
+
+.result-card .card .spacification-text{
+  color: #000 !important;
+  display: none;
 }
 
 /* h1,

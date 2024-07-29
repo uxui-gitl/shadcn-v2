@@ -22,41 +22,52 @@ const ResultSection: React.FC<ResultSectionProps> = () => {
         </div>
       </div>
 
-      <div className="offering-card container mt-24 card-wrapper flex flex-col sm:flex-row justify-between">
+      <div className="result-card container mt-24 card-wrapper flex flex-col sm:flex-row justify-between items-start">
         {[1, 2, 3].map((item) => (
           <>
             <div
               key={item}
-              style={{backgroundColor:'transparent', border: '2px solid #B599EE', borderRadius:'24px'}}
+              style={{
+                backgroundColor: "transparent",
+                border: "2px solid #B599EE",
+                borderRadius: "24px",
+              }}
               className="card min-w-full min-h-[300px] sm:min-h-[300px] sm:max-w-[396px] sm:min-w-[396px] relative mb-6"
             >
-
-               
-              <div className="card-body" style={{padding:'37px 22px'}}>
-                <div className="card-header text-left" >
-                  <div className="inline-block text-left font-semibold" style={{color:'#EFE9FB', fontSize:'16px'}}>
-                  Cloud
+              <div className="card-body" style={{ padding: "37px 22px" }}>
+                <div className="card-header text-left">
+                  <div
+                    className="inline-block text-left font-semibold"
+                    style={{fontSize: "16px" }}
+                  >
+                    Cloud
                   </div>
                 </div>
                 <div className="card-content mt-8 text-left">
                   <div className="heading text-2xl sm:text-[28px] font-normal leading-[36px]">
-                  Prominent American Watch Brand Thrives through Migration 
+                    Prominent American Watch Brand Thrives through Migration
                   </div>
-                  {/* <div className="spacification-text mt-6 text-base">
+                  <div className="spacification-text mt-6 text-base">
                     We are committed to provide, secure, cost-effective &
                     scalable cloud implementation, cloud migration & cloud
                     support services to our customers.
-                  </div> */}
+                  </div>
 
-                  <div
-                    className="absolute right-3 bottom-3"
-                  >
-                     <Image
+                  <div className="absolute right-3 bottom-3">
+                    <Image
                       src="/whiteCircleClick.svg"
                       width={50}
                       height={50}
                       alt="Picture of the author"
+                      className="clickarrow1"
+                    />
+                     <Image
+                      src="/icon/arrowUp.svg"
+                      width={45}
+                      height={45}
+                      alt="Picture of the author"
                       className="clickarrow2"
+                      style={{transform:"rotate(227deg)"}}
                     />
                   </div>
                 </div>
