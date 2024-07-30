@@ -29,7 +29,7 @@ export default function Home() {
           <ClientLogos></ClientLogos>
         </div>
         <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16" style={{color:"#CDBAF3"}}>
-          Building Tomorrow's <br /> Solutions Today
+          Building Tomorrow&apos;s <br /> Solutions Today
         </div>
         {/* <Robot /> */}
         <Robot2 />
@@ -71,7 +71,7 @@ export default function Home() {
           ]}
         /> */}
 
-        <InfiniteMovingCards items={[]}/>
+        <InfiniteMovingCards/>
       </div>
 
       <div className="mt-8 flex-col px-10 ">
