@@ -52,7 +52,7 @@ const HeroIntro = () => {
         </h1> */}
 
         <div className="flex flex-col text-center gap-y-10 justify-center items-center">
-          <p className="mt-6 mx-auto text-[20px] leading-6 font-[500] max-w-[80%] text-center text-white leading-7">
+          <p className="mt-6 mx-auto text-[20px] font-[500] max-w-[80%] text-center text-white leading-7">
             Revolutionize your business operations, save time and boost
             productivity with our cutting-edge offerings.
           </p>
