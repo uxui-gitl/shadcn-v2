@@ -8,8 +8,8 @@ const layout = ({ children }) => {
   return (
     <>
       <Announcement />
-      <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
+      <div className={'relative z-[500]'}>
+        <div className={'absolute w-full'}>
           {/* <Navbar theme="light" /> */}
         </div>
       </div>
