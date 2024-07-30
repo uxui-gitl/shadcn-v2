@@ -198,7 +198,7 @@ export const InfiniteMovingCards = () => {
                 {
                   itemsToShow: 1,
                   itemsToScroll: 1,
-                  minWidth: 1250,
+                  minWidth: 768,
                 },
               ]}
               speed={400}

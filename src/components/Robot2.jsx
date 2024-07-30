@@ -6,7 +6,7 @@ function Robot2() {
             <div className="container roboat-wrapper" style={{ height: 'calc(100vh - 76px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div className="card">
                     <div className="">
-                        <Image className="robotimg" src={'/icon/Robot.svg'} width={200} height={200}></Image>
+                        <Image className="robotimg" src={'/icon/robot.svg'} width={200} height={200}></Image>
                         <Image className="robotimg" src={'/shadow.svg'} width={600} height={200} style={{marginTop:"-40px",zIndex:"-1",position:"relative"}}></Image>
 
 
