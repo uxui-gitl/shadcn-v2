@@ -18,7 +18,7 @@ const HubExpertise = () => {
   return (
     <div className="bg-[rgb(0,59,153)] bg-[linear-gradient(180deg,_rgba(0,59,153,1)_0%,_rgba(0,98,255,0.5)_47%,_rgba(132,42,203,1)_100%)]">
       <Container className="mt-8 flex-col px-10" tag="main">
-        <div className="flex flex-col items-center justify-center pt-20 min-h-screen relative w-full">
+        <div className="flex flex-col items-center justify-end pt-20 min-h-screen relative w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,7 +76,6 @@ const HubExpertise = () => {
                 src="/globe.svg"
                 alt="globe"
                 layout="fill"
-                objectFit="contain"
                 priority
               />
             </div>
