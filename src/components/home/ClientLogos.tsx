@@ -19,28 +19,28 @@ const ClientLogos = () => {
           width={158}
           height={48}
           className="mx-5 inline h-16"
-          src="/logos/3.svg"
+          src="home/logos/3.svg"
           alt="Tuple"
         />
         <Image
           width={158}
           height={48}
           className="mx-5 inline h-16"
-          src="/logos/4.svg"
+          src="home/logos/4.svg"
           alt="SavvyCal"
         />
         <Image
           width={158}
           height={48}
           className="mx-5 inline h-16"
-          src="/logos/2.svg"
+          src="home/logos/2.svg"
           alt="Reform"
         />
          <Image
           width={158}
           height={48}
           className="mx-5 inline h-16"
-          src="/logos/1.svg"
+          src="home/logos/1.svg"
           alt="Transistor"
         />
       </div>

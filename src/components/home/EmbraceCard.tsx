@@ -25,7 +25,7 @@ function EmbraceCard() {
                   <div className="card-header text-right">
                     <div className="inline-block text-[#000] text-xl font-semibold">
                       <Image
-                        src={"/icon/arrowSlideleft.svg"}
+                        src={"home/icon/arrowSlideleft.svg"}
                         width={70}
                         height={70}
                         alt="icon"
@@ -62,7 +62,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -82,7 +82,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -102,7 +102,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -138,7 +138,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -158,7 +158,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -178,7 +178,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -214,7 +214,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -234,7 +234,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -254,7 +254,7 @@ function EmbraceCard() {
                           }}
                         >
                           <Image
-                            src={"/icon/framer.svg"}
+                            src={"home/icon/framer.svg"}
                             width={40}
                             height={40}
                             alt="icon"
@@ -295,7 +295,7 @@ function EmbraceCard() {
 
                       <div className="absolute right-4 bottom-4">
                         <Image
-                          src="/arrow-right.svg"
+                          src="home/arrow-right.svg"
                           width={55}
                           height={55}
                           alt="Picture of the author"
@@ -303,7 +303,7 @@ function EmbraceCard() {
                         />
 
                         <Image
-                          src="/arrow-right2.svg"
+                          src="home/arrow-right2.svg"
                           width={55}
                           height={55}
                           alt="Picture of the author"

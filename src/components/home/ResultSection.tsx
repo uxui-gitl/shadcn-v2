@@ -55,14 +55,14 @@ const ResultSection: React.FC<ResultSectionProps> = () => {
 
                   <div className="absolute right-3 bottom-3">
                     <Image
-                      src="/whiteCircleClick.svg"
+                      src="home/whiteCircleClick.svg"
                       width={50}
                       height={50}
                       alt="Picture of the author"
                       className="clickarrow1"
                     />
                      <Image
-                      src="/icon/arrowUp.svg"
+                      src="home/icon/arrowUp.svg"
                       width={45}
                       height={45}
                       alt="Picture of the author"

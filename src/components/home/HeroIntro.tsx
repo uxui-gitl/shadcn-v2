@@ -12,7 +12,7 @@ const HeroIntro = () => {
         playsInline
       >
         <source
-          src="./1.mp4"
+          src="home/1.mp4"
           type="video/mp4"
         />
       </video>

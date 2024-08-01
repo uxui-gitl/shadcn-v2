@@ -96,7 +96,7 @@ const DesktopNavbar = (props: any) => {
     >
       <Link href="/" className=" dark:hidden">
         <Image
-          src={"/godrejLogo.svg"}
+          src={"home/godrejLogo.svg"}
           alt="Godrej Infotech Logo"
           width={163}
           height={59}

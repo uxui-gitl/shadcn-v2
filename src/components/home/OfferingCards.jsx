@@ -138,7 +138,7 @@ function OfferingCards() {
                                                 }}
                                             >
                                                 <Image
-                                                    src={"./icon/arrowUp.svg"}
+                                                    src={"home/icon/arrowUp.svg"}
                                                     width={45}
                                                     height={45}
                                                     alt="icon"
@@ -153,7 +153,7 @@ function OfferingCards() {
                                                 className="rounded-3xl"
                                                 style={{
                                                     backgroundImage:
-                                                        "url(/worker-explaining-change-project.png)",
+                                                        "url(home/worker-explaining-change-project.png)",
                                                     backgroundRepeat: "no-repeat",
                                                     backgroundSize: "cover",
                                                     minHeight: "360px",
@@ -182,7 +182,7 @@ function OfferingCards() {
 
                                                     <Image
                                                         onClick={() => handleofferingCardClick1()}
-                                                        src={"./icon/arrowUp.svg"}
+                                                        src={"home/icon/arrowUp.svg"}
                                                         width={40}
                                                         height={40}
                                                         style={{ cursor: "pointer" }}
@@ -300,7 +300,7 @@ function OfferingCards() {
                                                 }}
                                             >
                                                 <Image
-                                                    src={"./icon/arrowUp.svg"}
+                                                    src={"home/icon/arrowUp.svg"}
                                                     width={45}
                                                     height={45}
                                                     alt="icon"
@@ -315,7 +315,7 @@ function OfferingCards() {
                                                 className="rounded-3xl"
                                                 style={{
                                                     backgroundImage:
-                                                        "url(/offerings/2.png)",
+                                                        "url(home/offerings/2.png)",
                                                     backgroundRepeat: "no-repeat",
                                                     backgroundSize: "cover",
                                                     minHeight: "360px",
@@ -344,7 +344,7 @@ function OfferingCards() {
 
                                                     <Image
                                                         onClick={() => handleofferingCardClick2()}
-                                                        src={"./icon/arrowUp.svg"}
+                                                        src={"home/icon/arrowUp.svg"}
                                                         width={40}
                                                         height={40}
                                                         style={{ cursor: "pointer" }}
@@ -462,7 +462,7 @@ function OfferingCards() {
                                                 }}
                                             >
                                                 <Image
-                                                    src={"./icon/arrowUp.svg"}
+                                                    src={"home/icon/arrowUp.svg"}
                                                     width={45}
                                                     height={45}
                                                     alt="icon"
@@ -477,7 +477,7 @@ function OfferingCards() {
                                                 className="rounded-3xl"
                                                 style={{
                                                     backgroundImage:
-                                                        "url(/offerings/6.png)",
+                                                        "url(home/offerings/6.png)",
                                                     backgroundRepeat: "no-repeat",
                                                     backgroundSize: "cover",
                                                     minHeight: "360px",
@@ -506,7 +506,7 @@ function OfferingCards() {
 
                                                     <Image
                                                         onClick={() => handleofferingCardClick3()}
-                                                        src={"./icon/arrowUp.svg"}
+                                                        src={"home/icon/arrowUp.svg"}
                                                         width={40}
                                                         height={40}
                                                         style={{ cursor: "pointer" }}

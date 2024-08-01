@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex justify-between items-center pl-16 pr-16">
           <div className="">
             <Image
-              src={"/godrejLogoWhite.svg"}
+              src={"home/godrejLogoWhite.svg"}
               alt="Godrej Infotech Logo"
               width={232}
               height={78}
@@ -31,7 +31,7 @@ function Navbar() {
           </div>
           <div className="flex sm:hidden" onClick={() => desktopMenuClickHandle()}>
             <Image
-              src={"/icon/side-menu.svg"}
+              src={"home/icon/side-menu.svg"}
               alt="Godrej Infotech Logo"
               width={50}
               height={50}

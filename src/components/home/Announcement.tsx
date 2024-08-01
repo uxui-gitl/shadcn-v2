@@ -23,7 +23,7 @@ function Announcement(props: any) {
             onClick={closeAnnouncement}
           >
             <Image
-              src={"icon/close-icon.svg"}
+              src={"home/icon/close-icon.svg"}
               width={20}
               height={20}
               alt="close icon"

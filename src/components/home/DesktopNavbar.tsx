@@ -13,11 +13,11 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from "@/components/home/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-import { Icons } from "@/components/ui/icons";
+import { Icons } from "@/components/home/ui/icons";
 import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -96,7 +96,7 @@ const DesktopNavbar = (props: any) => {
     >
       <Link href="/" className=" dark:hidden">
         <Image
-          src={"/godrejLogo.svg"}
+          src={"home/godrejLogo.svg"}
           alt="Godrej Infotech Logo"
           width={163}
           height={59}
@@ -105,7 +105,7 @@ const DesktopNavbar = (props: any) => {
       </Link>
       <Link href="/" className=" dark:block">
         <Image
-          src={"/godrejLogoWhite.svg"}
+          src={"home/godrejLogoWhite.svg"}
           alt="Godrej Infotech Logo"
           width={163}
           height={59}

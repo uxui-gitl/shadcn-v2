@@ -110,6 +110,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-image: url('../../public/home/curvedl1.png');
 }
 
 
@@ -236,7 +237,7 @@
 
 .roboat-wrapper .card{
   min-width: 800px;
-  background-image: url(/cmp-robot.png);
+  background-image: url('../../public/home/cmp-robot.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

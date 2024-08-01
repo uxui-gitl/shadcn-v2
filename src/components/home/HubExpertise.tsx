@@ -5,7 +5,7 @@ import { useRef } from "react";
 import useScrollTriggeredCountUp from "./useScrollTriggeredCountUp";
 import Container from "./Container";
 import Image from "next/image";
-import { jetBrains_mono } from "../app/fonts";
+import { jetBrains_mono } from "../../app/fonts";
 
 const HubExpertise = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -73,7 +73,7 @@ const HubExpertise = () => {
           <div className="relative w-full flex justify-center">
             <div className="relative w-2/3" style={{ height: "50vh" }}>
               <Image
-                src="/globe.svg"
+                src="home/globe.svg"
                 alt="globe"
                 layout="fill"
                 priority

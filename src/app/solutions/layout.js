@@ -2,7 +2,7 @@
 // import React from "react";
 // import Announcement from "@/sections/announcement/Announcement";
 
-import Announcement from "@/components/Announcement";
+import Announcement from "@/components/home/Announcement";
 
 const layout = ({ children }) => {
   return (
