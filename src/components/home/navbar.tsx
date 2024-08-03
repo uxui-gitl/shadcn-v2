@@ -10,7 +10,7 @@ function Navbar() {
   }
   return (
     <>
-      <div className="navbar-wrapper bg-[#020812] mt-1 sm:mt-2 sticky top-0 z-50">
+      <div className="navbar-wrapper bg-[#020812] sticky top-0 z-50">
         <div className="flex justify-between items-center pl-16 pr-16">
           <div className="">
             <Image

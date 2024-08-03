@@ -20,7 +20,7 @@ function OfferingCards() {
     }
     return (
         <>
-            <div className="" style={{ padding: "150px 0px" }}>
+            <div className="" style={{ padding: "150px 0px", backgroundColor:'black' }}>
                 <div className="container flex-col px-10">
                     <h2
                         style={{ color: "#B599EE" }}

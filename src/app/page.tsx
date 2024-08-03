@@ -38,6 +38,7 @@ export default function Home() {
 
       <EmbraceCard />
       <HubExpertise />
+      <Image src={'/home/Curve-Home-LandingPage.svg'} alt="hi" width={100} height={80}></Image>
       <OfferingCards></OfferingCards>
 
       {/* <OfferingsSlider /> */}
@@ -77,7 +78,7 @@ export default function Home() {
       <div className="mt-8 flex-col px-10 ">
         <Subscribe />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
