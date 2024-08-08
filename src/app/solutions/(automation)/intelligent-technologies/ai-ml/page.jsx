@@ -249,6 +249,7 @@ const MLData = [
 
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
 const blogImageUrl = '/ai-ml/blog-bg.png';
+const formBGURL = "/formBgImage.svg"
 const page = () => {
   return (
     <>
@@ -301,11 +302,13 @@ with our cutting-edge offerings."
 
       {/* Overview  */}
 
-      <OverviewSection id="AIOfferings" Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
-      <SectionWrapper style={{
-          backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.3)',
-          backgroundBlendMode: "multiply"
-        }}>
+      <OverviewSection Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
+
+      <SectionWrapper ID="AIOfferings" style={{
+        backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.1)',
+        backgroundBlendMode: "multiply"
+      }}>
+
         <SectionHeading
           Heading={'Our AI Offerings'}
           Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
@@ -315,73 +318,73 @@ with our cutting-edge offerings."
         </SectionHeading>
 
         <div className="text-left max-w-screen-xl md:max-w-screen-2xl pb-10 mt-20">
-            <Swiper
-              slidesPerView={'auto'}
-              spaceBetween={30}
-              pagination={false}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              {AIOfferings.map((item, index) => (
+          <Swiper
+            slidesPerView={'auto'}
+            spaceBetween={30}
+            pagination={false}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {AIOfferings.map((item, index) => (
 
-                <>
-                  <SwiperSlide
-                    key={item._id}
-                    className="w-[380px] max-w-[380px] relative group"
-                  >
-                    <div className="bg-[#fff] p-5 rounded-3xl" key={item._id}>
-                      <div className="p-4 h-full flex flex-col justify-between">
-                        <div>
-                          <p className="text-[#101828] font-medium text-[24px] sm:text-[32px] md:text-[42px] leading-[50px]">
-                            {item.title}
-                          </p>
-                          <p className="text-[#101828] text-[14px] font-normal my-4 leading-[24px]">
-                            {item.desc}
-                          </p>
-                        </div>
-                        <div>
-                          <ul className="my-8">
-                            {item.links.map((list, index) => (
-                              <li
-                                key={index}
-                                className=" border-b-2 border-[#dbdbdb3d] py-4 "
+              <>
+                <SwiperSlide
+                  key={item._id}
+                  className="w-[380px] max-w-[380px] relative group"
+                >
+                  <div className="bg-[#fff] p-5 rounded-3xl" key={item._id}>
+                    <div className="p-4 h-full flex flex-col justify-between">
+                      <div>
+                        <p className="text-[#101828] font-medium text-[24px] sm:text-[32px] md:text-[42px] leading-[50px]">
+                          {item.title}
+                        </p>
+                        <p className="text-[#101828] text-[14px] font-normal my-4 leading-[24px]">
+                          {item.desc}
+                        </p>
+                      </div>
+                      <div>
+                        <ul className="my-8">
+                          {item.links.map((list, index) => (
+                            <li
+                              key={index}
+                              className=" border-b-2 border-[#dbdbdb3d] py-4 "
+                            >
+                              <Link
+                                href={list.url}
+                                className="text-[#101828] text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
                               >
-                                <Link
-                                  href={list.url}
-                                  className="text-[#101828] text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
-                                >
-                                  {list.title}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                          <Link
-                            href={item.ctaUrl}
-                            className="text-[#0745D3] hidden text-[14px] font-medium leading-[28px] w-fit flex transition-all hover:opacity-75  "
-                          >
-                            {item.cta}{" "}
-                            <Icon
-                              path={mdiArrowRight}
-                              style={{ marginLeft: "0.5em" }}
-                              size={1}
-                            />
-                          </Link>
-                        </div>
+                                {list.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                        <Link
+                          href={item.ctaUrl}
+                          className="text-[#0745D3] hidden text-[14px] font-medium leading-[28px] w-fit flex transition-all hover:opacity-75  "
+                        >
+                          {item.cta}{" "}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
                       </div>
                     </div>
-                  </SwiperSlide>
-                </>
-              ))}
-            </Swiper>
-          </div>
+                  </div>
+                </SwiperSlide>
+              </>
+            ))}
+          </Swiper>
+        </div>
 
       </SectionWrapper>
       {/* Our Ai Offerings */}
 
-    {/* ML Expertise */}
+      {/* ML Expertise */}
       <>
-      <SectionWrapper id="MLExpertise" BGColor={'#5F22D9'} style={{marginTop :'-240px', paddingTop :'240px'}}>
-      <div className="flex flex-row gap-x-11">
+        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
+          <div className="flex flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
                 Heading={'Expertise Machine Learning'}
@@ -419,16 +422,13 @@ with our cutting-edge offerings."
               ))}
             </div>
           </div>
-      </SectionWrapper>
-        <div id="MLExpertise" className={`w-full bg-[#5F22D9] py-24 rounded-3xl pt-60 -mt-60 px-10 sm:px-12 md:px-36`}>
-        
-        </div>
+        </SectionWrapper>
       </>
 
       {/* AI & ML Partners */}
       <>
-        <div id="Platforms" className={`w-full bg-[#FFF] pt-20 rounded-3xl`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1">
+        <SectionWrapper ID="Platforms">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="w-full md:max-w-[607px]">
@@ -451,28 +451,26 @@ with our cutting-edge offerings."
               </div>
             </div>
           </div>
-        </div>
+        </SectionWrapper>
       </>
 
       {/* Benefits Vertical Slider */}
-      <>
-        <div id="Benefits" style={{ backgroundColor: '#1D162B', borderRadius: '24px' }}>
-          <Benefits
-            ribbon="Benefits of AI / ML"
-            ribbonTxtWhite="true"
-            title=""
-            desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
-            arr={BenefitsData}
-          ></Benefits>
-        </div>
-      </>
-
+      <SectionWrapper id="Benefits" BGColor="#1D162B">
+        <Benefits
+          ribbon="Benefits of AI / ML"
+          ribbonTxtWhite="true"
+          title=""
+          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
+          arr={BenefitsData}
+        ></Benefits>
+      </SectionWrapper>
       {/* blog section  */}
 
-      <div className={`blog-section w-full bg-[#FFF] py-20, rounded-3xl min-h-[640px]`} style={{
+      <SectionWrapper id="blog" style={{
         backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover'
       }}>
-        <div className="text-left py-10 sm:py-14 md:py-24 px-10 sm:px-12 md:px-36 max-w-[75%]">
+
+        <div className="max-w-[75%]">
           <SectionHeading
             Heading={'Unveilling Hyper automation  for supply chain efficiency'}
             Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
@@ -480,17 +478,20 @@ with our cutting-edge offerings."
             MaxWidth="70%"
           >
           </SectionHeading>
-
-          <Link
-            className="primary-btn mt-36 inline-flex"
-            href="#"
-          >
-            <span className="text-white text-sm font-medium transition-all">
-              Read More
-            </span>
-          </Link>
         </div>
-      </div>
+
+
+        <Link
+          className="primary-btn mt-36 inline-flex"
+          href="#"
+        >
+          <span className="text-white text-sm font-medium transition-all">
+            Read More
+          </span>
+        </Link>
+
+      </SectionWrapper>
+
 
       {/* Industry Spotlight Slider */}
       {/* <>
@@ -548,9 +549,8 @@ with our cutting-edge offerings."
         </div>
       </>  */}
 
-      {/* <BlogSlider arr={blogData} /> */}
       {/* Why choose gitl and ai and ml  WhyUs*/}
-      <div id="WhyUs">
+      <SectionWrapper ID="WhyUs">
         <WhySection
           title="The Distinctive Edge"
           desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
@@ -583,15 +583,26 @@ with our cutting-edge offerings."
           ]}
           renderInlineSpans={true}
         ></WhySection>
-      </div>
+      </SectionWrapper>
 
       {/* Subscription */}
-      <Subscription
-        title="Ready for Intelligent Solutions?"
-        blue=""
-        title2=""
-        desc="Share your details NOW for Smarter Business Future!"
-      />
+      <div className="" style={{ backgroundColor: '#1D162B' }}>
+        <div className="" style={{
+          backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
+        }}>
+          <div className="py-10 sm:py-14 px-14 sm:px-12 md:px-36 md:pt-44">
+            <div className="card-body p-24 rounded-3xl" style={{ background: "linear-gradient(180deg, #5F22D9 2.14%, rgba(95, 34, 217, 0.00) 74.44%)" }}>
+              <Subscription
+                title="Transform your Business with us"
+                blue=""
+                title2=""
+                desc="Let us discuss how intelligent technologies can help you with rapid growth."
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       {/* Infotech Weekly Updates */}
       <InfotechWeeklyAlt />

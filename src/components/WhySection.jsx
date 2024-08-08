@@ -28,7 +28,7 @@ const WhySection = ({
 }) => {
   return (
     <>
-      <div id="WhyUs" className={` w-full bg-[#ffffff] py-10 sm:py-14 md:py-24 px-10 sm:px-12 md:px-36`}>
+      <div className={` w-full`}>
         {/* left */}
         <div className="mb-20">
           <SectionHeading

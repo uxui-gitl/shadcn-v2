@@ -25,11 +25,11 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
     <>
       <div
         id="Benefits"
-        className={` w-full  bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB] rounded-3xl`}
+        className={`w-full`}
       >
-        <div className="text-left  max-w-screen-xl mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="text-left  max-w-screen-xl mx-auto grid grid-cols-1 gap-5 sm:grid-cols-2">
           {/* left */}
-          <div className=" flex flex-row items-start justify-center relative py-20">
+          <div className=" flex flex-row items-start justify-center relative">
             <div className="">
               <SectionHeading Heading={ribbon} Desc={desc} Color="white"></SectionHeading>
             </div>

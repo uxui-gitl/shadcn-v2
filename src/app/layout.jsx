@@ -67,7 +67,9 @@ export default function RootLayout({ children, route }) {
             <NextUIProvider>
               <NextTopLoader />
               {children}
-              <Footer />
+              <div className="" style={{ backgroundColor: '#1D162B' }}>
+                <Footer />
+              </div>
               {/* <Copyright /> */}
             </NextUIProvider>
             {/* <Analytics />

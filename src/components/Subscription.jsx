@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import SectionHeading from "./SectionHeading";
 
 const MySwal = withReactContent(Swal);
 const Subscription = ({ title, blue, title2, desc }) => {
@@ -68,12 +69,14 @@ const Subscription = ({ title, blue, title2, desc }) => {
 
   return (
     <>
-      <div className={` w-full bg-white py-32`} id="Contact">
-        <div className="  mb-5  sm:gap-0 text-left  max-w-screen-xl    mx-auto p-5        pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <div className="bg-white flex items-start flex-col justify-start">
-            <div>
-              {/* <span className="text-[#0745D3]">Free 30-Minutes</span> Strategy
-                Session with our Consultant */}
+      <div className={` w-full  `} id="Contact">
+        <div className="text-left">
+          <div className="flex flex-rows justify-start" style={{ alignItems: "center", justifyContent: 'center' }}>
+            <SectionHeading Heading={title} Color="white">
+            </SectionHeading>
+            <p className="text-white text-sm sm:text-base md:text-xl font-medium">{desc}</p>
+
+            {/* <div>
               <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
                 {title == null ? (
                   <>
@@ -97,14 +100,63 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   <>{desc}</>
                 )}
               </p>
-            </div>
+            </div> */}
           </div>
-          <div>
+          <div className="px-12">
+            <form class="" onSubmit={handleSubmit}>
+              <div class="grid md:grid-cols-2 md:gap-10">
+                <div class="relative z-0 w-full mb-6 group">
+                  <input
+                    value={formData.Name}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder=""
+                    name="Name" id="name" class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
+                  <label for="Name" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Enter Your Name</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                  <input
+                    value={formData.Email}
+                    name="Email"
+                    onChange={handleChange}
+                    placeholder=""
+                    type="email" id="email" class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
+                  <label for="Email" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                </div>
+              </div>
+              <div class="relative z-0 w-full mb-12 group ">
+                <input
+                  name="Query"
+                  value={formData.Query}
+                  onChange={handleChange}
+                  type="text"
+                  id="message"
+                  placeholder="" class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" />
+                <label for="Query" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:border-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
+              </div>
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  className="min-w-max flex bg-[#0745D3] py-2 px-10 border-2 border-[#0745D3] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+                >
+                  Send Message
+                  <Icon
+                    path={mdiArrowRight}
+                    style={{ marginLeft: "0.5em" }}
+                    size={1}
+                  />
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+          {/* <div>
             <form onSubmit={handleSubmit}>
-              <div className="mb-6">
+              <div className="relative z-0 w-full mb-5 group">
                 <label
                   htmlFor="name"
-                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Full Name
                 </label>
@@ -114,12 +166,8 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   onChange={handleChange}
                   type="text"
                   id="name"
-                  placeholder="John Doe"
-                  className="mt-1 block w-full px-3 py-2 text-sm shadow-sm placeholder-slate-400
-                  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
-                  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-                  invalid:border-pink-500 invalid:text-pink-600
-                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#fff] rounded-sm relative"
+                  placeholder=""
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 />
               </div>
               <div className="mb-6">
@@ -199,7 +247,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
