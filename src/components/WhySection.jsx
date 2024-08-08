@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import checkout from "../../public/icon/whygitl/WhyGITL.svg";
+import checkout from "../../public/icon/whygitl/WhyGITL2.svg";
+import SectionHeading from "./SectionHeading";
 import curiousPerson from "../../public/curiousPerson.png";
 import cloud from "../../public/cloud.png";
 import cloudArrows from "../../public/cloudArrows.png";
@@ -27,40 +28,18 @@ const WhySection = ({
 }) => {
   return (
     <>
-      <div id="WhyUs" className={` w-full overflow-hidden bg-[#F2F4F7] pt-24`}>
-        <div className=" overflow-hidden items-center pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl    mx-auto p-5   px-[2rem]">
-          {/* left */}
-          <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-            <div className="">
-              <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                {ribbon}
-              </h4>
-              <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                {title}
-              </h3>
-              <p className="font-normal leading-[22px] md:w-[90%] ">{desc}</p>
-              <div className="  mt-[20rem]">
-                <Image
-                  className="absolute bottom-0 z-20"
-                  src={cloudArrows}
-                  alt="cloud Arrows"
-                />
-                <Image
-                  className="absolute left-5 bottom-10 z-30"
-                  src={cloud}
-                  alt="cloud"
-                />
-                <Image
-                  className="absolute bottom-0 z-20"
-                  src={curiousPerson}
-                  alt="curious Person"
-                />
-              </div>
-            </div>
-          </div>
-          {/* right */}
-          {/* <div className="relative">{children}</div> */}
-          <div className="relative">
+      <div id="WhyUs" className={` w-full bg-[#ffffff] py-10 sm:py-14 md:py-24 px-10 sm:px-12 md:px-36`}>
+        {/* left */}
+        <div className="mb-20">
+          <SectionHeading
+            Heading={title}
+            Desc={desc}
+            MaxWidth={'50%'}
+          ></SectionHeading>
+        </div>
+        {/* right */}
+        {/* <div className="relative">{children}</div> */}
+        {/* <div className="">
             <AnimatePresence>
               {Array.isArray(arr) &&
                 arr.map((item) => (
@@ -88,7 +67,27 @@ const WhySection = ({
                   </motion.div>
                 ))}
             </AnimatePresence>
-          </div>
+          </div> */}
+
+        <div class="grid grid-cols-2 gap-10">
+        {arr.map((item) => (
+            <>
+              <div className="card py-8" style={{ borderBottom: '2px solid #d3d3d3' }}>
+                <div className="card-body flex">
+                    <Image src={checkout} alt={checkout} width={100}/>
+                    <div className="text-xl font-medium ml-9">
+                      {item.desc}
+                    </div>
+                </div>
+              </div>
+            </>
+          ))}
+        </div>
+
+
+        <div className="flex flex-wrap">
+          
+
         </div>
       </div>
     </>

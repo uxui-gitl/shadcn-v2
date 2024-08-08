@@ -41,7 +41,7 @@ const EntIntro = ({
                 alignment && alignment == "center"
                   ? "text-center"
                   : "text-start"
-              } w-full z-50 sm:block sm:text-[42px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[52px] text-white font-bold sm:font-semibold text-left`}
+              } w-full z-50 sm:block text-[26px] sm:text-[52px] sm-[${fs}]  leading-[44px] sm:leading-[${leading}] sm:leading-[52px] text-white font-bold sm:font-semibold text-left`}
               style={{ width: "100%", maxWidth: width }}
             >
               <Balancer>{title}</Balancer>

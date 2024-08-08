@@ -36,6 +36,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import BlogSlider from "@/components/BlogSlider";
 import Abstract from "@/components/Abstract";
+
+// components
+import OverviewSection from "@/sections/overview/OverviewSection";
+import SectionHeading from '@/components/SectionHeading';
+import SectionWrapper from '@/components/SectionWrapper';
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -65,12 +70,12 @@ const AIOfferings = [
   {
     _id: 1,
     title: "Computer Vision",
-    desc: "We specialize in custom video and image analysis tool leveraging advanced technologies like OpenCV to optimize or create computer vision algorithms.",
+    desc: "We specialize in custom video and image analysis tool leveraging advanced",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
       {
-        title: "Data Labelling and Real-time Object Detection",
+        title: "Data Labelling and Real-time",
         url: "/",
       },
       {
@@ -86,7 +91,7 @@ const AIOfferings = [
   {
     _id: 2,
     title: "Speech & Language",
-    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools to elevate customer experiences and stand tall in competition.",
+    desc: "Our reliable approach to Speech and Language AI empowers your business with",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
@@ -107,12 +112,12 @@ const AIOfferings = [
   {
     _id: 3,
     title: "Document Understanding",
-    desc: "We help you to achieve error-free AI-driven data capture from diverse document types and helps your business with unstructured data.",
+    desc: "We help you to achieve error-free AI-driven data capture from diverse document types",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
       {
-        title: "Optical Character Recognition (OCR)",
+        title: "OCR",
         url: "/",
       },
       {
@@ -129,7 +134,7 @@ const AIOfferings = [
   {
     _id: 4,
     title: "Conversational AI",
-    desc: "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making.",
+    desc: "We provide solutions that facilitate customer-centric decision-making.",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
@@ -185,19 +190,19 @@ const BenefitsData = [
     _id: 1,
     icon: "benefits-ai-ml/process-analyse",
     cardDesc:
-      "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+      "A high degree of accuracy and consistency in business operations.",
   },
   {
     _id: 2,
     icon: "benefits-ai-ml/anticipate-future",
     cardDesc:
-      "Anticipate future outcomes based on historical data, making informed decisions",
+      "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends. ",
   },
   {
     _id: 3,
     icon: "benefits-ai-ml/effortless-communicate",
     cardDesc:
-      "Effortless communication and efficient information retrieval through Natural Language Processing ",
+      "Real-time problem-solving capabilities enable minimizing disruptions and ensuring uninterrupted business operations. ",
   },
   {
     _id: 4,
@@ -241,12 +246,16 @@ const MLData = [
     ctaURL: "",
   },
 ];
+
+const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
+const blogImageUrl = '/ai-ml/blog-bg.png';
 const page = () => {
   return (
     <>
       <EntIntro
-        title="Leverage Optimized Business Intelligence with Advanced Solutions of Artificial Intelligence and Machine Learning"
-        desc=""
+        title="Leverage Optimised BI with AI & ML"
+        desc="Revolutionize your business operations, save time and boost productivity
+with our cutting-edge offerings."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -291,63 +300,114 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours. "></Abstract>
 
-      {/* Our Ai Offerings */}
-      <>
-        <div id="AIOfferings" className={` w-full bg-[#FFF] py-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Our AI Offerings
-                </h3>
-              </div>
-            </div>
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are committed to bringing the power of Artificial
-                  Intelligence to your business operations, providing tailored
-                  solutions that drives business proficiency.
-                </p>
-              </div>
-            </div>
+      <OverviewSection id="AIOfferings" Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
+      <SectionWrapper style={{
+          backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.3)',
+          backgroundBlendMode: "multiply"
+        }}>
+        <SectionHeading
+          Heading={'Our AI Offerings'}
+          Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+          Color={'white'}
+          MaxWidth="60%"
+        >
+        </SectionHeading>
+
+        <div className="text-left max-w-screen-xl md:max-w-screen-2xl pb-10 mt-20">
+            <Swiper
+              slidesPerView={'auto'}
+              spaceBetween={30}
+              pagination={false}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {AIOfferings.map((item, index) => (
+
+                <>
+                  <SwiperSlide
+                    key={item._id}
+                    className="w-[380px] max-w-[380px] relative group"
+                  >
+                    <div className="bg-[#fff] p-5 rounded-3xl" key={item._id}>
+                      <div className="p-4 h-full flex flex-col justify-between">
+                        <div>
+                          <p className="text-[#101828] font-medium text-[24px] sm:text-[32px] md:text-[42px] leading-[50px]">
+                            {item.title}
+                          </p>
+                          <p className="text-[#101828] text-[14px] font-normal my-4 leading-[24px]">
+                            {item.desc}
+                          </p>
+                        </div>
+                        <div>
+                          <ul className="my-8">
+                            {item.links.map((list, index) => (
+                              <li
+                                key={index}
+                                className=" border-b-2 border-[#dbdbdb3d] py-4 "
+                              >
+                                <Link
+                                  href={list.url}
+                                  className="text-[#101828] text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
+                                >
+                                  {list.title}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <Link
+                            href={item.ctaUrl}
+                            className="text-[#0745D3] hidden text-[14px] font-medium leading-[28px] w-fit flex transition-all hover:opacity-75  "
+                          >
+                            {item.cta}{" "}
+                            <Icon
+                              path={mdiArrowRight}
+                              style={{ marginLeft: "0.5em" }}
+                              size={1}
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </>
+              ))}
+            </Swiper>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-4">
-            {AIOfferings.map((item, index) => (
-              <div className="bg-[#EDF1FF] p-5" key={item._id}>
-                <div className="p-4 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
+
+      </SectionWrapper>
+      {/* Our Ai Offerings */}
+
+    {/* ML Expertise */}
+      <>
+      <SectionWrapper id="MLExpertise" BGColor={'#5F22D9'} style={{marginTop :'-240px', paddingTop :'240px'}}>
+      <div className="flex flex-row gap-x-11">
+            <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
+              <SectionHeading
+                Heading={'Expertise Machine Learning'}
+                Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+                Color={'white'}
+                MaxWidth="80%"
+              >
+              </SectionHeading>
+            </div>
+
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mt-20 flex flex-row flex-1 flex-wrap gap-y-7">
+              {MLData.map((item, index) => (
+                <div className="flex-1 min-w-[50%]" key={index}>
+                  <div className="p-4 pb-0">
+                    <div className="mb-6" style={{ width: '75px', height: '6px', backgroundColor: '#CDBAF3' }}></div>
+                    <p className="text-[#fff] font-semibold text-[28px] leading-[36px] mb-8">
                       {item.title}
                     </p>
-                    <p className="text-[#101828] text-[12px] font-normal my-4 leading-[18px]">
-                      {item.desc}
+                    <p className="text-[#fff] text-[16px] font-normal my-4 leading-[24px]">
+                      {item.subTitle}
                     </p>
-                  </div>
-                  <div>
-                    <ul className="my-8">
-                      {item.links.map((list, index) => (
-                        <li
-                          key={index}
-                          className=" border-b-2 border-[#DBDBDB] py-2 "
-                        >
-                          <Link
-                            href={list.url}
-                            className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                          >
-                            {list.title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
                     <Link
-                      href={item.ctaUrl}
+                      href={item.ctaURL}
                       className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
-                      {item.cta}{" "}
+                      Know More{" "}
                       <Icon
                         path={mdiArrowRight}
                         style={{ marginLeft: "0.5em" }}
@@ -356,86 +416,29 @@ const page = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </>
-
-      {/* ML Expertise */}
-      <>
-        <div id="MLExpertise" className={` w-full bg-[#F2F4F7] py-24`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-1 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  ML Expertise
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] ">
-                  We specialize in developing algorithms to make your operations
-                  smarter, faster and more reliable.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
-
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {MLData.map((item, index) => (
-              <div className="" key={index}>
-                <Image
-                  src={item.imgURL}
-                  className="w-[100%]"
-                  alt="ML Expertise"
-                  width={500}
-                  height={500}
-                  quality={100}
-                />
-                <div className="p-4 pb-0">
-                  <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    {item.subTitle}
-                  </p>
-                  <Link
-                    href={item.ctaURL}
-                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                  >
-                    Know More{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+      </SectionWrapper>
+        <div id="MLExpertise" className={`w-full bg-[#5F22D9] py-24 rounded-3xl pt-60 -mt-60 px-10 sm:px-12 md:px-36`}>
+        
         </div>
       </>
 
       {/* AI & ML Partners */}
       <>
-        <div id="Platforms" className={`w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+        <div id="Platforms" className={`w-full bg-[#FFF] pt-20 rounded-3xl`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold">
-                  Intelligent Technologies Platforms
-                </h3>
+              <div className="w-full md:max-w-[607px]">
+                <SectionHeading
+                  Heading={'Intelligent Technologies Platforms'}
+                  Desc={' Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.'}
+                >
+                </SectionHeading>
               </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%]">
-                  Our proficiency with AI/ML platforms paves the way for
-                  progressive business results with the intersection of
-                  innovation and efficiency.
-                </p>
-              </div>
-              <div className="flex justify-center items-center gap-20 p-5 mb-5">
+              <div className="flex justify-center items-center gap-20 py-20 mb-5">
                 <div>
                   <Image src={MSAzure} alt="Microsoft Azure" />
                 </div>
@@ -453,9 +456,9 @@ const page = () => {
 
       {/* Benefits Vertical Slider */}
       <>
-        <div id="Benefits">
+        <div id="Benefits" style={{ backgroundColor: '#1D162B', borderRadius: '24px' }}>
           <Benefits
-            ribbon="Benefits"
+            ribbon="Benefits of AI / ML"
             ribbonTxtWhite="true"
             title=""
             desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
@@ -464,11 +467,35 @@ const page = () => {
         </div>
       </>
 
+      {/* blog section  */}
+
+      <div className={`blog-section w-full bg-[#FFF] py-20, rounded-3xl min-h-[640px]`} style={{
+        backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover'
+      }}>
+        <div className="text-left py-10 sm:py-14 md:py-24 px-10 sm:px-12 md:px-36 max-w-[75%]">
+          <SectionHeading
+            Heading={'Unveilling Hyper automation  for supply chain efficiency'}
+            Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
+            Color={'white'}
+            MaxWidth="70%"
+          >
+          </SectionHeading>
+
+          <Link
+            className="primary-btn mt-36 inline-flex"
+            href="#"
+          >
+            <span className="text-white text-sm font-medium transition-all">
+              Read More
+            </span>
+          </Link>
+        </div>
+      </div>
+
       {/* Industry Spotlight Slider */}
       {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left /}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -519,15 +546,14 @@ const page = () => {
             </div>
           </div>
         </div>
-      </> */}
+      </>  */}
 
-      <BlogSlider arr={blogData} />
+      {/* <BlogSlider arr={blogData} /> */}
       {/* Why choose gitl and ai and ml  WhyUs*/}
       <div id="WhyUs">
         <WhySection
-          ribbon="The Distinctive Edge"
-          title="Why Godrej Infotech?"
-          desc="Prioritising your success, we help you thrive in a digital landscape with seamless deployment."
+          title="The Distinctive Edge"
+          desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
           arr={[
             {
               _id: 1,
@@ -549,6 +575,11 @@ const page = () => {
               desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
               icon: "",
             },
+            {
+              _id: 5,
+              desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+              icon: "",
+            }
           ]}
           renderInlineSpans={true}
         ></WhySection>

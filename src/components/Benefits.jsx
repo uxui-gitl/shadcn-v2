@@ -11,6 +11,8 @@ import { mdiArrowTopRight } from "@mdi/js";
 import { mdiDomain } from "@mdi/js";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import SectionHeading from "./SectionHeading";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,22 +25,13 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
     <>
       <div
         id="Benefits"
-        className={` w-full  bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
+        className={` w-full  bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB] rounded-3xl`}
       >
         <div className="text-left  max-w-screen-xl mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           {/* left */}
-          <div className=" flex items-start flex-col justify-center  relative">
+          <div className=" flex flex-row items-start justify-center relative py-20">
             <div className="">
-              <h4
-                style={{ color: ribbonTxtWhite && "white" }}
-                className={` font-medium text-[#0745D3] uppercase ribbon`}
-              >
-                {ribbon}
-              </h4>
-              <h3 className="text-[24px]  leading-[54px] mb-3 font-bold w-[90%]">
-                {title}
-              </h3>
-              <p className="font-medium leading-[22px] md:w-[90%] ">{desc}</p>
+              <SectionHeading Heading={ribbon} Desc={desc} Color="white"></SectionHeading>
             </div>
             <div className="max-w-max justify-start hidden items-center my-5">
               <Link
@@ -56,12 +49,12 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
           </div>
           {/* right */}
           <div
-            className=" min-h-48 max-h-[75vh] overflow-hidden"
+            className=" min-h-screen max-h-[100vh] overflow-hidden mt-44"
             id="benefits-slide"
           >
             <Swiper
               spaceBetween={30}
-              centeredSlides={true}
+              centeredSlides={false}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -92,26 +85,41 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
                   spaceBetween: 40,
                 },
               }}
-              effect={"creative"}
-              creativeEffect={{
-                prev: {
-                  // will set `translateZ(-400px)` on previous slides
-                  translate: [0, 0, -400],
-                },
-                next: {
-                  // will set `translateX(100%)` on next slides
-                  translate: ["100%", 0, 0],
-                },
-              }}
-              slidesPerView={3}
+              slidesPerView={'auto'}
+              freeMode = {true}
               loop={true}
             >
               {arr.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#EDF1FF] border-r-4 px-20 py-10 rounded-sm text-[#101828] min-h-fit max-h-60"
+                  className="bg-[#ff000000] rounded-3xl text-[#ffffff] max-h-[183px]"
                 >
-                  <div>
+
+                    <div className="flex px-8 py-8" style={{ border: '1px solid #fff', borderRadius:'24px', minHeight:'193px', maxHeight:'193px'}}>
+                      <div className="mr-6">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/icon/${item.icon}.svg`}
+                            width={100}
+                            height={100}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={120} />
+                        )}
+                      </div>
+                      <div className="">
+                        <p className="text-[26px] font-bold leading-[36px]">
+                          {item.title}
+                        </p>
+                        <p className="text-[24px] font-normal leading-[30px]">
+                          {item.cardDesc}
+                        </p>
+                      </div>
+
+                    </div>
+
+                  {/* /* <div>
                     <div className=" -mr-4 py-4">
                       {item.icon !== "" ? (
                         <Image
@@ -130,9 +138,9 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
                     <p className="text-[18px] font-semibold leading-[22px]">
                       {item.cardDesc}
                     </p>
-                  </div>
-                </SwiperSlide>
-              ))}{" "}
+                  </div> */}
+                 </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
