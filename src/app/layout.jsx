@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 // import Footer from "@/sections/footer/Footer";
 import Footer from "@/components/home/Footer";
 import Copyright from "@/sections/copyright/Copyright";
@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import NextTopLoader from "nextjs-toploader";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter_Tight({ subsets: ["latin"] });
 
 import Head from "next/head";
 import { NextUIProvider } from "@nextui-org/react";

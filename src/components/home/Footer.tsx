@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="text-teal-600 dark:text-teal-300">
               <Link href="/" className=" w-fit dark:hidden">
                 <Image
-                  src={"home/godrejLogo.svg"}
+                  src={"/home/godrejLogo.svg"}
                   alt="Godrej Infotech Logo"
                   width={163}
                   height={59}
@@ -20,7 +20,7 @@ const Footer = () => {
               </Link>
               <Link href="/" className=" w-fit dark:block">
                 <Image
-                  src={"home/godrejLogoWhite.svg"}
+                  src={"/home/godrejLogoWhite.svg"}
                   alt="Godrej Infotech Logo"
                   width={163}
                   height={59}

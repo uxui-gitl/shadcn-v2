@@ -27,7 +27,7 @@ const ServicesNav = () => {
       <button
         onClick={handleOnclick}
         type="button"
-        className={`flex font-normal  items-center p-1 max-lg:justify-between max-lg:w-full ${
+        className={`flex text-base md:ml-5 items-center p-1 max-lg:justify-between max-lg:w-full ${
           show ? "lg:text-neutral-300" : ""
         }`}
       >

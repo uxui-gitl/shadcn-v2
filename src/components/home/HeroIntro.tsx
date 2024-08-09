@@ -61,7 +61,7 @@ const HeroIntro = () => {
             className="primary-btn"
             href="#"
           >
-            <span className=" text-sm font-medium transition-all">
+            <span className="text-sm font-medium transition-all">
               Let&apos;s Connect and Transform
             </span>
           </Link>

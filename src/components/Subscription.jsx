@@ -71,10 +71,12 @@ const Subscription = ({ title, blue, title2, desc }) => {
     <>
       <div className={` w-full  `} id="Contact">
         <div className="text-left">
-          <div className="flex flex-rows justify-start" style={{ alignItems: "center", justifyContent: 'center' }}>
+          <div className="flex md:flex-row flex-col justify-start" style={{ alignItems: "center", justifyContent: 'center' }}>
             <SectionHeading Heading={title} Color="white">
             </SectionHeading>
+            <div className="text-center md:text-left mb-7 md:mb-0">
             <p className="text-white text-sm sm:text-base md:text-xl font-medium">{desc}</p>
+            </div>
 
             {/* <div>
               <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
@@ -102,7 +104,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
               </p>
             </div> */}
           </div>
-          <div className="px-12">
+          <div className="px-5 md:px-12">
             <form class="" onSubmit={handleSubmit}>
               <div class="grid md:grid-cols-2 md:gap-10">
                 <div class="relative z-0 w-full mb-6 group">
@@ -134,20 +136,19 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   placeholder="" class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" />
                 <label for="Query" class="peer-focus:font-medium absolute text-lg text-gray-500 dark:border-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
               </div>
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="min-w-max flex bg-[#0745D3] py-2 px-10 border-2 border-[#0745D3] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+              <div className="flex justify-center md:justify-end">
+                <Link
+                  href={"#Contact"}
+                  className="text-white flex items-center bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 mb-2 dark:bg-[#946BE6] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                 >
-                  Send Message
+                  {'Send Message'}
                   <Icon
-                    path={mdiArrowRight}
-                    style={{ marginLeft: "0.5em" }}
+                    path={mdiArrowTopRight}
+                    style={{ marginLeft: "0.5em", transform: "rotate(45deg)", marginTop: '1px' }}
                     size={1}
                   />
-                </button>
+                </Link>
               </div>
-
             </form>
 
           </div>

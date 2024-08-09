@@ -82,7 +82,7 @@ const SolutionsNav = () => {
     >
       <button
         type="button"
-        className={`flex items-center p-1 font-normal transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
+        className={`flex items-center p-1 md:ml-5 text-base transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
           show ? "lg:text-neutral-300 " : ""
         }`}
       >

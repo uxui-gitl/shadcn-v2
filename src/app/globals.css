@@ -83,7 +83,14 @@
 .primary-btn{
   background: linear-gradient(90deg, #C315A9 0%, #8928C8 50%, #5339E5 100%);
   border-radius: 32px;
-  padding: 20px 30px;
+  padding: 12px 30px;
+}
+
+.btn2{
+  background-color: #946BE6;
+  color: white;
+  border-radius: 32px;
+  padding: 12px 30px;
 }
 
 .navbar {

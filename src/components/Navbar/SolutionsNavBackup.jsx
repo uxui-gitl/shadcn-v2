@@ -58,7 +58,7 @@ const SolutionsNav = () => {
         </svg>
       </button>
       <div
-        className={`relative lg:absolute lg:flex lg:-ml-80 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
+        className={`relative lg:absolute md:ml-5 lg:flex lg:-ml-80 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
           show ? "opacity-100 " : "opacity-0 invisible max-lg:hidden"
         }`}
       >

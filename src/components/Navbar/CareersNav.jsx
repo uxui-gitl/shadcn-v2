@@ -30,7 +30,7 @@ const CareersNav = () => {
       <button
         onClick={handleOnclick}
         type="button"
-        className={`flex items-center p-1 transition ease-in duration-150 max-lg:justify-between font-normal max-lg:w-full ${
+        className={`flex md:ml-5 items-center text-base p-1 transition ease-in duration-150 max-lg:justify-between font-normal max-lg:w-full ${
           show ? "lg:text-neutral-300" : ""
         }`}
       >

@@ -30,7 +30,7 @@ const WhySection = ({
     <>
       <div className={` w-full`}>
         {/* left */}
-        <div className="mb-20">
+        <div className="md:mb-20 mb-10 ">
           <SectionHeading
             Heading={title}
             Desc={desc}
@@ -69,25 +69,19 @@ const WhySection = ({
             </AnimatePresence>
           </div> */}
 
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10">
         {arr.map((item) => (
             <>
-              <div className="card py-8" style={{ borderBottom: '2px solid #d3d3d3' }}>
+              <div className="card py-4 md:py-8" style={{ borderBottom: '2px solid #d3d3d3' }}>
                 <div className="card-body flex">
-                    <Image src={checkout} alt={checkout} width={100}/>
-                    <div className="text-xl font-medium ml-9">
+                    <Image src={checkout} alt={checkout} className="max-w-14 md:max-w-full" width={100}/>
+                    <div className="md:text-xl font-medium text-sm ml-9">
                       {item.desc}
                     </div>
                 </div>
               </div>
             </>
           ))}
-        </div>
-
-
-        <div className="flex flex-wrap">
-          
-
         </div>
       </div>
     </>

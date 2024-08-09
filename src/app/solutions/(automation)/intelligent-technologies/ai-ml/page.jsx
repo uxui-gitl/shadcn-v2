@@ -256,7 +256,7 @@ const page = () => {
       <EntIntro
         title="Leverage Optimised BI with AI & ML"
         desc="Revolutionize your business operations, save time and boost productivity
-with our cutting-edge offerings."
+        with our cutting-edge offerings."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -305,7 +305,7 @@ with our cutting-edge offerings."
       <OverviewSection Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
 
       <SectionWrapper ID="AIOfferings" style={{
-        backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.1)',
+        backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',
         backgroundBlendMode: "multiply"
       }}>
 
@@ -313,11 +313,11 @@ with our cutting-edge offerings."
           Heading={'Our AI Offerings'}
           Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
           Color={'white'}
-          MaxWidth="60%"
+          MaxWidth={'40%'}
         >
         </SectionHeading>
 
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl pb-10 mt-20">
+        <div className="text-left max-w-screen-xl md:max-w-screen-2xl pb-10 mt-10 md:mt-20">
           <Swiper
             slidesPerView={'auto'}
             spaceBetween={30}
@@ -335,23 +335,23 @@ with our cutting-edge offerings."
                   <div className="bg-[#fff] p-5 rounded-3xl" key={item._id}>
                     <div className="p-4 h-full flex flex-col justify-between">
                       <div>
-                        <p className="text-[#101828] font-medium text-[24px] sm:text-[32px] md:text-[42px] leading-[50px]">
+                        <p className="text-[#101828] font-medium text-[22px] sm:text-[32px] md:text-[42px] leading-7 md:leading-[50px]">
                           {item.title}
                         </p>
-                        <p className="text-[#101828] text-[14px] font-normal my-4 leading-[24px]">
+                        <p className="text-[#101828] text-[16px] md:text-[14px] font-normal my-2 md:my-4 leading-[24px]">
                           {item.desc}
                         </p>
                       </div>
                       <div>
-                        <ul className="my-8">
+                        <ul className="my-6 md:my-8">
                           {item.links.map((list, index) => (
                             <li
                               key={index}
-                              className=" border-b-2 border-[#dbdbdb3d] py-4 "
+                              className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-4 "
                             >
                               <Link
                                 href={list.url}
-                                className="text-[#101828] text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
+                                className="text-[#101828] text-[16px] md:text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
                               >
                                 {list.title}
                               </Link>
@@ -384,7 +384,7 @@ with our cutting-edge offerings."
       {/* ML Expertise */}
       <>
         <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
-          <div className="flex flex-row gap-x-11">
+          <div className="flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
                 Heading={'Expertise Machine Learning'}
@@ -395,7 +395,7 @@ with our cutting-edge offerings."
               </SectionHeading>
             </div>
 
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mt-20 flex flex-row flex-1 flex-wrap gap-y-7">
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mt-5 md:mt-20 flex flex-col md:flex-row flex-1 flex-wrap gap-y-7">
               {MLData.map((item, index) => (
                 <div className="flex-1 min-w-[50%]" key={index}>
                   <div className="p-4 pb-0">
@@ -438,7 +438,7 @@ with our cutting-edge offerings."
                 >
                 </SectionHeading>
               </div>
-              <div className="flex justify-center items-center gap-20 py-20 mb-5">
+              <div className="flex flex-col md:flex-row justify-center py-10 items-center gap-20 md:py-20 mb-5">
                 <div>
                   <Image src={MSAzure} alt="Microsoft Azure" />
                 </div>
@@ -467,10 +467,10 @@ with our cutting-edge offerings."
       {/* blog section  */}
 
       <SectionWrapper id="blog" style={{
-        backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover'
+        backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
       }}>
 
-        <div className="max-w-[75%]">
+        <div className="">
           <SectionHeading
             Heading={'Unveilling Hyper automation  for supply chain efficiency'}
             Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
@@ -480,16 +480,17 @@ with our cutting-edge offerings."
           </SectionHeading>
         </div>
 
-
         <Link
-          className="primary-btn mt-36 inline-flex"
-          href="#"
+          href={"#Contact"}
+          className="text-white mt-36 mb-32 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
         >
-          <span className="text-white text-sm font-medium transition-all">
-            Read More
-          </span>
+          {'Read More'}
+          <Icon
+            path={mdiArrowRight}
+            style={{ marginLeft: "0.5em", marginTop: '1px' }}
+            size={1}
+          />
         </Link>
-
       </SectionWrapper>
 
 
@@ -550,7 +551,7 @@ with our cutting-edge offerings."
       </>  */}
 
       {/* Why choose gitl and ai and ml  WhyUs*/}
-      <SectionWrapper ID="WhyUs">
+      <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
         <WhySection
           title="The Distinctive Edge"
           desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
@@ -590,8 +591,8 @@ with our cutting-edge offerings."
         <div className="" style={{
           backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
         }}>
-          <div className="py-10 sm:py-14 px-14 sm:px-12 md:px-36 md:pt-44">
-            <div className="card-body p-24 rounded-3xl" style={{ background: "linear-gradient(180deg, #5F22D9 2.14%, rgba(95, 34, 217, 0.00) 74.44%)" }}>
+          <div className="py-10 sm:py-14 px-4 sm:px-12 md:px-36 md:pt-44">
+            <div className="card-body p-5 md:p-24 rounded-3xl" style={{ background: "linear-gradient(180deg, #5F22D9 2.14%, rgba(95, 34, 217, 0.00) 74.44%)" }}>
               <Subscription
                 title="Transform your Business with us"
                 blue=""
