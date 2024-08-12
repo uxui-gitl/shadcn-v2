@@ -46,6 +46,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
 
 import Abstract from "@/components/Abstract";
+import OverviewSection from "@/sections/overview/OverviewSection";
+import SectionHeading from '@/components/SectionHeading';
+import SectionWrapper from '@/components/SectionWrapper';
+import CommonCardBackground from '@/components/CommonCardBackground';
 
 const fadeInAnimationVariant = {
   initial: {
@@ -60,6 +64,16 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+
+
+const RPASolution = [
+  {id:1 , Title:'Increase Productivity' , Des:'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'},
+  {id:2 , Title:'Gain Accurate Outcomes' , Des:'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'},
+  {id:3 , Title:'Ensure Compliance & Consistency' , Des:'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'},
+  {id:4 , Title:'Expertise in RPA Platform' , Des:'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'}
+
+
+]
 
 const RPAServiceOfferings = [
   {
@@ -332,10 +346,10 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Automate Operations to multiply business efficiency with our RPA solutions and services"
+        title="Automate Business Operations"
         desc=""
         cta="Let's Connect"
-        width="70%"
+        width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <>
@@ -377,8 +391,27 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes."></Abstract>
+      <OverviewSection Text={'Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by'} />
 
+      <SectionWrapper ID="whyrpa" BGColor="#EFE9FB">
+        <SectionHeading
+          Heading={'Optimising businesses through RPA solutions'}
+          Desc={''}
+          Color={'#1D162B'}
+          MaxWidth={'40%'}
+        >
+        </SectionHeading>
+
+        <div className="my-10 flex flex-row">
+          {RPASolution.map((item) => (
+            <>
+           <CommonCardBackground Item={item} ></CommonCardBackground>
+
+            </>
+          )
+          )}
+        </div>
+      </SectionWrapper>
       {/* Why consider RPA for Your Business */}
       {/* <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
@@ -899,9 +932,8 @@ const page = () => {
                   onMouseOut={() => setHoveredCard(null)}
                 >
                   <div
-                    className={`w-full text-2xl font-bold ${
-                      isHovered ? "hidden" : "block"
-                    }  p-5`}
+                    className={`w-full text-2xl font-bold ${isHovered ? "hidden" : "block"
+                      }  p-5`}
                     style={{
                       backgroundColor: item.bgTopColor1,
                       color: item.color,

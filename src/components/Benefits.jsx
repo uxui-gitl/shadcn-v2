@@ -62,7 +62,7 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
               pagination={{
                 clickable: true,
               }}
-              navigation={true}
+              navigation={false}
               modules={[Autoplay, Pagination]}
               direction={"vertical"}
               mousewheel={{

@@ -12,6 +12,7 @@ import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png"
 import cloud from "../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
 
+
 /**
  * * Sandeep Rana
  * * 05/09/2022
@@ -22,6 +23,7 @@ import AutomationRepetitiveTasks from "../../../../../public/icon/benefisIntelli
 import HighDegreeAccuracyConsistency from "../../../../../public/icon/benefisIntelligentTechnologies/highDegreeAccuracyConsistency.svg";
 import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg";
 import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg";
+import MSAzure from "../../../../../public/ai-ml/ms-azure.png";
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -48,6 +50,16 @@ import Expertise from "@/components/Expertise";
 import Subscription from "@/components/Subscription";
 import Navbar from "@/components/Navbar";
 import Abstract from "@/components/Abstract";
+import Overview from "@/components/OverviewText";
+import OverviewSection from "@/sections/overview/OverviewSection";
+import SectionHeading from '@/components/SectionHeading';
+import SectionWrapper from '@/components/SectionWrapper';
+import CardWidthBackground from '@/components/CardWithBackground';
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -63,6 +75,17 @@ const fadeInAnimationVariant = {
   }),
 };
 const page = () => {
+  const blogImageUrl = '/ai-ml/blog-bg.png';
+  const formBGURL = "/formBgImage.svg";
+  const yourImageUrl = '/intelligent-tech/Solutions-Background.jpg';
+  const advanceSolutionCardData = [
+    { id: '1', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+    { id: '2', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+    { id: '3', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+    { id: '4', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+    { id: '5', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+
+  ]
   const lists = [
     {
       id: 1,
@@ -263,174 +286,138 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."></Abstract>
+      {/* <Abstract abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."></Abstract> */}
+      <OverviewSection Text={'Intelligent technologies like AI, ML, RPA and IoT are transforming businesses by predicting customer behavior, automating manual tasks, providing.'} />
 
-      {/* About Section */}
-      <>
-        {/* <>
-          <div className={` w-full bg-[#FFF] py-24`}>
-            <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
-              {/* left *}
-              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                    Advance Solutions for Business Future Readiness
-                  </h3>
-                </div>
-              </div>
-              {/* right *}
-              <div>
-                <div>
-                  <p className="font-normal leading-[22px] md:w-[90%] ">
-                    Embrace the future and stay ahead in digital era, harnessing
-                    the potential of innovative technologies.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </> */}
-        <>
-          <div
-            className={` ${styles["bg-img"]} w-full pt-32 pb-12 mt-32`}
-            id="Solutions"
+      <SectionWrapper style={{
+        backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        backgroundBlendMode: "multiply"
+      }}>
+
+        <SectionHeading Heading={'Advance Solutions for Business Future'} Color="white"></SectionHeading>
+        <div className="my-8">
+          <Swiper
+            slidesPerView={3}
+            navigation={false}
+            pagination={{ type: "bullets", clickable: true }}
+            autoplay={true}
+            loop={true}
+            modules={[Autoplay, Navigation,]}
           >
-            <div className="text-left text-white max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
-              <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                Advance Solutions for Business Future Readiness
-              </h3>
-            </div>
+            {advanceSolutionCardData.map((item) => (
+              <SwiperSlide key={item.id}>
+                <div
+                  className="h-full w-full absolute left-0 top-0"
+                // style={{
+                //   background: `url(${image}) center center / cover scroll no-repeat`,
+                // }}
+                ></div>
+                <CardWidthBackground Item={item}></CardWidthBackground>
 
-            <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-              {AdvancedSolutions.map((item, index) => {
-                return (
-                  <div
-                    key={item._id}
-                    className="mx-2 w-fit md:w-1/3 bg-white flex flex-col justify-between "
-                  >
-                    <div className="p-5 w-fit ">
-                      <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                        {item.title}
-                      </h4>
-                      <p className="text-[14px] leading-[22px] text-[#101828]">
-                        {item.desc}
-                      </p>
-                    </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
-                      <Link
-                        href={item.link}
-                        className="text-white  flex transition-all hover:opacity-75  "
-                      >
-                        {item.cta}{" "}
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{ marginLeft: "0.5em" }}
-                          size={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </>
-      </>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-      {/* Blog */}
-      <BlogSlider arr={blogData} />
 
-      <Benefits
-        ribbon="Business Benefits "
-        ribbonTxtWhite="true"
-        title="Intelli-Tech Advantages of Transforming Business Landscape"
-        desc=""
-        arr={BenefitsData}
-      ></Benefits>
+        </div>
+      </SectionWrapper>
 
-      {/* SME  */}
-      {/* <SME
-        imgSrc="/SME-Biju.png"
-        ribbon="Introducing our Intelligent Solutions Leader  "
-        desc="The immense potential of automation plays a pivotal role in sculpting the future of enterprises and empower us to solve the most intricate challenges, thus laying the cornerstone for further revolutionary advancements."
-        sme="Avinash Hegde"
-        designation="Enterprise Head, Godrej Infotech"
-      /> */}
+      {/* Benefits Vertical Slider */}
+      <SectionWrapper id="Benefits" BGColor="#1D162B">
+        <Benefits
+          ribbon="Benefits of AI / ML"
+          ribbonTxtWhite="true"
+          title=""
+          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
+          arr={BenefitsData}
+        ></Benefits>
+      </SectionWrapper>
+      {/* blog section  */}
 
-      {/* Why Infotech */}
+      <SectionWrapper id="blog" style={{
+        backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
+      }}>
 
-      <WhySection
-        title="Why Godrej Infotech?"
-        desc="Experience the positive impact on your business growth being at the forefront of innovative technologies."
-        ribbon="Let Us Collaborate and Make it Happen"
-        arr={[
-          {
-            _id: 1,
-            desc: "Enable intelligence-driven automation across diverse use cases",
-            icon: "",
-          },
-          {
-            _id: 2,
+        <div className="">
+          <SectionHeading
+            Heading={'Unveilling Hyper automation  for supply chain efficiency'}
+            Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
+            Color={'white'}
+            MaxWidth="70%"
+          >
+          </SectionHeading>
+        </div>
 
-            desc: "Drive rapid and substantial improvements in return on investment (ROI) ",
+        <Link
+          href={"#Contact"}
+          className="text-white mt-20 mb-16 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+        >
+          {'Read More'}
+          <Icon
+            path={mdiArrowRight}
+            style={{ marginLeft: "0.5em", marginTop: '1px' }}
+            size={1}
+          />
+        </Link>
+      </SectionWrapper>
 
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Help businesses achieve high productivity",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
 
-      {/* Expertise */}
-      {/* <Expertise
-        ribbon="Our Expertise "
-        ribbonTxtWhite="true"
-        title="Future Outlook with Intelligent Technologies  "
-        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
-        arr={[
-          {
-            title: "85%",
-            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
-          },
-          {
-            title: "$200B",
-            desc: "Forbes forecasts size for AI market by 2026 ",
-          },
-          {
-            title: "$6.6T",
-            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
-          },
-        ]}
-      ></Expertise> */}
-      {/* Stats TO BE CREATED */}
-      {/* Testimonial */}
-      {/* <Testimonial
-        ribbon="Testimonials "
-        title="Delighted Customers share their Experiences"
-        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
-        arr={[
-          {
-            id: 1,
-            clientName: "Leading Cooling Services Provider in the Middle East",
-            clientDesignation: "IT Manager",
-            thumbnail: "1",
-            description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with excellent quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      /> */}
+      {/* Why choose gitl and ai and ml  WhyUs*/}
+      <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
+        <WhySection
+          title="The Distinctive Edge"
+          desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
+          arr={[
+            {
+              _id: 1,
+              desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+              icon: "",
+            },
+            {
+              _id: 2,
+              desc: "Agile approach that keeps projects on cutting edge.",
+              icon: "",
+            },
+            {
+              _id: 3,
+              desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+              icon: "",
+            },
+            {
+              _id: 4,
+              desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+              icon: "",
+            },
+            {
+              _id: 5,
+              desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+              icon: "",
+            }
+          ]}
+          renderInlineSpans={true}
+        ></WhySection>
+      </SectionWrapper>
 
       {/* Subscription */}
-      <Subscription
-        title="Tap the intelligent way for futuristic seamless business experience"
-        desc="Let us discuss how intelligent technologies can help you with rapid growth."
-      />
+      <div className="" style={{ backgroundColor: '#1D162B' }}>
+        <div className="" style={{
+          backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
+        }}>
+          <div className="py-10 sm:py-14 px-4 sm:px-12 md:px-36 md:pt-44">
+            <div className="card-body p-5 md:p-24 rounded-3xl" style={{ background: "linear-gradient(180deg, #5F22D9 2.14%, rgba(95, 34, 217, 0.00) 74.44%)" }}>
+              <Subscription
+                title="Transform your Business with us"
+                blue=""
+                title2=""
+                desc="Let us discuss how intelligent technologies can help you with rapid growth."
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Infotech Weekly Updates */}
       <InfotechWeeklyAlt />
     </>
   );

@@ -494,61 +494,7 @@ const page = () => {
       </SectionWrapper>
 
 
-      {/* Industry Spotlight Slider */}
-      {/* <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industries Spotlight
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] p-5 ">
-                We help in shaping technology prerequisites and deliver value to customers, catering to diverse industries across the spectrum.
-                </p>
-              </div>
-              <div className="flex justify-center items-center max-w-screen-xl w-full">
-                <div>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                  >
-                    {ChoiceSlider.map((item) => (
-                      <>
-                        <SwiperSlide
-                          key={item._id}
-                          className="w-[283px] max-w-[283px] mr-4  relative group"
-                        >
-                          <div className="relative overflow-hidden">
-                            <Image
-                              src={item.imgUrl}
-                              height={350}
-                              width={283}
-                              alt="icon"
-                              className=" transition-transform transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                {item.title}
-                              </h3>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>  */}
+
 
       {/* Why choose gitl and ai and ml  WhyUs*/}
       <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
