@@ -399,7 +399,7 @@ const page = () => {
         </SectionWrapper>
       </>
 
-      {/* AI & ML Partners */}
+      {/* Intelligent Technologies */}
       <>
         <SectionWrapper ID="Platforms">
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
@@ -466,9 +466,6 @@ const page = () => {
           />
         </Link>
       </SectionWrapper>
-
-
-
 
       {/* Distinctive section*/}
       <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>

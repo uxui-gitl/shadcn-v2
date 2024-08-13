@@ -1,9 +1,9 @@
-function CommonCardBackground({Item}){
+function CommonCardBackground({Item, style}){
     return(
         <>
-         <div class="max-w-sm  flex flex-col justify-between rounded-3xl bg-white border min-h-[550px] border-gray-200 shadow dark:bg-white-800 dark:border-white mr-10" style={{
+         <div class="max-w-sm  flex flex-col justify-between rounded-3xl bg-white border border-gray-200 shadow dark:bg-white-800 dark:border-white" style={{
                 backgroundImage: `url(${Item.BGImageUrl})`, backgroundSize: 'cover', backgroundColor: `${Item.BGColor}`,
-                backgroundBlendMode: ""
+                backgroundBlendMode: "", ...style
               }}>
 
                 <div class="p-10">

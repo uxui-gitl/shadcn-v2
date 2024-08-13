@@ -206,6 +206,7 @@ const page = () => {
 
       {/* Overview  */}
       <OverviewSection Text={'Intelligent technologies like AI, ML, RPA and IoT are transforming businesses by predicting customer behavior, automating manual tasks, providing.'} />
+      
       {/* solutions */}
       <SectionWrapper style={{
         backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',

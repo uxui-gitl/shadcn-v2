@@ -37,13 +37,15 @@ import scalable5 from "../../../../../../public/scalable5.png";
 import scalable6 from "../../../../../../public/scalable6.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { AnimatePresence, motion } from "framer-motion";
-import IndustryExpertise from "@/components/IndustryExpertise";
+
+import MSAzure from "../../../../../../public/ai-ml/ms-azure.png";
+import GoogleAI from "../../../../../../public/ai-ml/google-ai-logo.png";
+import TensorFlow from "../../../../../../public/ai-ml/tensorflow-logo.png";
 
 import Abstract from "@/components/Abstract";
 import OverviewSection from "@/sections/overview/OverviewSection";
@@ -51,28 +53,11 @@ import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
 import CommonCardBackground from '@/components/CommonCardBackground';
 
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
-
-
 const RPASolution = [
-  {id:1 , Title:'Increase Productivity' , Des:'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'},
-  {id:2 , Title:'Gain Accurate Outcomes' , Des:'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'},
-  {id:3 , Title:'Ensure Compliance & Consistency' , Des:'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'},
-  {id:4 , Title:'Expertise in RPA Platform' , Des:'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor:'#1D162B', BGImageUrl:'/rpa/ArtboardBg.png', ImageUrl:'/rpa/image-10.png'}
-
-
+  { id: 1, Title: 'Increase Productivity', Des: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
+  { id: 2, Title: 'Gain Accurate Outcomes', Des: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
+  { id: 3, Title: 'Ensure Compliance & Consistency', Des: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
+  { id: 4, Title: 'Expertise in RPA Platform', Des: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
 ]
 
 const RPAServiceOfferings = [
@@ -393,6 +378,7 @@ const page = () => {
       {/* Overview  */}
       <OverviewSection Text={'Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by'} />
 
+      {/* optimising rpa solution */}
       <SectionWrapper ID="whyrpa" BGColor="#EFE9FB">
         <SectionHeading
           Heading={'Optimising businesses through RPA solutions'}
@@ -402,276 +388,101 @@ const page = () => {
         >
         </SectionHeading>
 
-        <div className="my-10 flex flex-row">
-          {RPASolution.map((item) => (
-            <>
-           <CommonCardBackground Item={item} ></CommonCardBackground>
+        <div className="my-8">
+          <Swiper
+            slidesPerView={3.2}
+            spaceBetween={30}
+            navigation={false}
+            pagination={{ type: "bullets", clickable: true }}
+            autoplay={true}
+            loop={true}
+            modules={[Autoplay, Navigation,]}
+          >
+            {RPASolution.map((item) => (
+              <SwiperSlide key={item.id}>
+                <div
+                  className="h-full w-full absolute left-0 top-0"
+                // style={{
+                //   background: `url(${image}) center center / cover scroll no-repeat`,
+                // }}
+                >
+                </div>
 
-            </>
-          )
-          )}
+                <CommonCardBackground Item={item} style={{ minWidth: '250px', minHeight: '550px' }}></CommonCardBackground>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </SectionWrapper>
-      {/* Why consider RPA for Your Business */}
-      {/* <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Why Consider RPA for your business?
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="text-left hidden max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  grid-cols-1 gap-10 sm:grid-cols-1">
-            {ConsiderRPA.map((item, index) => (
-              <div
-                className="flex flex-col sm:flex-row  bg-white"
-                key={item._id}
-              >
-                <Image
-                  src={RPAPlaceholder}
-                  className="w-[100%] sm:w-fit"
-                  alt="ML Expertise"
-                />
-                <div className="p-8">
-                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.ctaUrl}
-                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                  >
-                    {item.cta}{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <Capabilities
-            ribbon=" "
-            title="Our Capabilities "
-            desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
-            arr={[
-              {
-                _id: 1,
-                icon: "gear",
-                title: "Future of Projects  ",
-                desc: "",
-                cta: "Know More",
-                ctaUrl: "/",
-                list: [
-                  {
-                    title:
-                      "External integration with project monitoring tools  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Mobile applications for task assignment",
-                    url: "/",
-                  },
-                  {
-                    title: "After sales service",
-                    url: "/",
-                  },
-                  {
-                    title: "Data Security & Digital Documentation ",
-                    url: "/",
-                  },
-                  {
-                    title: "Multi site management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Project Task Assignment & Management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Remote Work and Cost Accuracy   ",
-                    url: "/",
-                  },
-                ],
-              },
-              {
-                _id: 2,
-                icon: "gear",
-                title: "IoT Enabled Products ",
-                desc: "",
-                cta: "Know More",
-                ctaUrl: "/",
-                list: [
-                  {
-                    title:
-                      "External integration with project monitoring tools  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Mobile applications for task assignment",
-                    url: "/",
-                  },
-                  {
-                    title: "After sales service",
-                    url: "/",
-                  },
-                  {
-                    title: "Data Security & Digital Documentation ",
-                    url: "/",
-                  },
-                  {
-                    title: "Multi site management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Project Task Assignment & Management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Remote Work and Cost Accuracy   ",
-                    url: "/",
-                  },
-                ],
-              },
-              {
-                _id: 3,
-                icon: "gear",
-                title: "Supply Chain Management  ",
-                desc: "",
-                cta: "Know More",
-                ctaUrl: "/",
-                list: [
-                  {
-                    title:
-                      "External integration with project monitoring tools  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Mobile applications for task assignment",
-                    url: "/",
-                  },
-                  {
-                    title: "After sales service",
-                    url: "/",
-                  },
-                  {
-                    title: "Data Security & Digital Documentation ",
-                    url: "/",
-                  },
-                  {
-                    title: "Multi site management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Project Task Assignment & Management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Remote Work and Cost Accuracy   ",
-                    url: "/",
-                  },
-                ],
-              },
-              {
-                _id: 4,
-                icon: "gear",
-                title: "Performance Management ",
-                desc: "",
-                cta: "Know More",
-                ctaUrl: "/",
-                list: [
-                  {
-                    title:
-                      "External integration with project monitoring tools  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Mobile applications for task assignment",
-                    url: "/",
-                  },
-                  {
-                    title: "After sales service",
-                    url: "/",
-                  },
-                  {
-                    title: "Data Security & Digital Documentation ",
-                    url: "/",
-                  },
-                  {
-                    title: "Multi site management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Project Task Assignment & Management  ",
-                    url: "/",
-                  },
-                  {
-                    title: "Remote Work and Cost Accuracy   ",
-                    url: "/",
-                  },
-                ],
-              },
-            ]}
-          />
-        </div>
-      </> */}
 
-      {/* Old */}
-      <>
-        <div id="whyrpa" className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Why Consider RPA for your business?
-                </h3>
+      {/* inteligent technologies */}
+      <SectionWrapper ID="Platforms">
+        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
+          {/* left */}
+          <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+            <div className="w-full md:max-w-[607px]">
+              <SectionHeading
+                Heading={'Expertise in RPA Platform'}
+                Desc={'Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.'}
+              >
+              </SectionHeading>
+            </div>
+            <div className="flex flex-col md:flex-row justify-center py-10 items-center gap-20 md:py-20 mb-5">
+              <div>
+                <Image src={MSAzure} alt="Microsoft Azure" />
+              </div>
+              <div>
+                <Image src={GoogleAI} alt="Google AI" />
+              </div>
+              <div>
+                <Image src={TensorFlow} alt="TensorFlow" />
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {ConsiderRPA.map((item, index) => (
-              <div
-                className="flex flex-col sm:flex-row  bg-white"
-                key={item._id}
-              >
-                <Image
-                  src={item.image}
-                  height={120}
-                  width={120}
-                  className="w-[100%] sm:w-fit object-cover"
-                  alt={item.title}
-                />
-                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
-                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.ctaUrl}
-                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                  >
-                    {item.cta}{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
+        </div>
+      </SectionWrapper>
+
+      {/* service Offerings section */}
+      <SectionWrapper id="Benefits" BGColor="#1D162B">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="">
+            <SectionHeading
+              Heading={'Service Offerings'}
+              Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+              Color="white"
+            >
+            </SectionHeading>
+            <div className="my-10">
+              <a href="#" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg aria-hidden="true" class="w-5 h-5 me-3" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4151_63004)"><path d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z" fill="#0ACF83" /><path d="M0.00195312 15.062C0.00195312 12.2905 2.46546 10.0413 5.50085 10.0413H10.9998V20.0827H5.50085C2.46546 20.0827 0.00195312 17.8334 0.00195312 15.062Z" fill="#A259FF" /><path d="M0.00195312 5.02048C0.00195312 2.24904 2.46546 -0.000244141 5.50085 -0.000244141H10.9998V10.0412H5.50085C2.46546 10.0412 0.00195312 7.79193 0.00195312 5.02048Z" fill="#F24E1E" /><path d="M11 -0.000244141H16.4989C19.5343 -0.000244141 21.9978 2.24904 21.9978 5.02048C21.9978 7.79193 19.5343 10.0412 16.4989 10.0412H11V-0.000244141Z" fill="#FF7262" /><path d="M21.9978 15.062C21.9978 17.8334 19.5343 20.0827 16.4989 20.0827C13.4635 20.0827 11 17.8334 11 15.062C11 12.2905 13.4635 10.0413 16.4989 10.0413C19.5343 10.0413 21.9978 12.2905 21.9978 15.062Z" fill="#1ABCFE" /></g><defs><clipPath id="clip0_4151_63004"><rect width="22" height="30.1244" fill="white" transform="translate(0 -0.000244141)" /></clipPath></defs></svg>
+                <span class="w-full">Get started with our  Figma Design System</span>
+                <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+              <a href="#" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg aria-hidden="true" class="w-5 h-5 me-3" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4151_63004)"><path d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z" fill="#0ACF83" /><path d="M0.00195312 15.062C0.00195312 12.2905 2.46546 10.0413 5.50085 10.0413H10.9998V20.0827H5.50085C2.46546 20.0827 0.00195312 17.8334 0.00195312 15.062Z" fill="#A259FF" /><path d="M0.00195312 5.02048C0.00195312 2.24904 2.46546 -0.000244141 5.50085 -0.000244141H10.9998V10.0412H5.50085C2.46546 10.0412 0.00195312 7.79193 0.00195312 5.02048Z" fill="#F24E1E" /><path d="M11 -0.000244141H16.4989C19.5343 -0.000244141 21.9978 2.24904 21.9978 5.02048C21.9978 7.79193 19.5343 10.0412 16.4989 10.0412H11V-0.000244141Z" fill="#FF7262" /><path d="M21.9978 15.062C21.9978 17.8334 19.5343 20.0827 16.4989 20.0827C13.4635 20.0827 11 17.8334 11 15.062C11 12.2905 13.4635 10.0413 16.4989 10.0413C19.5343 10.0413 21.9978 12.2905 21.9978 15.062Z" fill="#1ABCFE" /></g><defs><clipPath id="clip0_4151_63004"><rect width="22" height="30.1244" fill="white" transform="translate(0 -0.000244141)" /></clipPath></defs></svg>
+                <span class="w-full">Get started with our  Figma Design System</span>
+                <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+              <a href="#" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg aria-hidden="true" class="w-5 h-5 me-3" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4151_63004)"><path d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z" fill="#0ACF83" /><path d="M0.00195312 15.062C0.00195312 12.2905 2.46546 10.0413 5.50085 10.0413H10.9998V20.0827H5.50085C2.46546 20.0827 0.00195312 17.8334 0.00195312 15.062Z" fill="#A259FF" /><path d="M0.00195312 5.02048C0.00195312 2.24904 2.46546 -0.000244141 5.50085 -0.000244141H10.9998V10.0412H5.50085C2.46546 10.0412 0.00195312 7.79193 0.00195312 5.02048Z" fill="#F24E1E" /><path d="M11 -0.000244141H16.4989C19.5343 -0.000244141 21.9978 2.24904 21.9978 5.02048C21.9978 7.79193 19.5343 10.0412 16.4989 10.0412H11V-0.000244141Z" fill="#FF7262" /><path d="M21.9978 15.062C21.9978 17.8334 19.5343 20.0827 16.4989 20.0827C13.4635 20.0827 11 17.8334 11 15.062C11 12.2905 13.4635 10.0413 16.4989 10.0413C19.5343 10.0413 21.9978 12.2905 21.9978 15.062Z" fill="#1ABCFE" /></g><defs><clipPath id="clip0_4151_63004"><rect width="22" height="30.1244" fill="white" transform="translate(0 -0.000244141)" /></clipPath></defs></svg>
+                <span class="w-full">Get started with our  Figma Design System</span>
+                <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="">
+
           </div>
         </div>
-      </>
+
+      </SectionWrapper>
+
 
       {/* RPA Platform Expertise Logos */}
       <>
