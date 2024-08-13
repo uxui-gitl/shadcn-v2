@@ -21,8 +21,8 @@ const fadeInAnimationVariant = {
 };
 const WhySection = ({
   ribbon,
-  title,
-  desc,
+  Title,
+  Desc,
   arr = [],
   renderInlineSpans = false,
 }) => {
@@ -32,8 +32,8 @@ const WhySection = ({
         {/* left */}
         <div className="md:mb-20 mb-10 ">
           <SectionHeading
-            Heading={title}
-            Desc={desc}
+            Heading={Title}
+            Desc={Desc}
             MaxWidth={'50%'}
           ></SectionHeading>
         </div>

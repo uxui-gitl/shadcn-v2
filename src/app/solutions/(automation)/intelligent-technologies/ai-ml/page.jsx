@@ -1,6 +1,5 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import Subscription from "@/components/Subscription";
 
 import Image from "next/image";
 
@@ -19,10 +18,6 @@ import MLExpertise from "../../../../../../public/MLExpertise.png";
  * Sandeep Rana
  * Imported logos
  */
-import MSAzure from "../../../../../../public/ai-ml/ms-azure.png";
-import GoogleAI from "../../../../../../public/ai-ml/google-ai-logo.png";
-import TensorFlow from "../../../../../../public/ai-ml/tensorflow-logo.png";
-
 import anticipatefuture from "../../../../../../public/icon/benefits-ai-ml/anticipate-future.svg";
 
 import styles from "./page.module.css";
@@ -41,6 +36,11 @@ import Abstract from "@/components/Abstract";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
+import DistinctiveSection from '@/sections/Distinctive/DistinctiveSection';
+import BlogSection from '@/sections/blog/BlogSection';
+import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
+import PlatformSection from '@/sections/platform/PlatformSection'
+
 
 const AIOfferings = [
   {
@@ -192,7 +192,7 @@ const MLData = [
   },
 ];
 
-const distinctiveData=[
+const distinctiveData = [
   {
     _id: 1,
     desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
@@ -223,6 +223,14 @@ const distinctiveData=[
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
 const blogImageUrl = '/ai-ml/blog-bg.png';
 const formBGURL = "/formBgImage.svg";
+
+
+const PlatFormImageList = [
+  { id: 1, url: '/ai-ml/ms-azure.png' },
+  { id: 2, url: '/ai-ml/google-ai-logo.png' },
+  { id: 3, url: '/ai-ml/tensorflow-logo.png' },
+
+]
 
 const page = () => {
   return (
@@ -401,31 +409,7 @@ const page = () => {
 
       {/* Intelligent Technologies */}
       <>
-        <SectionWrapper ID="Platforms">
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="w-full md:max-w-[607px]">
-                <SectionHeading
-                  Heading={'Intelligent Technologies Platforms'}
-                  Desc={' Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.'}
-                >
-                </SectionHeading>
-              </div>
-              <div className="flex flex-col md:flex-row justify-center py-10 items-center gap-20 md:py-20 mb-5">
-                <div>
-                  <Image src={MSAzure} alt="Microsoft Azure" />
-                </div>
-                <div>
-                  <Image src={GoogleAI} alt="Google AI" />
-                </div>
-                <div>
-                  <Image src={TensorFlow} alt="TensorFlow" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </SectionWrapper>
+        <PlatformSection ID={'Intelligent'} Heading={'Intelligent Technologies Platforms'} Desc={' Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.'} PlatFormImageList={PlatFormImageList}></PlatformSection>
       </>
 
       {/* Benefits Vertical Slider */}
@@ -440,61 +424,21 @@ const page = () => {
       </SectionWrapper>
       {/* blog section  */}
 
-      <SectionWrapper id="blog" style={{
-        backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
-      }}>
-
-        <div className="">
-          <SectionHeading
-            Heading={'Unveilling Hyper automation  for supply chain efficiency'}
-            Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
-            Color={'white'}
-            MaxWidth="70%"
-          >
-          </SectionHeading>
-        </div>
-
-        <Link
-          href={"#Contact"}
-          className="text-white mt-20 mb-16 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-        >
-          {'Read More'}
-          <Icon
-            path={mdiArrowRight}
-            style={{ marginLeft: "0.5em", marginTop: '1px' }}
-            size={1}
-          />
-        </Link>
-      </SectionWrapper>
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveilling Hyper automation  for supply chain efficiency'}
+        Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
+        Color={'white'}
+        MaxWidth="70%"
+      ></BlogSection>
 
       {/* Distinctive section*/}
-      <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
-        <WhySection
-          title="The Distinctive Edge"
-          desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
-          arr={distinctiveData}
-          renderInlineSpans={true}
-        ></WhySection>
-      </SectionWrapper>
+      <DistinctiveSection DistinctiveData={distinctiveData}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape.'}
+      >
+      </DistinctiveSection>
 
       {/* transform business with us section */}
-      <div className="" style={{ backgroundColor: '#1D162B' }}>
-        <div className="" style={{
-          backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
-        }}>
-          <div className="py-10 sm:py-14 px-4 sm:px-12 md:px-36 md:pt-44">
-            <div className="card-body p-5 md:p-24 rounded-3xl" style={{ background: "linear-gradient(180deg, #5F22D9 2.14%, rgba(95, 34, 217, 0.00) 74.44%)" }}>
-              <Subscription
-                title="Transform your Business with us"
-                blue=""
-                title2=""
-                desc="Let us discuss how intelligent technologies can help you with rapid growth."
-              />
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+      </TransformBusinessForm>
 
     </>
   );

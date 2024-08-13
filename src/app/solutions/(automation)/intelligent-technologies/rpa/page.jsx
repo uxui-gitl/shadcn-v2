@@ -429,13 +429,18 @@ const page = () => {
             </div>
             <div className="flex flex-col md:flex-row justify-center py-10 items-center gap-20 md:py-20 mb-5">
               <div>
-                <Image src={MSAzure} alt="Microsoft Azure" />
+                <Image src={uiPath} alt="uiPath" width={200} />
+
               </div>
               <div>
-                <Image src={GoogleAI} alt="Google AI" />
+                <Image src={powerAutomate} alt="powerAutomate" width={320} />
               </div>
               <div>
-                <Image src={TensorFlow} alt="TensorFlow" />
+                <Image
+                  src={automationAnywhere}
+                  alt="automationAnywhere"
+                  width={200}
+                />
               </div>
             </div>
           </div>
@@ -444,7 +449,7 @@ const page = () => {
 
       {/* service Offerings section */}
       <SectionWrapper id="Benefits" BGColor="#1D162B">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-20">
           <div className="">
             <SectionHeading
               Heading={'Service Offerings'}
@@ -453,426 +458,50 @@ const page = () => {
             >
             </SectionHeading>
             <div className="my-10">
-              <a href="#" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-                <svg aria-hidden="true" class="w-5 h-5 me-3" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4151_63004)"><path d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z" fill="#0ACF83" /><path d="M0.00195312 15.062C0.00195312 12.2905 2.46546 10.0413 5.50085 10.0413H10.9998V20.0827H5.50085C2.46546 20.0827 0.00195312 17.8334 0.00195312 15.062Z" fill="#A259FF" /><path d="M0.00195312 5.02048C0.00195312 2.24904 2.46546 -0.000244141 5.50085 -0.000244141H10.9998V10.0412H5.50085C2.46546 10.0412 0.00195312 7.79193 0.00195312 5.02048Z" fill="#F24E1E" /><path d="M11 -0.000244141H16.4989C19.5343 -0.000244141 21.9978 2.24904 21.9978 5.02048C21.9978 7.79193 19.5343 10.0412 16.4989 10.0412H11V-0.000244141Z" fill="#FF7262" /><path d="M21.9978 15.062C21.9978 17.8334 19.5343 20.0827 16.4989 20.0827C13.4635 20.0827 11 17.8334 11 15.062C11 12.2905 13.4635 10.0413 16.4989 10.0413C19.5343 10.0413 21.9978 12.2905 21.9978 15.062Z" fill="#1ABCFE" /></g><defs><clipPath id="clip0_4151_63004"><rect width="22" height="30.1244" fill="white" transform="translate(0 -0.000244141)" /></clipPath></defs></svg>
+              <div href="#" class="flex items-center justify-center p-5 text-2xl font-medium text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 bg-transparent dark:hover:bg-gray-700 dark:hover:text-white" style={{ borderBottom: '2px solid #43189A' }}>
                 <span class="w-full">Get started with our  Figma Design System</span>
                 <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
-              </a>
-              <a href="#" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-                <svg aria-hidden="true" class="w-5 h-5 me-3" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4151_63004)"><path d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z" fill="#0ACF83" /><path d="M0.00195312 15.062C0.00195312 12.2905 2.46546 10.0413 5.50085 10.0413H10.9998V20.0827H5.50085C2.46546 20.0827 0.00195312 17.8334 0.00195312 15.062Z" fill="#A259FF" /><path d="M0.00195312 5.02048C0.00195312 2.24904 2.46546 -0.000244141 5.50085 -0.000244141H10.9998V10.0412H5.50085C2.46546 10.0412 0.00195312 7.79193 0.00195312 5.02048Z" fill="#F24E1E" /><path d="M11 -0.000244141H16.4989C19.5343 -0.000244141 21.9978 2.24904 21.9978 5.02048C21.9978 7.79193 19.5343 10.0412 16.4989 10.0412H11V-0.000244141Z" fill="#FF7262" /><path d="M21.9978 15.062C21.9978 17.8334 19.5343 20.0827 16.4989 20.0827C13.4635 20.0827 11 17.8334 11 15.062C11 12.2905 13.4635 10.0413 16.4989 10.0413C19.5343 10.0413 21.9978 12.2905 21.9978 15.062Z" fill="#1ABCFE" /></g><defs><clipPath id="clip0_4151_63004"><rect width="22" height="30.1244" fill="white" transform="translate(0 -0.000244141)" /></clipPath></defs></svg>
+              </div>
+              <div href="#" class="flex items-center justify-center p-5 text-2xl font-medium text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 bg-transparent dark:hover:bg-gray-700 dark:hover:text-white" style={{ borderBottom: '2px solid #43189A' }}>
                 <span class="w-full">Get started with our  Figma Design System</span>
                 <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
-              </a>
-              <a href="#" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-                <svg aria-hidden="true" class="w-5 h-5 me-3" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4151_63004)"><path d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z" fill="#0ACF83" /><path d="M0.00195312 15.062C0.00195312 12.2905 2.46546 10.0413 5.50085 10.0413H10.9998V20.0827H5.50085C2.46546 20.0827 0.00195312 17.8334 0.00195312 15.062Z" fill="#A259FF" /><path d="M0.00195312 5.02048C0.00195312 2.24904 2.46546 -0.000244141 5.50085 -0.000244141H10.9998V10.0412H5.50085C2.46546 10.0412 0.00195312 7.79193 0.00195312 5.02048Z" fill="#F24E1E" /><path d="M11 -0.000244141H16.4989C19.5343 -0.000244141 21.9978 2.24904 21.9978 5.02048C21.9978 7.79193 19.5343 10.0412 16.4989 10.0412H11V-0.000244141Z" fill="#FF7262" /><path d="M21.9978 15.062C21.9978 17.8334 19.5343 20.0827 16.4989 20.0827C13.4635 20.0827 11 17.8334 11 15.062C11 12.2905 13.4635 10.0413 16.4989 10.0413C19.5343 10.0413 21.9978 12.2905 21.9978 15.062Z" fill="#1ABCFE" /></g><defs><clipPath id="clip0_4151_63004"><rect width="22" height="30.1244" fill="white" transform="translate(0 -0.000244141)" /></clipPath></defs></svg>
+              </div>
+              <div href="#" class="flex items-center justify-center p-5 text-2xl font-medium text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 bg-transparent dark:hover:bg-gray-700 dark:hover:text-white" style={{ borderBottom: '2px solid #43189A' }}>
                 <span class="w-full">Get started with our  Figma Design System</span>
                 <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
-              </a>
+              </div>
             </div>
           </div>
           <div className="">
-
+            <CommonCardBackground Color='#000' Item={{ id: 1, Title: 'Consultancy Services', Des: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', ImageUrl: '/rpa/image-10.png' }} style={{ minWidth: '100%', minHeight: '100%' }}></CommonCardBackground>
           </div>
         </div>
-
       </SectionWrapper>
 
+      {/* project life cycle */}
+      <SectionWrapper id="" BGColor="#1D162B">
+        <SectionHeading
+          Heading={'RPA Project Lifecycle'}
+          Desc={'From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.'}
+          Color="white"
+        >
+        </SectionHeading>
+        <div className="grid grid-cols-2 gap-20">
+          <div className="my-10">
+            <img src="/bgInforScreen.png"></img>
+          </div>
+          <div className="">
 
-      {/* RPA Platform Expertise Logos */}
-      <>
-        <div id="Partners" className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  RPA Platform Expertise
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[100%] ">
-                  Our in-depth expertise in RPA platforms helps in maximizing
-                  functionality, ensuring optimal business performance.
-                </p>
-              </div>
-              <div className="flex justify-center items-center gap-20">
-                <div>
-                  <Image src={uiPath} alt="uiPath" width={200} />
-                </div>
-                <div>
-                  <Image src={powerAutomate} alt="powerAutomate" width={320} />
-                </div>
-                <div>
-                  <Image
-                    src={automationAnywhere}
-                    alt="automationAnywhere"
-                    width={200}
-                  />
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
-      </>
-
-      {/* RPA Service Offerings */}
-      <>
-        <div id="Services" className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold text-center ">
-                  RPA Service Offerings
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {RPAServiceOfferings.map((item, index) => (
-              <div className="" key={item._id}>
-                <Image
-                  src={item.image}
-                  className="w-[100%]"
-                  alt="ML Expertise"
-                  width={500}
-                  height={500}
-                />
-                <div className="p-4 pb-0">
-                  <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.ctaUrl}
-                    className={clsx({
-                      "text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit flex transition-all hover:opacity-75":
-                        !(item.ctaUrl === "" || item.ctaUrl === "/"),
-                      hidden: item.ctaUrl === "" || item.ctaUrl === "/",
-                    })}
-                  >
-                    {item.cta}{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </>
-
-      {/* Industry Spotlight Slider */}
-      {/* <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Elevating RPA Domain Advantage - Industry
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] pb-4">
-                  We deliver innovative RPA solutions backed by our extensive
-                  experience and commitment to excellence.
-                </p>
-              </div>
-              <div className="flex justify-center items-center max-w-screen-xl w-full">
-                <div>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                  >
-                    {ChoiceSlider.map((item) => (
-                      <>
-                        <SwiperSlide
-                          key={item._id}
-                          className="w-[283px] max-w-[283px] mr-4  relative group"
-                        >
-                          <div className="relative overflow-hidden">
-                            <Image
-                              src={`/industrySpotlight/${item.imgUrl}.png`}
-                              height={350}
-                              width={283}
-                              alt="icon"
-                              className=" transition-transform transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                {item.title}
-                              </h3>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </> */}
-
-      {/* RPA UseCases */}
-      <>
-        <div id="UseCases" className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Godrej Infotech RPA Use Cases
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We endeavor to build actual business impact of Robotic Process
-                  Automation (RPA) reforming industries, improving output and
-                  leading digital transformation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-      <>
-        <div className={`bg-rpa w-full pt-48 pb-12 `} id="productivity">
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-            {UseCases.map((item, index) => {
-              return (
-                <div
-                  key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-full flex flex-col justify-between"
-                >
-                  <div className="p-5 w-fit ">
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <div
-                    // className=" w-full bg-[#0745D3] p-5"
-                    className={clsx({
-                      "w-full bg-[#0745D3] p-5": item.link !== "",
-                      hidden: item.link === "",
-                    })}
-                  >
-                    <Link
-                      href={item.link}
-                      className="text-white  flex transition-all hover:opacity-75  "
-                    >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
-      {/* Industry Expertise Slider */}
-      {/* <IndustryExpertise
-        heading="Industry Expertise"
-        desc="Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector"
-        list={IndustryExperts}
-      /> */}
-
-      {/* GITL RPA Cards */}
-      <>
-        <div id="ProjectLifecycle" className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold  ">
-                  GITL RPA Project Lifecycle
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  From inception to upheld brilliance, every stage of our
-                  project lifecycle is precisely devised to optimize your
-                  business processes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-      {/* Rpa Card Backup */}
-      <>
-        <div className={` w-full pb-12 `}>
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-            {RPACards.map((item) => {
-              const isHovered = item._id === hoveredCard;
-              return (
-                <div
-                  key={item._id}
-                  className={` mx-2  sm:w-[320px] w-full flex flex-col justify-between`}
-                  onMouseOver={() => setHoveredCard(item._id)}
-                  onMouseOut={() => setHoveredCard(null)}
-                >
-                  <div
-                    className={`w-full text-2xl font-bold ${isHovered ? "hidden" : "block"
-                      }  p-5`}
-                    style={{
-                      backgroundColor: item.bgTopColor1,
-                      color: item.color,
-                    }}
-                  >
-                    {item.keyword}
-                  </div>
-                  <div
-                    className={`p-5 w-full h-full `}
-                    style={{
-                      backgroundColor: item.bgCardColor2,
-                    }}
-                  >
-                    <div className="mb-4 max-h-[56px]">
-                      {item.icon !== "" ? (
-                        <Image
-                          className="max-h-[56px] h-[56px]"
-                          src={`/${item.icon}.svg`}
-                          width={56}
-                          height={56}
-                          alt={item.icon}
-                        />
-                      ) : (
-                        <Icon path={mdiDomain} size={3} />
-                      )}
-                    </div>
-                    <h4 className={`text-2xl font-bold my-2 text-[#101828]`}>
-                      {item.title}
-                    </h4>
-                    <div className={`${isHovered ? "block" : "hidden"} `}>
-                      <ul className="  list-disc ml-4">
-                        {item.list.map((i, index) => (
-                          <li className="text-[14px] mb-2" key={index}>
-                            {i}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div
-                    className={`w-full p-2`}
-                    style={{
-                      backgroundColor: item.bgBottomColor3,
-                    }}
-                  ></div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
-      {/* <>
-        <div className={`w-full pb-12`}>
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5">
-            {RPACards.map((item) => {
-              const isHovered = item._id === hoveredCard;
-
-              return (
-                <div
-                  key={item._id}
-                  className={`mx-2 sm:w-[320px] w-fit flex flex-col justify-between relative ${
-                    isHovered ? "shadow-lg" : ""
-                  }`}
-                  onMouseOver={() => setHoveredCard(item._id)}
-                  onMouseOut={() => setHoveredCard(null)}
-                >
-                  <div
-                    className={`w-full text-2xl font-bold p-5 ${
-                      isHovered ? "block" : "hidden"
-                    }`}
-                    style={{
-                      backgroundColor: item.bgTopColor1,
-                      color: item.color,
-                    }}
-                  >
-                    {item.keyword}
-                  </div>
-                  <div
-                    className={`p-5 w-full h-full `}
-                    style={{
-                      backgroundColor: isHovered
-                        ? item.bgCardColor2
-                        : item.bgCardColor2,
-                    }}
-                  >
-                    {isHovered && (
-                      <>
-                        <Image
-                          src={`/${item.icon}.png`}
-                          width={32}
-                          height={32}
-                          alt="scalable"
-                        />
-                        <h4 className={`text-lg font-bold my-2 text-[#101828]`}>
-                          {item.title}
-                        </h4>
-                        <ul className="list-disc ml-5">
-                          {item.list.map((link, index) => (
-                            <li key={index}>{link}</li>
-                          ))}
-                        </ul>
-                      </>
-                    )}
-                  </div>
-                  <div
-                    className={`w-full p-2`}
-                    style={{
-                      backgroundColor: isHovered
-                        ? item.bgBottomColor3
-                        : item.bgBottomColor3,
-                    }}
-                  ></div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </> */}
-
-      {/* Subscription */}
-      <Subscription
-        title="Ready to revolutionize your workflow? "
-        blue="Streamline complexity effortlessly."
-        title2=""
-        desc="Share your details to upgrade your business future with us!"
-      />
+      </SectionWrapper>
 
       {/* Infotech Weekly Updates */}
       <InfotechWeeklyAlt />
