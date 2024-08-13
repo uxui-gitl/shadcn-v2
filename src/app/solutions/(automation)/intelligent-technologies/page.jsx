@@ -84,116 +84,35 @@ const page = () => {
     { id: '3', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
     { id: '4', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
     { id: '5', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+  ];
 
-  ]
-  const lists = [
-    {
-      id: 1,
-      text: "Inadequate Scalability and Availability",
-    },
-    {
-      id: 2,
-      text: "Unreliable Backup Storage",
-    },
-    {
-      id: 3,
-      text: "Weak Disaster Recovery and Redundancy",
-    },
-    {
-      id: 4,
-      text: "Inadequate Data Integrity and Automation Capabilities",
-    },
-    {
-      id: 5,
-      text: "Subpar IT Performance",
-    },
-    {
-      id: 6,
-      text: "Limited IT Universality and Centralized Monitoring",
-    },
-    {
-      id: 7,
-      text: "High Management Costs of IT Infrastructure",
-    },
-  ];
-  const blogData = [
+  const distinctiveData=[
     {
       _id: 1,
-      ribbon: "blog",
-      title:
-        "Digitalization with Infor Coleman Artificial Intelligence & Machine Learning",
-      desc: "Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI. Having worked with Infor solutions for many years now, I see that Infor too has evolved its applications by introducing artificial intelligence & machine learning features to meet the needs of these organizations. Let’s take a closer look at these exciting features in Infor Coleman and how organizations can benefit from them.",
-      cta: "Read More",
-      link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
-      imgUrl: "",
-    },
-  ];
-  const upgradeCloud = [
-    {
-      _id: 1,
-      title: "Upgrade AX to D365 F&O",
-      desc: "Upgrade AX to D365 F&O to Revitalize Your Business Performance",
-      cta: "Know more",
-      link: "/",
-      bg: "",
+      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      icon: "",
     },
     {
       _id: 2,
-      title: "Upgrade Nav to Business Central ",
-      desc: "Unlock Maximum Modern Benefits with Business Central Upgrade",
-      cta: "Know more",
-      link: "/",
-      bg: "",
+      desc: "Agile approach that keeps projects on cutting edge.",
+      icon: "",
     },
     {
       _id: 3,
-      title: "Upgrade to Infor LN Cloud",
-      desc: "Future proof your business growth with Upgrade to Infor LN Cloud",
-      cta: "Know more",
-      link: "/",
-      bg: "",
+      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      icon: "",
     },
     {
       _id: 4,
-      title: "Application Migration",
-      desc: "Migrate your Application to Cloud to Unleash Modernisation",
-      cta: "Know more",
-      link: "/",
-      bg: "",
+      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      icon: "",
     },
     {
       _id: 5,
-      title: "Migrate email to cloud",
-      desc: "We aim for a more efficient and collaborative communication environment that will improve efficiency and streamline communication with minimum disruption to your everyday operations",
-      cta: "Know more",
-      link: "/",
-      bg: "",
-    },
-  ];
-
-  const AdvancedSolutions = [
-    {
-      _id: 1,
-      title: "Machine Learning",
-      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-      cta: "Know More",
-      link: "Solutions/Intelligent-Technologies/AI-ML",
-    },
-    {
-      _id: 2,
-      title: "Artificial Intelligence ",
-      desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
-      cta: "Know More",
-      link: "Solutions/Intelligent-Technologies/AI-ML",
-    },
-    {
-      _id: 3,
-      title: "Robotic Process Automation",
-      desc: "Dedicate more time to strategic initiatives, enhance productivity and minimize the time-consuming repetitive tasks.",
-      cta: "Know More",
-      link: "Solutions/Intelligent-Technologies/RPA",
-    },
-  ];
+      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      icon: "",
+    }
+  ]
 
   const BenefitsData = [
     {
@@ -286,9 +205,8 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      {/* <Abstract abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."></Abstract> */}
       <OverviewSection Text={'Intelligent technologies like AI, ML, RPA and IoT are transforming businesses by predicting customer behavior, automating manual tasks, providing.'} />
-
+      {/* solutions */}
       <SectionWrapper style={{
         backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',
         backgroundBlendMode: "multiply"
@@ -322,8 +240,8 @@ const page = () => {
         </div>
       </SectionWrapper>
 
-      {/* Benefits Vertical Slider */}
-      <SectionWrapper id="Benefits" BGColor="#1D162B">
+      {/* Advantages Vertical Slider */}
+      <SectionWrapper id="Benefits" BGColor="#1D162B" style={{marginTop:'-200px', paddingTop:'200px'}}>
         <Benefits
           ribbon="Benefits of AI / ML"
           ribbonTxtWhite="true"
@@ -332,8 +250,8 @@ const page = () => {
           arr={BenefitsData}
         ></Benefits>
       </SectionWrapper>
-      {/* blog section  */}
 
+      {/* blog section  */}
       <SectionWrapper id="blog" style={{
         backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
       }}>
@@ -362,43 +280,17 @@ const page = () => {
       </SectionWrapper>
 
 
-      {/* Why choose gitl and ai and ml  WhyUs*/}
+      {/* Distinctive */}
       <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
         <WhySection
           title="The Distinctive Edge"
           desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
-          arr={[
-            {
-              _id: 1,
-              desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
-              icon: "",
-            },
-            {
-              _id: 2,
-              desc: "Agile approach that keeps projects on cutting edge.",
-              icon: "",
-            },
-            {
-              _id: 3,
-              desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
-              icon: "",
-            },
-            {
-              _id: 4,
-              desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
-              icon: "",
-            },
-            {
-              _id: 5,
-              desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-              icon: "",
-            }
-          ]}
+          arr={distinctiveData}
           renderInlineSpans={true}
         ></WhySection>
       </SectionWrapper>
 
-      {/* Subscription */}
+      {/* transform  your Business */}
       <div className="" style={{ backgroundColor: '#1D162B' }}>
         <div className="" style={{
           backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
@@ -416,9 +308,6 @@ const page = () => {
 
         </div>
       </div>
-
-      {/* Infotech Weekly Updates */}
-      <InfotechWeeklyAlt />
     </>
   );
 };

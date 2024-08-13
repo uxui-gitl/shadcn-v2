@@ -41,30 +41,6 @@ import Abstract from "@/components/Abstract";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
-const blogData = [
-  {
-    _id: 1,
-    ribbon: "Insights",
-    title: "Unveiling Hyper-automation for Supply Chain Efficiency",
-    desc: "Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. ",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
-];
 
 const AIOfferings = [
   {
@@ -153,38 +129,7 @@ const AIOfferings = [
     ],
   },
 ];
-const ChoiceSlider = [
-  {
-    _id: 1,
-    title: "Healthcare",
-    imgURL: "/assest/ai-ml/Industry-served_Healthcare.jpg",
-    url: "/",
-  },
-  {
-    _id: 2,
-    title: "Automotive",
-    imgURL: "/assest/ai-ml/Industry-served_Automotive.jpg",
-    url: "/",
-  },
-  {
-    _id: 3,
-    title: "Logistic",
-    imgURL: "/assest/ai-ml/Industry-served_Logistic.jpg",
-    url: "/",
-  },
-  {
-    _id: 4,
-    title: "Retail",
-    imgURL: "/assest/ai-ml/Industry-served_Retail.jpg",
-    url: "/",
-  },
-  {
-    _id: 5,
-    title: "Manufacturing",
-    imgURL: "/assest/ai-ml/Industry-served_Manufacturing.jpg",
-    url: "/",
-  },
-];
+
 const BenefitsData = [
   {
     _id: 1,
@@ -247,9 +192,38 @@ const MLData = [
   },
 ];
 
+const distinctiveData=[
+  {
+    _id: 1,
+    desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+    icon: "",
+  },
+  {
+    _id: 2,
+    desc: "Agile approach that keeps projects on cutting edge.",
+    icon: "",
+  },
+  {
+    _id: 3,
+    desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+    icon: "",
+  },
+  {
+    _id: 4,
+    desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+    icon: "",
+  },
+  {
+    _id: 5,
+    desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+    icon: "",
+  }
+]
+
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
 const blogImageUrl = '/ai-ml/blog-bg.png';
-const formBGURL = "/formBgImage.svg"
+const formBGURL = "/formBgImage.svg";
+
 const page = () => {
   return (
     <>
@@ -496,43 +470,17 @@ const page = () => {
 
 
 
-      {/* Why choose gitl and ai and ml  WhyUs*/}
+      {/* Distinctive section*/}
       <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
         <WhySection
           title="The Distinctive Edge"
           desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
-          arr={[
-            {
-              _id: 1,
-              desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
-              icon: "",
-            },
-            {
-              _id: 2,
-              desc: "Agile approach that keeps projects on cutting edge.",
-              icon: "",
-            },
-            {
-              _id: 3,
-              desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
-              icon: "",
-            },
-            {
-              _id: 4,
-              desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
-              icon: "",
-            },
-            {
-              _id: 5,
-              desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-              icon: "",
-            }
-          ]}
+          arr={distinctiveData}
           renderInlineSpans={true}
         ></WhySection>
       </SectionWrapper>
 
-      {/* Subscription */}
+      {/* transform business with us section */}
       <div className="" style={{ backgroundColor: '#1D162B' }}>
         <div className="" style={{
           backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
@@ -551,8 +499,6 @@ const page = () => {
         </div>
       </div>
 
-      {/* Infotech Weekly Updates */}
-      <InfotechWeeklyAlt />
     </>
   );
 };
