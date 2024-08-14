@@ -1,92 +1,67 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import StrategySub from "@/components/StrategySub";
-import Testimonials from "@/sections/testimonial/Testimonial";
-import shield from "../../../../../public/upgradeCloud/sheild.png";
-import puzzle from "../../../../../public/upgradeCloud/puzzle.png";
-import icon from "../../../../../public/icon.png";
-import microsoft from "../../../../../public/upgradeCloud/microsoft.png";
-import azure from "../../../../../public/upgradeCloud/azure.png";
-import checkout from "../../../../../public/upgradeCloud/checkout.png";
-import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
-import cloud from "../../../../../public/upgradeCloud/cloud.png";
-import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
-
-
-/**
- * * Sandeep Rana
- * * 05/09/2022
- * Icons
- */
-
-import AutomationRepetitiveTasks from "../../../../../public/icon/benefisIntelligentTechnologies/AutomationRepetitiveTasks.svg";
-import HighDegreeAccuracyConsistency from "../../../../../public/icon/benefisIntelligentTechnologies/highDegreeAccuracyConsistency.svg";
-import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg";
-import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg";
-import MSAzure from "../../../../../public/ai-ml/ms-azure.png";
-
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-
 import Icon from "@mdi/react";
-import { mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
-import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import SectionNav from "@/components/SectionNav";
-import Testimonial from "@/sections/testimonial/Testimonial";
-
-import BlogSlider from "@/components/BlogSlider";
-import SME from "@/components/SME";
-import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
-
-import { mdiArrowTopRight } from "@mdi/js";
-import { mdiPlayCircle } from "@mdi/js";
-
-import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import Benefits from "@/components/Benefits";
-import Expertise from "@/components/Expertise";
 import Subscription from "@/components/Subscription";
-import Navbar from "@/components/Navbar";
-import Abstract from "@/components/Abstract";
-import Overview from "@/components/OverviewText";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
-// import CardWidthBackground from '@/components/CardWithBackground';
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
+import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
+
 const page = () => {
   const blogImageUrl = '/ai-ml/blog-bg.png';
   const formBGURL = "/formBgImage.svg";
   const yourImageUrl = '/intelligent-tech/Solutions-Background.jpg';
   const advanceSolutionCardData = [
-    { id: '1', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
-    { id: '2', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
-    { id: '3', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
-    { id: '4', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
-    { id: '5', CardTitle: 'Machine Learning', icon: '', Heading: 'Automating Tasks & Boost Efficiency', Desc: '', BGColor: '#EFE9FB' },
+    {
+      id: 1,
+      BGImageUrl: '',
+      BGColor: '#EFE9FB',
+      cardTitle: "Machine Learning",
+      cardIconUrl: '',
+      cardHeading: 'Automating Tasks & Boost Efficiency',
+      cardDesc: '',
+      isArrow: 'true',
+    },
+    {
+      id: 2,
+      BGImageUrl: '',
+      BGColor: '#EFE9FB',
+      cardTitle: "Machine Learning",
+      cardIconUrl: '',
+      cardHeading: 'Enhancing Human Capabilities',
+      cardDesc: '',
+      isArrow: 'true',
+    },
+    {
+      id: 3,
+      BGImageUrl: '',
+      BGColor: '#EFE9FB',
+      cardTitle: "Robotic Process Automation ",
+      cardIconUrl: '',
+      cardHeading: 'Build, Run & Monitor Your Bots',
+      cardDesc: '',
+      isArrow: 'true',
+    },
+    {
+      id: 4,
+      BGImageUrl: '',
+      BGColor: '#EFE9FB',
+      cardTitle: "Machine Learning",
+      cardIconUrl: '',
+      cardHeading: 'Automating Tasks & Boost Efficiency',
+      cardDesc: '',
+      isArrow: 'true',
+    },
   ];
 
-  const distinctiveData=[
+  const distinctiveData = [
     {
       _id: 1,
       desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
@@ -206,43 +181,30 @@ const page = () => {
 
       {/* Overview  */}
       <OverviewSection Text={'Intelligent technologies like AI, ML, RPA and IoT are transforming businesses by predicting customer behavior, automating manual tasks, providing.'} />
-      
+
       {/* solutions */}
-      <SectionWrapper style={{
-        backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',
-        backgroundBlendMode: "multiply"
-      }}>
-
-        <SectionHeading Heading={'Advance Solutions for Business Future'} Color="white"></SectionHeading>
-        <div className="my-8">
-          <Swiper
-            slidesPerView={3}
-            navigation={false}
-            pagination={{ type: "bullets", clickable: true }}
-            autoplay={true}
-            loop={true}
-            modules={[Autoplay, Navigation,]}
-          >
-            {advanceSolutionCardData.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div
-                  className="h-full w-full absolute left-0 top-0"
-                // style={{
-                //   background: `url(${image}) center center / cover scroll no-repeat`,
-                // }}
-                ></div>
-                {/* <CardWidthBackground Item={item}></CardWidthBackground> */}
-
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-
-        </div>
-      </SectionWrapper>
+      <SectionWidthSlider
+        ID={'AIOfferings'}
+        SectionImageUrl={yourImageUrl}
+        Heading={'Advance Solutions for Business Future'}
+        Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+        Color={'white'}
+        MaxWidth={'40%'}
+        CardDataList={advanceSolutionCardData}
+      >
+      </SectionWidthSlider>
 
       {/* Advantages Vertical Slider */}
-      <SectionWrapper id="Benefits" BGColor="#1D162B" style={{marginTop:'-200px', paddingTop:'200px'}}>
+          <BenefitSliderSection
+           ID={'AIOfferings'}
+           BGColor={'#1D162B'}
+           Heading={'Benefits of AI / ML'}
+           Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+           Color={'white'}
+           MaxWidth={'40%'}
+           CardDataList={advanceSolutionCardData}
+           ></BenefitSliderSection>
+      {/* <SectionWrapper id="Benefits" BGColor="#1D162B" style={{ marginTop: '-200px', paddingTop: '200px' }}>
         <Benefits
           ribbon="Benefits of AI / ML"
           ribbonTxtWhite="true"
@@ -250,7 +212,7 @@ const page = () => {
           desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
           arr={BenefitsData}
         ></Benefits>
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       {/* blog section  */}
       <SectionWrapper id="blog" style={{

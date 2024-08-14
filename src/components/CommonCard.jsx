@@ -19,7 +19,7 @@ function CommonCard({ Item }) {
                                 {link.map((list, index) => (
                                     <>
                                         <li
-                                            className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-4 "
+                                            className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-3"
                                         >
                                             <Link
                                                 href={list.url}

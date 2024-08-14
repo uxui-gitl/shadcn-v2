@@ -1,17 +1,11 @@
-"use client";
-import EntIntro from "@/components/EntIntro";
-
-import Image from "next/image";
+'use client'
 import Icon from "@mdi/react";
 import Link from "next/link";
+// components
+import EntIntro from "@/components/EntIntro";
 import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-/**
- * Sandeep Rana
- * Imported logos
- */
 import Benefits from "@/components/Benefits";
-// components
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
@@ -56,7 +50,21 @@ const AIOfferingsData = [
     cardIconUrl: '',
     cardHeading: 'Seech & Language',
     cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
-    isArrow: 'true'
+    isArrow: 'true',
+    link: [
+      {
+        title: "OCR",
+        url: "/",
+      },
+      {
+        title: "Text extraction",
+        url: "/",
+      },
+      {
+        title: "Financial Processing",
+        url: "/",
+      },
+    ],
   },
   {
     id: 3,
@@ -67,17 +75,21 @@ const AIOfferingsData = [
     cardHeading: 'Document Understanding',
     cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
     isArrow: 'true',
+    link: [
+      {
+        title: "Document processing",
+        url: "/",
+      },
+      {
+        title: "Sentiment analysis",
+        url: "/",
+      },
+      {
+        title: "Chatbots and Virtual Assistants",
+        url: "/",
+      },
+    ],
   },
-  {
-    id: 4,
-    BGImageUrl: '',
-    BGColor: '#fff',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
-    isArrow: 'true'
-  }
 ]
 
 const BenefitsData = [
@@ -232,9 +244,9 @@ const page = () => {
       </>
 
       {/* Overview  */}
-
       <OverviewSection Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
-
+    
+      {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
         SectionImageUrl={yourImageUrl}
@@ -244,91 +256,12 @@ const page = () => {
         MaxWidth={'40%'}
         CardDataList={AIOfferingsData}
       >
-
-      
       </SectionWidthSlider>
-
-      {/* <SectionWrapper ID="AIOfferings" style={{
-        backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',
-        backgroundBlendMode: "multiply"
-      }}>
-
-        <SectionHeading
-          Heading={'Our AI Offerings'}
-          Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
-          Color={'white'}
-          MaxWidth={'40%'}
-        >
-        </SectionHeading>
-
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl pb-10 mt-10 md:mt-20">
-          <Swiper
-            slidesPerView={'auto'}
-            spaceBetween={30}
-            pagination={false}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            {AIOfferings.map((item, index) => (
-
-              <>
-                <SwiperSlide
-                  key={item._id}
-                  className="w-[380px] max-w-[380px] relative group"
-                >
-                  <div className="bg-[#fff] p-5 rounded-3xl" key={item._id}>
-                    <div className="p-4 h-full flex flex-col justify-between">
-                      <div>
-                        <p className="text-[#101828] font-medium text-[22px] sm:text-[32px] md:text-[42px] leading-7 md:leading-[50px]">
-                          {item.title}
-                        </p>
-                        <p className="text-[#101828] text-[16px] md:text-[14px] font-normal my-2 md:my-4 leading-[24px]">
-                          {item.desc}
-                        </p>
-                      </div>
-                      <div>
-                        <ul className="my-6 md:my-8">
-                          {item.links.map((list, index) => (
-                            <li
-                              key={index}
-                              className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-4 "
-                            >
-                              <Link
-                                href={list.url}
-                                className="text-[#101828] text-[16px] md:text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
-                              >
-                                {list.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <Link
-                          href={item.ctaUrl}
-                          className="text-[#0745D3] hidden text-[14px] font-medium leading-[28px] w-fit flex transition-all hover:opacity-75  "
-                        >
-                          {item.cta}{" "}
-                          <Icon
-                            path={mdiArrowRight}
-                            style={{ marginLeft: "0.5em" }}
-                            size={1}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </>
-            ))}
-          </Swiper>
-        </div>
-
-      </SectionWrapper> */}
-      {/* Our Ai Offerings */}
 
       {/* ML Expertise */}
       <>
-        {/* marginTop: '-240px' */}
-        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ paddingTop: '240px' }}>
+       
+        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px' ,paddingTop: '240px' }}>
           <div className="flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
