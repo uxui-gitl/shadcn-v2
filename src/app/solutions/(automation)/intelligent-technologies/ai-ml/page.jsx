@@ -2,36 +2,15 @@
 import EntIntro from "@/components/EntIntro";
 
 import Image from "next/image";
-
 import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
-
-import inforCloudSuite from "../../../../../../public/inforCloudSuite.png";
-import Dynamic365 from "../../../../../../public/Dynamic365.png";
-import Oracle from "../../../../../../public/Oracle.png";
-import checkout from "../../../../../../public/checkout.png";
-import MLExpertise from "../../../../../../public/MLExpertise.png";
 /**
  * Sandeep Rana
  * Imported logos
  */
-import anticipatefuture from "../../../../../../public/icon/benefits-ai-ml/anticipate-future.svg";
-
-import styles from "./page.module.css";
-import WhySection from "@/components/WhySection";
-import { AnimatePresence, motion } from "framer-motion";
 import Benefits from "@/components/Benefits";
-import { Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import BlogSlider from "@/components/BlogSlider";
-import Abstract from "@/components/Abstract";
-
 // components
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
@@ -39,16 +18,20 @@ import SectionWrapper from '@/components/SectionWrapper';
 import DistinctiveSection from '@/sections/Distinctive/DistinctiveSection';
 import BlogSection from '@/sections/blog/BlogSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
-import PlatformSection from '@/sections/platform/PlatformSection'
+import PlatformSection from '@/sections/platform/PlatformSection';
+import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 
 
-const AIOfferings = [
+const AIOfferingsData = [
   {
-    _id: 1,
-    title: "Computer Vision",
-    desc: "We specialize in custom video and image analysis tool leveraging advanced",
-    cta: "Explore Service",
-    ctaUrl: "",
+    id: 1,
+    BGImageUrl: '',
+    BGColor: '#fff',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Computer Vision',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true',
     links: [
       {
         title: "Data Labelling and Real-time",
@@ -64,71 +47,38 @@ const AIOfferings = [
       },
     ],
   },
-  {
-    _id: 2,
-    title: "Speech & Language",
-    desc: "Our reliable approach to Speech and Language AI empowers your business with",
-    cta: "Explore Service",
-    ctaUrl: "",
-    links: [
-      {
-        title: "Transcription Services",
-        url: "/",
-      },
-      {
-        title: "Speech Recognition",
-        url: "/",
-      },
-      {
-        title: "Language translation",
-        url: "/",
-      },
-    ],
-  },
-  {
-    _id: 3,
-    title: "Document Understanding",
-    desc: "We help you to achieve error-free AI-driven data capture from diverse document types",
-    cta: "Explore Service",
-    ctaUrl: "",
-    links: [
-      {
-        title: "OCR",
-        url: "/",
-      },
-      {
-        title: "Text extraction",
-        url: "/",
-      },
-      {
-        title: "Financial Processing",
-        url: "/",
-      },
-    ],
-  },
 
   {
-    _id: 4,
-    title: "Conversational AI",
-    desc: "We provide solutions that facilitate customer-centric decision-making.",
-    cta: "Explore Service",
-    ctaUrl: "",
-    links: [
-      {
-        title: "Document processing",
-        url: "/",
-      },
-      {
-        title: "Sentiment analysis",
-        url: "/",
-      },
-      {
-        title: "Chatbots and Virtual Assistants",
-        url: "/",
-      },
-    ],
+    id: 2,
+    BGImageUrl: '',
+    BGColor: '#fff',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Seech & Language',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true'
   },
-];
+  {
+    id: 3,
+    BGImageUrl: '',
+    BGColor: '#fff',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Document Understanding',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true',
+  },
+  {
+    id: 4,
+    BGImageUrl: '',
+    BGColor: '#fff',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Computer Vision',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true'
+  }
+]
 
 const BenefitsData = [
   {
@@ -222,7 +172,6 @@ const distinctiveData = [
 
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
 const blogImageUrl = '/ai-ml/blog-bg.png';
-const formBGURL = "/formBgImage.svg";
 
 
 const PlatFormImageList = [
@@ -286,7 +235,31 @@ const page = () => {
 
       <OverviewSection Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
 
-      <SectionWrapper ID="AIOfferings" style={{
+      <SectionWidthSlider
+        ID={'AIOfferings'}
+        SectionImageUrl={yourImageUrl}
+        Heading={'Our AI Offerings'}
+        Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+        Color={'white'}
+        MaxWidth={'40%'}
+        CardDataList={AIOfferingsData}
+      >
+
+        <ul className="my-6 md:my-8">
+            <li
+              className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-4 "
+            >
+              <Link
+                // href={list.url}
+                className="text-[#101828] text-[16px] md:text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
+              >
+                {/* {list.title} */}skdjgfkj
+              </Link>
+            </li>
+        </ul>
+      </SectionWidthSlider>
+
+      {/* <SectionWrapper ID="AIOfferings" style={{
         backgroundImage: `url(${yourImageUrl})`, backgroundSize: 'cover', backgroundColor: 'rgba(0, 0, 0, 0.4)',
         backgroundBlendMode: "multiply"
       }}>
@@ -360,12 +333,13 @@ const page = () => {
           </Swiper>
         </div>
 
-      </SectionWrapper>
+      </SectionWrapper> */}
       {/* Our Ai Offerings */}
 
       {/* ML Expertise */}
       <>
-        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
+        {/* marginTop: '-240px' */}
+        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ paddingTop: '240px' }}>
           <div className="flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading

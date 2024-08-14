@@ -54,7 +54,7 @@ import Overview from "@/components/OverviewText";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
-import CardWidthBackground from '@/components/CardWithBackground';
+// import CardWidthBackground from '@/components/CardWithBackground';
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -231,7 +231,7 @@ const page = () => {
                 //   background: `url(${image}) center center / cover scroll no-repeat`,
                 // }}
                 ></div>
-                <CardWidthBackground Item={item}></CardWidthBackground>
+                {/* <CardWidthBackground Item={item}></CardWidthBackground> */}
 
               </SwiperSlide>
             ))}

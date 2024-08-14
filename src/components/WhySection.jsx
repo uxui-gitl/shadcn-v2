@@ -69,13 +69,13 @@ const WhySection = ({
             </AnimatePresence>
           </div> */}
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
         {arr.map((item) => (
             <>
-              <div className="card py-4 md:py-8" style={{ borderBottom: '2px solid #d3d3d3' }}>
+              <div className="card py-4 md:py-5" style={{ borderBottom: '2px solid #d3d3d3' }}>
                 <div className="card-body flex">
-                    <Image src={checkout} alt={checkout} className="max-w-14 md:max-w-full" width={100}/>
-                    <div className="md:text-xl font-medium text-sm ml-9">
+                    <Image src={checkout} alt={checkout} className="max-w-14 md:max-w-full" width={50}/>
+                    <div className="md:text-lg font-medium text-sm ml-9">
                       {item.desc}
                     </div>
                 </div>
