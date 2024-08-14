@@ -12,7 +12,7 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth}) {
                 backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
             }}>
 
-                <div className="">
+                <div className="container mx-auto">
                     <SectionHeading
                         Heading = {Heading}
                         Desc ={Desc}
@@ -20,7 +20,7 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth}) {
                         MaxWidth={MaxWidth}
                     >
                     </SectionHeading>
-                </div>
+               
 
                 <Link
                     href={"#Contact"}
@@ -33,6 +33,7 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth}) {
                         size={1}
                     />
                 </Link>
+                </div>
             </SectionWrapper>
         </>
     )
