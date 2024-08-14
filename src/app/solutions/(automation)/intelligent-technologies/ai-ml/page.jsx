@@ -32,7 +32,7 @@ const AIOfferingsData = [
     cardHeading: 'Computer Vision',
     cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
     isArrow: 'true',
-    links: [
+    link: [
       {
         title: "Data Labelling and Real-time",
         url: "/",
@@ -245,18 +245,7 @@ const page = () => {
         CardDataList={AIOfferingsData}
       >
 
-        <ul className="my-6 md:my-8">
-            <li
-              className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-4 "
-            >
-              <Link
-                // href={list.url}
-                className="text-[#101828] text-[16px] md:text-[20px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
-              >
-                {/* {list.title} */}skdjgfkj
-              </Link>
-            </li>
-        </ul>
+      
       </SectionWidthSlider>
 
       {/* <SectionWrapper ID="AIOfferings" style={{
