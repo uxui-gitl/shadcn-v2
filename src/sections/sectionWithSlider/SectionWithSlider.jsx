@@ -8,12 +8,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Children } from 'react';
-function SectionWidthSlider({ ID, SectionImageUrl, Heading, Desc, MaxWidth, SlidesPerView='3', Autoplay='false', CardDataList=[], Color='#000' }) {
+function SectionWidthSlider({ ID, SectionImageUrl, Heading, Desc, MaxWidth, SlidesPerView='3', Autoplay='false', CardDataList=[], Color='#000', BGColor="#fff" }) {
     return (
         <>
-            <SectionWrapper id={ID} style={{
-                backgroundImage: `url(${SectionImageUrl})`, backgroundSize: 'cover', BGColor:'#fff'
+            <SectionWrapper id={ID} BGColor={BGColor} style={{
+                backgroundImage: `url(${SectionImageUrl})`, backgroundSize: 'cover',
             }}>
+              
 
                 <div className="">
                     <SectionHeading
@@ -41,7 +42,6 @@ function SectionWidthSlider({ ID, SectionImageUrl, Heading, Desc, MaxWidth, Slid
                         ))}
                     </Swiper>
                 </div>
-
             </SectionWrapper>
         </>
     )

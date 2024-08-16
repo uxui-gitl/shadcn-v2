@@ -5,7 +5,7 @@ import SectionHeading from "../../components/SectionHeading";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import CardWidthBackground from "@/components/CardWithBackground";
+// import CardWidthBackground from "@/components/CardWithBackground";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -67,7 +67,7 @@ const SolutionSliderCloud = ({ setHeading, setDesc, setColor }) => {
               {advanceSolutionCardData.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className="h-full w-full absolute left-0 top-0"></div>
-                  <CardWidthBackground Item={item} BGColor="#EFE9FB"></CardWidthBackground>
+                  {/* <CardWidthBackground Item={item} BGColor="#EFE9FB"></CardWidthBackground> */}
                 </SwiperSlide>
               ))}
             </Swiper>

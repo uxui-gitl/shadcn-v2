@@ -12,6 +12,9 @@ import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
+import BlogSection from "@/sections/blog/BlogSection";
+import DistinctiveSection from "@/sections/Distinctive/DistinctiveSection";
+import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 
 
 const page = () => {
@@ -60,6 +63,13 @@ const page = () => {
       isArrow: 'true',
     },
   ];
+
+  const benifitsCardsData = [
+    { id: '1', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+    { id: '2', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+    { id: '3', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+    { id: '4', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+  ]
 
   const distinctiveData = [
     {
@@ -195,82 +205,33 @@ const page = () => {
       </SectionWidthSlider>
 
       {/* Advantages Vertical Slider */}
-          <BenefitSliderSection
-           ID={'AIOfferings'}
-           BGColor={'#1D162B'}
-           Heading={'Benefits of AI / ML'}
-           Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
-           Color={'white'}
-           MaxWidth={'40%'}
-           CardDataList={advanceSolutionCardData}
-           ></BenefitSliderSection>
-      {/* <SectionWrapper id="Benefits" BGColor="#1D162B" style={{ marginTop: '-200px', paddingTop: '200px' }}>
-        <Benefits
-          ribbon="Benefits of AI / ML"
-          ribbonTxtWhite="true"
-          title=""
-          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
-          arr={BenefitsData}
-        ></Benefits>
-      </SectionWrapper> */}
+      <BenefitSliderSection
+        ID={'AIOfferings'}
+        BGColor={'#1D162B'}
+        Heading={'Benefits of AI / ML'}
+        Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        Color={'white'}
+        MaxWidth={'40%'}
+        CardDataList={benifitsCardsData}
+      ></BenefitSliderSection>
 
-      {/* blog section  */}
-      <SectionWrapper id="blog" style={{
-        backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
-      }}>
+      {/* blog */}
 
-        <div className="">
-          <SectionHeading
-            Heading={'Unveilling Hyper automation  for supply chain efficiency'}
-            Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
-            Color={'white'}
-            MaxWidth="70%"
-          >
-          </SectionHeading>
-        </div>
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveilling Hyper automation  for supply chain efficiency'}
+        Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
+        Color={'white'}
+        MaxWidth="70%"
+      ></BlogSection>
 
-        <Link
-          href={"#Contact"}
-          className="text-white mt-20 mb-16 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-        >
-          {'Read More'}
-          <Icon
-            path={mdiArrowRight}
-            style={{ marginLeft: "0.5em", marginTop: '1px' }}
-            size={1}
-          />
-        </Link>
-      </SectionWrapper>
+      {/* Distinctive section*/}
+      <DistinctiveSection DistinctiveData={distinctiveData}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape.'}
+      >
+      </DistinctiveSection>
 
-
-      {/* Distinctive */}
-      <SectionWrapper ID="WhyUs" style={{ marginTop: "-40px" }}>
-        <WhySection
-          title="The Distinctive Edge"
-          desc="Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape. "
-          arr={distinctiveData}
-          renderInlineSpans={true}
-        ></WhySection>
-      </SectionWrapper>
-
-      {/* transform  your Business */}
-      <div className="" style={{ backgroundColor: '#1D162B' }}>
-        <div className="" style={{
-          backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
-        }}>
-          <div className="py-10 sm:py-14 px-4 sm:px-12 md:px-36 md:pt-44">
-            <div className="card-body p-5 md:p-24 rounded-3xl" style={{ background: "linear-gradient(180deg, #5F22D9 2.14%, rgba(95, 34, 217, 0.00) 74.44%)" }}>
-              <Subscription
-                title="Transform your Business with us"
-                blue=""
-                title2=""
-                desc="Let us discuss how intelligent technologies can help you with rapid growth."
-              />
-            </div>
-          </div>
-
-        </div>
-      </div>
+      {/* transform business with us section */}
+      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+      </TransformBusinessForm>
     </>
   );
 };
