@@ -22,6 +22,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/Distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import HubExpertise from "@/sections/hubofexpertise/HubExpertise";
+import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -38,9 +39,11 @@ const fadeInAnimationVariant = {
 };
 
 const page = () => {
-  const imgURL =
-    "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
+  const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
+  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
+  
   const blogImageUrl = "/ai-ml/blog-bg.png";
+  
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
@@ -118,6 +121,8 @@ our Intelligent Edge Cloud Stack and Services"
         setHeading="Take Confident Business Decisions with Industry Tailored Cloud Technology"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
+  
+        
       />
       {/* Section--Blog */}
       <SolutionSliderCloud
@@ -125,12 +130,25 @@ our Intelligent Edge Cloud Stack and Services"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
       />
-      {/* blog section  */}
+      {/* Section--Hub of Expertise */}
       <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
       />
+      {/* Section--Take Confident */}
+      <HighlightPromo
+   
+        setHeading="Synergetic Partnership"
+        setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
+        setColor="#1D162B"
+        setImageBGURL={imgBgURL}
+        setLogoImages="true"
+        
+      />
+
+      <SectionWidthSlider/>
+      {/* Section--Blog */}
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
@@ -139,7 +157,6 @@ our Intelligent Edge Cloud Stack and Services"
           "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
         }
         Color={"white"}
-        MaxWidth="70%"
       ></BlogSection>
 
       {/* Distinctive section*/}
