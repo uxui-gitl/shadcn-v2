@@ -1,23 +1,9 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import Subscription from "@/components/Subscription";
 import React, { useState } from "react";
 import Image from "next/image";
-import clsx from "clsx";
-
-import Icon from "@mdi/react";
-import Link from "next/link";
-import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
-import { mdiCheckboxMultipleMarked } from "@mdi/js";
-
-import Capabilities from "@/components/Capabilities";
-import inforCloudSuite from "../../../../../../public/inforCloudSuite.png";
-import Dynamic365 from "../../../../../../public/Dynamic365.png";
-import Oracle from "../../../../../../public/Oracle.png";
-import Azure from "../../../../../../public/azure.png";
-import RPAPlaceholder from "../../../../../../public/RPAPlaceholder.png";
 
 /**
  * * Sandeep Rana
@@ -28,32 +14,23 @@ import uiPath from "../../../../../../public/logos/rpa/uiPath.svg";
 import automationAnywhere from "../../../../../../public/logos/rpa/automation-anywhere.svg";
 import powerAutomate from "../../../../../../public/logos/rpa/microsoft-power-automate-logo.jpg";
 
-import MLExpertise from "../../../../../../public/MLExpertise.png";
-import scalable1 from "../../../../../../public/scalable1.png";
-import scalable2 from "../../../../../../public/scalable2.png";
-import scalable3 from "../../../../../../public/scalable3.png";
-import scalable4 from "../../../../../../public/scalable4.png";
-import scalable5 from "../../../../../../public/scalable5.png";
-import scalable6 from "../../../../../../public/scalable6.png";
-import styles from "./page.module.css";
-import WhySection from "@/components/WhySection";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import MSAzure from "../../../../../../public/ai-ml/ms-azure.png";
-import GoogleAI from "../../../../../../public/ai-ml/google-ai-logo.png";
-import TensorFlow from "../../../../../../public/ai-ml/tensorflow-logo.png";
-
-import Abstract from "@/components/Abstract";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
 import CommonCardBackground from '@/components/CommonCardBackground';
+import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const RPASolution = [
+  {
+    id: 1,
+    CardBGImageUrl:'/rpa/ArtboardBg.png',
+    Color:'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Computer Vision',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true',
+  },
   { id: 1, Title: 'Increase Productivity', Des: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
   { id: 2, Title: 'Gain Accurate Outcomes', Des: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
   { id: 3, Title: 'Ensure Compliance & Consistency', Des: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
@@ -379,7 +356,14 @@ const page = () => {
       <OverviewSection Text={'Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by'} />
 
       {/* optimising rpa solution */}
-      <SectionWrapper ID="whyrpa" BGColor="#EFE9FB">
+          <SectionWidthSlider
+          BGColor="#EFE9FB"
+           Heading={'Optimising businesses through RPA solutions'}
+           Color={'black'}
+           MaxWidth={'40%'}
+           CardDataList={RPASolution}
+          ></SectionWidthSlider>
+      {/* <SectionWrapper ID="whyrpa" BGColor="#EFE9FB">
         <SectionHeading
           Heading={'Optimising businesses through RPA solutions'}
           Desc={''}
@@ -413,7 +397,7 @@ const page = () => {
             ))}
           </Swiper>
         </div>
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       {/* inteligent technologies */}
       <SectionWrapper ID="Platforms">

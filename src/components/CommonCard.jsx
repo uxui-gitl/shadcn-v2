@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 function CommonCard({ Item }) {
-    const { BGImageUrl = '', BGColor = '#fff', cardTitle = "", cardIconUrl = '', cardHeading = '', cardDesc = '', isArrow = 'true', downImageUrl = '', link = [] } = Item;
+    const { CardBGImageUrl = '', BGColor = '', cardTitle = "", cardIconUrl = '', cardHeading = '', cardDesc = '', isArrow = 'true', downImageUrl = '', link = [], Color = '#000' } = Item;
     return (
         <>
-            <div class="rounded-3xl shadow" style={{ backgroundImage: `url(${BGImageUrl})`, backgroundSize: 'cover', backgroundColor: `${BGColor}`, color: BGColor ? 'black' : 'white', width: '100%' }}>
+            <div class="rounded-3xl shadow" style={{ backgroundImage: `url(${CardBGImageUrl})`, backgroundSize: 'cover', backgroundColor: `${BGColor}`, color: Color, width: '100%' }}>
                 <div className="card-body p-10 !pb-0">
                     {cardTitle && (<div className="text-[#E0028E] mb-6">{cardTitle}</div>)}
                     {cardIconUrl && (<Image src={cardIconUrl} alt="" width={50} height={50}></Image>)}
