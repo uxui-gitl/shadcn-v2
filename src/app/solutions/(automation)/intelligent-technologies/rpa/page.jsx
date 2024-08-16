@@ -159,7 +159,14 @@ const page = () => {
 
       {/* service Offerings section */}
 
-      <ServiceOfferingSection>
+      <ServiceOfferingSection id="Benefits" 
+      BGColor="#1D162B"
+       Heading={'Service Offerings'}
+       Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+       Color={'white'}
+       MaxWidth={'40%'}
+       CardDataList={RPASolution}
+       >
 
       </ServiceOfferingSection>
       

@@ -18,27 +18,23 @@ function CommonCard({ Item }) {
                             <ul className="my-1 md:my-1">
                                 {link.map((list, index) => (
                                     <>
-                                        <li
-                                            className=" border-b-2 border-[#dbdbdb3d] py-2 md:py-3"
+                                        <li className="border-b-2 border-[#dbdbdb3d] py-2 md:py-3"
                                         >
                                             <Link
                                                 href={list.url}
-                                                className="text-[#101828] text-[16px] md:text-[18px] font-normal leading-[28px] w-fit  flex transition-all hover:opacity-75  "
-                                            >
-                                                {list.title} 
+                                                className="text-[#101828] text-[16px] md:text-[18px] font-normal leading-[28px] w-fit flex transition-all hover:opacity-75"
+                                            > {list.title}
                                             </Link>
                                         </li>
-
                                     </>
                                 ))}
-
                             </ul>
                         </>
                     )}
                 </div>
                 {downImageUrl && (
-                    <div style={{ width: '100%', height: '150px', position: 'relative' }}>
-                        <Image src={downImageUrl} alt="" layout='fill' objectFit='cover'></Image>
+                    <div style={{ width: '100%', position: 'relative' }}>
+                        <Image src={downImageUrl} alt="" layout='fill' objectFit='cover' className="rounded-3xl"></Image>
                     </div>
                 )}
                 {isArrow && (<div className="flex justify-end px-6 py-4">
