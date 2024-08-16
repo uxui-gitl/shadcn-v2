@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+
+    
+
 import SectionHeading from "@/components/SectionHeading";
 import SectionWrapper from "@/components/SectionWrapper";
 import styles from "./HubExpertise.module.css";
 import { jetBrains_mono } from "../../app/fonts";
+
+
+
+
 
 const CounterSection = ({ start, end, description, counterOn }) => (
   <div className="flex-1 p-4 text-white">
@@ -46,6 +53,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor }) => {
     { start: 10, end: 50, description: "Cloud Deployments" },
     { start: 10, end: 15, description: "Cloud Certified Professionals" },
 
+
   ];
 
   return (
@@ -55,7 +63,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor }) => {
           <div className="flex-1">
             <SectionHeading Heading={setHeading} Color={setColor} Desc={setDesc} />
           </div>
-          <div className="flex-1 py-20">
+          <div className="flex-1 py-20 min-h-[324px]">
             <div className="flex flex-col gap-8">
               {/* First Row */}
               <div className="flex flex-row gap-8">
@@ -73,7 +81,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor }) => {
                 ))}
               </div>
               {/* Second Row */}
-              <div className="flex flex-row gap-8">
+              {/* <div className="flex flex-row gap-8">
                 {counters.slice(2, 4).map((counter, index) => (
                   <div key={index} className="flex-1">
                     <ScrollCounter
@@ -86,7 +94,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor }) => {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
