@@ -14,7 +14,7 @@ import BlogSection from '@/sections/blog/BlogSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import PlatformSection from '@/sections/platform/PlatformSection';
 import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
-
+import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 
 const AIOfferingsData = [
   {
@@ -92,33 +92,6 @@ const AIOfferingsData = [
   },
 ]
 
-const BenefitsData = [
-  {
-    _id: 1,
-    icon: "benefits-ai-ml/process-analyse",
-    cardDesc:
-      "A high degree of accuracy and consistency in business operations.",
-  },
-  {
-    _id: 2,
-    icon: "benefits-ai-ml/anticipate-future",
-    cardDesc:
-      "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends. ",
-  },
-  {
-    _id: 3,
-    icon: "benefits-ai-ml/effortless-communicate",
-    cardDesc:
-      "Real-time problem-solving capabilities enable minimizing disruptions and ensuring uninterrupted business operations. ",
-  },
-  {
-    _id: 4,
-    icon: "benefits-ai-ml/optimise-supply-chain",
-    cardDesc:
-      "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity ",
-  },
-];
-
 const MLData = [
   {
     _id: 1,
@@ -180,6 +153,13 @@ const distinctiveData = [
     desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
     icon: "",
   }
+]
+
+const benifitsCardsData = [
+  { id: '1', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+  { id: '2', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+  { id: '3', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+  { id: '4', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
 ]
 
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
@@ -245,7 +225,7 @@ const page = () => {
 
       {/* Overview  */}
       <OverviewSection Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
-    
+
       {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
@@ -260,8 +240,7 @@ const page = () => {
 
       {/* ML Expertise */}
       <>
-       
-        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px' ,paddingTop: '240px' }}>
+        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
           <div className="flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
@@ -309,15 +288,15 @@ const page = () => {
       </>
 
       {/* Benefits Vertical Slider */}
-      <SectionWrapper id="Benefits" BGColor="#1D162B">
-        <Benefits
-          ribbon="Benefits of AI / ML"
-          ribbonTxtWhite="true"
-          title=""
-          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
-          arr={BenefitsData}
-        ></Benefits>
-      </SectionWrapper>
+      <BenefitSliderSection
+        ID={'AIOfferings'}
+        BGColor={'#1D162B'}
+        Heading={'Benefits of AI / ML'}
+        Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        Color={'white'}
+        MaxWidth={'40%'}
+        CardDataList={benifitsCardsData}
+      ></BenefitSliderSection>
       {/* blog section  */}
 
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveilling Hyper automation  for supply chain efficiency'}

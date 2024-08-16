@@ -19,6 +19,7 @@ import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
 import CommonCardBackground from '@/components/CommonCardBackground';
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
+import ServiceOfferingSection from'@/sections/serviceOffering/ServiceOfferingSection'
 
 const RPASolution = [
   {
@@ -31,276 +32,36 @@ const RPASolution = [
     cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
     isArrow: 'true',
   },
-  { id: 1, Title: 'Increase Productivity', Des: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
-  { id: 2, Title: 'Gain Accurate Outcomes', Des: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
-  { id: 3, Title: 'Ensure Compliance & Consistency', Des: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
-  { id: 4, Title: 'Expertise in RPA Platform', Des: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.', BGColor: '#1D162B', BGImageUrl: '/rpa/ArtboardBg.png', ImageUrl: '/rpa/image-10.png' },
+  {
+    id: 2,
+    CardBGImageUrl:'/rpa/ArtboardBg.png',
+    Color:'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Computer Vision',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true',
+  },
+  {
+    id: 3,
+    CardBGImageUrl:'/rpa/ArtboardBg.png',
+    Color:'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Computer Vision',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true',
+  },   {
+    id: 4,
+    CardBGImageUrl:'/rpa/ArtboardBg.png',
+    Color:'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Computer Vision',
+    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    isArrow: 'true',
+  },
 ]
-
-const RPAServiceOfferings = [
-  {
-    _id: 1,
-    title: "Consultation Services",
-    desc: "We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/Service-offeringConsultation-Services.jpg",
-  },
-  {
-    _id: 2,
-    title: "Feasibility Check Services",
-    desc: "Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/Service-offeringFeasibility-Check-Services.jpg",
-  },
-  {
-    _id: 3,
-    title: "RPA Deployment ",
-    desc: "We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/Service-offeringRPA-Deployment.jpg",
-  },
-  {
-    _id: 4,
-    title: "RPA Managed Services ",
-    desc: "We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement, ensuring efficient operations.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/Service-offeringRPA-Managed-Services.jpg",
-  },
-];
-
-const ConsiderRPA = [
-  {
-    _id: 1,
-    title: "Increase Productivity",
-    desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/IncreasedProductivity.png",
-  },
-  {
-    _id: 2,
-    title: "Gain Accurate Outcomes",
-    desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/GainAccurateOutcomes.png",
-  },
-  {
-    _id: 3,
-    title: "Ensure Compliance and Consistency",
-    desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/EnsureCompliance.png",
-  },
-  // {
-  //   _id: 4,
-  //   title: "Strengthen Potential",
-  //   desc: "Enable employees to focus on more meaningful and strategic endeavors, helping them to deliver attentive experience to customers.",
-  //   cta: "Know More",
-  //   ctaUrl: "/",
-  //   image: "/rpa/StrengthenPotential.png",
-  // },
-  {
-    _id: 5,
-    title: "Optimize FTE Cost",
-    desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
-
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/OptimizeFTEcost.png",
-  },
-  {
-    _id: 6,
-    title: "Enhance Flexibility",
-    desc: "Enables businesses to quickly adapt to changing business needs without the time and expense required to hire and train new employees.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/EnhanceFlexibility.png",
-  },
-  {
-    _id: 7,
-    title: "Reduce AHT (Average Handling Time)",
-    desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/ReduceAHT.png",
-  },
-];
-
-const UseCases = [
-  {
-    _id: 1,
-    title: "Employee Access Creation",
-    cta: "Know More",
-    link: "",
-  },
-  {
-    _id: 2,
-    title: "Ticketing system - Incident management",
-    cta: "Know More",
-    link: "",
-  },
-  {
-    _id: 3,
-    title: "Account Payable and Receivable Process",
-    cta: "Know More",
-    link: "",
-  },
-  {
-    _id: 4,
-    title: "Vendor Onboarding Process",
-    cta: "Know More",
-    link: "",
-  },
-  {
-    _id: 5,
-    title: "Customer Onboarding Process",
-    cta: "Know More",
-    link: "",
-  },
-];
-
-const IndustryExperts = [
-  {
-    _id: 1,
-    title: "Manufacturing",
-    image: "manufacturing",
-  },
-  {
-    _id: 2,
-    title: "Accounts and Finance",
-    image: "finance",
-  },
-  {
-    _id: 3,
-    title: "HR",
-    image: "hr",
-  },
-  {
-    _id: 4,
-    title: "IT Infra",
-    image: "itinfra",
-  },
-];
-
-const RPACards = [
-  {
-    _id: 1,
-    title: "Infrastructure Setup",
-    keyword: "Enable",
-    color: "#fff",
-    bgTopColor1: "#7491D4",
-    bgCardColor2: "#edf1ff",
-    bgBottomColor3: "#0745d4",
-    icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-    list: [
-      "Design server architecture",
-      "Install and configuration",
-      "Setting up development, test & production environments",
-    ],
-  },
-  {
-    _id: 2,
-    title: "Project Governance ",
-    keyword: "Preparation",
-    color: "#fff",
-    bgTopColor1: "#4f9d73",
-    bgCardColor2: "#e4f8ed",
-    bgBottomColor3: "#4f9d73",
-    icon: "icon/RPA-projectLifestyle/ProjectGovernance",
-    list: [
-      "Discuss & finalize project development approach",
-      "Review RPA best practices",
-    ],
-  },
-  {
-    _id: 3,
-    title: "Workflow Design",
-    keyword: "Design",
-    color: "#fff",
-    bgTopColor1: "#d4a73b",
-    bgCardColor2: "#fff8e5",
-    bgBottomColor3: "#d4a73b",
-    icon: "icon/RPA-projectLifestyle/WorkflowDesign",
-    list: [
-      "Create Process Design Document (PDO)",
-      "Build test cases",
-      "Solution Design",
-    ],
-  },
-  {
-    _id: 4,
-    title: "Workflow Development",
-    keyword: "Build",
-    color: "#fff",
-    bgTopColor1: "#78797c",
-    bgCardColor2: "#ededee",
-    bgBottomColor3: "#78797c",
-    icon: "icon/RPA-projectLifestyle/WorkflowDevelopment",
-    list: [
-      "Build workflows",
-      "Unit and Functional testing",
-      "Create Development Specification Document (DSD)",
-    ],
-  },
-  {
-    _id: 5,
-    title: "Quality Assurance",
-    keyword: "Test",
-    color: "#fff",
-    bgTopColor1: "#8098ff",
-    bgCardColor2: "#edf0ff",
-    bgBottomColor3: "#0745d4",
-    icon: "icon/RPA-projectLifestyle/QualityAssurance",
-    list: [
-      "Execute test cases",
-      "Report results",
-      "Go/NoGo decision finalization",
-    ],
-  },
-  {
-    _id: 6,
-    title: "Hypercare",
-    keyword: "Sustain",
-    color: "#fff",
-    bgTopColor1: "#4f9d73",
-    bgCardColor2: "#e4f8ed",
-    bgBottomColor3: "#4f9d73",
-    icon: "icon/RPA-projectLifestyle/Hypercare",
-    list: ["Support workflow", "Manage Changes and Improvements"],
-  },
-];
-const ChoiceSlider = [
-  {
-    _id: 1,
-    title: "Manufacturing",
-    imgUrl: "1",
-    url: "/",
-  },
-  {
-    _id: 2,
-    title: "Accounts and Finance",
-    imgUrl: "2",
-    url: "/",
-  },
-  {
-    _id: 3,
-    title: "HR",
-    imgUrl: "3",
-    url: "/",
-  },
-  {
-    _id: 4,
-    title: "IT Infra",
-    imgUrl: "4",
-    url: "/",
-  },
-];
 
 const page = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -363,41 +124,6 @@ const page = () => {
            MaxWidth={'40%'}
            CardDataList={RPASolution}
           ></SectionWidthSlider>
-      {/* <SectionWrapper ID="whyrpa" BGColor="#EFE9FB">
-        <SectionHeading
-          Heading={'Optimising businesses through RPA solutions'}
-          Desc={''}
-          Color={'#1D162B'}
-          MaxWidth={'40%'}
-        >
-        </SectionHeading>
-
-        <div className="my-8">
-          <Swiper
-            slidesPerView={3.2}
-            spaceBetween={30}
-            navigation={false}
-            pagination={{ type: "bullets", clickable: true }}
-            autoplay={true}
-            loop={true}
-            modules={[Autoplay, Navigation,]}
-          >
-            {RPASolution.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div
-                  className="h-full w-full absolute left-0 top-0"
-                // style={{
-                //   background: `url(${image}) center center / cover scroll no-repeat`,
-                // }}
-                >
-                </div>
-
-                <CommonCardBackground Item={item} style={{ minWidth: '250px', minHeight: '550px' }}></CommonCardBackground>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </SectionWrapper> */}
 
       {/* inteligent technologies */}
       <SectionWrapper ID="Platforms">
@@ -432,6 +158,11 @@ const page = () => {
       </SectionWrapper>
 
       {/* service Offerings section */}
+
+      <ServiceOfferingSection>
+
+      </ServiceOfferingSection>
+      
       <SectionWrapper id="Benefits" BGColor="#1D162B">
         <div className="grid grid-cols-2 gap-20">
           <div className="">
