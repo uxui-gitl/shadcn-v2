@@ -11,7 +11,7 @@ function SectionWrapper({
   return (
     <div
       id={ID}
-      className={`${checkPadding} rounded-3xl`}
+      className={`${checkPadding} rounded-3xl mt-[-2.5rem]`}
       style={{ ...style, backgroundColor: BGColor}}
     >
       {children}

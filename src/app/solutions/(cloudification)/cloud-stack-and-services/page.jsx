@@ -22,8 +22,7 @@ import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/Distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import HubExpertise from "@/sections/hubofexpertise/HubExpertise";
-import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
+
 
 
 
