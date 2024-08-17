@@ -22,7 +22,7 @@ const OutlinedButtonWithArrow = ({ onClick, size = 24 }) => {
   return (
     <button
       onClick={handleClick}
-      className={`flex items-center justify-center border-2 border-blue-500 text-blue-500 font-semibold rounded-full bg-transparent transition-transform transform hover:scale-110 hover:rotate-45 focus:outline-none ${
+      className={`flex items-center justify-center border-2 border-[#080708] text-blue-500 font-semibold rounded-full bg-transparent transition-transform transform hover:scale-110 hover:-rotate-45 focus:outline-none ${
         isActive ? "rotate-[135deg]" : ""
       } ${selectedSize.button}`}
     >
@@ -30,7 +30,7 @@ const OutlinedButtonWithArrow = ({ onClick, size = 24 }) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="currentColor"
+        stroke="#080708"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

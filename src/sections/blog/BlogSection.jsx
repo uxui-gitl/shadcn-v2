@@ -9,7 +9,7 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth}) {
     return (
         <>
             <SectionWrapper id={ID} style={{
-                backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-40px"
+                backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover', marginTop: "-2.5rem"
             }}>
 
                 <div className="container mx-auto">

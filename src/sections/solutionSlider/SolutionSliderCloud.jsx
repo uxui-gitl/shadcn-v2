@@ -102,12 +102,12 @@ const SolutionSliderCloud = ({ setHeading, setDesc, setColor }) => {
               }}
               
             >
-              {advanceSolutionCardData.map((item) => (
+              {/* {advanceSolutionCardData.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className="h-full w-full absolute left-0 top-0"></div>
-                  {/* <CardWidthBackground Item={item} BGColor="#EFE9FB"></CardWidthBackground> */}
+                  {}
                 </SwiperSlide>
-              ))}
+              ))} */}
             </Swiper>
           </div>
         </section>

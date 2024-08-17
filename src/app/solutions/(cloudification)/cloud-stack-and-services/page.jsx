@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import SectionNav from "@/components/SectionNav";
+import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 
 /**
  * * New Imports---Sandeep Rana
@@ -24,25 +25,56 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import HubExpertise from "@/sections/hubofexpertise/HubExpertise";
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
 
-const page = () => {
+
+const CloudStack = () => {
   const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
   const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
   
   const blogImageUrl = "/ai-ml/blog-bg.png";
+
+  const CASE_STUDIES_DATA = [
+    {
+      imageURL:"",
+      videoURL:"",
+      title: "Case Studies",
+      heading: 'Elevating Customer Experience',
+      description: "",
+      link: "/case-study-1",
+      color: '#FFFFFF',
+      bgCardColor: '#2B1624'
+    },
+    {
+      imageURL: "",
+      title: "",
+      heading: 'Non-government Association of Indian Industries',
+      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      link: "/case-study-1",
+      color: '#000',
+      bgCardColor: '#E4E4E4'
+    },
+
+    {
+      imageURL: "/path/to/image1.jpg",
+      title: "",
+
+      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      description: "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+      link: "/case-study-1",
+      color: '#000',
+      bgCardColor: '#FCE6F4'
+    },
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      title: "",
+      heading: "Middle East-based Electrical Products Manufacturer",
+      description: "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+      link: "/case-study-1",
+      color: '#000',
+      bgCardColor: '#FFFFFF'
+    },
+    // Add more case studies here...
+  ];
   
   const DISTINCTIVE_DATA = [
     {
@@ -84,7 +116,7 @@ our Intelligent Edge Cloud Stack and Services"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       {/* Section Nav */}
-      <>
+ 
         <SectionNav
           // Solutions
           // Benefits
@@ -108,7 +140,7 @@ our Intelligent Edge Cloud Stack and Services"
             },
           ]}
         />
-      </>
+      
       {/* Section--Overview */}
       <OverviewSection
         Text={
@@ -121,6 +153,7 @@ our Intelligent Edge Cloud Stack and Services"
         setHeading="Take Confident Business Decisions with Industry Tailored Cloud Technology"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
+        setPadding={false}
   
         
       />
@@ -130,13 +163,11 @@ our Intelligent Edge Cloud Stack and Services"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
       />
-      {/* Section--Hub of Expertise */}
-      <HubExpertise
-        setHeading="Hub of Expertise"
-        setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
-        setColor="#ffffff"
-      />
-      {/* Section--Take Confident */}
+      {/* Section--Section--Hub-of-Expertise */}
+      <section className="container max-auto"><h1>Why Cloud is your ultimate choice?</h1></section>
+      <section className="container max-auto"><h1>Cloud Services</h1></section>
+
+      {/* Section--Synergetic-Partnership======================================================= */}
       <HighlightPromo
    
         setHeading="Synergetic Partnership"
@@ -144,10 +175,14 @@ our Intelligent Edge Cloud Stack and Services"
         setColor="#1D162B"
         setImageBGURL={imgBgURL}
         setLogoImages="true"
+        setPadding={false}
         
       />
+      {/* End-Section--Synergetic-Partnership */}
+        {/* Section--Case-Studies======================================================================= */}
+        <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='#FFFFFF'/>
+      {/* End-Section--Case-Studies */}
 
-      <SectionWidthSlider/>
       {/* Section--Blog */}
       <BlogSection
         ID={"blog"}
@@ -179,4 +214,4 @@ our Intelligent Edge Cloud Stack and Services"
     </>
   );
 };
-export default page;
+export default CloudStack;
