@@ -28,75 +28,72 @@ const page = () => {
       BGColor: '#EFE9FB',
       cardTitle: "Machine Learning",
       cardIconUrl: '',
-      cardHeading: 'Automating Tasks & Boost Efficiency',
-      cardDesc: '',
+      cardHeading: 'Automated Pattern Recognition',
+      cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
       isArrow: 'true',
     },
     {
       id: 2,
       BGImageUrl: '',
       BGColor: '#EFE9FB',
-      cardTitle: "Machine Learning",
+      cardTitle: "Artificial Intelligence",
       cardIconUrl: '',
-      cardHeading: 'Enhancing Human Capabilities',
-      cardDesc: '',
+      cardHeading: 'Cognitive Computing Solutions',
+      cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
       isArrow: 'true',
     },
     {
       id: 3,
       BGImageUrl: '',
       BGColor: '#EFE9FB',
-      cardTitle: "Robotic Process Automation ",
+      cardTitle: "Robotic Process Automation",
       cardIconUrl: '',
-      cardHeading: 'Build, Run & Monitor Your Bots',
-      cardDesc: '',
+      cardHeading: 'Efficient Task Automation',
+      cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
       isArrow: 'true',
     },
     {
       id: 4,
       BGImageUrl: '',
       BGColor: '#EFE9FB',
-      cardTitle: "Machine Learning",
+      cardTitle: "IIoT",
       cardIconUrl: '',
-      cardHeading: 'Automating Tasks & Boost Efficiency',
-      cardDesc: '',
+      cardHeading: 'Asset Optimization and Uptime',
+      cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
       isArrow: 'true',
     },
   ];
 
   const benifitsCardsData = [
-    { id: '1', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
-    { id: '2', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
-    { id: '3', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
-    { id: '4', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+    { id: '1', text: 'A high degree of accuracy and consistency in business operations' },
+    { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
+    { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
+    { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
+    { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
   ]
 
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Enables automation across diverse use cases",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Help businesses achieve high productivity",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Substantial improvements in return on investment (ROI)",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
       icon: "",
     },
-    {
-      _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-      icon: "",
-    }
+    
   ]
 
   const BenefitsData = [
@@ -155,8 +152,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Cognitive Intelligent Solutions to Charge Your Business Value Chain with Ease "
-        desc=""
+        title="Intelligent Solutions for Future-Proof Business"
+        desc="Delivering business - fit intelligent solutions to automate tedious tasks and augment business strength."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -190,14 +187,14 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <OverviewSection Text={'Intelligent technologies like AI, ML, RPA and IoT are transforming businesses by predicting customer behavior, automating manual tasks, providing.'} />
+      <OverviewSection Text={'Discover how AI, ML, RPA and IIoT help businesses with customer behavior prediction, process automation and generate new revenue streams with real time insights. As a strategic tech partner, Godrej Infotech ensures a future-ready foundation for clients.'} />
 
       {/* solutions */}
       <SectionWidthSlider
         ID={'AIOfferings'}
         SectionImageUrl={yourImageUrl}
-        Heading={'Advance Solutions for Business Future'}
-        Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+        Heading={'Advance Solutions for Business Future Readiness'}
+        Desc={''}
         Color={'white'}
         MaxWidth={'40%'}
         CardDataList={advanceSolutionCardData}
@@ -208,8 +205,8 @@ const page = () => {
       <BenefitSliderSection
         ID={'AIOfferings'}
         BGColor={'#1D162B'}
-        Heading={'Benefits of AI / ML'}
-        Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        Heading={'Advantage of Intelligent Technologies'}
+        Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         Color={'white'}
         MaxWidth={'40%'}
         CardDataList={benifitsCardsData}
@@ -217,15 +214,15 @@ const page = () => {
 
       {/* blog */}
 
-      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveilling Hyper automation  for supply chain efficiency'}
-        Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
+        Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
         Color={'white'}
         MaxWidth="70%"
       ></BlogSection>
 
       {/* Distinctive section*/}
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape.'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
       >
       </DistinctiveSection>
 
