@@ -32,7 +32,7 @@ function SectionWidthSlider({ ID, SectionImageUrl, Heading, Desc, MaxWidth, Slid
                         navigation={false}
                         pagination={{ type: "bullets", clickable: true }}
                         autoplay={Autoplay}
-                        loop={true}
+                        loop={false}
                         spaceBetween={30}
                     >
                         {CardDataList?.map((item, index) => (
