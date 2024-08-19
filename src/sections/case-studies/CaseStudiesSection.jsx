@@ -334,7 +334,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
               <div className="flex flex-row justify-start items-center gap-8 w-full h-[624px]">
                 {/* Grid--One */}
                 <div
-                  className="relative w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
+                  className="relative w-full lg:w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
                   style={{
                     color: casestudy[0].color,
                     overflow: "hidden", // Ensures no overflow from the video
