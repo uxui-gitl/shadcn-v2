@@ -1044,9 +1044,7 @@ const Page = () => {
                   Globally Trusted Core Infor Expertise
                 </h3>
                 <p>
-                  Regardless of whether you're starting your transformation
-                  journey or aiming to gain cloud capabilities, our Infor
-                  expertise helps you progress to a higher level.
+                  {"Regardless of whether you're starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level."}
                 </p>
               </div>
             </div>
@@ -1137,10 +1135,7 @@ const Page = () => {
                   Infor Service Offerings
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project's success drives our ownership
-                  and determination to go above and beyond. With rich experience
-                  of technical expertise, we offer services to meet the sole
-                  requirements of your business.
+                  {"Our commitment to your project's success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business."}
                 </p>
               </div>
             </div>

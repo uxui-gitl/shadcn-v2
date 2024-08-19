@@ -13,7 +13,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import NextTopLoader from "nextjs-toploader";
 const inter = Inter_Tight({ subsets: ["latin"] });
 
-import Head from "next/head";
 import { NextUIProvider } from "@nextui-org/react";
 
 const defaultMetadata = {

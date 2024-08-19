@@ -30,7 +30,7 @@ const Abstract = (AbstractProps) => {
             </LinearGradient>
           </div>
           {AbstractProps.list ? (
-            <div className="mt-8">''
+            <div className="mt-8">
               <ul>
                 {AbstractProps.listArr.map((list) => (
                   <li key={list._id}>

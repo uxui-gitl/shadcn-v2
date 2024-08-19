@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 function CommonCard({ Item }) {
-    const { CardBGImageUrl = '', BGColor = '', cardTitle = "", cardIconUrl = '', cardHeading = '', cardDesc = '', isArrow = 'true', downImageUrl = '', link = [], Color = '#000', cardDownImageMinHeight = '200px' } = Item;
+    const { CardBGImageUrl= '', BGColor = '', cardTitle = "", cardIconUrl = '', cardHeading = '', cardDesc = '', isArrow = 'true', downImageUrl = '', link = [], Color = '#000', cardDownImageMinHeight = '200px' } = Item;
     return (
         <>
             <div class="rounded-3xl shadow" style={{ backgroundImage: `url(${CardBGImageUrl})`, backgroundSize: 'cover', backgroundColor: `${BGColor}`, color: Color, width: '100%' }}>

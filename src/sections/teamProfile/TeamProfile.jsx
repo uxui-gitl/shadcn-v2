@@ -52,7 +52,7 @@ const TeamProfile = () => {
               Chief Executive Officer
             </h5>
             <p className="text-sm font-medium text-[#475467] leading-[22px]">
-              Mr. Ajay Pimparkar's association with the Godrej Group started way back in the 1980's. He has been responsible for preparing and implementing the complete Information Technology roadmap for the various businesses in tune with the Strategic Business Plan of the organization.
+             {" Mr. Ajay Pimparkar's association with the Godrej Group started way back in the 1980's. He has been responsible for preparing and implementing the complete Information Technology roadmap for the various businesses in tune with the Strategic Business Plan of the organization."}
             </p>
             <Link
               href="/"
@@ -77,7 +77,7 @@ const TeamProfile = () => {
               Vice President - IT, Godrej & Boyce
             </h5>
             <p className="text-sm font-medium text-[#475467] leading-[22px]">
-              Mr. Ashwin Mistry brings forth more than 30 years of valuable experience in the IT industry to our team. With two decades dedicated to ERP implementation, his proficiency blazes in the Discrete and Project manufacturing sectors. 
+              {"Mr. Ashwin Mistry brings forth more than 30 years of valuable experience in the IT industry to our team. With two decades dedicated to ERP implementation, his proficiency blazes in the Discrete and Project manufacturing sectors."}
             </p>
             
             <Link

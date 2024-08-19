@@ -7,7 +7,7 @@ const Container = ({
 }: {
   children: React.ReactNode;
   className?: string;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: any;
 }) => {
   // width: 100%;
   //   margin-right: auto;

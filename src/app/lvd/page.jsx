@@ -588,16 +588,16 @@ const Page = () => {
                   About Us
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  Headquartered in Belgium (Wevelgem-Gullegem), LVD Godrej Infotech (LVDGI), is a fully owned subsidiary of Godrej Infotech Limited (GITL) which is based in Mumbai, India. A leading IT service provider specializing in end-to-end IT solutions, GITL is part of the USD 4.1 Billion Godrej group of companies. The Godrej Group is one of India's leading corporate houses dealing in High Tech Engineering, Consumer Products, Aerospace, Chemicals, Construction, Material Handling, Storage & Security Solutions. 
+                  {"Headquartered in Belgium (Wevelgem-Gullegem), LVD Godrej Infotech (LVDGI), is a fully owned subsidiary of Godrej Infotech Limited (GITL) which is based in Mumbai, India. A leading IT service provider specializing in end-to-end IT solutions, GITL is part of the USD 4.1 Billion Godrej group of companies. The Godrej Group is one of India's leading corporate houses dealing in High Tech Engineering, Consumer Products, Aerospace, Chemicals, Construction, Material Handling, Storage & Security Solutions. "}
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  LVDGI's service offerings include Business Consulting, ERP Implementation & Support, Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, and e-Commerce. We have domain and technology expertise in the Manufacturing, Retail, Trading, Distribution, Logistics, Hospitality, Project, and Service industries. 
+                  {"LVDGI's service offerings include Business Consulting, ERP Implementation & Support, Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, and e-Commerce. We have domain and technology expertise in the Manufacturing, Retail, Trading, Distribution, Logistics, Hospitality, Project, and Service industries."}
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                 A technology focused organization, LVDGI has emerged as a pioneer in the Digital Solutions space. Driven by the values of Integrity, Responsiveness, Commitment and Teamwork, we have been providing Microsoft, Infor, LS Retail, and Oracle services and solutions for leading organizations in the Europe region. 
+                 {"A technology focused organization, LVDGI has emerged as a pioneer in the Digital Solutions space. Driven by the values of Integrity, Responsiveness, Commitment and Teamwork, we have been providing Microsoft, Infor, LS Retail, and Oracle services and solutions for leading organizations in the Europe region."}
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                 Our team of knowledge experts provide ready-to-deploy and customizable IT-solutions for individual business functions like Enterprise Resource Planning (ERP), Customer Relationship Management, Product Life Cycle Management, Asset Management and Business Intelligence (BI). We also have a Remote Infrastructure Management team that works as an extended IT arm for their clients and provides skilled IT proactive services of Azure Cloud, Database, Network, System and Security Administration. 
+                 {"Our team of knowledge experts provide ready-to-deploy and customizable IT-solutions for individual business functions like Enterprise Resource Planning (ERP), Customer Relationship Management, Product Life Cycle Management, Asset Management and Business Intelligence (BI). We also have a Remote Infrastructure Management team that works as an extended IT arm for their clients and provides skilled IT proactive services of Azure Cloud, Database, Network, System and Security Administration."}
                 </p>
               </div>
             </div>
@@ -893,7 +893,7 @@ const Page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
               <p className="text-base font-medium">
-                Be a world class provider of high-quality Information's & Technology solutions.
+                {"Be a world class provider of high-quality Information's & Technology solutions."}
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">

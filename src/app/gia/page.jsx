@@ -588,13 +588,13 @@ const Page = () => {
                   About Us
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                 Godrej Infotech Americas (GIA) is the subsidiary of Godrej Infotech Ltd (GITL) which is one of the holding companies within the USD 4.1 billion Godrej Group. This group started its journey in 1897 and through the years have diversified from High Tech Engineering to Consumer Products. 
+                 {"Godrej Infotech Americas (GIA) is the subsidiary of Godrej Infotech Ltd (GITL) which is one of the holding companies within the USD 4.1 billion Godrej Group. This group started its journey in 1897 and through the years have diversified from High Tech Engineering to Consumer Products."}
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  Based out of Texas, USA, GIA is one of the leading IT service providers specializing in End-to-End IT solutions. Our service offerings include Business Consulting, ERP Implementation & Support, Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, and e-Commerce. We have domain and technology expertise in the Manufacturing, Retail, Trading, Distribution, Logistics, Hospitality, Project, and Service industries. 
+                 {" Based out of Texas, USA, GIA is one of the leading IT service providers specializing in End-to-End IT solutions. Our service offerings include Business Consulting, ERP Implementation & Support, Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, and e-Commerce. We have domain and technology expertise in the Manufacturing, Retail, Trading, Distribution, Logistics, Hospitality, Project, and Service industries."}
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  GITL's Strategic partnership with industry leaders like Microsoft, Infor, LS Retail, and Oracle have played an instrumental role in making the organization a mature IT partner that understands the value of business process automation. An ISO 9001:2015 certified company, GITL's service offerings follow proprietary methodologies derived from product best practices and experience in similar implementations. Headquartered in Mumbai, India, GITL has presence in Middle East, APAC, Europe, and US with customer footprints extending across multiple geographies.                                       
+                  {"GITL's Strategic partnership with industry leaders like Microsoft, Infor, LS Retail, and Oracle have played an instrumental role in making the organization a mature IT partner that understands the value of business process automation. An ISO 9001:2015 certified company, GITL's service offerings follow proprietary methodologies derived from product best practices and experience in similar implementations. Headquartered in Mumbai, India, GITL has presence in Middle East, APAC, Europe, and US with customer footprints extending across multiple geographies. "}                                      
                 </p>
               </div>
             </div>
