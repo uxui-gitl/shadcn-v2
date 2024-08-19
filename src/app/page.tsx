@@ -2,21 +2,21 @@
 import Image from "next/image";
 import React from "react";
 // component import
-import Announcement from "@/components/Announcement";
-import Navbar from "@/components/navbar";
-import HeroIntro from "@/components/HeroIntro";
-import ClientLogos from "@/components/ClientLogos";
-import Robot from "@/components/Robot";
-import Robot2 from "@/components/Robot2"
-import EmbraceCard from "@/components/EmbraceCard";
-import HubExpertise from "@/components/HubExpertise";
-import OfferingsSlider from "@/components/OfferingsSlider";
-import ResultSection from "@/components/ResultSection";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import Subscribe from "@/components/Subscribe";
-import Footer from "@/components/Footer";
-import Container from "@/components/Container";
-import OfferingCards from "@/components/OfferingCards";
+import Announcement from "@/components/home/Announcement";
+import Navbar from "@/components/home/navbar";
+import HeroIntro from "@/components/home/HeroIntro";
+import ClientLogos from "@/components/home/ClientLogos";
+import Robot from "@/components/home/Robot";
+import Robot2 from "@/components/home/Robot2"
+import EmbraceCard from "@/components/home/EmbraceCard";
+import HubExpertise from "@/components/home/HubExpertise";
+import OfferingsSlider from "@/components/home/OfferingsSlider";
+import ResultSection from "@/components/home/ResultSection";
+import { InfiniteMovingCards } from "@/components/home/ui/infinite-moving-cards";
+import Subscribe from "@/components/home/Subscribe";
+import Footer from "@/components/home/Footer";
+import Container from "@/components/home/Container";
+import OfferingCards from "@/components/home/OfferingCards";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <Announcement />
       <Navbar />
       <HeroIntro />
-      <div className="common-section-client-robot bg-[url('/curvedl1.png')]">
+      <div className="common-section-client-robot">
         <div>
           <ClientLogos></ClientLogos>
         </div>
@@ -38,6 +38,7 @@ export default function Home() {
 
       <EmbraceCard />
       <HubExpertise />
+      <Image src={'/home/Curve-Home-LandingPage.svg'} alt="hi" width={100} height={80}></Image>
       <OfferingCards></OfferingCards>
 
       {/* <OfferingsSlider /> */}
@@ -77,7 +78,7 @@ export default function Home() {
       <div className="mt-8 flex-col px-10 ">
         <Subscribe />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

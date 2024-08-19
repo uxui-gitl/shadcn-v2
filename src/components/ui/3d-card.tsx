@@ -1,7 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-
+import { cn } from "@/utils/cn";
 import Image from "next/image";
 import React, {
   createContext,
@@ -9,7 +8,6 @@ import React, {
   useContext,
   useRef,
   useEffect,
-  useCallback,
 } from "react";
 
 const MouseEnterContext = createContext<
@@ -123,26 +121,18 @@ export const CardItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
-  const handleAnimations = useCallback(() => {
+  useEffect(() => {
+    handleAnimations();
+  }, [isMouseEntered]);
+
+  const handleAnimations = () => {
     if (!ref.current) return;
     if (isMouseEntered) {
       ref.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
     } else {
       ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
     }
-  }, [
-    isMouseEntered,
-    translateX,
-    translateY,
-    translateZ,
-    rotateX,
-    rotateY,
-    rotateZ,
-  ]);
-
-  useEffect(() => {
-    handleAnimations();
-  }, [isMouseEntered, handleAnimations]);
+  };
 
   return (
     <Tag
