@@ -17,15 +17,18 @@ import powerAutomate from "../../../../../../public/logos/rpa/microsoft-power-au
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
-import CommonCardBackground from '@/components/CommonCardBackground';
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-import ServiceOfferingSection from'@/sections/serviceOffering/ServiceOfferingSection'
+import ServiceOfferingSection from '@/sections/serviceOffering/ServiceOfferingSection';
+import DistinctiveSection from '@/sections/Distinctive/DistinctiveSection';
+import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
+
+
 
 const RPASolution = [
   {
     id: 1,
-    CardBGImageUrl:'/rpa/ArtboardBg.png',
-    Color:'white',
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Computer Vision',
@@ -34,8 +37,8 @@ const RPASolution = [
   },
   {
     id: 2,
-    CardBGImageUrl:'/rpa/ArtboardBg.png',
-    Color:'white',
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Computer Vision',
@@ -44,23 +47,71 @@ const RPASolution = [
   },
   {
     id: 3,
-    CardBGImageUrl:'/rpa/ArtboardBg.png',
-    Color:'white',
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Computer Vision',
     cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
     isArrow: 'true',
-  },   {
+  }, {
     id: 4,
-    CardBGImageUrl:'/rpa/ArtboardBg.png',
-    Color:'white',
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Computer Vision',
     cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
     isArrow: 'true',
   },
+]
+
+const RPALifeCycleData = [
+  { id: 1, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
+  { id: 2, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
+  { id: 3, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
+  { id: 4, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
+]
+
+const offeringLinkListData = [
+  { id: 1, text: 'Consultation Services', isActive: 'false', },
+  { id: 2, text: 'Feasibility Check Services', isActive: 'false' },
+  { id: 3, text: 'RPA Deployment', isActive: 'false' },
+]
+
+const offeringCardData = [
+  { id: '1', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "Consultancy Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '2', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "2Consultancy Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '3', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "3Consultancy Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+
+]
+
+const distinctiveData = [
+  {
+    _id: 1,
+    desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+    icon: "",
+  },
+  {
+    _id: 2,
+    desc: "Agile approach that keeps projects on cutting edge.",
+    icon: "",
+  },
+  {
+    _id: 3,
+    desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+    icon: "",
+  },
+  {
+    _id: 4,
+    desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+    icon: "",
+  },
+  {
+    _id: 5,
+    desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+    icon: "",
+  }
 ]
 
 const page = () => {
@@ -117,13 +168,13 @@ const page = () => {
       <OverviewSection Text={'Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by'} />
 
       {/* optimising rpa solution */}
-          <SectionWidthSlider
-          BGColor="#EFE9FB"
-           Heading={'Optimising businesses through RPA solutions'}
-           Color={'black'}
-           MaxWidth={'40%'}
-           CardDataList={RPASolution}
-          ></SectionWidthSlider>
+      <SectionWidthSlider
+        BGColor="#EFE9FB"
+        Heading={'Optimising businesses through RPA solutions'}
+        Color={'black'}
+        MaxWidth={'40%'}
+        CardDataList={RPASolution}
+      ></SectionWidthSlider>
 
       {/* inteligent technologies */}
       <SectionWrapper ID="Platforms">
@@ -159,64 +210,69 @@ const page = () => {
 
       {/* service Offerings section */}
 
-      <ServiceOfferingSection>
+      <ServiceOfferingSection id="Benefits"
+        BGColor="#1D162B"
+        Heading={'Service Offerings'}
+        Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        Color={'white'}
+        MaxWidth={'40%'}
+        CardDataList={offeringCardData}
+        LinkListData={offeringLinkListData}
+      >
 
       </ServiceOfferingSection>
-      
-      <SectionWrapper id="Benefits" BGColor="#1D162B">
+
+      {/* project life cycle */}
+      <SectionWrapper id="" BGColor="#1D162B" style={{ marginTop: '-35px' }}>
         <div className="grid grid-cols-2 gap-20">
           <div className="">
             <SectionHeading
-              Heading={'Service Offerings'}
-              Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+              Heading={'RPA Project Lifecycle'}
+              Desc={'From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.'}
               Color="white"
             >
             </SectionHeading>
-            <div className="my-10">
-              <div href="#" class="flex items-center justify-center p-5 text-2xl font-medium text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 bg-transparent dark:hover:bg-gray-700 dark:hover:text-white" style={{ borderBottom: '2px solid #43189A' }}>
-                <span class="w-full">Get started with our  Figma Design System</span>
-                <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </div>
-              <div href="#" class="flex items-center justify-center p-5 text-2xl font-medium text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 bg-transparent dark:hover:bg-gray-700 dark:hover:text-white" style={{ borderBottom: '2px solid #43189A' }}>
-                <span class="w-full">Get started with our  Figma Design System</span>
-                <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </div>
-              <div href="#" class="flex items-center justify-center p-5 text-2xl font-medium text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 bg-transparent dark:hover:bg-gray-700 dark:hover:text-white" style={{ borderBottom: '2px solid #43189A' }}>
-                <span class="w-full">Get started with our  Figma Design System</span>
-                <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </div>
+            <div className="my-10" style={{ minHeight: '300px', position: 'relative' }}>
+              <Image src="/rpa/Offering01.png" alt="name" layout='fill' objectFit='cover' className="rounded-3xl" />
             </div>
           </div>
-          <div className="">
-            <CommonCardBackground Color='#000' Item={{ id: 1, Title: 'Consultancy Services', Des: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', ImageUrl: '/rpa/image-10.png' }} style={{ minWidth: '100%', minHeight: '100%' }}></CommonCardBackground>
+
+          <div className="" style={{ maxHeight: '540px' }}>
+            <div class=" p-6 bg-[#EFE9FB] border border-gray-200 rounded-3xl flex flex-col" style={{ overflow: 'auto', maxHeight: 'inherit' }}>
+              {RPALifeCycleData.map((item) => (
+                <>
+                  <div className="card bg-white rounded-3xl mb-3">
+                    <div className="card-body p-6">
+                      <div className="text-[#E0028E] mb-3">{item.title}</div>
+                      <h5 class="text-[28px] leading-[36px] font-semibold mb-3">{item.cardHeading}</h5>
+                      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        {item.list && item.list.map((listItem) => (
+                          <>
+                            <li>
+                              {listItem.text}
+                            </li>
+                          </>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
         </div>
+
       </SectionWrapper>
 
-      {/* project life cycle */}
-      <SectionWrapper id="" BGColor="#1D162B">
-        <SectionHeading
-          Heading={'RPA Project Lifecycle'}
-          Desc={'From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.'}
-          Color="white"
-        >
-        </SectionHeading>
-        <div className="grid grid-cols-2 gap-20">
-          <div className="my-10">
-            <img src="/bgInforScreen.png"></img>
-          </div>
-          <div className="">
+      {/* Distinctive section*/}
+      <DistinctiveSection DistinctiveData={distinctiveData}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape.'}
+      >
+      </DistinctiveSection>
 
-
-          </div>
-        </div>
-      </SectionWrapper>
+      {/* transform business with us section */}
+      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+      </TransformBusinessForm>
 
       {/* Infotech Weekly Updates */}
       <InfotechWeeklyAlt />
