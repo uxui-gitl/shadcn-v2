@@ -8,8 +8,8 @@ import SectionHeading from "@/components/SectionHeading";
 
 const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
   const caseStudyLayout = csLayout;
-  const setHeading = 'Our IIoT Solutions';
-  const setDesc = 'We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs.';
+  const setHeading = 'IIoT  Solution Offerings';
+  const setDesc = 'Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.';
   const setColor = "#2B1624";
   return (
     <>
