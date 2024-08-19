@@ -208,7 +208,6 @@ const page = () => {
         Heading={'Advantage of Intelligent Technologies'}
         Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         Color={'white'}
-        MaxWidth={'40%'}
         CardDataList={benifitsCardsData}
       ></BenefitSliderSection>
 
@@ -227,7 +226,7 @@ const page = () => {
       </DistinctiveSection>
 
       {/* transform business with us section */}
-      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."} max>
       </TransformBusinessForm>
     </>
   );

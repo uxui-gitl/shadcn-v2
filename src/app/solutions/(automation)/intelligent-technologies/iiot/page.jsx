@@ -158,6 +158,7 @@ const IIOT = () => {
         Desc={
           "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
         }
+        maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
 

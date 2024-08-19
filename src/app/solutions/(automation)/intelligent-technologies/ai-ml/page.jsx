@@ -247,7 +247,6 @@ const page = () => {
                 Heading={'Expertise Machine Learning'}
                 Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
                 Color={'white'}
-                MaxWidth="80%"
               >
               </SectionHeading>
             </div>
@@ -294,7 +293,6 @@ const page = () => {
         Heading={'Benefits of AI / ML'}
         Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
         Color={'white'}
-        MaxWidth={'40%'}
         CardDataList={benifitsCardsData}
       ></BenefitSliderSection>
       {/* blog section  */}

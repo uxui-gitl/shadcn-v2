@@ -172,7 +172,7 @@ const page = () => {
         BGColor="#EFE9FB"
         Heading={'Optimising businesses through RPA solutions'}
         Color={'black'}
-        MaxWidth={'40%'}
+        MaxWidth={'50%'}
         CardDataList={RPASolution}
       ></SectionWidthSlider>
 

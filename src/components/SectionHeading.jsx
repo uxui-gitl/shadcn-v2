@@ -11,7 +11,7 @@ function SectionHeading({ Heading, Desc, Color = 'black', MaxWidth = '100%', cen
           {Heading}
         </h1>
         <p
-          className={`w-1/2 text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14`}
+          className={`w-full text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14`}
           style={{ color: Color }}
         >
           {Desc}
