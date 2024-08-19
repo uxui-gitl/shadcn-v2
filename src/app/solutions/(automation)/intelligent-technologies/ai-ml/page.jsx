@@ -24,11 +24,11 @@ const AIOfferingsData = [
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardDesc: 'We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.',
     isArrow: 'true',
     link: [
       {
-        title: "Data Labelling and Real-time",
+        title: "Data Labelling and Real-time Object Detection",
         url: "/",
       },
       {
@@ -48,20 +48,20 @@ const AIOfferingsData = [
     BGColor: '#fff',
     cardTitle: "",
     cardIconUrl: '',
-    cardHeading: 'Seech & Language',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardHeading: 'Speech & Language',
+    cardDesc: 'Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand tall in competition.',
     isArrow: 'true',
     link: [
       {
-        title: "OCR",
+        title: "Transcription Services",
         url: "/",
       },
       {
-        title: "Text extraction",
+        title: "Speech Recognition",
         url: "/",
       },
       {
-        title: "Financial Processing",
+        title: "Language Translation",
         url: "/",
       },
     ],
@@ -73,15 +73,39 @@ const AIOfferingsData = [
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Document Understanding',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardDesc: 'We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.',
     isArrow: 'true',
     link: [
       {
-        title: "Document processing",
+        title: "Optical Character Recognition (OCR)",
         url: "/",
       },
       {
-        title: "Sentiment analysis",
+        title: "Text Extraction",
+        url: "/",
+      },
+      {
+        title: "Financial Processing",
+        url: "/",
+      },
+    ],
+  },
+  {
+    id: 4,
+    BGImageUrl: '',
+    BGColor: '#fff',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Conversational AI',
+    cardDesc: 'Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ',
+    isArrow: 'true',
+    link: [
+      {
+        title: "Document Processing",
+        url: "/",
+      },
+      {
+        title: "Sentiment Analysis",
         url: "/",
       },
       {
@@ -98,7 +122,7 @@ const MLData = [
     imgURL: "/assest/ai-ml/Expertise_Deep-Learning.jpg",
     title: "Deep Learning",
     subTitle:
-      "Our deep learning expertise builds solutions that automate complex tasks helping in data-driven decision-making, especially when it comes to forecasting your business's future.",
+      "Our deep learning expertise builds solutions that automate complex tasks, helping in data-driven decision-making.",
     ctaURL: "",
   },
   {
@@ -106,7 +130,7 @@ const MLData = [
     imgURL: "/assest/ai-ml/Expertise_Supervised-Learning.jpg",
     title: "Supervised Learning",
     subTitle:
-      "We deliver customer sentiment analysis, image recognition and predictive maintenance services that help you make informed decisions and create happier customers.",
+      "We deliver customer sentiment analysis, image recognition and predictive maintenance services for informed business decisions and happy customers.",
     ctaURL: "",
   },
   {
@@ -122,7 +146,7 @@ const MLData = [
     imgURL: "/assest/ai-ml/Expertise_Reinforcement-Learning.jpg",
     title: "Reinforcement Learning",
     subTitle:
-      "Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
+      "Reinforcement learning expertise functions as a guiding support for applications such as autonomous systems and resource optimisation.",
     ctaURL: "",
   },
 ];
@@ -156,10 +180,10 @@ const distinctiveData = [
 ]
 
 const benifitsCardsData = [
-  { id: '1', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
-  { id: '2', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
-  { id: '3', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
-  { id: '4', text: 'Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends' },
+  { id: '1', text: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers' },
+  { id: '2', text: 'Anticipate future outcomes based on historical data, making informed decisions' },
+  { id: '3', text: 'Enables effortless communication and efficient information retrieval through Natural Language Processing' },
+  { id: '4', text: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
 ]
 
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
@@ -177,9 +201,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Leverage Optimised BI with AI & ML"
-        desc="Revolutionize your business operations, save time and boost productivity
-        with our cutting-edge offerings."
+        title="Innovate with AI & ML -Powered Business Solutions"
+        desc="Revolutionise business operations, enhance productivity and save time with our Artificial Intelligence & Machine Learning offerings."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -224,14 +247,14 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <OverviewSection Text={'By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency.'} />
+      <OverviewSection Text={'Tap into our AI & ML capabilities to fine-tune business parameters, drive proactive decisions, optimize process and accelerate growth for our clients.'} />
 
       {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
         SectionImageUrl={yourImageUrl}
-        Heading={'Our AI Offerings'}
-        Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+        Heading={'Artificial Intelligence Offerings'}
+        Desc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
         Color={'white'}
         MaxWidth={'40%'}
         CardDataList={AIOfferingsData}
@@ -244,8 +267,8 @@ const page = () => {
           <div className="flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
-                Heading={'Expertise Machine Learning'}
-                Desc={'We specialize in developing algorithms to make your operations smarter, faster and more reliable.'}
+                Heading={'Machine Learning Expertise'}
+                Desc={'We specialize in developing predictive models to forecast market shifts and identify untapped opportunities.'}
                 Color={'white'}
                 MaxWidth="80%"
               >
@@ -284,30 +307,30 @@ const page = () => {
 
       {/* Intelligent Technologies */}
       <>
-        <PlatformSection ID={'Intelligent'} Heading={'Intelligent Technologies Platforms'} Desc={' Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.'} PlatFormImageList={PlatFormImageList}></PlatformSection>
+        <PlatformSection ID={'Intelligent'} Heading={'Intelligent Technologies Platforms'} Desc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'} PlatFormImageList={PlatFormImageList}></PlatformSection>
       </>
 
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
         BGColor={'#1D162B'}
-        Heading={'Benefits of AI / ML'}
-        Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        Heading={'Benefits'}
+        Desc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
         Color={'white'}
         MaxWidth={'40%'}
         CardDataList={benifitsCardsData}
       ></BenefitSliderSection>
       {/* blog section  */}
 
-      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveilling Hyper automation  for supply chain efficiency'}
-        Desc={'IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era.'}
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveiling Hyper-automation for Supply Chain Efficiency'}
+        Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. '}
         Color={'white'}
         MaxWidth="70%"
       ></BlogSection>
 
       {/* Distinctive section*/}
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape.'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Our team applies in-depth AI/ML expertise to help businesses deploy machine learning models and algorithms, perform advanced data analytics, and achieve breakthrough results.'}
       >
       </DistinctiveSection>
 
