@@ -14,9 +14,14 @@ import HighlightPromo from "@/sections/highlightPromo/HighlightPromo";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import Benefits from "@/components/Benefits";
 import SectionWrapper from "@/components/SectionWrapper";
+import ChallengeSection from "@/sections/challenge/challengeSection";
+
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
-  const msLogoURL = "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
+  const imgBGURL_Challenges =
+    "/upgradeCloud/backgrounds/bg--onprem-challenges.png";
+  const msLogoURL =
+    "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
   const BENEFITS_DATA = [
     {
       _id: 1,
@@ -47,21 +52,23 @@ const UpgradeToCloud = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL:"/CloudStackServices/case-studies/bg--video-industry.mp4",
+      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: 'Elevating Customer Experience',
-      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      heading: "Elevating Customer Experience",
+      description:
+        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
       link: "/case-study-1",
-      color: '#FFFFFF'
+      color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: 'Non-government Association of Indian Industries',
-      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      heading: "Non-government Association of Indian Industries",
+      description:
+        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
       link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#FCE6F4'
+      color: "#000",
+      bgCardColor: "#FCE6F4",
     },
 
     {
@@ -69,19 +76,21 @@ const UpgradeToCloud = () => {
       title: "",
 
       heading: "Coffee Brand Distributor in Egypt and Middle East",
-      description: "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+      description:
+        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
       link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#EFE9FB'
+      color: "#000",
+      bgCardColor: "#EFE9FB",
     },
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
       heading: "Middle East-based Electrical Products Manufacturer",
-      description: "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+      description:
+        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
       link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#E1F2EF'
+      color: "#000",
+      bgCardColor: "#E1F2EF",
     },
     // Add more case studies here...
   ];
@@ -155,14 +164,15 @@ const UpgradeToCloud = () => {
         }
       />
       {/* End-Section--Overview */}
-      <section className="container max-auto"><h1>Challengs</h1></section>
+      {/* Start--Section--Challenges======================================================================== */}
+      <ChallengeSection
+        setHeading="On-premises Infrastructure Challenges"
+        setDesc="test desc"
+        setColor="#FFFFFF"
+        setImageBGURL={imgBGURL_Challenges}
+      />
+      {/* End--Section--Challenges======================================================================== */}
 
-      <section className="container max-auto"><h1>Upgrade Now</h1></section>
-
-      <section className="container max-auto"><h1>Cloud Upgrade Services</h1></section>
-
-      <section className="container max-auto"><h1>Benefits</h1></section>
-      
       {/* Section--Trained in Cloud Services= */}
       <HighlightPromo
         blurEffect="blurON"
@@ -175,8 +185,8 @@ const UpgradeToCloud = () => {
         setMSLogoURL={msLogoURL}
       />
       {/* End-Section--Trained in Cloud-Services */}
-        {/* Section--Hub-of-Expertise=======================================================================  */}
-        <HubExpertise
+      {/* Section--Hub-of-Expertise=======================================================================  */}
+      <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"

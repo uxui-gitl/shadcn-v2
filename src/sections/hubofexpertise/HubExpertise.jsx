@@ -80,7 +80,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor }) => {
                   </div>
                 ))}
               </div>
-              {/* Second Row */}
+              {/* Second Row----if more than 2 values */}
               {/* <div className="flex flex-row gap-8">
                 {counters.slice(2, 4).map((counter, index) => (
                   <div key={index} className="flex-1">
