@@ -15,6 +15,7 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import Benefits from "@/components/Benefits";
 import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
+import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
@@ -22,6 +23,67 @@ const UpgradeToCloud = () => {
     "/upgradeCloud/backgrounds/bg--onprem-challenges.png";
   const msLogoURL =
     "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
+  const yourImageUrl = "/ai-ml/AI-bgimage.jpg";
+  const UPGRADE_NOW_DATA = [
+    {
+      id: 1,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Computer<br/>Vision",
+      cardDesc:
+        "We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.",
+      isArrow: "true",
+      link: [],
+    },
+
+    {
+      id: 2,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Speech & Language",
+      cardDesc:
+        "Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand",
+      isArrow: "true",
+      link: [],
+    },
+    {
+      id: 3,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Document Understanding",
+      cardDesc:
+        "We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.",
+      isArrow: "true",
+      link: [],
+    },
+    {
+      id: 4,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+        cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Conversational<br/>AI",
+      cardDesc:
+        "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ",
+      isArrow: "true",
+      link: [],
+    },
+  ];
+
   const BENEFITS_DATA = [
     {
       _id: 1,
@@ -166,12 +228,25 @@ const UpgradeToCloud = () => {
       {/* End-Section--Overview */}
       {/* Start--Section--Challenges======================================================================== */}
       <ChallengeSection
-        setHeading="On-premises Infrastructure Challenges"
-        setDesc="test desc"
+        setHeading="On-premisesInfrastructure Challenges"
         setColor="#FFFFFF"
         setImageBGURL={imgBGURL_Challenges}
       />
       {/* End--Section--Challenges======================================================================== */}
+
+      {/* Start--Section--UpgradeNow======================================================================== */}
+      <SectionWithSlider
+        ID={"UPGRADE_NOW_DATA"}
+        Heading={"Upgrade Now"}
+        Desc={
+          "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
+        }
+        Color="#ffffff"
+        CardDataList={UPGRADE_NOW_DATA}
+        BGColor="#2B1624"
+       
+      />
+      {/* End--Section--UpgradeNow======================================================================== */}
 
       {/* Section--Trained in Cloud Services= */}
       <HighlightPromo

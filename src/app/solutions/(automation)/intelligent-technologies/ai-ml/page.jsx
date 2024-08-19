@@ -21,11 +21,14 @@ const AIOfferingsData = [
     id: 1,
     BGImageUrl: '',
     BGColor: '#fff',
+    CardBGColor:'#FFF',
+    CardColor:'#000',
     cardTitle: "",
     cardIconUrl: '',
-    cardHeading: 'Computer Vision',
+    cardHeading: 'Computer<br/>Vision',
     cardDesc: 'We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.',
     isArrow: 'true',
+    arrowColor: '#000',
     link: [
       {
         title: "Data Labelling and Real-time Object Detection",
@@ -46,11 +49,14 @@ const AIOfferingsData = [
     id: 2,
     BGImageUrl: '',
     BGColor: '#fff',
+    CardBGColor:'#FFF',
+    CardColor:'#000',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Speech & Language',
     cardDesc: 'Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand tall in competition.',
     isArrow: 'true',
+    arrowColor: '#000',
     link: [
       {
         title: "Transcription Services",
@@ -70,11 +76,14 @@ const AIOfferingsData = [
     id: 3,
     BGImageUrl: '',
     BGColor: '#fff',
+    CardBGColor:'#FFF',
+    CardColor:'#000',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Document Understanding',
     cardDesc: 'We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.',
     isArrow: 'true',
+    arrowColor: '#000',
     link: [
       {
         title: "Optical Character Recognition (OCR)",
@@ -94,11 +103,14 @@ const AIOfferingsData = [
     id: 4,
     BGImageUrl: '',
     BGColor: '#fff',
+    CardBGColor:'#FFF',
+    CardColor:'#000',
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Conversational AI',
     cardDesc: 'Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ',
     isArrow: 'true',
+    arrowColor: '#000',
     link: [
       {
         title: "Document Processing",
@@ -256,8 +268,8 @@ const page = () => {
         Heading={'Artificial Intelligence Offerings'}
         Desc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
         Color={'white'}
-        MaxWidth={'40%'}
         CardDataList={AIOfferingsData}
+        pageID="ai-ml"
       >
       </SectionWidthSlider>
 

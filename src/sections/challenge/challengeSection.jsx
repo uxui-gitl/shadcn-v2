@@ -28,7 +28,7 @@ const ChallengeSection = ({
             }}
         >
             <div className="container mx-auto flex justify-end">
-                <div className="w-full sm:w-1/2 flex flex-col items-start">
+                <div className="w-full lg:w-1/2 flex flex-col items-start">
                     <SectionHeading 
                         Heading={setHeading}
                         Color={setColor}

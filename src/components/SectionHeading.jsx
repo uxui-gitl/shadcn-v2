@@ -5,13 +5,13 @@ function SectionHeading({ Heading, Desc, Color = 'black', MaxWidth = '100%', cen
       style={{ maxWidth: MaxWidth }}
     >
       <h1
-        className={` text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px] text-left`}
+        className={`w-[80%] text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px] text-left`}
         style={{ color: Color }}
       >
         {Heading}
       </h1>
       <p
-        className={`w-1/2 text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14 text-left`}
+        className={`w-[80%] text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14 text-left`}
         style={{ color: Color }}
       >
         {Desc}
