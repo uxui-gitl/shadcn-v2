@@ -538,7 +538,7 @@ const Page = () => {
         alignment="center"
         title="DELIVERING BUSINESS VALUE WITH AUTOMATION / CLOUD / TRANSFORMATION"
         desc="Revolutionize your business operations, save time and boost productivity with our cutting-edge offerings."
-        cta="Let's Connect"
+        cta="Let&apos;s Connect"
         width="100%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
