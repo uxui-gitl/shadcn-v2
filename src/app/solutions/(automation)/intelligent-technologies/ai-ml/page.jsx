@@ -24,7 +24,7 @@ const AIOfferingsData = [
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.',
+    cardDesc: 'Custom video/image analysis tools leveraging OpenCV for optimized computer vision algorithms',
     isArrow: 'true',
     link: [
       {
@@ -49,7 +49,7 @@ const AIOfferingsData = [
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Speech & Language',
-    cardDesc: 'Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand tall in competition.',
+    cardDesc: 'Speech & Language AI helps businesses to elevate customer experiences and stay competitive',
     isArrow: 'true',
     link: [
       {
@@ -73,7 +73,7 @@ const AIOfferingsData = [
     cardTitle: "",
     cardIconUrl: '',
     cardHeading: 'Document Understanding',
-    cardDesc: 'We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.',
+    cardDesc: 'AI-driven data capture from diverse documents, enabling error-free extraction of unstructured data',
     isArrow: 'true',
     link: [
       {
