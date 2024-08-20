@@ -244,6 +244,7 @@ const UpgradeToCloud = () => {
         Color="#ffffff"
         CardDataList={UPGRADE_NOW_DATA}
         BGColor="#2B1624"
+         setHeadingLayout="horizontal"
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}
