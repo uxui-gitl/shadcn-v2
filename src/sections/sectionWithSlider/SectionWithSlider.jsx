@@ -20,6 +20,8 @@ function SectionWidthSlider({
   CardDataList = [],
   Color = "#000",
   BGColor = "#fff",
+  setHeadingLayout,
+  setHeadingContainerWidth
 }) {
   return (
     <>
@@ -37,7 +39,8 @@ function SectionWidthSlider({
             Heading={Heading}
             Desc={Desc}
             Color={Color}
-            MaxWidth={SectionHeadingMaxWidth}
+            MaxWidth={MaxWidth}
+            layout={setHeadingLayout}
           ></SectionHeading>
         </div>
 

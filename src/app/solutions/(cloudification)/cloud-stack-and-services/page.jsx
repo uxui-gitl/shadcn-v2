@@ -22,6 +22,7 @@ import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 
 
@@ -31,6 +32,66 @@ const CloudStack = () => {
   const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
   
   const blogImageUrl = "/ai-ml/blog-bg.png";
+
+  const ULTIMATE_CHOICE_DATA = [
+    {
+      id: 1,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Sample Heading",
+      cardDesc:
+        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+      isArrow: "",
+      link: [],
+    },
+
+    {
+      id: 2,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Sample Heading",
+      cardDesc:
+        "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 3,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Sample Heading",
+      cardDesc:
+        "Drive business agility and improved ROI with automation",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 4,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+        cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Sample Heading",
+      cardDesc:
+        "Highest levels of security and privacy, ensuring data is safeguarded",
+      isArrow: "",
+      link: [],
+    },
+  ];
 
   const CASE_STUDIES_DATA = [
     {
@@ -153,6 +214,7 @@ our Intelligent Edge Cloud Stack and Services"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
         setPadding={false}
+        setHeadingContainerWidthFull={'w-full'}
   
         
       />
@@ -163,7 +225,20 @@ our Intelligent Edge Cloud Stack and Services"
         setColor="#1D162B"
       />
       {/* Section--Section--Hub-of-Expertise */}
-      <section className="container max-auto"><h1>Why Cloud is your ultimate choice?</h1></section>
+      {/* Start--Section--UltimateChoice======================================================================== */}
+      <SectionWithSlider
+        ID={"ULTIMATE_CHOICE_DATA"}
+        Heading={"Why Cloud is your Ultimate Choice?"}
+        Desc={
+          "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
+        }
+        Color="#ffffff"
+        CardDataList={ ULTIMATE_CHOICE_DATA}
+        BGColor="#2B1624"
+        setHeadingLayout="horizontal"
+       
+      />
+      {/* End--Section--UltimateChoice======================================================================== */}
       <section className="container max-auto"><h1>Cloud Services</h1></section>
 
       {/* Section--Synergetic-Partnership======================================================= */}

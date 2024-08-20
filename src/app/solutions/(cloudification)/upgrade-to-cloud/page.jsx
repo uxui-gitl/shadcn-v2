@@ -244,6 +244,7 @@ const UpgradeToCloud = () => {
         Color="#ffffff"
         CardDataList={UPGRADE_NOW_DATA}
         BGColor="#2B1624"
+         setHeadingLayout="horizontal"
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}
@@ -258,6 +259,7 @@ const UpgradeToCloud = () => {
         setLogoImages=""
         setPadding={true}
         setMSLogoURL={msLogoURL}
+        setHeadingContainerWidthFull={'w-full'}
       />
       {/* End-Section--Trained in Cloud-Services */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
