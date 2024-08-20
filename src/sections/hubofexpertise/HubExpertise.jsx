@@ -6,7 +6,7 @@ import ScrollTrigger from "react-scroll-trigger";
 
 import SectionHeading from "@/components/SectionHeading";
 import SectionWrapper from "@/components/SectionWrapper";
-import styles from "./HubExpertise.module.css";
+import styles from "./hubExpertise.module.css";
 import { jetBrains_mono } from "../../app/fonts";
 
 
