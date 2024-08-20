@@ -16,7 +16,7 @@ function BenefitSliderSection({ ID, SectionImageUrl = '', Heading, Desc, MaxWidt
                 ...style,
                 backgroundImage: `url(${SectionImageUrl})`, backgroundSize: 'cover',
             }}>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-32">
                     <div className="">
                         <SectionHeading
                             Heading={Heading}

@@ -14,7 +14,7 @@ function SectionWidthSlider({
   SectionImageUrl,
   Heading,
   Desc,
-  MaxWidth,
+  SectionHeadingMaxWidth,
   SlidesPerView = "3",
   Autoplay = "false",
   CardDataList = [],
@@ -37,7 +37,7 @@ function SectionWidthSlider({
             Heading={Heading}
             Desc={Desc}
             Color={Color}
-            MaxWidth={MaxWidth}
+            MaxWidth={SectionHeadingMaxWidth}
           ></SectionHeading>
         </div>
 

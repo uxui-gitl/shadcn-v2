@@ -30,7 +30,7 @@ const page = () => {
       cardIconUrl: '',
       cardHeading: 'Automated Pattern Recognition',
       cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
-      isArrow: 'true',
+      isArrow:false,
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ const page = () => {
       cardIconUrl: '',
       cardHeading: 'Cognitive Computing Solutions',
       cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
-      isArrow: 'true',
+      isArrow: false,
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const page = () => {
       cardIconUrl: '',
       cardHeading: 'Efficient Task Automation',
       cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
-      isArrow: 'true',
+      isArrow: false,
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ const page = () => {
       cardIconUrl: '',
       cardHeading: 'Asset Optimization and Uptime',
       cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
-      isArrow: 'true',
+      isArrow: false,
     },
   ];
 
@@ -196,7 +196,7 @@ const page = () => {
         Heading={'Advance Solutions for Business Future Readiness'}
         Desc={''}
         Color={'white'}
-        MaxWidth={'80%'}
+        SectionHeadingMaxWidth={'60%'}
         CardDataList={advanceSolutionCardData}
       >
       </SectionWidthSlider>
@@ -209,7 +209,7 @@ const page = () => {
         Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         Color={'white'}
         CardDataList={benifitsCardsData}
-        MaxWidth={'100%'}
+        SectionHeadingMaxWidth={'100%'}
       ></BenefitSliderSection>
 
       {/* blog */}

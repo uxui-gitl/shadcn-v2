@@ -266,6 +266,7 @@ const page = () => {
         Color={'white'}
         CardDataList={AIOfferingsData}
         pageID="ai-ml"
+        SectionHeadingMaxWidth={'70%'}
       >
       </SectionWidthSlider>
 
