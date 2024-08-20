@@ -13,7 +13,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
-import DistinctiveSection from "@/sections/Distinctive/DistinctiveSection";
+import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 
 

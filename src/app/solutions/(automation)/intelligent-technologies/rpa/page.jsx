@@ -19,7 +19,7 @@ import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ServiceOfferingSection from '@/sections/serviceOffering/ServiceOfferingSection';
-import DistinctiveSection from '@/sections/Distinctive/DistinctiveSection';
+import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 
 

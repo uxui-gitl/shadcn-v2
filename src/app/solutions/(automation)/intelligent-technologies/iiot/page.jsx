@@ -8,7 +8,7 @@ import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
-import DistinctiveSection from "@/sections/Distinctive/DistinctiveSection";
+import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 
 const IIOT = () => {
