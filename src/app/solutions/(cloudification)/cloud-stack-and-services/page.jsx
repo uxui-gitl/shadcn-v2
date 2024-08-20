@@ -20,7 +20,7 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 import HighlightPromo from "@/sections/highlightPromo/HighlightPromo";
 import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
 import BlogSection from "@/sections/blog/BlogSection";
-import DistinctiveSection from "@/sections/Distinctive/DistinctiveSection";
+import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 
 

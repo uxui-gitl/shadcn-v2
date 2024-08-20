@@ -9,7 +9,7 @@ import Benefits from "@/components/Benefits";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
-import DistinctiveSection from '@/sections/Distinctive/DistinctiveSection';
+import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import BlogSection from '@/sections/blog/BlogSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import PlatformSection from '@/sections/platform/PlatformSection';
@@ -264,7 +264,7 @@ const page = () => {
                     </p>
                     <Link
                       href={item.ctaURL}
-                      className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                      className="text-[#0745D3] invisiable text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
                       Know More{" "}
                       <Icon
