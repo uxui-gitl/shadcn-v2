@@ -26,40 +26,40 @@ const page = () => {
       id: 1,
       BGImageUrl: '',
       CardBGColor:'#EFE9FB',
-      cardTitle: "Machine Learning",
-      cardIconUrl: '',
-      cardHeading: 'Automated Pattern Recognition',
-      cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
+      CardTitle: "Machine Learning",
+      CardIconUrl: '',
+      CardHeading: 'Automated Pattern Recognition',
+      CardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
       isArrow:false,
     },
     {
       id: 2,
       BGImageUrl: '',
       CardBGColor:'#EFE9FB',
-      cardTitle: "Artificial Intelligence",
-      cardIconUrl: '',
-      cardHeading: 'Cognitive Computing Solutions',
-      cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
+      CardTitle: "Artificial Intelligence",
+      CardIconUrl: '',
+      CardHeading: 'Cognitive Computing Solutions',
+      CardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
       isArrow: false,
     },
     {
       id: 3,
       BGImageUrl: '',
       CardBGColor:'#EFE9FB',
-      cardTitle: "Robotic Process Automation",
-      cardIconUrl: '',
-      cardHeading: 'Efficient Task Automation',
-      cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
+      CardTitle: "Robotic Process Automation",
+      CardIconUrl: '',
+      CardHeading: 'Efficient Task Automation',
+      CardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
       isArrow: false,
     },
     {
       id: 4,
       BGImageUrl: '',
       CardBGColor:'#EFE9FB',
-      cardTitle: "IIoT",
-      cardIconUrl: '',
-      cardHeading: 'Asset Optimization and Uptime',
-      cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
+      CardTitle: "IIoT",
+      CardIconUrl: '',
+      CardHeading: 'Asset Optimization and Uptime',
+      CardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
       isArrow: false,
     },
   ];
@@ -101,28 +101,28 @@ const page = () => {
       _id: 1,
       icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       title: "",
-      cardDesc:
+      CardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity. ",
     },
     {
       _id: 2,
       icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
       title: "",
-      cardDesc:
+      CardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 3,
       icon: "benefisIntelligentTechnologies/InformedDecisionmaking",
       title: "",
-      cardDesc:
+      CardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends.",
     },
     {
       _id: 4,
       icon: "benefisIntelligentTechnologies/highDegreeAccuracyConsistency",
       title: "",
-      cardDesc:
+      CardDesc:
         "A high degree of accuracy and consistency in business operations.",
     },
   ];

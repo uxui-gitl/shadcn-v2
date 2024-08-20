@@ -28,82 +28,96 @@ const RPASolution = [
   {
     id: 1,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Increase Productivity',
-    cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Increase Productivity',
+    CardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+    isArrow: false,
   },
   {
     id: 2,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Accurate Outcomes',
-    cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Accurate Outcomes',
+    CardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+    isArrow: false,
   },
   {
     id: 3,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Compliance and Consistency',
-    cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Compliance and Consistency',
+    CardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+    isArrow: false,
   }, 
   {
     id: 4,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Strengthen Potential',
-    cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Strengthen Potential',
+    CardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+    isArrow: false,
   },
     {
     id: 5,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Optimize FTE Cost',
-    cardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Optimize FTE Cost',
+    CardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',
+    isArrow: false,
   },
   {
     id: 6,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Enhance Flexibility',
-    cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Enhance Flexibility',
+    CardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+    isArrow: false,
   },
   {
     id: 7,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
-    Color: 'white',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Reduce AHT (Average Handling Time)',
-    cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-    isArrow: 'true',
+    CardTextColor: 'white',
+    CardBGColor:'#1D162B',
+    CardBGImageUrlSize:"contain",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Reduce AHT (Average Handling Time)',
+    CardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+    isArrow: false,
   },
 ]
 
 const RPALifeCycleData = [
-  { id: 1, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'Design server architecture' }, { id: '2', text: 'Install and configure)' }, { id: '3', text: 'Set up development, test & production environments)' }] },
-  { id: 2, title: 'Preparation', cardHeading: 'Project Governance', list: [{ id: '1', text: 'Discuss & finalize project development approach)' }, { id: '2', text: 'Review RPA best practices)' }] },
-  { id: 3, title: 'Design', cardHeading: 'Workflow Design', list: [{ id: '1', text: 'Create Process Design Document (PDD))' }, { id: '2', text: 'Build test cases )' }, { id: '3', text: 'Solution Design)' }] },
-  { id: 4, title: 'Build', cardHeading: 'Workflow Development', list: [{ id: '1', text: 'Build workflows' }, { id: '2', text: 'Unit and Functional testing' }, { id: '3', text: 'Create Development Specification Document (DSD)' }] },
-  { id: 5, title: 'Test', cardHeading: 'Quality Assurance', list: [{ id: '1', text: 'Execute test cases' }, { id: '2', text: 'Report results' }, { id: '3', text: 'Go/NoGo decision finalization  ' }] },
-  { id: 6, title: 'Sustain', cardHeading: 'Hypercare', list: [{ id: '1', text: 'Support workflow' }, { id: '2', text: 'Manage Changes and Improvements)' }] },
+  { id: 1, title: 'Enable', CardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'Design server architecture' }, { id: '2', text: 'Install and configure)' }, { id: '3', text: 'Set up development, test & production environments)' }] },
+  { id: 2, title: 'Preparation', CardHeading: 'Project Governance', list: [{ id: '1', text: 'Discuss & finalize project development approach)' }, { id: '2', text: 'Review RPA best practices)' }] },
+  { id: 3, title: 'Design', CardHeading: 'Workflow Design', list: [{ id: '1', text: 'Create Process Design Document (PDD))' }, { id: '2', text: 'Build test cases )' }, { id: '3', text: 'Solution Design)' }] },
+  { id: 4, title: 'Build', CardHeading: 'Workflow Development', list: [{ id: '1', text: 'Build workflows' }, { id: '2', text: 'Unit and Functional testing' }, { id: '3', text: 'Create Development Specification Document (DSD)' }] },
+  { id: 5, title: 'Test', CardHeading: 'Quality Assurance', list: [{ id: '1', text: 'Execute test cases' }, { id: '2', text: 'Report results' }, { id: '3', text: 'Go/NoGo decision finalization  ' }] },
+  { id: 6, title: 'Sustain', CardHeading: 'Hypercare', list: [{ id: '1', text: 'Support workflow' }, { id: '2', text: 'Manage Changes and Improvements)' }] },
 ]
 
 const offeringLinkListData = [
@@ -114,10 +128,10 @@ const offeringLinkListData = [
 ]
 
 const offeringCardData = [
-  { id: '1', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "Consultation Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '2', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "Feasibility Check Services", cardIconUrl: '', cardHeading: '', cardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '3', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "RPA Deployment", cardIconUrl: '', cardHeading: '', cardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '4', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "RPA Managed Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '1', CardBGImageUrl: '', CardDownImageMinHeight:"350px", CardBGColor: '#fff', CardTitle: "Consultation Services", CardIconUrl: '', CardHeading: '', CardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '2', CardBGImageUrl: '', CardDownImageMinHeight:"350px", CardBGColor: '#fff', CardTitle: "Feasibility Check Services", CardIconUrl: '', CardHeading: '', CardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '3', CardBGImageUrl: '', CardDownImageMinHeight:"350px", CardBGColor: '#fff', CardTitle: "RPA Deployment", CardIconUrl: '', CardHeading: '', CardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '4', CardBGImageUrl: '', CardDownImageMinHeight:"350px", CardBGColor: '#fff', CardTitle: "RPA Managed Services", CardIconUrl: '', CardHeading: '', CardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
 
 ]
 
@@ -207,7 +221,7 @@ const page = () => {
         BGColor="#EFE9FB"
         Heading={'Optimising businesses through RPA solutions'}
         Color={'black'}
-        MaxWidth={'50%'}
+        SectionHeadingMaxWidth={'50%'}
         CardDataList={RPASolution}
       ></SectionWidthSlider>
 
@@ -272,14 +286,14 @@ const page = () => {
             </div>
           </div>
 
-          <div className="" style={{ maxHeight: '540px' }}>
+          <div className="" style={{ maxHeight: '600px' }}>
             <div class=" p-6 bg-[#EFE9FB] border border-gray-200 rounded-3xl flex flex-col" style={{ overflow: 'auto', maxHeight: 'inherit' }}>
               {RPALifeCycleData.map((item) => (
                 <>
                   <div className="card bg-white rounded-3xl mb-3">
                     <div className="card-body p-6">
                       <div className="text-[#E0028E] mb-3">{item.title}</div>
-                      <h5 class="text-[28px] leading-[36px] font-semibold mb-3">{item.cardHeading}</h5>
+                      <h5 class="text-[28px] leading-[36px] font-semibold mb-3">{item.CardHeading}</h5>
                       <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                         {item.list && item.list.map((listItem) => (
                           <>

@@ -21,7 +21,6 @@ function SectionWidthSlider({
   Color = "#000",
   BGColor = "#fff",
   setHeadingLayout,
-  setHeadingContainerWidth
 }) {
   return (
     <>
@@ -39,7 +38,7 @@ function SectionWidthSlider({
             Heading={Heading}
             Desc={Desc}
             Color={Color}
-            MaxWidth={MaxWidth}
+            MaxWidth={SectionHeadingMaxWidth}
             layout={setHeadingLayout}
           ></SectionHeading>
         </div>

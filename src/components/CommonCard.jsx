@@ -5,17 +5,17 @@ import OutlinedButtonWithArrow from "./OutlinedButtonWithArrow";
 function CommonCard({ Item, setpageID }) {
   const {
     CardBGImageUrl = "",
-    BGColor = "",
     CardBGColor = "",
-    CardColor = "",
-    cardTitle = "",
-    cardIconUrl = "",
-    cardHeading = "",
-    cardDesc = "",
+    CardTextColor = "",
+    CardBGImageUrlSize = "cover",
+    CardTitle = "",
+    CardIconUrl = "",
+    CardHeading = "",
+    CardDesc = "",
     isArrow = "true",
-    downImageUrl = "",
+    DownImageUrl = "",
     link = [],
-    cardDownImageMinHeight = "200px",
+    CardDownImageMinHeight = "200px",
     arrowColor = "#FFF",
   } = Item;
 
@@ -27,29 +27,29 @@ function CommonCard({ Item, setpageID }) {
         className="rounded-3xl shadow min-h-[424px] flex flex-col justify-between"
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
-          backgroundSize: "cover",
-          color: CardColor,
+          backgroundSize: CardBGImageUrlSize,
+          color: CardTextColor,
           width: "100%",
           minHeight: cardBodyMinHeight,
         }}
       >
         <div className="card-body p-10 flex-grow">
-          {cardTitle && <div className="text-[#E0028E] mb-8">{cardTitle}</div>}
-          {cardIconUrl && (
+          {CardTitle && <div className="text-[#E0028E] mb-8">{CardTitle}</div>}
+          {CardIconUrl && (
             <div className="pb-8">
-              <Image src={cardIconUrl} alt="" width={50} height={50} />
+              <Image src={CardIconUrl} alt="" width={50} height={50} />
             </div>
           )}
-          {cardHeading && (
+          {CardHeading && (
             <h5
               className="text-[42px] leading-[48px] font-semibold"
-              dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
+              dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}
-          {cardDesc && (
+          {CardDesc && (
             <p
               className="my-5 font-normal"
-              dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
+              dangerouslySetInnerHTML={{ __html: CardDesc }} // Render HTML content
             />
           )}
           {link.length > 0 && (
@@ -70,16 +70,16 @@ function CommonCard({ Item, setpageID }) {
             </ul>
           )}
         </div>
-        {downImageUrl && (
+        {DownImageUrl && (
           <div
             style={{
               width: "100%",
               position: "relative",
-              minHeight: cardDownImageMinHeight,
+              minHeight: CardDownImageMinHeight,
             }}
           >
             <Image
-              src={downImageUrl}
+              src={DownImageUrl}
               alt=""
               layout="fill"
               objectFit="cover"
