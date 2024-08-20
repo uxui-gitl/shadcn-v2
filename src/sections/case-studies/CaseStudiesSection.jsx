@@ -8,8 +8,8 @@ import SectionHeading from "@/components/SectionHeading";
 
 const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
   const caseStudyLayout = csLayout;
-  const setHeading = 'Our IIoT Solutions';
-  const setDesc = 'We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs.';
+  const setHeading = 'IIoT  Solution Offerings';
+  const setDesc = 'Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.';
   const setColor = "#2B1624";
   return (
     <>
@@ -334,7 +334,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
               <div className="flex flex-row justify-start items-center gap-8 w-full h-[624px]">
                 {/* Grid--One */}
                 <div
-                  className="relative w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
+                  className="relative w-full lg:w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
                   style={{
                     color: casestudy[0].color,
                     overflow: "hidden", // Ensures no overflow from the video

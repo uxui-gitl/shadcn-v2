@@ -31,8 +31,8 @@ const RPASolution = [
     Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
-    cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardHeading: 'Increase Productivity',
+    cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
     isArrow: 'true',
   },
   {
@@ -41,8 +41,8 @@ const RPASolution = [
     Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
-    cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardHeading: 'Accurate Outcomes',
+    cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
     isArrow: 'true',
   },
   {
@@ -51,65 +51,100 @@ const RPASolution = [
     Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
-    cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardHeading: 'Compliance and Consistency',
+    cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
     isArrow: 'true',
-  }, {
+  }, 
+  {
     id: 4,
     CardBGImageUrl: '/rpa/ArtboardBg.png',
     Color: 'white',
     cardTitle: "",
     cardIconUrl: '',
-    cardHeading: 'Computer Vision',
-    cardDesc: 'We specialize in custom video and image analysis tool leveraging advanced',
+    cardHeading: 'Strengthen Potential',
+    cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+    isArrow: 'true',
+  },
+    {
+    id: 5,
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Optimize FTE Cost',
+    cardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',
+    isArrow: 'true',
+  },
+  {
+    id: 6,
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Enhance Flexibility',
+    cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+    isArrow: 'true',
+  },
+  {
+    id: 7,
+    CardBGImageUrl: '/rpa/ArtboardBg.png',
+    Color: 'white',
+    cardTitle: "",
+    cardIconUrl: '',
+    cardHeading: 'Reduce AHT (Average Handling Time)',
+    cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
     isArrow: 'true',
   },
 ]
 
 const RPALifeCycleData = [
-  { id: 1, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
-  { id: 2, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
-  { id: 3, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
-  { id: 4, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'At least 10 characters (and up to 100 characters)' }, { id: '1', text: 'At least 10 characters (and up to 100 characters)' }] },
+  { id: 1, title: 'Enable', cardHeading: 'Infrastructure Setup', list: [{ id: '1', text: 'Design server architecture' }, { id: '2', text: 'Install and configure)' }, { id: '3', text: 'Set up development, test & production environments)' }] },
+  { id: 2, title: 'Preparation', cardHeading: 'Project Governance', list: [{ id: '1', text: 'Discuss & finalize project development approach)' }, { id: '2', text: 'Review RPA best practices)' }] },
+  { id: 3, title: 'Design', cardHeading: 'Workflow Design', list: [{ id: '1', text: 'Create Process Design Document (PDD))' }, { id: '2', text: 'Build test cases )' }, { id: '3', text: 'Solution Design)' }] },
+  { id: 4, title: 'Build', cardHeading: 'Workflow Development', list: [{ id: '1', text: 'Build workflows' }, { id: '2', text: 'Unit and Functional testing' }, { id: '3', text: 'Create Development Specification Document (DSD)' }] },
+  { id: 5, title: 'Test', cardHeading: 'Quality Assurance', list: [{ id: '1', text: 'Execute test cases' }, { id: '2', text: 'Report results' }, { id: '3', text: 'Go/NoGo decision finalization  ' }] },
+  { id: 6, title: 'Sustain', cardHeading: 'Hypercare', list: [{ id: '1', text: 'Support workflow' }, { id: '2', text: 'Manage Changes and Improvements)' }] },
 ]
 
 const offeringLinkListData = [
   { id: 1, text: 'Consultation Services', isActive: 'false', },
   { id: 2, text: 'Feasibility Check Services', isActive: 'false' },
   { id: 3, text: 'RPA Deployment', isActive: 'false' },
+  { id: 4, text: 'RPA Managed Services', isActive: 'false' },
 ]
 
 const offeringCardData = [
-  { id: '1', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "Consultancy Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '2', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "2Consultancy Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '3', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "3Consultancy Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '1', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "Consultation Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '2', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "Feasibility Check Services", cardIconUrl: '', cardHeading: '', cardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '3', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "RPA Deployment", cardIconUrl: '', cardHeading: '', cardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
+  { id: '4', CardBGImageUrl: '', BGColor: '#fff', cardTitle: "RPA Managed Services", cardIconUrl: '', cardHeading: '', cardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.', isArrow: false, downImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
 
 ]
 
 const distinctiveData = [
   {
     _id: 1,
-    desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+    desc: "Employee Access Creation",
     icon: "",
   },
   {
     _id: 2,
-    desc: "Agile approach that keeps projects on cutting edge.",
+    desc: "Ticketing system - Incident management",
     icon: "",
   },
   {
     _id: 3,
-    desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+    desc: "Account Payable and Receivable Process",
     icon: "",
   },
   {
     _id: 4,
-    desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+    desc: "Vendor Onboarding Process",
     icon: "",
   },
   {
     _id: 5,
-    desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+    desc: "Customer Onboarding Process",
     icon: "",
   }
 ]
@@ -120,8 +155,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Automate Business Operations"
-        desc=""
+        title="Multiply Your Business Efficiency"
+        desc="Automate Operations with Our Robotic Process Automation (RPA) Solutions and Services"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -165,7 +200,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <OverviewSection Text={'Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by'} />
+      <OverviewSection Text={'Manage high-volume tasks by slashing down time requirements and enabling precise outcomes. Our tailored RPA solutions enable businesses to seamlessly navigate intricate workflows and attain operational excellence.'} />
 
       {/* optimising rpa solution */}
       <SectionWidthSlider
@@ -180,11 +215,11 @@ const page = () => {
       <SectionWrapper ID="Platforms">
         <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
           {/* left */}
-          <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+          <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
             <div className="w-full md:max-w-[607px]">
               <SectionHeading
-                Heading={'Expertise in RPA Platform'}
-                Desc={'Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.'}
+                Heading={'RPA Platform Expertise'}
+                Desc={'Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.'}
               >
               </SectionHeading>
             </div>
@@ -228,7 +263,7 @@ const page = () => {
           <div className="">
             <SectionHeading
               Heading={'RPA Project Lifecycle'}
-              Desc={'From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.'}
+              Desc={'From inception to upheld outcomes, every stage of our RPA project lifecycle is precisely developed to optimize your business processes.'}
               Color="white"
             >
             </SectionHeading>
@@ -266,7 +301,7 @@ const page = () => {
 
       {/* Distinctive section*/}
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape.'}
+        ID={'Distinctive'} Title={'Our RPA Use Cases'} Desc={'We endeavor to build actual business impact of RPA improving business output and leading digital transformation.'}
       >
       </DistinctiveSection>
 

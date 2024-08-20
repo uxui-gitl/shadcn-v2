@@ -14,9 +14,76 @@ import HighlightPromo from "@/sections/highlightPromo/HighlightPromo";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import Benefits from "@/components/Benefits";
 import SectionWrapper from "@/components/SectionWrapper";
+import ChallengeSection from "@/sections/challenge/challengeSection";
+import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
+
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
-  const msLogoURL = "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
+  const imgBGURL_Challenges =
+    "/upgradeCloud/backgrounds/bg--onprem-challenges.png";
+  const msLogoURL =
+    "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
+  const yourImageUrl = "/ai-ml/AI-bgimage.jpg";
+  const UPGRADE_NOW_DATA = [
+    {
+      id: 1,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Computer<br/>Vision",
+      cardDesc:
+        "We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.",
+      isArrow: "true",
+      link: [],
+    },
+
+    {
+      id: 2,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Speech & Language",
+      cardDesc:
+        "Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand",
+      isArrow: "true",
+      link: [],
+    },
+    {
+      id: 3,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Document Understanding",
+      cardDesc:
+        "We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.",
+      isArrow: "true",
+      link: [],
+    },
+    {
+      id: 4,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor:"transparent",
+      CardColor:'white',
+      cardTitle: "",
+        cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      cardHeading: "Conversational<br/>AI",
+      cardDesc:
+        "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ",
+      isArrow: "true",
+      link: [],
+    },
+  ];
+
   const BENEFITS_DATA = [
     {
       _id: 1,
@@ -47,21 +114,23 @@ const UpgradeToCloud = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL:"/CloudStackServices/case-studies/bg--video-industry.mp4",
+      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: 'Elevating Customer Experience',
-      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      heading: "Elevating Customer Experience",
+      description:
+        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
       link: "/case-study-1",
-      color: '#FFFFFF'
+      color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: 'Non-government Association of Indian Industries',
-      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      heading: "Non-government Association of Indian Industries",
+      description:
+        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
       link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#FCE6F4'
+      color: "#000",
+      bgCardColor: "#FCE6F4",
     },
 
     {
@@ -69,19 +138,21 @@ const UpgradeToCloud = () => {
       title: "",
 
       heading: "Coffee Brand Distributor in Egypt and Middle East",
-      description: "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+      description:
+        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
       link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#EFE9FB'
+      color: "#000",
+      bgCardColor: "#EFE9FB",
     },
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
       heading: "Middle East-based Electrical Products Manufacturer",
-      description: "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+      description:
+        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
       link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#E1F2EF'
+      color: "#000",
+      bgCardColor: "#E1F2EF",
     },
     // Add more case studies here...
   ];
@@ -155,14 +226,28 @@ const UpgradeToCloud = () => {
         }
       />
       {/* End-Section--Overview */}
-      <section className="container max-auto"><h1>Challengs</h1></section>
+      {/* Start--Section--Challenges======================================================================== */}
+      <ChallengeSection
+        setHeading="On-premisesInfrastructure Challenges"
+        setColor="#FFFFFF"
+        setImageBGURL={imgBGURL_Challenges}
+      />
+      {/* End--Section--Challenges======================================================================== */}
 
-      <section className="container max-auto"><h1>Upgrade Now</h1></section>
+      {/* Start--Section--UpgradeNow======================================================================== */}
+      <SectionWithSlider
+        ID={"UPGRADE_NOW_DATA"}
+        Heading={"Upgrade Now"}
+        Desc={
+          "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
+        }
+        Color="#ffffff"
+        CardDataList={UPGRADE_NOW_DATA}
+        BGColor="#2B1624"
+       
+      />
+      {/* End--Section--UpgradeNow======================================================================== */}
 
-      <section className="container max-auto"><h1>Cloud Upgrade Services</h1></section>
-
-      <section className="container max-auto"><h1>Benefits</h1></section>
-      
       {/* Section--Trained in Cloud Services= */}
       <HighlightPromo
         blurEffect="blurON"
@@ -175,8 +260,8 @@ const UpgradeToCloud = () => {
         setMSLogoURL={msLogoURL}
       />
       {/* End-Section--Trained in Cloud-Services */}
-        {/* Section--Hub-of-Expertise=======================================================================  */}
-        <HubExpertise
+      {/* Section--Hub-of-Expertise=======================================================================  */}
+      <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
