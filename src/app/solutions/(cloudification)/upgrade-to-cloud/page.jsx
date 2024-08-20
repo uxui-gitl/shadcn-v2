@@ -259,6 +259,7 @@ const UpgradeToCloud = () => {
         setLogoImages=""
         setPadding={true}
         setMSLogoURL={msLogoURL}
+        setHeadingContainerWidthFull={'w-full'}
       />
       {/* End-Section--Trained in Cloud-Services */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
