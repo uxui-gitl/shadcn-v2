@@ -25,7 +25,7 @@ const page = () => {
     {
       id: 1,
       BGImageUrl: '',
-      BGColor: '#EFE9FB',
+      CardBGColor:'#EFE9FB',
       cardTitle: "Machine Learning",
       cardIconUrl: '',
       cardHeading: 'Automated Pattern Recognition',
@@ -35,7 +35,7 @@ const page = () => {
     {
       id: 2,
       BGImageUrl: '',
-      BGColor: '#EFE9FB',
+      CardBGColor:'#EFE9FB',
       cardTitle: "Artificial Intelligence",
       cardIconUrl: '',
       cardHeading: 'Cognitive Computing Solutions',
@@ -45,7 +45,7 @@ const page = () => {
     {
       id: 3,
       BGImageUrl: '',
-      BGColor: '#EFE9FB',
+      CardBGColor:'#EFE9FB',
       cardTitle: "Robotic Process Automation",
       cardIconUrl: '',
       cardHeading: 'Efficient Task Automation',
@@ -55,7 +55,7 @@ const page = () => {
     {
       id: 4,
       BGImageUrl: '',
-      BGColor: '#EFE9FB',
+      CardBGColor:'#EFE9FB',
       cardTitle: "IIoT",
       cardIconUrl: '',
       cardHeading: 'Asset Optimization and Uptime',
@@ -196,7 +196,7 @@ const page = () => {
         Heading={'Advance Solutions for Business Future Readiness'}
         Desc={''}
         Color={'white'}
-        MaxWidth={'40%'}
+        MaxWidth={'80%'}
         CardDataList={advanceSolutionCardData}
       >
       </SectionWidthSlider>
@@ -209,6 +209,7 @@ const page = () => {
         Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         Color={'white'}
         CardDataList={benifitsCardsData}
+        MaxWidth={'100%'}
       ></BenefitSliderSection>
 
       {/* blog */}

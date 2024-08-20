@@ -26,9 +26,8 @@ function CommonCard({ Item, setpageID }) {
       <div
         className="rounded-3xl shadow min-h-[424px] flex flex-col justify-between"
         style={{
-          backgroundImage: `url(${CardBGImageUrl})`,
+          background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: "cover",
-          backgroundColor: `${CardBGColor}`,
           color: CardColor,
           width: "100%",
           minHeight: cardBodyMinHeight,

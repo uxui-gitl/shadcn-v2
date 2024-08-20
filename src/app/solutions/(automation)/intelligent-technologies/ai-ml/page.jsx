@@ -20,7 +20,6 @@ const AIOfferingsData = [
   {
     id: 1,
     BGImageUrl: '',
-    BGColor: '#fff',
     CardBGColor:'#FFF',
     CardColor:'#000',
     cardTitle: "",
@@ -48,7 +47,6 @@ const AIOfferingsData = [
   {
     id: 2,
     BGImageUrl: '',
-    BGColor: '#fff',
     CardBGColor:'#FFF',
     CardColor:'#000',
     cardTitle: "",
@@ -75,7 +73,6 @@ const AIOfferingsData = [
   {
     id: 3,
     BGImageUrl: '',
-    BGColor: '#fff',
     CardBGColor:'#FFF',
     CardColor:'#000',
     cardTitle: "",
@@ -102,7 +99,6 @@ const AIOfferingsData = [
   {
     id: 4,
     BGImageUrl: '',
-    BGColor: '#fff',
     CardBGColor:'#FFF',
     CardColor:'#000',
     cardTitle: "",
