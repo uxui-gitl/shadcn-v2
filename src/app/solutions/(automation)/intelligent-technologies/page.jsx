@@ -15,6 +15,7 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import BlogSlider from "@/sections/BlogSlider/BlogSliderSection"
 
 
 const page = () => {
@@ -25,17 +26,17 @@ const page = () => {
     {
       id: 1,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
+      CardBGColor: '#EFE9FB',
       CardTitle: "Machine Learning",
       CardIconUrl: '',
       CardHeading: 'Automated Pattern Recognition',
       CardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
-      isArrow:false,
+      isArrow: false,
     },
     {
       id: 2,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
+      CardBGColor: '#EFE9FB',
       CardTitle: "Artificial Intelligence",
       CardIconUrl: '',
       CardHeading: 'Cognitive Computing Solutions',
@@ -45,7 +46,7 @@ const page = () => {
     {
       id: 3,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
+      CardBGColor: '#EFE9FB',
       CardTitle: "Robotic Process Automation",
       CardIconUrl: '',
       CardHeading: 'Efficient Task Automation',
@@ -55,7 +56,7 @@ const page = () => {
     {
       id: 4,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
+      CardBGColor: '#EFE9FB',
       CardTitle: "IIoT",
       CardIconUrl: '',
       CardHeading: 'Asset Optimization and Uptime',
@@ -93,7 +94,7 @@ const page = () => {
       desc: "Extensive experience in understanding industry-specific challenges and opportunities",
       icon: "",
     },
-    
+
   ]
 
   const BenefitsData = [
@@ -201,6 +202,7 @@ const page = () => {
       >
       </SectionWidthSlider>
 
+
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
@@ -213,7 +215,6 @@ const page = () => {
       ></BenefitSliderSection>
 
       {/* blog */}
-
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
         Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
         Color={'white'}
