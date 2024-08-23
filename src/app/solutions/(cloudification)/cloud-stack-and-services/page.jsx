@@ -23,6 +23,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
+import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
 
 
@@ -90,6 +91,24 @@ const CloudStack = () => {
         "Highest levels of security and privacy, ensuring data is safeguarded",
       isArrow: "",
       link: [],
+    },
+  ];
+
+  const reviewCardData = [
+    {
+      id: 1,
+     cardHeading:"sdkhgajgdsjhgasdkhg",
+     cardDesc:'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+    },
+    {
+      id: 2,
+     cardHeading:"sdkhgajgdsjhgasdkhg",
+     cardDesc:'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+    },
+    {
+      id: 3,
+     cardHeading:"sdkhgajgdsjhgasdkhg",
+     cardDesc:'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
     },
   ];
 
@@ -214,9 +233,7 @@ our Intelligent Edge Cloud Stack and Services"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
         setPadding={false}
-        setHeadingContainerWidthFull={'w-full'}
-  
-        
+        setHeadingContainerWidthFull={'w-full'}        
       />
       {/* Section--Blog */}
       <SolutionSliderCloud
@@ -277,7 +294,15 @@ our Intelligent Edge Cloud Stack and Services"
           "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
         }
       ></DistinctiveSection>
-
+    <ReviewSliderSection
+     ID={"ULTIMATE_CHOICE_DATA"}
+     Heading={"Delighted customers share their success experience"}
+     Desc={''}
+     Color="#ffffff"
+     CardDataList={ reviewCardData}
+     BGColor="#1D162B"
+     SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
       {/* transform business with us section */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}
