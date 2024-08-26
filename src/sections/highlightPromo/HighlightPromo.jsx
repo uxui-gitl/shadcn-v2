@@ -41,6 +41,8 @@ const HighlightPromo = ({
       style={{
         backgroundImage: `url(${setImageBGURL})`,
         backgroundSize: "cover",
+        Zindex: 1,
+        position: 'relative',
       }}
     >
       <div className="container mx-auto">
@@ -56,7 +58,7 @@ const HighlightPromo = ({
               Heading={setHeading}
               Color={setColor}
               Desc={setDesc}
-              headingContainerWidth = {setHeadingContainerWidthFull}
+              headingContainerWidth={setHeadingContainerWidthFull}
             />
             {setLogoImages && (
               <section className="w-full md:w-1/2">
@@ -82,7 +84,7 @@ const HighlightPromo = ({
 
           {setImageURL && (
             <div className="flex-1">
-        
+
               <div className="relative w-full h-full  overflow-hidden">
                 <Image
                   src={setImageURL}
@@ -92,8 +94,8 @@ const HighlightPromo = ({
                   className="w-full h-full"
                   fill={true}
                 />
-     
-            </div>
+
+              </div>
             </div>
           )}
 

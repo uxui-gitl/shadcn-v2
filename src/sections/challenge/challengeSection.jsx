@@ -20,21 +20,57 @@ const ChallengeSection = ({
     ];
 
     return (
-        <SectionWrapper 
-            BGColor="#BEBEBE"
-            style={{
-                backgroundImage: `url(${setImageBGURL})`,
-                backgroundSize: "cover",
-            }}
-        >
-            <div className="container mx-auto flex justify-end">
+        // <SectionWrapper
+        //     BGColor="#356990"
+        // >
+
+        <>
+            <div className="">
+                <div class="grid grid-cols-2 gap-0">
+                    <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
+                    </div>
+                    <div className="py-20 px-20" style={{ backgroundColor: '#3a7398' }}>
+                        <SectionHeading
+                            Heading={setHeading}
+                            Color={setColor}
+                        />
+
+                        <ul className="mt-2 space-y-4 w-full text-white">
+                            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                                <li
+                                    key={challenge.id}
+                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                >
+                                    <div className="flex-shrink-0 mr-4">
+                                        <Image
+                                            src={challenge.icon}
+                                            alt={`${challenge.title} icon`}
+                                            width={32}
+                                            height={32}
+                                        />
+                                    </div>
+                                    <div className="text-left">
+                                        <h3 className="text-2xl font-normal">
+                                            {challenge.title}
+                                        </h3>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="container mx-auto  justify-end hidden">
                 <div className="w-full lg:w-1/2 flex flex-col items-start">
-                    <SectionHeading 
+                    <SectionHeading
                         Heading={setHeading}
                         Color={setColor}
                     />
-                    
-                    <ul className="mt-8 space-y-4 w-full text-white">
+
+                    <ul className="mt-2 space-y-4 w-full text-white">
                         {CHALLENGES_LIST_DATA.map((challenge, index) => (
                             <li
                                 key={challenge.id}
@@ -58,7 +94,8 @@ const ChallengeSection = ({
                     </ul>
                 </div>
             </div>
-        </SectionWrapper>
+        </>
+        // </SectionWrapper>
     );
 }
 

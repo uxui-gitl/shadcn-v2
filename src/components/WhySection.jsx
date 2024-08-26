@@ -34,7 +34,7 @@ const WhySection = ({
           <SectionHeading
             Heading={Title}
             Desc={Desc}
-          
+            MaxWidth={'50%'}
           ></SectionHeading>
         </div>
         {/* right */}

@@ -170,7 +170,7 @@ const IIOT = () => {
         Heading={'Benefits'}
         Desc={'IIoT (Industrial Internet of Things) empowers businesses to thrive in the digital era in various ways, including:'}
         Color={'white'}
-        MaxWidth={'40%'}
+        MaxWidth={'100%'}
         CardDataList={benifitsCardsData}
       ></BenefitSliderSection>
 
@@ -194,6 +194,7 @@ const IIOT = () => {
         Desc={
           "Incorporating our IoT expertise into business transforms the way business operates and paving the way for long-term success."
         }
+        maxWidth={"50%"}
       ></DistinctiveSection>
 
       {/* transform business with us section */}

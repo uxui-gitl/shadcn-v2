@@ -59,11 +59,11 @@ const Spotlight = ({ arr }) => {
 
   return (
     <>
-      <div className="flex flex-col gap-4 md:flex-row md:gap-4">
+      <div className="flex flex-col gap-4 md:flex-row md:gap-4 ">
         {cardsArray.map((card, index) => (
           <div
             key={index}
-            className={`  bg-[#fff] cursor-pointer min-w-full md:min-w-[155px] md:h-[320px] md:max-w-1/5 w-fit transition-transform mb-4 overflow-hidden ${
+            className={`  bg-[#fff] cursor-pointer min-w-full md:min-w-[155px] md:h-[320px] md:max-w-1/5 w-fit transition-transform mb-4 rounded-3xl overflow-hidden ${
               activeCard === index ? " " : "p-4"
             }`}
             onClick={() => handleCardClick(index)}

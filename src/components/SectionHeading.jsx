@@ -14,7 +14,7 @@ function SectionHeading({
     >
       {layout === 'vertical' ? (
         <div
-          className={`${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-start'} `}
+          className={`flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-start'} `}
         >
           <h1
             className={`text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px]`}
