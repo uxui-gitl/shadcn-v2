@@ -1,0 +1,33 @@
+.commonCard {
+  position: relative;
+}
+
+/* .additionalDataWrapper {
+    display: none;
+  } */
+.commonCard .additionalDataWrapper {
+  display: none;
+  opacity: 0;
+}
+
+.commonCard:hover .additionalDataWrapper {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  background-color: #f3f0fa;
+  display: block;
+  height: 100%;
+  padding: 30px;
+  border-radius: 24px;
+  animation: cardoverlay 0.5s;
+}
+
+@keyframes cardoverlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
