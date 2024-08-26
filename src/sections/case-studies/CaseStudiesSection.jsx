@@ -5,7 +5,10 @@ import SectionWrapper from "../../components/SectionWrapper";
 import styles from "./CaseStudiesSection.module.css";
 import OutlinedButtonWithArrow from "@/components/OutlinedButtonWithArrow";
 import SectionHeading from "@/components/SectionHeading";
-
+import {Swiper, SwiperSlide} from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
   const caseStudyLayout = csLayout;
   const setHeading = 'IIoT  Solution Offerings';
@@ -264,6 +267,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
             </div>
           )}
           {caseStudyLayout === "5" && (
+           
             <div
               className="flex flex-col lg:flex-row justify-start items-center gap-8 w-full h-auto lg:h-[362px]"
               style={{ color: casestudy[0].color }}
@@ -318,6 +322,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                 </div>
               </div>
             </div>
+          
           )}
 
           {/* For IIoT Soltution Page */}
