@@ -11,6 +11,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import OurCapabilities from "@/sections/ourcapabilities/OurCapabilities";
+import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 const DataInsights = () => {
   const sectionSliderBGImageUrl =
     "/data-insights/backgrounds/bg--data-visualization.png";
@@ -21,11 +22,11 @@ const DataInsights = () => {
       id: 1,
       BGImageUrl: "",
       CardBGColor: "#FFF",
-      CardColor: "#000",
-      cardTitle: "",
-      cardIconUrl: "/data-insights/logos/logo--power-bi.png",
-      cardHeading: "Power BI",
-      cardDesc:
+      CardTextColor: "#000",
+      CardTitle: "",
+      CardIconUrl: "/data-insights/logos/logo--power-bi.png",
+      CardHeading: "Power BI",
+      CardDesc:
         "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
       isArrow: "",
       arrowColor: "#000",
@@ -36,11 +37,11 @@ const DataInsights = () => {
       id: 2,
       BGImageUrl: "",
       CardBGColor: "#FFF",
-      CardColor: "#000",
-      cardTitle: "",
-      cardIconUrl: "/data-insights/logos/logo--tableau.png",
-      cardHeading: "Tableau",
-      cardDesc:
+      CardTextColor: "#000",
+      CardTitle: "",
+      CardIconUrl: "/data-insights/logos/logo--tableau.png",
+      CardHeading: "Tableau",
+      CardDesc:
         "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
       isArrow: "",
       arrowColor: "#000",
@@ -50,11 +51,11 @@ const DataInsights = () => {
       id: 3,
       BGImageUrl: "",
       CardBGColor: "#FFF",
-      CardColor: "#000",
-      cardTitle: "",
-      cardIconUrl: "/data-insights/logos/logo--birst.png",
-      cardHeading: "Birst",
-      cardDesc:
+      CardTextColor: "#000",
+      CardTitle: "",
+      CardIconUrl: "/data-insights/logos/logo--birst.png",
+      CardHeading: "Birst",
+      CardDesc:
         "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
       isArrow: "",
       arrowColor: "#000",
@@ -68,11 +69,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Azure SQL Data Ware Housing",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Azure SQL Data Ware Housing",
+      CardDesc:
         "Leverage seamless analysis of your business data and trust in our expertise to scale your insights.",
       isArrow: "true",
       link: [],
@@ -83,11 +84,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "AWS Redshift",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "AWS Redshift",
+      CardDesc:
         "Optimize your data storage and queries while we provide the experience to enhance your data efficiency.",
       isArrow: "true",
       link: [],
@@ -97,11 +98,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Azure Synapse",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Azure Synapse",
+      CardDesc:
         "Seamlessly integrate, analyze and visualize your data with Azure Synapse, and rely on us for real-time insights that drive informed decisions.",
       isArrow: "true",
       link: [],
@@ -111,11 +112,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Azure Data Factory",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Azure Data Factory",
+      CardDesc:
         "Effortlessly move, transform and orchestrate data while we streamline your data workflows for you.",
       isArrow: "true",
       link: [],
@@ -125,11 +126,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Databricks",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Databricks",
+      CardDesc:
         "Harness unified data analytics gaining deeper insights with our guidance and empowering data-driven strategies.",
       isArrow: "true",
       link: [],
@@ -139,11 +140,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Amazon S3",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Amazon S3",
+      CardDesc:
         "Securely store, retrieve and manage data knowing that we offer right scalability and durability to safeguard your valuable information.",
       isArrow: "true",
       link: [],
@@ -153,11 +154,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Azure Data Lake",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Azure Data Lake",
+      CardDesc:
         "Experience high-performance and secure data management with Azure Data Lake, customized to meet your evolving data needs while we provide our expertise.",
       isArrow: "true",
       link: [],
@@ -167,11 +168,11 @@ const DataInsights = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardColor: "white",
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Microsoft Fabric",
-      cardDesc:
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Microsoft Fabric",
+      CardDesc:
         "We leverage the capabilities of Microsoft Fabric, an integrated Lakehouse, Datawarehouse & AI-powered platform designed to drive your business efficiency through the seamless consolidation of data estate, enhanced access management, robust governance and compliance mechanisms.",
       isArrow: "true",
       link: [],
@@ -223,6 +224,14 @@ const DataInsights = () => {
     },
     // Add more case studies here...
   ];
+  const ACCORDION_DATA = [
+    { id: 1, title: "Data Platform Modernization", content: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.", image: "/data-insights/our-capabilties/img-01.png" },
+    { id: 2, title: "Advance Analytics", content: "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation.", image: "/data-insights/our-capabilties/img-02.png" },
+    { id: 3, title: "Business Intelligence", content: "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.", image: "/data-insights/our-capabilties/img-03.png" },
+    { id: 4, title: "Data Governance", content: "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.", image: "/data-insights/our-capabilties/img-04.png" },
+    { id: 5, title: "Data Warehouse and Integration", content: "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.", image: "/data-insights/our-capabilties/img-05.png" },
+  ];
+
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
@@ -255,10 +264,11 @@ const DataInsights = () => {
     <>
       {/* Start--Section--HeroBanner======================================================== */}
       <EntIntro
-        title="Reimagine Your Business With Our Intelligent Edge 
+        title="Achieve Breakthrough 
+Performance through Data 
 "
-        desc="Reimagine Your Business Capabilities with
-our Intelligent Edge Cloud Stack and Services"
+        desc="Achieve Breakthrough Performance through
+Data-Driven Automation"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -345,26 +355,19 @@ our Intelligent Edge Cloud Stack and Services"
         Color={"white"}
       ></BlogSection>
       {/* End-Section--Blog */}
-        <OurCapabilities   
-        setHeading="Take Confident Business Decisions with Industry Tailored Cloud Technology"
-        setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
+        <OurCapabilities
+        setHeading="Our Capabilities"
+        setDesc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental "
         setColor="#1D162B"
         setPadding={false}
         setHeadingLayout="horizontal"
-        setHeadingContainerWidthFull={'w-1/2'}
+        ACCORDION_DATA={ACCORDION_DATA}
+        
    />
-      
-      {/* Section--Distinctive Edge======================================================================= */}
-      <DistinctiveSection
-        DistinctiveData={DISTINCTIVE_DATA}
-        ID={"Distinctive"}
-        Title={"The Distinctive Edge"}
-        Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
-        }
-      ></DistinctiveSection>
-      {/* End-Section--Distinctive Edge */}
-
+   
+      {/* Start--Section--Testimonial======================================================================= */}
+      <h1>Pending with Abhay---Testimonial</h1>
+      {/* End-Section--Testimonial======================================================= */}
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}
