@@ -2,15 +2,15 @@ function SectionHeading({
   Heading,
   Desc,
   Color = 'black',
-  MaxWidth = '100%',
   center = false,
   right = false,
   layout = 'vertical', // Default to 'vertical'
+  headingContainerWidth = 'w-1/2',
+  paddingTop='0',
 }) {
   return (
     <div
-      className={`w-full ${center ? 'text-center mx-auto' : right ? 'text-right ml-auto' : 'text-left'}`}
-      style={{ maxWidth: MaxWidth }}
+    className={`w-full pt-${paddingTop} ${center ? 'text-center mx-auto' : right ? 'text-right ml-auto' : 'text-left'}`} 
     >
       {layout === 'vertical' ? (
         <div
@@ -31,7 +31,7 @@ function SectionHeading({
         </div>
       ) : (
         <div
-          className={`flex justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'} items-end `}
+          className={`flex pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'} items-end `}
         >
           <h1
             className={`text-2xl sm:text-lg md:text-[54px] font-medium md:leading-[62px]`}

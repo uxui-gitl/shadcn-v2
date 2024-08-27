@@ -157,6 +157,11 @@ const UpgradeToCloud = () => {
     },
     // Add more case studies here...
   ];
+  const HUBEXPERTISE_COUNTER_DATA = [
+    { start: 10, end: 50, description: "Cloud Deployments" },
+    { start: 10, end: 15, description: "Cloud Certified Professionals" },
+    // Add more counters as needed
+  ];
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
@@ -272,6 +277,7 @@ const UpgradeToCloud = () => {
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
+        counters={HUBEXPERTISE_COUNTER_DATA}
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Section--Case-Studies======================================================================= */}

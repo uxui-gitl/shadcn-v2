@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
+    
+
 import SectionHeading from "@/components/SectionHeading";
 import SectionWrapper from "@/components/SectionWrapper";
 import styles from "./hubExpertise.module.css";
 import { jetBrains_mono } from "../../app/fonts";
+
+
+
+
 
 const CounterSection = ({ start, end, description, counterOn }) => (
   <div className="flex-1 p-4 text-white">
@@ -29,7 +35,7 @@ const ScrollCounter = ({ onEnter, onExit, start, end, description, counterOn }) 
   </ScrollTrigger>
 );
 
-const HubExpertise = ({ setHeading, setDesc, setColor, counters }) => {
+const HubExpertise = ({ setHeading, setDesc, setColor }) => {
   const [counterOn, setCounterOn] = useState(false);
 
   const handleEnter = () => {
@@ -42,6 +48,14 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters }) => {
     setCounterOn(false);
   };
 
+  // Define the start and end values for each counter along with descriptions
+  const counters = [
+    { start: 10, end: 50, description: "Cloud Deployments" },
+    { start: 10, end: 15, description: "Cloud Certified Professionals" },
+
+
+  ];
+
   return (
     <SectionWrapper BGColor="#000" Padding={false}>
       <section className="container mx-auto">
@@ -53,7 +67,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters }) => {
             <div className="flex flex-col gap-8">
               {/* First Row */}
               <div className="flex flex-row gap-8">
-                {counters.map((counter, index) => (
+                {counters.slice(0, 2).map((counter, index) => (
                   <div key={index} className="flex-1">
                     <ScrollCounter
                       onEnter={handleEnter}
@@ -66,6 +80,21 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters }) => {
                   </div>
                 ))}
               </div>
+              {/* Second Row----if more than 2 values */}
+              {/* <div className="flex flex-row gap-8">
+                {counters.slice(2, 4).map((counter, index) => (
+                  <div key={index} className="flex-1">
+                    <ScrollCounter
+                      onEnter={handleEnter}
+                      onExit={handleExit}
+                      start={counter.start}
+                      end={counter.end}
+                      description={counter.description}
+                      counterOn={counterOn}
+                    />
+                  </div>
+                ))}
+              </div> */}
             </div>
           </div>
         </div>
