@@ -18,7 +18,7 @@ function CommonCard({ Item, setpageID }) {
     link = [],
     CardDownImageMinHeight = "200px",
     arrowColor = "#FFF",
-    additionalData = [],
+    additionalData=[],
   } = Item;
 
   const cardBodyMinHeight = setpageID === "ai-ml" ? "564px" : "424px";
@@ -26,7 +26,8 @@ function CommonCard({ Item, setpageID }) {
   return (
     <>
       <div
-        className={`commonCard rounded-3xl shadow min-h-[424px] flex flex-col justify-between ${style.commonCard}`} style={{
+        className="commonCard rounded-3xl shadow min-h-[424px] flex flex-col justify-between"
+        style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,
           color: CardTextColor,
@@ -35,7 +36,7 @@ function CommonCard({ Item, setpageID }) {
         }}
       >
         <div className="card-body p-10 flex-grow">
-          {CardTitle && <div className=" text-[#E0028E] mb-8">{CardTitle}</div>}
+          {CardTitle && <div className="text-[#E0028E] mb-8">{CardTitle}</div>}
           {CardIconUrl && (
             <div className="pb-8">
               <Image src={CardIconUrl} alt="" width={50} height={50} />
@@ -43,7 +44,7 @@ function CommonCard({ Item, setpageID }) {
           )}
           {CardHeading && (
             <h5
-              className="cardHeading text-[42px] leading-[48px] font-semibold"
+              className="text-[42px] leading-[48px] font-semibold"
               dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}
@@ -93,25 +94,6 @@ function CommonCard({ Item, setpageID }) {
             <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
           </div>
         )}
-
-        {additionalData?.length > 0 && (
-          <div className={`${style.additionalDataWrapper}`}>
-            <div className="">
-              {CardHeading && (
-                <h5
-                  className="cardHeading text-[18px] leading-[32px] font-semibold"
-                  dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
-                />
-              )}
-            </div>
-            {additionalData?.map((data) => (
-              <>
-                <div className="" style={{ borderBottom: '1px solid #d3d3d3', padding: '10px' }}>
-                  <p className="text-[16px] font-medium">{data?.data}</p>
-                </div>
-              </>
-            ))}
-          </div>)}
       </div>
     </>
   );

@@ -24,23 +24,80 @@ import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-
-
-
+import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
+import SectionSliderAdditionalData from "@/sections/SectionSliderAdditionalData/SectionSliderAdditionalData";
 
 const CloudStack = () => {
   const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
   const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
-  
+
+  const advanceSolutionData = [
+    {
+      id: 1,
+      cardBGImageUrl: "",
+      cardBGColor: "#EFE9FB",
+      cardTextColor: 'black',
+      cardTitle: "Machine Learning",
+      cardIconUrl: "",
+      cardHeading: "Automated Pattern Recognition",
+      isArrow: "",
+      additionalData: [
+        { id: 1, text: 'dummy text dummy textdummy text dummy text' },
+        { id: 2, text: 'dummy text dummy text' },
+        { id: 3, text: 'dummy text dummy text' },
+        { id: 4, text: 'dummy text dummy text' },
+      ]
+    },
+    {
+      id: 2,
+      cardBGImageUrl: "",
+      cardBGColor: "#EFE9FB",
+      cardTextColor: 'black',
+      cardTitle: "Artificial Intelligence",
+      cardIconUrl: "",
+      cardHeading: "Cognitive Computing Solutions",
+      isArrow: "",
+      additionalData: [
+        { id: 1, text: 'dummy text dummy textdummy text dummy text', textColor:'#000' },
+        { id: 2, text: 'dummy text dummy text' },
+        { id: 3, text: 'dummy text dummy text' },
+        { id: 4, text: 'dummy text dummy text' },
+      ]
+    },
+
+    {
+      id: 3,
+      cardBGImageUrl: "",
+      cardBGColor: "#EFE9FB",
+      cardTextColor: 'black',
+      cardTitle: "Robotic Process Automation",
+      cardIconUrl: "",
+      cardHeading: "Efficient Task Automation",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 4,
+      cardBGImageUrl: "",
+      cardBGColor: "#EFE9FB",
+      cardTextColor: 'black',
+      cardTitle: "IIoT",
+      cardIconUrl: "",
+      cardHeading: "Asset Optimization and Uptime", 
+      isArrow: "",
+      link: [],
+    },
+  ]
   const blogImageUrl = "/ai-ml/blog-bg.png";
+
 
   const ULTIMATE_CHOICE_DATA = [
     {
       id: 1,
       BGImageUrl: "",
       BGColor: "#fff",
-      CardBGColor:"transparent",
-      CardTextColor:'white',
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Sample Heading",
@@ -54,8 +111,8 @@ const CloudStack = () => {
       id: 2,
       BGImageUrl: "",
       BGColor: "#fff",
-      CardBGColor:"transparent",
-      CardTextColor:'white',
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Sample Heading",
@@ -68,8 +125,8 @@ const CloudStack = () => {
       id: 3,
       BGImageUrl: "",
       BGColor: "#fff",
-      CardBGColor:"transparent",
-      CardTextColor:'white',
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Sample Heading",
@@ -82,10 +139,10 @@ const CloudStack = () => {
       id: 4,
       BGImageUrl: "",
       BGColor: "#fff",
-      CardBGColor:"transparent",
-      CardTextColor:'white',
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
       CardTitle: "",
-        CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Sample Heading",
       CardDesc:
         "Highest levels of security and privacy, ensuring data is safeguarded",
@@ -97,25 +154,25 @@ const CloudStack = () => {
   const reviewCardData = [
     {
       id: 1,
-     cardHeading:"sdkhgajgdsjhgasdkhg",
-     cardDesc:'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "sdkhgajgdsjhgasdkhg",
+      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
     },
     {
       id: 2,
-     cardHeading:"sdkhgajgdsjhgasdkhg",
-     cardDesc:'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "sdkhgajgdsjhgasdkhg",
+      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
     },
     {
       id: 3,
-     cardHeading:"sdkhgajgdsjhgasdkhg",
-     cardDesc:'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "sdkhgajgdsjhgasdkhg",
+      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
     },
   ];
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL:"",
-      videoURL:"",
+      imageURL: "",
+      videoURL: "",
       title: "Case Studies",
       heading: 'Elevating Customer Experience',
       description: "",
@@ -154,7 +211,7 @@ const CloudStack = () => {
     },
     // Add more case studies here...
   ];
-  
+
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
@@ -195,31 +252,31 @@ our Intelligent Edge Cloud Stack and Services"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       {/* Section Nav */}
- 
-        <SectionNav
-          // Solutions
-          // Benefits
-          // Why Us
 
-          arr={[
-            {
-              _id: 1,
-              title: "Solutions",
-              link: "#Solutions",
-            },
-            {
-              _id: 2,
-              title: "Benefits",
-              link: "#Benefits",
-            },
-            {
-              _id: 3,
-              title: "Why Us",
-              link: "#WhyUs",
-            },
-          ]}
-        />
-      
+      <SectionNav
+        // Solutions
+        // Benefits
+        // Why Us
+
+        arr={[
+          {
+            _id: 1,
+            title: "Solutions",
+            link: "#Solutions",
+          },
+          {
+            _id: 2,
+            title: "Benefits",
+            link: "#Benefits",
+          },
+          {
+            _id: 3,
+            title: "Why Us",
+            link: "#WhyUs",
+          },
+        ]}
+      />
+
       {/* Section--Overview */}
       <OverviewSection
         Text={
@@ -233,15 +290,27 @@ our Intelligent Edge Cloud Stack and Services"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
         setPadding={false}
-        setHeadingContainerWidthFull={'w-full'}        
+        setHeadingContainerWidthFull={'w-full'}
       />
-      {/* Section--Blog */}
-      <SolutionSliderCloud
-        setHeading="Advance Solution for Business Future"
-        setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
-        setColor="#1D162B"
-      />
-      {/* Section--Section--Hub-of-Expertise */}
+
+  {/* Advance Solution for Business Future */}
+      <SectionSliderAdditionalData
+        ID={'additionalData'}
+        sectionImageUrl={''}
+        sectionHeading={'Advance Solution for Business Future'}
+        sectionDesc={'This approach helps us to adeptly manage software development projects involving complexity levels.'}
+        sectionHeaderMaxWidth={'50%'}
+        slidesPerView="3"
+        autoplay="false"
+        cardData={advanceSolutionData}
+        sectionTextColor="#000"
+        sectionBGColor="#fff"
+      >
+
+      </SectionSliderAdditionalData>
+
+  {/* end Advance Solution for Business Future */}
+
       {/* Start--Section--UltimateChoice======================================================================== */}
       <SectionWithSlider
         ID={"ULTIMATE_CHOICE_DATA"}
@@ -250,28 +319,28 @@ our Intelligent Edge Cloud Stack and Services"
           "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
         }
         Color="#ffffff"
-        CardDataList={ ULTIMATE_CHOICE_DATA}
+        CardDataList={ULTIMATE_CHOICE_DATA}
         BGColor="#2B1624"
         setHeadingLayout="horizontal"
-       
+
       />
       {/* End--Section--UltimateChoice======================================================================== */}
       <section className="container max-auto"><h1>Cloud Services</h1></section>
 
       {/* Section--Synergetic-Partnership======================================================= */}
       <HighlightPromo
-   
+
         setHeading="Synergetic Partnership"
         setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
         setColor="#1D162B"
         setImageBGURL={imgBgURL}
         setLogoImages="true"
         setPadding={false}
-        
+
       />
       {/* End-Section--Synergetic-Partnership */}
-        {/* Section--Case-Studies======================================================================= */}
-        <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='#FFFFFF'/>
+      {/* Section--Case-Studies======================================================================= */}
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='#FFFFFF' />
       {/* End-Section--Case-Studies */}
 
       {/* Section--Blog */}
@@ -294,15 +363,15 @@ our Intelligent Edge Cloud Stack and Services"
           "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
         }
       ></DistinctiveSection>
-    <ReviewSliderSection
-     ID={"ULTIMATE_CHOICE_DATA"}
-     Heading={"Delighted customers share their success experience"}
-     Desc={''}
-     Color="#ffffff"
-     CardDataList={ reviewCardData}
-     BGColor="#1D162B"
-     SectionHeadingMaxWidth={'70%'}
-    ></ReviewSliderSection>
+      <ReviewSliderSection
+        ID={"ULTIMATE_CHOICE_DATA"}
+        Heading={"Delighted customers share their success experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={reviewCardData}
+        BGColor="#1D162B"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
       {/* transform business with us section */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}
