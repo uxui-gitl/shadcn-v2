@@ -1,0 +1,12 @@
+.swiperButtonNext{
+    position: absolute;
+    left: '50%' !important;
+    top:'47% ' !important;
+    
+}
+
+.swiperButtonPrev{
+    position: absolute;
+    left: '50%';
+    top:'50%'
+}

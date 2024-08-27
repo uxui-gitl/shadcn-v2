@@ -15,6 +15,7 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import BlogSlider from "@/sections/BlogSlider/BlogSliderSection"
 
 
 const page = () => {
@@ -25,42 +26,42 @@ const page = () => {
     {
       id: 1,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
-      cardTitle: "Machine Learning",
-      cardIconUrl: '',
-      cardHeading: 'Automated Pattern Recognition',
-      cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
-      isArrow: 'true',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "Machine Learning",
+      CardIconUrl: '',
+      CardHeading: 'Automated Pattern Recognition',
+      CardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
+      isArrow: false,
     },
     {
       id: 2,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
-      cardTitle: "Artificial Intelligence",
-      cardIconUrl: '',
-      cardHeading: 'Cognitive Computing Solutions',
-      cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
-      isArrow: 'true',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "Artificial Intelligence",
+      CardIconUrl: '',
+      CardHeading: 'Cognitive Computing Solutions',
+      CardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
+      isArrow: false,
     },
     {
       id: 3,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
-      cardTitle: "Robotic Process Automation",
-      cardIconUrl: '',
-      cardHeading: 'Efficient Task Automation',
-      cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
-      isArrow: 'true',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "Robotic Process Automation",
+      CardIconUrl: '',
+      CardHeading: 'Efficient Task Automation',
+      CardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
+      isArrow: false,
     },
     {
       id: 4,
       BGImageUrl: '',
-      CardBGColor:'#EFE9FB',
-      cardTitle: "IIoT",
-      cardIconUrl: '',
-      cardHeading: 'Asset Optimization and Uptime',
-      cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
-      isArrow: 'true',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "IIoT",
+      CardIconUrl: '',
+      CardHeading: 'Asset Optimization and Uptime',
+      CardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
+      isArrow: false,
     },
   ];
 
@@ -93,7 +94,7 @@ const page = () => {
       desc: "Extensive experience in understanding industry-specific challenges and opportunities",
       icon: "",
     },
-    
+
   ]
 
   const BenefitsData = [
@@ -101,28 +102,28 @@ const page = () => {
       _id: 1,
       icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       title: "",
-      cardDesc:
+      CardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity. ",
     },
     {
       _id: 2,
       icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
       title: "",
-      cardDesc:
+      CardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 3,
       icon: "benefisIntelligentTechnologies/InformedDecisionmaking",
       title: "",
-      cardDesc:
+      CardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends.",
     },
     {
       _id: 4,
       icon: "benefisIntelligentTechnologies/highDegreeAccuracyConsistency",
       title: "",
-      cardDesc:
+      CardDesc:
         "A high degree of accuracy and consistency in business operations.",
     },
   ];
@@ -196,10 +197,11 @@ const page = () => {
         Heading={'Advance Solutions for Business Future Readiness'}
         Desc={''}
         Color={'white'}
-        MaxWidth={'80%'}
+        SectionHeadingMaxWidth={'60%'}
         CardDataList={advanceSolutionCardData}
       >
       </SectionWidthSlider>
+
 
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
@@ -209,11 +211,10 @@ const page = () => {
         Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         Color={'white'}
         CardDataList={benifitsCardsData}
-        MaxWidth={'100%'}
+        SectionHeadingMaxWidth={'100%'}
       ></BenefitSliderSection>
 
       {/* blog */}
-
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
         Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
         Color={'white'}

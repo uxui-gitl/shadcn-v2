@@ -72,7 +72,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
       <div className={` w-full  `} id="Contact">
         <div className="text-left">
           <div className="flex md:flex-row flex-col justify-start" style={{ alignItems: "center", justifyContent: 'center' }}>
-            <SectionHeading Heading={title} Color="white">
+            <SectionHeading Heading={title} Color="white" MaxWidth="50%">
             </SectionHeading>
             <div className="text-center md:text-left mb-7 md:mb-0">
             <p className="text-white text-sm sm:text-base md:text-xl font-medium">{desc}</p>

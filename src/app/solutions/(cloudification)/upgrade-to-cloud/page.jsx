@@ -16,11 +16,12 @@ import Benefits from "@/components/Benefits";
 import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
+import ExpandCard from "@/components/ExpandCard";
 
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
   const imgBGURL_Challenges =
-    "/upgradeCloud/backgrounds/bg--onprem-challenges.png";
+    "/upgradeCloud/backgrounds/bg--onprem-challenges-left.png";
   const msLogoURL =
     "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
   const yourImageUrl = "/ai-ml/AI-bgimage.jpg";
@@ -30,11 +31,11 @@ const UpgradeToCloud = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor:"transparent",
-      CardColor:'white',
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Computer<br/>Vision",
-      cardDesc:
+      CardTextColor:'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Computer<br/>Vision",
+      CardDesc:
         "We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.",
       isArrow: "true",
       link: [],
@@ -45,11 +46,11 @@ const UpgradeToCloud = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor:"transparent",
-      CardColor:'white',
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Speech & Language",
-      cardDesc:
+      CardTextColor:'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Speech & Language",
+      CardDesc:
         "Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand",
       isArrow: "true",
       link: [],
@@ -59,11 +60,11 @@ const UpgradeToCloud = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor:"transparent",
-      CardColor:'white',
-      cardTitle: "",
-      cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Document Understanding",
-      cardDesc:
+      CardTextColor:'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Document Understanding",
+      CardDesc:
         "We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.",
       isArrow: "true",
       link: [],
@@ -73,11 +74,11 @@ const UpgradeToCloud = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor:"transparent",
-      CardColor:'white',
-      cardTitle: "",
-        cardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      cardHeading: "Conversational<br/>AI",
-      cardDesc:
+      CardTextColor:'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Conversational<br/>AI",
+      CardDesc:
         "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ",
       isArrow: "true",
       link: [],
@@ -155,6 +156,11 @@ const UpgradeToCloud = () => {
       bgCardColor: "#E1F2EF",
     },
     // Add more case studies here...
+  ];
+  const HUBEXPERTISE_COUNTER_DATA = [
+    { start: 10, end: 50, description: "Cloud Deployments" },
+    { start: 10, end: 15, description: "Cloud Certified Professionals" },
+    // Add more counters as needed
   ];
   const DISTINCTIVE_DATA = [
     {
@@ -248,7 +254,11 @@ const UpgradeToCloud = () => {
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}
-
+        {/*  */}
+        <div className="p-36">
+          <ExpandCard></ExpandCard>
+        </div>
+        {/*  */}
       {/* Section--Trained in Cloud Services= */}
       <HighlightPromo
         blurEffect="blurON"
@@ -267,6 +277,7 @@ const UpgradeToCloud = () => {
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
+        counters={HUBEXPERTISE_COUNTER_DATA}
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Section--Case-Studies======================================================================= */}

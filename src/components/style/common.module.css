@@ -1,0 +1,33 @@
+.commonCard{
+
+}
+
+
+.commonCard .additionalDataWrapper{
+    transition: 0.5s;
+    transition-timing-function:ease-in-out;
+    transform: translateY(100%);
+}
+
+.commonCard:has(.additionalDataWrapper):hover .cardTitle{
+    transition: 0.6;
+    opacity: 0;
+}
+
+.commonCard:hover .cardTitle{
+    transition: 0.6;
+    opacity: 0;
+}
+
+.commonCard .cardHeading{
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+}
+
+.commonCard:hover .cardHeading{
+    transition: 0.7;
+    transform: translateY(-70px);
+    font-size: 28px;
+    line-height: normal;
+
+}

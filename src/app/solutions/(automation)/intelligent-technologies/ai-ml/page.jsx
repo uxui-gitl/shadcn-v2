@@ -19,14 +19,17 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 const AIOfferingsData = [
   {
     id: 1,
-    BGImageUrl: '',
+    CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardColor:'#000',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Computer <br/> Vision',
-    cardDesc: 'Custom video/image analysis tools leveraging OpenCV for optimized computer vision algorithms',
-    isArrow: 'true',
+    CardTextColor:'#000',
+    CardBGImageUrlSize:"",
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Computer <br/> Vision',
+    CardDesc: 'Custom video/image analysis tools leveraging OpenCV for optimized computer vision algorithms',
+    isArrow: false,
+    DownImageUrl : "",
+    CardDownImageMinHeight:"",
     arrowColor: '#000',
     link: [
       {
@@ -46,14 +49,14 @@ const AIOfferingsData = [
 
   {
     id: 2,
-    BGImageUrl: '',
+    CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardColor:'#000',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Speech & Language',
-    cardDesc: 'Speech & Language AI helps businesses to elevate customer experiences and stay competitive',
-    isArrow: 'true',
+    CardTextColor:'#000',
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Speech & Language',
+    CardDesc: 'Speech & Language AI helps businesses to elevate customer experiences and stay competitive',
+    isArrow: false,
     arrowColor: '#000',
     link: [
       {
@@ -72,14 +75,14 @@ const AIOfferingsData = [
   },
   {
     id: 3,
-    BGImageUrl: '',
+    CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardColor:'#000',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Document Understanding',
-    cardDesc: 'AI-driven data capture from diverse documents, enabling error-free extraction of unstructured data',
-    isArrow: 'true',
+    CardTextColor:'#000',
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Document Understanding',
+    CardDesc: 'AI-driven data capture from diverse documents, enabling error-free extraction of unstructured data',
+    isArrow: false,
     arrowColor: '#000',
     link: [
       {
@@ -98,14 +101,14 @@ const AIOfferingsData = [
   },
   {
     id: 4,
-    BGImageUrl: '',
+    CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardColor:'#000',
-    cardTitle: "",
-    cardIconUrl: '',
-    cardHeading: 'Conversational<br/>AI',
-    cardDesc: 'Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ',
-    isArrow: 'true',
+    CardTextColor:'#000',
+    CardTitle: "",
+    CardIconUrl: '',
+    CardHeading: 'Conversational<br/>AI',
+    CardDesc: 'Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ',
+    isArrow: false,
     arrowColor: '#000',
     link: [
       {
@@ -123,6 +126,7 @@ const AIOfferingsData = [
     ],
   },
 ]
+
 
 const MLData = [
   {
@@ -266,6 +270,7 @@ const page = () => {
         Color={'white'}
         CardDataList={AIOfferingsData}
         pageID="ai-ml"
+        SectionHeadingMaxWidth={'60%'}
       >
       </SectionWidthSlider>
 

@@ -9,63 +9,57 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import CommonCard from './../../components/CommonCard';
 
 const SolutionSliderCloud = ({ setHeading, setDesc, setColor }) => {
   
 
-  const SOLUTION_CARD_DATA = [
-    
+  const advanceSolutionCardData = [
     {
-      id: "1",
-      label: "Machine Learning",
-      heading: "Core Infrastructure and Virtualization",
-      subheading: "Core Infrastructure and Virtualization",
-      body: "",
-      List: [],
-      frontIconURL:"/CloudStackServices/icons/Solution/Icon.svg",
-      ctaIconURL: "",
-      cardBGColor:'#EFE9FB',
-      cardHoverColor:'#F3F0FA',
-      cardBGImageURL: '/CloudStackServices/background/background-card.jpg',
+      id: 1,
+      BGImageUrl: '',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "Machine Learning",
+      CardIconUrl: '',
+      CardHeading: 'Automated Pattern Recognition',
+      CardDesc: '',
+      isArrow: false,
+      additionalData:[
+        {id:'1', data:'manoj',},
+        {id:'2', data:'anish',},
+        {id:'3', data:'kalu',},
+
+      ]
     },
     {
-      id: "2",
-      label: "Machine Learning",
-      heading: "Advanced Cloud Infrastructure",
-      subheading: "Core Infrastructure and VirtualizatioCoreCoreCore Infrastructure and VirtualizatioCoreCoreCore Infrastructure and VirtualizatioCoreCore",
-      body: "",
-      List: [],
-      frontIconURL:"/CloudStackServices/icons/Solution/Icon.svg",
-      ctaIconURL: "",
-      cardBGColor:'#EFE9FB',
-      cardHoverColor:'#F3F0FA',
-      cardBGImageURL: '/CloudStackServices/background/background-card.jpg',
+      id: 2,
+      BGImageUrl: '',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "Artificial Intelligence",
+      CardIconUrl: '',
+      CardHeading: 'Cognitive Computing Solutions',
+      CardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
+      isArrow: false,
     },
     {
-      id: "3",
-      label: "Machine Learning",
-      heading: "Advanced <br> M365",
-      subheading: "Core Infrastructure and Virtualization",
-      body: "",
-      List: [],
-      frontIconURL:"/CloudStackServices/icons/Solution/Icon.svg",
-      ctaIconURL: "",
-      cardBGColor:'#EFE9FB',
-      cardHoverColor:'#F3F0FA',
-      cardBGImageURL: '/CloudStackServices/background/background-card.jpg',
+      id: 3,
+      BGImageUrl: '',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "Robotic Process Automation",
+      CardIconUrl: '',
+      CardHeading: 'Efficient Task Automation',
+      CardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
+      isArrow: false,
     },
     {
-      id: "4",
-      label: "Machine Learning",
-      heading: "Business Application",
-      subheading: "Core Infrastructure and Virtualization",
-      body: "",
-      List: [],
-      frontIconURL:"/CloudStackServices/icons/Solution/Icon.svg",
-      ctaIconURL: "",
-      cardBGColor:'#EFE9FB',
-      cardHoverColor:'#F3F0FA',
-      cardBGImageURL: '',
+      id: 4,
+      BGImageUrl: '',
+      CardBGColor: '#EFE9FB',
+      CardTitle: "IIoT",
+      CardIconUrl: '',
+      CardHeading: 'Asset Optimization and Uptime',
+      CardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
+      isArrow: false,
     },
   ];
 
@@ -102,12 +96,11 @@ const SolutionSliderCloud = ({ setHeading, setDesc, setColor }) => {
               }}
               
             >
-              {/* {advanceSolutionCardData.map((item) => (
+              {advanceSolutionCardData.map((item) => (
                 <SwiperSlide key={item.id}>
-                  <div className="h-full w-full absolute left-0 top-0"></div>
-                  {}
+                  <CommonCard Item={item}></CommonCard>
                 </SwiperSlide>
-              ))} */}
+              ))}
             </Swiper>
           </div>
         </section>
