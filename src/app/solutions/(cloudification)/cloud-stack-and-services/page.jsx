@@ -17,7 +17,7 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
  * * 2022-08-09
  */
 import OverviewSection from "@/sections/overview/OverviewSection";
-import HighlightPromo from "@/sections/highlightPromo/HighlightPromo";
+import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";

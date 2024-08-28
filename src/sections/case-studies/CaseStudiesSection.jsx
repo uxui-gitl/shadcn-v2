@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionWrapper from "../../components/SectionWrapper";
 import styles from "./CaseStudiesSection.module.css";
-import OutlinedButtonWithArrow from "@/components/OutlinedButtonWithArrow";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import SectionHeading from "@/components/SectionHeading";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
