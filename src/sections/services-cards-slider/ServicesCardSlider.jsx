@@ -10,14 +10,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
-const CardSlider = ({cardData}) => {
+const CardSlider = ({cardData, heading, desc, color}) => {
   const [activeIndex, setActiveIndex] = useState(0); // Set the second card (index 1) to be open by default
   const [hoveredIndex, setHoveredIndex] = useState(null); // New state for hovered card
 
   return (
     <SectionWrapper BGColor="#fff">
       <div className="container mx-auto">
-        <SectionHeading Heading="Engineering Success with Our Methodology" Desc="This approach helps us to adeptly manage software development projects involving complexity levels." Color="#000" />
+        <SectionHeading Heading={heading} Desc={desc} Color={color} />
         <Swiper
           spaceBetween={16}
           slidesPerView={"auto"}

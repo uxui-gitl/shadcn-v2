@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import "react-creative-cursor/dist/styles.css";
-
 import EntIntro from "@/components/EntIntro";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SectionNav from "@/components/SectionNav";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
 
 /**
  * * New Imports---Sandeep Rana
@@ -239,6 +239,46 @@ const CloudStack = () => {
       icon: "",
     },
   ];
+  const SERVICE_CARDS_DATA = [
+    {
+      title: "Planning and Designing",
+      hoverTitle: "Planning & Designing",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 1",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Define and Develop",
+      hoverTitle: "Define & Develop",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 2",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Testing",
+      hoverTitle: "Testing",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 3",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Deployment",
+      hoverTitle: "Deployment",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 4",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Maintainence",
+      hoverTitle: "Maintainence",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    // Add more cards here...
+  ];
+
+
   return (
     <>
       {/* Section--HeroBanner */}
@@ -325,7 +365,11 @@ our Intelligent Edge Cloud Stack and Services"
 
       />
       {/* End--Section--UltimateChoice======================================================================== */}
-      <section className="container max-auto"><h1>Cloud Services</h1></section>
+           {/* Start--Service--Section======================================================== */}
+           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Leading Forefront with <br/> our Cloud Services"} desc={"We aim for business foster growth and convert effective pilot initiatives into enterprise-scale implementation"} color={"#1D162B"}  />
+
+{/* End--Service--Section======================================================== */}
+
 
       {/* Section--Synergetic-Partnership======================================================= */}
       <HighlightPromo

@@ -16,7 +16,7 @@ import Benefits from "@/components/Benefits";
 import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-import ExpandCard from "@/components/ExpandCard";
+import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
 
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
@@ -189,6 +189,51 @@ const UpgradeToCloud = () => {
       icon: "",
     },
   ];
+  const SERVICE_CARDS_DATA = [
+    {
+      title: "Planning and Designing",
+      hoverTitle: "Planning & Designing",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 1",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Define and Develop",
+      hoverTitle: "Define & Develop",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 2",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Testing",
+      hoverTitle: "Testing",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 3",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Deployment",
+      hoverTitle: "Deployment",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 4",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Maintainence",
+      hoverTitle: "Maintainence",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Maintainence",
+      hoverTitle: "Maintainence",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    // Add more cards here...
+  ];
   const blogImageUrl = "/ai-ml/blog-bg.png";
   return (
     <>
@@ -254,11 +299,11 @@ const UpgradeToCloud = () => {
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}
-        {/*  */}
-        <div className="p-36">
-          <ExpandCard></ExpandCard>
-        </div>
-        {/*  */}
+            {/* Start--Service--Section======================================================== */}
+            <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Streamline Cloud<br/>Upgrade Service"} desc={"This approach helps us to adeptly manage software development projects involving complexity levels."} color={"#1D162B"}  />
+
+{/* End--Service--Section======================================================== */}
+
       {/* Section--Trained in Cloud Services= */}
       <HighlightPromo
         blurEffect="blurON"

@@ -176,7 +176,7 @@ Customized Business Applications
       />
       {/* End--Benefit--Section======================================================== */}
       {/* Start--Service--Section======================================================== */}
-        <ServicesCardSlider cardData={SERVICE_CARDS_DATA}/>
+        <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Technology Stack"} desc={""} color={"#1D162B"}  />
 
       {/* End--Service--Section======================================================== */}
 

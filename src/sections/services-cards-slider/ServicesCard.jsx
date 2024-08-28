@@ -69,7 +69,7 @@ const ServicesCard = ({
       </div>
 
       {!isActive && (
-        <div className="flex-1 flex flex-col justify-end p-8 h-full">
+        <div className="flex-1 flex flex-col justify-end p-4 h-full">
           <h2 ref={titleRef} className="text-[20px] font-medium">
             {title}
           </h2>
