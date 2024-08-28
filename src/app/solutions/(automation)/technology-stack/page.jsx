@@ -15,6 +15,7 @@ import SectionWithSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 import CaseStudiesSection from '@/sections/case-studies/CaseStudiesSection';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import TechnologyStackLogos from '@/sections/tech-stack/TechnologyStackLogos';
+import ServicesCardSlider from '@/sections/services-cards-slider/ServicesCardSlider';
 
 const TechnologyStack = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -72,6 +73,44 @@ const TechnologyStack = () => {
       { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
       { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
   
+  ];
+  const SERVICE_CARDS_DATA = [
+    {
+      title: "Planning and Designing",
+      hoverTitle: "Planning & Designing",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 1",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Define and Develop",
+      hoverTitle: "Define & Develop",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 2",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Testing",
+      hoverTitle: "Testing",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 3",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Deployment",
+      hoverTitle: "Deployment",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 4",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Maintainence",
+      hoverTitle: "Maintainence",
+      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    // Add more cards here...
   ];
 
   return (<>
@@ -136,6 +175,13 @@ Customized Business Applications
         SectionHeadingMaxWidth={'100%'}
       />
       {/* End--Benefit--Section======================================================== */}
+      {/* Start--Service--Section======================================================== */}
+        <ServicesCardSlider cardData={SERVICE_CARDS_DATA}/>
+
+      {/* End--Service--Section======================================================== */}
+
+
+
       {/* Start-Section--Blog======================================================================= */}
       <BlogSection
         ID={"blog"}
