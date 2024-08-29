@@ -329,14 +329,12 @@ our Intelligent Edge Cloud Stack and Services"
 
       {/* Section--Synergetic-Partnership======================================================= */}
       <HighlightPromo
-
         setHeading="Synergetic Partnership"
         setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
         setColor="#1D162B"
         setImageBGURL={imgBgURL}
         setLogoImages="true"
         setPadding={false}
-
       />
       {/* End-Section--Synergetic-Partnership */}
       {/* Section--Case-Studies======================================================================= */}

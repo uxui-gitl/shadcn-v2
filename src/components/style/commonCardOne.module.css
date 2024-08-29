@@ -1,57 +1,67 @@
-.additionalDataCard {
+
+
+
+
+
+  .commonCardOne {
     overflow: hidden;
   }
-  .additionalDataCard .cardBody {
+
+  .commonCardOne:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: white !important;
+  }
+  .commonCardOne .cardBody {
     position: relative;
   }
   
-  .additionalDataCard .cardTitle {
+  /* .commonCardOne .cardTitle {
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+  } */
+  
+  /* .commonCardOne:hover .cardTitle {
+    transition: 0.25;
+    opacity: 0;
+    transition-timing-function: ease-out;
+  } */
+  
+  .commonCardOne .cardIcon {
     transition-timing-function: ease-out;
     transition: 0.25s;
   }
   
-  .additionalDataCard:hover .cardTitle {
+  .commonCardOne:hover .cardIcon {
     transition: 0.25;
     opacity: 0;
     transition-timing-function: ease-out;
   }
   
-  .additionalDataCard .cardIcon {
+  .commonCardOne .cardHeading {
     transition-timing-function: ease-out;
     transition: 0.25s;
   }
   
-  .additionalDataCard:hover .cardIcon {
-    transition: 0.25;
-    opacity: 0;
-    transition-timing-function: ease-out;
-  }
-  
-  .additionalDataCard .cardHeading {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  }
-  
-  .additionalDataCard:hover .cardHeading {
+  .commonCardOne:hover .cardHeading {
     transition: 0.7;
     transform: translateY(-70px);
-    font-size: 28px;
     line-height: normal;
   }
   
-  .additionalDataCard .additionalDataWrapper {
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
+  .commonCardOne .cardDesc {
     opacity: 0;
     display: none;
     position: absolute;
-    top: 30%;
+    bottom: 18%;
     padding-right: 34px;
   }
   
-  .additionalDataCard:hover .additionalDataWrapper {
-    transition: 2s;
+  .commonCardOne:hover .cardDesc {
+    transition-duration: 1s;
     transition-timing-function: ease-in-out;
     opacity: 1;
     display: block;
   }
+  
+  

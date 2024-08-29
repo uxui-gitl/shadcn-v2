@@ -10,6 +10,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import ExperienceSlider from "@/sections/ExperienceSlider/experienceSlider";
 import CyberSecurityInfograhics from "@/sections/cyber-security-infograhic/CyberSecurityInfographic";
+import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 
 
 const CyberSecurity = () => {
@@ -27,6 +28,75 @@ const CyberSecurity = () => {
     },
     // Add more counters as needed
   ];
+
+  const CyberSecurityData = [
+    {
+      id: 1,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#7F4EE1',
+      cardHeading: 'Business Consulting',
+      cardDesc: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+    {
+
+      id: 2,
+      cardBGImageUrl: '',
+      cardBGColor: '#7F4EE1',
+      cardHeading: 'Implementation & Management',
+      cardDesc: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+    {
+
+      id: 3,
+      cardBGImageUrl: '',
+      cardBGColor: '#9F0165',
+      cardHeading: 'Application Security Testing',
+      cardDesc: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+    {
+
+      id: 4,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Strengthen Potential',
+      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+    {
+
+      id: 5,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Enhance Flexibility',
+      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+    {
+
+
+      id: 5,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Reduce AHT (Average Handling Time)',
+      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+  ]
 
   return (
     <>
@@ -77,7 +147,21 @@ Data-Driven Automation"
       />
       {/* End--Overview-Section======================================================== */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
+
+      <CommonCardTwoSlider
+        ID={''}
+        sectionImageUrl={''}
+        sectionBGColor={'#F3F0FA'}
+        sectionHeading={'Our Cyber Security ferings'}
+        sectionDesc={''}
+        sectionTextColor={'#000'}
+        sectionHeaderMaxWidth={'40%'}
+        cardData={CyberSecurityData}
+      >
+
+      </CommonCardTwoSlider>
       <HubExpertise
+      style={{marginTop:'-350px', paddingTop:'150px'}}
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
@@ -85,9 +169,9 @@ Data-Driven Automation"
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Start--Section--CyberSecurityInfographics======================================================== */}
-        <CyberSecurityInfograhics/>
+      <CyberSecurityInfograhics />
       {/* End--Section--CyberSecurityInfographics======================================================== */}
-      
+
 
       {/* Start-Section--Blog======================================================================= */}
       <BlogSection
@@ -101,7 +185,7 @@ Data-Driven Automation"
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
       {/* Start--Section--ExperienceSlider======================================================== */}
-      <ExperienceSlider/>
+      <ExperienceSlider />
       {/* End--Section--ExperienceSlider======================================================== */}
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

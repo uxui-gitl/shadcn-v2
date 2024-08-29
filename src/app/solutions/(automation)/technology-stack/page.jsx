@@ -18,14 +18,8 @@ import java from "../../../../../public/java.png";
 import dotnet from "../../../../../public/technologyStack/dotnet.png";
 import sharepoint from "../../../../../public/technologyStack/sharepoint.png";
 import ms from "../../../../../public/ms.png";
-import RPAPlaceholder from "../../../../../public/RPAPlaceholder.png";
-import techStack1 from "../../../../../public/techStack1.png";
-import techStack2 from "../../../../../public/techStack2.png";
-import techStack3 from "../../../../../public/techStack3.png";
-import techStack4 from "../../../../../public/techStack4.png";
-import techStack5 from "../../../../../public/techStack5.png";
-import techStack6 from "../../../../../public/techStack6.png";
-import checkout from "../../../../../public/checkout.png";
+
+import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
 
 /**
  * * Sandeep Rana
@@ -178,6 +172,71 @@ const navLinks = [
   },
 ];
 
+const RPASolution = [
+  {
+    id: 1,
+    cardBGColor: '#F5B1DC',
+    cardHeading: 'Custom Application Development',
+    cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+    isArrow: true,
+    cardTextColor: 'black',
+    cardTopImageUrl:'https://flowbite.com/docs/images/blog/image-1.jpg'
+  },
+  {
+
+    id: 2,
+    cardBGColor: '#FCE6F4',
+    cardHeading: 'Custom Application Development',
+    cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+    isArrow: true,
+    cardTextColor: 'black',
+    cardTopImageUrl:'https://flowbite.com/docs/images/blog/image-4.jpg'
+  },
+  {
+
+    id: 3,
+    cardBGColor: '#CDBAF3',
+    cardHeading: 'Compliance and Consistency',
+    cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+    isArrow: true,
+    cardTextColor: 'black',
+    cardTopImageUrl:'https://flowbite.com/docs/images/blog/image-7.jpg'
+  },
+  {
+
+    id: 4,
+    cardBGColor: '#E4E4E4',
+    cardHeading: 'Strengthen Potential',
+    cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+    isArrow: true,
+    cardTextColor: 'black',
+    cardTopImageUrl:'https://flowbite.com/docs/images/blog/image-1.jpg'
+  },
+  {
+
+    id: 5,
+    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGColor: '#EFE9FB',
+    cardHeading: 'Enhance Flexibility',
+    cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+    isArrow: true,
+    cardTextColor: 'black',
+    cardTopImageUrl:'https://flowbite.com/docs/images/blog/image-2.jpg'
+  },
+  {
+
+
+    id: 5,
+    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGColor: '#EFE9FB',
+    cardHeading: 'Reduce AHT (Average Handling Time)',
+    cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+    isArrow: false,
+    cardTextColor: 'black',
+    cardTopImageUrl:'https://flowbite.com/docs/images/blog/image-3.jpg'
+  },
+]
+
 const page = () => {
   return (
     <>
@@ -274,7 +333,7 @@ const page = () => {
 
       {/* Offerings 3 col grid */}
       <>
-        <div id="Services">
+        {/* <div id="Services">
           <OfferingsGrid
             title="Service Offerings"
             titleOnly={true}
@@ -282,7 +341,19 @@ const page = () => {
             columns="3"
             arr={TechStackOfferings}
           />
-        </div>
+        </div> */}
+        <CommonCardThreeSlider
+          ID={'AIOfferings'}
+          sectionImageUrl={''}
+          sectionBGColor={'#fff'}
+          sectionHeading={'Service Offerings'}
+          sectionDesc={''}
+          sectionTextColor={'#000'}
+          sectionHeaderMaxWidth={'40%'}
+          cardData={RPASolution}
+        >
+
+        </CommonCardThreeSlider>
       </>
 
       {/* Insights */}
