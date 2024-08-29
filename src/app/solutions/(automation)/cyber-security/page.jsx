@@ -5,10 +5,10 @@ import Styles from "./page.module.css";
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import HubExpertise from "@/sections/hubofexpertise/HubExpertise";
+import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import ExperienceSlider from "@/sections/ExperienceSlider/experienceSlider";
+import ExperienceSlider from "@/sections/experience-slider/experienceSlider";
 import CyberSecurityInfograhics from "@/sections/cyber-security-infograhic/CyberSecurityInfographic";
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 

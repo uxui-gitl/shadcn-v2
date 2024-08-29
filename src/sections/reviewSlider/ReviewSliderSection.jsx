@@ -46,6 +46,7 @@ function ReviewSliderSection(
                     borderBottomRightRadius:'0px',
 
                 }}>
+                    <div className="container mx-auto">
                 <SectionHeading
                     Heading={Heading}
                     Desc={Desc}
@@ -116,6 +117,7 @@ function ReviewSliderSection(
 
                 <div className="my-8">
 
+                </div>
                 </div>
             </SectionWrapper>
 

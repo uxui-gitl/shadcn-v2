@@ -19,9 +19,8 @@ function SectionHeading({
           <h1
             className={`text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px]`}
             style={{ color: Color }}
-          >
-            {Heading}
-          </h1>
+            dangerouslySetInnerHTML={{ __html: Heading }}
+          />
           <p
             className={`text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14`}
             style={{ color: Color }}

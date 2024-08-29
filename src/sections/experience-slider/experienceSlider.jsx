@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./experienceSlider.module.css";
 import SectionWrapper from "@/components/SectionWrapper";
-import OutlinedButtonWithArrow from "@/components/OutlinedButtonWithArrow";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
