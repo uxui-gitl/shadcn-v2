@@ -11,26 +11,27 @@ import { Children } from "react";
 function SectionWidthSlider({
   pageID,
   ID,
-  SectionImageUrl,
-  Heading,
-  Desc,
+  sectionBGImageUrl,
+  sectionHeading,
+  sectionDesc,
   SectionHeadingMaxWidth,
-  SlidesPerView = "3",
-  Autoplay = "false",
-  CardDataList = [],
-  Color = "#000",
-  BGColor = "#fff",
+  cardData = [],
+  sectionTextColor = "#000",
+  sectionBGColor = "#fff",
   setHeadingLayout,
-  setHeadingContainerWidth,
   moveSectionToTOP,
 }) {
+
+  const SlidesPerView = "3"
+  const Autoplay = "false";
+
   return (
     <>
       <SectionWrapper
         id={ID}
-        BGColor={BGColor}
+        BGColor={sectionBGColor}
         style={{
-          backgroundImage: `url(${SectionImageUrl})`,
+          backgroundImage: `url(${sectionBGImageUrl})`,
           backgroundSize: "cover",
           marginTop: moveSectionToTOP ? '-20rem' : '0', // Apply conditional margin-top
         
@@ -40,9 +41,9 @@ function SectionWidthSlider({
         <div className="container mx-auto">
         <div className="">
           <SectionHeading
-            Heading={Heading}
-            Desc={Desc}
-            Color={Color}
+            Heading={sectionHeading}
+            Desc={sectionDesc}
+            Color={sectionTextColor}
             paddingTop = '16'
             layout={setHeadingLayout}
           ></SectionHeading>
@@ -52,7 +53,6 @@ function SectionWidthSlider({
           <Swiper
             slidesPerView={SlidesPerView}
             navigation={false}
-           
             pagination={{ type: "bullets", clickable: true }}
             autoplay={Autoplay}
             loop={false}
@@ -63,7 +63,7 @@ function SectionWidthSlider({
             // modules={[Mousewheel, Pagination]}
             // mousewheel={true}
           >
-            {CardDataList?.map((item, index) => (
+            {cardData?.map((item, index) => (
               <SwiperSlide key={item.id ? item?.id : index}>
                 <CommonCard Item={item} setpageID={pageID}></CommonCard>
               </SwiperSlide>

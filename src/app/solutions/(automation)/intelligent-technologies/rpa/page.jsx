@@ -17,7 +17,6 @@ import powerAutomate from "../../../../../../public/logos/rpa/microsoft-power-au
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
-import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ServiceOfferingSection from '@/sections/serviceOffering/ServiceOfferingSection';
 import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
@@ -104,19 +103,18 @@ const RPALifeCycleData = [
 ]
 
 const offeringLinkListData = [
-  { id: 1, text: 'Consultation Services', isActive: 'false', },
-  { id: 2, text: 'Feasibility Check Services', isActive: 'false' },
-  { id: 3, text: 'RPA Deployment', isActive: 'false' },
-  { id: 4, text: 'RPA Managed Services', isActive: 'false' },
+  { id: 1, text: 'Consultation Services', beforeIconUrl:'', isArrowIconVisiable:'false' },
+  { id: 2, text: 'Feasibility Check Services', beforeIconUrl:'' ,isArrowIconVisiable:'false' },
+  { id: 3, text: 'RPA Deployment', beforeIconUrl:'' , isArrowIconVisiable:'false'},
+  { id: 4, text: 'RPA Managed Services', beforeIconUrl:'', isArrowIconVisiable:'false' },
 ]
 
 const offeringCardData = [
-  { id: '1', CardBGImageUrl: '', CardDownImageMinHeight: "350px", CardBGColor: '#fff', CardTitle: "Consultation Services", CardIconUrl: '', CardHeading: '', CardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '2', CardBGImageUrl: '', CardDownImageMinHeight: "350px", CardBGColor: '#fff', CardTitle: "Feasibility Check Services", CardIconUrl: '', CardHeading: '', CardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '3', CardBGImageUrl: '', CardDownImageMinHeight: "350px", CardBGColor: '#fff', CardTitle: "RPA Deployment", CardIconUrl: '', CardHeading: '', CardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-  { id: '4', CardBGImageUrl: '', CardDownImageMinHeight: "350px", CardBGColor: '#fff', CardTitle: "RPA Managed Services", CardIconUrl: '', CardHeading: '', CardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.', isArrow: false, DownImageUrl: '/rpa/Offering01.png', link: [], Color: '#000', cardDownImageMinHeight: '300px' },
-
-]
+  { id: '1', cardTitle: "Consultation Services",  cardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', cardImageUrl: '/rpa/Offering01.png' },
+  { id: '2', cardTitle: "Feasibility Check Services",  cardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.',  cardImageUrl: '/rpa/Offering01.png' },
+  { id: '3', cardTitle: "RPA Deployment",  cardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.',  cardImageUrl: '/rpa/Offering01.png' },
+  { id: '4', cardTitle: "RPA Managed Services",  cardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.',  cardImageUrl: '/rpa/Offering01.png' },
+];
 
 const distinctiveData = [
   {
@@ -248,13 +246,13 @@ const page = () => {
 
       {/* service Offerings section */}
 
-      <ServiceOfferingSection id="Benefits"
-        BGColor="#1D162B"
-        Heading={'Service Offerings'}
-        Desc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
-        Color={'white'}
-        MaxWidth={'40%'}
-        CardDataList={offeringCardData}
+      <ServiceOfferingSection id=""
+        sectionBGColor="#1D162B"
+        sectionHeading={'Service Offerings'}
+        sectionDesc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        sectionTextColor={'white'}
+        sectionHeaderMaxWidth={'40%'}
+        cardData={offeringCardData}
         LinkListData={offeringLinkListData}
       >
 
