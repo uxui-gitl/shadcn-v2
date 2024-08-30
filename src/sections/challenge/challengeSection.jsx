@@ -7,18 +7,9 @@ const ChallengeSection = ({
     setHeading,
     setColor,
     setDesc,
-    setImageBGURL
+    setImageBGURL,
+    setChallengesList=[]
 }) => {
-    const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
-    const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: defaultChallengesIcon },
-        { id: 2, title: "Unreliable Backup Storage", icon: defaultChallengesIcon },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: defaultChallengesIcon },
-        { id: 4, title: "Inadequate Data Integrity and Automation Capabilities", icon: defaultChallengesIcon },
-        { id: 5, title: "Limited IT Universality and Centralized Monitoring", icon: defaultChallengesIcon },
-        { id: 6, title: "High Management Costs of IT Infrastructure", icon: defaultChallengesIcon },
-    ];
-
     return (
         // <SectionWrapper
         //     BGColor="#356990"
@@ -36,10 +27,10 @@ const ChallengeSection = ({
                         />
 
                         <ul className="mt-2 space-y-4 w-full text-white">
-                            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                            {setChallengesList.map((challenge, index) => (
                                 <li
                                     key={challenge.id}
-                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
                                 >
                                     <div className="flex-shrink-0 mr-4">
                                         <Image
@@ -71,10 +62,10 @@ const ChallengeSection = ({
                     />
 
                     <ul className="mt-2 space-y-4 w-full text-white">
-                        {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                        {setChallengesList.map((challenge, index) => (
                             <li
                                 key={challenge.id}
-                                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
                             >
                                 <div className="flex-shrink-0 mr-4">
                                     <Image

@@ -94,9 +94,10 @@ function ReviewSliderSection(
                                             lineHeight: "36px",
                                             // marginTop: "32px",
                                         }}
-                                    >
-                                       {item.cardDesc}
-                                    </div>
+                                        dangerouslySetInnerHTML={{__html:item.cardDesc}}
+                                    />
+                                    
+                                    
                                     <div
                                         className=""
                                         style={{

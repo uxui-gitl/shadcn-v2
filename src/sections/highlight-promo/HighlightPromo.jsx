@@ -13,6 +13,7 @@ const HighlightPromo = ({
   setLogoImages,
   setPadding,
   setMSLogoURL,
+  setMsAzureLogoURL,
   setHeadingContainerWidthFull
 }) => {
   const conditionalBlurStyles = blurEffect === "blurON" ? {
@@ -103,6 +104,18 @@ const HighlightPromo = ({
             <div className="flex-1 flex flex-col justify-end items-end">
               <Image
                 src={setMSLogoURL}
+                alt="MS Logo"
+                width={324}
+                height={324}
+                className="p-8"
+              />
+            </div>
+          )}
+
+          {setMsAzureLogoURL && (
+            <div className="flex-1 flex flex-col justify-end items-end">
+              <Image
+                src={setMsAzureLogoURL}
                 alt="MS Logo"
                 width={324}
                 height={324}
