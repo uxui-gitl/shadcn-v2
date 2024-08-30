@@ -15,6 +15,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import ExperienceSlider from "@/sections/experience-slider/experienceSlider";
 import HolisticApproach from "@/sections/es-transformation-section/holisticApproach";
+import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 
 const EnterpriseSuite = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -150,18 +151,81 @@ const EnterpriseSuite = () => {
     },
     {
       start: 10,
-      end:25,
+      end: 25,
       description: "Years of Experience",
     },
 
     {
-      staticTitle:'24*7',
+      staticTitle: "24*7",
       description: "Implementation Sites",
     },
 
-
-
     // Add more counters as needed
+  ];
+  const INDUSTRY_SPOTLIGHT = [
+    {
+      id: 1,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Manufacturing",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 2,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
+
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Retail",
+      cardDesc:
+        "AI-driven workflows, OCR and rule-based system enables accurate results",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 3,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Trading & Distribution",
+      cardDesc:
+        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 4,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
+
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Healthcare",
+      cardDesc:
+        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 5,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
+
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Professional Services",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 5,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
+
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Project",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    // Add more cards as needed
   ];
   return (
     <>
@@ -218,9 +282,8 @@ our Intelligent Edge Cloud Stack and Services"
       <EnterpriseTransformationCards />
       {/* End--EnterpriseTransformation============================================================== */}
 
-
       {/* Start--Holistic-Approach============================================================== */}
-      <HolisticApproach/>
+      <HolisticApproach />
 
       {/* End--Holistic-Approach============================================================== */}
 
@@ -250,17 +313,17 @@ our Intelligent Edge Cloud Stack and Services"
         cardData={SOLUTION_DATA}
       ></CommonCardThreeSlider>
       {/* End--Solution-Card-Slider======================================================== */}
-
+      {/* Start--Industry-Spotlight======================================================== */}
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      {/* End--Industry-Spotlight======================================================== */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
 
       <HubExpertise
-        style={{ marginTop: "-350px", paddingTop: "150px" }}
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
-        columnNo = {3} //Define how many columns you want to display
-
+        columnNo={3} //Define how many columns you want to display
       />
       {/* End-Section--Hub-of-Expertise */}
 
