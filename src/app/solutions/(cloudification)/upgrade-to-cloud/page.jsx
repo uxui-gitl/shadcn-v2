@@ -323,6 +323,7 @@ const UpgradeToCloud = () => {
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
+        columnNo={2}
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Section--Case-Studies======================================================================= */}

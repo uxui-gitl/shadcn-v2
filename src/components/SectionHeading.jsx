@@ -24,8 +24,9 @@ function SectionHeading({
           <p
             className={`text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14`}
             style={{ color: Color }}
+            dangerouslySetInnerHTML={{__html: Desc}}
           >
-            {Desc}
+           
           </p>
         </div>
       ) : (
