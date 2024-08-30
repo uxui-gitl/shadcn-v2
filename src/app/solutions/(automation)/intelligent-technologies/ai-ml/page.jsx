@@ -264,13 +264,13 @@ const page = () => {
       {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
-        SectionImageUrl={yourImageUrl}
-        Heading={'Artificial Intelligence Offerings'}
-        Desc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
-        Color={'white'}
-        CardDataList={AIOfferingsData}
+        SectionBGImageUrl={yourImageUrl}
+        sectionHeading={'Artificial Intelligence Offerings'}
+        sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
+        sectionTextColor={'white'}
+        cardData={AIOfferingsData}
         pageID="ai-ml"
-        SectionHeadingMaxWidth={'60%'}
+        sectionHeadingMaxWidth={'60%'}
       >
       </SectionWidthSlider>
 
