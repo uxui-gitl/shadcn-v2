@@ -20,7 +20,7 @@ function CommonCardTwo({ Item }) {
                 backgroundColor: `${cardBGColor}`,
                 color: cardTextColor,
                 width: "100%",
-                minHeight: '540px',
+                minHeight: '624px',
                 maxHeight:'540px'
             }}>
                 {cardTopImageUrl && <img className={`rounded-t-3xl ${style.topImage}`} style={{ maxHeight: '245px' }} src={cardTopImageUrl} alt="" />}
