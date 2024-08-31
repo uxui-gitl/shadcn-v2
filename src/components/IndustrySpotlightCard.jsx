@@ -22,7 +22,7 @@ function CommonCardTwo({ Item }) {
       style={{
         backgroundColor: cardBGColor,
         color: cardTextColor,
-        minHeight: "550px",
+        minHeight: "424px",
         width: "100%",
       }}
       onMouseEnter={() => setIsHovered(true)} // Set hovered state on mouse enter

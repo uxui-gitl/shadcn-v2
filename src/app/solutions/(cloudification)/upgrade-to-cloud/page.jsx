@@ -293,7 +293,7 @@ const UpgradeToCloud = () => {
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
         }
         Color="#ffffff"
-        CardDataList={UPGRADE_NOW_DATA}
+        cardData={UPGRADE_NOW_DATA}
         BGColor="#2B1624"
          setHeadingLayout="horizontal"
        
