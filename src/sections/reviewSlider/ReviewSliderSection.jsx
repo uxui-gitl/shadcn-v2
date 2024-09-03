@@ -106,7 +106,7 @@ function ReviewSliderSection(
                                             marginTop: "30px",
                                         }}
                                     >
-                                        IT Director, Cooling Facility Management<br></br> Company
+                                       {item.designation}
                                     </div>
                                 </div>
 
