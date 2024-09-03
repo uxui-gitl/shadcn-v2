@@ -264,7 +264,7 @@ const page = () => {
       {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
-        SectionBGImageUrl={yourImageUrl}
+        sectionBGImageUrl={yourImageUrl}
         sectionHeading={'Artificial Intelligence Offerings'}
         sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
         sectionTextColor={'white'}
