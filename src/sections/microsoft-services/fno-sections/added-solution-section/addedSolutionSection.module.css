@@ -1,0 +1,30 @@
+/* Styles for border animation */
+@keyframes borderAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.list-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust height as needed */
+  background-color: blue;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.list-item:hover::after {
+  width: 100%;
+  background-color: blue; /* Override the gray color with blue */
+}

@@ -264,13 +264,13 @@ const page = () => {
       {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
-        SectionImageUrl={yourImageUrl}
-        Heading={'Artificial Intelligence Offerings'}
-        Desc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
-        Color={'white'}
-        CardDataList={AIOfferingsData}
+        sectionBGImageUrl={yourImageUrl}
+        sectionHeading={'Artificial Intelligence Offerings'}
+        sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
+        sectionTextColor={'white'}
+        cardData={AIOfferingsData}
         pageID="ai-ml"
-        SectionHeadingMaxWidth={'60%'}
+        sectionHeadingMaxWidth={'60%'}
       >
       </SectionWidthSlider>
 
@@ -325,11 +325,11 @@ const page = () => {
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Benefits'}
-        Desc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Benefits'}
+        sectionDesc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
       ></BenefitSliderSection>
       {/* blog section  */}
 

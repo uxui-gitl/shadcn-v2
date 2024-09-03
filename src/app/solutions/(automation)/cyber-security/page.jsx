@@ -11,6 +11,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import ExperienceSlider from "@/sections/experience-slider/experienceSlider";
 import CyberSecurityInfograhics from "@/sections/cyber-security-infograhic/CyberSecurityInfographic";
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
+import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 
 
 const CyberSecurity = () => {
@@ -27,6 +28,24 @@ const CyberSecurity = () => {
       description: "Cyber Security Solutions Implemented",
     },
     // Add more counters as needed
+  ];
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
   ];
 
   const CyberSecurityData = [
@@ -187,6 +206,15 @@ Data-Driven Automation"
       {/* Start--Section--ExperienceSlider======================================================== */}
       <ExperienceSlider />
       {/* End--Section--ExperienceSlider======================================================== */}
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}

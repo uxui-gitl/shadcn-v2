@@ -11,11 +11,8 @@ const ChallengeSection = ({
     setChallengesList=[]
 }) => {
     return (
-        // <SectionWrapper
-        //     BGColor="#356990"
-        // >
-
         <>
+        
             <div className="">
                 <div class="grid grid-cols-2 gap-0">
                     <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
@@ -24,6 +21,7 @@ const ChallengeSection = ({
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}
+                            Desc={setDesc}
                         />
 
                         <ul className="mt-2 space-y-4 w-full text-white">
@@ -59,6 +57,7 @@ const ChallengeSection = ({
                     <SectionHeading
                         Heading={setHeading}
                         Color={setColor}
+                        Desc={setDesc}
                     />
 
                     <ul className="mt-2 space-y-4 w-full text-white">

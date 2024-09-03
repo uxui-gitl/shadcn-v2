@@ -7,15 +7,19 @@ import SectionWrapper from "@/components/SectionWrapper";
 import styles from "./hubExpertise.module.css";
 import { jetBrains_mono } from "../../app/fonts";
 
-const CounterSection = ({ start, end, description, counterOn }) => (
-  <div className="flex-1 p-4 text-white">
+const CounterSection = ({ start, end, description, counterOn, staticTitle }) => (
+  <div className="p-4 text-white">
     {counterOn && (
       <div>
-        <h3
-          className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold mb-8`}
-        >
-          <CountUp start={start} end={end} duration={2} />
-          <span className={styles.superscript}>+</span>
+        <h3 className={`${jetBrains_mono.className} relative text-6xl leading-[70px] text-[#fff] font-bold mb-8 flex items-baseline`}>
+          {start !== undefined && end !== undefined ? (
+            <>
+              <CountUp start={start} end={end} duration={2} />
+              <sup className="text-4xl align-super">+</sup> {/* Adjust font size for superscript */}
+            </>
+          ) : (
+            <span>{staticTitle}</span> // Display static title if start or end is undefined
+          )}
         </h3>
         <p className="text-white">{description}</p>
       </div>
@@ -23,38 +27,63 @@ const CounterSection = ({ start, end, description, counterOn }) => (
   </div>
 );
 
-const ScrollCounter = ({ onEnter, onExit, start, end, description, counterOn }) => (
+
+const ScrollCounter = ({
+  onEnter,
+  onExit,
+  start,
+  end,
+  description,
+  counterOn,
+  staticTitle,
+}) => (
   <ScrollTrigger onEnter={onEnter} onExit={onExit}>
-    <CounterSection start={start} end={end} description={description} counterOn={counterOn} />
+    <CounterSection
+      start={start}
+      end={end}
+      description={description}
+      counterOn={counterOn}
+      staticTitle={staticTitle} // Pass static title to CounterSection
+    />
   </ScrollTrigger>
 );
 
-const HubExpertise = ({ setHeading, setDesc, setColor, counters,style }) => {
+const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo }) => {
   const [counterOn, setCounterOn] = useState(false);
 
   const handleEnter = () => {
-    console.log("Entered");
     setCounterOn(true);
   };
 
   const handleExit = () => {
-    console.log("Exited");
     setCounterOn(false);
   };
 
+  // Determine classes based on columnNo
+  const leftColumnClass = columnNo === 2 ? "w-full md:w-1/2" : "w-full md:w-[30%]";
+  const rightColumnClass = columnNo === 2 ? "w-full md:w-1/2 mt-[5%]" : "w-full md:w-[70%] mt-[10%]";
+  
+  // Adjust the width class based on columnNo
+  const counterWidthClass = columnNo === 3 ? "w-full sm:w-[calc(33.33%-1rem)]" : "w-full sm:w-[calc(50%-1rem)]";
+
   return (
-    <SectionWrapper BGColor="#000" Padding={false} style={{...style}}>
+    <SectionWrapper BGColor="#000" Padding={false} style={{ ...style }}>
       <section className="container mx-auto">
-        <div className="flex flex-row gap-16 py-8 md:py-12 lg:py-48">
-          <div className="flex-1">
-            <SectionHeading Heading={setHeading} Color={setColor} Desc={setDesc} />
-          </div>
-          <div className="flex-1 py-20 min-h-[324px]">
-            <div className="flex flex-col gap-8">
-              {/* First Row */}
-              <div className="flex flex-row gap-8">
+        <div className="flex flex-col gap-16 py-8 md:py-12 lg:py-48">
+          <div className="flex flex-row gap-16">
+            {/* Left Side: Heading and Description */}
+            <div className={leftColumnClass}>
+              <SectionHeading
+                Heading={setHeading}
+                Color={setColor}
+                Desc={setDesc}
+              />
+            </div>
+            {/* Right Side: Counters */}
+            <div className={rightColumnClass + " flex flex-col justify-start"}>
+              <div className="flex flex-wrap gap-4">
                 {counters.map((counter, index) => (
-                  <div key={index} className="flex-1">
+                  <div key={index} className={counterWidthClass}>
                     <ScrollCounter
                       onEnter={handleEnter}
                       onExit={handleExit}
@@ -62,6 +91,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters,style }) => {
                       end={counter.end}
                       description={counter.description}
                       counterOn={counterOn}
+                      staticTitle={counter.staticTitle} // Add static title to the counter object
                     />
                   </div>
                 ))}

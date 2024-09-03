@@ -1,10 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import "react-creative-cursor/dist/styles.css";
 import EntIntro from "@/components/EntIntro";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,14 +15,12 @@ import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSli
  */
 import OverviewSection from "@/sections/overview/OverviewSection";
 import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
-import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import SectionSliderAdditionalData from "@/sections/SectionSliderAdditionalData/SectionSliderAdditionalData";
+import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
   const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
@@ -58,7 +53,7 @@ const CloudStack = () => {
       cardHeading: "Cognitive Computing Solutions",
       isArrow: "",
       additionalData: [
-        { id: 1, text: 'dummy text dummy textdummy text dummy text', textColor:'#000' },
+        { id: 1, text: 'dummy text dummy textdummy text dummy text', textColor: '#000' },
         { id: 2, text: 'dummy text dummy text' },
         { id: 3, text: 'dummy text dummy text' },
         { id: 4, text: 'dummy text dummy text' },
@@ -83,7 +78,7 @@ const CloudStack = () => {
       cardTextColor: 'black',
       cardTitle: "IIoT",
       cardIconUrl: "",
-      cardHeading: "Asset Optimization and Uptime", 
+      cardHeading: "Asset Optimization and Uptime",
       isArrow: "",
       link: [],
     },
@@ -333,7 +328,7 @@ our Intelligent Edge Cloud Stack and Services"
         setHeadingContainerWidthFull={'w-full'}
       />
 
-  {/* Advance Solution for Business Future */}
+      {/* Advance Solution for Business Future */}
       <SectionSliderAdditionalData
         ID={'additionalData'}
         sectionImageUrl={''}
@@ -346,31 +341,27 @@ our Intelligent Edge Cloud Stack and Services"
         sectionTextColor="#000"
         sectionBGColor="#fff"
       >
-
       </SectionSliderAdditionalData>
 
-  {/* end Advance Solution for Business Future */}
+      {/* end Advance Solution for Business Future */}
 
       {/* Start--Section--UltimateChoice======================================================================== */}
-      <SectionWithSlider
+      <SectionWidthSlider
         ID={"ULTIMATE_CHOICE_DATA"}
-        Heading={"Why Cloud is your Ultimate Choice?"}
-        Desc={
+        sectionHeading={"Why Cloud is your Ultimate Choice?"}
+        sectionDesc={
           "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
         }
-        Color="#ffffff"
-        CardDataList={ULTIMATE_CHOICE_DATA}
-        BGColor="#2B1624"
+        sectionTextColor="#ffffff"
+        cardData={ULTIMATE_CHOICE_DATA}
+        sectionBGColor="#2B1624"
         setHeadingLayout="horizontal"
 
       />
       {/* End--Section--UltimateChoice======================================================================== */}
-           {/* Start--Service--Section======================================================== */}
-           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Leading Forefront with <br/> our Cloud Services"} desc={"We aim for business foster growth and convert effective pilot initiatives into enterprise-scale implementation"} color={"#1D162B"}  />
-
-{/* End--Service--Section======================================================== */}
-
-
+      {/* Start--Service--Section======================================================== */}
+      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Leading Forefront with <br/> our Cloud Services"} desc={"We aim for business foster growth and convert effective pilot initiatives into enterprise-scale implementation"} color={"#1D162B"} />
+      {/* End--Service--Section======================================================== */}
       {/* Section--Synergetic-Partnership======================================================= */}
       <HighlightPromo
         setHeading="Synergetic Partnership"

@@ -1,5 +1,4 @@
-.superscript {
-  vertical-align: super;
-  font-size: smaller;
-  margin-left: 2px; /* Adjust as needed for spacing */
+.align-super {
+  font-size: 5rem; /* Adjust size as needed */
+  vertical-align: super; /* Align as superscript */
 }
