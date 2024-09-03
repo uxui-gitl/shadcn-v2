@@ -288,14 +288,14 @@ const UpgradeToCloud = () => {
       {/* Start--Section--UpgradeNow======================================================================== */}
       <SectionWithSlider
         ID={"UPGRADE_NOW_DATA"}
-        Heading={"Upgrade Now"}
-        Desc={
+        sectionHeading={"Upgrade Now"}
+        sectionDesc={
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
         }
         Color="#ffffff"
-        cardData={UPGRADE_NOW_DATA}
-        BGColor="#2B1624"
-         setHeadingLayout="horizontal"
+        CardData={UPGRADE_NOW_DATA}
+        sectionBGColor="#2B1624"
+        setHeadingLayout="horizontal"
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}

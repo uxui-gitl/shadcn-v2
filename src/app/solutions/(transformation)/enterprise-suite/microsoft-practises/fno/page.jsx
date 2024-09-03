@@ -457,9 +457,9 @@ const FNO = () => {
         ID={"AIOfferings"}
         sectionImageUrl={""}
         sectionBGColor={"#1D162B"}
-        sectionHeading={"Experience efficiency with Microsoft Solutions"}
+        sectionHeading={"Accelerating Business Engineering"}
         sectionDesc={
-          "We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform."
+          "The high scalability of the Dynamics 365 F&O solution makes it a valuable choice for medium size businesses to large enterprises."
         }
         sectionTextColor={"#FFF"}
         sectionHeaderMaxWidth={"40%"}

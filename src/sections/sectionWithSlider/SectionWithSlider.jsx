@@ -20,6 +20,7 @@ function SectionWidthSlider({
   sectionBGColor = "#fff",
   setHeadingLayout,
   moveSectionToTOP,
+  Color
 }) {
 
   const SlidesPerView = "3"
