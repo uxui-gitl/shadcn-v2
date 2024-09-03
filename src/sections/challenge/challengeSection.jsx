@@ -7,17 +7,11 @@ const ChallengeSection = ({
     setHeading,
     setColor,
     setDesc,
-    setImageBGURL
+    setImageBGURL,
+    setChallengeList=[],
 }) => {
-    const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
-    const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: defaultChallengesIcon },
-        { id: 2, title: "Unreliable Backup Storage", icon: defaultChallengesIcon },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: defaultChallengesIcon },
-        { id: 4, title: "Inadequate Data Integrity and Automation Capabilities", icon: defaultChallengesIcon },
-        { id: 5, title: "Limited IT Universality and Centralized Monitoring", icon: defaultChallengesIcon },
-        { id: 6, title: "High Management Costs of IT Infrastructure", icon: defaultChallengesIcon },
-    ];
+
+
 
     return (
         // <SectionWrapper
@@ -25,6 +19,7 @@ const ChallengeSection = ({
         // >
 
         <>
+        
             <div className="">
                 <div class="grid grid-cols-2 gap-0">
                     <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
@@ -33,13 +28,14 @@ const ChallengeSection = ({
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}
+                            Desc={setDesc}
                         />
 
                         <ul className="mt-2 space-y-4 w-full text-white">
-                            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                            {setChallengeList=[].map((challenge, index) => (
                                 <li
                                     key={challenge.id}
-                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengeList.length - 1 ? 'border-b-0' : ''}`}
                                 >
                                     <div className="flex-shrink-0 mr-4">
                                         <Image
@@ -68,13 +64,14 @@ const ChallengeSection = ({
                     <SectionHeading
                         Heading={setHeading}
                         Color={setColor}
+                        Desc={setDesc}
                     />
 
                     <ul className="mt-2 space-y-4 w-full text-white">
-                        {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                        {setChallengeList.map((challenge, index) => (
                             <li
                                 key={challenge.id}
-                                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengeList.length - 1 ? 'border-b-0' : ''}`}
                             >
                                 <div className="flex-shrink-0 mr-4">
                                     <Image
