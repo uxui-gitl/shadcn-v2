@@ -29,7 +29,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
                   backgroundPosition: "bottom",
-                  backgroundColor: casestudy[0].color,
+                  backgroundColor: casestudy[0].bgCardColor,
                 }}
               >
                 <h3 className="text-base font-semibold mb-12">

@@ -204,27 +204,28 @@ const CloudStack = () => {
   const reviewCardData = [
     {
       id: 1,
-      cardHeading: "sdkhgajgdsjhgasdkhg",
-      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "Cloud-Enabled Business Transformation",
+      cardDesc: 'Appreciation to Godrej Infotech team for successfully completing two critical projects – upgrade to Dynamics Business Central and ETL implementation on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency. We look forward to continuing this partnership with Godrej Infotech for future technological needs. ',
+    designation: 'IT Head,  Middle East based Fast Food Chain',
     },
     {
       id: 2,
-      cardHeading: "sdkhgajgdsjhgasdkhg",
-      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "Cloud Enabled Infor Solution Success",
+      cardDesc: 'Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.'
     },
     {
       id: 3,
-      cardHeading: "sdkhgajgdsjhgasdkhg",
-      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "Cloud Migration Project Delivered On Time",
+      cardDesc: 'Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.'
     },
   ];
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "",
+      imageURL: " ",
       videoURL: "",
       title: "Case Studies",
-      heading: 'Elevating Customer Experience',
+      heading: 'KSA based Distributor of Electrical Components',
       description: "",
       link: "/case-study-1",
       color: '#FFFFFF',
@@ -233,8 +234,8 @@ const CloudStack = () => {
     {
       imageURL: "",
       title: "",
-      heading: 'Non-government Association of Indian Industries',
-      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      heading: 'India’s Leading Wildlife & Nature Conservation Organization',
+      description: "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#E4E4E4'
@@ -253,8 +254,8 @@ const CloudStack = () => {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
-      description: "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+      heading: "Leading Distributor of Fruits & Vegetables in the Philippines",
+      description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#FFFFFF'
@@ -265,27 +266,27 @@ const CloudStack = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Comprehensive access to our cloud services across worldwide",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Holistic approach includes resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks ",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "End-to-end strategic cloud services for complete cloud journey",
       icon: "",
     },
     {
       _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      desc: "Cloud expertise that offers business growth and localized requirements support ",
       icon: "",
     },
   ];
@@ -436,9 +437,9 @@ const CloudStack = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Optimizing Cloud Infrastructure: A Comprehensive Guide to Monitoring and Maintenance"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "As cloud computing continues to transform the way organizations operate, the importance of effective cloud monitoring and maintenance cannot be overstated. In this article, we will delve into the critical aspects of cloud monitoring and maintenance, providing actionable tips and best practices to ensure optimal performance, reliability, and security in cloud environments."
         }
         Color={"white"}
       ></BlogSection>
@@ -449,13 +450,13 @@ const CloudStack = () => {
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          ""
         }
       ></DistinctiveSection>
       <ReviewSliderSection
         ID={"ULTIMATE_CHOICE_DATA"}
         Heading={"Delighted customers share their success experience"}
-        Desc={''}
+        Desc={'Discover how we have helped our customers to realize tangible outcomes aligned with their business goals.'}
         Color="#ffffff"
         CardDataList={reviewCardData}
         BGColor="#1D162B"
