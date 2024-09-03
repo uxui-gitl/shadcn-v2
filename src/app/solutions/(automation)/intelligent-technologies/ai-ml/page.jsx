@@ -325,11 +325,11 @@ const page = () => {
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Benefits'}
-        Desc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Benefits'}
+        sectionDesc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
       ></BenefitSliderSection>
       {/* blog section  */}
 
