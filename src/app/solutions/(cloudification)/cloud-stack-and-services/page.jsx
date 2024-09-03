@@ -37,15 +37,16 @@ const CloudStack = () => {
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "Machine Learning",
+      cardTitle: "Core Infrastructure & Virtualization",
       cardIconUrl: "",
-      cardHeading: "Automated Pattern Recognition",
+      cardHeading: "Core Infrastructure & Virtualization",
       isArrow: "",
       additionalData: [
-        { id: 1, text: 'dummy text dummy textdummy text dummy text' },
-        { id: 2, text: 'dummy text dummy text' },
-        { id: 3, text: 'dummy text dummy text' },
-        { id: 4, text: 'dummy text dummy text' },
+        { id: 1, text: 'Infrastructure as a Service (IAAS)' },
+        { id: 2, text: 'Virtual Desktop Infrastructure (VDI)' },
+        { id: 3, text: 'Disaster Recovery as a Service (DrAAS)' },
+        { id: 4, text: 'Database as a Service (DBaaS)' },
+        { id: 5, text: 'BaaS: Backup as a Service (BaaS)' },
       ]
     },
     {
@@ -53,15 +54,15 @@ const CloudStack = () => {
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "Artificial Intelligence",
+      cardTitle: "Advanced Cloud Infrastructure",
       cardIconUrl: "",
-      cardHeading: "Cognitive Computing Solutions",
+      cardHeading: "Advanced Cloud Infrastructure",
       isArrow: "",
       additionalData: [
-        { id: 1, text: 'dummy text dummy textdummy text dummy text', textColor:'#000' },
-        { id: 2, text: 'dummy text dummy text' },
-        { id: 3, text: 'dummy text dummy text' },
-        { id: 4, text: 'dummy text dummy text' },
+        { id: 1, text: 'Azure IoT', textColor:'#000' },
+        { id: 2, text: 'DevOps and Bespoke Applications' },
+        { id: 3, text: 'Hybrid and Multicloud Managed Services' },
+       
       ]
     },
 
@@ -70,22 +71,34 @@ const CloudStack = () => {
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "Robotic Process Automation",
+      cardTitle: "M365",
       cardIconUrl: "",
-      cardHeading: "Efficient Task Automation",
+      cardHeading: "M365",
       isArrow: "",
-      link: [],
+      additionalData: [
+        { id: 1, text: 'Office apps and services', textColor:'#000' },
+        { id: 2, text: 'Collaboration Tools' },
+        { id: 3, text: 'Cloud storage' },
+        { id: 4, text: 'Device Security and Access Management ' },
+       { id: 5, text: 'Lowcode Application Development' },
+      ]
     },
     {
       id: 4,
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "IIoT",
+      cardTitle: "Business Applications",
       cardIconUrl: "",
-      cardHeading: "Asset Optimization and Uptime", 
+      cardHeading: "Business Applications", 
       isArrow: "",
-      link: [],
+      additionalData: [
+        { id: 1, text: 'Microsoft Dynamics 365', textColor:'#000' },
+        { id: 2, text: 'Infor' },
+        { id: 3, text: 'Oracle' },
+        { id: 4, text: 'LS Retail' },
+       
+      ]
     },
   ]
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -100,9 +113,9 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+        "Scalability according to evolving business needs",
       isArrow: "",
       link: [],
     },
@@ -115,7 +128,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
         "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
       isArrow: "",
@@ -129,7 +142,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
         "Drive business agility and improved ROI with automation",
       isArrow: "",
@@ -143,9 +156,51 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
         "Highest levels of security and privacy, ensuring data is safeguarded",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 5,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "",
+      CardDesc:
+        "Streamline delivery pipeline with all the essential tools covered under one umbrella",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 6,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "",
+      CardDesc:
+        "Effortless integration with data solutions and Big Data",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 7,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "",
+      CardDesc:
+        "Built-in reliable disaster recovery capabilities and integrated development framework",
       isArrow: "",
       link: [],
     },
@@ -241,37 +296,37 @@ const CloudStack = () => {
   ];
   const SERVICE_CARDS_DATA = [
     {
-      title: "Planning and Designing",
-      hoverTitle: "Planning & Designing",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Cloud Consulting",
+      hoverTitle: "Cloud Consulting",
+      description: "Strategic guidance and actionable plan for adoption and management of cloud while optimizing cloud investment.",
       content: "Additional content for Card 1",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Define and Develop",
-      hoverTitle: "Define & Develop",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Architect and Manage Cloud",
+      hoverTitle: "Architect and Manage Cloud",
+      description: "Design, develop and manage cloud infrastructure and platforms, providing 360-degree visibility into business application ecosystem.",
       content: "Additional content for Card 2",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Testing",
-      hoverTitle: "Testing",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Cloud Security",
+      hoverTitle: "Cloud Security",
+      description: "Identify security gaps, design risk-based cloud architecture & automate deployment of security guardrails for cloud-native services.",
       content: "Additional content for Card 3",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Deployment",
-      hoverTitle: "Deployment",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Public Cloud",
+      hoverTitle: "Public Cloud",
+      description: "Intact cloud environment development and industry-leading practices that support cloud implementation and management.",
       content: "Additional content for Card 4",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Maintainence",
-      hoverTitle: "Maintainence",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "App transformation & Cost Optimization",
+      hoverTitle: "App transformation & Cost Optimization",
+      description: "Transform & optimize apps with cloud-native architecture, containerization & cost optimization strategies",
       content: "Additional content for Card 5",
       imageURL: '/techStack1.png'
     },
@@ -283,10 +338,8 @@ const CloudStack = () => {
     <>
       {/* Section--HeroBanner */}
       <EntIntro
-        title="Reimagine Your Business With Our Intelligent Edge 
-"
-        desc="Reimagine Your Business Capabilities with
-our Intelligent Edge Cloud Stack and Services"
+        title="Reimagine Your Business Capabilities with Cloud"
+        desc="Make confident business decisions with our tailored cloud offerings, developed to drive scalability and cost savings. "
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -320,7 +373,7 @@ our Intelligent Edge Cloud Stack and Services"
       {/* Section--Overview */}
       <OverviewSection
         Text={
-          "We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences."
+          "Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences. Trust us to navigate the complexities of cloud technology, deliver greater business value and refine user experience."
         }
       />
       {/* Section--Take Confident */}
@@ -337,8 +390,8 @@ our Intelligent Edge Cloud Stack and Services"
       <SectionSliderAdditionalData
         ID={'additionalData'}
         sectionImageUrl={''}
-        sectionHeading={'Advance Solution for Business Future'}
-        sectionDesc={'This approach helps us to adeptly manage software development projects involving complexity levels.'}
+        sectionHeading={'Cloud Solutions Portfolio'}
+        sectionDesc={''}
         sectionHeaderMaxWidth={'50%'}
         slidesPerView="3"
         autoplay="false"
@@ -354,9 +407,9 @@ our Intelligent Edge Cloud Stack and Services"
       {/* Start--Section--UltimateChoice======================================================================== */}
       <SectionWithSlider
         ID={"ULTIMATE_CHOICE_DATA"}
-        Heading={"Why Cloud is your Ultimate Choice?"}
+        Heading={"Why Cloud is your Ultimate Choice?"}
         Desc={
-          "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
+          "A fault-tolerant architecture and global data centers that helps to expand infrastructure and leverage advanced analytics. "
         }
         Color="#ffffff"
         CardDataList={ULTIMATE_CHOICE_DATA}
@@ -366,7 +419,7 @@ our Intelligent Edge Cloud Stack and Services"
       />
       {/* End--Section--UltimateChoice======================================================================== */}
            {/* Start--Service--Section======================================================== */}
-           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Leading Forefront with <br/> our Cloud Services"} desc={"We aim for business foster growth and convert effective pilot initiatives into enterprise-scale implementation"} color={"#1D162B"}  />
+           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Driven Services"} desc={"Developing and scaling pilot into enterprise-scale implementation including all cloud-based business requirements"} color={"#1D162B"}  />
 
 {/* End--Service--Section======================================================== */}
 
