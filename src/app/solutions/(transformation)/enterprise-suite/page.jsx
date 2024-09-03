@@ -13,12 +13,31 @@ import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardTh
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import ExperienceSlider from "@/sections/experience-slider/experienceSlider";
 import HolisticApproach from "@/sections/es-transformation-section/holisticApproach";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
+import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
+
+
 
 const EnterpriseSuite = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
   const SERVICE_CARDS_DATA = [
     {
       title: "Planning and Designing",
@@ -338,9 +357,15 @@ our Intelligent Edge Cloud Stack and Services"
         Color={"white"}
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
-      {/* Start--Section--ExperienceSlider======================================================== */}
-      <ExperienceSlider />
-      {/* End--Section--ExperienceSlider======================================================== */}
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}

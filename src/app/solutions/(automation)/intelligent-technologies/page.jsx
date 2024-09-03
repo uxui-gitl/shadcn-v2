@@ -13,6 +13,7 @@ const page = () => {
   const blogImageUrl = '/ai-ml/blog-bg.png';
   const formBGURL = "/formBgImage.svg";
   const yourImageUrl = '/intelligent-tech/Solutions-Background.jpg';
+
   const advanceSolutionCardData = [
     {
       id: 1,
@@ -196,12 +197,12 @@ const page = () => {
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Advantage of Intelligent Technologies'}
-        Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
-        SectionHeadingMaxWidth={'100%'}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Advantage of Intelligent Technologies'}
+        sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
+        sectionHeadingMaxWidth={'100%'}
       ></BenefitSliderSection>
 
       {/* blog */}

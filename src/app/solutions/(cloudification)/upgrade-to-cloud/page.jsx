@@ -17,6 +17,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
+import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
@@ -25,6 +26,35 @@ const UpgradeToCloud = () => {
   const msLogoURL =
     "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
   const yourImageUrl = "/ai-ml/AI-bgimage.jpg";
+
+  const challengeData=[
+    {id:1,title:'Inadequate Scalability and Availability', icon:'/icons/doubleRoundArrow.png'},
+    {id:2,title:'Unreliable Backup Storage', icon:'/icons/doubleRoundArrow.png'},
+    {id:3,title:'Unreliable Backup Storage', icon:'/icons/doubleRoundArrow.png'},
+    {id:4,title:'Inadequate Data Integrity and Automation Capabilities', icon:'/icons/doubleRoundArrow.png'},
+    {id:5,title:'Limited IT Universality and Centralized Monitoring', icon:'/icons/doubleRoundArrow.png'},
+    {id:6,title:'High Management Costs of IT Infrastructure', icon:'/icons/doubleRoundArrow.png'},
+
+  ]
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
+  
   const UPGRADE_NOW_DATA = [
     {
       id: 1,
@@ -282,6 +312,7 @@ const UpgradeToCloud = () => {
         setHeading="On-premisesInfrastructure Challenges"
         setColor="#FFFFFF"
         setImageBGURL={imgBGURL_Challenges}
+        setChallengeList={challengeData}
       />
       {/* End--Section--Challenges======================================================================== */}
 
@@ -292,8 +323,8 @@ const UpgradeToCloud = () => {
         sectionDesc={
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
         }
-        Color="#ffffff"
-        CardData={UPGRADE_NOW_DATA}
+        sectionTextColor="#ffffff"
+        cardData={UPGRADE_NOW_DATA}
         sectionBGColor="#2B1624"
         setHeadingLayout="horizontal"
        
@@ -350,6 +381,15 @@ const UpgradeToCloud = () => {
         }
       ></DistinctiveSection>
       {/* End-Section--Distinctive Edge */}
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
 
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

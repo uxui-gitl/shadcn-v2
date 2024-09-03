@@ -14,10 +14,6 @@ const ChallengeSection = ({
 
 
     return (
-        // <SectionWrapper
-        //     BGColor="#356990"
-        // >
-
         <>
         
             <div className="">
@@ -32,7 +28,7 @@ const ChallengeSection = ({
                         />
 
                         <ul className="mt-2 space-y-4 w-full text-white">
-                            {setChallengeList=[].map((challenge, index) => (
+                            {setChallengeList?.map((challenge, index) => (
                                 <li
                                     key={challenge.id}
                                     className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengeList.length - 1 ? 'border-b-0' : ''}`}
