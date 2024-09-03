@@ -1,28 +1,19 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import Icon from "@mdi/react";
-import Link from "next/link";
-import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-import WhySection from "@/components/WhySection";
-import Benefits from "@/components/Benefits";
-import Subscription from "@/components/Subscription";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import SectionHeading from '@/components/SectionHeading';
-import SectionWrapper from '@/components/SectionWrapper';
-import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 import CommonCardOneSlider from '@/sections/commonCardOneSlider/CommonCardOneSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import BlogSlider from "@/sections/BlogSlider/BlogSliderSection"
 
 
 const page = () => {
   const blogImageUrl = '/ai-ml/blog-bg.png';
   const formBGURL = "/formBgImage.svg";
   const yourImageUrl = '/intelligent-tech/Solutions-Background.jpg';
+
   const advanceSolutionCardData = [
     {
       id: 1,
@@ -201,18 +192,17 @@ const page = () => {
        sectionTextColor={'white'}
        sectionHeaderMaxWidth={'40%'}
        cardData={advanceSolutionCardData}>
-
       </CommonCardOneSlider>
 
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Advantage of Intelligent Technologies'}
-        Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
-        SectionHeadingMaxWidth={'100%'}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Advantage of Intelligent Technologies'}
+        sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
+        sectionHeadingMaxWidth={'100%'}
       ></BenefitSliderSection>
 
       {/* blog */}

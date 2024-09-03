@@ -80,6 +80,11 @@
   }
 }
 
+.benefitScrollDiv::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 .primary-btn{
   background: linear-gradient(90deg, #C315A9 0%, #8928C8 50%, #5339E5 100%);
   border-radius: 32px;

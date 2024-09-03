@@ -109,13 +109,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                     backgroundColor: casestudy[0].color,
                   }}
                 >
-                  {/* <video
-                                        src={casestudy[0].videoURL} // Replace with your video path
+                 <video
+                                        src={casestudy[3].videoURL} // Replace with your video path
                                         autoPlay
                                         loop
                                         muted
                                         className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-                                    /> */}
+                                    />
                 </div>
               </div>
             </div>

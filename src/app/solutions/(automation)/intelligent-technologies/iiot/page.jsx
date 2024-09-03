@@ -166,12 +166,12 @@ const IIOT = () => {
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Benefits'}
-        Desc={'IIoT (Industrial Internet of Things) empowers businesses to thrive in the digital era in various ways, including:'}
-        Color={'white'}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Benefits'}
+        sectionDesc={'IIoT (Industrial Internet of Things) empowers businesses to thrive in the digital era in various ways, including:'}
+        sectionTextColor={'white'}
         MaxWidth={'100%'}
-        CardDataList={benifitsCardsData}
+        cardData={benifitsCardsData}
       ></BenefitSliderSection>
 
         {/* Section--Blog */}

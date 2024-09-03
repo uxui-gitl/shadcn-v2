@@ -227,6 +227,8 @@ Customized Business Applications
         "The escalating threat landscape has led to a rising demand for specialized cybersecurity and risk consulting services, specifically designed to fortify global enterprises"
       }
     />
+    <TechnologyStackLogos />
+
     <CommonCardThreeSlider
       ID={'AIOfferings'}
       sectionImageUrl={''}
@@ -241,17 +243,16 @@ Customized Business Applications
     </CommonCardThreeSlider>
     {/* End--Overview-Section======================================================== */}
     {/* Start--Logos--Section======================================================== */}
-    <TechnologyStackLogos />
     {/* End--Logos--Section======================================================== */}
     {/* Start--Benefit--Section======================================================== */}
     <BenefitSliderSection
       ID={'BENEFIT'}
-      BGColor={'#1D162B'}
-      Heading={'Benefits of BeSpoke Application'}
-      Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
-      Color={'white'}
-      CardDataList={BENEFITS_CARDS_DATA}
-      SectionHeadingMaxWidth={'100%'}
+      sectionBGColor={'#1D162B'}
+      sectionHeading={'Benefits of BeSpoke Application'}
+      sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
+      sectionTextColor={'white'}
+      cardData={BENEFITS_CARDS_DATA}
+      sectionHeadingMaxWidth={'100%'}
     />
     {/* End--Benefit--Section======================================================== */}
     {/* Start--Service--Section======================================================== */}

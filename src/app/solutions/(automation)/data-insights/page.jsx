@@ -8,7 +8,6 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
-import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import OurCapabilities from "@/sections/ourcapabilities/OurCapabilities";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
@@ -179,6 +178,24 @@ const DataInsights = () => {
     },
   ];
 
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
+
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
@@ -315,13 +332,13 @@ Data-Driven Automation"
       {/* Start--DataVisualization--Section======================================================== */}
       <SectionWithSlider
         ID={"DATA_VISUALIZATION"}
-        SectionImageUrl={sectionSliderBGImageUrl}
-        Heading={"Data Visualization"}
-        Desc={
+        sectionBGImageUrl={sectionSliderBGImageUrl}
+        sectionHeading={"Data Visualization"}
+        sectionDesc={
           "With real-time data access and visualization,you will always have your finger on the pulse of your business operations."
         }
-        Color={"white"}
-        CardDataList={VISUALIZATION_DATA}
+        sectionTextColor={"white"}
+        cardData={VISUALIZATION_DATA}
         pageID="ai-ml"
         setHeadingContainerWidth={true}
       ></SectionWithSlider>
@@ -329,13 +346,13 @@ Data-Driven Automation"
       {/* Start--Section--DataManagement======================================================================== */}
       <SectionWithSlider
         ID={"DATA_MGMT_DATA"}
-        Heading={"Data Management"}
-        Desc={
+        sectionHeading={"Data Management"}
+        sectionDesc={
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
         }
-        Color="#ffffff"
-        CardDataList={DATA_MGMT_DATA}
-        BGColor="#2B1624"
+        sectionTextColor="#ffffff"
+        cardData={DATA_MGMT_DATA}
+        sectionBGColor="#2B1624"
         setHeadingLayout="horizontal"
         moveSectionToTOP={true}
       />
@@ -355,6 +372,7 @@ Data-Driven Automation"
         Color={"white"}
       ></BlogSection>
       {/* End-Section--Blog */}
+
         <OurCapabilities
         setHeading="Our Capabilities"
         setDesc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental "
@@ -366,7 +384,15 @@ Data-Driven Automation"
    />
    
       {/* Start--Section--Testimonial======================================================================= */}
-      <h1>Pending with Abhay---Testimonial</h1>
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
       {/* End-Section--Testimonial======================================================= */}
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

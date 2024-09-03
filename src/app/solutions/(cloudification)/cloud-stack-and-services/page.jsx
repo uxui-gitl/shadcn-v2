@@ -1,10 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import "react-creative-cursor/dist/styles.css";
 import EntIntro from "@/components/EntIntro";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,14 +15,12 @@ import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSli
  */
 import OverviewSection from "@/sections/overview/OverviewSection";
 import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
-import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import SectionSliderAdditionalData from "@/sections/SectionSliderAdditionalData/SectionSliderAdditionalData";
+import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
   const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
@@ -386,7 +381,7 @@ const CloudStack = () => {
         setHeadingContainerWidthFull={'w-full'}
       />
 
-  {/* Advance Solution for Business Future */}
+      {/* Advance Solution for Business Future */}
       <SectionSliderAdditionalData
         ID={'additionalData'}
         sectionImageUrl={''}
@@ -399,21 +394,20 @@ const CloudStack = () => {
         sectionTextColor="#000"
         sectionBGColor="#fff"
       >
-
       </SectionSliderAdditionalData>
 
-  {/* end Advance Solution for Business Future */}
+      {/* end Advance Solution for Business Future */}
 
       {/* Start--Section--UltimateChoice======================================================================== */}
-      <SectionWithSlider
+      <SectionWidthSlider
         ID={"ULTIMATE_CHOICE_DATA"}
-        Heading={"Why Cloud is your Ultimate Choice?"}
-        Desc={
-          "A fault-tolerant architecture and global data centers that helps to expand infrastructure and leverage advanced analytics. "
+        sectionHeading={"Why Cloud is your Ultimate Choice?"}
+        sectionDesc={
+          "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
         }
-        Color="#ffffff"
-        CardDataList={ULTIMATE_CHOICE_DATA}
-        BGColor="#2B1624"
+        sectionTextColor="#ffffff"
+        cardData={ULTIMATE_CHOICE_DATA}
+        sectionBGColor="#2B1624"
         setHeadingLayout="horizontal"
 
       />

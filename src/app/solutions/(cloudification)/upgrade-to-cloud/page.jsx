@@ -19,7 +19,6 @@ import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import { Are_You_Serious } from "next/font/google";
 
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
@@ -30,6 +29,35 @@ const UpgradeToCloud = () => {
   const msAzureLogoURL =
     "/CloudStackServices/logos/logo-microsoft-azure.png";
   const yourImageUrl = "/ai-ml/AI-bgimage.jpg";
+
+  const challengeData=[
+    {id:1,title:'Inadequate Scalability and Availability', icon:'/icons/doubleRoundArrow.png'},
+    {id:2,title:'Unreliable Backup Storage', icon:'/icons/doubleRoundArrow.png'},
+    {id:3,title:'Unreliable Backup Storage', icon:'/icons/doubleRoundArrow.png'},
+    {id:4,title:'Inadequate Data Integrity and Automation Capabilities', icon:'/icons/doubleRoundArrow.png'},
+    {id:5,title:'Limited IT Universality and Centralized Monitoring', icon:'/icons/doubleRoundArrow.png'},
+    {id:6,title:'High Management Costs of IT Infrastructure', icon:'/icons/doubleRoundArrow.png'},
+
+  ]
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
+  
   const UPGRADE_NOW_DATA = [
     {
       id: 1,
@@ -315,14 +343,14 @@ const UpgradeToCloud = () => {
       {/* Start--Section--UpgradeNow======================================================================== */}
       <SectionWithSlider
         ID={"UPGRADE_NOW_DATA"}
-        Heading={"Upgrade Now"}
-        Desc={
-          "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace."
+        sectionHeading={"Upgrade Now"}
+        sectionDesc={
+          "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
         }
-        Color="#ffffff"
-        CardDataList={UPGRADE_NOW_DATA}
-        BGColor="#2B1624"
-         setHeadingLayout="horizontal"
+        sectionTextColor="#ffffff"
+        cardData={UPGRADE_NOW_DATA}
+        sectionBGColor="#2B1624"
+        setHeadingLayout="horizontal"
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}
@@ -362,6 +390,7 @@ const UpgradeToCloud = () => {
         setDesc="We are here to build an edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
+        columnNo={2}
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Section--Case-Studies======================================================================= */}
@@ -388,6 +417,15 @@ const UpgradeToCloud = () => {
         }
       ></DistinctiveSection>
       {/* End-Section--Distinctive Edge */}
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
 
       <ReviewSliderSection
         ID={"ULTIMATE_CHOICE_DATA"}

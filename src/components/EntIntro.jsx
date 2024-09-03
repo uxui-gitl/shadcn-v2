@@ -17,6 +17,7 @@ const EntIntro = ({
   alignment,
 }) => {
   return (
+   
     <div className="text-center">
       <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden md:px-20 ">
         <video
@@ -28,6 +29,7 @@ const EntIntro = ({
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+   
         <div className="flex justify-start items-center h-[100vh] sm:h-[90vh] md:h-[100vh]">
           <div
             className={`flex text-white flex-col justify-start gap-5 px-[2rem] md:px-[4.5rem] text-center w-full md:w-[70%] md:text-left`}
@@ -57,10 +59,12 @@ const EntIntro = ({
                 />
               </Link>
             </div>
-          </div>
+        
+        </div>
         </div>
       </div>
     </div>
+    
   );
 };
 
