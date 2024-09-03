@@ -7,6 +7,8 @@ import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardTh
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
+import Slider from '@/components/Slider';
+import { Swiper, SwiperSlide } from "swiper/react";
 const Page = () => {
 
   const offeringCardData = [
@@ -17,10 +19,10 @@ const Page = () => {
   ];
 
   const offeringLinkListData = [
-    { id: 1, text: 'Consultation Services', beforeIconUrl: '', isArrowIconVisiable: 'false' },
-    { id: 2, text: 'Feasibility Check Services', beforeIconUrl: '', isArrowIconVisiable: 'false' },
-    { id: 3, text: 'RPA Deployment', beforeIconUrl: '', isArrowIconVisiable: 'false' },
-    { id: 4, text: 'RPA Managed Services', beforeIconUrl: '', isArrowIconVisiable: 'false' },
+    { id: 1, text: 'Inadequate Scalability and Availability', beforeIconUrl: 'true', isArrowIconVisiable: false },
+    { id: 2, text: 'Unreliable Backup Storage', beforeIconUrl: 'true', isArrowIconVisiable: false },
+    { id: 3, text: 'RPA Deployment', beforeIconUrl: 'true', isArrowIconVisiable: false },
+    { id: 4, text: 'Weak Disaster Recovery and Redundancy', beforeIconUrl: 'true', isArrowIconVisiable: false },
   ]
 
   const serviceOfferingData = [
@@ -205,26 +207,66 @@ const Page = () => {
                 Desc={`Equipping your organization to thrive in the digital era, we deliver high-end solutions, Regardless of whether you're starting your transformation journey or .`}
                 Color={'white'}
               ></SectionHeading>
+
+              <div>
+                <div className="text-[28px] font-semibold text-white">
+                  Infor CloudSuite
+                </div>
+
+                <div className="my-5">
+                  {offeringLinkListData.map((item) => (
+                    <div key={item?.id} class="flex items-center justify-center py-6 text-[24px] font-medium text-white" style={{ borderBottom: '2px solid white', cusror: 'pointer' }}>
+                      {item?.beforeIconUrl && <svg xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '20px' }} width="33" height="33" viewBox="0 0 32 33" fill="none">
+                        <path d="M21.3331 11.1563V7.15625L25.3331 3.15625L26.6664 5.82292L29.3331 7.15625L25.3331 11.1563H21.3331ZM21.3331 11.1563L15.9998 16.4895M29.3332 16.4896C29.3332 23.8534 23.3636 29.8229 15.9998 29.8229C8.63604 29.8229 2.6665 23.8534 2.6665 16.4896C2.6665 9.12579 8.63604 3.15625 15.9998 3.15625M22.6665 16.4896C22.6665 20.1715 19.6817 23.1563 15.9998 23.1563C12.3179 23.1563 9.33317 20.1715 9.33317 16.4896C9.33317 12.8077 12.3179 9.82292 15.9998 9.82292" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>}
+                      <span class="w-full text-[20px] font-normal">{item.text}</span>
+                      {item?.isArrowIconVisiable && <svg class="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                      </svg>}
+                    </div>
+                  ))}
+                </div>
+
+              </div>
             </div>
-            <div className="">
-              <h1>dkhgkjgsd</h1>
+            <div className="flex items-center" style={{ justifyContent: 'center' }}>
+              <div className="" style={{ maxHeight: '600px', overflow: 'hidden' }}>
+                <img src="https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4"></img>
+              </div>
             </div>
           </div>
         </div>
-
-
       </SectionWrapper>
+      <div className="InforSliderWrapper">
+        <div className="flex mx-auto md:py-36 px-10">
+          <div className="">
+            <img src="/icons/inforlogo.svg"></img>
+          </div>
+          <div className="">
+            <Slider
+              slidesPerView={4}
+              sliderAutoplay={true}
+              sliderLoop={true}
+              cardData={[
+                {id:1,text:'aksdhg'},
+                {id:2,text:'aksdhg'},
+                {id:3,text:'aksdhg'}
 
-      <ServiceOfferingSection id=""
-        sectionBGColor="#5F22D9"
-        sectionHeading={'Globally Trusted Core Infor Expertise'}
-        sectionDesc={"Equipping your organization to thrive in the digital era, we deliver high-end solutions, Regardless of whether you're starting your transformation journey or ."}
-        sectionTextColor={'white'}
-        sectionHeaderMaxWidth={'40%'}
-        cardData={offeringCardData}
-        LinkListData={offeringLinkListData}
-      >
-      </ServiceOfferingSection>
+              ]}
+            >
+           
+<a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+<p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+</a>
+
+
+            </Slider>
+          </div>
+        </div>
+      </div>
+
 
       <CommonCardThreeSlider
         ID={''}
