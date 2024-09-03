@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import Accordion from "./Accordion";
+// import Accordion from "./Accordion";
 import Balancer from "react-wrap-balancer";
 import clsx from "clsx";
 
@@ -203,14 +203,15 @@ const OfferingsSlider = ({
                         <div>
                           <div className="p-4 flex flex-col justify-end h-100">
                             {item.subArr ? (
-                              <Accordion
-                                key={item._id}
-                                bullet={true}
-                                inline={item.inline}
-                                icons={false}
-                                items={item.subArrLinks}
-                                expandedDesc={expandedDesc}
-                              />
+                              // <Accordion
+                              //   key={item._id}
+                              //   bullet={true}
+                              //   inline={item.inline}
+                              //   icons={false}
+                              //   items={item.subArrLinks}
+                              //   expandedDesc={expandedDesc}
+                              // />
+                              <><h1>hi</h1></>
                             ) : (
                               <ul className="my-4">
                                 {item.links &&

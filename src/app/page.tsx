@@ -10,7 +10,6 @@ import Robot from "@/components/home/Robot";
 import Robot2 from "@/components/home/Robot2"
 import EmbraceCard from "@/components/home/EmbraceCard";
 import HubExpertise from "@/components/home/HubExpertise";
-import OfferingsSlider from "@/components/home/OfferingsSlider";
 import ResultSection from "@/components/home/ResultSection";
 import { InfiniteMovingCards } from "@/components/home/ui/infinite-moving-cards";
 import Subscribe from "@/components/home/Subscribe";
@@ -40,10 +39,6 @@ export default function Home() {
       <HubExpertise />
       <Image src={'/home/Curve-Home-LandingPage.svg'} alt="hi" width={100} height={80}></Image>
       <OfferingCards></OfferingCards>
-
-      {/* <OfferingsSlider /> */}
-
-      
 
       <div className="dv-gradientbg">
         <Container className=" flex-col px-10 " tag="section">

@@ -12,7 +12,6 @@ const ChallengeSection = ({
 }) => {
     return (
         <>
-        
             <div className="">
                 <div class="grid grid-cols-2 gap-0">
                     <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
@@ -50,8 +49,6 @@ const ChallengeSection = ({
                     </div>
                 </div>
             </div>
-
-
             <div className="container mx-auto  justify-end hidden">
                 <div className="w-full lg:w-1/2 flex flex-col items-start">
                     <SectionHeading

@@ -5,7 +5,6 @@ import Link from "next/link";
 import EntIntro from "@/components/EntIntro";
 import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-import Benefits from "@/components/Benefits";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
