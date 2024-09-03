@@ -106,8 +106,12 @@ function ReviewSliderSection(
                                             marginTop: "30px",
                                         }}
                                     >
-                                       {item.designation}
+                                       {item.designation}<br/>
+                                       {item.companyName}
                                     </div>
+
+
+
                                 </div>
 
                                 {/* <CommonCard Item={item} setpageID={pageID}></CommonCard> */}

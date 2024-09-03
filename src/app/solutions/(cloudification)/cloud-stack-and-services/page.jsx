@@ -206,17 +206,22 @@ const CloudStack = () => {
       id: 1,
       cardHeading: "Cloud-Enabled Business Transformation",
       cardDesc: 'Appreciation to Godrej Infotech team for successfully completing two critical projects – upgrade to Dynamics Business Central and ETL implementation on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency. We look forward to continuing this partnership with Godrej Infotech for future technological needs. ',
-    designation: 'IT Head,  Middle East based Fast Food Chain',
+    designation: 'IT Head',
+    companyName:'Middle East based Fast Food Chain',
     },
     {
       id: 2,
       cardHeading: "Cloud Enabled Infor Solution Success",
-      cardDesc: 'Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.'
+      cardDesc: 'Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.',
+    designation: 'IT Manager',
+    companyName:`India's Premier hi-tech Engineering Solutions Provider`,
     },
     {
       id: 3,
       cardHeading: "Cloud Migration Project Delivered On Time",
-      cardDesc: 'Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.'
+      cardDesc: 'Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.',
+    designation: 'Head EDP',
+    companyName:`India's Premier Hi-Tech Engineering Solutions Provider`,
     },
   ];
 
@@ -464,9 +469,9 @@ const CloudStack = () => {
       ></ReviewSliderSection>
       {/* transform business with us section */}
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Free 30-Minute Strategy Session with our Cloud Expert?"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let's discuss how cloud can help you with rapid growth."
         }
       ></TransformBusinessForm>
     </>
