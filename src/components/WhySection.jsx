@@ -69,7 +69,7 @@ const WhySection = ({
             </AnimatePresence>
           </div> */}
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
         {arr.map((item) => (
             <>
               <div className="card py-4 md:py-5" style={{ borderBottom: '2px solid #d3d3d3'}}>

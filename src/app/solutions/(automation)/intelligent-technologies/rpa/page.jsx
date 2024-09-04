@@ -273,14 +273,14 @@ const page = () => {
           </div>
 
           <div className="" style={{ maxHeight: '600px' }}>
-            <div class=" p-6 bg-[#EFE9FB] border border-gray-200 rounded-3xl flex flex-col" style={{ overflow: 'auto', maxHeight: 'inherit' }}>
+            <div className=" p-6 bg-[#EFE9FB] border border-gray-200 rounded-3xl flex flex-col" style={{ overflow: 'auto', maxHeight: 'inherit' }}>
               {RPALifeCycleData.map((item) => (
                 <>
                   <div className="card bg-white rounded-3xl mb-3">
                     <div className="card-body p-6">
                       <div className="text-[#E0028E] mb-3">{item.title}</div>
-                      <h5 class="text-[28px] leading-[36px] font-semibold mb-3">{item.CardHeading}</h5>
-                      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                      <h5 className="text-[28px] leading-[36px] font-semibold mb-3">{item.CardHeading}</h5>
+                      <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                         {item.list && item.list.map((listItem) => (
                           <>
                             <li>

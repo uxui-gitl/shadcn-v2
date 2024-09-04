@@ -13,7 +13,7 @@ const ChallengeSection = ({
     return (
         <>
             <div className="">
-                <div class="grid grid-cols-2 gap-0">
+                <div className="grid grid-cols-2 gap-0">
                     <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
                     </div>
                     <div className="py-20 px-20" style={{ backgroundColor: '#3a7398' }}>
