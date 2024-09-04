@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
 import { projects } from "../../assets/data";
 import { useEffect, useRef } from "react";
@@ -36,14 +35,7 @@ export default function Home() {
                 const targetScale = 1 - (projects.length - i) * 0.05;
                 return (
                   // console.log(targetScale),
-                  <ACTCard
-                    key={`p_${i}`}
-                    i={i}
-                    {...project}
-                    progress={scrollYProgress}
-                    range={[i * 0.25, 1]}
-                    targetScale={targetScale}
-                  />
+                 
                 );
               })}
             </main>

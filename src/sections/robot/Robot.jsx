@@ -6,7 +6,6 @@ import { mdiArrowUp } from "@mdi/js";
 import styles from "./robot.module.css";
 import Link from "next/link";
 import RobotDetails from "../robotDetails/RobotDetails";
-import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
 import { projects } from "../../assets/data";
 import { useEffect, useRef } from "react";
