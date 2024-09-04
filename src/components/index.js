@@ -28,7 +28,6 @@ import EntIntro from "@/components/EntIntro";
 // // import { Timeline } from "@/sections/timeline/Timeline";
 // import { ACTCard } from "@/sections/ACTCard/ACTCard";
 // import { Copyright } from "@/sections/copyright/Copyright";
-// import { InfotechWeeklyAlt } from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 // import { RobotDetails } from "@/sections/robotDetails/RobotDetails";
 // import { Announcement } from "@/sections/announcement/Announcement";
 // import { EmployeeExperience } from "@/sections/employeeExperience/EmployeeExperience";
@@ -65,7 +64,6 @@ export {
   // Robot,
   // ACTCard,
   // Copyright,
-  // InfotechWeeklyAlt,
   // RobotDetails,
   // Announcement,
   // EmployeeExperience,

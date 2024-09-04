@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ServicesCard from "@/components/ServicesCard";
+import ServicesCard from "./ServicesCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";

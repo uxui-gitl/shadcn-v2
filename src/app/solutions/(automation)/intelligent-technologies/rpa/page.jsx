@@ -3,7 +3,6 @@ import EntIntro from "@/components/EntIntro";
 import React, { useState } from "react";
 import Image from "next/image";
 import SectionNav from "@/components/SectionNav";
-import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 /**
  * * Sandeep Rana
@@ -311,7 +310,6 @@ const page = () => {
       </TransformBusinessForm>
 
       {/* Infotech Weekly Updates */}
-      <InfotechWeeklyAlt />
     </>
   );
 };
