@@ -190,7 +190,7 @@ const page = () => {
        sectionHeading={'Advance Solutions for Business Future Readiness'}
        sectionDesc={''}
        sectionTextColor={'white'}
-       sectionHeaderMaxWidth={'40%'}
+       sectionHeaderWidth={'w-7/12'}
        cardData={advanceSolutionCardData}>
       </CommonCardOneSlider>
 
@@ -202,14 +202,13 @@ const page = () => {
         sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         sectionTextColor={'white'}
         cardData={benifitsCardsData}
-        sectionHeadingMaxWidth={'100%'}
+        sectionHeaderWidth={'w-full'}
       ></BenefitSliderSection>
 
       {/* blog */}
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
         Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
         Color={'white'}
-        MaxWidth="70%"
       ></BlogSection>
 
       {/* Distinctive section*/}

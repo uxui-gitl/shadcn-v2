@@ -329,7 +329,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
 
           {caseStudyLayout === "6" && (
             <>
-           <SectionHeading
+            <SectionHeading
             Heading={setHeading}
             Color={setColor}
             Desc={setDesc}

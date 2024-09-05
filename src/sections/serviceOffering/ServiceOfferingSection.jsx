@@ -27,22 +27,23 @@ function ServiceOfferingSection({
     return (
         <>
             <SectionWrapper id={ID} BGColor={sectionBGColor}>
-                <div className="grid grid-cols-2 gap-20">
+                <div className="container mx-auto grid grid-cols-2 gap-20">
                     <div className="">
                         <SectionHeading
                             Heading={sectionHeading}
                             Desc={sectionDesc}
                             Color={sectionTextColor}
+                            headingContainerWidth = 'w-full'
                         >
                         </SectionHeading>
                         <div className="my-10">
                             {LinkListData.map((item) => (
-                                <div key={item?.id} onClick={() => handleClick(item)} class="flex items-center justify-center p-5 text-[24px] font-medium text-white" style={{ borderBottom: '2px solid white', cusror: 'pointer' }}>
-                                    {item?.beforeIconUrl && <svg class="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <div key={item?.id} onClick={() => handleClick(item)} className="flex items-center justify-center p-5 text-[24px] font-medium text-white" style={{ borderBottom: '2px solid white', cusror: 'pointer' }}>
+                                    {item?.beforeIconUrl && <svg className="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                     </svg>}
-                                    <span class="w-full text-[28px]">{item.text}</span>
-                                    {item?.isArrowIconVisiable && <svg class="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <span className="w-full text-[28px]">{item.text}</span>
+                                    {item?.isArrowIconVisiable && <svg className="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                     </svg>}
                                 </div>

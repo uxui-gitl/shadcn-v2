@@ -14,12 +14,12 @@ function SectionWidthSlider({
   sectionBGImageUrl,
   sectionHeading,
   sectionDesc,
-  SectionHeadingMaxWidth,
   cardData = [],
   sectionTextColor = "#000",
   sectionBGColor = "#fff",
   setHeadingLayout,
   moveSectionToTOP,
+  style,
   Color
 }) {
 
@@ -35,8 +35,7 @@ function SectionWidthSlider({
           backgroundImage: `url(${sectionBGImageUrl})`,
           backgroundSize: "cover",
           marginTop: moveSectionToTOP ? '-20rem' : '0', // Apply conditional margin-top
-        
-          
+          ...style
         }}
       >
         <div className="container mx-auto">
@@ -45,7 +44,6 @@ function SectionWidthSlider({
             Heading={sectionHeading}
             Desc={sectionDesc}
             Color={sectionTextColor}
-            paddingTop = '16'
             layout={setHeadingLayout}
           ></SectionHeading>
         </div>

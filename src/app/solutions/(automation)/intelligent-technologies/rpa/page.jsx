@@ -3,7 +3,6 @@ import EntIntro from "@/components/EntIntro";
 import React, { useState } from "react";
 import Image from "next/image";
 import SectionNav from "@/components/SectionNav";
-import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 /**
  * * Sandeep Rana
@@ -214,13 +213,15 @@ const page = () => {
 
       {/* inteligent technologies */}
       <SectionWrapper ID="Platforms">
-        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
+        <div className="container mx-auto text-left mb-5 pb-0 grid grid-cols-1">
           {/* left */}
           <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
-            <div className="w-full md:max-w-[607px]">
+            <div className="w-full">
               <SectionHeading
                 Heading={'RPA Platform Expertise'}
                 Desc={'Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.'}
+                layout={'horizontal'}
+                sectionHeaderWidth={'w-full'}
               >
               </SectionHeading>
             </div>
@@ -260,12 +261,13 @@ const page = () => {
 
       {/* project life cycle */}
       <SectionWrapper id="" BGColor="#1D162B" style={{ marginTop: '-35px' }}>
-        <div className="grid grid-cols-2 gap-20">
+        <div className="max-auto container grid grid-cols-2 gap-20">
           <div className="">
             <SectionHeading
               Heading={'RPA Project Lifecycle'}
               Desc={'From inception to upheld outcomes, every stage of our RPA project lifecycle is precisely developed to optimize your business processes.'}
               Color="white"
+              headingContainerWidth = 'w-full'
             >
             </SectionHeading>
             <div className="my-10" style={{ minHeight: '300px', position: 'relative' }}>
@@ -274,14 +276,14 @@ const page = () => {
           </div>
 
           <div className="" style={{ maxHeight: '600px' }}>
-            <div class=" p-6 bg-[#EFE9FB] border border-gray-200 rounded-3xl flex flex-col" style={{ overflow: 'auto', maxHeight: 'inherit' }}>
+            <div className=" p-6 bg-[#EFE9FB] border border-gray-200 rounded-3xl flex flex-col" style={{ overflow: 'auto', maxHeight: 'inherit' }}>
               {RPALifeCycleData.map((item) => (
                 <>
                   <div className="card bg-white rounded-3xl mb-3">
                     <div className="card-body p-6">
                       <div className="text-[#E0028E] mb-3">{item.title}</div>
-                      <h5 class="text-[28px] leading-[36px] font-semibold mb-3">{item.CardHeading}</h5>
-                      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                      <h5 className="text-[28px] leading-[36px] font-semibold mb-3">{item.CardHeading}</h5>
+                      <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                         {item.list && item.list.map((listItem) => (
                           <>
                             <li>
@@ -311,7 +313,6 @@ const page = () => {
       </TransformBusinessForm>
 
       {/* Infotech Weekly Updates */}
-      <InfotechWeeklyAlt />
     </>
   );
 };

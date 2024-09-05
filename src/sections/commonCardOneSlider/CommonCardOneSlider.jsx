@@ -10,7 +10,7 @@ function CommonCardOneSlider({
     sectionImageUrl,
     sectionHeading,
     sectionDesc,
-    sectionHeaderMaxWidth,
+    sectionHeaderWidth,
     slidesPerView = "3",
     autoplay = "false",
     cardData = [],
@@ -35,6 +35,7 @@ function CommonCardOneSlider({
                             Desc={sectionDesc}
                             Color={sectionTextColor}
                             layout={setHeadingLayout}
+                            headingContainerWidth={sectionHeaderWidth}
                         ></SectionHeading>
                     </div>
 

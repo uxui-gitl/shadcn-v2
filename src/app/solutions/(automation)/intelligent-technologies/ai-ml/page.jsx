@@ -5,7 +5,6 @@ import Link from "next/link";
 import EntIntro from "@/components/EntIntro";
 import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-import Benefits from "@/components/Benefits";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
@@ -270,19 +269,19 @@ const page = () => {
         sectionTextColor={'white'}
         cardData={AIOfferingsData}
         pageID="ai-ml"
-        sectionHeadingMaxWidth={'60%'}
       >
       </SectionWidthSlider>
 
       {/* ML Expertise */}
       <>
         <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
-          <div className="flex flex-col md:flex-row gap-x-11">
+          <div className="container max-auto flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
                 Heading={'Machine Learning Expertise'}
                 Desc={'We specialize in developing predictive models to forecast market shifts and identify untapped opportunities.'}
                 Color={'white'}
+                headingContainerWidth={'w-full'}
               >
               </SectionHeading>
             </div>
@@ -319,7 +318,14 @@ const page = () => {
 
       {/* Intelligent Technologies */}
       <>
-        <PlatformSection ID={'Intelligent'} Heading={'Intelligent Technologies Platforms'} Desc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'} PlatFormImageList={PlatFormImageList}></PlatformSection>
+        <PlatformSection
+         ID={'Intelligent'}
+          sectionHeading={'Intelligent Technologies Platforms'}
+           sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'} 
+           PlatFormImageList={PlatFormImageList}
+           layout={'horizontal'}
+           sectionHeaderWidth={'w-9/12'}
+           ></PlatformSection>
       </>
 
       {/* Benefits Vertical Slider */}

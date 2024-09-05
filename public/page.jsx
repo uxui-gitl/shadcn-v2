@@ -55,7 +55,7 @@ const page = ({ params }) => {
                     item.description
                   </div>
                   <div>
-                    <p class="text-sm font-medium text-[#101828] leading-[22px]">
+                    <p className="text-sm font-medium text-[#101828] leading-[22px]">
                       item.clientDesignation
                     </p>
                   </div>
