@@ -378,7 +378,7 @@ const CloudStack = () => {
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
         setPadding={false}
-        setHeadingContainerWidthFull={'w-full'}
+        sectionHeaderWidth={'w-full'}
       />
 
       {/* Advance Solution for Business Future */}

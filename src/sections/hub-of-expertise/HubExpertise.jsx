@@ -77,6 +77,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo
                 Heading={setHeading}
                 Color={setColor}
                 Desc={setDesc}
+                headingContainerWidth={'w-full'}
               />
             </div>
             {/* Right Side: Counters */}

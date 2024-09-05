@@ -30,9 +30,7 @@ export default function Home() {
         <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16" style={{color:"#CDBAF3"}}>
           Building Tomorrow&apos;s <br /> Solutions Today
         </div>
-        {/* <Robot /> */}
         <Robot2 />
-
       </div>
 
       <EmbraceCard />
@@ -44,29 +42,6 @@ export default function Home() {
         <Container className=" flex-col px-10 " tag="section">
           <ResultSection />
         </Container>
-        {/* <InfiniteMovingCards
-          items={[
-            {
-              quote:
-                "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-              name: "IT Director,",
-              title: "Cooling Facility Management Company",
-            },
-            {
-              quote:
-                "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-              name: "IT Director,",
-              title: "Cooling Facility Management Company",
-            },
-            {
-              quote:
-                "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-              name: "IT Director,",
-              title: "Cooling Facility Management Company",
-            },
-          ]}
-        /> */}
-
         <InfiniteMovingCards/>
       </div>
 

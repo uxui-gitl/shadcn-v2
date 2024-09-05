@@ -15,8 +15,7 @@ function BenefitSliderSection({
      sectionHeading, 
      sectionDesc,
      sectionHeadingMaxWidth,
-       SlidesPerView = '3',
-        Autoplay = 'true', 
+     sectionHeaderWidth=['w-full'],
         cardData = [], 
         sectionTextColor = '#000', 
         sectionBGColor = "#000", 
@@ -35,11 +34,12 @@ function BenefitSliderSection({
                             Desc={sectionDesc}
                             Color={sectionTextColor}
                             MaxWidth={sectionHeadingMaxWidth}
+                            headingContainerWidth={sectionHeaderWidth}
                         >
                         </SectionHeading>
                     </div>
 
-                    <div className="my-8">
+                    <div className="">
                         <div className="flex flex-col gap-3 overflow-y-auto max-h-96 overflow-hidden benefitScrollDiv"  >
                             {cardData?.map((item, index) => (
                                 <>
