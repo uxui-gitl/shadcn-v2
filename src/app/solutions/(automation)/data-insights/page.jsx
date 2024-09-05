@@ -25,7 +25,7 @@ const DataInsights = () => {
       CardIconUrl: "/data-insights/logos/logo--power-bi.png",
       CardHeading: "Power BI",
       CardDesc:
-        "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
+        "Leverage data potential with robust analytics engine, scalable data modeling and advanced visualization capabilities",
       isArrow: "",
       arrowColor: "#000",
       link: [],
@@ -40,7 +40,7 @@ const DataInsights = () => {
       CardIconUrl: "/data-insights/logos/logo--tableau.png",
       CardHeading: "Tableau",
       CardDesc:
-        "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
+        "Integrate diverse data sources, enable intuitive visualization, and deploy secure interactive dashboards with Tableau",
       isArrow: "",
       arrowColor: "#000",
       link: [],
@@ -54,7 +54,7 @@ const DataInsights = () => {
       CardIconUrl: "/data-insights/logos/logo--birst.png",
       CardHeading: "Birst",
       CardDesc:
-        "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
+        "Seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
       isArrow: "",
       arrowColor: "#000",
       link: [],
@@ -72,7 +72,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Azure SQL Data Ware Housing",
       CardDesc:
-        "Leverage seamless analysis of your business data and trust in our expertise to scale your insights.",
+        "Accelerate analytics with petabyte scale storage and high-performance querying",
       isArrow: "true",
       link: [],
     },
@@ -87,7 +87,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "AWS Redshift",
       CardDesc:
-        "Optimize your data storage and queries while we provide the experience to enhance your data efficiency.",
+        "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
       isArrow: "true",
       link: [],
     },
@@ -101,7 +101,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Azure Synapse",
       CardDesc:
-        "Seamlessly integrate, analyze and visualize your data with Azure Synapse, and rely on us for real-time insights that drive informed decisions.",
+        "Unify analytics and data management, and integrate data warehousing and big data capabilities",
       isArrow: "true",
       link: [],
     },
@@ -115,7 +115,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Azure Data Factory",
       CardDesc:
-        "Effortlessly move, transform and orchestrate data while we streamline your data workflows for you.",
+        "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
       isArrow: "true",
       link: [],
     },
@@ -129,7 +129,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Databricks",
       CardDesc:
-        "Harness unified data analytics gaining deeper insights with our guidance and empowering data-driven strategies.",
+        "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
       isArrow: "true",
       link: [],
     },
@@ -143,7 +143,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Amazon S3",
       CardDesc:
-        "Securely store, retrieve and manage data knowing that we offer right scalability and durability to safeguard your valuable information.",
+        "Securely store and serve data with highly scalable and cost-effective object storage.",
       isArrow: "true",
       link: [],
     },
@@ -157,7 +157,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Azure Data Lake",
       CardDesc:
-        "Experience high-performance and secure data management with Azure Data Lake, customized to meet your evolving data needs while we provide our expertise.",
+        "Experience high-performance and secure data management with Azure Data Lake.",
       isArrow: "true",
       link: [],
     },
@@ -171,7 +171,7 @@ const DataInsights = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Microsoft Fabric",
       CardDesc:
-        "We leverage the capabilities of Microsoft Fabric, an integrated Lakehouse, Datawarehouse & AI-powered platform designed to drive your business efficiency through the seamless consolidation of data estate, enhanced access management, robust governance and compliance mechanisms.",
+        "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
       isArrow: "true",
       link: [],
     },
@@ -180,19 +180,15 @@ const DataInsights = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Easy insights into business performance",
       cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Real-Time Warehouse Data Interfacing",
+      cardDesc: 'We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.'
     },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
+    
   ];
 
   const CASE_STUDIES_DATA = [
@@ -200,7 +196,7 @@ const DataInsights = () => {
       imageURL: "",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Elevating Customer Experience",
+      heading: "Leading Indian Refiner of Precious Metals",
       description: "",
       link: "/case-study-1",
       color: "#FFFFFF",
@@ -209,9 +205,9 @@ const DataInsights = () => {
     {
       imageURL: "",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "Middle East based Leading Cooling Services Provider",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+        "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -221,9 +217,9 @@ const DataInsights = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+        "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#EFE9FB",
@@ -241,11 +237,11 @@ const DataInsights = () => {
     // Add more case studies here...
   ];
   const ACCORDION_DATA = [
-    { id: 1, title: "Data Platform Modernization", content: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.", image: "/data-insights/our-capabilties/img-01.png" },
-    { id: 2, title: "Advance Analytics", content: "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation.", image: "/data-insights/our-capabilties/img-02.png" },
-    { id: 3, title: "Business Intelligence", content: "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.", image: "/data-insights/our-capabilties/img-03.png" },
-    { id: 4, title: "Data Governance", content: "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.", image: "/data-insights/our-capabilties/img-04.png" },
-    { id: 5, title: "Data Warehouse and Integration", content: "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.", image: "/data-insights/our-capabilties/img-05.png" },
+    { id: 1, title: "Data Platform Modernization", content: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize data infrastructure on cloud platform steering optimal acceptance and performance. ", image: "/data-insights/our-capabilties/img-01.png" },
+    { id: 2, title: "Advance Analytics", content: "From planning and investigating data to developing, employing, managing and examining models, we leverage potential with AI, machine learning and automation.", image: "/data-insights/our-capabilties/img-02.png" },
+    { id: 3, title: "Business Intelligence", content: "Experience visuals of valuable insights of crucial data sets from supply chain, finance and talent domains or more.", image: "/data-insights/our-capabilties/img-03.png" },
+    { id: 4, title: "Data Governance", content: "Ensure advanced metadata controls, precise access governance and compliance mechanisms while adhering to stringent regulatory standards. We provide granular visibility and control over data landscape.", image: "/data-insights/our-capabilties/img-04.png" },
+    { id: 5, title: "Data Warehouse and Integration", content: "We build scalable data warehouse architectures custom-made to business requirements and data integration helps in a unified view of organization's information assets. ", image: "/data-insights/our-capabilties/img-05.png" },
   ];
 
   const DISTINCTIVE_DATA = [
@@ -280,11 +276,8 @@ const DataInsights = () => {
     <>
       {/* Start--Section--HeroBanner======================================================== */}
       <EntIntro
-        title="Achieve Breakthrough 
-Performance through Data 
-"
-        desc="Achieve Breakthrough Performance through
-Data-Driven Automation"
+        title="Data driven intelligence for informed decisions"
+        desc="Discover new insights and drive business success with our data analytics solutions"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -323,7 +316,7 @@ Data-Driven Automation"
       {/* Start--Overview-Section======================================================== */}
       <OverviewSection
         Text={
-          "We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences."
+          "Building governed data estates for meaningful insights, seamless workflow integration and AI-driven automation to optimize operational efficiency."
         }
       />
       {/* End--Overview-Section======================================================== */}
@@ -334,7 +327,7 @@ Data-Driven Automation"
         sectionBGImageUrl={sectionSliderBGImageUrl}
         sectionHeading={"Data Visualization"}
         sectionDesc={
-          "With real-time data access and visualization,you will always have your finger on the pulse of your business operations."
+          "Real-time data access and visualization enabling insights into business operations."
         }
         sectionTextColor={"white"}
         cardData={VISUALIZATION_DATA}
@@ -347,7 +340,7 @@ Data-Driven Automation"
         ID={"DATA_MGMT_DATA"}
         sectionHeading={"Data Management"}
         sectionDesc={
-          "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
+          "Scalable data management solutions leveraging analytics and business intelligence for informed decisions."
         }
         sectionTextColor="#ffffff"
         cardData={DATA_MGMT_DATA}
@@ -364,23 +357,21 @@ Data-Driven Automation"
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
-        Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
-        }
+        Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
+        Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
         Color={"white"}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
       ></BlogSection>
       {/* End-Section--Blog */}
 
-        <OurCapabilities
+      <OurCapabilities
         setHeading="Our Capabilities"
-        setDesc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental "
+        setDesc="Benefit from predictive insights and ensure data quality, security and compliance to maximize organization's data asset potential"
         setColor="#1D162B"
         setPadding={false}
         setHeadingLayout="horizontal"
         ACCORDION_DATA={ACCORDION_DATA}
-        
-   />
+      />
    
       {/* Start--Section--Testimonial======================================================================= */}
       <ReviewSliderSection
