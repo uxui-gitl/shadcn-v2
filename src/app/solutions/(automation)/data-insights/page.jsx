@@ -359,22 +359,20 @@ const DataInsights = () => {
         ID={"blog"}
         blogImageUrl={blogImageUrl}
         Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
-        Desc={
-          "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."
-        }
+        Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
         Color={"white"}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
       ></BlogSection>
       {/* End-Section--Blog */}
 
-        <OurCapabilities
+      <OurCapabilities
         setHeading="Our Capabilities"
         setDesc="Benefit from predictive insights and ensure data quality, security and compliance to maximize organization's data asset potential"
         setColor="#1D162B"
         setPadding={false}
         setHeadingLayout="horizontal"
         ACCORDION_DATA={ACCORDION_DATA}
-        
-   />
+      />
    
       {/* Start--Section--Testimonial======================================================================= */}
       <ReviewSliderSection
