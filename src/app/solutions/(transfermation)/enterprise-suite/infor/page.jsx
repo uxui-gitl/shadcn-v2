@@ -2,20 +2,170 @@
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import ServiceOfferingSection from "@/sections/serviceOffering/ServiceOfferingSection";
 import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardThreeSlider';
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import Slider from '@/components/Slider';
+import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
+import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
+import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+
+
 const Page = () => {
 
-  const offeringCardData = [
-    { id: '1', cardTitle: "Consultation Services", cardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', cardImageUrl: '/rpa/Offering01.png' },
-    { id: '2', cardTitle: "Feasibility Check Services", cardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.', cardImageUrl: '/rpa/Offering01.png' },
-    { id: '3', cardTitle: "RPA Deployment", cardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.', cardImageUrl: '/rpa/Offering01.png' },
-    { id: '4', cardTitle: "RPA Managed Services", cardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.', cardImageUrl: '/rpa/Offering01.png' },
+  const distinctiveData = [
+    {
+      _id: 1,
+      desc: "Enables automation across diverse use cases",
+      icon: "",
+    },
+    {
+      _id: 2,
+      desc: "Help businesses achieve high productivity",
+      icon: "",
+    },
+    {
+      _id: 3,
+      desc: "Substantial improvements in return on investment (ROI)",
+      icon: "",
+    },
+    {
+      _id: 4,
+      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      icon: "",
+    },
+
+  ]
+
+  const INDUSTRY_SPOTLIGHT = [
+    {
+      id: 1,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Manufacturing",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 2,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
+
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Retail",
+      cardDesc:
+        "AI-driven workflows, OCR and rule-based system enables accurate results",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 3,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Trading & Distribution",
+      cardDesc:
+        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 4,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
+
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Healthcare",
+      cardDesc:
+        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 5,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
+
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Professional Services",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 5,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
+
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Project",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    // Add more cards as needed
+  ];
+
+  const CASE_STUDIES_DATA = [
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
+      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      title: "Case Studies",
+      heading: "Elevating Customer Experience",
+      description:
+        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+      link: "/case-study-1",
+      color: "#FFFFFF",
+    },
+    {
+      imageURL: "",
+      title: "",
+      heading: "Non-government Association of Indian Industries",
+      description:
+        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#FCE6F4",
+    },
+
+    {
+      imageURL: "/path/to/image1.jpg",
+      title: "",
+
+      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      description:
+        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#EFE9FB",
+    },
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      title: "",
+      heading: "Middle East-based Electrical Products Manufacturer",
+      description:
+        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#E1F2EF",
+    },
+    // Add more case studies here...
+  ];
+
+
+  const HUBEXPERTISE_COUNTER_DATA = [
+    { start: 10, end: 50, description: "Cloud Deployments" },
+    { start: 10, end: 15, description: "Cloud Certified Professionals" },
+    { start: 10, end: 15, description: "Cloud Certified Professionals" },
+
+    // Add more counters as needed
   ];
 
   const offeringLinkListData = [
@@ -206,6 +356,7 @@ const Page = () => {
                 Heading={'Globally Trusted Core Infor Expertise'}
                 Desc={`Equipping your organization to thrive in the digital era, we deliver high-end solutions, Regardless of whether you're starting your transformation journey or .`}
                 Color={'white'}
+                headingContainerWidth={'w-full'}
               ></SectionHeading>
 
               <div>
@@ -237,31 +388,40 @@ const Page = () => {
           </div>
         </div>
       </SectionWrapper>
+
       <div className="InforSliderWrapper">
         <div className="flex mx-auto md:py-36 px-10">
           <div className="">
             <img src="/icons/inforlogo.svg"></img>
           </div>
           <div className="">
+            {/* <SectionWidthSlider
+              ID={"ultimateChoiceData"}
+              sectionHeading={"Why Cloud is your Ultimate Choice?"}
+              sectionDesc={
+                "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
+              }
+              sectionTextColor=""
+              cardData={ultimateChoiceData}
+              sectionBGColor="#EFE9FB"
+              setHeadingLayout="horizontal"
+
+            /> */}
             <Slider
               slidesPerView={4}
               sliderAutoplay={true}
               sliderLoop={true}
-              cardData={[
-                {id:1,text:'aksdhg'},
-                {id:2,text:'aksdhg'},
-                {id:3,text:'aksdhg'}
-
-              ]}
             >
-           
-<a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
+               
+              {[1,2,3,4,5,6].map((item) => (
+ <SwiperSlide key={item}>
+ <a href="#" class="w-[400px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
 <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
 </a>
-
-
+</SwiperSlide>
+              ))}
+            
             </Slider>
           </div>
         </div>
@@ -275,7 +435,6 @@ const Page = () => {
         sectionHeading={'Infor Service Offerings'}
         sectionDesc={"Our commitment to your project's success drives our ownership and determination to go above and beyond."}
         sectionTextColor={'#fff'}
-        sectionHeaderMaxWidth={'40%'}
         cardData={serviceOfferingData}
       >
 
@@ -294,6 +453,25 @@ const Page = () => {
         setHeadingLayout="horizontal"
 
       />
+
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+
+      <HubExpertise
+        setHeading="Hub of Expertise"
+        setDesc="We are here to build an edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        setColor="#ffffff"
+        counters={HUBEXPERTISE_COUNTER_DATA}
+        columnNo={3}
+      />
+
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#D3D3D3'} />
+
+
+      <DistinctiveSection DistinctiveData={distinctiveData}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+      >
+      </DistinctiveSection>
+
 
     </>
   );

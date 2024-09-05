@@ -26,7 +26,7 @@ function CommonCard({ Item, setpageID }) {
   return (
     <>
       <div
-        className="commonCard rounded-3xl shadow min-h-[424px] flex flex-col justify-between"
+        className="commonCard rounded-3xl min-h-[424px] flex flex-col justify-between"
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,

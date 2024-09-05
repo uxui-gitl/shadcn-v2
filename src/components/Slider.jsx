@@ -15,13 +15,9 @@ function Slider({ slidesPerView = 1, sliderAutoplay = true, sliderLoop = true, c
                 loop={sliderLoop}
                 spaceBetween={30}
             >
-                {cardData.map((item) => {
                     <>
-                        <SwiperSlide key={item.id ? item?.id : index}>
                             {Children}
-                        </SwiperSlide>
                     </>
-                })}
 
             </Swiper>
         </>

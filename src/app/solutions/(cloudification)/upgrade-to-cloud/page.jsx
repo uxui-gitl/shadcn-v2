@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
@@ -12,7 +10,6 @@ import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
-import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
@@ -381,6 +378,7 @@ const UpgradeToCloud = () => {
         setPadding={true}
         setMSLogoURL={msLogoURL}
         setMsAzureLogoURL={msAzureLogoURL}
+        lay
         sectionHeaderWidth={'w-full'}
       />
       {/* End-Section--Trained in Cloud-Services */}
