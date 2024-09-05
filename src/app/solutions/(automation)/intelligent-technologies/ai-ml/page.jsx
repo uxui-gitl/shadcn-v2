@@ -336,7 +336,7 @@ const page = () => {
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveiling Hyper-automation for Supply Chain Efficiency'}
         Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. '}
         Color={'white'}
-        MaxWidth="70%"
+        readMoreUrl=""
       ></BlogSection>
 
       {/* Distinctive section*/}
