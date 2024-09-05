@@ -14,7 +14,9 @@ const EnterpriseTransformation = () => {
 
         <ContainerScroll
           titleComponent={
-            <SectionHeading Heading="Your Trusted Partner for<br/> Enterprise Transformation Success" Desc={'With long standing experience of diverse industries and a strong technology partner<br/> ecosystem, we deliver 360-degree transformation solutions'} headingContainerWidth = 'w-1/2' center />
+            <SectionHeading
+             Heading="Your Trusted Partner for<br/> Enterprise Transformation Success" 
+             Desc={'With long standing experience of diverse industries and a strong technology partner<br/> ecosystem, we deliver 360-degree transformation solutions'} headingContainerWidth = 'w-full' center />
           }
           imageSrc="/enterprise-suite/backgrounds/bg--enterprise-transformation.png"
         >

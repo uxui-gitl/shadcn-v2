@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import useScrollTriggeredCountUp from "./useScrollTriggeredCountUp";
-import Container from "./Container";
 import Image from "next/image";
 import { jetBrains_mono } from "../../app/fonts";
 
@@ -17,7 +16,7 @@ const HubExpertise = () => {
 
   return (
     <div className="bg-[rgb(0,59,153)] bg-[linear-gradient(180deg,_rgba(0,59,153,1)_0%,_rgba(0,98,255,0.5)_47%,_rgba(132,42,203,1)_100%)]">
-      <Container className="mt-8 flex-col px-10" tag="main">
+      <div className="mt-8 flex-col px-10 container mx-auto" >
         <div className="flex flex-col items-center justify-end pt-20 min-h-screen relative w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -81,7 +80,7 @@ const HubExpertise = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

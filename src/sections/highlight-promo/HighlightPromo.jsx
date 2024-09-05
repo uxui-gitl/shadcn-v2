@@ -14,7 +14,7 @@ const HighlightPromo = ({
   setPadding,
   setMSLogoURL,
   setMsAzureLogoURL,
-  setHeadingContainerWidthFull
+  sectionHeaderWidth
 }) => {
   const conditionalBlurStyles = blurEffect === "blurON" ? {
     background: 'linear-gradient(145deg, rgba(205, 186, 243, 0.25) 0%, rgba(205, 186, 243, 0.10) 75%)',
@@ -59,7 +59,7 @@ const HighlightPromo = ({
               Heading={setHeading}
               Color={setColor}
               Desc={setDesc}
-              headingContainerWidth={setHeadingContainerWidthFull}
+              headingContainerWidth={sectionHeaderWidth}
             />
             {setLogoImages && (
               <section className="w-full md:w-1/2">

@@ -213,13 +213,15 @@ const page = () => {
 
       {/* inteligent technologies */}
       <SectionWrapper ID="Platforms">
-        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
+        <div className="container mx-auto text-left mb-5 pb-0 grid grid-cols-1">
           {/* left */}
           <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
-            <div className="w-full md:max-w-[607px]">
+            <div className="w-full">
               <SectionHeading
                 Heading={'RPA Platform Expertise'}
                 Desc={'Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.'}
+                layout={'horizontal'}
+                sectionHeaderWidth={'w-full'}
               >
               </SectionHeading>
             </div>
@@ -259,12 +261,13 @@ const page = () => {
 
       {/* project life cycle */}
       <SectionWrapper id="" BGColor="#1D162B" style={{ marginTop: '-35px' }}>
-        <div className="grid grid-cols-2 gap-20">
+        <div className="max-auto container grid grid-cols-2 gap-20">
           <div className="">
             <SectionHeading
               Heading={'RPA Project Lifecycle'}
               Desc={'From inception to upheld outcomes, every stage of our RPA project lifecycle is precisely developed to optimize your business processes.'}
               Color="white"
+              headingContainerWidth = 'w-full'
             >
             </SectionHeading>
             <div className="my-10" style={{ minHeight: '300px', position: 'relative' }}>

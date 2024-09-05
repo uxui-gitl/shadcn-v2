@@ -361,12 +361,13 @@ const UpgradeToCloud = () => {
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Upgrade to Cloud Benefits'}
-        Desc={'Experience business performance surge with cloud'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Upgrade to Cloud Benefits'}
+        sectionDesc={'Experience business performance surge with cloud'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
         SectionHeadingMaxWidth={'100%'}
+        sectionHeaderWidth={'w-full'}
       ></BenefitSliderSection>
 
       {/* Section--Trained in Cloud Services= */}
@@ -380,7 +381,7 @@ const UpgradeToCloud = () => {
         setPadding={true}
         setMSLogoURL={msLogoURL}
         setMsAzureLogoURL={msAzureLogoURL}
-        setHeadingContainerWidthFull={'w-full'}
+        sectionHeaderWidth={'w-full'}
       />
       {/* End-Section--Trained in Cloud-Services */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
@@ -425,16 +426,6 @@ const UpgradeToCloud = () => {
       BGColor="#1D162B"
       SectionHeadingMaxWidth={'70%'}
     ></ReviewSliderSection>
-
-      <ReviewSliderSection
-        ID={"ULTIMATE_CHOICE_DATA"}
-        Heading={"Delighted customers share their success experience"}
-        Desc={''}
-        Color="#ffffff"
-        CardDataList={reviewCardData}
-        BGColor="#1D162B"
-        SectionHeadingMaxWidth={'70%'}
-      ></ReviewSliderSection>
 
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

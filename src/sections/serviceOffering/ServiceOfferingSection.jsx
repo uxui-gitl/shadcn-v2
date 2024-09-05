@@ -27,12 +27,13 @@ function ServiceOfferingSection({
     return (
         <>
             <SectionWrapper id={ID} BGColor={sectionBGColor}>
-                <div className="grid grid-cols-2 gap-20">
+                <div className="container mx-auto grid grid-cols-2 gap-20">
                     <div className="">
                         <SectionHeading
                             Heading={sectionHeading}
                             Desc={sectionDesc}
                             Color={sectionTextColor}
+                            headingContainerWidth = 'w-full'
                         >
                         </SectionHeading>
                         <div className="my-10">
