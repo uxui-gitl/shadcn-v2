@@ -11,7 +11,6 @@ function PlatformSection({ ID='', Heading='', Desc='', PlatFormImageList = [] })
                     <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                         <div className="w-full md:max-w-[607px]">
                             <SectionHeading
-
                                 Heading={Heading}
                                 Desc={Desc}
                             >

@@ -12,7 +12,6 @@ import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
-import Benefits from "@/components/Benefits";
 import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
