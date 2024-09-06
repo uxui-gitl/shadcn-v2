@@ -2,7 +2,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import CommonCardAdditionalData from "../../components/commonCardAdditionalData";
+import CommonCardAdditionalData from "@/components/commonCardAdditionalData";
 // import CardWidthBackground from "@/components/CardWithBackground";
 import "swiper/css";
 import "swiper/css/navigation";

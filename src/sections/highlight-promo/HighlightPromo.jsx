@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import SectionWrapper from "../../components/SectionWrapper";
-import SectionHeading from "../../components/SectionHeading";
+import SectionWrapper from "@/components/SectionWrapper";
+import SectionHeading from "@/components/SectionHeading";
 
 const HighlightPromo = ({
   blurEffect,
