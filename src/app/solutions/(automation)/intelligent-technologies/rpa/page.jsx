@@ -79,9 +79,7 @@ const RPASolution = [
     cardType: 1,
   },
   {
-
-
-    id: 5,
+ id: 6,
     cardBGImageUrl: '/rpa/ArtboardBg.png',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Reduce AHT (Average Handling Time)',
@@ -90,6 +88,17 @@ const RPASolution = [
     cardTextColor: 'white',
     cardType: 2,
   },
+  {
+ id: 7,
+    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGColor: '#EFE9FB',
+    cardHeading: 'Optimize FTE Cost)',
+    cardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',
+    isArrow: false,
+    cardTextColor: 'white',
+    cardType: 2,
+  },
+  
 ]
 
 const RPALifeCycleData = [
@@ -201,7 +210,7 @@ const page = () => {
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#EFE9FB'}
-        sectionHeading={'Optimising businesses through RPA solutions'}
+        sectionHeading={'Why Consider RPA for Your Business? '}
         sectionDesc={''}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
@@ -250,7 +259,7 @@ const page = () => {
       <ServiceOfferingSection id=""
         sectionBGColor="#1D162B"
         sectionHeading={'Service Offerings'}
-        sectionDesc={'Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business.'}
+        sectionDesc={'We offer AI-driven process automation, process re-engineering and seamless implementation support for transformative business results.'}
         sectionTextColor={'white'}
         sectionHeaderMaxWidth={'40%'}
         cardData={offeringCardData}

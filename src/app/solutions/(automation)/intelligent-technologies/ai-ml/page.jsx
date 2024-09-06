@@ -160,6 +160,7 @@ const MLData = [
       "Reinforcement learning expertise functions as a guiding support for applications such as autonomous systems and resource optimisation.",
     ctaURL: "",
   },
+
 ];
 
 const distinctiveData = [
@@ -175,7 +176,7 @@ const distinctiveData = [
   },
   {
     _id: 3,
-    desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+    desc: "Fully signed Non-Disclosure Agreement (NDA) to protect sensitive information of customer.",
     icon: "",
   },
   {
@@ -183,11 +184,7 @@ const distinctiveData = [
     desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
     icon: "",
   },
-  {
-    _id: 5,
-    desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-    icon: "",
-  }
+
 ]
 
 const benifitsCardsData = [
@@ -340,7 +337,7 @@ const page = () => {
       {/* blog section  */}
 
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveiling Hyper-automation for Supply Chain Efficiency'}
-        Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. '}
+        Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices.'}
         Color={'white'}
         readMoreUrl=""
       ></BlogSection>

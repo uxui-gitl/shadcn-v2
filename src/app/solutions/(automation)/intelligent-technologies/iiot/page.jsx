@@ -51,7 +51,7 @@ const IIOT = () => {
       title: "Case Studies",
       heading: "India's Largest Lift Truck Manufacturer",
       description:'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
-      link: "",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/India%E2%80%99s_Largest_Lift_Truck_Manufacturer_Exporter_IoT_Solution_Enterprise_Asset_Integration.pdf",
       color: "#2B1624",
       bgCardColor: "#E4E4E4",
     },
