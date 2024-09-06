@@ -1,11 +1,7 @@
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import checkout from "/public/icon/whygitl/WhyGITL2.svg";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import CommonCard from '@/components/CommonCard';
 import Image from 'next/image';
-// import CardWidthBackground from "@/components/CardWithBackground";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
