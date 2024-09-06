@@ -1,6 +1,6 @@
 import Image from "next/image";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-import style from '../components/style/commonCardAdditionalData.module.css'
+import style from '../../src/components/style/commonCardAdditionalData.module.css';
 
 function CommonCardAdditionalData({ Item, setpageID }) {
     const {
