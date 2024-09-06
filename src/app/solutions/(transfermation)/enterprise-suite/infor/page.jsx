@@ -6,12 +6,15 @@ import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardTh
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
-import Slider from '@/components/Slider';
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Image from 'next/image'
 
 
 
@@ -389,12 +392,30 @@ const Page = () => {
         </div>
       </SectionWrapper>
 
-      <div className="InforSliderWrapper">
-        <div className="flex mx-auto md:py-36 px-10">
-          <div className="">
-            <img src="/icons/inforlogo.svg"></img>
+      <div className="InforSliderWrapper rounded-3xl" style={{backgroundColor:'white', zindex: "2",position:'relative'}}>
+        <div className="flex md:py-10 px-10 container" style={{justifyContent:'center', alignItems:'center'}}>
+          <div className="w-2/12">
+          <Image className="rounded-t-lg" width={130} height={130} src="/icons/inforlogo.svg" alt="inforlogo" />
           </div>
-          <div className="">
+          <div className="w-10/12">
+            <Swiper
+              slidesPerView={6}
+              navigation={false}
+              pagination={{ type: "bullets", clickable: true }}
+              autoplay={true}
+              loop={false}
+              spaceBetween={30}
+            >
+              {[1,2,3,4,5,6,7,8,9]?.map((item, index) => (
+                <SwiperSlide key={item}>
+                  <div className="w-fullbg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                      <Image className="rounded-t-lg" width={100} height={50} src="" alt="" />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+
             {/* <SectionWidthSlider
               ID={"ultimateChoiceData"}
               sectionHeading={"Why Cloud is your Ultimate Choice?"}
@@ -407,22 +428,8 @@ const Page = () => {
               setHeadingLayout="horizontal"
 
             /> */}
-            <Slider
-              slidesPerView={4}
-              sliderAutoplay={true}
-              sliderLoop={true}
-            >
-               
-              {[1,2,3,4,5,6].map((item) => (
- <SwiperSlide key={item}>
- <a href="#" class="w-[400px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-<p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-</a>
-</SwiperSlide>
-              ))}
-            
-            </Slider>
+
+
           </div>
         </div>
       </div>
