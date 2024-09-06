@@ -1,22 +1,20 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import HubExpertise from "@/sections/hubofexpertise/HubExpertise";
+import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import HighlightPromo from "@/sections/highlightPromo/HighlightPromo";
+import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
-import Benefits from "@/components/Benefits";
-import SectionWrapper from "@/components/SectionWrapper";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-import ExpandCard from "@/components/ExpandCard";
+import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
+import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
+import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
 const UpgradeToCloud = () => {
   const imgBgURL = "/CloudStackServices/background/bg--cloud-services.png";
@@ -24,7 +22,38 @@ const UpgradeToCloud = () => {
     "/upgradeCloud/backgrounds/bg--onprem-challenges-left.png";
   const msLogoURL =
     "/CloudStackServices/logos/logo--microsoft-solution-partner.png";
+  const msAzureLogoURL =
+    "/CloudStackServices/logos/logo-microsoft-azure.png";
   const yourImageUrl = "/ai-ml/AI-bgimage.jpg";
+
+  const challengeData=[
+    {id:1,title:'Inadequate Scalability and Availability', icon:'/icons/doubleRoundArrow.png'},
+    {id:2,title:'Unreliable Backup Storage', icon:'/icons/doubleRoundArrow.png'},
+    {id:3,title:'Unreliable Backup Storage', icon:'/icons/doubleRoundArrow.png'},
+    {id:4,title:'Inadequate Data Integrity and Automation Capabilities', icon:'/icons/doubleRoundArrow.png'},
+    {id:5,title:'Limited IT Universality and Centralized Monitoring', icon:'/icons/doubleRoundArrow.png'},
+    {id:6,title:'High Management Costs of IT Infrastructure', icon:'/icons/doubleRoundArrow.png'},
+
+  ]
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
+  
   const UPGRADE_NOW_DATA = [
     {
       id: 1,
@@ -34,9 +63,9 @@ const UpgradeToCloud = () => {
       CardTextColor:'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Computer<br/>Vision",
+      CardHeading: "Lift and Shift <br/>to Cloud",
       CardDesc:
-        "We specialize in custom video and image analysis tool, leveraging advanced technology like OpenCV to optimize or create computer vision algorithms.",
+        "Migrate email and infrastructure to Microsoft's cloud-based platform for seamless collaboration and security.",
       isArrow: "true",
       link: [],
     },
@@ -49,9 +78,9 @@ const UpgradeToCloud = () => {
       CardTextColor:'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Speech & Language",
+      CardHeading: "ERP on <br/>Cloud",
       CardDesc:
-        "Our approach to Speech and Language AI empowers business with the tools to elevate customer experiences and stand",
+        "Deliver enhanced business agility, operation automation and better decision-making capability with analytics.",
       isArrow: "true",
       link: [],
     },
@@ -63,26 +92,13 @@ const UpgradeToCloud = () => {
       CardTextColor:'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Document Understanding",
+      CardHeading: "Application Migration <br/>to the Cloud",
       CardDesc:
-        "We enable error-free and AI-driven data capture from diverse document types and helps business with unstructured data.",
+        "Scaling resources on-demand, we specialize in effective migration of applications to the cloud.",
       isArrow: "true",
       link: [],
     },
-    {
-      id: 4,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor:"transparent",
-      CardTextColor:'white',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Conversational<br/>AI",
-      CardDesc:
-        "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ",
-      isArrow: "true",
-      link: [],
-    },
+    
   ];
 
   const BENEFITS_DATA = [
@@ -119,7 +135,7 @@ const UpgradeToCloud = () => {
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
@@ -128,7 +144,7 @@ const UpgradeToCloud = () => {
       title: "",
       heading: "Non-government Association of Indian Industries",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -150,7 +166,7 @@ const UpgradeToCloud = () => {
       title: "",
       heading: "Middle East-based Electrical Products Manufacturer",
       description:
-        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -165,38 +181,117 @@ const UpgradeToCloud = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Dedicated partner for Azure Migration Services and Managed Services across Europe, APAC, ME and USA ",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Business Continuity 99.95%, on - demand scalability and best uptime performance in Industry",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Seamless upgradation to cloud platforms such as Microsoft Azure and Amazon Web Services (AWS)",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Frictionless cloud upgradation delivery",
       icon: "",
     },
     {
       _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      desc: "Cost-efficient and consumption-based model under single SLA",
       icon: "",
     },
   ];
+  const reviewCardData = [
+    {
+      id: 1,
+      cardHeading: "Cloud ETL for restaurant sales and COGS process",
+      cardDesc: 'Appreciation to Godrej&apos;s Infotech team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We Are_You_Serious experiencing significant improvements in operational efficiency.'
+    },
+    {
+      id: 2,
+      cardHeading: "Cost Saving & Speedy Transactional Updates",
+      cardDesc: 'Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.'
+    },
+    
+  ];
+  const SERVICE_CARDS_DATA = [
+    {
+      title: "Infrastructure & Data Evaluation",
+      hoverTitle: "Infrastructure & Data Evaluation",
+      description: "Assess migration readiness, identify risks and create solid plan. A clear path to a successful transition",
+      content: "Additional content for Card 1",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Strategy Designing",
+      hoverTitle: "Strategy Designing",
+      description: "Align business needs & goals, set KPIs and build a tailored strategy for successful cloud adoption",
+      content: "Additional content for Card 2",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Blueprint Development",
+      hoverTitle: "Blueprint Development",
+      description: "Define and prioritize tasks, align assets, establish milestones, iterations and timelines for upgradation journey.",
+      content: "Additional content for Card 3",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Establishing Readiness",
+      hoverTitle: "Establishing Readiness",
+      description: "Expanding the landing zone blueprint and adequately preparing well-designed cloud environment.  ",
+      content: "Additional content for Card 4",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Upgrade and Execute",
+      hoverTitle: "Upgrade and Execute",
+      description: "Assess readiness, refactor IT architecture, rehost, and implement changes to achieve desired outcomes.",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Management and Control",
+      hoverTitle: "Management and Control",
+      description: "Optimize costs, mitigate risks, define policies, standardize processes & ensure governance, resources & security. ",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    // Add more cards here...
+  ];
+    const CHALLENGES_LIST_DATA = [
+        { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Unreliable Backup Storage", icon:'/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon:'/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Inadequate Data Integrity", icon:'/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Lack of Automation Capabilities", icon:'/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Subpar IT Performance", icon:'/upgradeCloud/icons/ico--target.svg' },
+        { id: 7, title: "Limited Centralized Monitoring", icon:'/upgradeCloud/icons/ico--target.svg' },
+        { id: 8, title: "High IT Infrastructure Management Cost", icon:'/upgradeCloud/icons/ico--target.svg' },
+    ];
+      const benifitsCardsData = [
+    { id: '1', text: 'Minimize operational expenses of IT portfolio' },
+    { id: '2', text: 'Enable user concurrency to support large-scale workloads' },
+    { id: '3', text: 'Enhanced collaboration through cross-device accessibility to information' },
+    { id: '4', text: 'Advanced data management solutions, modernized process and cloud services' },
+    { id: '5', text: 'Aptitude to respond to shifting business requirements' },
+    { id: '6', text: 'Integrate Big Data Analytics into business processes for data-driven decision-making' },
+    { id: '7', text: 'Securely stores confidential business information' },
+    { id: '8', text: 'Enhance system performance and user experience by scaling up the system' },
+    { id: '9', text: 'Accelerate transformation, integrate open innovation and smart workflows' },
+  ]
   const blogImageUrl = "/ai-ml/blog-bg.png";
   return (
     <>
       {/* Section--HeroBanner======================================================================= */}
       <EntIntro
-        title="Seamless Upgrade to Cloud"
-        desc="Minimizing Cost and Strengthening Agility with Better Security"
-        cta="Let's Connect"
+        title="Cloud Upgrade Made Easy"
+        desc="Enabling businesses to scale with ease, enhance productivity and protect data with security measures. "
+        cta="Schedule a call with our Cloud Expert"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
@@ -228,56 +323,72 @@ const UpgradeToCloud = () => {
       {/* Section--Overview=======================================================================  */}
       <OverviewSection
         Text={
-          "Minimizing Cost and Strengthening Agility with Better Security.We help enterprises to foster resilience by entailing bespoke and inclusive cloud upgradation roadmap."
+          "Minimize costs and maximize agility and security with our cloud upgrade offerings. We help enterprises to build resilience through tailored, all-inclusive cloud transformation that drives business success."
         }
       />
       {/* End-Section--Overview */}
       {/* Start--Section--Challenges======================================================================== */}
       <ChallengeSection
-        setHeading="On-premisesInfrastructure Challenges"
+        setHeading="On-premises Infrastructure Challenges"
         setColor="#FFFFFF"
         setImageBGURL={imgBGURL_Challenges}
+        setChallengesList={CHALLENGES_LIST_DATA}
       />
       {/* End--Section--Challenges======================================================================== */}
 
       {/* Start--Section--UpgradeNow======================================================================== */}
       <SectionWithSlider
         ID={"UPGRADE_NOW_DATA"}
-        Heading={"Upgrade Now"}
-        Desc={
+        sectionHeading={"Upgrade Now"}
+        sectionDesc={
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. "
         }
-        Color="#ffffff"
-        CardDataList={UPGRADE_NOW_DATA}
-        BGColor="#2B1624"
-         setHeadingLayout="horizontal"
+        sectionTextColor="#ffffff"
+        cardData={UPGRADE_NOW_DATA}
+        sectionBGColor="#2B1624"
+        setHeadingLayout="horizontal"
        
       />
       {/* End--Section--UpgradeNow======================================================================== */}
-        {/*  */}
-        <div className="p-36">
-          <ExpandCard></ExpandCard>
-        </div>
-        {/*  */}
+            {/* Start--Service--Section======================================================== */}
+            <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Upgrade<br/>Process Map"} desc={"A step-by-step guide featuring actionable workflows to ensure 99.9% uptime and no data loss."} color={"#1D162B"}  />
+
+{/* End--Service--Section======================================================== */}
+
+      {/* Advantages Vertical Slider */}
+      <BenefitSliderSection
+        ID={'AIOfferings'}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Upgrade to Cloud Benefits'}
+        sectionDesc={'Experience business performance surge with cloud'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
+        SectionHeadingMaxWidth={'100%'}
+        sectionHeaderWidth={'w-full'}
+      ></BenefitSliderSection>
+
       {/* Section--Trained in Cloud Services= */}
       <HighlightPromo
         blurEffect="blurON"
         setHeading="We are Trained and Accredited in Cloud Services"
-        setDesc="We undergo demanding assessment and authorisation to guarantee that our expertise and practices fulfil highest standards of excellence."
+        setDesc="We ensure that our expertise and practices fulfil highest standards of excellence."
         setColor="#1D162B"
         setImageBGURL={imgBgURL}
         setLogoImages=""
         setPadding={true}
         setMSLogoURL={msLogoURL}
-        setHeadingContainerWidthFull={'w-full'}
+        setMsAzureLogoURL={msAzureLogoURL}
+        lay
+        sectionHeaderWidth={'w-full'}
       />
       {/* End-Section--Trained in Cloud-Services */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
       <HubExpertise
         setHeading="Hub of Expertise"
-        setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
+        setDesc="We are here to build an edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
+        columnNo={2}
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Section--Case-Studies======================================================================= */}
@@ -287,9 +398,9 @@ const UpgradeToCloud = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Migrate your IT Infrastructure to the Cloud"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose. Here are the top reasons for rapid Microsoft Azure migration: "
         }
         Color={"white"}
       ></BlogSection>
@@ -300,10 +411,19 @@ const UpgradeToCloud = () => {
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          "With our assessment process, delivery framework, strategic resources and data migration practice we ensure efficient performance."
         }
       ></DistinctiveSection>
       {/* End-Section--Distinctive Edge */}
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
 
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

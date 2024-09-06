@@ -5,7 +5,6 @@ import Link from "next/link";
 import EntIntro from "@/components/EntIntro";
 import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-import Benefits from "@/components/Benefits";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from '@/components/SectionHeading';
 import SectionWrapper from '@/components/SectionWrapper';
@@ -264,25 +263,25 @@ const page = () => {
       {/* Our Ai Offerings */}
       <SectionWidthSlider
         ID={'AIOfferings'}
-        SectionImageUrl={yourImageUrl}
-        Heading={'Artificial Intelligence Offerings'}
-        Desc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
-        Color={'white'}
-        CardDataList={AIOfferingsData}
+        sectionBGImageUrl={yourImageUrl}
+        sectionHeading={'Artificial Intelligence Offerings'}
+        sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
+        sectionTextColor={'white'}
+        cardData={AIOfferingsData}
         pageID="ai-ml"
-        SectionHeadingMaxWidth={'60%'}
       >
       </SectionWidthSlider>
 
       {/* ML Expertise */}
       <>
         <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
-          <div className="flex flex-col md:flex-row gap-x-11">
+          <div className="container max-auto flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
                 Heading={'Machine Learning Expertise'}
                 Desc={'We specialize in developing predictive models to forecast market shifts and identify untapped opportunities.'}
                 Color={'white'}
+                headingContainerWidth={'w-full'}
               >
               </SectionHeading>
             </div>
@@ -319,24 +318,31 @@ const page = () => {
 
       {/* Intelligent Technologies */}
       <>
-        <PlatformSection ID={'Intelligent'} Heading={'Intelligent Technologies Platforms'} Desc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'} PlatFormImageList={PlatFormImageList}></PlatformSection>
+        <PlatformSection
+         ID={'Intelligent'}
+          sectionHeading={'Intelligent Technologies Platforms'}
+           sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'} 
+           PlatFormImageList={PlatFormImageList}
+           layout={'horizontal'}
+           sectionHeaderWidth={'w-9/12'}
+           ></PlatformSection>
       </>
 
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Benefits'}
-        Desc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Benefits'}
+        sectionDesc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
       ></BenefitSliderSection>
       {/* blog section  */}
 
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveiling Hyper-automation for Supply Chain Efficiency'}
         Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. '}
         Color={'white'}
-        MaxWidth="70%"
+        readMoreUrl=""
       ></BlogSection>
 
       {/* Distinctive section*/}

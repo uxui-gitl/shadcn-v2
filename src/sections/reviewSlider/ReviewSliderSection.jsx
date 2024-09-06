@@ -46,6 +46,7 @@ function ReviewSliderSection(
                     borderBottomRightRadius:'0px',
 
                 }}>
+                    <div className="container mx-auto">
                 <SectionHeading
                     Heading={Heading}
                     Desc={Desc}
@@ -73,7 +74,7 @@ function ReviewSliderSection(
                     >
                         {CardDataList?.map((item, index) => (
                             <SwiperSlide key={item.id ? item?.id : index}>
-                                <div class="w-full p-6 bg-transparent rounded-3xl shadow">
+                                <div className="w-full p-6 bg-transparent rounded-3xl shadow">
                                     <div
                                         className=""
                                         style={{
@@ -93,9 +94,10 @@ function ReviewSliderSection(
                                             lineHeight: "36px",
                                             // marginTop: "32px",
                                         }}
-                                    >
-                                       {item.cardDesc}
-                                    </div>
+                                        dangerouslySetInnerHTML={{__html:item.cardDesc}}
+                                    />
+                                    
+                                    
                                     <div
                                         className=""
                                         style={{
@@ -104,8 +106,12 @@ function ReviewSliderSection(
                                             marginTop: "30px",
                                         }}
                                     >
-                                        IT Director, Cooling Facility Management<br></br> Company
+                                       {item.designation}<br/>
+                                       {item.companyName}
                                     </div>
+
+
+
                                 </div>
 
                                 {/* <CommonCard Item={item} setpageID={pageID}></CommonCard> */}
@@ -116,6 +122,7 @@ function ReviewSliderSection(
 
                 <div className="my-8">
 
+                </div>
                 </div>
             </SectionWrapper>
 

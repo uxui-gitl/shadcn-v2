@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import SectionWrapper from "@/components/SectionWrapper";
-import OutlinedButtonWithArrow from "@/components/OutlinedButtonWithArrow";
-import OutlinedCloseButton from "@/components/OutlinedCloseButton";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import OutlinedCloseButton from "@/components/ui/buttons/OutlinedCloseButton";
 
 const CyberSecurityInfographic = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);

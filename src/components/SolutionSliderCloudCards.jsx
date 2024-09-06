@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import OutlinedButtonWithArrow from "../components/OutlinedButtonWithArrow";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 
 const SolutionSliderCloudCard = ({ cardData }) => {
   const [isHovered, setIsHovered] = useState(false);

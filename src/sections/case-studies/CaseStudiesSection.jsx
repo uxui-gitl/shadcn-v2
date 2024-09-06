@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionWrapper from "../../components/SectionWrapper";
 import styles from "./CaseStudiesSection.module.css";
-import OutlinedButtonWithArrow from "@/components/OutlinedButtonWithArrow";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import SectionHeading from "@/components/SectionHeading";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
@@ -29,7 +29,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
                   backgroundPosition: "bottom",
-                  backgroundColor: casestudy[0].color,
+                  backgroundColor: casestudy[0].bgCardColor,
                 }}
               >
                 <h3 className="text-base font-semibold mb-12">
@@ -109,13 +109,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                     backgroundColor: casestudy[0].color,
                   }}
                 >
-                  {/* <video
-                                        src={casestudy[0].videoURL} // Replace with your video path
+                 <video
+                                        src={casestudy[3].videoURL} // Replace with your video path
                                         autoPlay
                                         loop
                                         muted
                                         className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-                                    /> */}
+                                    />
                 </div>
               </div>
             </div>
@@ -329,7 +329,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
 
           {caseStudyLayout === "6" && (
             <>
-           <SectionHeading
+            <SectionHeading
             Heading={setHeading}
             Color={setColor}
             Desc={setDesc}

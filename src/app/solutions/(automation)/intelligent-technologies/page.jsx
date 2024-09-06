@@ -1,66 +1,57 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import Icon from "@mdi/react";
-import Link from "next/link";
-import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
-import WhySection from "@/components/WhySection";
-import Benefits from "@/components/Benefits";
-import Subscription from "@/components/Subscription";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import SectionHeading from '@/components/SectionHeading';
-import SectionWrapper from '@/components/SectionWrapper';
-import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
+import CommonCardOneSlider from '@/sections/commonCardOneSlider/CommonCardOneSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import BlogSlider from "@/sections/BlogSlider/BlogSliderSection"
 
 
 const page = () => {
   const blogImageUrl = '/ai-ml/blog-bg.png';
   const formBGURL = "/formBgImage.svg";
   const yourImageUrl = '/intelligent-tech/Solutions-Background.jpg';
+
   const advanceSolutionCardData = [
     {
       id: 1,
-      BGImageUrl: '',
-      CardBGColor: '#EFE9FB',
-      CardTitle: "Machine Learning",
-      CardIconUrl: '',
-      CardHeading: 'Automated Pattern Recognition',
-      CardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
+      cardBGColor: '#EFE9FB',
+      cardTitle: "Machine Learning",
+      cardIconUrl: '/icons/circletower.svg',
+      cardHeading: 'Automated Pattern Recognition',
+      cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
       isArrow: false,
     },
     {
       id: 2,
       BGImageUrl: '',
-      CardBGColor: '#EFE9FB',
-      CardTitle: "Artificial Intelligence",
-      CardIconUrl: '',
-      CardHeading: 'Cognitive Computing Solutions',
-      CardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
+      cardBGColor: '#EFE9FB',
+      cardTitle: "Artificial Intelligence",
+      cardIconUrl: '/icons/circletower.svg',
+      cardHeading: 'Cognitive Computing Solutions',
+      cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
       isArrow: false,
     },
     {
       id: 3,
       BGImageUrl: '',
-      CardBGColor: '#EFE9FB',
-      CardTitle: "Robotic Process Automation",
-      CardIconUrl: '',
-      CardHeading: 'Efficient Task Automation',
-      CardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
+      cardBGColor: '#EFE9FB',
+      cardTitle: "Robotic Process Automation",
+      cardIconUrl: '/icons/circletower.svg',
+      cardHeading: 'Efficient Task Automation',
+      cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
       isArrow: false,
     },
     {
       id: 4,
       BGImageUrl: '',
-      CardBGColor: '#EFE9FB',
-      CardTitle: "IIoT",
-      CardIconUrl: '',
-      CardHeading: 'Asset Optimization and Uptime',
-      CardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
+      cardBGColor: '#EFE9FB',
+      cardTitle: "IIoT",
+      cardIconUrl: '/icons/circletower.svg',
+      cardHeading: 'Asset Optimization and Uptime',
+      cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
       isArrow: false,
     },
   ];
@@ -191,34 +182,33 @@ const page = () => {
       <OverviewSection Text={'Discover how AI, ML, RPA and IIoT help businesses with customer behavior prediction, process automation and generate new revenue streams with real time insights. As a strategic tech partner, Godrej Infotech ensures a future-ready foundation for clients.'} />
 
       {/* solutions */}
-      <SectionWidthSlider
-        ID={'AIOfferings'}
-        SectionImageUrl={yourImageUrl}
-        Heading={'Advance Solutions for Business Future Readiness'}
-        Desc={''}
-        Color={'white'}
-        SectionHeadingMaxWidth={'60%'}
-        CardDataList={advanceSolutionCardData}
-      >
-      </SectionWidthSlider>
-
+      
+      <CommonCardOneSlider
+       ID={'AIOfferings'}
+       sectionImageUrl={yourImageUrl}
+       sectionBGColor={'#fff'}
+       sectionHeading={'Advance Solutions for Business Future Readiness'}
+       sectionDesc={''}
+       sectionTextColor={'white'}
+       sectionHeaderWidth={'w-7/12'}
+       cardData={advanceSolutionCardData}>
+      </CommonCardOneSlider>
 
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        BGColor={'#1D162B'}
-        Heading={'Advantage of Intelligent Technologies'}
-        Desc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
-        Color={'white'}
-        CardDataList={benifitsCardsData}
-        SectionHeadingMaxWidth={'100%'}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Advantage of Intelligent Technologies'}
+        sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
+        sectionTextColor={'white'}
+        cardData={benifitsCardsData}
+        sectionHeaderWidth={'w-full'}
       ></BenefitSliderSection>
 
       {/* blog */}
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
         Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
         Color={'white'}
-        MaxWidth="70%"
       ></BlogSection>
 
       {/* Distinctive section*/}

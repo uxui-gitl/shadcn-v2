@@ -1,0 +1,67 @@
+
+
+
+
+
+  .commonCardOne {
+    overflow: hidden;
+  }
+
+  .commonCardOne:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: white !important;
+  }
+  .commonCardOne .cardBody {
+    position: relative;
+  }
+  
+  /* .commonCardOne .cardTitle {
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+  } */
+  
+  /* .commonCardOne:hover .cardTitle {
+    transition: 0.25;
+    opacity: 0;
+    transition-timing-function: ease-out;
+  } */
+  
+  .commonCardOne .cardIcon {
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+  }
+  
+  .commonCardOne:hover .cardIcon {
+    transition: 0.25;
+    opacity: 0;
+    transition-timing-function: ease-out;
+  }
+  
+  .commonCardOne .cardHeading {
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+  }
+  
+  .commonCardOne:hover .cardHeading {
+    transition: 0.7;
+    transform: translateY(-70px);
+    line-height: normal;
+  }
+  
+  .commonCardOne .cardDesc {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    bottom: 18%;
+    padding-right: 34px;
+  }
+  
+  .commonCardOne:hover .cardDesc {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+    display: block;
+  }
+  
+  

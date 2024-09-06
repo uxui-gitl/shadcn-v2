@@ -1,31 +1,26 @@
 "use client";
 
-import Image from "next/image";
 import "react-creative-cursor/dist/styles.css";
-
 import EntIntro from "@/components/EntIntro";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import SectionNav from "@/components/SectionNav";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import ServicesCardSlider from "@/sections/services-cards-slider/ServicesCardSlider";
 
 /**
  * * New Imports---Sandeep Rana
  * * 2022-08-09
  */
 import OverviewSection from "@/sections/overview/OverviewSection";
-import HighlightPromo from "@/sections/highlightPromo/HighlightPromo";
-import SolutionSliderCloud from "@/sections/solutionSlider/SolutionSliderCloud";
+import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import SectionSliderAdditionalData from "@/sections/SectionSliderAdditionalData/SectionSliderAdditionalData";
+import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
   const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
@@ -37,15 +32,16 @@ const CloudStack = () => {
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "Machine Learning",
+      cardTitle: "Core Infrastructure & Virtualization",
       cardIconUrl: "",
-      cardHeading: "Automated Pattern Recognition",
+      cardHeading: "Core Infrastructure & Virtualization",
       isArrow: "",
       additionalData: [
-        { id: 1, text: 'dummy text dummy textdummy text dummy text' },
-        { id: 2, text: 'dummy text dummy text' },
-        { id: 3, text: 'dummy text dummy text' },
-        { id: 4, text: 'dummy text dummy text' },
+        { id: 1, text: 'Infrastructure as a Service (IAAS)' },
+        { id: 2, text: 'Virtual Desktop Infrastructure (VDI)' },
+        { id: 3, text: 'Disaster Recovery as a Service (DrAAS)' },
+        { id: 4, text: 'Database as a Service (DBaaS)' },
+        { id: 5, text: 'BaaS: Backup as a Service (BaaS)' },
       ]
     },
     {
@@ -53,15 +49,15 @@ const CloudStack = () => {
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "Artificial Intelligence",
+      cardTitle: "Advanced Cloud Infrastructure",
       cardIconUrl: "",
-      cardHeading: "Cognitive Computing Solutions",
+      cardHeading: "Advanced Cloud Infrastructure",
       isArrow: "",
       additionalData: [
-        { id: 1, text: 'dummy text dummy textdummy text dummy text', textColor:'#000' },
-        { id: 2, text: 'dummy text dummy text' },
-        { id: 3, text: 'dummy text dummy text' },
-        { id: 4, text: 'dummy text dummy text' },
+        { id: 1, text: 'Azure IoT', textColor:'#000' },
+        { id: 2, text: 'DevOps and Bespoke Applications' },
+        { id: 3, text: 'Hybrid and Multicloud Managed Services' },
+       
       ]
     },
 
@@ -70,22 +66,34 @@ const CloudStack = () => {
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "Robotic Process Automation",
+      cardTitle: "M365",
       cardIconUrl: "",
-      cardHeading: "Efficient Task Automation",
+      cardHeading: "M365",
       isArrow: "",
-      link: [],
+      additionalData: [
+        { id: 1, text: 'Office apps and services', textColor:'#000' },
+        { id: 2, text: 'Collaboration Tools' },
+        { id: 3, text: 'Cloud storage' },
+        { id: 4, text: 'Device Security and Access Management ' },
+       { id: 5, text: 'Lowcode Application Development' },
+      ]
     },
     {
       id: 4,
       cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardTextColor: 'black',
-      cardTitle: "IIoT",
+      cardTitle: "Business Applications",
       cardIconUrl: "",
-      cardHeading: "Asset Optimization and Uptime", 
+      cardHeading: "Business Applications", 
       isArrow: "",
-      link: [],
+      additionalData: [
+        { id: 1, text: 'Microsoft Dynamics 365', textColor:'#000' },
+        { id: 2, text: 'Infor' },
+        { id: 3, text: 'Oracle' },
+        { id: 4, text: 'LS Retail' },
+       
+      ]
     },
   ]
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -100,9 +108,9 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+        "Scalability according to evolving business needs",
       isArrow: "",
       link: [],
     },
@@ -115,7 +123,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
         "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
       isArrow: "",
@@ -129,7 +137,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
         "Drive business agility and improved ROI with automation",
       isArrow: "",
@@ -143,9 +151,51 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "",
       CardDesc:
         "Highest levels of security and privacy, ensuring data is safeguarded",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 5,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "",
+      CardDesc:
+        "Streamline delivery pipeline with all the essential tools covered under one umbrella",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 6,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "",
+      CardDesc:
+        "Effortless integration with data solutions and Big Data",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 7,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "",
+      CardDesc:
+        "Built-in reliable disaster recovery capabilities and integrated development framework",
       isArrow: "",
       link: [],
     },
@@ -154,27 +204,33 @@ const CloudStack = () => {
   const reviewCardData = [
     {
       id: 1,
-      cardHeading: "sdkhgajgdsjhgasdkhg",
-      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "Cloud-Enabled Business Transformation",
+      cardDesc: 'Appreciation to Godrej Infotech team for successfully completing two critical projects – upgrade to Dynamics Business Central and ETL implementation on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency. We look forward to continuing this partnership with Godrej Infotech for future technological needs. ',
+    designation: 'IT Head',
+    companyName:'Middle East based Fast Food Chain',
     },
     {
       id: 2,
-      cardHeading: "sdkhgajgdsjhgasdkhg",
-      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "Cloud Enabled Infor Solution Success",
+      cardDesc: 'Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.',
+    designation: 'IT Manager',
+    companyName:`India's Premier hi-tech Engineering Solutions Provider`,
     },
     {
       id: 3,
-      cardHeading: "sdkhgajgdsjhgasdkhg",
-      cardDesc: 'sjdgvfjkgqukhdbkqwgdkqhgkwdg'
+      cardHeading: "Cloud Migration Project Delivered On Time",
+      cardDesc: 'Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.',
+    designation: 'Head EDP',
+    companyName:`India's Premier Hi-Tech Engineering Solutions Provider`,
     },
   ];
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "",
+      imageURL: " ",
       videoURL: "",
       title: "Case Studies",
-      heading: 'Elevating Customer Experience',
+      heading: 'KSA based Distributor of Electrical Components',
       description: "",
       link: "/case-study-1",
       color: '#FFFFFF',
@@ -183,8 +239,8 @@ const CloudStack = () => {
     {
       imageURL: "",
       title: "",
-      heading: 'Non-government Association of Indian Industries',
-      description: "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+      heading: 'India’s Leading Wildlife & Nature Conservation Organization',
+      description: "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#E4E4E4'
@@ -203,8 +259,8 @@ const CloudStack = () => {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
-      description: "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+      heading: "Leading Distributor of Fruits & Vegetables in the Philippines",
+      description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#FFFFFF'
@@ -215,38 +271,76 @@ const CloudStack = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Comprehensive access to our cloud services across worldwide",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Holistic approach includes resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks ",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "End-to-end strategic cloud services for complete cloud journey",
       icon: "",
     },
     {
       _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      desc: "Cloud expertise that offers business growth and localized requirements support ",
       icon: "",
     },
   ];
+  const SERVICE_CARDS_DATA = [
+    {
+      title: "Cloud Consulting",
+      hoverTitle: "Cloud Consulting",
+      description: "Strategic guidance and actionable plan for adoption and management of cloud while optimizing cloud investment.",
+      content: "Additional content for Card 1",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Architect and Manage Cloud",
+      hoverTitle: "Architect and Manage Cloud",
+      description: "Design, develop and manage cloud infrastructure and platforms, providing 360-degree visibility into business application ecosystem.",
+      content: "Additional content for Card 2",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Cloud Security",
+      hoverTitle: "Cloud Security",
+      description: "Identify security gaps, design risk-based cloud architecture & automate deployment of security guardrails for cloud-native services.",
+      content: "Additional content for Card 3",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "Public Cloud",
+      hoverTitle: "Public Cloud",
+      description: "Intact cloud environment development and industry-leading practices that support cloud implementation and management.",
+      content: "Additional content for Card 4",
+      imageURL: '/techStack1.png'
+    },
+    {
+      title: "App transformation & Cost Optimization",
+      hoverTitle: "App transformation & Cost Optimization",
+      description: "Transform & optimize apps with cloud-native architecture, containerization & cost optimization strategies",
+      content: "Additional content for Card 5",
+      imageURL: '/techStack1.png'
+    },
+    // Add more cards here...
+  ];
+
+
   return (
     <>
       {/* Section--HeroBanner */}
       <EntIntro
-        title="Reimagine Your Business With Our Intelligent Edge 
-"
-        desc="Reimagine Your Business Capabilities with
-our Intelligent Edge Cloud Stack and Services"
+        title="Reimagine Your Business Capabilities with Cloud"
+        desc="Make confident business decisions with our tailored cloud offerings, developed to drive scalability and cost savings. "
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -280,7 +374,7 @@ our Intelligent Edge Cloud Stack and Services"
       {/* Section--Overview */}
       <OverviewSection
         Text={
-          "We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences."
+          "Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences. Trust us to navigate the complexities of cloud technology, deliver greater business value and refine user experience."
         }
       />
       {/* Section--Take Confident */}
@@ -290,15 +384,15 @@ our Intelligent Edge Cloud Stack and Services"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="#1D162B"
         setPadding={false}
-        setHeadingContainerWidthFull={'w-full'}
+        sectionHeaderWidth={'w-full'}
       />
 
-  {/* Advance Solution for Business Future */}
+      {/* Advance Solution for Business Future */}
       <SectionSliderAdditionalData
         ID={'additionalData'}
         sectionImageUrl={''}
-        sectionHeading={'Advance Solution for Business Future'}
-        sectionDesc={'This approach helps us to adeptly manage software development projects involving complexity levels.'}
+        sectionHeading={'Cloud Solutions Portfolio'}
+        sectionDesc={''}
         sectionHeaderMaxWidth={'50%'}
         slidesPerView="3"
         autoplay="false"
@@ -306,37 +400,38 @@ our Intelligent Edge Cloud Stack and Services"
         sectionTextColor="#000"
         sectionBGColor="#fff"
       >
-
       </SectionSliderAdditionalData>
 
-  {/* end Advance Solution for Business Future */}
+      {/* end Advance Solution for Business Future */}
 
       {/* Start--Section--UltimateChoice======================================================================== */}
-      <SectionWithSlider
+      <SectionWidthSlider
         ID={"ULTIMATE_CHOICE_DATA"}
-        Heading={"Why Cloud is your Ultimate Choice?"}
-        Desc={
+        sectionHeading={"Why Cloud is your Ultimate Choice?"}
+        sectionDesc={
           "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
         }
-        Color="#ffffff"
-        CardDataList={ULTIMATE_CHOICE_DATA}
-        BGColor="#2B1624"
+        sectionTextColor="#ffffff"
+        cardData={ULTIMATE_CHOICE_DATA}
+        sectionBGColor="#2B1624"
         setHeadingLayout="horizontal"
 
       />
       {/* End--Section--UltimateChoice======================================================================== */}
-      <section className="container max-auto"><h1>Cloud Services</h1></section>
+           {/* Start--Service--Section======================================================== */}
+           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Driven Services"} desc={"Developing and scaling pilot into enterprise-scale implementation including all cloud-based business requirements"} color={"#1D162B"}  />
+
+{/* End--Service--Section======================================================== */}
+
 
       {/* Section--Synergetic-Partnership======================================================= */}
       <HighlightPromo
-
         setHeading="Synergetic Partnership"
         setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
         setColor="#1D162B"
         setImageBGURL={imgBgURL}
         setLogoImages="true"
         setPadding={false}
-
       />
       {/* End-Section--Synergetic-Partnership */}
       {/* Section--Case-Studies======================================================================= */}
@@ -347,9 +442,9 @@ our Intelligent Edge Cloud Stack and Services"
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Optimizing Cloud Infrastructure: A Comprehensive Guide to Monitoring and Maintenance"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "As cloud computing continues to transform the way organizations operate, the importance of effective cloud monitoring and maintenance cannot be overstated. In this article, we will delve into the critical aspects of cloud monitoring and maintenance, providing actionable tips and best practices to ensure optimal performance, reliability, and security in cloud environments."
         }
         Color={"white"}
       ></BlogSection>
@@ -360,13 +455,13 @@ our Intelligent Edge Cloud Stack and Services"
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          ""
         }
       ></DistinctiveSection>
       <ReviewSliderSection
         ID={"ULTIMATE_CHOICE_DATA"}
         Heading={"Delighted customers share their success experience"}
-        Desc={''}
+        Desc={'Discover how we have helped our customers to realize tangible outcomes aligned with their business goals.'}
         Color="#ffffff"
         CardDataList={reviewCardData}
         BGColor="#1D162B"
@@ -374,9 +469,9 @@ our Intelligent Edge Cloud Stack and Services"
       ></ReviewSliderSection>
       {/* transform business with us section */}
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Free 30-Minute Strategy Session with our Cloud Expert?"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let's discuss how cloud can help you with rapid growth."
         }
       ></TransformBusinessForm>
     </>

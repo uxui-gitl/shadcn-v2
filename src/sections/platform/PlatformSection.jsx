@@ -2,18 +2,19 @@ import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import Image from "next/image";
 
-function PlatformSection({ ID='', Heading='', Desc='', PlatFormImageList = [] }) {
+function PlatformSection({ ID='', sectionHeading='', sectionDesc='',sectionHeaderWidth, PlatFormImageList = [], layout='vertical' }) {
     return (
         <>
             <SectionWrapper ID={ID}>
-                <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 pb-0 grid grid-cols-1">
+                <div className=" container max-auto text-left mb-5 pb-0 grid grid-cols-1">
                     {/* left */}
                     <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-                        <div className="w-full md:max-w-[607px]">
+                        <div className="w-full">
                             <SectionHeading
-
-                                Heading={Heading}
-                                Desc={Desc}
+                                Heading={sectionHeading}
+                                Desc={sectionDesc}
+                                layout={layout}
+                                headingContainerWidth={sectionHeaderWidth}
                             >
                             </SectionHeading>
                         </div>

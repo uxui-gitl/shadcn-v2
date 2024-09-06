@@ -7,39 +7,29 @@ const ChallengeSection = ({
     setHeading,
     setColor,
     setDesc,
-    setImageBGURL
+    setImageBGURL,
+    setChallengesList=[],
+    bgColor='#3a7398',
 }) => {
-    const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
-    const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: defaultChallengesIcon },
-        { id: 2, title: "Unreliable Backup Storage", icon: defaultChallengesIcon },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: defaultChallengesIcon },
-        { id: 4, title: "Inadequate Data Integrity and Automation Capabilities", icon: defaultChallengesIcon },
-        { id: 5, title: "Limited IT Universality and Centralized Monitoring", icon: defaultChallengesIcon },
-        { id: 6, title: "High Management Costs of IT Infrastructure", icon: defaultChallengesIcon },
-    ];
-
     return (
-        // <SectionWrapper
-        //     BGColor="#356990"
-        // >
-
         <>
             <div className="">
-                <div class="grid grid-cols-2 gap-0">
+                <div className="grid grid-cols-2 gap-0">
                     <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
                     </div>
-                    <div className="py-20 px-20" style={{ backgroundColor: '#3a7398' }}>
+                    <div className="py-20 px-20" style={{ backgroundColor: bgColor }}>
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}
+                            Desc={setDesc}
+                            headingContainerWidth={'w-full'}
                         />
 
                         <ul className="mt-2 space-y-4 w-full text-white">
-                            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                            {setChallengesList.map((challenge, index) => (
                                 <li
                                     key={challenge.id}
-                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
                                 >
                                     <div className="flex-shrink-0 mr-4">
                                         <Image
@@ -61,20 +51,19 @@ const ChallengeSection = ({
                     </div>
                 </div>
             </div>
-
-
             <div className="container mx-auto  justify-end hidden">
                 <div className="w-full lg:w-1/2 flex flex-col items-start">
                     <SectionHeading
                         Heading={setHeading}
                         Color={setColor}
+                        Desc={setDesc}
                     />
 
                     <ul className="mt-2 space-y-4 w-full text-white">
-                        {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                        {setChallengesList.map((challenge, index) => (
                             <li
                                 key={challenge.id}
-                                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
                             >
                                 <div className="flex-shrink-0 mr-4">
                                     <Image
