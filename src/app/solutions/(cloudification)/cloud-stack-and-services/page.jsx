@@ -19,7 +19,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import SectionSliderAdditionalData from "@/sections/SectionSliderAdditionalData/SectionSliderAdditionalData";
+import SectionSliderAdditionalData from "@/sections/sectionSliderAdditionalData/SectionSliderAdditionalData";
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
