@@ -1,15 +1,15 @@
 import React from "react";
 import "./solutionSliderCloud.module.css";
-import SectionWrapper from "../../components/SectionWrapper";
-import SectionHeading from "../../components/SectionHeading";
-import SolutionSliderCloudCards from "../../components/SolutionSliderCloudCards";
+import SectionWrapper from "@/components/SectionWrapper";
+import SectionHeading from "@/components/SectionHeading";
+import SolutionSliderCloudCards from "@/components/SolutionSliderCloudCards";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import CommonCard from './../../components/CommonCard';
+import CommonCard from './@/components/CommonCard';
 
 const SolutionSliderCloud = ({ setHeading, setDesc, setColor }) => {
   
