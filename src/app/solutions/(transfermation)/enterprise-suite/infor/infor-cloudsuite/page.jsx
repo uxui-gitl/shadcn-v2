@@ -6,8 +6,12 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import Image from "next/image";
 const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -132,19 +136,40 @@ const page = () => {
       >
       </CommonCardTwoSlider>
 
-      <div className="" style={{backgroundColor:'#1D162B'}}>
-      <div className="container mx-auto pt-20 flex h-[500px]">
-        <div className="w-1/2">
-          <SectionHeading
-           Heading={`Infor CloudSuite Services`}
-           Color={'white'}
-           Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
-           headingContainerWidth={'w-full'}
-          />
+      <div className="" style={{ backgroundColor: '#1D162B'}}>
+        <div className="container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+          <div className="w-1/2">
+            <SectionHeading
+              Heading={`Infor CloudSuite Services`}
+              Color={'white'}
+              Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
+              headingContainerWidth={'w-full'}
+            />
           </div>
           <div className="w-1/2">
-              <Image src="/infor/man.svg" width="500" height="500" />
+            <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
+        </div>
+        <div className="container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
+          <Swiper
+            slidesPerView={4}
+            navigation={false}
+            pagination={{ type: "bullets", clickable: true }}
+            autoplay={true}
+            loop={false}
+            spaceBetween={30}
+          >
+            {[1, 2, 3, 4, 5]?.map((item, index) => (
+              <SwiperSlide key={item}>
+                <div className="bg-white rounded-lg">
+                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                  <div className="p-5">
+                      <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 
@@ -168,7 +193,6 @@ const page = () => {
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
-
 
       <ReviewSliderSection
         ID={"TESTIMONIALS"}

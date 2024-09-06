@@ -30,7 +30,7 @@ function CommonCardTwoSlider({
                 }}
             >
                 <div className="container mx-auto">
-                    <div className="">
+                    <div className="" style={{marginBottom: setHeadingLayout != 'vertical' ? '70px' :  '0px'}}>
                         <SectionHeading
                             Heading={sectionHeading}
                             Desc={sectionDesc}
