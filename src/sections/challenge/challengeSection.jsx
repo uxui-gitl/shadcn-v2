@@ -8,7 +8,8 @@ const ChallengeSection = ({
     setColor,
     setDesc,
     setImageBGURL,
-    setChallengesList=[]
+    setChallengesList=[],
+    bgColor='#3a7398',
 }) => {
     return (
         <>
@@ -16,11 +17,12 @@ const ChallengeSection = ({
                 <div className="grid grid-cols-2 gap-0">
                     <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
                     </div>
-                    <div className="py-20 px-20" style={{ backgroundColor: '#3a7398' }}>
+                    <div className="py-20 px-20" style={{ backgroundColor: bgColor }}>
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}
                             Desc={setDesc}
+                            headingContainerWidth={'w-full'}
                         />
 
                         <ul className="mt-2 space-y-4 w-full text-white">

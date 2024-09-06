@@ -11,6 +11,9 @@ import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,6 +22,24 @@ import Image from 'next/image'
 
 
 const Page = () => {
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
 
   const distinctiveData = [
     {
@@ -478,7 +499,21 @@ const Page = () => {
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
       >
       </DistinctiveSection>
-
+      <ReviewSliderSection
+      ID={"TESTIMONIALS"}
+      Heading={"Delighted customers share their success experience"}
+      Desc={''}
+      Color="#ffffff"
+      CardDataList={TESTIMONIAL_DATA}
+      BGColor="#1D162B"
+      SectionHeadingMaxWidth={'70%'}
+    ></ReviewSliderSection>
+<TransformBusinessForm
+        Title={"Transform your Business with us"}
+        Desc={
+          "Let us discuss how intelligent technologies can help you with rapid growth."
+        }
+      ></TransformBusinessForm>
 
     </>
   );
