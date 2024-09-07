@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CommonCardTwo from "@/components/CommonCardThree";
 const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
-  
+
   const distinctiveData = [
     {
       _id: 1,
@@ -176,8 +176,8 @@ const page = () => {
   ]
 
   return (
- <>
- <EntIntro
+    <>
+      <EntIntro
         title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
         desc=""
         cta="Let's Connect"
@@ -185,42 +185,42 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
-      <div className="bg-[#1D162B]" style={{borderTopLeftRadius:'24px', borderTopRightRadius:'24px'}}>
-      <div className="py-36 pb-[200px]" style={{background:`url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat",    backgroundSize: "cover"}}>
-        <div className="container mx-auto">
-          <div class="grid grid-cols-2 gap-4">
-            <div>
-              <img src="" />
+      <div className="bg-[#1D162B]" style={{ borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}>
+        <div className="py-36 pb-[200px]" style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+          <div className="container mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <img src="" />
+              </div>
+              <div>
+                <SectionHeading
+                  Color="white"
+                  headingContainerWidth="w-full"
+                  Heading="Infor Intelligent Supply System"
+                  Desc="Infor proudly presents the most extensive suite of global supply chain solutions, including the world's largest single-instance, multi-enterprise business network and comprehensive CloudSuite capabilities. These capabilities optimize supply chains from end to end, covering planning, procurement, orchestration and fulfillment. "
+                ></SectionHeading>
+              </div>
             </div>
-            <div>
-              <SectionHeading
-                Color="white"
-                headingContainerWidth="w-full"
-                Heading="Infor Intelligent Supply System"
-                Desc="Infor proudly presents the most extensive suite of global supply chain solutions, including the world's largest single-instance, multi-enterprise business network and comprehensive CloudSuite capabilities. These capabilities optimize supply chains from end to end, covering planning, procurement, orchestration and fulfillment. "
-              ></SectionHeading>
-            </div>
+
           </div>
-        
         </div>
-        </div>
-        <div className="container mx-auto"  style={{marginTop: '-166px', }} >
+        <div className="container mx-auto" style={{ marginTop: '-166px', }} >
           <Swiper
-              slidesPerView={3}
-              navigation={false}
-              pagination={{ type: "bullets", clickable: true }}
-              autoplay={true}
-              loop={false}
-              spaceBetween={30}
-            >
-              {RPASolution2?.map((item, index) => (
-                <SwiperSlide key={item}>
-               <CommonCardTwo Item={item}></CommonCardTwo>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            slidesPerView={3}
+            navigation={false}
+            pagination={{ type: "bullets", clickable: true }}
+            autoplay={true}
+            loop={false}
+            spaceBetween={30}
+          >
+            {RPASolution2?.map((item, index) => (
+              <SwiperSlide key={item}>
+                <CommonCardTwo Item={item}></CommonCardTwo>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        </div>
+      </div>
 
       <BenefitSliderSection
         ID={'BENEFIT'}
@@ -231,14 +231,14 @@ const page = () => {
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
-<CaseStudiesSection
+      <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
         bgColor="#FFFFFF"
       />
 
-      
-<BlogSection
+
+      <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
         Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
@@ -253,21 +253,21 @@ const page = () => {
       >
       </DistinctiveSection>
       <ReviewSliderSection
-      ID={"TESTIMONIALS"}
-      Heading={"Delighted customers share their success experience"}
-      Desc={''}
-      Color="#ffffff"
-      CardDataList={TESTIMONIAL_DATA}
-      BGColor="#1D162B"
-      SectionHeadingMaxWidth={'70%'}
-    ></ReviewSliderSection>
-<TransformBusinessForm
+        ID={"TESTIMONIALS"}
+        Heading={"Delighted customers share their success experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="#1D162B"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
+      <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
           "Let us discuss how intelligent technologies can help you with rapid growth."
         }
       ></TransformBusinessForm>
- </>
+    </>
   );
 };
 
