@@ -8,6 +8,7 @@ import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
+
 const page = () => {
   const distinctiveData = [
     {

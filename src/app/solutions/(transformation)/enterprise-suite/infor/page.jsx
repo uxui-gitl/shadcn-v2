@@ -13,10 +13,6 @@ import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import Image from 'next/image'
 
 
