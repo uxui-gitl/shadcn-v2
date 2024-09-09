@@ -16,11 +16,11 @@ function SectionHeading({
         <div
           className={`${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-start'} `}
         >
-          <h1
+          {Heading && <h1
             className={`text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px]`}
             style={{ color: Color }}
             dangerouslySetInnerHTML={{ __html: Heading }}
-          />
+          />}
           {Desc &&  (<p
             className={`text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14`}
             style={{ color: Color }}

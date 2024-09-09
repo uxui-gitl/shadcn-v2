@@ -144,7 +144,7 @@ const Footer = () => {
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
-                    Cloud services
+                  Cloud services
                   </Link>
                 </li>
 
