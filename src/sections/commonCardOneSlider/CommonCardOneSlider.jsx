@@ -5,6 +5,7 @@ import CommonCardOne from "@/components/CommonCardOne";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 function CommonCardOneSlider({
     ID,
     sectionImageUrl,
@@ -23,9 +24,12 @@ function CommonCardOneSlider({
             <SectionWrapper
                 id={ID}
                 BGColor={sectionBGColor}
+                className="parallax-background"
                 style={{
                     backgroundImage: `url(${sectionImageUrl})`,
                     backgroundSize: "cover",
+                    backgroundAttachment: "fixed", // This is key for the parallax effect
+                    backgroundPosition: "center", // Center the background image
                 }}
             >
                 <div className="container mx-auto">
@@ -36,7 +40,7 @@ function CommonCardOneSlider({
                             Color={sectionTextColor}
                             layout={setHeadingLayout}
                             headingContainerWidth={sectionHeaderWidth}
-                        ></SectionHeading>
+                        />
                     </div>
 
                     <div className="my-8">
@@ -50,7 +54,7 @@ function CommonCardOneSlider({
                         >
                             {cardData?.map((item, index) => (
                                 <SwiperSlide key={item.id ? item?.id : index}>
-                                    <CommonCardOne Item={item}></CommonCardOne>
+                                    <CommonCardOne Item={item} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
