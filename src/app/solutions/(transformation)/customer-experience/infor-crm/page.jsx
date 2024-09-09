@@ -11,6 +11,8 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 
 const page = () => {
+
+
   const distinctiveData = [
     {
       _id: 1,

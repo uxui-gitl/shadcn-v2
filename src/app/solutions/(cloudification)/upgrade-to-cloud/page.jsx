@@ -39,19 +39,17 @@ const UpgradeToCloud = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Cloud ETL for restaurant sales and COGS process",
+      cardDesc: `“Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency.” `,
+      designation: 'ERP and Business Intelligence Head',
+      companyName:'Fast food service chain',
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
+      cardHeading: "Cost Saving & Speedy Transactional Updates",
+      cardDesc: `“Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.”`,
+      designation:  `Manager IT, India's leading Energy Management System and Solutions provider`,
+      },
   ];
   
   const UPGRADE_NOW_DATA = [
