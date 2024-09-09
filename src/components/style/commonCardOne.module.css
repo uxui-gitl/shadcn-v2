@@ -1,67 +1,86 @@
+.commonCardOne {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background image scaling and fading effect */
+.commonCardOne .cardBGImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: bottom;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1; /* Image visible by default */
+  z-index: 0; /* Send the background image behind the content */
+}
+
+.commonCardOne:hover .cardBGImage {
+  transform: scale(1.5); /* Slight scale up on hover */
+  opacity: 0; /* Ensure full opacity */
+}
+
+/* Card body remains in front of the background */
+.commonCardOne .cardBody {
+  position: relative;
+  z-index: 1; /* Ensure the content appears above the background */
+}
+
+/* Card icon transition */
+.commonCardOne .cardIcon {
+  transition-timing-function: ease-out;
+  transition: 0.25s;
+}
+
+.commonCardOne:hover .cardIcon {
+  transition: 0.25s;
+  opacity: 0;
+  transition-timing-function: ease-out;
+}
+
+/* Card heading transition */
+.commonCardOne .cardHeading {
+  transition-timing-function: ease-out;
+  transition: 0.25s;
+}
+
+.commonCardOne:hover .cardHeading {
+  transition: 0.5s;
+  transform: translateY(-70px);
+  line-height: normal;
+}
+
+/* Card description transition */
+.commonCardOne .cardDesc {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  position: relative;
+  padding-right: 32px;
+}
+
+.commonCardOne:hover .cardDesc {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
+.parallax-background {
+  position: relative;
+  overflow: hidden; /* Prevents overflow issues */
+}
 
-
-
-  .commonCardOne {
-    overflow: hidden;
-  }
-
-  .commonCardOne:hover{
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    background-color: white !important;
-  }
-  .commonCardOne .cardBody {
-    position: relative;
-  }
-  
-  /* .commonCardOne .cardTitle {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  } */
-  
-  /* .commonCardOne:hover .cardTitle {
-    transition: 0.25;
-    opacity: 0;
-    transition-timing-function: ease-out;
-  } */
-  
-  .commonCardOne .cardIcon {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  }
-  
-  .commonCardOne:hover .cardIcon {
-    transition: 0.25;
-    opacity: 0;
-    transition-timing-function: ease-out;
-  }
-  
-  .commonCardOne .cardHeading {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  }
-  
-  .commonCardOne:hover .cardHeading {
-    transition: 0.7;
-    transform: translateY(-70px);
-    line-height: normal;
-  }
-  
-  .commonCardOne .cardDesc {
-    opacity: 0;
-    display: none;
-    position: absolute;
-    bottom: 18%;
-    padding-right: 34px;
-  }
-  
-  .commonCardOne:hover .cardDesc {
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    opacity: 1;
-    display: block;
-  }
-  
-  
+.parallax-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Inherit the background image */
+  background-size: cover;
+  background-attachment: fixed; /* Keep the background fixed */
+  z-index: -1; /* Place it behind other content */
+}
