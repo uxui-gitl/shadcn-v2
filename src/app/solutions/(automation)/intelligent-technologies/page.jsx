@@ -10,13 +10,14 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 
 
 const page = () => {
-  const blogImageUrl = '/ai-ml/blog-bg.png';
+  const blogImageUrl = '/intelligent-tech/blogs/blog-bg-01.png';
   const formBGURL = "/formBgImage.svg";
-  const yourImageUrl = '/intelligent-tech/Solutions-Background.jpg';
+  const yourImageUrl = '/intelligent-tech/Solutions-Background.png';
 
   const advanceSolutionCardData = [
     {
       id: 1,
+      cardBGImage: '/intelligent-tech/cards-background/bg-card-machine-learning.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "Machine Learning",
       cardIconUrl: '/icons/circletower.svg',
@@ -26,7 +27,7 @@ const page = () => {
     },
     {
       id: 2,
-      BGImageUrl: '',
+      cardBGImage: '/intelligent-tech/cards-background/bg-card-artificial-intelligence.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "Artificial Intelligence",
       cardIconUrl: '/icons/circletower.svg',
@@ -36,7 +37,7 @@ const page = () => {
     },
     {
       id: 3,
-      BGImageUrl: '',
+      cardBGImage: '/intelligent-tech/cards-background/bg-card-rpa.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "Robotic Process Automation",
       cardIconUrl: '/icons/circletower.svg',
@@ -46,7 +47,7 @@ const page = () => {
     },
     {
       id: 4,
-      BGImageUrl: '',
+      cardBGImage: '/intelligent-tech/cards-background/bg-card-asset-management.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "IIoT",
       cardIconUrl: '/icons/circletower.svg',
@@ -56,7 +57,7 @@ const page = () => {
     },
   ];
 
-  const benifitsCardsData = [
+  const benefitsCardsData = [
     { id: '1', text: 'A high degree of accuracy and consistency in business operations' },
     { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
     { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
@@ -152,7 +153,7 @@ const page = () => {
       />
 
       {/* Section Nav */}
-      <>
+{/*       
         <SectionNav
           // Solutions
           // Benefits
@@ -175,8 +176,8 @@ const page = () => {
               link: "#WhyUs",
             },
           ]}
-        />
-      </>
+        /> */}
+     
 
       {/* Overview  */}
       <OverviewSection Text={'Discover how AI, ML, RPA and IIoT help businesses with customer behavior prediction, process automation and generate new revenue streams with real time insights. As a strategic tech partner, Godrej Infotech ensures a future-ready foundation for clients.'} />
@@ -201,7 +202,7 @@ const page = () => {
         sectionHeading={'Advantage of Intelligent Technologies'}
         sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
         sectionTextColor={'white'}
-        cardData={benifitsCardsData}
+        cardData={BenefitsData}
         sectionHeaderWidth={'w-full'}
       ></BenefitSliderSection>
 
