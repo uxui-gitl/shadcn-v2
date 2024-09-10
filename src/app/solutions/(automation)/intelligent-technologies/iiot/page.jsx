@@ -204,9 +204,6 @@ const IIOT = () => {
           "Let us discuss how intelligent technologies can help you with rapid growth."
         }
       ></TransformBusinessForm>
-
-
-
     </>
   );
 };

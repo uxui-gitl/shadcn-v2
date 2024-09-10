@@ -4,14 +4,32 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardThreeSlider';
-import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import Image from "next/image";
+import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
 const page = () => {
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
 
   const CHALLENGES_LIST_DATA = [
     { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
@@ -45,117 +63,20 @@ const page = () => {
   ]
 
   const blogImageUrl = "/ai-ml/blog-bg.png";
-
-  const CASE_STUDIES_DATA = [
+  const HUBEXPERTISE_COUNTER_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
-      title: "Case Studies",
-      heading: "Elevating Customer Experience",
-      description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
-      link: "/case-study-1",
-      color: "#FFFFFF",
+      start: 10,
+      end: 20,
+      description: "Years of Managing Global customer for Data Security",
     },
     {
-      imageURL: "",
-      title: "",
-      heading: "Non-government Association of Indian Industries",
-      description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
-      link: "/case-study-1",
-      color: "#000",
-      bgCardColor: "#FCE6F4",
+      start: 10,
+      end: 100,
+      description: "Cyber Security Solutions Implemented",
     },
-
-    {
-      imageURL: "/path/to/image1.jpg",
-      title: "",
-
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
-      description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-      link: "/case-study-1",
-      color: "#000",
-      bgCardColor: "#EFE9FB",
-    },
-    {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
-      title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
-      description:
-        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
-      link: "/case-study-1",
-      color: "#000",
-      bgCardColor: "#E1F2EF",
-    },
-    // Add more case studies here...
+    // Add more counters as needed
   ];
 
-  const serviceOfferingData = [
-    {
-      id: 1,
-      cardBGColor: '#fff',
-      cardHeading: 'End-to-End Implementation',
-      cardDesc: 'Streamlining every phase of the implementation with the capability of successful and on-time delivery of Infor solution.',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
-    },
-    {
-
-      id: 2,
-      cardBGColor: '#fff',
-      cardHeading: 'Managed Services',
-      cardDesc: 'Managing every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application.',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
-    },
-    {
-
-      id: 3,
-      cardBGColor: '#fff',
-      cardHeading: 'Migrate to the Cloud',
-      cardDesc: 'Ensuring a smooth and efficient migration process with minimum business disruptions',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
-    },
-    {
-
-      id: 4,
-      cardBGColor: '#E4E4E4',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
-    },
-    {
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
-    },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
-    },
-  ]
   const ultimateChoiceData = [
     {
       id: 1,
@@ -227,6 +148,7 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      
       <SectionWrapper BGColor="black">
         <div className="container mx-auto">
           <SectionHeading
@@ -325,34 +247,31 @@ const page = () => {
 
       <SectionWrapper BGColor="#1D162B">
         <div className="container mx-auto">
-          <div style={{display:'flex', justifyContent:'center'}}>
-            <SectionHeading
-              Color="white"
-              headingContainerWidth="w-full"
-              Heading="Business Consulting Services   "
-              Desc="The foundation of our consulting service is strengthened by our ACT model, facilitating growth and success in a dynamic competitive landscape. "
-            ></SectionHeading>
+          <div className="flex justify-center items-center flex-col">
+            <div className="w-1/2 mb-10">
+              <SectionHeading
+                center
+                Color="white"
+                headingContainerWidth="w-full"
+                Heading="Consulting Service Approach"
+                Desc="The foundation of our consulting service is strengthened by our ACT model, facilitating growth and success in a dynamic competitive landscape. "
+              ></SectionHeading>
+            </div>
+            <div>
+              <img src="/services/service01.svg" width="100%"></img>
+            </div>
           </div>
         </div>
       </ SectionWrapper>
 
+      <HubExpertise
+      BGColor="#7B014E"
+        setHeading="Hub of Expertise"
+        setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
+        setColor="#ffffff"
+        counters={HUBEXPERTISE_COUNTER_DATA}
+      />
 
-
-
-
-      <CommonCardThreeSlider
-        ID={''}
-        sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
-        sectionHeading={'Key Feature and Benefits of Infor CRM'}
-        sectionDesc={"We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform."}
-        sectionTextColor={'#fff'}
-        cardData={serviceOfferingData}
-      >
-
-      </CommonCardThreeSlider>
-
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor={'#D3D3D3'} />
 
       <BlogSection
         ID={"blog"}
@@ -364,10 +283,21 @@ const page = () => {
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
+      
       <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
       >
       </DistinctiveSection>
+
+      <ReviewSliderSection
+        ID={"TESTIMONIALS"}
+        Heading={"Delighted customers share their success experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="#1D162B"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
 
       <TransformBusinessForm
         Title={"Transform your Business with us"}

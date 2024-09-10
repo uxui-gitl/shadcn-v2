@@ -48,7 +48,7 @@ const ScrollCounter = ({
   </ScrollTrigger>
 );
 
-const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo }) => {
+const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo, BGColor='#000' }) => {
   const [counterOn, setCounterOn] = useState(false);
 
   const handleEnter = () => {
@@ -67,7 +67,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo
   const counterWidthClass = columnNo === 3 ? "w-full sm:w-[calc(33.33%-1rem)]" : "w-full sm:w-[calc(50%-1rem)]";
 
   return (
-    <SectionWrapper BGColor="#000" Padding={false} style={{ ...style }}>
+    <SectionWrapper BGColor={BGColor} Padding={false} style={{ ...style }}>
       <section className="container mx-auto">
         <div className="flex flex-col gap-16 py-8 md:py-12 lg:py-48">
           <div className="flex flex-row gap-16">

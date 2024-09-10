@@ -295,6 +295,7 @@ const CloudStack = () => {
       icon: "",
     },
   ];
+
   const SERVICE_CARDS_DATA = [
     {
       title: "Cloud Consulting",
@@ -458,6 +459,7 @@ const CloudStack = () => {
           ""
         }
       ></DistinctiveSection>
+
       <ReviewSliderSection
         ID={"ULTIMATE_CHOICE_DATA"}
         Heading={"Delighted customers share their success experience"}
@@ -468,6 +470,7 @@ const CloudStack = () => {
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
       {/* transform business with us section */}
+      
       <TransformBusinessForm
         Title={"Free 30-Minute Strategy Session with our Cloud Expert?"}
         Desc={
