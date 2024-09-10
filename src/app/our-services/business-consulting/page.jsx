@@ -158,7 +158,7 @@ const page = () => {
             Heading="Knocking Business Challenges  "
             Desc="We help executive leadership navigate critical challenges, manage process complexity and develop future-ready organizations.  "
           ></SectionHeading>
-          <div class="grid grid-cols-2 gap-4 mt-16">
+          <div className="grid grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
@@ -198,9 +198,9 @@ const page = () => {
             Heading="Business Consulting Services   "
             Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation.  "
           ></SectionHeading>
-          <div class="grid grid-cols-1 gap-4 mt-16">
+          <div className="grid grid-cols-1 gap-4 mt-16">
             <div>
-              <div class="grid grid-cols-2 gap-12 mt-16">
+              <div className="grid grid-cols-2 gap-12 mt-16">
                 <ul className=" space-y-4 w-full text-white">
                   {CHALLENGES_LIST_DATA.map((challenge, index) => (
                     <li

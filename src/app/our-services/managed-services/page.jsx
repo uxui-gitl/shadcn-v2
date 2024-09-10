@@ -339,7 +339,7 @@ const page = () => {
             Heading="Knocking Business Challenges  "
             Desc="We help executive leadership navigate critical challenges, manage process complexity and develop future-ready organizations.  "
           ></SectionHeading>
-          <div class="grid grid-cols-2 gap-4 mt-16">
+          <div className="grid grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
