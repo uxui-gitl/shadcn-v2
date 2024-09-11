@@ -7,7 +7,6 @@ function PlatformSection({ ID='', sectionHeading='', sectionDesc='',sectionHeade
         <>
             <SectionWrapper ID={ID}>
                 <div className=" container max-auto text-left mb-5 pb-0 grid grid-cols-1">
-                    {/* left */}
                     <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                         <div className="w-full">
                             <SectionHeading
@@ -19,9 +18,9 @@ function PlatformSection({ ID='', sectionHeading='', sectionDesc='',sectionHeade
                             </SectionHeading>
                         </div>
                         <div className="flex flex-col md:flex-row justify-center py-10 items-center gap-20 md:py-20">
-                            {PlatFormImageList.map((item) => (
+                            {PlatFormImageList.map((item ,index) => (
                                 <>
-                                    <Image src={item.url} width={350} height={100} alt="Microsoft Azure" />
+                                    <Image key={index} src={item.url} width={350} height={100} alt="Microsoft Azure" />
                                 </>
                             ))}
                         </div>

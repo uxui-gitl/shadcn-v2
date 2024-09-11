@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "tailwindcss/tailwind.css"; // Assuming you use Tailwind CSS for styling
 import SectionWrapper from "@/components/SectionWrapper";
 import checkout from "/public/icon/whygitl/WhyGITL2.svg";
 import SectionHeading from "@/components/SectionHeading";
