@@ -144,23 +144,28 @@ const MicrosoftPractises = () => {
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      text: "A high degree of accuracy and consistency in business operations",
+      icon:'',
+      cardDesc: "A high degree of accuracy and consistency in business operations",
     },
     {
       id: "2",
-      text: "Informed decision-making to extract valuable insights and identify patterns, correlation, and trends",
+      icon:'',
+      cardDesc: "Informed decision-making to extract valuable insights and identify patterns, correlation, and trends",
     },
     {
       id: "3",
-      text: "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
+      icon:'',
+      cardDesc: "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
     },
     {
       id: "4",
-      text: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
+      icon:'',
+      cardDesc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
     {
       id: "5",
-      text: "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
+      icon:'',
+      cardDesc: "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
     },
   ];
   const INDUSTRY_SPOTLIGHT = [

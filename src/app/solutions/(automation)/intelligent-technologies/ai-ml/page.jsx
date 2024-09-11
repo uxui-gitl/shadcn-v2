@@ -188,10 +188,16 @@ const distinctiveData = [
 ]
 
 const benifitsCardsData = [
-  { id: '1', text: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers' },
-  { id: '2', text: 'Anticipate future outcomes based on historical data, making informed decisions' },
-  { id: '3', text: 'Enables effortless communication and efficient information retrieval through Natural Language Processing' },
-  { id: '4', text: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
+  { id: '1',
+    icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+    cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers' },
+  { id: '2',
+    icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+     cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions' },
+  { id: '3', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+     cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing' },
+  { id: '4', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+     cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
 ]
 
 const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
@@ -271,7 +277,7 @@ const page = () => {
 
       {/* ML Expertise */}
       <>
-        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'} style={{ marginTop: '-240px', paddingTop: '240px' }}>
+        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'}>
           <div className="container max-auto flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading

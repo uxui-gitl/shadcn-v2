@@ -94,28 +94,28 @@ const page = () => {
       _id: 1,
       icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       title: "",
-      CardDesc:
+      cardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity. ",
     },
     {
       _id: 2,
       icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
       title: "",
-      CardDesc:
+      cardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 3,
       icon: "benefisIntelligentTechnologies/InformedDecisionmaking",
       title: "",
-      CardDesc:
+      cardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends.",
     },
     {
       _id: 4,
       icon: "benefisIntelligentTechnologies/highDegreeAccuracyConsistency",
       title: "",
-      CardDesc:
+      cardDesc:
         "A high degree of accuracy and consistency in business operations.",
     },
   ];

@@ -76,7 +76,7 @@ function BenefitSliderSection({
                   />
                   <div className="flex flex-col justify-between leading-normal">
                     <p className="mb-3 text-2xl text-gray-700 dark:text-gray-400">
-                      {item.CardDesc}
+                      {item.cardDesc}
                     </p>
                   </div>
                 </a>
