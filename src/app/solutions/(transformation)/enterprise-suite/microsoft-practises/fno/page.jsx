@@ -480,13 +480,13 @@ const FNO = () => {
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
         ID={"BENEFIT"}
-        BGColor={"#1D162B"}
-        Heading={"Microsoft Promise for Your Business"}
-        Desc={
+        sectionBGColor={"#1D162B"}
+        sectionHeading={"Microsoft Promise for Your Business"}
+        sectionDesc={
           "Driving transformational changes, Microsoft Dynamics minimizes operational cost and increases overall efficiency of employees and customers."
         }
-        Color={"white"}
-        CardDataList={BENEFITS_CARDS_DATA}
+        sectionTextColor={"white"}
+        cardData={BENEFITS_CARDS_DATA}
         SectionHeadingMaxWidth={"100%"}
       />
       {/* End--Benefits-Section================================================================ */}

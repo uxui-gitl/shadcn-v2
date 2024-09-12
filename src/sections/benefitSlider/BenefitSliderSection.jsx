@@ -7,6 +7,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
 
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 function BenefitSliderSection({

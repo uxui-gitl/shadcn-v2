@@ -1,12 +1,17 @@
-.swiperButtonNext{
+.swiperbuttonnext{
     position: absolute;
-    left: '50%' !important;
-    top:'47% ' !important;
-    
+    left: 50%;
+    top: 10%;
 }
 
-.swiperButtonPrev{
+/* .swiperbuttonnext::after{
+    font-size:20px !important;
+    content:'>';
+    color:white;
+} */
+
+.swiperbuttonprev{
     position: absolute;
-    left: '50%';
-    top:'50%'
+    left: 50%;
+    top: 32%;
 }
