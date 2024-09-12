@@ -36,9 +36,9 @@ const WhySection = ({
         </div>
         {/* right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
-        {arr.map((item) => (
+        {arr.map((item, index) => (
             <>
-              <div className="card py-4 md:py-5" style={{ borderBottom: '2px solid #d3d3d3'}}>
+              <div className="card py-4 md:py-5" key={index} style={{ borderBottom: '2px solid #d3d3d3'}}>
                 <div className="card-body flex items-center">
                     <Image src={checkout} alt={checkout} className="max-w-14 md:max-w-full" width={70}/>
                     <div className="md:text-xl font-medium text-sm ml-9">

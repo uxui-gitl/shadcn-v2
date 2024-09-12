@@ -70,14 +70,14 @@ const IIOT = () => {
   ];
 
   const benifitsCardsData = [
-  { id: '1', text: 'Improvement of OEE leading to optimised throughput and enhanced quality' },
-  { id: '2', text: 'Optimization of Total Productive Maintenance Losses across shopfloors' },
-  { id: '3', text: 'Minimised Machine Downtime and Improved Equipment Runtime' },
-  { id: '4', text: 'Optimised Maintenance TAT in terms of MTBF and MTTR' },
-  { id: '5', text: 'Effective use of Equipment Service Cost and Improved Safety Compliance' },
-  { id: '6', text: 'Connected Factory with actionable insights for Operations, Tactical and Strategic Levels of Management - Shopfloor to Top floor ' },
-  { id: '7', text: 'Optimised Energy Consumption leading to Optimised Carbon Footprint' },
-  { id: '8', text: 'Defect Tracking using image analytics leading to improved quality ' },
+  { id: '1', icon:'', cardDesc: 'Improvement of OEE leading to optimised throughput and enhanced quality' },
+  { id: '2', icon:'', cardDesc: 'Optimization of Total Productive Maintenance Losses across shopfloors' },
+  { id: '3', icon:'', cardDesc: 'Minimised Machine Downtime and Improved Equipment Runtime' },
+  { id: '4', icon:'', cardDesc: 'Optimised Maintenance TAT in terms of MTBF and MTTR' },
+  { id: '5', icon:'', cardDesc: 'Effective use of Equipment Service Cost and Improved Safety Compliance' },
+  { id: '6', icon:'', cardDesc: 'Connected Factory with actionable insights for Operations, Tactical and Strategic Levels of Management - Shopfloor to Top floor ' },
+  { id: '7', icon:'', cardDesc: 'Optimised Energy Consumption leading to Optimised Carbon Footprint' },
+  { id: '8', icon:'', cardDesc: 'Defect Tracking using image analytics leading to improved quality ' },
 ]
 
   const DISTINCTIVE_DATA = [
@@ -204,9 +204,6 @@ const IIOT = () => {
           "Let us discuss how intelligent technologies can help you with rapid growth."
         }
       ></TransformBusinessForm>
-
-
-
     </>
   );
 };

@@ -45,9 +45,9 @@ function CommonCardAdditionalData({ Item, setpageID }) {
 
                     {additionalData?.length > 0 && (
                         <div className={`${style.additionalDataWrapper}`}>
-                            {additionalData?.map((data) => (
+                            {additionalData?.map((data, index) => (
                                 <>
-                                    <div className="" style={{ borderBottom: '1px solid #d3d3d3', padding: '10px' }}>
+                                    <div className="" key={index} style={{ borderBottom: '1px solid #d3d3d3', padding: '10px' }}>
                                         <p className="text-[22px] font-medium">{data?.text}</p>
                                     </div>
                                 </>

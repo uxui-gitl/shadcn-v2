@@ -38,11 +38,11 @@ const page = () => {
 
   ]
   const BENEFITS_CARDS_DATA = [
-    { id: '1', text: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
+    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
+    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
+    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
+    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
 
   ];
 
@@ -188,7 +188,7 @@ const page = () => {
       <div className="bg-[#1D162B]" style={{ borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}>
         <div className="py-36 pb-[200px]" style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
           <div className="container mx-auto">
-            <div class="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <div>
                 <img src="" />
               </div>

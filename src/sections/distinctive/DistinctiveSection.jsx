@@ -6,7 +6,7 @@ function DistinctiveSection({ ID, DistinctiveData, Title, Desc }) {
     return (
 
         <>
-            <SectionWrapper ID={ID} style={{ marginTop: "-40px" }}>
+            <SectionWrapper ID={ID}>
                 <WhySection
                     Title={Title}
                     Desc={Desc}

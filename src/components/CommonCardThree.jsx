@@ -20,10 +20,13 @@ function CommonCardTwo({ Item }) {
                 backgroundColor: `${cardBGColor}`,
                 color: cardTextColor,
                 width: "100%",
-                minHeight: '624px',
+                minHeight: '540px',
                 maxHeight:'540px'
             }}>
-                {cardTopImageUrl && <img className={`rounded-t-3xl ${style.topImage}`} style={{ maxHeight: '245px' }} src={cardTopImageUrl} alt="" />}
+                {cardTopImageUrl && 
+                <div style={{maxHeight: '283px', overflow:'hidden'}}>
+                <img className={`rounded-t-3xl ${style.topImage}`} style={{width:'100%' }} src={cardTopImageUrl} alt="" />
+                </div>}
                 <div className={ `p-5 ${style.cardbody}`} style={{backgroundColor:cardBGColor}}>
                     {cardHeading && (
                         <h5

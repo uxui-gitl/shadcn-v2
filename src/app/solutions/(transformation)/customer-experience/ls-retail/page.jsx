@@ -109,11 +109,11 @@ const page = () => {
 
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', text: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
+    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
+    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
+    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
+    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
 
   ];
 
@@ -282,18 +282,18 @@ const page = () => {
         </div>
 
       <div className="container mx-auto pb-[40px] pt-[100px]">
-      <div class="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10">
             <div>
-              <div class=" p-10 bg-[#5F22D9] rounded-3xl">
-                  <h5 class="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
-                <p class="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
+              <div className=" p-10 bg-[#5F22D9] rounded-3xl">
+                  <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
+                <p className="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
                 
               </div>
             </div>
             <div>
-            <div class=" p-10 bg-[#F18BCB] rounded-3xl">
-                  <h5 class="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
-                <p class="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
+            <div className=" p-10 bg-[#F18BCB] rounded-3xl">
+                  <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
+                <p className="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
                 
               </div>
             </div>

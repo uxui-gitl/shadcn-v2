@@ -431,22 +431,6 @@ const Page = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-
-
-            {/* <SectionWidthSlider
-              ID={"ultimateChoiceData"}
-              sectionHeading={"Why Cloud is your Ultimate Choice?"}
-              sectionDesc={
-                "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
-              }
-              sectionTextColor=""
-              cardData={ultimateChoiceData}
-              sectionBGColor="#EFE9FB"
-              setHeadingLayout="horizontal"
-
-            /> */}
-
-
           </div>
         </div>
       </div>

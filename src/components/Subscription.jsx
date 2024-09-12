@@ -114,7 +114,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                     type="text"
                     placeholder=""
                     name="Name" id="name" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
-                  <label for="Name" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Enter Your Name</label>
+                  <label htmlFor="Name" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Enter Your Name</label>
                 </div>
                 <div className="relative z-0 w-full mb-6 group">
                   <input
@@ -123,7 +123,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                     onChange={handleChange}
                     placeholder=""
                     type="email" id="email" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
-                  <label for="Email" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                  <label htmlFor="Email" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
                 </div>
               </div>
               <div className="relative z-0 w-full mb-12 group ">
@@ -134,7 +134,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   type="text"
                   id="message"
                   placeholder="" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" />
-                <label for="Query" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:border-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
+                <label htmlFor="Query" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:border-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
               </div>
               <div className="flex justify-center md:justify-end">
                 <Link
@@ -156,7 +156,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
             <form onSubmit={handleSubmit}>
               <div className="relative z-0 w-full mb-5 group">
                 <label
-                  htmlFor="name"
+                  htmlhtmlFor="name"
                   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Full Name
@@ -173,7 +173,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
               </div>
               <div className="mb-6">
                 <label
-                  htmlFor="email"
+                  htmlhtmlFor="email"
                   className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
                 >
                   Email Address
@@ -194,7 +194,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
               </div>
               <div className="mb-6">
                 <label
-                  htmlFor="message"
+                  htmlhtmlFor="message"
                   className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
                 >
                   Message (Optional)

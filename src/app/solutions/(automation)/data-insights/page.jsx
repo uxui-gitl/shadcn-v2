@@ -236,6 +236,7 @@ const DataInsights = () => {
     },
     // Add more case studies here...
   ];
+
   const ACCORDION_DATA = [
     { id: 1, title: "Data Platform Modernization", content: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize data infrastructure on cloud platform steering optimal acceptance and performance. ", image: "/data-insights/our-capabilties/img-01.png" },
     { id: 2, title: "Advance Analytics", content: "From planning and investigating data to developing, employing, managing and examining models, we leverage potential with AI, machine learning and automation.", image: "/data-insights/our-capabilties/img-02.png" },
@@ -334,6 +335,7 @@ const DataInsights = () => {
         pageID="ai-ml"
         setHeadingContainerWidth={true}
       ></SectionWithSlider>
+
       {/* End--DataVisualization--Section======================================================== */}
       {/* Start--Section--DataManagement======================================================================== */}
       <SectionWithSlider style={{paddingTop:'250px'}}
@@ -383,6 +385,7 @@ const DataInsights = () => {
       BGColor="#1D162B"
       SectionHeadingMaxWidth={'70%'}
     ></ReviewSliderSection>
+    
       {/* End-Section--Testimonial======================================================= */}
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

@@ -56,11 +56,6 @@ function SectionWidthSlider({
             autoplay={Autoplay}
             loop={false}
             spaceBetween={30}
-            /**
-             * ! Need to pass this dynamically
-             */
-            // modules={[Mousewheel, Pagination]}
-            // mousewheel={true}
           >
             {cardData?.map((item, index) => (
               <SwiperSlide key={item.id ? item?.id : index}>

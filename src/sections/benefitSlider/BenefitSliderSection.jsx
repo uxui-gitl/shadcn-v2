@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "tailwindcss/tailwind.css"; // Assuming you use Tailwind CSS for styling
 import SectionWrapper from "@/components/SectionWrapper";
 import checkout from "/public/icon/whygitl/WhyGITL2.svg";
 import SectionHeading from "@/components/SectionHeading";
@@ -59,13 +58,12 @@ function BenefitSliderSection({
                             headingContainerWidth={sectionHeaderWidth} />
           </div>
 
-          <div className="w-[60%] ">
-            
+          <div className="w-[60%]">
             <div>
               {cardData.map((item) => (
-                <a
+                <>
+                <div
                   key={item._id}
-                  href="#"
                   className="flex p-8 w-full h-[196px] items-center bg-white border border-gray-200 rounded-[32px] mb-4 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   <Image
@@ -77,12 +75,12 @@ function BenefitSliderSection({
                   />
                   <div className="flex flex-col justify-between leading-normal">
                     <p className="mb-3 text-2xl text-gray-700 dark:text-gray-400">
-                      {item.CardDesc}
+                      {item.cardDesc}
                     </p>
                   </div>
-                </a>
+                </div>
+                </>
               ))}
-       
             </div>
           </div>
         </div>
