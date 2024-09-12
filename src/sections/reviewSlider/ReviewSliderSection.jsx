@@ -25,13 +25,19 @@ function ReviewSliderSection(
         left: '50%',
         top: '15%',
         color:'#fff',
+        border:'1px solid #d3d3d3',
+        borderRadius:'50%',
+        padding:'36px',
     }
 
     const swiperPreBtn = {
         position: 'absolute',
         left: '50%',
-        top: '30%',
+        top: '40%',
         color:'#fff',
+        border:'1px solid #d3d3d3',
+        borderRadius:'50%',
+        padding:'36px',
     }
 
     return (
@@ -56,7 +62,7 @@ function ReviewSliderSection(
 
                 </SectionHeading>
 
-                <div className="flex">
+                <div className="flex mt-20">
                     <div className="relative" style={{ minWidth: '280px', flex: 1 }}>
                         <div className={`swiper-button-next`} style={swiperNextBtn}></div>
                         <div className={`swiper-button-prev`} style={swiperPreBtn}></div>
@@ -74,7 +80,7 @@ function ReviewSliderSection(
                     >
                         {CardDataList?.map((item, index) => (
                             <SwiperSlide key={item.id ? item?.id : index}>
-                                <div className="w-full p-6 bg-transparent rounded-3xl shadow">
+                                <div className="w-full p-6 bg-transparent rounded-3xl">
                                     <div
                                         className=""
                                         style={{
@@ -82,6 +88,7 @@ function ReviewSliderSection(
                                             fontWeight: 300,
                                             lineHeight: "64px",
                                             color: "#fff",
+                                            maxWidth:'600px'
                                         }}
                                     >
                                        {item.cardHeading}
@@ -109,9 +116,6 @@ function ReviewSliderSection(
                                        {item.designation}<br/>
                                        {item.companyName}
                                     </div>
-
-
-
                                 </div>
 
                                 {/* <CommonCard Item={item} setpageID={pageID}></CommonCard> */}
