@@ -336,7 +336,7 @@ const page = () => {
         backgroundSize: "cover",
       }}>
         <div className="container mx-auto">
-          <div class="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <div></div>
             <div>
               <SectionHeading
