@@ -50,7 +50,7 @@ function SectionWidthSlider({
 
         <div className="my-8">
           <Swiper
-            slidesPerView={SlidesPerView}
+            slidesPerView={1}
             navigation={false}
             pagination={{ type: "bullets", clickable: true }}
             autoplay={Autoplay}

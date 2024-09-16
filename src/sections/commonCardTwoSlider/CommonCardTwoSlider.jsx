@@ -37,7 +37,7 @@ function CommonCardTwoSlider({
                             layout={setHeadingLayout}
                         ></SectionHeading>
 
-                    <div className="">
+                    <div className="my-8">
                         <Swiper
                             slidesPerView={slidesPerView}
                             navigation={false}

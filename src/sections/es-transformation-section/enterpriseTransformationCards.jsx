@@ -47,7 +47,7 @@ const EnterpriseTransformationCards = () => {
         <>
             <SectionWrapper>
                 <div className='md:container mx-auto'>
-                    <div className='flex flex-row gap-8 min-h-[324px]'>
+                    <div className='flex flex-col md:flex-row gap-8 min-h-[324px]'>
                         {CARDS_DATA.map((card, index) => (
                             <div key={index} className='flex-1 rounded-3xl border-[1px] border-[#E4E4E4] p-8' style={{ backgroundColor: "white" }}>
                                 <Image

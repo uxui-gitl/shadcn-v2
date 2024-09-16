@@ -24,12 +24,26 @@ const IndustrySpotlight = ({ cardData = []}) => {
 
           <div className="my-8">
             <Swiper
-              slidesPerView={4}
+              slidesPerView={1}
               navigation={false}
               pagination={{ type: "bullets", clickable: true }}
               autoplay={false}
               loop={false}
               spaceBetween={32}
+              breakpoints={{
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 32,
+                },
+            }}
             >
               {cardData?.map((item, index) => (
                 <SwiperSlide key={item.id ? item?.id : index}>

@@ -231,8 +231,8 @@ const page = () => {
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
       <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
-          <div className="grid grid-cols-2 gap-4">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="hidden md:block">
               <img src="/about/video.png" />
             </div>
             <div>
@@ -261,8 +261,8 @@ const page = () => {
       </CommonCardTwoSlider>
 
       <div className="" style={{ backgroundColor: '#1D162B'}}>
-        <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
-          <div className="w-1/2">
+        <div className="md:container mx-auto pt-20 px-10 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+          <div className="w-full md:w-1/2">
             <SectionHeading
               Heading={`Infor CloudSuite Services`}
               Color={'white'}
@@ -270,7 +270,7 @@ const page = () => {
               headingContainerWidth={'w-full'}
             />
           </div>
-          <div className="w-1/2">
+          <div className="hidden md:w-1/2">
             <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
         </div>
@@ -282,6 +282,20 @@ const page = () => {
             autoplay={true}
             loop={false}
             spaceBetween={30}
+            breakpoints={{
+              640: {
+                  slidesPerView: 1,
+                  spaceBetween: 16,
+              },
+              768: {
+                  slidesPerView: 2,
+                  spaceBetween: 24,
+              },
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 32,
+              },
+          }}
           >
             {[1, 2, 3, 4, 5]?.map((item, index) => (
               <SwiperSlide key={item}>

@@ -137,8 +137,8 @@ const page = () => {
       </CommonCardTwoSlider>
 
       <div className="" style={{ backgroundColor: '#1D162B'}}>
-        <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
-          <div className="w-1/2">
+        <div className="md:container mx-auto px-10 pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+          <div className="w-full md:w-1/2">
             <SectionHeading
               Heading={`Infor CloudSuite Services`}
               Color={'white'}
@@ -146,18 +146,32 @@ const page = () => {
               headingContainerWidth={'w-full'}
             />
           </div>
-          <div className="w-1/2">
+          <div className="hidden md:w-1/2">
             <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
         </div>
         <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             navigation={false}
             pagination={{ type: "bullets", clickable: true }}
             autoplay={true}
             loop={false}
             spaceBetween={30}
+            breakpoints={{
+              640: {
+                  slidesPerView: 1,
+                  spaceBetween: 16,
+              },
+              768: {
+                  slidesPerView: 2,
+                  spaceBetween: 24,
+              },
+              1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 32,
+              },
+          }}
           >
             {[1, 2, 3, 4, 5]?.map((item, index) => (
               <SwiperSlide key={item}>

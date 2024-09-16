@@ -339,7 +339,7 @@ const page = () => {
             Heading="Knocking Business Challenges  "
             Desc="We help executive leadership navigate critical challenges, manage process complexity and develop future-ready organizations.  "
           ></SectionHeading>
-          <div className="grid grid-cols-2 gap-4 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
@@ -371,19 +371,33 @@ const page = () => {
 
       <SectionWrapper>
         <div className="InforSliderWrapper rounded-3xl" style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
-          <div className="flex md:py-10 px-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <div className="w-3/12">
+          <div className="flex md:flex-row flex-col md:py-10 px-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
+            <div className="w-full md:w-3/12">
               <h1 className="text-[54px] font-[600] leading-[64px]">Technology
                 Spectrum</h1>
             </div>
-            <div className="w-9/12">
+            <div className="w-full md:w-9/12 my-6 md:my-0">
               <Swiper
-                slidesPerView={6}
+                slidesPerView={1}
                 navigation={false}
                 pagination={{ type: "bullets", clickable: true }}
                 autoplay={true}
                 loop={false}
                 spaceBetween={30}
+                breakpoints={{
+                  640: {
+                      slidesPerView: 1,
+                      spaceBetween: 16,
+                  },
+                  768: {
+                      slidesPerView: 2,
+                      spaceBetween: 24,
+                  },
+                  1024: {
+                      slidesPerView: 5,
+                      spaceBetween: 32,
+                  },
+              }}
               >
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9]?.map((item, index) => (
                   <SwiperSlide key={item}>
@@ -401,7 +415,7 @@ const page = () => {
       <SectionWrapper BGColor="#1D162B">
         <div className="md:container mx-auto">
           <div className="flex justify-center items-center flex-col">
-            <div className="w-1/2 mb-10">
+            <div className="w-full md:w-1/2 mb-10">
               <SectionHeading
                 center
                 Color="white"
@@ -446,7 +460,7 @@ const page = () => {
       <SectionWrapper BGColor="#1D162B">
         <div className="md:container mx-auto">
           <div className="flex justify-center items-center flex-col">
-            <div className="w-1/2 mb-10">
+            <div className="w-full md:w-1/2 mb-10">
               <SectionHeading
                 center
                 Color="white"

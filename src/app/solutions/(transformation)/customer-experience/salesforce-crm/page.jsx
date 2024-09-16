@@ -188,8 +188,8 @@ const page = () => {
       <div className="bg-[#1D162B]" style={{ borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}>
         <div className="py-36 pb-[200px]" style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
           <div className="md:container mx-auto">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="hidden md:block">
                 <img src="" />
               </div>
               <div>
@@ -204,14 +204,28 @@ const page = () => {
 
           </div>
         </div>
-        <div className="md:container mx-auto" style={{ marginTop: '-166px', }} >
+        <div className="md:container px-10 mx-auto" style={{ marginTop: '-166px', }} >
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             navigation={false}
             pagination={{ type: "bullets", clickable: true }}
             autoplay={true}
             loop={false}
             spaceBetween={30}
+            breakpoints={{
+              640: {
+                  slidesPerView: 1,
+                  spaceBetween: 16,
+              },
+              768: {
+                  slidesPerView: 2,
+                  spaceBetween: 24,
+              },
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 32,
+              },
+          }}
           >
             {RPASolution2?.map((item, index) => (
               <SwiperSlide key={item}>

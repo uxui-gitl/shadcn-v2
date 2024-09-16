@@ -272,15 +272,15 @@ const UpgradeToCloud = () => {
         { id: 8, title: "High IT Infrastructure Management Cost", icon:'/upgradeCloud/icons/ico--target.svg' },
     ];
       const benifitsCardsData = [
-    { id: '1', text: 'Minimize operational expenses of IT portfolio' },
-    { id: '2', text: 'Enable user concurrency to support large-scale workloads' },
-    { id: '3', text: 'Enhanced collaboration through cross-device accessibility to information' },
-    { id: '4', text: 'Advanced data management solutions, modernized process and cloud services' },
-    { id: '5', text: 'Aptitude to respond to shifting business requirements' },
-    { id: '6', text: 'Integrate Big Data Analytics into business processes for data-driven decision-making' },
-    { id: '7', text: 'Securely stores confidential business information' },
-    { id: '8', text: 'Enhance system performance and user experience by scaling up the system' },
-    { id: '9', text: 'Accelerate transformation, integrate open innovation and smart workflows' },
+    { id: '1', cardDesc: 'Minimize operational expenses of IT portfolio' },
+    { id: '2', cardDesc: 'Enable user concurrency to support large-scale workloads' },
+    { id: '3', cardDesc: 'Enhanced collaboration through cross-device accessibility to information' },
+    { id: '4', cardDesc: 'Advanced data management solutions, modernized process and cloud services' },
+    { id: '5', cardDesc: 'Aptitude to respond to shifting business requirements' },
+    { id: '6', cardDesc: 'Integrate Big Data Analytics into business processes for data-driven decision-making' },
+    { id: '7', cardDesc: 'Securely stores confidential business information' },
+    { id: '8', cardDesc: 'Enhance system performance and user experience by scaling up the system' },
+    { id: '9', cardDesc: 'Accelerate transformation, integrate open innovation and smart workflows' },
   ]
   const blogImageUrl = "/ai-ml/blog-bg.png";
   return (

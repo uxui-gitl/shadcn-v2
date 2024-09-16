@@ -9,7 +9,8 @@ import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import Image from "next/image";
-import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import 
+ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
 const page = () => {
 
@@ -158,7 +159,7 @@ const page = () => {
             Heading="Knocking Business Challenges  "
             Desc="We help executive leadership navigate critical challenges, manage process complexity and develop future-ready organizations.  "
           ></SectionHeading>
-          <div className="grid grid-cols-2 gap-4 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
@@ -198,9 +199,9 @@ const page = () => {
             Heading="Business Consulting Services   "
             Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation.  "
           ></SectionHeading>
-          <div className="grid grid-cols-1 gap-4 mt-16">
+          <div className="grid grid-cols-1 gap-4 mt-4 md:mt-16">
             <div>
-              <div className="grid grid-cols-2 gap-12 mt-16">
+              <div className="grid grid-cols-2 gap-12">
                 <ul className=" space-y-4 w-full text-white">
                   {CHALLENGES_LIST_DATA.map((challenge, index) => (
                     <li
@@ -248,7 +249,7 @@ const page = () => {
       <SectionWrapper BGColor="#1D162B">
         <div className="md:container mx-auto">
           <div className="flex justify-center items-center flex-col">
-            <div className="w-1/2 mb-10">
+            <div className="w-full md:w-1/2 mb-10">
               <SectionHeading
                 center
                 Color="white"

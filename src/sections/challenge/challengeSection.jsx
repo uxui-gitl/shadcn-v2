@@ -14,10 +14,10 @@ const ChallengeSection = ({
     return (
         <>
             <div className="">
-                <div className="grid grid-cols-2 gap-0">
-                    <div style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div className="hidden md:block" style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
                     </div>
-                    <div className="py-20 px-20" style={{ backgroundColor: bgColor }}>
+                    <div className="py-20 px-10 md:px-20" style={{ backgroundColor: bgColor }}>
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}

@@ -20,11 +20,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
         <div className="md:container mx-auto">
           {caseStudyLayout === "1" && (
             <div
-              className="flex flex-row justify-start items-center gap-8 w-full h-[724px]"
+              className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]"
               style={{ color: casestudy[0].color }}
             >
               <div
-                className="w-1/3 h-full rounded-3xl p-8"
+                className="w-full md:w-1/3 h-full rounded-3xl p-8"
                 style={{
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
@@ -41,7 +41,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                 <p className="w-[80%] mb-4">{casestudy[0].description}</p>
               </div>
               <div
-                className="flex flex-col w-1/3 h-full rounded-3xl gap-8"
+                className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
@@ -78,11 +78,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                 </div>
               </div>
               <div
-                className="flex flex-col w-1/3 h-full rounded-3xl gap-8"
+                className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-full md:h-1/2 rounded-3xl  p-8"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
@@ -98,7 +98,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-full h-[270px] md:h-1/2 rounded-3xl  p-8"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
@@ -121,9 +121,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
             </div>
           )}
           {caseStudyLayout === "2" && (
-            <div className="flex flex-row justify-start items-center gap-8 w-full h-[724px]">
+            <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]">
               <div
-                className="relative w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
+                className="relative md:w-full md:w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
                 style={{
                   color: casestudy[0].color,
                   overflow: "hidden", // Ensures no overflow from the video
@@ -157,7 +157,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
               </div>
 
               <div
-                className="flex flex-col w-1/3 h-full rounded-3xl gap-8"
+                className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
@@ -336,7 +336,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
             center
           ></SectionHeading>
             <div className="flex flex-col gap-8">
-              <div className="flex flex-row justify-start items-center gap-8 w-full h-[624px]">
+              <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-[624px]">
                 {/* Grid--One */}
                 <div
                   className="relative w-full lg:w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
@@ -377,7 +377,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
 
                 {/* Grid--Two */}
                 <div
-                  className="flex flex-col w-1/3 h-full rounded-3xl gap-8"
+                  className="flex flex-col w-full lg:w-1/3 h-full rounded-3xl gap-8"
                   style={{ backgroundColor: casestudy[1].bgCardColor }}
                 >
                   <div

@@ -428,7 +428,7 @@ Successful Business Outcomes
         setDesc="Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance."
         setColor="#1D162B"
         setPadding={false}
-        setHeadingContainerWidthFull={"w-full"}
+        sectionHeaderWidth={"w-full"}
       />
       {/* End--Highlight-Customer-Centeric-Section================================================================ */}
 

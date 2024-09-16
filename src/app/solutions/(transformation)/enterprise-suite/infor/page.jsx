@@ -370,7 +370,7 @@ const Page = () => {
         BGColor="#5F22D9"
       >
         <div className="md:container mx-auto">
-          <div className="grid grid-cols-2 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="">
               <SectionHeading
                 Heading={'Globally Trusted Core Infor Expertise'}
@@ -400,7 +400,7 @@ const Page = () => {
 
               </div>
             </div>
-            <div className="flex items-center" style={{ justifyContent: 'center' }}>
+            <div className="flex items-center hidden md:block" style={{ justifyContent: 'center' }}>
               <div className="" style={{ maxHeight: '600px', overflow: 'hidden' }}>
                 <img src="https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4"></img>
               </div>
@@ -410,18 +410,32 @@ const Page = () => {
       </SectionWrapper>
 
       <div className="InforSliderWrapper rounded-3xl" style={{backgroundColor:'white', zindex: "2",position:'relative'}}>
-        <div className="flex md:py-10 px-10 container" style={{justifyContent:'center', alignItems:'center'}}>
+        <div className="flex py-10 px-10 container" style={{justifyContent:'center', alignItems:'center'}}>
           <div className="w-2/12">
           <Image className="rounded-t-lg" width={130} height={130} src="/icons/inforlogo.svg" alt="inforlogo" />
           </div>
           <div className="w-10/12">
             <Swiper
-              slidesPerView={6}
+              slidesPerView={1}
               navigation={false}
               pagination={{ type: "bullets", clickable: true }}
               autoplay={true}
               loop={false}
               spaceBetween={30}
+              breakpoints={{
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 32,
+                },
+            }}
             >
               {[1,2,3,4,5,6,7,8,9]?.map((item, index) => (
                 <SwiperSlide key={item}>
