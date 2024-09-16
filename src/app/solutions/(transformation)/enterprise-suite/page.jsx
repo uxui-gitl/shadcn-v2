@@ -40,8 +40,8 @@ const EnterpriseSuite = () => {
   ];
   const SERVICE_CARDS_DATA = [
     {
-      title: "Planning and Designing",
-      hoverTitle: "Planning & Designing",
+      title: "Business Consulting & Journey Mapping",
+      hoverTitle: "Business Consulting & Journey Mapping",
       description:
         "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
       content: "Additional content for Card 1",
@@ -250,11 +250,8 @@ const EnterpriseSuite = () => {
     <>
       {/* Start--HeroBanner-Section============================================================== */}
       <EntIntro
-        title="Bridging Transformation
-with Enterprise Agility
-"
-        desc="Reimagine Your Business Capabilities with
-our Intelligent Edge Cloud Stack and Services"
+        title="Bridging Transformation with Enterprise Agility"
+        desc="Redefining enterprise future with strategic transformation through Enterprise Solutions"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -291,7 +288,7 @@ our Intelligent Edge Cloud Stack and Services"
       {/* Start--OverviewSection============================================================== */}
       <OverviewSection
         Text={
-          "We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences."
+          "Transforming core business paradigms & go-to-market strategies to empower proactive decision-making & enrich stakeholder experiences."
         }
       />
       {/* End--OverviewSection================================================================ */}
@@ -309,9 +306,9 @@ our Intelligent Edge Cloud Stack and Services"
       {/* Start--Service--Section======================================================== */}
       <ServicesCardSlider
         cardData={SERVICE_CARDS_DATA}
-        heading={"Accomplishing Your Goals at Every stage"}
+        heading={"Accomplishing Business Goals at Every stage"}
         desc={
-          "Equipping your organization to thrive in the digital era, we deliver high-end solutions, spanning from core "
+          "We deliver high-end enterprise solutions, spanning from core ERP suite to accelerators across complete business spectrum."
         }
         color={"#1D162B"}
       />

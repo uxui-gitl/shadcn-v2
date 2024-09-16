@@ -14,7 +14,7 @@ const HolisticApproach = () => {
                 <div className="md:container mx-auto">
                     <SectionHeading 
                         Heading="Our Holistic Approach" 
-                        Desc={"We redefine success standards globally with robust<br/> enterprise solutions to enhance stakeholder experiences, strengthen"} 
+                        Desc={"Building business impact with optimized enterprise performance through coordinated technology, processes and talent."} 
                         Color="#fff" 
                         center 
                     />
