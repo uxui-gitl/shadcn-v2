@@ -335,7 +335,7 @@ const page = () => {
         background: `url('/Transformation/customers/bgimage2.svg')`, backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}>
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <div className="grid grid-cols-2 gap-4">
             <div></div>
             <div>

@@ -51,7 +51,7 @@ const ChallengeSection = ({
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto  justify-end hidden">
+            <div className="md:container mx-auto  justify-end hidden">
                 <div className="w-full lg:w-1/2 flex flex-col items-start">
                     <SectionHeading
                         Heading={setHeading}

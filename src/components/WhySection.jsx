@@ -26,7 +26,7 @@ const WhySection = ({
 }) => {
   return (
     <>
-      <div className='container mx-auto'>
+      <div className='md:container mx-auto'>
         {/* left */}
         <div className="md:mb-5 mb-5">
           <SectionHeading
@@ -35,10 +35,10 @@ const WhySection = ({
           ></SectionHeading>
         </div>
         {/* right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12">
         {arr.map((item, index) => (
             <>
-              <div className="card py-4 md:py-5" key={index} style={{ borderBottom: '2px solid #d3d3d3'}}>
+              <div className="card py-4 md:py-12" key={index} style={{ borderBottom: '2px solid #d3d3d3'}}>
                 <div className="card-body flex items-center">
                     <Image src={checkout} alt={checkout} className="max-w-14 md:max-w-full" width={70}/>
                     <div className="md:text-xl font-medium text-sm ml-9">

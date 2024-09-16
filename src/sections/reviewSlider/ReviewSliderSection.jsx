@@ -3,8 +3,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
+import style from './reviewSliderSection.module.css';
 function ReviewSliderSection(
     { pageID,
         ID,
@@ -52,7 +51,7 @@ function ReviewSliderSection(
                     borderBottomRightRadius:'0px',
 
                 }}>
-                    <div className="container mx-auto">
+                    <div className="md:container mx-auto">
                 <SectionHeading
                     Heading={Heading}
                     Desc={Desc}
@@ -62,11 +61,17 @@ function ReviewSliderSection(
 
                 </SectionHeading>
 
-                <div className="flex mt-20">
-                    <div className="relative" style={{ minWidth: '280px', flex: 1 }}>
-                        <div className={`swiper-button-next`} style={swiperNextBtn}></div>
-                        <div className={`swiper-button-prev`} style={swiperPreBtn}></div>
+                <div className="flex mt-10 md:mt-20">
+                    <div className="relative hidden md:inline w-[30%]">
+                        <div className={`swiper-button-next`} style={{position:'absolute', left:'50%',top:'12%', width:'80px', height:'80px'}}>
+                            <img src="/icons/btn-arrows.svg" alt="icon" />
+                        </div>
+                        <div className={`swiper-button-prev`} style={{position:'absolute', left:'50%',top:'33%', width:'80px', height:'80px', transform: "rotate(180deg)",}}>
+                        <img src="/icons/btn-arrows.svg" alt="icon" />
+                        </div>
                     </div>
+
+                    <div className="w-full md:w-[70%]">
                     <Swiper
                         slidesPerView={SlidesPerView}
                         navigation={{
@@ -97,6 +102,7 @@ function ReviewSliderSection(
                                         className="my-10"
                                         style={{
                                             color: "#fff",
+                                            fontWeight:'300',
                                             fontSize: "24px",
                                             lineHeight: "36px",
                                             // marginTop: "32px",
@@ -122,9 +128,7 @@ function ReviewSliderSection(
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>
-
-                <div className="my-8">
+                    </div>
 
                 </div>
                 </div>

@@ -12,9 +12,9 @@ const CARDS_DATA = [
         height:48,
         listItems: [
             "Infor Cloud Suite",
-            "Infor LN (On Premise & Infor Cloud - MT)",
+            "Infor LN",
             "Infor WMS",
-            "HxGN EAM"
+            "More Infor Products"
         ]
     },
     {
@@ -23,10 +23,10 @@ const CARDS_DATA = [
         width:196,
         height:48,
         listItems: [
+            "Dynamics 365 CRM",
             "Dynamics 365 Finance and Operations",
             "Dynamics 365 Commerce",
             "Dynamics 365 Business Central",
-            "Dynamics 365 CRM"
         ]
     },
     {
@@ -46,7 +46,7 @@ const EnterpriseTransformationCards = () => {
     return (
         <>
             <SectionWrapper>
-                <div className='container mx-auto'>
+                <div className='md:container mx-auto'>
                     <div className='flex flex-row gap-8 min-h-[324px]'>
                         {CARDS_DATA.map((card, index) => (
                             <div key={index} className='flex-1 rounded-3xl border-[1px] border-[#E4E4E4] p-8' style={{ backgroundColor: "white" }}>

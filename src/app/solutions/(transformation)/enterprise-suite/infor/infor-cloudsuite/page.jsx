@@ -137,7 +137,7 @@ const page = () => {
       </CommonCardTwoSlider>
 
       <div className="" style={{ backgroundColor: '#1D162B'}}>
-        <div className="container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+        <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-1/2">
             <SectionHeading
               Heading={`Infor CloudSuite Services`}
@@ -150,7 +150,7 @@ const page = () => {
             <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
         </div>
-        <div className="container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
+        <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
           <Swiper
             slidesPerView={4}
             navigation={false}

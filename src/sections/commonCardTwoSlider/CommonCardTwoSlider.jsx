@@ -17,7 +17,7 @@ function CommonCardTwoSlider({
     setHeadingLayout,
 }) {
 
-    const slidesPerView = "3";
+    const slidesPerView = "1";
     const autoplay = "false";
     return (
         <>
@@ -29,17 +29,15 @@ function CommonCardTwoSlider({
                     backgroundSize: "cover",
                 }}
             >
-                <div className="container mx-auto">
-                    <div className="" style={{marginBottom: setHeadingLayout != 'vertical' ? '70px' :  '0px'}}>
+                <div className="md:container mx-auto">
                         <SectionHeading
                             Heading={sectionHeading}
                             Desc={sectionDesc}
                             Color={sectionTextColor}
                             layout={setHeadingLayout}
                         ></SectionHeading>
-                    </div>
 
-                    <div className="my-8">
+                    <div className="">
                         <Swiper
                             slidesPerView={slidesPerView}
                             navigation={false}
@@ -47,6 +45,20 @@ function CommonCardTwoSlider({
                             autoplay={autoplay}
                             loop={false}
                             spaceBetween={30}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 16,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 24,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 32,
+                                },
+                            }}
                         >
                             {cardData?.map((item, index) => (
                                 <SwiperSlide key={item.id ? item?.id : index}>

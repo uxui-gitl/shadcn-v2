@@ -181,7 +181,6 @@ const page = () => {
 
       {/* Overview  */}
       <OverviewSection Text={'Discover how AI, ML, RPA and IIoT help businesses with customer behavior prediction, process automation and generate new revenue streams with real time insights. As a strategic tech partner, Godrej Infotech ensures a future-ready foundation for clients.'} />
-
       {/* solutions */}
       
       <CommonCardOneSlider

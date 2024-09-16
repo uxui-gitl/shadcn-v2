@@ -12,7 +12,7 @@ function CommonCardOneSlider({
     sectionHeading,
     sectionDesc,
     sectionHeaderWidth,
-    slidesPerView = "3",
+    slidesPerView = "3.3",
     autoplay = "false",
     cardData = [],
     sectionTextColor = "#000",
@@ -32,7 +32,7 @@ function CommonCardOneSlider({
                     backgroundPosition: "center", // Center the background image
                 }}
             >
-                <div className="container mx-auto">
+                <div className="md:container mx-auto">
                     <div className="">
                         <SectionHeading
                             Heading={sectionHeading}
@@ -45,12 +45,26 @@ function CommonCardOneSlider({
 
                     <div className="my-8">
                         <Swiper
-                            slidesPerView={slidesPerView}
+                            slidesPerView={1}
                             navigation={false}
                             pagination={{ type: "bullets", clickable: true }}
                             autoplay={autoplay}
                             loop={false}
                             spaceBetween={30}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 16,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 24,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 32,
+                                },
+                            }}
                         >
                             {cardData?.map((item, index) => (
                                 <SwiperSlide key={item.id ? item?.id : index}>

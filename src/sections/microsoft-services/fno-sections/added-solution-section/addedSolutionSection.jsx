@@ -54,7 +54,7 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
 
     return (
         <SectionWrapper BGColor={sectionBGColor}>
-            <div className='container mx-auto'>
+            <div className='md:container mx-auto'>
                 <SectionHeading
                     Heading={'Godrej Infotech Value Added Solutions'}
                     Desc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders.'}

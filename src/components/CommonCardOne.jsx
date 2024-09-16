@@ -34,7 +34,7 @@ function CommonCardOne({ Item }) {
                     ></div>
                 )}
 
-                <div className={`p-10 flex-grow ${style.cardBody}`}>
+                <div className={`p-7 md:p-10 flex-grow ${style.cardBody}`}>
                     {cardTitle && (
                         <div className={`text-[#E0028E] text-[20px] mb-12 ${style.cardTitle}`}>
                             {cardTitle}

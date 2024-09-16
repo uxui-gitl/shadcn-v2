@@ -187,7 +187,7 @@ const page = () => {
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
       <div className="bg-[#1D162B]" style={{ borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}>
         <div className="py-36 pb-[200px]" style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-          <div className="container mx-auto">
+          <div className="md:container mx-auto">
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <img src="" />
@@ -204,7 +204,7 @@ const page = () => {
 
           </div>
         </div>
-        <div className="container mx-auto" style={{ marginTop: '-166px', }} >
+        <div className="md:container mx-auto" style={{ marginTop: '-166px', }} >
           <Swiper
             slidesPerView={3}
             navigation={false}

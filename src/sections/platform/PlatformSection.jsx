@@ -6,7 +6,7 @@ function PlatformSection({ ID='', sectionHeading='', sectionDesc='',sectionHeade
     return (
         <>
             <SectionWrapper ID={ID}>
-                <div className=" container max-auto text-left mb-5 pb-0 grid grid-cols-1">
+                <div className="md:container max-auto text-left mb-5 pb-0 grid grid-cols-1">
                     <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                         <div className="w-full">
                             <SectionHeading

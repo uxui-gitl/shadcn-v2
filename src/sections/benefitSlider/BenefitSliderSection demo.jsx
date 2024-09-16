@@ -96,7 +96,7 @@ const PinnedScrollComponent = () => {
   return (
        <SectionWrapper>
       <div ref={mainContainerRef} className="flex">
-        <div className="container mx-auto flex h-full">
+        <div className="md:container mx-auto flex h-full">
         
         <div ref={leftContainerRef} className="w-1/2 h-full flex flex-col align-top">
         <SectionHeading Heading={'Pinned Left Section'} />

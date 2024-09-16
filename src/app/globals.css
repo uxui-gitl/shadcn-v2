@@ -939,3 +939,11 @@ h3 {
     rgba(29, 22, 43, 0) 100%
   );
 }
+
+.swiper-button-next::after{
+  display:none;
+}
+
+.swiper-button-prev::after{
+  display:none;
+}

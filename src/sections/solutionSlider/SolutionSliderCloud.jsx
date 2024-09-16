@@ -66,7 +66,7 @@ const SolutionSliderCloud = ({ setHeading, setDesc, setColor }) => {
   return (
     <>
       <SectionWrapper>
-        <section className="container mx-auto">
+        <section className="md:container mx-auto">
           <SectionHeading
             Heading={setHeading}
             Color={setColor}

@@ -15,6 +15,7 @@ import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 
 const CyberSecurity = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
+
   const HUBEXPERTISE_COUNTER_DATA = [
     {
       start: 10,
@@ -114,7 +115,7 @@ const CyberSecurity = () => {
       cardTextColor: 'white',
       cardType: 2,
     },
-  ]
+  ];
 
   return (
     <>
@@ -132,12 +133,6 @@ Data-Driven Automation"
       {/* Start--Section-Navigation======================================================== */}
 
       <SectionNav
-        /**
-         * ! Solutions
-         * ! Benefits
-         * ! Why Us
-         */
-
         arr={[
           {
             _id: 1,
@@ -173,13 +168,11 @@ Data-Driven Automation"
         sectionHeading={'Our Cyber Security ferings'}
         sectionDesc={''}
         sectionTextColor={'#000'}
-        sectionHeaderMaxWidth={'40%'}
         cardData={CyberSecurityData}
       >
 
       </CommonCardTwoSlider>
       <HubExpertise
-      style={{marginTop:'-350px', paddingTop:'150px'}}
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"

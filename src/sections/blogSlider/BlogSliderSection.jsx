@@ -48,7 +48,7 @@ function BlogSliderSection(
                                   background: `url(${item?.cardBGImageUrl}) ${item.cardBGColor}`, backgroundSize: 'cover', marginTop: "-2.5rem"
                                 }}>
 
-                                    <div className="container mx-auto">
+                                    <div className="md:container mx-auto">
                                         <SectionHeading
                                             Heading={item.cardHeading}
                                             Desc={item.cardDesc}

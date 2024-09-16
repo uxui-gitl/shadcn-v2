@@ -24,10 +24,10 @@ const CyberSecurityInfographic = () => {
   return (
     <>
       <SectionWrapper BGColor={"#FFF"}>
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <div className="flex gap-16">
             <div
-              className="w-1/2 bg-cover bg-center min-h-[424px] p-16 flex flex-col justify-between rounded-3xl"
+              className="w-full md:w-1/2 bg-cover bg-center min-h-[424px] p-16 flex flex-col justify-between rounded-3xl"
               style={{
                 backgroundImage:
                   "url('/cyberSecurity/backgrounds/bg--dynamic-cybersecurity.png')",

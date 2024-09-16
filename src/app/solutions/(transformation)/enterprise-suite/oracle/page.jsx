@@ -259,7 +259,7 @@ const page = () => {
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
 
       <SectionWrapper BGColor="#a0efe5db">
-        <div className="container mx-auto grid grid-cols-2 gap-4">
+        <div className="md:container mx-auto grid grid-cols-2 gap-4">
           <div>
             <SectionHeading
               headingContainerWidth="w-full"

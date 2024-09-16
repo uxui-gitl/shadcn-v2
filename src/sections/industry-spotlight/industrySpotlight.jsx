@@ -14,7 +14,7 @@ const IndustrySpotlight = ({ cardData = []}) => {
   return (
     <>
       <SectionWrapper BGColor={"#FFF"}>
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <SectionHeading
             Heading={"Industry Spotlights"}
             Desc={

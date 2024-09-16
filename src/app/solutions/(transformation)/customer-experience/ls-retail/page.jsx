@@ -269,7 +269,7 @@ const page = () => {
       />
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
       <div className="pt-36" style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-        <div className="container mx-auto flex justify-center">
+        <div className="md:container mx-auto flex justify-center">
           <div style={{ maxWidth: '600px' }}>
             <SectionHeading
               center={'true'}
@@ -281,7 +281,7 @@ const page = () => {
           </div>
         </div>
 
-      <div className="container mx-auto pb-[40px] pt-[100px]">
+      <div className="md:container mx-auto pb-[40px] pt-[100px]">
       <div className="grid grid-cols-2 gap-10">
             <div>
               <div className=" p-10 bg-[#5F22D9] rounded-3xl">
