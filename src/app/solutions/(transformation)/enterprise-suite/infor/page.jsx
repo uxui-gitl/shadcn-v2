@@ -323,8 +323,8 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Maximize business efficiency with Infor Solution"
+        desc="Solve Unique Industry Challenges with our Expertise"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -364,7 +364,7 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`20+ years of Infor partnership and APAC's largest Infor implementation experience, empowers us to drive growth-focused operations globally.`} />
 
       <SectionWrapper
         BGColor="#5F22D9"
@@ -373,8 +373,8 @@ const Page = () => {
           <div className="grid grid-cols-2 gap-20">
             <div className="">
               <SectionHeading
-                Heading={'Globally Trusted Core Infor Expertise'}
-                Desc={`Equipping your organization to thrive in the digital era, we deliver high-end solutions, Regardless of whether you're starting your transformation journey or .`}
+                Heading={'Our Infor Capabilities'}
+                Desc={`Delivering tailored business-fit Infor solutions and support for optimal business performance.`}
                 Color={'white'}
                 headingContainerWidth={'w-full'}
               ></SectionHeading>
