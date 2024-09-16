@@ -24,19 +24,19 @@ const EnterpriseSuite = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "95% Increase in Inventory Efficiency",
+      cardDesc: 'Sincere appreciation or the kind support and delivery performance demonstrated by the Godrej Infotech team. Our implementation of Business Central is now live, and we are now happy with the easy-to-use interface and simplified processes. With the e-invoicing module, our digital transactions are secure and compliant with the ZATCA regulations. Overall, with the automated system, we see a productivity improvement of nearly 95% along with inventory efficiency of approx. 95%',
+      designation: 'Manager - Trading Division',
+      companyName:'Leading Tyre Trading Organization in Middle East',
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "High - Quality Infor Cloud Implementation ",
+      cardDesc: 'On behalf of our organization, I would like to convey our gratitude to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.',
+      designation: 'IT Manager',
+      companyName:`'India's Premier hi-tech Engineering Solutions Provider'`,
     },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
+    
   ];
   const SERVICE_CARDS_DATA = [
     {
@@ -87,7 +87,7 @@ const EnterpriseSuite = () => {
       cardBGColor: "#F5B1DC",
       cardHeading: "Dealer<br/>Management",
       cardDesc:
-        "Require Development from Scratch. Customisation of manufacturing reports",
+        "Dot Net based Business Central-integrated solution for retail dealers, streamlining end to end inventory and order management. It eliminates manual data entry, reducing errors and streamlines processes, enabling users to access real-time insights, track inventory, monitor sales, and make data-driven decisions with ease. ",
       isArrow: true,
       cardTextColor: "black",
       cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
@@ -97,7 +97,7 @@ const EnterpriseSuite = () => {
       cardBGColor: "#FCE6F4",
       cardHeading: "Value Manufacturing Process Management",
       cardDesc:
-        "Require Development from Scratch. Customisation of manufacturing reports",
+        "Valve manufacturing solution with pre-configured process mapping and standardized workflows for seamless operations in complex scenarios.",
       isArrow: true,
       cardTextColor: "black",
       cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
@@ -105,45 +105,14 @@ const EnterpriseSuite = () => {
     {
       id: 3,
       cardBGColor: "#CDBAF3",
-      cardHeading: "Metal Recycling Operation Management",
+      cardHeading: "Metal Recycling Operations Management",
       cardDesc:
-        "Require Development from Scratch. Customisation of manufacturing reports",
+        "Pre-built customizations for metal recycling, optimizing operations backed by our process knowledge.",
       isArrow: true,
       cardTextColor: "black",
       cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
     },
-    {
-      id: 4,
-      cardBGColor: "#E4E4E4",
-      cardHeading: "Strengthen Potential",
-      cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
-    },
-    {
-      id: 5,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Enhance Flexibility",
-      cardDesc:
-        "Adapt to changing business needs without hiring and training new staff, saving time and expense",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-    },
-    {
-      id: 5,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Reduce AHT (Average Handling Time)",
-      cardDesc:
-        "Enhance customer service quality, minimize response time and improve operational efficiency",
-      isArrow: false,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-3.jpg",
-    },
+    
   ];
 
   const HUBEXPERTISE_COUNTER_DATA = [
@@ -176,7 +145,7 @@ const EnterpriseSuite = () => {
 
     {
       staticTitle: "24*7",
-      description: "Implementation Sites",
+      description: "Support",
     },
 
     // Add more counters as needed
@@ -319,9 +288,9 @@ const EnterpriseSuite = () => {
         ID={"AIOfferings"}
         sectionImageUrl={""}
         sectionBGColor={"#1D162B"}
-        sectionHeading={"Unlock More Potential with Add on Solution Offerings"}
+        sectionHeading={"Accelerators"}
         sectionDesc={
-          "Enhancing the features of business applications, our easily integrating specialized solutions intend to add "
+          "Enhancing business apps, our solutions integrate seamlessly, delivering value with expert support & streamlined processes."
         }
         sectionTextColor={"#FFF"}
         sectionHeaderMaxWidth={"40%"}
@@ -335,8 +304,8 @@ const EnterpriseSuite = () => {
       {/* Section--Hub-of-Expertise=======================================================================  */}
 
       <HubExpertise
-        setHeading="Hub of Expertise"
-        setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
+        setHeading="The Hub of Expertise"
+        setDesc="We are here to build competitive edge with technology brilliance for businesses across the world."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={3} //Define how many columns you want to display
@@ -347,11 +316,12 @@ const EnterpriseSuite = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Digital Transformation - The need of the hour"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era."
         }
         Color={"white"}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
       <ReviewSliderSection
@@ -367,7 +337,7 @@ const EnterpriseSuite = () => {
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how enterprise solutions can help you with rapid growth."
         }
       ></TransformBusinessForm>
       {/* End-Section--TransformBusinessForm */}
