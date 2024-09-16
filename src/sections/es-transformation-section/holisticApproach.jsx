@@ -11,7 +11,7 @@ const HolisticApproach = () => {
     return (
         <>
             <SectionWrapper BGColor="#000">
-                <div className="container mx-auto">
+                <div className="md:container mx-auto">
                     <SectionHeading 
                         Heading="Our Holistic Approach" 
                         Desc={"We redefine success standards globally with robust<br/> enterprise solutions to enhance stakeholder experiences, strengthen"} 

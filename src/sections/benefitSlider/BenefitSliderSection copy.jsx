@@ -22,7 +22,7 @@ function BenefitSliderSection({
                 ...style,
                 backgroundImage: `url(${sectionImageUrl})`, backgroundSize: 'cover',
             }}>
-                <div className='container mx-auto'>
+                <div className='md:container mx-auto'>
                 <div className="grid grid-cols-2 gap-32">
                     <div className="">
                         <SectionHeading

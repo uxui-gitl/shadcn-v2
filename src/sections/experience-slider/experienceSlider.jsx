@@ -84,7 +84,7 @@ const ExperienceSlider = () => {
 
   return (
     <SectionWrapper BGColor={"#fff"}>
-      <div className="container mx-auto">
+      <div className="md:container mx-auto">
         <Swiper
           slidesPerView={3}
           navigation={false}

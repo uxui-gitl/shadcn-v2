@@ -51,7 +51,7 @@ function ReviewSliderSection(
                     borderBottomRightRadius:'0px',
 
                 }}>
-                    <div className="container mx-auto">
+                    <div className="md:container mx-auto">
                 <SectionHeading
                     Heading={Heading}
                     Desc={Desc}
@@ -61,8 +61,8 @@ function ReviewSliderSection(
 
                 </SectionHeading>
 
-                <div className="flex mt-20">
-                    <div className="relative w-[30%]">
+                <div className="flex mt-10 md:mt-20">
+                    <div className="relative hidden md:inline w-[30%]">
                         <div className={`swiper-button-next`} style={{position:'absolute', left:'50%',top:'12%', width:'80px', height:'80px'}}>
                             <img src="/icons/btn-arrows.svg" alt="icon" />
                         </div>
@@ -70,7 +70,8 @@ function ReviewSliderSection(
                         <img src="/icons/btn-arrows.svg" alt="icon" />
                         </div>
                     </div>
-                    <div className="w-[70%]">
+
+                    <div className="w-full md:w-[70%]">
                     <Swiper
                         slidesPerView={SlidesPerView}
                         navigation={{

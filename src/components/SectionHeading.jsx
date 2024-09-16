@@ -10,11 +10,11 @@ function SectionHeading({
 }) {
   return (
     <div
-    className={`w-full pt-${paddingTop} ${center && 'flex justify-center'} ${center ? 'text-center mx-auto' : right ? 'text-right ml-auto' : 'text-left'}`} 
+    className={`w-full pt-${paddingTop} ${center && 'flex justify-center'} ${center ? 'text-center mx-auto' : right ? 'text-right ml-auto' : 'text-center md:text-left'}`} 
     >
       {layout === 'vertical' ? (
         <div
-          className={`${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-start'} `}
+          className={` w-full md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-center md:items-start'} `}
         >
           {Heading && <h1
             className={`text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px]`}
@@ -30,10 +30,10 @@ function SectionHeading({
         </div>
       ) : (
         <div
-          className={`flex pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'} items-end `}
+          className={`flex flex-col md:flex-row pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'}`}
         >
           <h1
-            className={`text-2xl sm:text-lg md:text-[54px] font-medium md:leading-[62px]`}
+            className={`text-2xl sm:text-lg md:text-[54px] font-medium md:leading-[62px] mb-6 md:mb-0`}
             style={{ color: Color }}
           >
             {Heading}

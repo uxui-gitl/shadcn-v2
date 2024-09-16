@@ -338,7 +338,7 @@ const DataInsights = () => {
 
       {/* End--DataVisualization--Section======================================================== */}
       {/* Start--Section--DataManagement======================================================================== */}
-      <SectionWithSlider style={{paddingTop:'250px'}}
+      <SectionWithSlider
         ID={"DATA_MGMT_DATA"}
         sectionHeading={"Data Management"}
         sectionDesc={
@@ -348,7 +348,6 @@ const DataInsights = () => {
         cardData={DATA_MGMT_DATA}
         sectionBGColor="#2B1624"
         setHeadingLayout="horizontal"
-        moveSectionToTOP={true}
       />
       {/* End--Section--DataManagement======================================================================== */}
 

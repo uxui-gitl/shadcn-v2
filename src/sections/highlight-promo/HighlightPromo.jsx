@@ -46,7 +46,7 @@ const HighlightPromo = ({
         position: 'relative',
       }}
     >
-      <div className="container mx-auto">
+      <div className="md:container mx-auto">
         <div
           className={` flex flex-col md:flex-row gap-8`}
           style={conditionalBlurStyles}

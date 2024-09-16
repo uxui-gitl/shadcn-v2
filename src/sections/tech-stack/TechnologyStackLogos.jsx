@@ -16,7 +16,7 @@ const TechnologyStackLogos = () => {
     return (
         <>
         <SectionWrapper BGColor={'#F3F0FA'}>
-            <div className="container mx-auto">
+            <div className="md:container mx-auto">
                 <SectionHeading 
                     center={true} 
                     Heading={'Built and delivered<br/> 200+ applications'} 

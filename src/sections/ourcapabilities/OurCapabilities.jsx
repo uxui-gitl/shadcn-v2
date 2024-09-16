@@ -59,7 +59,7 @@ const OurCapabilities = ({
         backgroundSize: "cover",
       }}
     >
-      <div className="container mx-auto">
+      <div className="md:container mx-auto">
         <SectionHeading
           Heading={setHeading}
           Desc={setDesc}
@@ -68,7 +68,7 @@ const OurCapabilities = ({
           containerWidthFull={setHeadingContainerWidthFull}
           paddingTop="16"
         />
-        <div className="flex flex-row gap-8 py-32">
+        <div className="flex flex-col md:flex-row gap-8 py-10 md:py-32">
           {/* Accordion div */}
           <div className="w-full md:w-1/2 p-4">
             {ACCORDION_DATA.map((item, index) => (

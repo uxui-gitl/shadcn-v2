@@ -23,7 +23,7 @@ function SectionWidthSlider({
   Color
 }) {
 
-  const SlidesPerView = "3"
+  const SlidesPerView = "1"
   const Autoplay = "false";
 
   return (
@@ -38,7 +38,7 @@ function SectionWidthSlider({
           ...style
         }}
       >
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
         <div className="">
           <SectionHeading
             Heading={sectionHeading}
@@ -56,6 +56,20 @@ function SectionWidthSlider({
             autoplay={Autoplay}
             loop={false}
             spaceBetween={30}
+            breakpoints={{
+              640: {
+                  slidesPerView: 1,
+                  spaceBetween: 16,
+              },
+              768: {
+                  slidesPerView: 2,
+                  spaceBetween: 24,
+              },
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 32,
+              },
+          }}
           >
             {cardData?.map((item, index) => (
               <SwiperSlide key={item.id ? item?.id : index}>

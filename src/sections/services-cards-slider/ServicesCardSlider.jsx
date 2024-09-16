@@ -16,7 +16,7 @@ const CardSlider = ({cardData, heading, desc, color}) => {
 
   return (
     <SectionWrapper BGColor="#fff">
-      <div className="container mx-auto">
+      <div className="md:container mx-auto">
         <SectionHeading Heading={heading} Desc={desc} Color={color} />
         <Swiper
           spaceBetween={16}

@@ -17,7 +17,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
   return (
     <>
       <SectionWrapper BGColor={bgColor} Padding={true}>
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           {caseStudyLayout === "1" && (
             <div
               className="flex flex-row justify-start items-center gap-8 w-full h-[724px]"

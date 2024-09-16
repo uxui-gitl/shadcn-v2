@@ -21,7 +21,7 @@ const ContainerScroll = ({ titleComponent, children, imageSrc }) => {
     <SectionWrapper BGColor="#fff" Padding={false}>
       <div ref={containerRef} className="flex justify-center items-center pt-8">
         <div
-          className="container mx-auto w-full relative"
+          className="md:container mx-auto w-full relative"
           style={{
             perspective: "1000px", // Keeps the perspective intact
           }}

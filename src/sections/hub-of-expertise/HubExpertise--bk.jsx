@@ -58,7 +58,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor }) => {
 
   return (
     <SectionWrapper BGColor="#000" Padding={false}>
-      <section className="container mx-auto">
+      <section className="md:container mx-auto">
         <div className="flex flex-row gap-16 py-8 md:py-12 lg:py-48">
           <div className="flex-1">
             <SectionHeading Heading={setHeading} Color={setColor} Desc={setDesc} />

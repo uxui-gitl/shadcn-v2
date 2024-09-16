@@ -20,7 +20,7 @@ const Container = ({
   //   display: flex;
   return (
     <Tag
-      className={`container mx-auto px-8 text-center flex justify-center ${className}`}
+      className={`md:container mx-auto px-8 text-center flex justify-center ${className}`}
     >
       {children}
     </Tag>

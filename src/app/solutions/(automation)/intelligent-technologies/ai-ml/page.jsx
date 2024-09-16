@@ -278,7 +278,7 @@ const page = () => {
       {/* ML Expertise */}
       <>
         <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'}>
-          <div className="container max-auto flex flex-col md:flex-row gap-x-11">
+          <div className="md:container max-auto flex flex-col md:flex-row gap-x-11">
             <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
               <SectionHeading
                 Heading={'Machine Learning Expertise'}

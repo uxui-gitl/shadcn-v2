@@ -12,12 +12,11 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth, readMore
                 backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover',
             }}>
 
-                <div className="container mx-auto">
+                <div className="md:container mx-auto text-center md:text-left">
                     <SectionHeading
                         Heading = {Heading}
                         Desc ={Desc}
                         Color = {Color}
-                        MaxWidth={MaxWidth}
                     >
                     </SectionHeading>
                
@@ -25,7 +24,7 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth, readMore
                 <Link
                     href={readMoreUrl}
                     target="_blank"
-                    className="text-white mt-20 mb-16 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                    className="text-white mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                 >
                     {'Read More'}
                     <Icon

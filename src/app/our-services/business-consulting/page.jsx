@@ -150,7 +150,7 @@ const page = () => {
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
       
       <SectionWrapper BGColor="black">
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <SectionHeading
             layout="horizontal"
             Color="white"
@@ -190,7 +190,7 @@ const page = () => {
       </SectionWrapper>
 
       <SectionWrapper BGColor="#5F22D9">
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <SectionHeading
             layout="horizontal"
             Color="white"
@@ -246,7 +246,7 @@ const page = () => {
       />
 
       <SectionWrapper BGColor="#1D162B">
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <div className="flex justify-center items-center flex-col">
             <div className="w-1/2 mb-10">
               <SectionHeading

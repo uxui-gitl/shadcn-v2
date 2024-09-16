@@ -68,9 +68,9 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo
 
   return (
     <SectionWrapper BGColor={BGColor} Padding={false} style={{ ...style }}>
-      <section className="container mx-auto">
+      <section className="md:container mx-auto">
         <div className="flex flex-col gap-16 py-8 md:py-12 lg:py-48">
-          <div className="flex flex-row gap-16">
+          <div className="flex flex-col md:flex-row gap-16">
             {/* Left Side: Heading and Description */}
             <div className={leftColumnClass}>
               <SectionHeading
@@ -81,7 +81,7 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo
               />
             </div>
             {/* Right Side: Counters */}
-            <div className={rightColumnClass + " flex flex-col justify-start"}>
+            <div className={rightColumnClass + "flex flex-col justify-start"}>
               <div className="flex flex-wrap gap-4">
                 {counters.map((counter, index) => (
                   <div key={index} className={counterWidthClass}>

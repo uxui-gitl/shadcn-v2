@@ -369,7 +369,7 @@ const Page = () => {
       <SectionWrapper
         BGColor="#5F22D9"
       >
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <div className="grid grid-cols-2 gap-20">
             <div className="">
               <SectionHeading

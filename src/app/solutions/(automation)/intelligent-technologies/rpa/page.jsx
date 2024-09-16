@@ -210,10 +210,9 @@ const page = () => {
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#EFE9FB'}
-        sectionHeading={'Why Consider RPA for Your Business? '}
+        sectionHeading={'Why Consider RPA for Your Business?'}
         sectionDesc={''}
         sectionTextColor={'#000'}
-        sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
       >
 
@@ -222,7 +221,7 @@ const page = () => {
 
       {/* inteligent technologies */}
       <SectionWrapper ID="Platforms">
-        <div className="container mx-auto text-left mb-5 pb-0 grid grid-cols-1">
+        <div className="md:container mx-auto text-left mb-5 pb-0 grid grid-cols-1">
           {/* left */}
           <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
             <div className="w-full">
@@ -261,7 +260,6 @@ const page = () => {
         sectionHeading={'Service Offerings'}
         sectionDesc={'We offer AI-driven process automation, process re-engineering and seamless implementation support for transformative business results.'}
         sectionTextColor={'white'}
-        sectionHeaderMaxWidth={'40%'}
         cardData={offeringCardData}
         LinkListData={offeringLinkListData}
       >
@@ -270,7 +268,7 @@ const page = () => {
 
       {/* project life cycle */}
       <SectionWrapper id="" BGColor="#1D162B" style={{ marginTop: '-35px' }}>
-        <div className="max-auto container grid grid-cols-2 gap-20">
+        <div className="max-auto md:container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           <div className="">
             <SectionHeading
               Heading={'RPA Project Lifecycle'}
