@@ -1,18 +1,13 @@
 "use client";
 
 import React from 'react';
-import Styles from './page.module.css';
-
 import EntIntro from '@/components/EntIntro';
 import SectionNav from '@/components/SectionNav';
 import OverviewSection from '@/sections/overview/OverviewSection';
-import HubExpertise from '@/sections/hub-of-expertise/HubExpertise';
 import BlogSection from '@/sections/blog/BlogSection';
 import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
-import SectionWithSlider from '@/sections/sectionWithSlider/SectionWithSlider';
-import CaseStudiesSection from '@/sections/case-studies/CaseStudiesSection';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import TechnologyStackLogos from '@/sections/tech-stack/TechnologyStackLogos';
 import ServicesCardSlider from '@/sections/services-cards-slider/ServicesCardSlider';
@@ -75,6 +70,7 @@ const TechnologyStack = () => {
     { id: '5',icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
 
   ];
+
   const SERVICE_CARDS_DATA = [
     {
       title: "Planning and Designing",

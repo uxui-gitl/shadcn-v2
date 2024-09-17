@@ -9,14 +9,14 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-const CaseStudiesSection = ({ casestudy, csLayout, bgColor }) => {
+const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
   const caseStudyLayout = csLayout;
   const setHeading = 'IIoT  Solution Offerings';
   const setDesc = 'Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.';
   const setColor = "#2B1624";
   return (
     <>
-      <SectionWrapper BGColor={bgColor} Padding={true}>
+      <SectionWrapper BGColor={bgColor} Padding={true} style={{...style}}>
         <div className="md:container mx-auto">
           {caseStudyLayout === "1" && (
             <div

@@ -15,6 +15,7 @@ import PlatformSection from '@/sections/platform/PlatformSection';
 import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 
+
 const AIOfferingsData = [
   {
     id: 1,
