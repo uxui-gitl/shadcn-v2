@@ -9,11 +9,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const IndustrySpotlight = ({ cardData = []}) => {
+const IndustrySpotlight = ({ cardData = [], slidePerView='4'}) => {
   
   return (
     <>
-      <SectionWrapper BGColor={"#FFF"}>
+      <SectionWrapper BGColor={"#FFF"} >
         <div className="md:container mx-auto">
           <SectionHeading
             Heading={"Industry Spotlights"}
@@ -40,7 +40,7 @@ const IndustrySpotlight = ({ cardData = []}) => {
                     spaceBetween: 24,
                 },
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: `${slidePerView}`,
                     spaceBetween: 32,
                 },
             }}

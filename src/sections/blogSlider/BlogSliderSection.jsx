@@ -25,7 +25,7 @@ import { Children } from "react";
 
 function BlogSliderSection(
     {
-        CardDataList = [],
+        cardData = [],
         SlidesPerView = "1",
         Autoplay = "false",
     }
@@ -41,7 +41,7 @@ function BlogSliderSection(
                     loop={false}
                     spaceBetween={30}
                 >
-                    {CardDataList?.map((item, index) => (
+                    {cardData?.map((item, index) => (
                         <SwiperSlide key={item.id ? item?.id : index}>
                             {/* <div class="w-full p-6 border rounded-lg shadow h-[100vh]" style={{ background: `url(${item.cardBGImageUrl}), ${item.cardBGColor}`, backgroundSize: 'cover' }}> */}
                                 <SectionWrapper id={"ni"} style={{
@@ -56,7 +56,8 @@ function BlogSliderSection(
                                         >
                                         </SectionHeading>
                                         <Link
-                                            href={"#Contact"}
+                                            href={item.readMoreUrl}
+                                            target="_blank"
                                             className="text-white mt-20 mb-16 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                                         >
                                             {'Read More'}

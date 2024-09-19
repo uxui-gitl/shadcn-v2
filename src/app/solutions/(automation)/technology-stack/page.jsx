@@ -12,6 +12,7 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 import TechnologyStackLogos from '@/sections/tech-stack/TechnologyStackLogos';
 import ServicesCardSlider from '@/sections/services-cards-slider/ServicesCardSlider';
 import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
+import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 const TechnologyStack = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -165,6 +166,36 @@ const TechnologyStack = () => {
     
   ]
 
+  const blogSliderData=[
+    {
+    id: 1,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "Legacy Modernization in Manufacturing Industry ",
+    cardDesc: 'The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. The current pandemic situation has further exacerbated the situation with hackers looking at vulnerabilities for exploitation in the Industry Infrastructure. ',
+    cardTextColor:'white',
+    readMoreUrl:"https://www.godrejinfotech.com/blogDetails.aspx?blog=8"
+  },
+  {
+    id: 2,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "ASP.Net-A popular choice for Web development",
+    cardDesc: 'Most enterprises are in the process of migration from legacy systems to new, user-friendly dynamic and robust web applications. In this crowded market of different technologies such as PHP, HTML5, WordPress, Magento and several others, Microsoft’s ASP.NET has proved to be ‘the popular choice’.  ',
+    cardTextColor:'white',
+    readMoreUrl:"https://www.godrejinfotech.com/blogDetails.aspx?blog=4"
+  },
+  {
+    id: 3,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "Application Modernization – Proven Growth Strategy for Progressive Organizations",
+    cardDesc: 'The IT Industry has seen various phases of evolution of application development & maintenance. In the earlier days, there used to be monolithic applications that used to be deployed on physical servers. Waterfall methodology was used wherein analysis, design, development & deployment phases were done in a sequential manner one after the other, and each succeeding phase could not be started before the preceding phase was completed. ',
+    cardTextColor:'white',
+    readMoreUrl:"https://www.godrejinfotech.com/blogDetails.aspx?blog=16"
+  }
+  ]
+
 
   return (<>
     {/* Start--Section--HeroBanner======================================================== */}
@@ -247,7 +278,10 @@ const TechnologyStack = () => {
 
 
     {/* Start-Section--Blog======================================================================= */}
-    <BlogSection
+    <BlogSliderSection 
+    cardData={blogSliderData}
+    ></BlogSliderSection>
+    {/* <BlogSection
       ID={"blog"}
       blogImageUrl={blogImageUrl}
       Heading={"Unveilling Hyper automation  for supply chain efficiency"}
@@ -255,7 +289,7 @@ const TechnologyStack = () => {
         "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
       }
       Color={"white"}
-    ></BlogSection>
+    ></BlogSection> */}
     {/* End-Section--Blog======================================================================= */}
     {/* Start--Section--Distinctive======================================================== */}
     <DistinctiveSection DistinctiveData={DISTINCTIVE_DATA}
