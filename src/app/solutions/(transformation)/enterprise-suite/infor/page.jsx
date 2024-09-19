@@ -8,6 +8,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
+import BlogSection from "@/sections/blog/BlogSection";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,44 +19,60 @@ import Image from 'next/image'
 
 
 const Page = () => {
-
+  const blogImageUrl = "/ai-ml/blog-bg.png";
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Infor Managed Support Services",
+      cardDesc: 'In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.',
+      designation: 'Manager',
+      companyName:'Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer'
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Implementation with Better Business Understanding",
+      cardDesc: 'Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.',
+      designation: 'IT Manager',
+      companyName:'Global Process Equipment Supplier'
     },
     {
       id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Swift Implementation with Proactive Approach",
+      cardDesc: 'Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.',
+      designation: 'Executive Director',
+      companyName:'Commercial'
     },
   ];
 
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Strong legacy of our parent group - Godrej Enterprise which has succeeded for more than 125 years.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Shared DNA of engineering expertise, domain knowledge and key business challenges from our parent group.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Proven Infor excellence of 20 + years and 300+ successful implementations",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Comprehensive in-house Infor ecosystem delivering operational effectiveness",
+      icon: "",
+    },
+    {
+      _id: 5,
+      desc: "Infor's Centre of Excellence and Co-development Partnership program help us to deliver innovative and industry-specific solutions ",
+      icon: "",
+    },
+    {
+      _id: 6,
+      desc: "Repository of ready-to-use use cases guarantees swift implementation and seamless integration",
       icon: "",
     },
 
@@ -138,19 +155,19 @@ const Page = () => {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Elevating Customer Experience",
+      heading: "Infor Project Highlights",
       description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "Electrical Component Manufacturer",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
-      link: "/case-study-1",
+        "Infor LN reduces manual efforts by 30% for auto sector's leading electrical component manufacturer",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -159,19 +176,19 @@ const Page = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "Hydraulic Systems Manufacturer",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-      link: "/case-study-1",
+        "Infor LN achieves Enhanced User Experience and Workforce Enablement for Global Hydraulic Systems Manufacturer",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Sheet metal manufacturer",
       description:
-        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
+        "Infor cuts costs by 40% and boosts after-sales speed by 20% for European sheet metal manufacturer",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -181,26 +198,25 @@ const Page = () => {
 
 
   const HUBEXPERTISE_COUNTER_DATA = [
-    { start: 10, end: 50, description: "Cloud Deployments" },
+    { start: 290, end: 300, description: "Cloud Deployments" },
     { start: 10, end: 15, description: "Cloud Certified Professionals" },
-    { start: 10, end: 15, description: "Cloud Certified Professionals" },
+    { start: 0, end: 0, description: "Largest Infor Implementation Experience in Asia" },
 
     // Add more counters as needed
   ];
 
   const offeringLinkListData = [
-    { id: 1, text: 'Inadequate Scalability and Availability', beforeIconUrl: 'true', isArrowIconVisiable: false },
-    { id: 2, text: 'Unreliable Backup Storage', beforeIconUrl: 'true', isArrowIconVisiable: false },
-    { id: 3, text: 'RPA Deployment', beforeIconUrl: 'true', isArrowIconVisiable: false },
-    { id: 4, text: 'Weak Disaster Recovery and Redundancy', beforeIconUrl: 'true', isArrowIconVisiable: false },
+    { id: 1, text: 'CloudSuite™ Industrial Enterprise', beforeIconUrl: 'true', isArrowIconVisiable: false },
+    { id: 2, text: 'CloudSuite™ Automotive', beforeIconUrl: 'true', isArrowIconVisiable: false },
+    { id: 3, text: 'CloudSuite™ Aerospace & Defense', beforeIconUrl: 'true', isArrowIconVisiable: false },
   ]
 
   const serviceOfferingData = [
     {
       id: 1,
       cardBGColor: '#fff',
-      cardHeading: 'End-to-End Implementation',
-      cardDesc: 'Streamlining every phase of the implementation with the capability of successful and on-time delivery of Infor solution.',
+      cardHeading: 'Implementation',
+      cardDesc: 'Streamline every phase of Infor implementation precisely and on-time',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -210,7 +226,7 @@ const Page = () => {
       id: 2,
       cardBGColor: '#fff',
       cardHeading: 'Managed Services',
-      cardDesc: 'Managing every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application.',
+      cardDesc: 'Manage every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
@@ -219,8 +235,8 @@ const Page = () => {
 
       id: 3,
       cardBGColor: '#fff',
-      cardHeading: 'Migrate to the Cloud',
-      cardDesc: 'Ensuring a smooth and efficient migration process with minimum business disruptions',
+      cardHeading: 'Migrate to Cloud',
+      cardDesc: 'Ensure smooth and efficient migration process with minimum business disruptions',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
@@ -229,8 +245,8 @@ const Page = () => {
 
       id: 4,
       cardBGColor: '#E4E4E4',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Migrate to Infor',
+      cardDesc: 'Experience seamless and transformative migration of different ERP to Infor LN with data integrity. ',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -240,8 +256,8 @@ const Page = () => {
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Upgrade with Infor',
+      cardDesc: 'Get access to the latest Infor platform, ensuring improved overall performance',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
@@ -252,8 +268,8 @@ const Page = () => {
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      cardHeading: 'Customization & Integrations',
+      cardDesc: 'Value-adding custom developments and integrations that deliver better business outcomes',
       isArrow: false,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
@@ -269,9 +285,9 @@ const Page = () => {
       CardTextColor: '#000',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "GITL InsightEdge",
       CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+        "Industry-specific pre-built business reporting readily available on Infor Birst for MIS requirements",
       isArrow: "",
       link: [],
     },
@@ -284,9 +300,9 @@ const Page = () => {
       CardTextColor: '#000',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Data Conversion Utility Tool",
       CardDesc:
-        "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+        "Data migration with fast & structured upload, source/target systems management, table structures, field mapping & data scripts.",
       isArrow: "",
       link: [],
     },
@@ -298,9 +314,9 @@ const Page = () => {
       CardTextColor: '#000',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "GITL Custom Fit",
       CardDesc:
-        "Drive business agility and improved ROI with automation",
+        "Industry vertical focused solution Pre-Configured Business Process Mapping and Pre-Built Industry required Customization.",
       isArrow: "",
       link: [],
     },
@@ -312,9 +328,23 @@ const Page = () => {
       CardTextColor: '#000',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "GITL Cloudscape Align",
       CardDesc:
-        "Highest levels of security and privacy, ensuring data is safeguarded",
+        "Infor cloud transition with data migration strategies, app compatibility, network architecture & security protocols",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 5,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: '#000',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Prosoft 2.0",
+      CardDesc:
+        "Customized Infor LN solution for on-site project management & inventory control to streamline operations",
       isArrow: "",
       link: [],
     },
@@ -323,8 +353,8 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Maximize business efficiency with Infor Solution"
+        desc="Solve Unique Industry Challenges with our Expertise"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -364,7 +394,7 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`20+ years of Infor partnership and APAC's largest Infor implementation experience, empowers us to drive growth-focused operations globally.`} />
 
       <SectionWrapper
         BGColor="#5F22D9"
@@ -373,8 +403,8 @@ const Page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="">
               <SectionHeading
-                Heading={'Globally Trusted Core Infor Expertise'}
-                Desc={`Equipping your organization to thrive in the digital era, we deliver high-end solutions, Regardless of whether you're starting your transformation journey or .`}
+                Heading={'Our Infor Capabilities'}
+                Desc={`Delivering tailored business-fit Infor solutions and support for optimal business performance.`}
                 Color={'white'}
                 headingContainerWidth={'w-full'}
               ></SectionHeading>
@@ -454,8 +484,8 @@ const Page = () => {
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Infor Service Offerings'}
-        sectionDesc={"Our commitment to your project's success drives our ownership and determination to go above and beyond."}
+        sectionHeading={'Service Offerings'}
+        sectionDesc={"With extensive experience of domains and Infor solutions, we offer services to meet the growth requirements of business."}
         sectionTextColor={'#fff'}
         cardData={serviceOfferingData}
       >
@@ -465,9 +495,9 @@ const Page = () => {
 
       <SectionWidthSlider
         ID={"ultimateChoiceData"}
-        sectionHeading={"Why Cloud is your Ultimate Choice?"}
+        sectionHeading={"Infor Accelerators"}
         sectionDesc={
-          "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
+          "Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support."
         }
         sectionTextColor=""
         cardData={ultimateChoiceData}
@@ -480,7 +510,7 @@ const Page = () => {
 
       <HubExpertise
         setHeading="Hub of Expertise"
-        setDesc="We are here to build an edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        setDesc="We are here to build a competitive edge with technological brilliance for businesses across the world."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={3}
@@ -489,13 +519,27 @@ const Page = () => {
       <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#D3D3D3'} />
 
 
+       {/* Start-Section--Blog======================================================================= */}
+      <BlogSection
+        ID={"blog"}
+        blogImageUrl={blogImageUrl}
+        Heading={"How Infor CloudSuite Streamlines Industry-Specific Processes"}
+        Desc={
+          "Many organizations struggle with inefficient processes, siloed data, and outdated technology, hindering their ability to innovate and grow. That's where Infor CloudSuite comes in – a powerful, industry-specific cloud ERP solution designed to streamline processes, enhance productivity, and drive business success."
+        }
+        Color={"white"}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
+      ></BlogSection>
+      {/* End-Section--Blog======================================================================= */}
+
+
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Delivering complex global transformations through solution-focused approach, domain expertise & value-added services.'}
       >
       </DistinctiveSection>
       <ReviewSliderSection
       ID={"TESTIMONIALS"}
-      Heading={"Delighted customers share their success experience"}
+      Heading={"Delighted customers share their successful experience"}
       Desc={''}
       Color="#ffffff"
       CardDataList={TESTIMONIAL_DATA}
@@ -503,9 +547,9 @@ const Page = () => {
       SectionHeadingMaxWidth={'70%'}
     ></ReviewSliderSection>
 <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Are you Ready for Infor-driven growth? "}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let's get started!"
         }
       ></TransformBusinessForm>
 

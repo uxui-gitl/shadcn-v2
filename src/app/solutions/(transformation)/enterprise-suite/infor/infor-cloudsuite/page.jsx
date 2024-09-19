@@ -19,19 +19,19 @@ const page = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Successful Infor Implementation",
+      cardDesc: 'We would like to put on record the successful completion of our INFOR ERP LN implementation project by Godrej Infotech at our plant in Ahmedabad. We are glad to inform that the project has been completed as per our requirement.',
+       designation: 'Managing Director',
+      companyName:'Leading Manufacturer of Power & Control Panels'
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Delivering Timely Support Services",
+      cardDesc: 'We highly appreciate the service and support provided by your team for our Infor ERP LN Annual Maintenance. Over the last 2 years we have received timely inputs and guidance across the modules that have been implemented on the system. We look forward to a mutually beneficial relationship in the future as well.',
+       designation: 'Manager Sales and Support',
+      companyName:'Leading Manufacturer of Antenna System Technology'
     },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
+    
   ];
 
   const RPASolution = [
@@ -39,8 +39,8 @@ const page = () => {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Infor CloudSuite Industrial Enterprise',
+      cardDesc: 'Enables manufacturing and distribution businesses with modern, scalable and agile ERP functionalities',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -50,8 +50,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Infor CloudSuite Automotive',
+      cardDesc: 'Offers comprehensive features for automotive manufacturers, supporting everything from supply chain management to production control',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -61,8 +61,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Infor CloudSuite Aerospace & Defense',
+      cardDesc: 'Solution tailored to unique demands of highly regulated aerospace and defense industry',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -72,8 +72,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Infor CS Engineering and Construction',
+      cardDesc: 'Fulfils the exclusive needs of engineering and construction industry',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -104,25 +104,25 @@ const page = () => {
   ];
 
   const BENEFITS_CARDS_DATA = [
-    { id: '1',icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2',icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3',icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4',icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5',icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-
+    { id: '1',icon:'', cardDesc: 'Extensible and integrable Cloud Suites through Infor OS.' },
+    { id: '2',icon:'', cardDesc: 'Accommodates multiple, intricate manufacturing scenarios.' },
+    { id: '3',icon:'', cardDesc: 'Industry-tailored features with cloud environment.' },
+    { id: '4',icon:'', cardDesc: 'Cloud-based applications less susceptible to downtime, ensuring business continuity.' },
+    { id: '5',icon:'', cardDesc: 'Tailored solutions for various industries, addressing specific needs and challenges.' },
+    { id: '6',icon:'', cardDesc: 'Accessibility from anywhere with an internet connection, making it convenient for remote work and global collaboration.' },
   ];
 
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Accelerate Business Growth with Infor CloudSuite Expertise"
+        desc="Cloud-based, pre-configured industry solution for faster adoption and maximum impact."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Discover smarter way to manage business with Infor CloudSuite. Industry-specific cloud ERP solutions help enterprises to scale with confidence and agility.`} />
       {/* optimising rpa solution */}
       <CommonCardTwoSlider
         ID={'AIOfferings'}
@@ -142,7 +142,7 @@ const page = () => {
             <SectionHeading
               Heading={`Infor CloudSuite Services`}
               Color={'white'}
-              Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
+              Desc={`Leverage our understanding of industry specific business processes refined through years of experience and benefit from end-to-end Infor CloudSuite services`}
               headingContainerWidth={'w-full'}
             />
           </div>
@@ -173,13 +173,14 @@ const page = () => {
               },
           }}
           >
-            {[1, 2, 3, 4, 5]?.map((item, index) => (
+            {['Consulting', 'Implementation', 'Managed Services', 'Migration and Upgrade ',]?.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
                     <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
                   <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                      <h5 className="mb-2 text-2xl font-bold">{item}</h5>
                   </div>
+                 
                 </div>
               </SwiperSlide>
             ))}
@@ -190,8 +191,8 @@ const page = () => {
       <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Benefits of Infor LN'}
-        sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
+        sectionHeading={'Infor CloudSuite Benefits'}
+        sectionDesc={'With deep industry-specific functionalities, Infor CloudSuite offers responsive business environment, driving competitive differentiation.'}
         sectionTextColor={'white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
@@ -200,9 +201,9 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Role of Infor OS in Powering Infor CloudSuite User Experiences"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "This blog discusses the crucial role of Infor OS in enhancing user experiences within Infor CloudSuite. It also explores the significance of Infor OS and its various applications."
         }
         maxWidth={'50%'}
         Color={"white"}
@@ -210,7 +211,7 @@ const page = () => {
 
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"Delighted customers share their success experience"}
+        Heading={"Delighted Customers share their Successful Experience"}
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
@@ -221,7 +222,7 @@ const page = () => {
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Infor CloudSuite can help you with rapid growth"
         }
       ></TransformBusinessForm>
     </>

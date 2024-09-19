@@ -17,8 +17,8 @@ const page = () => {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Asset Management',
+      cardDesc: 'Centralized approach efficiently manages asset portfolio with accurate record, structure and standardize asset information.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -28,8 +28,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Asset Performance Management',
+      cardDesc: 'Real-time monitoring, asset health tracking and lifecycle management, enables proactive potential issue identification.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -39,8 +39,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Work Management',
+      cardDesc: 'Automate work orders and monitor purchase orders. Implement preventive maintenance to minimize downtime & prolong asset life.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -50,8 +50,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Inspection management',
+      cardDesc: 'Simplify inspection planning and execution with easy scheduling, classification, and workflow management.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -61,23 +61,55 @@ const page = () => {
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Intelligent nonconformity tracking',
+      cardDesc: 'Quickly detect and manage nonconformities with intelligent tracking, prioritized corrective action and customizable indexing.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
     {
 
-
-      id: 5,
+      id: 6,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      cardHeading: 'Safety management',
+      cardDesc: 'Identify and control hazards, ensure HSE compliance, mitigate risks and safe work environment.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
+    },
+        {
+
+      id: 7,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Asset management services',
+      cardDesc: 'Optimize asset management financials with transparent & automated cost tracking and deliver accurate service costs to customers through invoices.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+        {
+
+      id: 8,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Electronic records and signatures',
+      cardDesc: 'Electronic records, signatures, and automated audit trails, ensuring compliance and version control',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+        {
+
+      id: 9,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Calibration',
+      cardDesc: 'Track calibration data, define test points, and associate with work orders to ensure equipment accuracy',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
     },
   ];
 
@@ -87,7 +119,7 @@ const page = () => {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Manufacturing",
+      cardHeading: "Healthcare",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
@@ -98,7 +130,7 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
+      cardHeading: "Facility Management",
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
       isArrow: false,
@@ -122,7 +154,7 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
+      cardHeading: "Manufacturing",
       cardDesc:
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
       isArrow: false,
@@ -134,31 +166,22 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
+      cardHeading: "Projects",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
+    
     // Add more cards as needed
   ];
 
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+    { id: '1', icon:'', cardDesc: '35% increase in asset uptime' },
+    { id: '2', icon:'', cardDesc: '70% improvement in labor utilisation' },
+    { id: '3', icon:'', cardDesc: '45% decrease in inventory cost' },
+    { id: '4', icon:'', cardDesc: '50% reduction in warranty cost recovery' },
+    { id: '5', icon:'', cardDesc: '20% reduction in production downtime' },
+    { id: '6', icon:'', cardDesc: '10% reduction in materials costs' },
   ];
 
   const CASE_STUDIES_DATA = [
@@ -166,18 +189,18 @@ const page = () => {
       imageURL: " ",
       videoURL: "",
       title: "Case Studies",
-      heading: 'KSA based Distributor of Electrical Components',
+      heading: 'HxGN EAM Project Highlights',
       description: "",
-      link: "/case-study-1",
+      link: "/knowledge-center/case-studies.aspx",
       color: '#FFFFFF',
       bgCardColor: '#2B1624'
     },
     {
       imageURL: "",
       title: "",
-      heading: 'India’s Leading Wildlife & Nature Conservation Organization',
-      description: "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
-      link: "/case-study-1",
+      heading: `Enterprise Asset Management`,
+      description: "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6.",
+      link: "/knowledge-center/case-studies.aspx",
       color: '#000',
       bgCardColor: '#E4E4E4'
     },
@@ -207,44 +230,40 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Trusted global partner for Infor and Hexagon.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Domain knowledge and a proven track record of success.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Expertise in delivering innovative solutions that address most complex digital transformation needs.",
       icon: "",
     },
-    {
-      _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
-      icon: "",
-    },
+    
 
   ]
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Gain Asset Management Visibility for Informed Capital Investments with HxGN EAM"
+        desc="Maximize asset lifecycles with leading asset management solution"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Expert HxGN EAM implementation transforming asset management and enabling predictive maintenance & maintenance cost optimization for improved ROI.`} />
       {/* optimising rpa solution */}
       <CommonCardTwoSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
         sectionHeading={'Core Capabilities'}
-        sectionDesc={'Beyond static approaches, HxGN EAM dynamically adapts to the lifecycle stages ensuring assets remain at their peak throughout.'}
+        sectionDesc={'HxGN EAM dynamically adapts to asset lifecycle stages ensuring higher efficiency, consistently.'}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
@@ -257,10 +276,10 @@ const page = () => {
       <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Benefits of Infor LN'}
-        sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
+        sectionHeading={'Benefits of HxGN EAM'}
+        sectionDesc={`Hexagon EAM's modular architecture adapts to changing business needs, ensuring seamless system integration`}
         sectionTextColor={'white'}
-        cardData={BENEFITS_CARDS_DATA}
+        cardData={BENEFITS_CARDS_DATA} 
         sectionHeadingMaxWidth={'100%'}
       />
 
@@ -270,22 +289,22 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Why customizing HxGN EAM is important for your business"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "Customizing HxGN EAM is not just a desirable feature, but a strategic imperative that can propel your organization to the forefront of efficiency and productivity."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
      <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={''}
       >
       </DistinctiveSection>
 
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Ready to Optimize Your Asset Performance?"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let's Discuss!"
         }
       ></TransformBusinessForm>
     </>
