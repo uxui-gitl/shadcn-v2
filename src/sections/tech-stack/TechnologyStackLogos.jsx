@@ -25,7 +25,6 @@ const TechnologyStackLogos = () => {
                 <div className="flex justify-center space-x-24 mt-8">
                     {logos.map((logo, index) => (
                         <>
-                        <
                         {/* <Image key={index} src={logo} alt={`tech-stack-${index}`} width={120} height={120} /> */}
                         </>
                     ))}
