@@ -479,7 +479,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
               style={{ color: casestudy[0].color }}
             >
               <div
-                className="w-full lg:w-1/3 h-full rounded-3xl p-8"
+                className="w-full relative lg:w-1/3 h-full rounded-3xl p-8"
                 style={{
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
@@ -496,6 +496,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <p className="w-full lg:w-[80%] mb-4">
                   {casestudy[0].description}
                 </p>
+                {casestudy[0].link && <div className="absolute bottom-4 right-4">
+                  <Link href={casestudy[0].link} target="_blank">
+                  <OutlinedButtonWithArrow arrowColor="white" size={56}/>
+                  </Link>
+                </div>}
               </div>
               <div
                 className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
@@ -508,9 +513,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   {casestudy[1].heading}
                 </h1>
                 <p className="mb-4">{casestudy[3].description}</p>
-                <div className="absolute bottom-4 right-4">
-                  <OutlinedButtonWithArrow size={56} />
-                </div>
+                {casestudy[1].link && <div className="absolute bottom-4 right-4">
+                  <Link href={casestudy[1].link} target="_blank">
+                  <OutlinedButtonWithArrow size={56}/>
+                  </Link>
+                </div>}
               </div>
               <div
                 className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
@@ -523,9 +530,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   {casestudy[2].heading}
                 </h1>
                 <p className="mb-4">{casestudy[3].description}</p>
-                <div className="absolute bottom-4 right-4">
+                {casestudy[2].link && <div className="absolute bottom-4 right-4">
                   <OutlinedButtonWithArrow size={56} />
-                </div>
+                </div>}
               </div>
             </div>
 

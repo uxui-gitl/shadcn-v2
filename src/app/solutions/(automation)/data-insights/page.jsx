@@ -198,7 +198,7 @@ const DataInsights = () => {
       title: "Case Studies",
       heading: "Leading Indian Refiner of Precious Metals",
       description: "",
-      link: "/case-study-1",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf",
       color: "#FFFFFF",
       bgCardColor: "#2B1624",
     },
@@ -208,7 +208,7 @@ const DataInsights = () => {
       heading: "Middle East based Leading Cooling Services Provider",
       description:
         "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
-      link: "/case-study-1",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Leading-Cooling-Services-Provider.pdf",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -216,11 +216,10 @@ const DataInsights = () => {
     {
       imageURL: "/path/to/image1.jpg",
       title: "",
-
       heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
       description:
         "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
-      link: "/case-study-1",
+      link: "",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
