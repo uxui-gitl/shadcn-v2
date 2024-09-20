@@ -291,6 +291,8 @@ const UpgradeToCloud = () => {
 
   const [showModal1, setshowModal1] = useState(false);
   const [showModal2, setshowModal2] = useState(false);
+  const [showModal3, setshowModal3] = useState(false);
+
 
   const [tabSection1, setTabSection1] = useState(true);
   const [tabSection2, setTabSection2] = useState(false);
@@ -588,6 +590,80 @@ const UpgradeToCloud = () => {
         </div>
       </Dialog>
 
+      {/* modal3 */}
+      <Dialog
+        shouldShow={showModal3}
+        onRequestClose={() => {
+          setshowModal3((prev) => !prev);
+        }}
+        title="Application Migration to the Cloud "
+      >
+        <div className="">
+          <div className="mb-4 border-b border-gray-200">
+            <ul className="flex flex-wrap -mb-px text-sm font-medium text-center">
+              <>
+                <li className="me-2">
+                  <button
+                    onClick={() => tabsClickHandle(1)}
+                    className={`inline-block p-4 border-gray-200 border-b-2 rounded-t-lg ${tab1Active == true
+                      ? "text-indigo-500 border-b-indigo-500"
+                      : "text-slate-950"
+                      }`}
+                  >
+                    {`Reasons to Migrate from On Premises 
+ `}
+                  </button>
+                </li>
+                <li className="me-2">
+                  <button
+                    onClick={() => tabsClickHandle(2)}
+                    className={`inline-block p-4 border-gray-200 border-b-2 rounded-t-lg ${tab2Active == true
+                      ? "text-indigo-500 border-b-indigo-500"
+                      : "text-slate-950"
+                      }`}
+                  >
+                    {`Move Applications to the Cloud`}
+                  </button>
+                </li>
+              </>
+            </ul>
+          </div>
+          <div>
+            {/* tab1 */}
+            {tabSection1 && (
+              <div className="p-4 rounded-lg bg-gray-50">
+
+                <div className="grid grid-cols-1 gap-4">
+                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                        <li>Higher cost of maintaining on-premises hardware. </li>
+                        <li>Non scalability in sudden events of increased user demand or lower demand. </li>
+                        <li>Need of ongoing maintenance and updates, which can be time-consuming and resource intensive. </li>
+                        <li>Access confined to a specific physical location or data centre.  </li>
+                        <li>High risks in terms of data loss and downtime during disasters or system failures. </li>
+                        <li>Challenging to manage security measures and Rigidity in making changes or updates to application.  </li>
+                        <li>Limited access to the modern technologies and services. </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+            {/* tab2 */}
+            {tabSection2 && (
+              <div className="p-4 rounded-lg bg-gray-50">
+                <div className="grid grid-cols-1 gap-4">
+                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <li>Rehosting Application   </li>
+                        <li>Rebuild Application    </li>
+                        <li>Replace your application  </li>
+                        <li>Refactor Application using containerization </li>
+                        <li>Rearchitect Application  </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </Dialog>
+
 
       {/* Section--HeroBanner======================================================================= */}
       <EntIntro
@@ -647,10 +723,10 @@ const UpgradeToCloud = () => {
 
           <div class="p-6 bg-[transprent]">
             <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 class="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Lift and Shift
-              to Cloud</h5>
-            <p class="mb-3 text-base font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-            <div className="flex justify-end px-6 py-4">
+            <h5 class="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
+            <p class="mb-3 text-base font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
+            </p>
+            <div className="flex justify-end px-6 py-4"  onClick={() => { setshowModal3((prev) => !prev); }}>
               <OutlinedButtonWithArrow arrowColor={'white'} size={48} />
             </div>
           </div>
