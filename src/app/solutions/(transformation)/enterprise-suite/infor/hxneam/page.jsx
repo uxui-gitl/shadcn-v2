@@ -271,7 +271,7 @@ const page = () => {
       >
       </CommonCardTwoSlider>
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT}/>
 
       <BenefitSliderSection
         ID={'BENEFIT'}

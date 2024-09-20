@@ -12,21 +12,25 @@ function CommonCardTwo({ Item }) {
     cardHeading = "",
     isArrow = true,
     arrowColor = "#FFF",
+    additionalData="",
   } = Item;
 
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <div className="overflow-hidden max-h-[424px] rounded-3xl" 
+    onMouseEnter={() => setIsHovered(true)} // Set hovered state on mouse enter
+      onMouseLeave={() => setIsHovered(false)} // Reset hovered state on mouse leave
+      >
     <div
-      className="relative rounded-3xl shadow min-h-[424px] flex flex-col justify-between overflow-hidden" 
+      className="relative shadow flex flex-col justify-between overflow-hidden" 
       style={{
         backgroundColor: cardBGColor,
         color: cardTextColor,
         minHeight: "424px",
         width: "100%",
       }}
-      onMouseEnter={() => setIsHovered(true)} // Set hovered state on mouse enter
-      onMouseLeave={() => setIsHovered(false)} // Reset hovered state on mouse leave
+      
     >
       {/* Image Container */}
       <div
@@ -35,7 +39,7 @@ function CommonCardTwo({ Item }) {
         <Image
           src={cardBGImageUrl}
           alt={cardTitle}
-          layout="fill" 
+          layout="fill"
           className="object-cover rounded-3xl" 
         />
       </div>
@@ -44,7 +48,7 @@ function CommonCardTwo({ Item }) {
       <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" style={{ height: "33%" }} /> {/* Dark overlay */}
 
       {/* Content Container */}
-      <div className="p-10 flex-grow relative z-10"> {/* Relative positioning for stacking context */}
+      <div className="p-10 flex-grow relative z-1"> {/* Relative positioning for stacking context */}
         {cardTitle && (
           <div className="text-[#E0028E] text-[20px] mb-12">
             {cardTitle}
@@ -64,6 +68,11 @@ function CommonCardTwo({ Item }) {
           <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
         </div>
       )}
+   </div>
+
+   {additionalData && <div className={`min-h-[424px] px-5 py-10 duration-300 rounded-3xl bg-[#FCE6F4] z-20 ${isHovered ? '-translate-y-full' : 'translate-y-full'}`}>
+        <p dangerouslySetInnerHTML={{ __html: additionalData }} />
+        </div>}
     </div>
   );
 }

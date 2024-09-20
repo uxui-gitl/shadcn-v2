@@ -26,21 +26,21 @@ const Page = () => {
       cardHeading: "Infor Managed Support Services",
       cardDesc: 'In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.',
       designation: 'Manager',
-      companyName:'Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer'
+      companyName: 'Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer'
     },
     {
       id: 2,
       cardHeading: "Implementation with Better Business Understanding",
       cardDesc: 'Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.',
       designation: 'IT Manager',
-      companyName:'Global Process Equipment Supplier'
+      companyName: 'Global Process Equipment Supplier'
     },
     {
       id: 3,
       cardHeading: "Swift Implementation with Proactive Approach",
       cardDesc: 'Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.',
       designation: 'Executive Director',
-      companyName:'Commercial'
+      companyName: 'Commercial'
     },
   ];
 
@@ -88,6 +88,28 @@ const Page = () => {
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Manufacturing
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>industrial Manufacturing   </li>
+            <li>Automotive OEM/ Suppliers </li>
+            <li>High-Tech Electronics  </li>
+            <li>Refinery, Petro-Chemical and Process Equipment   </li>
+            <li>Aerospace & Defense Equipment   </li>
+            <li>Ship Design, Building and Repairs   </li>
+            <li>Infrastructure / EPC with Turnkey and BOOT BOLT </li>
+        </ol>
+    </li>
+     <li>
+        Industrial Manufacturing 
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Automotive OEM/ Suppliers</li>
+            <li>High-Tech Electronics  </li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 2,
@@ -95,11 +117,23 @@ const Page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
+      cardHeading: "Automotive",
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+     <li>
+        Automotive
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>OEM</li>
+            <li>Tire Suppliers </li>
+            <li>After Market Spare part & Services </li>
+            <li>Trading</li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 3,
@@ -107,11 +141,21 @@ const Page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Trading & Distribution",
+      cardHeading: "Project & Contracting ",
       cardDesc:
         "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+     <li>
+        Project & Contracting 
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>EPC</li>
+            <li>Turnkey Project</li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 4,
@@ -119,35 +163,22 @@ const Page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
+      cardHeading: "Warehouse Management  ",
       cardDesc:
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+     <li>
+        Project & Contracting 
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>3PL</li>
+            <li>Logistics Services</li>
+        </ol>
+    </li>
+</ul>`
     },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    // Add more cards as needed
   ];
 
   const CASE_STUDIES_DATA = [
@@ -350,6 +381,19 @@ const Page = () => {
     },
   ];
 
+  const inforText = [
+    'Infor LN',
+    'Infor WMS',
+    'Factory Track',
+    'Infor OS',
+    'Expense Management',
+    'Infor CPQ',
+    'Infor CRM',
+    'Infor HCM',
+    'Infor d/EPM',
+    'Infor Birst',
+  ]
+
   return (
     <>
       <EntIntro
@@ -400,7 +444,7 @@ const Page = () => {
         BGColor="#5F22D9"
       >
         <div className="md:container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-16">
             <div className="">
               <SectionHeading
                 Heading={'Our Infor Capabilities'}
@@ -436,49 +480,45 @@ const Page = () => {
               </div>
             </div>
           </div>
+          <div className="InforSliderWrapper rounded-3xl" style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
+            <div className="flex py-10 px-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
+              <div className="w-full">
+                <Swiper
+                  slidesPerView={1}
+                  navigation={false}
+                  pagination={{ type: "bullets", clickable: true }}
+                  autoplay={true}
+                  loop={false}
+                  spaceBetween={30}
+                  breakpoints={{
+                    640: {
+                      slidesPerView: 1,
+                      spaceBetween: 16,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                      spaceBetween: 24,
+                    },
+                    1024: {
+                      slidesPerView: 6,
+                      spaceBetween: 32,
+                    },
+                  }}
+                >
+                  {inforText?.map((item, index) => (
+                    <SwiperSlide key={item}>
+                      <div className="w-full text-lg text-center bg-white shadow">
+                        {item}
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </div>
+          </div>
+
         </div>
       </SectionWrapper>
-
-      <div className="InforSliderWrapper rounded-3xl" style={{backgroundColor:'white', zindex: "2",position:'relative'}}>
-        <div className="flex py-10 px-10 container" style={{justifyContent:'center', alignItems:'center'}}>
-          <div className="w-2/12">
-          <Image className="rounded-t-lg" width={130} height={130} src="/icons/inforlogo.svg" alt="inforlogo" />
-          </div>
-          <div className="w-10/12">
-            <Swiper
-              slidesPerView={1}
-              navigation={false}
-              pagination={{ type: "bullets", clickable: true }}
-              autoplay={true}
-              loop={false}
-              spaceBetween={30}
-              breakpoints={{
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 16,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                },
-                1024: {
-                    slidesPerView: 6,
-                    spaceBetween: 32,
-                },
-            }}
-            >
-              {[1,2,3,4,5,6,7,8,9]?.map((item, index) => (
-                <SwiperSlide key={item}>
-                  <div className="w-fullbg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <Image className="rounded-t-lg" width={100} height={50} src="" alt="" />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </div>
-
 
       <CommonCardThreeSlider
         ID={''}
@@ -519,7 +559,7 @@ const Page = () => {
       <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#D3D3D3'} />
 
 
-       {/* Start-Section--Blog======================================================================= */}
+      {/* Start-Section--Blog======================================================================= */}
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
@@ -538,15 +578,15 @@ const Page = () => {
       >
       </DistinctiveSection>
       <ReviewSliderSection
-      ID={"TESTIMONIALS"}
-      Heading={"Delighted customers share their successful experience"}
-      Desc={''}
-      Color="#ffffff"
-      CardDataList={TESTIMONIAL_DATA}
-      BGColor="#1D162B"
-      SectionHeadingMaxWidth={'70%'}
-    ></ReviewSliderSection>
-<TransformBusinessForm
+        ID={"TESTIMONIALS"}
+        Heading={"Delighted customers share their successful experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="#1D162B"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
+      <TransformBusinessForm
         Title={"Are you Ready for Infor-driven growth? "}
         Desc={
           "Let's get started!"

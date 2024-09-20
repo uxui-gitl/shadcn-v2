@@ -241,8 +241,17 @@ const page = () => {
         setChallengesList={CHALLENGES_LIST_DATA}
       />
 
+      <CommonCardThreeSlider
+        ID={''}
+        sectionImageUrl={''}
+        sectionBGColor={'#1D162B'}
+        sectionHeading={'Infor WMS Key Highlights'}
+        sectionDesc={'Extending the capabilities of Infor with tailored functional enhancements for enhancement of business productivity'}
+        sectionTextColor={'#fff'}
+        cardData={RPASolution}
+      />
 
-      <SectionWithSlider
+<SectionWithSlider
         ID={"UPGRADE_NOW_DATA"}
         sectionHeading={"Infor WMS Industry Solutions"}
         sectionDesc={
@@ -253,16 +262,6 @@ const page = () => {
         sectionBGColor="white"
         setHeadingLayout="horizontal"
 
-      />
-
-      <CommonCardThreeSlider
-        ID={''}
-        sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
-        sectionHeading={'Infor WMS Key Highlights'}
-        sectionDesc={'Extending the capabilities of Infor with tailored functional enhancements for enhancement of business productivity'}
-        sectionTextColor={'#fff'}
-        cardData={RPASolution}
       />
 
       <BenefitSliderSection

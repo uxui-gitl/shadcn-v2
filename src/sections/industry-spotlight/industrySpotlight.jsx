@@ -9,17 +9,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const IndustrySpotlight = ({ cardData = [], slidePerView='4'}) => {
+const IndustrySpotlight = ({ cardData = [], slidePerView='4', sectionHeading="Industry Spotlights", sectionDesc="Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program."}) => {
   
   return (
     <>
       <SectionWrapper BGColor={"#FFF"} >
         <div className="md:container mx-auto">
           <SectionHeading
-            Heading={"Industry Spotlights"}
-            Desc={
-              "Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program."
-            }
+            Heading={sectionHeading}
+            Desc={sectionDesc}
           />
 
           <div className="my-8">

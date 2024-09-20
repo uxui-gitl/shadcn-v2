@@ -1,7 +1,9 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
+// import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
+import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardThreeSlider';
+
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
@@ -34,74 +36,86 @@ const page = () => {
     
   ];
 
-  const RPASolution = [
+  const serviceOfferingData = [
     {
       id: 1,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
-      cardBGColor: '#7F4EE1',
-      cardHeading: 'Infor CloudSuite Industrial Enterprise',
-      cardDesc: 'Enables manufacturing and distribution businesses with modern, scalable and agile ERP functionalities',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
+      cardBGColor: '#fff',
+      cardHeading: 'Infor CloudSuite Industrial Enterprise ',
+      cardDesc: `<p>Enables manufacturing and distribution businesses with modern, scalable and agile ERP functionalities<p>
+      
+<ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+    <li>Financials</li> 
+    <li> Supply Chain Management </li>
+    <li>Manufacturing </li>
+    <li>Human Capital Management (HCM)  </li>
+    <li>Customer Relationship Management (CRM)  </li>
+    <li>Enterprise Asset Management (EAM)  </li>
+    <li>Quality Management </li>
+</ul> ` ,
+      isArrow: true,
+      cardTextColor: 'black',
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
     },
     {
 
       id: 2,
-      cardBGImageUrl: '',
-      cardBGColor: '#000',
-      cardHeading: 'Infor CloudSuite Automotive',
-      cardDesc: 'Offers comprehensive features for automotive manufacturers, supporting everything from supply chain management to production control',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
+      cardBGColor: '#fff',
+      cardHeading: 'Infor CloudSuite Automotive (Infor LN)',
+      cardDesc: `<div>Offers comprehensive features for automotive manufacturers, supporting everything from supply chain management to production control</div>
+      <ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+    <li>Quality and production</li> 
+    <li> Supply chain visibility</li>
+    <li>Planning and inventory </li>
+    <li>Customer relationship management</li>
+    <li>Customer Relationship Management (CRM)  </li>
+    <li>Enterprise Asset Management (EAM)  </li>
+    <li>Quality Management </li>
+</ul> `,
+      isArrow: true,
+      cardTextColor: 'black',
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
     },
     {
 
       id: 3,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
-      cardBGColor: '#7F4EE1',
-      cardHeading: 'Infor CloudSuite Aerospace & Defense',
-      cardDesc: 'Solution tailored to unique demands of highly regulated aerospace and defense industry',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
+      cardBGColor: '#fff',
+      cardHeading: 'Infor CloudSuite Aerospace & Defense (Infor LN)',
+      cardDesc: `<div>Solution tailored to unique demands of highly regulated aerospace and defense industry</div>
+       <ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+    <li>Planning and production</li> 
+    <li> Contract Management</li>
+    <li>Regulations & Compliance</li>
+    <li>Supply chain visibility</li>
+</ul> `
+      
+      ,
+      isArrow: true,
+      cardTextColor: 'black',
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
     },
     {
 
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Infor CS Engineering and Construction',
-      cardDesc: 'Fulfils the exclusive needs of engineering and construction industry',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
+      cardBGColor: '#E4E4E4',
+      cardHeading: 'Infor CS Engineering and Construction ',
+      cardDesc: `Fulfils the exclusive needs of engineering and construction industry 
+      <ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+    <li>Project Management </li> 
+    <li> Document Management </li>
+    <li>Financial Management </li>
+    <li>Procurement and Supply Chain </li>
+    <li>Human Capital Management (HCM) </li>
+    <li>Contract Management </li>
+    <li>Estimating and Bidding </li>
+    <li>Quality and Safety Management </li>
+    <li>Equipment Management </li>
+</ul>
+      `,
+      isArrow: true,
+      cardTextColor: 'black',
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
     },
-    {
-
-      id: 5,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
-    },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
-    },
-  ];
+  ]
 
   const BENEFITS_CARDS_DATA = [
     { id: '1',icon:'', cardDesc: 'Extensible and integrable Cloud Suites through Infor OS.' },
@@ -124,7 +138,7 @@ const page = () => {
 
       <OverviewSection Text={`Discover smarter way to manage business with Infor CloudSuite. Industry-specific cloud ERP solutions help enterprises to scale with confidence and agility.`} />
       {/* optimising rpa solution */}
-      <CommonCardTwoSlider
+      {/* <CommonCardTwoSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
@@ -134,7 +148,19 @@ const page = () => {
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
       >
-      </CommonCardTwoSlider>
+      </CommonCardTwoSlider> */}
+
+      <CommonCardThreeSlider
+        ID={''}
+        sectionImageUrl={''}
+        sectionBGColor={'#E1F2EF'}
+        sectionHeading={'Our Infor CloudSuite offerings'}
+        sectionDesc={""}
+        sectionTextColor={'#000'}
+        cardData={serviceOfferingData}
+      >
+
+      </CommonCardThreeSlider>
 
       <div className="" style={{ backgroundColor: '#1D162B'}}>
         <div className="md:container mx-auto px-10 pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
