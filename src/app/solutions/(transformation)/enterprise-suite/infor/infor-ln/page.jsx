@@ -13,34 +13,32 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Serving one of Asia's largest Infor LN user bases",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Project managers take complete responsibility for timely delivery of high-quality solutions",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Proprietary tool integrating project management and communication, ensuring 100% transparency.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Delivering significant advantages for complex, multi-site manufacturing operations",
       icon: "",
     },
 
   ]
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-
+    { id: '1', icon:'', cardDesc: 'Access advanced features for global financials, supply chain management, manufacturing, project management, and service lifecycle management.' },
+    { id: '2', icon:'', cardDesc: 'Top-notch global ERP solution with modern user experience that offers end to end process transparency, agility and quick value delivery.' },
+    { id: '3', icon:'', cardDesc: 'Guaranteed optimal, industry- specific business operations aligned with global best practices. ' },
+    
   ];
   const INDUSTRY_SPOTLIGHT = [
     {
@@ -48,7 +46,7 @@ const page = () => {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Manufacturing",
+      cardHeading: "Aerospace and Defense",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
@@ -59,9 +57,8 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
-      cardDesc:
-        "AI-driven workflows, OCR and rule-based system enables accurate results",
+      cardHeading: "Industrial Manufacturing",
+      cardDesc:"",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -71,9 +68,8 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Trading & Distribution",
-      cardDesc:
-        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+      cardHeading: "Automotive",
+      cardDesc:"",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -83,31 +79,8 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
-      cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
+      cardHeading: "Construction and Engineering",
+      cardDesc:"",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -120,8 +93,8 @@ const page = () => {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Master complexity',
+      cardDesc: 'Drive better customer experiences with simple and efficient management of technology, activities, information and resources.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -131,8 +104,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Agile supply chain',
+      cardDesc: 'Optimize supply chain performance, minimize risk and enable multimodal manufacturing, mass customization and subcontractor integration.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -142,8 +115,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Service lifecycle management',
+      cardDesc: 'Maximize service effectiveness with comprehensive lifecycle management that covers service planning to performance analytics.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -153,8 +126,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Quality management',
+      cardDesc: 'Minimize product recalls, warranty claims and scrap costs, ensuring business requirements and effective quality control.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -164,20 +137,38 @@ const page = () => {
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Project lifecycle management',
+      cardDesc: 'Effectively manage project planning, tracking, and reporting, resource allocation, cost control and risk mitigation.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
     {
-  
-  
-      id: 5,
+    id: 6,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      cardHeading: 'Integration and workflow',
+      cardDesc: 'Infor ION integrates and automates workflows, connecting people, processes and data across organization. Access tasks and critical information anywhere, anytime on mobile.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+        {
+    id: 7,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Business intelligence with Infor Birst',
+      cardDesc: 'Infor Birst delivers integrated business intelligence, including financial and operational analytics with Infor LN synergy, enabling predictive insights and informed decision-making.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+            {
+    id: 8,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Product lifecycle management',
+      cardDesc: 'Seamless workflows, analysis, CAD integration and collaboration for reduced time-to-market and improved product quality',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -189,8 +180,8 @@ const page = () => {
     {
       id: 1,
       cardBGColor: '#F5B1DC',
-      cardHeading: 'Custom Application Development',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Data Conversion Utility Tool',
+      cardDesc: 'Convert legacy data to new systems with automated checks and validation overcoming structural changes and master data complexities.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -199,8 +190,8 @@ const page = () => {
 
       id: 2,
       cardBGColor: '#FCE6F4',
-      cardHeading: 'Custom Application Development',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Pre-built business reporting',
+      cardDesc: 'Auto- generation of pre-configured reports, providing real time insights into business performance, reducing time and efforts.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
@@ -209,8 +200,8 @@ const page = () => {
 
       id: 3,
       cardBGColor: '#CDBAF3',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Infor Cloud Migration Planner',
+      cardDesc: 'Simplify complex data migration with coded standards, automating validation, handling obsolete value and ensuring application compatibility.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
@@ -219,54 +210,31 @@ const page = () => {
 
       id: 4,
       cardBGColor: '#E4E4E4',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Business Process Mapping and Customization',
+      cardDesc: 'Configure industry standard practices effortlessly, featuring pre-built functionality and expert-driven add-ons, tailored to business needs.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
-    },
-    {
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
-    },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
     },
   ]
   return (
 <>
 <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Manage complex industry processes, ensuring efficiency with Infor LN"
+        desc="We help businesses overcome complex challenges and achieve strategic objectives."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Discover how our industry expertise and end-to-end services can help you derive maximum value from Infor LN investment.`} />
  {/* optimising rpa solution */}
  <CommonCardTwoSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
-        sectionHeading={'Driving Operational Brilliance'}
-        sectionDesc={'Infor LN stands out as a game-changer, renowned for its robust capabilities, making it the top choice among leading enterprises globally.'}
+        sectionHeading={'Key Capabilities'}
+        sectionDesc={'Infor LN is an ERP solution for operations-intensive organizations, offering advanced capabilities to optimize business performance.'}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
@@ -279,7 +247,7 @@ const page = () => {
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Add On Solutions'}
+        sectionHeading={'Infor Accelerators'}
         sectionDesc={'Enhancing the functionalities of business applications, our specialized solutions intend to add value to business with handy support.'}
         sectionTextColor={'#fff'}
         cardData={RPASolution2}
@@ -290,19 +258,19 @@ const page = () => {
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
         sectionHeading={'Benefits of Infor LN'}
-        sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
+        sectionDesc={''}
         sectionTextColor={'white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We ensure seamless Infor LN implementation, customization and support to maximize ERP investment.'}
       >
       </DistinctiveSection>
 <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Infor LN can help you with rapid growth."
         }
       ></TransformBusinessForm>
 </>
