@@ -54,7 +54,7 @@ const IIOT = () => {
     {
       imageURL: "",
       title: "Case Studies",
-      heading: "India's Largest Lift Truck Manufacturer",
+      heading: "India’s Largest Lift Truck Manufacturer & Exporter",
       description:'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/India%E2%80%99s_Largest_Lift_Truck_Manufacturer_Exporter_IoT_Solution_Enterprise_Asset_Integration.pdf",
       color: "#2B1624",
@@ -154,7 +154,7 @@ const IIOT = () => {
       {/* Start--Section--Overview====================================================================== */}
       <OverviewSection bgColor="#F3F0FA"
         Text={
-          "Strengthen manufacturing supply chain resilience with Industrial Internet of Things, improving OEE, Cycle Time, Machine Throughput, Line Efficiency & Reducing TPM losses"
+          "Strengthen logistics and manufacturing supply chain resilience with Industrial Internet of Things, improving OEE, Cycle Time, Machine Throughput, Line Efficiency & Reducing TPM losses"
         }
       />
       {/* End--Section--Overview====================================================================== */}

@@ -41,7 +41,7 @@ const AIOfferingsData = [
         url: "/",
       },
       {
-        title: "Equipment Monitoring",
+        title: "Real time Anomaly / Distortion Detection ",
         url: "/",
       },
     ],
@@ -80,23 +80,20 @@ const AIOfferingsData = [
     CardTextColor:'#000',
     CardTitle: "",
     CardIconUrl: '',
-    CardHeading: 'Document Understanding',
+    CardHeading: 'Intelligent Scanning',
     CardDesc: 'AI-driven data capture from diverse documents, enabling error-free extraction of unstructured data',
     isArrow: false,
     arrowColor: '#000',
     link: [
       {
-        title: "Optical Character Recognition (OCR)",
+        title: "Intelligent Optical Character Recognition (OCR)",
         url: "/",
       },
       {
-        title: "Text Extraction",
+        title: "Document data Processing",
         url: "/",
       },
-      {
-        title: "Financial Processing",
-        url: "/",
-      },
+      
     ],
   },
   {
@@ -107,14 +104,10 @@ const AIOfferingsData = [
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Conversational<br/>AI',
-    CardDesc: 'Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making. ',
+    CardDesc: 'Human-centric data solutions for customer-centric decision-making and enhanced engagement',
     isArrow: false,
     arrowColor: '#000',
     link: [
-      {
-        title: "Document Processing",
-        url: "/",
-      },
       {
         title: "Sentiment Analysis",
         url: "/",
@@ -123,6 +116,7 @@ const AIOfferingsData = [
         title: "Chatbots and Virtual Assistants",
         url: "/",
       },
+      
     ],
   },
 ]
@@ -356,7 +350,7 @@ const page = () => {
       </DistinctiveSection>
 
       {/* transform business with us section */}
-      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+      <TransformBusinessForm Title={'Transform with Us'} Desc={"Let’s discuss how our expertise can help you with rapid growth."}>
       </TransformBusinessForm>
 
     </>

@@ -224,7 +224,7 @@ const page = () => {
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#EFE9FB'}
-        sectionHeading={'Why Consider RPA for Your Business?'}
+        sectionHeading={'Why Consider RPA (Robotic Process Automation) for Your Business?'}
         sectionDesc={''}
         sectionTextColor={'#000'}
         cardData={RPASolution}
@@ -280,7 +280,7 @@ const page = () => {
 
       </ServiceOfferingSection>
 
-      <IndustrySpotlight slidePerView={1} cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight slidePerView={1} cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'Understanding unique demands of each industry vertical and capitalizing  capabilities, we equip businesses to thrive in competitive market.'} />
 
       {/* project life cycle */}
       <SectionWrapper id="" BGColor="#1D162B" style={{ marginTop: '-35px' }}>
@@ -332,7 +332,7 @@ const page = () => {
       </DistinctiveSection>
 
       {/* transform business with us section */}
-      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how our RPA expertise can help you with rapid growth."}>
       </TransformBusinessForm>
 
       {/* Infotech Weekly Updates */}
