@@ -86,12 +86,26 @@ const ExperienceSlider = () => {
     <SectionWrapper BGColor={"#fff"}>
       <div className="md:container mx-auto">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           navigation={false}
           pagination={{ type: "bullets", clickable: true }}
           autoplay={false}
           loop={false}
           spaceBetween={30}
+          breakpoints={{
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+            },
+        }}
         >
           {casestudy.map((caseItem, index) => (
             <SwiperSlide key={index}>

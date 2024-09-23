@@ -61,9 +61,9 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
                     layout='horizontal'
                 />
 
-                <div className="flex gap-8 mt-24">
+                <div className="flex flex-col md:flex-row gap-8 mt-24">
                     {/* First Container */}
-                    <div className={`w-1/3 ${containerStyle}`}>
+                    <div className={`w-full md:w-1/3 ${containerStyle}`}>
                         {/* Icon and Heading */}
                         <div className="flex items-center mb-8">
                             <div className={iconStyle}>
@@ -86,7 +86,7 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
                     </div>
 
                     {/* Second Container */}
-                    <div className={`w-1/3 ${containerStyle}`}>
+                    <div className={`w-full md:w-1/3 ${containerStyle}`}>
                         {/* Icon and Heading */}
                         <div className="flex items-center mb-8">
                             <div className={iconStyle}>
@@ -109,7 +109,7 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
                     </div>
 
                     {/* Third Container with Image */}
-                    <div className={`w-1/3 ${containerStyle}`}>
+                    <div className={`w-full md:w-1/3 ${containerStyle}`}>
                         <div className="relative w-full h-full overflow-hidden">
                             <div className="absolute inset-0 transition-opacity duration-300 opacity-100">
                                 <Image

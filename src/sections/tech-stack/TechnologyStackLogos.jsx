@@ -6,10 +6,10 @@ import SectionHeading from "@/components/SectionHeading";
 import Image from 'next/image';
 
 const logos = [
-    '/technology-stack/logos/logo--net-technologies.png',
-    '/technology-stack/logos/logo--net-technologies.png',
-    '/technology-stack/logos/logo--net-technologies.png',
-    '/technology-stack/logos/logo--net-technologies.png',
+    '/technology-stack/logos/New Project.svg',
+    '/technology-stack/logos/PowerApps_scalable.svg',
+    '/technology-stack/logos/Microsoft_Office_SharePoint_(2019–present).svg',
+    '/technology-stack/logos/java-vertical.svg',
 ];
 
 const TechnologyStackLogos = () => {
@@ -19,7 +19,7 @@ const TechnologyStackLogos = () => {
             <div className="md:container mx-auto">
                 <SectionHeading 
                     center={true} 
-                    Heading={'Built and delivered<br/> 200+ applications'} 
+                    Heading={'Expertly Built <br/>200+ Custom Apps'} 
                     Desc={'We use the latest technologies to build our products.'} 
                 />
                 <div className="flex justify-center space-x-24 mt-8">

@@ -281,8 +281,8 @@ const page = () => {
           </div>
         </div>
 
-      <div className="md:container mx-auto pb-[40px] pt-[100px]">
-      <div className="grid grid-cols-2 gap-10">
+      <div className="md:container px-10 mx-auto pb-[40px] pt-[100px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <div className=" p-10 bg-[#5F22D9] rounded-3xl">
                   <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>

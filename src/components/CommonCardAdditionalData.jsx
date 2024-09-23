@@ -48,7 +48,7 @@ function CommonCardAdditionalData({ Item, setpageID }) {
                             {additionalData?.map((data, index) => (
                                 <>
                                     <div className="" key={index} style={{ borderBottom: '1px solid #d3d3d3', padding: '10px' }}>
-                                        <p className="text-[22px] font-medium">{data?.text}</p>
+                                        <p className="text-[18px] font-medium">{data?.text}</p>
                                     </div>
                                 </>
                             ))}

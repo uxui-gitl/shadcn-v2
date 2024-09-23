@@ -181,12 +181,16 @@ const DataInsights = () => {
     {
       id: 1,
       cardHeading: "Easy insights into business performance",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.',
+      designation: 'IT Manager, Leading Cooling Services Provider in the Middle East',
+      companyName:'',
     },
     {
       id: 2,
       cardHeading: "Real-Time Warehouse Data Interfacing",
-      cardDesc: 'We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.'
+      cardDesc: 'We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.',
+      designation: "IT Manager, Saudi Arabia's Major Retail Chain",
+      companyName:'',
     },
     
   ];
@@ -198,7 +202,7 @@ const DataInsights = () => {
       title: "Case Studies",
       heading: "Leading Indian Refiner of Precious Metals",
       description: "",
-      link: "/case-study-1",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf",
       color: "#FFFFFF",
       bgCardColor: "#2B1624",
     },
@@ -208,7 +212,7 @@ const DataInsights = () => {
       heading: "Middle East based Leading Cooling Services Provider",
       description:
         "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
-      link: "/case-study-1",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Leading-Cooling-Services-Provider.pdf",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -216,11 +220,10 @@ const DataInsights = () => {
     {
       imageURL: "/path/to/image1.jpg",
       title: "",
-
       heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
       description:
         "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
-      link: "/case-study-1",
+      link: "",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },

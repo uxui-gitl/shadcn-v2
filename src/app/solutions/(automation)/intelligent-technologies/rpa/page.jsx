@@ -20,8 +20,7 @@ import ServiceOfferingSection from '@/sections/serviceOffering/ServiceOfferingSe
 import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
-
-
+import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 
 const RPASolution = [
   {
@@ -152,6 +151,21 @@ const distinctiveData = [
   }
 ]
 
+const INDUSTRY_SPOTLIGHT = [
+  {
+      id: 1,
+      cardBGImageUrl:
+          "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Manufacturing",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+  },
+  
+  // Add more cards as needed
+];
+
 const page = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -265,6 +279,8 @@ const page = () => {
       >
 
       </ServiceOfferingSection>
+
+      <IndustrySpotlight slidePerView={1} cardData={INDUSTRY_SPOTLIGHT} />
 
       {/* project life cycle */}
       <SectionWrapper id="" BGColor="#1D162B" style={{ marginTop: '-35px' }}>

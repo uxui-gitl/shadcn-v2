@@ -31,7 +31,12 @@ const IIOT = () => {
       title: "",
       heading: "Bespoke IIOT Solutions",
       description:
-        "Require Development from Scratch.",
+      `  <ul class="py-2 space-y-1 text-gray-700 list-disc list-inside ">
+               <li>Customization of reports </li>
+               <li>IoT for Vibration Monitoring  </li>
+              <li>IoT for Samrt City</li>
+               <li>IoT for Vehicle tracking </li>
+               </ul>`,
       link: "/case-study-1",
       color: "#2B1624",
       bgCardColor: "#00F8C4",

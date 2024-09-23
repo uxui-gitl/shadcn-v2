@@ -259,7 +259,7 @@ const page = () => {
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
 
       <SectionWrapper BGColor="#a0efe5db">
-        <div className="md:container mx-auto grid grid-cols-2 gap-4">
+        <div className="md:container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <SectionHeading
               headingContainerWidth="w-full"
@@ -269,7 +269,7 @@ const page = () => {
 
             </SectionHeading>
           </div>
-          <div>
+          <div className="hidden md:block">
             <img src="/ai-ml/Industry-served_Automotive.jpg" width="100%" style={{ maxHeight: '300px' }} />
           </div>
         </div>

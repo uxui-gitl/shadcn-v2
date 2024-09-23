@@ -91,7 +91,7 @@ function CommonCard({ Item, setpageID }) {
         )}
         {isArrow && (
           <div className="flex justify-end px-6 py-4">
-            <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
+            <OutlinedButtonWithArrow arrowColor={arrowColor} size={48}/>
           </div>
         )}
       </div>
