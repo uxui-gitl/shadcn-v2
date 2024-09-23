@@ -200,19 +200,19 @@ const DataInsights = () => {
       imageURL: "",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Leading Indian Refiner of Precious Metals",
+      heading: "Delivering high-performing data solutions globally",
       description: "",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf",
+      link: "#",
       color: "#FFFFFF",
       bgCardColor: "#2B1624",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Middle East based Leading Cooling Services Provider",
+      heading: "Leading Indian Refiner of Precious Metals",
       description:
-        "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Leading-Cooling-Services-Provider.pdf",
+        "Improved data quality and leverages strategic decision-making with Power BI   Solution",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -220,19 +220,19 @@ const DataInsights = () => {
     {
       imageURL: "/path/to/image1.jpg",
       title: "",
-      heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
+      heading: "Middle East based Leading Cooling Services Provider",
       description:
-        "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
-      link: "",
+        "Experiences productivity savings and leverages data mart consolidation with Power BI implementation",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Leading-Cooling-Services-Provider.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
       description:
-        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+        "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -355,7 +355,7 @@ const DataInsights = () => {
       {/* End--Section--DataManagement======================================================================== */}
 
       {/* Section--Case-Studies======================================================================= */}
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} />
       {/* End-Section--Case-Studies */}
       {/* Start--Section--Blog======================================================================= */}
       <BlogSection
@@ -393,7 +393,7 @@ const DataInsights = () => {
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how data analytics expertise can help you with rapid growth."
         }
       ></TransformBusinessForm>
       {/* End-Section--TransformBusinessForm */}
