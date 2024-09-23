@@ -158,7 +158,7 @@ const TechnologyStack = () => {
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Enterprise Application Integration',
-      cardDesc: '',
+      cardDesc: 'Accelerate time-to-market with seamless app integration & optimized data flow',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
@@ -298,7 +298,7 @@ const TechnologyStack = () => {
     </DistinctiveSection>
     {/* End--Section--Distinctive======================================================== */}
     {/* Start--Section--Testimonials======================================================== */}
-    <ReviewSliderSection
+    {/* <ReviewSliderSection
       ID={"TESTIMONIALS"}
       Heading={"Delighted customers share their success experience"}
       Desc={''}
@@ -306,13 +306,13 @@ const TechnologyStack = () => {
       CardDataList={TESTIMONIAL_DATA}
       BGColor="#1D162B"
       SectionHeadingMaxWidth={'70%'}
-    ></ReviewSliderSection>
+    ></ReviewSliderSection> */}
     {/* End--Section--Testimonials======================================================== */}
     {/* Section--TransformBusinessForm======================================================================= */}
     <TransformBusinessForm
-      Title={"Transform with us"}
+      Title={"Free 30 Minutes Strategy Session with Tech Expert"}
       Desc={
-        "Let us discuss how intelligent technologies can help you with rapid growth."
+        "Transform with Us. Let’s discuss how our expertise can help you with rapid growth."
       }
     ></TransformBusinessForm>
     {/* End-Section--TransformBusinessForm */}
