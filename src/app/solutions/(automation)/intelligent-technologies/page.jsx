@@ -95,28 +95,28 @@ const page = () => {
       icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       title: "",
       cardDesc:
-        "Automation of repetitive tasks, resulting in increased operational efficiency and productivity. ",
+        "A high degree of accuracy and consistency in business operations",
     },
     {
       _id: 2,
       icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
       title: "",
       cardDesc:
-        "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
+        "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
     },
     {
       _id: 3,
       icon: "benefisIntelligentTechnologies/InformedDecisionmaking",
       title: "",
       cardDesc:
-        "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends.",
+        "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
     {
       _id: 4,
       icon: "benefisIntelligentTechnologies/highDegreeAccuracyConsistency",
       title: "",
       cardDesc:
-        "A high degree of accuracy and consistency in business operations.",
+        "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
     },
   ];
 
@@ -218,7 +218,7 @@ const page = () => {
       </DistinctiveSection>
 
       {/* transform business with us section */}
-      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."} max>
+      <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how our expertise can help you with rapid growth."} max>
       </TransformBusinessForm>
     </>
   );
