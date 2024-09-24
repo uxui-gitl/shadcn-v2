@@ -802,9 +802,7 @@ const UpgradeToCloud = () => {
         DistinctiveData={DISTINCTIVE_DATA}
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
-        Desc={
-          "With our assessment process, delivery framework, strategic resources and data migration practice we ensure efficient performance."
-        }
+        Desc={"With our assessment process, delivery framework, strategic resources and data migration practice we ensure efficient performance."}
       ></DistinctiveSection>
       {/* End-Section--Distinctive Edge */}
       <ReviewSliderSection
@@ -820,9 +818,7 @@ const UpgradeToCloud = () => {
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}
-        Desc={
-          "Let’s discuss how upgrade to cloud can help you to enhance your business's growth potential"
-        }
+        Desc={"Let's discuss how upgrade to cloud can help you to enhance your business's growth potential"}
       ></TransformBusinessForm>
       {/* End-Section--TransformBusinessForm */}
     </>
