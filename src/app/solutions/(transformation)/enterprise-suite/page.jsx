@@ -71,14 +71,7 @@ const EnterpriseSuite = () => {
       content: "Additional content for Card 4",
       imageURL: "/techStack1.png",
     },
-    {
-      title: "Maintainence",
-      hoverTitle: "Maintainence",
-      description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
-      content: "Additional content for Card 5",
-      imageURL: "/techStack1.png",
-    },
+    
     // Add more cards here...
   ];
   const SOLUTION_DATA = [
