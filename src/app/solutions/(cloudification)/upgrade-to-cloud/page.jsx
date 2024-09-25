@@ -53,7 +53,8 @@ const UpgradeToCloud = () => {
       id: 2,
       cardHeading: "Cost Saving & Speedy Transactional Updates",
       cardDesc: `“Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.”`,
-      designation: `Manager IT, India's leading Energy Management System and Solutions provider`,
+      designation: 'Manager IT',
+      companyName:`India's leading Energy Management System and Solutions provider`,
     },
   ];
 
@@ -506,17 +507,14 @@ const UpgradeToCloud = () => {
                         <li>Cost Effective Platform   </li>
                         <li>Minimised IT Maintenance  </li>
                         <li>Advanced Security </li>
-                      </ol>
-                    </li>
-                    <li>
-                    Modern Functionalities 
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Modern Functionalities </li>
                         <li>Live Business Performance Monitoring </li>
                         <li>Multiple Integration Ability  </li>
                         <li>Browser based ERP  </li>
                         <li>Auto update option for cloud environments</li>
                       </ol>
                     </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -578,9 +576,7 @@ const UpgradeToCloud = () => {
                         <li>Clear production visualization through industry-specific dashboards and content.   </li>
                         <li>Enriched finance functionalities encompassing IFRS 15 compliance, seamless XML support, currency variation based on payment schedule.  </li>
                         <li>Field and depot service process through extended warranty contracts and tight integration with Project Control (PCS) projects.  </li>
-                        <li>User management cost effectively   </li>
-
-                      </ol>
+                       </ol>
                     </li>
                   </ul>
                 </div>
@@ -806,9 +802,7 @@ const UpgradeToCloud = () => {
         DistinctiveData={DISTINCTIVE_DATA}
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
-        Desc={
-          "With our assessment process, delivery framework, strategic resources and data migration practice we ensure efficient performance."
-        }
+        Desc={"With our assessment process, delivery framework, strategic resources and data migration practice we ensure efficient performance."}
       ></DistinctiveSection>
       {/* End-Section--Distinctive Edge */}
       <ReviewSliderSection
@@ -824,9 +818,7 @@ const UpgradeToCloud = () => {
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}
-        Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
-        }
+        Desc={"Let's discuss how upgrade to cloud can help you to enhance your business's growth potential"}
       ></TransformBusinessForm>
       {/* End-Section--TransformBusinessForm */}
     </>

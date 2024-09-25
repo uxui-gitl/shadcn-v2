@@ -86,7 +86,7 @@ const Page = () => {
       cardBGColor: "#7F4EE1",
       cardHeading: "Manufacturing",
       cardDesc: "",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
       additionalData: `
       <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
@@ -120,7 +120,7 @@ const Page = () => {
       cardHeading: "Automotive",
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
       additionalData: `
       <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
@@ -144,7 +144,7 @@ const Page = () => {
       cardHeading: "Project & Contracting ",
       cardDesc:
         "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
       additionalData: `
       <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
@@ -163,10 +163,10 @@ const Page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Warehouse Management  ",
+      cardHeading: "Warehouse Management",
       cardDesc:
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
       additionalData: `
       <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
@@ -460,7 +460,7 @@ const Page = () => {
 
                 <div className="my-5">
                   {offeringLinkListData.map((item) => (
-                    <div key={item?.id} className="flex items-center justify-center py-6 text-[24px] font-medium text-white" style={{ borderBottom: '2px solid white', cusror: 'pointer' }}>
+                    <div key={item?.id} className="flex items-center justify-center py-6 text-[24px] font-medium text-white" style={{ borderBottom: '1px solid white', cusror: 'pointer' }}>
                       {item?.beforeIconUrl && <svg xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '20px' }} width="33" height="33" viewBox="0 0 32 33" fill="none">
                         <path d="M21.3331 11.1563V7.15625L25.3331 3.15625L26.6664 5.82292L29.3331 7.15625L25.3331 11.1563H21.3331ZM21.3331 11.1563L15.9998 16.4895M29.3332 16.4896C29.3332 23.8534 23.3636 29.8229 15.9998 29.8229C8.63604 29.8229 2.6665 23.8534 2.6665 16.4896C2.6665 9.12579 8.63604 3.15625 15.9998 3.15625M22.6665 16.4896C22.6665 20.1715 19.6817 23.1563 15.9998 23.1563C12.3179 23.1563 9.33317 20.1715 9.33317 16.4896C9.33317 12.8077 12.3179 9.82292 15.9998 9.82292" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>}
@@ -480,15 +480,15 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="InforSliderWrapper rounded-3xl" style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
-            <div className="flex py-10 px-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <div className="InforSliderWrapper" style={{ zindex: "2", position: 'relative' }}>
+            <div className="flex py-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
               <div className="w-full">
                 <Swiper
                   slidesPerView={1}
                   navigation={false}
                   pagination={{ type: "bullets", clickable: true }}
                   autoplay={true}
-                  loop={false}
+                  loop={true}
                   spaceBetween={30}
                   breakpoints={{
                     640: {
@@ -507,7 +507,7 @@ const Page = () => {
                 >
                   {inforText?.map((item, index) => (
                     <SwiperSlide key={item}>
-                      <div className="w-full text-lg text-center bg-white shadow">
+                      <div className="w-full text-[28px] font-semibold text-left text-white">
                         {item}
                       </div>
                     </SwiperSlide>
@@ -546,7 +546,7 @@ const Page = () => {
 
       />
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'Understanding unique challenges of different industries, we equip businesses to thrive in competitive markets'} />
 
       <HubExpertise
         setHeading="Hub of Expertise"

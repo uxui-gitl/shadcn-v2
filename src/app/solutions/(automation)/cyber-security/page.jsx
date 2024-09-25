@@ -11,7 +11,7 @@ import ExperienceSlider from "@/sections/experience-slider/experienceSlider";
 import CyberSecurityInfograhics from "@/sections/cyber-security-infograhic/CyberSecurityInfographic";
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
-
+import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 const CyberSecurity = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -25,7 +25,7 @@ const CyberSecurity = () => {
     {
       start: 10,
       end: 100,
-      description: "Cyber Security Solutions Implemented",
+      description: "Solutions Implemented",
     },
     // Add more counters as needed
   ];
@@ -47,6 +47,28 @@ const CyberSecurity = () => {
       cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
     },
   ];
+
+  const blogSliderData=[
+    {
+    id: 1,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "Strengthen Your Business Armor with Cyber–Resilience Strategy",
+    cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large. Today, we delve into the critical facets of cyber resilience, emphasizing the importance of a disaster recovery plan, robust cybersecurity measures, and a comprehensive understanding of cyber-attacks and cybersecurity threats. Let's explore how concepts is key to fortifying your business against the evolving challenges of the digital realm.'`,
+    cardTextColor:'white',
+    readMoreUrl:"#"
+  },
+  {
+    id: 2,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "Step-By-Step Approach for Building Effective Privacy Programs:",
+    cardDesc: 'The information revolution has transformed businesses, governments, and people in a big way. Virtually all business and government operations are now digital, resulting in everyone’s personal details being stored in information systems.',
+    cardTextColor:'white',
+    readMoreUrl:"#"
+  },
+  
+  ]
 
   const CyberSecurityData = [
     {
@@ -122,8 +144,7 @@ const CyberSecurity = () => {
       {/* Start--Section--HeroBanner======================================================== */}
       <EntIntro
         title="Leading Digital Protection with Cybersecurity Services"
-        desc="Achieve Breakthrough Performance through
-Data-Driven Automation"
+        desc="Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -165,7 +186,7 @@ Data-Driven Automation"
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#F3F0FA'}
-        sectionHeading={'Our Cyber Security ferings'}
+        sectionHeading={'Our Offerings'}
         sectionDesc={''}
         sectionTextColor={'#000'}
         cardData={CyberSecurityData}
@@ -185,15 +206,20 @@ Data-Driven Automation"
 
 
       {/* Start-Section--Blog======================================================================= */}
-      <BlogSection
+      
+        <BlogSliderSection 
+    cardData={blogSliderData}
+    ></BlogSliderSection>
+      
+      {/* <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Strengthen Your Business Armor with Cyber–Resilience Strategy"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large. Today, we delve into the critical facets of cyber resilience, emphasizing the importance of a disaster recovery plan, robust cybersecurity measures, and a comprehensive understanding of cyber-attacks and cybersecurity threats. Let's explore how concepts is key to fortifying your business against the evolving challenges of the digital realm."
         }
         Color={"white"}
-      ></BlogSection>
+      ></BlogSection> */}
       {/* End-Section--Blog======================================================================= */}
       {/* Start--Section--ExperienceSlider======================================================== */}
       <ExperienceSlider />
