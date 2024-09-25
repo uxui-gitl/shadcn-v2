@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
-    function Slider({children}) {
+    function Slider({children, slidesPerView=3}) {
 
     return (
         <>
@@ -25,7 +25,7 @@ import 'swiper/css';
                         spaceBetween: 24,
                     },
                     1024: {
-                        slidesPerView: 3,
+                        slidesPerView: slidesPerView,
                         spaceBetween: 32,
                     },
                 }}
