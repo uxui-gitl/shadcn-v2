@@ -182,15 +182,15 @@ const DataInsights = () => {
       id: 1,
       cardHeading: "Easy insights into business performance",
       cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.',
-      designation: 'IT Manager, Leading Cooling Services Provider in the Middle East',
-      companyName:'',
+      designation: 'IT Manager',
+      companyName:'Leading Cooling Services Provider in the Middle East',
     },
     {
       id: 2,
       cardHeading: "Real-Time Warehouse Data Interfacing",
       cardDesc: 'We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.',
-      designation: "IT Manager, Saudi Arabia's Major Retail Chain",
-      companyName:'',
+      designation: "IT Manager",
+      companyName:`Saudi Arabia's Major Retail Chain`,
     },
     
   ];

@@ -43,42 +43,35 @@ const EnterpriseSuite = () => {
       title: "Business Consulting & Journey Mapping",
       hoverTitle: "Business Consulting & Journey Mapping",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "Discover right-fit solutions through tech landscape audit, inefficiency identification, and bottleneck analysis.",
       content: "Additional content for Card 1",
       imageURL: "/techStack1.png",
     },
     {
-      title: "Define and Develop",
-      hoverTitle: "Define & Develop",
+      title: "Development Aimed at Performance Enhancement",
+      hoverTitle: "Development Aimed at Performance Enhancement",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "We configure and manage infrastructure, streamline data management, reengineer business processes and implement automation solutions.",
       content: "Additional content for Card 2",
       imageURL: "/techStack1.png",
     },
     {
-      title: "Testing",
-      hoverTitle: "Testing",
+      title: "Deployment to Ensure Seamless Transition",
+      hoverTitle: "Deployment to Ensure Seamless Transition",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "Our solution delivery process includes implementation, data migration, customization, rollout management and country localization.",
       content: "Additional content for Card 3",
       imageURL: "/techStack1.png",
     },
     {
-      title: "Deployment",
-      hoverTitle: "Deployment",
+      title: "Support for System Maintenance",
+      hoverTitle: "Support for System Maintenance",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "We offer expert system support, encompassing maintenance, monitoring, troubleshooting, training, and upgrades.",
       content: "Additional content for Card 4",
       imageURL: "/techStack1.png",
     },
-    {
-      title: "Maintainence",
-      hoverTitle: "Maintainence",
-      description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
-      content: "Additional content for Card 5",
-      imageURL: "/techStack1.png",
-    },
+    
     // Add more cards here...
   ];
   const SOLUTION_DATA = [
@@ -178,51 +171,31 @@ const EnterpriseSuite = () => {
       cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail &Distribution",
+      cardHeading: "Retail & Distribution",
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Retail & Distribution
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Retail stores</li>
+            <li>Duty free & Travel retail</li>
+            <li>Hospitality businesses</li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 3,
       cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail stores",
+      cardHeading: "Healthcare",
       cardDesc:
         "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 4,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Duty free & Travel retail",
-      cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Hospitality businesses",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 6,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
-      cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
       additionalData: `
@@ -230,136 +203,62 @@ const EnterpriseSuite = () => {
     <li>
         Healthcare
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>Pharma Manufacturing & Distributors  </li>
+            <li>Pharma Manufacturing & Distributors</li>
             <li>Health Facilities</li>
-            <li>Medical Equipment & Supplies </li>
+            <li>Medical Equipment & Supplies</li>
         </ol>
     </li>
 </ul>`
     },
     {
-      id: 7,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
+      id: 4,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
       cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
+      cardDesc:
+        "",
+      isArrow: true,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Project
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Real estate</li>
+            <li>Industrial setup</li>
+            <li>Turnkey infrastructure</li>
+            <li>Shipbuilding</li>
+            <li>Small-scale machine building</li>
+        </ol>
+    </li>
+</ul>`
     },
     {
-      id: 8,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
+      id: 5,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
 
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Real estate",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 9,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Industrial setup",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 10,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Turnkey infrastructure",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 11,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Shipbuilding",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-
-    {
-      id: 12,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Small-scale machine building",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 13,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
       cardBGColor: "#EFE9FB",
       cardHeading: "Professional services",
       cardDesc: "",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Professional services
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Education</li>
+            <li>IT Consultancy</li>
+            <li>Real Estate</li>
+            <li>Non-Government Associations</li>
+            <li>Plant Maintenance</li>
+            <li>Hospitality</li>
+        </ol>
+    </li>
+</ul>`
     },
-    {
-      id: 14,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Education",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 15,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: " IT Consultancy",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 16,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Real Estate",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 17,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Non-Government Associations",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 18,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Plant Maintenance",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 19,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Hospitality",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
+    
     // Add more cards as needed
   ];
   return (

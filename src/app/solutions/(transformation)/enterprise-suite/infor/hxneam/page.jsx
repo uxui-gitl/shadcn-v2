@@ -191,15 +191,15 @@ const page = () => {
       title: "Case Studies",
       heading: 'HxGN EAM Project Highlights',
       description: "",
-      link: "/knowledge-center/case-studies.aspx",
+      link: "",
       color: '#FFFFFF',
       bgCardColor: '#2B1624'
     },
     {
       imageURL: "",
       title: "",
-      heading: `Enterprise Asset Management`,
-      description: "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6.",
+      heading: `Enabling asset lifecycle management`,
+      description: "Indian based Global Oncology Pharmaceuticals Company Implements HxGN EAM Solution with Equipment, Work and Material Modules",
       link: "/knowledge-center/case-studies.aspx",
       color: '#000',
       bgCardColor: '#E4E4E4'
@@ -208,9 +208,8 @@ const page = () => {
     {
       imageURL: "/path/to/image1.jpg",
       title: "",
-
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
-      description: "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+       heading: "Enterprise Asset Management",
+      description: "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6.",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#FCE6F4'
@@ -271,7 +270,7 @@ const page = () => {
       >
       </CommonCardTwoSlider>
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT}/>
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'Addressing distinct technological needs of diverse sectors, supporting businesses to succeed '}/>
 
       <BenefitSliderSection
         ID={'BENEFIT'}

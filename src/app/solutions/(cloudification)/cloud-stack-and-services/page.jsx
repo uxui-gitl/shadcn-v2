@@ -230,17 +230,17 @@ const CloudStack = () => {
       imageURL: " ",
       videoURL: "",
       title: "Case Studies",
-      heading: 'KSA based Distributor of Electrical Components',
+      heading: 'Delivering Results that Matters',
       description: "",
-      link: "/case-study-1",
+      link: "",
       color: '#FFFFFF',
       bgCardColor: '#2B1624'
     },
     {
       imageURL: "",
       title: "",
-      heading: 'India’s Leading Wildlife & Nature Conservation Organization',
-      description: "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
+      heading: 'KSA - Electrical Components Distributor',
+      description: "Greater scalability and cost-effectiveness with integration of Dynamics 365 F&O and Dynamics CRM on Cloud",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#E4E4E4'
@@ -250,8 +250,8 @@ const CloudStack = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
-      description: "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+      heading: "Indian Wildlife Conservation Organization",
+      description: "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
       link: "/case-study-1",
       color: '#000',
       bgCardColor: '#FCE6F4'
@@ -259,11 +259,11 @@ const CloudStack = () => {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Leading Distributor of Fruits & Vegetables in the Philippines",
+      heading: "Philippines Fresh Produce Distributor",
       description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
       link: "/case-study-1",
       color: '#000',
-      bgCardColor: '#FFFFFF'
+      bgCardColor: '#e1f2ef'
     },
     // Add more case studies here...
   ];
@@ -436,7 +436,7 @@ const CloudStack = () => {
       />
       {/* End-Section--Synergetic-Partnership */}
       {/* Section--Case-Studies======================================================================= */}
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='#FFFFFF' />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor='#FFFFFF' />
       {/* End-Section--Case-Studies */}
 
       {/* Section--Blog */}

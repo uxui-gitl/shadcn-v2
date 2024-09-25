@@ -18,23 +18,23 @@ const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
   const imgBGURL_Challenges =
     "/infor/inforchallangeleftimage.svg";
-    const TESTIMONIAL_DATA = [
-      {
-        id: 1,
-        cardHeading: "Power BI Solution on time with quality",
-        cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-      },
-      {
-        id: 2,
-        cardHeading: "Power BI Solution on time with quality",
-        cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-      },
-      {
-        id: 3,
-        cardHeading: "Power BI Solution on time with quality",
-        cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-      },
-    ];
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 2,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+    {
+      id: 3,
+      cardHeading: "Power BI Solution on time with quality",
+      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+    },
+  ];
   const CHALLENGES_LIST_DATA = [
     { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
     { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
@@ -44,11 +44,11 @@ const page = () => {
 
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+    { id: '1', icon: '', cardDesc: 'A high degree of accuracy and consistency in business operations' },
+    { id: '2', icon: '', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
+    { id: '3', icon: '', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
+    { id: '4', icon: '', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
+    { id: '5', icon: '', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
 
   ];
 
@@ -78,7 +78,7 @@ const page = () => {
       imageURL: "",
       title: "Case Studies",
       heading: "Insights to Accelerate Business Growth",
-      description:'',
+      description: '',
       link: "",
       color: "#FFFFFF",
       bgCardColor: "#2B1624",
@@ -88,7 +88,7 @@ const page = () => {
       imageURL: "",
       title: "Case Studies",
       heading: "India's Largest Lift Truck Manufacturer",
-      description:'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
+      description: 'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
       link: "",
       color: "#2B1624",
       bgCardColor: "#E4E4E4",
@@ -98,10 +98,10 @@ const page = () => {
       imageURL: "",
       title: "Case Studies",
       heading: "India's Leading Construction Organization",
-      description:'Implements IoT & ML Solution for Real Time Cement Inventory Calibration with 98% accuracy',
+      description: 'Implements IoT & ML Solution for Real Time Cement Inventory Calibration with 98% accuracy',
       link: "",
       color: "#2B1624",
-      bgCardColor:"#FCE6F4"
+      bgCardColor: "#FCE6F4"
     },
 
     // Add more case studies here...
@@ -251,7 +251,7 @@ const page = () => {
         cardData={RPASolution}
       />
 
-<SectionWithSlider
+      <SectionWithSlider
         ID={"UPGRADE_NOW_DATA"}
         sectionHeading={"Infor WMS Industry Solutions"}
         sectionDesc={
@@ -274,13 +274,13 @@ const page = () => {
         sectionHeadingMaxWidth={'100%'}
       />
 
-<CaseStudiesSection
+      <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"2"}
         bgColor="#FFFFFF"
       />
 
-<BlogSection
+      <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
         Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
@@ -290,25 +290,25 @@ const page = () => {
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
-      
-           <ReviewSliderSection
-      ID={"TESTIMONIALS"}
-      Heading={"Delighted customers share their success experience"}
-      Desc={''}
-      Color="#ffffff"
-      CardDataList={TESTIMONIAL_DATA}
-      BGColor="#1D162B"
-      SectionHeadingMaxWidth={'70%'}
-    ></ReviewSliderSection>
 
-<TransformBusinessForm
+      <ReviewSliderSection
+        ID={"TESTIMONIALS"}
+        Heading={"Delighted customers share their success experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="#1D162B"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
+
+      <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
           "Let us discuss how intelligent technologies can help you with rapid growth."
         }
       ></TransformBusinessForm>
 
-      
+
     </>
 
   );
