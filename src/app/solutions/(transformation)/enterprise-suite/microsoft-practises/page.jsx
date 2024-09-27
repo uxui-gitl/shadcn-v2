@@ -30,7 +30,18 @@ const MicrosoftPractises = () => {
       title: "Azure",
       hoverTitle: "Azure",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>
+                  At least 10 characters (and up to 100 characters)
+              </li>
+              <li>
+                  At least one lowercase character
+              </li>
+              <li>
+                  Inclusion of at least one special character, e.g., ! @ # ?
+              </li>
+              
+          </ul>`,
       content: "Additional content for Card 1",
       imageURL: "/techStack1.png",
     },
@@ -38,7 +49,7 @@ const MicrosoftPractises = () => {
       title: "Microsoft Dynamics",
       hoverTitle: "Microsoft Dynamics",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "",
       content: "Additional content for Card 2",
       imageURL: "/techStack1.png",
     },
@@ -46,7 +57,7 @@ const MicrosoftPractises = () => {
       title: "M365",
       hoverTitle: "M365",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "",
       content: "Additional content for Card 3",
       imageURL: "/techStack1.png",
     },
@@ -54,7 +65,7 @@ const MicrosoftPractises = () => {
       title: "Technologies",
       hoverTitle: "Technologies",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "",
       content: "Additional content for Card 4",
       imageURL: "/techStack1.png",
     },
@@ -62,7 +73,7 @@ const MicrosoftPractises = () => {
       title: "Microsoft Fabric",
       hoverTitle: "Microsoft Fabric",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "",
       content: "Additional content for Card 5",
       imageURL: "/techStack1.png",
     },
@@ -70,12 +81,13 @@ const MicrosoftPractises = () => {
       title: "Power Platforms",
       hoverTitle: "Power Platforms",
       description:
-        "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+        "",
       content: "Additional content for Card 5",
       imageURL: "/techStack1.png",
     },
     // Add more cards here...
   ];
+
   const SOLUTION_DATA = [
     {
       id: 1,
@@ -144,30 +156,31 @@ const MicrosoftPractises = () => {
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      icon:'',
+      icon: '',
       cardDesc: "A high degree of accuracy and consistency in business operations",
     },
     {
       id: "2",
-      icon:'',
+      icon: '',
       cardDesc: "Informed decision-making to extract valuable insights and identify patterns, correlation, and trends",
     },
     {
       id: "3",
-      icon:'',
+      icon: '',
       cardDesc: "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
     },
     {
       id: "4",
-      icon:'',
+      icon: '',
       cardDesc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
     {
       id: "5",
-      icon:'',
+      icon: '',
       cardDesc: "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
     },
   ];
+
   const INDUSTRY_SPOTLIGHT = [
     {
       id: 1,
@@ -239,6 +252,7 @@ const MicrosoftPractises = () => {
     },
     // Add more cards as needed
   ];
+
   const HUBEXPERTISE_COUNTER_DATA = [
     {
       start: 100,
@@ -323,6 +337,7 @@ const MicrosoftPractises = () => {
     },
     // Add more case studies here...
   ];
+
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
@@ -350,6 +365,7 @@ const MicrosoftPractises = () => {
       icon: "",
     },
   ];
+
   const TESTIMONIAL_DATA = [
     {
       id: 1,
@@ -386,33 +402,6 @@ Successful Business Outcomes
 
       {/* End--HeroBanner-Section=========================================================== */}
 
-      {/* Start--Section-Navigation-Section============================================================== */}
-      <SectionNav
-        // Solutions
-        // Benefits
-        // Why Us
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-
-      {/* End--Section-Navigation-Section================================================================ */}
-
       {/* Start--Overview-Section============================================================== */}
       <OverviewSection
         Text={
@@ -440,7 +429,9 @@ Successful Business Outcomes
           "We bring together the power of Microsoft technologies delivering cohesive ecosystems, enabling you to achieve more."
         }
         color={"#1D162B"}
-      />
+      >
+
+      </ServicesCardSlider>
 
       {/* End--Solution-Section================================================================ */}
 
