@@ -11,8 +11,8 @@ function SectionWrapperNew({
 }) {
     return (
         <>
-            <div className="py-16 rounded-3xl sm:py-32 px-10" style={{...style}}>
-                <div className="container mx-auto">
+            <div className="py-16 rounded-3xl sm:py-32 px-10 md:-mt-[36px]" style={{...style}}>
+                <div className="md:container mx-auto">
                 {sectionHeadingLayout == 'left'  && <LeftHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></LeftHeading>}
                 {sectionHeadingLayout == 'center'  && <CenterHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></CenterHeading>}
                 {sectionHeadingLayout == 'horizontal' && <HorizontalHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></HorizontalHeading>}

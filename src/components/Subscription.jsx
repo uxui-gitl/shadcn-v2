@@ -9,6 +9,7 @@ import Link from "next/link";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import SectionHeading from "./SectionHeading";
+import HorizontalHeading from "@/components/HorizontalHeading";
 
 const MySwal = withReactContent(Swal);
 const Subscription = ({ title, blue, title2, desc }) => {
@@ -71,39 +72,13 @@ const Subscription = ({ title, blue, title2, desc }) => {
     <>
       <div className={` w-full  `} id="Contact">
         <div className="text-left">
-          <div className="flex md:flex-row flex-col justify-start" style={{ alignItems: "center", justifyContent: 'center' }}>
-            <SectionHeading Heading={title} Color="white" MaxWidth="50%">
-            </SectionHeading>
-            <div className="text-center md:text-left mb-7 md:mb-0">
-            <p className="text-white text-sm sm:text-base md:text-xl font-medium">{desc}</p>
-            </div>
+        <HorizontalHeading
+         heading={title}
+         desc={desc}
+         textColor="white"
+          >
 
-            {/* <div>
-              <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
-                {title == null ? (
-                  <>
-                    <span className="text-[#0745D3]">Free 30-Minutes</span>{" "}
-                    Strategy Session with our Consultant
-                  </>
-                ) : (
-                  <>
-                    {title}
-                    <span className="text-[#0745D3]"> {blue} </span> {title2}
-                  </>
-                )}
-              </h3>
-              <p className="font-normal leading-[22px] md:w-[90%] ">
-                {desc == null ? (
-                  <>
-                    Let&apos;s discuss how Godrej Infotech can help your
-                    business with efficiency and business continuity.
-                  </>
-                ) : (
-                  <>{desc}</>
-                )}
-              </p>
-            </div> */}
-          </div>
+        </HorizontalHeading>
           <div className="px-5 md:px-12">
             <form className="" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 md:gap-10">

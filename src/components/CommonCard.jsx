@@ -21,7 +21,7 @@ function CommonCard({ Item, setpageID }) {
     additionalData=[],
   } = Item;
 
-  const cardBodyMinHeight = setpageID === "ai-ml" ? "564px" : "424px";
+  const cardBodyMinHeight = setpageID === "ai-ml" ? "564px" : "452px";
 
   return (
     <>
