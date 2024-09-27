@@ -15,6 +15,8 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
+import ServiceSlider from '@/sections/serviceSlider/ServiceSlider';
+import Slider from "@/components/Slider";
 
 
 function page() {
@@ -402,6 +404,14 @@ function page() {
 
     ];
 
+    const serviceSliderData = [
+        { id: '1', text: 'dummy text' },
+        { id: '2', text: 'dummy text' },
+        { id: '3', text: 'dummy text' },
+        { id: '4', text: 'dummy text' },
+        { id: '5', text: 'dummy text' },
+    ]
+
     return (
         <>
             <EntIntro
@@ -465,56 +475,23 @@ function page() {
                 setHeadingLayout="horizontal"
             />
 
-            <div className="rounded-3xl" style={{ backgroundColor: '#1D162B', marginTop: '-35px' }}>
-                <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
-                    <div className="w-full md:w-1/2">
-                        <SectionHeading
-                            Heading={`Infor CloudSuite Services`}
-                            Color={'white'}
-                            Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
-                            headingContainerWidth={'w-full'}
-                        />
-                    </div>
-                    <div className="hidden md:w-1/2 md:block">
-                        <img src="/infor/man.svg" style={{ width: '100%' }} />
-                    </div>
-                </div>
-                <div className="md:container mx-auto bg-[#EFE9FB] py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px", transform: "translateY(-28px)" }}>
-                    <Swiper
-                        slidesPerView={1}
-                        navigation={false}
-                        pagination={{ type: "bullets", clickable: true }}
-                        autoplay={true}
-                        loop={false}
-                        spaceBetween={30}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 1,
-                                spaceBetween: 16,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                                spaceBetween: 24,
-                            },
-                            1024: {
-                                slidesPerView: 3,
-                                spaceBetween: 32,
-                            },
-                        }}
-                    >
-                        {[1, 2, 3, 4, 5]?.map((item, index) => (
-                            <SwiperSlide key={item}>
+            <ServiceSlider
+                sectionHeading="Infor CloudSuite Services"
+                sectionDesc="Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise."
+            >
+                  <Slider>
+                        {serviceSliderData?.map((item, index) => (
+                            <SwiperSlide key={index}>
                                 <div className="bg-[#EFE9FB] rounded-lg">
                                     <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
                                     <div className="p-5">
-                                        <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                                        <h5 className="mb-2 text-2xl font-bold">{item.text}</h5>
                                     </div>
                                 </div>
                             </SwiperSlide>
                         ))}
-                    </Swiper>
-                </div>
-            </div>
+                    </Slider>
+            </ServiceSlider>
 
             <CommonCardThreeSlider
                 ID={"AIOfferings"}

@@ -15,6 +15,11 @@ import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
+import ServiceSlider from '@/sections/serviceSlider/ServiceSlider';
+import Slider from "@/components/Slider";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
 
 const MicrosoftPractises = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -87,6 +92,14 @@ const MicrosoftPractises = () => {
     },
     // Add more cards here...
   ];
+  
+  const serviceSliderData = [
+    { id: '1', text: 'dummy text' },
+    { id: '2', text: 'dummy text' },
+    { id: '3', text: 'dummy text' },
+    { id: '4', text: 'dummy text' },
+    { id: '5', text: 'dummy text' },
+]
 
   const SOLUTION_DATA = [
     {
@@ -387,6 +400,7 @@ const MicrosoftPractises = () => {
     },
   ];
 
+
   return (
     <>
       {/* Start--HeroBanner-Section========================================================= */}
@@ -435,6 +449,26 @@ Successful Business Outcomes
 
       {/* End--Solution-Section================================================================ */}
 
+      {/*  */}
+      <ServiceSlider
+                sectionHeading="Infor CloudSuite Services"
+                sectionDesc="Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise."
+            >
+                  <Slider>
+                        {serviceSliderData?.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="bg-[#EFE9FB] rounded-lg">
+                                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                                    <div className="p-5">
+                                        <h5 className="mb-2 text-2xl font-bold">{item.text}</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Slider>
+            </ServiceSlider>
+      {/*  */}
+
       {/* Start--Microsoft-Solution-Section============================================================== */}
       <CommonCardThreeSlider
         ID={"AIOfferings"}
@@ -450,6 +484,7 @@ Successful Business Outcomes
         cardData={SOLUTION_DATA}
       ></CommonCardThreeSlider>
       {/* End--Microsoft-Solution-Section================================================================ */}
+      
 
       {/* Start--Synergetic Partnerships-Section============================================================== */}
       <HighlightPromo
@@ -465,14 +500,13 @@ Successful Business Outcomes
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
         ID={"BENEFIT"}
-        BGColor={"#1D162B"}
-        Heading={"Microsoft Promise for Your Business"}
-        Desc={
+        sectionBGColor={"#1D162B"}
+        sectionHeading={"Microsoft Promise for Your Business"}
+        sectionDesc={
           "Driving transformational changes, Microsoft Dynamics minimizes operational cost and increases overall efficiency of employees and customers."
         }
-        Color={"white"}
-        CardDataList={BENEFITS_CARDS_DATA}
-        SectionHeadingMaxWidth={"100%"}
+        sectionTextColor={"white"}
+        cardData={BENEFITS_CARDS_DATA}
       />
       {/* End--Benefits-Section================================================================ */}
 
@@ -524,7 +558,6 @@ Successful Business Outcomes
         Color={"white"}
       ></BlogSection>
       {/* End--Blogs-Section================================================================ */}
-
       {/* Start--Distinctive-Section============================================================== */}
       <DistinctiveSection
         DistinctiveData={DISTINCTIVE_DATA}
