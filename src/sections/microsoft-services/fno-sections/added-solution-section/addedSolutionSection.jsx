@@ -33,12 +33,13 @@ const CONTAINER_DATA_2 = {
     ),
     heading: 'Production Order App',
     listItems: [
-        { text: 'Simplified Quality Order Generation', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
+        { text: 'Seamless Production Order Creation', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
         { text: 'Real-Time Data Integration', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
-        { text: 'Effortless QR Code Search to locate Quality Orders', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
-        { text: 'Mobile Inspection Updates', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
-        { text: 'Detailed Test Insights', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
-        { text: 'Order-level validation, approval, and closure', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
+        { text: 'Open Order Management', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
+        { text: 'Quick QR Code Searches for Production Orders', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
+        { text: 'Mobile Inspection Updates', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
+        { text: 'Individual Test Results', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
+        { text: 'Efficient Validation', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
     ],
 };
 
@@ -57,7 +58,7 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
             <div className='md:container mx-auto'>
                 <SectionHeading
                     Heading={'Godrej Infotech Value Added Solutions'}
-                    Desc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders.'}
+                    Desc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible.'}
                     layout='horizontal'
                 />
 
