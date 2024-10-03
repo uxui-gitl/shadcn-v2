@@ -16,22 +16,22 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Experienced team of certified Infor CRM professionals",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "In-depth knowledge of Infor CRM's capabilities and best practices",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Dedicated customer support, assisting businesses in implementation phase and beyond",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Proven track record of successful Infor CRM implementations",
       icon: "",
     },
 
@@ -268,22 +268,22 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Infor CRM Implementation Best Practices"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "A successful Infor CRM implementation requires careful planning, execution, and ongoing optimization. By following these best practices and hacks, organizations can unlock the full potential of Infor CRM, driving business growth, customer satisfaction, and user adoption."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
          <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Partner with Godrej Infotech for exceptional customer experiences and streamlined sales & marketing operations'}
       >
       </DistinctiveSection>
       
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Infor CRM can help you with rapid growth"
         }
       ></TransformBusinessForm>
     </>
