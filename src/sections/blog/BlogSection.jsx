@@ -6,7 +6,7 @@ import Image from "next/image";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 
-function BlogSection({ID, blogImageUrl, Heading, Desc, Color='white', MaxWidth, readMoreUrl=""}) {
+function BlogSection({ID, blogImageUrl, Heading, Desc, Color='white', readMoreUrl=""}) {
     return (
         <>
 

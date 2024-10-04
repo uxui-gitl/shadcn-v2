@@ -1,53 +1,354 @@
+"use client";
 // system import
 import Image from "next/image";
-import React from "react";
-// component import
-import Announcement from "@/components/home/Announcement";
-import Navbar from "@/components/home/navbar";
-import HeroIntro from "@/components/home/HeroIntro";
-import ClientLogos from "@/components/home/ClientLogos";
-import Robot from "@/components/home/Robot";
-import Robot2 from "@/components/home/Robot2"
-import EmbraceCard from "@/components/home/EmbraceCard";
-import HubExpertise from "@/components/home/HubExpertise";
-import ResultSection from "@/components/home/ResultSection";
-import { InfiniteMovingCards } from "@/components/home/ui/infinite-moving-cards";
-import Subscribe from "@/components/home/Subscribe";
-import Footer from "@/components/home/Footer";
-import Container from "@/components/home/Container";
-import OfferingCards from "@/components/home/OfferingCards";
+import Slider from "@/components/Slider";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
+import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import BlogSection from "@/sections/blog/BlogSection";
+import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css';
+import { useState } from "react";
+import Navbar from "@/components/Navbar/Navbar";
+
+
 
 export default function Home() {
+  const blogImageUrl = "/homeNew/blog.svg";
+
+  const partnerLogo = [
+    "/homeNew/partner1.svg",
+    "/homeNew/partner2.svg",
+    "/homeNew/partner3.svg",
+    "/homeNew/partner4.svg",
+    "/homeNew/partner1.svg",
+    "/homeNew/partner2.svg",
+    "/homeNew/partner3.svg",
+  ];
+
+  const CASE_STUDIES_DATA = [
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
+      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      title: "Case Studies",
+      heading: "Infor Project Highlights",
+      description:
+        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
+      link: "/case-study-1",
+      color: "#FFFFFF",
+    },
+    {
+      imageURL: "",
+      title: "",
+      heading: "Electrical Component Manufacturer",
+      description:
+        "Infor LN reduces manual efforts by 30% for auto sector's leading electrical component manufacturer",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
+      color: "#000",
+      bgCardColor: "#FCE6F4",
+    },
+
+    {
+      imageURL: "/path/to/image1.jpg",
+      title: "",
+
+      heading: "Hydraulic Systems Manufacturer",
+      description:
+        "Infor LN achieves Enhanced User Experience and Workforce Enablement for Global Hydraulic Systems Manufacturer",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+      color: "#000",
+      bgCardColor: "#EFE9FB",
+    },
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      title: "",
+      heading: "Sheet metal manufacturer",
+      description:
+        "Infor cuts costs by 40% and boosts after-sales speed by 20% for European sheet metal manufacturer",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#E1F2EF",
+    },
+    // Add more case studies here...
+  ];
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "Infor Managed Support Services",
+      cardDesc: 'In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.',
+      designation: 'Manager',
+      companyName: 'Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer'
+    },
+    {
+      id: 2,
+      cardHeading: "Implementation with Better Business Understanding",
+      cardDesc: 'Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.',
+      designation: 'IT Manager',
+      companyName: 'Global Process Equipment Supplier'
+    },
+    {
+      id: 3,
+      cardHeading: "Swift Implementation with Proactive Approach",
+      cardDesc: 'Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.',
+      designation: 'Executive Director',
+      companyName: 'Commercial'
+    },
+  ];
+
+  const sliderData = [
+    {id:1, title:'EnterPrise Customers', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solutions", url:'https://png.pngtree.com/background/20230512/original/pngtree-business-meeting-room-dark-background-picture-image_2502832.jpg'},
+    {id:2, title:'EnterPrise Customers2', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solutions2", url:'https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg'},
+    {id:3, title:'hsdgjhgjhgsad', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solution3", url:'https://images.prismic.io/hubtic/3890db0a-cd65-45bb-8ac6-f08b971e68cb_Website+Go%CC%88rselleri+1080x608+%281%29.jpg?auto=compress,format&rect=135,0,811,608&w=2000&h=1500'},
+
+  ]
+
+  const [sliderImageUrl, setSliderImageUrl] = useState('');
+
+
+  function handleReadMoreHover(item:any, isFilled:boolean){
+    console.log(item.url,"urlllllllllllllllll")
+    if(isFilled){
+      setSliderImageUrl(item.url)
+    }
+
+    else{
+      setSliderImageUrl('')
+    }
+  }
+
   return (
     <>
-      <Announcement />
-      <Navbar />
-      <HeroIntro />
-      <div className="common-section-client-robot">
-        <div>
-          <ClientLogos></ClientLogos>
+     <div className={`relative z-[500]`}>
+          <div className={`absolute w-full  `}>
+            <Navbar theme="light" />
+          </div>
         </div>
-        <div className="flex justify-center text-6xl font-medium text-center leading-tight pt-16" style={{color:"#CDBAF3"}}>
-          Building Tomorrow&apos;s <br /> Solutions Today
+      <div className="slider-wrapper bg-black" style={{ height: '100vh' }}>
+        <div className="video relative" style={{ height: 'inherit' }}>
+          <video src="/home/1.mp4"
+            autoPlay
+            loop
+            muted
+            className="inset-0 w-full h-full object-cover"></video>
+            <div className={` w-full h-full absolute top-0 transition duration-700  ${sliderImageUrl ? 'opacity-100 ease-in-out' : 'opacity-0 ease-in-out'}`}  style={{  
+                backgroundImage: `url(${sliderImageUrl})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"}}>
+             
+              </div>
+            <div className="container mx-auto text-[76px] leading-[86px] text-white absolute" style={{top:'35%', left:'0', right:'0'}}>
+            Delivering Business<br></br> value with Automation
+            </div>
+            {/* slider */}
+          <div className="container mx-auto h-60" style={{ position: "absolute", width: "100%", bottom: '0', left:0, right:0 }}>
+            <div className="flex h-60" style={{alignItems: "baseline"}}>
+              <div className=" w-[70%]">
+                <Swiper
+                  slidesPerView={1}
+                  navigation={{
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  }}
+                  autoplay={false}
+                  loop={true}
+                  spaceBetween={30}
+                  modules={[Navigation]}
+                >
+                  {sliderData?.map((item, index) => (
+                    <SwiperSlide key={item.id}>
+                      <div className="w-full p-6 bg-transparent rounded-3xl">
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="text-[#fff] text-[20px] font-semibold">{item.title}</div>
+                          <div>
+                            <p className="text-base font-medium leading-[24px] text-white mb-10">{item.desc}</p>
+                            <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2" onMouseOver={() => handleReadMoreHover(item, true)} onMouseOut={() => handleReadMoreHover(item, false)}>Read more</button>
+                          </div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              <div className="w-[30%] relative">
+                <div className={`swiper-button-next`} style={{ width: '48px', height: '48px' }}>
+                  <img src="/homeNew/btn-arrows-right.svg" alt="icon" />
+                </div>
+                <div className={`swiper-button-prev`} style={{ width: '48px', height: '48px', transform: "translateX(268px)", }}>
+                  <img src="/homeNew/btn-arrows-left.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+            {/*end slider */}
+
         </div>
-        <Robot2 />
+      </div>
+      {/* [partner Section] */}
+
+      <div className="bg-white relative z-10">
+        <div className="md:container mx-auto pt-40 pb-20 relative">
+          <div
+            className="absolute"
+            style={{
+              left: "50%",
+              top: "0",
+              transform: "translateX(-50%) translateY(-35%)",
+            }}
+          >
+            <Image
+              src={"/homeNew/partnerupperimage.svg"}
+              width={400}
+              height={400}
+              alt="asdjn"
+            />
+          </div>
+          <Slider slidesPerView={6} autoplay={true}>
+            {partnerLogo?.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Image src={item} width={150} height={150} alt="khbas" />
+              </SwiperSlide>
+            ))}
+          </Slider>
+        </div>
       </div>
 
-      <EmbraceCard />
-      <HubExpertise />
-      <Image src={'/home/Curve-Home-LandingPage.svg'} alt="hi" width={100} height={80}></Image>
-      <OfferingCards></OfferingCards>
+      {/* end partner Section */}
 
-      <div className="dv-gradientbg">
-        <Container className=" flex-col px-10 " tag="section">
-          <ResultSection />
-        </Container>
-        <InfiniteMovingCards/>
+      <div className=" relative z-2 bg-white" style={{ borderBottomLeftRadius: '24px', borderBottomRightRadius: "24px" }}>
+        <div className="md:container mx-auto pt-32 pb-40">
+          <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
+            We must move beyond the usual to thrive.
+          </p>
+          <div className="text-[54px] leading-[64px] font-semibold">
+            Transform your <span className="text-[#5F22D9]">manufacturing</span>{" "}
+            company<br></br>
+            into a <span className="text-[#5F22D9]">reliable</span> company,
+            <br></br>
+            delivering with <span className="text-[#5F22D9]">confidence.</span>
+          </div>
+        </div>
       </div>
 
-      <div className="mt-8 flex-col px-10 ">
-        <Subscribe />
-      </div>
+      {/* video */}
+      <div className="h-screen -mt-5" >
+        <video
+          src={'https://s3-figma-videos-production-sig.figma.com/video/1327514938936607439/TEAM/cf3d/2255/-0d82-42de-b3af-a9a53cdf193e?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A~oKeONzxgirn5kceEUu7lXW87jduK69e0XZFA0KUXzdOAtpe6XBvNo5bOt9VpKwMkygF7ZenKSU5W~VdOulvLufBBHc9aIoW40wIiR254qQkrsQCxZ16xp15g6CaHqemy5gIf1nM4nP-KxFh4-Q00uy71tQYgFLRzeH7aSMvV9B27kVgzHN1sA7QfL2A46-YTgkTXa1-yWBdIFCdabXDfkAbl2uuNEXfi2ywiO3BcR-08NHN-Iv3ltpnHqodEQwfkslanjHaXujCEyudOnmD4St8MrFMB9UykKj4iYevvTkOU8jZjHu7ucTFqK6RlWlLrnHWyZmPTf6H1~OhUf6Bg__'} // Replace with your video path
+          autoPlay
+          loop
+          muted
+          className="inset-0 w-full h-full object-cover"
+        />
+      </div >
+      {/* video */}
+
+      {/* innovative section */}
+      <SectionWrapperNew
+        sectionHeading={"Transforming Through Innovative Change"}
+        sectionDesc={"Empowering Your Transformation Journey with Our ACT Model: Automation, Cloud, and Transformation"}
+        sectionTextColor="black"
+        sectionHeadingLayout="horizontal"
+        title="THE ACT MODEL - AUTOMATION"
+        style={{ backgroundColor: "white", position: 'relative', zIndex: '2', height: '750px' }}
+      >
+        <Slider slidesPerView={3}>
+          {[1, 2, 3, 4, 5]?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="p-8 bg-[#5F22D9] rounded-3xl ">
+                <div className="text-xl text-white text-semibold mb-[100px]">
+                  Automation
+                </div>
+                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">Streamline Your Operations</div>
+                <div className="mb-3 text-xl leading-[31px] text-white h-[150px]">Harness the power of automation to optimize processes and drive efficiency.</div>
+
+              </div>
+
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
+      {/* end innovative section */}
+
+      {/* hub of experties */}
+      <SectionWrapperNew
+        sectionHeading={"Hub of Expertise"}
+        sectionDesc={"We are here to build edge and bring technology brilliance with the finest in the industry."}
+        sectionTextColor="white"
+        sectionHeadingLayout="center"
+        style={{ background: "linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)", paddingTop: '400px' }}
+      >
+        <div className="grid grid-cols-4 gap-16 py-6">
+          <div className="">
+            <h1 className="text-[96px] font-[700] text-white">25<sup className="text-normal">+</sup></h1>
+            <p className="text-base font-medium text-[#EFE9FB]">A Legacy of Success in Delivering Tailored Solutions for 25+ Years</p>
+          </div>
+          <div className="">
+            <h1 className="text-[96px] font-[700] text-white">500<sup>+</sup></h1>
+            <p className="text-base font-medium text-[#EFE9FB]">Trusted by 898 Customers Across multiple Industries.</p>
+          </div>
+          <div className="">
+            <h1 className="text-[96px] font-[700] text-white">15k<sup>+</sup></h1>
+            <p className="text-base font-medium text-[#EFE9FB]">Harnessing 15,000 Man-Years of Expertise for Your Benefit.</p>
+          </div>
+          <div className="">
+            <h1 className="text-[96px] font-[700] text-white">15k<sup>+</sup></h1>
+            <p className="text-base font-medium text-[#EFE9FB]">Fueled by a Diverse Workforce of 15000 Employees Globally.</p>
+          </div>
+        </div>
+
+        <div className="relative h-[450px] translate-y-[92px]">
+          <Image src="/homeNew/globe.svg" layout="fill" alt="globe" />
+        </div>
+      </SectionWrapperNew>
+      {/* end hub of experties */}
+
+      {/* offerings */}
+      <SectionWrapperNew
+        sectionHeading={"Unlock potential with our offerings"}
+        sectionDesc={"Innovative solutions that empower businesses to thrive in today’s digital landscape"}
+        sectionTextColor="black"
+        title="OUR OFFERINGS"
+        sectionHeadingLayout="horizontal"
+        style={{ background: 'white' }}
+      >
+        <h1>asdljn</h1>
+      </SectionWrapperNew>
+      {/* end offerings */}
+
+      {/* @ts-ignore */}
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#1D162B'} />
+
+      <BlogSection
+        ID={"blog"}
+        blogImageUrl={'/homeNew/blog-svg.png'}
+        Heading={"Elevate Your Professional Journey"}
+        Desc={
+          "Join a collaborative environment that fosters creativity and innovation. Take the next step in your career today!"
+        }
+        Color={"white"}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
+      ></BlogSection>
+      {/* @ts-ignore */}
+      <ReviewSliderSection
+        ID={"TESTIMONIALS"}
+        Heading={"What people are saying about the us."}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="#1D162B"
+      ></ReviewSliderSection>
+
+      <TransformBusinessForm
+        Title={"Are you Ready for Infor-driven growth? "}
+        Desc={
+          "Let's get started!"
+        }
+      ></TransformBusinessForm>
+
       {/* <Footer /> */}
     </>
   );

@@ -6,6 +6,7 @@ function SectionWrapperNew({
     sectionDesc,
     sectionTextColor='#fff',
     sectionHeadingLayout="left",
+    title="",
     style,
     children,
 }) {
@@ -15,7 +16,7 @@ function SectionWrapperNew({
                 <div className="md:container mx-auto">
                 {sectionHeadingLayout == 'left'  && <LeftHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></LeftHeading>}
                 {sectionHeadingLayout == 'center'  && <CenterHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></CenterHeading>}
-                {sectionHeadingLayout == 'horizontal' && <HorizontalHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></HorizontalHeading>}
+                {sectionHeadingLayout == 'horizontal' && <HorizontalHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} title={title}></HorizontalHeading>}
                 {children}
                 </div>
             </div>
