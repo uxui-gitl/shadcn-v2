@@ -14,10 +14,40 @@ import 'swiper/css/pagination';
 import 'swiper/css';
 import { useState } from "react";
 import Navbar from "@/components/Navbar/Navbar";
+import { Tabs }  from "@/components/ui/tabs";
 
 
 
 export default function Home() {
+  const tabs = [
+    {
+      title: "Services",
+      value: "services",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+          <ServiceContent />
+        </div>
+      ),
+    },
+    {
+      title: "Industry",
+      value: "industry",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+          <IndustryContent />
+        </div>
+      ),
+    },
+    {
+      title: "Partners",
+      value: "partners",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+          <IndustryContent  />
+        </div>
+      ),
+    },
+  ];
   const blogImageUrl = "/homeNew/blog.svg";
 
   const partnerLogo = [
@@ -103,7 +133,7 @@ export default function Home() {
   const sliderData = [
     {id:1, title:'EnterPrise Customers', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solutions", url:'https://png.pngtree.com/background/20230512/original/pngtree-business-meeting-room-dark-background-picture-image_2502832.jpg'},
     {id:2, title:'EnterPrise Customers2', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solutions2", url:'https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg'},
-    {id:3, title:'hsdgjhgjhgsad', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solution3", url:'https://images.prismic.io/hubtic/3890db0a-cd65-45bb-8ac6-f08b971e68cb_Website+Go%CC%88rselleri+1080x608+%281%29.jpg?auto=compress,format&rect=135,0,811,608&w=2000&h=1500'},
+    {id:3, title:'EnterPrise Customers3', desc:"Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solution3", url:'https://images.prismic.io/hubtic/3890db0a-cd65-45bb-8ac6-f08b971e68cb_Website+Go%CC%88rselleri+1080x608+%281%29.jpg?auto=compress,format&rect=135,0,811,608&w=2000&h=1500'},
 
   ]
 
@@ -111,11 +141,9 @@ export default function Home() {
 
 
   function handleReadMoreHover(item:any, isFilled:boolean){
-    console.log(item.url,"urlllllllllllllllll")
     if(isFilled){
       setSliderImageUrl(item.url)
     }
-
     else{
       setSliderImageUrl('')
     }
@@ -255,6 +283,8 @@ export default function Home() {
         title="THE ACT MODEL - AUTOMATION"
         style={{ backgroundColor: "white", position: 'relative', zIndex: '2', height: '750px' }}
       >
+       
+
         <Slider slidesPerView={3}>
           {[1, 2, 3, 4, 5]?.map((item, index) => (
             <SwiperSlide key={index}>
@@ -314,8 +344,10 @@ export default function Home() {
         title="OUR OFFERINGS"
         sectionHeadingLayout="horizontal"
         style={{ background: 'white' }}
-      >
-        <h1>asdljn</h1>
+      > 
+       <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+      <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
+    </div>
       </SectionWrapperNew>
       {/* end offerings */}
 
@@ -353,3 +385,59 @@ export default function Home() {
     </>
   );
 }
+
+const ServiceContent = () => {
+  const services = [
+    'Business Consulting',
+    'Implementation & Global Rollout',
+    'Migration & Transformation',
+    'Legacy Modernisation',
+    'Infrastructure as a Service',
+    'Managed Services',
+  ];
+  return (
+   <div className="grid grid-cols-2 gap-20 h-full">
+    <div className="py-10 px-10">
+      {services.map((item) => (
+        <>
+<div className="list text-[22px] py-4 flex justify-between" style={{borderBottom:'1px solid #d3d3d3'}}>
+    {item}
+       <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+        </div>
+        </>
+      ))}
+
+    </div>
+    <div className="relative" style={{backgroundImage:`url(/homeNew/tab1.svg)`, backgroundSize:'cover'}}>
+    </div>
+   </div>
+  );
+};
+
+const IndustryContent = () => {
+  const data = [
+    'Business Consulting',
+    'Implementation & Global Rollout',
+    'Migration & Transformation',
+    'Legacy Modernisation',
+    'Infrastructure as a Service',
+    'Managed Services',
+  ];
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+     <div className="py-10 px-10">
+       {data.map((item) => (
+         <>
+ <div className="list text-[22px] py-4 flex justify-between" style={{borderBottom:'1px solid #d3d3d3'}}>
+     {item}
+        <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+         </div>
+         </>
+       ))}
+ 
+     </div>
+     <div className="relative" style={{backgroundImage:`url(/homeNew/tab1.svg)`, backgroundSize:'cover'}}>
+     </div>
+    </div>
+   );
+};
