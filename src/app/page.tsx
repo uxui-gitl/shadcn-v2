@@ -397,7 +397,7 @@ export default function Home() {
           autoPlay
           loop
           muted
-          className="inset-0 w-full h-full object-cover fixed -z-1"
+          className="inset-0 w-full h-full object-cover fixed -z-50"
         />
       </div >
       {/* video */}
