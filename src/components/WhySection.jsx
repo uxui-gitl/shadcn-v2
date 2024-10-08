@@ -2,23 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import checkout from "../../public/icon/whygitl/WhyGITL2.svg";
-import SectionHeading from "./SectionHeading";
-import curiousPerson from "../../public/curiousPerson.png";
-import cloud from "../../public/cloud.png";
-import cloudArrows from "../../public/cloudArrows.png";
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+
 const WhySection = ({
   Title,
   Desc,
@@ -26,16 +11,13 @@ const WhySection = ({
 }) => {
   return (
     <>
-      <div className='md:container mx-auto'>
-        {/* left */}
-        <div className="md:mb-5 mb-5">
-          <SectionHeading
-            Heading={Title}
-            Desc={Desc}
-          ></SectionHeading>
-        </div>
-        {/* right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12">
+    <SectionWrapperNew
+     sectionHeading={Title}
+     sectionDesc={Desc}
+     sectionTextColor={'black'}
+     sectionHeadingLayout="left"
+    >
+<div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12">
         {arr.map((item, index) => (
             <>
               <div className="card py-4 md:py-12" key={index} style={{ borderBottom: '2px solid #d3d3d3'}}>
@@ -49,7 +31,7 @@ const WhySection = ({
             </>
           ))}
         </div>
-      </div>
+    </SectionWrapperNew>
     </>
   );
 };

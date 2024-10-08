@@ -1,26 +1,26 @@
 import SectionWrapper from '@/components/SectionWrapper';
+import SectionWrapperNew from '@/components/SectionWrapperNew';
 import SectionHeading from '@/components/SectionHeading';
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 
-function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth, readMoreUrl=""}) {
+function BlogSection({ID, blogImageUrl, Heading, Desc, Color='white', readMoreUrl=""}) {
     return (
         <>
-            <SectionWrapper id={ID} style={{
-                backgroundImage: `url(${blogImageUrl})`, backgroundSize: 'cover',
-            }}>
 
-                <div className="md:container mx-auto text-center md:text-left">
-                    <SectionHeading
-                        Heading = {Heading}
-                        Desc ={Desc}
-                        Color = {Color}
-                    >
-                    </SectionHeading>
-               
-
+        <SectionWrapperNew
+        style={{
+            backgroundImage: `url(${blogImageUrl})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}
+        sectionHeading={Heading}
+        sectionDesc={Desc}
+        sectionTextColor={Color}
+        sectionHeadingLayout="left"
+        >
                 <Link
                     href={readMoreUrl}
                     target="_blank"
@@ -33,8 +33,7 @@ function BlogSection({ID, blogImageUrl, Heading, Desc, Color, MaxWidth, readMore
                         size={1}
                     />
                 </Link>
-                </div>
-            </SectionWrapper>
+            </SectionWrapperNew>
         </>
     )
 }

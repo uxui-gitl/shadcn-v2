@@ -17,32 +17,38 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Access to relevant information saves time, boosts customer satisfaction and streamlines issue resolution. ",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Enhance lead nurturing, consistency in interactions and lead scoring.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Design effective campaigns and personalize buying experiences.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Centralized record of customer interactions, making it accessible to all team members.",
+      icon: "",
+    },
+    {
+      _id: 5,
+      desc: "Improve teamwork, allowing simultaneous work on documents and faster customer responses.",
       icon: "",
     },
 
   ]
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+    { id: '1', icon:'', cardHead:'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.S' },
+    { id: '2', icon:'', cardHead:'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
+    { id: '3', icon:'', cardHead:'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
+    { id: '1', icon:'', cardHead:`Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
+    { id: '5', icon:'', cardHead:'Quote & Contract Management', cardDesc: 'Generate and share custom quotes with integrated forms at no additional costs.' },
+    { id: '6', icon:'', cardHead:'Task & Activity Management', cardDesc: 'Create, assign and automate tasks for your sales representatives using industry-leading automation tools.' },
 
   ];
 
@@ -53,16 +59,16 @@ const page = () => {
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "Forklift Leader Increases Conversions by 10% with Salesforce",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
+        "India's Top Forklift Truck Manufacturer Increases Opportunity-to-Order Conversions by 10% and Elevates Customer Experience with Salesforce Integration",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -72,9 +78,9 @@ const page = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "Furniture Brand Achieves 360-Degree Customer Insight",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+        "India's premium furniture brand in both home and institutional segments achieves 360-degree customer visibility by integrating Salesforce with its ERP.",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#EFE9FB",
@@ -82,9 +88,9 @@ const page = () => {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Top notch Indian security solutions company implements Salesforce CRM",
       description:
-        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
+        "Access to relevant information saves time, boosts customer satisfaction and streamlines issue resolution.",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -95,27 +101,18 @@ const page = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "Appreciate GITL's contribution to our ONE-CRM goal",
+      cardDesc: `With Salesforce Sales Cloud smooth implementation, Godrej Infotech's team allied our lead-to-order cycle. With deep Infor LN integration and fine-tuned project management, the team met aggressive go-live targets, providing us with streamlined data. Thank you GITL team for contributing to our visionary goal of a singular CRM system.`
     },
-    {
-      id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
+    
   ];
 
   const RPASolution2 = [
     {
       id: 1,
       cardBGColor: 'white',
-      cardHeading: 'Custom Application Development',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Sales CRM',
+      cardDesc: 'Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -124,8 +121,8 @@ const page = () => {
 
       id: 2,
       cardBGColor: 'white',
-      cardHeading: 'Custom Application Development',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Marketing Automation',
+      cardDesc: 'Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
@@ -134,8 +131,8 @@ const page = () => {
 
       id: 3,
       cardBGColor: 'white',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Customer Portal',
+      cardDesc: 'Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
@@ -144,8 +141,8 @@ const page = () => {
 
       id: 4,
       cardBGColor: '#E4E4E4',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Mobile CRM',
+      cardDesc: `Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.`,
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -155,36 +152,26 @@ const page = () => {
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Service Cloud',
+      cardDesc: 'Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
     },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
-    },
+    
   ]
 
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Boost Sales, Enhance Customer Experience"
+        desc="Salesforce CRM: The Future of Customer Relationships"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={'Salesforce, a top cloud-based CRM, streamlines customer interactions with automation, AI, and 360-degree customer views for enhanced business operations'} />
+      
       <div className="bg-[#1D162B]" style={{ borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}>
         <div className="py-36 pb-[200px]" style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
           <div className="md:container mx-auto">
@@ -196,8 +183,8 @@ const page = () => {
                 <SectionHeading
                   Color="white"
                   headingContainerWidth="w-full"
-                  Heading="Infor Intelligent Supply System"
-                  Desc="Infor proudly presents the most extensive suite of global supply chain solutions, including the world's largest single-instance, multi-enterprise business network and comprehensive CloudSuite capabilities. These capabilities optimize supply chains from end to end, covering planning, procurement, orchestration and fulfillment. "
+                  Heading="Modules"
+                  Desc=""
                 ></SectionHeading>
               </div>
             </div>
@@ -239,8 +226,8 @@ const page = () => {
       <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Benefits of Infor LN'}
-        sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
+        sectionHeading={'Key Capabilities'}
+        sectionDesc={''}
         sectionTextColor={'white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
@@ -255,15 +242,15 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Elevating Customer Service with Salesforce Service Cloud"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "Salesforce Service Cloud revolutionizes customer service with social media CRM and managed services, enhancing experiences through cutting-edge integrations."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Salesforce CRM is a thrust of innovation and efficiency designed to transform the way you do business with prospects and customers.'}
       >
       </DistinctiveSection>
       <ReviewSliderSection
@@ -278,7 +265,7 @@ const page = () => {
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let's discuss how CRM Services can help you to enhance your business's growth potential."
         }
       ></TransformBusinessForm>
     </>

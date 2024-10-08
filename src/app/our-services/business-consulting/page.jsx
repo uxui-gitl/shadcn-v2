@@ -196,7 +196,7 @@ const page = () => {
             layout="horizontal"
             Color="white"
             headingContainerWidth="w-full"
-            Heading="Business Consulting Services   "
+            Heading="Our Services   "
             Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation.  "
           ></SectionHeading>
           <div className="grid grid-cols-1 gap-4 mt-4 md:mt-16">

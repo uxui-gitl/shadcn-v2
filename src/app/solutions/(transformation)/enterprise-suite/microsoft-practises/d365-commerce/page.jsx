@@ -26,27 +26,32 @@ const D365Commerce = () => {
     {
       id: "1",
       icon:'',
-      cardDesc: "A high degree of accuracy and consistency in business operations",
+      cardDesc: "Reduce complexity and total cost of ownership with a unified commerce platform.",
     },
     {
       id: "2",
       icon:'',
-      cardDesc: "Informed decision-making to extract valuable insights and identify patterns, correlation, and trends",
+      cardDesc: "AI-based suggestions for cross-selling and up-selling that improves customer buying propositions.",
     },
     {
       id: "3",
       icon:'',
-      cardDesc: "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
+      cardDesc: "Strengthened commerce operations and customer experiences with omnichannel selling and real-time inventory visibility.",
     },
     {
       id: "4",
       icon:'',
-      cardDesc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
+      cardDesc: "Open access to full product catalogues and advanced in-built tools for proactive actions and decision-making.",
     },
     {
       id: "5",
       icon:'',
-      cardDesc: "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
+      cardDesc: "Connected view of marketing and commerce operations for improved coordination.",
+    },
+    {
+      id: "6",
+      icon:'',
+      cardDesc: "Engaging digital storefronts with user-friendly web authoring and development tools.",
     },
   ];
   const INDUSTRY_SPOTLIGHT = [
@@ -55,7 +60,7 @@ const D365Commerce = () => {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Manufacturing",
+      cardHeading: "Retail",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
@@ -66,9 +71,9 @@ const D365Commerce = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
+      cardHeading: "Duty-Free and Travel Retail",
       cardDesc:
-        "AI-driven workflows, OCR and rule-based system enables accurate results",
+        "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -78,9 +83,9 @@ const D365Commerce = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Trading & Distribution",
+      cardHeading: "Food and Beverage",
       cardDesc:
-        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+        "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -90,70 +95,60 @@ const D365Commerce = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
+      cardHeading: "Hospitality",
       cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+        "",
       isArrow: false,
       cardTextColor: "white",
     },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
+    
     // Add more cards as needed
   ];
 
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Proficiency in Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
       icon: "",
     },
     {
       _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      desc: "Troubleshoot, evaluates and optimizes D365 Commerce solution with expertise.",
+      icon: "",
+    },
+    {
+      _id: 6,
+      desc: "Global delivery model and pool of certified D365 experts.",
+      icon: "",
+    },
+    {
+      _id: 7,
+      desc: "Microsoft cloud partner and proven history of working with small, medium and large size enterprises.",
       icon: "",
     },
   ];
 
   const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Need of digital self-service purchase options", icon: defaultChallengesIcon },
-    { id: 2, title: "Unreliable Backup Storage", icon: defaultChallengesIcon },
-    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: defaultChallengesIcon },
-    { id: 4, title: "Inadequate Data Integrity and Automation Capabilities", icon: defaultChallengesIcon },
+    { id: 1, title: "Managing timely order delivery & return", icon: defaultChallengesIcon },
+    { id: 2, title: "Adapting to changing consumer behaviors", icon: defaultChallengesIcon },
+    { id: 3, title: "Providing digital self-service options for seamless CX", icon: defaultChallengesIcon },
+    { id: 4, title: "Optimising inventory management", icon: defaultChallengesIcon },
+    { id: 5, title: "Breaking data silos for better collaboration", icon: defaultChallengesIcon },
   ];
   const KEY_CAPABILITIES = [
     {
@@ -220,8 +215,8 @@ const D365Commerce = () => {
     <>
       {/* Start--HeroBanner-Section========================================================= */}
       <EntIntro
-        title="Scale up your Omnichannel Business"
-        desc="Scale Up Your Omnichannel Business with Personalised Experience Microsoft D365 Commerce"
+        title="Experience unified commerce, customer insights and streamlined operations with D365 Commerce"
+        desc="Delivering tailored solutions for eCommerce, point-of-sale and customer relationship management"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -259,15 +254,15 @@ const D365Commerce = () => {
       {/* Start--Overview-Section============================================================== */}
       <OverviewSection
         Text={
-          "Dynamics 365 Commerce offers a complete solution to increase customer engagement through intuitive shopping experiences. It brings together several retail channels, including back-office, in-store, call centre"
+          "Dynamics 365 Commerce enables seamless omnichannel experiences, integrating back-office, in-store, call center, and digital, driven by consumer insights."
         }
       />
       {/* End--Overview-Section================================================================ */}
 
               {/* Start--Section--Challenges======================================================================== */}
       <ChallengeSection
-        setHeading="Challenges of Retail & Ecommerce Management"
-        setDesc="Customers now seek personalized experiences, seamless interactions, and a sense of connection with the brands they choose. Businesses face the challenge of understanding this shift"
+        setHeading="Retail Business Challenges"
+        setDesc="Retailers face a pressing need to evolve with tech-savvy customers, prioritizing personalized connections and seamless interactions."
         setColor="#FFFFFF"
         setImageBGURL={imgBGURL_Challenges}
         setChallengeList = {CHALLENGES_LIST_DATA}
@@ -298,9 +293,9 @@ const D365Commerce = () => {
       <BenefitSliderSection
         ID={"BENEFIT"}
         sectionBGColor={"#1D162B"}
-        sectionHeading={"Microsoft Promise for Your Business"}
+        sectionHeading={"D365 Commerce Benefits"}
         sectionDesc={
-          "Driving transformational changes, Microsoft Dynamics minimizes operational cost and increases overall efficiency of employees and customers."
+          "Discover a scalable and secure commerce platform that empowers retailers to thrive in fast-paced digital landscape."
         }
         sectionTextColor={"white"}
         cardData={BENEFITS_CARDS_DATA}
@@ -319,9 +314,9 @@ const D365Commerce = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"The Significance of Dynamics 365 Commerce in B2B Sales Evolution"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "In the realm of B2B digital sales, Dynamics 365 Commerce stands as a beacon of innovation. This platform plays a pivotal role in reshaping B2B sales strategies, enabling businesses to navigate the digital landscape effectively. "
         }
         Color={"white"}
       ></BlogSection>
@@ -333,7 +328,7 @@ const D365Commerce = () => {
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          "Maximize ROI and transform your commerce experience with our D365 Commerce expertise"
         }
       ></DistinctiveSection>
       {/* End--Distinctive-Section================================================================ */}
@@ -343,7 +338,7 @@ const D365Commerce = () => {
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how D365 Commerce can help you with rapid growth."
         }
       ></TransformBusinessForm>
       {/* End--Transform-Business-Form-Section================================================================ */}

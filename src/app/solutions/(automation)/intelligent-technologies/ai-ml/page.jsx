@@ -12,8 +12,14 @@ import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import BlogSection from '@/sections/blog/BlogSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import PlatformSection from '@/sections/platform/PlatformSection';
-import SectionWidthSlider from '@/sections/sectionWithSlider/SectionWithSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
+import SectionWrapperNew from "@/components/SectionWrapperNew";
+import { SwiperSlide } from "swiper/react";
+import Slider from "@/components/Slider";
+import CommonCard from "@/components/CommonCard";
+import Image from "next/image";
+
+
 
 
 const AIOfferingsData = [
@@ -121,7 +127,6 @@ const AIOfferingsData = [
   },
 ]
 
-
 const MLData = [
   {
     _id: 1,
@@ -216,59 +221,32 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <>
-        <SectionNav
-          arr={[
-            // AI Offerings
-            // ML Expertise
-            // Platforms
-            // Benefits
-            // Why Us
-
-            {
-              _id: 1,
-              title: "AI Offerings",
-              link: "#AIOfferings",
-            },
-            {
-              _id: 2,
-              title: "ML Expertise",
-              link: "#MLExpertise",
-            },
-            {
-              _id: 3,
-              title: "Platforms",
-              link: "#Platforms",
-            },
-            {
-              _id: 4,
-              title: "Benefits",
-              link: "#Benefits",
-            },
-
-            {
-              _id: 5,
-              title: "Why Us",
-              link: "#WhyUs",
-            },
-          ]}
-        />
-      </>
 
       {/* Overview  */}
       <OverviewSection Text={'Tap into our AI & ML capabilities to fine-tune business parameters, drive proactive decisions, optimize process and accelerate growth for our clients.'} />
-
       {/* Our Ai Offerings */}
-      <SectionWidthSlider
-        ID={'AIOfferings'}
-        sectionBGImageUrl={yourImageUrl}
-        sectionHeading={'Artificial Intelligence Offerings'}
+
+      <SectionWrapperNew
+        style={{
+          backgroundImage: `url(${yourImageUrl})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed", // This is key for the parallax effect
+          backgroundPosition: "center",
+          boxShadow: "inset 0px 0px 50px 86px rgba(0,0,0,0.4)",
+        }}
+        sectionHeading={"Artificial Intelligence Offerings"}
         sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
-        sectionTextColor={'white'}
-        cardData={AIOfferingsData}
-        pageID="ai-ml"
+        sectionTextColor="white"
+        sectionHeadingLayout="left"
       >
-      </SectionWidthSlider>
+        <Slider>
+          {AIOfferingsData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <CommonCard Item={item}></CommonCard>
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
 
       {/* ML Expertise */}
       <>
@@ -315,16 +293,20 @@ const page = () => {
       </>
 
       {/* Intelligent Technologies */}
-      <>
-        <PlatformSection
-         ID={'Intelligent'}
-          sectionHeading={'Intelligent Technologies Platforms'}
-           sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'} 
-           PlatFormImageList={PlatFormImageList}
-           layout={'horizontal'}
-           sectionHeaderWidth={'w-9/12'}
-           ></PlatformSection>
-      </>
+      <SectionWrapperNew
+        sectionHeading={"Intelligent Technologies Platforms"}
+        sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'}
+        sectionTextColor="#000"
+        sectionHeadingLayout="horizontal"
+      >
+        <Slider>
+          {PlatFormImageList?.map((item, index) => (
+            <SwiperSlide key={index}>
+                <Image src={item.url} width={350} height={100} />
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew> 
 
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection

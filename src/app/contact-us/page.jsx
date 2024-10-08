@@ -16,7 +16,9 @@ import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
 import { SwiperSlide } from "swiper/react";
-import { LinearGradient } from 'react-text-gradients'
+import { LinearGradient } from 'react-text-gradients';
+import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+
 
 
 
@@ -434,6 +436,12 @@ Explore Your Opputunity
 
  
       </SectionWrapperNew>
+      <TransformBusinessForm
+        Title={"Transform your Business with us"}
+        Desc={
+          "Let us discuss how intelligent technologies can help you with rapid growth."
+        }
+      ></TransformBusinessForm>
     </>
   );
 };

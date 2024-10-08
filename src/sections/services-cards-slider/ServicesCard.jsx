@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, Children } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 
@@ -85,10 +85,10 @@ const ServicesCard = ({
             {hoverTitle}
           </h2>
           <p
-            ref={descRef}
+            ref={descRef} 
             className="text-[16px] translate-y-5 opacity-0"
+            dangerouslySetInnerHTML={{ __html: description }}
           >
-            {description}
           </p>
         </div>
       )}

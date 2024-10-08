@@ -75,6 +75,7 @@ function BenefitSliderSection({
                     height={72}
                   />
                   <div className="flex flex-col justify-between leading-normal">
+                    <h2 className="mb-3 font-semibold text-sm md:text-2xl text-gray-700 dark:text-gray-400">{item.cardHead}</h2>
                     <p className="mb-3 text-sm md:text-2xl text-gray-700 dark:text-gray-400">
                       {item.cardDesc}
                     </p>

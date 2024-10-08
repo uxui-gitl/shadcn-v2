@@ -1,12 +1,16 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import CommonCardOneSlider from '@/sections/commonCardOneSlider/CommonCardOneSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import { SwiperSlide } from "swiper/react";
+import Slider from "@/components/Slider";
+import CommonCardOne from "@/components/CommonCardOne";
 
 
 const page = () => {
@@ -152,47 +156,29 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      {/* Section Nav */}
-{/*       
-        <SectionNav
-          // Solutions
-          // Benefits
-          // Why Us
-
-          arr={[
-            {
-              _id: 1,
-              title: "Solutions",
-              link: "#Solutions",
-            },
-            {
-              _id: 2,
-              title: "Benefits",
-              link: "#Benefits",
-            },
-            {
-              _id: 3,
-              title: "Why Us",
-              link: "#WhyUs",
-            },
-          ]}
-        /> */}
-     
-
       {/* Overview  */}
       <OverviewSection Text={'Discover how AI, ML, RPA and IIoT help businesses with customer behavior prediction, process automation and generate new revenue streams with real time insights. As a strategic tech partner, Godrej Infotech ensures a future-ready foundation for clients.'} />
       {/* solutions */}
-      
-      <CommonCardOneSlider
-       ID={'AIOfferings'}
-       sectionImageUrl={yourImageUrl}
-       sectionBGColor={'#fff'}
-       sectionHeading={'Advance Solutions for Business Future Readiness'}
-       sectionDesc={''}
-       sectionTextColor={'white'}
-       sectionHeaderWidth={'w-7/12'}
-       cardData={advanceSolutionCardData}>
-      </CommonCardOneSlider>
+      <SectionWrapperNew
+        style={{
+          backgroundImage: `url(${yourImageUrl})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed", // This is key for the parallax effect
+          backgroundPosition: "center",
+        }}
+        sectionHeading={"Advance Solutions for Business Future Readiness"}
+        sectionDesc={''}
+        sectionTextColor="white"
+        sectionHeadingLayout="left"
+      >
+        <Slider>
+          {advanceSolutionCardData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <CommonCardOne Item={item} />
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
 
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection

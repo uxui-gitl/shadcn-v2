@@ -97,97 +97,152 @@ const FNO = () => {
     {
       id: "1",
       icon:'',
-      cardDesc: "A high degree of accuracy and consistency in business operations",
+      cardDesc: "Enhance efficiency with Microsoft 365 integration",
     },
     {
       id: "2",
       icon:'',
-      cardDesc: "Informed decision-making to extract valuable insights and identify patterns, correlation, and trends",
+      cardDesc: "Boost performance through data connectivity and task automation",
     },
     {
       id: "3",
       icon:'',
-      cardDesc: "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
+      cardDesc: "Gain real-time insights, reporting, and AI-driven agility for growth",
     },
     {
       id: "4",
       icon:'',
-      cardDesc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
+      cardDesc: "Achieve on-time, on-budget project delivery with integrated teams",
     },
     {
       id: "5",
       icon:'',
-      cardDesc: "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
+      cardDesc: "Transform your workforce, meet demands, and control costs",
+    },
+     {
+      id: "6",
+      icon:'',
+      cardDesc: "Ensure transparency across processes, enabling informed decisions",
+    },
+     {
+      id: "7",
+      icon:'',
+      cardDesc: "Access international functionality for global uniformity",
+    },
+     {
+      id: "8",
+      icon:'',
+      cardDesc: "Unify supply chain operations for financial visibility, risk control and innovation.",
+    },
+     {
+      id: "9",
+      icon:'',
+      cardDesc: "Built-in security safeguards data with Azure integration",
+    },
+     {
+      id: "10",
+      icon:'',
+      cardDesc: "Substantial return on investment (ROI) through enhanced efficiency and automation",
+    },
+        {
+      id: "11",
+      icon:'',
+      cardDesc: "With comprehensive reporting and analytics capabilities, companies can plan more effectively and respond to customer demands with agility",
     },
   ];
   const INDUSTRY_SPOTLIGHT = [
     {
       id: 1,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
       cardHeading: "Manufacturing",
       cardDesc: "",
-      isArrow: false,
+      isArrow: true,
       cardTextColor: "white",
-    },
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Manufacturing
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Full process coverage for discrete and process manufacturing </li>
+            <li>Real-time planning and optimization</li>
+            <li>IoT and mixed reality roadmap for a connected factory experience</li>
+        </ol>
+    </li>
+</ul>`
+},
     {
       id: 2,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
-
-      cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
-      cardDesc:
-        "AI-driven workflows, OCR and rule-based system enables accurate results",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 3,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
       cardHeading: "Trading & Distribution",
       cardDesc:
-        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
-      isArrow: false,
+        "",
+      isArrow: true,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Trading & Distribution
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Comprehensive process coverage for trading & distribution</li>
+            <li>Material requirement planning</li>
+            <li>Machine learning-driven demand forecasting </li>
+        </ol>
+    </li>
+</ul>`
+    },
+    {
+      id: 3,
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Professional services",
+      cardDesc:
+        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+      isArrow: true,
+      cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Professional services
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Financial precision for budgeting, invoicing and expense management 
+
+Project-centric approach for professional services firms 
+
+ 
+
+Projects 
+
+Financial transparency and control for budgeting and cost management /li>
+            <li>Project-centric approach for professional services firms </li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 4,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Projects",
       cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: false,
+        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+      isArrow: true,
       cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Projects
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Financial transparency and control for budgeting and cost management </li>
+            <li>Real-time project insights for better decision-making and proactive issue resolution</li>
+            <li>Precise project management and resource optimization</li>
+        </ol>
+    </li>
+</ul>`
     },
     // Add more cards as needed
   ];
@@ -231,18 +286,18 @@ const FNO = () => {
         "/transformation/microsoft-practices/case-studies-section/bg--case-study.png",
       videoURL: "",
       title: "Case Studies",
-      heading: "Elevating Customer Experience with Cloud",
+      heading: "Dynamics 365 F&O Project Highlights",
       description:
-        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries.",
+        "",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "path/to/image1.jpg",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "Upgrade to D365 F&O on Cloud",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+        "Indian Wildlife Nature Conservation Organization successfully upgrade to D365 F&O",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FFF",
@@ -252,9 +307,9 @@ const FNO = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "Implementation of D365 F&O, CRM and Power BI",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+        "KSA's Leading Distributor of Electrical Components implements Dynamics 365 F&O with Microsoft CRM on Cloud for streamlined item creation process and increased quality compliance ",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FFF",
@@ -266,9 +321,9 @@ const FNO = () => {
       videoURL:
         "/transformation/microsoft-practices/case-studies-section/bg--video.mp4",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "D365 F&O Implementation",
       description:
-        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
+        "Achieved significant cost savings along with operations digitalization through D365 F&O Cloud Solution for Leading Distributor of Fruits & Vegetables in Philippines",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FFF",
@@ -278,22 +333,22 @@ const FNO = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Our Microsoft Dynamics 365 certified experts have executed projects across diverse industries across the globe. ",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "We hold a prestigious Gold Partnership with Microsoft and operate global delivery models.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Our toolkit includes tested, proven and reusable tools and frameworks.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Predefined templates for onsite and offshore cost-effective models",
       icon: "",
     },
     {
@@ -305,30 +360,28 @@ const FNO = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Discover how we have helped our customers to realize tangible outcomes aligned with their business goals.",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "We are delighted to say that D365 F&O has solved our earlier performance issues and we now have an IT infrastructure that is streamlined, systematic, and secure. We would like to take this opportunity to express our gratitude to the entire team of Godrej Infotech that has worked along with our team to make this go live successful.",
+      designation:'Distributor of a popular coffee brand in Egypt and Saudi Arabia ',  
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-    },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-    },
+        "Godrej Infotech team’s dedication and commitment with excellent domain knowledge of our business was the key factor to our success and we cannot thank them enough for their valuable contribution. We have benefited tremendously from working with Godrej Infotech and hope to have the opportunity to continue a long-term relationship with them.",
+      designation:'General Manager',
+      companyName:'Distributor of Fruits & Vegetables in the Philippines',
+      },
+    
   ];
   const SOLUTIONS_CARDS_DATA = [
     {
       id: 1,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Business Consulting',
-      cardDesc: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.',
+      cardHeading: 'Asset Management',
+      cardDesc: 'Effectively monitor your business assets to maintain their optimal condition, ensuring uniform business operations.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -338,8 +391,8 @@ const FNO = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Implementation & Management',
-      cardDesc: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while',
+      cardHeading: 'Financial Management',
+      cardDesc: 'Handle financial and accounting matters with precision, promoting financial stability.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -349,8 +402,8 @@ const FNO = () => {
       id: 3,
       cardBGImageUrl: '',
       cardBGColor: '#9F0165',
-      cardHeading: 'Application Security Testing',
-      cardDesc: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision',
+      cardHeading: 'Inventory and Warehouse Management',
+      cardDesc: 'Assure that products are precisely where they need to be, precisely when they need to be there, enhancing business efficiency.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -360,8 +413,8 @@ const FNO = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Budgeting',
+      cardDesc: 'Skillfully plan and manage organization budgeting and allocate resources accordingly to achieve financial objectives.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -370,21 +423,61 @@ const FNO = () => {
 
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardBGColor: '#7F4EE1',
+      cardHeading: 'Retail Commerce',
+      cardDesc: 'Craft a seamless shopping experience both online and in-store, ensuring hassle-free shopping journey.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
     {
-
-
       id: 6,
+      cardBGImageUrl: '',
+      cardBGColor: '#7F4EE1',
+      cardHeading: 'Vendor Collaboration)',
+      cardDesc: 'Cultivate robust relationships with both customers and vendors enhancing mutual success.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+     {
+      id: 7,
+      cardBGImageUrl: '',
+      cardBGColor: '#9F0165',
+      cardHeading: 'Manufacturing',
+      cardDesc: 'Cultivate robust relationships with both customers and vendors enhancing mutual success.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+     {
+
+      id: 8,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      cardHeading: 'Project Management and Accounting',
+      cardDesc: 'Efficiently manage projects and maintain immaculate financial records, ensuring compliance with accounting standards.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+     {
+
+      id: 9,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#7F4EE1',
+      cardHeading: 'Procurement and Sourcing',
+      cardDesc: 'Exercise comprehensive control on procurement and sourcing process, facilitating the smooth flow of products from suppliers to customers, enhancing operational efficiency. ',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+    {
+      id: 10,
+      cardBGImageUrl: '',
+      cardBGColor: '#9F0165',
+      cardHeading: 'Sales and Marketing',
+      cardDesc: 'From lead generation to campaign tracking and customer engagement, this functionality is designed to optimize every stage of the sales funnel.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -395,8 +488,8 @@ const FNO = () => {
     <>
       {/* Start--HeroBanner-Section========================================================= */}
       <EntIntro
-        title="Revolutionize your Business with us"
-        desc="Revolutionize Your Business Dynamics with Our D365 F&O Expertise"
+        title="Revolutionize Business with D365 Solutions"
+        desc="Boost Productivity and Profit Margins"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -434,7 +527,7 @@ const FNO = () => {
       {/* Start--Overview-Section============================================================== */}
       <OverviewSection
         Text={
-          "Microsoft Dynamics 365 Finance & Operations is a robust solution for medium- to large-sized businesses. It enables streamlining and automating global operations, offering real-time insights that form the bedrock of informed "
+          "D365 Finance & Operations streamlines global operations, provides real-time insights, and enhances financial control for medium to large-sized businesses."
         }
       />
       {/* End--Overview-Section================================================================ */}
@@ -444,8 +537,8 @@ const FNO = () => {
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#F3F0FA'}
-        sectionHeading={'Key Highlights of Dynamics 365 F&O'}
-        sectionDesc={'Microsoft D365 Finance and Operations powers up your business with insights and comprehensive financial tools to streamline operations and adapt to changing business environments.'}
+        sectionHeading={'Key Highlights - D365 Finance & Supply Chain'}
+        sectionDesc={'D365 F&O powers up your business with insights and comprehensive financial tools to streamline operations and adapt to changing business environments.'}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         cardData={SOLUTIONS_CARDS_DATA}
@@ -458,32 +551,20 @@ const FNO = () => {
      
 
       {/* Start--Microsoft-Solution-Section============================================================== */}
-      <CommonCardThreeSlider
-        ID={"AIOfferings"}
-        sectionImageUrl={""}
-        sectionBGColor={"#1D162B"}
-        sectionHeading={"Accelerating Business Engineering"}
-        sectionDesc={
-          "The high scalability of the Dynamics 365 F&O solution makes it a valuable choice for medium size businesses to large enterprises."
-        }
-        sectionTextColor={"#FFF"}
-        sectionHeaderMaxWidth={"40%"}
-        x
-        cardData={SOLUTION_DATA}
-      ></CommonCardThreeSlider>
+     
       {/* End--Microsoft-Solution-Section================================================================ */}
 
      {/* START-ADDED-SOLUTION-SECTION=================================================================== */}
-        <AddedSolutionSection sectionBGColor={'#FFFFFF'}/>
+        <AddedSolutionSection sectionBGColor={'#FFFFFF'} sectionDesc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible.'}/>
       {/* END-ADDED-SOLUTION-SECTION=================================================================== */}
 
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
         ID={"BENEFIT"}
         sectionBGColor={"#1D162B"}
-        sectionHeading={"Microsoft Promise for Your Business"}
+        sectionHeading={"Benefits of Dynamics 365 F&O"}
         sectionDesc={
-          "Driving transformational changes, Microsoft Dynamics minimizes operational cost and increases overall efficiency of employees and customers."
+          "Microsoft Dynamics 365 Finance & Operations (D365 F&O) stands out as a modern and adaptable solution, with a pivotal feature being its role-based design along with comprehensive support for all compliance-related necessities."
         }
         sectionTextColor={"white"}
         cardData={BENEFITS_CARDS_DATA}
@@ -494,7 +575,7 @@ const FNO = () => {
       
 
       {/* Start--Industry-Spotlight-Section============================================================== */}
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT}  sectionDesc={'We offer industry-specific solutions, addressing unique challenges for enhanced efficiency and growth'}/>
       {/* End--Industry-Spotlight-Section================================================================ */}
 
      
@@ -511,9 +592,9 @@ const FNO = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"The Future of Financial Agility: D365 Finance and Operations Insights"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "This innovative platform, coupled with the expertise of a Microsoft Dynamics Partner Company, promises agility and operational effectiveness. Dynamics 365 Finance stands at the forefront of revolutionizing financial management, offering a comprehensive suite of tools to navigate the evolving financial terrain."
         }
         Color={"white"}
       ></BlogSection>
@@ -525,7 +606,7 @@ const FNO = () => {
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          "Our highly experienced Microsoft team is dedicated to understanding your unique business needs, delivering a tailored solution, and ensuring you harness the full potential of D365 F&O for business efficiency. "
         }
       ></DistinctiveSection>
       {/* End--Distinctive-Section================================================================ */}
@@ -545,7 +626,7 @@ const FNO = () => {
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how D365 F&O Implementation can help you with rapid growth!"
         }
       ></TransformBusinessForm>
       {/* End--Transform-Business-Form-Section================================================================ */}

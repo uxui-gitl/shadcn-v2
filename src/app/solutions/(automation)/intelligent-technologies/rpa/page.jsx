@@ -4,11 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import SectionNav from "@/components/SectionNav";
 
-/**
- * * Sandeep Rana
- * Logos
- */
-
 import uiPath from "../../../../../../public/logos/rpa/uiPath.svg";
 import automationAnywhere from "../../../../../../public/logos/rpa/automation-anywhere.svg";
 import powerAutomate from "../../../../../../public/logos/rpa/microsoft-power-automate-logo.jpg";
@@ -21,6 +16,10 @@ import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
+import { SwiperSlide } from "swiper/react";
+import Slider from "@/components/Slider";
+import CommonCardTwo from "@/components/CommonCardTwo";
 
 const RPASolution = [
   {
@@ -178,95 +177,46 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <>
-        <SectionNav
-          // Why RPA?
-          // Partners
-          // Services
-          // Use Cases
-          // Project Lifecycle
-
-          arr={[
-            {
-              _id: 1,
-              title: "Why RPA?",
-              link: "#whyrpa",
-            },
-            {
-              _id: 2,
-              title: "Partners",
-              link: "#Partners",
-            },
-            {
-              _id: 3,
-              title: "Services",
-              link: "#Services",
-            },
-            {
-              _id: 4,
-              title: "Use Cases",
-              link: "#UseCases",
-            },
-            {
-              _id: 5,
-              title: "Project Lifecycle",
-              link: "#ProjectLifecycle",
-            },
-          ]}
-        />
-      </>
 
       {/* Overview  */}
       <OverviewSection Text={'Manage high-volume tasks by slashing down time requirements and enabling precise outcomes. Our tailored RPA solutions enable businesses to seamlessly navigate intricate workflows and attain operational excellence.'} />
 
       {/* optimising rpa solution */}
-      <CommonCardTwoSlider
-        ID={'AIOfferings'}
-        sectionImageUrl={''}
-        sectionBGColor={'#EFE9FB'}
-        sectionHeading={'Why Consider RPA (Robotic Process Automation) for Your Business?'}
+      <SectionWrapperNew
+        style={{
+         backgroundColor:'#EFE9FB'
+        }}
+        sectionHeading={"Why Consider RPA (Robotic Process Automation) for Your Business?"}
         sectionDesc={''}
-        sectionTextColor={'#000'}
-        cardData={RPASolution}
+        sectionTextColor="#000"
+        sectionHeadingLayout="left"
       >
-
-      </CommonCardTwoSlider>
+        <Slider>
+          {RPASolution?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <CommonCardTwo Item={item}></CommonCardTwo>
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
+    
       {/* optimising rpa solution end */}
 
       {/* inteligent technologies */}
-      <SectionWrapper ID="Platforms">
-        <div className="md:container mx-auto text-left mb-5 pb-0 grid grid-cols-1">
-          {/* left */}
-          <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
-            <div className="w-full">
-              <SectionHeading
-                Heading={'RPA Platform Expertise'}
-                Desc={'Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.'}
-                layout={'horizontal'}
-                sectionHeaderWidth={'w-full'}
-              >
-              </SectionHeading>
-            </div>
-            <div className="flex flex-col md:flex-row justify-center py-10 items-center gap-20 md:py-20 mb-5">
-              <div>
-                <Image src={uiPath} alt="uiPath" width={200} />
-
-              </div>
-              <div>
-                <Image src={powerAutomate} alt="powerAutomate" width={320} />
-              </div>
-              <div>
-                <Image
-                  src={automationAnywhere}
-                  alt="automationAnywhere"
-                  width={200}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </SectionWrapper>
-
+      <SectionWrapperNew
+        sectionHeading={"Intelligent Technologies Platforms"}
+        sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'}
+        sectionTextColor="#000"
+        sectionHeadingLayout="horizontal"
+      >
+        <Slider>
+          {[uiPath ,powerAutomate , automationAnywhere ]?.map((item, index) => (
+            <SwiperSlide key={index}>
+                <Image src={item} width={350} height={100} />
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew> 
       {/* service Offerings section */}
 
       <ServiceOfferingSection id=""
