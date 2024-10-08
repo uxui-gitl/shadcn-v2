@@ -82,7 +82,7 @@ const page = () => {
                     </LinearGradient> <span className="text-base text-slate-400 font-normal">out of 5</span></h1>
                   </div>
                   <div>
-                    <button type="button" class="text-slate-500 bg-white border border-gray-300 focus:outline-none focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">Explore Job Listings</button>
+                    <button type="button" className="text-slate-500 bg-white border border-gray-300 focus:outline-none focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">Explore Job Listings</button>
                   </div>
                 </div>
 
