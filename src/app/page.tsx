@@ -359,32 +359,32 @@ export default function Home() {
             Transform your&nbsp;
             <motion.div
               key={items[index].id}
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5 }}
+              initial={{ y: 10,  }}
+              animate={{ y: 0,  }}
+              exit={{ y: -10, }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay:0.1 }}
               style={{ display: 'inline-block' }}
             >
               <span className="text-[#5F22D9]">{items[index].content}</span>
             </motion.div>
-            &nbsp;company<br></br>
-            into a&nbsp;
+            &nbsp;<br></br>
+           organization into a&nbsp;
             <motion.div
               key={items2[index].id}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5 }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay:0.3 }}
               style={{ display: 'inline-block' }}
             >
-              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div> company,
+              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>
             <br></br>
             delivering with  <motion.div
               key={items3[index].id}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5 }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay:0.4 }}
               style={{ display: 'inline-block' }}
             ><span className="text-[#5F22D9]">{items3[index].content}.</span></motion.div>
           </div>
