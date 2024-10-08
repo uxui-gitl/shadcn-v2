@@ -29,11 +29,11 @@ const page = () => {
             <div className="text-[30px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
             <p className="text-[16px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
             <div className="">
-            <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
+            <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
             </div>
             </div>
             <div className="">
-            <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
+            <button type="button" className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
             <p className="text-[14px] text-[#808080">Posted within the last 24 hours</p>
                 </div>
         </div>
@@ -42,11 +42,11 @@ const page = () => {
             <div className="text-[28px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
             <p className="text-[14px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
             <div className="">
-            <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
+            <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
             </div>
             </div>
             <div className="">
-            <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
+            <button type="button" className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
             <p className="text-[14px] text-[#808080">Posted within the last 24 hours</p>
                 </div>
         </div>
