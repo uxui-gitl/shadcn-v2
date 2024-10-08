@@ -16,22 +16,22 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Experienced team of certified Infor CRM professionals",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "In-depth knowledge of Infor CRM's capabilities and best practices",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Dedicated customer support, assisting businesses in implementation phase and beyond",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Proven track record of successful Infor CRM implementations",
       icon: "",
     },
 
@@ -89,8 +89,8 @@ const page = () => {
     {
       id: 1,
       cardBGColor: '#fff',
-      cardHeading: 'End-to-End Implementation',
-      cardDesc: 'Streamlining every phase of the implementation with the capability of successful and on-time delivery of Infor solution.',
+      cardHeading: 'Customizable CRM Experience',
+      cardDesc: 'Tailored to explicit demands, workflows, and processes, delivering personalized CRM.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -99,8 +99,8 @@ const page = () => {
 
       id: 2,
       cardBGColor: '#fff',
-      cardHeading: 'Managed Services',
-      cardDesc: 'Managing every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application.',
+      cardHeading: 'Seamless Integration',
+      cardDesc: 'Integrates with Microsoft Outlook and Infor CloudSuite ERP, minimizing data silos.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
@@ -109,8 +109,8 @@ const page = () => {
 
       id: 3,
       cardBGColor: '#fff',
-      cardHeading: 'Migrate to the Cloud',
-      cardDesc: 'Ensuring a smooth and efficient migration process with minimum business disruptions',
+      cardHeading: 'Mobile-Centric',
+      cardDesc: 'Dedicated mobile accessibility for real-time customer engagement and responsiveness.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
@@ -119,8 +119,8 @@ const page = () => {
 
       id: 4,
       cardBGColor: '#E4E4E4',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Automation & Analytics',
+      cardDesc: 'Streamlines lead management, forecasting and opportunity tracking, with 70+ reports.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -130,8 +130,8 @@ const page = () => {
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Scalable & Reliable Support',
+      cardDesc: 'Prompt issue resolution, scalable with business expansion, adapting to changing markets.',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
@@ -139,11 +139,11 @@ const page = () => {
     {
 
 
-      id: 5,
+      id: 6,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      cardHeading: 'New Multi-Attendee Support for Activities',
+      cardDesc: 'Seamless support for multiple contacts, leads & users in activities & records, for smoother stakeholder communication.',
       isArrow: false,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
@@ -158,9 +158,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Sales Automation",
       CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+        "",
       isArrow: "",
       link: [],
     },
@@ -173,9 +173,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Marketing Automation",
       CardDesc:
-        "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+        "",
       isArrow: "",
       link: [],
     },
@@ -213,14 +213,14 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Unlock Customer Insights with Intelligent and Industry-Specific Infor CRM"
+        desc="Deliver exceptional customer experiences through analytics and automated workflows"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
-      <SectionWrapper BGColor="black">
+      <OverviewSection Text={'Built on a scalable, cloud-based platform, Infor CRM integrates seamlessly with Infor ERP, providing real-time visibility into customer interactions, sales and service. Tailored solutions for manufacturing, distribution, healthcare and more.'} />
+      {/* <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="hidden md:block">
@@ -237,9 +237,9 @@ const page = () => {
           </div>
         </div>
 
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <SectionWidthSlider
+      {/* <SectionWidthSlider
         ID={"ultimateChoiceData"}
         sectionHeading={"Infor CRM Offerings"}
         sectionDesc={
@@ -250,13 +250,13 @@ const page = () => {
         sectionBGColor="#5F22D9"
         setHeadingLayout="horizontal"
 
-      />
+      /> */}
 
       <CommonCardThreeSlider
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Key Feature and Benefits of Infor CRM'}
+        sectionHeading={'Infor CRM Key Capabilities'}
         sectionDesc={"We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform."}
         sectionTextColor={'#fff'}
         cardData={serviceOfferingData}
@@ -268,22 +268,22 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Infor CRM Implementation Best Practices"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "A successful Infor CRM implementation requires careful planning, execution, and ongoing optimization. By following these best practices and hacks, organizations can unlock the full potential of Infor CRM, driving business growth, customer satisfaction, and user adoption."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
          <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Partner with Godrej Infotech for exceptional customer experiences and streamlined sales & marketing operations'}
       >
       </DistinctiveSection>
       
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Infor CRM can help you with rapid growth"
         }
       ></TransformBusinessForm>
     </>

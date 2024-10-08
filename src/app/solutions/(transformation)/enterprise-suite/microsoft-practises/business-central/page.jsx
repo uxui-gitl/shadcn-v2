@@ -17,20 +17,44 @@ const page = () => {
     {
       id: '1',
       icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
-      cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers'
+      cardDesc: 'Automate workflows, streamline processes and enhance productivity'
     },
     {
       id: '2',
       icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
-      cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions'
+      cardDesc: 'Configure customizable dashboards, reports and workflows'
     },
     {
       id: '3', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
-      cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing'
+      cardDesc: 'Access business apps anywhere, anytime via cloud mobility'
     },
     {
       id: '4', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
-      cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity'
+      cardDesc: 'Automate financial processes and reconcile accounts in real-time'
+    },
+    {
+      id: '5', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      cardDesc: 'Streamline sales and customer service with integrated CRM'
+    },
+    {
+      id: '6', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      cardDesc: 'Enhance supply chain management with optimized inventory'
+    },
+    {
+      id: '7', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      cardDesc: 'Gain data-driven insights with advanced reporting & analytics'
+    },
+    {
+      id: '8', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      cardDesc: 'Collaborate seamlessly with Microsoft Office 365 integration'
+    },
+    {
+      id: '9', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      cardDesc: 'Ensure data security with multi-layered authentication'
+    },
+    {
+      id: '10', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      cardDesc: 'Scale effortlessly with cloud-based deployment options'
     },
   ];
 
@@ -40,65 +64,61 @@ const page = () => {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Manufacturing",
+      cardHeading: "Food & Beverage",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 2,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
-
+      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--retail.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
-      cardDesc:
-        "AI-driven workflows, OCR and rule-based system enables accurate results",
+      cardHeading: "Manufacturing",
+      cardDesc:"",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 3,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
-
+      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Trading & Distribution",
-      cardDesc:
-        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+      cardHeading: "Consumer Goods",
+      cardDesc:"",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 4,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
-
+      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
-      cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+      cardHeading: "Wholesale & Distribution",
+      cardDesc:"",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
+      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
       cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
+      cardHeading: "Retail",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
     {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
+      id: 6,
+      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--project.png",
       cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
+      cardHeading: "Projects",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
+    {
+      id: 7,
+      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--project.png",
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Professional Services",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
@@ -112,19 +132,19 @@ const page = () => {
         "/transformation/microsoft-practices/case-studies-section/bg--case-study.png",
       videoURL: "",
       title: "Case Studies",
-      heading: "Elevating Customer Experience with Cloud",
+      heading: "D365 Business Central Project Highlights",
       description:
-        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries.",
-      link: "/case-study-1",
+        "World's top-notch businesses choose Godrej Infotech for our excellent technical acumen and industry understanding.",
+      link: "",
       color: "#FFFFFF",
     },
     {
       imageURL: "path/to/image1.jpg",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "90% Faster Reconciliation & MIS Reporting",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-      link: "/case-study-1",
+        "Saudi Trading Company Successfully Implements LS Central & Upgrades NAV to Business Central",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/SaudiCompanySuccessfullyImplementsLSCentralandBusinessCentral.pdf)",
       color: "#000",
       bgCardColor: "#FFF",
     },
@@ -133,9 +153,9 @@ const page = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "Streamlined and Efficient Operations",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+        "Tyre Trading Organization in the Middle East Successfully Deploys Microsoft D365 Business Central with Servers on Azure.",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#FFF",
@@ -147,10 +167,10 @@ const page = () => {
       videoURL:
         "/transformation/microsoft-practices/case-studies-section/bg--video.mp4",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Improved User Experience and Agile Operations",
       description:
-        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
-      link: "/case-study-1",
+        "India’s Modern Contract Manufacturing & Testing Provider Successfully Implements D365 Business Central Online in Phillipines",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/IndiaLeadingManufacturingOrganization-BusinessCentral.pdf",
       color: "#000",
       bgCardColor: "#FFF",
     },
@@ -162,58 +182,53 @@ const page = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "D365 solutions tailored to your business needs, delivered with precision",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Certified team ensures timely delivery, meeting deadlines with accuracy",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Dedicated in-house support team for prompt assistance",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Experience in seamless integration of Business Central with CRM, E-commerce and more",
       icon: "",
     },
-    {
-      _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-      icon: "",
-    },
+    
   ];
 
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Cost Savings & Faster Transactions",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "Godrej Infotech has successfully upgraded our software from NAV 2016 to Business Central on-SaaS, including data migration. We were impressed by the expertise of their team, who not only saved us additional subscription costs but also enabled faster transactional updates.",
+      designation:"Procurement Manager",
+      companyName:"Indian Highway Construction Company",
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Streamlining Restaurant Sales & COGS Processes",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-    },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-    },
+        "We appreciate Godrej Infotech team for successfully completing two critical projects upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes.",
+      designation:"IT Head",
+      companyName:"Middle East base Popular Fast-food Chain",
+      },
+    
   ];
 
 
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Work Smarter, Adapt Faster & Achieve Better Results with D365 Business Central"
+        desc="Simplify financial management and automate operations with our certified experts, successful implementation and upgrade experience."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -221,7 +236,7 @@ const page = () => {
 
       <OverviewSection
         Text={
-          "Minimize costs and maximize agility and security with our cloud upgrade offerings. We help enterprises to build resilience through tailored, all-inclusive cloud transformation that drives business success."
+          "A modern solution for small & medium-sized business that integrates CRM and Office 365 and offers a choice between on-premises or cloud.  "
         }
       />
 
@@ -241,12 +256,12 @@ const page = () => {
         ID={'AIOfferings'}
         sectionBGColor={'#1D162B'}
         sectionHeading={'D365 Business Central Benefits'}
-        sectionDesc={'Microsoft Dynamics 365 Business Central offers your business a strategic edge.'}
+        sectionDesc={'Experience the power of unified business management, from financials to supply chain management.'}
         sectionTextColor={'white'}
         cardData={benifitsCardsData}
       ></BenefitSliderSection>
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Driving growth across various business sectors with scalable Business Central expertise.'}/>
 
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
@@ -257,9 +272,9 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"D365 Finance and Operations or Business Central?"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? "
         }
         Color={"white"}
       ></BlogSection>
@@ -286,7 +301,7 @@ const page = () => {
 <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Business Central can help you with rapid growth."
         }
       ></TransformBusinessForm>
 

@@ -20,6 +20,7 @@ import Slider from "@/components/Slider";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
+import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 const MicrosoftPractises = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -235,7 +236,7 @@ const MicrosoftPractises = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
+      cardHeading: "Project",
       cardDesc:
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
       isArrow: false,
@@ -278,8 +279,8 @@ const MicrosoftPractises = () => {
       description: "Projects Migrated to Microsoft",
     },
     {
-      start: 100,
-      end: 1000,
+      start: 5000,
+      end: 10000,
       description: "Management of Microsoft License",
     },
 
@@ -308,17 +309,17 @@ const MicrosoftPractises = () => {
       title: "Case Studies",
       heading: "Elevating Customer Experience with Cloud",
       description:
-        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries.",
+        "The world's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "path/to/image1.jpg",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "D365 Business Central on Cloud",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-      link: "/case-study-1",
+        "Leading Middle East Conglomerate cuts down 79% of the time taken for purchase orders & approval with MS Dynamics Business Central SaaS Solution.",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LeadingConglomerate-MiddleEast-BusinessCentral-SaaS.pdf",
       color: "#000",
       bgCardColor: "#FFF",
     },
@@ -327,10 +328,10 @@ const MicrosoftPractises = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "D365 F&O Implementation",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-      link: "/case-study-1",
+        "Seamless D365 F&O Implementation Revolutionizes Global Dairy Manufacturer's Subsidiary with Integrated Value Chain",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/SubsidiaryLeadingGlobalDairyProductManufacturer_MD365FinanceOperation.pdf.",
       color: "#000",
       bgCardColor: "#FFF",
     },
@@ -341,10 +342,10 @@ const MicrosoftPractises = () => {
       videoURL:
         "/transformation/microsoft-practices/case-studies-section/bg--video.mp4",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Migration  to D365 for Sales Online",
       description:
-        "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
-      link: "/case-study-1",
+        "Leading Manufacturer of Optical Fibers in USA Slashes On-Premises Cost and leverages efficiency after Successfully Migrating to D365 for Sales (Online)",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LeadingManufacturerofOpticalFibersinUSASuccessfullyMigratesCRM2016toMD365forSales.pdf",
       color: "#000",
       bgCardColor: "#FFF",
     },
@@ -354,27 +355,42 @@ const MicrosoftPractises = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "20 years of experience with deep understanding of Microsoft Solutions",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Proactive support to clients, ensuring needs are met with attentive assistance ",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Project quality is ensured through milestone-wise quality checks performed by a dedicated quality team ",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Actively incorporate customer feedback obtained from unbiased third-party sources ",
       icon: "",
     },
     {
       _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      desc: "Stability extends to both users and consultants involved in the project",
+      icon: "",
+    },
+     {
+      _id: 6,
+      desc: "Dedicated team for comprehensive project audits",
+      icon: "",
+    },
+     {
+      _id: 7,
+      desc: "Extensive domain expertise of Microsoft dynamics solutions",
+      icon: "",
+    },
+     {
+      _id: 5,
+      desc: "Rigorous testing is conducted by standalone tester team to guarantee solution excellence",
       icon: "",
     },
   ];
@@ -382,33 +398,58 @@ const MicrosoftPractises = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Streamlined Operations with LS Retail",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "We've implemented LS Retail Solution, streamlining our store and backend operations. Our association with Godrej Infotech is rooted in shared values—simplicity, affordability and top-notch quality. I look forward to continuing association with GITL as we advance our vision of tech-driven business simplicity.",
+      designation: 'IT Manager',
+      companyName:`Saudi Arabia's Hypermarket Retail Chain`,
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Seamless D365 F&O Deployment",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+      designation: 'Director of Finance',
+      companyName:'Wildlife Conservation International NGO based in India',
     },
     {
       id: 3,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Transforming Operations with Business Central",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
+      designation: 'Project Manager',
+      companyName:'Investment Holding Company in Riyadh & Dubai',
     },
   ];
 
+  const blogSliderData=[
+    {
+    id: 1,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "Microsoft Dynamics 365 Finance and Operations or Business Central?",
+    cardDesc: 'Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? We all understand that the needs of any organization are constantly evolving due to the dynamic nature of the market. And that is why a robust and agile platform is much needed for a business that can support these requirements. ',
+    cardTextColor:'white',
+    readMoreUrl:"https://www.godrejinfotech.com/blogDetails.aspx?blog=20"
+  },
+  {
+    id: 2,
+    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGColor:'red',
+    cardHeading: "Upgrading Microsoft Dynamics AX to D365 Finance & Supply Chain",
+    cardDesc: 'After successful client acquisitions and implementation projects across the globe, Microsoft Dynamics AX 2012 ERP is now entering its end-of-life phase. Microsoft has officially ended mainstream support for AX 2012 version since October 2021. Fortunately, there is a better, enhanced, and latest technology version i.e. MS Dynamics 365 Finance and Supply Chain ERP available to customers who are looking to upgrade their AX 2012 application.',
+    cardTextColor:'white',
+    readMoreUrl:"https://www.godrejinfotech.com/blogDetails.aspx?blog=12"
+  },
+  
+  ];
 
   return (
     <>
       {/* Start--HeroBanner-Section========================================================= */}
       <EntIntro
-        title="Your Ace Microsoft Partner for
-Successful Business Outcomes
-"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae."
+        title="Integrate. Automate. Accelerate:"
+        desc="MS Dynamics 365 CRM & ERP Solutions for growing enterprises"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -419,7 +460,7 @@ Successful Business Outcomes
       {/* Start--Overview-Section============================================================== */}
       <OverviewSection
         Text={
-          "Microsoft Solutions such as cloud, workplace & business applications infused with our capability, enable businesses to adapt, innovate and transform operations for excellence and better customer satisfaction. "
+          "Unlock business potential with our 20+ years of Microsoft expertise, delivering agile, resilient, and customer-centric solutions through cloud and business applications."
         }
       />
       {/* End--Overview-Section================================================================ */}
@@ -428,7 +469,7 @@ Successful Business Outcomes
       <HighlightPromo
         setImageURL={highlightPromoBGURL}
         setHeading="Seamless Implementation to Customer Centric Support"
-        setDesc="Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance."
+        setDesc="Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance. In instances of system issues, our team meticulously assesses the impact on business processes and prioritizes swift resolutions. Further, our adaptable support services offer both dedicated and shared teams to effectively address individual customer needs."
         setColor="#1D162B"
         setPadding={false}
         sectionHeaderWidth={"w-full"}
@@ -474,9 +515,9 @@ Successful Business Outcomes
         ID={"AIOfferings"}
         sectionImageUrl={""}
         sectionBGColor={"#1D162B"}
-        sectionHeading={"Experience efficiency with Microsoft Solutions"}
+        sectionHeading={"MS based Custom Solutions"}
         sectionDesc={
-          "We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform."
+          "Building tailored software applications with Microsoft Azure, 365, Dynamics, and Power Platform."
         }
         sectionTextColor={"#FFF"}
         sectionHeaderMaxWidth={"40%"}
@@ -489,7 +530,7 @@ Successful Business Outcomes
       {/* Start--Synergetic Partnerships-Section============================================================== */}
       <HighlightPromo
         setHeading="Synergetic Partnership"
-        setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
+        setDesc="Our 20-year Microsoft alliance delivers industry-leading solutions, leveraging expertise and domain insight for customer success."
         setColor="#1D162B"
         setImageBGURL={synergeticPartnerBGURL}
         setLogoImages="true"
@@ -511,7 +552,7 @@ Successful Business Outcomes
       {/* End--Benefits-Section================================================================ */}
 
       {/* Start--Awards-Section============================================================== */}
-      <HighlightPromo
+      {/* <HighlightPromo
         blurEffect="blurON"
         setHeading="We are Trained and Accredited in Cloud Services"
         setDesc="We undergo demanding assessment and authorisation to guarantee that our expertise and practices fulfil highest standards of excellence."
@@ -521,18 +562,17 @@ Successful Business Outcomes
         setPadding={true}
         setMSLogoURL=""
         setHeadingContainerWidthFull={"w-full"}
-      />
+      /> */}
       {/* End--Awards-Section================================================================ */}
 
       {/* Start--Industry-Spotlight-Section============================================================== */}
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT}  sectionDesc={'Being preferred partner of leading industries, we help in shaping specific technology prerequisites and deliver brilliant value driven solutions tailored to your industry'}/>
       {/* End--Industry-Spotlight-Section================================================================ */}
 
       {/* Start--Hub-Of-Expertise-Section============================================================== */}
       <HubExpertise
         setHeading="Microsoft Excellence with Godrej Infotech"
-        setDesc="We are here to build an edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe.
-"
+        setDesc="We are here to build an edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={2} //Define how many columns you want to display
@@ -548,7 +588,10 @@ Successful Business Outcomes
       {/* End--Case-Study-Section================================================================ */}
 
       {/* Start--Blogs-Section============================================================== */}
-      <BlogSection
+          <BlogSliderSection 
+    cardData={blogSliderData}
+    ></BlogSliderSection>
+      {/* <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
         Heading={"Unveilling Hyper automation  for supply chain efficiency"}
@@ -556,7 +599,7 @@ Successful Business Outcomes
           "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
         }
         Color={"white"}
-      ></BlogSection>
+      ></BlogSection> */}
       {/* End--Blogs-Section================================================================ */}
       {/* Start--Distinctive-Section============================================================== */}
       <DistinctiveSection
@@ -564,7 +607,7 @@ Successful Business Outcomes
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          "We have established trustworthiness in the global marketplace with our high-level technical capabilities aligned with Microsoft's standards."
         }
       ></DistinctiveSection>
       {/* End--Distinctive-Section================================================================ */}
@@ -582,9 +625,9 @@ Successful Business Outcomes
 
       {/* Start--Transform-Business-Form-Section============================================================== */}
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Elevate Your Business Digitally with an Integrated Microsoft Approach"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Discover how we can help you achieve exceptional results!"
         }
       ></TransformBusinessForm>
       {/* End--Transform-Business-Form-Section================================================================ */}

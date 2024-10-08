@@ -15,29 +15,25 @@ const page = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "Hassle-free Oracle implementation and migration",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Complex financial and operational data analysis expertise",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+      desc: "Integrated cross-functional insights for informed decisions",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+      desc: "Committed to increase operations productivity and business performance",
       icon: "",
     },
-    {
-      _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-      icon: "",
-    },
+    
   ];
   const blogImageUrl = "/ai-ml/blog-bg.png";
   const INDUSTRY_SPOTLIGHT = [
@@ -57,7 +53,7 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
+      cardHeading: "Healthcare",
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
       isArrow: false,
@@ -69,7 +65,7 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Trading & Distribution",
+      cardHeading: "Projects",
       cardDesc:
         "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
       isArrow: false,
@@ -81,43 +77,23 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
+      cardHeading: "Professional Services",
       cardDesc:
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
       isArrow: false,
       cardTextColor: "white",
     },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
+    
     // Add more cards as needed
   ];
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'' ,cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'' ,cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'' ,cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'' ,cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'' ,cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-
+    { id: '1', icon:'' ,cardDesc: 'Centralized data for insightful multidimensional reporting.' },
+    { id: '2', icon:'' ,cardDesc: 'Accelerated business operation with regulatory compliance.' },
+    { id: '3', icon:'' ,cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
+    { id: '4', icon:'' ,cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
+    { id: '5', icon:'' ,cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
+    { id: '6', icon:'' ,cardDesc: 'Unified financial management and streamlined procurement' },
+    { id: '7', icon:'' ,cardDesc: 'Efficient project management and enhanced human capital management' },
   ];
   const ultimateChoiceData = [
     {
@@ -128,9 +104,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Financial Management",
       CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+        "Track income, expenses and assets while ensuring tax compliance and enhancing forecasting precision.",
       isArrow: "",
       link: [],
     },
@@ -143,9 +119,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Supply chain Management",
       CardDesc:
-        "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+        "Monitor and manage information and services, spanning from procurement of raw materials to delivery of the final product.",
       isArrow: "",
       link: [],
     },
@@ -157,9 +133,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Human Capital Management",
       CardDesc:
-        "Drive business agility and improved ROI with automation",
+        "Experience unified user experience, harmonized data model and integrated processes with an AI-infused infrastructure.",
       isArrow: "",
       link: [],
     },
@@ -183,9 +159,9 @@ const page = () => {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
-      isArrow: false,
+      cardHeading: 'Business Consulting & Implementation',
+      cardDesc: 'Expert guidance for business transformation through strategic assessment and seamless implementation.',
+      isArrow: true,
       cardTextColor: 'white',
       cardType: 1,
     },
@@ -194,8 +170,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Oracle Cloud Integration Services',
+      cardDesc: 'Integrate Oracle Cloud solutions effortlessly, enabling enhanced productivity.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -205,8 +181,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Oracle Database Management',
+      cardDesc: 'Optimize database performance and security with expert management services.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -216,8 +192,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Quality Assurance Service',
+      cardDesc: 'Ensure solution reliability and performance with comprehensive testing services.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -227,36 +203,25 @@ const page = () => {
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Managed Services',
+      cardDesc: 'Outsource IT operations to our experts, ensuring proactive monitoring and continuous improvement.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
-    },
+    
   ]
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Improve Operation Performance and Efficiency with Oracle"
+        desc="Leading Customer Centric and Cutting-Edge Solution for Enterprises"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Oracle Cloud's autonomous capabilities enable self-driving databases, automated security and streamlined operations. Businesses can reduce total cost of ownership and realize faster time-to-market.`} />
 
       <SectionWrapper BGColor="#a0efe5db">
         <div className="md:container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -264,7 +229,7 @@ const page = () => {
             <SectionHeading
               headingContainerWidth="w-full"
               Heading="Oracle Fusion Cloud"
-              Desc={'This solution leverages advanced technologies such as machine learning and artificial intelligence to optimize operations and transform organizations into information-driven enterprises.'}
+              Desc={'Transform businesses into information-driven enterprises through AI-powered solutions and continuous updates.'}
             >
 
             </SectionHeading>
@@ -281,7 +246,7 @@ const page = () => {
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
         sectionHeading={'Our Oracle Offerings'}
-        sectionDesc={''}
+        sectionDesc={'We offer comprehensive Oracle services that help organizations to achieve their goals. Our expert consultants provide everything from strategic guidance to optimized support.'}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
@@ -289,9 +254,9 @@ const page = () => {
       </CommonCardTwoSlider>
       <SectionWidthSlider
         ID={"ultimateChoiceData"}
-        sectionHeading={"Infor CRM Offerings"}
+        sectionHeading={"Key Capabilities"}
         sectionDesc={
-          "Count on us for an impactful deployment that finely tunes Infor CRM to elevate your sales operations."
+          "Streamline finance, HR, supply chain and customer experience with Oracle Fusion Cloud's integrated solutions. "
         }
         sectionTextColor="white"
         cardData={ultimateChoiceData}
@@ -303,21 +268,21 @@ const page = () => {
       <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Benefits of Infor LN'}
-        sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
+        sectionHeading={'Benefits of Oracle'}
+        sectionDesc={`Oracle's cloud-agnostic approach ensures scalability, flexibility and seamless integration, future-proofing your enterprise with hybrid cloud solutions.`}
         sectionTextColor={'white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
 
  
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'We serve diverse industries, addressing unique challenges and delivering tailored Oracle solutions to drive transformation.'}/>
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Leverage Database Potential with Oracle Cloud"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. This article explores the essence of Oracle Cloud Integration and how it facilitates database optimization and cloud-driven innovations."
         }
         Color={"white"}
       ></BlogSection>
@@ -326,14 +291,14 @@ const page = () => {
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          "We're a trusted Oracle partner, ensuring your business operations remain efficient and secure."
         }
       ></DistinctiveSection>
       {/* Start--Transform-Business-Form-Section============================================================== */}
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Oracle can help you with rapid growth."
         }
       ></TransformBusinessForm>
     </>

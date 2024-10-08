@@ -369,14 +369,14 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <div
                   className="relative w-full h-1/2 rounded-3xl  p-8"
                   style={{
-                    color: casestudy[3].color,
-                    backgroundColor: casestudy[3].bgCardColor,
+                    color: casestudy[1].color,
+                    backgroundColor: casestudy[1].bgCardColor,
                   }}
                 >
                   <h1 className="w-[80%] text-3xl font-medium mb-6">
-                    {casestudy[3].heading}
+                    {casestudy[1].heading}
                   </h1>
-                  <p className="mb-4">{casestudy[3].description}</p>
+                  <p className="mb-4">{casestudy[1].description}</p>
 
                   <div className="absolute bottom-4 right-4">
                     <OutlinedButtonWithArrow size={56} />
@@ -385,14 +385,14 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <div
                   className="relative w-full h-1/2 rounded-3xl  p-8"
                   style={{
-                    color: casestudy[3].color,
-                    backgroundColor: casestudy[3].bgCardColor,
+                    color: casestudy[2].color,
+                    backgroundColor: casestudy[2].bgCardColor,
                   }}
                 >
                   <h1 className=" text-3xl font-medium mb-6">
-                    {casestudy[3].heading}
+                    {casestudy[2].heading}
                   </h1>
-                  <p className=" mb-4">{casestudy[3].description}</p>
+                  <p className=" mb-4">{casestudy[2].description}</p>
 
                   <div className="absolute bottom-4 right-4">
                     <OutlinedButtonWithArrow size={56} />
