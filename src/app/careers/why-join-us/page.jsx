@@ -43,7 +43,7 @@ const page = () => {
         <Slider slidesPerView={3.2}>
           {culture?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class={`max-w-sm h-[512px] py-10 px-6 rounded-3xl shadow`} style={{
+              <div className={`max-w-sm h-[512px] py-10 px-6 rounded-3xl shadow`} style={{
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',
@@ -51,10 +51,10 @@ const page = () => {
               }}>
                 {item?.title && (
                   <>
-                  <h5 class="mb-3 text-[42px] leading-[50px] font-medium text-white">{item?.title}</h5>
+                  <h5 className="mb-3 text-[42px] leading-[50px] font-medium text-white">{item?.title}</h5>
                   </>
                 )}
-                {item?.desc && (<p class="mb-3 font-[14px] leading-[22px] text-white">{item?.desc}</p>)}
+                {item?.desc && (<p className="mb-3 font-[14px] leading-[22px] text-white">{item?.desc}</p>)}
               </div>
             </SwiperSlide>
           ))}
@@ -72,12 +72,12 @@ const page = () => {
         <Slider>
           {[1, 2, 3, 4]?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="p-6 bg-[transparent]">
+              <div className="p-6 bg-[transparent]">
                 <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
                   <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
                   <div className="text-[28px] text-white">Purpose</div>
                 </div>
-                <p class="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
               </div>
 
             </SwiperSlide>
@@ -92,7 +92,7 @@ const page = () => {
         sectionTextColor='#000'
         sectionHeadingLayout="left"
       >
-        <div class="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           <div>
             <h3 className="text-[54px] leading-[64px] font-semibold mb-3">Ajay Pimparkar</h3>
             <p className="text-[#808080] text-[32px] mb-6">Chief Executive Officer</p>
@@ -103,7 +103,7 @@ const page = () => {
               that can help them move ahead.
 
             </div>
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more</button>
+            <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more</button>
           </div>
           <div>
             <Image src="/about/pimp.svg" width={500} height={500} alt={'pimp'} className="absolute right-[8%] bottom-0" />
@@ -122,10 +122,10 @@ const page = () => {
         <Slider>
           {[1, 2, 3, 4]?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+              <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                 <div className="text-[28px] text-white">Purpose</div>
-                <p class="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
               </div>
 
             </SwiperSlide>
@@ -145,14 +145,14 @@ const page = () => {
         <Slider slidesPerView={4}>
           {benefits?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="max-w-sm py-10 px-6 h-[424px] bg-[#9F0165] border border-gray-200 rounded-3xl shadow" style={{
+              <div className="max-w-sm py-10 px-6 h-[424px] bg-[#9F0165] border border-gray-200 rounded-3xl shadow" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',
                 background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
               }}>
-                <h5 class="mb-3 text-[28px] leading-[36px] max-w-[200px] font-semibold text-white">{item.title}</h5>
-                <p class="mb-3 font-[14px] leading-[22px] text-white">{item.desc}</p>
+                <h5 className="mb-3 text-[28px] leading-[36px] max-w-[200px] font-semibold text-white">{item.title}</h5>
+                <p className="mb-3 font-[14px] leading-[22px] text-white">{item.desc}</p>
               </div>
             </SwiperSlide>
           ))}
@@ -171,7 +171,7 @@ const page = () => {
         <Slider slidesPerView={1.5}>
           {[1, 2, 3, 4]?.map((item, index) => (
             <SwiperSlide key={index}>
-                <div class="h-[564px]  p-6 border border-gray-200 rounded-3xl shadow" style={{
+                <div className="h-[564px]  p-6 border border-gray-200 rounded-3xl shadow" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',
@@ -180,8 +180,8 @@ const page = () => {
                 backgroundAttachment: "fixed", // This is key for the parallax effect
                 backgroundPosition: "center",
               }}>
-                <h5 class="mb-3 text-[28px] leading-[36px] font-semibold text-white">CSR</h5>
-                <p class="mb-3 font-[14px] leading-[22px] text-white">At Godrej Infotech, we believe in a holistic approach to life.<br></br> That’s why we encourage our employees to engage</p>
+                <h5 className="mb-3 text-[28px] leading-[36px] font-semibold text-white">CSR</h5>
+                <p className="mb-3 font-[14px] leading-[22px] text-white">At Godrej Infotech, we believe in a holistic approach to life.<br></br> That’s why we encourage our employees to engage</p>
 
               </div>
 
@@ -202,9 +202,9 @@ const page = () => {
         <Slider>
           {[1, 2, 3, 4]?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
+              <div className="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
                 <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">“Supportive senior management, excellent work culture, exposure to next-generation “</div>
-                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.</h5>
+                <h5 className="mb-5 text-[16px] font-[400] text-[#EFE9FB]">I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.</h5>
 
                 <div className="flex">
                   <div className="mr-4">
@@ -235,11 +235,11 @@ const page = () => {
             <div className="text-[30px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
             <p className="text-[16px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
             <div className="">
-            <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
+            <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
             </div>
             </div>
             <div className="">
-            <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
+            <button type="button" className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
             <p className="text-[14px] text-[#808080">Posted within the last 24 hours</p>
                 </div>
         </div>
@@ -248,11 +248,11 @@ const page = () => {
             <div className="text-[28px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
             <p className="text-[14px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
             <div className="">
-            <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
+            <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
             </div>
             </div>
             <div className="">
-            <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
+            <button type="button" className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
             <p className="text-[14px] text-[#808080">Posted within the last 24 hours</p>
                 </div>
         </div>
