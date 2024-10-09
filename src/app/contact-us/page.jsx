@@ -230,7 +230,7 @@ const ContactUs = () => {
             transform: "translateY(-152px)"
 
           }}
-          sectionHeading="Our Global Footprint"
+          sectionHeading="OUR LOCATIONS"
           sectionDesc="The Inspiring Journey Of Godrej Infotech"
           sectionTextColor='#000'
           sectionHeadingLayout="center"
@@ -335,7 +335,7 @@ const ContactUs = () => {
 
       {/* Global Locations */}
       <SectionWrapperNew
-        sectionHeading="OUR LOCATIONS"
+        sectionHeading="Our Global Footprint"
         sectionDesc="Our Global Footprint"
         sectionTextColor='#000'
         sectionHeadingLayout="left"
