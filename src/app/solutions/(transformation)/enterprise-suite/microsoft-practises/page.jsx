@@ -602,7 +602,7 @@ const MicrosoftPractises = () => {
 
       {/* Start--Transform-Business-Form-Section============================================================== */}
       <TransformBusinessForm
-        Title={"Elevate Your Business Digitally with an Integrated Microsoft Approach"}
+        Title={"Transform your business with us"}
         Desc={
           "Discover how we can help you achieve exceptional results!"
         }

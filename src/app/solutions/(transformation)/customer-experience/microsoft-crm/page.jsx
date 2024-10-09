@@ -11,28 +11,29 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
+import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
 
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Proven Microsoft Expertise: Microsoft Gold partner with global deployment and upgrade expertise.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Expert Guidance: Team of Microsoft-certified professionals providing expert support.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Streamlined Solutions: Simplifying Dynamics CRM complexity for optimal results.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Effective Onboarding: Comprehensive training in seamless user adoption.",
       icon: "",
     },
 
@@ -45,7 +46,7 @@ const page = () => {
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "World's top-notch businesses choose us for our industry experience and excellent technical acumen, as we deliver high performing solutions across diverse industries",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
@@ -83,82 +84,94 @@ const page = () => {
     },
     // Add more case studies here...
   ];
+  
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-
+    { id: '1', icon:'', cardDesc: 'Scalability to adapt distinct business requirements' },
+    { id: '2', icon:'', cardDesc: 'Omni-channel capabilities for customer engagement' },
+    { id: '3', icon:'', cardDesc: 'Advanced decision-making potential through Artificial Intelligence' },
+    { id: '4', icon:'', cardDesc: 'Scope to leverage data-driven strategies with real time insights' },
+    { id: '5', icon:'', cardDesc: 'Comprehensive repository of contacts, leads and client information' },
+    { id: '6', icon:'', cardDesc: 'Data analytics helps to prioritize leads and identify opportunities' },
+    { id: '7', icon:'', cardDesc: 'Cloud-based infrastructure enables connectivity from any device and location' },
+    { id: '8', icon:'', cardDesc: 'Seamless integration with Microsoft products such as Microsoft 365 and Power BI' },
   ];
   const RPASolution = [
     {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Marketing',
+      cardDesc: 'Understand customer preferences, behavior, and interactions to create targeted and personalized campaigns.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
     {
-  
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Sales',
+      cardDesc: 'Prioritize, track and close deals with ease so that  sales team focuses on high-value opportunities for maximum impact.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
     },
     {
-  
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Customer Service',
+      cardDesc: 'Effortlessly manage customer inquiries, requests and feedback for a seamless and efficient support experience.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
     {
-  
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Field Service',
+      cardDesc: 'Create, assign and track work orders ensuring that your field service team operates with precision and efficiency.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
     },
     {
-  
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Project Operations',
+      cardDesc: 'Optimize efficiency and encourage collaboration with this advanced project management tool, affirming smooth project success.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
-    {
-  
-  
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
-    },
+    
   ]
+
+  const TESTIMONIAL_DATA = [
+    {
+      id: 1,
+      cardHeading: "90% Increase in Workforce Productivity",
+      cardDesc: `“Thank you to Godrej Infotech for seamlessly migrating our CRM 2016 to D365 for Sales. Completed on time and with top-notch quality, the entire execution from offshore showcases commendable achievement. The CRM & Outlook integration significantly boosts sales efficiency, leading to a remarkable 90% increase in workforce productivity.” `,
+      designation: '',
+      companyName: 'Manufacturer of Optical Fibers in USA',
+    },  
+    {
+      id: 2,
+      cardHeading: "Expert Microsoft CRM Consulting Services",
+      cardDesc: `“Appreciation to Godrej Infotech team for Microsoft Dynamics CRM consulting services. It has been a pleasure working with their team and we highly recommend Godrej Infotech’s services to other organizations.”`,
+      designation: 'Business Head',
+      companyName:'Leading Indian Business Group',
+    },
+    {
+      id: 3,
+      cardHeading: "Sales and Marketing Process Automation",
+      cardDesc: `Choosing Microsoft Dynamics CRM, we automated sales and marketing, gaining a 360-degree customer view. Godrej Infotech's project management team ensured transparency, kept us informed on project status and risks, and collaboratively devised mitigation plans. The result: on-time, on-budget project completion. We highly recommend Godrej Infotech for Microsoft Dynamics CRM services.`,
+      designation: 'Vice President',
+      companyName:'Indian Offshore Training Provider',
+    },
+  ];
 
   const ultimateChoiceData = [
     {
@@ -169,9 +182,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Assess",
       CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
+        "We evaluate processes to seamlessly implement Dynamics 365 CRM without workflow disruption.",
       isArrow: "",
       link: [],
     },
@@ -184,9 +197,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Strategize & Implement",
       CardDesc:
-        "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+        "Clear roles, data migration and integration ensure smooth implementation.",
       isArrow: "",
       link: [],
     },
@@ -198,9 +211,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Train & Adopt",
       CardDesc:
-        "Drive business agility and improved ROI with automation",
+        "Comprehensive training enhances user adoption, usability and confidence across sales, marketing and customer service. ",
       isArrow: "",
       link: [],
     },
@@ -212,9 +225,9 @@ const page = () => {
       CardTextColor: '#fff',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Ongoing Support",
       CardDesc:
-        "Highest levels of security and privacy, ensuring data is safeguarded",
+        "Expert maintenance and management ensure CRM runs smoothly, and team stays productive.",
       isArrow: "",
       link: [],
     },
@@ -222,14 +235,14 @@ const page = () => {
   return (
   <>  
   <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Automate sales forecasting and pipeline management with D365 CRM"
+        desc="Personalized solutions for Sales Automation, Customer Insights, Marketing Automation and Service Excellence"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
-      <SectionWrapper BGColor="black">
+      <OverviewSection Text={'Get a single customer view with Microsoft CRM. Gain 360-degree customer insights, seamless team collaboration, personalized customer experiences and data-driven decision-making.'} />
+      {/* <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="hidden md:block">
@@ -246,13 +259,13 @@ const page = () => {
           </div>
         </div>
 
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       <CommonCardTwoSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
-        sectionHeading={'Our Microsoft CRM offerings'}
+        sectionHeading={'Microsoft CRM offerings'}
         sectionDesc={''}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
@@ -264,9 +277,9 @@ const page = () => {
         <div className="md:container mx-auto pt-20 px-10 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-full md:w-1/2">
             <SectionHeading
-              Heading={`Infor CloudSuite Services`}
+              Heading={'Microsoft CRM Services'}
               Color={'white'}
-              Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
+              Desc={'Discover how our expert services can transform customer relationships by anticipating business needs, personalizing experiences and strengthening customer connections.'}
               headingContainerWidth={'w-full'}
             />
           </div>
@@ -297,12 +310,12 @@ const page = () => {
               },
           }}
           >
-            {[1, 2, 3, 4, 5]?.map((item, index) => (
+            {['Consultation', 'Implementation', 'ManagedServices']?.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
                     <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
                   <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                      <h5 className="mb-2 text-2xl font-bold">{item}</h5>
                   </div>
                 </div>
               </SwiperSlide>
@@ -315,9 +328,9 @@ const page = () => {
       
       <SectionWidthSlider style={{marginTop:'-30px'}}
         ID={"ultimateChoiceData"}
-        sectionHeading={"Infor CRM Offerings"}
+        sectionHeading={"D365 CRM Implementation Process"}
         sectionDesc={
-          "Count on us for an impactful deployment that finely tunes Infor CRM to elevate your sales operations."
+          "Our structured implementation process involves collaboration with stakeholders to understand business goals, challenges and existing processes. "
         }
         sectionTextColor="white"
         cardData={ultimateChoiceData}
@@ -329,7 +342,7 @@ const page = () => {
 <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Benefits of Infor LN'}
+        sectionHeading={'Advantages of D365 CRM'}
         sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
         sectionTextColor={'white'}
         cardData={BENEFITS_CARDS_DATA}
@@ -345,21 +358,30 @@ const page = () => {
 <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Future Trends in Microsoft CRM: What to Expect in the Next 5 Years"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "AI in CRM and AI-powered CRM tools, particularly within Dynamics 365, are revolutionizing how businesses function. These advancements mark the trajectory of Microsoft CRM market while ensuring a more intuitive and personalized user experience."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We help businesses to streamline customer relationships, enhance productivity and drive growth.'}
       >
       </DistinctiveSection>
+      <ReviewSliderSection
+        ID={"TESTIMONIALS"}
+        Heading={"Delighted customers share their success experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="#1D162B"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
 <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how Microsoft CRM can help you with rapid growth."
         }
       ></TransformBusinessForm>
   </>
