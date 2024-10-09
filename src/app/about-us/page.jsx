@@ -15,12 +15,90 @@ import { SwiperSlide } from "swiper/react";
 import { LinearGradient } from 'react-text-gradients';
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import Dialog from "@/components/Dialog";
-
-
-
+import { Timeline } from "@/components/ui/timeline";
 
 const ContactUs = () => {
   const [showModal1, setshowModal1] = useState(false);
+
+  const data = [
+    {
+      title: "1971",
+      content: (
+      <>
+      <div className="">
+        <h2 className="text-[28px] font-semibold leading-[36px]">Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering</h2>
+        <div className="my-10">
+          {[1,2,3,4].map((item) => (
+            <>
+             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+            <span className="text-[20px] text-[#808080] mr-4">1971</span><p className="text-[20px] text-[#808080] mr-4 font-medium">Godrej Infotech Established</p>
+          </div>
+            </>
+          ))}
+         
+        </div>
+      </div>
+      </>
+      ),
+    },
+    {
+      title: "2005",
+      content: (
+        <>
+      <div className="">
+        <h2 className="text-[28px] font-semibold leading-[36px]">Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering</h2>
+        <div className="my-10">
+          {[1,2,3,4].map((item) => (
+            <>
+             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+            <span className="text-[20px] text-[#808080] mr-4">1971</span><p className="text-[20px] text-[#808080] mr-4 font-medium">Godrej Infotech Established</p>
+          </div>
+            </>
+          ))}
+        </div>
+      </div>
+      </>
+      ),
+    },
+    {
+      title: "2009",
+      content: (
+        <>
+         <div className="">
+        <h2 className="text-[28px] font-semibold leading-[36px]">Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering</h2>
+        <div className="my-10">
+          {[1,2,3,4].map((item) => (
+            <>
+             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+            <span className="text-[20px] text-[#808080] mr-4">1971</span><p className="text-[20px] text-[#808080] mr-4 font-medium">Godrej Infotech Established</p>
+          </div>
+            </>
+          ))}
+        </div>
+      </div>
+        </>
+      ),
+    },
+    {
+      title: "2018",
+      content: (
+        <>
+         <div className="">
+        <h2 className="text-[28px] font-semibold leading-[36px]">Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering</h2>
+        <div className="my-10">
+          {[1,2,3,4].map((item) => (
+            <>
+             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+            <span className="text-[20px] text-[#808080] mr-4">1971</span><p className="text-[20px] text-[#808080] mr-4 font-medium">Godrej Infotech Established</p>
+          </div>
+            </>
+          ))}
+        </div>
+      </div>
+        </>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -64,6 +142,7 @@ const ContactUs = () => {
         </div>
 
         <div className="my-10">
+        <Timeline data={data} />
         </div>
 
       </SectionWrapperNew>
@@ -169,8 +248,8 @@ const ContactUs = () => {
           {[1, 2, 3, 4]?.map((item, index) => (
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
-                <div className="text-[16px] font-[700] text-white leading-[24px] mb-4">“Supportive senior management, excellent work culture, exposure to next-generation “</div>
-                <h5 class="mb-4 text-[16px] font-[400] text-white">I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.</h5>
+                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">“Supportive senior management, excellent work culture, exposure to next-generation “</div>
+                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.</h5>
 
                 <div className="flex">
                   <div className="mr-4">
