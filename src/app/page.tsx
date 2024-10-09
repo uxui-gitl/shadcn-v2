@@ -1,6 +1,7 @@
 "use client";
 // system import
 import Image from "next/image";
+import { useRef } from "react";
 import Slider from "@/components/Slider";
 import SectionWrapperNew from "@/components/SectionWrapperNew";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
@@ -19,15 +20,29 @@ import { useInView } from 'react-intersection-observer';
 import React, { useEffect, useState } from "react";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import Dialog from "@/components/Dialog";
+import useScrollTriggeredCountUp from "@/components/home/useScrollTriggeredCountUp";
+
 
 
 
 
 export default function Home() {
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const ref3 = useRef<HTMLDivElement>(null);
+  const ref4 = useRef<HTMLDivElement>(null);
+  
+  const count1 = useScrollTriggeredCountUp(ref1, 25); // Count-up from 0 to 25
+  const count2 = useScrollTriggeredCountUp(ref2, 500); // Count-up from 0 to 500
+  const count3 = useScrollTriggeredCountUp(ref3, 15); // Count-up from 0 to 15000 (15k)
+  const count4 = useScrollTriggeredCountUp(ref4, 15); // Count-up from 0 to 15000 (15k)
+
+
   const [showModal1, setshowModal1] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
+
 
   const items = [
     {
@@ -216,19 +231,6 @@ export default function Home() {
 
   return (
     <>
-
-    {/* modal */}
-    <Dialog
-        shouldShow={showModal1}
-        onRequestClose={() => {
-          setshowModal1((prev) => !prev);
-        }}
-        title={"dummy title"}
-      >
-        <h1>Dummy data</h1>
-      </Dialog>
-{/* end modal */}
-
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
@@ -249,9 +251,10 @@ export default function Home() {
           }}>
 
           </div>
-          <div className="container mx-auto text-[76px] leading-[86px] text-white absolute" style={{ top: '35%', left: '0', right: '0' }}>
+          <div className="container mx-auto text-[76px] leading-[86px] text-white absolute" style={{ top: '30%', left: '0', right: '0' }}>
             Delivering Business<br></br> value with Automation
           </div>
+          <hr className="h-px my-8 bg-[#e5e7eb5c] border-0 absolute" style={{ top: '55%', left: '0', right: '0' }}></hr>
           {/* slider */}
           <div className="container mx-auto h-60" style={{ position: "absolute", width: "100%", bottom: '0', left: 0, right: 0 }}>
             <div className="flex h-60" style={{ alignItems: "baseline" }}>
@@ -269,7 +272,7 @@ export default function Home() {
                 >
                   {sliderData?.map((item, index) => (
                     <SwiperSlide key={item.id}>
-                      <div className="w-full p-6 bg-transparent rounded-3xl">
+                      <div className="w-full py6 bg-transparent rounded-3xl">
                         <div className="grid grid-cols-3 gap-4">
                           <motion.div
                             ref={ref}
@@ -307,7 +310,6 @@ export default function Home() {
             </div>
           </div>
           {/*end slider */}
-
         </div>
       </div>
       {/* [partner Section] */}
@@ -319,24 +321,24 @@ export default function Home() {
               left: "50%",
               transform: "translateX(-50%)",
               backgroundSize: 'cover',
-              background: "url('/homeNew/union.svg')",
+              background: "url('/homeNew/Union.svg')",
               backgroundRepeat: "no-repeat",
               width: '459px',
               height: "-webkit-fill-available",
               top: "-77px",
             }}>
-           
-              <Image className="absolute rotating"
-                style={{
-                  left: "36%",
-                  transform: "translateX(-50%)",
-                  top: "11px",
-                }}
-                src={"/homeNew/partner-circle.svg"}
-                width={130}
-                height={130}
-                alt="asdjn"
-              />
+
+            <Image className="absolute rotating"
+              style={{
+                left: "36%",
+                transform: "translateX(-50%)",
+                top: "11px",
+              }}
+              src={"/homeNew/partner-circle.svg"}
+              width={130}
+              height={130}
+              alt="asdjn"
+            />
           </div>
           <Slider slidesPerView={6} autoplay={true}>
             {partnerLogo?.map((item, index) => (
@@ -349,32 +351,32 @@ export default function Home() {
       </div>
 
       {/* end partner Section */}
-
+      <hr className="h-px bg-white border-1" />
       <div className=" relative z-2 bg-white" style={{ borderBottomLeftRadius: '24px', borderBottomRightRadius: "24px" }}>
         <div className="md:container mx-auto pt-32 pb-40">
           <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
             We must move beyond the usual to thrive.
           </p>
-          <div className="text-[54px] leading-[64px] font-semibold">
+          <div className="text-[64px] leading-[74px] font-semibold">
             Transform your&nbsp;
             <motion.div
               key={items[index].id}
-              initial={{ y: 10,  }}
-              animate={{ y: 0,  }}
-              exit={{ y: -10, }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay:0.1 }}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -10, opacity: 0 }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
               style={{ display: 'inline-block' }}
             >
               <span className="text-[#5F22D9]">{items[index].content}</span>
             </motion.div>
             &nbsp;<br></br>
-           organization into a&nbsp;
+            organization into a&nbsp;
             <motion.div
               key={items2[index].id}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay:0.3 }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
               style={{ display: 'inline-block' }}
             >
               <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>
@@ -384,7 +386,7 @@ export default function Home() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay:0.4 }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.4 }}
               style={{ display: 'inline-block' }}
             ><span className="text-[#5F22D9]">{items3[index].content}.</span></motion.div>
           </div>
@@ -423,8 +425,8 @@ export default function Home() {
                 <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">Streamline Your Operations</div>
                 <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">Harness the power of automation to optimize processes and drive efficiency.</div>
                 <div className="flex justify-end px-6 py-4">
-            <OutlinedButtonWithArrow arrowColor={'white'} size={48} onClick={() => setshowModal1((prev) => !prev)}/>
-          </div>
+                  <OutlinedButtonWithArrow arrowColor={'white'} size={48} onClick={() => setshowModal1((prev) => !prev)} />
+                </div>
               </div>
 
             </SwiperSlide>
@@ -442,20 +444,20 @@ export default function Home() {
         style={{ background: "linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)", paddingTop: '400px' }}
       >
         <div className="grid grid-cols-4 gap-16 py-6">
-          <div className="">
-            <h1 className="text-[96px] font-[700] text-white">25<sup className="text-normal">+</sup></h1>
+          <div className="" ref={ref1}>
+            <h1 className="text-[96px] font-[700] text-white">{count1}<sup className="text-normal">+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">A Legacy of Success in Delivering Tailored Solutions for 25+ Years</p>
           </div>
-          <div className="">
-            <h1 className="text-[96px] font-[700] text-white">500<sup>+</sup></h1>
+          <div className="" ref={ref2}>
+            <h1 className="text-[96px] font-[700] text-white">{count2}<sup>+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">Trusted by 898 Customers Across multiple Industries.</p>
           </div>
-          <div className="">
-            <h1 className="text-[96px] font-[700] text-white">15k<sup>+</sup></h1>
+          <div className=""  ref={ref3}>
+            <h1 className="text-[96px] font-[700] text-white">{count3}k<sup>+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">Harnessing 15,000 Man-Years of Expertise for Your Benefit.</p>
           </div>
-          <div className="">
-            <h1 className="text-[96px] font-[700] text-white">15k<sup>+</sup></h1>
+          <div className=""  ref={ref4}>
+            <h1 className="text-[96px] font-[700] text-white">{count4}k<sup>+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">Fueled by a Diverse Workforce of 15000 Employees Globally.</p>
           </div>
         </div>
@@ -495,7 +497,7 @@ export default function Home() {
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
       ></BlogSection>
       {/* @ts-ignore */}
-      <ReviewSliderSection
+      <ReviewSliderSection 
         ID={"TESTIMONIALS"}
         Heading={"What people are saying about the us."}
         Desc={''}
@@ -512,6 +514,18 @@ export default function Home() {
       ></TransformBusinessForm>
 
       {/* <Footer /> */}
+
+      {/* modal */}
+      <Dialog
+        shouldShow={showModal1}
+        onRequestClose={() => {
+          setshowModal1((prev) => !prev);
+        }}
+        title={"dummy title"}
+      >
+        <h1>Dummy data</h1>
+      </Dialog>
+      {/* end modal */}
     </>
   );
 }
