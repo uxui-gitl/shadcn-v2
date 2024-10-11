@@ -9,6 +9,8 @@ import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import Image from "next/image";
+
+
 import 
 ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
@@ -33,8 +35,24 @@ const page = () => {
   ];
 
   const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Inadequate understanding of business and customer perspectives", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 2, title: "Existing or upcoming market conditions ambiguity", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 3, title: "Discord between business vision and strategy", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 4, title: "Innovation challenges and new capabilities deployment", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 5, title: "Absence of enterprise-wide adaptability", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 6, title: "Ineffectual strategy implementation", icon: '/upgradeCloud/icons/ico--target.svg' },
+  ];
+
+  const ourServices1 = [
+    { id: 1, title: "abhay", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 2, title: "manish Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+  ];
+
+  const ourServices2 = [
+    { id: 1, title: "anish", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 2, title: "manish Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
     { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
     { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
   ];
@@ -42,22 +60,32 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Strong legacy of our parent company – Godrej Enterprise group which hassucceeded for more than 125 years.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Shared DNA of engineering expertise from our parent group – Godrej EnterpriseGroup with 1.7Bn revenue.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Long-term global relationships built on trust, reliability and collaboration.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Industry-focused teams executing time-tested practices of excellence.",
+      icon: "",
+    },
+    {
+      _id: 5,
+      desc: "Holistic ecosystem including scalable deployment, support services and diverseportfolio of ERPs and digital solutions.",
+      icon: "",
+    },
+    {
+      _id: 6,
+      desc: "Responsive approach and defined processes that set high standards.",
       icon: "",
     },
 
@@ -138,17 +166,18 @@ const page = () => {
     },
   ];
 
+  
 
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
+        title="Begin Your Digital Journey with Strategic Consulting Expertise"
         desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success `} />
       
       <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
@@ -157,7 +186,7 @@ const page = () => {
             Color="white"
             headingContainerWidth="w-full"
             Heading="Knocking Business Challenges  "
-            Desc="We help executive leadership navigate critical challenges, manage process complexity and develop future-ready organizations.  "
+            Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop afuture-ready organization"
           ></SectionHeading>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
@@ -203,7 +232,7 @@ const page = () => {
             <div>
               <div className="grid grid-cols-2 gap-12">
                 <ul className=" space-y-4 w-full text-white">
-                  {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                  {ourServices1.map((challenge, index) => (
                     <li
                       key={challenge.id}
                       className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
@@ -217,7 +246,7 @@ const page = () => {
                   ))}
                 </ul>
                 <ul className=" space-y-4 w-full text-white">
-                  {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                  {ourServices2.map((challenge, index) => (
                     <li
                       key={challenge.id}
                       className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
@@ -237,14 +266,14 @@ const page = () => {
 
       </SectionWrapper>
 
-      <SectionWidthSlider
+     {/*  <SectionWidthSlider
         ID={"ultimateChoiceData"}
         sectionHeading={""}
         sectionDesc={''}
         sectionTextColor="white"
         cardData={ultimateChoiceData}
         sectionBGColor="#EFE9FB"
-      />
+      /> */}
 
       <SectionWrapper BGColor="#1D162B">
         <div className="md:container mx-auto">
@@ -265,45 +294,28 @@ const page = () => {
         </div>
       </ SectionWrapper>
 
-      <HubExpertise
-      BGColor="#7B014E"
-        setHeading="Hub of Expertise"
-        setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
-        setColor="#ffffff"
-        counters={HUBEXPERTISE_COUNTER_DATA}
-      />
-
-
+      
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
+        Heading={"Optimizing Operations – A Holistic Approach to Process Improvement"}
         Desc={
-          "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
+          "One of the most effective ways to achieve this is through process improvementstrategies. By refining workflows, eliminating bottlenecks, and streamlining operations,businesses can enhance productivity, reduce costs and drive growth. In this blog, we'llexplore the importance of process improvement and discuss key strategies forimplementing it effectively."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
       
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We are a strategic IT partner to ambitious enterprises on their journeytowards business progression'}
       >
       </DistinctiveSection>
-
-      <ReviewSliderSection
-        ID={"TESTIMONIALS"}
-        Heading={"Delighted customers share their success experience"}
-        Desc={''}
-        Color="#ffffff"
-        CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
-        SectionHeadingMaxWidth={'70%'}
-      ></ReviewSliderSection>
-
+        
+      
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Let us discuss how business consulting can help you with rapid growth."
         }
       ></TransformBusinessForm>
     </>
