@@ -298,7 +298,7 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Optimizing Operations – A Holistic Approach to Process Improvement"}
+        Heading={"Holistic Approach to Process Improvement"}
         Desc={
           "One of the most effective ways to achieve this is through process improvementstrategies. By refining workflows, eliminating bottlenecks, and streamlining operations,businesses can enhance productivity, reduce costs and drive growth. In this blog, we'llexplore the importance of process improvement and discuss key strategies forimplementing it effectively."
         }

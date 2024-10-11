@@ -15,37 +15,37 @@ const page = () => {
 
   const SERVICE_CARDS_DATA = [
     {
-      title: "Planning and Designing",
-      hoverTitle: "Planning & Designing",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Site Analysis and Project Planning",
+      hoverTitle: "Site Analysis and Project Planning",
+      description: "Understand precise needs of business and buildthe foundation for an effective project execution.",
       content: "Additional content for Card 1",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Define and Develop",
-      hoverTitle: "Define & Develop",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Design Solution Architecture and Mapping",
+      hoverTitle: "Design Solution Architecture and Mapping",
+      description: "Employ the latest tools and methodologiesto build robust and scalable solutions tailored to business specific requirements.",
       content: "Additional content for Card 2",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Testing",
-      hoverTitle: "Testing",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Efficient Knowledge Transfer",
+      hoverTitle: "Efficient Knowledge Transfer",
+      description: "Offer user acceptance testing to ensure proficiencywith the new application.",
       content: "Additional content for Card 3",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Deployment",
-      hoverTitle: "Deployment",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Data Migration & Go-Live Readiness",
+      hoverTitle: "Data Migration & Go-Live Readiness",
+      description: "Thoroughly assess, cleanse, transform, andmigrate data from legacy systems to the new solution, ensuring system readiness for asmooth launch with minimal hiccups, as planned.",
       content: "Additional content for Card 4",
       imageURL: '/techStack1.png'
     },
     {
-      title: "Maintainence",
-      hoverTitle: "Maintainence",
-      description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
+      title: "Go-Live and Post Go Live Support",
+      hoverTitle: "Go-Live and Post Go Live Support",
+      description: "Launch chosen solution and provide ongoingmonitoring, troubleshooting and performance -tuning to ensure peak efficiency of solution.",
       content: "Additional content for Card 5",
       imageURL: '/techStack1.png'
     },
@@ -57,8 +57,8 @@ const page = () => {
       id: 1,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Business Consulting',
-      cardDesc: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.',
+      cardHeading: 'End to End Implementation',
+      cardDesc: 'Employing our best practices we provide effectivesolution deployment, risk mitigation and complete adoption of the solution.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -68,8 +68,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Implementation & Management',
-      cardDesc: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while',
+      cardHeading: 'Global Rollouts',
+      cardDesc: 'We execute pilot implementation for a few client- designatedlocations. Following client approval, the solution is deployed to all locationsaccording to the agreed timeline.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -79,8 +79,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: '',
       cardBGColor: '#9F0165',
-      cardHeading: 'Application Security Testing',
-      cardDesc: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision',
+      cardHeading: 'Customization and Integration',
+      cardDesc: 'We integrate the right fit technologies, processes,and systems to deliver valuable and unified end-user experience.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -90,8 +90,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Data Migration',
+      cardDesc: 'With the responsibility of extracting data from source systems,cleansing it, loading the combined data into the target system, and executing MasterData Governance, we facilitate a smooth transition while reducing testingrequirement, downtime and cost overruns',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -101,25 +101,13 @@ const page = () => {
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Reimplementation',
+      cardDesc: 'Considering the current project scenario, organizationalbottlenecks, and perspectives from relevant stakeholders, we eliminate erroneoustransactions, re-architect and progress through the project in a simple andstructured manner. This ensures that our clients can reclaim the originalinvestments made in ERP systems.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
-    },
-  ];
+      ];
 
   const TESTIMONIAL_DATA = [
     {
@@ -298,20 +286,20 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Implementation & Global Rollout Services"
+        desc="Expertly Implemented, Globally Delivered"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`25+ years expertise in implementation services, delivering secure rollouts and timelyresults for global clients.`} />
 
       <CommonCardTwoSlider
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#EFE9FB'}
         sectionHeading={'Our Implementation Services'}
-        sectionDesc={'We offer implementation services focused on delivering specific outcomes from inception to project completion with our commitment to quality.'}
+        sectionDesc={'Our implementation services combine industry expertise with a customer-centric approach, ensuring minimal disruption and maximum impact.'}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         setHeadingLayout={'horizontal'}
@@ -322,9 +310,9 @@ const page = () => {
         <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-full md:w-1/2">
             <SectionHeading
-              Heading={`Infor CloudSuite Services`}
+              Heading={`Our Implementation Service Virtues`}
               Color={'white'}
-              Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
+              Desc={`Transform your business with our implementation services: Proven methodologies,certified experts, and personalized support.`}
               headingContainerWidth={'w-full'}
             />
           </div>
@@ -369,13 +357,13 @@ const page = () => {
         </div>
       </div>
 
-      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Technology Stack"} desc={""} color={"#1D162B"} />
+      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Key Implementation Phases"} desc={"Constant optimization is important during every stage, as we fine-tune the solution tomaximize its value."} color={"#1D162B"} />
 
       <SectionWithSlider
         ID={"DATA_MGMT_DATA"}
-        sectionHeading={"360 Degree Implementation "}
+        sectionHeading={"360 Degree Implementation Practice"}
         sectionDesc={
-          "Scalable data management solutions leveraging analytics and business intelligence for informed decisions."
+          "Every successful implementation needs more than technology expertise. Our all-inclusive approach delivers winning implementation services for our customers."
         }
         sectionTextColor="#ffffff"
         cardData={DATA_MGMT_DATA}
