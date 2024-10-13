@@ -9,6 +9,15 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import { SwiperSlide } from "swiper/react";
+import Slider from "@/components/Slider";
+import CommonCardThree from "@/components/CommonCardThree";
+
+
+
+
 
 const page = () => {
 
@@ -39,7 +48,7 @@ const page = () => {
 
   const blogImageUrl = "/ai-ml/blog-bg.png";
 
-  const CASE_STUDIES_DATA = [
+  const casestudy = [
     {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
@@ -252,19 +261,89 @@ const page = () => {
 
       /> */}
 
-      <CommonCardThreeSlider
-        ID={''}
-        sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
+      <SectionWrapperNew
+        style={{ backgroundColor: '#1D162B' }}
         sectionHeading={'Infor CRM Key Capabilities'}
-        sectionDesc={"We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform."}
-        sectionTextColor={'#fff'}
-        cardData={serviceOfferingData}
-      >
+        sectionDesc={'We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.'}
+        sectionTextColor={'white'}
+        sectionHeadingLayout={'left'}>
+          <Slider>
+          {serviceOfferingData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <CommonCardThree Item={item}></CommonCardThree>
+            </SwiperSlide>
+          ))}
+           </Slider>
+      </SectionWrapperNew>
+      
+      {/* case studies */}
+      <SectionWrapperNew
+        style={{ backgroundColor: '#D3D3D3' }}
+        sectionHeading={''}
+        sectionDesc={''}
+        sectionTextColor={'white'}
+        sectionHeadingLayout={'left'}>
+        <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]">
+          {/* video */}
+          <div
+            className="relative md:w-full  h-full rounded-3xl p-8 flex flex-col justify-end"
+            style={{
+              color: casestudy[0].color,
+              overflow: "hidden", // Ensures no overflow from the video
+            }}
+          >
+            <video
+              src={casestudy[0].videoURL} // Replace with your video path
+              autoPlay
+              loop
+              muted
+              className="absolute inset-0 w-full h-full object-cover z-0"
+            />
+            <div className="absolute inset-0 z-10">
+              {/* Gradient overlay covering the bottom 50% */}
+              <div
+                className="absolute bottom-0 left-0 w-full h-[80%] bg-gradient-to-t from-black to-transparent"
+                style={{ opacity: 1 }}
+              />
+            </div>
+            <div className="relative z-20  w-[70%] flex flex-col justify-end">
+              {" "}
+              {/* Ensure content is aligned at the bottom */}
+              <h3 className="text-base font-semibold mb-12">
+                {casestudy[0].title}
+              </h3>
+              <h1 className="text-5xl font-medium mb-6">
+                {casestudy[0].heading}
+              </h1>
+              <p className=" mb-4">{casestudy[0].description}</p>
+            </div>
+          </div>
+          {/* one  */}
+          <div
+            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            style={{ backgroundColor: "transparent" }}
+          >
+            <div
+              className="relative w-full h-full rounded-3xl p-8"
+              style={{
+                color: casestudy[1].color,
+                backgroundColor: casestudy[1].bgCardColor,
+              }}
+            >
+              <h1 className="w-[80%] text-2xl font-medium mb-6">
+                {casestudy[1].heading}
+              </h1>
+              <p className="mb-4">{casestudy[1].description}</p>
 
-      </CommonCardThreeSlider>
+              <div className="absolute bottom-4 right-4">
+                <OutlinedButtonWithArrow size={56} />
+              </div>
+            </div>
 
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor={'#D3D3D3'} />
+          </div>
+        </div>
+      </SectionWrapperNew>
+      {/* end case studies */}
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
@@ -275,11 +354,11 @@ const page = () => {
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
-         <DistinctiveSection DistinctiveData={distinctiveData}
+      <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Partner with Godrej Infotech for exceptional customer experiences and streamlined sales & marketing operations'}
       >
       </DistinctiveSection>
-      
+
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={

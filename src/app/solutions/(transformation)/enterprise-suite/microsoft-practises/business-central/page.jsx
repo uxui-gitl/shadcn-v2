@@ -9,9 +9,42 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import Image from "next/image";
+import { Tabs } from "@/components/ui/tabs";
+import LeftHeading from "@/components/LeftHeading";
 
 
 const page = () => {
+
+  const tabs = [
+    {
+      title: "Services",
+      value: "services",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#5F22D9]">
+          <ServiceContent />
+        </div>
+      ),
+    },
+    {
+      title: "Industry",
+      value: "industry",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+          <IndustryContent />
+        </div>
+      ),
+    },
+    {
+      title: "Partners",
+      value: "partners",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+          <IndustryContent />
+        </div>
+      ),
+    },
+  ];
 
   const benifitsCardsData = [
     {
@@ -71,34 +104,34 @@ const page = () => {
     },
     {
       id: 2,
-      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--retail.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
       cardBGColor: "#7F4EE1",
       cardHeading: "Manufacturing",
-      cardDesc:"",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 3,
-      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
       cardBGColor: "#7F4EE1",
       cardHeading: "Consumer Goods",
-      cardDesc:"",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 4,
-      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
       cardBGColor: "#EFE9FB",
       cardHeading: "Wholesale & Distribution",
-      cardDesc:"",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
     {
       id: 5,
-      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
       cardBGColor: "#EFE9FB",
       cardHeading: "Retail",
       cardDesc: "",
@@ -107,7 +140,7 @@ const page = () => {
     },
     {
       id: 6,
-      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--project.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
       cardBGColor: "#EFE9FB",
       cardHeading: "Projects",
       cardDesc: "",
@@ -116,7 +149,7 @@ const page = () => {
     },
     {
       id: 7,
-      cardBGImageUrl:"/industry-spotlight/cards-backgrounds/card-bg--project.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--project.png",
       cardBGColor: "#EFE9FB",
       cardHeading: "Professional Services",
       cardDesc: "",
@@ -200,7 +233,7 @@ const page = () => {
       desc: "Experience in seamless integration of Business Central with CRM, E-commerce and more",
       icon: "",
     },
-    
+
   ];
 
   const TESTIMONIAL_DATA = [
@@ -209,18 +242,18 @@ const page = () => {
       cardHeading: "Cost Savings & Faster Transactions",
       cardDesc:
         "Godrej Infotech has successfully upgraded our software from NAV 2016 to Business Central on-SaaS, including data migration. We were impressed by the expertise of their team, who not only saved us additional subscription costs but also enabled faster transactional updates.",
-      designation:"Procurement Manager",
-      companyName:"Indian Highway Construction Company",
+      designation: "Procurement Manager",
+      companyName: "Indian Highway Construction Company",
     },
     {
       id: 2,
       cardHeading: "Streamlining Restaurant Sales & COGS Processes",
       cardDesc:
         "We appreciate Godrej Infotech team for successfully completing two critical projects upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes.",
-      designation:"IT Head",
-      companyName:"Middle East base Popular Fast-food Chain",
-      },
-    
+      designation: "IT Head",
+      companyName: "Middle East base Popular Fast-food Chain",
+    },
+
   ];
 
 
@@ -247,7 +280,9 @@ const page = () => {
         sectionHeadingLayout="center"
         style={{ backgroundColor: '#E4E4E4' }}
       >
-
+        <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+          <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
+        </div>
       </SectionWrapperNew>
 
       {/* benifits slider */}
@@ -261,7 +296,7 @@ const page = () => {
         cardData={benifitsCardsData}
       ></BenefitSliderSection>
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Driving growth across various business sectors with scalable Business Central expertise.'}/>
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Driving growth across various business sectors with scalable Business Central expertise.'} />
 
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
@@ -298,14 +333,62 @@ const page = () => {
         SectionHeadingMaxWidth={"70%"}
       ></ReviewSliderSection>
 
-<TransformBusinessForm
+      <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
           "Let us discuss how Business Central can help you with rapid growth."
         }
       ></TransformBusinessForm>
-
     </>
+  );
+};
+
+const ServiceContent = () => {
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        <LeftHeading
+        heading={'Future of Projects'}
+        desc={''}
+        textColor={'#FFF'}
+        ></LeftHeading>
+
+        <div className="py-2">
+          <h2 className="text-[18px] text-white font-mudium">Financial Data Consolidation </h2>
+          <p className="text-[16px] text-white font-normal leading-[24px]">Seamlessly consolidate data from accounting, sales, purchasing, inventory to achieve a</p>
+          </div>
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
+  );
+};
+
+const IndustryContent = () => {
+  const data = [
+    'Business Consulting',
+    'Implementation & Global Rollout',
+    'Migration & Transformation',
+    'Legacy Modernisation',
+    'Infrastructure as a Service',
+    'Managed Services',
+  ];
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        {data.map((item) => (
+          <>
+            <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+              {item}
+              <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+            </div>
+          </>
+        ))}
+
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
   );
 };
 
