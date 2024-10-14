@@ -18,6 +18,11 @@ import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBus
 import ServiceSlider from '@/sections/serviceSlider/ServiceSlider';
 import Slider from "@/components/Slider";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
+import { Tabs } from "@/components/ui/tabs";
+import Link from "next/link";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+
+
 
 
 function page() {
@@ -30,6 +35,36 @@ function page() {
         { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+    ];
+
+    const tabs = [
+        {
+            title: "Services",
+            value: "services",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <ServiceContent />
+                </div>
+            ),
+        },
+        {
+            title: "Industry",
+            value: "industry",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <IndustryContent />
+                </div>
+            ),
+        },
+        {
+            title: "Partners",
+            value: "partners",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <PartnersContent />
+                </div>
+            ),
+        },
     ];
 
     const INDUSTRY_SPOTLIGHT = [
@@ -118,6 +153,19 @@ function page() {
                 "Accelerate analytics with petabyte scale storage and high-performance querying",
             isArrow: "true",
             link: [],
+            additionalData:`
+             <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+                                    <li>
+                                        At least 10 characters (and up to 100 characters)
+                                    </li>
+                                    <li>
+                                        At least one lowercase character
+                                    </li>
+                                    <li>
+                                        Inclusion of at least one special character, e.g., ! @ # ?
+                                    </li>
+                                </ul>
+            `
         },
 
         {
@@ -321,7 +369,7 @@ function page() {
         // Add more counters as needed
     ];
 
-    const CASE_STUDIES_DATA = [
+    const casestudy = [
         {
             imageURL: "",
             videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
@@ -335,7 +383,7 @@ function page() {
         {
             imageURL: "",
             title: "",
-            heading: "Middle East based Leading Cooling Services Provider",
+            heading: "M1iddle East based Leading Cooling Services Provider",
             description:
                 "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
             link: "/case-study-1",
@@ -347,24 +395,13 @@ function page() {
             imageURL: "/path/to/image1.jpg",
             title: "",
 
-            heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
+            heading: "Global2 fast-food chain with 170+ stores in Saudi Arabia",
             description:
                 "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
             link: "/case-study-1",
             color: "#000",
             bgCardColor: "#EFE9FB",
         },
-        {
-            imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
-            title: "",
-            heading: "Middle East-based Electrical Products Manufacturer",
-            description:
-                "Require Development from Scratch. Customisation of manufacturing reports. Require Development from Scratch. ",
-            link: "/case-study-1",
-            color: "#000",
-            bgCardColor: "#E1F2EF",
-        },
-        // Add more case studies here...
     ];
 
     const distinctiveData = [
@@ -463,29 +500,19 @@ function page() {
             </SectionWrapper>
             {/* end challenges */}
 
-            <SectionWrapper style={{}}>
-                <SectionHeading
-                    center
-                    Heading={'Holistic and Future Ready'}
-                    Desc={'We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs.'}
-                ></SectionHeading>
-
-                <div class="w-full p-16 bg-[#F3F0FA] border-gray-200 rounded-3xl" style={{ transform: "translateY(27px)" }}>
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                        <div>
-                            <h5 class="mb-2 text-[42px] font-bold ">Automation</h5>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
+            <SectionWrapperNew
+                sectionHeading={"Holistic and Future Ready"}
+                sectionDesc={"We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."}
+                sectionTextColor="black"
+                title="OUR OFFERINGS"
+                sectionHeadingLayout="center"
+                style={{ background: 'white' }}
+            >
+                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+                    <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
                 </div>
-            </SectionWrapper>
+            </SectionWrapperNew>
+
             {/* end future section */}
 
             <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
@@ -501,17 +528,7 @@ function page() {
                                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                                 <div className="text-[28px] text-white">Purpose</div>
                                 <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
-                                <ul class="max-w-md space-y-1 text-white list-disc list-inside">
-                                    <li>
-                                        At least 10 characters (and up to 100 characters)
-                                    </li>
-                                    <li>
-                                        At least one lowercase character
-                                    </li>
-                                    <li>
-                                        Inclusion of at least one special character, e.g., ! @ # ?
-                                    </li>
-                                </ul>
+                             <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
                             </div>
 
                         </SwiperSlide>
@@ -520,7 +537,7 @@ function page() {
 
             </SectionWrapperNew>
             {/* capabilites section end */}
-            
+
             <CommonCardThreeSlider
                 ID={"AIOfferings"}
                 sectionImageUrl={""}
@@ -538,7 +555,79 @@ function page() {
 
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
 
-            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor={'#d3d3d3'} />
+            {/* <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor={'#d3d3d3'} /> */}
+
+            <SectionWrapperNew
+                style={{ backgroundColor: '#d3d3d3' }}
+                sectionHeading={''}
+                sectionDesc={''}
+                sectionTextColor={'fff'}
+                sectionHeadingLayout={'left'}>
+
+                <div
+                    className="flex flex-col lg:flex-row justify-start items-center gap-8 w-full h-auto lg:h-[362px]"
+                    style={{ color: casestudy[0].color }}
+                >
+                    <div
+                        className="w-full relative lg:w-1/3 h-full rounded-3xl p-8"
+                        style={{
+                            backgroundImage: `url(${casestudy[0].imageURL})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "bottom",
+                            backgroundColor: casestudy[0].bgCardColor,
+                        }}
+                    >
+                        <h3 className="text-base font-semibold mb-4 lg:mb-12">
+                            {casestudy[0].title}
+                        </h3>
+                        <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6">
+                            {casestudy[0].heading}
+                        </h1>
+                        <p className="w-full lg:w-[80%] mb-4">
+                            {casestudy[0].description}
+                        </p>
+                        {casestudy[0].link && <div className="absolute bottom-4 right-4">
+                            <Link href={casestudy[0].link} target="_blank">
+                                <OutlinedButtonWithArrow arrowColor="white" size={56} />
+                            </Link>
+                        </div>}
+                    </div>
+                    <div
+                        className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
+                        style={{
+                            color: casestudy[1].color,
+                            backgroundColor: casestudy[1].bgCardColor,
+                        }}
+                    >
+                        <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                            {casestudy[1].heading}
+                        </h1>
+                        <p className="mb-4">{casestudy[1].description}</p>
+                        {casestudy[1].link && <div className="absolute bottom-4 right-4">
+                            <Link href={casestudy[1].link} target="_blank">
+                                <OutlinedButtonWithArrow size={56} />
+                            </Link>
+                        </div>}
+                    </div>
+                    <div
+                        className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
+                        style={{
+                            color: casestudy[2].color,
+                            backgroundColor: casestudy[2].bgCardColor,
+                        }}
+                    >
+                        <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                            {casestudy[2].heading}
+                        </h1>
+                        <p className="mb-4">{casestudy[2].description}</p>
+                        {casestudy[2].link && <div className="absolute bottom-4 right-4">
+                            <OutlinedButtonWithArrow size={56} />
+                        </div>}
+                    </div>
+                </div>
+
+
+            </SectionWrapperNew>
 
             <BlogSection
                 ID={"blog"}
@@ -566,6 +655,91 @@ function page() {
         </>
     )
 }
+
+
+const ServiceContent = () => {
+    const services = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {services.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
+
+const IndustryContent = () => {
+    const data = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {data.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
+
+const PartnersContent = () => {
+    const data = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {data.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
 
 
 export default page
