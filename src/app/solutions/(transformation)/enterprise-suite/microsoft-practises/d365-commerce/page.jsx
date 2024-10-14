@@ -334,7 +334,7 @@ const D365Commerce = () => {
       {/* End--Section--Challenges======================================================================== */}
       {/* Start--Section--UltimateChoice======================================================================== */}
       {/* key section */}
-      <div className="" style={{overflow:'hidden'}}>
+      <div className="" style={{overflow:'hidden', position:'relative'}}>
         <div className="py-16 rounded-3xl sm:py-32 px-10" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
           <div className="md:container mx-auto">
             <HorizontalHeading heading={'Why Cloud is your Ultimate Choice?'} desc={'With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics.'} textColor={'#fff'} ></HorizontalHeading>
@@ -356,7 +356,7 @@ const D365Commerce = () => {
         </div>
 
         {/* additional data flip card */}
-        <div className={`bg-[white] z-10 py-10 px-10 rounded-3xl h-full w-full duration-200 left-0  absolute  ${iskeyModalActive ? '-translate-y-full' : 'translate-y-full'}`}>
+        <div className={`bg-[white] z-10 py-10 px-10 rounded-3xl h-full w-full duration-200 left-0  absolute  ${iskeyModalActive ? '-translate-y-[95%]' : 'translate-y-full'}`} style={{backgroundImage: "linear-gradient(white 50%, #DCCFF6 100%)"}}>
           <div className="flex justify-between pb-20">
           <Image src={"/about/whiteStar.svg"} width={50} height={50} alt={"hioasdo"} style={{filter:'brightness(0)'}} className="" />
             <h1 onClick={() => handleKeyModal(false)}>close</h1>
@@ -375,7 +375,7 @@ const D365Commerce = () => {
       {/* End--Section--UltimateChoice======================================================================== */}
 
       {/* Start--Industry-Spotlight-Section============================================================== */}
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT}  />
       {/* End--Industry-Spotlight-Section================================================================ */}
 
       {/* Start--Benefits-Section============================================================== */}
