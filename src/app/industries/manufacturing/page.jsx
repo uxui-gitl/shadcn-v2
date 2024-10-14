@@ -36,29 +36,29 @@ function page() {
 
     const tabs = [
         {
-            title: "Services",
-            value: "services",
+            title: "Automation",
+            value: "automation",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <ServiceContent />
+                    <AutomationContent />
                 </div>
             ),
         },
         {
-            title: "Industry",
-            value: "industry",
+            title: "Cloud",
+            value: "cloud",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <IndustryContent />
+                    <CloudContent />
                 </div>
             ),
         },
         {
-            title: "Partners",
-            value: "partners",
+            title: "Transformation",
+            value: "transformation",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <PartnersContent />
+                    <TransformationContent />
                 </div>
             ),
         },
@@ -70,7 +70,7 @@ function page() {
             cardBGImageUrl:
                 "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
             cardBGColor: "#7F4EE1",
-            cardHeading: "Manufacturing",
+            cardHeading: "Automotive/ Discrete/ Industrial",
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
@@ -81,9 +81,9 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
             cardBGColor: "#7F4EE1",
-            cardHeading: "Retail",
+            cardHeading: "Engineering and construction",
             cardDesc:
-                "AI-driven workflows, OCR and rule-based system enables accurate results",
+                "",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -93,46 +93,13 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
             cardBGColor: "#7F4EE1",
-            cardHeading: "Trading & Distribution",
+            cardHeading: "Process Manufacturing",
             cardDesc:
-                "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+                "",
             isArrow: false,
             cardTextColor: "white",
         },
-        {
-            id: 4,
-            cardBGImageUrl:
-                "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
-
-            cardBGColor: "#EFE9FB",
-            cardHeading: "Healthcare",
-            cardDesc:
-                "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-            isArrow: false,
-            cardTextColor: "white",
-        },
-        {
-            id: 5,
-            cardBGImageUrl:
-                "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-            cardBGColor: "#EFE9FB",
-            cardHeading: "Professional Services",
-            cardDesc: "",
-            isArrow: false,
-            cardTextColor: "white",
-        },
-        {
-            id: 5,
-            cardBGImageUrl:
-                "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-            cardBGColor: "#EFE9FB",
-            cardHeading: "Project",
-            cardDesc: "",
-            isArrow: false,
-            cardTextColor: "white",
-        },
+        
         // Add more cards as needed
     ];
 
@@ -140,8 +107,8 @@ function page() {
         {
             id: 1,
             cardBGColor: 'white',
-            cardHeading: 'Sales CRM',
-            cardDesc: 'Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ',
+            cardHeading: 'PS2.0 – Prosoft 2.0',
+            cardDesc: 'Optimize project management and inventory control for businesses with multiple sites and warehouses',
             isArrow: true,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
@@ -158,8 +125,8 @@ function page() {
 
             id: 2,
             cardBGColor: 'white',
-            cardHeading: 'Marketing Automation',
-            cardDesc: 'Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.',
+            cardHeading: 'Industry 4.0 - Interface with MES',
+            cardDesc: 'Bridge the gap between production and ERP systems, for synchronized production scheduling and inventory control',
             isArrow: true,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
@@ -176,32 +143,132 @@ function page() {
 
             id: 3,
             cardBGColor: 'white',
-            cardHeading: 'Customer Portal',
-            cardDesc: 'Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.',
+            cardHeading: 'Industry 4.0 - IoT',
+            cardDesc: 'Real-time machine analytics solutions help in predictive maintenance and improve productivity',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
         },
         {
 
             id: 4,
             cardBGColor: '#E4E4E4',
-            cardHeading: 'Mobile CRM',
-            cardDesc: `Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.`,
+            cardHeading: 'Industry 4.0 – RPA – Robotic Process Automation',
+            cardDesc: `Automate manual item coding and BOM creation using BOT, increasing master data accuracy`,
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
         },
         {
 
             id: 5,
             cardBGImageUrl: '/rpa/ArtboardBg.png',
             cardBGColor: '#EFE9FB',
-            cardHeading: 'Service Cloud',
-            cardDesc: 'Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.',
+            cardHeading: 'QCAT – Quality control Analysis Testing',
+            cardDesc: 'Enhance quality control efficiency with online inspections and dynamic checklists ensuring end-to-end traceability',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
+        },
+        {
+
+            id: 6,
+            cardBGImageUrl: '/rpa/ArtboardBg.png',
+            cardBGColor: '#EFE9FB',
+            cardHeading: 'Mobile App – Industrial Safety & Field Quality',
+            cardDesc: 'Enhance site quality control and safety, enabling prompt issue resolution and compliance',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
+        },
+        {
+
+            id: 7,
+            cardBGImageUrl: '/rpa/ArtboardBg.png',
+            cardBGColor: '#EFE9FB',
+            cardHeading: 'Quality App',
+            cardDesc: 'Centralized solution for open quality order management and improved quality control and compliance',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
+        },
+        {
+
+            id: 8,
+            cardBGImageUrl: '/rpa/ArtboardBg.png',
+            cardBGColor: '#EFE9FB',
+            cardHeading: 'Production App',
+            cardDesc: 'Enhanced production efficiency, enabling accurate record-keeping and improved decision-making',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
+        },
+        {
+
+            id: 9,
+            cardBGImageUrl: '/rpa/ArtboardBg.png',
+            cardBGColor: '#EFE9FB',
+            cardHeading: 'CPQ – Configure Price Quote',
+            cardDesc: 'Enhance customer experience with precision product customization and efficient quote-to-order processing',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
         },
 
     ]
@@ -209,27 +276,28 @@ function page() {
     const DATA_MGMT_DATA = [
         {
             id: 1,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure SQL Data Ware Housing",
+            CardHeading: "Future of Factories",
             CardDesc:
-                "Accelerate analytics with petabyte scale storage and high-performance querying",
-            isArrow: "true",
-            link: [],
+                "",
             additionalData: `
-             <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+             <ul class="max-w-md space-y-1 text-white list-disc">
                                     <li>
-                                        At least 10 characters (and up to 100 characters)
+                                        Industry 4.0 
                                     </li>
                                     <li>
-                                        At least one lowercase character
+                                        Factory Track
                                     </li>
                                     <li>
-                                        Inclusion of at least one special character, e.g., ! @ # ?
+                                        Intelligent Operations using AI and ML
+                                    </li>
+                                    <li>
+                                        Industry 4.0 RPA – Robotic Process Automation
+                                    </li>
+                                    <li>
+                                        Industry 4.0 -Interface with MES
+                                    </li>
+                                    <li>
+                                        Industry 4.0 IoT Solution
                                     </li>
                                 </ul>
             `
@@ -237,102 +305,87 @@ function page() {
 
         {
             id: 2,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "AWS Redshift",
+            CardHeading: "IoT Enabled Products",
             CardDesc:
-                "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
-            isArrow: "true",
-            link: [],
+                "",
+                additionalData: `
+                <ul class="max-w-md space-y-1 text-white list-disc">
+                                       <li>
+                                           Industrial IoT 
+                                       </li>
+                                       <li>
+                                           Plant Efficiency with IoT
+                                       </li>
+                                       <li>
+                                           Asset PredictiveMaintenance
+                                       </li>
+                                   </ul>
+               `
         },
         {
             id: 3,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure Synapse",
+            
+            CardHeading: "Supply Chain Management",
             CardDesc:
-                "Unify analytics and data management, and integrate data warehousing and big data capabilities",
-            isArrow: "true",
-            link: [],
+                "",
+                additionalData: `
+                <ul class="max-w-md space-y-1 text-white list-disc">
+                                       <li>
+                                           Inventory Management 
+                                       </li>
+                                       <li>
+                                           Fleet Management with IoT and AR
+                                       </li>
+                                       <li>
+                                           Loftware 
+                                       </li>
+                                       <li>
+                                           Production Planning and Execution Barcode & RFID
+                                       </li>
+                                       
+                                   </ul>
+               `
         },
         {
             id: 4,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure Data Factory",
+            CardHeading: "Performance Management",
             CardDesc:
-                "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
-            isArrow: "true",
-            link: [],
-        },
-        {
-            id: 4,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Databricks",
-            CardDesc:
-                "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
-            isArrow: "true",
-            link: [],
+                "",
+                additionalData: `
+                <ul class="max-w-md space-y-1 text-white list-disc">
+                                       <li>
+                                           Product Lifecycle Management 
+                                       </li>
+                                       <li>
+                                           Asset Management
+                                       </li>
+                                       <li>
+                                           Vendor Management
+                                       </li>
+                                   </ul>
+               `
         },
         {
             id: 5,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Amazon S3",
+            
+            CardHeading: "Advanced Manufacturing",
             CardDesc:
-                "Securely store and serve data with highly scalable and cost-effective object storage.",
-            isArrow: "true",
-            link: [],
+                "",
+                additionalData: `
+                <ul class="max-w-md space-y-1 text-white list-disc">
+                                       <li>
+                                           Stock Buffer Management 
+                                       </li>
+                                       <li>
+                                           CCPM - Critical Chain Project Management
+                                       </li>
+                                       <li>
+                                           Resource constraint planning andExecution
+                                       </li>
+                                   </ul>
+               `
         },
-        {
-            id: 6,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure Data Lake",
-            CardDesc:
-                "Experience high-performance and secure data management with Azure Data Lake.",
-            isArrow: "true",
-            link: [],
-        },
-        {
-            id: 7,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Microsoft Fabric",
-            CardDesc:
-                "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
-            isArrow: "true",
-            link: [],
-        },
+        
     ];
 
     const SOLUTION_DATA = [
@@ -418,7 +471,7 @@ function page() {
             heading: "30% Reduction in Manual Efforts for Material & Production Planning",
             description:
                 "Leading manufacturer of Electrical components for the Automobile sector modernize its business application with successful implementation of Infor LN",
-            link: "/case-study-1",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
             color: "#000",
             bgCardColor: "#FCE6F4",
         },
@@ -430,7 +483,7 @@ function page() {
             heading: "Better Data Security and Customer Relationship",
             description:
                 `India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN`,
-            link: "/case-study-1",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Case-Study-Salesforce-Implementation.pdf",
             color: "#000",
             bgCardColor: "#EFE9FB",
         },
@@ -439,7 +492,7 @@ function page() {
     const TESTIMONIAL_DATA = [
         {
             id: 1,
-            cardHeading: "Expert Implementation & Support Services",
+            cardHeading: "Expert Implementation & Support Service",
             cardDesc: `Appreciation to Godrej Infotech Limited's effective solutions and support, we acknowledge their expertise for optimizing ERP LN FP2 since April 2009.`,
             designation:`Global Leader,`,
             companyName:`Ice-Cold Merchandiser & Glass Bottle Manufacturer`,
@@ -465,7 +518,7 @@ function page() {
                 width="60%"
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
             />
-            <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, includingenhanced quality, predictable supply chain and increased profitability.`} />
+            <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, including enhanced quality, predictable supply chain and increased profitability.`} />
 
             <SectionWrapper BGColor="black">
                 <div className="md:container mx-auto">
@@ -507,8 +560,8 @@ function page() {
             {/* end challenges */}
 
             <SectionWrapperNew
-                sectionHeading={"Holistic and Future Ready"}
-                sectionDesc={"We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."}
+                sectionHeading={"Solution Offerings"}
+                sectionDesc={"We deploy solutions that modernize every aspect of the manufacturing value chain from design and production to supply chain management and customer delivery."}
                 sectionTextColor="black"
                 title="OUR OFFERINGS"
                 sectionHeadingLayout="center"
@@ -522,8 +575,8 @@ function page() {
             {/* end future section */}
 
             <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
-                sectionHeading="Our Capabilities"
-                sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
+                sectionHeading="Key Capabilities"
+                sectionDesc="We equip manufacturing businesses with greater growth potential to drive agility and innovation across the entire production lifecycle."
                 sectionTextColor='#fff'
                 sectionHeadingLayout="horizontal"
             >
@@ -532,8 +585,8 @@ function page() {
                         <SwiperSlide key={index}>
                             <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
                                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                                <div className="text-[28px] text-white">Purpose</div>
-                                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                                <div className="text-[28px] text-white">{item.CardHeading}</div>
+                                <p className="text-[20px] py-4 text-white">{item.CardDesc}</p>
                                 <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
                             </div>
 
@@ -545,8 +598,8 @@ function page() {
             {/* capabilites section end */}
 
             <SectionWrapperNew style={{ backgroundColor: "#fff" }}
-                sectionHeading="Unlock potential with our Custom Solutionss"
-                sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
+                sectionHeading="Manufacturing Accelerators"
+                sectionDesc="Our pre-configured solutions ensure seamless integration and rapid implementation."
                 sectionTextColor='#000'
                 sectionHeadingLayout="left"
             >
@@ -589,7 +642,7 @@ function page() {
             </SectionWrapperNew>
             {/* custome solution */}
 
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing.'} />
 
             <SectionWrapperNew
                 style={{ backgroundColor: '#d3d3d3' }}
@@ -666,15 +719,15 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
-                Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
+                Heading={"Transformative Impact of MES on Manufacturing Operations"}
+                Desc={"Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing. It offers real-time visibility into production activities which enables efficient control and optimization. MES incorporates an array of functionalities such as production scheduling, quality management, inventory tracking and performance analysis. As the digital pillar of smart factories, MES facilitates seamless communication and collaboration within manufacturing environment."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
 
             <ReviewSliderSection
                 ID={"TESTIMONIALS"}
-                Heading={"Delighted Customers Share their Successful Experiences"}
+                Heading={"Delighted Customers Share their Successful Experience"}
                 Desc={''}
                 Color="#ffffff"
                 CardDataList={TESTIMONIAL_DATA}
@@ -691,14 +744,16 @@ function page() {
 }
 
 
-const ServiceContent = () => {
+const AutomationContent = () => {
     const services = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'IoT',
+        'Data Driven Analytics-Data Lake',
+        'Predictive & Preventive Maintenance',
+        'Augmented Intelligence',
+        'RPA',
+        'Configure Price Quote',
+        'Product Lifecycle Management',
+        'Power BI Reporting',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
@@ -719,14 +774,14 @@ const ServiceContent = () => {
     );
 };
 
-const IndustryContent = () => {
+const CloudContent = () => {
     const data = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Upgrade/Migrate to cloud',
+        'ERP on cloud',
+        'IoT Data management in Cloud',
+        'Manufacturing Execution System in Cloud',
+        'DevOps',
+        'Cloud Security Solutions',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
@@ -747,14 +802,14 @@ const IndustryContent = () => {
     );
 };
 
-const PartnersContent = () => {
+const TransformationContent = () => {
     const data = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Smart Manufacturing ERP',
+        'Customer Experience – CRM',
+        'Supply Chain Management',
+        'Process Optimization',
+        'Enterprise Planning and Scheduling',
+        'Shopfloor Management',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
