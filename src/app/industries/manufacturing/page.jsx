@@ -17,6 +17,7 @@ import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import ServiceSlider from '@/sections/serviceSlider/ServiceSlider';
 import Slider from "@/components/Slider";
+import SectionWrapperNew from '@/components/SectionWrapperNew';
 
 
 function page() {
@@ -460,54 +461,9 @@ function page() {
                 </div>
 
             </SectionWrapper>
+            {/* end challenges */}
 
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
-
-            <SectionWithSlider
-                ID={"DATA_MGMT_DATA"}
-                sectionHeading={"Cornerstones of Managed "}
-                sectionDesc={
-                    "Scalable data management solutions leveraging analytics and business intelligence for informed decisions."
-                }
-                sectionTextColor="#ffffff"
-                cardData={DATA_MGMT_DATA}
-                sectionBGColor="#5F22D9"
-                setHeadingLayout="horizontal"
-            />
-
-            <ServiceSlider
-                sectionHeading="Infor CloudSuite Services"
-                sectionDesc="Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise."
-            >
-                  <Slider>
-                        {serviceSliderData?.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="bg-[#EFE9FB] rounded-lg">
-                                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
-                                    <div className="p-5">
-                                        <h5 className="mb-2 text-2xl font-bold">{item.text}</h5>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Slider>
-            </ServiceSlider>
-
-            <CommonCardThreeSlider
-                ID={"AIOfferings"}
-                sectionImageUrl={""}
-                sectionBGColor={"#561FC5"}
-                sectionHeading={"Unlock More Potential with Add on Solution Offerings"}
-                sectionDesc={
-                    "Enhancing the features of business applications, our easily integrating specialized solutions intend to add "
-                }
-                sectionTextColor={"#FFF"}
-                sectionHeaderMaxWidth={"40%"}
-                x
-                cardData={SOLUTION_DATA}
-            ></CommonCardThreeSlider>
-
-            <SectionWrapper style={{ height: '800px' }}>
+            <SectionWrapper style={{}}>
                 <SectionHeading
                     center
                     Heading={'Holistic and Future Ready'}
@@ -530,26 +486,59 @@ function page() {
                     </div>
                 </div>
             </SectionWrapper>
+            {/* end future section */}
 
+            <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
+                sectionHeading="Our Capabilities"
+                sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
+                sectionTextColor='#fff'
+                sectionHeadingLayout="horizontal"
+            >
+                <Slider>
+                    {DATA_MGMT_DATA?.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+                                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                                <div className="text-[28px] text-white">Purpose</div>
+                                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                                <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+                                    <li>
+                                        At least 10 characters (and up to 100 characters)
+                                    </li>
+                                    <li>
+                                        At least one lowercase character
+                                    </li>
+                                    <li>
+                                        Inclusion of at least one special character, e.g., ! @ # ?
+                                    </li>
+                                </ul>
+                            </div>
 
-            <HubExpertise style={{ paddingTop: '200px' }}
-                setHeading="Hub of Expertise"
-                setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
-                setColor="#ffffff"
-                counters={HUBEXPERTISE_COUNTER_DATA}
-                columnNo={3} //Define how many columns you want to display
-            />
+                        </SwiperSlide>
+                    ))}
+                </Slider>
 
-            <HighlightPromo
-                setHeading="Synergetic Partnership"
-                setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
-                setColor="#1D162B"
-                setImageBGURL={imgBgURL}
-                setLogoImages="true"
-                setPadding={false}
-            />
+            </SectionWrapperNew>
+            {/* capabilites section end */}
+            
+            <CommonCardThreeSlider
+                ID={"AIOfferings"}
+                sectionImageUrl={""}
+                sectionBGColor={"#fff"}
+                sectionHeading={"Unlock potential with our Custom Solutionss"}
+                sectionDesc={
+                    "Enhancing the features of business applications, our easily integrating specialized solutions intend to add "
+                }
+                sectionTextColor={"#000"}
+                sectionHeaderMaxWidth={"40%"}
+                x
+                cardData={SOLUTION_DATA}
+            ></CommonCardThreeSlider>
+            {/* custome solution */}
 
-            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} />
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+
+            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor={'#d3d3d3'} />
 
             <BlogSection
                 ID={"blog"}
@@ -559,12 +548,6 @@ function page() {
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
-
-
-            <DistinctiveSection DistinctiveData={distinctiveData}
-                ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Our team applies in-depth AI/ML expertise to help businesses deploy machine learning models and algorithms, perform advanced data analytics, and achieve breakthrough results.'}
-            >
-            </DistinctiveSection>
 
             <ReviewSliderSection
                 ID={"TESTIMONIALS"}

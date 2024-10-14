@@ -11,11 +11,76 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
+import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
 
 
 function page() {
     const blogImageUrl = "/ai-ml/blog-bg.png";
 
+    const SOLUTION_DATA = [
+        {
+            id: 1,
+            cardBGColor: "#F5B1DC",
+            cardHeading: "Dealer<br/>Management",
+            cardDesc:
+                "Require Development from Scratch. Customisation of manufacturing reports",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+        },
+        {
+            id: 2,
+            cardBGColor: "#FCE6F4",
+            cardHeading: "Value Manufacturing Process Management",
+            cardDesc:
+                "Require Development from Scratch. Customisation of manufacturing reports",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
+        },
+        {
+            id: 3,
+            cardBGColor: "#CDBAF3",
+            cardHeading: "Metal Recycling Operation Management",
+            cardDesc:
+                "Require Development from Scratch. Customisation of manufacturing reports",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
+        },
+        {
+            id: 4,
+            cardBGColor: "#E4E4E4",
+            cardHeading: "Strengthen Potential",
+            cardDesc:
+                "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+        },
+        {
+            id: 5,
+            cardBGImageUrl: "/rpa/ArtboardBg.png",
+            cardBGColor: "#EFE9FB",
+            cardHeading: "Enhance Flexibility",
+            cardDesc:
+                "Adapt to changing business needs without hiring and training new staff, saving time and expense",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+        },
+        {
+            id: 5,
+            cardBGImageUrl: "/rpa/ArtboardBg.png",
+            cardBGColor: "#EFE9FB",
+            cardHeading: "Reduce AHT (Average Handling Time)",
+            cardDesc:
+                "Enhance customer service quality, minimize response time and improve operational efficiency",
+            isArrow: false,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-3.jpg",
+        },
+    ];
     const CHALLENGES_LIST_DATA = [
         { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
@@ -319,8 +384,22 @@ function page() {
                 </div>
 
             </SectionWrapper>
-
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+            {/* challenge end */}
+            
+            <CommonCardThreeSlider
+                ID={"AIOfferings"}
+                sectionImageUrl={""}
+                sectionBGColor={"#fff"}
+                sectionHeading={"Unlock potential with our Custom Solutionss"}
+                sectionDesc={
+                    "Enhancing the features of business applications, our easily integrating specialized solutions intend to add "
+                }
+                sectionTextColor={"#000"}
+                sectionHeaderMaxWidth={"40%"}
+                x
+                cardData={SOLUTION_DATA}
+            ></CommonCardThreeSlider>
+            {/* custome solution */}
 
             <div className="rounded-3xl" style={{ backgroundColor: '#1D162B', marginTop: '-35px' }}>
                 <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
@@ -373,31 +452,11 @@ function page() {
                 </div>
             </div>
 
-            <SectionWrapper style={{ height: '800px' }}>
-                <SectionHeading
-                    center
-                    Heading={'Holistic and Future Ready'}
-                    Desc={'We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs.'}
-                ></SectionHeading>
+            {/* end services */}
 
-                <div class="w-full p-16 bg-[#F3F0FA] border-gray-200 rounded-3xl" style={{ transform: "translateY(27px)" }}>
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                        <div>
-                            <h5 class="mb-2 text-[42px] font-bold ">Automation</h5>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                </div>
-            </SectionWrapper>
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
 
-            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} style={{paddingTop:'350px'}}/>
+            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"}  bgColor={'#d3d3d3'}/>
             
             <BlogSection
                 ID={"blog"}
