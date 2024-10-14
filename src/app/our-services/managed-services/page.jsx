@@ -19,22 +19,32 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Prioritize incident resolution beyond SLAs and conduct thorough problem analysis using data and facts",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Ensure your IT adapts, scales and evolves with business dynamics",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Global and Ticket-based support with weekly reviews",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Resilient incident management and timely IT support",
+      icon: "",
+    },
+    {
+      _id: 5,
+      desc: "Reduce direct employment while maintaining effective operations",
+      icon: "",
+    },
+    {
+      _id: 6,
+      desc: "Access to specialized IT expertise and proactive solutions",
       icon: "",
     },
 
@@ -43,10 +53,11 @@ const page = () => {
   const blogImageUrl = '/ai-ml/blog-bg.png';
 
   const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Unplanned downtime, security risks and inefficient operations.", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 2, title: "Prolonged resolution times, increased errors, and decreased productivity.", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 3, title: "Confront technological advancements and updates in the competitive landscape.", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 4, title: "Need for refinement in incident resolution approach and effective tracking of issues.", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 5, title: "Inconsistent formats and irregular audits of documentation for business process.", icon: '/upgradeCloud/icons/ico--target.svg' },
   ];
 
   const DATA_MGMT_DATA = [
@@ -58,9 +69,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure SQL Data Ware Housing",
+      CardHeading: "Business continuity",
       CardDesc:
-        "Accelerate analytics with petabyte scale storage and high-performance querying",
+        "",
       isArrow: "true",
       link: [],
     },
@@ -73,9 +84,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "AWS Redshift",
+      CardHeading: "Cost effectiveness",
       CardDesc:
-        "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
+        "",
       isArrow: "true",
       link: [],
     },
@@ -87,9 +98,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Synapse",
+      CardHeading: "Proactive contingency management",
       CardDesc:
-        "Unify analytics and data management, and integrate data warehousing and big data capabilities",
+        "",
       isArrow: "true",
       link: [],
     },
@@ -101,76 +112,21 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Data Factory",
+      CardHeading: "Standardize processes and practices",
       CardDesc:
-        "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
+        "",
       isArrow: "true",
       link: [],
     },
-    {
-      id: 4,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Databricks",
-      CardDesc:
-        "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
-      isArrow: "true",
-      link: [],
-    },
-    {
-      id: 5,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Amazon S3",
-      CardDesc:
-        "Securely store and serve data with highly scalable and cost-effective object storage.",
-      isArrow: "true",
-      link: [],
-    },
-    {
-      id: 6,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Data Lake",
-      CardDesc:
-        "Experience high-performance and secure data management with Azure Data Lake.",
-      isArrow: "true",
-      link: [],
-    },
-    {
-      id: 7,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Microsoft Fabric",
-      CardDesc:
-        "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
-      isArrow: "true",
-      link: [],
-    },
+    
   ];
 
   const RPASolution = [
     {
       id: 1,
       cardBGColor: '#F5B1DC',
-      cardHeading: 'Custom Application Development',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Improved User Experience',
+      cardDesc: 'Enhanced end-user satisfaction and experience through a responsive IT environment with minimal disruptions',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -179,8 +135,8 @@ const page = () => {
 
       id: 2,
       cardBGColor: '#FCE6F4',
-      cardHeading: 'Custom Application Development',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Operational Efficiency',
+      cardDesc: 'Optimized business time and cost, allowing for strategic focus',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
@@ -189,8 +145,8 @@ const page = () => {
 
       id: 3,
       cardBGColor: '#CDBAF3',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Proactive Issue Resolution',
+      cardDesc: 'Rapid resolution of IT challenges, reducing response time',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
@@ -199,89 +155,47 @@ const page = () => {
 
       id: 4,
       cardBGColor: '#E4E4E4',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Reliable IT Performance',
+      cardDesc: 'Consistent performance, reliability, and flexibility',
       isArrow: true,
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
     },
-    {
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
-    },
-    {
-
-
-      id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
-    },
+    
   ]
 
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
       videoURL: "/CloudStackServices/case-studies/bg--businessman-industry.mp4",
-      title: "IIoT Solutions",
-      heading: "Low Code, No Code Configurable Portals on Azure or AWS IIOT",
+      title: "",
+      heading: "Managed Services Projects Highlights",
       description:
-        "Industry 4.0 Accelerator (IoT for shopfloor) for implementation of IoT in shopfloor – Both for Discrete & Process Manufacturing",
-      link: "/case-study-1",
+        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as wedeliver high- performing multidisciplinary solutions globally.",
+      link: "",
       color: "#FFFFFF",
       bgCardColor: "#2B1624",
     },
     {
       imageURL: "/iiot/bg--bespoke--iiot-soltions.png",
       title: "",
-      heading: "Bespoke IIOT Solutions",
+      heading: "Optimises Operational cost by 25%",
       description:
-        "Require Development from Scratch.",
-      link: "/case-study-1",
+        "Europe’s Leading Marine Services Provider optimises operational cost by 25% with Godrej Infotech’s Infor LN Managed & Rollout Services from Offshore",
+      link: "https://godrejinfotech.com/assets/pdf/case-studies/EuropeLeadingMarineService_InforLN.pdf",
       color: "#2B1624",
       bgCardColor: "#00F8C4",
     },
     {
       imageURL: "",
-      title: "Case Studies",
-      heading: "Insights to Accelerate Business Growth",
-      description: '',
-      link: "",
+      title: "",
+      heading: "30% Cost Reduction by Standardising Processes",
+      description: 'Multi-Year MS Dynamics NAV Support for Leading Global Tire Manufacturing Organization',
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Tire-Manufacturing-NAV-Support.pdf",
       color: "#FFFFFF",
       bgCardColor: "#2B1624",
     },
-
-    {
-      imageURL: "",
-      title: "Case Studies",
-      heading: "India's Largest Lift Truck Manufacturer",
-      description: 'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
-      link: "",
-      color: "#2B1624",
-      bgCardColor: "#E4E4E4",
-    },
-
-    {
-      imageURL: "",
-      title: "Case Studies",
-      heading: "India's Leading Construction Organization",
-      description: 'Implements IoT & ML Solution for Real Time Cement Inventory Calibration with 98% accuracy',
-      link: "",
-      color: "#2B1624",
-      bgCardColor: "#FCE6F4"
-    },
-
+    
     // Add more case studies here...
   ];
 
@@ -289,13 +203,18 @@ const page = () => {
   const HUBEXPERTISE_COUNTER_DATA = [
     {
       start: 10,
-      end: 20,
-      description: "Years of Managing Global customer for Data Security",
+      end: 25,
+      description: "Years of Excellence",
     },
     {
       start: 10,
-      end: 100,
-      description: "Cyber Security Solutions Implemented",
+      end: 500,
+      description: "Happy Customers",
+    },
+    {
+      start: 10,
+      end: 15000,
+      description: "Man Years of Expertise",
     },
     // Add more counters as needed
   ];
@@ -322,13 +241,13 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Proactive Monitoring for Peak IT Performance"
+        desc="Managed IT Services Experts"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you tofocus on core business`} />
 
       <SectionWrapper style={{ background: `url(/services/mg01.svg)`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
         <div className="md:container mx-auto">
@@ -336,8 +255,8 @@ const page = () => {
             layout="horizontal"
             Color="white"
             headingContainerWidth="w-full"
-            Heading="Knocking Business Challenges  "
-            Desc="We help executive leadership navigate critical challenges, manage process complexity and develop future-ready organizations.  "
+            Heading="Knocking Business Challenges"
+            Desc="Absence of expert managed services results in various business obstacles, difficulty in transforming business operations and addressing transactional needs, ultimately impacting growth and productivity."
           ></SectionHeading>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
@@ -421,7 +340,7 @@ const page = () => {
                 Color="white"
                 headingContainerWidth="w-full"
                 Heading="How Can We Assist You?"
-                Desc="Our team employs proactive monitoring to identify and address potential issues before they impact your operations, ensuring a seamless and uninterrup"
+                Desc="Our team employs proactive monitoring to identify and address potential issues ensuring a seamless and uninterrupted operations."
               ></SectionHeading>
             </div>
             <div>
@@ -434,9 +353,9 @@ const page = () => {
       <SectionWithSlider
         style={{ marginTop: '-35px' }}
         ID={"DATA_MGMT_DATA"}
-        sectionHeading={"Cornerstones of Managed "}
+        sectionHeading={"Cornerstones of Managed Services"}
         sectionDesc={
-          "Scalable data management solutions leveraging analytics and business intelligence for informed decisions."
+          "Flexible, Scalable, and Secure Managed Solutions for Ambitious Businesses."
         }
         sectionTextColor="#ffffff"
         cardData={DATA_MGMT_DATA}
@@ -449,32 +368,14 @@ const page = () => {
         sectionImageUrl={''}
         sectionBGColor={'#1D162B'}
         sectionHeading={'Benefits of Managed Services'}
-        sectionDesc={'We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.'}
+        sectionDesc={''}
         sectionTextColor={'#fff'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
       >
 
       </CommonCardThreeSlider>
-
-      <SectionWrapper BGColor="#1D162B">
-        <div className="md:container mx-auto">
-          <div className="flex justify-center items-center flex-col">
-            <div className="w-full md:w-1/2 mb-10">
-              <SectionHeading
-                center
-                Color="white"
-                headingContainerWidth="w-full"
-                Heading="How do We Make it Happen?"
-                Desc="The foundation of our consulting service is strengthened by our ACT model, facilitating growth and success in a dynamic competitive landscape. "
-              ></SectionHeading>
-            </div>
-            <div>
-              <img src="/services/service01.svg" width="100%"></img>
-            </div>
-          </div>
-        </div>
-      </ SectionWrapper>
+     
 
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
@@ -490,13 +391,14 @@ const page = () => {
         counters={HUBEXPERTISE_COUNTER_DATA}
       />
 
-      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
-        Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Managed Services: The Promised Land?'}
+        Desc={'Reaching the Promised land is no mean feat. Not all can endure the journey but those who do, are surely the chosen ones. With this biblical analogy let’s try to decode Managed Services.'}
         Color={'white'}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=10"}
       ></BlogSection>
 
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We focus on managing all aspects of IT infrastructure and business applications, minimizingthe need for in-house expertise. Trusted legacy of 25 years with experience of supporting 40+ Godrej & Boyce applications'}
       >
       </DistinctiveSection>
 

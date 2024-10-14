@@ -177,7 +177,7 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success `} />
+      <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
       
       <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
@@ -225,7 +225,7 @@ const page = () => {
             layout="horizontal"
             Color="white"
             headingContainerWidth="w-full"
-            Heading="Our Services   "
+            Heading="Our Services"
             Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation.  "
           ></SectionHeading>
           <div className="grid grid-cols-1 gap-4 mt-4 md:mt-16">
@@ -300,14 +300,14 @@ const page = () => {
         blogImageUrl={blogImageUrl}
         Heading={"Holistic Approach to Process Improvement"}
         Desc={
-          "One of the most effective ways to achieve this is through process improvementstrategies. By refining workflows, eliminating bottlenecks, and streamlining operations,businesses can enhance productivity, reduce costs and drive growth. In this blog, we'llexplore the importance of process improvement and discuss key strategies forimplementing it effectively."
+          "One of the most effective ways to achieve this is through process improvement strategies. By refining workflows, eliminating bottlenecks, and streamlining operations, businesses can enhance productivity, reduce costs and drive growth. In this blog, we'll explore the importance of process improvement and discuss key strategies for implementing it effectively."
         }
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
       
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We are a strategic IT partner to ambitious enterprises on their journeytowards business progression'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We are a strategic IT partner to ambitious enterprises on their journey towards business progression'}
       >
       </DistinctiveSection>
         

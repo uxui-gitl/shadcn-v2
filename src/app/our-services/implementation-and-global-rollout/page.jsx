@@ -17,35 +17,35 @@ const page = () => {
     {
       title: "Site Analysis and Project Planning",
       hoverTitle: "Site Analysis and Project Planning",
-      description: "Understand precise needs of business and buildthe foundation for an effective project execution.",
+      description: "Understand precise needs of business and build the foundation for an effective project execution.",
       content: "Additional content for Card 1",
       imageURL: '/techStack1.png'
     },
     {
       title: "Design Solution Architecture and Mapping",
       hoverTitle: "Design Solution Architecture and Mapping",
-      description: "Employ the latest tools and methodologiesto build robust and scalable solutions tailored to business specific requirements.",
+      description: "Employ the latest tools and methodologies to build robust and scalable solutions tailored to business specific requirements.",
       content: "Additional content for Card 2",
       imageURL: '/techStack1.png'
     },
     {
       title: "Efficient Knowledge Transfer",
       hoverTitle: "Efficient Knowledge Transfer",
-      description: "Offer user acceptance testing to ensure proficiencywith the new application.",
+      description: "Offer user acceptance testing to ensure proficiency with the new application.",
       content: "Additional content for Card 3",
       imageURL: '/techStack1.png'
     },
     {
       title: "Data Migration & Go-Live Readiness",
       hoverTitle: "Data Migration & Go-Live Readiness",
-      description: "Thoroughly assess, cleanse, transform, andmigrate data from legacy systems to the new solution, ensuring system readiness for asmooth launch with minimal hiccups, as planned.",
+      description: "Thoroughly assess, cleanse, transform, and migrate data from legacy systems to the new solution, ensuring system readiness for a smooth launch with minimal hiccups, as planned.",
       content: "Additional content for Card 4",
       imageURL: '/techStack1.png'
     },
     {
       title: "Go-Live and Post Go Live Support",
       hoverTitle: "Go-Live and Post Go Live Support",
-      description: "Launch chosen solution and provide ongoingmonitoring, troubleshooting and performance -tuning to ensure peak efficiency of solution.",
+      description: "Launch chosen solution and provide ongoing monitoring, troubleshooting and performance -tuning to ensure peak efficiency of solution.",
       content: "Additional content for Card 5",
       imageURL: '/techStack1.png'
     },
@@ -112,18 +112,24 @@ const page = () => {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "",
+      cardDesc: 'I would like to thank the dedicated team at Godrej Infotech for a successful Dynamics 365 for Sales Professional implementation. We can now generate customized reports and track sales personnel in the field. This achievement adds significant value to our business.',
+      designation:`Managing Director,`,
+      companyName:`Saudi Arabia’s Manufacturer & Supplier of Piping Products & Fitting`
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "",
+      cardDesc: 'We appreciate Godrej Infotech team for their exceptional work during Infor LN ERP implementation. Project was executed smoothly and efficiently. Your understanding of our needs and your positive contributions were highly valued. We applause your leadership, dedication and the collaborative effort of your team. Gratitude to all the project members.',
+      designation:`Head Procurement & Project Manager,`,
+      companyName:`Leading Global Supplier of Process Equipment`
     },
     {
       id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+      cardHeading: "",
+      cardDesc: 'Congratulations to the Godrej Infotech team for successfully rolling out LS Central Hospitality. This solution has revolutionized our ice-cream retail stores, streamlining operations and automating HR and Payroll tasks. Our POS is now 100% operational, leading to a 70% reduction in procurement time and a 60% boost in finance process productivity. We thank the entire Godrej Infotech team for their outstanding 100% offshore delivery.',
+      designation:`Finance/Project Manager,`,
+      companyName:`KSA based World's first super-premium ice cream Franchise`
     },
   ];
 
@@ -138,9 +144,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure SQL Data Ware Housing",
+      CardHeading: "People Centricity",
       CardDesc:
-        "Accelerate analytics with petabyte scale storage and high-performance querying",
+        "We bring functional and implementation teams together and create bottom-up planning, leveraging expertise and insights for our client.",
       isArrow: "true",
       link: [],
     },
@@ -153,9 +159,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "AWS Redshift",
+      CardHeading: "Process Quality",
       CardDesc:
-        "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
+        "We aim to continuously improve every implementation phase, identify areas where enhancements are required and execute them methodically that leads to greater effectiveness.",
       isArrow: "true",
       link: [],
     },
@@ -167,9 +173,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Synapse",
+      CardHeading: "Technology Proficiency",
       CardDesc:
-        "Unify analytics and data management, and integrate data warehousing and big data capabilities",
+        "Our expert team is well-versed with pioneering technologies and proficiently implements the right-fit solution to navigate business challenges.",
       isArrow: "true",
       link: [],
     },
@@ -181,23 +187,9 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Data Factory",
+      CardHeading: "Effective Change Management",
       CardDesc:
-        "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
-      isArrow: "true",
-      link: [],
-    },
-    {
-      id: 4,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Databricks",
-      CardDesc:
-        "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
+        "Understanding the obvious resistance to the change, we exercise strong change management practices, ensuring efficient acceptance.",
       isArrow: "true",
       link: [],
     },
@@ -209,52 +201,30 @@ const page = () => {
       CardTextColor: "white",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Amazon S3",
+      CardHeading: "Adaptive Business Environment",
       CardDesc:
-        "Securely store and serve data with highly scalable and cost-effective object storage.",
+        "We continuously monitor market dynamics and industry trends, adapting our approach to ensure successful implementation in a constantly evolving business landscape.",
       isArrow: "true",
       link: [],
     },
-    {
-      id: 6,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Data Lake",
-      CardDesc:
-        "Experience high-performance and secure data management with Azure Data Lake.",
-      isArrow: "true",
-      link: [],
-    },
-    {
-      id: 7,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Microsoft Fabric",
-      CardDesc:
-        "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
-      isArrow: "true",
-      link: [],
-    },
+    
   ];
 
   const HUBEXPERTISE_COUNTER_DATA = [
     {
       start: 10,
-      end: 20,
-      description: "Years of Managing Global customer for Data Security",
+      end: 600,
+      description: "Consultants",
     },
     {
       start: 10,
-      end: 100,
-      description: "Cyber Security Solutions Implemented",
+      end: 500,
+      description: "Customers",
+    },
+    {
+      start: 10,
+      end: 1000,
+      description: "Implementation Sites",
     },
     // Add more counters as needed
   ];
@@ -262,22 +232,52 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Accountability at every phase of the implementation process",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "Rigorous unit testing for every configuration and customization",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "End-to-end proficiency in implementing comprehensive solutions",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Simplified data management for better decision making",
+      icon: "",
+    },
+    {
+      _id: 5,
+      desc: "Smooth user adoption and dedicated support service",
+      icon: "",
+    },
+    {
+      _id: 6,
+      desc: "Enhanced customer and employee satisfaction",
+      icon: "",
+    },
+    {
+      _id: 7,
+      desc: "Committed to punctual and on-budget implementations",
+      icon: "",
+    },
+    {
+      _id: 8,
+      desc: "Streamlined full implementation cycles for efficiency",
+      icon: "",
+    },
+    {
+      _id: 9,
+      desc: "Accelerated project timelines for quicker results",
+      icon: "",
+    },
+    {
+      _id: 10,
+      desc: "Minimum business disruption through proven methodology",
       icon: "",
     },
 
@@ -374,25 +374,25 @@ const page = () => {
       <HubExpertise
         BGColor="#7B014E"
         setHeading="Hub of Expertise"
-        setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
+        setDesc="We’re here to build an edge and bring technology brilliance with the finest in the industry."
         setColor="#ffffff"
         counters={HUBEXPERTISE_COUNTER_DATA}
       />
 
-      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman Artificial Intelligence & Machine Learning'}
-        Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Mastering Data Migration: Key Strategies for Seamless Implementation'}
+        Desc={`As organizations transit to new systems or upgrade existing ones, ensuring smooth data migration becomes imperative to maintain continuity, accuracy, and efficiency in operations. In this blog, we'll delve into the critical aspects of data migration and outline key strategies to ensure a seamless implementation process.`}
         Color={'white'}
       ></BlogSection>
 
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'With our track record of consistently delivering projects on schedule, we are recognizedas the trusted partner for implementation, migration and rollouts worldwide.'}
       >
       </DistinctiveSection>
 
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"Delighted customers share their success experience"}
-        Desc={''}
+        Heading={"Delighted Customers Share their Successful Experiences"}
+        Desc={'Discover how we have helped our customers to realize better results aligned with their business goals.'}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
         BGColor="#1D162B"
