@@ -25,10 +25,14 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Limited access to real-time information hinders office and shop floor productivity", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Struggle to optimize inventory and logistics operations", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Hassle with equipment maintenance due to lack of tracking and schedules", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Difficulty in optimizing production sequences, balancing workloads and handling disruptions", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Inaccurate order-based material requirement planning and budget control", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Limited visibility into manufacturing activities and operations", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 7, title: "Ensuring consistent product quality and effective defect tracking", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 8, title: "Maintaining adherence to industry regulations and mitigating potential legal issues", icon: '/upgradeCloud/icons/ico--target.svg' },
     ];
 
     const INDUSTRY_SPOTLIGHT = [
@@ -325,18 +329,18 @@ function page() {
             imageURL: "",
             videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
             title: "Case Studies",
-            heading: "Leading Indian Refiner of Precious Metals",
+            heading: "Manufacturing Projects Highlights",
             description: "",
-            link: "/case-study-1",
+            link: "",
             color: "#FFFFFF",
             bgCardColor: "#2B1624",
         },
         {
             imageURL: "",
             title: "",
-            heading: "Middle East based Leading Cooling Services Provider",
+            heading: "30% Reduction in Manual Efforts for Material & Production Planning",
             description:
-                "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
+                "Leading manufacturer of Electrical components for the Automobile sector modernize its business application with successful implementation of Infor LN",
             link: "/case-study-1",
             color: "#000",
             bgCardColor: "#FCE6F4",
@@ -346,9 +350,9 @@ function page() {
             imageURL: "/path/to/image1.jpg",
             title: "",
 
-            heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
+            heading: "Better Data Security and Customer Relationship",
             description:
-                "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
+                `India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN`,
             link: "/case-study-1",
             color: "#000",
             bgCardColor: "#EFE9FB",
@@ -393,13 +397,18 @@ function page() {
     const TESTIMONIAL_DATA = [
         {
             id: 1,
-            cardHeading: "Easy insights into business performance",
-            cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+            cardHeading: "Expert Implementation & Support Services",
+            cardDesc: `Appreciation to Godrej Infotech Limited's effective solutions and support, we acknowledge their expertise for optimizing ERP LN FP2 since April 2009.`,
+            designation:`Global Leader,`,
+            companyName:`Ice-Cold Merchandiser & Glass Bottle Manufacturer`,
+
         },
         {
             id: 2,
-            cardHeading: "Real-Time Warehouse Data Interfacing",
-            cardDesc: 'We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.'
+            cardHeading: "Cost Effective Cloud Solution Implementation",
+            cardDesc: 'Thank you, Godrej Infotech team, for cloud-enabling our Navision system, enhancing system availability, offering cost-effective OPEX pricing, and providing anytime, anywhere accessibility.',
+            designation:`IT Manager,`,
+            companyName:` Indian Petrochemical Manufacturer of Resins & Plastics`,
         },
 
     ];
@@ -415,13 +424,13 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-                desc=""
+                title="Accelerate Manufacturing Operations with Integrated Cutting-Edge Solutions"
+                desc="Optimize predict maintenance, enhance supply chain visibility and productivity"
                 cta="Let's Connect"
                 width="60%"
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
             />
-            <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+            <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, includingenhanced quality, predictable supply chain and increased profitability.`} />
 
             <SectionWrapper BGColor="black">
                 <div className="md:container mx-auto">
@@ -568,7 +577,7 @@ function page() {
 
             <ReviewSliderSection
                 ID={"TESTIMONIALS"}
-                Heading={"Delighted customers share their success experience"}
+                Heading={"Delighted Customers Share their Successful Experiences"}
                 Desc={''}
                 Color="#ffffff"
                 CardDataList={TESTIMONIAL_DATA}
