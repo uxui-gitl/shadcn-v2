@@ -5,17 +5,10 @@ import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import Image from "next/image";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
-import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
-import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
-import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
-import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
-import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
-import DistinctiveSection from '@/sections/distinctive/DistinctiveSection';
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
-import ServiceSlider from '@/sections/serviceSlider/ServiceSlider';
 import Slider from "@/components/Slider";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { Tabs } from "@/components/ui/tabs";
@@ -139,6 +132,76 @@ function page() {
         // Add more cards as needed
     ];
 
+    const RPASolution2 = [
+        {
+            id: 1,
+            cardBGColor: 'white',
+            cardHeading: 'Sales CRM',
+            cardDesc: 'Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
+        },
+        {
+
+            id: 2,
+            cardBGColor: 'white',
+            cardHeading: 'Marketing Automation',
+            cardDesc: 'Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+            cardHoverData: [
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+                'abc',
+            ]
+        },
+        {
+
+            id: 3,
+            cardBGColor: 'white',
+            cardHeading: 'Customer Portal',
+            cardDesc: 'Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+        },
+        {
+
+            id: 4,
+            cardBGColor: '#E4E4E4',
+            cardHeading: 'Mobile CRM',
+            cardDesc: `Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.`,
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+        },
+        {
+
+            id: 5,
+            cardBGImageUrl: '/rpa/ArtboardBg.png',
+            cardBGColor: '#EFE9FB',
+            cardHeading: 'Service Cloud',
+            cardDesc: 'Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+        },
+
+    ]
+
     const DATA_MGMT_DATA = [
         {
             id: 1,
@@ -153,7 +216,7 @@ function page() {
                 "Accelerate analytics with petabyte scale storage and high-performance querying",
             isArrow: "true",
             link: [],
-            additionalData:`
+            additionalData: `
              <ul class="max-w-md space-y-1 text-white list-disc list-inside">
                                     <li>
                                         At least 10 characters (and up to 100 characters)
@@ -333,41 +396,6 @@ function page() {
         },
     ];
 
-    const HUBEXPERTISE_COUNTER_DATA = [
-        {
-            start: 10000,
-            end: 15000,
-            description: "Man Years  of Experience",
-        },
-        {
-            start: 1200,
-            end: 1000,
-            description: "Implementation Sites",
-        },
-        {
-            start: 1200,
-            end: 500,
-            description: "Employees Worldwide",
-        },
-
-        {
-            start: 1200,
-            end: 500,
-            description: "Customer Worldwide",
-        },
-        {
-            start: 10,
-            end: 25,
-            description: "Years of Experience",
-        },
-
-        {
-            staticTitle: "24*7",
-            description: "Implementation Sites",
-        },
-
-        // Add more counters as needed
-    ];
 
     const casestudy = [
         {
@@ -404,30 +432,6 @@ function page() {
         },
     ];
 
-    const distinctiveData = [
-        {
-            _id: 1,
-            desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
-            icon: "",
-        },
-        {
-            _id: 2,
-            desc: "Agile approach that keeps projects on cutting edge.",
-            icon: "",
-        },
-        {
-            _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to protect sensitive information of customer.",
-            icon: "",
-        },
-        {
-            _id: 4,
-            desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
-            icon: "",
-        },
-
-    ];
-
     const TESTIMONIAL_DATA = [
         {
             id: 1,
@@ -442,13 +446,6 @@ function page() {
 
     ];
 
-    const serviceSliderData = [
-        { id: '1', text: 'dummy text' },
-        { id: '2', text: 'dummy text' },
-        { id: '3', text: 'dummy text' },
-        { id: '4', text: 'dummy text' },
-        { id: '5', text: 'dummy text' },
-    ]
 
     return (
         <>
@@ -528,7 +525,7 @@ function page() {
                                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                                 <div className="text-[28px] text-white">Purpose</div>
                                 <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
-                             <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
+                                <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
                             </div>
 
                         </SwiperSlide>
@@ -538,24 +535,52 @@ function page() {
             </SectionWrapperNew>
             {/* capabilites section end */}
 
-            <CommonCardThreeSlider
-                ID={"AIOfferings"}
-                sectionImageUrl={""}
-                sectionBGColor={"#fff"}
-                sectionHeading={"Unlock potential with our Custom Solutionss"}
-                sectionDesc={
-                    "Enhancing the features of business applications, our easily integrating specialized solutions intend to add "
-                }
-                sectionTextColor={"#000"}
-                sectionHeaderMaxWidth={"40%"}
-                x
-                cardData={SOLUTION_DATA}
-            ></CommonCardThreeSlider>
+            <SectionWrapperNew style={{ backgroundColor: "#fff" }}
+                sectionHeading="Unlock potential with our Custom Solutionss"
+                sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
+                sectionTextColor='#000'
+                sectionHeadingLayout="left"
+            >
+                <Slider>
+                    {RPASolution2?.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div class="max-w-sm bg-white rounded-3xl group overflow-hidden relative" >
+                                <div className="h-[300px] bg-slate-700" style={{ background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                                <div className="py-10 px-10 relative">
+                                    <h5 class="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
+                                    <p class="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
+                                    {item?.cardHoverData && (
+                                        <div className="absolute bottom-4 right-4">
+                                            <OutlinedButtonWithArrow size={48} />
+                                        </div>)}
+
+                                </div>
+                                {item?.cardHoverData && (
+                                    <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                                        <div className="">
+                                            <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                                                {item?.cardHoverData.map((item2) => (
+                                                    <>
+                                                        <li>
+                                                            <span class="font-semibold text-black">{item2}</span>
+                                                        </li>
+                                                    </>
+                                                ))}
+                                            </ol>
+                                        </div>
+                                    </div>
+                                )}
+
+                            </div>
+
+                        </SwiperSlide>
+                    ))}
+                </Slider>
+
+            </SectionWrapperNew>
             {/* custome solution */}
 
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
-
-            {/* <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor={'#d3d3d3'} /> */}
 
             <SectionWrapperNew
                 style={{ backgroundColor: '#d3d3d3' }}
@@ -628,7 +653,7 @@ function page() {
 
 
             </SectionWrapperNew>
-
+            {/* end case studies */}
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
