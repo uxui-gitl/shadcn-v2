@@ -12,11 +12,43 @@ import BlogSection from "@/sections/blog/BlogSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
+import { Tabs } from "@/components/ui/tabs";
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+
 
 
 function page() {
     const blogImageUrl = "/ai-ml/blog-bg.png";
 
+    const tabs = [
+        {
+            title: "Services",
+            value: "services",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <ServiceContent />
+                </div>
+            ),
+        },
+        {
+            title: "Industry",
+            value: "industry",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <IndustryContent />
+                </div>
+            ),
+        },
+        {
+            title: "Partners",
+            value: "partners",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <PartnersContent />
+                </div>
+            ),
+        },
+    ];
     const SOLUTION_DATA = [
         {
             id: 1,
@@ -386,20 +418,20 @@ function page() {
             </SectionWrapper>
             {/* challenge end */}
             
-            <CommonCardThreeSlider
-                ID={"AIOfferings"}
-                sectionImageUrl={""}
-                sectionBGColor={"#fff"}
-                sectionHeading={"Unlock potential with our Custom Solutionss"}
-                sectionDesc={
-                    "Enhancing the features of business applications, our easily integrating specialized solutions intend to add "
-                }
-                sectionTextColor={"#000"}
-                sectionHeaderMaxWidth={"40%"}
-                x
-                cardData={SOLUTION_DATA}
-            ></CommonCardThreeSlider>
-            {/* custome solution */}
+                <SectionWrapperNew
+                sectionHeading={"Holistic and Future Ready"}
+                sectionDesc={"We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."}
+                sectionTextColor="black"
+                title="OUR OFFERINGS"
+                sectionHeadingLayout="center"
+                style={{ background: 'white' }}
+            >
+                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+                    <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
+                </div>
+            </SectionWrapperNew>
+ 
+            {/* act solution */}
 
             <div className="rounded-3xl" style={{ backgroundColor: '#1D162B', marginTop: '-35px' }}>
                 <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
@@ -445,6 +477,7 @@ function page() {
                                     <div className="p-5">
                                         <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
                                     </div>
+                                    <p className="text-[20px] font-medium">We measure our success, based on the tangible results we deliver for our customers.</p>
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -483,5 +516,89 @@ function page() {
         </>
     )
 }
+
+const ServiceContent = () => {
+    const services = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {services.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
+
+const IndustryContent = () => {
+    const data = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {data.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
+
+const PartnersContent = () => {
+    const data = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {data.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
 
 export default page;
