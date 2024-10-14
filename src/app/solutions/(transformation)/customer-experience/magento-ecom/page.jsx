@@ -245,10 +245,16 @@ const page = () => {
     },
   ]
   const setChallengesList = [
-    { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Understanding user behavior and successfully converting users into buyers", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 2, title: "Integrating third-party services without compromising performance", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 3, title: "Scaling ecommerce platforms to handle sudden traffic surges", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 4, title: "Customer retention through effective communication strategies", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 5, title: "Ensuring secure payment gateways to protect customer data", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 6, title: "Managing complex products with multiple variants", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 7, title: "Delivering personalized customer experiences across channels", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 8, title: "Streamlining order management to reduce fulfillment times", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 9, title: "Implementing efficient inventory management to minimize stockouts", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 10, title: "Simplifying returns and refund processes for customer satisfaction", icon: '/upgradeCloud/icons/ico--target.svg' },
   ];
 
   const RPASolution = [
@@ -323,13 +329,13 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Ensure Ecommerce Success with Strategic Solutions and Customer Insights"
+        desc="Scalable and Secure Ecommerce Platform for Ambitious Businesses"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`Our ecommerce expertise enhances brand image, streamlines ordering & drives business growth with visually stunning, technically advanced solutions.`} />
 
       <SectionWrapper style={{
         background: `url('/Transformation/customers/bgimage2.svg')`, backgroundRepeat: "no-repeat",
