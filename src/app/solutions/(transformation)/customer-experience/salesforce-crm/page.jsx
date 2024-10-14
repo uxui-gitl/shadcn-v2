@@ -11,6 +11,11 @@ import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 import { Swiper, SwiperSlide } from "swiper/react";
 import CommonCardTwo from "@/components/CommonCardThree";
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+import Slider from "@/components/Slider";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+
+
 const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
 
@@ -43,12 +48,12 @@ const page = () => {
 
   ]
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardHead:'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.S' },
-    { id: '2', icon:'', cardHead:'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
-    { id: '3', icon:'', cardHead:'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
-    { id: '1', icon:'', cardHead:`Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
-    { id: '5', icon:'', cardHead:'Quote & Contract Management', cardDesc: 'Generate and share custom quotes with integrated forms at no additional costs.' },
-    { id: '6', icon:'', cardHead:'Task & Activity Management', cardDesc: 'Create, assign and automate tasks for your sales representatives using industry-leading automation tools.' },
+    { id: '1', icon: '', cardHead: 'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.S' },
+    { id: '2', icon: '', cardHead: 'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
+    { id: '3', icon: '', cardHead: 'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
+    { id: '1', icon: '', cardHead: `Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
+    { id: '5', icon: '', cardHead: 'Quote & Contract Management', cardDesc: 'Generate and share custom quotes with integrated forms at no additional costs.' },
+    { id: '6', icon: '', cardHead: 'Task & Activity Management', cardDesc: 'Create, assign and automate tasks for your sales representatives using industry-leading automation tools.' },
 
   ];
 
@@ -104,7 +109,7 @@ const page = () => {
       cardHeading: "Appreciate GITL's contribution to our ONE-CRM goal",
       cardDesc: `With Salesforce Sales Cloud smooth implementation, Godrej Infotech's team allied our lead-to-order cycle. With deep Infor LN integration and fine-tuned project management, the team met aggressive go-live targets, providing us with streamlined data. Thank you GITL team for contributing to our visionary goal of a singular CRM system.`
     },
-    
+
   ];
 
   const RPASolution2 = [
@@ -115,7 +120,15 @@ const page = () => {
       cardDesc: 'Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+      cardHoverData:[
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+      ]
     },
     {
 
@@ -125,7 +138,15 @@ const page = () => {
       cardDesc: 'Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+      cardHoverData:[
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+      ]
     },
     {
 
@@ -158,8 +179,9 @@ const page = () => {
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
     },
-    
+
   ]
+
 
   return (
     <>
@@ -171,57 +193,51 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={'Salesforce, a top cloud-based CRM, streamlines customer interactions with automation, AI, and 360-degree customer views for enhanced business operations'} />
-      
-      <div className="bg-[#1D162B]" style={{ borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}>
-        <div className="py-36 pb-[200px]" style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-          <div className="md:container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="hidden md:block">
-                <img src="" />
-              </div>
-              <div>
-                <SectionHeading
-                  Color="white"
-                  headingContainerWidth="w-full"
-                  Heading="Modules"
-                  Desc=""
-                ></SectionHeading>
-              </div>
-            </div>
 
-          </div>
-        </div>
-        <div className="md:container px-10 mx-auto" style={{ marginTop: '-166px', }} >
-          <Swiper
-            slidesPerView={1}
-            navigation={false}
-            pagination={{ type: "bullets", clickable: true }}
-            autoplay={true}
-            loop={false}
-            spaceBetween={30}
-            breakpoints={{
-              640: {
-                  slidesPerView: 1,
-                  spaceBetween: 16,
-              },
-              768: {
-                  slidesPerView: 2,
-                  spaceBetween: 24,
-              },
-              1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 32,
-              },
-          }}
-          >
-            {RPASolution2?.map((item, index) => (
-              <SwiperSlide key={item}>
-                <CommonCardTwo Item={item}></CommonCardTwo>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
+      <SectionWrapperNew
+        sectionHeading={'Modules'}
+        sectionDesc={''}
+        sectionTextColor={'#fff'}
+        sectionHeadingLayout="left"
+        style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      >
+        <Slider slidesPerView={3.2}>
+          {RPASolution2?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div class="max-w-sm bg-white rounded-3xl group overflow-hidden relative" >
+                <div className="h-[300px] bg-slate-700" style={{background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                <div className="py-10 px-10 relative">
+                  <h5 class="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
+                  <p class="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
+                  {item?.cardHoverData && ( 
+                    <div className="absolute bottom-4 right-4">
+                    <OutlinedButtonWithArrow size={48} />
+                  </div>)}
+
+                </div>
+                {item?.cardHoverData && (
+                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                    <div className="">
+                      <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                        {item?.cardHoverData.map((item2) => (
+                          <>
+                            <li>
+                              <span class="font-semibold text-black">{item2}</span>
+                            </li>
+                          </>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
+                )}
+
+              </div>
+
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
+
 
       <BenefitSliderSection
         ID={'BENEFIT'}

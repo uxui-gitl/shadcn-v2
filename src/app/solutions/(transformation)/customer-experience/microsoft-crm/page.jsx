@@ -11,6 +11,10 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+import Slider from "@/components/Slider";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+
 const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
 
@@ -37,8 +41,8 @@ const page = () => {
     },
 
   ]
-  
-  const CASE_STUDIES_DATA = [
+
+  const casestudy = [
     {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
@@ -81,82 +85,90 @@ const page = () => {
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      title: "",
+      heading: "Oddle East-based Electrical Products Manufacturer",
+      description:
+        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#E1F2EF",
+    },
     // Add more case studies here...
   ];
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+    { id: '1', icon: '', cardDesc: 'A high degree of accuracy and consistency in business operations' },
+    { id: '2', icon: '', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
+    { id: '3', icon: '', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
+    { id: '4', icon: '', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
+    { id: '5', icon: '', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
 
   ];
-  const RPASolution = [
+  const crmOfferinfData = [
     {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Increase Productivity',
       cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
+      cardHoverData: [
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+      ]
     },
     {
-  
+
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
       cardHeading: 'Accurate Outcomes',
       cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
+      cardHoverData: [
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+      ]
     },
     {
-  
+
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Compliance and Consistency',
       cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
     },
     {
-  
+
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Strengthen Potential',
       cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
     },
     {
-  
+
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Enhance Flexibility',
       cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
     },
     {
-  
-  
+
+
       id: 5,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Reduce AHT (Average Handling Time)',
       cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
     },
   ]
 
@@ -220,8 +232,8 @@ const page = () => {
     },
   ];
   return (
-  <>  
-  <EntIntro
+    <>
+      <EntIntro
         title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
         desc=""
         cta="Let's Connect"
@@ -229,6 +241,7 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+
       <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -245,22 +258,52 @@ const page = () => {
             </div>
           </div>
         </div>
-
       </SectionWrapper>
-
-      <CommonCardTwoSlider
-        ID={'AIOfferings'}
-        sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+      {/* crm Offerin section*/}
+      <SectionWrapperNew
         sectionHeading={'Our Microsoft CRM offerings'}
         sectionDesc={''}
         sectionTextColor={'#000'}
-        sectionHeaderMaxWidth={'40%'}
-        cardData={RPASolution}
-      >
-      </CommonCardTwoSlider>
+        sectionHeadingLayout="left"
 
-      <div className="" style={{ backgroundColor: '#1D162B'}}>
+        style={{ backgroundColor: '#E1F2EF' }}
+      >
+
+        <Slider slidesPerView={3.2}>
+          {crmOfferinfData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div class="max-w-sm bg-[black] rounded-3xl group overflow-hidden relative" >
+                <div className="py-10 px-10 ">
+                  <h5 class="mb-6 text-[42px] font-semibold text-white leading-[50px] min-h-[150px]">{item?.cardHeading}</h5>
+                  <p class="mb-3 text-[16px] font-medium text-white min-h-[72px]">{item?.cardDesc}</p>
+                </div>
+                {item?.cardHoverData && (
+                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                    <div className="">
+                      <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                        {item?.cardHoverData.map((item2) => (
+                          <>
+                            <li>
+                              <span class="font-semibold text-black">{item2}</span>
+                            </li>
+                          </>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
+                )}
+
+              </div>
+
+            </SwiperSlide>
+          ))}
+        </Slider>
+
+      </SectionWrapperNew>
+
+      {/* end crmOfferinfData */}
+      {/* CloudSuite Services */}
+      <div className="" style={{ backgroundColor: '#1D162B' }}>
         <div className="md:container mx-auto pt-20 px-10 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-full md:w-1/2">
             <SectionHeading
@@ -274,7 +317,7 @@ const page = () => {
             <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
         </div>
-        <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
+        <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
           <Swiper
             slidesPerView={4}
             navigation={false}
@@ -284,25 +327,25 @@ const page = () => {
             spaceBetween={30}
             breakpoints={{
               640: {
-                  slidesPerView: 1,
-                  spaceBetween: 16,
+                slidesPerView: 1,
+                spaceBetween: 16,
               },
               768: {
-                  slidesPerView: 2,
-                  spaceBetween: 24,
+                slidesPerView: 2,
+                spaceBetween: 24,
               },
               1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 32,
+                slidesPerView: 3,
+                spaceBetween: 32,
               },
-          }}
+            }}
           >
             {[1, 2, 3, 4, 5]?.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                  <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
                   <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                    <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
                   </div>
                 </div>
               </SwiperSlide>
@@ -312,8 +355,8 @@ const page = () => {
       </div>
 
 
-      
-      <SectionWidthSlider style={{marginTop:'-30px'}}
+
+      <SectionWidthSlider style={{ marginTop: '-30px' }}
         ID={"ultimateChoiceData"}
         sectionHeading={"Infor CRM Offerings"}
         sectionDesc={
@@ -326,7 +369,7 @@ const page = () => {
 
       />
 
-<BenefitSliderSection
+      <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
         sectionHeading={'Benefits of Infor LN'}
@@ -336,13 +379,126 @@ const page = () => {
         sectionHeadingMaxWidth={'100%'}
       />
 
-<CaseStudiesSection
+      {/* case studies  */}
+      <SectionWrapperNew
+        style={{ backgroundColor: '#FFF' }}
+        sectionHeading={''}
+        sectionDesc={''}
+        sectionTextColor={'white'}
+        sectionHeadingLayout={'left'}>
+
+        <div
+          className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]"
+          style={{ color: casestudy[0]?.color }}
+        >
+          {/* video 1st */}
+          <div
+            className="w-full md:w-1/3 h-full rounded-3xl p-8"
+            style={{
+              backgroundImage: `url(${casestudy[0].imageURL})`,
+              backgroundSize: "cover",
+              backgroundPosition: "bottom",
+              backgroundColor: casestudy[0].bgCardColor,
+            }}
+          >
+            <h3 className="text-base font-semibold mb-12">
+              {casestudy[0].title}
+            </h3>
+            <h1 className="text-5xl font-medium mb-6">
+              {casestudy[0].heading}
+            </h1>
+            <p className="w-[80%] mb-4">{casestudy[0].description}</p>
+          </div>
+          <div
+            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            style={{ backgroundColor: "transparent" }}
+          >
+            {/* 1 */}
+            <div
+              className="relative w-full h-1/2 rounded-3xl  p-8"
+              style={{
+                color: casestudy[1].color,
+                backgroundColor: casestudy[1].bgCardColor,
+              }}
+            >
+              <h1 className="w-[80%] text-3xl font-medium mb-6">
+                {casestudy[1].heading}
+              </h1>
+              <p className="w-[80%] mb-4">{casestudy[1].description}</p>
+
+              <div className="absolute bottom-4 right-4">
+                <OutlinedButtonWithArrow size={56} />
+              </div>
+            </div>
+            {/* 2 */}
+            <div
+              className="relative w-full h-1/2 rounded-3xl  p-8"
+              style={{
+                color: casestudy[2].color,
+                backgroundColor: casestudy[2].bgCardColor,
+              }}
+            >
+              <h1 className="w-[80%] text-3xl font-medium mb-6">
+                {casestudy[2].heading}
+              </h1>
+              <p className="w-[80%] mb-4">{casestudy[2].description}</p>
+
+              <div className="absolute bottom-4 right-4">
+                <OutlinedButtonWithArrow size={56} />
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            style={{ backgroundColor: "transparent" }}
+          >
+            {/* 3 */}
+            <div
+              className="relative w-full h-full md:h-1/2 rounded-3xl  p-8"
+              style={{
+                color: casestudy[3].color,
+                backgroundColor: casestudy[3].bgCardColor,
+              }}
+            >
+              <h1 className="w-[80%] text-3xl font-medium mb-6">
+                {casestudy[3].heading}
+              </h1>
+              <p className="w-[80%] mb-4">{casestudy[3].description}</p>
+
+              <div className="absolute bottom-4 right-4">
+                <OutlinedButtonWithArrow size={56} />
+              </div>
+            </div>
+            {/* 4 */}
+            <div
+              className="relative w-full h-full md:h-1/2 rounded-3xl  p-8"
+              style={{
+                color: casestudy[4].color,
+                backgroundColor: casestudy[4].bgCardColor,
+              }}
+            >
+              <h1 className="w-[80%] text-3xl font-medium mb-6">
+                {casestudy[4].heading}
+              </h1>
+              <p className="w-[80%] mb-4">{casestudy[4].description}</p>
+
+              <div className="absolute bottom-4 right-4">
+                <OutlinedButtonWithArrow size={56} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionWrapperNew>
+      {/*end  case studies  */}
+
+
+      {/* <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
         bgColor="#FFFFFF"
-      />
+      /> */}
 
-<BlogSection
+      <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
         Heading={"The Powerful Duo: AI and the Internet of Things (IoT) Reshaping Our World"}
@@ -356,13 +512,13 @@ const page = () => {
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
       >
       </DistinctiveSection>
-<TransformBusinessForm
+      <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={
           "Let us discuss how intelligent technologies can help you with rapid growth."
         }
       ></TransformBusinessForm>
-  </>
+    </>
   );
 };
 

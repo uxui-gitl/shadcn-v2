@@ -15,10 +15,6 @@ import { SwiperSlide } from "swiper/react";
 import Slider from "@/components/Slider";
 import CommonCardThree from "@/components/CommonCardThree";
 
-
-
-
-
 const page = () => {
 
 
@@ -229,37 +225,6 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={'Built on a scalable, cloud-based platform, Infor CRM integrates seamlessly with Infor ERP, providing real-time visibility into customer interactions, sales and service. Tailored solutions for manufacturing, distribution, healthcare and more.'} />
-      {/* <SectionWrapper BGColor="black">
-        <div className="md:container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="hidden md:block">
-              <img src="/about/video.png" />
-            </div>
-            <div>
-              <SectionHeading
-                Color="white"
-                headingContainerWidth="w-full"
-                Heading="Infor Intelligent Supply System"
-                Desc="Infor proudly presents the most extensive suite of global supply chain solutions, including the world's largest single-instance, multi-enterprise business network and comprehensive CloudSuite capabilities. These capabilities optimize supply chains from end to end, covering planning, procurement, orchestration and fulfillment. "
-              ></SectionHeading>
-            </div>
-          </div>
-        </div>
-
-      </SectionWrapper> */}
-
-      {/* <SectionWidthSlider
-        ID={"ultimateChoiceData"}
-        sectionHeading={"Infor CRM Offerings"}
-        sectionDesc={
-          "Count on us for an impactful deployment that finely tunes Infor CRM to elevate your sales operations."
-        }
-        sectionTextColor="white"
-        cardData={ultimateChoiceData}
-        sectionBGColor="#5F22D9"
-        setHeadingLayout="horizontal"
-
-      /> */}
 
       <SectionWrapperNew
         style={{ backgroundColor: '#1D162B' }}
@@ -275,7 +240,7 @@ const page = () => {
           ))}
            </Slider>
       </SectionWrapperNew>
-      
+
       {/* case studies */}
       <SectionWrapperNew
         style={{ backgroundColor: '#D3D3D3' }}
