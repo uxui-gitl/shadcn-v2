@@ -165,7 +165,7 @@ const ContactUs = () => {
                   <Image src={"about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
                   <div className="text-[28px] text-white">Purpose</div>
                 </div>
-                <p class="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                <p class="text-[20px] py-4 text-white">{`Be a world class provider of high-quality Information & Technology solutions.`}</p>
               </div>
 
             </SwiperSlide>
@@ -285,7 +285,7 @@ const ContactUs = () => {
             </thead>
             <tbody>
               {[1, 2, 3, 4, 5].map((item) => (
-                <tr class="bg-white border-b ">
+                <tr class="bg-white border-b " key={item}>
                   <th scope="row" class="px-6 py-4 font-semibold text-[#000] text-[20px] whitespace-nowrap">
                     2024
                   </th>
@@ -293,7 +293,7 @@ const ContactUs = () => {
                     Design Award
                   </td>
                   <td class="px-6 py-4 text-[20px]">
-                    Lorem ipsum dolor sit amet consectetur.
+                    {`Lorem ipsum dolor sit amet consectetur.`}
                   </td>
                 </tr>
               ))}
@@ -319,7 +319,7 @@ const ContactUs = () => {
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow " style={{ border: '1px solid #d3d3d3' }}>
                   <h6 className="text-[20px] font-semibold mb-6">Coporate Policies</h6>
-                  <p className="text-[16px] mb-[92px]">Require Development from Scratch. Customisation of</p>
+                  <p className="text-[16px] mb-[92px]">{`Require Development from Scratch. Customisation of`}</p>
                   <div className="flex justify-end">
                     <Image src="/about/chevron-right.png" width={25} height={25} alt="che" onClick={() => setshowModal1((prev) => !prev)} style={{cursor:'pointer'}}/>
                   </div>
