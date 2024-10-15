@@ -57,10 +57,10 @@ const page = () => {
     {
       imageURL: "",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "Consolidated Information in Centralized System",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
-      link: "/case-study-1",
+        "India’s leading integrated vending service provider leverages predictable sales operations and gains consolidated information visibility with Microsoft CRM",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LeadingTableTopBeverageVendingMachinesManufacturer.pdf ",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -69,19 +69,19 @@ const page = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "Increase in Customer Satisfaction",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-      link: "/case-study-1",
+        "Microsoft CRM accelerates response time and complaint closure for leading Indian construction company",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/IndiasLeadingConstructionOrganization_MSDCRM.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Greater Operational Efficiency",
       description:
-        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
+        "Integration of MS CRM 2011 with ERP for India's world class provider of high-quality information technology solutions",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -89,9 +89,9 @@ const page = () => {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Oddle East-based Electrical Products Manufacturer",
+      heading: "Efficient Custom Reports Creation",
       description:
-        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
+        "Integration of MS CRM for Printing and Packaging Company in KSA",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -120,12 +120,9 @@ const page = () => {
       cardTextColor: 'white',
       cardType: 1,
       cardHoverData: [
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'AI-powered and tailor- made customer interaction ',
+        'Holistic strategy for enhancing customer experiences',
+        'Real-time monitoring for personalized journeys',
       ]
     },
     {
@@ -138,12 +135,11 @@ const page = () => {
       cardTextColor: 'white',
       cardType: 2,
       cardHoverData: [
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Monitor customer activity and order status',
+        'Manage quotations, orders and invoices',
+        'Templates for Sales Forecasting and Reporting',
+        'Access Information on Mobile Devices',
+        
       ]
     },
     {
@@ -156,12 +152,11 @@ const page = () => {
       cardTextColor: 'white',
       cardType: 1,
       cardHoverData: [
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Customer Service across Multiple channels along with Ticket Tracking ',
+        'Reduced Call Time and higher first call resolution charges ',
+        'Efficient Customer Support with Telephony Integration',
+        'Quick Access to Information with Guided navigation',
+        
       ]
     },
     {
@@ -173,6 +168,13 @@ const page = () => {
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
+      cardHoverData: [
+        'Cut Down Maintenance Expenses using Predictive Maintenance',
+        'Maintenance Operations with Automated Field Agent Dispatch',
+        'Insights Access to Engineers for maintenance Planning',
+        'Assess production capacity, order completion and maintenance expenses',
+        
+      ]
     },
     {
       id: 5,
@@ -183,6 +185,13 @@ const page = () => {
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
+      cardHoverData: [
+        'Integrated & flexible solution',
+        'Customised customer experience with AI',
+        'End to end customer experience delivery',
+        'Real-time customer engagement',
+        
+      ]
     },
     
   ]
@@ -279,8 +288,8 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
-
+      <OverviewSection Text={`Get a single customer view with Microsoft CRM. Gain 360-degree customer insights, seamless team collaboration, personalized customer experiences and data-driven decision-making.`} />
+{/* 
       <SectionWrapper BGColor="black">
         <div className="md:container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -297,7 +306,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </SectionWrapper>
+      </SectionWrapper> */}
       {/* crm Offerin section*/}
       <SectionWrapperNew
         sectionHeading={'Our Microsoft CRM offerings'}
