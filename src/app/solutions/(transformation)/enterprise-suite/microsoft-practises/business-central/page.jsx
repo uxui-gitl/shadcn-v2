@@ -18,29 +18,47 @@ const page = () => {
 
   const tabs = [
     {
-      title: "Services",
-      value: "services",
+      title: "Financial Management",
+      value: "Financial Management",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#5F22D9]">
-          <ServiceContent />
+          <FinancialManagementContent />
         </div>
       ),
     },
     {
-      title: "Industry",
-      value: "industry",
+      title: "Supply Chain",
+      value: "Supply Chain",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-          <IndustryContent />
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#5F22D9]">
+          <SupplyChainContent />
         </div>
       ),
     },
     {
-      title: "Partners",
-      value: "partners",
+      title: "Sales and Marketing",
+      value: "Sales and Marketing",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-          <IndustryContent />
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#5F22D9]">
+          <SalesMarketingContent />
+        </div>
+      ),
+    },
+    {
+      title: "Project Management",
+      value: "Project Management",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#5F22D9]">
+          <ProjectManagementContent />
+        </div>
+      ),
+    },
+    {
+      title: "Service Management",
+      value: "Service Management",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#5F22D9]">
+          <ServiceManagementContent />
         </div>
       ),
     },
@@ -168,7 +186,7 @@ const page = () => {
       heading: "D365 Business Central Project Highlights",
       description:
         "World's top-notch businesses choose Godrej Infotech for our excellent technical acumen and industry understanding.",
-      link: "",
+      link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=20",
       color: "#FFFFFF",
     },
     {
@@ -274,8 +292,8 @@ const page = () => {
       />
 
       <SectionWrapperNew
-        sectionHeading="Cutting-Edge Management Solutions"
-        sectionDesc="We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."
+        sectionHeading="Key Capabilities"
+        sectionDesc="Embrace a modern, efficient and cost-effective approach to managing your business right on your fingertips."
         sectionTextColor='#000'
         sectionHeadingLayout="center"
         style={{ backgroundColor: '#E4E4E4' }}
@@ -343,19 +361,24 @@ const page = () => {
   );
 };
 
-const ServiceContent = () => {
+const FinancialManagementContent = () => {
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
         <LeftHeading
-        heading={'Future of Projects'}
+        heading={'Financial Management'}
         desc={''}
         textColor={'#FFF'}
         ></LeftHeading>
 
         <div className="py-2">
-          <h2 className="text-[18px] text-white font-mudium">Financial Data Consolidation </h2>
-          <p className="text-[16px] text-white font-normal leading-[24px]">Seamlessly consolidate data from accounting, sales, purchasing, inventory to achieve a</p>
+          <ul className="text-[16px] text-white font-normal leading-[24px]">
+            <li className="mb-3"><strong>Financial Data Consolidation:</strong><br/>Transfer general ledger entries from two or more companies (subsidiaries) into a consolidated company. </li>
+            <li className="mb-3"><strong>Built-in Power BI Dashboards:</strong><br/>Visualize real-time financial performance data to identify patterns and trends with precision.</li>
+            <li className="mb-3"><strong>Process Streamlining:</strong><br/>Streamline essential accounting processes, such as accounts receivable and payable, Fixed Assets, Cash & Bank Management, Taxation ensuring automatic reconciliation. </li>
+            <li className="mb-3"><strong>Data Modeling and Analysis:</strong><br/>Conduct multi-dimensional data analysis and improve forecasting accuracy.</li>
+            <li className="mb-3"><strong>Customized Reporting:</strong><br/>Easily customize and share reports, featuring seamless Excel integration.</li>
+          </ul>
           </div>
       </div>
       <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
@@ -363,6 +386,106 @@ const ServiceContent = () => {
     </div>
   );
 };
+
+const SupplyChainContent = () => {
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        <LeftHeading
+        heading={'Supply Chain'}
+        desc={''}
+        textColor={'#FFF'}
+        ></LeftHeading>
+
+        <div className="py-2">
+          <ul className="text-[16px] text-white font-normal leading-[24px]">
+            <li className="mb-3"><strong>Automated Stock Management:</strong><br/> Receive automated suggestions for inventory replenishment, based on calculations of stock levels, lead times and reorder points.</li>
+            <li className="mb-3"><strong>Approval Workflow:</strong><br/>Prevent unnecessary purchases and avoid vendor overdue penalties with a structured approval workflow.</li>
+            <li className="mb-3"><strong>Built-in Intelligence:</strong><br/>Make informed inventory replenishment decisions using sales forecasts and anticipated stock-outs.</li>
+            
+          </ul>
+          </div>
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
+  );
+};
+
+const SalesMarketingContent = () => {
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        <LeftHeading
+        heading={'Sales Marketing'}
+        desc={''}
+        textColor={'#FFF'}
+        ></LeftHeading>
+
+        <div className="py-2">
+          <ul className="text-[16px] text-white font-normal leading-[24px]">
+            <li className="mb-3"><strong>Client Interaction Tracking:</strong><br/> Gain automated guidance on optimal upsell, cross-sell and renewal opportunities by tracking historical client data. </li>
+            <li className="mb-3"><strong>Efficient Sales Process:</strong><br/>Streamline the quote-to-cash sales process and manage service requests directly through Outlook integration.</li>
+          </ul>
+          </div>
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
+  );
+};
+
+const ProjectManagementContent = () => {
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        <LeftHeading
+        heading={'Project Management'}
+        desc={''}
+        textColor={'#FFF'}
+        ></LeftHeading>
+
+        <div className="py-2">
+          <ul className="text-[16px] text-white font-normal leading-[24px]">
+            <li className="mb-3"><strong>Timesheets:</strong><br/>Manage client projects with advanced job costing and reporting capabilities, while tracking timesheets. </li>
+            <li className="mb-3"><strong>Invoice Tracking:</strong><br/>Keep tabs on client invoicing in relation to planned costs on orders and quotes.</li>
+            <li className="mb-3"><strong>Real-Time Insights:</strong><br/>Monitor real-time project status, profitability and resource usage metrics. </li>
+          </ul>
+          </div>
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
+  );
+};
+
+const ServiceManagementContent = () => {
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        <LeftHeading
+        heading={'Service Management'}
+        desc={''}
+        textColor={'#FFF'}
+        ></LeftHeading>
+
+        <div className="py-2">
+          <ul className="text-[16px] text-white font-normal leading-[24px]">
+            <li className="mb-3"><strong>Planning and dispatching:</strong><br/>Assign personnel, log work order details and manage dispatch. Gain an overview of service task prioritization, service loads, and task escalations. </li>
+            <li className="mb-3"><strong>Service contract management:</strong><br/>Agree on service levels, track contract history, renewal and warranties. Manage details, measure profitability and generate quotes. </li>
+            <li className="mb-3"><strong>Service Item Management:</strong><br/>Manage service items comprehensively, recording contracts, components, BOM, and warranty data, analysing key performance indicators efficiently. </li>
+            <li className="mb-3"><strong>Service Order Management:</strong><br/>Handle post-sales issues, service requests, and manage equipment loans; let customers initiate or auto-create requests based on agreements. </li>
+            <li className="mb-3"><strong>Service Price Management:</strong><br/>Establish, track, and adjust prices with automated assignment based on criteria for profitability insights. </li>
+            <li className="mb-3">Country specific tax localization expertise</li>
+          </ul>
+          </div>
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
+  );
+};
+
 
 const IndustryContent = () => {
   const data = [

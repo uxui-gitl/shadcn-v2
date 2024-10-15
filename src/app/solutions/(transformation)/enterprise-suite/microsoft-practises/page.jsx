@@ -39,16 +39,14 @@ const MicrosoftPractises = () => {
       hoverTitle: "Azure",
       description:
         `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
-              <li>
-                  At least 10 characters (and up to 100 characters)
-              </li>
-              <li>
-                  At least one lowercase character
-              </li>
-              <li>
-                  Inclusion of at least one special character, e.g., ! @ # ?
-              </li>
-              
+              <li>Virtualization</li>
+              <li>Backup &Disaster Recovery</li>
+              <li>Azure IoT</li>
+              <li>Business Applications on Azure</li>
+              <li>Networking</li>
+              <li>Security & Governance</li>
+              <li>Hybrid and multicloud Solutions</li>
+              <li>Data and Analytics</li>
           </ul>`,
       content: "Additional content for Card 1",
       imageURL: "/techStack1.png",
@@ -56,8 +54,16 @@ const MicrosoftPractises = () => {
     {
       title: "Microsoft Dynamics",
       hoverTitle: "Microsoft Dynamics",
-      description:
-        "",
+       description:
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>D365 Finance & Operations</li>
+              <li>D365 Business Central</li>
+              <li>D365 Commerce</li>
+              <li>D365 CRM</li>
+              <li>Dynamics AX</li>
+              <li>Dynamics Nav</li>
+              
+          </ul>`,
       content: "Additional content for Card 2",
       imageURL: "/techStack1.png",
     },
@@ -65,7 +71,13 @@ const MicrosoftPractises = () => {
       title: "M365",
       hoverTitle: "M365",
       description:
-        "",
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>Office apps and services</li>
+              <li>Outlook and Exchange</li>
+              <li>Cloud storage</li>
+              <li>Device Security and Access Management</li>
+              
+          </ul>`,
       content: "Additional content for Card 3",
       imageURL: "/techStack1.png",
     },
@@ -73,23 +85,40 @@ const MicrosoftPractises = () => {
       title: "Technologies",
       hoverTitle: "Technologies",
       description:
-        "",
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>Dot Net</li>
+              <li>SQL</li>
+              <li>Share Point </li>
+              
+          </ul>`,
       content: "Additional content for Card 4",
       imageURL: "/techStack1.png",
     },
     {
       title: "Microsoft Fabric",
       hoverTitle: "Microsoft Fabric",
-      description:
-        "",
+     description:
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>Data Factory</li>
+              <li>Synapse Data Engineering</li>
+              <li>Synapse5 Data Science</li>
+              <li>Synapse Data Warehousing</li>
+              <li>Synapse Real-Time Analytics</li>
+              <li>Data Activator</li>
+              
+          </ul>`,
       content: "Additional content for Card 5",
       imageURL: "/techStack1.png",
     },
     {
       title: "Power Platforms",
       hoverTitle: "Power Platforms",
-      description:
-        "",
+       description:
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>Power BI</li>
+              <li>Power Apps</li>
+              <li>Power Automate</li>
+        </ul>`,
       content: "Additional content for Card 5",
       imageURL: "/techStack1.png",
     },
@@ -97,11 +126,16 @@ const MicrosoftPractises = () => {
   ];
 
   const serviceSliderData = [
-    { id: '1', text: 'dummy text' },
-    { id: '2', text: 'dummy text' },
-    { id: '3', text: 'dummy text' },
-    { id: '4', text: 'dummy text' },
-    { id: '5', text: 'dummy text' },
+    { id: '1', text: 'Business Consulting' },
+    { id: '2', text: 'Implementation & Rollout' },
+    { id: '3', text: 'Upgrade & Migration' },
+    { id: '4', text: 'Development & Customization' },
+    { id: '5', text: 'Training Workshop' },
+    { id: '6', text: 'Managed Services' },
+    { id: '7', text: 'Legacy Modernization' },
+    { id: '8', text: 'Bespoke Applications' },
+    { id: '9', text: 'License sales and services' },
+    { id: '10', text: 'Data Insights' },
   ]
 
   const SOLUTION_DATA = [
@@ -110,8 +144,16 @@ const MicrosoftPractises = () => {
       cardBGColor: "#F5B1DC",
       cardHeading: "Dealer <br/> Management",
       cardDesc:
-        "Experience streamlined operations with Infor WMS's 3D visual warehouse, providing real-time insights into ",
-      isArrow: true,
+        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+              <li>Data Factory</li>
+              <li>Synapse Data Engineering</li>
+              <li>Synapse5 Data Science</li>
+              <li>Synapse Data Warehousing</li>
+              <li>Synapse Real-Time Analytics</li>
+              <li>Data Activator</li>
+              
+          </ul>`,
+        isArrow: true,
       cardTextColor: "black",
       cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
     },
@@ -173,27 +215,32 @@ const MicrosoftPractises = () => {
     {
       id: "1",
       icon: '',
-      cardDesc: "A high degree of accuracy and consistency in business operations",
+      cardDesc: "Platform scalability in accordance with business demands and render it suitable for varying sizes",
     },
     {
       id: "2",
       icon: '',
-      cardDesc: "Informed decision-making to extract valuable insights and identify patterns, correlation, and trends",
+      cardDesc: "Live data analytics and insights from reporting, enabling smarter decisions",
     },
     {
       id: "3",
       icon: '',
-      cardDesc: "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
+      cardDesc: "Cloud or on-premises deployment options based on business requirements and preferences.",
     },
     {
       id: "4",
       icon: '',
-      cardDesc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
+      cardDesc: "Manage and nurture customer relationship from lead generation to post-sale support, improving customer satisfaction and retention.",
     },
     {
       id: "5",
       icon: '',
-      cardDesc: "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
+      cardDesc: "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings. ",
+    },
+    {
+      id: "6",
+      icon: '',
+      cardDesc: "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management.",
     },
   ];
 
@@ -216,7 +263,7 @@ const MicrosoftPractises = () => {
       cardBGColor: "#7F4EE1",
       cardHeading: "Retail",
       cardDesc:
-        "AI-driven workflows, OCR and rule-based system enables accurate results",
+        "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -228,7 +275,7 @@ const MicrosoftPractises = () => {
       cardBGColor: "#7F4EE1",
       cardHeading: "Trading & Distribution",
       cardDesc:
-        "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+        "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -240,7 +287,7 @@ const MicrosoftPractises = () => {
       cardBGColor: "#EFE9FB",
       cardHeading: "Project",
       cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+        "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -255,17 +302,7 @@ const MicrosoftPractises = () => {
       isArrow: false,
       cardTextColor: "white",
     },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
+    
     // Add more cards as needed
   ];
 
@@ -430,7 +467,7 @@ const MicrosoftPractises = () => {
       cardBGImageUrl: '/ai-ml/blog-bg.png',
       cardBGColor: 'red',
       cardHeading: "Microsoft Dynamics 365 Finance and Operations or Business Central?",
-      cardDesc: 'Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? We all understand that the needs of any organization are constantly evolving due to the dynamic nature of the market. And that is why a robust and agile platform is much needed for a business that can support these requirements. ',
+      cardDesc: 'Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world?  ',
       cardTextColor: 'white',
       readMoreUrl: "https://www.godrejinfotech.com/blogDetails.aspx?blog=20"
     },
@@ -439,7 +476,7 @@ const MicrosoftPractises = () => {
       cardBGImageUrl: '/ai-ml/blog-bg.png',
       cardBGColor: 'red',
       cardHeading: "Upgrading Microsoft Dynamics AX to D365 Finance & Supply Chain",
-      cardDesc: 'After successful client acquisitions and implementation projects across the globe, Microsoft Dynamics AX 2012 ERP is now entering its end-of-life phase. Microsoft has officially ended mainstream support for AX 2012 version since October 2021. Fortunately, there is a better, enhanced, and latest technology version i.e. MS Dynamics 365 Finance and Supply Chain ERP available to customers who are looking to upgrade their AX 2012 application.',
+      cardDesc: 'After successful client acquisitions and implementation projects across the globe, Microsoft Dynamics AX 2012 ERP is now entering its end-of-life phase. ',
       cardTextColor: 'white',
       readMoreUrl: "https://www.godrejinfotech.com/blogDetails.aspx?blog=12"
     },
@@ -494,8 +531,8 @@ const MicrosoftPractises = () => {
 
       {/*  */}
       <ServiceSlider
-        sectionHeading="Infor CloudSuite Services"
-        sectionDesc="Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise."
+        sectionHeading="Our Service Expertise"
+        sectionDesc="Our comprehensive Microsoft services include everything that business requires to effectively digitize business operations"
       >
         <Slider>
           {serviceSliderData?.map((item, index) => (
@@ -544,9 +581,9 @@ const MicrosoftPractises = () => {
       <BenefitSliderSection
         ID={"BENEFIT"}
         sectionBGColor={"#1D162B"}
-        sectionHeading={"Microsoft Promise for Your Business"}
+        sectionHeading={"Microsoft Dynamics Benefits"}
         sectionDesc={
-          "Driving transformational changes, Microsoft Dynamics minimizes operational cost and increases overall efficiency of employees and customers."
+          "Microsoft Dynamics optimizes operations, cuts costs, and enhances employee and customer experiences for sustainable growth."
         }
         sectionTextColor={"white"}
         cardData={BENEFITS_CARDS_DATA}

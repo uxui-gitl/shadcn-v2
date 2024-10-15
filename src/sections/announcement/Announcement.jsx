@@ -10,7 +10,7 @@ const Announcement = ({ content }) => {
     {
       _id: 1,
       title:
-        "Godrej Infotech has been officially recognized as a Great Place to Work!",
+        "Once Again, Godrej Infotech is recognized as a Great Place to Work!",
       cta: "",
       targetBlank: true,
       link: "/",
@@ -18,7 +18,7 @@ const Announcement = ({ content }) => {
     {
       _id: 2,
       title:
-        "Economic Times Honors Godrej Infotech as Future Ready Organizations 2023 – 2024 – Adjudged by Ernst & Young, the Official Tabulators",
+        "Economic Times Honors Godrej Infotech as Future Ready Organization – Adjudged by Ernst & Young.",
       cta: "",
       targetBlank: true,
       link: "/",
@@ -26,7 +26,7 @@ const Announcement = ({ content }) => {
     {
       _id: 3,
       title:
-        "Delighted to Announce Godrej Infotech as Salesforce Consulting Partner",
+        "India’s Leading Fertility Healthcare Centre Finalizes Oracle Fusion Implementation Services contract.",
       cta: "",
       targetBlank: true,
       link: "/",
@@ -34,32 +34,8 @@ const Announcement = ({ content }) => {
     {
       _id: 4,
       title:
-        "Dredging & Marine Global Giant of Netherlands - Boskalis Signs a 5 years of renewal contract after a successful 3-year relationship with LVD Godrej Infotech for Infor Products & Services",
+        "Renowned Dutch marine leader, Boskalis, signs 5-year Infor support renewal with LVD Godrej Infotech after successful 3-year relationship",
       cta: "",
-      targetBlank: true,
-      link: "/",
-    },
-    {
-      _id: 5,
-      title:
-        "Godrej Infotech secures a contract for Oracle implementation services with India's premier fertility healthcare centre",
-      cta: "Learn more",
-      targetBlank: true,
-      link: "/",
-    },
-    {
-      _id: 6,
-      title:
-        "Indian innovative market leader of industrial connection technology and electronic Interface systems finalises contract with GITL for Infor Implementation ",
-      cta: "Learn more",
-      targetBlank: true,
-      link: "/",
-    },
-    {
-      _id: 7,
-      title:
-        "GITL closes the contract with Saudi Cargo Handler for D365 Implementation",
-      cta: "Learn more",
       targetBlank: true,
       link: "/",
     },
