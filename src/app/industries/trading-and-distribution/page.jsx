@@ -24,10 +24,16 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Overcoming tight delivery deadline constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Addressing global sourcing strategy complexities", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Mitigating supplier non-compliance risks", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Resolving supply chain visibility gaps", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Managing complex inventory fluctuations", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Streamlining sales order and invoice tracking processes", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 7, title: "Coping with stock management and transfer inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 8, title: "Navigating diverse product line complexities", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 9, title: "Retaining channel partner loyalty amidst competitive pressures", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 10, title: "Enhancing sales team productivity and performance", icon: '/upgradeCloud/icons/ico--target.svg' },
     ];
 
     const tabs = [
@@ -450,19 +456,19 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-                desc=""
+                title="Effective Operation Management for Trading & Distribution Businesses"
+                desc="Streamlining logistics, optimizing inventory and enhancing supply chain visibility"
                 cta="Let's Connect"
                 width="60%"
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
             />
-            <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+            <OverviewSection Text={`We offer effective solutions for trading and distribution businesses, ensuring warehouse governance, maximum perfect order fulfilment and optimized distribution operations for customers.`} />
 
             <SectionWrapper BGColor="black">
                 <div className="md:container mx-auto">
                     <SectionHeading
                         Color="white"
-                        Heading="Challenges Faced by Manufacturing Businesses"
+                        Heading="Knocking Business Challenges"
                         Desc=""
                     ></SectionHeading>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -35,7 +35,7 @@ export default function Home() {
   const count1 = useScrollTriggeredCountUp(ref1, 25); // Count-up from 0 to 25
   const count2 = useScrollTriggeredCountUp(ref2, 500); // Count-up from 0 to 500
   const count3 = useScrollTriggeredCountUp(ref3, 15); // Count-up from 0 to 15000 (15k)
-  const count4 = useScrollTriggeredCountUp(ref4, 15); // Count-up from 0 to 15000 (15k)
+  const count4 = useScrollTriggeredCountUp(ref4, 1000); // Count-up from 0 to 15000 (15k)
 
 
   const [showModal1, setshowModal1] = useState(false);
@@ -47,45 +47,69 @@ export default function Home() {
   const items = [
     {
       id: 1,
-      content: "manufacturing"
+      content: "manufacturing business"
     },
     {
       id: 2,
-      content: "technology"
+      content: "retail business"
     },
     {
       id: 3,
-      content: "energy"
+      content: "project business"
+    },
+    {
+      id: 4,
+      content: "professional service business"
+    },
+    {
+      id: 5,
+      content: "healthcare organisation"
     }
   ];
 
   const items2 = [
     {
       id: 4,
-      content: "reliable"
+      content: "smart factory"
     },
     {
       id: 5,
-      content: "customer-centric"
+      content: "omnicahnnel expertise"
     },
     {
       id: 6,
-      content: "sustainability-driven "
+      content: "agility"
+    },
+    {
+      id: 7,
+      content: "client centric approach"
+    },
+    {
+      id: 8,
+      content: "streamlined operations"
     }
   ]
 
   const items3 = [
     {
       id: 7,
-      content: "confidence"
-    },
-    {
-      id: 8,
       content: "agility"
     },
     {
+      id: 8,
+      content: "customer loyalty"
+    },
+    {
       id: 9,
-      content: "responsibility "
+      content: "delivery speed /profit margins"
+    },
+    {
+      id: 10,
+      content: "market competitiveness"
+    },
+    {
+      id: 11,
+      content: "quality care"
     }
   ];
 
@@ -100,8 +124,8 @@ export default function Home() {
       ),
     },
     {
-      title: "Industry",
-      value: "industry",
+      title: "Industries",
+      value: "industries",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
           <IndustryContent />
@@ -113,7 +137,7 @@ export default function Home() {
       value: "partners",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-          <IndustryContent />
+          <ParternerContent />
         </div>
       ),
     },
@@ -144,9 +168,9 @@ export default function Home() {
     {
       imageURL: "",
       title: "",
-      heading: "Electrical Component Manufacturer",
+      heading: "Speedy Analytics Report Generation",
       description:
-        "Infor LN reduces manual efforts by 30% for auto sector's leading electrical component manufacturer",
+        "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -156,9 +180,9 @@ export default function Home() {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Hydraulic Systems Manufacturer",
+      heading: "Positive ROI with Cloud Transition",
       description:
-        "Infor LN achieves Enhanced User Experience and Workforce Enablement for Global Hydraulic Systems Manufacturer",
+        "Prominent American watch and lifestyle distribution organization achieves increase in uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
@@ -166,9 +190,9 @@ export default function Home() {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Sheet metal manufacturer",
+      heading: "Infor CloudSuite Managed Support Services ",
       description:
-        "Infor cuts costs by 40% and boosts after-sales speed by 20% for European sheet metal manufacturer",
+        "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -179,31 +203,52 @@ export default function Home() {
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Infor Managed Support Services",
-      cardDesc: 'In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.',
-      designation: 'Manager',
-      companyName: 'Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer'
+      cardHeading: "79% Cut down in Purchase Order Processing",
+      cardDesc: 'GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.',
+      designation: '-	IT Director,',
+      companyName: 'Cooling Facility Management Company'
     },
     {
       id: 2,
-      cardHeading: "Implementation with Better Business Understanding",
-      cardDesc: 'Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.',
-      designation: 'IT Manager',
-      companyName: 'Global Process Equipment Supplier'
+      cardHeading: "Effective finance and budgeting management",
+      cardDesc: 'GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.',
+      designation: '-	IT Director',
+      companyName: 'Saudi Arabia’s Leading Engineering & Construction Service Provider'
     },
     {
       id: 3,
-      cardHeading: "Swift Implementation with Proactive Approach",
-      cardDesc: 'Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.',
-      designation: 'Executive Director',
-      companyName: 'Commercial'
+      cardHeading: "3.	Salesforce Implementation against Tight Deadline ",
+      cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
+      designation: '- Operations Head',
+      companyName: 'India’s Security Solutions Company'
     },
   ];
 
+  const BusinessTransformationDrive_DATA = [
+    {
+      id: 1,
+      cardTitle:"",
+      cardHeading: "Embrace Tomorrow with AUTOMATION",
+      cardDesc: 'Accelerate operations, drive innovation and increase accuracy with AI powered solutions',
+    },
+    {
+      id: 2,
+      cardTitle:"",
+      cardHeading: "Experience New Business Dimensions with CLOUD",
+      cardDesc: 'Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility',
+    },
+    {
+      id: 3,
+      cardTitle:"",
+      cardHeading: "Leverage Key Drivers of Growth with Digital Transformation Solutions",
+      cardDesc: 'Enhance business productivity and modernize stakeholder experience with streamlined operations',
+    },
+  ]
+
   const sliderData = [
-    { id: 1, title: 'EnterPrise Customers', desc: "Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solutions", url: 'https://png.pngtree.com/background/20230512/original/pngtree-business-meeting-room-dark-background-picture-image_2502832.jpg' },
-    { id: 2, title: 'EnterPrise Customers2', desc: "Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solutions2", url: 'https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg' },
-    { id: 3, title: 'EnterPrise Customers3', desc: "Europe's Leading Machine Manufacturer Achieves Better Control on Product Customization & Planning with Integrated Infor LN 10.4 Solution3", url: 'https://images.prismic.io/hubtic/3890db0a-cd65-45bb-8ac6-f08b971e68cb_Website+Go%CC%88rselleri+1080x608+%281%29.jpg?auto=compress,format&rect=135,0,811,608&w=2000&h=1500' },
+    { id: 1, title: 'Automation Project Insight', desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer", url: 'https://png.pngtree.com/background/20230512/original/pngtree-business-meeting-room-dark-background-picture-image_2502832.jpg' },
+    { id: 2, title: 'Cloud Project Insight', desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ", url: 'https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg' },
+    { id: 3, title: 'Transformation Project Insight', desc: "8 years of Infor managed support services and migration for MT Infor cloud optimises operational cost by 25 for Europe’s maritime service provider", url: 'https://images.prismic.io/hubtic/3890db0a-cd65-45bb-8ac6-f08b971e68cb_Website+Go%CC%88rselleri+1080x608+%281%29.jpg?auto=compress,format&rect=135,0,811,608&w=2000&h=1500' },
 
   ]
 
@@ -355,7 +400,7 @@ export default function Home() {
       <div className=" relative z-2 bg-white" style={{ borderBottomLeftRadius: '24px', borderBottomRightRadius: "24px" }}>
         <div className="md:container mx-auto pt-32 pb-40">
           <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
-            We must move beyond the usual to thrive.
+          Strategic Digital Transformation across Industries
           </p>
           <div className="text-[64px] leading-[74px] font-semibold">
             Transform your&nbsp;
@@ -370,7 +415,7 @@ export default function Home() {
               <span className="text-[#5F22D9]">{items[index].content}</span>
             </motion.div>
             &nbsp;<br></br>
-            organization into a&nbsp;
+            with &nbsp;
             <motion.div
               key={items2[index].id}
               initial={{ y: 20, opacity: 0 }}
@@ -379,9 +424,9 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
               style={{ display: 'inline-block' }}
             >
-              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>
+              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>, 
             <br></br>
-            delivering with  <motion.div
+            enhancing <motion.div
               key={items3[index].id}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -406,24 +451,24 @@ export default function Home() {
 
       {/* innovative section */}
       <SectionWrapperNew
-        sectionHeading={"Transforming Through Innovative Change"}
-        sectionDesc={"Empowering Your Transformation Journey with Our ACT Model: Automation, Cloud, and Transformation"}
+        sectionHeading={"ACT based Approach for Leading Future Ready Business"}
+        sectionDesc={"Value – Driven Solutions for Tomorrow's Opportunities"}
         sectionTextColor="black"
         sectionHeadingLayout="horizontal"
-        title="THE ACT MODEL - AUTOMATION"
+        title="Business Transformation Drive"
         style={{ backgroundColor: "white", position: 'relative', zIndex: '2', height: '750px' }}
       >
 
 
         <Slider slidesPerView={3}>
-          {[1, 2, 3, 4, 5]?.map((item, index) => (
+          {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-8 bg-[#5F22D9] rounded-3xl ">
                 <div className="text-xl text-white text-semibold mb-[100px]">
-                  Automation
+                  item.cardtitle
                 </div>
-                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">Streamline Your Operations</div>
-                <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">Harness the power of automation to optimize processes and drive efficiency.</div>
+                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">item.cardHeading</div>
+                <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">item.cardDesc</div>
                 <div className="flex justify-end px-6 py-4">
                   <OutlinedButtonWithArrow arrowColor={'white'} size={48} onClick={() => setshowModal1((prev) => !prev)} />
                 </div>
@@ -438,7 +483,7 @@ export default function Home() {
       {/* hub of experties */}
       <SectionWrapperNew
         sectionHeading={"Hub of Expertise"}
-        sectionDesc={"We are here to build edge and bring technology brilliance with the finest in the industry."}
+        sectionDesc={"We are here to build and edge and bring technology brilliance with the finest in the industry."}
         sectionTextColor="white"
         sectionHeadingLayout="center"
         style={{ background: "linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)", paddingTop: '400px' }}
@@ -446,19 +491,19 @@ export default function Home() {
         <div className="grid grid-cols-4 gap-16 py-6">
           <div className="" ref={ref1}>
             <h1 className="text-[96px] font-[700] text-white">{count1}<sup className="text-normal">+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">A Legacy of Success in Delivering Tailored Solutions for 25+ Years</p>
+            <p className="text-base font-medium text-[#EFE9FB]">Years in Business</p>
           </div>
           <div className="" ref={ref2}>
             <h1 className="text-[96px] font-[700] text-white">{count2}<sup>+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Trusted by 898 Customers Across multiple Industries.</p>
+            <p className="text-base font-medium text-[#EFE9FB]">Customers Worldwide</p>
           </div>
           <div className=""  ref={ref3}>
             <h1 className="text-[96px] font-[700] text-white">{count3}k<sup>+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Harnessing 15,000 Man-Years of Expertise for Your Benefit.</p>
+            <p className="text-base font-medium text-[#EFE9FB]">Man years of Experience</p>
           </div>
           <div className=""  ref={ref4}>
-            <h1 className="text-[96px] font-[700] text-white">{count4}k<sup>+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Fueled by a Diverse Workforce of 15000 Employees Globally.</p>
+            <h1 className="text-[96px] font-[700] text-white">{count4}<sup>+</sup></h1>
+            <p className="text-base font-medium text-[#EFE9FB]">Implementation Sites</p>
           </div>
         </div>
 
@@ -470,10 +515,10 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-        sectionHeading={"Unlock potential with our offerings"}
-        sectionDesc={"Innovative solutions that empower businesses to thrive in today’s digital landscape"}
+        sectionHeading={"Focused Cluster "}
+        sectionDesc={"Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."}
         sectionTextColor="black"
-        title="OUR OFFERINGS"
+        title="Count on Us"
         sectionHeadingLayout="horizontal"
         style={{ background: 'white' }}
       >
@@ -489,9 +534,9 @@ export default function Home() {
       <BlogSection
         ID={"blog"}
         blogImageUrl={'/homeNew/blog-svg.png'}
-        Heading={"Elevate Your Professional Journey"}
+        Heading={"Step Up in Your Professional Journey"}
         Desc={
-          "Join a collaborative environment that fosters creativity and innovation. Take the next step in your career today!"
+          "Work alongside talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
         }
         Color={"white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
@@ -499,7 +544,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <ReviewSliderSection 
         ID={"TESTIMONIALS"}
-        Heading={"What people are saying about the us."}
+        Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESS EXPERIENCE"}
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
@@ -507,9 +552,9 @@ export default function Home() {
       ></ReviewSliderSection>
 
       <TransformBusinessForm
-        Title={"Are you Ready for Infor-driven growth? "}
+        Title={"Transform your Business with Us"}
         Desc={
-          "Let's get started!"
+          "Let ‘s discuss how our ACT (Automation, Cloud and Digital Transformation) solutions can help you with rapid growth."
         }
       ></TransformBusinessForm>
 
@@ -560,13 +605,44 @@ const ServiceContent = () => {
 
 const IndustryContent = () => {
   const data = [
-    'Business Consulting',
-    'Implementation & Global Rollout',
-    'Migration & Transformation',
-    'Legacy Modernisation',
-    'Infrastructure as a Service',
-    'Managed Services',
+    'Manufacturing',
+    'Retail',
+    'Trading & Distribution',
+    'Healthcare',
+    'Professional Service',
+    'Project',
   ];
+ 
+  return (
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
+        {data.map((item) => (
+          <>
+            <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+              {item}
+              <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+            </div>
+          </>
+        ))}
+
+      </div>
+      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      </div>
+    </div>
+  );
+};
+
+const ParternerContent = () => {
+  const data = [
+    'Microsoft  ',
+    'Infor  ',
+    'Oracle  ',
+    'Salesforce  ',
+    'LS Retail  ',
+    'Automation Anywhere ',
+    'Ui Path',
+  ];
+ 
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
