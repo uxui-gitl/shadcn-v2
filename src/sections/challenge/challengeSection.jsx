@@ -34,14 +34,14 @@ const ChallengeSection = ({
                                     <div className="flex-shrink-0 mr-4">
                                         <Image
                                             src={challenge.icon}
-                                            alt={`${challenge.title} icon`}
+                                            alt={`${challenge?.title} icon`}
                                             width={32}
                                             height={32}
                                         />
                                     </div>
                                     <div className="text-left">
                                         <h3 className="text-2xl font-normal">
-                                            {challenge.title}
+                                            {challenge?.title}
                                         </h3>
                                     </div>
                                 </li>

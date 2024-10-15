@@ -1,7 +1,6 @@
 'use client';
 "use client";
-import React from "react";
-
+import React, { useState } from "react";
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
@@ -12,45 +11,55 @@ import BenefitSliderSection from "@/sections/benefitSlider/BenefitSliderSection"
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import ChallengeSection from "@/sections/challenge/challengeSection";
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+import Image from "next/image";
+import Slider from "@/components/Slider";
+import { SwiperSlide } from "swiper/react";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import HorizontalHeading from '@/components/HorizontalHeading';
 
 
 const D365Commerce = () => {
+  const [iskeyModalActive, setIskeyModalActive] = useState(false);
+  const [keyModalData, setkeyModalData] = useState();
+
+
+
   const blogImageUrl = "/ai-ml/blog-bg.png";
   const imgBGURL_Challenges =
     "/upgradeCloud/backgrounds/bg--onprem-challenges-left.png";
-    const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
-  
-  
+  const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
+
+
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      icon:'',
+      icon: '',
       cardDesc: "Reduce complexity and total cost of ownership with a unified commerce platform.",
     },
     {
       id: "2",
-      icon:'',
+      icon: '',
       cardDesc: "AI-based suggestions for cross-selling and up-selling that improves customer buying propositions.",
     },
     {
       id: "3",
-      icon:'',
+      icon: '',
       cardDesc: "Strengthened commerce operations and customer experiences with omnichannel selling and real-time inventory visibility.",
     },
     {
       id: "4",
-      icon:'',
+      icon: '',
       cardDesc: "Open access to full product catalogues and advanced in-built tools for proactive actions and decision-making.",
     },
     {
       id: "5",
-      icon:'',
+      icon: '',
       cardDesc: "Connected view of marketing and commerce operations for improved coordination.",
     },
     {
       id: "6",
-      icon:'',
+      icon: '',
       cardDesc: "Engaging digital storefronts with user-friendly web authoring and development tools.",
     },
   ];
@@ -64,6 +73,28 @@ const D365Commerce = () => {
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Manufacturing
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>industrial Manufacturing   </li>
+            <li>Automotive OEM/ Suppliers </li>
+            <li>High-Tech Electronics  </li>
+            <li>Refinery, Petro-Chemical and Process Equipment   </li>
+            <li>Aerospace & Defense Equipment   </li>
+            <li>Ship Design, Building and Repairs   </li>
+            <li>Infrastructure / EPC with Turnkey and BOOT BOLT </li>
+        </ol>
+    </li>
+     <li>
+        Industrial Manufacturing 
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Automotive OEM/ Suppliers</li>
+            <li>High-Tech Electronics  </li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 2,
@@ -101,7 +132,7 @@ const D365Commerce = () => {
       isArrow: false,
       cardTextColor: "white",
     },
-    
+
     // Add more cards as needed
   ];
 
@@ -164,6 +195,34 @@ const D365Commerce = () => {
         "We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.",
       isArrow: "true",
       link: [],
+      additionalData:`
+<ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        List item one
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>You might feel like you are being really "organized" o</li>
+            <li>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</li>
+            <li>Nesting tons of folders in your source code is also not helpful.</li>
+        </ol>
+    </li>
+    <li>
+        List item two
+        <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>I'm not sure if we'll bother styling more than two levels deep.</li>
+            <li>Two is already too much, three is guaranteed to be a bad idea.</li>
+            <li>If you nest four levels deep you belong in prison.</li>
+        </ul>
+    </li>
+    <li>
+        List item three
+        <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Again please don't nest lists if you want</li>
+            <li>Nobody wants to look at this.</li>
+            <li>I'm upset that we even have to bother styling this.</li>
+        </ul>
+    </li>
+</ul>
+`
     },
 
     {
@@ -211,6 +270,13 @@ const D365Commerce = () => {
   ];
 
 
+  function handleKeyModal(val, item) {
+    setkeyModalData('');
+    setIskeyModalActive(val);
+    setkeyModalData(item)
+  }
+
+
   return (
     <>
       {/* Start--HeroBanner-Section========================================================= */}
@@ -222,72 +288,95 @@ const D365Commerce = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      {/* End--HeroBanner-Section=========================================================== */}
-
-      {/* Start--Section-Navigation-Section============================================================== */}
-      <SectionNav
-        // Solutions
-        // Benefits
-        // Why Us
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-
-      {/* End--Section-Navigation-Section================================================================ */}
-
-      {/* Start--Overview-Section============================================================== */}
       <OverviewSection
         Text={
           "Dynamics 365 Commerce enables seamless omnichannel experiences, integrating back-office, in-store, call center, and digital, driven by consumer insights."
         }
       />
-      {/* End--Overview-Section================================================================ */}
 
-              {/* Start--Section--Challenges======================================================================== */}
-      <ChallengeSection
-        setHeading="Retail Business Challenges"
-        setDesc="Retailers face a pressing need to evolve with tech-savvy customers, prioritizing personalized connections and seamless interactions."
-        setColor="#FFFFFF"
-        setImageBGURL={imgBGURL_Challenges}
-        setChallengeList = {CHALLENGES_LIST_DATA}
-      />
+      {/* Start--Section--Challenges======================================================================== */}
+      <SectionWrapperNew
+        sectionHeading={'Challenges Faced by Manufacturing Businesses'}
+        sectionDesc={''}
+        sectionTextColor={'#000'}
+        sectionHeadingLayout="left"
+        style={{ background: `url('/Transformation/d365/chbg1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ul className=" space-y-4 w-full text-[#000]">
+            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+              <li
+                key={challenge.id}
+                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+              >
+                <div className="flex-shrink-0 mr-4">
+                  <Image
+                    src={challenge.icon}
+                    alt={`${challenge.title} icon`}
+                    width={32}
+                    height={32}
+                    style={{ filter: "brightness(0)" }}
+                  />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-2xl font-normal">
+                    {challenge.title}
+                  </h3>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div>
+            {/* <img src="/about/video.png" /> */}
+          </div>
+        </div>
+      </SectionWrapperNew>
       {/* End--Section--Challenges======================================================================== */}
-{/* Start--Section--UltimateChoice======================================================================== */}
-       <SectionWidthSlider
-        ID={"ULTIMATE_CHOICE_DATA"}
-        sectionHeading={"Why Cloud is your Ultimate Choice?"}
-        sectionDesc={
-          "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
-        }
-        sectionTextColor="#ffffff"
-        cardData={KEY_CAPABILITIES}
-        sectionBGColor="#2B1624"
-        setHeadingLayout="horizontal"
+      {/* Start--Section--UltimateChoice======================================================================== */}
+      {/* key section */}
+      <div className="" style={{overflow:'hidden', position:'relative'}}>
+        <div className="py-16 rounded-3xl sm:py-32 px-10" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
+          <div className="md:container mx-auto">
+            <HorizontalHeading heading={'Why Cloud is your Ultimate Choice?'} desc={'With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics.'} textColor={'#fff'} ></HorizontalHeading>
+            <Slider slidesPerView={3.2}>
+            {KEY_CAPABILITIES?.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="p-6 bg-[transparent] relative" style={{ borderRight: '1px solid #d3d3d3' }}>
+                  <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                  <div className="text-[28px] text-white h-[84px]">{item?.CardHeading}</div>
+                  <p className="text-[16px] py-4 text-white h-[104px]">{item?.CardDesc}</p>
+                  <div className="flex justify-end bottom-4 right-4">
+                    <OutlinedButtonWithArrow size={48} arrowColor="white" onClick={() => handleKeyModal(true, item)} />
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Slider>
+          </div>
+        </div>
 
-      />
+        {/* additional data flip card */}
+        <div className={`bg-[white] z-10 py-10 px-10 rounded-3xl h-full w-full duration-200 left-0  absolute  ${iskeyModalActive ? '-translate-y-[95%]' : 'translate-y-full'}`} style={{backgroundImage: "linear-gradient(white 50%, #DCCFF6 100%)"}}>
+          <div className="flex justify-between pb-20">
+          <Image src={"/about/whiteStar.svg"} width={50} height={50} alt={"hioasdo"} style={{filter:'brightness(0)'}} className="" />
+            <h1 onClick={() => handleKeyModal(false)}>close</h1>
+            </div>
+            {/* heading */}
+            <div className="">
+            <HorizontalHeading heading={keyModalData?.CardHeading} desc={keyModalData?.CardDesc} textColor={'#000'} ></HorizontalHeading>
+              </div>
+              <div className="">
+              <p dangerouslySetInnerHTML={{ __html: keyModalData?.additionalData }} />
+                </div>
+        </div>
+      </div>
+      {/* end key section */}
+
       {/* End--Section--UltimateChoice======================================================================== */}
-     
-      {/* Start--Industry-Spotlight-Section============================================================== */}
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
-      {/* End--Industry-Spotlight-Section================================================================ */}
 
-      
+      {/* Start--Industry-Spotlight-Section============================================================== */}
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT}  />
+      {/* End--Industry-Spotlight-Section================================================================ */}
 
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
@@ -303,12 +392,12 @@ const D365Commerce = () => {
       />
       {/* End--Benefits-Section================================================================ */}
 
-      
 
 
-     
 
-      
+
+
+
 
       {/* Start--Blogs-Section============================================================== */}
       <BlogSection
@@ -332,7 +421,7 @@ const D365Commerce = () => {
         }
       ></DistinctiveSection>
       {/* End--Distinctive-Section================================================================ */}
-     
+
 
       {/* Start--Transform-Business-Form-Section============================================================== */}
       <TransformBusinessForm

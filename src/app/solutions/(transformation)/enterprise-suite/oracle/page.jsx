@@ -11,6 +11,12 @@ import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+import { SwiperSlide } from "swiper/react";
+import Slider from "@/components/Slider";
+import Image from "next/image";
+
 const page = () => {
   const DISTINCTIVE_DATA = [
     {
@@ -33,7 +39,7 @@ const page = () => {
       desc: "Committed to increase operations productivity and business performance",
       icon: "",
     },
-    
+
   ];
   const blogImageUrl = "/ai-ml/blog-bg.png";
   const INDUSTRY_SPOTLIGHT = [
@@ -83,87 +89,55 @@ const page = () => {
       isArrow: false,
       cardTextColor: "white",
     },
-    
+
     // Add more cards as needed
   ];
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'' ,cardDesc: 'Centralized data for insightful multidimensional reporting.' },
-    { id: '2', icon:'' ,cardDesc: 'Accelerated business operation with regulatory compliance.' },
-    { id: '3', icon:'' ,cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
-    { id: '4', icon:'' ,cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
-    { id: '5', icon:'' ,cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
-    { id: '6', icon:'' ,cardDesc: 'Unified financial management and streamlined procurement' },
-    { id: '7', icon:'' ,cardDesc: 'Efficient project management and enhanced human capital management' },
+    { id: '1', icon: '', cardDesc: 'Centralized data for insightful multidimensional reporting.' },
+    { id: '2', icon: '', cardDesc: 'Accelerated business operation with regulatory compliance.' },
+    { id: '3', icon: '', cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
+    { id: '4', icon: '', cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
+    { id: '5', icon: '', cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
+    { id: '6', icon: '', cardDesc: 'Unified financial management and streamlined procurement' },
+    { id: '7', icon: '', cardDesc: 'Efficient project management and enhanced human capital management' },
   ];
-  const ultimateChoiceData = [
+  const keyResponsibilityData = [
     {
-      id: 1,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#fff',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Financial Management",
-      CardDesc:
+      title: "Financial Management",
+      desc:
         "Track income, expenses and assets while ensuring tax compliance and enhancing forecasting precision.",
-      isArrow: "",
-      link: [],
     },
 
     {
-      id: 2,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#fff',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Supply chain Management",
-      CardDesc:
+      title: "Supply chain Management",
+      desc:
         "Monitor and manage information and services, spanning from procurement of raw materials to delivery of the final product.",
-      isArrow: "",
-      link: [],
     },
     {
-      id: 3,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#fff',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Human Capital Management",
-      CardDesc:
+      title: "Human Capital Management",
+      desc:
         "Experience unified user experience, harmonized data model and integrated processes with an AI-infused infrastructure.",
-      isArrow: "",
-      link: [],
+     
     },
     {
-      id: 4,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#fff',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
-      CardDesc:
+      title: "Sample Heading",
+      desc:
         "Highest levels of security and privacy, ensuring data is safeguarded",
-      isArrow: "",
-      link: [],
     },
   ];
-  const RPASolution = [
+  const oracleOfferingData = [
     {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Business Consulting & Implementation',
       cardDesc: 'Expert guidance for business transformation through strategic assessment and seamless implementation.',
-      isArrow: true,
-      cardTextColor: 'white',
-      cardType: 1,
+      cardHoverData:[
+        'Strategic Assessment',
+        'Solution Design',
+        'Implementation',
+        'Training and Change Management',
+      ]
     },
     {
 
@@ -172,9 +146,11 @@ const page = () => {
       cardBGColor: '#000',
       cardHeading: 'Oracle Cloud Integration Services',
       cardDesc: 'Integrate Oracle Cloud solutions effortlessly, enabling enhanced productivity.',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
+      cardHoverData:[
+        'Middleware Implementation',
+        'Electronic Data Interchange Implementation',
+        'API-led Integration',
+      ]
     },
     {
 
@@ -183,9 +159,12 @@ const page = () => {
       cardBGColor: '#7F4EE1',
       cardHeading: 'Oracle Database Management',
       cardDesc: 'Optimize database performance and security with expert management services.',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
+      cardHoverData:[
+        'Design & Development of Database Model',
+        'Disaster Recovery Services',
+        'Maintenance',
+        'Upgrades and Migrations',
+      ]
     },
     {
 
@@ -194,9 +173,11 @@ const page = () => {
       cardBGColor: '#EFE9FB',
       cardHeading: 'Quality Assurance Service',
       cardDesc: 'Ensure solution reliability and performance with comprehensive testing services.',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
+      cardHoverData:[
+        'Security Testing',
+        'Performance Testing',
+        'Test Data Management ',
+      ]
     },
     {
 
@@ -205,12 +186,16 @@ const page = () => {
       cardBGColor: '#EFE9FB',
       cardHeading: 'Managed Services',
       cardDesc: 'Outsource IT operations to our experts, ensuring proactive monitoring and continuous improvement.',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
+      cardHoverData:[
+        'Enterprise Application Management',
+        'Cloud Migration Services',
+        'Agile Product Lifecycle Management Services',
+        'Application Outsourcing',
+        'Database Services',
+      ]
     },
-    
-  ]
+
+  ];
   return (
     <>
       <EntIntro
@@ -222,48 +207,83 @@ const page = () => {
       />
 
       <OverviewSection Text={`Oracle Cloud's autonomous capabilities enable self-driving databases, automated security and streamlined operations. Businesses can reduce total cost of ownership and realize faster time-to-market.`} />
+      <SectionWrapperNew
+        sectionHeading={'Oracle Fusion Cloud'}
+        sectionDesc={'Transform businesses into information-driven enterprises through AI-powered solutions and continuous updates.'}
+        sectionTextColor={'#000'}
+        sectionHeadingLayout="left"
 
-      <SectionWrapper BGColor="#a0efe5db">
-        <div className="md:container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <SectionHeading
-              headingContainerWidth="w-full"
-              Heading="Oracle Fusion Cloud"
-              Desc={'Transform businesses into information-driven enterprises through AI-powered solutions and continuous updates.'}
-            >
+        style={{
+          backgroundImage: `url(${`/solution/transformation/oracle/ofc-bg.svg`})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+      </SectionWrapperNew>
+      {/* our offering section */}
 
-            </SectionHeading>
-          </div>
-          <div className="hidden md:block">
-            <img src="/ai-ml/Industry-served_Automotive.jpg" width="100%" style={{ maxHeight: '300px' }} />
-          </div>
-        </div>
-
-      </SectionWrapper>
-
-      <CommonCardTwoSlider
-        ID={'AIOfferings'}
-        sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+      <SectionWrapperNew
         sectionHeading={'Our Oracle Offerings'}
         sectionDesc={'We offer comprehensive Oracle services that help organizations to achieve their goals. Our expert consultants provide everything from strategic guidance to optimized support.'}
         sectionTextColor={'#000'}
-        sectionHeaderMaxWidth={'40%'}
-        cardData={RPASolution}
-      >
-      </CommonCardTwoSlider>
-      <SectionWidthSlider
-        ID={"ultimateChoiceData"}
-        sectionHeading={"Key Capabilities"}
-        sectionDesc={
-          "Streamline finance, HR, supply chain and customer experience with Oracle Fusion Cloud's integrated solutions. "
-        }
-        sectionTextColor="white"
-        cardData={ultimateChoiceData}
-        sectionBGColor="#7B014E"
-        setHeadingLayout="horizontal"
+        sectionHeadingLayout="left"
 
-      />
+        style={{ backgroundColor: '#E1F2EF' }}
+      >
+
+        <Slider slidesPerView={3.2}>
+          {oracleOfferingData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div class="max-w-sm bg-[black] rounded-3xl group overflow-hidden relative" >
+                <div className="py-10 px-10 ">
+                  <h5 class="mb-6 text-[42px] font-semibold text-white leading-[50px] min-h-[150px]">{item?.cardHeading}</h5>
+                  <p class="mb-3 text-[16px] font-medium text-white min-h-[72px]">{item?.cardDesc}</p>
+                </div>
+               {item?.cardHoverData && (
+                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                  <div className="">
+                    <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                      {item?.cardHoverData.map((item2) => (
+                        <>
+                      <li>
+                        <span class="font-semibold text-black">{item2}</span>
+                      </li>
+                        </>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+               )} 
+             
+              </div>
+
+            </SwiperSlide>
+          ))}
+        </Slider>
+
+      </SectionWrapperNew>
+          {/* our offering section wnd*/}
+{/* key responsibility */}
+        <SectionWrapperNew
+        sectionHeading={'Key Capabilities'}
+        sectionDesc={`Streamline finance, HR, supply chain and customer experience with Oracle Fusion Cloud's integrated solutions.`}
+        sectionTextColor={'#fff'}
+        sectionHeadingLayout="horizontal"
+        style={{ backgroundColor: '#5F22D9' }}
+      >
+
+        <Slider slidesPerView={3.2}>
+          {keyResponsibilityData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                <div className="text-[28px] text-white">{item?.title}</div>
+                <p className="text-[20px] py-4 text-white">{item?.desc}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
 
       <BenefitSliderSection
         ID={'BENEFIT'}
@@ -275,14 +295,13 @@ const page = () => {
         sectionHeadingMaxWidth={'100%'}
       />
 
- 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'We serve diverse industries, addressing unique challenges and delivering tailored Oracle solutions to drive transformation.'}/>
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'We serve diverse industries, addressing unique challenges and delivering tailored Oracle solutions to drive transformation.'} />
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
         Heading={"Leverage Database Potential with Oracle Cloud"}
         Desc={
-          "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. This article explores the essence of Oracle Cloud Integration and how it facilitates database optimization and cloud-driven innovations."
+          "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. "
         }
         Color={"white"}
       ></BlogSection>

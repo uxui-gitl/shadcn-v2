@@ -9,6 +9,11 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import { SwiperSlide } from "swiper/react";
+import Slider from "@/components/Slider";
+import CommonCardThree from "@/components/CommonCardThree";
 
 const page = () => {
 
@@ -39,24 +44,24 @@ const page = () => {
 
   const blogImageUrl = "/ai-ml/blog-bg.png";
 
-  const CASE_STUDIES_DATA = [
+  const casestudy = [
     {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Elevating Customer Experience",
+      heading: "Delivering Results that Matter",
       description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "The world’s top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "360° view of Customer and Integrated Business Processes  ",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
-      link: "/case-study-1",
+        "Indian Offices of Leading Metal Plate Cutting Machine Manufacturer Gains 360 degree of Customer and transactional data   with Infor CRM Solution",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Metal-Plate-Machine-Manufacturer.pdf",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -220,51 +225,90 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={'Built on a scalable, cloud-based platform, Infor CRM integrates seamlessly with Infor ERP, providing real-time visibility into customer interactions, sales and service. Tailored solutions for manufacturing, distribution, healthcare and more.'} />
-      {/* <SectionWrapper BGColor="black">
-        <div className="md:container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="hidden md:block">
-              <img src="/about/video.png" />
+
+      <SectionWrapperNew
+        style={{ backgroundColor: '#1D162B' }}
+        sectionHeading={'Infor CRM Key Capabilities'}
+        sectionDesc={'We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.'}
+        sectionTextColor={'white'}
+        sectionHeadingLayout={'left'}>
+          <Slider>
+          {serviceOfferingData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <CommonCardThree Item={item}></CommonCardThree>
+            </SwiperSlide>
+          ))}
+           </Slider>
+      </SectionWrapperNew>
+
+      {/* case studies */}
+      <SectionWrapperNew
+        style={{ backgroundColor: '#D3D3D3' }}
+        sectionHeading={''}
+        sectionDesc={''}
+        sectionTextColor={'white'}
+        sectionHeadingLayout={'left'}>
+        <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]">
+          {/* video */}
+          <div
+            className="relative md:w-full  h-full rounded-3xl p-8 flex flex-col justify-end"
+            style={{
+              color: casestudy[0].color,
+              overflow: "hidden", // Ensures no overflow from the video
+            }}
+          >
+            <video
+              src={casestudy[0].videoURL} // Replace with your video path
+              autoPlay
+              loop
+              muted
+              className="absolute inset-0 w-full h-full object-cover z-0"
+            />
+            <div className="absolute inset-0 z-10">
+              {/* Gradient overlay covering the bottom 50% */}
+              <div
+                className="absolute bottom-0 left-0 w-full h-[80%] bg-gradient-to-t from-black to-transparent"
+                style={{ opacity: 1 }}
+              />
             </div>
-            <div>
-              <SectionHeading
-                Color="white"
-                headingContainerWidth="w-full"
-                Heading="Infor Intelligent Supply System"
-                Desc="Infor proudly presents the most extensive suite of global supply chain solutions, including the world's largest single-instance, multi-enterprise business network and comprehensive CloudSuite capabilities. These capabilities optimize supply chains from end to end, covering planning, procurement, orchestration and fulfillment. "
-              ></SectionHeading>
+            <div className="relative z-20  w-[70%] flex flex-col justify-end">
+              {" "}
+              {/* Ensure content is aligned at the bottom */}
+              <h3 className="text-base font-semibold mb-12">
+                {casestudy[0].title}
+              </h3>
+              <h1 className="text-5xl font-medium mb-6">
+                {casestudy[0].heading}
+              </h1>
+              <p className=" mb-4">{casestudy[0].description}</p>
             </div>
           </div>
+          {/* one  */}
+          <div
+            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            style={{ backgroundColor: "transparent" }}
+          >
+            <div
+              className="relative w-full h-full rounded-3xl p-8"
+              style={{
+                color: casestudy[1].color,
+                backgroundColor: casestudy[1].bgCardColor,
+              }}
+            >
+              <h1 className="w-[80%] text-2xl font-medium mb-6">
+                {casestudy[1].heading}
+              </h1>
+              <p className="mb-4">{casestudy[1].description}</p>
+
+              <div className="absolute bottom-4 right-4">
+                <OutlinedButtonWithArrow size={56} />
+              </div>
+            </div>
+
+          </div>
         </div>
-
-      </SectionWrapper> */}
-
-      {/* <SectionWidthSlider
-        ID={"ultimateChoiceData"}
-        sectionHeading={"Infor CRM Offerings"}
-        sectionDesc={
-          "Count on us for an impactful deployment that finely tunes Infor CRM to elevate your sales operations."
-        }
-        sectionTextColor="white"
-        cardData={ultimateChoiceData}
-        sectionBGColor="#5F22D9"
-        setHeadingLayout="horizontal"
-
-      /> */}
-
-      <CommonCardThreeSlider
-        ID={''}
-        sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
-        sectionHeading={'Infor CRM Key Capabilities'}
-        sectionDesc={"We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform."}
-        sectionTextColor={'#fff'}
-        cardData={serviceOfferingData}
-      >
-
-      </CommonCardThreeSlider>
-
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor={'#D3D3D3'} />
+      </SectionWrapperNew>
+      {/* end case studies */}
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
@@ -275,11 +319,11 @@ const page = () => {
         maxWidth={'50%'}
         Color={"white"}
       ></BlogSection>
-         <DistinctiveSection DistinctiveData={distinctiveData}
+      <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Partner with Godrej Infotech for exceptional customer experiences and streamlined sales & marketing operations'}
       >
       </DistinctiveSection>
-      
+
       <TransformBusinessForm
         Title={"Transform your Business with us"}
         Desc={

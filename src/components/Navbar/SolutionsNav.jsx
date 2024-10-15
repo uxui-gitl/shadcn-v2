@@ -284,7 +284,7 @@ const SolutionsNav = () => {
                       href: "/Solutions/Customer-Experience/Salesforce-CRM",
                     },
                     {
-                      label: "Magento - E com",
+                      label: "Ecommerce",
                       href: "/Solutions/Customer-Experience/Magento-Ecom",
                     },
                     {

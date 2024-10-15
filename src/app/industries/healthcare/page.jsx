@@ -11,11 +11,108 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
+import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
+import { Tabs } from "@/components/ui/tabs";
+import SectionWrapperNew from '@/components/SectionWrapperNew';
+
 
 
 function page() {
     const blogImageUrl = "/ai-ml/blog-bg.png";
 
+    const tabs = [
+        {
+            title: "Services",
+            value: "services",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <ServiceContent />
+                </div>
+            ),
+        },
+        {
+            title: "Industry",
+            value: "industry",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <IndustryContent />
+                </div>
+            ),
+        },
+        {
+            title: "Partners",
+            value: "partners",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <PartnersContent />
+                </div>
+            ),
+        },
+    ];
+    const SOLUTION_DATA = [
+        {
+            id: 1,
+            cardBGColor: "#F5B1DC",
+            cardHeading: "Dealer<br/>Management",
+            cardDesc:
+                "Require Development from Scratch. Customisation of manufacturing reports",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+        },
+        {
+            id: 2,
+            cardBGColor: "#FCE6F4",
+            cardHeading: "Value Manufacturing Process Management",
+            cardDesc:
+                "Require Development from Scratch. Customisation of manufacturing reports",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
+        },
+        {
+            id: 3,
+            cardBGColor: "#CDBAF3",
+            cardHeading: "Metal Recycling Operation Management",
+            cardDesc:
+                "Require Development from Scratch. Customisation of manufacturing reports",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
+        },
+        {
+            id: 4,
+            cardBGColor: "#E4E4E4",
+            cardHeading: "Strengthen Potential",
+            cardDesc:
+                "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+        },
+        {
+            id: 5,
+            cardBGImageUrl: "/rpa/ArtboardBg.png",
+            cardBGColor: "#EFE9FB",
+            cardHeading: "Enhance Flexibility",
+            cardDesc:
+                "Adapt to changing business needs without hiring and training new staff, saving time and expense",
+            isArrow: true,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+        },
+        {
+            id: 5,
+            cardBGImageUrl: "/rpa/ArtboardBg.png",
+            cardBGColor: "#EFE9FB",
+            cardHeading: "Reduce AHT (Average Handling Time)",
+            cardDesc:
+                "Enhance customer service quality, minimize response time and improve operational efficiency",
+            isArrow: false,
+            cardTextColor: "black",
+            cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-3.jpg",
+        },
+    ];
     const CHALLENGES_LIST_DATA = [
         { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
@@ -319,8 +416,22 @@ function page() {
                 </div>
 
             </SectionWrapper>
-
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+            {/* challenge end */}
+            
+                <SectionWrapperNew
+                sectionHeading={"Holistic and Future Ready"}
+                sectionDesc={"We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."}
+                sectionTextColor="black"
+                title="OUR OFFERINGS"
+                sectionHeadingLayout="center"
+                style={{ background: 'white' }}
+            >
+                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+                    <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
+                </div>
+            </SectionWrapperNew>
+ 
+            {/* act solution */}
 
             <div className="rounded-3xl" style={{ backgroundColor: '#1D162B', marginTop: '-35px' }}>
                 <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
@@ -366,6 +477,7 @@ function page() {
                                     <div className="p-5">
                                         <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
                                     </div>
+                                    <p className="text-[20px] font-medium">We measure our success, based on the tangible results we deliver for our customers.</p>
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -373,31 +485,11 @@ function page() {
                 </div>
             </div>
 
-            <SectionWrapper style={{ height: '800px' }}>
-                <SectionHeading
-                    center
-                    Heading={'Holistic and Future Ready'}
-                    Desc={'We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs.'}
-                ></SectionHeading>
+            {/* end services */}
 
-                <div class="w-full p-16 bg-[#F3F0FA] border-gray-200 rounded-3xl" style={{ transform: "translateY(27px)" }}>
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                        <div>
-                            <h5 class="mb-2 text-[42px] font-bold ">Automation</h5>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                            <p class="text-xl font-semibold py-5" style={{ borderBottom: '1px solid #808080' }}>Smart Manufacturing ERP</p>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                </div>
-            </SectionWrapper>
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
 
-            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} style={{paddingTop:'350px'}}/>
+            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"}  bgColor={'#d3d3d3'}/>
             
             <BlogSection
                 ID={"blog"}
@@ -424,5 +516,89 @@ function page() {
         </>
     )
 }
+
+const ServiceContent = () => {
+    const services = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {services.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
+
+const IndustryContent = () => {
+    const data = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {data.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
+
+const PartnersContent = () => {
+    const data = [
+        'Business Consulting',
+        'Implementation & Global Rollout',
+        'Migration & Transformation',
+        'Legacy Modernisation',
+        'Infrastructure as a Service',
+        'Managed Services',
+    ];
+    return (
+        <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="py-10 px-10">
+                {data.map((item) => (
+                    <>
+                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            {item}
+                            <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
+                        </div>
+                    </>
+                ))}
+
+            </div>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            </div>
+        </div>
+    );
+};
 
 export default page;
