@@ -133,12 +133,10 @@ const page = () => {
       cardHeading: 'Business Consulting & Implementation',
       cardDesc: 'Expert guidance for business transformation through strategic assessment and seamless implementation.',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Strategic Assessment',
+        'Solution Design',
+        'Implementation',
+        'Training and Change Management',
       ]
     },
     {
@@ -149,12 +147,9 @@ const page = () => {
       cardHeading: 'Oracle Cloud Integration Services',
       cardDesc: 'Integrate Oracle Cloud solutions effortlessly, enabling enhanced productivity.',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Middleware Implementation',
+        'Electronic Data Interchange Implementation',
+        'API-led Integration',
       ]
     },
     {
@@ -165,12 +160,10 @@ const page = () => {
       cardHeading: 'Oracle Database Management',
       cardDesc: 'Optimize database performance and security with expert management services.',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Design & Development of Database Model',
+        'Disaster Recovery Services',
+        'Maintenance',
+        'Upgrades and Migrations',
       ]
     },
     {
@@ -181,12 +174,9 @@ const page = () => {
       cardHeading: 'Quality Assurance Service',
       cardDesc: 'Ensure solution reliability and performance with comprehensive testing services.',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Security Testing',
+        'Performance Testing',
+        'Test Data Management ',
       ]
     },
     {
@@ -197,12 +187,11 @@ const page = () => {
       cardHeading: 'Managed Services',
       cardDesc: 'Outsource IT operations to our experts, ensuring proactive monitoring and continuous improvement.',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Enterprise Application Management',
+        'Cloud Migration Services',
+        'Agile Product Lifecycle Management Services',
+        'Application Outsourcing',
+        'Database Services',
       ]
     },
 
@@ -312,7 +301,7 @@ const page = () => {
         blogImageUrl={blogImageUrl}
         Heading={"Leverage Database Potential with Oracle Cloud"}
         Desc={
-          "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. This article explores the essence of Oracle Cloud Integration and how it facilitates database optimization and cloud-driven innovations."
+          "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. "
         }
         Color={"white"}
       ></BlogSection>
