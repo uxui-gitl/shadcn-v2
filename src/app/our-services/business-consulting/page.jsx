@@ -60,12 +60,12 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Strong legacy of our parent company – Godrej Enterprise group which hassucceeded for more than 125 years.",
+      desc: "Strong legacy of our parent company – Godrej Enterprise group which has succeeded for more than 125 years.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Shared DNA of engineering expertise from our parent group – Godrej EnterpriseGroup with 1.7Bn revenue.",
+      desc: "Shared DNA of engineering expertise from our parent group – Godrej Enterprise Group with 1.7Bn revenue.",
       icon: "",
     },
     {
@@ -80,7 +80,7 @@ const page = () => {
     },
     {
       _id: 5,
-      desc: "Holistic ecosystem including scalable deployment, support services and diverseportfolio of ERPs and digital solutions.",
+      desc: "Holistic ecosystem including scalable deployment, support services and diverse portfolio of ERPs and digital solutions.",
       icon: "",
     },
     {
@@ -171,8 +171,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Begin Your Digital Journey with Strategic Consulting Expertise"
-        desc=""
+        title="Business Consulting Services"
+        desc="Begin Your Digital Journey with Strategic Consulting Expertise"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -185,8 +185,8 @@ const page = () => {
             layout="horizontal"
             Color="white"
             headingContainerWidth="w-full"
-            Heading="Knocking Business Challenges  "
-            Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop afuture-ready organization"
+            Heading="Knocking Business Challenges"
+            Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
           ></SectionHeading>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
             <ul className=" space-y-4 w-full text-white">
@@ -225,8 +225,8 @@ const page = () => {
             layout="horizontal"
             Color="white"
             headingContainerWidth="w-full"
-            Heading="Our Services"
-            Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation.  "
+            Heading="Business Consulting Services"
+            Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation."
           ></SectionHeading>
           <div className="grid grid-cols-1 gap-4 mt-4 md:mt-16">
             <div>
@@ -313,9 +313,9 @@ const page = () => {
         
       
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Ready to Discuss with our Expert Consultant?"}
         Desc={
-          "Let us discuss how business consulting can help you with rapid growth."
+          "Share your details to discover how we can help you achieve better business results."
         }
       ></TransformBusinessForm>
     </>
