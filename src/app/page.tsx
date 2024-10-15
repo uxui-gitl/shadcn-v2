@@ -21,6 +21,10 @@ import React, { useEffect, useState } from "react";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import Dialog from "@/components/Dialog";
 import useScrollTriggeredCountUp from "@/components/home/useScrollTriggeredCountUp";
+import Announcement from "@/sections/announcement/Announcement";
+import Link from "next/link";
+import Icon from "@mdi/react";
+import { mdiArrowRight } from "@mdi/js";
 
 
 
@@ -31,7 +35,7 @@ export default function Home() {
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLDivElement>(null);
   const ref4 = useRef<HTMLDivElement>(null);
-  
+
   const count1 = useScrollTriggeredCountUp(ref1, 25); // Count-up from 0 to 25
   const count2 = useScrollTriggeredCountUp(ref2, 500); // Count-up from 0 to 500
   const count3 = useScrollTriggeredCountUp(ref3, 15); // Count-up from 0 to 15000 (15k)
@@ -47,71 +51,87 @@ export default function Home() {
   const items = [
     {
       id: 1,
-      content: "manufacturing business"
+      content: "manufacturing"
     },
     {
       id: 2,
-      content: "retail business"
+      content: "retail"
     },
     {
       id: 3,
-      content: "project business"
+      content: "project"
     },
     {
       id: 4,
-      content: "professional service business"
+      content: "professional service"
     },
     {
       id: 5,
-      content: "healthcare organisation"
+      content: "healthcare"
     }
   ];
 
   const items2 = [
     {
-      id: 4,
+      id: 6,
       content: "smart factory"
     },
     {
-      id: 5,
-      content: "omnicahnnel expertise"
-    },
-    {
-      id: 6,
-      content: "agility"
-    },
-    {
       id: 7,
-      content: "client centric approach"
+      content: "omnichannel expertise"
     },
     {
       id: 8,
+      content: "agility"
+    },
+    {
+      id: 9,
+      content: "client centric approach"
+    },
+    {
+      id: 10,
       content: "streamlined operations"
     }
   ]
 
   const items3 = [
     {
-      id: 7,
+      id: 11,
       content: "agility"
     },
     {
-      id: 8,
+      id: 12,
       content: "customer loyalty"
     },
     {
-      id: 9,
-      content: "delivery speed /profit margins"
+      id: 13,
+      content: "delivery speed"
     },
     {
-      id: 10,
-      content: "market competitiveness"
+      id: 14,
+      content: "competitiveness"
     },
     {
-      id: 11,
-      content: "quality care"
+      id: 15,
+      content: "quality"
     }
   ];
+
+  const items4 = [
+    {
+      id: 17,
+      content: "Automation  "
+    },
+    {
+      id: 18,
+      content: "Cloud"
+    },
+    {
+      id: 19,
+      content: "Transformation"
+    },
+  ];
+
 
   const tabs = [
     {
@@ -227,21 +247,93 @@ export default function Home() {
   const BusinessTransformationDrive_DATA = [
     {
       id: 1,
-      cardTitle:"",
+      cardTitle: "",
       cardHeading: "Embrace Tomorrow with AUTOMATION",
       cardDesc: 'Accelerate operations, drive innovation and increase accuracy with AI powered solutions',
+      rawData: `<div class="grid grid-cols-3 gap-4">
+            <div>
+              <div class="text-[40px] font-semibold mb-12">
+              Intelligent Technologies
+              </div>
+              <p class="text-[22px] font-medium mb-8">Artificial Intelligence & Machine Learning</p>
+              <p class="text-[22px] font-medium mb-8">RPA</p>
+              <p class="text-[22px] font-medium mb-8"> IIoT</p>
+            </div>
+            <div>
+              <div class="text-[40px] font-semibold mb-12">
+              Tech Stack
+              </div>
+              <p class="text-[22px] font-medium mb-8">Java </p>
+              <p class="text-[22px] font-medium mb-8">.Net, SharePoint</p>
+              <p class="text-[22px] font-medium mb-8"> Low code application development</p>
+            </div>
+            <div>
+              <div class="text-[40px] font-semibold mb-12">
+              Data Insights
+              </div>
+              <p class="text-[22px] font-medium mb-8">Power BI and Power Apps</p>
+              <p class="text-[22px] font-medium mb-8">Birst</p>
+              <p class="text-[22px] font-medium mb-8"> Tableau</p>
+              <p class="text-[22px] font-medium mb-8">Azure and AWS data management </p>
+
+            </div>
+          </div>`
     },
     {
       id: 2,
-      cardTitle:"",
+      cardTitle: "",
       cardHeading: "Experience New Business Dimensions with CLOUD",
       cardDesc: 'Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility',
+      rawData: `<div class="grid grid-cols-2 gap-4">
+            <div>
+              <div class="text-[40px] font-semibold mb-12">
+             Upgrade to Cloud
+              </div>
+              <p class="text-[22px] font-medium mb-8">Dynamics AX Upgrade</p>
+              <p class="text-[22px] font-medium mb-8">Dynamics NAV Upgrade</p>
+              <p class="text-[22px] font-medium mb-8">Upgrade to Infor LN</p>
+              <p class="text-[22px] font-medium mb-8">Migrate Applications to Cloud</p>
+              <p class="text-[22px] font-medium mb-8">Lift and Shift to Cloud</p>
+            </div>
+            <div>
+              <div class="text-[40px] font-semibold mb-12">
+              Cloud Solution and Services
+              </div>
+              <p class="text-[22px] font-medium mb-8">Cloud Infrastructure </p>
+              <p class="text-[22px] font-medium mb-8">Business Apps on Cloud</p>
+              <p class="text-[22px] font-medium mb-8"> M365 Services</p>
+            </div>
+            <div>
+          </div>`
     },
     {
       id: 3,
-      cardTitle:"",
+      cardTitle: "",
       cardHeading: "Leverage Key Drivers of Growth with Digital Transformation Solutions",
       cardDesc: 'Enhance business productivity and modernize stakeholder experience with streamlined operations',
+      rawData: `<div class="grid grid-cols-2 gap-4">
+      <div>
+        <div class="text-[40px] font-semibold mb-12">
+      Enterprise Suite
+        </div>
+        <p class="text-[22px] font-medium mb-8">Microsoft Dynamics 365</p>
+        <p class="text-[22px] font-medium mb-8">Infor</p>
+        <p class="text-[22px] font-medium mb-8">Oracle</p>
+        <p class="text-[22px] font-medium mb-8">Hexagon EAM</p>
+      </div>
+      <div>
+        <div class="text-[40px] font-semibold mb-12">
+        Customer Experience
+        </div>
+        <p class="text-[22px] font-medium mb-8">Microsoft CRM </p>
+        <p class="text-[22px] font-medium mb-8">Infor CRM</p>
+        <p class="text-[22px] font-medium mb-8">Salesforce</p>
+        <p class="text-[22px] font-medium mb-8">LS Retail</p>
+        <p class="text-[22px] font-medium mb-8">Ecommerce</p>
+
+      </div>
+      <div>
+    </div>`
     },
   ]
 
@@ -254,17 +346,33 @@ export default function Home() {
 
   const [sliderImageUrl, setSliderImageUrl] = useState('');
   const [index, setIndex] = useState(0);
+  const [index2, setIndex2] = useState(0);
+  const [businessItem, setBusinessItem] = useState(0);
 
+
+  // animate text
   useEffect(() => {
     const id = setInterval(() => {
       setIndex((state) => {
         if (state >= items.length - 1) return 0;
         return state + 1;
       });
-    }, 3000);
+    }, 4500);
     return () => clearInterval(id);
   }, []);
 
+  useEffect(() => {
+    const id2 = setInterval(() => {
+      setIndex2((state) => {
+        if (state >= items4.length - 1) return 0;
+        return state + 1;
+      });
+    }, 2500);
+    return () => clearInterval(id2);
+  }, []);
+  // end animate text
+
+  // banner Hover ReadMore
   function handleReadMoreHover(item: any, isFilled: boolean) {
     if (isFilled) {
       setSliderImageUrl(item.url)
@@ -273,9 +381,21 @@ export default function Home() {
       setSliderImageUrl('')
     }
   }
+  // end banner Hover ReadMore
+
+  // handle click businesstranform card click
+  function handleBusinessCardClick(modal: boolean, item: any) {
+    setshowModal1(modal);
+    setBusinessItem(item);
+  }
+
+  // end handle click businesstranform card click
+
+
 
   return (
     <>
+      <Announcement content={''} />
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
@@ -297,7 +417,17 @@ export default function Home() {
 
           </div>
           <div className="container mx-auto text-[76px] leading-[86px] text-white absolute" style={{ top: '30%', left: '0', right: '0' }}>
-            Delivering Business<br></br> value with Automation
+            Delivering Business<br></br> value with
+            <motion.div
+              key={items4[index2]?.id}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -10, opacity: 0 }}
+              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
+              style={{ display: 'inline-block' }}
+            >
+              <span className="">&nbsp;{items4[index2]?.content}</span>
+            </motion.div>
           </div>
           <hr className="h-px my-8 bg-[#e5e7eb5c] border-0 absolute" style={{ top: '55%', left: '0', right: '0' }}></hr>
           {/* slider */}
@@ -400,7 +530,7 @@ export default function Home() {
       <div className=" relative z-2 bg-white" style={{ borderBottomLeftRadius: '24px', borderBottomRightRadius: "24px" }}>
         <div className="md:container mx-auto pt-32 pb-40">
           <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
-          Strategic Digital Transformation across Industries
+            Strategic Digital Transformation across Industries
           </p>
           <div className="text-[64px] leading-[74px] font-semibold">
             Transform your&nbsp;
@@ -415,7 +545,7 @@ export default function Home() {
               <span className="text-[#5F22D9]">{items[index].content}</span>
             </motion.div>
             &nbsp;<br></br>
-            with &nbsp;
+            business with &nbsp;
             <motion.div
               key={items2[index].id}
               initial={{ y: 20, opacity: 0 }}
@@ -424,7 +554,7 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
               style={{ display: 'inline-block' }}
             >
-              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>, 
+              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>
             <br></br>
             enhancing <motion.div
               key={items3[index].id}
@@ -458,22 +588,20 @@ export default function Home() {
         title="Business Transformation Drive"
         style={{ backgroundColor: "white", position: 'relative', zIndex: '2', height: '750px' }}
       >
-
-
         <Slider slidesPerView={3}>
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-8 bg-[#5F22D9] rounded-3xl ">
-                <div className="text-xl text-white text-semibold mb-[100px]">
-                  item.cardtitle
-                </div>
-                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">item.cardHeading</div>
-                <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">item.cardDesc</div>
+                {item?.cardTitle && <div className="text-xl text-white text-semibold mb-[100px]">
+                  {item?.cardTitle}
+                </div>}
+                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">{item.cardHeading}</div>
+                <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">{item.cardDesc}</div>
                 <div className="flex justify-end px-6 py-4">
-                  <OutlinedButtonWithArrow arrowColor={'white'} size={48} onClick={() => setshowModal1((prev) => !prev)} />
+                  {/* setshowModal1((prev) => !prev) */}
+                  <OutlinedButtonWithArrow arrowColor={'white'} size={48} onClick={() => handleBusinessCardClick(true, item)} />
                 </div>
               </div>
-
             </SwiperSlide>
           ))}
         </Slider>
@@ -497,11 +625,11 @@ export default function Home() {
             <h1 className="text-[96px] font-[700] text-white">{count2}<sup>+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">Customers Worldwide</p>
           </div>
-          <div className=""  ref={ref3}>
+          <div className="" ref={ref3}>
             <h1 className="text-[96px] font-[700] text-white">{count3}k<sup>+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">Man years of Experience</p>
           </div>
-          <div className=""  ref={ref4}>
+          <div className="" ref={ref4}>
             <h1 className="text-[96px] font-[700] text-white">{count4}<sup>+</sup></h1>
             <p className="text-base font-medium text-[#EFE9FB]">Implementation Sites</p>
           </div>
@@ -539,10 +667,38 @@ export default function Home() {
           "Work alongside talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
         }
         Color={"white"}
-        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
-      ></BlogSection>
+        readMoreUrl={""}
+      >
+        <div className="">
+          <Link
+            href={``}
+            target="_blank"
+            className="text-white mr-5 mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          >
+            {'Why Godrej Infotech'}
+            <Icon
+              path={mdiArrowRight}
+              style={{ marginLeft: "0.5em", marginTop: '1px' }}
+              size={1}
+            />
+          </Link>
+          <Link
+            href={''}
+            target="_blank"
+            className="text-white mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          >
+            {'Join Our Team'}
+            <Icon
+              path={mdiArrowRight}
+              style={{ marginLeft: "0.5em", marginTop: '1px' }}
+              size={1}
+            />
+          </Link>
+        </div>
+
+      </BlogSection>
       {/* @ts-ignore */}
-      <ReviewSliderSection 
+      <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESS EXPERIENCE"}
         Desc={''}
@@ -566,9 +722,11 @@ export default function Home() {
         onRequestClose={() => {
           setshowModal1((prev) => !prev);
         }}
-        title={"dummy title"}
+        title={businessItem?.cardHeading}
       >
-        <h1>Dummy data</h1>
+        <div className="py-10">
+          <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
+        </div>
       </Dialog>
       {/* end modal */}
     </>
@@ -612,7 +770,7 @@ const IndustryContent = () => {
     'Professional Service',
     'Project',
   ];
- 
+
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
@@ -642,7 +800,7 @@ const ParternerContent = () => {
     'Automation Anywhere ',
     'Ui Path',
   ];
- 
+
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
