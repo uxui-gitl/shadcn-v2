@@ -426,7 +426,7 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
               style={{ display: 'inline-block' }}
             >
-              <span className="">&nbsp;{items4[index2]?.content}</span>
+              <span className="ml-2">{items4[index2]?.content}</span>
             </motion.div>
           </div>
           <hr className="h-px my-8 bg-[#e5e7eb5c] border-0 absolute" style={{ top: '55%', left: '0', right: '0' }}></hr>
@@ -533,7 +533,7 @@ export default function Home() {
             Strategic Digital Transformation across Industries
           </p>
           <div className="text-[64px] leading-[74px] font-semibold">
-            Transform your&nbsp;
+            Transform your
             <motion.div
               key={items[index].id}
               initial={{ y: 10, opacity: 0 }}
@@ -542,10 +542,10 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
               style={{ display: 'inline-block' }}
             >
-              <span className="text-[#5F22D9]">{items[index].content}</span>
+              <span className="text-[#5F22D9] ml-2">{items[index].content}</span>
             </motion.div>
-            &nbsp;<br></br>
-            business with &nbsp;
+          <br></br>
+            business with
             <motion.div
               key={items2[index].id}
               initial={{ y: 20, opacity: 0 }}
@@ -554,7 +554,7 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
               style={{ display: 'inline-block' }}
             >
-              <span className="text-[#5F22D9]">{items2[index].content}</span> </motion.div>
+              <span className="text-[#5F22D9] ml-2">{items2[index].content}</span> </motion.div>
             <br></br>
             enhancing <motion.div
               key={items3[index].id}
