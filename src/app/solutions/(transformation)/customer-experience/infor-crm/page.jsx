@@ -49,9 +49,9 @@ const page = () => {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Elevating Customer Experience",
+      heading: "Delivering Results that Matter",
       description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "The world’s top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
