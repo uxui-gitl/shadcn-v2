@@ -682,8 +682,8 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
-                Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
+                Heading={"Mobile Commerce: The Next Frontier for B2B Trading"}
+                Desc={"The world of B2B trading is undergoing a significant transformation, driven by the rapid adoption of mobile technology. Mobile commerce, or m-commerce, has revolutionized the way businesses interact, transact, and operate. As mobile devices become increasingly ubiquitous, B2B traders can no longer afford to ignore the potential of mobile commerce."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
