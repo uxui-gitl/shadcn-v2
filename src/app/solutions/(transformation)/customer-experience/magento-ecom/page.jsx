@@ -262,8 +262,8 @@ const page = () => {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Shopify',
+      cardDesc: 'A comprehensive platform integrating ecommerce and point-of-sale features for streamlining operations and business expansion',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -273,8 +273,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Odoo Commerce',
+      cardDesc: 'Elevate online presence with visually appealing online shops and easy checkout',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -284,8 +284,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Adobe Commerce',
+      cardDesc: 'Attract and engage customers and deliver better shopping experience with advanced ecommerce capabilities',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -295,8 +295,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'WooCommerce',
+      cardDesc: 'Experience in enterprise-grade ecommerce with secure payments, shipping, and inventory management',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -306,8 +306,8 @@ const page = () => {
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'BigCommerce',
+      cardDesc: 'Go-to ecommerce solution for established & growing businesses, with online store, SEO, hosting & marketing',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -383,8 +383,8 @@ const page = () => {
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
-        sectionHeading={'Our Microsoft CRM offerings'}
-        sectionDesc={''}
+        sectionHeading={'Ecommerce Solutions'}
+        sectionDesc={'Discover customizable ecommerce solutions for global reach and increased revenue  '}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
