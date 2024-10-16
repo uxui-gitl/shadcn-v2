@@ -235,8 +235,52 @@ const page = () => {
       cardHeading: "Power BI Solution on time with quality",
       cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
     },
+    // Add more Testimonials as needed
   ];
 
+  const TECHNOLOGYSPECTRUM_DATA = [
+    {
+      id: 1,
+      cardHeading: "Infor",
+    },
+    {
+      id: 2,
+      cardHeading: "Microsoft Dynamics",
+    },
+    {
+      id: 3,
+      cardHeading: "LS Retail",
+    },
+    {
+      id: 4,
+      cardHeading: "Oracle",
+    },
+    {
+      id: 5,
+      cardHeading: "AWS",
+    },
+    {
+      id: 6,
+      cardHeading: "Azure",
+    },
+    {
+      id: 7,
+      cardHeading: "HxN EAM",
+    },
+    {
+      id: 8,
+      cardHeading: "Java",
+    },
+    {
+      id: 9,
+      cardHeading: "Dot Net",
+    },
+    {
+      id: 10,
+      cardHeading: "Share Point",
+    },
+    // Add more Technology spectrum as needed
+  ]
 
   return (
     <>
@@ -318,7 +362,7 @@ const page = () => {
                   },
               }}
               >
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9]?.map((item, index) => (
+                {TECHNOLOGYSPECTRUM_DATA.map((item, index) => (
                   <SwiperSlide key={item}>
                     <div className="w-fullbg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                       <Image className="rounded-t-lg" width={100} height={50} src="" alt="" />

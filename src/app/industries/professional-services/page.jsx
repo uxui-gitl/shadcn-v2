@@ -24,37 +24,43 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Complex multi-entity governance and consolidation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Suboptimal resource utilization and tracking", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Contract lifecycle management inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Client acquisition and retention challenges", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Asset and inventory management discrepancies", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Inconsistent costing methodologies and accounting standards", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 7, title: "Complex revenue recognition and financial reporting", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 8, title: "Inefficient labor time tracking and cost allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 9, title: "Operational scalability and growth constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
+
     ];
 
     const tabs = [
         {
-            title: "Services",
-            value: "services",
+            title: "Automation",
+            value: "automation",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <ServiceContent />
+                    <AutomationContent />
                 </div>
             ),
         },
         {
-            title: "Industry",
-            value: "industry",
+            title: "Cloud",
+            value: "cloud",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <IndustryContent />
+                    <CloudContent />
                 </div>
             ),
         },
         {
-            title: "Partners",
-            value: "partners",
+            title: "Transformation",
+            value: "transformation",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <PartnersContent />
+                    <TransformationContent />
                 </div>
             ),
         },
@@ -66,7 +72,7 @@ function page() {
             cardBGImageUrl:
                 "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
             cardBGColor: "#7F4EE1",
-            cardHeading: "Manufacturing",
+            cardHeading: "Education",
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
@@ -77,9 +83,9 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
             cardBGColor: "#7F4EE1",
-            cardHeading: "Retail",
+            cardHeading: "IT Consultancy",
             cardDesc:
-                "AI-driven workflows, OCR and rule-based system enables accurate results",
+                "",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -89,9 +95,9 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
             cardBGColor: "#7F4EE1",
-            cardHeading: "Trading & Distribution",
+            cardHeading: "Real Estate",
             cardDesc:
-                "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+                "",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -101,9 +107,9 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
             cardBGColor: "#EFE9FB",
-            cardHeading: "Healthcare",
+            cardHeading: "Non-Government Association",
             cardDesc:
-                "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+                "",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -113,18 +119,29 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
 
             cardBGColor: "#EFE9FB",
-            cardHeading: "Professional Services",
+            cardHeading: "Automotive",
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
         },
         {
-            id: 5,
+            id: 6,
             cardBGImageUrl:
                 "/industry-spotlight/cards-backgrounds/card-bg--project.png",
 
             cardBGColor: "#EFE9FB",
-            cardHeading: "Project",
+            cardHeading: "Plant Maintenance",
+            cardDesc: "",
+            isArrow: false,
+            cardTextColor: "white",
+        },
+        {
+            id: 7,
+            cardBGImageUrl:
+                "/industry-spotlight/cards-backgrounds/card-bg--project.png",
+
+            cardBGColor: "#EFE9FB",
+            cardHeading: "Hospitality",
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
@@ -211,21 +228,30 @@ function page() {
             CardTextColor: "white",
             CardTitle: "",
             CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure SQL Data Ware Housing",
+            CardHeading: "Functions",
             CardDesc:
-                "Accelerate analytics with petabyte scale storage and high-performance querying",
+                "",
             isArrow: "true",
             link: [],
             additionalData: `
-             <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+             <ul class="max-w-md space-y-1 text-white list-disc ">
                                     <li>
-                                        At least 10 characters (and up to 100 characters)
+                                        Customer management
                                     </li>
                                     <li>
-                                        At least one lowercase character
+                                        Real time activity tracking by mobile apps
                                     </li>
                                     <li>
-                                        Inclusion of at least one special character, e.g., ! @ # ?
+                                        AMC contract management
+                                    </li>
+                                    <li>
+                                        Supplier & customer claims
+                                    </li>
+                                    <li>
+                                        Preventive & schedule maintenance
+                                    </li>
+                                    <li>
+                                        Digital documentation
                                     </li>
                                 </ul>
             `
@@ -239,11 +265,27 @@ function page() {
             CardTextColor: "white",
             CardTitle: "",
             CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "AWS Redshift",
+            CardHeading: "IoT Enabled Products",
             CardDesc:
-                "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
+                "",
             isArrow: "true",
             link: [],
+            additionalData: `
+             <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+                                    <li>
+                                        Industrial IoT
+                                    </li>
+                                    <li>
+                                        Plant efficiency with IoT
+                                    </li>
+                                    <li>
+                                        Asset predictive maintenance
+                                    </li>
+                                    <li>
+                                        Architecture designing through IoT
+                                    </li>                                    
+                                </ul>
+            `
         },
         {
             id: 3,
@@ -253,11 +295,30 @@ function page() {
             CardTextColor: "white",
             CardTitle: "",
             CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure Synapse",
+            CardHeading: "Supply Chain Management",
             CardDesc:
-                "Unify analytics and data management, and integrate data warehousing and big data capabilities",
+                "",
             isArrow: "true",
             link: [],
+            additionalData: `
+             <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+                                    <li>
+                                        Spare parts management
+                                    </li>
+                                    <li>
+                                        Fleet management with IoT and AR
+                                    </li>
+                                    <li>
+                                        System logistics management
+                                    </li>
+                                    <li>
+                                        Equipment rental management
+                                    </li>
+                                    <li>
+                                        Multi-site management
+                                    </li>                                    
+                                </ul>
+            `
         },
         {
             id: 4,
@@ -267,67 +328,28 @@ function page() {
             CardTextColor: "white",
             CardTitle: "",
             CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure Data Factory",
+            CardHeading: "Performance Management",
             CardDesc:
-                "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
+                "",
             isArrow: "true",
             link: [],
-        },
-        {
-            id: 4,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Databricks",
-            CardDesc:
-                "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
-            isArrow: "true",
-            link: [],
-        },
-        {
-            id: 5,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Amazon S3",
-            CardDesc:
-                "Securely store and serve data with highly scalable and cost-effective object storage.",
-            isArrow: "true",
-            link: [],
-        },
-        {
-            id: 6,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Azure Data Lake",
-            CardDesc:
-                "Experience high-performance and secure data management with Azure Data Lake.",
-            isArrow: "true",
-            link: [],
-        },
-        {
-            id: 7,
-            BGImageUrl: "",
-            BGColor: "#fff",
-            CardBGColor: "transparent",
-            CardTextColor: "white",
-            CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-            CardHeading: "Microsoft Fabric",
-            CardDesc:
-                "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
-            isArrow: "true",
-            link: [],
+            additionalData: `
+             <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+                                    <li>
+                                        Product lifecycle management
+
+                                    </li>
+                                    <li>
+                                        Asset management
+                                    </li>
+                                    <li>
+                                        Hierarchy workflow management
+                                    </li>
+                                    <li>
+                                        Financial tracking
+                                    </li>                                   
+                                </ul>
+            `
         },
     ];
 
@@ -402,8 +424,8 @@ function page() {
             imageURL: "",
             videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
             title: "Case Studies",
-            heading: "Leading Indian Refiner of Precious Metals",
-            description: "",
+            heading: "Optimizing Operational Costs by 25%",
+            description: "Infor LN Managed Support Services for Europe's Leading Marine Services Provider",
             link: "/case-study-1",
             color: "#FFFFFF",
             bgCardColor: "#2B1624",
@@ -411,9 +433,9 @@ function page() {
         {
             imageURL: "",
             title: "",
-            heading: "M1iddle East based Leading Cooling Services Provider",
+            heading: "Streamlined Operations",
             description:
-                "Experiences productivity savings and leverages data mart consolidation with Power BI implementation ",
+                "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6",
             link: "/case-study-1",
             color: "#000",
             bgCardColor: "#FCE6F4",
@@ -423,9 +445,9 @@ function page() {
             imageURL: "/path/to/image1.jpg",
             title: "",
 
-            heading: "Global2 fast-food chain with 170+ stores in Saudi Arabia",
+            heading: "Reduced Manual Effort and Enhancing Scalability",
             description:
-                "Implements Data Lake for faster processing and lower storage costs and automates Data Archiving and Power BI ready Analytics for improved governance and insights",
+                "Prominent logistics service provider implements Infor CloudSuite WMS – Adwar",
             link: "/case-study-1",
             color: "#000",
             bgCardColor: "#EFE9FB",
@@ -435,35 +457,32 @@ function page() {
     const TESTIMONIAL_DATA = [
         {
             id: 1,
-            cardHeading: "Easy insights into business performance",
-            cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
+            cardHeading: "Efficient Infor LN Implementation",
+            cardDesc: 'On behalf of our entire organization, please accept our sincere appreciation for the excellent job Godrej Infotech Limited has done over the past several months in implementation of LN ERP. It was an enormous undertaking but went smoothly and efficiently! Godrej was able to quickly understand our business needs, priorities and was able to make positive and quality contribution during LN ERP implementation, which was appreciated by all team members of our organization.',
+            designation: '-	Procurement & Project Manager,',
+            companyName: 'Global Supplier of Process Equipments'
         },
-        {
-            id: 2,
-            cardHeading: "Real-Time Warehouse Data Interfacing",
-            cardDesc: 'We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.'
-        },
-
+        
     ];
 
 
     return (
         <>
             <EntIntro
-                title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-                desc=""
+                title="Helping Professional Services Firms to Thrive in Digital-First World"
+                desc="Navigate complexities of digital change, streamline operations and enhance customer experience"
                 cta="Let's Connect"
                 width="60%"
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
             />
-            <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+            <OverviewSection Text={`We help firms like yours to focus on improving customer-centricity and increasing business performance. Our solutions optimize timesheets, expense management & entity consolidation for improved responsiveness.`} />
 
             <SectionWrapper BGColor="black">
                 <div className="md:container mx-auto">
                     <SectionHeading
                         Color="white"
-                        Heading="Challenges Faced by Manufacturing Businesses"
-                        Desc=""
+                        Heading="Knocking Business Challenges"
+                        Desc="From managing multiple entities to navigating complex projects, professional service organisations face several obstacles such as"
                     ></SectionHeading>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <ul className=" space-y-4 w-full text-white">
@@ -498,8 +517,8 @@ function page() {
             {/* end challenges */}
 
             <SectionWrapperNew
-                sectionHeading={"Holistic and Future Ready"}
-                sectionDesc={"We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."}
+                sectionHeading={"ACT Solution Offerings"}
+                sectionDesc={"Results-focused and agile solutions for professional services firms."}
                 sectionTextColor="black"
                 title="OUR OFFERINGS"
                 sectionHeadingLayout="center"
@@ -513,8 +532,8 @@ function page() {
             {/* end future section */}
 
             <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
-                sectionHeading="Our Capabilities"
-                sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
+                sectionHeading="Key Capabilities"
+                sectionDesc="We help firms to adapt to evolving market demands and capitalize on new opportunities."
                 sectionTextColor='#fff'
                 sectionHeadingLayout="horizontal"
             >
@@ -523,8 +542,8 @@ function page() {
                         <SwiperSlide key={index}>
                             <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
                                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                                <div className="text-[28px] text-white">Purpose</div>
-                                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                                <div className="text-[28px] text-white">{item.CardHeading}</div>
+                                <p className="text-[20px] py-4 text-white">{item.CardDesc}</p>
                                 <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
                             </div>
 
@@ -580,7 +599,7 @@ function page() {
             </SectionWrapperNew>
             {/* custome solution */}
 
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'We serve a diverse range of professional services firms, delivering tailored solutions to address unique industry challenges.'}/>
 
             <SectionWrapperNew
                 style={{ backgroundColor: '#d3d3d3' }}
@@ -605,7 +624,8 @@ function page() {
                         <h3 className="text-base font-semibold mb-4 lg:mb-12">
                             {casestudy[0].title}
                         </h3>
-                        <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6">
+                        {/* <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6"> */}
+                        <h1 className="text-3xl font-medium mb-4 lg:mb-6">
                             {casestudy[0].heading}
                         </h1>
                         <p className="w-full lg:w-[80%] mb-4">
@@ -657,15 +677,15 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
-                Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
+                Heading={"IT Partner Selection for Professional Services Firms"}
+                Desc={"It's imperative for professional services businesses to conduct a thorough assessment of their unique requirements and objectives. Whether it's enhancing operational efficiency through automation, harnessing the scalability of cloud computing, or undergoing a seamless digital transformation, clarity on these aspects will serve as a guiding light in the partner selection journey."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
 
             <ReviewSliderSection
                 ID={"TESTIMONIALS"}
-                Heading={"Delighted customers share their success experience"}
+                Heading={"Delighted Customers Share their Successful Experiences"}
                 Desc={''}
                 Color="#ffffff"
                 CardDataList={TESTIMONIAL_DATA}
@@ -674,7 +694,7 @@ function page() {
             ></ReviewSliderSection>
 
             {/* transform business with us section */}
-            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+            <TransformBusinessForm Title={'Transform your business with us'} Desc={"Let us discuss how digital transformation solutions can help you with rapid growth.n"}>
             </TransformBusinessForm>
 
         </>
@@ -682,14 +702,15 @@ function page() {
 }
 
 
-const ServiceContent = () => {
+const AutomationContent = () => {
     const services = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Incident handling with customer portals',
+        'Augmented Intelligence',
+        'Asset/ equipment tracking solution ',
+        'RFID based GPS tracking',
+        'Quality control analysis system',
+        'Revenue recognition platform',
+        'Data driven analytics solutions',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
@@ -710,14 +731,15 @@ const ServiceContent = () => {
     );
 };
 
-const IndustryContent = () => {
+const CloudContent = () => {
     const data = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Cloud Consulting and Computing',
+        'Upgrade/Migrate to cloud',
+        'ERP on cloud',
+        'Data management on Cloud',
+        'M365',
+        'DevOps',
+        'Cloud Security Solutions',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
@@ -738,14 +760,18 @@ const IndustryContent = () => {
     );
 };
 
-const PartnersContent = () => {
+const TransformationContent = () => {
     const data = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Stakeholder role assignment',
+        'Accounting and invoicing system',
+        'Customer experience solutions',
+        'Integrated sales, project, finance and workforce management',
+        'Client and contractor management',
+        'Project management',
+        'Finance and Accounting Digital Integration',
+        'IT architecture design',
+        'Organizational hierarchy',
+        'Field activity planning and management',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
