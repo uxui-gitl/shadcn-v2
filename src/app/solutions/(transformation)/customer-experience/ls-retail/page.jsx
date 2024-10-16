@@ -16,48 +16,38 @@ const page = () => {
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
-      desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+      desc: "50+ Successful Client Engagements for LS Retail Solution across the Globe",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Agile approach that keeps projects on cutting edge.",
+      desc: "Expert Team of Highly Skilled Functional and Technical Professionals",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
-      icon: "",
-    },
-    {
-      _id: 4,
-      desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
-      icon: "",
-    },
-    {
-      _id: 5,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
+      desc: "Profound Domain Expertise in Retail, E-Commerce, and Hospitality and Adept inDelivering Solutions Customized to Industry-Specific Requirements.",
       icon: "",
     },
   ];
   const TESTIMONIAL_DATA = [
     {
       id: 1,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Leading Retail Coffee Chain in KSA Controls Consumption with LS Retail NAV",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "Having the LS NAV system in place makes it extremely easy for our organization to make real-time decisions. The in-depth experience of the consultants at Godrej Infotech Limited greatly simplified our complex processes right from our business requirements to rollout.",
     },
     {
       id: 2,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Leading Fitness service provider in Saudi Arabia Implements LS Retail",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "On behalf of our entire organization, I would like to thank the Godrej Infotech team that implemented Dynamics NAV 2017. As a result of this implementation, our organization is moving in the paperless direction. We have completely removed manual activities in revenue booking, subscription payments, and syncing of created master between NAV and CRM. GITL add-on for KSA Attendance and Payroll has helped us streamline our HR processes considerably. With the integrated ERP & CRM, we have witnessed a significant increase in the productivity of our operations.",
     },
     {
       id: 3,
-      cardHeading: "Power BI Solution on time with quality",
+      cardHeading: "Godrej Infotech Ltd successfully rolls out LS Central Hospitality in the World's first super-premium ice cream Franchise based out of KSA",
       cardDesc:
-        "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "We congratulate the team from Godrej Infotech for completing the rollout of LS Central Hospitality. This solution has been deployed at our ice cream retail stores and has features to manage dining, takeaway, delivery, and cart sales for events. With this solution, the manual process for HR and Payroll activities is automated. The point-of-sale is 100% operational and has resulted in a 70% reduction in the time taken for material procurement and movement and we have also seen a 60% increase in the productivity of the finance process. Expiry date-based stock tracking and replenishment has helped in maintenance of adequate material stock levels.",
     },
   ];
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -66,19 +56,19 @@ const page = () => {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Elevating Customer Experience",
+      heading: "Elevating our customer experience with LS Retail",
       description:
-        "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Non-government Association of Indian Industries",
+      heading: "NAV-LS Retail Pack Enhances Cost Efficiency",
       description:
-        "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
-      link: "/case-study-1",
+        "Global Travel Retailer Gains Cost Efficiency and Lowers Total Cost of Ownership with the All-in-One NAV LS Retail Pack ",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/GlobalTravelRetailer_NAVLS_IndiaUAE.pdf",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -87,20 +77,20 @@ const page = () => {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Coffee Brand Distributor in Egypt and Middle East",
+      heading: "40% Faster Business Operations",
       description:
-        "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-      link: "/case-study-1",
+        "Saudi Arabia's Hypermarket Chain Accelerate the Business Process by 40% and Boost its Scalability with LS Retail - Microsoft Dynamics Platform",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/HypermarketChain_NAVLS_KSA.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Middle East-based Electrical Products Manufacturer",
+      heading: "Better customer experience with end-to-end visibility",
       description:
-        "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
-      link: "/case-study-1",
+        "Large Retailer in Mauritius Capitalizes Discount Matrix based on Operational Hierarchy with MS Dynamics & LS Retail",
+      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LargeRetailerinMauritiusSuccessfullyImplementsMSNAV2017andLSRetail.pdf",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
@@ -109,12 +99,16 @@ const page = () => {
 
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon:'', cardDesc: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', icon:'', cardDesc: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', icon:'', cardDesc: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', icon:'', cardDesc: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', icon:'', cardDesc: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-
+    { id: '1', icon:'', cardDesc: 'On-demand Business Performance Insights at Convenience' },
+    { id: '2', icon:'', cardDesc: 'Improve Customer Experience with Integrated Loyalty Programs and Personalized Marketing Campaigns' },
+    { id: '3', icon:'', cardDesc: 'Access Financial Data, Point of Sale Systems, Supply Chain Management and more—all in one place' },
+    { id: '4', icon:'', cardDesc: 'Notifications and Reports at all Channels on Fingertips' },
+    { id: '5', icon:'', cardDesc: 'No More Additional Integration Cost' },
+    { id: '6', icon:'', cardDesc: 'Ensure Uniformity in Financial Information' },
+    { id: '7', icon:'', cardDesc: 'Complete Control over Pricing, Inventory, Promotions and beyond' },
+    { id: '8', icon:'', cardDesc: 'Flexible System Architecture and Modular Design to Scale Business' },
+    { id: '9', icon:'', cardDesc: 'Streamline and Optimized Retail Operations' },
+    
   ];
 
   const INDUSTRY_SPOTLIGHT = [
@@ -193,8 +187,8 @@ const page = () => {
       id: 1,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Increase Productivity',
-      cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
+      cardHeading: 'Point of Sale (POS) System',
+      cardDesc: 'Intuitive interfaces, supporting various payment methods and streamlined operations for a hassle-free checkout experience.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -204,8 +198,8 @@ const page = () => {
       id: 2,
       cardBGImageUrl: '',
       cardBGColor: '#000',
-      cardHeading: 'Accurate Outcomes',
-      cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
+      cardHeading: 'Inventory Management',
+      cardDesc: 'Capabilities include real-time tracking of stock levels, replenishment management and inventory optimization across multiple locations.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -215,8 +209,8 @@ const page = () => {
       id: 3,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
       cardBGColor: '#7F4EE1',
-      cardHeading: 'Compliance and Consistency',
-      cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
+      cardHeading: 'Omnichannel Retailing',
+      cardDesc: 'Integrating online and offline channels seamlessly ensuring a consistent experience for shoppers across all touchpoints.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -226,8 +220,8 @@ const page = () => {
       id: 4,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Strengthen Potential',
-      cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
+      cardHeading: 'Customer Relationship Management (CRM)',
+      cardDesc: 'Build and maintain customer relationships through personalized experiences and manage customer profiles, preferences, targeted marketing campaigns and loyalty programs to drive engagement.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -237,8 +231,8 @@ const page = () => {
       id: 5,
       cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Enhance Flexibility',
-      cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
+      cardHeading: 'Retail Analytics',
+      cardDesc: 'Powerful analytics tools for sales trends, monitoring KPIs and identifying growth opportunities to optimize performance.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -246,11 +240,23 @@ const page = () => {
     {
 
 
-      id: 5,
+      id: 6,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Reduce AHT (Average Handling Time)',
-      cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
+      cardHeading: 'Back Office Management',
+      cardDesc: ' Features include financial management, purchasing, and vendor management. Streamlining processes and ensuring compliance enables retailers to work hassle free.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 2,
+    },
+    {
+
+
+      id: 7,
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Flexible Customization',
+      cardDesc: 'From adding features to modifying workflows and integrating with third-party systems, retailers can adapt to changing requirements and stay competitive.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -261,13 +267,13 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-        desc=""
+        title="Streamlined Retail Management"
+        desc="Elevate customer experience with unified retail management solutions."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+      <OverviewSection Text={`LS Central: Unified retail management solution integrating financials, POS, operations, supply chain, and e-commerce for seamless omnichannel experiences`} />
       <div className="pt-36" style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <div className="md:container mx-auto flex justify-center">
           <div style={{ maxWidth: '600px' }}>
@@ -276,7 +282,7 @@ const page = () => {
               Color="white"
               headingContainerWidth="w-full"
               Heading="Our Offerings"
-              Desc="Delivering experience of unified commerce with advanced retail management applications and ensuring personalized journey for every shopper. "
+              Desc="Delivering experience of unified commerce with advanced retail management applications and ensuring personalized journey for every shopper."
             ></SectionHeading>
           </div>
         </div>
@@ -292,8 +298,8 @@ const page = () => {
             </div>
             <div>
             <div className=" p-10 bg-[#F18BCB] rounded-3xl">
-                  <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
-                <p className="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
+                  <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Restaurants</h5>
+                <p className="mb-3 font-normal text-white ">Comprehensive platform for restaurants, pubs, cafes, food halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more.</p>
                 
               </div>
             </div>
@@ -304,8 +310,8 @@ const page = () => {
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#E1F2EF'}
-        sectionHeading={'Our Microsoft CRM offerings'}
-        sectionDesc={''}
+        sectionHeading={'LS Retail Features and Functionalities'}
+        sectionDesc={`Transform retail into thriving success with LS Retail's innovative solutions and expert business guidance and support.`}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
@@ -315,8 +321,8 @@ const page = () => {
       <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
-        sectionHeading={'Benefits of Infor WMS'}
-        sectionDesc={'Achieving warehouse operation goals in an excellent way'}
+        sectionHeading={'LS Central Benefits'}
+        sectionDesc={'LS Central is the ultimate all-in-one solution for modern retailers. Join thousands of retailers worldwide who trust LS Central to power their success.'}
         sectionTextColor={'white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
@@ -330,9 +336,9 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Unveilling Hyper automation  for supply chain efficiency"}
+        Heading={"Secure & Scalable E-Commerce Solution from Adobe"}
         Desc={
-          "IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
+          "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model have started to enhance their online ecosystems, leading to a greater demand for e-Commerce solutions. Some interesting statistics on this topic as per IBEF (India Brand Equity Foundation) are:"
         }
         Color={"white"}
       ></BlogSection>
@@ -343,7 +349,7 @@ const page = () => {
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}
         Desc={
-          "Trust Godrej Infotech to leverage Intelligent technologies and lead business into competitive digital landscape."
+          "Experience the difference our expert implementation services can make for your retail business"
         }
       ></DistinctiveSection>
       {/* End--Distinctive-Section================================================================ */}
@@ -361,9 +367,9 @@ const page = () => {
 
       {/* Start--Transform-Business-Form-Section============================================================== */}
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Transform Storefront and Make every Sales Count with Our LS Retail Expertise"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Share your details and allow us to tailor the right solution for you!"
         }
       ></TransformBusinessForm>
 
