@@ -179,7 +179,7 @@ export default function Home() {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Infor Project Highlights",
+      heading: "Project Highlights",
       description:
         "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
       link: "/case-study-1",
@@ -237,7 +237,7 @@ export default function Home() {
     },
     {
       id: 3,
-      cardHeading: "3.	Salesforce Implementation against Tight Deadline ",
+      cardHeading: "Salesforce Implementation against Tight Deadline ",
       cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
       designation: '- Operations Head',
       companyName: 'India’s Security Solutions Company'
@@ -700,7 +700,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESS EXPERIENCE"}
+        Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESSFUL EXPERIENCE"}
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
