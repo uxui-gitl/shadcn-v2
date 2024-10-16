@@ -14,6 +14,7 @@ function CommonCardTwo({ Item }) {
         isArrow = "true",
         cardType = '',
         arrowColor = "#FFF",
+        downImageUrl='',
     } = Item;
 
 
@@ -23,6 +24,8 @@ function CommonCardTwo({ Item }) {
                 <div
                     className={`rounded-3xl shadow min-h-[424px] flex flex-col justify-between ${style.commonCardTwo}`} style={{
                         background: `url(${cardBGImageUrl}), ${cardBGColor}`,
+                        backgroundPosition:'center center',
+                        backgroundSize:'cover',
                         color: cardTextColor,
                         width: "100%",
                         minHeight: '550px',
@@ -48,12 +51,14 @@ function CommonCardTwo({ Item }) {
                                 dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                             />
                         )}
+
                     </div>
                     {isArrow && (
                         <div className="flex justify-end px-6 py-4">
                             <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
                         </div>
                     )}
+                        {downImageUrl && (<img src={downImageUrl} alt="" className="rounded-3xl" style={{width:'100%', maxHeight:'240px'}} />)} 
 
 
                 </div>
