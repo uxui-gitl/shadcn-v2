@@ -220,27 +220,27 @@ export default function Home() {
     // Add more case studies here...
   ];
 
-  const TESTIMONIAL_DATA = [
+  const TESTIMONIAL_DATA:any = [
     {
-      id: 1,
+      id: '1',
       cardHeading: "79% Cut down in Purchase Order Processing",
       cardDesc: 'GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.',
       designation: '-	IT Director,',
       companyName: 'Cooling Facility Management Company'
     },
     {
-      id: 2,
+      id: '2',
       cardHeading: "Effective finance and budgeting management",
       cardDesc: 'GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.',
       designation: '-	IT Director',
-      companyName: 'Saudi Arabia’s Leading Engineering & Construction Service Provider'
+      companyName: 'Saudi Arabia’s Leading Engineering & Construction Service Provider',
     },
     {
-      id: 3,
+      id: '3',
       cardHeading: "3.	Salesforce Implementation against Tight Deadline ",
       cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
       designation: '- Operations Head',
-      companyName: 'India’s Security Solutions Company'
+      companyName: 'India’s Security Solutions Company',
     },
   ];
 
