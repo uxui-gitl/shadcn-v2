@@ -11,6 +11,7 @@ import ServicesCardSlider from '@/sections/services-cards-slider/ServicesCardSli
 import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
+import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 const page = () => {
 
   const SERVICE_CARDS_DATA = [
@@ -50,6 +51,42 @@ const page = () => {
       imageURL: '/techStack1.png'
     },
     // Add more cards here...
+  ];
+
+
+  const CASE_STUDIES_DATA = [
+    {
+      imageURL: " ",
+      videoURL: "",
+      title: "Case Studies",
+      heading: 'Delivering Results that Matters',
+      description: "",
+      link: "",
+      color: '#FFFFFF',
+      bgCardColor: '#2B1624'
+    },
+    {
+      imageURL: "",
+      title: "",
+      heading: 'Enhanced Asset Performance and Reduced Maintenance Cost',
+      description: "Indian based Global Oncology Pharmaceuticals Company Implements HxGN EAM Solution",
+      link: "/case-study-1",
+      color: '#000',
+      bgCardColor: '#E4E4E4'
+    },
+
+    {
+      imageURL: "/path/to/image1.jpg",
+      title: "",
+
+      heading: "Improved financial visibility and control",
+      description: "Leading Group of Electrical & Electronic Manufacturing Companies in Kingdom of Saudi Arabia Successfully Implements Microsoft D365 Finance & Operations",
+      link: "/case-study-1",
+      color: '#000',
+      bgCardColor: '#FCE6F4'
+    },
+    
+    // Add more case studies here...
   ];
 
   const CyberSecurityData = [
@@ -283,6 +320,14 @@ const page = () => {
 
   ]
 
+
+  const serviceData=[
+    {title:'Result Focused Services', des:'We measure our success, based on the tangible results we deliver for our customers.'},
+    {title:'Agile Approach', des:`Repository of ready solutions enables a flexible and adaptive way of working that prioritizes customers' evolving needs.`},
+    {title:'Quality Practice', des:'We are dedicated to maintaining the highest quality standard which is non-negotiable and is embedded in our work culture.'},
+    
+  ]
+
   return (
     <>
       <EntIntro
@@ -298,7 +343,7 @@ const page = () => {
         ID={''}
         sectionImageUrl={''}
         sectionBGColor={'#EFE9FB'}
-        sectionHeading={'Our Implementation Services'}
+        sectionHeading={'Our Services'}
         sectionDesc={'Our implementation services combine industry expertise with a customer-centric approach, ensuring minimal disruption and maximum impact.'}
         sectionTextColor={'#000'}
         sectionHeaderMaxWidth={'40%'}
@@ -343,12 +388,13 @@ const page = () => {
               },
           }}
           >
-            {[1, 2, 3, 4, 5]?.map((item, index) => (
-              <SwiperSlide key={item}>
+            {serviceData?.map((item, index) => (
+              <SwiperSlide key={index}>
                 <div className="bg-[#EFE9FB] rounded-lg">
-                  <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                  <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="werw" />
                   <div className="p-5">
-                    <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                    <h5 className="mb-2 text-2xl font-bold">{item.title}</h5>
+                    <p className="text-[20px] font-medium">{item.des}</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -389,6 +435,8 @@ const page = () => {
       >
       </DistinctiveSection>
 
+      
+
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted Customers Share their Successful Experiences"}
@@ -398,6 +446,10 @@ const page = () => {
         BGColor="#1D162B"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
+
+      {/* Section--Case-Studies======================================================================= */}
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor='#FFFFFF' />
+      {/* End-Section--Case-Studies */}
 
       <TransformBusinessForm
         Title={"Transform your Business with us"}

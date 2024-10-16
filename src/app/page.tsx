@@ -347,7 +347,40 @@ export default function Home() {
   const [sliderImageUrl, setSliderImageUrl] = useState('');
   const [index, setIndex] = useState(0);
   const [index2, setIndex2] = useState(0);
-  const [businessItem, setBusinessItem] = useState(0);
+  const [businessItem, setBusinessItem] = useState({
+    id: 1,
+    cardTitle: "",
+    cardHeading: "Embrace Tomorrow with AUTOMATION",
+    cardDesc: 'Accelerate operations, drive innovation and increase accuracy with AI powered solutions',
+    rawData: `<div class="grid grid-cols-3 gap-4">
+          <div>
+            <div class="text-[40px] font-semibold mb-12">
+            Intelligent Technologies
+            </div>
+            <p class="text-[22px] font-medium mb-8">Artificial Intelligence & Machine Learning</p>
+            <p class="text-[22px] font-medium mb-8">RPA</p>
+            <p class="text-[22px] font-medium mb-8"> IIoT</p>
+          </div>
+          <div>
+            <div class="text-[40px] font-semibold mb-12">
+            Tech Stack
+            </div>
+            <p class="text-[22px] font-medium mb-8">Java </p>
+            <p class="text-[22px] font-medium mb-8">.Net, SharePoint</p>
+            <p class="text-[22px] font-medium mb-8"> Low code application development</p>
+          </div>
+          <div>
+            <div class="text-[40px] font-semibold mb-12">
+            Data Insights
+            </div>
+            <p class="text-[22px] font-medium mb-8">Power BI and Power Apps</p>
+            <p class="text-[22px] font-medium mb-8">Birst</p>
+            <p class="text-[22px] font-medium mb-8"> Tableau</p>
+            <p class="text-[22px] font-medium mb-8">Azure and AWS data management </p>
+
+          </div>
+        </div>`
+  });
 
 
   // animate text
@@ -722,7 +755,7 @@ export default function Home() {
         onRequestClose={() => {
           setshowModal1((prev) => !prev);
         }}
-        title={businessItem?.cardHeading}
+        title={businessItem.cardHeading}
       >
         <div className="py-10">
           <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />

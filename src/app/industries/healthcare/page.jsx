@@ -22,31 +22,66 @@ function page() {
 
     const tabs = [
         {
-            title: "Services",
-            value: "services",
+            title: "Automation ",
+            value: "automation ",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <ServiceContent />
+                    <AutomationContent />
                 </div>
             ),
         },
         {
-            title: "Industry",
-            value: "industry",
+            title: "Cloud",
+            value: "cloud",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <IndustryContent />
+                    <CloudContent />
                 </div>
             ),
         },
         {
-            title: "Partners",
-            value: "partners",
+            title: "Transformation",
+            value: "transformation",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-                    <PartnersContent />
+                    <TransformationContent />
                 </div>
             ),
+        },
+    ];
+
+    const OFFERING_DATA = [
+        {
+            id: 1,
+            cardHeading: "Consulting Services",
+            cardDesc:
+                " Healthcare aligned digital strategy development for sustainable growth, enhancing operational efficiency.",
+            
+        },
+        {
+            id: 2,
+            cardHeading: "Implementation",
+            cardDesc:
+                "Deploy healthcare solutions, integrating analytics for enhanced operational efficiency.",
+        },
+        {
+            id: 3,
+            cardHeading: "Upgrade & Migration Services",
+            cardDesc:
+                "Migrate legacy systems to cloud-based solutions, ensuring seamless data transition and optimized performance.",
+        },
+        {
+            id: 4,
+            cardHeading: "Support & Maintenance Services",
+            cardDesc:
+                "24/7 monitoring and prompt issue resolution, ensuring IT infrastructure uptime and performance.",
+        },
+        {
+            id: 5,
+            cardHeading: "Customization Services",
+            cardDesc:
+                "Tailored healthcare IT solutions to meet unique organizational needs, enhancing patient care and operational workflows.",
+            
         },
     ];
     const SOLUTION_DATA = [
@@ -114,10 +149,13 @@ function page() {
         },
     ];
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Fragmented data leads to suboptimal outcomes", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Inefficient communication strains resource allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Poor data tools hinder decisions making", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Ineffective resource management increases costs", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Complex billing delays payments", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Inadequate tech investment impacts healthcare quality", icon: '/upgradeCloud/icons/ico--target.svg' },
+
     ];
 
     const INDUSTRY_SPOTLIGHT = [
@@ -126,8 +164,8 @@ function page() {
             cardBGImageUrl:
                 "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
             cardBGColor: "#7F4EE1",
-            cardHeading: "Manufacturing",
-            cardDesc: "",
+            cardHeading: "Pharma Manufacturing",
+            cardDesc: "Tailored solutions that enhance pharmaceutical business operations and streamlining equipment management",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -137,9 +175,9 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
             cardBGColor: "#7F4EE1",
-            cardHeading: "Retail",
+            cardHeading: "Health Facilities",
             cardDesc:
-                "AI-driven workflows, OCR and rule-based system enables accurate results",
+                "Offering comprehensive Revenue Cycle Management (RCM) solutions that improve financial performance, optimizing revenue capture and financial operations.",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -149,9 +187,9 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
             cardBGColor: "#7F4EE1",
-            cardHeading: "Trading & Distribution",
+            cardHeading: "Medical Equipment & Supplies",
             cardDesc:
-                "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+                "We aim to elevate operations, covering product configuration and asset management for efficiency.",
             isArrow: false,
             cardTextColor: "white",
         },
@@ -161,34 +199,13 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
             cardBGColor: "#EFE9FB",
-            cardHeading: "Healthcare",
+            cardHeading: "Pharma Distributors",
             cardDesc:
-                "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
+                "Advanced tech solutions optimize inventory control and distribution efficiency.",
             isArrow: false,
             cardTextColor: "white",
         },
-        {
-            id: 5,
-            cardBGImageUrl:
-                "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-            cardBGColor: "#EFE9FB",
-            cardHeading: "Professional Services",
-            cardDesc: "",
-            isArrow: false,
-            cardTextColor: "white",
-        },
-        {
-            id: 5,
-            cardBGImageUrl:
-                "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-            cardBGColor: "#EFE9FB",
-            cardHeading: "Project",
-            cardDesc: "",
-            isArrow: false,
-            cardTextColor: "white",
-        },
+        
         // Add more cards as needed
     ];
 
@@ -313,19 +330,19 @@ function page() {
             imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
             videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
             title: "Case Studies",
-            heading: "Elevating Customer Experience",
+            heading: "Delivering Results that Matter",
             description:
-                "World's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+                "",
             link: "/case-study-1",
             color: "#FFFFFF",
         },
         {
             imageURL: "",
             title: "",
-            heading: "Non-government Association of Indian Industries",
+            heading: "Faster Application Response Times & Better Resource Utilization",
             description:
-                "99% uptime in saving man-days performance and 22% of capex saving after migrating to the Azure cloud environment",
-            link: "/case-study-1",
+                "Global Healthcare Solutions Organization Successfully Migrates IT Environment from .NET 2.0 to .NET 4.5",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
             color: "#000",
             bgCardColor: "#FCE6F4",
         },
@@ -334,23 +351,26 @@ function page() {
             imageURL: "/path/to/image1.jpg",
             title: "",
 
-            heading: "Coffee Brand Distributor in Egypt and Middle East",
+            heading: "Enhanced Efficiency & User Experience",
             description:
-                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            link: "/case-study-1",
+                "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
             color: "#000",
             bgCardColor: "#EFE9FB",
         },
+
         {
-            imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+            imageURL: "/path/to/image1.jpg",
             title: "",
-            heading: "Middle East-based Electrical Products Manufacturer",
+
+            heading: "Enhanced Efficiency & User Experience",
             description:
-                "60% cut down in development cost and business performance boost of 5 sister companies with D365 F&O Cloud implementation",
-            link: "/case-study-1",
+                "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
             color: "#000",
-            bgCardColor: "#E1F2EF",
+            bgCardColor: "#EFE9FB",
         },
+        
         // Add more case studies here...
     ];
 
@@ -371,20 +391,20 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
-                desc=""
+                title="Streamline healthcare operations with digital solutions"
+                desc="Enhancing patient engagement, workflows and clinical outcomes"
                 cta="Let's Connect"
                 width="60%"
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
             />
-            <OverviewSection Text={`Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application `} />
+            <OverviewSection Text={`Our digital solutions and services help healthcare organisations in developing a cohesive ecosystem, fostering collaboration and ensuring data accuracy.`} />
 
             <SectionWrapper BGColor="black">
                 <div className="md:container mx-auto">
                     <SectionHeading
                         Color="white"
-                        Heading="Challenges Faced by Manufacturing Businesses"
-                        Desc=""
+                        Heading="Challenges Confronting Healthcare Organisations"
+                        Desc="Healthcare organisations face several challenges that impact their ability to deliver quality care and maintain operational efficiency. Key issues include:"
                     ></SectionHeading>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <ul className=" space-y-4 w-full text-white">
@@ -419,8 +439,8 @@ function page() {
             {/* challenge end */}
             
                 <SectionWrapperNew
-                sectionHeading={"Holistic and Future Ready"}
-                sectionDesc={"We specialize in delivering cutting-edge Internet of Things (IIOT) solutions that are tailored to meet your unique needs."}
+                sectionHeading={"Our ACT Solution Offerings"}
+                sectionDesc={"Healthcare providers must adopt innovative solutions for scalable infrastructure and increased revenue growth"}
                 sectionTextColor="black"
                 title="OUR OFFERINGS"
                 sectionHeadingLayout="center"
@@ -437,9 +457,9 @@ function page() {
                 <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
                     <div className="w-full md:w-1/2">
                         <SectionHeading
-                            Heading={`Infor CloudSuite Services`}
+                            Heading={`Service Offerings`}
                             Color={'white'}
-                            Desc={`Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.`}
+                            Desc={`Expert IT strategy, implementation and optimization for streamlining clinical workflows and enhancing patient data management.`}
                             headingContainerWidth={'w-full'}
                         />
                     </div>
@@ -470,14 +490,14 @@ function page() {
                             },
                         }}
                     >
-                        {[1, 2, 3, 4, 5]?.map((item, index) => (
+                        {OFFERING_DATA.map((item, index) => (
                             <SwiperSlide key={item}>
                                 <div className="bg-[#EFE9FB] rounded-lg">
                                     <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
                                     <div className="p-5">
-                                        <h5 className="mb-2 text-2xl font-bold">Consulting</h5>
+                                        <h5 className="mb-2 text-2xl font-bold">{item.cardHeading}</h5>
                                     </div>
-                                    <p className="text-[20px] font-medium">We measure our success, based on the tangible results we deliver for our customers.</p>
+                                    <p className="text-[20px] font-medium">{item.cardDesc}</p>
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -487,20 +507,20 @@ function page() {
 
             {/* end services */}
 
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'Leveraging domain knowledge and digital transformation expertise, we tackle specific challenges across diverse healthcare verticals.'}/>
 
             <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"}  bgColor={'#d3d3d3'}/>
             
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
-                Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
+                Heading={"How Healthcare Organizations Ensure Effective Asset Management"}
+                Desc={"Healthcare asset maintenance encompasses the strategies and practices implemented to manage and preserve medical equipment and facilities. This process is vital in ensuring the smooth functioning of healthcare services, optimizing resource utilization, and delivering quality patient care."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
 
-            <ReviewSliderSection
+            {/* <ReviewSliderSection
                 ID={"TESTIMONIALS"}
                 Heading={"Delighted customers share their success experience"}
                 Desc={''}
@@ -508,23 +528,20 @@ function page() {
                 CardDataList={TESTIMONIAL_DATA}
                 BGColor="#1D162B"
                 SectionHeadingMaxWidth={'70%'}
-            ></ReviewSliderSection>
+            ></ReviewSliderSection> */}
 
             {/* transform business with us section */}
-            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+            <TransformBusinessForm Title={'Transform your business with us.'} Desc={"Let us discuss how our ACT model can help you with rapid growth."}>
             </TransformBusinessForm>
         </>
     )
 }
 
-const ServiceContent = () => {
+const AutomationContent = () => {
     const services = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Data Driven Analytics',
+        'Predictive Maintenance for Assets',
+        'Robotics and Automation ',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
@@ -545,14 +562,14 @@ const ServiceContent = () => {
     );
 };
 
-const IndustryContent = () => {
+const CloudContent = () => {
     const data = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'Cloud Consulting',
+        'Upgrade/Migrate to cloud',
+        'ERP on cloud',
+        'Data Management',
+        'DevOps',
+        'Cloud Security Solutions',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
@@ -573,14 +590,13 @@ const IndustryContent = () => {
     );
 };
 
-const PartnersContent = () => {
+const TransformationContent = () => {
     const data = [
-        'Business Consulting',
-        'Implementation & Global Rollout',
-        'Migration & Transformation',
-        'Legacy Modernisation',
-        'Infrastructure as a Service',
-        'Managed Services',
+        'ERP Implementation',
+        'Supply Chain Management',
+        'Finance Management',
+        'Process Optimization',
+        'Customer Experience – CRM',
     ];
     return (
         <div className="grid grid-cols-2 gap-20 h-full">
