@@ -629,6 +629,15 @@ function page() {
                                                     </>
                                                 ))}
                                             </ol>
+                                            <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                                                {item?.cardHoverData.map((item2) => (
+                                                    <>
+                                                        <li>
+                                                            <span class="font-semibold text-black">{item2}</span>
+                                                        </li>
+                                                    </>
+                                                ))}
+                                            </ol>
                                         </div>
                                     </div>
                                 )}
