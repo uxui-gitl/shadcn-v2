@@ -24,7 +24,7 @@ import CommonCardTwo from "@/components/CommonCardTwo";
 const RPASolution = [
   {
     id: 1,
-    cardBGImageUrl: '/rpa/RPA_01.png',
+    cardBGImageUrl: '/rpa/RPA_01.jpg',
     cardBGColor: '#7F4EE1',
     cardHeading: 'Increase Productivity',
     cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
@@ -35,7 +35,7 @@ const RPASolution = [
   {
 
     id: 2,
-    cardBGImageUrl: '/rpa/RPA_02.png',
+    cardBGImageUrl: '/rpa/RPA_02.jpg',
     cardBGColor: '#7F4EE1',
     cardHeading: 'Accurate Outcomes',
     cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
@@ -46,7 +46,7 @@ const RPASolution = [
   {
 
     id: 3,
-    cardBGImageUrl: '/rpa/RPA_03.png',
+    cardBGImageUrl: '/rpa/RPA_03.jpg',
     cardBGColor: '#fff',
     cardHeading: 'Compliance and Consistency',
     cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
@@ -58,7 +58,7 @@ const RPASolution = [
   {
 
     id: 4,
-    cardBGImageUrl: '/rpa/RPA_04.png',
+    cardBGImageUrl: '/rpa/RPA_04.jpg',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Strengthen Potential',
     cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
@@ -69,7 +69,7 @@ const RPASolution = [
   {
 
     id: 5,
-    cardBGImageUrl: '/rpa/RPA_05.png',
+    cardBGImageUrl: '/rpa/RPA_05.jpg',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Enhance Flexibility',
     cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
@@ -79,7 +79,7 @@ const RPASolution = [
   },
   {
  id: 6,
-    cardBGImageUrl: '/rpa/RPA_06.png',
+    cardBGImageUrl: '/rpa/RPA_06.jpg',
     cardBGColor: '#fff',
     cardHeading: 'Reduce AHT (Average Handling Time)',
     cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
@@ -89,7 +89,7 @@ const RPASolution = [
   },
   {
  id: 7,
-    cardBGImageUrl: '/rpa/RPA_07.png',
+    cardBGImageUrl: '/rpa/RPA_07.jpg',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Optimize FTE Cost)',
     cardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',
