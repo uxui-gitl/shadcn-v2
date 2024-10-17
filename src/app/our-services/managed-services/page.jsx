@@ -245,7 +245,7 @@ const page = () => {
     },
     {
       id: 2,
-      cardHeading: "Microsoft Dynamics",
+      cardHeading: "Ms Dynamics",
     },
     {
       id: 3,
@@ -362,10 +362,11 @@ const page = () => {
                   },
               }}
               >
-                {TECHNOLOGYSPECTRUM_DATA.map((item, index) => (
+                {TECHNOLOGYSPECTRUM_DATA?.map((item, index) => (
                   <SwiperSlide key={item}>
-                    <div className="w-fullbg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <Image className="rounded-t-lg" width={100} height={50} src="" alt="" />
+                    <div className="w-full text-[28px] font-semibold text-center">
+                      {/* <Image className="rounded-t-lg" width={100} height={50} src="" alt="" /> */}
+                      {item.cardHeading}
                     </div>
                   </SwiperSlide>
                 ))}
@@ -446,7 +447,7 @@ const page = () => {
       >
       </DistinctiveSection>
 
-      <ReviewSliderSection
+      {/* <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={''}
@@ -454,7 +455,7 @@ const page = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="#1D162B"
         SectionHeadingMaxWidth={'70%'}
-      ></ReviewSliderSection>
+      ></ReviewSliderSection> */}
 
       <TransformBusinessForm
         Title={"Transform your Business with us"}
