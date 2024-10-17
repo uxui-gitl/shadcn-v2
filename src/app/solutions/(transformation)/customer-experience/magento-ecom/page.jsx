@@ -100,25 +100,34 @@ const page = () => {
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Enables automation across diverse use cases",
+      desc: "Strong experience in C-Commerce (Customer & Channel Commerce) domain using Magento CE & Enterprise enabling retailers and manufacturers to digitize the end-to-end customer experience journey across all touch points.",
       icon: "",
     },
     {
       _id: 2,
-      desc: "Help businesses achieve high productivity",
+      desc: "In-depth understanding of unique business requirements to deliver customized ecommerce solution.",
       icon: "",
     },
     {
       _id: 3,
-      desc: "Substantial improvements in return on investment (ROI)",
+      desc: "Strategic consultation on future product roadmaps to drive business growth and ecommerce success.",
       icon: "",
     },
     {
       _id: 4,
-      desc: "Extensive experience in understanding industry-specific challenges and opportunities",
+      desc: "Comprehensive troubleshooting, evaluation, and optimization of Commerce solutions to ensure seamless performance.",
       icon: "",
     },
-
+    {
+      _id: 5,
+      desc: "Harnessing the full potential of ecommerce platforms for maximum growth and ROI.",
+      icon: "",
+    },
+    {
+      _id: 6,
+      desc: "Delivery of bespoke ecommerce solutions aligned with specific business objectives.",
+      icon: "",
+    },
   ]
 
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -571,7 +580,7 @@ const page = () => {
   </BlogSection>
 
     <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Reliable Expertise in Intelligent Tech Solutions'}
+        ID={'Distinctive'} Title={'Why Godrej Infotech'} Desc={''}
       >
       </DistinctiveSection>
       
