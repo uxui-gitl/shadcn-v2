@@ -1,0 +1,906 @@
+{
+    "caseStudies": [
+     {
+        "id": "case-study-1",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "India's Leading Manufacturer of Engineered Equipments Successfully Implements Cloud based Infor Solutions",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "No of Users: 150+",
+            "First Infor Cloud implementation in India",
+            "Use of standard functionality of 'Import-Export' for Data Migration",
+            "Multilevel workflow approval for Purchase Order, Sales Order & RFQ"
+          ]
+        },
+        "customerBrief": {
+          "description": "The organization is a leading manufacturer of engineered equipment for critical applictions in the global chemical and pharmaceutical markets. Headquartered in Mumbai, India, the company has a state-of-the-art manufacturing plant in Gujarat, India. It has a diversified product portfolio that includes Mixing Systems, Filtration & Drying Equipment, Engineered Systems, and Tailor Made Process Equipments.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "",
+          "businesscaseList": [
+            "Sound understanding of business based on Presale Study",
+            "Commitment to ensuring the dedicated and continuous project team throughout the project duration"
+          ]
+        },
+        "challenges": {
+          "description": "The Customer was facing the following business challenges:",
+          "keyChallenges": [
+            "Customer order-wise manufacturing tracking",
+            "Equipment-wise actual cost tracking",
+            "Manual tracking of subcontracting inventory",
+            "E-mail based workflow authorization",
+            "Excel-based MIS Reporting"
+          ]
+        },
+        "solution": {
+          "description": "The scope of the solution covers the implementation of Infor LN with India localization, Infor OS and Infor reporting. Modules covered are engineering, planning, manufacturing, service, CRM, sales, procurement, warehousing, quality, freight, finance, costing, & taxation.",
+          "features": [
+            "All business processes are mapped using standard functionalities of Infor Products (i.e. No Functional Customization)",
+            "Key challenges of the customer such as customer order wise manufacturing tracking, as well as actual cost tracking of each unit have been addressed using standard functionalities like project, demand pegging, & actual costing",
+            "Training on tools module of Infor LN 10.4",
+            "Installation and training of Infor OS (i.e. Xi) & Infor Reporting",
+            "Development of reports, workflows, & alerts"
+          ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Customer order wise equipment tracking for each stage of production is available through the system",
+            "Actual costing of each equipment is made available directly from the system",
+            "Equipment wise and customer order wise profitability is derived from the system",
+            "Complete tracking of subcontracting is done through the system",
+            "Customer team is now able to manage the L1 support independently",
+            "Customer's internal IT team can configure internal reports and workflows requirements"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+      {
+        "id": "case-study-2",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "India Offices of Leading Metal Plate Cutting Machine Manufacturer Successfully Go Live with Infor CRM Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Infor CRM with Infor LN integration",
+            "Infor CRM with Infor XM integration",
+            "XBAR with Outlook integration",
+            "Bing Map"
+          ]
+        },
+        "customerBrief": {
+          "description": "The client is a global supplier of cutting-edge solutions for the metal-working industry. With reliable cutting technologies, flexible service packages and intelligent software solutions they are setting standards worldwide. As the technology leader in the thermal cutting industry, they are constantly working on smarter, faster, and more reliable solutions with added value for customers.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Since the India offices did not have an integrated CRM system",
+          "businesscaseList": [
+            "",
+            ""
+          ]
+        },
+        "challenges": {
+          "description": "Customer were facing challenges with regards to:",
+          "keyChallenges": [
+            "Increasing sales by systematically following a sales process",
+            "Increasing market reach via leads and prospects",
+            "Effective lead management",
+            "Actvity / calendar management"
+          ]
+        },
+        "solution": {
+          "description": "Customer was already using Infor CRM in Germany and hence wanted to roll it out to the India location. Their objective was to get the right data from the system which could help them to grow in the right direction. Below activities were carried out successfully",
+          "features": [
+            "Integration of Infor CRM with Infor LN, so that the Sales team can have all required customer details in Infor CRM without logging into LN",
+            "Integration of Infor CRM with XM Management, for tracking all expenses incurred in getting a Lead and converting it to Opportunity",
+            "XBAR with outlook integration, for capturing new customer details in Infor CRM without logging in.",
+            "Bing Map, for helping the Sales team in tracking customer locations and guiding them to reach the required destination."
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Complete 360° view of customer",
+            "Easy viewing of transactional data",
+            "Streamlined integrated business processes mapped in the system",
+            "Easy collaboration & communication using Infor OS"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-3",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Marine Services",
+        "title": "Europe’s Leading Marine Services Provider Selects LVDGI for Infor LN Managed & Rollout Services from Offshore",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Marine Services",
+          "projectLocation": "Netherlands",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "Scope covering multiple INFOR products - LN, ION, OS, d/EPM, XM",
+            "Multi-time zone support window covering 30000+ offshore & 5000+ onsite hours",
+            "Activities include support, upgrade, roll-out and integration with other applications",
+            "Service level KPI definition & monitoring",
+            "Successful upgrade from Infor LN 10.5 to 10.6",
+            "Strong governance model"
+          ]
+        },
+        "customerBrief": {
+          "description": "The organization has over 100 years of experience in hydraulic engineering, coastal protection and land reclamation. They operate in 90 countries and across six continents, with a versatile fleet of more than 900 vessels and floating equipment. They are a leading global dredging contractor and marine services provider offering a unique combination of experts, vessels and services. Maintaining the highest safety and sustainability standards, they provide innovative and competitive all-round solutions to their clients in the offshore energy sector, ports, and coastal and delta regions of the world.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer was having an in-house support team for managing the support and maintenance of its Infor suite of products",
+          "businesscaseList": [
+            "",
+            ""
+          ]
+        },
+        "challenges": {
+          "description": " They wanted to outsource the Managed support services and also wanted to bring in flexibility and agility in the support team augmentation. They were keen to build up more knowledge on Infor LN and bring in consulting experience to provide seamless support to their users. The requirement was for multi-time zone support along with expertise in multi-geography rollouts.",
+          "keyChallenges": [
+            "",
+            "",
+            ""
+          ]
+        },
+        "solution": {
+          "description": "LVD Godrej Infotech nv (LVDGI) was selected for this engagement due to the following criteria",
+          "features": [
+            "Experience & knowledge of INFOR Suite of Products",
+            "LVDGI’s relation with INFOR as an Alliance, Channel & Co-development Partner",
+            "Presence in Europe for similar support engagements",
+            "Godrej Infotech Ltd.’s experience in handling support for the parent company Godrej & Boyce, covering 5000+ user licenses for INFOR Suite of Products and more than 150+ satellite applications"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "The assignments were completed 100% from offshore",
+            "As of date, LVDGI has successfully completed support of 1000+ calendar days",
+            "Support was started with a 17 company structure which has now been enhanced to a 120+ company structure",
+            "The team has successfully completed year end, month end and quarter end closing for the last thre years on time, even after increasing the no. of rollouts",
+            "Support window across APAC, Middle East, & Europe time zones",
+            "Upgrade project to Infor LN 10.6 has been delivered on time with highest quality and negligible post go live issues"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-4",
+        "mainCategory": "Transformation",
+        "subCategory": "Ketla",
+        "vertical": "Trading and Distribution",
+        "title": "Wholesale Distribution Made Easy with Infor LN for Saudi Arabia's Largest Trading Organization",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Trading and Distribution",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Automated Warehouse Activities",
+            "International Shipments",
+            "Reconciliation of Intermediate Accounts",
+            "Standardized Costing",
+            "Business Intelligence"
+          ]
+        },
+        "customerBrief": {
+          "description": "The client is one of Saudi Arabia’s largest family owned business empires with operations spreading into several cities of the Kingdom. The group’s success has largely been due to its ability to establish long standing alliances, joint ventures, dealerships and license arrangements with leading worldwide organizations. The client has multiple lines of business for distribution of Bridgestone tires, batteries, luxury perfumes, designer brands, watches and leather goods. They also cater to real estate development and maintenance, including construction of commercial buildings such as malls and office facilities.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client’s companies are organized as separate business divisions for ease of operations and management. Handling such a huge volume of diverse business processes, each with a unique challenge to resolve, was impacting the operational efficiency of the organization. The current ERP system had the following issues that needed urgent fixing in order to avoid further financial and operational ramifications",
+          "businesscaseList": [
+            "",
+            ""
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Time consuming manual warehouse transfers",
+            "Unorganized customer codes",
+            "Lack of purchase requisition approval processes",
+            "Inefficient invoice handling for incoming supplies",
+            "Tedious warranty calculations",
+            "Inconsistent product costing",
+            "Unconsolidated financial reports",
+            "The group company had a number of diverse business units, due to which a larger team with specific functional skill sets was needed. In addition to Logistics, GITL consultants with Project and Services expertise were involved in this project.",
+            "The project involved complex integration with other add-on products such as Infor ION, Infor EAM and Microsoft Project."
+          ]
+        },
+        "solution": {
+          "description": "The client decided to change its current IT system and move to a customized version of the INFOR LN ERP product. Godrej Infotech Limited (GITL) was selected as the implementation partner due to its impeccable track record of successfully handling complex ERP implementations. Consultants from GITL worked onsite at the customer location to understand business requirements and design the best fit solution. The solution provides the following features:",
+          "features": [
+            "Advance Shipment Notice (ASN): This feature creates a standard way of tracking actual versus expected shipped quantities. Prior delivery intimation helps the supply chain department to maintain inventory at optimum levels",
+            "Improved Purchase Process: Excess spending is controlled by introducing the authorized purchase requisition process",
+            "Warranty Accounting: Warranty process is streamlined by automatic creation of Debit and Credit Note for posting into pre-configured expense and liability accounts.",
+            "Customer, Supplier and Item Dashboards: The CRM dashboard displays key data points such as credit limit, available credit, order balance and invoice balance for respective customers. Similarly, Supplier and Inventory dashboards publish correlated analytic data into a single consolidated view.",
+            "Easier Warehouse Transfers: Creation of standard system processes for initiating warehouse transfers leads to faster logistic throughput.",
+            "Easier Document Management: Object data management (ODM) technology allows for attaching documents to different artifacts that are created during the business processes.",
+            "Landed Cost Calculator: Product costing across warehouses is standardized by accounting for global shipment regulations based on item classification, source and destination country."
+        
+        ]
+         
+        },
+        "benefits": {
+          "description": "The client experienced increased operational efficiencies in different areas such as",
+          "list": [
+            "Inventory Tracking and Control: Transparency of stock movement across warehouses, better invoice management of incoming supplies and advanced recording of shipment details lead to a well streamlined and efficient inventory system.",
+            "End User Experience: Features such as intuitive customer coding, visual representation of items and partners and auto import export of data leads to ease of operations for end users.",
+            "Workforce Productivity: Automatic conversion of purchase requisition to purchase orders saves considerable amount of data entry time and effort."
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-5",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Discrete Manufacturing",
+        "title": "Industrial Valve Manufacturer Successfully Integrates Infor ERP with Product Lifecycle Management (PLM) System",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Discrete Manufacturing",
+          "projectLocation": "United Arab Emirates",
+          "engagementSince": "2008",
+          "solutionSnapshot": [
+            "Electronic Storage and Retrieval of Documents",
+            "Two Way Interface with Windchill PLM System",
+            "Efficient Order Tracking and Component Traceability",
+            "Simpler CRM and SCM Systems"
+          ]
+        },
+        "customerBrief": {
+          "description": "The client is a leader in the field of industrial value manufacturing with operations in Spain, Canada, USA, Brazil, UAE, India and China. They specialize in the manufacturing of Gate, Globe, Ball, Butterfly and Plug valves used worldwide by Oil and Gas, Power, Chemical, Petrochemical and other industries.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was facing operational issues due to data and process duplication across multiple legacy systems. There was no single source of truth for inventory, purchase, supplier and customer data making it difficult for the management to perform any significant decision analysis. Order management was complicated due to multiple production typologies such as make to stock (MTS) and engineer to order (ETO). The unorganized non integrated data was causing frustration amongst users of the system leading to staff demoralization and workflow inefficiencies. The company was in need for a single integrated automated system that would rationalize business processes and data.",
+          "businesscaseList": [
+            "",
+            ""
+          ]
+        },
+        "challenges": {
+          "description": "The non-integrated and semi automated legacy systems that were part of the original infrastructure landscape had to be studied and de-commissioned in a phased manner. The team of consultants had to ensure that the functionalities were appropriately available in the new system in optimized form. Training of users and preparation of in-depth system documentation had to be carried out so as to ensure easy adoption of the new system.",
+          "keyChallenges": [
+            ""
+            ]
+        },
+        "solution": {
+          "description": "The client evaluated a number of ERP systems specialized for the manufacturing industry and zeroed in on the use of the INFOR product. In order to implement the product across multiple locations, the client engaged with experienced INFOR partner Godrej Infotech Limited (GITL). Consultants from GITL did a detailed system study to understand the unique issues faced by the client and accordingly proposed a customized solution with the following highlights:",
+          "features": [
+            "Web based supplier solution for accurate data collection regarding status of deliveries",
+            "Web based CRM solution to manage customers/ suppliers",
+            "Object data management (ODM) functions for electronic issue and storage of documents such as drawings and material test certificates",
+            "Offline interface with Windchill PLM solution",
+            "Employee, raw materials and package bar codes for speedy and accurate data capturing ",
+            "Heat number tracking of components by scanning through hand held devices",
+            "System generated test certificates based on component and item identification"
+        
+        ]
+         
+        },
+        "benefits": {
+          "description": "The integrated system implementation of INFOR LN brought in significant improvements in the client’s operations such as",
+          "list": [
+            "Improved online and accurate status reporting of customer orders",
+            "Automatic shipping and packing list preparation",
+            "Reduced document processing and retrieval time",
+            "Reduction in Physical Storage",
+            "Reduced follow up with suppliers/ vendors",
+            " Reduction in PLM License Costs"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-6",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Printing & Packaging",
+        "title": "Leading Packing and Printing Company of Saudi Arabia Reduces Paper Work by 70% with INFOR LN Implementation",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Printing & Packaging",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2010",
+          "solutionSnapshot": [
+            "Implementation of Infor LN FP5 and FP7 with Payroll",
+            "Implementation of Infor ION Workflow",
+            "Implementation of COGNOS Reporting ",
+            "Implementation of Q-Pulse Quality Management System"
+          ]
+        },
+        "customerBrief": {
+          "description": "The client is a major industrial entity specialized in providing technical and practical solutions for the printing and packaging industries for more than 30 years. The company has also strategically diversified into the education industry, specializing in curriculum development and e-learning. The main four business units are Paper and Board, Liquid Packaging, Plastic and Education",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The current system of the client was incapable of handling the complexities of the growing business requirements",
+          "businesscaseList": [
+            "",
+            ""
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "The client was using a multitude of non integrated software for various business functions such as Workflow, Q-Pulse, IMS, Cognos, CRM and POS. This varied software landscape was difficult to maintain and inefficient as significant data and processes were crossing software boundaries leading to redundancies.",
+            "The businesses were handling multiple production typologies such as Make to Order (MTO), Make to Stock (MTS) and Engineer to Order (ETO) which impacted the Order Management system.",
+            "The process for preparing complex reports was manual and cumbersome.",
+            "Business processes were person dependent and semi-automated.",
+            "Inventory management was un-optimized and there was no visibility of stock levels.",
+            "Production costs and sales estimates could not be accurately determined from the system."    
+        ]
+        },
+        "solution": {
+          "description": "In order to keep up with the growing demands of their complex business needs, the client decided to implement the Infor LN FP7 ERP system. The solution also involved the integration of Infor with other systems such as CRM, POS, Cognos Reporting and Q-Pulse for Quality Management. In order to successfully implement this complex system, the client partnered with Godrej Infotech Limited (GITL). GITL’s consultants worked onsite as well as offshore and took charge of all phases starting from analysis, design and implementation to rollout and support. Infor LN FP7 implementation offered multiple features to the client such as:",
+          "features": [
+            "Tracking of Inventory from raw material to finished goods at each level",
+            "Calculation of Sales Incentive Schemes for Sales Personnel",
+            "Dynamic Manufacturing plan based on availability",
+            "Extensive use of bar-coding for automating production, warehouse and shipping processes",
+            "Integrated payroll management and human resources system",
+            "Set up of multi business company structure along with reporting to Group Company",
+            "Strategic reporting facility"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The implementation of INFOR LN FP 7 led to innumerable benefits for the client such as:",
+          "list": [
+            "Better visibility and tracking of Inventory",
+            "Finished goods inventory reduction by 25%",
+            "Continuous reduction in manufacturing cycle time and increase in machine utilization",
+            "Reduction in paper work by 70% due to online processes",
+            "CRM module helps in quick tracking of customer complaints",
+            "System has reliable data entered through trained users and the use of authorization processes",
+            "Secured centralized access to information"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+ 
+      {
+        "id": "case-study-7",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Aquaculture",
+        "title": "Fisheries Major in KSA Successfully Implements Infor LN FP5 across 50 Retail Units",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Aquaculture",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2007",
+          "solutionSnapshot": [
+            "Integration of sales process between POS and Corporate Headquarters",
+            "Developed a .Net based POS solution to meet client specific requirement",
+            "Accessible from Touch Screen Devices",
+            "Use of Centralized Price List",
+            "Drilled Down MIS Reports",
+            "Automatic Replenishment Planning"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Company distributes fresh, frozen and canned Marine products as per international quality standards and specifications across various locations in the Middle East. This is a public private partnership company with the Government of Saudi Arabia holding 40% capital share. The company owns an industrial base equipped with latest technologies for preparing and delivering fresh, frozen and value added products. They also have an integrated Fish & Shrimp Farm that hosts a state of the art processing plant to meet the demands of local as well as international markets.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer needed a partner who understood the global retail food industry, with emphasis on frozen marine products. The wish list was to automate the entire value chain, right from raw material procurement to the point of sales terminals spanning across various geographical regions. The current system required significant manual intervention due to partial coverage of business processes. The manual processes that needed automation were:",
+          "businesscaseList": [
+            "Daily reconciliation of collections at various outlets",
+            "POS operations",
+            "Stock replenishment and tracking of incoming material at various retail shops",
+            "Price list prepared by the head office was maintained in hard copies at various retail outlets, which made the sales process vulnerable to costly errors and longer work-in-process"
+          ]
+        },
+        "challenges": {
+          "description": "The significant number of manual processes carried out by the customer posed a major challenge during the implementation of the new system. Activities like gap fit analysis, requirement gathering, design, development, customization and integration had to be carried out for majority of the business processes now being automated. Another challenge was the integration of a large number of POS outlets spread across diverse geographical regions. GITL, with its expertise in ERP consultation and implementation was able to skillfully handle the situation and deliver the solution to meet client’s requirement.",
+          "keyChallenges": [
+            ""    
+        ]
+        },
+        "solution": {
+          "description": "Godrej Infotech Ltd. (GITL) was selected as the partner for upgrading the existing ERP system by adding new modules including development of POS solution and enhancing earlier modules. The solution developed by GITL had the following features:",
+          "features": [
+            "Seamless integration with the existing Infor BaaN ERP system",
+            "Ease of deployment and use on touch screen enabled devices",
+            "Can be scaled up to multiple POS terminals in a single shop",
+            "Centrally controlled price list across all shops",
+            "Automatic replenishment planning for individual retail shops"  
+        ]
+         
+        },
+        "benefits": {
+          "description": "Post implementation, there has been a 360 degree turnaround in the efficiency of the customer’s business operations. The new system brings with it multiple benefits such as:",
+          "list": [
+            "Automatic updating of shop activities saves valuable working time thus improving productivity and enhancing business transaction accuracy",
+            "Improved inventory management and cash flow generation through effective liquidation of goods nearing expiry by launching attractive promotion schemes which are pre-defined in the system",
+            "Information is readily available to generate MIS report to assess the product wise / product category wise performance in terms of sales and profitability",
+            "Lot tracking and control module leads to superior stock control",
+            "Standardization of POS terminal hardware across all shop location"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-8",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "India's Established Manufacturer and Distributor for Oil Field Equipments and Related Services Implements Infor LN FP 10.4 Across 3 Locations",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Multi- location implementation with India localization",
+            "In-house Instrument Calibration",
+            "Bonded Warehouse Functionality Customization",
+            "On-Going Application Support"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is an ISO 9001:2008 certified company specializing in state-of-the-art manufacturing of oil field equipments such as BOP Control Units, Test Units, Water Blaster, Flanges, Crosses, Tees, Ring Joint Gaskets, Adapters and Spacer Spools. Their products consistently meet or exceed the API – 6A, 16A, 16C and 16D specifications. The manufacturing facility is spread over 10 acres and also includes production of sword armors, handicrafts, and retailing of licensed Hollywood props. In addition to manufacturing units in India, the client also has a modern trading facility in the Middle East.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was already using an ERP solution for their ad-hoc needs. They were facing multiple issues in their day-to-day operations such as:",
+          "businesscaseList": [
+            "Use of Excel for carrying out daily transactions.",
+            "No proper control on inventory.",
+            "No integration with finance functions.",
+            "No proper traceability of transactions.",
+            "Lack of proper product costing.",
+            "Manual processes for bonded warehouse transactions.",
+            "Lack of discipline amongst users for standardizing system processes.",
+            "Overall operation costs were difficult to track and maintain."
+          ]
+        },
+        "challenges": {
+          "description": "An implementation of this scale was successful due to the continuous support provided by the key stakeholders and senior management members from both, the client organization and Godrej Infotech Limited. Some of the roadblocks faced were due to the following:",
+          "keyChallenges": [
+            "Customer’s bitter experience of earlier 2 ERP implementations",
+            "Implementation to be done in multiple companies with diversified products and different processes"    ,
+            "Acceptability by key users for system oriented functioning"
+        ]
+        },
+        "solution": {
+          "description": "The client was looking for a comprehensive enterprise solution that could be deployed at all of its 3 locations. Infor LN FP 10.4 was selected as the most appropriate product with all the latest features that could meet the needs of this client. Godrej Infotech Limited (GITL) was selected as the preferred implementation partner, due to its successful relationship with Infor since 2003. The solution included:",
+          "features": [
+            "Implementation of Infor FP 10.4 (India Localization) with Infor BI Reporting, Ming.le and ION Workflow",
+            "Quality Module – API Certification Requirement (American Petroleum Institute) for In-process, Incoming and Final Inspections",
+            "Non Conformance Reports (NCR) and Corrective and Preventive Actions (CAPA) implementation in order to handle the rejection process"  
+        ]
+         
+        },
+        "benefits": {
+          "description": "Once implemented, the benefits of this Infor solution have been tremendous. Some of the highlights are:",
+          "list": [
+            "Better inventory control",
+            "Reduction in duplication of data entry",
+            "High operational efficiency",
+            "Better control on material movement within various shops",
+            "Better product costing information derived from the system"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-8",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "India's Established Manufacturer and Distributor for Oil Field Equipments and Related Services Implements Infor LN FP 10.4 Across 3 Locations",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Multi- location implementation with India localization",
+            "In-house Instrument Calibration",
+            "Bonded Warehouse Functionality Customization",
+            "On-Going Application Support"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is an ISO 9001:2008 certified company specializing in state-of-the-art manufacturing of oil field equipments such as BOP Control Units, Test Units, Water Blaster, Flanges, Crosses, Tees, Ring Joint Gaskets, Adapters and Spacer Spools. Their products consistently meet or exceed the API – 6A, 16A, 16C and 16D specifications. The manufacturing facility is spread over 10 acres and also includes production of sword armors, handicrafts, and retailing of licensed Hollywood props. In addition to manufacturing units in India, the client also has a modern trading facility in the Middle East.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was already using an ERP solution for their ad-hoc needs. They were facing multiple issues in their day-to-day operations such as:",
+          "businesscaseList": [
+            "Use of Excel for carrying out daily transactions.",
+            "No proper control on inventory.",
+            "No integration with finance functions.",
+            "No proper traceability of transactions.",
+            "Lack of proper product costing.",
+            "Manual processes for bonded warehouse transactions.",
+            "Lack of discipline amongst users for standardizing system processes.",
+            "Overall operation costs were difficult to track and maintain."
+          ]
+        },
+        "challenges": {
+          "description": "An implementation of this scale was successful due to the continuous support provided by the key stakeholders and senior management members from both, the client organization and Godrej Infotech Limited. Some of the roadblocks faced were due to the following:",
+          "keyChallenges": [
+            "Customer’s bitter experience of earlier 2 ERP implementations",
+            "Implementation to be done in multiple companies with diversified products and different processes"    ,
+            "Acceptability by key users for system oriented functioning"
+        ]
+        },
+        "solution": {
+          "description": "The client was looking for a comprehensive enterprise solution that could be deployed at all of its 3 locations. Infor LN FP 10.4 was selected as the most appropriate product with all the latest features that could meet the needs of this client. Godrej Infotech Limited (GITL) was selected as the preferred implementation partner, due to its successful relationship with Infor since 2003. The solution included:",
+          "features": [
+            "Implementation of Infor FP 10.4 (India Localization) with Infor BI Reporting, Ming.le and ION Workflow",
+            "Quality Module – API Certification Requirement (American Petroleum Institute) for In-process, Incoming and Final Inspections",
+            "Non Conformance Reports (NCR) and Corrective and Preventive Actions (CAPA) implementation in order to handle the rejection process"  
+        ]
+         
+        },
+        "benefits": {
+          "description": "Once implemented, the benefits of this Infor solution have been tremendous. Some of the highlights are:",
+          "list": [
+            "Better inventory control",
+            "Reduction in duplication of data entry",
+            "High operational efficiency",
+            "Better control on material movement within various shops",
+            "Better product costing information derived from the system"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-9",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "Europe's Leading Machine Manufacturer Automates Operations with Integrated Infor LN 10.4 Solutions",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "Romania",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Barcode Scanning",
+            "Infor Ming.le Workflows",
+            "Management Summary Reports",
+            "External System Integration"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a renowned name in the machine tools industry, having started out as a manufacturer of small and medium size grinding machines. Since then, it has diversified into many different product lines, including CNC machine tools, parts and subassemblies for marine life saving equipments and other items used in the energy, power generation and allied industries. The client is involved in a wide range of metalworking operations such as grinding, assembly, welding, milling, turning, painting and shot blasting.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was running a home grown IT system based on ad-hoc needs. Primary systems used were Microsoft Excel and e-mail, which led to huge operational inefficiencies. Majority of the issues faced were related to:",
+          "businesscaseList": [
+            "Lack of business integration",
+            "Data inaccuracy",
+            "Insufficient production planning",
+            "Product manufacturing cost calculations",
+            "Project and sales tracking",
+            "Inventory management"
+          ]
+        },
+        "challenges": {
+          "description": "A number of challenges were faced due to the complex nature of interfaces with external barcode and CAD systems. Other challenges were related to introduction of new concepts and their acceptance from client such as routing, manufacturing projects, service, asset creation and monitoring throughout asset life. GITL consultants were also trained to overcome language barriers with some users who were not conversant in English.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "Deployment of an integrated enterprise-wide system was recommended as the solution to address the client's pain areas. Infor LN 10.4 was selected as the most suitable product to use, since it was already implemented in other business areas. The client was aware of successful implementations of Infor LN by GITL at similar European organizations, and hence selected us as the implementation partner for this project. The solution provided by GITL includes:",
+          "features": [
+            "Integrated ERP LN solution with process and data flow between Finance, Purchase, Sales, Inventory and Planning functions.",
+            "Integration with Solid Works - the client's existing 3D CAD software.",
+            "Preparation of detailed and summary reports to aid management decision making.",
+            "Infor Ming.le workflows such as Purchase RFQ approval.",
+            "Infor Ming.le alerts to notify managers as and when triggers occur."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The benefits of using Infor LN FP 10.4 experienced by the client are as follows:",
+          "list": [
+            "Better control on manufacturing processes especially for customized items.",
+            "Simplification of approval processs",
+            "Increased speed and accuracy of transactions and workflows.",
+            "Efficient planning of shop floor / purchase orders with respect to the sales delivery dates.",
+            "Service/ preventive maintenance planning and monitoring has been simplified and automated."
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      }
+
+    ]
+  }
