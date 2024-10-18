@@ -900,6 +900,971 @@
           "url": "path-to-case-study-1-download.pdf"
         }
         
+      },
+
+      {
+        "id": "case-study-10",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing & Distribution",
+        "title": "Global Leader in Capital Goods Successfully Implements Infor LN 10.4 in India",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing & Distribution",
+          "projectLocation": "India",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Number of users: 800+",
+            "Single click data migration from Baan IVc4 to Infor 10.4",
+            "Compliance to India localization",
+            "Zero “Source Code” customization",
+            "Common business model at core location for roll-out across other units"
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is one of the largest industrial companies in the capital goods sector with 12 brands, 64 manufacturing plants & 48 R&D centers. It has presence in more than 190 countries, with a workforce of more than 71,000 people. In India, it specializes in agriculture equipment, construction & financial services.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was facing many challenges with regards to the existing legacy software system. The objectives for the new implementation were as follows:",
+          "businesscaseList": [
+            "Common business processes across locations",
+            "Uniform master data",
+            "Minimize existing 500+ customizations",
+            "Alignment with latest software release"
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Lack of integrated system resulted in uncoordinated Engineering, Production, Sales & Purchase processes",
+            " Difficulty in tracking of Engine and Tractor number on assembly line as per VIN (Vehicle Identification Number) standard"
+        ]
+        },
+        "solution": {
+          "description": "The solution offered by Godrej Infotech involved the implementation of Infor LN 10.4 at the organization’s manufacturing units at Noida & Pune in India with the Sales, Planning, Procurement, Warehouse, Manufacturing, Service & Finance modules. Multiple interfaces have been developed for integration of ERP LN with third party systems for better transparency. Following enhancements have been implemented:",
+          "features": [
+            "EDM (Engineering Data Management)",
+            "Direct Deliveries",
+            "Plant Maintenance",
+            "Service",
+            "Infor OS – Alerts & Workflows",
+            "Infor Warehouse Mobility",
+            "EDW – Global interface with parts data warehouse",
+            "WPS – Interface with purchase contracts system",
+            " CSPS (Common Spare Parts System) – Interface for forecasting & planning functions"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The benefits of using Infor LN FP 10.4 experienced by the client are as follows:",
+          "list": [
+            "Increase in process efficiency due to automation of process flow ",
+            "Better control on inventory and processes",
+            "Integration with other software ensures fairness and transparency"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-11",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "Leading Indian Refiner of Precious Metals Successfully Upgrades from Microsoft Dynamics NAV 2013 to NAV 2016",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "NAV 2013 to 2016 upgrade",
+            "Metal inventory management",
+            "Customer metal accounting",
+            "Quality assurance",
+            "Successful go-live amid COVID-19 lockdown",
+            "Post go live support done remotely with the help of Microsoft Teams"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is a leading refiner of precious metals & manufacturer of precious metal catalysts. Over the years, they have progressed from refining and fabrication activities to being a comprehensive full service provider. A quality conscious organization, they are on the London Platinum and Palladium Market (LPPM) good delivery list, and have received accreditation from ISO and the National Accreditation Board for Testing and Calibration Laboratories (NABL).",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The Customer was using NAV 2013 which is currently not supported by Microsoft. Hence, they were looking to upgrade to NAV 2016 for using new standard features and building enhancements related to:",
+          "businesscaseList": [
+            "GST & e-invoicing",
+            "Inventory valuation and tracking",
+            "Metallurgy specific business processes"
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "Following enhancements were done as part of this project for the",
+          "features": [
+            "Automation of Customer’s metal credit & metal accounting process",
+            "End-to-end batch & lot tracking of Customer material",
+            "Automation of quality checking at various stages of production"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Real time and seamless tracking of Customer’s material throughout the production process",
+            "Improved metal credit management with real time tracking of Customer’s metal balances",
+            "Precise stock movement across departments during the production process",
+            "30% increase in sales order processing efficiency",
+            "60% increase in warehouse inventory processing efficiency",
+            "40% increase in location, bin, and metal wise inventory visibility & reporting efficiency",
+            "60% improvement in data analysis",
+            "40% improvement in Customer's metal credit calculations",
+            "40% saving in time & effort in monthly MIS preparation",
+            "700 man-hours savings per month using Metal Wise Inventory Management feature in NAV 2016"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-12",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Trading and Distribution",
+        "title": "Saudi Arabia’s Leading Industrial Automation Solution Provider",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Trading of Building & Construction Material",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2020",
+          "solutionSnapshot": [
+            "MS Dynamics CRM",
+            "Integration with MS Dynamics GP"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer organization supplies piping products and fittings for hot and cold-water piping systems along with sanitary distribution. Their primary product is PP-R pipes (Polypropylene Random Copolymer) that are manufactured with highly advanced technologies as per European standards. The organization also manufactures and distributes cast pallet-wrap stretch film to the global market.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "They were looking for a CRM solution that could integrate with their existing Microsoft Dynamics GP ERP. Secondly, the organization has a sales team of over 50 people. The requirement was to track the movement of the sales staff on the field. In the current process, the sales persons visit the Customer and write down the details on paper, after which they go to the warehouse and enter the details in the system. With the mobile enabled CRM solution, they will now be able to enter the details during their Customer visit itself, thus saving time and resources for other productive activities.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "UAT has been conducted smoothly despite the remote way of working due to COVID – 19. Other challenges were:",
+          "keyChallenges": [
+            "Vendor finalization between Maplytics and QuickMaps was a challenge",
+            "Integration between GP and Dynamics 365 for Sales Professional was a challenge since GP was managed by a different vendor"
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            "Integration with Dynamics GP ERP forCustomer, Inventory and Payment Information",
+            "Standard CRM reports with layout, logos and font as per Customer requirements",
+            "Location tracking of sales team to ensure adherence to policies and protocolss",
+            "Power automate has been used effectively in the implementation of this project",
+            "Successful implementation of addon product “Maplytics”",
+            "The project was planned to be executed in a short time frame of 85 days"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Earlier manual process has been automated",
+            "Reports are now available on real-time dashboards by virtue of the ERP-CRM integration",
+            "Easy tracking of the sales team on the field",
+            "Increase in productivity for sales staff"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-13",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Facility Management",
+        "title": "Leading Conglomerate in the Middle East Goes Live with MS Dynamics Business Central SaaS Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Facility Management",
+          "projectLocation": "Kingdom of Saudi Arabia, Dubai, Abu Dhabi)",
+          "engagementSince": "2020",
+          "solutionSnapshot": [
+            "MS 365 Business Central SaaS Model for handling all business process",
+            "Consolidation of business unit and financial reporting",
+            "Single system to avoid duplication between departments",
+            "Integration between HR & Payroll with 3rd party Attendance system",
+            "100% offsite execution"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is a large holding group having diversified businesses in the Middle East such as real estate development, contracting and infrastructure, building solutions and financial services. The company deals in long term Public Private Partnerships / Infrastructure in the form of Build Transfer Operate & Build Own Operate Transfer projects such as airports, schools, hospitals, housing projects and water plants. ",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The company was using multiple software & manual processes to run the business operations of various business entities across the group. The requirement from the new system was:",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "UAT has been conducted smoothly despite the remote way of working due to COVID – 19. Other challenges were:",
+          "keyChallenges": [
+           "• Full visibility & control of the businesses on the
+ operational, financial & MIS aspects
+• Managing multiple legal entities spread across multiple
+ locations
+• Inter-department integration to avoid duplication of
+ manual work
+• Adherence to latest financial & audit guidelines
+• Consolidation of financial entries
+• Standardization of business processes along with well
+ defined approval matrix
+• Maintaining & monitoring inventory holdings at multiple
+ project locations
+• HR & Payroll module along with 3rd party integration
+ with bio-time attendance machine
+• Quick reporting for faster decision making"
+        ]
+        },
+        "solution": {
+          "description": "Godrej Infotech was selected for this implementation due to its detailed product demonstration during the pre-sales phase which fulfilled all of the Customer requirements. Highlights of the solution provided are:",
+          "features": [
+            "SAAS based implementation of Microsoft Dynamics Business Central along with KSA GITL Add-on HR & Payroll Solution",
+            "Implementation of a reputable reporting framework to facilitate the aggregation of subsidiaries and joint ventures into any desired hierarchies",
+            "Dashboard for top management",
+            "Notification for document approval as per approval matrix",
+            "Automatic punching of employee attendance due to smooth & efficient integration between Business Central & bio-time attendance machine"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Real time inventory visibility to key users",
+            "Efficiency of material requisition & approval process has increased by 66%",
+            "79% reduction in time taken for purchase order & approval process",
+            "60% increase in productivity of purchase receiving and invoicing process"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-14",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing & Distribution",
+        "title": "Leading Dairy Manufacturer Successfully Implements Advanced WMS Solution of Microsoft Dynamics 365 - Finance & Supply Chain",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing & Distribution",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2020",
+          "solutionSnapshot": [
+            "MS Dynamics D365",
+            "Advanced warehouse management system",
+            "Integration with legacy systems such as DMAS",
+            "Successful UAT done through remote working due to the Covid-19 pandemic"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is a multinational cooperative and is one of the largest producers of dairy products in the world. They produce & distribute milk products including a variety of butter & cheese under different brands worldwide. The company also develops and manufactures milk-based ingredients, primarily functional and nutritional milk proteins, bioactive phospholipids, minerals, permeate and lactose for the food industry.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was using D365 – Finance & Supply Chain for managing their business operations. To optimize their warehouse operations, INFOR WMS was implemented and integrated with the ERP system in one of the distribution warehouses. Godrej Infotech suggested to the Customer that the Advanced WMS solution of Dynamics 365 can help in organising their warehouses while eliminating the need for integration and separate licensing of software. The organization has more than 15 distribution warehouses. They also own a fleet of vans and trucks for managing sales. The requirement was:",
+          "businesscaseList": [
+            "To track and monitor the movement of inventory throughout the life cycle",
+            "Ensure that products are sold as per FEFO (First expiry first out) criteria",
+            "Optimizing warehouse operations for minimizing manual efforts and eliminating errors",
+            "Designing of warehouse layout and locations based on the temperature conditions and product type",
+            "Physical tracking of inventory batches to monitor shelflife",
+            "Handling of customer returns and claims"
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Manual  warehouse operations",
+            "Difficulty in tracking inventory batches"
+        ]
+        },
+        "solution": {
+          "description": "Since Godrej Infotech Ltd. (GITL) had completed the earlier implementation of Dynamics 365, they were selected to design and develop a robust, agile, simple and easy to implement advanced warehousing solution. Highlights of the solution provided are:",
+          "features": [
+            "Optimal design and layout of warehouse locations",
+            "Integration with other legacy system such as DMAS",
+            "Configuration of portable handheld devices for warehouse work execution",
+            "Physical tracking and monitoring of inventory with actual batch numbers and shelf life",
+            "Ensuring the picking of items as per FEFO strategy",
+            "Standard and customized reports with layout and font as per Customer requirements"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Earlier manual process in warehouse have been automated",
+            "Structured, well planned and defined warehouse locations minimizing the movement of workers and efforts in picking routes",
+            "Physical tracking of inventory batches is now a reality and shelf life management is possible",
+            "Scannable labels and reports are now available for ease and efficient warehouse operations",
+            "Real-time and easy tracking of inventory"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-15",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "Multi-Year MS Dynamics NAV Support for Leading Global Tire Manufacturing Organization",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "Global",
+          "engagementSince": "2016",
+          "solutionSnapshot": [
+            "Support as per US time zone",
+            "Additional programming to accommodate warranty process",
+            "National account auto-processing",
+            "Integration with: Salesforce, WMS (Warehouse Management System), TMS (Transport/ Freight Management System)"
+          ]
+        },
+        "customerBrief": {
+         "description": "Customer is a tire manufacturing company headquartered in USA with offices in Europe, USA, Netherlands and India. With experience spanning across 6 decades, the organization, today, has an active presence in 120 countries. Specializing in the development, manufacture and sale of Agricultural, Forestry, Industrial and OTR tires worldwide, it is recognized as an emerging market leader of Off-Highway Tires (OHT).",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The Customer was looking for IT support services for their MS Dynamics NAV 2016 application, since their business in the US market is primarily supported by MS Dynamics NAV 2016 along with multiple third-party integrations.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Discrete processes across subsidiaries.",
+            "Inefficient manpower utilization",
+            "Manual sales process"
+        ]
+        },
+        "solution": {
+          "description": "Godrej Infotech Ltd. (GITL) was selected for providing rollout and support services to the customer. This is a five year support contract which includes functional and technical resources that work as per US time zone. Following best practices have been followed for the smooth delivery of support services:",
+          "features": [
+            "Ticket based issue resolution",
+            "Functional specifications are prepared for development service requests",
+            "Testing is done in development server and test documents are prepared and verified before promotion to production server",
+            "Solution upgrade testing is done with end-to-end scenarios for various business units",
+            "Special provision for month-end and year-end support"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Uniform processes across subsidiaries",
+            "Third party integration for automating the sales process from order to invoice",
+            "25% increase in manpower utilization",
+            "30% cost reduction due to standardized process across subsidiaries"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-16",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Leading Café Chain in the Middle East Successfully Integrates NAV 2016 with Foodics",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Integration using Cloud technology",
+            "Improvement in system performance",
+            "Upgrade to V5 version of Foodics API",
+            "Compatible with higher version of Business Central Online in SAAS Platform"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is one of the most popular cafes in Saudi Arabia with more than 33 drive through locations. A firm believer in providing high-quality products, along with the finest quality of Arabic coffees, they also serve ice-cream, smoothies, iced tea, lemonade, cream freeze frappes and more. All their products are made in-house and pass through several quality checks before being presented before the Customers. ",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Customer wanted to have seamless & automated integration keeping in view of compatibility to the higher version of NAV in cloud as well on-prem platform.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "The organization was facing issues with the integration between the NAV and Foodics system since the time taken for data transfer from Foodics to NAV was very high, sometimes even over an hour.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "We automated the entire process so that there could be seamlessly integration between the Foodics and NAV applications. The team was quick to respond and re-architected the integration piece by using cloud technology. The system is also compatible with higher version of Business Central Online in SAAS Platform which will help if the Customer wishes to expand and upgrade in the future. ",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Increase in high volume data transaction process per minute",
+            "High Performance",
+            "Reduced IT Infra & Maintenance Cost",
+            "Security Enhancement",
+            "Centralized Server Based Solution"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-17",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "India’s Leading Manufacturing, Distribution & Testing Provider Successfully Implements D365 Business Central Online ",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "First of its kind business model",
+            "Rapid development of D365 Business Central Online",
+            "100% offshore implementation",
+            "Supply planning module"
+          ]
+        },
+        "customerBrief": {
+         "description": "Organization is a part of 115+ years old business group based out of Bhopal. Firm believers in ethical business, they ensure that their values remain intact and that they provide the most satisfying supplies to the consumers. The company today has automated and semi-automated, modern manufacturing and advanced testing facilities in India, Sri Lanka, Philippines, and Nepal.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The order fulfillment across the entire supply chain network was developed in SAP and was so far being controlled and managed by the organization’s customer.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "Our customer wanted to replace it to meet their own requirements and have more control on supply planning rather than being driven by their customer. To solve this, we have now implemented a first of its kind business model, wherein supply chain planning has been implemented by the organization itself with real time visibility of inventory availability across order networks.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "This has been a 100% offshore implementation for the manufacturing unit in Philippines. We have developed the following features:",
+          "features": [
+            "Supply planning module so that the organization can be well prepared to meet the forecasted demand",
+            "Quality module for inventory tracking",
+            "Localization - VAT (Value Added Tax)",
+            "Weigh bridge Integration",
+            "Workflows",
+            "Inbound to outbound end to end Inventory item tracking"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Improved User Experience ",
+            "Increased Operational Agility",
+            "Reduced Cost",
+            "Multitasking for teams and individual users"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-18",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Trading",
+        "title": "Leading Tyre Trading Organization in the Middle East Successfully Deploys Web-based, On-Premise Microsoft D365 Business Central with Servers on Azure",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Trading",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Cloud hosting of servers on Azure",
+            "Godrej infotech’s KSA Payroll Module",
+            "e-Invoicing solution for ZATCA compliance",
+            "Automation of procure-to-pay process",
+            "Location, Batch and Bin-wise Inventory Management"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Organization is one of the leading rig movers in the Kingdom of Saudi Arabia (KSA). They have multiple lines of business such as rental services for supplying rig move trucks, heavy equipment, diesel tankers, water tankers and manpower. One of these is the tyre trading business in Dammam for which we have implemented this project. ",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Manual Processes were getting tedious , so customer decided to automate operations.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "Customer was running the business through manual processes for inventory, finance & payroll.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "We recommended a hybrid deployment of web-based, on-premise Microsoft Dynamics Business Central with servers hosted on Azure cloud. Highlights of this solution are:",
+          "features": [
+            "Automation of Supply Chain, Finance & KSA Payroll",
+            "Entire procure-to-pay process has been automated",
+            "e-Invoicing module as per the requirements of ZATCA",
+            "Features such as sales commission calculation & inventory tracking"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Time & cost savings",
+            "Productivity improvementsy",
+            "Scalable system that can meet future requirements"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-19",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "Leading Group of Electrical & Electronic Manufacturing Companies in Kingdom of Saudi Arabia Successfully Implements Microsoft D365 Finance & Operations",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "Integrated system of 5 legal entities",
+            "Consolidation of financial data",
+            "Availability of group as well as individual level reports",
+            "Profit & loss statement and balance sheets"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Company is a leading group of manufacturing companies. Their portfolio of products include KWH Meters, Moulded Case Circuit Breakers (MCCB’s), Air Circuit Breakers (ACBs), Switchgears, and Electromechanical Transformers. The factory is spread across 10,000 square meters and is located at New Industrial City in Riyadh. It contains state-of-the-art equipment for manufacturing high accuracy measuring and protection equipment.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The requirement was for a system that could easily help them determine the cost of items they manufacture along with the revenue margins. They were also looking for recommendations & suggestions of new ways of working that could streamline their business processes & bring about automation.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "The organization was using MS Dynamics AX 2012 R2 for the last 6 years for managing the operations and finances for 3 of its legal entities & 2 were on other legacy systems.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "Godrej Infotech stepped in to understand the challenges faced by the Customer. A business study workshop was conducted, based on which a proposed solution was documented and presented. Highlights of the solution are:",
+          "features": [
+            "Business function-wise assessment snapshots",
+            "Implementation of the D365 Finance & Operations ERP",
+            "Cost-effective approach for implementation and rollout using the 100% offshore implementation methodology",
+            "Consolidated reports for quick management review and decisions"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Time & cost savings",
+            "Scalable system ",
+            "Proper calculation of product costing",
+            "Real time inventory visibility",
+            "Increased operational agility"
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-20",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Exclusive Distributor of Renowned Coffee Brand in Egypt and Saudi Arabia Implements cloud based D365 Finance, SCM and Commerce",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Single cloud system for SCM, Finance, Sales B2C, B2B, Trade & Call Center",
+            "Management reporter tool",
+            "Multiple system upgrades and maintenance"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is a Saudi Arabia & Egypt partner of a renowned coffee brand headquartered at Lausanne, Switzerland. It has created a World of Coffee Platform which strives to provide the ultimate experience to coffee lovers.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "With 16 stores to manage, Customer was facing multiple challenges",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Maintenance of multiple systems Microsoft Dynamics GP, AX 2012 R3 and bespoke applications for CRM, e-commerce, and statutory compliance reporting across multiple locations",
+            "High reliance on 3rd party system integrators",
+            "Issues with retail processes related to store operations",
+            "Standardization of business processes across Saudi & Egypt"
+        ]
+        },
+        "solution": {
+          "description": "GITL conducted system audit assessment of existing systems to understand the issues and challenges. Based of analysis a fresh implementation of D365 was recommended instead of upgrade approach. ",
+          "features": [
+            "Single cloud system for Finance, SCM, Commerce, Sales (B2C, B2B, Trade, Call Center)",
+            "Real time data made available for quick decision making",
+            "Consolidation of financial reporting by leveraging Management reporter tool",
+            "Cost optimization with multiple system upgrades and maintenance"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Intercompany transactions reduced average",
+            "Time take and probability of error",
+            "On-hand inventory visibility ",
+            "Easy switching between offline & online modes",
+            "Inventory viability across stores",
+            "Better data synchronization between head office and Stores",
+            "Financial dimension control & analysis by dimension reporting",
+            "Automatic posting of bank charges for retail sales"
+
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
       }
 
     ]
