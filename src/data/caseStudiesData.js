@@ -34,10 +34,7 @@ const caseStudiesData =  [
       },
       businessCase: {
         description: "Since the India offices did not have an integrated CRM system",
-        businesscaseList: [
-          "",
-          ""
-        ]
+        businesscaseList: []
       },
       challenges: {
         description: "Customer were facing challenges with regards to:",

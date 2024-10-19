@@ -59,6 +59,28 @@ const page = () => {
                                         </ul>
                                         )}
                                     </div>
+                                    {/* business case */}
+
+                                    <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
+                                        <h2 className="title text-[28px] font-semibold mb-4">Business Case</h2>
+                                       {item?.businessCase?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.businessCase?.description}</p>)} 
+                                        {item?.businessCase?.businesscaseList&& (
+                                            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside mb-3">
+                                            {item?.businessCase?.businesscaseList.map((item) => (<li>{item}</li>))}
+                                        </ul>
+                                        )}
+                                    </div>
+                                    {/* business solution */}
+                                    <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
+                                        <h2 className="title text-[28px] font-semibold mb-4">Business Case</h2>
+                                       {item?.businessCase?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.businessCase?.description}</p>)} 
+                                        {item?.businessCase?.businesscaseList&& (
+                                            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside mb-3">
+                                            {item?.businessCase?.businesscaseList.map((item) => (<li>{item}</li>))}
+                                        </ul>
+                                        )}
+                                    </div>
+
                                 </div>
 
                             </div>
