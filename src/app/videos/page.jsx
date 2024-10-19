@@ -4,34 +4,32 @@ import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import caseStudiesData from "@/data/caseStudiesData";
-import { useRouter } from 'next/navigation'
-
-
+import { useRouter } from 'next/navigation';
+import Dialog from "@/components/Dialog";
 
 
 const page = () => {
-    const router = useRouter()
+    const router = useRouter();
+    const [showModal2, setshowModal1] = useState(false);
+
     const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
     const [mainCategory, setMainCategory] = useState('');
-    const [subCategory, setSubCategory] = useState('');
-    const [vertical, setVertical] = useState('');
+
 
     const onChange = (event, type) => {
         const value = event.target.value;
         { type == 'mainCategory' && setMainCategory(value) }
-        { type == 'subCategory' && setSubCategory(value) }
-        { type == 'vertical' && setVertical(value) }
+
     };
 
     useEffect(() => {
         filterData();
-    }, [mainCategory, subCategory, vertical])
+    }, [mainCategory])
 
     function handleReset(){
         setUpdatedCaseStudiesData(caseStudiesData);
         setMainCategory('');
-        setSubCategory('');
-        setVertical('');
+  
     }
 
 
@@ -40,17 +38,13 @@ const page = () => {
             const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory);
             setUpdatedCaseStudiesData(data);
         }
-
-        if (subCategory != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory && item.subCategory === subCategory);
-            setUpdatedCaseStudiesData(data);
-        }
-
-        if (vertical != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory && item.subCategory === subCategory && item.vertical === vertical);
-            setUpdatedCaseStudiesData(data);
-        }
     }
+
+    function handleBusinessCardClick(modal) {
+        setshowModal1(modal);
+      }
+
+
 
 
     return (
@@ -72,20 +66,7 @@ const page = () => {
                             <option value="Transformation">Transformation</option>
 
                         </select>
-                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
-                            <option value='' selected>Select Category</option>
-                            <option value="Infor">Infor</option>
-                            <option value="IntelligentTechnologies">Intelligent Technologies</option>
-                            <option value="Transformation">Transformation</option>
-
-                        </select>
-                        <select id="large" value={vertical} onChange={(e) => onChange(e, 'vertical')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
-                            <option value='' selected>Select Category</option>
-                            <option value="LN">LN</option>
-                            <option value="AI">AI</option>
-                            <option value="Transformation">Transformation</option>
-
-                        </select>
+       
                         <div className="">
                             <button onClick={() => handleReset()} type="button" class="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
                         </div>
@@ -110,7 +91,7 @@ const page = () => {
                                     </div>
                                     <h5 class="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.title}</h5>
                                     <div className="flex justify-end">
-                                        <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => router.push(`/case-studies/${item.id}`)} />
+                                        <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => handleBusinessCardClick(true)} />
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +104,26 @@ const page = () => {
                 </div>
             </SectionWrapperNew>
 
+            
+      {/* modal */}
+      <Dialog
+        shouldShow={showModal2}
+        onRequestClose={() => {
+          setshowModal1((prev) => !prev);
+        }}
+        title={"video"}
+      >
+        <div className="py-10 mx-auto text-center">
+        <iframe width="560" height="415" style={{margin:'0 auto'}} src="https://www.youtube.com/embed/T-VEzb3WgJY?si=10lNjjAPIVBstnvC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </Dialog>
+      {/* end modal */}
+
         </>
     );
 };
+
+
+
 
 export default page;
