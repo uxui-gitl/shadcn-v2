@@ -117,10 +117,26 @@ const page = () => {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Manufacturing",
+      cardHeading: "Retail",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    
+    <li>
+    Retail
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Point of Sale</li>
+            <li>Loyalty Management</li>
+            <li>Replenishment</li>
+            <li>eCommerce Integration</li>
+            <li>Store Operations</li>
+            <li>Store Operations</li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 2,
@@ -128,11 +144,27 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Retail",
+      cardHeading: "Duty-Free and Travel Retail",
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+       
+    <li>
+    Duty-Free and Travel Retail
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Multi-Currency Cash Back</li>
+            <li>Transit Bank Guarantee Management</li>
+            <li>Customer Quota-Based Offers</li>
+            <li>Unified Platform for Retail Sales, Ingredients and Food Production, Bookings, and Reservations</li>
+            <li>Automated Application of Tax-Free Rules</li>
+            <li>Track Travelers' Preferences and Past Purchases for stores and eCommerce</li>
+            <li>Manage Product Allowance Rules Easily according to local legislation</li>
+        </ol>
+    </li>
+</ul>`
     },
     {
       id: 3,
@@ -140,46 +172,27 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Trading & Distribution",
+      cardHeading: "Hospitality",
       cardDesc:
         "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
       isArrow: false,
       cardTextColor: "white",
+      additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+       
+    <li>
+    Hospitality
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Restaurant POS (Fine dining, Take away, QSR &More)</li>
+            <li>Kitchen Display System (KDS)</li>
+            <li>Guest Loyalty</li>
+            <li>Recipe Management</li>
+            <li>Split Bill & Table Transfer</li>
+          </ol>
+    </li>
+</ul>`
     },
-    {
-      id: 4,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Healthcare",
-      cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--professional-services.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Professional Services",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--project.png",
-
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Project",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-    },
+    
     // Add more cards as needed
   ];
   const RPASolution = [
@@ -259,7 +272,7 @@ const page = () => {
       cardDesc: 'From adding features to modifying workflows and integrating with third-party systems, retailers can adapt to changing requirements and stay competitive.',
       isArrow: false,
       cardTextColor: 'white',
-      cardType: 2,
+      cardType: 1,
     },
   ]
 
@@ -317,7 +330,7 @@ const page = () => {
         cardData={RPASolution}
       >
       </CommonCardTwoSlider>
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Retail Accelerators'} sectionDesc={'Understanding unique demands of segment and by leveraging tech capabilities, we equip businesses to thrive in competitive market.'}/>
       <BenefitSliderSection
         ID={'BENEFIT'}
         sectionBGColor={'#1D162B'}
@@ -338,9 +351,10 @@ const page = () => {
         blogImageUrl={blogImageUrl}
         Heading={"Secure & Scalable E-Commerce Solution from Adobe"}
         Desc={
-          "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model have started to enhance their online ecosystems, leading to a greater demand for e-Commerce solutions. Some interesting statistics on this topic as per IBEF (India Brand Equity Foundation) are:"
+          "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model ..."
         }
         Color={"white"}
+        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=17"}
       ></BlogSection>
 
       {/* Start--Distinctive-Section============================================================== */}
