@@ -74,6 +74,24 @@ function page() {
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+          
+          <li>
+          Automotive/Discrete/Industrial 
+              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Automotive OEM / Suppliers </li>
+                  <li>Industrial Manufacturing </li>
+                  <li>High-Tech & Electronics </li>
+                  <li>Machinery & Equipment</li>
+                  <li>Automotive Components</li>
+                  <li>Electricals & Electronics</li>
+                  <li>Valve</li>
+                  <li>Cables</li>
+                  <li>Optical Glass</li>
+              </ol>
+          </li>
+      </ul>`
         },
         {
             id: 2,
@@ -86,6 +104,19 @@ function page() {
                 "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+          
+          <li>
+          Engineering and construction
+              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Refinery, Petrochemical & Process Equipment </li>
+                  <li>Aerospace & Defense Equipment </li>
+                  <li>Infrastructure / EPC with Turnkey & BOOT BOLT </li>
+                  <li>Ship Design, Building & Repairs</li>
+              </ol>
+          </li>
+      </ul>`
         },
         {
             id: 3,
@@ -98,6 +129,24 @@ function page() {
                 "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+          
+          <li>
+          Process Manufacturing 
+              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Chemicals</li>
+                  <li>Paints</li>
+                  <li>Pharmaceutical</li>
+                  <li>Lubricants</li>
+                  <li>Fragrance</li>
+                  <li>Polymers</li>
+                  <li>Glass</li>
+                  <li>Cement</li>
+                  <li>Bottling Plant</li>
+              </ol>
+          </li>
+      </ul>`
         },
         
         // Add more cards as needed
