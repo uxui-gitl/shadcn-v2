@@ -95,7 +95,7 @@ const page = () => {
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#7F4EE1',
       cardHeading: 'End to End Implementation',
-      cardDesc: 'Employing our best practices we provide effectivesolution deployment, risk mitigation and complete adoption of the solution.',
+      cardDesc: 'Employing our best practices we provide effective solution deployment, risk mitigation and complete adoption of the solution.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -106,7 +106,7 @@ const page = () => {
       cardBGImageUrl: '',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Global Rollouts',
-      cardDesc: 'We execute pilot implementation for a few client- designatedlocations. Following client approval, the solution is deployed to all locationsaccording to the agreed timeline.',
+      cardDesc: 'We execute pilot implementation for a few client- designated locations. Following client approval, the solution is deployed to all locations according to the agreed timeline.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -117,7 +117,7 @@ const page = () => {
       cardBGImageUrl: '',
       cardBGColor: '#9F0165',
       cardHeading: 'Customization and Integration',
-      cardDesc: 'We integrate the right fit technologies, processes,and systems to deliver valuable and unified end-user experience.',
+      cardDesc: 'We integrate the right fit technologies, processes, and systems to deliver valuable and unified end-user experience.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -128,7 +128,7 @@ const page = () => {
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Data Migration',
-      cardDesc: 'With the responsibility of extracting data from source systems,cleansing it, loading the combined data into the target system, and executing MasterData Governance, we facilitate a smooth transition while reducing testingrequirement, downtime and cost overruns',
+      cardDesc: 'With the responsibility of extracting data from source systems, cleansing it, loading the combined data into the target system, and executing Master Data Governance, we facilitate a smooth transition while reducing testing requirement, downtime and cost overruns',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -139,12 +139,30 @@ const page = () => {
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Reimplementation',
-      cardDesc: 'Considering the current project scenario, organizationalbottlenecks, and perspectives from relevant stakeholders, we eliminate erroneoustransactions, re-architect and progress through the project in a simple andstructured manner. This ensures that our clients can reclaim the originalinvestments made in ERP systems.',
+      cardDesc: 'Considering the current project scenario, organizational bottlenecks, and perspectives from relevant stakeholders, we eliminate erroneous transactions, re-architect and progress through the project in a simple and structured manner. This ensures that our clients can reclaim the original investments made in ERP systems.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
-      ];
+  ];
+
+  const ImplementationServiceVirtues_DATA= [
+    {
+      id: 1,
+      cardHeading: "Result Focused Services",
+      cardDesc: 'We measure our success, based on the tangible results we deliver for our customers.'
+    },
+    {
+      id: 2,
+      cardHeading: "Agile Approach",
+      cardDesc: `Repository of ready solutions enables a flexible and adaptive way of working that prioritizes customers' evolving needs.`
+    },
+    {
+      id: 3,
+      cardHeading: "Quality Practice",
+      cardDesc: 'We are dedicated to maintaining the highest quality standard which is non-negotiable and is embedded in our work culture.'
+    },
+  ];
 
   const TESTIMONIAL_DATA = [
     {
@@ -337,7 +355,7 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`25+ years expertise in implementation services, delivering secure rollouts and timelyresults for global clients.`} />
+      <OverviewSection Text={`25+ years expertise in implementation services, delivering secure rollouts and timely results for global clients.`} />
 
       <CommonCardTwoSlider
         ID={''}
@@ -357,7 +375,7 @@ const page = () => {
             <SectionHeading
               Heading={`Our Implementation Service Virtues`}
               Color={'white'}
-              Desc={`Transform your business with our implementation services: Proven methodologies,certified experts, and personalized support.`}
+              Desc={`Transform your business with our implementation services: Proven methodologies, certified experts, and personalized support.`}
               headingContainerWidth={'w-full'}
             />
           </div>
@@ -388,13 +406,12 @@ const page = () => {
               },
           }}
           >
-            {serviceData?.map((item, index) => (
-              <SwiperSlide key={index}>
+            {ImplementationServiceVirtues_DATA.map((item, index) => (
+              <SwiperSlide key={item}>
                 <div className="bg-[#EFE9FB] rounded-lg">
                   <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="werw" />
                   <div className="p-5">
-                    <h5 className="mb-2 text-2xl font-bold">{item.title}</h5>
-                    <p className="text-[20px] font-medium">{item.des}</p>
+                    <h5 className="mb-2 text-2xl font-bold">{item.cardHeading}</h5>
                   </div>
                 </div>
               </SwiperSlide>
@@ -403,7 +420,7 @@ const page = () => {
         </div>
       </div>
 
-      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Key Implementation Phases"} desc={"Constant optimization is important during every stage, as we fine-tune the solution tomaximize its value."} color={"#1D162B"} />
+      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Key Implementation Phases"} desc={"Constant optimization is important during every stage, as we fine-tune the solution to maximize its value."} color={"#1D162B"} />
 
       <SectionWithSlider
         ID={"DATA_MGMT_DATA"}
@@ -452,9 +469,9 @@ const page = () => {
       {/* End-Section--Case-Studies */}
 
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Start your implementation journey with us for seamless experience"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Need expert guidance? Share your details in the form and let's make it happen!"
         }
       ></TransformBusinessForm>
     </>
