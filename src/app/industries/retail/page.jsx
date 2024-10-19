@@ -77,6 +77,19 @@ function page() {
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Retail
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Hypermarket</li>
+            <li>Supermarket</li>
+            <li>Eyewear Stores</li>
+            <li>Fashion Retail</li>
+            <li>Speciality Stores</li>
+        </ol>
+    </li>
+</ul>`
         },
         {
             id: 2,
@@ -89,6 +102,18 @@ function page() {
                 "AI-driven workflows, OCR and rule-based system enables accurate results",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Hospitality
+        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+            <li>Full-Service (Fine Dining) Restaurants</li>
+            <li>Quick & Fast Service Rest</li>
+            <li>Food Services</li>
+           
+        </ol>
+    </li>
+</ul>`
         },
         {
             id: 3,
@@ -101,6 +126,15 @@ function page() {
                 "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+            <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+          <li>
+              Hospitality
+              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Duty free & Travel Retail</li>
+              </ol>
+          </li>
+      </ul>`
         },
         
         // Add more cards as needed
@@ -110,23 +144,125 @@ function page() {
         {
             id: 1,
             cardBGColor: 'white',
-            cardHeading: 'Order Management System (OMS)',
-            cardDesc: 'Integrated with D365 F&O, this value-added solution provides real-time tracking, automated stock management, and customer onboarding.',
+            cardHeading: 'Customer Experience',
+            cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
             cardHoverData: [
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-                'abc',
+                'Salesforce',
+                'Microsoft D365 CRM',
+                'Infor CRM',
+                'D365 Commerce',
+                'LS Central - Kiosk',
+                'POS',
+                'Clienteling',
             ]
         },
         
+        {
+            id: 2,
+            cardBGColor: 'white',
+            cardHeading: 'Ecommerce',
+            cardDesc: '',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'Adobe Commerce Cloud',
+                'Shopify',
+                'Odoo Commerce',
+                'Woo Commerce',
+                'Salesforce Commerce',
+                'Big Commerce',
+            ]
+        },
+        
+        {
+            id: 3,
+            cardBGColor: 'white',
+            cardHeading: 'Supply chain management',
+            cardDesc: '',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'Infor WMS',
+                ]
+        },
+
+        {
+            id: 4,
+            cardBGColor: 'white',
+            cardHeading: 'Data Insights',
+            cardDesc: '',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'Power BI',
+                'BIRST',
+                'Tableau',
+                ]
+        },
+        {
+            id: 5,
+            cardBGColor: 'white',
+            cardHeading: 'Intelligent technologies',
+            cardDesc: '',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'IoT',
+                
+                ]
+        },
+        {
+            id: 6,
+            cardBGColor: 'white',
+            cardHeading: 'Integration Services',
+            cardDesc: '',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardHoverData: [
+                'Oracle',
+                'SAP',
+                'LS Retail',
+                'Microsoft D365',
+                'ECommerce',
+                'Warehouse Management',
+                ]
+        },
+
 
     ]
+
+    const keyResponsibilityData = [
+        {
+          title: "Retail Store Transformation",
+          desc:
+            "Enabling personalization in sales process, loyalty management programs, and enhancing customer experience with retail stores modernization.",
+        },
+    
+        {
+          title: "Supply Chain Management and Tracking",
+          desc:
+            "Increasing the responsiveness of supply chain with flexibility and effective order management.",
+        },
+        {
+          title: "Commerce Transformation",
+          desc:
+            "Modernizing the shopping journey of customers for global customer base increasing operational effectiveness.",
+         
+        },
+        {
+          title: "Integrated Digital Functionalities",
+          desc:
+            "A single intelligent platform serving multiple channels, streamlining data sharing, helping in improving operational efficiency.",
+        },
+      ];
 
     const DATA_MGMT_DATA = [
         {
@@ -441,49 +577,11 @@ function page() {
             </SectionWrapper>
             {/* end challenges */}
 
-            <SectionWrapperNew
-                sectionHeading={"Solution Offerings"}
-                sectionDesc={"From specialty stores to large-scale retailers, we help businesses with enhanced competency, customer engagement and inclusive performance."}
-                sectionTextColor="black"
-                title="OUR OFFERINGS"
-                sectionHeadingLayout="center"
-                style={{ background: 'white' }}
-            >
-                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
-                    <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
-                </div>
-            </SectionWrapperNew>
-
-            {/* end future section */}
-
-            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'Leveraging domain knowledge and digital transformation expertise, we tackle specific challenges across diverse retail industry verticals.'}/>
-
-            <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
-                sectionHeading="Key Capabilities"
-                sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
-                sectionTextColor='#fff'
-                sectionHeadingLayout="horizontal"
-            >
-                <Slider>
-                    {DATA_MGMT_DATA?.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
-                                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                                <div className="text-[28px] text-white">{item.CardHeading}</div>
-                                <p className="text-[20px] py-4 text-white">{item.CardDesc}</p>
-                                <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
-                            </div>
-
-                        </SwiperSlide>
-                    ))}
-                </Slider>
-
-            </SectionWrapperNew>
-            {/* capabilites section end */}
+           
 
             <SectionWrapperNew style={{ backgroundColor: "#fff" }}
-                sectionHeading="Accelerators"
-                sectionDesc="Helping speciality stores to large –scale retailers to increase business competency."
+                sectionHeading="Solution Offerings"
+                sectionDesc="From specialty stores to large-scale retailers, we help businesses with enhanced competency, customer engagement and inclusive performance. "
                 sectionTextColor='#000'
                 sectionHeadingLayout="left"
             >
@@ -494,7 +592,7 @@ function page() {
                                 <div className="h-[300px] bg-slate-700" style={{ background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                                 <div className="py-10 px-10 relative">
                                     <h5 class="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
-                                    <p class="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
+                                    {/* <p class="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p> */}
                                     {item?.cardHoverData && (
                                         <div className="absolute bottom-4 right-4">
                                             <OutlinedButtonWithArrow size={48} />
@@ -526,7 +624,29 @@ function page() {
             </SectionWrapperNew>
             {/* custome solution */}
 
-            
+            {/* key responsibility */}
+        <SectionWrapperNew
+        sectionHeading={'Key Capabilities'}
+        sectionDesc={`Streamline finance, HR, supply chain and customer experience with Oracle Fusion Cloud's integrated solutions.`}
+        sectionTextColor={'#fff'}
+        sectionHeadingLayout="horizontal"
+        style={{ backgroundColor: '#5F22D9' }}
+      >
+
+        <Slider slidesPerView={3.2}>
+          {keyResponsibilityData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                <div className="text-[28px] text-white">{item?.title}</div>
+                <p className="text-[20px] py-4 text-white">{item?.desc}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
+
+      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Driving growth across various business sectors with scalable Business Central expertise.'} />
 
             <SectionWrapperNew
                 style={{ backgroundColor: '#d3d3d3' }}
