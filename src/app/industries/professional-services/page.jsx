@@ -625,7 +625,7 @@ function page() {
                             {casestudy[0].title}
                         </h3>
                         {/* <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6"> */}
-                        <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                        <h1 className="text-5xl font-medium mb-4 lg:mb-6">
                             {casestudy[0].heading}
                         </h1>
                         <p className="w-full lg:w-[80%] mb-4">
