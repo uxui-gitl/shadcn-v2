@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-import caseStudiesData from "@/data/caseStudiesData";
+import newsData from "@/data/newsData";
+import Link from "next/link";
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 
@@ -12,41 +13,40 @@ import { useRouter } from 'next/navigation'
 
 const page = () => {
     const router = useRouter()
-    const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
-    const [mainCategory, setMainCategory] = useState('');
-    const [subCategory, setSubCategory] = useState('');
+    const [updatedNews, setUpdatedNews] = useState(newsData);
+    const [year, setYear] = useState('');
+    const [month, setMonth] = useState('');
 
 
     const onChange = (event, type) => {
         const value = event.target.value;
-        { type == 'mainCategory' && setMainCategory(value) }
-        { type == 'subCategory' && setSubCategory(value) }
+        { type == 'year' && setYear(value) }
+        { type == 'month' && setMonth(value) }
 
 
     };
 
     useEffect(() => {
         filterData();
-    }, [mainCategory, subCategory])
+    }, [year, month])
 
     function handleReset() {
-        setUpdatedCaseStudiesData(caseStudiesData);
-        setMainCategory('');
-        setSubCategory('');
-
-
+        setUpdatedNews(newsData);
+        setYear('');
+        setMonth('');
     }
 
 
     function filterData() {
-        if (mainCategory != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory);
-            setUpdatedCaseStudiesData(data);
+        if (year != '') {
+            const data = newsData.filter((item) => item.year == year);
+            console.log(data,"datadatadata")
+            setUpdatedNews(data);
         }
 
-        if (subCategory != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory && item.subCategory === subCategory);
-            setUpdatedCaseStudiesData(data);
+        if (month != '') {
+            const data = newsData.filter((item) => item.year == year && item.month == month);
+            setUpdatedNews(data);
         }
     }
 
@@ -74,18 +74,18 @@ const page = () => {
             >
                 <div className="mb-6">
                     <form class="w-full grid grid-cols-4 gap-4">
-                        <select id="large" value={mainCategory} onChange={(e) => onChange(e, 'mainCategory')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={year} onChange={(e) => onChange(e, 'year')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Year</option>
-                            <option value="Automation">Automation</option>
-                            <option value="Cloud">Cloud</option>
-                            <option value="Transformation">Transformation</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
 
                         </select>
-                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={month} onChange={(e) => onChange(e, 'month')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Month</option>
-                            <option value="Infor">Infor</option>
-                            <option value="IntelligentTechnologies">Intelligent Technologies</option>
-                            <option value="Transformation">Transformation</option>
+                            <option value="JAN">JAN</option>
+                            <option value="FEB">FEB</option>
+                            <option value="MAR">MAR</option>
 
                         </select>
                         <div className="">
@@ -93,24 +93,24 @@ const page = () => {
                         </div>
                     </form>
                 </div>
-                {[1, 2, 3, 4, 5].map(item => (
+                {updatedNews?.map(item => (
                     <>
                         <div className="cards py-10" style={{ borderBottom: '1px solid #d3d3d3' }}>
                             <div class="grid grid-cols-3 gap-4">
                                 <div className="">
-                                    <Image src="/caseStudies/blog.svg" height={300} width={300}></Image>
+                                    <Image src={item.imageUrl} height={300} width={300}></Image>
                                 </div>
 
                                 <div className="col-span-2">
-                                    <h6 className="date text-[#808080] text-[16px] font-medium mb-10">18 October, 2024</h6>
-                                    <h2 className="title text-[20px]  leading-[28px] font-semibold mb-10">Leading global lifestyle distribution company successfully implements .net based dealer management system</h2>
-                                    <button type="button" class="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" onClick={() => router.push(`/blog/${item}`)}>Read Blog</button>
+                                    <h6 className="date text-[#808080] text-[16px] font-medium mb-10">{item.date} {item.month}, {item.year}</h6>
+                                    <h2 className="title text-[20px]  leading-[28px] font-semibold mb-10">{item.title}</h2>
+                                    <Link href={item.readMoreUrl} target='_blank' type="button" class="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Read Blog</Link>
                                 </div>
                             </div>
                         </div>
                     </>
                 ))}
-
+                  {updatedNews.length==0 && (<h2 className="text-[28px] font-semibold"> No Data Found</h2>)}
             </SectionWrapperNew>
 
         </>
