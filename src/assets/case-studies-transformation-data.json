@@ -723,97 +723,6 @@
       },
 
       {
-        "id": "case-study-8",
-        "mainCategory": "Transformation",
-        "subCategory": "Infor",
-        "vertical": "Manufacturing",
-        "title": "India's Established Manufacturer and Distributor for Oil Field Equipments and Related Services Implements Infor LN FP 10.4 Across 3 Locations",
-        "client": {
-          "name": "",
-          "industry": "",
-          "location": "",
-          "engagementSince": ""
-        },
-        "images": {
-          "thumbnail": "",
-          "detailPageImage": ""
-        },
-        "highlights": {
-          "industry": "Manufacturing",
-          "projectLocation": "India",
-          "engagementSince": "2015",
-          "solutionSnapshot": [
-            "Multi- location implementation with India localization",
-            "In-house Instrument Calibration",
-            "Bonded Warehouse Functionality Customization",
-            "On-Going Application Support"
-          ]
-        },
-        "customerBrief": {
-         "description": "The client is an ISO 9001:2008 certified company specializing in state-of-the-art manufacturing of oil field equipments such as BOP Control Units, Test Units, Water Blaster, Flanges, Crosses, Tees, Ring Joint Gaskets, Adapters and Spacer Spools. Their products consistently meet or exceed the API – 6A, 16A, 16C and 16D specifications. The manufacturing facility is spread over 10 acres and also includes production of sword armors, handicrafts, and retailing of licensed Hollywood props. In addition to manufacturing units in India, the client also has a modern trading facility in the Middle East.",
-            "BriefList": [
-            "",
-            "",
-            "",
-            ""
-          ]
-        },
-        "businessCase": {
-          "description": "The client was already using an ERP solution for their ad-hoc needs. They were facing multiple issues in their day-to-day operations such as:",
-          "businesscaseList": [
-            "Use of Excel for carrying out daily transactions.",
-            "No proper control on inventory.",
-            "No integration with finance functions.",
-            "No proper traceability of transactions.",
-            "Lack of proper product costing.",
-            "Manual processes for bonded warehouse transactions.",
-            "Lack of discipline amongst users for standardizing system processes.",
-            "Overall operation costs were difficult to track and maintain."
-          ]
-        },
-        "challenges": {
-          "description": "An implementation of this scale was successful due to the continuous support provided by the key stakeholders and senior management members from both, the client organization and Godrej Infotech Limited. Some of the roadblocks faced were due to the following:",
-          "keyChallenges": [
-            "Customer’s bitter experience of earlier 2 ERP implementations",
-            "Implementation to be done in multiple companies with diversified products and different processes"    ,
-            "Acceptability by key users for system oriented functioning"
-        ]
-        },
-        "solution": {
-          "description": "The client was looking for a comprehensive enterprise solution that could be deployed at all of its 3 locations. Infor LN FP 10.4 was selected as the most appropriate product with all the latest features that could meet the needs of this client. Godrej Infotech Limited (GITL) was selected as the preferred implementation partner, due to its successful relationship with Infor since 2003. The solution included:",
-          "features": [
-            "Implementation of Infor FP 10.4 (India Localization) with Infor BI Reporting, Ming.le and ION Workflow",
-            "Quality Module – API Certification Requirement (American Petroleum Institute) for In-process, Incoming and Final Inspections",
-            "Non Conformance Reports (NCR) and Corrective and Preventive Actions (CAPA) implementation in order to handle the rejection process"  
-        ]
-         
-        },
-        "benefits": {
-          "description": "Once implemented, the benefits of this Infor solution have been tremendous. Some of the highlights are:",
-          "list": [
-            "Better inventory control",
-            "Reduction in duplication of data entry",
-            "High operational efficiency",
-            "Better control on material movement within various shops",
-            "Better product costing information derived from the system"
-        ]
-        },
-        "meta": {
-          "title": "",
-          "description": "",
-          "keywords": [
-            "",
-           ""
-          ]
-        },
-        "downloadCTA": {
-          "text": "Download Case Study",
-          "url": "path-to-case-study-1-download.pdf"
-        }
-        
-      },
-
-      {
         "id": "case-study-9",
         "mainCategory": "Transformation",
         "subCategory": "Infor",
@@ -2215,7 +2124,7 @@
         "mainCategory": "Transformation",
         "subCategory": "LS Retail",
         "vertical": "Retail",
-        "title": "Leading Optician Chain Implements Loyalty Management Across 20 Stores Using LS Retail NAV",
+        "title": "Leading Retail Coffee Chain in KSA Controls Consumption with LS Retail NAV",
         "client": {
           "name": "",
           "industry": "",
@@ -2227,68 +2136,56 @@
           "detailPageImage": ""
         },
         "highlights": {
-          "industry": "Eye Care Retail",
-          "projectLocation": "India",
-          "engagementSince": "2013",
+          "industry": "Retail & Distribution",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2011",
           "solutionSnapshot": [
-            "Flexible POS Solution",
-            "Comprehensive Sales Reports",
-            "Loyalty and Offer Management",
-            "Store wise Profitability",
-            "Centralized Procurement",
-            "Efficient Replenishment System",
-            "Optimized Inventory Levels"
+            "Multi Company Operations",
+            "Discrepancy Reporting • Accurate Financial Audits",
+            "Waste Management"
           ]
         },
         "customerBrief": {
-         "description": "The client is the first ISO 9001:2008 certified optician in South India. The ompany finds its place among one of the few elite optical dispensers having the expertise to dispense progressive lenses. The client is strongly passionate about customer satisfaction through constant innovation in dispensing and adaptation of new technologies. The management is committed to provide the best “Value for Money” vision care products and optometric services to their clients.",
+         "description": "The client runs a successful chain of drive-in coffee outlets in the Kingdom of Saudi Arabia. In a unique business model, the company also has a subsidiary trading company that imports coffee beans and other supplies from international locations and distributes the same to local markets. With close to 15 years in the coffee retail and trading business, this family-owned business has demonstrated consistent growth on a year-to-year basis. Having started with a single store, they now have over 20 outlets spread across Eastern and Central provinces of Saudi Arabia.",
             "BriefList": [
             ""
           ]
         },
         "businessCase": {
-          "description": "Major business needs of the client were going unaddressed due to the lack of a centralized automated system. Some of the main pain areas were:",
+          "description": "",
           "businesscaseList": [
-            "Lack of a centralized master data repository for hospitals, doctors, customers, contacts and prescriptions across multiple stores",
-            "Inability to calculate store wise profitability and pricing",
-            "Lack of centralized purchasing, inventory and accounting",
-            "No provisions for loyalty management and offers"
+            ""
 
           ]
         },
         "challenges": {
-          "description": "The challenges involved in implementing this solution for the client were as follows:",
+          "description": "The main challenge for this engagement was related to converting a manual system to an automated system. Since this was a full life cycle implementation, constant communication between clients and consultants was Imperative for the project's success. Risks to this engagement were effectively managed by following GITL's proven engagement execution methodology. The management team ensured that regular checkpoints and feedback mechanisms were in place right from requirements gathering to rollout. Upfront milestone-based project planning led to efficient utilization of resources for both organizations.",
           "keyChallenges": [
-            "Separation of key business processes between POS, back office and warehouse",
-            "Integration between store and central system",
-            "Tender reconciliation at each store",
-            "Handling of historical customer data",
-            "Reconciliation of customer sales orders vs. purchase receipts"
+            ""
         ]
         },
         "solution": {
-          "description": "The solution proposed by consultants from Godrej Infotech Limited (GITL), was to implement the LS Retail NAV enterprise software with customizations for the Eye Care industry. The features of LS Retail NAV that were designed for the client included:",
+          "description": "The solution for replacing the vast number of manual and semi-automated systems was to implement a single integrated enterprise-wide system. After considering many possibilities, MD NAV was selected as the best fit product to meet the client's needs. Godrej Infotech Limited (GITL), with its track record of over 150 successful implementations globally was selected as the preferred MD NAV implementation partner. The highlights of the solution offered were as follows:",
           "features": [
-            "Efficient and on time calculation of sales commissions based on multiple criteria",
-            "Replenishment calculations based on computed average use and real time stock levels",
-            "Enhanced POS functionalities for new orders, returns, cancellations, bill payments and advances",
-            "Efficient order creation by look up of customer, hospital and prescription details",
-            "Set up of dynamic item and store hierarchies",
-            "Automatic barcode creation and tracking"
+            "Café Wise Comparisons: Tracking of outlet wise sales and consumption activity helps in identification of high and low performance areas. The system can almost instantly pinpoint proliferation scenarios; an extremely tedious activity when performed with a manual set up.",
+            "Integrated Payments: Consolidated payment information from the POS is automatically sent to the back office at the end of each closing period. In a situation where the stores are open 247, this solution ensures that all financial information is updated until the very last shift.",
+            "Business Intelligence: The integrated system allows for a single source of truth for all the organization's data across companies and currencies. The senior management can make profitable business decisions with the strategic inputs received from the holistic MIS reporting system.",
+            "Intercompany Postings: Since the supplies for the retail outlets are procured from the subsidiary trading company, the intercompany configuration significantly solved the issue of duplicate data entry. Sales, purchase and general ledger transactions between the two companies can now be automated based on input feeds."
+            
         ]
          
         },
         "benefits": {
-          "description": "Post implementation of the LS Retail NAV system, the client experienced a multitude of benefits such as:",
+          "description": "The benefits of implementing the LS Retail NAV system are as follows:",
           "list": [
-            "Automatic sales order status updates based on status of product delivery ",
-            "Availability of real time cash balance at POS and cash ledger",
-            "User wise and voucher wise limits based approval process",
-            "Reconciliation of POS card payment entries with actual receipts at the bank",
-            "Store, region, division, item group, product group reports",
-            "Ability to capture positive and negative stock adjustments",
-            "Reduction in order entry time due to client information look up at POS",
-            "Increase in inventory efficiency due to real time inventory integration with POS"
+            "Discrepancy information",
+            "15% reduction in waste",
+            "Optimal inventory levels",
+            "Consumption trend analysis ",
+            "40% reduction in manual effort",
+            "Accurate financial information.",
+            "Automated real time triggers",
+            "Arabic language reports"
                         
         ]
         },
@@ -2473,7 +2370,7 @@
         "mainCategory": "Transformation",
         "subCategory": "LS Retail",
         "vertical": "Retail",
-        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "title": "Saudi Arabia's Retail Catering Chain Achieves Seamless Multi-Location Operation",
         "client": {
           "name": "",
           "industry": "",
@@ -2485,50 +2382,62 @@
           "detailPageImage": ""
         },
         "highlights": {
-          "industry": "Retail, Hospitality",
-          "projectLocation": "Saudi Arabia",
-          "engagementSince": "2015",
+          "industry": "Retail, Food & Beverages",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2013",
           "solutionSnapshot": [
-            "Kitchen Management",
-            "Web Integration",
-            "Improved Reporting",
-            "Call Center Support"
+            "Optimized Inventory Levels",
+            "Centralized Purchasing Unit",
+            "Warehouse Management",
+            "Business Intelligence Forecasts",
+            "Phased Implementation"
+
           ]
         },
         "customerBrief": {
-         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations.",
+         "description": "",
             "BriefList": [
             ""
           ]
         },
         "businessCase": {
-          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line.",
+          "description": "The diversity of business units and geographical locations had led to the existence of a number of isolated, often redundant systems. The strategic goal for the client was to integrate all the departments with a modern state-of-the-art IT ecosystem. The existing IT system and processes had limitations such as:",
           "businesscaseList": [
-            ""
+            "Stock Mariagement: Stores had no visibility on global stock availability",
+            "Inventory Planning: Past Sales History was not being used for consumption forecasting",
+            "Fleet Management: Logistic inefficiencies were being introduced due to remote locations"
+
             
           ]
         },
         "challenges": {
-          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "description": "The challenges encountered during this engagement were as follows:",
           "keyChallenges": [
-            ""
+            "Data Replication",
+            "Master Data Preparation",
+            "Location Wise Data Filtering",
+            "KDS Functionality for Printer Routing",
+            "Fast and Reliable Connectivity across Locations",
+            "Handling Multiple Units of Measurement for Items"
+
         ]
         },
         "solution": {
-          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "description": "",
           "features": [
-            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
-            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
-            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+            ""
         ]
          
         },
         "benefits": {
-          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "description": "Some of the significant benefits experienced by the client are:",
           "list": [
-            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
-            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty",
-            " Other Key Metrics Achieved by this System Implementation are: - New Customers: Increased by 40% - Paperwork: Reduced by 92%"
+            "Single Integrated Solution across Departments, Locations and Legal Entities",
+            "Centralized Menu Creation and Distribution",
+            "Automated Food Cost Calculation",
+            "Inventory Issuance Controls",
+            "20% Increase in Turnover 30% Reduction in Waste",
+            "PAR Level Prediction"
                        
         ]
         },
@@ -2682,9 +2591,20 @@
         ]
         },
         "solution": {
-          "description": "",
+          "description": "In the new system, the POS and business management system are integrated into a standard solution that fits into the customer’s functional requirements to a very high degree. In addition to the ERP software, GITL has developed a comprehensive Warehouse Management Mobile app which is seamlessly integrated with Microsoft Dynamics NAV. We implemented LS NAV along with KSA Payroll add-on for this customer, with below features:",
           "features": [
-            ""
+            "Financial Management",
+            "Fixed Assets Management",
+            "Cash & Bank Management",
+            "Inventory with Barcode",
+            "Purchase Management",
+            "Back Office Sales (Wholesale)",
+            "Point of Sale (POS)",
+            "LS Back Office Functionality",
+            "KSA VAT",
+            "Capability to Scan Barcode",
+            "Works in Offline Network Mode",
+            "Signature Capturing"
         ]
          
         },
@@ -2750,7 +2670,7 @@
           ]
         },
         "businessCase": {
-          "description": "Earlier the organization was using a manual system for managing their restaurant functions such as recipes, inventory and purchase. They were earlier not successful in their LS NAV implementation and hence were looking for a partner for re-implementation.",
+          "description": "Earlier the organization was using a manual system for managing their restaurant functions such as recipes, inventory and purchase.",
           "businesscaseList": [
             ""
             ]
@@ -2758,7 +2678,9 @@
         "challenges": {
           "description": "",
           "keyChallenges": [
-            ""
+            "Failed LS NAV implementation and was looking for reimplementation partner",
+            "Not able to track inventory costing",
+            "Inability in waste calculation"
         ]
         },
         "solution": {
@@ -2797,5 +2719,6 @@
         }
         
       }
+      
     ]
   }
