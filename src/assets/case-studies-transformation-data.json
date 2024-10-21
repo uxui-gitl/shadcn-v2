@@ -1857,12 +1857,702 @@
         }
         
       },
+
       {
         "id": "case-study-21",
         "mainCategory": "Transformation",
         "subCategory": "LS Retail",
         "vertical": "Travel Retail, Food and Beverages",
-        "title": "Exclusive Distributor of Renowned Coffee Brand in Egypt and Saudi Arabia Implements cloud based D365 Finance, SCM and Commerce",
+        "title": "Global Travel Retailer Reduces Total Cost of Ownership with the All-in-One NAV LS Retail Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Travel Retail, Food and Beverages",
+          "projectLocation": "India, U.A.E",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Multi Currency Cash Back",
+            "Approval Workflow",
+            "Bar Code Scan for Inventory Movements",
+            "Transit Bank Guarantee Management",
+            "Payroll Add-on"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is an international duty free and travel retail operator focused on providing the best of products and customer services in emerging markets. In a period of 17 years, the company has spread its wings across 4 continents, operating over 150 outlets geographically distributed in 32 countries. The primary lines of business are:",
+            "BriefList": [
+            "Duty Free Shops",
+            "Convenience Stores",
+            "Food and Beverage Outlets",
+            "In-Flight Retailing",
+            "Special Service for Diplomats"
+          ]
+        },
+        "businessCase": {
+          "description": "The client had a unique business scenario as compared to other regular retailers since their customers are always on the go. In-order to deal with this, the organization follows a tremendously pro-active approach towards stock availability and speedy service. Having a technology solution that supported this aggressive business process was the need of the hour. Furthermore, having presence across multiple geographies and time zones with multiple partners and multiple technology platforms was leading to operational inefficiencies and unnecessary delays in getting the stores started. Hence the decision to go for a single IT partner that could support the business consulting and technology needs of this organization across geographical locations and time zones.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "A successful long term relationship with Godrej Infotech Limited (GITL) helped the customer gain confidence in moving towards a single partner model. With in-depth domain expertise and technology expertise, GITL successfully supported the client’s multi-platform scenario by synchronizing with their time zones. The standard solution of LS NAV has been enhanced to meet the requirements of the client. The POS has been customized to specifically meet the needs of the sales staff at airport terminals. Some of the highlights are:",
+          "features": [
+            "Passport Scan, Flight Master Interfaces: Frequently needed information is pre-filled so that the customer check out experience is expedited.",
+            "Customer Quota based Offers: Promotion campaigns are designed to adapt to the varied needs of passengers. Frequent fliers get additional benefits due to integration with third-party loyalty systems.",
+            "Pre-Ordering: Travelers can go through an online catalog and book their products in advance. Such orders will be processed and purchased items will be kept ready for collection at the duty free.",
+            "Exchange Rate Support: The system has been customized to support multiple currencies so that global travelers get maximum benefits and are protected from irregular rate fluctuations.",
+            "Consignment Management: A special business study and solution was done to address the complex consignment management purchase process which involves working with different warehouse rules and scenarios across seaports and airports spanning multiple geographies",
+            "HR Integration: A comprehensive HR and payroll module was implemented to automate internal functions like time and attendance, salary benefits, transfers, promotions and commission calculations."
+        ]
+         
+        },
+        "benefits": {
+          "description": "Some of the significant benefits experienced by the client are:",
+          "list": [
+            "Streamlined Purchases: Approval based workflows have helped significantly in shortening the procurement cycle and ensuring supply availability.",
+            "POS-Back Office Integration: Despite its diverse global environment with multiple back end systems, key stakeholders can now get a unified view of critical financial and merchandising information.",
+            "Localization: The system supports extended region specific taxation and compliance requirements. Provision for features such as parent and store wise bond number tracking allows for business expansion and compliance to local statutory requirements.",
+            "Location Wise Profitability: Each business owner gets complete visibility of his or her individual financial position.",
+            "Timely Execution of Vendor Promotions: The system automatically schedules cost recovery from vendors so that smooth financial cash flow is maintained. "
+            
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-22",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Hospitality",
+        "title": "Hospitality Major Uses LS NAV Hospitality for Efficient Consumption Tracking and Waste Reduction",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Hospitality",
+          "projectLocation": "India",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "POS Integration",
+            "Consumption Tracking",
+            "Waste Management",
+            "Centralized Menu Planning",
+            "Location Wise Pricing",
+            "Table Reservation Dashboard"
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a renowned name in the Food and Beverages Industry owning a niche restaurant chain comprising of 38 outlets spread across 15 cities. The first restaurant opened up in 2006, and today is listed in the top 100 restaurants of Asia. The restaurant division is part of a larger Group of Hotels, established more than 30 years ago as a public limited company in India.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer was facing some of the typical challenges that are prevalent in the hospitality retail industry. They were in need of a single consolidated system for:",
+          "businesscaseList": [
+            "Measuring and Maintaining real time Inventory Productivity",
+            "Integrating between POS terminals, In Store Server and Back Office across geographies",
+            "State Wise Statutory and Localization Requirements",
+            "Location Wise Pricing",
+            "Multi Location Consumption Accounting",
+            "Multi Location Menu Management"
+
+          ]
+        },
+        "challenges": {
+          "description": "The main challenge for this engagement was the location wise setup for pricing, menus and consumption accounts. For every retail customer, Inventory is the company’s largest asset and inventory productivity has direct impact on financial productivity. For the hospitality industry, inventory management produces additional challenges due to the low shelf life of consumables. What added to this challenge was that this restaurant chain was geographically spread across a large number of locations; requiring an optimized network architecture between POS terminals and back office servers.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "The client is experiencing a number of benefits as a result of this implementation, primarily in the areas of customer service and operational efficiencies. With the new system in place, following advantages are available:",
+          "list": [
+            "The POS terminal is optimized for order entry and payments. Orders are transferred immediately to kitchen displays to ensure quick and effective service.",
+            "The Productivity Dashboard gives real time inventory metrics so that inventory can be maintained at optimum levels in all locations.",
+            "Store wise consumption comparisons lead to highlighting inefficient scenarios resulting in drastic waste reduction. ",
+            "The integration between POS and back office results in availability of real time data, aiding effective decision making and report generation."
+            
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-23",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail (Eye Care Retail)",
+        "title": "Large Chain of Eyewear Solutions Implements LS Retail NAV for Seamless Multi Location Operations",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Eye Care Retail",
+          "projectLocation": "India",
+          "engagementSince": "2008",
+          "solutionSnapshot": [
+            "Improved Customer Satisfaction leading to Increased Sales",
+            "Simplified Stock Management",
+            "Improved Workforce Management",
+            "Efficient Financial Management"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a respected optician family that has crafted for itself a unique and irreplaceable brand image. In the last three decades, they have progressed from a single store to an impressive chain of 51 across 4 cities. This family owned, professionally-managed brand has a vision of combining precision and style by offering the most advanced eye care technology teamed with the latest trends in eyewear.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Being in a customer centric retail industry, the client was looking for a cost effective integrated solution for handling billing, inventory, sales and customer service. They were looking for an all- in-one product for managing complex retail business scenarios with minimum staff and maximum efficiency. With no legacy system in place, all operations such as billing, sales, inventory, purchase and delivery across all stores was being handled manually. This manual and inefficient process was hampering the company’s expansion plans for opening more stores. The company identified the need for a stable, integrated business solution with skilled professionals to manage the same as the next step for enabling outstanding growth.",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "This engagement posed several challenges, mainly due to the existing manual processes that had to be automated. The team of GITL’s consultants worked in partnership with the client’s teams to understand, document, gap fit and map the business processes into the LS Retail NAV system. The team had to ensure that all required customer, financial, inventory and purchase data was available in the new system in a consolidated, easy to retrieve format. The geographical distribution of stores posed infrastructure challenges to ensure that the systems were well connected 24*7 in a secure and optimized environment.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "The solution offered by GITL co-ordinates all retail processes so as to maximize return on investment. The implementation of LS Retail NAV included:",
+          "features": [
+            "Customer service features such as recording customer’s prescriptions, lenses and feedback so as to improve loyalty.",
+            "Order to Buy feature for delivering high quality, on time products that have been certified through regular system checks.",
+            "Stock management feature for tracking detailed stock attributes, which helps to control stocks based on location, brand and product.",
+            "Financial management feature for store wise and overall company wise tracking and reporting of transactions.",
+            "Workforce management feature to increase employee efficiency and identify training needs."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The company has received several benefits of working with a rich featured business management solution that can meet present and future requirements. Some of the significant improvements are:",
+          "list": [
+            "Increase in inventory efficiency due to real time sales Vs stock comparisons. This ensures that products of the right brands at the right price are stocked at the right stores.",
+            "Customer handling ability of the workforce has improved significantly due to the availability of detailed customer records. As a result order entry time at the POS has reduced.",
+            "Financial information in terms of cash, receivables, payables and on hand inventory is available to management for taking accurate and informed decisions."
+                        
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-24",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Optical Retail Chain",
+        "title": "Leading Optician Chain Implements Loyalty Management Across 20 Stores Using LS Retail NAV",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Eye Care Retail",
+          "projectLocation": "India",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "Flexible POS Solution",
+            "Comprehensive Sales Reports",
+            "Loyalty and Offer Management",
+            "Store wise Profitability",
+            "Centralized Procurement",
+            "Efficient Replenishment System",
+            "Optimized Inventory Levels"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is the first ISO 9001:2008 certified optician in South India. The ompany finds its place among one of the few elite optical dispensers having the expertise to dispense progressive lenses. The client is strongly passionate about customer satisfaction through constant innovation in dispensing and adaptation of new technologies. The management is committed to provide the best “Value for Money” vision care products and optometric services to their clients.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Major business needs of the client were going unaddressed due to the lack of a centralized automated system. Some of the main pain areas were:",
+          "businesscaseList": [
+            "Lack of a centralized master data repository for hospitals, doctors, customers, contacts and prescriptions across multiple stores",
+            "Inability to calculate store wise profitability and pricing",
+            "Lack of centralized purchasing, inventory and accounting",
+            "No provisions for loyalty management and offers"
+
+          ]
+        },
+        "challenges": {
+          "description": "The challenges involved in implementing this solution for the client were as follows:",
+          "keyChallenges": [
+            "Separation of key business processes between POS, back office and warehouse",
+            "Integration between store and central system",
+            "Tender reconciliation at each store",
+            "Handling of historical customer data",
+            "Reconciliation of customer sales orders vs. purchase receipts"
+        ]
+        },
+        "solution": {
+          "description": "The solution proposed by consultants from Godrej Infotech Limited (GITL), was to implement the LS Retail NAV enterprise software with customizations for the Eye Care industry. The features of LS Retail NAV that were designed for the client included:",
+          "features": [
+            "Efficient and on time calculation of sales commissions based on multiple criteria",
+            "Replenishment calculations based on computed average use and real time stock levels",
+            "Enhanced POS functionalities for new orders, returns, cancellations, bill payments and advances",
+            "Efficient order creation by look up of customer, hospital and prescription details",
+            "Set up of dynamic item and store hierarchies",
+            "Automatic barcode creation and tracking"
+        ]
+         
+        },
+        "benefits": {
+          "description": "Post implementation of the LS Retail NAV system, the client experienced a multitude of benefits such as:",
+          "list": [
+            "Automatic sales order status updates based on status of product delivery ",
+            "Availability of real time cash balance at POS and cash ledger",
+            "User wise and voucher wise limits based approval process",
+            "Reconciliation of POS card payment entries with actual receipts at the bank",
+            "Store, region, division, item group, product group reports",
+            "Ability to capture positive and negative stock adjustments",
+            "Reduction in order entry time due to client information look up at POS",
+            "Increase in inventory efficiency due to real time inventory integration with POS"
+                        
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-25",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Leading Optician Chain Implements Loyalty Management Across 20 Stores Using LS Retail NAV",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Eye Care Retail",
+          "projectLocation": "India",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "Flexible POS Solution",
+            "Comprehensive Sales Reports",
+            "Loyalty and Offer Management",
+            "Store wise Profitability",
+            "Centralized Procurement",
+            "Efficient Replenishment System",
+            "Optimized Inventory Levels"
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is the first ISO 9001:2008 certified optician in South India. The ompany finds its place among one of the few elite optical dispensers having the expertise to dispense progressive lenses. The client is strongly passionate about customer satisfaction through constant innovation in dispensing and adaptation of new technologies. The management is committed to provide the best “Value for Money” vision care products and optometric services to their clients.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Major business needs of the client were going unaddressed due to the lack of a centralized automated system. Some of the main pain areas were:",
+          "businesscaseList": [
+            "Lack of a centralized master data repository for hospitals, doctors, customers, contacts and prescriptions across multiple stores",
+            "Inability to calculate store wise profitability and pricing",
+            "Lack of centralized purchasing, inventory and accounting",
+            "No provisions for loyalty management and offers"
+
+          ]
+        },
+        "challenges": {
+          "description": "The challenges involved in implementing this solution for the client were as follows:",
+          "keyChallenges": [
+            "Separation of key business processes between POS, back office and warehouse",
+            "Integration between store and central system",
+            "Tender reconciliation at each store",
+            "Handling of historical customer data",
+            "Reconciliation of customer sales orders vs. purchase receipts"
+        ]
+        },
+        "solution": {
+          "description": "The solution proposed by consultants from Godrej Infotech Limited (GITL), was to implement the LS Retail NAV enterprise software with customizations for the Eye Care industry. The features of LS Retail NAV that were designed for the client included:",
+          "features": [
+            "Efficient and on time calculation of sales commissions based on multiple criteria",
+            "Replenishment calculations based on computed average use and real time stock levels",
+            "Enhanced POS functionalities for new orders, returns, cancellations, bill payments and advances",
+            "Efficient order creation by look up of customer, hospital and prescription details",
+            "Set up of dynamic item and store hierarchies",
+            "Automatic barcode creation and tracking"
+        ]
+         
+        },
+        "benefits": {
+          "description": "Post implementation of the LS Retail NAV system, the client experienced a multitude of benefits such as:",
+          "list": [
+            "Automatic sales order status updates based on status of product delivery ",
+            "Availability of real time cash balance at POS and cash ledger",
+            "User wise and voucher wise limits based approval process",
+            "Reconciliation of POS card payment entries with actual receipts at the bank",
+            "Store, region, division, item group, product group reports",
+            "Ability to capture positive and negative stock adjustments",
+            "Reduction in order entry time due to client information look up at POS",
+            "Increase in inventory efficiency due to real time inventory integration with POS"
+                        
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-26",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Saudi Arabia's Hypermarket Chain Uses LS Retail - Microsoft Dynamics Platform for Superior Scalability",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail, FMCG",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Coupon Management",
+            "Inventory Automation",
+            "Speedy Stock Transfer Processes",
+            "Master Plan for Merchandizing",
+            "Extensive Reports"
+          ]
+        },
+        "customerBrief": {
+         "description": "A leading organization in the Hypermarket Sector, the client is committed to bringing low cost and high quality food products to the people of Saudi Arabia. Being a value driven company, they have an incredible focus on providing the best of food and non food products to the local population at the most reasonable rates. The company achieves its financial goals by keeping a limited stock of goods along with tight controls on operational and quality processes. The benefits thus gained are passed on to the end consumers in the form of massive discounts which leads to an ever-growing loyal customer base. Having found success in this business model, the organization is now in expansion mode, with an ambitious target of opening 600 stores in the coming 2 years. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The main issue faced by the customer was related to the scalability of the existing Microsoft Dynamics, LS Retail System. This was a Support engagement taken up by Godrej Infotech Limited, the scope of which included resolving a comprehensive list of performance issues so that the system could sustain the company's expansion plans of having hundreds of synchronized stores across various locations in Saudi Arabia. The main issues faced by the client were:",
+          "businesscaseList": [
+            "One way communication between store and head office systems led to significant data inconsistencies and transaction locking issues, thus degrading the overall performance.",
+            "Inventory module was not giving accurate results as it was taking lot of time to calculate stock depletion levels at all locations.",
+            "Lack of a central merchandizing system was leading to non compliance across the stores and difficulty in measuring demand and supply variations."
+            
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Infrastructure: The current In-Store Management System was proving to be in-sufficient for handling the huge traffic between server and host systems. The team at GITL performed a thorough capacity planning exercise which highlighted the necessary hardware upgrades needed for solving the performance bottlenecks.",
+            "Inventory Accuracy: Having an accurate and up-to-date real time inventory based on which ordering decisions could be taken was a huge challenge. This was resolved by optimizing the communication between the backend system and the front end LS Retail POS system across the network of stores and companies. "
+        ]
+        },
+        "solution": {
+          "description": "The solution provided by Godrej Infotech Limited included a complete system re-architecting of the data access layer between stores and head quarters. Salient features of the solution include:",
+          "features": [
+            "Data Replication: A two way communication mechanism with data replication at both end points was established between store and head-office databases so as to enable real time synchronization of critical information. LS Retail's In-Store Management System was implemented following industry best practices.",
+            "Inventory and Stock Transfer Optimization: A huge re-structuring was done that fast forwarded the process of stock transfers from the warehouse to the stores. Microsoft Dynamics AX Warehouse Management Module was used along with Inventory Solution. Transfer requests are verified against the master plan and transfer orders can be automatically generated on approval."
+        ]
+         
+        },
+        "benefits": {
+          "description": "Some of the significant benefits experienced by the client are:",
+          "list": [
+            "Data Integrity: Comprehensive audit trails, data locking mechanisms and automated matching reports guarantee that data breaches are easy to discover, thus protecting the organization from any liabilities related to the data infrastructure.",
+            "Speed of Operations: System optimizations of clubbing related transactions and using online modes of communication has helped speed up the overall business process by a significant 40%.",
+            "Easy User Adoption: GITL conducted an in-depth hands-on training for the LS Retail solution which led to a smooth and happy on-boarding experience for end-users."
+                        
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-27",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail, Hospitality",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line.",
+          "businesscaseList": [
+            ""
+            
+          ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
+            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty",
+            "Other Key Metrics Achieved by this System Implementation are: - New Customers: Increased by 40% - Paperwork: Reduced by 92%"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-28",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail, Hospitality",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line.",
+          "businesscaseList": [
+            ""
+            
+          ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
+            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty",
+            " Other Key Metrics Achieved by this System Implementation are: - New Customers: Increased by 40% - Paperwork: Reduced by 92%"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-29",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Large Retailer in Mauritius Successfully Implements MS NAV 2017 & LS Retail",
         "client": {
           "name": "",
           "industry": "",
@@ -1875,61 +2565,222 @@
         },
         "highlights": {
           "industry": "Retail",
-          "projectLocation": "Kingdom of Saudi Arabia",
-          "engagementSince": "2021",
+          "projectLocation": "Mauritius",
+          "engagementSince": "2017",
           "solutionSnapshot": [
-            "Single cloud system for SCM, Finance, Sales B2C, B2B, Trade & Call Center",
-            "Management reporter tool",
-            "Multiple system upgrades and maintenance"
+            "Seamless Integration with the Third party Credit Provider on Credit application approval",
+            "Sales commission management using product based commission calculations",
+            "Notification to the customers from the order booking till delivery and post delivery services"
+            
           ]
         },
         "customerBrief": {
-         "description": "The Customer is a Saudi Arabia & Egypt partner of a renowned coffee brand headquartered at Lausanne, Switzerland. It has created a World of Coffee Platform which strives to provide the ultimate experience to coffee lovers.",
+         "description": "Customer is the number one furniture, home appliances and digital products retailer in Mauritius. Their history goes back to having opened their first store in Bell Village in 1985 more than three decades earlier. Across Mauritius and Rodrigues, an island 350 miles from Mauritius, they run 22 offices today. It is renowned for its smallest price offering, easy credit and outstanding customer service. Currently, the firm classifies its goods into categories of electrical, furnishings, IT & phones, and warranty.",
             "BriefList": [
-            "",
-            "",
-            "",
             ""
           ]
         },
         "businessCase": {
-          "description": "With 16 stores to manage, Customer was facing multiple challenges",
+          "description": "The client was in the need of an integrated solution for the Retail POS, Back Office, Warehouse & Credit Application functions. The requirements of the customer were as detailed below:",
           "businesscaseList": [
-            ""
-
-          ]
+            "Retail POS, which gives a single window-shopping experience with integrated product selection, warranty sales/service contracts, credit application approval & cash operations",
+            "Advanced warehouse operations with enablement of barcode scanning and mobile device",
+            "Automated weekly & monthly Financial Management Reporting",
+            "Streamlined in-house credit finance process",
+            "Revenue leakages control & loss prevention methods by introducing system control on discounts & product delivery",
+            "Optimized warehouse delivery based on delivery schedules & routing",
+            "Centralised mode of communication and data access across departments", 
+            "Ease accessibility of data for the customer service desk against the delivery query, service complaints & repair status"
+            ]
         },
         "challenges": {
-          "description": "",
+          "description": "The challenges faced by the GITL team during this implementation were:",
           "keyChallenges": [
-            "Maintenance of multiple systems Microsoft Dynamics GP, AX 2012 R3 and bespoke applications for CRM, e-commerce, and statutory compliance reporting across multiple locations",
-            "High reliance on 3rd party system integrators",
-            "Issues with retail processes related to store operations",
-            "Standardization of business processes across Saudi & Egypt"
+            "Complex Business Scenarios",
+            "Aggressive Timelines"
         ]
         },
         "solution": {
-          "description": "GITL conducted system audit assessment of existing systems to understand the issues and challenges. Based of analysis a fresh implementation of D365 was recommended instead of upgrade approach. ",
+          "description": "Keeping the customer’s business requirements in mind, GITL implemented NAV 2017 & LS Retail 10.0 for the Retail POS, Mobile Inventory & LS Loyalty Management functions. Other highlights of the solution are:",
           "features": [
-            "Single cloud system for Finance, SCM, Commerce, Sales (B2C, B2B, Trade, Call Center)",
-            "Real time data made available for quick decision making",
-            "Consolidation of financial reporting by leveraging Management reporter tool",
-            "Cost optimization with multiple system upgrades and maintenance"
+            "Sale of product warranty & integration with service contract",
+            "CLI integration for enabling the service desk with the customer overview",
+            "Advanced warehouse management with barcode & handheld device enabled product receipt and shipment",
+            "Customer portal - tracking of order by the customer using the delivery tracking portal"
         ]
          
         },
         "benefits": {
           "description": "",
           "list": [
-            "Intercompany transactions reduced average",
-            "Time take and probability of error",
-            "On-hand inventory visibility ",
-            "Easy switching between offline & online modes",
-            "Inventory viability across stores",
-            "Better data synchronization between head office and Stores",
-            "Financial dimension control & analysis by dimension reporting",
-            "Automatic posting of bank charges for retail sales"
+            "Better customer experience with end-to-end visibility of orders from booking to delivery",
+            "Better responsiveness at the customer service desk",
+            "Discount matrix based on operational hierarchy",
+            "Physical count & cycle count performed in the stores using the LS Omni Mobile Application"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
 
+      {
+        "id": "case-study-30",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Saudi Arabia’s Leading Superstore Successfully Implements LS NAV Solution with KSA Payroll",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "WMS mobile application",
+            "Cheque printing in Arabic",
+            "ECR (swipe machine) integration with POS",
+            "Arabic shelf label printing"
+            
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is one of the leading Superstores in Makkah. It was established in 2015 to fulfill the market needs for high quality retail solutions. Since then, it has added two more outlets for wholesale and sweets and is constantly looking for the finest items to satisfy the needs and wants of its customers. It is positioned strategically as a leader in the regional retail sector due to its strong focus on improving operational efficiency.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was using two disparate systems - ONYX & Tally, to maintain Back-Office, POS and Payroll. Their Fixes Asset Module was not structured, and payroll was not integrated with Finance module. Moreover, the integration between ECR (Swipe Machine) and POS was completely missing. They were looking at seamless financial management to improve operational efficiency and for this purpose were in look out for a scalable ERP solution.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "The KSA Payroll module is designed for Auto salary, payment JV creation and integration with Finance module",
+            "Financial statements are obtained easily from NAV",
+            "All the key operational processes of Stock Request, Receiving, Shipping, Transfer Order, Sales Order Creation, Stock Taking and Stock Overview have been automated making the system paperless"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-31",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Retail",
+        "title": "Leading Hospitality Chain Goes Live with LS NAV and Hospitality Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Hospitality",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2020",
+          "solutionSnapshot": [
+            "POS accounting",
+            "Digital menu",
+            "Kitchen order ticket (KOT) printing",
+            "Centralized recipe management",
+            "Waste tracking",
+            "Inventory costing",
+            "Purchase management"
+            
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is one of Saudi Arabia’s leading organizations in the entertainment and hospitality sectors. Established in 1975, the group has over the years expanded into a chain of 35 hotels and 91 entertainment centers spread across Saudi Arabia and UAE. They have a dedicated team of 4100 employees that is on a mission to enhance its leadership in providing the finest types of tourist services as per international standards.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Earlier the organization was using a manual system for managing their restaurant functions such as recipes, inventory and purchase. They were earlier not successful in their LS NAV implementation and hence were looking for a partner for re-implementation.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": " Godrej Infotech Ltd. (GITL), was selected for this implementation due to successful implementations done for other similar organizations in the region. The project was done using our onsite-offshore execution model wherein initial requirement workshops were done at onsite, followed by design, development and UAT activities from offshore through remote working. Highlights of the solution provided are:",
+          "features": [
+            "ERP application optimization",
+            "Front office LS POS solution",
+            "Back office LS NAV 2018 implementation primariliy for accounts payable and inventory modules",
+            "Automated purchase module with GRN (Goods Received Note) tracking against the purchase order (PO)",
+            "Hospitality module: enhanced recipe management system",
+            "Central configuration of master data",
+            "Key user training"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Location wise inventory costing – Food cost report",
+            "Accurate waste calculation per store",
+            "Profitability analysis"
+                       
         ]
         },
         "meta": {
@@ -1946,6 +2797,5 @@
         }
         
       }
-
     ]
   }
