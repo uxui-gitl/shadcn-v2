@@ -77,6 +77,18 @@ function page() {
             cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+            <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+                
+                <li>
+                Small Scale Projects
+                    <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Machine Building</li>
+                        <li>Power Energy</li>
+                       
+                    </ol>
+                </li>
+            </ul>`
         },
         {
             id: 2,
@@ -89,6 +101,20 @@ function page() {
                 "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+            <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+                
+                <li>
+                Turnkey Projects 
+                    <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Infrastructure</li>
+                        <li>Ship building</li>
+                       <li>Mining</li>
+                       <li>Oil & Gas</li>
+                       <li>Drilling</li>
+                    </ol>
+                </li>
+            </ul>`
         },
         {
             id: 3,
@@ -101,6 +127,19 @@ function page() {
                 "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: `
+            <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+                
+                <li>
+                Real estate
+                    <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Industrial Set Up</li>
+                        <li>Residential Complex</li>
+                       <li>Mall</li>
+                       <li>Showroom</li>
+                    </ol>
+                </li>
+            </ul>`
         },
         
         // Add more cards as needed
@@ -383,7 +422,7 @@ function page() {
             videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
             title: "Case Studies",
             heading: "",
-            description: "World's top-notch businesses choose us for our industry knowledge and excellenttechnical acumen",
+            description: "World's top-notch businesses choose us for our industry knowledge and excellen ttechnical acumen",
             link: "",
             color: "#FFFFFF",
             bgCardColor: "#2B1624",
@@ -531,7 +570,7 @@ function page() {
             </SectionWrapperNew>
             {/* capabilites section end */}
 
-            <SectionWrapperNew style={{ backgroundColor: "#fff" }}
+            {/* <SectionWrapperNew style={{ backgroundColor: "#fff" }}
                 sectionHeading="Strategic Partnership"
                 sectionDesc="We have partnered with pioneering tech leaders to deliver scalable solutions that address complex challenges and drive business transformation."
                 sectionTextColor='#000'
@@ -571,9 +610,9 @@ function page() {
 
                         </SwiperSlide>
                     ))}
-                </Slider>
+                </Slider> 
 
-            </SectionWrapperNew>
+            </SectionWrapperNew>*/}
             {/* custome solution */}
 
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'From precise project estimation and execution to streamlined revenue recognition, we tackle the distinct challenges of project-based industries.'}/>
