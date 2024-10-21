@@ -1042,7 +1042,9 @@
         "challenges": {
           "description": "",
           "keyChallenges": [
-            ""
+            "Not able to track material in production process",
+            "Inefficient metal credit management",
+            "Ineffective sales order and warehouse processing"
         ]
         },
         "solution": {
@@ -1206,7 +1208,7 @@
           ]
         },
         "businessCase": {
-          "description": "The company was using multiple software & manual processes to run the business operations of various business entities across the group. The requirement from the new system was:",
+          "description": "The company was using multiple software & manual processes to run the business operations of various business entities across the group.",
           "businesscaseList": [
             ""
 
@@ -1215,22 +1217,11 @@
         "challenges": {
           "description": "UAT has been conducted smoothly despite the remote way of working due to COVID – 19. Other challenges were:",
           "keyChallenges": [
-           "• Full visibility & control of the businesses on the
- operational, financial & MIS aspects
-• Managing multiple legal entities spread across multiple
- locations
-• Inter-department integration to avoid duplication of
- manual work
-• Adherence to latest financial & audit guidelines
-• Consolidation of financial entries
-• Standardization of business processes along with well
- defined approval matrix
-• Maintaining & monitoring inventory holdings at multiple
- project locations
-• HR & Payroll module along with 3rd party integration
- with bio-time attendance machine
-• Quick reporting for faster decision making"
-        ]
+           "Incomplete visibility of business operations",
+            "Difficulty in managing multiple legal entities at various locations ",
+            "Duplication of manual work",
+            "Fragmented financial entries and long TAT for reporting "
+         ]
         },
         "solution": {
           "description": "Godrej Infotech was selected for this implementation due to its detailed product demonstration during the pre-sales phase which fulfilled all of the Customer requirements. Highlights of the solution provided are:",
@@ -1782,6 +1773,95 @@
         "mainCategory": "Transformation",
         "subCategory": "Microsoft Dynamics",
         "vertical": "Retail",
+        "title": "Exclusive Distributor of Renowned Coffee Brand in Egypt and Saudi Arabia Implements cloud based D365 Finance, SCM and Commerce",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Single cloud system for SCM, Finance, Sales B2C, B2B, Trade & Call Center",
+            "Management reporter tool",
+            "Multiple system upgrades and maintenance"
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is a Saudi Arabia & Egypt partner of a renowned coffee brand headquartered at Lausanne, Switzerland. It has created a World of Coffee Platform which strives to provide the ultimate experience to coffee lovers.",
+            "BriefList": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "With 16 stores to manage, Customer was facing multiple challenges",
+          "businesscaseList": [
+            ""
+
+          ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            "Maintenance of multiple systems Microsoft Dynamics GP, AX 2012 R3 and bespoke applications for CRM, e-commerce, and statutory compliance reporting across multiple locations",
+            "High reliance on 3rd party system integrators",
+            "Issues with retail processes related to store operations",
+            "Standardization of business processes across Saudi & Egypt"
+        ]
+        },
+        "solution": {
+          "description": "GITL conducted system audit assessment of existing systems to understand the issues and challenges. Based of analysis a fresh implementation of D365 was recommended instead of upgrade approach. ",
+          "features": [
+            "Single cloud system for Finance, SCM, Commerce, Sales (B2C, B2B, Trade, Call Center)",
+            "Real time data made available for quick decision making",
+            "Consolidation of financial reporting by leveraging Management reporter tool",
+            "Cost optimization with multiple system upgrades and maintenance"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Intercompany transactions reduced average",
+            "Time take and probability of error",
+            "On-hand inventory visibility ",
+            "Easy switching between offline & online modes",
+            "Inventory viability across stores",
+            "Better data synchronization between head office and Stores",
+            "Financial dimension control & analysis by dimension reporting",
+            "Automatic posting of bank charges for retail sales"
+
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+      {
+        "id": "case-study-21",
+        "mainCategory": "Transformation",
+        "subCategory": "LS Retail",
+        "vertical": "Travel Retail, Food and Beverages",
         "title": "Exclusive Distributor of Renowned Coffee Brand in Egypt and Saudi Arabia Implements cloud based D365 Finance, SCM and Commerce",
         "client": {
           "name": "",

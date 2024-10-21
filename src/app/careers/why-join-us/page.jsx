@@ -10,10 +10,10 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 
 
 const culture = [
-  {id:1, title:'Collaborative Work Environment', desc:'Harness the power of automation to optimize processes and drive efficiency.', bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
   {id:2, title:'', desc:'', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-  {id:2, title:'Growth Opportunities', desc:'From entry-level to leadership roles, we offer clear career paths and mentorship programs.', bgImageUrl:'', bgColor:'#7B014E'},
-  {id:2, title:'Growth Opportunities', desc:'From entry-level to leadership roles, we offer clear career paths and mentorship programs.', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
+  {id:4, title:'Work –life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
 ];
 
 
@@ -25,13 +25,19 @@ const benefits=[
 
 ]
 
+const GuidingPrinciples=[
+  {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.'},
+  {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.'},
+  {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork'},
+ 
+]
 
 
 const page = () => {
 
   return (
     <>
-      <ContactBanner bannerImage={'/careers/banner-bg.png'} title="Empowering Innovation, Driving Transformation" desc={"At Godrej Infotech, we foster a culture of growth, collaboration, and cutting-edge technology, enabling you to shape the future with us"} />
+      <ContactBanner bannerImage={'/careers/banner-bg.png'} title="Dive into Brilliant Career Experience to Manifest the Excellence in You" desc={"We foster culture of growth, collaboration with passion for cutting-edge technology, enabling you to shape the future with us."} />
 
       <OverviewSection Text={`At Godrej Infotech, we believe in creating a space where creativity meets collaboration. Our culture revolves around fostering innovation, diversity, and inclusivity, where every individual can thrive. We emphasize continuous learning and are dedicated to pushing the boundaries of technology.`} />
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
@@ -65,19 +71,19 @@ const page = () => {
       {/* slider guiding */}
       <SectionWrapperNew style={{ backgroundColor: "#000", marginTop:'-250px', paddingTop:'300px' }}
         sectionHeading="The Guiding Principles We Live By"
-        sectionDesc="Every day, we endeavour to create a meaningful impact, driven by our core principles and essence, reaching beyond our industry to positively touch every association we encounter."
+        sectionDesc="Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth."
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
         <Slider>
-          {[1, 2, 3, 4]?.map((item, index) => (
+          {GuidingPrinciples?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent]">
                 <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
                   <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
-                  <div className="text-[28px] text-white">Purpose</div>
+                  <div className="text-[28px] text-white">{item.title}</div>
                 </div>
-                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                <p className="text-[20px] py-4 text-white">{item.desc}</p>
               </div>
 
             </SwiperSlide>
