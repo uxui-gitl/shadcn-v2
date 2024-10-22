@@ -24,14 +24,12 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Limited access to real-time information hinders office and shop floor productivity", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Struggle to optimize inventory and logistics operations", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Hassle with equipment maintenance due to lack of tracking and schedules", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Difficulty in optimizing production sequences, balancing workloads and handling disruptions", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Inaccurate order-based material requirement planning and budget control", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Limited visibility into manufacturing activities and operations", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Ensuring consistent product quality and effective defect tracking", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 8, title: "Maintaining adherence to industry regulations and mitigating potential legal issues", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Inaccurate order-based material requirement planning and budget control", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Ensuring consistent product quality and effective defect tracking ", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Difficulty in optimizing production sequences, balancing workloads and handling disruptions ", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Hassle with equipment maintenance due to lack of tracking and schedules", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Limited access to real-time information hinders office and shop floor productivity ", icon: '/upgradeCloud/icons/ico--target.svg' },
+        
     ];
 
     const tabs = [
@@ -331,23 +329,16 @@ function page() {
             additionalData: `
              <ul class="max-w-md space-y-1 text-white list-disc">
                                     <li>
-                                        Industry 4.0 
+                                        Industry 4.0 with MES 
                                     </li>
                                     <li>
                                         Factory Track
                                     </li>
                                     <li>
-                                        Intelligent Operations using AI and ML
+                                        Intelligent Operations using AI and ML 
                                     </li>
-                                    <li>
-                                        Industry 4.0 RPA – Robotic Process Automation
-                                    </li>
-                                    <li>
-                                        Industry 4.0 -Interface with MES
-                                    </li>
-                                    <li>
-                                        Industry 4.0 IoT Solution
-                                    </li>
+                                   
+                                    
                                 </ul>
             `
         },
@@ -561,8 +552,8 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Accelerate Manufacturing Operations with Integrated Cutting-Edge Solutions"
-                desc="Optimize predict maintenance, enhance supply chain visibility and productivity"
+                title="Manufacturing Digitalization Starts Here"
+                desc="Transforming Factory to Shop Floor Operations with Future-Proof Solutions"
                 cta="Let's Connect"
                 width="60%"
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -777,8 +768,8 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Transformative Impact of MES on Manufacturing Operations"}
-                Desc={"Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing. It offers real-time visibility into production activities which enables efficient control and optimization. MES incorporates an array of functionalities such as production scheduling, quality management, inventory tracking and performance analysis. As the digital pillar of smart factories, MES facilitates seamless communication and collaboration within manufacturing environment."}
+                Heading={"MES Impact on Manufacturing Operations"}
+                Desc={"Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing. It offers real-time visibility into production activities which enables efficient control and optimization. "}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
@@ -794,7 +785,7 @@ function page() {
             ></ReviewSliderSection>
 
             {/* transform business with us section */}
-            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how digital transformation solutions can help you with rapid growth. "}>
             </TransformBusinessForm>
 
         </>
