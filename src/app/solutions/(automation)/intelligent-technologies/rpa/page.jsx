@@ -24,7 +24,7 @@ import CommonCardTwo from "@/components/CommonCardTwo";
 const RPASolution = [
   {
     id: 1,
-    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGImageUrl: '/rpa/RPA_01.jpg',
     cardBGColor: '#7F4EE1',
     cardHeading: 'Increase Productivity',
     cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
@@ -35,7 +35,7 @@ const RPASolution = [
   {
 
     id: 2,
-    cardBGImageUrl: '',
+    cardBGImageUrl: '/rpa/RPA_02.jpg',
     cardBGColor: '#7F4EE1',
     cardHeading: 'Accurate Outcomes',
     cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
@@ -46,18 +46,19 @@ const RPASolution = [
   {
 
     id: 3,
-    cardBGImageUrl: '',
-    cardBGColor: '#7F4EE1',
+    cardBGImageUrl: '/rpa/RPA_03.jpg',
+    cardBGColor: '#fff',
     cardHeading: 'Compliance and Consistency',
     cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
     isArrow: false,
-    cardTextColor: 'white',
-    cardType: 1,
+    cardTextColor: '#000',
+    cardType: 2,
+    downImageUrl:'/rpa/Offering01.png',
   },
   {
 
     id: 4,
-    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGImageUrl: '/rpa/RPA_04.jpg',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Strengthen Potential',
     cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
@@ -68,7 +69,7 @@ const RPASolution = [
   {
 
     id: 5,
-    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGImageUrl: '/rpa/RPA_05.jpg',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Enhance Flexibility',
     cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
@@ -78,17 +79,17 @@ const RPASolution = [
   },
   {
  id: 6,
-    cardBGImageUrl: '/rpa/ArtboardBg.png',
-    cardBGColor: '#EFE9FB',
+    cardBGImageUrl: '/rpa/RPA_06.jpg',
+    cardBGColor: '#fff',
     cardHeading: 'Reduce AHT (Average Handling Time)',
     cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
     isArrow: false,
-    cardTextColor: 'white',
+    cardTextColor: '#000',
     cardType: 2,
   },
   {
  id: 7,
-    cardBGImageUrl: '/rpa/ArtboardBg.png',
+    cardBGImageUrl: '/rpa/RPA_07.jpg',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Optimize FTE Cost)',
     cardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',

@@ -14,9 +14,9 @@ import CommonCardOne from "@/components/CommonCardOne";
 
 
 const page = () => {
-  const blogImageUrl = '/intelligent-tech/blogs/blog-bg-01.png';
+  const blogImageUrl = '/intelligent-tech/Digitalization.jpg';
   const formBGURL = "/formBgImage.svg";
-  const yourImageUrl = '/intelligent-tech/Solutions-Background.png';
+  const yourImageUrl = '/intelligent-tech/advanceSolutions.jpg';
 
   const advanceSolutionCardData = [
     {
@@ -153,7 +153,7 @@ const page = () => {
         desc="Delivering business - fit intelligent solutions to automate tedious tasks and augment business strength."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/intelligent-tech/videos/pageBanner.mp4"
       />
 
       {/* Overview  */}

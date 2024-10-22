@@ -245,7 +245,7 @@ const page = () => {
     },
     {
       id: 2,
-      cardHeading: "Microsoft Dynamics",
+      cardHeading: "Ms Dynamics",
     },
     {
       id: 3,
@@ -291,7 +291,7 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you tofocus on core business`} />
+      <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you to focus on core business`} />
 
       <SectionWrapper style={{ background: `url(/services/mg01.svg)`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
         <div className="md:container mx-auto">
@@ -362,10 +362,11 @@ const page = () => {
                   },
               }}
               >
-                {TECHNOLOGYSPECTRUM_DATA.map((item, index) => (
+                {TECHNOLOGYSPECTRUM_DATA?.map((item, index) => (
                   <SwiperSlide key={item}>
-                    <div className="w-fullbg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <Image className="rounded-t-lg" width={100} height={50} src="" alt="" />
+                    <div className="w-full text-[28px] font-semibold text-center">
+                      {/* <Image className="rounded-t-lg" width={100} height={50} src="" alt="" /> */}
+                      {item.cardHeading}
                     </div>
                   </SwiperSlide>
                 ))}
@@ -442,11 +443,11 @@ const page = () => {
       ></BlogSection>
 
       <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We focus on managing all aspects of IT infrastructure and business applications, minimizingthe need for in-house expertise. Trusted legacy of 25 years with experience of supporting 40+ Godrej & Boyce applications'}
+        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We focus on managing all aspects of IT infrastructure and business applications, minimizing the need for in-house expertise. Trusted legacy of 25 years with experience of supporting 40+ Godrej & Boyce applications'}
       >
       </DistinctiveSection>
 
-      <ReviewSliderSection
+      {/* <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={''}
@@ -454,12 +455,12 @@ const page = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="#1D162B"
         SectionHeadingMaxWidth={'70%'}
-      ></ReviewSliderSection>
+      ></ReviewSliderSection> */}
 
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Experience the power of optimized IT management with expert partner!"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Fill out thedetails to schedule a consultation with our expert."
         }
       ></TransformBusinessForm>
     </>

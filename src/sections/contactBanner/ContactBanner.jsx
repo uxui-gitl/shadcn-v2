@@ -1,7 +1,7 @@
 
 import SectionWrapperNew from '@/components/SectionWrapperNew'
 import LeftHeading from '@/components/LeftHeading';
-function ContactBanner({bannerImage='/contact/contact-banner.svg', title="Let’s Connect", desc="We enable global businesses to Automate Cloud & Transform for a sustainable and inclusive future."}) {
+function ContactBanner({height='100vh' , bannerImage='/contact/contact-banner.svg', title="Let’s Connect", desc="We enable global businesses to Automate Cloud & Transform for a sustainable and inclusive future."}) {
     return (
         <>
             <div className="py-16 sm:py-32 px-10" style={{
@@ -12,7 +12,7 @@ function ContactBanner({bannerImage='/contact/contact-banner.svg', title="Let’
                 alignItems: "center",
                 display: "flex",
                 backgroundColor: '#000',
-                height: '100vh',
+                height: `${height}`,
                 backgroundSize: "cover",
             }}>
                 <div className="container mx-auto">

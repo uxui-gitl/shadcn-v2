@@ -28,8 +28,6 @@ import { mdiArrowRight } from "@mdi/js";
 
 
 
-
-
 export default function Home() {
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
@@ -179,7 +177,7 @@ export default function Home() {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Infor Project Highlights",
+      heading: "Project Highlights",
       description:
         "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
       link: "/case-study-1",
@@ -220,27 +218,27 @@ export default function Home() {
     // Add more case studies here...
   ];
 
-  const TESTIMONIAL_DATA = [
+  const TESTIMONIAL_DATA:any = [
     {
-      id: 1,
+      id: '1',
       cardHeading: "79% Cut down in Purchase Order Processing",
       cardDesc: 'GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.',
       designation: '-	IT Director,',
       companyName: 'Cooling Facility Management Company'
     },
     {
-      id: 2,
+      id: '2',
       cardHeading: "Effective finance and budgeting management",
       cardDesc: 'GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.',
       designation: '-	IT Director',
-      companyName: 'Saudi Arabia’s Leading Engineering & Construction Service Provider'
+      companyName: 'Saudi Arabia’s Leading Engineering & Construction Service Provider',
     },
     {
       id: 3,
-      cardHeading: "3.	Salesforce Implementation against Tight Deadline ",
+      cardHeading: "Salesforce Implementation against Tight Deadline ",
       cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
       designation: '- Operations Head',
-      companyName: 'India’s Security Solutions Company'
+      companyName: 'India’s Security Solutions Company',
     },
   ];
 
@@ -733,7 +731,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESS EXPERIENCE"}
+        Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESSFUL EXPERIENCE"}
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}

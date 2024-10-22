@@ -9,7 +9,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import Image from "next/image";
-
+import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 
 import 
 ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
@@ -56,6 +56,40 @@ const page = () => {
     { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
     { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
   ];
+
+const CASE_STUDIES_DATA = [
+{
+imageURL: " ",
+videoURL: "",
+title: "Case Studies",
+heading: 'Delivering Results that Matters',
+description: "",
+link: "",
+color: '#FFFFFF',
+bgCardColor: '#2B1624'
+},
+{
+imageURL: "",
+title: "",
+heading: 'Cloud Consulting Services',
+description: "Exclusive Distributor of Renowned Coffee Brand in Egypt and Saudi Arabia Implements cloud-based D365 Finance, SCM, and Commerce.",
+link: "/case-study-1",
+color: '#000',
+bgCardColor: '#E4E4E4'
+},
+
+{
+imageURL: "/path/to/image1.jpg",
+title: "",
+heading: "Transformation Consulting",
+description: "Leading manufacturer of Electrical components for the Automobile sector modernize its business application with successful implementation of Infor LN.",
+link: "/case-study-1",
+color: '#000',
+bgCardColor: '#FCE6F4'
+},
+
+// Add more case studies here...
+];
 
   const distinctiveData = [
     {
@@ -311,6 +345,9 @@ const page = () => {
       >
       </DistinctiveSection>
         
+ {/* Section--Case-Studies======================================================================= */}
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor='#FFFFFF' />
+      {/* End-Section--Case-Studies */}
       
       <TransformBusinessForm
         Title={"Ready to Discuss with our Expert Consultant?"}
