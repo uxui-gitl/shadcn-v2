@@ -2395,7 +2395,7 @@
           ]
         },
         "customerBrief": {
-         "description": "",
+         "description": "More than 50 years in food and retail hospitality business. Operating 100 retail outlets across Saudi Arabia.",
             "BriefList": [
             ""
           ]
@@ -2403,7 +2403,7 @@
         "businessCase": {
           "description": "The diversity of business units and geographical locations had led to the existence of a number of isolated, often redundant systems. The strategic goal for the client was to integrate all the departments with a modern state-of-the-art IT ecosystem. The existing IT system and processes had limitations such as:",
           "businesscaseList": [
-            "Stock Mariagement: Stores had no visibility on global stock availability",
+            "Stock Management: Stores had no visibility on global stock availability",
             "Inventory Planning: Past Sales History was not being used for consumption forecasting",
             "Fleet Management: Logistic inefficiencies were being introduced due to remote locations"
 
@@ -2579,13 +2579,13 @@
           ]
         },
         "businessCase": {
-          "description": "The organization was using two disparate systems - ONYX & Tally, to maintain Back-Office, POS and Payroll. Their Fixes Asset Module was not structured, and payroll was not integrated with Finance module. Moreover, the integration between ECR (Swipe Machine) and POS was completely missing. They were looking at seamless financial management to improve operational efficiency and for this purpose were in look out for a scalable ERP solution.",
+          "description": "Customer was looking at seamless financial management to improve operational efficiency and for this purpose were in look out for a scalable ERP solution",
           "businesscaseList": [
             ""
             ]
         },
         "challenges": {
-          "description": "",
+          "description": "The organization was using two disparate systems - ONYX & Tally, to maintain Back-Office, POS and Payroll. Their Fixes Asset Module was not structured, and payroll was not integrated with Finance module. Moreover, the integration between ECR (Swipe Machine) and POS was completely missing.",
           "keyChallenges": [
             ""
         ]
@@ -2684,7 +2684,7 @@
         ]
         },
         "solution": {
-          "description": " Godrej Infotech Ltd. (GITL), was selected for this implementation due to successful implementations done for other similar organizations in the region. The project was done using our onsite-offshore execution model wherein initial requirement workshops were done at onsite, followed by design, development and UAT activities from offshore through remote working. Highlights of the solution provided are:",
+          "description": "Godrej Infotech Ltd. (GITL), was selected for this implementation due to successful implementations done for other similar organizations in the region. The project was done using our onsite-offshore execution model wherein initial requirement workshops were done at onsite, followed by design, development and UAT activities from offshore through remote working. Highlights of the solution provided are:",
           "features": [
             "ERP application optimization",
             "Front office LS POS solution",
@@ -2718,7 +2718,729 @@
           "url": "path-to-case-study-1-download.pdf"
         }
         
+      },
+
+      {
+        "id": "case-study-32",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail, Hospitality",
+        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail, Hospitality",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                       
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
+            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty.",
+            "Other Key Metrics Achieved by this System
+Implementation are:
+- New Customers: Increased by 40%
+- Paperwork: Reduced by 92%"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-33",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "",
+          "projectLocation": "",
+          "engagementSince": "",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                       
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            ""
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-34",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail, Food and Beverages",
+        "title": "",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "",
+          "projectLocation": "",
+          "engagementSince": "",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                       
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            ""
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-35",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Conglomerate",
+        "title": "",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "",
+          "projectLocation": "",
+          "engagementSince": "",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                       
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its mission of providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen.",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            ""
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-36",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Trading",
+        "title": "Saudi Trading Company Successfully Implements Microsoft Dynamics NAV ",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Trading",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "KSA Payroll module linked with Financial module",
+            "Automated depreciation calculations",
+            "NAV sales module integrated with Oracle Retail Pro",
+            "Automated Material Requisition Planning (MRP)",
+            "Customized Lease Rent Module"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is one of Saudi Arabia's leading trading companies specializing in the capital goods sector. Established in 2005, the company has the mission of providing its customers with leading international brands in the areas of fashion, footwear, health, and beauty. Today, the company operates over 52 stores and is looking to launch new business lines in its portfolio.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The legacy system utilized by the client covered only Financial Accounting. All other processes were managed through excel spreadsheets. The financial accounting system was not integrated with the POS. The legacy system and processes called for extensive manual processing, reconciliation activities, and additional reporting since the same information was being captured at multiple points.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            "Lease documents for the stores were being maintained in excel manually",
+            "The documents were being maintained by a single user leading to person dependency",
+            "There was no link or integration in between the lease records in excel and legacy accounting software"
+        ]
+        },
+        "solution": {
+          "description": "NAV was selected as the best fit solution to meet the requirements of the customer. The highlights of the solution are:",
+          "features": [
+            "Standard NAV solution with General Legder, Accounts Payable, Fixed Assets, Cash & Bank Management, Purchase Management, Sales Management and Inventory modules",
+            "Integrated KSA Attendance & Payroll module",
+            "Lease module handles store wise payments, discounts, expense amortizations and rent calculations",
+            "Customized MRP module that automatically calculates order quantity and forecasting",
+            "Creation of auto salary and payment JV",
+            "Phase wise delivery with post go live support",
+            "Strong domain knowledge of consultants"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "No manual intervention",
+            "Auto replenishment of inventory",
+            "Historical sales analysis",
+            "Demand forecasting"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-37",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "Saudi Arabia’s Leading Superstore Successfully Implements LS NAV Solution with KSA Payroll",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "WMS mobile application",
+            "Cheque printing in Arabic",
+            "ECR (swipe machine) integration with POS",
+            "Arabic shelf label printing"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "TThe Customer is one of the leading Superstores in Makkah. It was established in 2015 to fulfill the market needs for high quality retail solutions. Since then, it has added two more outlets for wholesale and sweets and is constantly looking for the finest items to satisfy the needs and wants of its customers. It is positioned strategically as a leader in the regional retail sector due to its strong focus on improving operational efficiency.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "The KSA Payroll module is designed for Auto salary, payment JV creation and integration with Finance module",
+            "Financial statements are obtained easily from NAV",
+            "All the key operational processes of Stock Request, Receiving, Shipping, Transfer Order, Sales Order Creation, Stock Taking and Stock Overview have been automated making the system paperless"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-38",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Logistics",
+        "title": "Singapore’s Largest Post Office Service Provider Selects GISPL for Microsoft Dynamics AX Multi-Year Support Engagement",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Logistics",
+          "projectLocation": "Singaopore",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "Support Services from offshore as per Singapore timezone",
+            "Microsoft Dynamics AX2012 R3",
+            "ERP Licenses: 300+",
+            "Operating System: Windows Server 2008 R2",
+            "Database: MS SQL Express Server 2014"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is Singapore’s designated Public Postal Organization that has been providing domestic and international delivery services for over 160 years. Today, the company is a pioneer in eCommerce logistics with a global reach to 19 markets. Their innovative solutions include web based front end system, warehousing and fulfilment modules, last mile delivery and international freight forwarding.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client has been using Microsoft Dynamics AX2012 ERP for more than 3 years. In addition to the standard implementation, a number of functional enhancements have also been done. The solution was implemented by another partner, after which there was a strong need for support services. As a result, Godrej Infotech Singapore Pte. Ltd. (GISPL) was selected by the Customer as a support partner.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Flexibile resourcing model with ramp up or ramp down based on requirements",
+            "Increase in system efficiency",
+            "Performance improvements",
+            "Cost reduction towards IT Maintenance"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-39",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "India’s Premium Luxury Lifestyle Brand Successfully Integrates NAV LS with Third Party Omni-channel System from Uniware",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "India",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "Master and transaction data integration",
+            "Inventory and Item Details are pushed from NAV to Uniware using API and webservices",
+            "Sales orders, returns and cancellations from market places such as Amazon and Flipkart and online website are pushed from Uniware to NAV using webservices",
+            "Orders are automatically allocated from online channels to stores or warehouse"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is a well known name in the lifestyle sector and provides luxury corporate and retail collections for the elite. It has been recognized as “Asia’s Most Promising Brands” by World Consulting & Research Corporation. available through multiple stores pan-India and online channels as well. The company provides exclusive products across various categories such as home décor, accessories and statement jewellery, which are available at multiple store across India and through online e-commerce channels as well. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The Customer is using Unicommerce solution to provide seamless shopping experience to its Customers through multiple sales channels. For making this solution successful, an automated integration between ERP and Uniware is required. Hence, the requirement was for integrating the MSD NAV 2016 system with Uniware’s third party Omni-channel sales solution for touch points related to Items and Sales orders. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "NAV LS Retail System is synchronized with the web front end systems which leads to real time data integrity and accuracy",
+            "Reports can be run on the synchronized data resulting in easier decision making",
+            "Orders can be processed from both warehouse and stores",
+            "Easy availability of shopping history and customer trends",
+            "Higher inventory turnover ratio",
+            "Efficient stock replenishment"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-40",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Middle East",
+        "title": "Leading Banking and Telecom Services Organization in KSA Increases Service Efficiency by 50% with MD NAV",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Service",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Simplified on Field Service",
+            "Remote Management of 19 Service Centers",
+            "Up to Date Inventory Levels",
+            "Real Time MIS Reports",
+            "AMC Support"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a firm believer in the use of technology for improving efficiency and profitability. With more than 30+ years in the Telecom, Banking and Cash Services industry, they have been pioneers in providing solutions and services to some of the biggest names in Saudi Arabia’s public and private sector. An ISO 9001:2008 certified company; it consistently ranks in the top 50 list of fastest growing companies in KSA. The company dominates the banking market with its total ATM outsourcing management solutions. It is one of the first to introduce the open-branch concept with the intelligent use of teller cash-recycler technology. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was using Microsoft Dynamics NAV 2009 solution for its back office operations. Unfortunately, the implementation was not up to the mark, and hence not being used efficiently by the end users. Sales, Service, Inventory and Finance data were being stored at multiple places, leading to insufficient information for management reporting. With phenomenal growth in the services sector and the growing demands of consumers, the company was in need of an integrated services module to streamline its 24*7*365 operations. After careful evaluation, Godrej Infotech Limited (GITL) was selected as the partner of choice, based on their in-depth ERP expertise in the Service Industry.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "The main challenge for this engagement was related to the adoption of the system. End users were familiar with the earlier way of working and were hesitant to using the new integrated system. The issue was successfully resolved with the commitmentof GITL consultants and client stakeholders. Training sessions and demos were conducted to bring all the users at par with the new system. After a period of thorough user acceptance testing, the system was resourcefully rolled out across the network of service centers and corporate offices.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "The client was looking for a suitable partner for managing their MD NAV system. GITL’s consultants conducted a due diligence to identify gaps in the current implementation. Based on the findings, the best solution recommended was a re-implementation of the MD NAV enterprise solution. The focus of the re-implementation was the services module for providing maximum benefit to customer service activities. The features of the new system are:",
+          "features": [
+            "Field Service Personnel can access customer history and service needs leading to faster issue resolution.",
+            "Feedback can be posted from site locations keeping all stakeholders in sync with the details of the case.",
+            "Key information can be recorded for measuring SLA’s.",
+            "Service module can automatically inspect and update inventory levels when service requests require equipment or component replacements.",
+            "Contract information and related documentation can be stored online."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The re-implemented NAV 2009 system led to the following benefits for the client:",
+          "list": [
+            " 20% improvement in SLA’s",
+            "20% reduction in paperwork and physical storage",
+            "Easier contract negotiation and renewals",
+            "Organized storage and retrieval of documents",,
+            "Improved field operations",
+            "Reduced ticket closure time"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
       }
-      
+
+            
     ]
   }
