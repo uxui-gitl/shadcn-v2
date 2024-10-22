@@ -553,7 +553,7 @@ function page() {
             </SectionWrapperNew>
             {/* capabilites section end */}
 
-            <SectionWrapperNew style={{ backgroundColor: "#fff" }}
+            {/* <SectionWrapperNew style={{ backgroundColor: "#fff" }}
                 sectionHeading="Unlock potential with our Custom Solutionss"
                 sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
                 sectionTextColor='#000'
@@ -595,7 +595,7 @@ function page() {
                     ))}
                 </Slider>
 
-            </SectionWrapperNew>
+            </SectionWrapperNew> */}
             {/* custome solution */}
 
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'We serve a diverse range of professional services firms, delivering tailored solutions to address unique industry challenges.'}/>
