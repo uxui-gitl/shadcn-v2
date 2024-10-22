@@ -442,7 +442,7 @@ const page = () => {
         counters={HUBEXPERTISE_COUNTER_DATA}
       />
 
-      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Mastering Data Migration: Key Strategies for Seamless Implementation'}
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Key Strategies for Seamless Implementation'}
         Desc={`As organizations transit to new systems or upgrade existing ones, ensuring smooth data migration becomes imperative to maintain continuity, accuracy, and efficiency in operations. In this blog, we'll delve into the critical aspects of data migration and outline key strategies to ensure a seamless implementation process.`}
         Color={'white'}
       ></BlogSection>
