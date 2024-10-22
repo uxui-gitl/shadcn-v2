@@ -24,15 +24,14 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Complex multi-entity governance and consolidation", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Suboptimal resource utilization and tracking", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Contract lifecycle management inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Client acquisition and retention challenges", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Asset and inventory management discrepancies", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Inconsistent costing methodologies and accounting standards", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Complex revenue recognition and financial reporting", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 8, title: "Inefficient labor time tracking and cost allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 9, title: "Operational scalability and growth constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Suboptimal resource utilization and tracking", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Contract lifecycle management inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Inconsistent costing methodologies & accounting standards", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Complex multi-entity governance & consolidation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Complex revenue recognition and financial reporting ", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Inefficient labor time tracking and cost allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 7, title: "Operational scalability and growth constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
+        
 
     ];
 
@@ -469,7 +468,7 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Helping Professional Services Firms to Thrive in Digital-First World"
+                title="Helping Professional Services Firms to Thrive Digitally"
                 desc="Navigate complexities of digital change, streamline operations and enhance customer experience"
                 cta="Let's Connect"
                 width="60%"
@@ -677,8 +676,8 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"IT Partner Selection for Professional Services Firms"}
-                Desc={"It's imperative for professional services businesses to conduct a thorough assessment of their unique requirements and objectives. Whether it's enhancing operational efficiency through automation, harnessing the scalability of cloud computing, or undergoing a seamless digital transformation, clarity on these aspects will serve as a guiding light in the partner selection journey."}
+                Heading={"Selecting the Right IT Partner "}
+                Desc={"It's imperative for professional services businesses to conduct a thorough assessment of their unique requirements and objectives."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
