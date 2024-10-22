@@ -10,30 +10,47 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 
 
 const culture = [
-  {id:1, title:'Collaborative Work Environment', desc:'Harness the power of automation to optimize processes and drive efficiency.', bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
   {id:2, title:'', desc:'', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-  {id:2, title:'Growth Opportunities', desc:'From entry-level to leadership roles, we offer clear career paths and mentorship programs.', bgImageUrl:'', bgColor:'#7B014E'},
-  {id:2, title:'Growth Opportunities', desc:'From entry-level to leadership roles, we offer clear career paths and mentorship programs.', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
+  {id:4, title:'Work –life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
 ];
 
 
 const benefits=[
-  {id:1,title:'Health Insurance', desc:'Comprehensive health insurance plans covering employees and their families',bgImageUrl:'', bgColor:'#5F22D9'},
-  {id:2,title:'Wellness Programs', desc:'wellness initiatives, and mental health support',bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-  {id:3,title:'Retirement Plans', desc:'Company-matched retirement savings plans to help you secure your future.',bgImageUrl:'', bgColor:'#000'},
-  {id:4,title:'Flexible Work Arrangements', desc:'Work remotely or adjust your hours to maintain a healthy work-life balance',bgImageUrl:'/careers/over1.svg', bgColor:'#5F22D9'},
-
+  {id:1,title:'Live Better', desc:'Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.',bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:2,title:'Compassionate Care', desc:'Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.',bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  
 ]
 
+const GuidingPrinciples=[
+  {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.'},
+  {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.'},
+  {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork'},
+ 
+]
+
+const BuildingCapability=[
+  {id:1,title:'GITL Learning Academy ', desc:'An online knowledge hub offering interactive learning modules to upskill and reskill employees.'},
+  {id:2,title:'Leap', desc:'Targeted and transformative training programs for future-ready leadership'},
+  {id:3,title:'Khoj ', desc:`A dynamic platform for celebrating and showcasing employees' talents beyond work.`},
+ 
+]
+
+const CSR_DATA=[
+  {id:1,title:'CSR Photo line ', desc:'We execute digital literacy training and job readiness programs for disadvantaged youth.'},
+  {id:2,title:'Wellness Photo line ', desc:'Holistic health and overall wellbeing of employees with different fitness initiatives and health screening'},
+  
+]
 
 
 const page = () => {
 
   return (
     <>
-      <ContactBanner bannerImage={'/careers/banner-bg.png'} title="Empowering Innovation, Driving Transformation" desc={"At Godrej Infotech, we foster a culture of growth, collaboration, and cutting-edge technology, enabling you to shape the future with us"} />
+      <ContactBanner bannerImage={'/careers/banner-bg.png'} title="Dive into Brilliant Career Experience to Manifest the Excellence in You" desc={"We foster culture of growth, collaboration with passion for cutting-edge technology, enabling you to shape the future with us."} />
 
-      <OverviewSection Text={`At Godrej Infotech, we believe in creating a space where creativity meets collaboration. Our culture revolves around fostering innovation, diversity, and inclusivity, where every individual can thrive. We emphasize continuous learning and are dedicated to pushing the boundaries of technology.`} />
+      <OverviewSection Text={`We foster a holistic culture, empowering individuals through cross-functional collaboration, recognition and continuous learning to drive an inclusive environment, ensuring equality.`} />
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
         sectionHeading=""
         sectionDesc=""
@@ -65,19 +82,19 @@ const page = () => {
       {/* slider guiding */}
       <SectionWrapperNew style={{ backgroundColor: "#000", marginTop:'-250px', paddingTop:'300px' }}
         sectionHeading="The Guiding Principles We Live By"
-        sectionDesc="Every day, we endeavour to create a meaningful impact, driven by our core principles and essence, reaching beyond our industry to positively touch every association we encounter."
+        sectionDesc="Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth."
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
         <Slider>
-          {[1, 2, 3, 4]?.map((item, index) => (
+          {GuidingPrinciples?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent]">
                 <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
                   <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
-                  <div className="text-[28px] text-white">Purpose</div>
+                  <div className="text-[28px] text-white">{item.title}</div>
                 </div>
-                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                <p className="text-[20px] py-4 text-white">{item.desc}</p>
               </div>
 
             </SwiperSlide>
@@ -94,14 +111,19 @@ const page = () => {
       >
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <h3 className="text-[54px] leading-[64px] font-semibold mb-3">Ajay Pimparkar</h3>
-            <p className="text-[#808080] text-[32px] mb-6">Chief Executive Officer</p>
+            <h3 className="text-[54px] leading-[64px] font-semibold mb-3">From the CEO’s Desk</h3>
+            <p className="text-[#808080] text-[32px] mb-6">-	Mr. Ajay Pimparkar </p>
 
             <div className="text-[20px] text-[#1D162B] font-medium mb-10">
-              Read about our team’s commitment to provide
-              everyone on our global platform with the technology
-              that can help them move ahead.
+            At Godrej Infotech, we're driven by a shared passion for delivering value to our customers. Our team is dedicated to making a meaningful impact. We believe in purpose-driven work that fosters growth, innovation and fulfillment. Godrej Infotech strives to create an environment where individuals can thrive and contribute to something larger than themselves.
+            </div>
 
+            <div className="text-[20px] text-[#1D162B] font-medium mb-10">
+            Our culture is built on collaboration, open communication and mutual respect. We empower our teams to take ownership, experiment with new ideas and drive positive change. Professional development and well-being are integral to our values, ensuring our people flourish.
+            </div>
+
+            <div className="text-[20px] text-[#1D162B] font-medium mb-10">
+            We invest in our people, providing opportunities for development, recognition and rewards.  Join us on this journey and contribute your unique talents and perspectives.
             </div>
             <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more</button>
           </div>
@@ -114,18 +136,18 @@ const page = () => {
 
       {/* growth section */}
       <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
-        sectionHeading="Your Growth, Our Priority"
-        sectionDesc="At Godrej Infotech, we invest in your future. With a wide range of learning and development programs, we help you grow professionally and personally."
+        sectionHeading="Nourishing Talent and Building Capability"
+        sectionDesc="Our talent development initiatives are focused to foster professional growth, interests beyond work, technical and leadership skills."
         sectionTextColor='#fff'
         sectionHeadingLayout="horizontal"
       >
         <Slider>
-          {[1, 2, 3, 4]?.map((item, index) => (
+          {BuildingCapability.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                <div className="text-[28px] text-white">Purpose</div>
-                <p className="text-[20px] py-4 text-white">Be a world class provider of high-quality Information & Technology solutions.</p>
+                <div className="text-[28px] text-white">{item.title}</div>
+                <p className="text-[20px] py-4 text-white">{item.desc}</p>
               </div>
 
             </SwiperSlide>
@@ -137,8 +159,8 @@ const page = () => {
 
       {/* benfits section */}
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
-        sectionHeading="Benefits that support you"
-        sectionDesc="We care for our employees and offer a comprehensive benefits package designed to support their health, well-being, and financial security."
+        sectionHeading="Thriving in Harmony"
+        sectionDesc="Experience a vibrant and progressive lifestyle, where collaboration, learning and growth come together. Designed to inspire creativity, diversity and well-being."
         sectionTextColor='#000'
         sectionHeadingLayout="left"
       >
@@ -162,14 +184,14 @@ const page = () => {
       {/* end benfits section */}
       {/* balance section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
-        sectionHeading="Balance and Well-Being"
-        sectionDesc="At Godrej Infotech, we believe in a holistic approach to life. That’s why we encourage our employees to engage in activities beyond work, through social events, CSR activities, and wellness programs."
+        sectionHeading="Employee Care and Social Responsibility"
+        sectionDesc="We focus on employee's well-being and social responsibility through our wellness program and CSR initiatives."
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
 
         <Slider slidesPerView={1.5}>
-          {[1, 2, 3, 4]?.map((item, index) => (
+          {CSR_DATA.map((item, index) => (
             <SwiperSlide key={index}>
                 <div className="h-[564px]  p-6 border border-gray-200 rounded-3xl shadow" style={{
                 display: 'flex',
@@ -180,8 +202,8 @@ const page = () => {
                 backgroundAttachment: "fixed", // This is key for the parallax effect
                 backgroundPosition: "center",
               }}>
-                <h5 className="mb-3 text-[28px] leading-[36px] font-semibold text-white">CSR</h5>
-                <p className="mb-3 font-[14px] leading-[22px] text-white">At Godrej Infotech, we believe in a holistic approach to life.<br></br> That’s why we encourage our employees to engage</p>
+                <h5 className="mb-3 text-[28px] leading-[36px] font-semibold text-white">{item.title}</h5>
+                <p className="mb-3 font-[14px] leading-[22px] text-white">{item.desc}</p>
 
               </div>
 
@@ -194,8 +216,8 @@ const page = () => {
 
            {/* joy at work section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
-        sectionHeading="Unleashing Joy at Work"
-        sectionDesc="Discover the heartwarming stories of our employees as they reveal their joyful experiences at work. From moments of triumph to instances of camaraderie, their testimonials showcase a workplace"
+        sectionHeading="Employee Experience - The People Behind Our Purpose"
+        sectionDesc="Explore glimpses of inspiring career journeys, highlighting dynamic work environment, collaborative experiences and opportunities for development and professional growth."
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
@@ -225,8 +247,8 @@ const page = () => {
       {/*end joy work section */}
       {/* find role  */}
       <SectionWrapperNew
-        sectionHeading="Find your Next Role"
-        sectionDesc="We care for our employees and offer a comprehensive benefits package designed to support their health, well-being, and financial security."
+        sectionHeading="Discover Exciting Opportunities "
+        sectionDesc="Chart your career growth with Godrej Infotech edge. Explore our current openings and take the first step towards a fulfilling and successful career."
         sectionTextColor='#000'
         sectionHeadingLayout="horizontal"
       >
