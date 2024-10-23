@@ -30,10 +30,8 @@ function page() {
         { id: 4, title: "Streamlining distribution and delivery for project execution", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 5, title: "Tracking direct and indirect revenue streams", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 6, title: "Real-time progress tracking at work and project levels", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Improving sales-service team coordination", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 8, title: "Enhancing stakeholder engagement", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 9, title: "Managing complex budgets, schedules and contracts", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 10, title: "Managing large data volumes and multiple stakeholders", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 7, title: "Managing complex budgets, schedules and contracts", icon: '/upgradeCloud/icons/ico--target.svg' },
+
 
     ];
 
@@ -549,7 +547,7 @@ function page() {
 
             <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
                 sectionHeading="Key Capabilities"
-                sectionDesc="With industry knowledge and expertise in cutting-edge technology, risk mitigation, we help in driving success of mega projects."
+                sectionDesc="Delivering mega project success through industry expertise and cutting-edge technology."
                 sectionTextColor='#fff'
                 sectionHeadingLayout="horizontal"
             >
