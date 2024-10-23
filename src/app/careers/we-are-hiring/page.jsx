@@ -11,7 +11,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 
 
 
-const page = () => {
+const Page = () => {
 
   return (
     <>
@@ -102,10 +102,10 @@ const page = () => {
                 <p className="mb-6 font-sm text-gray-700 dark:text-gray-400">I consent to the processing of my personal data by Godrej Infotech in
                   accordance with the privacy notice.</p>
                 <div className="flex mb-4">
-                  <Image src="/contact/star.svg" width={20} height={20} />
-                  <Image src="/contact/star.svg" width={20} height={20} />
-                  <Image src="/contact/star.svg" width={20} height={20} />
-                  <Image src="/contact/star.svg" width={20} height={20} />
+                  <Image src="/contact/star.svg" width={20} height={20} alt={'star'} />
+                  <Image src="/contact/star.svg" width={20} height={20} alt={'star'} />
+                  <Image src="/contact/star.svg" width={20} height={20} alt={'star'} />
+                  <Image src="/contact/star.svg" width={20} height={20} alt={'star'} />
                 </div>
 
                 <div className="flex flex-row justify-between items-end">
@@ -150,4 +150,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

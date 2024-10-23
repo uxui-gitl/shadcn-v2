@@ -8,8 +8,8 @@ import caseStudiesData from "@/data/caseStudiesData";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
-const page = () => {
-    const router = useRouter()
+const Page = () => {
+    const router = useRouter();
     const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
     const [mainCategory, setMainCategory] = useState('');
 
@@ -61,9 +61,9 @@ const page = () => {
                 </div>
 
                 <div className="grid grid-cols-3 gap-4 my-10">
-                    {updatedCaseStudiesData.map((item) => (
+                    {updatedCaseStudiesData.map((item, index) => (
                         <>
-                            <div class="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow">
+                            <div class="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow" key={index}>
                                 <div className="h-[250px]" style={{
                                     backgroundImage: `url("/caseStudies/case-studies-bg1.svg")`,
                                     backgroundSize: "cover",
@@ -97,4 +97,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

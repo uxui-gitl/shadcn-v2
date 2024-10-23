@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 
 
 
-const page = () => {
+const Page = () => {
     const router = useRouter()
     const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
     const [mainCategory, setMainCategory] = useState('');
@@ -127,4 +127,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

@@ -8,10 +8,8 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 
 
-
-
-const page = () => {
-    const router = useRouter()
+const Page = () => {
+const router = useRouter();
     const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
 
     return (
@@ -77,7 +75,7 @@ const page = () => {
                  <div className="cards py-10" style={{borderBottom:'1px solid #d3d3d3'}}>
                     <div class="grid grid-cols-3 gap-4">
                         <div className="">
-                            <Image src="/caseStudies/blog.svg" height={300} width={300}></Image>
+                            <Image src="/caseStudies/blog.svg" height={300} width={300} ALT="BUTTON"></Image>
                         </div>
 
                         <div className="col-span-2">
@@ -96,4 +94,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
