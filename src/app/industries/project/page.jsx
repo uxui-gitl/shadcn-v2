@@ -24,15 +24,13 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Optimizing resource procurement and hierarchy management", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Establishing efficient post-delivery service and maintenance", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Ensuring accurate procurement evaluation - Manpower, Machine, Material", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Streamlining distribution and delivery for project execution", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Tracking direct and indirect revenue streams", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Real-time progress tracking at work and project levels", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Managing complex budgets, schedules and contracts", icon: '/upgradeCloud/icons/ico--target.svg' },
-
-
+        { id: 1, title: "Establishing efficient post-delivery service and maintenance", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Ensuring accurate procurement evaluation - Manpower, Machine, Material", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Streamlining distribution and delivery for project execution", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Tracking direct and indirect revenue streams", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Real-time progress tracking at work and project levels", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Managing complex budgets, schedules and contracts", icon: '/upgradeCloud/icons/ico--target.svg' },
+    
     ];
 
     const tabs = [
