@@ -7,18 +7,13 @@ import Image from "next/image";
 import caseStudiesData from "@/data/caseStudiesData";
 
 
-const page = () => {
+const Page = () => {
     const { id } = useParams();
-    console.log("id", id)
     const [caseData, setCaseData] = useState([]);
     useEffect(() => {
         const data = caseStudiesData.filter((item) => item.id == id);
         setCaseData(data);
-        console.log(data, "databjh")
     }, []);
-
-
-    console.log(caseData, 'outer');
 
     return (
         <>
@@ -30,8 +25,8 @@ const page = () => {
                 sectionHeadingLayout="left">
 
                 <div className="next">
-                    {caseData?.map((item) => (
-                        <>
+                    {caseData?.map((item, index) => (
+                        <div key={index}>
                             <p className="text-[20px] font-medium text-[#808080] mb-6">18 October, 2024</p>
                             {item.title && <h2 className="max-w-[80%] mb-16 text-[42px] leading-[50px] font-semibold text-[#1D162B]">{item.title}</h2>}
                             <div className="grid grid-cols-4 gap-5">
@@ -56,7 +51,7 @@ const page = () => {
                                        {item?.customerBrief?.description && (<p className="text-[32px] leading-[40px] font-medium mb-6">{item?.customerBrief?.description}</p>)} 
                                         {item?.customerBrief?.BriefList&& (
                                             <ul class="space-y-1 text-black list-disc list-outside mb-6">
-                                            {item?.customerBrief?.BriefList.map((item) => (<li>{item}</li>))}
+                                            {item?.customerBrief?.BriefList.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
                                     </div>
@@ -67,7 +62,7 @@ const page = () => {
                                        {item?.businessCase?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.businessCase?.description}</p>)} 
                                         {item?.businessCase?.businesscaseList&& (
                                             <ul class="space-y-1 text-black list-disc list-outside mb-3">
-                                            {item?.businessCase?.businesscaseList?.map((item) => (<li>{item}</li>))}
+                                            {item?.businessCase?.businesscaseList?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
                                     </div>
@@ -77,7 +72,7 @@ const page = () => {
                                        {item?.challenges?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.challenges?.description}</p>)} 
                                         {item?.challenges?.keyChallenges && (
                                             <ul class="space-y-1 text-black list-disc list-outside mb-3">
-                                            {item?.challenges?.keyChallenges?.map((item) => (<li>{item}</li>))}
+                                            {item?.challenges?.keyChallenges?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
                                     </div>
@@ -88,7 +83,7 @@ const page = () => {
                                        {item?.solution?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.solution?.description}</p>)} 
                                         {item?.solution?.features&& (
                                             <ul class="space-y-1 text-black list-disc list-outside mb-3">
-                                            {item?.solution?.features?.map((item) => (<li>{item}</li>))}
+                                            {item?.solution?.features?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
                                     </div>
@@ -99,14 +94,14 @@ const page = () => {
                                        {item?.benefits?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.benefits?.description}</p>)} 
                                         {item?.benefits?.list&& (
                                             <ul class=" space-y-1 text-black list-disc list-outside mb-3">
-                                            {item?.benefits?.list?.map((item) => (<li>{item}</li>))}
+                                            {item?.benefits?.list?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
                                     </div>
                                 </div>
 
                             </div>
-                        </>
+                        </div>
                     ))}
                 </div>
             </SectionWrapperNew>
@@ -118,9 +113,9 @@ const page = () => {
                 sectionHeadingLayout="horizontal"
                 style={{ backgroundColor: '#1D162B', }}
             >
-                {[1,2,3].map(item => (
+                {[1,2,3].map((item, index) => (
                     <>
-                 <div className="cards py-10" style={{borderBottom:'1px solid #d3d3d3'}}>
+                 <div className="cards py-10" key={index} style={{borderBottom:'1px solid #d3d3d3'}}>
                     <div class="grid grid-cols-3 gap-4">
                         <div className="">
                             <Image src="/caseStudies/blog.svg" height={300} width={300}></Image>
@@ -142,4 +137,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

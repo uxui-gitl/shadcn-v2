@@ -192,9 +192,9 @@ const ContactUs = () => {
       <div className="">
         <h2 className="text-[28px] font-semibold leading-[36px]">2021 - Present – Sustaining Holistic Excellence</h2>
         <div className="my-10">
-          {DATA_2021_Present.map((item) => (
+          {DATA_2021_Present.map((item,index) => (
             <>
-             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
             <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
           </div>
             </>
@@ -212,9 +212,9 @@ const ContactUs = () => {
       <div className="">
         <h2 className="text-[28px] font-semibold leading-[36px]">2016 – 2020 – Multi-faceted Accomplishments</h2>
         <div className="my-10">
-          {DATA_2016_2020.map((item) => (
+          {DATA_2016_2020.map((item,index) => (
             <>
-             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
             <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
           </div>
             </>
@@ -231,9 +231,9 @@ const ContactUs = () => {
          <div className="">
         <h2 className="text-[28px] font-semibold leading-[36px]">2011 - 2015 – A Triumphant Year</h2>
         <div className="my-10">
-          {DATA_2011_2015.map((item) => (
+          {DATA_2011_2015.map((item,index) => (
             <>
-             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
             <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
           </div>
             </>
@@ -250,9 +250,9 @@ const ContactUs = () => {
          <div className="">
         <h2 className="text-[28px] font-semibold leading-[36px]">2005 - 2010 – Prominent Honors</h2>
         <div className="my-10">
-          {DATA_2005_2010.map((item) => (
+          {DATA_2005_2010.map((item,index) => (
             <>
-             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
             <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
           </div>
             </>
@@ -269,9 +269,9 @@ const ContactUs = () => {
          <div className="">
         <h2 className="text-[28px] font-semibold leading-[36px]">1999 - 2004 – Inception of a Technology Powerhouse, Strategi</h2>
         <div className="my-10">
-          {DATA_1999_2004.map((item) => (
+          {DATA_1999_2004.map((item, index) => (
             <>
-             <div className="flex py-4" style={{borderBottom:'1px solid #E4E4E4'}}>
+             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
             <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
           </div>
             </>
@@ -467,8 +467,8 @@ const ContactUs = () => {
             <thead class="text-xs text-gray-700 uppercase bg-white">
             </thead>
             <tbody>
-              {AWARD_DATA.map((item) => (
-                <tr class="bg-white border-b ">
+              {AWARD_DATA.map((item, index) => (
+                <tr class="bg-white border-b " key={index}>
                   <th scope="row" class="px-6 py-4 font-semibold text-[#000] text-[20px] whitespace-nowrap">
                     {item.Year}
                   </th>

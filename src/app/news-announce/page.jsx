@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation'
 
 
 
-const page = () => {
+const Page = () => {
     const router = useRouter()
     const [updatedNews, setUpdatedNews] = useState(newsData);
     const [year, setYear] = useState('');
@@ -117,4 +117,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

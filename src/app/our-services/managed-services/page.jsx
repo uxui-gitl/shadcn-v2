@@ -458,9 +458,9 @@ const page = () => {
       ></ReviewSliderSection> */}
 
       <TransformBusinessForm
-        Title={"Experience the power of optimized IT management with expert partner!"}
+        Title={"Transform Your Business with Us"}
         Desc={
-          "Fill out thedetails to schedule a consultation with our expert."
+          "Let's discuss how Managed Support Services can help you to optimize business operations."
         }
       ></TransformBusinessForm>
     </>
