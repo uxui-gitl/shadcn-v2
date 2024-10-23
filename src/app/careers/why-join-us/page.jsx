@@ -81,8 +81,8 @@ const page = () => {
       
       {/* slider guiding */}
       <SectionWrapperNew style={{ backgroundColor: "#000", marginTop:'-250px', paddingTop:'300px' }}
-        sectionHeading="The Guiding Principles We Live By"
-        sectionDesc="Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth."
+        sectionHeading={`The Guiding Principles We Live By`}
+        sectionDesc={`Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth.`}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
@@ -111,19 +111,19 @@ const page = () => {
       >
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <h3 className="text-[54px] leading-[64px] font-semibold mb-3">From the CEO’s Desk</h3>
-            <p className="text-[#808080] text-[32px] mb-6">-	Mr. Ajay Pimparkar </p>
+            <h3 className="text-[54px] leading-[64px] font-semibold mb-3">{`From the CEO’s Desk`}</h3>
+            <p className="text-[#808080] text-[32px] mb-6">{`-	Mr. Ajay Pimparkar`} </p>
 
             <div className="text-[20px] text-[#1D162B] font-medium mb-10">
-            At Godrej Infotech, we're driven by a shared passion for delivering value to our customers. Our team is dedicated to making a meaningful impact. We believe in purpose-driven work that fosters growth, innovation and fulfillment. Godrej Infotech strives to create an environment where individuals can thrive and contribute to something larger than themselves.
+            {`At Godrej Infotech, we're driven by a shared passion for delivering value to our customers. Our team is dedicated to making a meaningful impact. We believe in purpose-driven work that fosters growth, innovation and fulfillment. Godrej Infotech strives to create an environment where individuals can thrive and contribute to something larger than themselves.`}
             </div>
 
             <div className="text-[20px] text-[#1D162B] font-medium mb-10">
-            Our culture is built on collaboration, open communication and mutual respect. We empower our teams to take ownership, experiment with new ideas and drive positive change. Professional development and well-being are integral to our values, ensuring our people flourish.
+            {`Our culture is built on collaboration, open communication and mutual respect. We empower our teams to take ownership, experiment with new ideas and drive positive change. Professional development and well-being are integral to our values, ensuring our people flourish.`}
             </div>
 
             <div className="text-[20px] text-[#1D162B] font-medium mb-10">
-            We invest in our people, providing opportunities for development, recognition and rewards.  Join us on this journey and contribute your unique talents and perspectives.
+            {`We invest in our people, providing opportunities for development, recognition and rewards.  Join us on this journey and contribute your unique talents and perspectives.`}
             </div>
             <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more</button>
           </div>
@@ -136,8 +136,8 @@ const page = () => {
 
       {/* growth section */}
       <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
-        sectionHeading="Nourishing Talent and Building Capability"
-        sectionDesc="Our talent development initiatives are focused to foster professional growth, interests beyond work, technical and leadership skills."
+        sectionHeading={`Nourishing Talent and Building Capability`}
+        sectionDesc={`Our talent development initiatives are focused to foster professional growth, interests beyond work, technical and leadership skills.`}
         sectionTextColor='#fff'
         sectionHeadingLayout="horizontal"
       >
@@ -159,8 +159,8 @@ const page = () => {
 
       {/* benfits section */}
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
-        sectionHeading="Thriving in Harmony"
-        sectionDesc="Experience a vibrant and progressive lifestyle, where collaboration, learning and growth come together. Designed to inspire creativity, diversity and well-being."
+        sectionHeading={`Thriving in Harmony`}
+        sectionDesc={`Experience a vibrant and progressive lifestyle, where collaboration, learning and growth come together. Designed to inspire creativity, diversity and well-being.`}
         sectionTextColor='#000'
         sectionHeadingLayout="left"
       >
@@ -184,8 +184,8 @@ const page = () => {
       {/* end benfits section */}
       {/* balance section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
-        sectionHeading="Employee Care and Social Responsibility"
-        sectionDesc="We focus on employee's well-being and social responsibility through our wellness program and CSR initiatives."
+        sectionHeading={`Employee Care and Social Responsibility`}
+        sectionDesc={`We focus on employee's well-being and social responsibility through our wellness program and CSR initiatives.`}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
@@ -216,8 +216,8 @@ const page = () => {
 
            {/* joy at work section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
-        sectionHeading="Employee Experience - The People Behind Our Purpose"
-        sectionDesc="Explore glimpses of inspiring career journeys, highlighting dynamic work environment, collaborative experiences and opportunities for development and professional growth."
+        sectionHeading={`Employee Experience - The People Behind Our Purpose`}
+        sectionDesc={`Explore glimpses of inspiring career journeys, highlighting dynamic work environment, collaborative experiences and opportunities for development and professional growth.`}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
@@ -225,8 +225,8 @@ const page = () => {
           {[1, 2, 3, 4]?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
-                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">“Supportive senior management, excellent work culture, exposure to next-generation “</div>
-                <h5 className="mb-5 text-[16px] font-[400] text-[#EFE9FB]">I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.</h5>
+                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{`“Supportive senior management, excellent work culture, exposure to next-generation “`}</div>
+                <h5 className="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{`I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.`}</h5>
 
                 <div className="flex">
                   <div className="mr-4">
@@ -255,7 +255,7 @@ const page = () => {
         <div className="jobcard flex justify-between items-end py-6" style={{borderBottom:'1px solid #d3d3d3'}}>
             <div className="">
             <div className="text-[30px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
-            <p className="text-[16px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
+            <p className="text-[16px] leading-[20px] text-[#808080] mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary`}</p>
             <div className="">
             <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
             </div>
@@ -268,7 +268,7 @@ const page = () => {
         <div className="jobcard flex justify-between items-end py-6" style={{borderBottom:'1px solid #d3d3d3'}}>
             <div className="">
             <div className="text-[28px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
-            <p className="text-[14px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
+            <p className="text-[14px] leading-[20px] text-[#808080] mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary`}</p>
             <div className="">
             <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
             </div>

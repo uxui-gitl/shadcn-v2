@@ -8,13 +8,13 @@ import { useRouter } from 'next/navigation';
 import Dialog from "@/components/Dialog";
 
 
-const page = () => {
+const Page = () => {
     const router = useRouter();
     const [showModal2, setshowModal1] = useState(false);
 
     function handleBusinessCardClick(modal) {
         setshowModal1(modal);
-      }
+    }
 
 
 
@@ -57,26 +57,23 @@ const page = () => {
                 </div>
             </SectionWrapperNew>
 
-            
-      {/* modal */}
-      <Dialog
-        shouldShow={showModal2}
-        onRequestClose={() => {
-          setshowModal1((prev) => !prev);
-        }}
-        title={"video"}
-      >
-        <div className="py-10 mx-auto text-center">
-        <iframe width="560" height="415" style={{margin:'0 auto'}} src="https://www.youtube.com/embed/T-VEzb3WgJY?si=10lNjjAPIVBstnvC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </Dialog>
-      {/* end modal */}
+
+            {/* modal */}
+            <Dialog
+                shouldShow={showModal2}
+                onRequestClose={() => {
+                    setshowModal1((prev) => !prev);
+                }}
+                title={"video"}
+            >
+                <div className="py-10 mx-auto text-center">
+                    <iframe width="560" height="415" style={{ margin: '0 auto' }} src="https://www.youtube.com/embed/T-VEzb3WgJY?si=10lNjjAPIVBstnvC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </Dialog>
+            {/* end modal */}
 
         </>
     );
 };
 
-
-
-
-export default page;
+export default Page;
