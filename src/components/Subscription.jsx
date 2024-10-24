@@ -1,15 +1,16 @@
 "use client";
 
 import Icon from "@mdi/react";
-import { mdiArrowRight } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 import Image from "next/image";
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-import SectionHeading from "./SectionHeading";
 import HorizontalHeading from "@/components/HorizontalHeading";
+import axios from "axios";
+import url from "@/data/url";
+
+
 
 const MySwal = withReactContent(Swal);
 const Subscription = ({ title, blue, title2, desc }) => {
@@ -20,28 +21,36 @@ const Subscription = ({ title, blue, title2, desc }) => {
     Consent: "Y",
   });
 
+
+  const [token , setToken] = useState();
+
+  useEffect(() => {
+    handleToken();  
+  }, []);
+
+  async function handleToken(){
+    if(localStorage.getItem("token") != null){
+      setToken(localStorage.getItem("token"));
+    }
+    else{
+      const response = await axios.post(`${url.formUrl}/Token/CreateToken`);
+      localStorage.setItem("token", response.data.model.token);
+      setToken(localStorage.getItem("token"));
+
+    }
+  }
+
+ async function getToken(){
+  const response = await axios.post(`${url.formUrl}/Token/CreateToken`);
+  localStorage.setItem("token", response.data.model.token);
+  setToken(localStorage.getItem("token"));
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      // Send the POST request to the API endpoint
-      const response = await fetch(
-        "https://mailer.godrej.com/godrejinfotechapi/SendEnquiry/RegistrationEnquiry",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            Name: formData.Name,
-            Email: formData.Email,
-            Query: formData.Query,
-            Consent: formData.Consent,
-          }),
-        }
-      );
-
-      if (response.ok) {
+    let  res =  await axios.post(`${url.formUrl}/SendEnquiry/RegistrationEnquiry`,formData , {headers: { Authorization: `Bearer ${token}`}});
+      if (res.ok) {
         console.log("Enquiry saved successfully!");
 
         Swal.fire({
@@ -59,10 +68,16 @@ const Subscription = ({ title, blue, title2, desc }) => {
       } else {
         console.error("Error saving enquiry:", response.statusText);
       }
-    } catch (error) {
+        }
+     catch (error) {
+      if (error.response.status === 401) {
+        localStorage.removeItem("token");
+        handleToken();
+       }
       console.error("An error occurred:", error);
     }
   };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -112,8 +127,8 @@ const Subscription = ({ title, blue, title2, desc }) => {
                 <label htmlFor="Query" className="peer-focus:font-medium absolute text-lg text-gray-500 dark:border-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
               </div>
               <div className="flex justify-center md:justify-end">
-                <Link
-                  href={"#Contact"}
+                <button
+                 type="submit"
                   className="text-white flex items-center bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 mb-2 dark:bg-[#946BE6] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                 >
                   {'Send Message'}
@@ -122,7 +137,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                     style={{ marginLeft: "0.5em", transform: "rotate(45deg)", marginTop: '1px' }}
                     size={1}
                   />
-                </Link>
+                </button>
               </div>
             </form>
 
