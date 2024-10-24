@@ -6057,6 +6057,346 @@ Implementation are:
           "url": "path-to-case-study-1-download.pdf"
         }
         
+      },
+
+      {
+        "id": "case-study-73",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Oil and Gas",
+        "title": "India's Leading Provider of Offshore Drilling Services Implements Microsoft Dynamics AX 2012 along with GITL's Add-On Payroll Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Oil and Gas",
+          "projectLocation": "India",
+          "engagementSince": "2014",
+          "solutionSnapshot": [
+            "Implementation across multiple Offices, Rigs, Legal Entities and Warehouses",
+            "Third Party Integration with AMOS Software",
+            "Customized Ticket, Administrative and Service Tax Modules",
+            "Centralized Server Enterprise Deployment"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a pioneer in drilling and manpower services with a steady focus on delivering on-time services to its clients. An ISO 9001, 14001 and 18001 certified company, it specializes in fit-for-purpose solutions for achieving seamless operations and safety systems to maintain asset integrity. Other business functions include supervision of rig construction, fleet management, and refurbishment which are executed with the core values of people, process and environmental protection.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was facing multiple issues in their day-to-day operations such as:",
+          "businesscaseList": [
+            "Managing a high working capital",
+            "Managing travel, schedules and payroll for an international workforce",
+            "Use of non-integrated multiple systems like Tally, Saral and AMOS",
+            "Huge inventory maintenance costs",
+            "Inconsistencies in standardizing operational processes",
+            "Manual, time consuming and cumbersome reporting of business information"
+            ]
+        },
+        "challenges": {
+        "description": "Working with multiple external systems was the main challenge for this client, as it directly impacted business efficiency and employee productivity. The GITL team dealt with this by building interfaces to existing systems such as AMOS. The users now continue to enter purchase requisition and transfer orders in AMOS which can then be fetched from the AX system for further calculations and settlement processing using GITL's custom built interface.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "The primary factor that led the customer to choose Godrej Infotech Limited over other evaluated Microsoft partners is the fact that GITL, though a separate, independently functioning legal entity, is an integral member of the Godrej & Boyce Manufacturing family. Our traditional corporate values, deep domain expertise of manufacturing processes, along with multi-talented experts in ERP software solutions are the key differentiators that convinced the client on our capability to handle a large scale implementation of this nature. Well conducted product demos, followed by detailed architecture and integration discussions gave the customer the guarantee of a well-outlined, planned, and structured Microsoft Dynamics AX 2012 ERP implementation. The solution included:",
+          "features": [
+            "One system concept - Integrated Finance, HR, Rig specific maintenance application and Quality Systems",
+            "Tracking of health and safety incidents",
+            "Automation of periodic billing and collection processes",
+            "Financial and statutory accounting, billing and reporting",
+            "Multi-level workflow with limit based approvals",
+            "Microsoft Sure Step product implementation methodology"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The client achieved significant value addition by the successful completion of this complex ERP implementation within the planned timelines. Some of the key benefits are:",
+          "list": [
+            "Cost savings - A greater return on investment is achieved by using the integrated AX system as compared to the earlier multiple systems model.",
+            "Operational efficiency - Centralized procurement, sales, finance, and production processes leads to a reduction of repetitive transactions and better internal controls mechanisms."
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-75",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Printing & Packaging",
+        "title": "International FMCG Chain Standardizes Operations with Microsoft Dynamics AX Multi-Country, Multi-Company Template Rollout Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "FMCG",
+          "projectLocation": "India, Africa",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "7+ legal entities in 5+ countries in a single instance of MS Dynamics AX",
+            "Global process template & rapid rollout implementations",
+            "Simplified processes and insight across multiple international locations",
+            "Integration with third party warehouse",
+            "Automation of logistic processes",
+            "Credit limit checks with by- pass and approval",
+            "Item group based sequencing of item codes",
+            "Master data management",
+            "Microsoft Sure Step Product Implementation Methodology"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a leading international conglomerate specializing in soap, hair colorants, toiletries, and liquid detergents. Based in Mumbai, the organization has expanded its operations in African countries like Kenya, Nigeria, Ghana, Tanzania, Ivory Coast and Ethiopia. The African business deals with the FMCG product range of hair and skin care products. A leading brand in the emerging markets, the organization ranks on the Fortune, 'Change the World' list.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "Being a large multi-national group with a variety of processes and systems across their locations, the organization needed one single standardized system to streamline their operational activities. The client's vision was to have a simple, easy to use, flexible ERP solution platform for its multiple countries and legal entities. The system was required to address and optimize critical business functions such as inventory management, production control, product costing, warehousing and logistics, procurement and sourcing.",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Working with multiple external systems was the main challenge for this client, as it directly impacted business efficiency and employee productivity. The GITL team dealt with this by building interfaces to existing systems such as AMOS. The users now continue to enter purchase requisition and transfer orders in AMOS which can then be fetched from the AX system for further calculations and settlement processing using GITL's custom built interface.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Average rollout implementation time of 2 calendar months.",
+            "Rapid rollout implementation for one of the companies in Kenya was done in a record time of 38 days!!",
+            "Template implementation for discrete and process manufacturing scenarios.",
+            "Centralized management of master data such as products master across countries and legal entities.",
+            "Time saving by implementation of Distributor Sales Portal for order entry & status tracking."
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-76",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "IT Services",
+        "title": "International FMCG Chain Standardizes Operations with Microsoft Dynamics AX Multi-Country, Multi-Company Template Rollout Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "FMCG",
+          "projectLocation": "India, Africa",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "7+ legal entities in 5+ countries in a single instance of MS Dynamics AX",
+            "Global process template & rapid rollout implementations",
+            "Simplified processes and insight across multiple international locations",
+            "Integration with third party warehouse",
+            "Automation of logistic processes",
+            "Credit limit checks with by- pass and approval",
+            "Item group based sequencing of item codes",
+            "Master data management",
+            "Microsoft Sure Step Product Implementation Methodology"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a leading international conglomerate specializing in soap, hair colorants, toiletries, and liquid detergents. Based in Mumbai, the organization has expanded its operations in African countries like Kenya, Nigeria, Ghana, Tanzania, Ivory Coast and Ethiopia. The African business deals with the FMCG product range of hair and skin care products. A leading brand in the emerging markets, the organization ranks on the Fortune, 'Change the World' list.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "Being a large multi-national group with a variety of processes and systems across their locations, the organization needed one single standardized system to streamline their operational activities. The client's vision was to have a simple, easy to use, flexible ERP solution platform for its multiple countries and legal entities. The system was required to address and optimize critical business functions such as inventory management, production control, product costing, warehousing and logistics, procurement and sourcing.",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Working with multiple external systems was the main challenge for this client, as it directly impacted business efficiency and employee productivity. The GITL team dealt with this by building interfaces to existing systems such as AMOS. The users now continue to enter purchase requisition and transfer orders in AMOS which can then be fetched from the AX system for further calculations and settlement processing using GITL's custom built interface.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Average rollout implementation time of 2 calendar months.",
+            "Rapid rollout implementation for one of the companies in Kenya was done in a record time of 38 days!!",
+            "Template implementation for discrete and process manufacturing scenarios.",
+            "Centralized management of master data such as products master across countries and legal entities.",
+            "Time saving by implementation of Distributor Sales Portal for order entry & status tracking."
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-77",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Pharmaceuticals",
+        "title": "Indian based Global Oncology Pharmaceuticals Company Implements HxGN EAM Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Pharmaceutical",
+          "projectLocation": "India",
+          "engagementSince": "2023",
+          "solutionSnapshot": [
+            "HxGN EAM Implementation"
+            
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Established in 2005, the global specialty pharmaceutical company stands at the forefront of the industry, offering a comprehensive range of oncology medicines in India. With commitment to quality, accessibility and innovation, the company aims to revolutionize cancer treatment options while extending their market reach across the United States, Europe, Australia, New Zealand, Japan, Canada and the Asia Pacific region.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Before engaging with Godrej Infotech, customer was facing issues with their paper-based management system, hindering maintenance operations. Challenges included time-consuming and error-prone processes, lack of real-time updates, limited accessibility and visibility, data analysis difficulties, and inefficient inventory management. The goal was to digitalize their maintenance management capabilities.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            "To address the manual challenges, GITL implemented HxGN EAM with Equipment, Work & Material modules. This CMMS system deployment offers comprehensive asset management, streamlined work order processes, calibration, preventive maintenance scheduling, efficient inventory management, analytics and integration capabilities."
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Asset Lifecycle Management",
+            "Preventive Maintenance (PM)",
+            "Scheduling",
+            "Calibration Management",
+            "Work Management",
+            "Compliance Tracking",
+            "Efficient Inventory Management",
+            "Cost Optimization",
+            "Effective Resource Allocation",
+            "Operation Downtime Reduction"
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
       }
             
     ]
