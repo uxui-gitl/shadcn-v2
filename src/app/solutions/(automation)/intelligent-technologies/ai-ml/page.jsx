@@ -319,7 +319,7 @@ const page = () => {
       ></BenefitSliderSection>
       {/* blog section  */}
 
-      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Unveiling Hyper-automation for Supply Chain Efficiency'}
+      <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Hyper-Automation for Supply Chain Efficiency'}
         Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices.'}
         Color={'white'}
         readMoreUrl=""
