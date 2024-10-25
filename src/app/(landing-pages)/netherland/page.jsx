@@ -48,82 +48,82 @@ export default function Home() {
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
-  const GuidingPrinciples=[
-    {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.'},
-    {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.'},
-    {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork'},
-   
-  ]
+  const GuidingPrinciples = [
+    {
+      id: 1,
+      title: "Purpose",
+      desc: "Create Sustainable Value for our Stakeholders by connecting People and Technology.",
+    },
+    {
+      id: 2,
+      title: "Vision",
+      desc: "Be a world class provider of high-quality Information & Technology solutions.",
+    },
+    {
+      id: 3,
+      title: "Value",
+      desc: "Integrity,Responsiveness,Commitment, Teamwork",
+    },
+  ];
 
   const INDUSTRY_SPOTLIGHT = [
     {
-        id: 1,
-        cardBGImageUrl:
-            "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
-        cardBGColor: "#7F4EE1",
-        cardHeading: "Automotive/ Discrete/ Industrial",
-        cardDesc: "",
-        isArrow: false,
-        cardTextColor: "white",
-       
+      id: 1,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Automotive/ Discrete/ Industrial",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
     },
     {
-        id: 2,
-        cardBGImageUrl:
-            "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
-
-        cardBGColor: "#7F4EE1",
-        cardHeading: "Engineering and construction",
-        cardDesc:
-            "",
-        isArrow: false,
-        cardTextColor: "white",
-        
+      id: 2,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Engineering and construction",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
     },
     {
-        id: 3,
-        cardBGImageUrl:
-            "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+      id: 3,
+      cardBGImageUrl:
+        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
-        cardBGColor: "#7F4EE1",
-        cardHeading: "Process Manufacturing",
-        cardDesc:
-            "",
-        isArrow: false,
-        cardTextColor: "white",
-       
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Process Manufacturing",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
     },
     {
       id: 4,
       cardBGImageUrl:
-          "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
       cardHeading: "Process Manufacturing",
-      cardDesc:
-          "",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
-     
-  },
-  
-  {
-    id: 5,
-    cardBGImageUrl:
+    },
+
+    {
+      id: 5,
+      cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
-    cardBGColor: "#7F4EE1",
-    cardHeading: "Process Manufacturing",
-    cardDesc:
-        "",
-    isArrow: false,
-    cardTextColor: "white",
-   
-},
+      cardBGColor: "#7F4EE1",
+      cardHeading: "Process Manufacturing",
+      cardDesc: "",
+      isArrow: false,
+      cardTextColor: "white",
+    },
 
-    
     // Add more cards as needed
-];
+  ];
 
   const items = [
     {
@@ -296,7 +296,7 @@ export default function Home() {
     // Add more case studies here...
   ];
 
-  const TESTIMONIAL_DATA: any = [
+  const TESTIMONIAL_DATA = [
     {
       id: "1",
       cardHeading: "79% Cut down in Purchase Order Processing",
@@ -503,7 +503,7 @@ export default function Home() {
   // end animate text
 
   // banner Hover ReadMore
-  function handleReadMoreHover(item: any, isFilled: boolean) {
+  function handleReadMoreHover(item, isFilled) {
     if (isFilled) {
       setSliderImageUrl(item.url);
     } else {
@@ -513,7 +513,7 @@ export default function Home() {
   // end banner Hover ReadMore
 
   // handle click businesstranform card click
-  function handleBusinessCardClick(modal: boolean, item: any) {
+  function handleBusinessCardClick(modal, item) {
     setshowModal1(modal);
     setBusinessItem(item);
   }
@@ -663,13 +663,10 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* video */}
       <div className="h-[65vh] -mt-5">
         <video
-          src={
-            "video-background-mioti-consulting-opt.mp4"
-          } // Replace with your video path
+          src={"video-background-mioti-consulting-opt.mp4"} // Replace with your video path
           autoPlay
           loop
           muted
@@ -678,8 +675,12 @@ export default function Home() {
       </div>
       {/* video */}
 
-            
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#1D162B'} style={{}} />
+      <CaseStudiesSection
+        casestudy={CASE_STUDIES_DATA}
+        csLayout={"1"}
+        bgColor={"#1D162B"}
+        style={{}}
+      />
 
       {/* innovative section */}
       <SectionWrapperNew
@@ -689,8 +690,8 @@ export default function Home() {
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
         style={{
-           //backgroundColor: "black",
-          
+          //backgroundColor: "black",
+
           background: `url('AdobeStock_339383545.jpeg') no-repeat center center / cover`,
           position: "relative",
           zIndex: "2",
@@ -728,7 +729,6 @@ export default function Home() {
       </SectionWrapperNew>
       {/* end innovative section */}
 
-    
       {/* offerings */}
       <SectionWrapperNew
         sectionHeading={"Focused Cluster "}
@@ -738,7 +738,7 @@ export default function Home() {
         sectionTextColor="black"
         title="Count on Us"
         sectionHeadingLayout="horizontal"
-        style={{ background: "white"  , paddingTop:"512px" }}
+        style={{ background: "white", paddingTop: "512px" }}
       >
         <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs
@@ -751,36 +751,45 @@ export default function Home() {
         </div>
       </SectionWrapperNew>
       {/* end offerings */}
-  {/* guiding section */}
-  <SectionWrapperNew className="h-screen" style={{ backgroundColor: "#000"}}
+      {/* guiding section */}
+      <SectionWrapperNew
+        style={{ backgroundColor: "#000", height: "100vh" }}
         sectionHeading="The Guiding Principles We Live By"
         sectionDesc={`Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth.`}
-        sectionTextColor='#fff'
+        sectionTextColor="#fff"
         sectionHeadingLayout="center"
       >
-
         <Slider>
           {GuidingPrinciples.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="p-6 bg-[transparent]">
-                <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
-                  <Image src={"about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
+              <div className="p-6 bg-[transparent]">
+                <div
+                  className="flex py-4"
+                  style={{ borderBottom: "1px solid #CDBAF3" }}
+                >
+                  <Image
+                    src={"about/whiteStar.svg"}
+                    width={30}
+                    height={30}
+                    alt={"hioasdo"}
+                    className="mr-4"
+                  />
                   <div className="text-[28px] text-white">{item.title}</div>
                 </div>
-                <p class="text-[20px] py-4 text-white">{item.desc}</p>
+                <p className="text-[20px] py-4 text-white">{item.desc}</p>
               </div>
-
             </SwiperSlide>
           ))}
         </Slider>
-
       </SectionWrapperNew>
       {/*end guiding section */}
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing.'} />
-
-
-
+      <IndustrySpotlight
+        cardData={INDUSTRY_SPOTLIGHT}
+        sectionDesc={
+          "Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing."
+        }
+      />
 
       <BlogSection
         ID={"blog"}
