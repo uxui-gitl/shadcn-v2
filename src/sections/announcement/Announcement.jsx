@@ -51,7 +51,7 @@ const Announcement = ({ content }) => {
     let url = "";
     switch (code) {
       case "BE":
-        url = "/LVD";
+        url = "/netherland";
         break;
       case "SG":
         url = "/";
