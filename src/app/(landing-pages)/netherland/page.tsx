@@ -679,11 +679,7 @@ export default function Home() {
       {/* video */}
 
             
-      <CaseStudiesSection
-        casestudy={CASE_STUDIES_DATA}
-        csLayout={"1"}
-        bgColor={"#1D162B"}
-      />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#1D162B'} style={{}} />
 
       {/* innovative section */}
       <SectionWrapperNew
