@@ -55,7 +55,7 @@ const CyberSecurity = () => {
     id: 1,
     cardBGImageUrl: '/ai-ml/blog-bg.png',
     cardBGColor:'red',
-    cardHeading: "Strengthen Your Business Armor with Cyber-Resilience Strategy",
+    cardHeading: "Cyber-Resilience Strategy Importance",
     cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large.'`,
     cardTextColor:'white',
     readMoreUrl:"#"
