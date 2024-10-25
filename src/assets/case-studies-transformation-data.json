@@ -3360,7 +3360,7 @@ Implementation are:
         "id": "case-study-40",
         "mainCategory": "Transformation",
         "subCategory": "Microsoft Dynamics",
-        "vertical": "Middle East",
+        "vertical": "Service",
         "title": "Leading Banking and Telecom Services Organization in KSA Increases Service Efficiency by 50% with MD NAV",
         "client": {
           "name": "",
@@ -3417,10 +3417,10 @@ Implementation are:
         "benefits": {
           "description": "The re-implemented NAV 2009 system led to the following benefits for the client:",
           "list": [
-            " 20% improvement in SLA’s",
+            "20% improvement in SLA’s",
             "20% reduction in paperwork and physical storage",
             "Easier contract negotiation and renewals",
-            "Organized storage and retrieval of documents",,
+            "Organized storage and retrieval of documents",
             "Improved field operations",
             "Reduced ticket closure time"
                        
@@ -3439,8 +3439,2965 @@ Implementation are:
           "url": "path-to-case-study-1-download.pdf"
         }
         
-      }
+      },
 
+      {
+        "id": "case-study-41",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Leading Banking and Telecom Services Organization in KSA Increases Service Efficiency by 50% with MD NAV",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Service",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Simplified on Field Service",
+            "Remote Management of 19 Service Centers",
+            "Up to Date Inventory Levels",
+            "Real Time MIS Reports",
+            "AMC Support"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a firm believer in the use of technology for improving efficiency and profitability. With more than 30+ years in the Telecom, Banking and Cash Services industry, they have been pioneers in providing solutions and services to some of the biggest names in Saudi Arabia’s public and private sector. An ISO 9001:2008 certified company; it consistently ranks in the top 50 list of fastest growing companies in KSA. The company dominates the banking market with its total ATM outsourcing management solutions. It is one of the first to introduce the open-branch concept with the intelligent use of teller cash-recycler technology. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was using Microsoft Dynamics NAV 2009 solution for its back office operations. Unfortunately, the implementation was not up to the mark, and hence not being used efficiently by the end users. Sales, Service, Inventory and Finance data were being stored at multiple places, leading to insufficient information for management reporting. With phenomenal growth in the services sector and the growing demands of consumers, the company was in need of an integrated services module to streamline its 24*7*365 operations. After careful evaluation, Godrej Infotech Limited (GITL) was selected as the partner of choice, based on their in-depth ERP expertise in the Service Industry.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "The main challenge for this engagement was related to the adoption of the system. End users were familiar with the earlier way of working and were hesitant to using the new integrated system. The issue was successfully resolved with the commitmentof GITL consultants and client stakeholders. Training sessions and demos were conducted to bring all the users at par with the new system. After a period of thorough user acceptance testing, the system was resourcefully rolled out across the network of service centers and corporate offices.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "The client was looking for a suitable partner for managing their MD NAV system. GITL’s consultants conducted a due diligence to identify gaps in the current implementation. Based on the findings, the best solution recommended was a re-implementation of the MD NAV enterprise solution. The focus of the re-implementation was the services module for providing maximum benefit to customer service activities. The features of the new system are:",
+          "features": [
+            "Field Service Personnel can access customer history and service needs leading to faster issue resolution.",
+            "Feedback can be posted from site locations keeping all stakeholders in sync with the details of the case.",
+            "Key information can be recorded for measuring SLA’s.",
+            "Service module can automatically inspect and update inventory levels when service requests require equipment or component replacements.",
+            "Contract information and related documentation can be stored online."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The re-implemented NAV 2009 system led to the following benefits for the client:",
+          "list": [
+            "20% improvement in SLA’s",
+            "20% reduction in paperwork and physical storage",
+            "Easier contract negotiation and renewals",
+            "Organized storage and retrieval of documents",
+            "Improved field operations",
+            "Reduced ticket closure time"
+                       
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-42",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail, Hospitality",
+        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": " Retail, Hospitality",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015 Kitchen Management",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its missionof providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
+            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty.",
+            "Other Key Metrics Achieved by this System
+Implementation are:
+- New Customers: Increased by 40%
+- Paperwork: Reduced by 92%"
+
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-43",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": " Retail, Hospitality",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015 Kitchen Management",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its missionof providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
+            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty.",
+            ""
+
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-44",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Conglomerate",
+        "title": "Saudi Arabia's Leading Hospitality Chain Achieves Optimal Kitchen Performance with the New NAV 2013/ LS 7.1 Combination",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": " Retail, Hospitality",
+          "projectLocation": "Saudi Arabia",
+          "engagementSince": "2015 Kitchen Management",
+          "solutionSnapshot": [
+            "Kitchen Management",
+            "Web Integration",
+            "Improved Reporting",
+            "Call Center Support"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The customer is a pioneer in the Quick Service and Casual Dining Restaurants industry in Saudi Arabia. Established in 1990, this industrious organization has reached a landmark of running over 160 stores serving a variety of international and local cuisines. A firm believer in offering the highest quality of services, the organization is ISO 22000 certified and a proud recipient of the 2015 International Quality Summit Award presented by the Business Initiative Direction (BID), an organization that recognizes companies which have succeeded in imbibing a culture of excellence and innovation. The organization's mission is to offer healthy and tasty food to its patrons along with excellent customer service and a safe and clean environment. An extremely eco-conscious organization, the client leads the way in following energy-efficiency best practices for creating a greener future for coming generations.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "In the hospitality industry, impeccable and quick customer service is given utmost importance. This chain of restaurants was facing serious issues with regards to sustaining a smooth running ERP system across its large network of geographically distributed outlets. The POS to Kitchen communication was proving to be a huge roadblock for this client to successfully achieve its missionof providing impeccable service to its customers. Another area of concern for the client was the ability to take phone orders, which was very much needed for them in order to go to their next level of operations. As a result, the client was witnessing huge waiting lines at food counters and delays in their home delivery services, leading to a significant impact on the business bottom line",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "After due diligence of the existing system, Godrej Infotech Limited proposed an infrastructure upgrade from the current NAV 2009/ LS 6 combination to the new improved NAV 2013/ LS 7.1 product in order to avail of maximum benefits of enhanced features such as:",
+          "features": [
+            "Kitchen Display System (KDS): A state-of-the-art touch screen based system, the KDS provides an adjustable graphical dining area view and multiple menu profiles leading to seamless connectivity between the POS and the kitchen",
+            "Customized Reporting: Final reports such as the Trial Balance and Profit and Loss Statements which are of utmost importance to the financial health of any organization are now being generated directly through the system.",
+            "Web and Call Center Integration: The phone ordering issue is now solved with delivery and takeout operations available through the call center module."
+        ]
+         
+        },
+        "benefits": {
+          "description": "This engagement was a first association between Godrej Infotech Limited and the client. We are happy to say that we were jointly able to successfully achieve the vision of having a paperless world. Some of the additional benefits were:",
+          "list": [
+            "A happy and productive workforce: The client was extremely delighted with the new features that were introduced with the NAV 2013/ LS Retail 7.1 system. What also worked wonders was the detailed training conducted by the team at GITL which gave every user the confidence to get going with the system in as little time as possible.",
+            "Satisfied and smiling customers: Two of the most essential items for the client was real-time POS to Kitchen Traceability and Speed. Both were successfully addressed during this project leading to immense customer satisfaction and loyalty.",
+            ""
+
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-45",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Trading",
+        "title": "Saudi Trading Company Successfully Implements Microsoft Dynamics NAV ",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Trading",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "KSA Payroll module linked with Financial module",
+            "Automated depreciation calculations",
+            "NAV sales module integrated with Oracle Retail Pro",
+            "Automated Material Requisition Planning (MRP)",
+            "Customized Lease Rent Module"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is one of Saudi Arabia's leading trading companies specializing in the capital goods sector. Established in 2005, the company has the mission of providing its customers with leading international brands in the areas of fashion, footwear, health, and beauty. Today, the company operates over 52 stores and is looking to launch new business lines in its portfolio.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The legacy system utilized by the client covered only Financial Accounting. All other processes were managed through excel spreadsheets. The financial accounting system was not integrated with the POS. The legacy system and processes called for extensive manual processing, reconciliation activities, and additional reporting since the same information was being captured at multiple points.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "Both the Kitchen Display System and the Phone Ordering System were new features provided by the LS Retail System. The project development teams faced significant challenges with regards to the detailed technical know-how involved in this first time implementation. The call logging and tracking mechanism provided by LS Retail's Support Team proved to be very helpful, and timely resolution from the LS Retail side was one of the key success factors for this project.",
+          "keyChallenges": [
+            "Lease documents for the stores were being maintained in excel manually",
+            "The documents were being maintained by a single user leading o person dependency",
+            "There was no link or integration in between the lease records in excel and legacy accounting software"
+        ]
+        },
+        "solution": {
+          "description": "NAV was selected as the best fit solution to meet the requirements of the customer. The highlights of the solution are:",
+          "features": [
+            "Standard NAV solution with General Legder, Accounts Payable, Fixed Assets, Cash & Bank Management, Purchase Management, Sales Management and Inventory modules",
+            "Integrated KSA Attendance & Payroll module",
+            "Lease module handles store wise payments, discounts, expense amortizations and rent calculations",
+            "Customized MRP module that automatically calculates order quantity and forecasting",
+            "Creation of auto salary and payment JV",
+            "Phase wise delivery with post go live support",
+            "Strong domain knowledge of consultants"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "No manual intervention",
+            "Auto replenishment of inventory",
+            "Historical sales analysis",
+            "Demand forecasting"
+            
+
+        ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-46",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "Saudi Arabia’s Leading Superstore Successfully Implements LS NAV Solution with KSA Payroll",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "WMS mobile application",
+            "Cheque printing in Arabic",
+            "ECR (swipe machine) integration with POS",
+            "Arabic shelf label printing"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is one of the leading Superstores in Makkah. It was established in 2015 to fulfill the market needs for high quality retail solutions. Since then, it has added two more outlets for wholesale and sweets and is constantly looking for the finest items to satisfy the needs and wants of its customers. It is positioned strategically as a leader in the regional retail sector due to its strong focus on improving operational efficiency.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was using two disparate systems - ONYX & Tally, to maintain Back-Office, POS and Payroll. Their Fixes Asset Module was not structured, and payroll was not integrated with Finance module. Moreover, the integration between ECR (SwipeMachine) and POS was completely missing. They were looking at seamless financial management to improve operational efficiency and for this purpose were in look out for a scalable ERP solution.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "The KSA Payroll module is designed for Auto salary, payment JV creation and integration with Finance module",
+            "Financial statements are obtained easily from NAV",
+            "All the key operational processes of Stock Request, Receiving, Shipping, Transfer Order, Sales Orde Creation, Stock Taking and Stock Overview have been automated making the system paperless"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-47",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Logistics",
+        "title": "Singapore’s Largest Post Office Service Provider Selects GISPL for Microsoft Dynamics AX Multi-Year Support Engagement ",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Logistics",
+          "projectLocation": "Singaopore",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "Support Services from offshore as per Singapore timezone",
+            "Microsoft Dynamics AX2012 R3",
+            "ERP Licenses: 300+",
+            "Operating System: Windows Server 2008 R2",
+            "Database: MS SQL Express Server 2014"
+                     
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer is Singapore’s designated Public Postal Organization that has been providing domestic and international delivery services for over 160 years. Today, the company is a pioneer in eCommerce logistics with a global reach to 19 markets. Their innovative solutions include web based front end system, warehousing and fulfilment modules, last mile delivery and international freight forwarding.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client has been using Microsoft Dynamics AX2012 ERP for more than 3 years. In addition to the standard implementation, a number of functional enhancements have also been done. The solution was implemented by another partner, after which there was a strong need for support services. As a result, Godrej Infotech Singapore Pte. Ltd. (GISPL) was selected by the Customer as a support partner.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Flexibile resourcing model with ramp up or ramp down based on requirements",
+            "Increase in system efficiency",
+            "Performance improvements",
+            "Cost reduction towards IT Maintenance"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-48",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "India’s Premium Luxury Lifestyle Brand Successfully Integrates NAV LS with Third Party Omni-channel System from Uniware",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "India",
+          "engagementSince": "2019",
+          "solutionSnapshot": [
+            "Master and transaction data integration",
+            "Inventory and Item Details are pushed from NAV to Uniware using API and webservices",
+            "Sales orders, returns and cancellations from market places such as Amazon and Flipkart and online website are pushed from Uniware to NAV using webservices",
+            "Orders are automatically allocated from online channels to stores or warehouse"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is a well known name in the lifestyle sector and provides luxury corporate and retail collections for the elite. It has been recognized as “Asia’s Most Promising Brands” by World Consulting & Research Corporation. available through multiple stores pan-India and online channels as well. The company provides exclusive products across various categories such as home décor, accessories and statement jewellery, which are available at multiple store across India and through online e-commerce channels as well.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The Customer is using Unicommerce solution to provide seamless shopping experience to its Customers through multiple sales channels. For making this solution successful, an automated integration between ERP and Uniware is required. Hence, the requirement was for integrating the MSD NAV 2016 system with Uniware’s third party Omni-channel sales solution for touch points related to Items and Sales orders.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+          "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Flexibile resourcing model with ramp up or ramp down based on requirements",
+            "Increase in system efficiency",
+            "Performance improvements",
+            "Cost reduction towards IT Maintenance"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-49",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Service",
+        "title": "Leading Banking and Telecom Services Organization in KSA Increases Service Efficiency by 50% with MD NAV",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Service",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Simplified on Field Service",
+            "Remote Management of 19 Service Centers",
+            "Up to Date Inventory Levels",
+            "Real Time MIS Reports",
+            "AMC Support"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a firm believer in the use of technology for improving efficiency and profitability. With more than 30+ years in the Telecom, Banking and Cash Services industry, they have been pioneers in providing solutions and services to some of the biggest names in Saudi Arabia’s public and private sector. An ISO 9001:2008 certified company; it consistently ranks in the top 50 list of fastest growing companies in KSA. The company dominates the banking market with its total ATM outsourcing management solutions. It is one of the first to introduce the open-branch concept with the intelligent use of teller cash-recycler technology. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was using Microsoft Dynamics NAV 2009 solution for its back office operations. Unfortunately, the implementation was not up to the mark, and hence not being used efficiently by the end users. Sales, Service, Inventory and Finance data were being stored at multiple places, leading to insufficient information for management reporting. With phenomenal growth in the services sector and the growing demands of consumers, the company was in need of an integrated services module to streamline its 24*7*365 operations. After careful evaluation, Godrej Infotech Limited (GITL) was selected as the partner of choice, based on their in-depth ERP expertise in the Service Industry.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "The main challenge for this engagement was related to the adoption of the system. End users were familiar with the earlier way of working and were hesitant to using the new integrated system. The issue was successfully resolved with the commitment of GITL consultants and client stakeholders. Training sessions and demos were conducted to bring all the users at par with the new system. After a period of thorough user acceptance testing, the system was resourcefully rolled out across the network of service centers and corporate offices.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "The client was looking for a suitable partner for managing their MD NAV system. GITL’s consultants conducted a due diligence to identify gaps in the current implementation. Based on the findings, the best solution recommended was a re-implementation of the MD NAV enterprise solution. The focus of the re-implementation was the services module for providing maximum benefit to customer service activities. The features of the new system are:",
+          "features": [
+            "Field Service Personnel can access customer history and service needs leading to faster issue resolution.",
+            "Feedback can be posted from site locations keeping all stakeholders in sync with the details of the case.",
+            "Key information can be recorded for measuring SLA’s.",
+            "Service module can automatically inspect and update inventory levels when service requests require equipment or component replacements.",
+            "Contract information and related documentation can be stored online."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The re-implemented NAV 2009 system led to the following benefits for the client:",
+          "list": [
+            "20% improvement in SLA’s",
+            "20% reduction in paperwork and physical storage",
+            "Easier contract negotiation and renewals",
+            "Organized storage and retrieval of documents",
+            "Improved field operations",
+            "Reduced ticket closure time"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-50",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail & Distribution",
+        "title": "KSA’s Leading Distributor of Electrical Components Integrates Dynamics 365 F&O with Dynamics CRM on Cloud",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail & Distribution",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "No. of Users: 167 for D365 F&O and 80 for CRM",
+            "Enhanced Reporting based on Dimensions",
+            "Phase-wise Implementation & Roll-out for 10+ Companies",
+            "Integrated Single Software Solution covering ERP, CRM, Retail & Power BI",
+            "Real time analysis of Fast/ Slow moving items"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization was founded in 1955 in the Red Sea port-city of Jeddah as a leading wholesale electrical components distributor. Through it’s policy of supplying high-quality products, it has developed key partnerships with leading manufacturers of electrical components including Schneider, Legrand, GE, & Cooper. Many leading contractors regard the organization today as the benchmark for an electrical distribution company in the KSA and GCC. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The Customer was looking for a cloud CRM & ERP that could be accessed from anywhere. Following were the detailed requirements:",
+          "businesscaseList": [
+            "Retail solution with loyalty, promotion, & gift card functionality",
+            "Inter-company planning & transaction capability",
+            "Material requirement & production planning",
+            "Workflow in CRM & ERP",
+            "Streamlining of manufacturing processes",
+            "Outlet / Store related business process automation",
+            "Inventory accounting & tracking",
+            "Logistic process automation",
+            "Statutory accounting & reporting",
+            "Project quotations",
+            "Production control and consumption"
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Integrated CRM & ERP reduced the communication gaps and increased efficiency",
+            "Sales person can independently monitor the customers and orders",
+            "Approval process ensures that the sales are done within the agreed discount percentages, thus ensuring profitability",
+            "Streamlined item creation process ensures standard item numbering",
+            "Increase in quality compliance due to tracking of rework",
+            "Increase in sales turnover due to store, product & SKU wise analysis of seasonal impacts & discounts given"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-51",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Projects",
+        "title": "India’s Leading Wildlife & Nature Conservation Organization Successfully Implements D365 Finance & Operations on Cloud ",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Projects",
+          "projectLocation": "India",
+          "engagementSince": "2018",
+          "solutionSnapshot": [
+            "First D365 implementation in India for any client",
+            "Integrated system with Finance, Project, Trade & Logistics, Inventory Management, HR & Payroll, Expense Management & Service Management features",
+            "Cloud deployment which allows for remote access"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The Customer organization was established as a Charitable Trust on November 27 1969, and today is one of the largest organizations engaged in India’s wildlife and nature conservation. It has the aim of reducing the degradation of Earth’s natural environment and building a future in which humans live in harmony with nature. A science-based organization, it addresses issues such as water conservation, climate change, protection of endangered species, and environment education. ",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Till now, the Customer was using AX2009 & then 2012 as the Finance & operations solution. Since it has a large number of donors from across the world, there was a limitation of 3 dimensions only. It was very difficult for them to keep a track of donor wise summary of funds and to manage records of expenses, against different wild life conservation projects, conducted across geographies. Correct and accurate MIS for management was always a big challenge and they used to take many days to prepare MIS reports manually & there was too much person dependency. Since the earlier ERP was not on the cloud, data security, backup & Business Contigency Planning was another challenging task. Server connectivity and bandwidth were also big challenges because end users were punching-in information from very remote areas in the wild.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "The complexity of the customer’s branch network, complex approval matrix workflows, multiple dimensions for reports and first of its kind customer added challenges for the GITL team. Brilliant coordination with the customer team helped GITL to successfully deliver the project. Furthermore, the GITL Implementation Methodology which is based on the Microsoft Sure Step Methodology was used to execute this project. Every milestone was delivered on time",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Integrated CRM & ERP reduced the communication gaps and increased efficiency",
+            "Sales person can independently monitor the customers and orders",
+            "Approval process ensures that the sales are done within the agreed discount percentages, thus ensuring profitability",
+            "Streamlined item creation process ensures standard item numbering",
+            "Increase in quality compliance due to tracking of rework",
+            "Increase in sales turnover due to store, product & SKU wise analysis of seasonal impacts & discounts given"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-52",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Process Manufacturing (Food & Beverages)",
+        "title": "Subsidiary of Leading Global Dairy Product Manufacturing Company Successfully Implements Microsoft Dynamics 365 for Finance & Operations On-Premise",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Process Manufacturing (Food & Beverages)",
+          "projectLocation": "Kingdom of Saudi Arabia",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Visibility and control of inventory across geographies",
+            "Cash-flow forecasting and currency requirement calculations",
+            "Complimentary tools including the Management Reporter, Workspaces, Dashboards and SSRS reporting",
+            "40 integration points with Infor WMS &10 with custom built d-MAS sales application",
+            "ZAP BI reporting tool"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Client is the fifth largest dairy company in the world. It is a co-operative owned by more than 12,500 dairy farmers. It combines traditional craftsmanship and world-class technologies to ensure its products remain closer to nature, from farm to fridge. The subsidiary company in the Middle East is a wholly owned subsidiary and has been in the region for over 60 years",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "Client was earlier working on Microsoft Dynamics Navision.Some of the issues with the previous system were:",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Integrated CRM & ERP reduced the communication gaps and increased efficiency",
+            "Sales person can independently monitor the customers and orders",
+            "Approval process ensures that the sales are done within the agreed discount percentages, thus ensuring profitability",
+            "Streamlined item creation process ensures standard item numbering",
+            "Increase in quality compliance due to tracking of rework",
+            "Increase in sales turnover due to store, product & SKU wise analysis of seasonal impacts & discounts given"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-54",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Large Retailer in Mauritius Successfully Implements Microsoft Dynamics 365 CRM",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Mauritius",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Microsoft Sure Step Methodology",
+            "Microsoft Dynamics CRM Development Framework",
+            ".NET Framework",
+            "Seamless Integration of Dynamics 365 (CRM) with NAV",
+            "Campaign Management",
+            "Promotional SMS Campaigns",
+            "Marketing Budget Management",
+            "Customer Database Management",
+            "Generation of lead to conversion ratio"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Client is the number one retailer of furniture, home appliances and digital products in Mauritius. Their history goes back to more than three decades ago when they first opened shop in Bell Village in 1985. Today, they operate 22 branches across Mauritius and Rodrigues, an island 350 miles from Mauritius. It is known for its offer of lowest prices, easy credit and excellent customer service. The company currently classifies its products into electrical, furniture, IT & phones, and warranty categories.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was in need of an integrated CRM solution for streamlining its sales and marketing operations. The requirements of the customer were:",
+          "businesscaseList": [
+            "System for capturing customer details like personal & professional details, purchase history & loyalty information",
+            "Utilization of customer details for effective customer engagement",
+            "Ability to manage promotion budget",
+            "System defined media allocation",
+            "Capture of complete corporate sales process right from lead to win",
+            "Analysis of system data"
+            ]
+        },
+        "challenges": {
+          "description": "The challenges faced by the GITL team during this implementation were:",
+          "keyChallenges": [
+            "Finalising on integration approach between Microsoft Navision and Dynamics 365 (CRM)",
+            "Collaboration between 2 separate product delivery teams",
+            "Aggressive timelines"
+        ]
+        },
+        "solution": {
+        "description": "Before implementing Dynamics 365 (CRM) Godrej Infotech implemented Microsoft Navision for this organization.",
+          "features": [
+           "Account, Lead & Activity management in Dynamics 365 CRM",
+            "Ability to maintain segmented list of contacts, leads & accounts for personalized e-mailer campaigns",
+            "Manage a complete workflow of events for a campaign",
+            "Segmentation of customers",
+            "Ability to define reusable campaigns"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Auto-generated ROI reports from the system",
+            "Availability of customer database available for conducting e-mailer and SMS campaigns",
+            "Process of customer loyalty management",
+            "Increased productivity due to tools for managing mass import of prospects"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-55",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Media & Entertainment",
+        "title": "Media Magnate uses Microsoft Dynamics AX to Operate Digital Empire",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Media & Entertainment",
+          "projectLocation": "India",
+          "engagementSince": "2008",
+          "solutionSnapshot": [
+            "Implementation of AX 4.0",
+            "Centralized Security",
+            "Fixed Asset Register",
+            "Cash Flow Forecast",
+            "Amortization of Rights",
+            "Content Management"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a family owned entertainment and media organization that has a glorious history of more than 50 years. Based in the tinsel town of Bollywood, they started out as a book circulating library. Following the success in the bibliographical world, they expanded into other content media and soon became a renowned name in the video rental business. Today, they are foraying into multiple distribution platforms such as TV, Airlines, DVD, DTH,Smart Gadgets, Mobile and the Internet. From the good old days of VHS cassettes to the modern age of real time content streaming, this is one company that has always believed in embracing the future.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was using multiple isolated systems for its business operations. The sales invoice was generated in the stores system and then had to be manually entered in the Tally accounting system. Once all the accounting end of period balancing activities had been performed, consolidated reports were again manually generated using Excel spreadsheets. This process was impairing making real time decisions based on updated fund allocations, which was a critical requirement for the senior management. Operational inefficiencies across geographical locations were significantly impacting overall profitability.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "A firm believer in the benefits of technology, the client decided to implement the Microsoft Dynamics AX ERP software for streamlining its operations. Godrej Infotech Limited (GITL), a Microsoft certified Gold Partner was selected as the partner for this challenging implementation. Deep domain expertise, proficient technical skillsand experience in similar engagements were some of the additional factors that contributed to this selection. The solution charted out to address the client’s issues included:",
+          "features": [
+           "Content Management: The customized central content management solution helps in tracking digital portfolios. Along with the critical feature of IPR Monitoring, the system provides fast access and retrieval complemented by a systematic and configurable classification scheme.",
+           "Financial Management: Automated posting and reconciliation activities make financial reporting precise and up to date. This helps in preparing budgets and forecasts with in-depth accuracy keeping all cross location factors into consideration.",
+           "Fixed Asset Management: Being in the entertainment and media industry, the client is vulnerable to IP violations and licensing issues. The fixed asset register handles legislation compliance and inbuilt controls for recording insurance and regulations providing protection on the legal front.",
+           "Inventory Control: The content library is one of the biggest assets for the client and inventory levels need to be optimized for ensuring maximum profitability. The system helps in tracking inventory across locations and provides insight into high and low performance areas."
+        ]
+         
+        },
+        "benefits": {
+          "description": "Implementation of the Microsoft Dynamics AX solution across all locations led to the following advantages for the client: ",
+          "list": [
+            "Reduction in IT administration costs",
+            "Increased fiscal stability due to tracking of financial liabilities and collections",
+            "Financial Reporting Made Easy and Faster",
+            "Automation of Rights Amortization and Reporting",
+            "20% reduction in paper work and physical storage",
+            "20% increase in operational efficiency due to a single integrated system"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-56",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "India's Major Agro Products Producer and Supplier Successfully Implements NAV hosted on Microsoft Azure",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Microsoft Dynamics NAV 2016 hosted on Microsoft Azure & integrated with Office 365",
+            "Single login for Office 365 & ERP application",
+            "NAV web client",
+            "Mobile application for key functions",
+            "Enhanced reporting with data filtering capabilities",
+            "NAV integration with Excel and e-mail",
+            "Dashboards for Managing Director, Sales Head, Plant Head & Quality Head",
+            "Infrastructure Management Services"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was facing huge challenges in controlling their supply chain. Since there was no automated ERP system in place, there was a gap in efficient master data management and inter-department coordination. There were multiple solutions being implemented for standard business processes, leading to duplicity of work and compromised data accuracy and decision making.Furthermore, resistance to change and adoption of new technology was a major roadblock towards the organization's goal of digital transformation.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+           ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Smooth inter-departmental interactions",
+            "Enhanced reporting capabilities",
+            "60% increase in user productivity",
+            "Data authenticity and consistency",
+            "100% reduction in duplication of data entry",
+            "Anytime, anywhere access with mobile application",
+            "QC Certified Goods",
+            "Enhanced Traceability for Root Cause Analysis",
+            "Establishment of standard operating procedures across the organization"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-57",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Service",
+        "title": "Indo-German Technology Organization Goes Live with O365",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Service",
+          "projectLocation": "India",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Migration from existing system",
+            "Implementation of shared mailbox",
+            "High-definition video communication",
+            "Chat services",
+            "User training"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "This organization is a collaboration between government agencies of India and Germany with a mission of advancing industrial research and partnership in areas of mutual interest. The aim is for scientific talent from both countries to work together towards finding innovative solutions to global technological roadblocks. With this partnership in place, both countries can now develop knowledge networks for the growth of their industrial sectors. The organization is guided by a governing body that has equal representation from both the countries in the fields of industry, academics and government.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The organization was looking for a better and elegant way to communicate with their employees and business partners. Since e-mail was the primary mode of communication, it was felt that efficiency of the e-mail system was a pain area that needed to be addressed. The organization was using a local e-mail service provider and was facing issues such as long service outages and loss of e-mails over various devices. The client also required a managed service e-mail id which could be accessed by multiple users.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+          "description": "No specific challenges were faced and implementation was smooth since well defined procedures and processes are available for O365 implementation and migration.",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "Godrej Infotech Ltd. understood the client's requirement and suggested the implementation of monthly subscriptions based services of O365 for better e-mail management from anywhere and from multiple devices. The features of the solution are:",
+          "features": [
+            "Migration of existing mailboxes onto O365",
+            "Shared mailbox concept for service e-mail id",
+            "Chat communication with employees and business partners using Skype for Business",
+            "Setup of Yammer as a social site for communication outside the organization",
+            "Training and handholding for end-users"
+        ]
+         
+        },
+        "benefits": {
+          "description": "Implementation of the digital communications solution for all roles, departments, functions, customers and prospects led to the following advantages:",
+          "list": [
+            "Transparent internal and external communication",
+            "Effective e-mail management",
+            "Adoption of social media channels",
+            "Predictable monthly costs"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-58",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Asia's Leading Manufacturing, Retail and Distribution Organization Automates Critical Processes by Implementing Microsoft Dynamics AX",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Myanmar",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Menu Upload and Display in Local Language",
+            "Customized Consignment Retail",
+            "Management Reporting",
+            "Integration with Third Party Systems"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a growing business conglomerate with multiple companies having business interests across a number of industry segments like Food, Retail, Real Estate, Pharmaceutical, Personal and Home Care. One of the most reputed groups in Myanmar, this visionary company comprises of 13 operating entities across different verticals. The group has successfully built up a strong, extensive and multi-channel nation-wide distribution network covering more than 90% of the country.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The most critical pain area for this organization was in managing the growing demands of its business and its customers. The IT infrastructure was laden with legacy systems that were neither integrated to give a real-time view of operations and inventory; nor were scalable enough to meet the dynamic demands of a rapidly growing organization. Issues in real-time inventory count, network connectivity, disparate systems in use and absence of a merchandising and forecasting system were some of the huge challenges being faced by this organization.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "There were many road blocks to building a state-of-the-art enterprise wide system for this multi-channel, multi-function organization.",
+          "keyChallenges": [
+            "Due to lack of integrated systems, there were issues in getting real time inventory counts, inputs on slow moving items, stock and finance data.",
+            "Network connectivity was a huge challenge - Data from HO to stores was being transferred manually.",
+            "Without a merchandizing system in place, forecasting numbers even for the coming fiscal year was a huge issue"
+        ]
+        },
+        "solution": {
+        "description": "Godrej Infotech Limited (GITL), with its deep seated expertise in ERP and CRM solutions, helped the customer automate its critical processes like Inventory Management, Order Processing, Consignment Management and Management Reporting by implementing the AX Solution Suite. The key highlights of our solution included:",
+          "features": [
+            "Use of microwave technology for office to office connectivity - one of the first applications of this technology in Myanmar.",
+            "Customized program for data transfer from legacy to Microsoft Dynamics AX System.",
+            "A customized Kitchen Order Transaction (KOT) module was developed keeping in mind the unique requirements of the client.",
+            "Stock Replenishment: The Master Planning functionality is used to optimize inventory and streamline stock management across stores and products.",
+            "Integration between: XPOS and AX ERP and Weighing Scale and AX"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The implemented solution led to visible improvement in productivity with an estimated 40% increase in inventory efficiency, 90% accuracy in sales and financial data and a jump of 50% in the workforce output. Other significant benefits are:",
+          "list": [
+            "Easy end-user system adoption due to training sessions conducted using training facilitators that were familiar with both English and Burmese.",
+            "Legacy systems have been successfully de-commissioned post this implementation.",
+            "Manual transfers and data processing have been streamlined by using inter-connected automated systems.",
+            "Real time sales and stocks by stores, Profit and loss by stores and product and Discount type reports are now generated through the system"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-59",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Retail",
+        "title": "Asia's Leading Manufacturing, Retail and Distribution Organization Automates Critical Processes by Implementing Microsoft Dynamics AX",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Myanmar",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Menu Upload and Display in Local Language",
+            "Customized Consignment Retail",
+            "Management Reporting",
+            "Integration with Third Party Systems"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a growing business conglomerate with multiple companies having business interests across a number of industry segments like Food, Retail, Real Estate, Pharmaceutical, Personal and Home Care. One of the most reputed groups in Myanmar, this visionary company comprises of 13 operating entities across different verticals. The group has successfully built up a strong, extensive and multi-channel nation-wide distribution network covering more than 90% of the country.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The most critical pain area for this organization was in managing the growing demands of its business and its customers. The IT infrastructure was laden with legacy systems that were neither integrated to give a real-time view of operations and inventory; nor were scalable enough to meet the dynamic demands of a rapidly growing organization. Issues in real-time inventory count, network connectivity, disparate systems in use and absence of a merchandising and forecasting system were some of the huge challenges being faced by this organization.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "There were many road blocks to building a state-of-the-art enterprise wide system for this multi-channel, multi-function organization.",
+          "keyChallenges": [
+            "Due to lack of integrated systems, there were issues in getting real time inventory counts, inputs on slow moving items, stock and finance data.",
+            "Network connectivity was a huge challenge - Data from HO to stores was being transferred manually.",
+            "Without a merchandizing system in place, forecasting numbers even for the coming fiscal year was a huge issue"
+        ]
+        },
+        "solution": {
+        "description": "Godrej Infotech Limited (GITL), with its deep seated expertise in ERP and CRM solutions, helped the customer automate its critical processes like Inventory Management, Order Processing, Consignment Management and Management Reporting by implementing the AX Solution Suite. The key highlights of our solution included:",
+          "features": [
+            "Use of microwave technology for office to office connectivity - one of the first applications of this technology in Myanmar.",
+            "Customized program for data transfer from legacy to Microsoft Dynamics AX System.",
+            "A customized Kitchen Order Transaction (KOT) module was developed keeping in mind the unique requirements of the client.",
+            "Stock Replenishment: The Master Planning functionality is used to optimize inventory and streamline stock management across stores and products.",
+            "Integration between: XPOS and AX ERP and Weighing Scale and AX"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The implemented solution led to visible improvement in productivity with an estimated 40% increase in inventory efficiency, 90% accuracy in sales and financial data and a jump of 50% in the workforce output. Other significant benefits are:",
+          "list": [
+            "Easy end-user system adoption due to training sessions conducted using training facilitators that were familiar with both English and Burmese.",
+            "Legacy systems have been successfully de-commissioned post this implementation.",
+            "Manual transfers and data processing have been streamlined by using inter-connected automated systems.",
+            "Real time sales and stocks by stores, Profit and loss by stores and product and Discount type reports are now generated through the system"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-60",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing and Trading",
+        "title": "Asia's Leading Manufacturing, Retail and Distribution Organization Automates Critical Processes by Implementing Microsoft Dynamics AX",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Retail",
+          "projectLocation": "Myanmar",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Menu Upload and Display in Local Language",
+            "Customized Consignment Retail",
+            "Management Reporting",
+            "Integration with Third Party Systems"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a growing business conglomerate with multiple companies having business interests across a number of industry segments like Food, Retail, Real Estate, Pharmaceutical, Personal and Home Care. One of the most reputed groups in Myanmar, this visionary company comprises of 13 operating entities across different verticals. The group has successfully built up a strong, extensive and multi-channel nation-wide distribution network covering more than 90% of the country.",
+            "BriefList": [
+            ""
+          ]
+        },
+        "businessCase": {
+          "description": "The most critical pain area for this organization was in managing the growing demands of its business and its customers. The IT infrastructure was laden with legacy systems that were neither integrated to give a real-time view of operations and inventory; nor were scalable enough to meet the dynamic demands of a rapidly growing organization. Issues in real-time inventory count, network connectivity, disparate systems in use and absence of a merchandising and forecasting system were some of the huge challenges being faced by this organization.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "There were many road blocks to building a state-of-the-art enterprise wide system for this multi-channel, multi-function organization.",
+          "keyChallenges": [
+            "Due to lack of integrated systems, there were issues in getting real time inventory counts, inputs on slow moving items, stock and finance data.",
+            "Network connectivity was a huge challenge - Data from HO to stores was being transferred manually.",
+            "Without a merchandizing system in place, forecasting numbers even for the coming fiscal year was a huge issue"
+        ]
+        },
+        "solution": {
+        "description": "Godrej Infotech Limited (GITL), with its deep seated expertise in ERP and CRM solutions, helped the customer automate its critical processes like Inventory Management, Order Processing, Consignment Management and Management Reporting by implementing the AX Solution Suite. The key highlights of our solution included:",
+          "features": [
+            "Use of microwave technology for office to office connectivity - one of the first applications of this technology in Myanmar.",
+            "Customized program for data transfer from legacy to Microsoft Dynamics AX System.",
+            "A customized Kitchen Order Transaction (KOT) module was developed keeping in mind the unique requirements of the client.",
+            "Stock Replenishment: The Master Planning functionality is used to optimize inventory and streamline stock management across stores and products.",
+            "Integration between: XPOS and AX ERP and Weighing Scale and AX"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The implemented solution led to visible improvement in productivity with an estimated 40% increase in inventory efficiency, 90% accuracy in sales and financial data and a jump of 50% in the workforce output. Other significant benefits are:",
+          "list": [
+            "Easy end-user system adoption due to training sessions conducted using training facilitators that were familiar with both English and Burmese.",
+            "Legacy systems have been successfully de-commissioned post this implementation.",
+            "Manual transfers and data processing have been streamlined by using inter-connected automated systems.",
+            "Real time sales and stocks by stores, Profit and loss by stores and product and Discount type reports are now generated through the system"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-61",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Travel Retail, Food and Beverages",
+        "title": "Global Travel Retailer Reduces Total Cost of Ownership with the All-in-One NAV LS Retail Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Travel Retail, Food and Beverages",
+          "projectLocation": "India, U.A.E",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Multi Currency Cash Back",
+            "Approval Workflow",
+            "Bar Code Scan for Inventory Movements",
+            "Transit Bank Guarantee Management",
+            "Payroll Add-on"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "TThe client is an international duty free and travel retail operator focused on providing the best of products and customer services in emerging markets. In a period of 17 years, the company has spread its wings across 4 continents, operating over 150 outlets geographically distributed in 32 countries. The primary lines of business are:",
+            "BriefList": [
+              "Duty Free Shops",
+              "Convenience Stores",
+              "Food and Beverage Outlets",
+              "In-Flight Retailing",
+              "Special Service for Diplomats"
+          ]
+        },
+        "businessCase": {
+          "description": "The client had a unique business scenario as compared to other regular retailers since their customers are always on the go. In-order to deal with this, the organization follows a tremendously pro-active approach towards stock availability and speedy service. Having a technology solution that supported this aggressive business process was the need of the hour. Furthermore, having presence across multiple geographies and time zones with multiple partners and multiple technology platforms was leading to operational inefficiencies and unnecessary delays in getting the stores started. Hence the decision to go for a single IT partner that could support the business consulting and technology needs of this organization across geographical locations and time zones. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "A successful long term relationship with Godrej Infotech Limited (GITL) helped the customer gain confidence in moving towards a single partner model. With in-depth domain expertise and technology expertise, GITL successfully supported the client’s multi-platform scenario by synchronizing with their time zones. The standard solution of LS NAV has been enhanced to meet the requirements of the client. The POS has been customized to specifically meet the needs of the sales staff at airport terminals. Some of the highlights are:",
+          "features": [
+            "Passport Scan, Flight Master Interfaces: Frequently needed information is pre-filled so that the customer check out experience is expedited.",
+            "Customer Quota based Offers: Promotion campaigns are designed to adapt to the varied needs of passengers. Frequent fliers get additional benefits due to integration with third-party loyalty systems.",
+            "Pre-Ordering: Travelers can go through an online catalog and book their products in advance. Such orders will be processed and purchased items will be kept ready for collection at the duty free.",
+            "Exchange Rate Support: The system has been customized to support multiple currencies so that global travelers get maximum benefits and are protected from irregular rate fluctuations",
+            "Consignment Management: A special business study and solution was done to address the complex consignment management purchase process which involves working with different warehouse rules and scenarios across seaports and airports spanning multiple geographies.",
+            "HR Integration: A comprehensive HR and payroll module was implemented to automate internal functions like time and attendance, salary benefits, transfers, promotions and commission calculations."
+        ]
+         
+        },
+        "benefits": {
+          "description": "Some of the significant benefits experienced by the client are:",
+          "list": [
+            "Streamlined Purchases: Approval based workflows have helped significantly in shortening the procurement cycle and ensuring supply availability.",
+            "POS-Back Office Integration: Despite its diverse global environment with multiple back end systems, key stakeholders can now get a unified view of critical financial and merchandising information.",
+            "Localization: The system supports extended region specific taxation and compliance requirements. Provision for features such as parent and store wise bond number tracking allows for business expansion and compliance to local statutory requirements.",
+            "Location Wise Profitability: Each business owner gets complete visibility of his or her individual financial position.",
+            "Timely Execution of Vendor Promotions: The system automatically schedules cost recovery from vendors so that smooth financial cash flow is maintained."
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-62",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Discrete Manufacturing",
+        "title": "Global Travel Retailer Reduces Total Cost of Ownership with the All-in-One NAV LS Retail Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Travel Retail, Food and Beverages",
+          "projectLocation": "India, U.A.E",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Multi Currency Cash Back",
+            "Approval Workflow",
+            "Bar Code Scan for Inventory Movements",
+            "Transit Bank Guarantee Management",
+            "Payroll Add-on"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is an international duty free and travel retail operator focused on providing the best of products and customer services in emerging markets. In a period of 17 years, the company has spread its wings across 4 continents, operating over 150 outlets geographically distributed in 32 countries. The primary lines of business are:",
+            "BriefList": [
+              "Duty Free Shops",
+              "Convenience Stores",
+              "Food and Beverage Outlets",
+              "In-Flight Retailing",
+              "Special Service for Diplomats"
+          ]
+        },
+        "businessCase": {
+          "description": "The client had a unique business scenario as compared to other regular retailers since their customers are always on the go. In-order to deal with this, the organization follows a tremendously pro-active approach towards stock availability and speedy service. Having a technology solution that supported this aggressive business process was the need of the hour. Furthermore, having presence across multiple geographies and time zones with multiple partners and multiple technology platforms was leading to operational inefficiencies and unnecessary delays in getting the stores started. Hence the decision to go for a single IT partner that could support the business consulting and technology needs of this organization across geographical locations and time zones. ",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "",
+          "keyChallenges": [
+            ""
+        ]
+        },
+        "solution": {
+        "description": "A successful long term relationship with Godrej Infotech Limited (GITL) helped the customer gain confidence in moving towards a single partner model. With in-depth domain expertise and technology expertise, GITL successfully supported the client’s multi-platform scenario by synchronizing with their time zones. The standard solution of LS NAV has been enhanced to meet the requirements of the client. The POS has been customized to specifically meet the needs of the sales staff at airport terminals. Some of the highlights are:",
+          "features": [
+            "Passport Scan, Flight Master Interfaces: Frequently needed information is pre-filled so that the customer check out experience is expedited.",
+            "Customer Quota based Offers: Promotion campaigns are designed to adapt to the varied needs of passengers. Frequent fliers get additional benefits due to integration with third-party loyalty systems.",
+            "Pre-Ordering: Travelers can go through an online catalog and book their products in advance. Such orders will be processed and purchased items will be kept ready for collection at the duty free.",
+            "Exchange Rate Support: The system has been customized to support multiple currencies so that global travelers get maximum benefits and are protected from irregular rate fluctuations",
+            "Consignment Management: A special business study and solution was done to address the complex consignment management purchase process which involves working with different warehouse rules and scenarios across seaports and airports spanning multiple geographies.",
+            "HR Integration: A comprehensive HR and payroll module was implemented to automate internal functions like time and attendance, salary benefits, transfers, promotions and commission calculations."
+        ]
+         
+        },
+        "benefits": {
+          "description": "Some of the significant benefits experienced by the client are:",
+          "list": [
+            "Streamlined Purchases: Approval based workflows have helped significantly in shortening the procurement cycle and ensuring supply availability.",
+            "POS-Back Office Integration: Despite its diverse global environment with multiple back end systems, key stakeholders can now get a unified view of critical financial and merchandising information.",
+            "Localization: The system supports extended region specific taxation and compliance requirements. Provision for features such as parent and store wise bond number tracking allows for business expansion and compliance to local statutory requirements.",
+            "Location Wise Profitability: Each business owner gets complete visibility of his or her individual financial position.",
+            "Timely Execution of Vendor Promotions: The system automatically schedules cost recovery from vendors so that smooth financial cash flow is maintained."
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-63",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Financial Services",
+        "title": "Financial Services Organization Streamlines Expense and Revenue Management with MD NAV 2013",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Financial Services",
+          "projectLocation": "India",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "Multi Company Operations",
+            "Discrepancy Reporting",
+            "Accurate Financial Audits",
+            "Waste Management"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a pioneer in the electronic payments industry. With over 20+ years of expertise, the company specializes in hardware and software solutions for ATM’s, POS terminals and multi-function payment kiosks. The organization has over 200 employees globally with offices in UK, Australia and India.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "With growing number of installations across multiple geographies, the client was facing a number of issues with its enterprise system. The areas that needed immediate attention were:",
+          "businesscaseList": [
+            "Site wise fixed and variable expense recording and tracking",
+            "Accurate revenue recording based on transaction feeds received from the bank"
+            ]
+        },
+        "challenges": {
+        "description": "The challenges encountered during this implementation were:",
+          "keyChallenges": [
+            "Intricacies related to integration with third party software",
+            "Site wise tracking and association of a large number of fixed assets",
+            "Building complex revenue generation logic for different types of bank feeds"
+        ]
+        },
+        "solution": {
+        "description": "The client evaluated a number of partners for implementing a financial savvy, integrated ERP system. Godrej Infotech Limited (GITL) was selected as the most suitable partner for this engagement. The key factors that led to this selection were:",
+          "features": [
+            "Prior experience with similar industry and technology",
+            "Large team of functional, technical and project management consultants",
+            "Assurance of future support post implementation",
+            "Expense Tracking: Set up of the Microsoft Dynamics NAV 2013 Financial Management module for recording and tracking of diverse expense types across different installation sites. Timely capture of fixed, variable and recurring expenses for rentals, leasing, electricity repair leads to precise site wise derivations of financial positions.",
+            "Service Management: Set up of the Service module for tracking of follow up and services calls for each customer. In addition to ticket tracking, the system is also used to set up service contracts with details such as expected response time, schedule, pricing and client preferences.",
+            "Project Management: Set up of the Projects module for efficient tracking of jobs, planning lines, tasks and resources. At any given point of time, key information such as project resource utilization, percentage completion and financial indicators are available for making significant project decisions.",
+            "Revenue Calculation: Set up of rule based Revenue calculations based on customer scenarios. The sales invoices for each client is generated based on transaction feeds sent from banks.",
+            "Fixed Asset Tracking: Set up of the Fixed Asset module for recording vendor, warranty, insurance and service details for each asset. The system automatically posts maintenance costs to the general ledger and evaluates depreciation impact on the balance sheet.",
+            "Web Portal Integration: Integration with a third party Web Portal for system access across time and location boundaries. End users benefit from role based snapshot views that give just enough information needed for their function. Consequently, accelerated approval processes positively impact the bottom line."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The benefits of implementing the MD NAV system are as follows:",
+          "list": [
+            "20% Reduction in Average Ticket Closure Time due to Auto Call Tracking",
+            "15% Reduction in Fixed Asset Maintenance Costs due to regular Asset Service",
+            "Enhanced User Experience due to Web Access",
+            "Detailed Expense Figures",
+            "Accurate Sales Invoices"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-64",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Paint Manufacturing",
+        "title": "Indian Subsidiary of the Largest Paint Manufacturing and Export Company in Oman Successfully Rolls Out Microsoft Dynamics NAV 2013 R2",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Paint Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "",
+          "solutionSnapshot": [
+            "Web access to system functions",
+            "Data migration",
+            "Streamlined excise transactions",
+            "Fast and extensive sales reports with rollups at region, depot and sales person level",
+            "New warehouse module implemented",
+            "Easy branch configuration",
+            "Rollout across head office, 2 manufacturing plants and multiple depots"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Our client, headquartered in Cochin, India is the first overseas subsidiary of the largest paint manufacturing and Export Company in Oman. They started their operations in 1999 with Sleek, which is today the fastest growing brand of Polyurethane varnishes. Their offerings include Total Wood Care Solutions, interior and exterior Water Borne and Polyurethane Wood Coatings, Acid Curing Products for OEM’s and Coatings for Parquet. They have a wide network in South India with more than 10 sales depots in different states. Their manufacturing plants are located in Cochin and Pudukkottai. The organization is ISO 9001 and 14001 certified and committed to excellence, quality and innovation",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "Microsoft Dynamics NAV 4.0 was implemented at the group company at Oman, and rolled out to other locations with localization and additional customization. This implementation was unable to meet the vast and diverse requirements of the customer. The configuration of the system did not fulfill the excise and reporting needs which were of prime importance to the customer. Reports provided by the system were inefficient and time consuming. Detailed reportswith roll ups at the region, depot and sales person level were not available. This led to insufficient information to aid senior management’s decision making abilities. The system was unable to meet the heterogeneous configuration requirements at branch and head office level. Additionally, support provided by the previous partner was falling short in resolving client’s frequent issues. The distraught client was looking for a way out of the failed implementation. They had to take a tough decision to choose between re-implementation or migrate to a new platform.",
+          "businesscaseList": [
+            "Site wise fixed and variable expense recording and tracking",
+            "Accurate revenue recording based on transaction feeds received from the bank"
+            ]
+        },
+        "challenges": {
+        "description": "The existing system implementation and partnership with the earlier vendor raised a unique set of challenges for this engagement. There were hurdles at the technical, functional and process fronts to be faced such as:",
+          "keyChallenges": [
+            "Introduction of new technology: This was a first time migration to Microsoft NAV 2013 R2 executed by GITL. Providing web based access led to further complications. Volume of data to be migrated was in the range of 80 GB.",
+            "Introduction of new features: New warehouse module to be implemented",
+            "Change Management: Customer was familiar to the old system and earlier partner. Trust had to be built by effective communication and partnership at each stage."
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "Post migration, the new system offers multitude of benefits to the customer such as:",
+          "list": [
+            "Enhanced configuration of warehouse and sales modules",
+            "Resolution of earlier pain points in performing excise transactions",
+            "New features related to branch configuration",
+            "Faster running reports leading to increased staff productivity",
+            "Comprehensive sales reports based on region, sales person and depot leading to easier decision making"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-65",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "India's Leading Engineering and Manufacturing Company Successfully Migrates to NAV 2016",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2011",
+          "solutionSnapshot": [
+            "Weighbridge Integration",
+            "Vendor Portal for Advance Shipment Notice (ASN)",
+            "Fixed Assets Calculations",
+            "Min-Max Inventory Controls",
+            "Role based Permissions",
+            "BOM Costing Report",
+            "Subcontracting Reconciliation Report"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Client is India's leading organizations involved in automotive, construction equipment and precision machining components. A subsidiary of a larger group company, they have 12 plants across India. The short history of this organization has been one of relentless expansion and continuous innovation. Their production facilities provide an efficient, flexible and ergonomic working environment, clearly demonstrating their culture of quality and service.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The requirement was for migrating from NAV 2009 to NAV 2016. Since GITL had been associated with the organization for the previous migration from NAV 5.0 to NAV 2009, it was selected as the preffered partner for this engagement also. Apart from the migration project, the client is also currently using GITL's support services.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "Due to the unique nature of this project, the team at GITL faced a few challenges such as:",
+          "keyChallenges": [
+            "Multiple locations",
+            "Complex customized functionalities",
+            "Data issues"
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Proper tracking of scrap and raw materials resulted in as much as 10% increase in revenue",
+            "Reduction in product cost calculation time",
+            "Validations to check that payment made is only as much as the invoice amount",
+            "Drastic reduction in Gate entry / Purchase receipt processing time",
+            "Better inventory control by preventing surplus procurement",
+            "Validations on purchase and sales price entry ensure that only prices that have been finalized with the vendors and customers are entred into the system"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-66",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Construction",
+        "title": "India's Leading Construction Organization Successfully Implements Microsoft Dynamics CRM",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Construction",
+          "projectLocation": "India",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Digital Signature",
+            "Four Level Escalation Matrix in CRM with well defined SLAs",
+            "Use of Microsoft Dynamics CRM Implementation Framework",
+            "Waterfall Implementation Methodology",
+            "Quote and Contract Formats",
+            "Customised Reports",
+            "Customized Sales & Service Modules"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is a strategic business unit of a highly diversified conglomerates in India. By imbibing the group's core values, the construction has earned a reputation for meeting international quality standards while preserving the environment. Their competencies include expertise in construction materials, development of modern living spaces and leasing state-of-the-art commercial real estate. They offer a wide range of construction materials including specially engineered ready mix concrete products, AAC blocks, recycled concrete blocks and pavers for different types of applications.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer was looking for a CRM application due to the following issues with the manual system:",
+          "businesscaseList": [
+            "Lack of system availability for visibility on potential sale deals",
+            "Manual system for providing quotations and contracts to client",
+            "Limitations with service escalation matrix",
+            "Multiple intermediate customer interactions at various stages related to each complaint could not be captured",
+            "Capture of exact response time against each complaint type",
+            "Complaint allocation to relevant stakeholders",
+            "Lack of effective analysis"
+            ]
+        },
+        "challenges": {
+        "description": "",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "Customer was looking for a mix of technical and functional consultants who had implemented Microsoft CRM. The solution provided has the following features:",
+          "features": [
+            "Single point for complete sales team to maintain personal and professional details of prospects and customers",
+            "Single point for management to maintain and view prospective business and get visibility on complete sales pipeline",
+            "Provision for senior management to view territory wise / sales team wise view of the prospective business",
+            "Display of multiple customer interactions at various stages related to the complaint",
+            "SLA design based on multiple input parameters",
+            "System triggered e-mails on violation of First Response Time & Resolution Time",
+            "Flexible dashboards for real-time performance analysis",
+            "Timely SMS to customers and internal service engineers regarding complaint status"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Faster ‘Response time’ and ‘Complaint closure time’",
+            "Increase in customer satisfaction",
+            "Well defined SLAs",
+            "Easy customer reconnect due to the centralized & easily accessible customer database",
+            "Easily customized dashboards for in-depth analytics"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-67",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Health Care Products",
+        "title": "India's Leading Construction Organization Successfully Implements Microsoft Dynamics CRM",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Construction",
+          "projectLocation": "India",
+          "engagementSince": "2017",
+          "solutionSnapshot": [
+            "Digital Signature",
+            "Four Level Escalation Matrix in CRM with well defined SLAs",
+            "Use of Microsoft Dynamics CRM Implementation Framework",
+            "Waterfall Implementation Methodology",
+            "Quote and Contract Formats",
+            "Customised Reports",
+            "Customized Sales & Service Modules"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The organization is a strategic business unit of a highly diversified conglomerates in India. By imbibing the group's core values, the construction has earned a reputation for meeting international quality standards while preserving the environment. Their competencies include expertise in construction materials, development of modern living spaces and leasing state-of-the-art commercial real estate. They offer a wide range of construction materials including specially engineered ready mix concrete products, AAC blocks, recycled concrete blocks and pavers for different types of applications.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer was looking for a CRM application due to the following issues with the manual system:",
+          "businesscaseList": [
+            "Lack of system availability for visibility on potential sale deals",
+            "Manual system for providing quotations and contracts to client",
+            "Limitations with service escalation matrix",
+            "Multiple intermediate customer interactions at various stages related to each complaint could not be captured",
+            "Capture of exact response time against each complaint type",
+            "Complaint allocation to relevant stakeholders",
+            "Lack of effective analysis"
+            ]
+        },
+        "challenges": {
+        "description": "",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "Customer was looking for a mix of technical and functional consultants who had implemented Microsoft CRM. The solution provided has the following features:",
+          "features": [
+            "Single point for complete sales team to maintain personal and professional details of prospects and customers",
+            "Single point for management to maintain and view prospective business and get visibility on complete sales pipeline",
+            "Provision for senior management to view territory wise / sales team wise view of the prospective business",
+            "Display of multiple customer interactions at various stages related to the complaint",
+            "SLA design based on multiple input parameters",
+            "System triggered e-mails on violation of First Response Time & Resolution Time",
+            "Flexible dashboards for real-time performance analysis",
+            "Timely SMS to customers and internal service engineers regarding complaint status"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Faster ‘Response time’ and ‘Complaint closure time’",
+            "Increase in customer satisfaction",
+            "Well defined SLAs",
+            "Easy customer reconnect due to the centralized & easily accessible customer database",
+            "Easily customized dashboards for in-depth analytics"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-68",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Discrete Manufacturing",
+        "title": "Leading Manufacturer and Supplier of Agricultural Irrigation Equipment Centralizes Operations with MD NAV 2013 R2",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Discrete Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "Role Center Dynamic Reports",
+            "Streamlined Plant Processes",
+            "Transparent Stock Movement",
+            "Separate Central and Branch Functions"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a New Delhi based, technology driven company engaged in manufacturing, export and supply of BIS certified Agricultural Irrigation Equipments. A pioneer in Water Resource Management, the organization believes in using the highest grade raw materials and cutting edge technologies for manufacturing Drip Irrigation Equipments, Sprayers, Sprinklers and AZUD Filters. This ISO 9001:2008 certified, Indo-Spanish joint venture was awarded the “Certificate of Excellence” for exemplary growth at the 5th Annual INC. India awards. It was ranked 2nd in the category of “Most Exciting Company to Work With” and 19th in the “500 Fastest Growing Midsized Companies” The company has signed a MoU with Rural Business Department of State Bank of India (SBI) for identifying farmers that can best utilize micro-irrigation and crop management systems. This strategic alliance with India’s largest lender aims at helping financial capability by use of smart technology and processes.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client’s operations are spread across 2 companies and 27 branches. They were using a decentralized legacy system with separate Financial, Inventory, Purchase and Sales modules. Significant manual effort was being spent to achieve a consolidated financial view across companies and branches. One of the key customers for this client is the Gujarat Green Revolution Co. Ltd. (GGRC). This is a Government recognized implementation agency responsible for making Micro Irrigation System (MIS) available to farmers in the State of Gujarat. Since this is a Government subsidy based initiative, it required significant procedures to be followed to aid the decision making process. The client needed a system to track this process at different stages of operations. Real time stock availability, ageing and valuation were some of the other challenges being faced by the client. The need for system generated dealer commissions; triggered stock reservation against sales orders and flexible reports led the client to look out for an integrated ERP solution.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "Having significant expertise in providing business and technical solutions to the discrete manufacturing industry, Godrej Infotech Ltd. proposed Microsoft Dynamics NAV 2013 R2 to meet the client’s needs. NAV 2013 R2 is a flexible and scalable productfor centralized inventory, plant maintenance, procurement, sales, marketing and accounting functions. Furthermore, the standard product can be customized to meet client specific needs. GITL’s NAV solution has been successfully implemented in all the client locations, leading to significant operational efficiencies.",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "The centralized solution led to the following value additions for the client.",
+          "list": [
+            "Customized Gujarat Green Revolution Company (GGRC) process implementation with system generated progress reports.",
+            "Central processes for Finance, sales and purchase.",
+            "Branch level data for financial entries, balances, inventory, masters and approval rights.",
+            "Efficient plant maintenance.",
+            "Role center functionality for dynamic report generation.",
+            "Quality compliance for incoming, process and outgoing products.",
+            "Reduction in manual effort due to system generated dealer commissions.",
+            "Increase in inventory efficiency due to sales order based triggers."
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-69",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Non-Profit Organization",
+        "title": "India's Leading Machine Tool Manufacturers' Association Improves Operational Parameters with Microsoft Dynamics AX 2012",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Non-Profit Organization",
+          "projectLocation": "India",
+          "engagementSince": "2015",
+          "solutionSnapshot": [
+            "Financials",
+            "Single MD AX instance for 1 legal entity and 3 locations across India",
+            "Centralized server deployment",
+            "81 Dynamics AX users",
+            "Integration with various Billing Systems"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client has multiple member organizations across the Indian Machine Tool Manufacturing Industry. It acts as a single point of contact and supports the industry for increasing technology, quality and productivity aspects. The activities conducted by the client are: ",
+            "BriefList": [
+              "Operating design and productivity training institute and finishing school",
+              "Organizing industrial and tool-tech exhibitions in which companies from India and abroad participate",
+              "Conducting mega events such as product summits and seminars",
+              "Reputed for running India’s first “LEED - Certified” green exhibition and conference facility"
+          ]
+        },
+        "businessCase": {
+          "description": "Reduction in human errors and eliminating duplication of work were the main areas of concern that needed to be addressed in the new solution. The client's wish list from an enterprise wide solution included the following:",
+          "businesscaseList": [
+            "Integrated and scalable operations across central and regional offices",
+            "Financial consolidation",
+            "Efficient billing and collection processes",
+            "Statutory compliance tracking",
+            "Process control through multi-level workflows",
+            "Fixed asset management",
+            "Standardization of purchase cycle"
+            ]
+        },
+        "challenges": {
+        "description": "This implementation was extremely challenging due to the numerous interfaces with external systems. Integration with as many as 6 billing systems was developed. Through integration, relevant masters are created in AX and transactions that are recorded in the billing systems are posted in AX. Since multiple vendors were involved, extra efforts were taken in collaboration and co-ordination activities. GITL not only addressed the integration requirements but also provided multiple suggestions for standardizations.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "The long term solution road map proposed by Godrej Infotech Limited includes the implementation of Microsoft Dynamics AX, HR and Payroll, CRM and SharePoint Applications. First priority is given to implement Microsoft Dynamics AX for Financials - as a result of the new solution, the Tally system has now been replaced. Line of business front end applications are seamlessly integrated with Microsoft Dynamics AX leading to automation and increase in productivity. Master data, invoice and receipts are seamlessly integrated with existing systems such as:",
+          "features": [
+            "Member management system",
+            "Exhibition billing system",
+            "Training PMS",
+            "Mega event PMS",
+            "BIEC Billing System"
+        ]
+         
+        },
+        "benefits": {
+          "description": "Once implemented, the benefits of this Microsoft Dynamics AX 2012 solution have been tremendous. Some of the highlights are:",
+          "list": [
+            "Reduced Total Cost of Ownership (TCO): With a single integrated software solution that effectively replaced the client's Tally, Saral, Inventory Management, Budget Control, Travel and Expense systems, the cost of system maintenance and IT infrastructure has reduced significantly",
+            "Time effectiveness in terms of automated processes, reducing repetitive processes and expediting processes which otherwise take a long time for users to finish."
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-70",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Manufacturing",
+        "title": "Leading Global Tire Manufacturing Organization Successfully Implements Microsoft Dynamics NAV",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "USA",
+          "engagementSince": "2016",
+          "solutionSnapshot": [
+            "Customizations in NAV 2016 for Sales, Purchase & Finance Modules",
+            "Technology, framework and methodology based on Standard Microsoft Dynamics framework"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Customer is a tire manufacturing company headquartered in Mumbai with sales offices in Europe and USA. With experience spanning across 6 decades the organization today has an active presence in 120 countries. Specializing in the development, manufacture and sale of Agricultural, Forestry, Industrial and OTR tires worldwide, it is recognized as an emerging market leader of Off-Highway Tires (OHT).",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer was using an old version of NAV which had been heavily customised as per the users’ requirement. However, many of the customisations were not being used. The users need was to identify the unused customizations and clear them so as to keep an user’s efficiently running system.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "Godrej Infotech Ltd. understood the challenges faced by the customer and provided the appropriate solutions as given below:",
+          "features": [
+            "In terms of Innovations, lot of customisations were done in-order to improve the productivity of the user by making the process simpler and less time consuming. (e.g. Sales Discounts and Warranty Claim)",
+            "Implementation of ADCS (Automated Data Capturing System) which helped the users use hand held devices for carrying out different Warehouse activities",
+            "Integration with a third party for online sales, wherein once the sale is done on website, the order gets reflected and processed in NAV"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "The 3rd party integrations has proved to be beneficial in the generation of new business",
+            "Process standardization has resulted in reducing the cost of managing the Information System by 30-40%",
+            "25% increase in man-power utilization",
+            "Key users have been trained and user manuals have been created as part of the knowledge management initiatives",
+            "Go-live was achieved within the aggressive time frame of 2 months"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-71",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Facility Management",
+        "title": "Integration of Microsoft Dynamics@ NAV 2013 R2 with Infor EAM for a Growing Facilities Management Business in Abu Dhabi and Dubai",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Facility Management",
+          "projectLocation": " United Arab Emirates",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "First Engagement with Client",
+            "First Collaborated Execution as a Partner of Intertec LLC.",
+            "Centralized Data Repository",
+            "Integrated HR & Payroll Modules as per UAE policies",
+            "Extensive Reports"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is an Abu Dhabi and Dubai based growing business, offering facilities management and on-site engineering solutions to a wide variety of clients throughout UAE and the Middle East region. They provide integrated management of all types of built environments, from residential and commercial towers, housed villa communities and urban towers to shopping malls and industrial complexes. Their service offerings include property strategy, building maintenance and operations, space management, energy and communications infrastructure.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The customer had an existing IT system infrastructure consisting of Oracle e-Business Suite and an in house application. The in house application handled only facility management aspects whereas complex aspects such as finance and accounts were handled by Oracle e-Business Suite. As the company moved towards expansion, the in house facility management application appeared to have several limitations, primarily in terms of scalability and support. Integration was a major issue as the company desired to have a consolidated system with HR, Financial, Supply Chain, Payroll and Facility Management modules operating under a single umbrella and the company decided to contact Godrej Infotech Ltd. (GITL) for this integraition.",
+          "businesscaseList": [
+            ""
+            ]
+        },
+        "challenges": {
+        "description": "Building a consolidated system for the client with enhanced facility management, HR and payroll modules had the following challenges",
+          "keyChallenges": [
+            "Integration with Infor EAM",
+            "Data integration across different modules",
+            "Handling multiple partners across cultures",
+            "End to end testing was sole responsibility of GITL"
+
+        ]
+        },
+        "solution": {
+        "description": "After a detailed evaluation, client selected Microsoft Dynamics NAV 2013 R2 to handle the business function covering Finance, Supply Chain along with HR and Payroll. It also involved integration of Infor EAM solution to handle their facility management needs. Godrej Infotech Ltd. successfully executed this engagement on time, with competitive cost benefits to the customer. Key factors contributing to the success were:",
+          "features": [
+            "Project plan and charter shared by all stakeholders",
+            "Structured execution of the detailed plan",
+            "Excellent understanding of the solution and business",
+            "Geographical presence"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The new system implementation increased productivity and led to the following business benefits:",
+          "list": [
+            "Seamless integration of Infor EAM and Microsoft Dynamics@ NAV 2013 R2 enabling smooth co-ordination between departments",
+            "30% reduction in payroll processing time due to integration of HR and Payroll",
+            "40% increase in asset utilization due to information on asset workload and allocations",
+            "Integrated reporting"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-72",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Information Technology",
+        "title": "India's Leading Software Services Organization Goes Live with Microsoft Dynamics AX 2012",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Information Technology",
+          "projectLocation": "India",
+          "engagementSince": "2014",
+          "solutionSnapshot": [
+            "Single integrated system",
+            "Project accounting and billing",
+            "Statutory accounting and reporting",
+            "Integration with third party software",
+            "Workflow services",
+            "Centralized server for 1 legal entity across 4 offices in India"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Established in 1991, the client is a leading provider of software services‚ helping large technology organizations design‚ develop‚ and test innovative solutions. A singular focus on technology‚ an agile approach‚ and a culture of innovation have enabled this organization to create highly scalable and high performing products for their clients. Their service lines include Big Data Analytics, R&D Labs, and Product Engineering. Well known for its people-oriented culture, the organization is a recipient of multiple awards such as the ‘Dream Employer of the Year in Asia’ and ‘Top 50 Best Information Technology Companies to Work For in India'",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was looking for a single integrated system to replace its multiple in-house systems. The issues faced by the client were as follows:",
+          "businesscaseList": [
+            "Time-consuming project billing cycle due to lack of standard project accounting software.",
+            "Tedious invoicing process due to lack of integration with the timesheet management system.",
+            "Non-standardized purchase and fixed asset management process.",
+            "Cumbersome reporting process due to use of Excel and manual tools"
+            ]
+        },
+        "challenges": {
+        "description": "The challenges faced during the implementation of this project were as follows:",
+          "keyChallenges": [
+            "Implementation of Service Tax module.",
+            "Integration with External Systems - Pivot and Spine"
+
+        ]
+        },
+        "solution": {
+        "description": "After due diligence, the Microsoft Dynamics AX 2012 product was selected as the best-fit product for addressing the requirements of the client. Godrej Infotech Limited was selected as the implementation partner due to its proven expertise in the IT consulting and system integration areas. After multiple rounds of discussions and a detailed product demo to the key user team, a unique solution was architected for this client. The solution provided by GITL covers:",
+          "features": [
+            "Generation of periodic billing: Since this is a recurring activity that is at the core of the organization's business, it was necessary to have an automated system that leads to the reduction in errors and increase in processing time.",
+            "Value based authorization: Microsoft Dynamics AX workflow approval services are set up with multiple levels of approvals per document.",
+            "Fixed Assets Feature: Centralized consumable and Fixed Assets purchase module along with Depreciation accounting for Fixed Assets."
+        ]
+         
+        },
+        "benefits": {
+          "description": "The organization has witnessed tremendous benefits post this Microsoft Dynamics AX 2012 implementation. Some of the highlights are:",
+          "list": [
+            "Improved business efficiency",
+            "Cost efficiency",
+            "Elimination of duplicate transactions",
+            "Increase in employee productivity",
+            "Simple and very effective integrated processes in purchase, sales, finance and projects"
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-73",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Oil and Gas",
+        "title": "India's Leading Provider of Offshore Drilling Services Implements Microsoft Dynamics AX 2012 along with GITL's Add-On Payroll Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Oil and Gas",
+          "projectLocation": "India",
+          "engagementSince": "2014",
+          "solutionSnapshot": [
+            "Implementation across multiple Offices, Rigs, Legal Entities and Warehouses",
+            "Third Party Integration with AMOS Software",
+            "Customized Ticket, Administrative and Service Tax Modules",
+            "Centralized Server Enterprise Deployment"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a pioneer in drilling and manpower services with a steady focus on delivering on-time services to its clients. An ISO 9001, 14001 and 18001 certified company, it specializes in fit-for-purpose solutions for achieving seamless operations and safety systems to maintain asset integrity. Other business functions include supervision of rig construction, fleet management, and refurbishment which are executed with the core values of people, process and environmental protection.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "The client was facing multiple issues in their day-to-day operations such as:",
+          "businesscaseList": [
+            "Managing a high working capital",
+            "Managing travel, schedules and payroll for an international workforce",
+            "Use of non-integrated multiple systems like Tally, Saral and AMOS",
+            "Huge inventory maintenance costs",
+            "Inconsistencies in standardizing operational processes",
+            "Manual, time consuming and cumbersome reporting of business information"
+            ]
+        },
+        "challenges": {
+        "description": "Working with multiple external systems was the main challenge for this client, as it directly impacted business efficiency and employee productivity. The GITL team dealt with this by building interfaces to existing systems such as AMOS. The users now continue to enter purchase requisition and transfer orders in AMOS which can then be fetched from the AX system for further calculations and settlement processing using GITL's custom built interface.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "The primary factor that led the customer to choose Godrej Infotech Limited over other evaluated Microsoft partners is the fact that GITL, though a separate, independently functioning legal entity, is an integral member of the Godrej & Boyce Manufacturing family. Our traditional corporate values, deep domain expertise of manufacturing processes, along with multi-talented experts in ERP software solutions are the key differentiators that convinced the client on our capability to handle a large scale implementation of this nature. Well conducted product demos, followed by detailed architecture and integration discussions gave the customer the guarantee of a well-outlined, planned, and structured Microsoft Dynamics AX 2012 ERP implementation. The solution included:",
+          "features": [
+            "One system concept - Integrated Finance, HR, Rig specific maintenance application and Quality Systems",
+            "Tracking of health and safety incidents",
+            "Automation of periodic billing and collection processes",
+            "Financial and statutory accounting, billing and reporting",
+            "Multi-level workflow with limit based approvals",
+            "Microsoft Sure Step product implementation methodology"
+        ]
+         
+        },
+        "benefits": {
+          "description": "The client achieved significant value addition by the successful completion of this complex ERP implementation within the planned timelines. Some of the key benefits are:",
+          "list": [
+            "Cost savings - A greater return on investment is achieved by using the integrated AX system as compared to the earlier multiple systems model.",
+            "Operational efficiency - Centralized procurement, sales, finance, and production processes leads to a reduction of repetitive transactions and better internal controls mechanisms."
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-75",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Printing & Packaging",
+        "title": "International FMCG Chain Standardizes Operations with Microsoft Dynamics AX Multi-Country, Multi-Company Template Rollout Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "FMCG",
+          "projectLocation": "India, Africa",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "7+ legal entities in 5+ countries in a single instance of MS Dynamics AX",
+            "Global process template & rapid rollout implementations",
+            "Simplified processes and insight across multiple international locations",
+            "Integration with third party warehouse",
+            "Automation of logistic processes",
+            "Credit limit checks with by- pass and approval",
+            "Item group based sequencing of item codes",
+            "Master data management",
+            "Microsoft Sure Step Product Implementation Methodology"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a leading international conglomerate specializing in soap, hair colorants, toiletries, and liquid detergents. Based in Mumbai, the organization has expanded its operations in African countries like Kenya, Nigeria, Ghana, Tanzania, Ivory Coast and Ethiopia. The African business deals with the FMCG product range of hair and skin care products. A leading brand in the emerging markets, the organization ranks on the Fortune, 'Change the World' list.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "Being a large multi-national group with a variety of processes and systems across their locations, the organization needed one single standardized system to streamline their operational activities. The client's vision was to have a simple, easy to use, flexible ERP solution platform for its multiple countries and legal entities. The system was required to address and optimize critical business functions such as inventory management, production control, product costing, warehousing and logistics, procurement and sourcing.",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Working with multiple external systems was the main challenge for this client, as it directly impacted business efficiency and employee productivity. The GITL team dealt with this by building interfaces to existing systems such as AMOS. The users now continue to enter purchase requisition and transfer orders in AMOS which can then be fetched from the AX system for further calculations and settlement processing using GITL's custom built interface.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Average rollout implementation time of 2 calendar months.",
+            "Rapid rollout implementation for one of the companies in Kenya was done in a record time of 38 days!!",
+            "Template implementation for discrete and process manufacturing scenarios.",
+            "Centralized management of master data such as products master across countries and legal entities.",
+            "Time saving by implementation of Distributor Sales Portal for order entry & status tracking."
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-76",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "IT Services",
+        "title": "International FMCG Chain Standardizes Operations with Microsoft Dynamics AX Multi-Country, Multi-Company Template Rollout Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "FMCG",
+          "projectLocation": "India, Africa",
+          "engagementSince": "2013",
+          "solutionSnapshot": [
+            "7+ legal entities in 5+ countries in a single instance of MS Dynamics AX",
+            "Global process template & rapid rollout implementations",
+            "Simplified processes and insight across multiple international locations",
+            "Integration with third party warehouse",
+            "Automation of logistic processes",
+            "Credit limit checks with by- pass and approval",
+            "Item group based sequencing of item codes",
+            "Master data management",
+            "Microsoft Sure Step Product Implementation Methodology"
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "The client is a leading international conglomerate specializing in soap, hair colorants, toiletries, and liquid detergents. Based in Mumbai, the organization has expanded its operations in African countries like Kenya, Nigeria, Ghana, Tanzania, Ivory Coast and Ethiopia. The African business deals with the FMCG product range of hair and skin care products. A leading brand in the emerging markets, the organization ranks on the Fortune, 'Change the World' list.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "Being a large multi-national group with a variety of processes and systems across their locations, the organization needed one single standardized system to streamline their operational activities. The client's vision was to have a simple, easy to use, flexible ERP solution platform for its multiple countries and legal entities. The system was required to address and optimize critical business functions such as inventory management, production control, product costing, warehousing and logistics, procurement and sourcing.",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Working with multiple external systems was the main challenge for this client, as it directly impacted business efficiency and employee productivity. The GITL team dealt with this by building interfaces to existing systems such as AMOS. The users now continue to enter purchase requisition and transfer orders in AMOS which can then be fetched from the AX system for further calculations and settlement processing using GITL's custom built interface.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            ""
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Average rollout implementation time of 2 calendar months.",
+            "Rapid rollout implementation for one of the companies in Kenya was done in a record time of 38 days!!",
+            "Template implementation for discrete and process manufacturing scenarios.",
+            "Centralized management of master data such as products master across countries and legal entities.",
+            "Time saving by implementation of Distributor Sales Portal for order entry & status tracking."
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        "id": "case-study-77",
+        "mainCategory": "Transformation",
+        "subCategory": "Microsoft Dynamics",
+        "vertical": "Pharmaceuticals",
+        "title": "Indian based Global Oncology Pharmaceuticals Company Implements HxGN EAM Solution",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Pharmaceutical",
+          "projectLocation": "India",
+          "engagementSince": "2023",
+          "solutionSnapshot": [
+            "HxGN EAM Implementation"
+            
+                                 
+          ]
+        },
+        "customerBrief": {
+         "description": "Established in 2005, the global specialty pharmaceutical company stands at the forefront of the industry, offering a comprehensive range of oncology medicines in India. With commitment to quality, accessibility and innovation, the company aims to revolutionize cancer treatment options while extending their market reach across the United States, Europe, Australia, New Zealand, Japan, Canada and the Asia Pacific region.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+          "description": "",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Before engaging with Godrej Infotech, customer was facing issues with their paper-based management system, hindering maintenance operations. Challenges included time-consuming and error-prone processes, lack of real-time updates, limited accessibility and visibility, data analysis difficulties, and inefficient inventory management. The goal was to digitalize their maintenance management capabilities.",
+          "keyChallenges": [
+            ""
+
+        ]
+        },
+        "solution": {
+        "description": "",
+          "features": [
+            "To address the manual challenges, GITL implemented HxGN EAM with Equipment, Work & Material modules. This CMMS system deployment offers comprehensive asset management, streamlined work order processes, calibration, preventive maintenance scheduling, efficient inventory management, analytics and integration capabilities."
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Asset Lifecycle Management",
+            "Preventive Maintenance (PM)",
+            "Scheduling",
+            "Calibration Management",
+            "Work Management",
+            "Compliance Tracking",
+            "Efficient Inventory Management",
+            "Cost Optimization",
+            "Effective Resource Allocation",
+            "Operation Downtime Reduction"
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      }
             
     ]
   }
