@@ -34,15 +34,7 @@ import { mdiArrowRight } from "@mdi/js";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 
 export default function Home() {
-  const ref1 = useRef<HTMLDivElement>(null);
-  const ref2 = useRef<HTMLDivElement>(null);
-  const ref3 = useRef<HTMLDivElement>(null);
-  const ref4 = useRef<HTMLDivElement>(null);
-
-  const count1 = useScrollTriggeredCountUp(ref1, 25); // Count-up from 0 to 25
-  const count2 = useScrollTriggeredCountUp(ref2, 500); // Count-up from 0 to 500
-  const count3 = useScrollTriggeredCountUp(ref3, 15); // Count-up from 0 to 15000 (15k)
-  const count4 = useScrollTriggeredCountUp(ref4, 1000); // Count-up from 0 to 15000 (15k)
+  
 
   const [showModal1, setshowModal1] = useState(false);
   const { ref, inView } = useInView({
