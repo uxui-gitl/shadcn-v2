@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import OutlinedButtonWithArrow from "./ui/buttons/OutlinedButtonWithArrow";
 import style from "@/components/style/commonCardTwo.module.css";
+import { useRouter } from 'next/navigation'
 
 function CommonCardTwo({ Item }) {
+  const router = useRouter();
+
   const {
     cardBGImageUrl = "",
     cardBGColor = "",
@@ -13,6 +16,7 @@ function CommonCardTwo({ Item }) {
     isArrow = true,
     arrowColor = "#FFF",
     additionalData="",
+    pageURL='',
   } = Item;
 
   const [isHovered, setIsHovered] = useState(false);
@@ -65,7 +69,7 @@ function CommonCardTwo({ Item }) {
       {/* Arrow Button */}
       {isArrow && (
         <div className="flex justify-end px-6 py-4">
-          <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
+         {pageURL && (<OutlinedButtonWithArrow arrowColor={arrowColor} size={48}  onClick={() => router.push(pageURL)} target='_blank' />)} 
         </div>
       )}
    </div>

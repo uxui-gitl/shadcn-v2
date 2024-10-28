@@ -34,7 +34,10 @@ import { mdiArrowRight } from "@mdi/js";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 
 export default function Home() {
+
   const [showModal1, setshowModal1] = useState(false);
+  const [showReadMoreModal, setShowReadMoreModal] = useState(false);
+
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
@@ -513,6 +516,10 @@ export default function Home() {
     setBusinessItem(item);
   }
 
+  function handleReadMoreClick(){
+    setShowReadMoreModal(true);
+  }
+
   // end handle click businesstranform card click
 
   return (
@@ -670,6 +677,7 @@ export default function Home() {
         </p>
         <button
           type="button"
+          onClick={() => handleReadMoreClick()}
           className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"
         >
           Read more
@@ -860,6 +868,19 @@ export default function Home() {
       ></TransformBusinessForm>
 
       {/* <Footer /> */}
+      
+      
+      <Dialog
+        shouldShow={showReadMoreModal}
+        onRequestClose={() => {
+          setShowReadMoreModal((prev) => !prev);
+        }}
+        title={'readmore modal'}
+      >
+        <div className="py-10">
+          <h1>data</h1>
+        </div>
+      </Dialog>
 
       {/* modal */}
       <Dialog

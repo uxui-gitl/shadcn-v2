@@ -54,10 +54,10 @@ const Announcement = ({ content }) => {
         url = "/netherland";
         break;
       case "SG":
-        url = "/";
+        url = "/singapore";
         break;
       case "US":
-        url = "/GIA";
+        url = "/americas";
         break;
       case "IN":
         url = "/";
