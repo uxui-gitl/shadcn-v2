@@ -75,7 +75,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Case Studies",
+      cardHeading: "Brochures",
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
@@ -87,7 +87,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Success Stories",
+      cardHeading: "Testimonials",
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
@@ -99,20 +99,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "News & Updates",
-      cardDesc: "",
-      isArrow: true,
-      cardTextColor: "white",
-      pageURL:"http://google.com"
-    },
-
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
-
-      cardBGColor: "#7F4EE1",
-      cardHeading: "Process Manufacturing",
+      cardHeading: "Success Stories",
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
@@ -194,15 +181,15 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
   const items4 = [
     {
       id: 17,
-      content: "Automation  ",
+      content: "AUTOMATION",
     },
     {
       id: 18,
-      content: "Cloud",
+      content: "CLOUD",
     },
     {
       id: 19,
-      content: "Transformation",
+      content: "TRANSFORMATION",
     },
   ];
 
@@ -217,8 +204,8 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       ),
     },
     {
-      title: "Industries",
-      value: "industries",
+      title: "Industry Spotlight",
+      value: "industryspotlight",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
           <IndustryContent />
@@ -252,18 +239,18 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Project Highlights",
+      heading: "Delivering Results that Matters ",
       description:
-        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
+        "World’s top-notch businesses choose us for our industry knowledge and excellent technical acumen.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Speedy Analytics Report Generation",
+      heading: "Increase in ROI",
       description:
-        "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+        "Leading Retail Organizations in Mauritius implements an Integrated D365 CRM and LS Retail NAV Solution",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -273,9 +260,9 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Positive ROI with Cloud Transition",
+      heading: "40% Increase in Inventory Efficiency",
       description:
-        "Prominent American watch and lifestyle distribution organization achieves increase in uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+        "Myanmar based conglomerate improves productivity with Dynamics AX implementation",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
@@ -283,9 +270,20 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Infor CloudSuite Managed Support Services ",
+      heading: "Improved Scalability and Productivity",
       description:
-        "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+        "Philippines based leading fruits &vegetables distributor automates operations with D365 F&O cloud solution",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#E1F2EF",
+    },
+
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      title: "",
+      heading: "Seamless Process and Integration",
+      description:
+        "Singapore based Industrial vehicle business implements Microsoft Dynamics AX",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -324,9 +322,9 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       id: 1,
       cardTitle: "",
-      cardHeading: "Embrace Tomorrow with AUTOMATION",
+      cardHeading: "Embrace Tomorrow with Automation",
       cardDesc:
-        "Accelerate operations, drive innovation and increase accuracy with AI powered solutions",
+        "Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), IoT & Analytics.",
       rawData: `<div class="grid grid-cols-3 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -359,9 +357,9 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       id: 2,
       cardTitle: "",
-      cardHeading: "Experience New Business Dimensions with CLOUD",
+      cardHeading: "Cloud Enables New Possibilities",
       cardDesc:
-        "Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility",
+        "We are committed to provide, secure, cost-effective & scalable cloud implementation, cloud migration & cloud support services to our customers.",
       rawData: `<div class="grid grid-cols-2 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -388,9 +386,9 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       id: 3,
       cardTitle: "",
       cardHeading:
-        "Leverage Key Drivers of Growth with Digital Transformation Solutions",
+        "Future-Proof Transformation Solutions ",
       cardDesc:
-        "Enhance business productivity and modernize stakeholder experience with streamlined operations",
+        "We implement digital solutions that modernize and enhance user experience, ultimately leading to a digitally- sound businesses.",
       rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
         <div class="text-[40px] font-semibold mb-12">
@@ -427,7 +425,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       id: 2,
       title: "Cloud Project Insight",
-      desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ",
+      desc: "Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ",
       url: "https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg",
     },
     {
@@ -555,7 +553,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
             className="container mx-auto text-[76px] leading-[86px] text-white absolute"
             style={{ top: "30%", left: "0", right: "0" }}
           >
-            Delivering Business<br></br> value with
+            DELIVERING BUSINESS<br></br> VALUE WITH 
             <motion.div
               key={items4[index2]?.id}
               initial={{ y: 10, opacity: 0 }}
@@ -704,8 +702,8 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
 
       {/* innovative section */}
       <SectionWrapperNew
-        sectionHeading={"ACT based Approach for Leading Future Ready Business"}
-        sectionDesc={"Value – Driven Solutions for Tomorrow's Opportunities"}
+        sectionHeading={"ACT BASED APPROACH OF BUILDING FUTURE READY SOLUTIONS"}
+        sectionDesc={""}
         sectionTextColor="white"
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
@@ -751,7 +749,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
 
       {/* offerings */}
       <SectionWrapperNew
-        sectionHeading={"Focused Cluster "}
+        sectionHeading={"Capabilities and Partnership"}
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
         }
@@ -806,9 +804,9 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
 
       <IndustrySpotlight
         cardData={INDUSTRY_SPOTLIGHT}
-        sectionHeading="Insights"
+        sectionHeading="Resources"
         sectionDesc={
-          "Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing."
+          "Learn more about our solutions, success stories and insights."
         }
       />
 
@@ -817,7 +815,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         blogImageUrl={"/homeNew/blog-svg.png"}
         Heading={"Step Up in Your Professional Journey"}
         Desc={
-          "Work alongside talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
+          "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
         }
         Color={"white"}
         readMoreUrl={""}
@@ -862,7 +860,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       <TransformBusinessForm
         Title={"Transform your Business with Us"}
         Desc={
-          "Let ‘s discuss how our ACT (Automation, Cloud and Digital Transformation) solutions can help you with rapid growth."
+          "Let’s discuss how digital transformation solutions can help you with rapid growth."
         }
       ></TransformBusinessForm>
 
@@ -942,10 +940,11 @@ const IndustryContent = () => {
   const data = [
     "Manufacturing",
     "Retail",
-    "Trading & Distribution",
-    "Healthcare",
-    "Professional Service",
     "Project",
+    "Trading & Distribution",
+    "Professional Service",
+    "Healthcare",
+    
   ];
 
   return (
@@ -984,10 +983,7 @@ const ParternerContent = () => {
     "Microsoft  ",
     "Infor  ",
     "Oracle  ",
-    "Salesforce  ",
-    "LS Retail  ",
-    "Automation Anywhere ",
-    "Ui Path",
+    "Hexagon EAM",
   ];
 
   return (
