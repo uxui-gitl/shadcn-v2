@@ -57,6 +57,21 @@ export default function RootLayout({ children, route }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         {/* Add other meta tags as needed */}
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-96x96.png"
+          sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Godrej Infotech" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${inter.className} dark`}>
         {isLoading && isHome ? (
@@ -66,7 +81,7 @@ export default function RootLayout({ children, route }) {
             <NextUIProvider>
               <NextTopLoader />
               {children}
-              <div className="" style={{ backgroundColor: '#1D162B' }}>
+              <div className="" style={{ backgroundColor: "#1D162B" }}>
                 <Footer />
               </div>
               {/* <Copyright /> */}
