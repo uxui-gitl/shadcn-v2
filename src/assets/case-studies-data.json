@@ -1,0 +1,177 @@
+{
+  "caseStudies": [
+    {
+
+      "id": "case-study-1",
+      "mainCategory": "Software Development",
+      "subCategory": "Management Systems",
+      "vertical": "Distribution",
+      "title": "Leading Global Lifestyle Distribution Company Successfully Implements .NET Based Dealer Management System",
+      "client": {
+        "name": "American Watch and Lifestyle Distribution Company",
+        "industry": "Distribution",
+        "location": "India",
+        "engagementSince": "2019"
+      },
+      "images": {
+        "thumbnail": "path-to-thumbnail-image.jpg",
+        "detailPageImage": "path-to-detail-page-image.jpg"
+      },
+      "highlights": {
+        "industry": "Distribution",
+        "projectLocation": "India",
+        "engagementSince": "2019",
+        "solutionSnapshot": [
+          "Dealer Management System",
+          "Realtime Reporting",
+          "Dealer Onboarding",
+          "Order Management",
+          "Inventory Management",
+          "Receivable Management",
+          "1000 dealers",
+          "1300 users"
+        ]
+      },
+      "customerBrief": {
+        "description": "The Customer is a leading American watch and lifestyle distribution organization which deals in high quality watches, bags, and jewellery. In India, it operates under both Company Owned Company Operated (COCO) and Franchisee Owned Franchisee Operated (FOFO) models."
+      },
+      "businessCase": {
+        "description": "The organization has dealers across PAN India, and the salespersons were required to visit dealers in person to gather registration details. The entire process was manual, leading to high turnaround times, and multiple back-office applications were used without a clear control on user access."
+      },
+      "challenges": {
+        "description": "The COVID-19 pandemic introduced major challenges, forcing the entire project to be managed remotely. Despite these obstacles, the team successfully controlled all activities offshore. The project was executed using GITL's phased methodology including Analysis, Design, Conference Room Pilot (CRP), Development, NAV Integration, Training, UAT, Go-Live, and post Go-live support.",
+        "keyChallenges": [
+          "Remote management due to COVID-19",
+          "High turnaround times for dealer registration",
+          "Lack of control over user access",
+          "Multiple back-office applications for replenishment and order processing"
+        ]
+      },
+      "solution": {
+        "description": "Dealer Management Desk was a priority project for the company, and they had high expectations. Godrej Infotech Ltd. was selected for their consulting approach and TO-BE solution.",
+        "features": [
+          "Real-time integration with Microsoft Dynamics NAV and parent organization database",
+          "Applications hosted on Azure Cloud, managed by GITL",
+          "Realtime dashboard for activity visibility",
+          "Dealer contract management",
+          "System used by 1000 dealers and 1300 users"
+        ],
+        "postImplementation": "GITL continues to provide annual maintenance services for the system."
+      },
+      "benefits": {
+        "description": "The solution provided various benefits that streamlined dealer management and improved business processes.",
+        "list": [
+          "Online dealer onboarding and order processing without in-person visits",
+          "Online dealer payment capabilities",
+          "Regular stock monitoring",
+          "Automatic stock replenishment via business rules",
+          "Increased revenue due to enhanced stock replenishment orders"
+        ]
+      },
+      "meta": {
+        "title": "Case Study: Leading Global Lifestyle Distribution Company - .NET Dealer Management System",
+        "description": "Discover how a leading American watch and lifestyle distribution company implemented a .NET-based Dealer Management System for seamless dealer onboarding, order management, and more.",
+        "keywords": [
+          "Dealer Management System",
+          "Distribution industry",
+          ".NET",
+          "Realtime reporting",
+          "Order Management",
+          "Inventory Management",
+          "Godrej Infotech",
+          "Microsoft Dynamics NAV"
+        ]
+      },
+      "downloadCTA": {
+        "text": "Download Case Study",
+        "url": "path-to-case-study-1-download.pdf"
+      }
+      
+    },
+    {
+     
+      "id": "case-study-2",
+      "mainCategory": "AI and Machine Learning",
+      "subCategory": "Recommendation Systems",
+      "vertical": "E-commerce",
+      "title": "Global E-commerce Giant Implements AI-Powered Recommendation Engine",
+      "client": {
+        "name": "Leading Global E-commerce Company",
+        "industry": "E-commerce",
+        "location": "USA",
+        "engagementSince": "2021"
+      },
+      "images": {
+        "thumbnail": "path-to-thumbnail-image-2.jpg",
+        "detailPageImage": "path-to-detail-page-image-2.jpg"
+      },
+      "highlights": {
+        "industry": "E-commerce",
+        "projectLocation": "USA",
+        "engagementSince": "2021",
+        "solutionSnapshot": [
+          "AI-Powered Recommendation Engine",
+          "Personalized Product Suggestions",
+          "Real-time Analytics",
+          "Increased Conversion Rates",
+          "500 million products",
+          "100 million users"
+        ]
+      },
+      "customerBrief": {
+        "description": "The customer is a leading global e-commerce platform offering a wide range of products to millions of customers worldwide. They aim to enhance user experience by providing personalized product recommendations."
+      },
+      "businessCase": {
+        "description": "With a massive product catalog and diverse user base, the customer wanted to implement an AI-based recommendation engine to boost user engagement and conversion rates. The previous recommendation system was rule-based and failed to capture personalized user preferences in real time."
+      },
+      "challenges": {
+        "description": "The primary challenge was processing and analyzing vast amounts of data in real time to deliver personalized product recommendations. Additionally, integration with existing systems and ensuring scalability for millions of daily users were critical aspects.",
+        "keyChallenges": [
+          "Processing large datasets in real-time",
+          "Seamless integration with legacy systems",
+          "Scalability for millions of users",
+          "Maintaining high performance and low latency"
+        ]
+      },
+      "solution": {
+        "description": "We implemented an AI-powered recommendation engine using advanced machine learning algorithms that provide personalized product suggestions. The solution is integrated with the e-commerce platform's existing infrastructure and scales automatically to handle increased user activity.",
+        "features": [
+          "AI-based recommendation algorithms",
+          "Real-time user behavior analysis",
+          "Seamless integration with legacy systems",
+          "Scalable architecture supporting millions of users",
+          "Cloud-based solution ensuring high availability"
+        ],
+        "postImplementation": "The client continues to see a steady increase in conversion rates and user engagement with the personalized recommendations."
+      },
+      "benefits": {
+        "description": "The AI-powered solution provided significant business benefits, enhancing the user experience and driving sales growth.",
+        "list": [
+          "Increased user engagement through personalized recommendations",
+          "Improved conversion rates",
+          "Real-time product suggestions based on user behavior",
+          "Scalable solution capable of handling peak traffic",
+          "Seamless integration with existing infrastructure"
+        ]
+      },
+      "meta": {
+        "title": "Case Study: Global E-commerce Giant Implements AI-Powered Recommendation Engine",
+        "description": "Learn how a leading global e-commerce company leveraged an AI-powered recommendation engine to improve user experience and boost conversion rates.",
+        "keywords": [
+          "AI Recommendation Engine",
+          "E-commerce",
+          "Personalized suggestions",
+          "User engagement",
+          "Conversion rate optimization",
+          "Machine Learning",
+          "Real-time analytics"
+        ]
+      },
+      "downloadCTA": {
+        "text": "Download Case Study",
+        "url": "path-to-case-study-2-download.pdf"
+      }
+     
+    }
+  ]
+}

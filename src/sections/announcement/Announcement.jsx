@@ -51,13 +51,13 @@ const Announcement = ({ content }) => {
     let url = "";
     switch (code) {
       case "BE":
-        url = "/LVD";
+        url = "/netherland";
         break;
       case "SG":
-        url = "/";
+        url = "/singapore";
         break;
       case "US":
-        url = "/GIA";
+        url = "/americas";
         break;
       case "IN":
         url = "/";
