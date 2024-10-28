@@ -119,7 +119,7 @@ export default function Home() {
 
     // Add more cards as needed
   ];
-  
+
   const items = [
     {
       id: 1,
@@ -744,7 +744,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-        sectionHeading={"Focused Cluster " }
+        sectionHeading={"Focused Cluster "}
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
         }
@@ -843,14 +843,14 @@ export default function Home() {
         </div>
       </BlogSection>
       {/* @ts-ignore */}
-      <ReviewSliderSection
+      {/* <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted Customers share their Successful Experience"}
         Desc={""}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
         BGColor="#1D162B"
-      ></ReviewSliderSection>
+      ></ReviewSliderSection> */}
 
       <TransformBusinessForm
         Title={"Transform your Business with Us"}

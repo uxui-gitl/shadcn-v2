@@ -119,7 +119,7 @@ export default function Home() {
 
     // Add more cards as needed
   ];
-  
+
   const items = [
     {
       id: 1,
@@ -744,7 +744,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-        sectionHeading={"Focused Cluster " }
+        sectionHeading={"Focused Cluster "}
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
         }
