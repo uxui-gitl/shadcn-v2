@@ -54,7 +54,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       id: 3,
       title: "Value",
-      desc: "Integrity,Responsiveness,Commitment, Teamwork",
+      desc: "Integrity,Responsiveness, Commitment, Teamwork",
     },
   ];
 
@@ -242,7 +242,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Delivering Results that Matters ",
       description:
         "World’s top-notch businesses choose us for our industry knowledge and excellent technical acumen.",
-      link: "/case-study-1",
+      link: "",
       color: "#FFFFFF",
     },
     {
@@ -251,7 +251,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Increase in ROI",
       description:
         "Leading Retail Organizations in Mauritius implements an Integrated D365 CRM and LS Retail NAV Solution",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
+      link: "case-studies/case-study-44?type=Transformation",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -263,7 +263,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "40% Increase in Inventory Efficiency",
       description:
         "Myanmar based conglomerate improves productivity with Dynamics AX implementation",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+      link: "case-studies/case-study-48?type=Transformation",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
@@ -273,7 +273,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Improved Scalability and Productivity",
       description:
         "Philippines based leading fruits &vegetables distributor automates operations with D365 F&O cloud solution",
-      link: "/case-study-1",
+      link: "case-studies/case-study-90?type=Transformation",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
@@ -284,7 +284,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Seamless Process and Integration",
       description:
         "Singapore based Industrial vehicle business implements Microsoft Dynamics AX",
-      link: "/case-study-1",
+      link: "",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },

@@ -244,7 +244,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Delivering Results that Matters",
       description:
         "World’s top-notch businesses choose us for our industry knowledge and excellent technical acumen.",
-      link: "/case-study-1",
+      link: "",
       color: "#FFFFFF",
     },
     {
@@ -253,7 +253,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Improved Operational Uptime",
       description:
         "USA based Global Leader in Speciality Materials Optimises Operational Efficiency with Infor CSIE Managed Services",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
+      link: "",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -265,7 +265,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Increase in Operational Agility",
       description:
         "USA based Premium Kitchen and Bath Products Distributor Implements Infor CSIE & WMS on MT Cloud",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+      link: "",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
@@ -275,7 +275,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Reduced Cost",
       description:
         "5 Years of Infor LN, ION & OS Managed Services Engagement with New Jersy based Specialty Coatings and Building Materials Solutions Company",
-      link: "/case-study-1",
+      link: "",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
@@ -286,7 +286,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "Streamlined Operations",
       description:
         "Industrial Packaging and Products based Company in Ohio Implements and Roll out Infor LN solution",
-      link: "/case-study-1",
+      link: "case-studies/case-study-82?type=Transformation",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
@@ -297,7 +297,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       heading: "",
       description:
         "Massachusetts based Tyre Manufacturer implements Infor LN with 5 years of Managed Supports Services",
-      link: "/case-study-1",
+      link: "case-studies/case-study-60?type=Transformation",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
