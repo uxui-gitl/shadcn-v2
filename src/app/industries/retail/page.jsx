@@ -240,6 +240,7 @@ function page() {
           title: "Retail Store Transformation",
           desc:
             "Enabling personalization in sales process, loyalty management programs, and enhancing customer experience with retail stores modernization.",
+            
         },
     
         {
