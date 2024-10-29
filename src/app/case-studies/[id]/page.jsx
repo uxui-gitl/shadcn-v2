@@ -1,20 +1,24 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useParams } from 'next/navigation'
+import { useParams, useSearchParams } from 'next/navigation'
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Image from "next/image";
-import caseStudiesData from "@/data/caseStudiesData";
+// import automationData from "@/data/case-studies-Automation-data";
+// import transformationData from "@/data/case-studies-transformation-data";
+
 
 
 const Page = () => {
+    const searchParams = useSearchParams();
+    const search = searchParams.get('type')
     const { id } = useParams();
     console.log("id", id)
     const [caseData, setCaseData] = useState([]);
     useEffect(() => {
         const data = caseStudiesData.filter((item) => item.id == id);
         setCaseData(data);
-        console.log(data, "databjh")
+        console.log(search, "type");
     }, []);
 
 
