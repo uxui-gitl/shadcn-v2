@@ -40,7 +40,7 @@ const page = () => {
             setTopBlogList(topdataList);
         } catch (error) {
             console.log(error);
-            res.status(error.response.status).json({ message: error.message });
+            // error.status(error.response.status).json({ message: error.message });
         }
     }
 
