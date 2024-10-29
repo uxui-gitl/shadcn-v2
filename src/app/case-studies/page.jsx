@@ -4,10 +4,7 @@ import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import caseStudiesData from "@/data/caseStudiesData";
-import { useRouter } from 'next/navigation'
-
-
-
+import { useRouter } from 'next/navigation';
 
 const Page = () => {
     const router = useRouter()
@@ -25,7 +22,7 @@ const Page = () => {
 
     useEffect(() => {
         filterData();
-    }, [mainCategory, subCategory, vertical])
+    }, [mainCategory, subCategory, vertical]);
 
     function handleReset(){
         setUpdatedCaseStudiesData(caseStudiesData);
