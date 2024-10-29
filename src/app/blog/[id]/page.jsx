@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useParams } from 'next/navigation'
+import { useParams } from 'next/navigation';
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Image from "next/image";

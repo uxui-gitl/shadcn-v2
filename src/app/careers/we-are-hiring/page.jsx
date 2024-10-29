@@ -9,9 +9,10 @@ import Image from "next/image";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const page = () => {
-
+  const router = useRouter();
   const [jobList, SetJobList] = useState([])
 
 
@@ -84,7 +85,7 @@ const page = () => {
                 </div>
               </div>
               <div className="">
-                <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center" >Apply Now</button>
+                <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center" onClick={() => router.push(`/job-detail/${item.srNo}`)}>Apply Now</button>
                 <p className="text-[14px] text-[#808080">Posted {item?.insertDate}</p>
               </div>
             </div>
