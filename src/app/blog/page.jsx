@@ -8,9 +8,6 @@ import Image from 'next/image';
 import axios from "axios";
 import url from "@/data/url";
 
-
-
-
 // const url = "https://mailer.godrejenterprises.com/GodrejinfotechAPI";
 
 const page = () => {

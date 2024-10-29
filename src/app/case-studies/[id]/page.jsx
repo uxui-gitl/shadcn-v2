@@ -4,8 +4,9 @@ import { useParams, useSearchParams } from 'next/navigation'
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Image from "next/image";
-// import automationData from "@/data/case-studies-Automation-data";
-// import transformationData from "@/data/case-studies-transformation-data";
+
+import transformationData from "@/data/case-transformation";
+import automationData from "@/data/case-Automation";
 
 
 
@@ -15,11 +16,20 @@ const Page = () => {
     const { id } = useParams();
     console.log("id", id)
     const [caseData, setCaseData] = useState([]);
+    const [caseDatalist, setCaseDataList] = useState([]);
+
     useEffect(() => {
-        const data = caseStudiesData.filter((item) => item.id == id);
+        if(search == 'Transformation'){
+            setCaseDataList(transformationData);
+        }
+        else if(search == 'Automation'){
+            setCaseDataList(automationData);
+        }
+    
+        const data = caseDatalist.filter((item) => item.id == id);
         setCaseData(data);
         console.log(search, "type");
-    }, []);
+    }, [caseDatalist]);
 
 
     console.log(caseData, 'outer');
@@ -57,7 +67,7 @@ const Page = () => {
                                     <div className=""style={{borderBottom:'1px solid #d3d3d3'}}>
                                         <h2 className="title text-[28px] font-semibold mb-6">Client Brief</h2>
                                        {item?.customerBrief?.description && (<p className="text-[32px] leading-[40px] font-medium mb-6">{item?.customerBrief?.description}</p>)} 
-                                        {item?.customerBrief?.BriefList&& (
+                                        {item?.customerBrief?.BriefList && (
                                             <ul class="space-y-1 text-black list-disc list-outside mb-6">
                                             {item?.customerBrief?.BriefList.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
