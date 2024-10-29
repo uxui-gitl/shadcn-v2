@@ -15,11 +15,11 @@ const Page = () => {
 
   return (
     <>
-      <ContactBanner />
+      <ContactBanner bannerImage={'/contact/contact-banner.svg'} title={`Join Our Team`} desc={`Lead your future with Godrej Infotech. We value innovation and teamwork.`} />
 
       <SectionWrapperNew
-        sectionHeading="Hey, Great to see you here"
-        sectionDesc="The Inspiring Journey Of Godrej Infotech"
+        sectionHeading="Enrich Your Future with Us"
+        sectionDesc="We're hiring passionate professionals to drive meaningful impact."
         sectionTextColor='#000'
         sectionHeadingLayout="center"
       >
@@ -132,18 +132,18 @@ const Page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={'/homeNew/blog-svg.png'}
-        Heading={"Elevate Your Professional Journey"}
+        Heading={"Empowering Professional Journeys / Grow with Us"}
         Desc={
-          "Join a collaborative environment that fosters creativity and innovation. Take the next step in your career today!"
+          "As a leading digital transformation company, we offer exciting opportunities for growth and development."
         }
         Color={"white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
       ></BlogSection>
 
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Why Join Us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Transform Your Business with Us"
         }
       ></TransformBusinessForm>
     </>

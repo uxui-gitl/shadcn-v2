@@ -443,11 +443,12 @@ const CloudStack = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"Optimizing Cloud Infrastructure: A Comprehensive Guide to Monitoring and Maintenance"}
+        Heading={"Optimizing Cloud Infrastructure"}
         Desc={
           "As cloud computing continues to transform the way organizations operate, the importance of effective cloud monitoring and maintenance cannot be overstated. In this article, we will delve into the critical aspects of cloud monitoring and maintenance, providing actionable tips and best practices to ensure optimal performance, reliability, and security in cloud environments."
         }
         Color={"white"}
+        readMoreUrl="#"
       ></BlogSection>
 
       {/* Distinctive section*/}

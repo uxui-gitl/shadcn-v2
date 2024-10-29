@@ -144,7 +144,7 @@ const MicrosoftPractises = () => {
       cardBGColor: "#F5B1DC",
       cardHeading: "Dealer <br/> Management",
       cardDesc:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+        `<ul class="max-w-md w-full space-y-1 text-white list-disc list-outside">
               <li>Data Factory</li>
               <li>Synapse Data Engineering</li>
               <li>Synapse5 Data Science</li>
