@@ -235,7 +235,7 @@ export default function Home() {
     },
     {
       id: 3,
-      cardHeading: "Salesforce Implementation against Tight Deadline ",
+      cardHeading: "Salesforce Implementation within Tight Deadline",
       cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
       designation: '- Operations Head',
       companyName: 'India’s Security Solutions Company',
@@ -280,7 +280,7 @@ export default function Home() {
     {
       id: 2,
       cardTitle: "",
-      cardHeading: "Experience New Business Dimensions with CLOUD",
+      cardHeading: "Cloud Enables New Possibilities",
       cardDesc: 'Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility',
       rawData: `<div class="grid grid-cols-2 gap-4">
             <div>
@@ -307,7 +307,7 @@ export default function Home() {
     {
       id: 3,
       cardTitle: "",
-      cardHeading: "Leverage Key Drivers of Growth with Digital Transformation Solutions",
+      cardHeading: "Future Focused Transformation Solutions",
       cardDesc: 'Enhance business productivity and modernize stakeholder experience with streamlined operations',
       rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
@@ -674,7 +674,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-        sectionHeading={"Focused Cluster "}
+        sectionHeading={"Capabilities and Expertise"}
         sectionDesc={"Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."}
         sectionTextColor="black"
         title="Count on Us"

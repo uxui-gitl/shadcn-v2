@@ -44,18 +44,18 @@ export default function Home() {
   const GuidingPrinciples = [
     {
       id: 1,
-      title: "Purpose",
-      desc: "Create Sustainable Value for our Stakeholders by connecting People and Technology.",
+      title: "Vision",
+      desc: "Be a world class provider of high-quality Information’s & Technology solutions.",
     },
     {
       id: 2,
-      title: "Vision",
-      desc: "Be a world class provider of high-quality Information & Technology solutions.",
+      title: "Mission",
+      desc: "Beyond Business through integrated IT solutions.",
     },
     {
       id: 3,
-      title: "Value",
-      desc: "Integrity,Responsiveness,Commitment, Teamwork",
+      title: "Values",
+      desc: "Integrity, Responsiveness, Commitment, Teamwork",
     },
   ];
 
@@ -76,7 +76,7 @@ export default function Home() {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Case Studies",
+      cardHeading: "Brochures",
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
@@ -88,7 +88,7 @@ export default function Home() {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "Success Stories",
+      cardHeading: "Testimonials ",
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
@@ -100,26 +100,14 @@ export default function Home() {
         "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#7F4EE1",
-      cardHeading: "News & Updates",
+      cardHeading: "Success Stories ",
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
       pageURL:"http://google.com"
     },
 
-    {
-      id: 5,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
-
-      cardBGColor: "#7F4EE1",
-      cardHeading: "Process Manufacturing",
-      cardDesc: "",
-      isArrow: true,
-      cardTextColor: "white",
-      pageURL:"http://google.com"
-    },
-
+    
     // Add more cards as needed
   ];
   
@@ -195,15 +183,15 @@ export default function Home() {
   const items4 = [
     {
       id: 17,
-      content: "Automation  ",
+      content: "AUTOMATION  ",
     },
     {
       id: 18,
-      content: "Cloud",
+      content: "CLOUD",
     },
     {
       id: 19,
-      content: "Transformation",
+      content: "TRANSFORMATION",
     },
   ];
 
@@ -218,8 +206,8 @@ export default function Home() {
       ),
     },
     {
-      title: "Industries",
-      value: "industries",
+      title: "Industry Spotlight",
+      value: "industryspotlight",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
           <IndustryContent />
@@ -253,18 +241,18 @@ export default function Home() {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Project Highlights",
+      heading: "Delivering Results that Matters",
       description:
-        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
+        "World’s top-notch businesses choose us for our industry knowledge and excellent technical acumen.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "Speedy Analytics Report Generation",
+      heading: "Increased Efficiency",
       description:
-        "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+        "Belgium based Global Manufacturer of Sheet Metal Forming Machines Implements Infor LN",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -274,9 +262,9 @@ export default function Home() {
       imageURL: "/path/to/image1.jpg",
       title: "",
 
-      heading: "Positive ROI with Cloud Transition",
+      heading: "•	Streamlined Operations",
       description:
-        "Prominent American watch and lifestyle distribution organization achieves increase in uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+        "Europe's Leading Machine Manufacturer Automates Operations with Integrated Infor LN 10.4 Solution",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
       color: "#000",
       bgCardColor: "#EFE9FB",
@@ -284,9 +272,20 @@ export default function Home() {
     {
       imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
       title: "",
-      heading: "Infor CloudSuite Managed Support Services ",
+      heading: "Optimised Operations",
       description:
-        "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+        "Global Leader in Industrial Packaging Products and Services company signs contract for Infor LN rollout & support activities",
+      link: "/case-study-1",
+      color: "#000",
+      bgCardColor: "#E1F2EF",
+    },
+
+    {
+      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      title: "",
+      heading: "Optimise 25% Operational Cost",
+      description:
+        "Europe’s Leading Maritime Service Provider Increases Efficiency with Infor Managed Services ",
       link: "/case-study-1",
       color: "#000",
       bgCardColor: "#E1F2EF",
@@ -314,10 +313,10 @@ export default function Home() {
     },
     {
       id: 3,
-      cardHeading: "Salesforce Implementation against Tight Deadline ",
-      cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
-      designation: "- Operations Head",
-      companyName: "India’s Security Solutions Company",
+      cardHeading: "3.	Successful Migration to Infor CloudSuite ",
+      cardDesc: `Successful migration from on-premises to multi-tenant environment with minimal issues, thanks to Godrej Infotech's dedicated resources, expertise, and support. Their timely assistance ensures seamless customization, data migration, and end-user support. `,
+      designation: "- IT Manager",
+      companyName: "Leading Dredging and Maritime Service Provider",
     },
   ];
 
@@ -327,7 +326,7 @@ export default function Home() {
       cardTitle: "",
       cardHeading: "Embrace Tomorrow with AUTOMATION",
       cardDesc:
-        "Accelerate operations, drive innovation and increase accuracy with AI powered solutions",
+        "Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), IoT & Analytics.",
       rawData: `<div class="grid grid-cols-3 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -339,7 +338,7 @@ export default function Home() {
             </div>
             <div>
               <div class="text-[40px] font-semibold mb-12">
-              Tech Stack
+              Technology Suite
               </div>
               <p class="text-[22px] font-medium mb-8">Java </p>
               <p class="text-[22px] font-medium mb-8">.Net, SharePoint</p>
@@ -360,9 +359,9 @@ export default function Home() {
     {
       id: 2,
       cardTitle: "",
-      cardHeading: "Experience New Business Dimensions with CLOUD",
+      cardHeading: "Cloud Enables New Possibilities",
       cardDesc:
-        "Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility",
+        "We are committed to provide, secure, cost-effective & scalable cloud implementation, cloud migration & cloud support services to our customers. ",
       rawData: `<div class="grid grid-cols-2 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -370,7 +369,7 @@ export default function Home() {
               </div>
               <p class="text-[22px] font-medium mb-8">Dynamics AX Upgrade</p>
               <p class="text-[22px] font-medium mb-8">Dynamics NAV Upgrade</p>
-              <p class="text-[22px] font-medium mb-8">Upgrade to Infor LN</p>
+              <p class="text-[22px] font-medium mb-8">Upgrade to Infor LN Cloud</p>
               <p class="text-[22px] font-medium mb-8">Migrate Applications to Cloud</p>
               <p class="text-[22px] font-medium mb-8">Lift and Shift to Cloud</p>
             </div>
@@ -380,7 +379,8 @@ export default function Home() {
               </div>
               <p class="text-[22px] font-medium mb-8">Cloud Infrastructure </p>
               <p class="text-[22px] font-medium mb-8">Business Apps on Cloud</p>
-              <p class="text-[22px] font-medium mb-8"> M365 Services</p>
+              <p class="text-[22px] font-medium mb-8">M365 Services</p>
+              <p class="text-[22px] font-medium mb-8">Data Analytics </p>
             </div>
             <div>
           </div>`,
@@ -389,9 +389,9 @@ export default function Home() {
       id: 3,
       cardTitle: "",
       cardHeading:
-        "Leverage Key Drivers of Growth with Digital Transformation Solutions",
+        "Future-Proof Transformation Solutions",
       cardDesc:
-        "Enhance business productivity and modernize stakeholder experience with streamlined operations",
+        "We implement digital solutions that modernize and enhance user experience, ultimately leading to a digitally- sound businesses.",
       rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
         <div class="text-[40px] font-semibold mb-12">
@@ -408,9 +408,9 @@ export default function Home() {
         </div>
         <p class="text-[22px] font-medium mb-8">Microsoft CRM </p>
         <p class="text-[22px] font-medium mb-8">Infor CRM</p>
-        <p class="text-[22px] font-medium mb-8">Salesforce</p>
+        <p class="text-[22px] font-medium mb-8">Salesforce CRM</p>
         <p class="text-[22px] font-medium mb-8">LS Retail</p>
-        <p class="text-[22px] font-medium mb-8">Ecommerce</p>
+        <p class="text-[22px] font-medium mb-8">Magento Ecommerce</p>
 
       </div>
       <div>
@@ -556,7 +556,7 @@ export default function Home() {
             className="container mx-auto text-[76px] leading-[86px] text-white absolute"
             style={{ top: "30%", left: "0", right: "0" }}
           >
-            Delivering Business<br></br> value with
+            DELIVERING BUSINESS<br></br> VALUE WITH
             <motion.div
               key={items4[index2]?.id}
               initial={{ y: 10, opacity: 0 }}
@@ -705,8 +705,8 @@ export default function Home() {
 
       {/* innovative section */}
       <SectionWrapperNew
-        sectionHeading={"ACT based Approach for Leading Future Ready Business"}
-        sectionDesc={"Value – Driven Solutions for Tomorrow's Opportunities"}
+        sectionHeading={"ACT BASED APPROACH OF BUILDING FUTURE READY SOLUTIONS"}
+        sectionDesc={""}
         sectionTextColor="white"
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
@@ -752,7 +752,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-        sectionHeading={"Focused Cluster " }
+        sectionHeading={"Capabilities and Partnership" }
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
         }
@@ -807,9 +807,9 @@ export default function Home() {
 
       <IndustrySpotlight
         cardData={INDUSTRY_SPOTLIGHT}
-        sectionHeading="Insights"
+        sectionHeading="Resources"
         sectionDesc={
-          "Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing."
+          "Learn more about our solutions, success stories and insights."
         }
       />
 
@@ -818,7 +818,7 @@ export default function Home() {
         blogImageUrl={"/homeNew/blog-svg.png"}
         Heading={"Step Up in Your Professional Journey"}
         Desc={
-          "Work alongside talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
+          "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
         }
         Color={"white"}
         readMoreUrl={""}
@@ -853,7 +853,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"Delighted Customers share their Successful Experience"}
+        Heading={"Customers Share their Successful Experiences"}
         Desc={""}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
@@ -863,7 +863,7 @@ export default function Home() {
       <TransformBusinessForm
         Title={"Transform your Business with Us"}
         Desc={
-          "Let ‘s discuss how our ACT (Automation, Cloud and Digital Transformation) solutions can help you with rapid growth."
+          "Let’s discuss how digital transformation solutions can help you with rapid growth."
         }
       ></TransformBusinessForm>
 
@@ -943,10 +943,11 @@ const IndustryContent = () => {
   const data = [
     "Manufacturing",
     "Retail",
-    "Trading & Distribution",
-    "Healthcare",
-    "Professional Service",
     "Project",
+    "Trading & Distribution",
+    "Professional Service",
+    "Healthcare",
+    
   ];
 
   return (
@@ -985,10 +986,7 @@ const ParternerContent = () => {
     "Microsoft  ",
     "Infor  ",
     "Oracle  ",
-    "Salesforce  ",
-    "LS Retail  ",
-    "Automation Anywhere ",
-    "Ui Path",
+    "Hexagon EAM ",
   ];
 
   return (
