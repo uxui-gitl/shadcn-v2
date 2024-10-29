@@ -122,7 +122,20 @@ const page = () => {
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
       CardHeading: "Retail",
       CardDesc:
-        "Migrate email and infrastructure to Microsoft's cloud-based platform for seamless collaboration and security.",
+       
+        `
+        <div class="my-10">
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Dynamic slotting to meet the changing product needs</p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Interactive Web & Mobile Dashboards</p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Omnichannel combines in-store, depot and warehouse channels</p>
+    </div>
+</div>
+        `,
       isArrow: "false",
       link: [],
     },
@@ -135,9 +148,21 @@ const page = () => {
       CardTextColor: '#000',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "ERP on <br/>Cloud",
+      CardHeading: "3 PL Logistics",
       CardDesc:
-        "Deliver enhanced business agility, operation automation and better decision-making capability with analytics.",
+        `
+        <div class="my-10">
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Tailored 3PL Dashboard for Intelligent Reporting </p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Advanced Inventory, Space and Labor Optimization</p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Multi-Warehouse, Multi-Owner Support </p>
+    </div>
+</div>
+        `,
       isArrow: "false",
       link: [],
     },
@@ -149,9 +174,24 @@ const page = () => {
       CardTextColor: '#000',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Application Migration <br/>to the Cloud",
+      CardHeading: "Trading and Distribution",
       CardDesc:
-        "Scaling resources on-demand, we specialize in effective migration of applications to the cloud.",
+        `
+        <div class="my-10">
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Warehouse optimisation</p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Order fulfilment</p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Inventory management</p>
+    </div>
+    <div class="flex py-4" style="border-bottom:1px solid #333"><span class="text-[20px] text-[#808080] mr-4"></span>
+        <p class="text-[20px] text-[#333] mr-4 font-medium">Minimize stockouts</p>
+    </div>
+</div>
+        `,
       isArrow: "false",
       link: [],
     },
