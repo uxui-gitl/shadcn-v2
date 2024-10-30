@@ -209,7 +209,7 @@
               },
               {
                 id: 4,
-                title: "Magento Ecom",
+                title: "E-Commerce",
                 url: "/",
                 level: 4,
                 type: "link",
