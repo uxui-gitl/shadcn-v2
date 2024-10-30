@@ -51,6 +51,14 @@ export default function RootLayout({ children, route }) {
 
   const metadata = generateMetadata(pathname);
 
+
+  useEffect(() => {
+    async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const scroll = new LocomotiveScroll(); 
+    }
+  }, []);
+
   return (
     <html lang="en">
       <head>
