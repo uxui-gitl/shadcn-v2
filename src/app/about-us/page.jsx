@@ -18,34 +18,250 @@ import Dialog from "@/components/Dialog";
 import { Timeline } from "@/components/ui/timeline";
 import { title } from "process";
 
+
+
+
 const ContactUs = () => {
   const [showModal1, setshowModal1] = useState(false);
+  const [businessItem, setBusinessItem] = useState([]);
 
-  const GuidingPrinciples=[
-    {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.'},
-    {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.'},
-    {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork'},
-   
+  const GuidingPrinciples = [
+    { id: 1, title: 'Purpose', desc: 'Create Sustainable Value for our Stakeholders by connecting People and Technology.' },
+    { id: 2, title: 'Vision', desc: 'Be a world class provider of high-quality Information & Technology solutions.' },
+    { id: 3, title: 'Value', desc: 'Integrity, Responsiveness, Commitment, Teamwork' },
   ]
 
-  const AWARD_DATA=[
-    {id:1,Year:'2020', Name:'', desc:`Infor announced Godrej Infotech as 'Influential Partner of the year' for its outstanding contribution and partnership`},
-    {id:2,Year:'2022', Name:'', desc:`Godrej Infotech achieved the renowned "Great Place to Work" certification for the year 2022-2023`},
-    {id:3,Year:'2022', Name:'', desc:`Vaishali Victor Raj, our HR head, is named among India's Best People Leaders, this acknowledges her exceptional leadership and influence in the HR landscape`},
-    {id:4,Year:'2023', Name:'', desc:`Affirming inclusivity, growth, and happiness, Godrej Infotech is proud to be Great Place to Work Certified, once again`},
-    {id:5,Year:'2023', Name:'', desc:`Adjudged by Ernst & Young, the Official Tabulators, Economic Times Honors Godrej Infotech as ET Future ready Organization 2023-24`},
-    {id:6,Year:'2024', Name:'', desc:`Solutions Partner designation in the Microsoft AI Cloud Partner Program`},
-   
+  const AWARD_DATA = [
+    { id: 1, Year: '2020', Name: '', desc: `Infor announced Godrej Infotech as 'Influential Partner of the year' for its outstanding contribution and partnership` },
+    { id: 2, Year: '2022', Name: '', desc: `Godrej Infotech achieved the renowned "Great Place to Work" certification for the year 2022-2023` },
+    { id: 3, Year: '2022', Name: '', desc: `Vaishali Victor Raj, our HR head, is named among India's Best People Leaders, this acknowledges her exceptional leadership and influence in the HR landscape` },
+    { id: 4, Year: '2023', Name: '', desc: `Affirming inclusivity, growth, and happiness, Godrej Infotech is proud to be Great Place to Work Certified, once again` },
+    { id: 5, Year: '2023', Name: '', desc: `Adjudged by Ernst & Young, the Official Tabulators, Economic Times Honors Godrej Infotech as ET Future ready Organization 2023-24` },
+    { id: 6, Year: '2024', Name: '', desc: `Solutions Partner designation in the Microsoft AI Cloud Partner Program` },
+
   ]
 
-  const KeyPolicies_DATA=[
-    {id:1,title:'Godrej Infotech',  desc:``},
-    {id:2,title:'About Us', desc:``},
-    {id:3,title:'Empowering Business Through Digital Transformation', desc:``},
-    {id:4,title:'CRM, ERP, Cloud, AI & ML',  desc:``},
-    
+  const KeyPolicies_DATA = [
+    {
+      id: 1, title: 'Statutory Report', Desc: `Dummy Text. Dummy Text.`,
+      rawData: ` <ul>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2023-2024</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAGMofGITL2023-24.pdf"
+                    target="_blank">Transcript
+                    of
+                    the Annual General Meeting held on 25th July, 2024</a></li>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/Notice_27th_AGM_GITL.pdf"
+                    target="_blank">Notice
+                    of 27th
+                    Annual
+                    General Meeting to be held on Thursday, 25th July, 2024</a></li>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/MGT-7.pdf" target="_blank">Draft
+                    Annual Return:
+                    Form MGT-7-
+                    FY 2023-24</a></li>
+                </ul>
+              </li>
+
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2022-2023</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/Transcript-AGM-4-July-2023.pdf"
+                    target="_blank">Transcript of the Annual General Meeting held on 4th July, 2023</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2022-23.pdf"
+                    target="_blank">Annual Return for FY 2022-23</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReportAccountsFY2022-23.pdf"
+                    target="_blank">Notice of Annual General Meeting for FY 2022-23</a></li>
+
+
+                </ul>
+              </li>
+
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2021-2022</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2021-22.pdf"
+                    target="_blank">Transcript of the Annual
+                    General Meeting held on 2nd August 2022</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2021-22.pdf"
+                    target="_blank">Annual Return for
+                    FY 2021-22</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/NoticeAndAnnualReport2021-22.pdf"
+                    target="_blank">Notice and
+                    Annual Report for FY 2021-22</a></li>
+                </ul>
+              </li>
+
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2020-2021</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2020-21.pdf"
+                    target="_blank">Annual Return for FY 2020-21</a></li>
+
+                  <li class="pb-4"><a
+                    href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAnnualGeneralMeeting-21Jun2021.pdf"
+                    target="_blank">Transcript of the Annual General Meeting held on 21st June, 2021</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/NoticeAndAnnualReport2020-21.pdf"
+                    target="_blank">Notice and Annual Report for FY 2020-21</a></li>
+                </ul>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2019-2020</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReport-2019-20.pdf"
+                    target="_blank">Notice and Annual Report for FY 2019-20</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturn-2019-20.pdf"
+                    target="_blank">Extract of Annual Return in Form MGT-9 for FY 2019-20</a></li>
+
+                </ul>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2018-2019</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM2018-19.pdf"
+                    target="_blank">Notice of Annual General Meeting for FY 2018-19</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturn-2018-19.pdf"
+                    target="_blank">Annual Return for FY 2018-19</a></li>
+                </ul>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2017-2018</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2018.pdf"
+                    target="_blank">Notice of Annual General Meeting for FY 2017-18</a></li>
+
+                </ul>
+              </li>
+            </ul>
+      `
+    },
+    { id: 2, title: 'Corporate Policies', Desc: `Dummy Text. Dummy Text.`,
+       rawData: ` <ol>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/ABAC.pdf" target="_blank">Anti-Bribery and Anti-Corruption</a>3</h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/ethics.pdf" target="_blank">Code of Ethics and Business Conduct</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Corporate-Environmental-Policy.pdf" target="_blank">Corporate
+                  Environmental Policy</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Fraud-Investigation-Guidelines.pdf" target="_blank">Fraud
+                  Investigation Guidelines</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/HIV_AIDS_Policy.pdf" target="_blank">HIV/ AIDS</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/NRC-Policy.pdf" target="_blank">Nomination and Remuneration
+                  Policy</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">
+                  <a href="assets/pdf/corporatePolicies/sexualHarassment.pdf" target="_blank">Prevention of Sexual Harassment
+                    at Workplace</a>
+                </h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Social-Media-Policy.pdf" target="_blank">Social Media Policy</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
+              </li>
+            </ol>`
+     },
+    { id: 3, title: 'CSR Updates', Desc: `Dummy Text. Dummy Text.`,
+      rawData: `   <ul>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6 font-bold">CSR Initiatives</h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR.pdf" target="_blank">CSR policy</a></h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR23-24.pdf" target="_blank">CSR Action Plan FY 2023-24</a></h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR22-23.pdf" target="_blank">CSR Action Plan FY 2022-23 </a></h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR21-22.pdf" target="_blank">CSR Action Plan FY 2021-22 </a></h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR20-21.pdf" target="_blank">CSR Action Plan FY 2020-21 </a></h3>
+                </li>
+              </ul>
+
+              <ul>
+                <li class="flex items-start mt-10 py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6 font-bold">CSR Commitee</h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6">Mrs. Nyrika Holkar, Chairperson</h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6">Mr. P. E. Fouzdar, Member</h3>
+                </li>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6">Mr. V. R. Mehta, Member</h3>
+                </li>
+              </ul>`
+     },
+    { id: 4, title: 'Statutory Updates', Desc: `Dummy Text. Dummy Text.`,
+      rawData:`
+       <ol>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
+                  target="_blank">Terms &amp; Conditions of appointment of Independent Directors</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Parpia.pdf"
+                  target="_blank">Notice of Candidature of Mr. M. M. Parpia</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Movdawalla.pdf"
+                  target="_blank">Notice of Candidature of Mr. P. P. Movdawalla</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Mehta.pdf"
+                  target="_blank">Notice of Candidature of Mr. V. R. Mehta</a></h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">Dr. K. A. Palia ceased to be a Director of the Company with effect from 10th May, 2023</h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">Mr. K. K. Dastur ceased to a Director of the Company with effect from 10th May, 2023</h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">Mr. S. N. Irani ceased to be a Director of the Company with effect from 25th July 2022</h3>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">
+                  The Register of Members and Share Transfer Books of the Company will remain closed from
+                  Monday, 18th July 2022 to Tuesday, 2nd August 2022 (both days inclusive). All persons whose names are
+                  recorded in the Register of Members maintained by the Company/Depositories as on the cut-off date, i.e.
+                  Friday, 15th July, 2022 only shall be entitled to attend and vote at the Annual General Meeting.
+                </h3>
+              </li>
+
+            </ol>`,
+     },
+
   ]
-  
+
   const DATA_2021_Present = [
     {
       id: 1,
@@ -69,7 +285,7 @@ const ContactUs = () => {
     }
   ]
 
-  const DATA_2016_2020  = [
+  const DATA_2016_2020 = [
     {
       id: 1,
       Desc: `2020 - Partnership with UiPath India and Automation`
@@ -91,13 +307,13 @@ const ContactUs = () => {
       Desc: `2017 - Co-Development Engagement with Infor`
     },
     {
-      id:6,
-      desc:`2016 - LS Retail Diamond Partner`
+      id: 6,
+      Desc: `2016 - LS Retail Diamond Partner`
     }
 
   ]
 
-  const DATA_2011_2015  = [
+  const DATA_2011_2015 = [
     {
       id: 1,
       Desc: `2015 - LS Retail Platinum Partner`
@@ -119,17 +335,17 @@ const ContactUs = () => {
       Desc: `2012 - Infor-Winner of Golden Deal of the Year`
     },
     {
-      id:6,
-      desc:`2012 - Microsoft dynamics Reseller of the year`
+      id: 6,
+      Desc: `2012 - Microsoft dynamics Reseller of the year`
     },
-    { 
+    {
       id: 7,
-      desc: '2011 - Best Partner for LS Retail'
+      Desc: '2011 - Best Partner for LS Retail'
     }
 
   ]
 
-  const DATA_2005_2010  = [
+  const DATA_2005_2010 = [
     {
       id: 1,
       Desc: `2010 - Best partner for Discrete Manufacturing by Microsoft`
@@ -151,17 +367,17 @@ const ContactUs = () => {
       Desc: `2008 - Opened Office in Sharjah`
     },
     {
-      id:6,
-      desc:`2007 - Best Partner Award for Infor in Asia Pacific`
+      id: 6,
+      Desc: `2007 - Best Partner Award for Infor in Asia Pacific`
     },
-    { 
+    {
       id: 7,
-      desc: '2006 - Award for Microsoft President Club Member'
+      Desc: '2006 - Award for Microsoft President Club Member'
     }
 
   ]
 
-  const DATA_1999_2004  = [
+  const DATA_1999_2004 = [
     {
       id: 1,
       Desc: `2004 - Partnership with Microsoft`
@@ -188,58 +404,58 @@ const ContactUs = () => {
     {
       title: "2021",
       content: (
-      <>
-      <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2021 - Present – Sustaining Holistic Excellence</h2>
-        <div className="my-10">
-          {DATA_2021_Present.map((item,index) => (
-            <>
-             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
-            <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+        <>
+          <div className="">
+            <h2 className="text-[28px] font-semibold leading-[36px]">2021 - Present - Sustaining Holistic Excellence</h2>
+            <div className="my-10">
+              {DATA_2021_Present.map((item, index) => (
+                <>
+                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
+                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  </div>
+                </>
+              ))}
+
+            </div>
           </div>
-            </>
-          ))}
-         
-        </div>
-      </div>
-      </>
+        </>
       ),
     },
     {
       title: "2016",
       content: (
         <>
-      <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2016 – 2020 – Multi-faceted Accomplishments</h2>
-        <div className="my-10">
-          {DATA_2016_2020.map((item,index) => (
-            <>
-             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
-            <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+          <div className="">
+            <h2 className="text-[28px] font-semibold leading-[36px]">2016 - 2020 - Multi-faceted Accomplishments</h2>
+            <div className="my-10">
+              {DATA_2016_2020.map((item, index) => (
+                <>
+                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
+                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
-            </>
-          ))}
-        </div>
-      </div>
-      </>
+        </>
       ),
     },
     {
       title: "2011",
       content: (
         <>
-         <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2011 - 2015 – A Triumphant Year</h2>
-        <div className="my-10">
-          {DATA_2011_2015.map((item,index) => (
-            <>
-             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
-            <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+          <div className="">
+            <h2 className="text-[28px] font-semibold leading-[36px]">2011 - 2015 - A Triumphant Year</h2>
+            <div className="my-10">
+              {DATA_2011_2015.map((item, index) => (
+                <>
+                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
+                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
-            </>
-          ))}
-        </div>
-      </div>
         </>
       ),
     },
@@ -247,18 +463,18 @@ const ContactUs = () => {
       title: "2005",
       content: (
         <>
-         <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2005 - 2010 – Prominent Honors</h2>
-        <div className="my-10">
-          {DATA_2005_2010.map((item,index) => (
-            <>
-             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
-            <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+          <div className="">
+            <h2 className="text-[28px] font-semibold leading-[36px]">2005 - 2010 – Prominent Honors</h2>
+            <div className="my-10">
+              {DATA_2005_2010.map((item, index) => (
+                <>
+                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
+                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
-            </>
-          ))}
-        </div>
-      </div>
         </>
       ),
     },
@@ -266,40 +482,51 @@ const ContactUs = () => {
       title: "1999",
       content: (
         <>
-         <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">1999 - 2004 – Inception of a Technology Powerhouse, Strategi</h2>
-        <div className="my-10">
-          {DATA_1999_2004.map((item, index) => (
-            <>
-             <div className="flex py-4" key={index} style={{borderBottom:'1px solid #E4E4E4'}}>
-            <span className="text-[20px] text-[#808080] mr-4">{}</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+          <div className="">
+            <h2 className="text-[28px] font-semibold leading-[36px]">1999 - 2004 - Inception of a Technology Powerhouse, Strategi</h2>
+            <div className="my-10">
+              {DATA_1999_2004.map((item, index) => (
+                <>
+                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
+                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
-            </>
-          ))}
-        </div>
-      </div>
         </>
       ),
     },
   ];
 
+    // handle click businesstranform card click
+    function handleBusinessCardClick(modal, item) {
+      setshowModal1(modal);
+      setBusinessItem(item);
+    }
+
   return (
     <>
-     <Dialog
+      <Dialog
         shouldShow={showModal1}
         onRequestClose={() => {
           setshowModal1((prev) => !prev);
         }}
-        title={"dummy title"}
+        title={businessItem?.title}
       >
-        <h1>Dummy data</h1>
+        <div>
+        <div className="">
+          <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
+        </div>
+        </div>
       </Dialog>
+
       {/* dialog end */}
       {/* Nav */}
       <Announcement />
 
       <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
+        <div className={`absolute w-full`}>
           <Navbar theme="light" />
         </div>
       </div>
@@ -325,7 +552,7 @@ const ContactUs = () => {
         </div>
 
         <div className="my-10">
-        <Timeline data={data} />
+          <Timeline data={data} />
         </div>
 
       </SectionWrapperNew>
@@ -473,7 +700,7 @@ const ContactUs = () => {
                     {item.Year}
                   </th>
                   <td class="px-6 py-4 text-[20px] font-semibold">
-                    {}
+                    { }
                   </td>
                   <td class="px-6 py-4 text-[20px]">
                     {item.desc}
@@ -501,11 +728,11 @@ const ContactUs = () => {
           {KeyPolicies_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow " style={{ border: '1px solid #d3d3d3' }}>
-                  <h6 className="text-[20px] font-semibold mb-6">{item.title}</h6>
-                  <p className="text-[16px] mb-[92px]">{}</p>
-                  <div className="flex justify-end">
-                    <Image src="/about/chevron-right.png" width={25} height={25} alt="che" onClick={() => setshowModal1((prev) => !prev)} style={{cursor:'pointer'}}/>
-                  </div>
+                <h6 className="text-[20px] font-semibold mb-6">{item.title}</h6>
+                <p className="text-[16px] mb-[92px]">{ }</p>
+                <div className="flex justify-end">
+                  <Image src="/about/chevron-right.png" width={25} height={25} alt="che" onClick={() => handleBusinessCardClick(true, item)} style={{ cursor: 'pointer' }} />
+                </div>
               </div>
             </SwiperSlide>
           ))}

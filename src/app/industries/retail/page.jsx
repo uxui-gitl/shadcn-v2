@@ -7,6 +7,7 @@ import Image from "next/image";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogSection from "@/sections/blog/BlogSection";
+import AcceleratorSection from "@/sections/accelerator/AcceleratorSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import Slider from "@/components/Slider";
@@ -14,7 +15,6 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { Tabs } from "@/components/ui/tabs";
 import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-
 
 
 
@@ -26,15 +26,11 @@ function page() {
     const CHALLENGES_LIST_DATA = [
         { id: 1, title: "Inconsistent omnichannel experiences", icon: '/upgradeCloud/icons/ico--target.svg' },
         { id: 2, title: "Limited personalization and targeted marketing", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Insufficient customer support and engagement", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Lack of real-time inventory visibility", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Inaccurate inventory forecasting and stockouts", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "High operational costs and limited scalability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Missed opportunities for cross-selling and upselling", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 8, title: "Limited visibility into supply chain operations", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 9, title: "High shipping costs and delayed deliveries", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 10, title: "Lack of transparency and accountability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 11, title: "Inadequate data analytics and insights", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Inaccurate inventory forecasting and stockouts", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "High operational costs and limited scalability", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Missed opportunities for cross-selling and upselling", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "High shipping costs and delayed deliveries", icon: '/upgradeCloud/icons/ico--target.svg' },
+
         ];
 
     const tabs = [
@@ -244,6 +240,7 @@ function page() {
           title: "Retail Store Transformation",
           desc:
             "Enabling personalization in sales process, loyalty management programs, and enhancing customer experience with retail stores modernization.",
+            
         },
     
         {
@@ -530,7 +527,7 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Digital Solutions to Strengthen Customer Experience and Optimise Retail Business"
+                title="Expert Digital Solutions for Retailers"
                 desc="Create seamless shopping experiences across channels and touchpoint"
                 cta="Let's Connect"
                 width="60%"
@@ -646,6 +643,20 @@ function page() {
         </Slider>
       </SectionWrapperNew>
 
+      <AcceleratorSection
+                style={{ backgroundColor: '#EFE9FB' }}
+                ID={"Accelerator"}
+                Heading={"Accelerator"}
+                Desc={
+                    "Helping speciality stores to large –scale retailers to increase business competency."
+                }
+                Color={""}
+            >
+                <p className="font-semibold">Order Management System (OMS)</p>
+                <p>Integrated with D365 F&O, this value-added solution provides real-time tracking, automated stock management, and customer onboarding.</p>
+
+            </AcceleratorSection>
+
       <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Driving growth across various business sectors with scalable Business Central expertise.'} />
 
             <SectionWrapperNew
@@ -724,7 +735,7 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Why Adobe Commerce is the Ultimate Solution for Your Online Business"}
+                Heading={"Adobe Commerce Solution for Online Business"}
                 Desc={"Formerly known as Magento Commerce, it is an e-commerce platform development tool that builds multi-channel e-commerce experiences, equipped with robust security, high performance, and intuitive interfaces for B2B and B2C merchants."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}

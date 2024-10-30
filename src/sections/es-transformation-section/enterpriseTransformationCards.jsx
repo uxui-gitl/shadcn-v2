@@ -3,13 +3,17 @@
 import SectionWrapper from '@/components/SectionWrapper';
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
+import Icon from "@mdi/react";
+import { mdiArrowRight } from "@mdi/js";
+
 
 const CARDS_DATA = [
     {
         logoSrc: "/enterprise-suite/logos/logo--infor.png",
         altText: "Infor Logo",
-        width:120,
-        height:48,
+        width: 120,
+        height: 48,
         listItems: [
             "Infor Cloud Suite",
             "Infor LN",
@@ -20,8 +24,8 @@ const CARDS_DATA = [
     {
         logoSrc: "/enterprise-suite/logos/logo--microsoft.png",
         altText: "Infor Logo",
-        width:196,
-        height:48,
+        width: 196,
+        height: 48,
         listItems: [
             "Dynamics 365 CRM",
             "Dynamics 365 Finance and Operations",
@@ -32,12 +36,12 @@ const CARDS_DATA = [
     {
         logoSrc: "/enterprise-suite/logos/logo--oracle.png",
         altText: "Infor Logo",
-        width:120,
-        height:48,
+        width: 120,
+        height: 48,
         listItems: [
             "Oracle Fusion Cloud",
             "Oracle EBS",
-        
+
         ]
     }
 ];
@@ -64,6 +68,19 @@ const EnterpriseTransformationCards = () => {
                                         </li>
                                     ))}
                                 </ul>
+
+                                <Link
+                                    href={``}
+                                    target="_blank"
+                                    className="text-white mr-5 mt-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                                >
+                                    {'Know More'}
+                                    <Icon
+                                        path={mdiArrowRight}
+                                        style={{ marginLeft: "0.5em", marginTop: '1px' }}
+                                        size={1}
+                                    />
+                                </Link>
                             </div>
                         ))}
                     </div>

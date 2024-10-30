@@ -5,13 +5,15 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
-import BlogSection from "@/sections/blog/BlogSection";
+
+import AcceleratorSection from "@/sections/accelerator/AcceleratorSection"
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
 import LeftHeading from "@/components/LeftHeading";
+import BlogSection from "@/sections/blog/BlogSection";
 
 
 const page = () => {
@@ -278,7 +280,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Work Smarter, Adapt Faster & Achieve Better Results with D365 Business Central"
+        title="Achieve Better Business Results, Smartly with D365 Business Central"
         desc="Simplify financial management and automate operations with our certified experts, successful implementation and upgrade experience."
         cta="Let's Connect"
         width="60%"
@@ -325,14 +327,14 @@ const page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
-        Heading={"D365 Finance and Operations or Business Central?"}
+        Heading={"D365 Finance & Operations or Business Central?"}
         Desc={
           "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? "
         }
         Color={"white"}
       ></BlogSection>
 
-      <DistinctiveSection
+   <DistinctiveSection
         DistinctiveData={DISTINCTIVE_DATA}
         ID={"Distinctive"}
         Title={"The Distinctive Edge"}

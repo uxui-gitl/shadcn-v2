@@ -426,7 +426,7 @@ export default function Home() {
 
   return (
     <>
-      <Announcement content={''} />
+      <Announcement content={''} country={'IN'}/>
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
@@ -626,7 +626,7 @@ export default function Home() {
                 {item?.cardTitle && <div className="text-xl text-white text-semibold mb-[100px]">
                   {item?.cardTitle}
                 </div>}
-                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">{item.cardHeading}</div>
+                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px] min-h-[150px]">{item.cardHeading}</div>
                 <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">{item.cardDesc}</div>
                 <div className="flex justify-end px-6 py-4">
                   {/* setshowModal1((prev) => !prev) */}

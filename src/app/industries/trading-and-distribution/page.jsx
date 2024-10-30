@@ -7,6 +7,7 @@ import Image from "next/image";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogSection from "@/sections/blog/BlogSection";
+import AcceleratorSection from "@/sections/accelerator/AcceleratorSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import Slider from "@/components/Slider";
@@ -25,15 +26,11 @@ function page() {
 
     const CHALLENGES_LIST_DATA = [
         { id: 1, title: "Overcoming tight delivery deadline constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Addressing global sourcing strategy complexities", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Mitigating supplier non-compliance risks", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Resolving supply chain visibility gaps", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Managing complex inventory fluctuations", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Streamlining sales order and invoice tracking processes", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Coping with stock management and transfer inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 8, title: "Navigating diverse product line complexities", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 9, title: "Retaining channel partner loyalty amidst competitive pressures", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 10, title: "Enhancing sales team productivity and performance", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Mitigating supplier non-compliance risks", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Resolving supply chain visibility gaps", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Coping with stock management and transfer inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Navigating diverse product line complexities", icon: '/upgradeCloud/icons/ico--target.svg' },
+        
     ];
 
     const tabs = [
@@ -142,44 +139,37 @@ function page() {
         {
             id: 1,
             cardBGColor: 'white',
-            cardHeading: 'Sales CRM',
-            cardDesc: 'Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ',
-            isArrow: true,
+            cardHeading: 'Business Consulting',
+            cardDesc: 'Meticulous analysis of current business operations, IT framework and accordingly develop tailored strategy for optimal business growth.',
+            isArrow: false,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
-            cardHoverData: [
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-            ]
+            // cardHoverData: [
+            //     'abc',
+            //     'abc',
+            //     'abc',
+            //     'abc',
+            //     'abc',
+            //     'abc',
+            // ]
         },
         {
 
             id: 2,
             cardBGColor: 'white',
-            cardHeading: 'Marketing Automation',
-            cardDesc: 'Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.',
-            isArrow: true,
+            cardHeading: 'Implementation & Global Rollout',
+            cardDesc: 'We ensure seamless solution execution and worldwide deployment leveraging our expertise.',
+            isArrow: false,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
-            cardHoverData: [
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-                'abc',
-            ]
+            
         },
         {
 
             id: 3,
             cardBGColor: 'white',
-            cardHeading: 'Customer Portal',
-            cardDesc: 'Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.',
+            cardHeading: 'Managed Services',
+            cardDesc: 'Helping organisations to unburden their IT operations with expert-managed services, ensuring higher efficiency.',
             isArrow: true,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
@@ -188,8 +178,8 @@ function page() {
 
             id: 4,
             cardBGColor: '#E4E4E4',
-            cardHeading: 'Mobile CRM',
-            cardDesc: `Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.`,
+            cardHeading: 'Migration & Transformation',
+            cardDesc: `Effortless upgrade to advance solution and data migration for transforming business operations.`,
             isArrow: true,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
@@ -199,8 +189,20 @@ function page() {
             id: 5,
             cardBGImageUrl: '/rpa/ArtboardBg.png',
             cardBGColor: '#EFE9FB',
-            cardHeading: 'Service Cloud',
-            cardDesc: 'Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.',
+            cardHeading: 'Legacy Modernization',
+            cardDesc: 'Future-proof business by modernizing legacy systems and optimizing overall performance.',
+            isArrow: true,
+            cardTextColor: 'black',
+            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+        },
+
+        {
+
+            id: 6,
+            cardBGImageUrl: '/rpa/ArtboardBg.png',
+            cardBGColor: '#EFE9FB',
+            cardHeading: 'Infrastructure as a Service',
+            cardDesc: 'Stay agile and scalable with infrastructure as a service, without the obligation of managing infrastructure and hardware maintenance.',
             isArrow: true,
             cardTextColor: 'black',
             cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
@@ -475,7 +477,7 @@ function page() {
     return (
         <>
             <EntIntro
-                title="Effective Operation Management for Trading & Distribution Businesses"
+                title="Efficient Operations for Trading & Distribution Businesses"
                 desc="Streamlining logistics, optimizing inventory and enhancing supply chain visibility"
                 cta="Let's Connect"
                 width="60%"
@@ -559,6 +561,20 @@ function page() {
 
             </SectionWrapperNew>
             {/* capabilites section end */}
+
+            <AcceleratorSection
+                style={{ backgroundColor: '#EFE9FB' }}
+                ID={"Accelerator"}
+                Heading={"Accelerator"}
+                Desc={
+                    "Prebuilt customizable solutions for seamless integration, faster implementation and quicker ROI."
+                }
+                Color={""}
+            >
+                <p className="font-semibold">Dealer Management Desk</p>
+                <p>.NET portal integrated with Dynamics Navision streamlines dealer management through online registration, contract management. Leveraging Azure cloud infrastructure, the portal enables secure remote onboarding, efficient order processing and payment management.</p>
+
+            </AcceleratorSection>
 
             <SectionWrapperNew style={{ backgroundColor: "#fff" }}
                 sectionHeading="Services"
@@ -699,7 +715,7 @@ function page() {
             ></ReviewSliderSection>
 
             {/* transform business with us section */}
-            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how intelligent technologies can help you with rapid growth."}>
+            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how Trading and Distribution can help you with rapid growth."}>
             </TransformBusinessForm>
 
         </>

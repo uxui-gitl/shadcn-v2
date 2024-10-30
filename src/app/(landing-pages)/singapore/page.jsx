@@ -519,9 +519,44 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     setShowReadMoreModal(true);
   }
 
+  const announcemnetData = [
+    {
+      _id: 1,
+      title:
+        "11Once Again, Godrej Infotech is recognized as a Great Place to Work!",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+    {
+      _id: 2,
+      title:
+        "Economic Times Honors Godrej Infotech as Future Ready Organization – Adjudged by Ernst & Young.",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+    {
+      _id: 3,
+      title:
+        "India’s Leading Fertility Healthcare Centre Finalizes Oracle Fusion Implementation Services contract.",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+    {
+      _id: 4,
+      title:
+        "Renowned Dutch marine leader, Boskalis, signs 5-year Infor support renewal with LVD Godrej Infotech after successful 3-year relationship",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+  ]
+
   return (
     <>
-      <Announcement content={""} />
+      <Announcement content={announcemnetData} country={'SG'}/>
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
@@ -663,14 +698,14 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       </div>
       <SectionWrapperNew style={{ backgroundColor: "#ffffff", height: "70vh" }}>
         <p className="text-[#1D162B] text-[32px] font-medium leading-[46px] py-16">
-          Headquartered in Netherlands, Godrej Infotech is a fully owned
+          {`Headquartered in Netherlands, Godrej Infotech is a fully owned
           subsidiary of Godrej Infotech Limited (GITL) which is based in Mumbai,
           India. A leading IT service provider specializing in end-to-end IT
           solutions, GITL is part of the USD 1.7 Billion Godrej Enterprise
           Group. The Godrej Group is one of India's leading corporate houses
           dealing in High Tech Engineering, Consumer Products, Aerospace,
           Chemicals, Construction, Material Handling, Storage & Security
-          Solutions.
+          Solutions.`}
         </p>
         <button
           type="button"

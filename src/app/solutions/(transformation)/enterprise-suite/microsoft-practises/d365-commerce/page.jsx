@@ -190,39 +190,12 @@ const D365Commerce = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Omnichannel Engagement",
+      CardHeading: "Consistent Customer Engagement",
       CardDesc:
-        "We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.",
-      isArrow: "true",
+        "Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+      isArrow: "false",
       link: [],
-      additionalData:`
-<ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
-    <li>
-        List item one
-        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>You might feel like you are being really "organized" o</li>
-            <li>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</li>
-            <li>Nesting tons of folders in your source code is also not helpful.</li>
-        </ol>
-    </li>
-    <li>
-        List item two
-        <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>I'm not sure if we'll bother styling more than two levels deep.</li>
-            <li>Two is already too much, three is guaranteed to be a bad idea.</li>
-            <li>If you nest four levels deep you belong in prison.</li>
-        </ul>
-    </li>
-    <li>
-        List item three
-        <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>Again please don't nest lists if you want</li>
-            <li>Nobody wants to look at this.</li>
-            <li>I'm upset that we even have to bother styling this.</li>
-        </ul>
-    </li>
-</ul>
-`
+      
     },
 
     {
@@ -233,9 +206,9 @@ const D365Commerce = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Customer Loyalty & Personalization",
+      CardHeading: "Enhanced B2B Engagement",
       CardDesc:
-        "We revitalize your business performance delivering more agile, responsive and human-cantered ERP on Cloud.",
+        "Tailored functionality for B2B organizations and self-service purchasing experiences.",
       isArrow: "true",
       link: [],
     },
@@ -247,9 +220,9 @@ const D365Commerce = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Streamlined Digital Commerce",
+      CardHeading: "Dynamic Website Creation",
       CardDesc:
-        "With the ability to scale resources on-demand, we specialize in the precise, secure and efficient migration of your applications to the cloud,",
+        "Launch dynamic websites effortlessly with a user-friendly visual page builder.",
       isArrow: "",
       link: [],
     },
@@ -261,9 +234,65 @@ const D365Commerce = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
+      CardHeading: "Personalized Multichannel Journeys",
       CardDesc:
-        "Highest levels of security and privacy, ensuring data is safeguarded",
+        "Craft personalized journeys with Commerce and Dynamics 365 Marketing.",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 5,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "24/7 AI-Powered Support",
+      CardDesc:
+        "Provide round-the-clock AI-powered chatbot support with Dynamics 365 Customer Service.",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 6,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Data-Driven Targeting",
+      CardDesc:
+        "Target customers effectively through data-driven segmentation for relevant campaigns.",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 7,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Adaptable Commerce",
+      CardDesc:
+        "Deploy adaptable, API-first commerce for various channels.",
+      isArrow: "",
+      link: [],
+    },
+    {
+      id: 8,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: 'white',
+      CardTitle: "",
+      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardHeading: "Data Security",
+      CardDesc:
+        "Go global with flexible deployment options and secure data management.",
       isArrow: "",
       link: [],
     },
@@ -281,8 +310,8 @@ const D365Commerce = () => {
     <>
       {/* Start--HeroBanner-Section========================================================= */}
       <EntIntro
-        title="Experience unified commerce, customer insights and streamlined operations with D365 Commerce"
-        desc="Delivering tailored solutions for eCommerce, point-of-sale and customer relationship management"
+        title="Experience unified commerce & customer insights with D365 Commerce"
+        desc="Delivering tailored solutions for eCommerce, point-of-sale and customer relationship management "
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -296,8 +325,8 @@ const D365Commerce = () => {
 
       {/* Start--Section--Challenges======================================================================== */}
       <SectionWrapperNew
-        sectionHeading={'Challenges Faced by Manufacturing Businesses'}
-        sectionDesc={''}
+        sectionHeading={'Retail Business Challenges'}
+        sectionDesc={'Retailers face a pressing need to evolve with tech-savvy customers, prioritizing personalized connections and seamless interactions. '}
         sectionTextColor={'#000'}
         sectionHeadingLayout="left"
         style={{ background: `url('/Transformation/d365/chbg1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
@@ -337,7 +366,7 @@ const D365Commerce = () => {
       <div className="" style={{overflow:'hidden', position:'relative'}}>
         <div className="py-16 rounded-3xl sm:py-32 px-10" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
           <div className="md:container mx-auto">
-            <HorizontalHeading heading={'Why Cloud is your Ultimate Choice?'} desc={'With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics.'} textColor={'#fff'} ></HorizontalHeading>
+            <HorizontalHeading heading={'D365 Commerce Key Capabilities'} desc={'Optimise retail business with personalized experiences & enhanced employee productivity'} textColor={'#fff'} ></HorizontalHeading>
             <Slider slidesPerView={3.2}>
             {KEY_CAPABILITIES?.map((item, index) => (
               <SwiperSlide key={index}>
@@ -345,9 +374,9 @@ const D365Commerce = () => {
                   <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                   <div className="text-[28px] text-white h-[84px]">{item?.CardHeading}</div>
                   <p className="text-[16px] py-4 text-white h-[104px]">{item?.CardDesc}</p>
-                  <div className="flex justify-end bottom-4 right-4">
+                  {/* <div className="flex justify-end bottom-4 right-4">
                     <OutlinedButtonWithArrow size={48} arrowColor="white" onClick={() => handleKeyModal(true, item)} />
-                  </div>
+                  </div> */}
                 </div>
               </SwiperSlide>
             ))}

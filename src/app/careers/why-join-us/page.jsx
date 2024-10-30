@@ -44,7 +44,7 @@ const CSR_DATA=[
 ]
 
 
-const page = () => {
+const Page = () => {
 
   return (
     <>
@@ -286,4 +286,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
