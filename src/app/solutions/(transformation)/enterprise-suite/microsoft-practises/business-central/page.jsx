@@ -13,6 +13,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
 import LeftHeading from "@/components/LeftHeading";
+import BlogSection from "@/sections/blog/BlogSection";
 
 
 const page = () => {

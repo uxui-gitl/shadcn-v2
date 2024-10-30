@@ -1,12 +1,14 @@
 'use client';
+import React, { useState } from "react";
 import Image from 'next/image';
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { useRouter } from 'next/navigation';
 
-function page() {
-  const router = useRouter();
 
+function Page() {
+    const router = useRouter()
     return (
+        
         <>
             <div className="navbar2 " style={{ borderBottom: '1px solid #E4E4E4' }}>
                 <div className="mx-auto container flex justify-between my-3">
@@ -73,4 +75,4 @@ function page() {
     )
 }
 
-export default page;
+export default Page;
