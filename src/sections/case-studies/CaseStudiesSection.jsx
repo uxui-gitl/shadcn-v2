@@ -263,7 +263,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <p className="w-[80%] mb-4">{casestudy[1].description}</p>
 
                   <div className="absolute bottom-4 right-4">
+                  <Link href={casestudy[1].link} target="_blank">
                     <OutlinedButtonWithArrow size={56} />
+                    </Link>
                   </div>
                 </div>
                 <div
@@ -279,7 +281,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <p className="w-[80%] mb-4">{casestudy[2].description}</p>
 
                   <div className="absolute bottom-4 right-4">
+                  <Link href={casestudy[2].link} target="_blank">
                     <OutlinedButtonWithArrow size={56} />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -300,7 +304,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <p className="w-[80%] mb-4">{casestudy[3].description}</p>
 
                   <div className="absolute bottom-4 right-4">
+                  <Link href={casestudy[3].link} target="_blank">
                     <OutlinedButtonWithArrow size={56} />
+                    </Link>
                   </div>
                 </div>
                 <div

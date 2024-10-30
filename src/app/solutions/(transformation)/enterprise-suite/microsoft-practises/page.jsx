@@ -144,14 +144,14 @@ const MicrosoftPractises = () => {
       cardBGColor: "#F5B1DC",
       cardHeading: "Dealer <br/> Management",
       cardDesc:
-        `<ul class="max-w-md w-full space-y-1 text-white list-disc list-outside">
+      `
+        <ul class="min-w-[100%] space-y-1 text-black list-disc list-inside">
               <li>Data Factory</li>
               <li>Synapse Data Engineering</li>
               <li>Synapse5 Data Science</li>
               <li>Synapse Data Warehousing</li>
               <li>Synapse Real-Time Analytics</li>
               <li>Data Activator</li>
-              
           </ul>`,
         isArrow: true,
       cardTextColor: "black",
@@ -199,7 +199,7 @@ const MicrosoftPractises = () => {
       cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
     },
     {
-      id: 5,
+      id: 6,
       cardBGImageUrl: "/rpa/ArtboardBg.png",
       cardBGColor: "#EFE9FB",
       cardHeading: "Reduce AHT (Average Handling Time)",
