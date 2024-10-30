@@ -10,7 +10,7 @@ import url from "@/data/url";
 
 // const url = "https://mailer.godrejenterprises.com/GodrejinfotechAPI";
 
-const page = () => {
+const Page = () => {
     const router = useRouter();
     const [topBlogList, setTopBlogList] = useState([]);
     const [moreBlogList, setMoreBlogList] = useState([])
