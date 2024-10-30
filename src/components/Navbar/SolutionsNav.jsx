@@ -285,7 +285,7 @@ const SolutionsNav = () => {
                     },
                     {
                       label: "Ecommerce",
-                      href: "/Solutions/Customer-Experience/Magento-Ecom",
+                      href: "/Solutions/Customer-Experience/E-commerce",
                     },
                     {
                       label: "LS Retail",
