@@ -7,6 +7,7 @@ import Image from "next/image";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogSection from "@/sections/blog/BlogSection";
+import AcceleratorSection from "@/sections/accelerator/AcceleratorSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from '@/sections/transformBusinessFrom/TransformBusinessFromSection';
 import Slider from "@/components/Slider";
@@ -24,15 +25,13 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Suboptimal resource utilization and tracking", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Contract lifecycle management inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Inconsistent costing methodologies & accounting standards", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Complex multi-entity governance & consolidation", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Complex revenue recognition and financial reporting ", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Inefficient labor time tracking and cost allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 7, title: "Operational scalability and growth constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
-        
-
+        { id: 1, title: "Contract lifecycle management inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Inconsistent costing methodologies and accounting standards", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Complex multi-entity governance and consolidation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Complex revenue recognition and financial reporting", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Inefficient labor time tracking and cost allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 6, title: "Operational scalability and growth constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
+       
     ];
 
     const tabs = [
@@ -598,6 +597,20 @@ function page() {
             </SectionWrapperNew> */}
             {/* custome solution */}
 
+            <AcceleratorSection
+                style={{ backgroundColor: '#EFE9FB' }}
+                ID={"Accelerator"}
+                Heading={"Accelerator"}
+                Desc={
+                    "Prebuilt customizable solutions for seamless integration, faster implementation and quicker ROI."
+                }
+                Color={""}
+            >
+                <p className="font-semibold">Intellectual Property (IP) Management</p>
+                <p>Integrated with Microsoft Navision, this value-added solution helps from creating patent to copyright data saved to government data registration.  </p>
+
+            </AcceleratorSection>
+
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'We serve a diverse range of professional services firms, delivering tailored solutions to address unique industry challenges.'}/>
 
             <SectionWrapperNew
@@ -676,7 +689,7 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"Selecting the Right IT Partner "}
+                Heading={"Selecting the Right IT Partner"}
                 Desc={"It's imperative for professional services businesses to conduct a thorough assessment of their unique requirements and objectives."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}

@@ -23,13 +23,15 @@ import { title } from "process";
 
 const ContactUs = () => {
   const [showModal1, setshowModal1] = useState(false);
+  const [showModal2, setshowModal2] = useState(false);
+  const [showModal3, setshowModal3] = useState(false);
+  const [showModal4, setshowModal4] = useState(false);
 
   const GuidingPrinciples=[
     {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.'},
     {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.'},
-    {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork'},
-   
-  ]
+    {id:3,title:'Value', desc:'Integrity, Responsiveness, Commitment, Teamwork'},
+   ]
 
   const AWARD_DATA=[
     {id:1,Year:'2020', Name:'', desc:`Infor announced Godrej Infotech as 'Influential Partner of the year' for its outstanding contribution and partnership`},
@@ -42,10 +44,10 @@ const ContactUs = () => {
   ]
 
   const KeyPolicies_DATA=[
-    {id:1,title:'Godrej Infotech',  desc:``},
-    {id:2,title:'About Us', desc:``},
-    {id:3,title:'Empowering Business Through Digital Transformation', desc:``},
-    {id:4,title:'CRM, ERP, Cloud, AI & ML',  desc:``},
+    {id:1,title:'Statutory Report',  Desc:`Dummy Text. Dummy Text.`},
+    {id:2,title:'Corporate Policies', Desc:`Dummy Text. Dummy Text.`},
+    {id:3,title:'CSR Updates', Desc:`Dummy Text. Dummy Text.`},
+    {id:4,title:'Statutory Updates',  Desc:`Dummy Text. Dummy Text.`},
     
   ]
   
@@ -95,7 +97,7 @@ const ContactUs = () => {
     },
     {
       id:6,
-      desc:`2016 - LS Retail Diamond Partner`
+      Desc:`2016 - LS Retail Diamond Partner`
     }
 
   ]
@@ -123,11 +125,11 @@ const ContactUs = () => {
     },
     {
       id:6,
-      desc:`2012 - Microsoft dynamics Reseller of the year`
+      Desc:`2012 - Microsoft dynamics Reseller of the year`
     },
     { 
       id: 7,
-      desc: '2011 - Best Partner for LS Retail'
+      Desc: '2011 - Best Partner for LS Retail'
     }
 
   ]
@@ -155,11 +157,11 @@ const ContactUs = () => {
     },
     {
       id:6,
-      desc:`2007 - Best Partner Award for Infor in Asia Pacific`
+      Desc:`2007 - Best Partner Award for Infor in Asia Pacific`
     },
     { 
       id: 7,
-      desc: '2006 - Award for Microsoft President Club Member'
+      Desc: '2006 - Award for Microsoft President Club Member'
     }
 
   ]
@@ -193,7 +195,7 @@ const ContactUs = () => {
       content: (
       <>
       <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2021 - Present – Sustaining Holistic Excellence</h2>
+        <h2 className="text-[28px] font-semibold leading-[36px]">2021 - Present - Sustaining Holistic Excellence</h2>
         <div className="my-10">
           {DATA_2021_Present.map((item,index) => (
             <>
@@ -213,7 +215,7 @@ const ContactUs = () => {
       content: (
         <>
       <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2016 – 2020 – Multi-faceted Accomplishments</h2>
+        <h2 className="text-[28px] font-semibold leading-[36px]">2016 - 2020 - Multi-faceted Accomplishments</h2>
         <div className="my-10">
           {DATA_2016_2020.map((item,index) => (
             <>
@@ -232,7 +234,7 @@ const ContactUs = () => {
       content: (
         <>
          <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">2011 - 2015 – A Triumphant Year</h2>
+        <h2 className="text-[28px] font-semibold leading-[36px]">2011 - 2015 - A Triumphant Year</h2>
         <div className="my-10">
           {DATA_2011_2015.map((item,index) => (
             <>
@@ -270,7 +272,7 @@ const ContactUs = () => {
       content: (
         <>
          <div className="">
-        <h2 className="text-[28px] font-semibold leading-[36px]">1999 - 2004 – Inception of a Technology Powerhouse, Strategi</h2>
+        <h2 className="text-[28px] font-semibold leading-[36px]">1999 - 2004 - Inception of a Technology Powerhouse, Strategi</h2>
         <div className="my-10">
           {DATA_1999_2004.map((item, index) => (
             <>
@@ -293,16 +295,210 @@ const ContactUs = () => {
         onRequestClose={() => {
           setshowModal1((prev) => !prev);
         }}
-        title={"dummy title"}
+        title={"Statutory Report"}
       >
-        <h1>Dummy data</h1>
+        <div>
+    <div class="">
+        <ol class="grid grid-cols-2 gap-12 list-decimal">
+            
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <span>01.</span>
+                <h3 className="mx-6">FY 2023-2024</h3>
+            </li>
+             <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <span>02.</span>
+                <h3 className="mx-6">FY 2022-2023</h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <span>03.</span>
+                <h3 className="mx-6">FY 2021-2022</h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <span>04.</span>
+                <h3 className="mx-6">FY 2020-2021</h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <span>05.</span>
+                <h3 className="mx-6">FY 2019-2020</h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <span>06.</span>
+                <h3 className="mx-6">FY 2018-2019</h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <span>07.</span>
+                <h3 className="mx-6">FY 2017-2018</h3>
+            </li>
+        </ol>
+        
+    </div>
+</div>
       </Dialog>
+
+
+<Dialog
+        shouldShow={showModal2}
+        onRequestClose={() => {
+          setshowModal2((prev) => !prev);
+        }}
+        title={"Corporate Policies"}
+      >
+        <div>
+    <div class="">
+        <ol class="grid grid-cols-2 gap-12 list-decimal">
+            
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
+            </li>
+             <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/ABAC.pdf" target="_blank">Anti-Bribery and Anti-Corruption</a>3</h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/ethics.pdf" target="_blank">Code of Ethics and Business Conduct</a></h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/Corporate-Environmental-Policy.pdf" target="_blank">Corporate
+                Environmental Policy</a></h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/Fraud-Investigation-Guidelines.pdf" target="_blank">Fraud
+                Investigation Guidelines</a></h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/HIV_AIDS_Policy.pdf" target="_blank">HIV/ AIDS</a></h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/NRC-Policy.pdf" target="_blank">Nomination and Remuneration
+                Policy</a></h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">
+                <a href="assets/pdf/corporatePolicies/sexualHarassment.pdf" target="_blank">Prevention of Sexual Harassment
+                at Workplace</a>
+              </h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/Social-Media-Policy.pdf" target="_blank">Social Media Policy</a></h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
+            </li>
+        </ol>
+        
+    </div>
+</div>
+      </Dialog>
+
+      <Dialog
+        shouldShow={showModal3}
+        onRequestClose={() => {
+          setshowModal3((prev) => !prev);
+        }}
+        title={"CSR Update"}
+      >
+        <div>
+    <div class="">
+        <div class="grid grid-cols-2 gap-12">
+          <ul>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6 font-bold">CSR Initiatives</h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/CSR.pdf" target="_blank">CSR policy</a></h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/CSR23-24.pdf" target="_blank">CSR Action Plan FY 2023-24</a></h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/CSR22-23.pdf" target="_blank">CSR Action Plan FY 2022-23 </a></h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/CSR21-22.pdf" target="_blank">CSR Action Plan FY 2021-22 </a></h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/corporatePolicies/CSR20-21.pdf" target="_blank">CSR Action Plan FY 2020-21 </a></h3>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6 font-bold">CSR Commitee</h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">Mrs. Nyrika Holkar, Chairperson</h3>
+            </li>
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">Mr. P. E. Fouzdar, Member</h3>
+            </li>
+             <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">Mr. V. R. Mehta, Member</h3>
+            </li>
+          </ul>
+
+        </div>
+
+        
+    </div>
+</div>
+      </Dialog>
+
+      <Dialog
+        shouldShow={showModal4}
+        onRequestClose={() => {
+          setshowModal4((prev) => !prev);
+        }}
+        title={"Statutoty Updates"}
+      >
+        <div>
+    <div class="">
+        <ol class="grid grid-cols-2 gap-12 list-decimal">
+            
+            <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
+                target="_blank">Terms &amp; Conditions of appointment of Independent Directors</a></h3>
+            </li>
+             <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 className="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Parpia.pdf"
+                target="_blank">Notice of Candidature of Mr. M. M. Parpia</a></h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Movdawalla.pdf"
+                target="_blank">Notice of Candidature of Mr. P. P. Movdawalla</a></h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Mehta.pdf"
+                target="_blank">Notice of Candidature of Mr. V. R. Mehta</a></h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">Dr. K. A. Palia ceased to be a Director of the Company with effect from 10th May, 2023</h3>
+            </li>
+             <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">Mr. K. K. Dastur ceased to a Director of the Company with effect from 10th May, 2023</h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">Mr. S. N. Irani ceased to be a Director of the Company with effect from 25th July 2022</h3>
+            </li>
+            <li class="flex items-start pb-6 border-b w-full text-[20px] text-[#808080]">
+              <h3 className="mx-6">
+                The Register of Members and Share Transfer Books of the Company will remain closed from
+            Monday, 18th July 2022 to Tuesday, 2nd August 2022 (both days inclusive). All persons whose names are
+            recorded in the Register of Members maintained by the Company/Depositories as on the cut-off date, i.e.
+            Friday, 15th July, 2022 only shall be entitled to attend and vote at the Annual General Meeting.
+              </h3>
+            </li>
+           
+        </ol>
+        
+    </div>
+</div>
+      </Dialog>
+
       {/* dialog end */}
       {/* Nav */}
       <Announcement />
 
       <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
+        <div className={`absolute w-full`}>
           <Navbar theme="light" />
         </div>
       </div>
@@ -507,7 +703,7 @@ const ContactUs = () => {
                   <h6 className="text-[20px] font-semibold mb-6">{item.title}</h6>
                   <p className="text-[16px] mb-[92px]">{}</p>
                   <div className="flex justify-end">
-                    <Image src="/about/chevron-right.png" width={25} height={25} alt="che" onClick={() => setshowModal1((prev) => !prev)} style={{cursor:'pointer'}}/>
+                    <Image src="/about/chevron-right.png" width={25} height={25} alt="che" onClick={() => setshowModal4((prev) => !prev)} style={{cursor:'pointer'}}/>
                   </div>
               </div>
             </SwiperSlide>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
@@ -8,23 +8,41 @@ import { LinearGradient } from 'react-text-gradients';
 import Image from "next/image";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
+
+const page = () => {
+  const router = useRouter();
+  const [jobList, SetJobList] = useState([])
 
 
+  useEffect(() => {
+    getJobList();
+  }, []);
 
-const Page = () => {
+  async function getJobList() {
+    try {
+      let response = await axios.post('http://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
+      let data = response.data.model;
+      SetJobList(data);
+      console.log(data)
+    } catch (error) {
+      console.log(error);
+      res.status(error.response.status).json({ message: error.message });
+    }
+  }
 
   return (
     <>
-      <ContactBanner />
+      <ContactBanner bannerImage={'/contact/contact-banner.svg'} title={`Join Our Team`} desc={`Lead your future with Godrej Infotech. We value innovation and teamwork.`} />
 
       <SectionWrapperNew
-        sectionHeading="Hey, Great to see you here"
-        sectionDesc="The Inspiring Journey Of Godrej Infotech"
+        sectionHeading="Enrich Your Future with Us"
+        sectionDesc="We're hiring passionate professionals to drive meaningful impact."
         sectionTextColor='#000'
         sectionHeadingLayout="center"
       >
         <div className="">
-
           <form class="w-full mx-auto">
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="relative">
@@ -39,51 +57,40 @@ const Page = () => {
           </form>
 
           <div className="flex w-[50%] my-6">
-          <select id="default" class="bg-[white] mr-6 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
-    <option selected>Function</option>
-    <option value="US">United States</option>
-    <option value="CA">Canada</option>
-    <option value="FR">France</option>
-    <option value="DE">Germany</option>
-  </select>
-  <select id="default" class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 ">
-    <option selected>Location</option>
-    <option value="US">United States</option>
-    <option value="CA">Canada</option>
-    <option value="FR">France</option>
-    <option value="DE">Germany</option>
-  </select>
+            <select id="default" class="bg-[white] mr-6 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+              <option selected>Function</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+            <select id="default" class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 ">
+              <option selected>Location</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
           </div>
-
         </div>
-        <div className="text-[14px] text-[#E0028E] mb-4">79 jobs in all categories in all locations</div>
-        <div className="jobcard flex justify-between items-end py-6" style={{ borderBottom: '1px solid #d3d3d3' }}>
-          <div className="">
-            <div className="text-[30px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
-            <p className="text-[16px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
-            <div className="">
-              <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
+        <div className="text-[14px] text-[#E0028E] mb-4">{jobList.length} jobs in all categories in all locations</div>
+        {jobList?.map(item => (
+          <>
+            <div className="jobcard flex justify-between items-end py-6" style={{ borderBottom: '1px solid #d3d3d3' }}>
+              <div className="">
+                <div className="text-[30px] mb-4 text-[#1D162B]">{item?.designation}</div>
+                <p className="text-[16px] leading-[20px] text-[#808080] mb-6">{item?.functionsDesc}</p>
+                <div className="">
+                  <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">{item?.location}</span>
+                </div>
+              </div>
+              <div className="">
+                <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center" onClick={() => router.push(`/job-detail/${item.srNo}`)}>Apply Now</button>
+                <p className="text-[14px] text-[#808080">Posted {item?.insertDate}</p>
+              </div>
             </div>
-          </div>
-          <div className="">
-            <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
-            <p className="text-[14px] text-[#808080">Posted within the last 24 hours</p>
-          </div>
-        </div>
-        <div className="jobcard flex justify-between items-end py-6" style={{ borderBottom: '1px solid #d3d3d3' }}>
-          <div className="">
-            <div className="text-[28px] mb-4 text-[#1D162B]">Experienced Backend Engineer</div>
-            <p className="text-[14px] leading-[20px] text-[#808080] mb-6">We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary</p>
-            <div className="">
-              <span class="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">Mumbai</span>
-            </div>
-          </div>
-          <div className="">
-            <button type="button" class="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center">Apply Now</button>
-            <p className="text-[14px] text-[#808080">Posted within the last 24 hours</p>
-          </div>
-        </div>
-
+          </>
+        ))}
       </SectionWrapperNew>
 
       {/* <Review /> */}
@@ -132,18 +139,18 @@ const Page = () => {
       <BlogSection
         ID={"blog"}
         blogImageUrl={'/homeNew/blog-svg.png'}
-        Heading={"Elevate Your Professional Journey"}
+        Heading={"Empowering Professional Journeys / Grow with Us"}
         Desc={
-          "Join a collaborative environment that fosters creativity and innovation. Take the next step in your career today!"
+          "As a leading digital transformation company, we offer exciting opportunities for growth and development."
         }
         Color={"white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
       ></BlogSection>
 
       <TransformBusinessForm
-        Title={"Transform your Business with us"}
+        Title={"Why Join Us"}
         Desc={
-          "Let us discuss how intelligent technologies can help you with rapid growth."
+          "Transform Your Business with Us"
         }
       ></TransformBusinessForm>
     </>

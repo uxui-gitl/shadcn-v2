@@ -12,9 +12,11 @@ import CyberSecurityInfograhics from "@/sections/cyber-security-infograhic/Cyber
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
+import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 
 const CyberSecurity = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
+  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
   const HUBEXPERTISE_COUNTER_DATA = [
     {
@@ -53,8 +55,8 @@ const CyberSecurity = () => {
     id: 1,
     cardBGImageUrl: '/ai-ml/blog-bg.png',
     cardBGColor:'red',
-    cardHeading: "Strengthen Your Business Armor with Cyber–Resilience Strategy",
-    cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large. Today, we delve into the critical facets of cyber resilience, emphasizing the importance of a disaster recovery plan, robust cybersecurity measures, and a comprehensive understanding of cyber-attacks and cybersecurity threats. Let's explore how concepts is key to fortifying your business against the evolving challenges of the digital realm.'`,
+    cardHeading: "Cyber-Resilience Strategy Importance",
+    cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large.'`,
     cardTextColor:'white',
     readMoreUrl:"#"
   },
@@ -191,7 +193,6 @@ const CyberSecurity = () => {
         sectionTextColor={'#000'}
         cardData={CyberSecurityData}
       >
-
       </CommonCardTwoSlider>
       <HubExpertise
         setHeading="Hub of Expertise"
@@ -203,7 +204,16 @@ const CyberSecurity = () => {
       {/* Start--Section--CyberSecurityInfographics======================================================== */}
       <CyberSecurityInfograhics />
       {/* End--Section--CyberSecurityInfographics======================================================== */}
-
+  {/* Section--Synergetic-Partnership======================================================= */}
+      <HighlightPromo
+        setHeading="Our Partners"
+        setDesc=""
+        setColor="#1D162B"
+        setImageBGURL={imgBgURL}
+        setLogoImages="true"
+        setPadding={false}
+      />
+      {/* End-Section--Synergetic-Partnership */}
 
       {/* Start-Section--Blog======================================================================= */}
       

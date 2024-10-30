@@ -13,7 +13,7 @@ const ExperienceSlider = () => {
     {
       imageURL: "",
       title: "Our Experience",
-      heading: "Multiyear Cybersecurity Program",
+      heading: "Managing Cybersecurity of USD 1.7 Bn Conglomerate",
       description: "",
       link: "",
       color: "#FFFFFF",
@@ -22,64 +22,69 @@ const ExperienceSlider = () => {
     {
       imageURL: "",
       title: "",
-      heading: "",
+      heading: "Users windows & MAC",
       description:
-        "Years of Managing Global customer for Data Security",
+        "",
       link: "",
       color: "#000",
       bgCardColor: "#FCE6F4",
-      CounterValue: "90",
+      CounterValue: "10000",
     },
     {
         imageURL: "",
         title: "",
-        heading: "",
+        heading: "Geo locations",
         description:
-          "Years of Managing Global customer for Data Security",
+          "",
         link: "",
         color: "#000",
         bgCardColor: "#FCE6F4",
-        CounterValue: "10k",
+        CounterValue: "90",
       },
 
       {
         imageURL: "",
         title: "",
-        heading: "SQL, DB2, Informix, MySQL",
+        heading: "MPLS & Internet gateways",
         description:
           "",
         link: "",
         color: "#FFF",
         bgCardColor: "#9F0165",
+        CounterValue: "100",
+      },
+      {
+        imageURL: "",
+        title: "",
+        heading: "Server Windows, Linux",
+        description:
+          "",
+        link: "",
+        color: "#000",
+        bgCardColor: "#FCE6F4",
+        CounterValue: "1000",
+      },
+      {
+        imageURL: "",
+        title: "",
+        heading: "AWS & Azure",
+        description: "",
+        link: "",
+        color: "#000",
+        bgCardColor: "#FCE6F4",
         CounterValue: "",
       },
       {
         imageURL: "",
         title: "",
-        heading: "",
-        description:
-          "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+        heading: "SQL, DB2, Informix, MySQL",
+        description: "",
         link: "",
         color: "#000",
         bgCardColor: "#FCE6F4",
-        CounterValue: "100k",
-      },
-      {
-        imageURL: "",
-        title: "",
-        heading: "",
-        description:
-          "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-        link: "",
-        color: "#000",
-        bgCardColor: "#FCE6F4",
-        CounterValue: "1000k",
+        CounterValue: "",
       },
   
-  
-  
-
-   
   ];
 
   return (
@@ -135,7 +140,7 @@ const ExperienceSlider = () => {
                   <span className={Styles.superscript}>+</span>
                 </h3>
 } 
-                <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6">
+                <h1 className="text-3xl lg:text-4xl font-medium mb-4 lg:mb-6">
                   {caseItem.heading}
                 </h1>
                 <p className="mb-4">{caseItem.description}</p>

@@ -3,13 +3,14 @@ import React, { useState, useEffect } from "react";
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-import caseStudiesData from "@/data/caseStudiesData";
-import { useRouter } from 'next/navigation'
+import transformationData from "@/data/case-transformation";
+import automationData from "@/data/case-Automation";
 
-
+import { useRouter } from 'next/navigation';
 
 
 const Page = () => {
+    const caseStudiesData = [...automationData , ...transformationData];
     const router = useRouter()
     const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
     const [mainCategory, setMainCategory] = useState('');
@@ -24,8 +25,9 @@ const Page = () => {
     };
 
     useEffect(() => {
+        console.log(transformationData)
         filterData();
-    }, [mainCategory, subCategory, vertical])
+    }, [mainCategory, subCategory, vertical]);
 
     function handleReset(){
         setUpdatedCaseStudiesData(caseStudiesData);
@@ -110,7 +112,7 @@ const Page = () => {
                                     </div>
                                     <h5 class="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.title}</h5>
                                     <div className="flex justify-end">
-                                        <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => router.push(`/case-studies/${item.id}`)} />
+                                        <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => router.push(`/case-studies/${item.id}?type=${item.mainCategory}`)} />
                                     </div>
                                 </div>
                             </div>

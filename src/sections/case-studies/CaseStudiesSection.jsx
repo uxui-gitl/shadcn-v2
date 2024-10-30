@@ -304,7 +304,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-full h-[270px] md:h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-full h-min-[270px] md:h-1/2 rounded-3xl  p-8"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
@@ -329,7 +329,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
           {caseStudyLayout === "2" && (
             <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]">
               <div
-                className="relative md:w-full md:w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
+                className="relative md:w-full  h-full rounded-3xl p-8 flex flex-col justify-end"
                 style={{
                   color: casestudy[0].color,
                   overflow: "hidden", // Ensures no overflow from the video
@@ -659,7 +659,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     </h1>
                     <p className="mb-4">{casestudy[3].description}</p>
                     <div className="absolute bottom-4 right-4">
+                    <Link href={casestudy[3].link} target="_blank">
                       <OutlinedButtonWithArrow size={56} />
+                      </Link>
                     </div>
                   </div>
 
@@ -677,7 +679,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     </h1>
                     <p className="mb-4">{casestudy[4].description}</p>
                     <div className="absolute bottom-4 right-4">
+                    <Link href={casestudy[4].link} target="_blank">
                       <OutlinedButtonWithArrow size={56} />
+                      </Link>
                     </div>
                   </div>
                 </div>

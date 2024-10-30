@@ -149,13 +149,12 @@ function page() {
         },
     ];
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Fragmented data leads to suboptimal outcomes", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Inefficient communication strains resource allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Poor data tools hinder decisions making", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Ineffective resource management increases costs", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Complex billing delays payments", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Inadequate tech investment impacts healthcare quality", icon: '/upgradeCloud/icons/ico--target.svg' },
-
+        { id: 1, title: "Complex billing delays payments", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 2, title: "Inadequate tech investment impacts healthcare quality", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 3, title: "Fragmented data leads to suboptimal outcomes", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 4, title: "Inefficient communication strains resource allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 5, title: "Ineffective resource management increases costs", icon: '/upgradeCloud/icons/ico--target.svg' },
+        
     ];
 
     const INDUSTRY_SPOTLIGHT = [
@@ -165,9 +164,13 @@ function page() {
                 "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
             cardBGColor: "#7F4EE1",
             cardHeading: "Pharma Manufacturing",
-            cardDesc: "Tailored solutions that enhance pharmaceutical business operations and streamlining equipment management",
+            cardDesc: "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: 
+            `
+            <p>Tailored solutions that enhance pharmaceutical business operations and streamlining equipment management  </p>
+            `
         },
         {
             id: 2,
@@ -177,9 +180,13 @@ function page() {
             cardBGColor: "#7F4EE1",
             cardHeading: "Health Facilities",
             cardDesc:
-                "Offering comprehensive Revenue Cycle Management (RCM) solutions that improve financial performance, optimizing revenue capture and financial operations.",
+                "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: 
+            `
+            <p>Offering comprehensive Revenue Cycle Management (RCM) solutions that improve financial performance, optimizing revenue capture and financial operations.</p>
+            `
         },
         {
             id: 3,
@@ -189,9 +196,13 @@ function page() {
             cardBGColor: "#7F4EE1",
             cardHeading: "Medical Equipment & Supplies",
             cardDesc:
-                "We aim to elevate operations, covering product configuration and asset management for efficiency.",
+                "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: 
+            `
+            <p>We aim to elevate operations, covering product configuration and asset management for efficiency.</p>
+            `
         },
         {
             id: 4,
@@ -201,9 +212,13 @@ function page() {
             cardBGColor: "#EFE9FB",
             cardHeading: "Pharma Distributors",
             cardDesc:
-                "Advanced tech solutions optimize inventory control and distribution efficiency.",
+                "",
             isArrow: false,
             cardTextColor: "white",
+            additionalData: 
+            `
+            <p>Advanced tech solutions optimize inventory control and distribution efficiency.</p>
+            `
         },
         
         // Add more cards as needed
@@ -514,7 +529,7 @@ function page() {
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
-                Heading={"How Healthcare Organizations Ensure Effective Asset Management"}
+                Heading={"Asset Management for Healthcare Organizations"}
                 Desc={"Healthcare asset maintenance encompasses the strategies and practices implemented to manage and preserve medical equipment and facilities. This process is vital in ensuring the smooth functioning of healthcare services, optimizing resource utilization, and delivering quality patient care."}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
