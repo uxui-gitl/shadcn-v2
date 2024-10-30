@@ -88,7 +88,7 @@ const EnterpriseSuite = () => {
     {
       id: 2,
       cardBGColor: "#FCE6F4",
-      cardHeading: "Value Manufacturing Process Management",
+      cardHeading: "Valve Manufacturing Process Management",
       cardDesc:
         "Valve manufacturing solution with pre-configured process mapping and standardized workflows for seamless operations in complex scenarios.",
       isArrow: true,
@@ -157,7 +157,7 @@ const EnterpriseSuite = () => {
     <li>
         Manufacturing
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>Automotive </li>
+            <li>Automotive</li>
             <li>Discrete</li>
             <li>Industrial</li>
             <li>Engineering and Construction</li>

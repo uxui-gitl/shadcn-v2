@@ -48,7 +48,7 @@ const page = () => {
 
   ]
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon: '', cardHead: 'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.S' },
+    { id: '1', icon: '', cardHead: 'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.' },
     { id: '2', icon: '', cardHead: 'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
     { id: '3', icon: '', cardHead: 'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
     { id: '1', icon: '', cardHead: `Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
@@ -122,12 +122,8 @@ const page = () => {
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Sales Cloud: Enables you to manage Lead to order contacts from any device and location.',
+        'Salesforce CPQ (Configure, Price, Quote): Allows executives to understand customer requirements, configure quotes, accordingly, apply discounts and generate accurate billing, streamlining revenue recognition.',
       ]
     },
     {
@@ -140,12 +136,9 @@ const page = () => {
       cardTextColor: 'black',
       cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
       cardHoverData:[
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
+        'Marketing Cloud: Automate various email campaign activities, enhancing product/ service marketing for your organization. The tool also builds attractive landing pages for solutions and service information delivery.',
+        'Pardot: B2B marketing tool equipped with automation capabilities that drives increased sales and more efficient marketing planning. ',
+        
       ]
     },
     {
@@ -177,7 +170,12 @@ const page = () => {
       cardDesc: 'Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
+      cardHoverData:[
+        'Service - 360-degree view of customers, ensuring personalized and efficient service interactions.',
+        'Field Service - Seamlessly schedule and dispatch resources using intelligent algorithms. Equip your field service teams with real-time information with a mobile-friendly interface.',
+        
+      ]
     },
 
   ]
@@ -221,7 +219,7 @@ const page = () => {
                       <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
                         {item?.cardHoverData.map((item2) => (
                           <>
-                            <li>
+                            <li className="py-3">
                               <span class="font-semibold text-black">{item2}</span>
                             </li>
                           </>
