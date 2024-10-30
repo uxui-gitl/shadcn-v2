@@ -36,7 +36,7 @@ import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 
 export default function Home() {
   const [showModal1, setshowModal1] = useState(false);
-const [showReadMoreModal, setShowReadMoreModal] = useState(false);
+  const [showReadMoreModal, setShowReadMoreModal] = useState(false);
 
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
@@ -534,9 +534,45 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     setShowReadMoreModal(true);
   }
 
+
+  const announcemnetData = [
+    {
+      _id: 1,
+      title:
+        "11Once Again, Godrej Infotech is recognized as a Great Place to Work!",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+    {
+      _id: 2,
+      title:
+        "Economic Times Honors Godrej Infotech as Future Ready Organization – Adjudged by Ernst & Young.",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+    {
+      _id: 3,
+      title:
+        "India’s Leading Fertility Healthcare Centre Finalizes Oracle Fusion Implementation Services contract.",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+    {
+      _id: 4,
+      title:
+        "Renowned Dutch marine leader, Boskalis, signs 5-year Infor support renewal with LVD Godrej Infotech after successful 3-year relationship",
+      cta: "",
+      targetBlank: true,
+      link: "/",
+    },
+  ]
+
   return (
     <>
-      <Announcement content={""} />
+      <Announcement content={announcemnetData} country={'US'} />
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />

@@ -426,7 +426,7 @@ export default function Home() {
 
   return (
     <>
-      <Announcement content={''} />
+      <Announcement content={''} country={'IN'}/>
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
