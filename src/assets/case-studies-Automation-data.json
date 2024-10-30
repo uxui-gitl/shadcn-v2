@@ -732,13 +732,13 @@
           ]
         },
         "businessCase": {
-          "description": "",
+          "description": "The objective was to build modern data warehouses that are scalable for accommodating future business needs. They wanted to implement the right tools and strategies for ETL / data integration and to provide Self-Service BI capability to business users.",
           "businesscaseList": [
             ""
           ]
         },
         "challenges": {
-          "description": "Customer was using Excel sheets that required manual data entry and complicated formulas for calculating results. This system was not real-time and was leading to issues in data accuracy and consistency. Hence, their objective was to build modern data warehouses that are scalable for accommodating future business needs. They wanted to implement the right tools and strategies for ETL / data integration and to provide Self-Service BI capability to business users.",
+          "description": "Customer was using Excel sheets that required manual data entry and complicated formulas for calculating results. This system was not real-time and was leading to issues in data accuracy and consistency ",
           "keyChallenges": [
             ""
           ]

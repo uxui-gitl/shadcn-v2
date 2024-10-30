@@ -7451,7 +7451,7 @@
         }
         
       },
-/*case studoes from pages*/
+
       {
         "id": "case-study-88",
         "mainCategory": "Transformation",
@@ -7488,22 +7488,29 @@
           ]
         },
         "businessCase": {
-        "description": "The Customer was using two different systems - NAV 2017 and Oracle Retail Pro (POS), due to which the same information was being captured at multiple points. The objective of the organization was to streamline and optimize their business processes through the use of integrated IT systems.",
+        "description": "The objective of the organization was to streamline and optimize their business processes through the use of integrated IT systems.",
           "businesscaseList": [
             ""
         ]
         },
         "challenges": {
-        "description": "",
+        "description": "The Customer was using two different systems - NAV 2017 and Oracle Retail Pro (POS), due to which the same information was being captured at multiple points. Material Requisition Planning was done using an Excel sheet based on analysis of last 4-5 months consumption and coming months sales forecast taking into account upcoming festive seasons if any. This was a time-consuming process with single user dependency, complicated calculations and manual PO generation.",
           "keyChallenges": [
             ""
 
         ]
         },
         "solution": {
-        "description": "",
+        "description": "Upgrade NAV 2017 to Business Central 14.0 along with LS Central implementation for retail operations with following modules - ",
           "features": [
-            ""
+            "Financial Management",
+            "Fixed Assets",
+            "Cash & Bank Management",
+            "Inventory with Barcode",
+            "Purchase Management Lease Module",
+            "LS POS & Back Office",
+            "KSA Payroll",
+            "Auto Replenishment Feature using LS Replenishment "
         ]
          
         },
@@ -7967,7 +7974,190 @@
           "url": "path-to-case-study-1-download.pdf"
         }
         
-      }         
+      },
+     
+      {
+        "id": "case-study-94",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Service Cloud Solution Integrated with Infor LN",
+            "Single sign on",
+            "On the go access through mobile devices",
+            "Connector between the sales and the service model",
+            "Digitization of service processes"
+                                             
+          ]
+        },
+        "customerBrief": {
+        "description": "The organization offers an extensive range of forklifts such as electric, LPG, and diesel counterbalanced forklifts, warehouse trucks, and specialized trucks for specific applications. They also design and manufacture accessories to address a wide range of handling applications.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+        "description": "",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Customer was having manual & semi-automated processes that were leading to issues in:",
+          "keyChallenges": [
+            "Real-time monitoring of service data",
+            "Availability of asset service history",
+            "Multiple Be-Spoke Systems",
+            "Lack of a centralized system formanaging channel partners, off-roll service dealer technicians, call centre, & customer support group"
+
+        ]
+        },
+        "solution": {
+        "description": "Considering the Customers’ unique requirements, we provided Service Cloud Solution integrated with Infor LN having following features ",
+          "features": [
+            "Seamless data flow from Salesforce to ERP and vice versa",
+            "Automation of service contract lifecycle & customer specific service plans",
+            "Rule based auto-scheduling of service calls",
+            "Publication of knowledge articles for faster resolution",
+            "Mobile app for PAN India technician connect",
+            "Single system for multi-level approvals"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Better customer data security",
+            "Better customer relationship & satisfaction",
+            "Customer & asset 360 view",
+            "Real-time service dashboards",
+            "Increased transparency due to quantification of service parameters",
+            "Improved case resolution",
+            "24*7 access to systems"
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+     
+      {
+        "id": "case-study-95",
+        "mainCategory": "Transformation",
+        "subCategory": "Infor",
+        "vertical": "Manufacturing",
+        "title": "India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN",
+        "client": {
+          "name": "",
+          "industry": "",
+          "location": "",
+          "engagementSince": ""
+        },
+        "images": {
+          "thumbnail": "",
+          "detailPageImage": ""
+        },
+        "highlights": {
+          "industry": "Manufacturing",
+          "projectLocation": "India",
+          "engagementSince": "2021",
+          "solutionSnapshot": [
+            "Service Cloud Solution Integrated with Infor LN",
+            "Single sign on",
+            "On the go access through mobile devices",
+            "Connector between the sales and the service model",
+            "Digitization of service processes"
+                                             
+          ]
+        },
+        "customerBrief": {
+        "description": "The organization offers an extensive range of forklifts such as electric, LPG, and diesel counterbalanced forklifts, warehouse trucks, and specialized trucks for specific applications. They also design and manufacture accessories to address a wide range of handling applications.",
+            "BriefList": [
+              ""
+          ]
+        },
+        "businessCase": {
+        "description": "",
+          "businesscaseList": [
+            ""
+        ]
+        },
+        "challenges": {
+        "description": "Customer was having manual & semi-automated processes that were leading to issues in:",
+          "keyChallenges": [
+            "Real-time monitoring of service data",
+            "Availability of asset service history",
+            "Multiple Be-Spoke Systems",
+            "Lack of a centralized system formanaging channel partners, off-roll service dealer technicians, call centre, & customer support group"
+
+        ]
+        },
+        "solution": {
+        "description": "Considering the Customers’ unique requirements, we provided Service Cloud Solution integrated with Infor LN having following features ",
+          "features": [
+            "Seamless data flow from Salesforce to ERP and vice versa",
+            "Automation of service contract lifecycle & customer specific service plans",
+            "Rule based auto-scheduling of service calls",
+            "Publication of knowledge articles for faster resolution",
+            "Mobile app for PAN India technician connect",
+            "Single system for multi-level approvals"
+        ]
+         
+        },
+        "benefits": {
+          "description": "",
+          "list": [
+            "Better customer data security",
+            "Better customer relationship & satisfaction",
+            "Customer & asset 360 view",
+            "Real-time service dashboards",
+            "Increased transparency due to quantification of service parameters",
+            "Improved case resolution",
+            "24*7 access to systems"
+
+          ]
+        },
+        "meta": {
+          "title": "",
+          "description": "",
+          "keywords": [
+            "",
+           ""
+          ]
+        },
+        "downloadCTA": {
+          "text": "Download Case Study",
+          "url": "path-to-case-study-1-download.pdf"
+        }
+        
+      }       
+
             
     ]
   }
