@@ -4,7 +4,7 @@ const storiesData = [
         month: 'Ot',
         date: '',
         title: `Our Customer Rated Us As 'Excellent' For Our Diligent Support!!!'`,
-        readMoreUrl: '',
+        readMoreUrl: '/successStroy/AheadOfTime.pdf',
         imageUrl:'/caseStudies/blog.svg',
     },
 
