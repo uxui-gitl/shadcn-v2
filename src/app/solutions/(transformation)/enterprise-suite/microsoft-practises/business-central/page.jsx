@@ -5,7 +5,7 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
-
+import BlogSection from "@/sections/blog/BlogSection";
 import AcceleratorSection from "@/sections/accelerator/AcceleratorSection"
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
