@@ -134,8 +134,8 @@ const UpgradeToCloud = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      imageURL: "/upgradeCloud/backgrounds/CaseStudy.webp",
+      videoURL: "/upgradeCloud/video/homeBannerVideo.mov",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
@@ -288,7 +288,7 @@ const UpgradeToCloud = () => {
     { id: '8', cardDesc: 'Enhance system performance and user experience by scaling up the system' },
     { id: '9', cardDesc: 'Accelerate transformation, integrate open innovation and smart workflows' },
   ]
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/upgradeCloud/backgrounds/Blog.webp";
 
   const [showModal1, setshowModal1] = useState(false);
   const [showModal2, setshowModal2] = useState(false);
@@ -667,7 +667,7 @@ const UpgradeToCloud = () => {
         desc="Enabling businesses to scale with ease, enhance productivity and protect data with security measures. "
         cta="Schedule a call with our Cloud Expert"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/upgradeCloud/video/homeBannerVideo.mov"
       />
       {/* Section--Overview=======================================================================  */}
       <OverviewSection
