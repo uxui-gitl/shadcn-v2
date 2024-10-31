@@ -7347,6 +7347,605 @@
         downloadCTA: {
           text: "Download Case Study",
           url: "path-to-case-study-1-download.pdf"
+        },
+      },
+
+      {
+        id: "case-study-88",
+        mainCategory: "Transformation",
+        subCategory: "LS Central",
+        vertical: "Trading",
+        title: "Saudi Trading Company Successfully Implements LS Central & Upgrades NAV to Business Central",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Trading",
+          projectLocation: "Kingdom of Saudi Arabia",
+          engagementSince: "2018",
+          solutionSnapshot: [
+            "Automated Material Requisition Planning (MRP)",
+            "Implementation of Standard LS Replenishment Module",
+            "Cash & Bank Management",
+            "LS POS & Backoffice",
+            "DataDirectory, RapidStart Services & Excel Import/ Export for data migration from NAV objects to NAV BC extensions"
+                                             
+          ]
+        },
+        customerBrief: {
+        description: "The organization is one of Saudi Arabia's leading trading companies specializing in the capital goods sector. Established in 2005, the company has the mission of providing its customers with leading international brands in the areas of fashion, footwear, health, and beauty. Today, the company operates over 52 stores and has close to 85% presence across KSA",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "The objective of the organization was to streamline and optimize their business processes through the use of integrated IT systems.",
+          businesscaseList: [
+            ""
+        ]
+        },
+        challenges: {
+        description: "The Customer was using two different systems - NAV 2017 and Oracle Retail Pro (POS), due to which the same information was being captured at multiple points. Material Requisition Planning was done using an Excel sheet based on analysis of last 4-5 months consumption and coming months sales forecast taking into account upcoming festive seasons if any. This was a time-consuming process with single user dependency, complicated calculations and manual PO generation.",
+          keyChallenges: [
+            ""
+
+        ]
+        },
+        solution: {
+        description: "Upgrade NAV 2017 to Business Central 14.0 along with LS Central implementation for retail operations with following modules - ",
+          features: [
+            "Financial Management",
+            "Fixed Assets",
+            "Cash & Bank Management",
+            "Inventory with Barcode",
+            "Purchase Management Lease Module",
+            "LS POS & Back Office",
+            "KSA Payroll",
+            "Auto Replenishment Feature using LS Replenishment "
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+            "Multiple separate systems have been combined into a single system",
+            "90% time saving for reconciliation & MIS reporting activities",
+            "Automation of inventory replenishment has resulted in 99% increase in productivity",
+            "The project has been delivered on-time and as per the defined scope",
+            "Due to the success of the current engagement, Customer has selected GITL for providing AMC support and software licenses for all of its 56 stores"
+
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        id: "case-study-89",
+        mainCategory: "Transformation",
+        subCategory: "Microsoft Dynamics",
+        vertical: "Projects",
+        title: "Leading Distributor of Fruits & Vegetables in the Philippines Goes Live with D365 F&O Cloud Solution",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Manufacturing & Trading",
+          projectLocation: "Philippines",
+          engagementSince: "2018",
+          solutionSnapshot: [
+            "D365 Implementation in the farming industry is exemplary",
+            "Localized solution for Philippines",
+            "Anytime, Anywhere Access",
+            "Single integrated solution covering CRM, ERP, and BI",
+            "Accurate inventory tracking",
+            "Use of Microsoft recommended technology framework",
+            "Add-on Customization as per Customer requirements"                            
+          ]
+        },
+        customerBrief: {
+        description: "The organization has a core compentency in the trading of fresh fruits & vegetables. It has a global reach and over the years has expanded to the Far East, Africa, Europe & the Indian subcontinent. It has a leading banana product export entity in Davao, Philippines that is responsible for all production and operations related to 3 brands of the banana product.",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "The organization is a huge proponent of digital technology solutions for increasing operational efficiencies. It had been using SAP B1 for many years and decided to upgrade to D365 with below objectives:",
+          businesscaseList: [
+            "Adoption of cloud solution to eliminate dependency on hardware infrastructure",
+            "Browser based access to the system anywhere anytime",
+            "Single solution to take care of multi-geography, multi-company, multi-language, centralized data management"
+        ]
+        },
+        challenges: {
+        description: "The Customer has farms in remote locations where transportation and communication was a huge challenge. This led to minimal user engagement during the initial phases. However, following best practices were used to successfully overcome these challenges and complete the project within the specified time-frame:",
+          keyChallenges: [
+            "In-depth analysis of the business requirement",
+            "Early risk identification and prompt mitigation plans",
+            "Use of standard system to the maximum",
+            "Involvement of key stakeholders throughout the implementation cycle",
+            "Diligent change management process"
+
+        ]
+        },
+        solution: {
+        description: "GITL was selected for this engagement due to their approach of business study, demo and solution discussions along with relevant experience in the Dynamics 365 offering. The solution focused on a standardized, easy-to-use user interface (UI) across products used by the Customer. Modules covered by the solution are",
+          features: [
+            "General Ledger",
+            "Accounts Payable",
+            "Accounts Receivable",
+            "Budgeting",
+            "Fixed Assets",
+            "Cash and Bank Management",
+            "Sales and Marketing",
+            "Procurement and Sourcing",
+            "Product Information Management",
+            "Inventory and Warehouse Management"
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+            "There is considerable reduction in duplicity of work and increase in inter-departmental synergy",
+            "Users have started doing paperless work because of the new system",
+            "There is significant cost savings and greater innovation benefits received from the use of cloud technology",
+            "Through well defined access control, users are limited to accessing only relevant areas of the system which is very important from a security point of view"
+
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        id: "case-study-90",
+        mainCategory: "Transformation",
+        subCategory: "HxGN EAM",
+        vertical: "HealthCare",
+        title: "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Health Care",
+          projectLocation: "India",
+          engagementSince: "2022",
+          solutionSnapshot: [
+            "Hexagon EAM upgrade from version 11.1 to 11.6"                            
+          ]
+        },
+        customerBrief: {
+        description: "Ambitious young professionals trained in the United States established healthcare organization that identified the need for a well-organized and interconnected ambulance service in India. With fast emergency response system and addressing the critical medical needs of the Indian population, the organization is now transformed into a leading provider of corporate health services, integrated medical response solutions and healthcare call center services for rural and urban communities throughout India.",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "The objective was to improve the organization's ability to handle the expanding workload effectively like purchase requisition entry (P2P) for procurement, re-entry of approved requisitions & transfer of transaction data.",
+          businesscaseList: [
+            
+        ]
+        },
+        challenges: {
+        description: "Due to business growth and the need to boost productivity, the company faced challenges with manual processes in HxGN EAM 11.1 like manual purchase requisition entry (P2P) for procurement, re-entry of approved requisitions from SmartDocs to HxGN EAM & transfer of transaction data from HxGN EAM to Infor Sun System.",
+          keyChallenges: [
+            
+
+        ]
+        },
+        solution: {
+        description: "Hexagon EAM 11.1 with its limited capabilities held constraints on the organization's ability to handle the expanding workload effectively. After a thorough analysis of business processes and operational challenges, we recommended EAM upgrade.",
+          features: [
+            "Hexagon EAM upgrade from version 11.1 to 11.6 including Database, Application, Reports and Jobs",
+            "Integration with Infor Sun System",
+            "Integration with Smart Doc using web service prompt"
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+            "Reduction in human errors and optimized human productivity.",
+            "Efficient Asset Management and P2P Process Management.",
+            "Automation of critical manual tasks and improved operational efficiency.",
+            "Increased data Integrity by minimizing the risk of data inconsistencies.",
+            "Access to an advanced solution that offers comprehensive functionalities, enhanced scalability and seamless integration capabilities."
+
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        id: "case-study-91",
+        mainCategory: "Transformation",
+        subCategory: "Infor",
+        vertical: "Manufacturing",
+        title: "Leading manufacturer of Electrical components for the Automobile sector modernise its business application with successful implementation of Infor LN.",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Manufacturing",
+          projectLocation: "India",
+          engagementSince: "2022",
+          solutionSnapshot: [
+            "Migration from Infor SyteLine to Infor LN",
+            "Focus on standard functionalities with minimum extensions",
+            "Single logistic and Multi Finance company setup",
+            "Master and Order planning process",
+            "IoT integration"                           
+          ]
+        },
+        customerBrief: {
+        description: "The company is a subsidiary of a prestigious Indian multinational conglomerate with an impressive revenue of over $6.5 billion. It specializes in the manufacturing of high-quality electrical components for both the automobile and industrial sectors, while also providing cutting-edge IoT solutions to a wide range of industries. The company's current business process is focused on the Make to Order approach, but it is planning to transition to the more efficient Make to Stock approach.",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "",
+          businesscaseList: [
+            
+        ]
+        },
+        challenges: {
+        description: "Company was using Infor Syteline as their ERP solution for 16 years. During this period, significant customization was undertaken at the source code level, which consequently created issues like - ",
+          keyChallenges: [
+            "Non-Scalable ERP",
+            "Inability to establish new companies",
+            "Ineffective production and material planning"
+
+        ]
+        },
+        solution: {
+        description: "Considering customer’s requirements and pain points, we successfully implemented single logistic and multi finance company setup Infor Ln 10.7 On premise with Indian localisation and Infor OS with following features -",
+          features: [
+            "IoT integration",
+            "Enterprise Planning",
+            "Engineering Revision"
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+           "Improved material planning procedure",
+            "Reduced manual effort in material calculation",
+            "Increased visibility of operational activities",
+            "30% reduction in manual effort for material & production planning",
+            "Business process standardization across entities",
+            "Improved user experience and workforce enablement"
+
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        id: "case-study-92",
+        mainCategory: "Transformation",
+        subCategory: "Microsoft Dynamics",
+        vertical: "Manufacturing",
+        title: "Leading manufacturer of Electrical components for the Automobile sector modernise its business application with successful implementation of Infor LN.",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Manufacturing",
+          projectLocation: "India",
+          engagementSince: "2022",
+          solutionSnapshot: [
+            ""                           
+          ]
+        },
+        customerBrief: {
+        description: "",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "",
+          businesscaseList: [
+            
+        ]
+        },
+        challenges: {
+        description: "Company was using Infor Syteline as their ERP solution for 16 years. During this period, significant customization was undertaken at the source code level, which consequently created issues like - ",
+          keyChallenges: [
+            "Non-Scalable ERP",
+            "Inability to establish new companies",
+            "Ineffective production and material planning"
+
+        ]
+        },
+        solution: {
+        description: "Considering customer’s requirements and pain points, we successfully implemented single logistic and multi finance company setup Infor Ln 10.7 On premise with Indian localisation and Infor OS with following features -",
+          features: [
+            "IoT integration",
+            "Enterprise Planning",
+            "Engineering Revision"
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+           "Improved material planning procedure",
+            "Reduced manual effort in material calculation",
+            "Increased visibility of operational activities",
+            "30% reduction in manual effort for material & production planning",
+            "Business process standardization across entities",
+            "Improved user experience and workforce enablement"
+            
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        id: "case-study-93",
+        mainCategory: "Transformation",
+        subCategory: "Microsoft Dynamics",
+        vertical: "Manufacturing",
+        title: "Leading manufacturer of Electrical components for the Automobile sector modernise its business application with successful implementation of Infor LN.",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Manufacturing",
+          projectLocation: "India",
+          engagementSince: "2022",
+          solutionSnapshot: [
+            ""                           
+          ]
+        },
+        customerBrief: {
+        description: "",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "",
+          businesscaseList: [
+            
+        ]
+        },
+        challenges: {
+        description: "Company was using Infor Syteline as their ERP solution for 16 years. During this period, significant customization was undertaken at the source code level, which consequently created issues like - ",
+          keyChallenges: [
+            "Non-Scalable ERP",
+            "Inability to establish new companies",
+            "Ineffective production and material planning"
+
+        ]
+        },
+        solution: {
+        description: "Considering customer’s requirements and pain points, we successfully implemented single logistic and multi finance company setup Infor Ln 10.7 On premise with Indian localisation and Infor OS with following features -",
+          features: [
+            "IoT integration",
+            "Enterprise Planning",
+            "Engineering Revision"
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+           "Improved material planning procedure",
+            "Reduced manual effort in material calculation",
+            "Increased visibility of operational activities",
+            "30% reduction in manual effort for material & production planning",
+            "Business process standardization across entities",
+            "Improved user experience and workforce enablement"
+            
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
+        }
+        
+      },
+
+      {
+        id: "case-study-94",
+        mainCategory: "Transformation",
+        subCategory: "Infor",
+        vertical: "Manufacturing",
+        title: "India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN",
+        client: {
+          name: "",
+          industry: "",
+          location: "",
+          engagementSince: ""
+        },
+        images: {
+          thumbnail: "",
+          detailPageImage: ""
+        },
+        highlights: {
+          industry: "Manufacturing",
+          projectLocation: "India",
+          engagementSince: "2021",
+          solutionSnapshot: [
+            "Service Cloud Solution Integrated with Infor LN",
+            "Single sign on",
+            "On the go access through mobile devices",
+            "Connector between the sales and the service model",
+            "Digitization of service processes"                           
+          ]
+        },
+        customerBrief: {
+        description: "The organization offers an extensive range of forklifts such as electric, LPG, and diesel counterbalanced forklifts, warehouse trucks, and specialized trucks for specific applications. They also design and manufacture accessories to address a wide range of handling applications.",
+            BriefList: [
+              ""
+          ]
+        },
+        businessCase: {
+        description: "",
+          businesscaseList: [
+            
+        ]
+        },
+        challenges: {
+        description: "Customer was having manual & semi-automated processes that were leading to issues in:",
+          keyChallenges: [
+            "Real-time monitoring of service data",
+            "Availability of asset service history",
+            "Multiple Be-Spoke Systems",
+            "Lack of a centralized system formanaging channel partners, off-roll service dealer technicians, call centre, & customer support group"
+
+
+        ]
+        },
+        solution: {
+        description: "Considering the Customers’ unique requirements, we provided Service Cloud Solution integrated with Infor LN having following features ",
+          features: [
+            "Seamless data flow from Salesforce to ERP and vice versa",
+            "Automation of service contract lifecycle & customer specific service plans",
+            "Rule based auto-scheduling of service calls",
+            "Publication of knowledge articles for faster resolution",
+            "Mobile app for PAN India technician connect",
+            "Single system for multi-level approvals"
+        ]
+         
+        },
+        benefits: {
+          description: "",
+          list: [
+          "Better customer data security",
+            "Better customer relationship & satisfaction",
+            "Customer & asset 360 view",
+            "Real-time service dashboards",
+            "Increased transparency due to quantification of service parameters",
+            "Improved case resolution",
+            "24*7 access to systems"
+            
+          ]
+        },
+        meta: {
+          title: "",
+          description: "",
+          keywords: [
+            "",
+           ""
+          ]
+        },
+        downloadCTA: {
+          text: "Download Case Study",
+          url: "path-to-case-study-1-download.pdf"
         }
         
       }

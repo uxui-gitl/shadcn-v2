@@ -1,10 +1,10 @@
 const storiesData = [
     {
         year: ``,
-        month: 'Ot',
+        month: '',
         date: '',
         title: `Our Customer Rated Us As 'Excellent' For Our Diligent Support!!!'`,
-        readMoreUrl: '/successStroy/AheadOfTime.pdf',
+        readMoreUrl: '',
         imageUrl:'/caseStudies/blog.svg',
     },
 
