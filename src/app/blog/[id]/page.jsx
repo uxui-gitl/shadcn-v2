@@ -71,7 +71,7 @@ const Page = () => {
                                 </div>
                             </figcaption>
                         </div>
-                        <div class="col-span-3">
+                        <div className="col-span-3">
                             <div dangerouslySetInnerHTML={{ __html: blogDetail?.description }}></div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ const Page = () => {
                 <div className="grid grid-cols-4 gap-4">
                     <div className="">
                     </div>
-                    <div class="col-span-3">
+                    <div className="col-span-3">
                         <figcaption className="flex">
                             <img className="rounded-full w-20 h-20 mr-4" src={`${url.blogImageUrl}/${blogDetail?.authorImage}`} alt="profile picture" />
                             <div className="space-y-0.5 font-medium text-black text-left rtl:text-right ms-3">
@@ -114,7 +114,7 @@ const Page = () => {
                 {topBlogList.map(item => (
                     <>
                         <div className="cards py-10" style={{ borderBottom: '1px solid #d3d3d3' }}>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div className="grid grid-cols-3 gap-4">
                                 <div className="m-h-[300px] w-[300px] rounded-3xl" style={{
                                     backgroundImage: `url(${url.blogImageUrl}/${item.bannerImage})`,
                                     backgroundSize: "cover",
@@ -125,7 +125,7 @@ const Page = () => {
                                 <div className="col-span-2">
                                     <h6 className="date text-white text-[16px] font-medium mb-10">{item.postedOnVar}</h6>
                                     <h2 className="title text-[20px] text-white  leading-[28px] font-semibold mb-10">{item.name}</h2>
-                                    <button type="button" class="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" onClick={() => router.push(`/blog/${item.blogId}`)}>Read Blog</button>
+                                    <button type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" onClick={() => router.push(`/blog/${item.blogId}`)}>Read Blog</button>
                                 </div>
                             </div>
                         </div>

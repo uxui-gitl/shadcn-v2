@@ -48,7 +48,7 @@ const Page = () => {
                 <div className="md:container mx-auto">
                     <h6 className="date text-[#808080] text-[20px] font-medium mb-10">18 October, 2024</h6>
                     <h2 className="title text-[42px] max-w-[70%] leading-[50px] font-semibold mb-10">Leading global lifestyle distribution company successfully implements .net based dealer management system</h2>
-                    <button type="button" class="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 ">Read Blog</button>
+                    <button type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 ">Read Blog</button>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@ const Page = () => {
                 <div className="grid grid-cols-3 gap-4 my-10">
                     {topBlogList.map((item) => (
                         <>
-                            <div class="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow overflow-hidden">
+                            <div className="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow overflow-hidden">
                                 <div className="h-[250px]" style={{
                                     backgroundImage: `url(${url.blogImageUrl}/${item.bannerImage})`,
                                     backgroundSize: "cover",
@@ -72,10 +72,10 @@ const Page = () => {
                                 </div>
                                 <div className="p-6">
                                     <div className="mb-6 flex flex-wrap">
-                                        <span class="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.categoryCode}</span>
+                                        <span className="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.categoryCode}</span>
 
                                     </div>
-                                    <h5 class="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.name}</h5>
+                                    <h5 className="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.name}</h5>
                                     <div className="flex justify-end">
                                         <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => navigateToBlog(item.blogId)} />
                                     </div>
@@ -101,7 +101,7 @@ const Page = () => {
                 {moreBlogList.map(item => (
                     <>
                         <div className="cards py-10" style={{ borderBottom: '1px solid #d3d3d3' }}>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div className="grid grid-cols-3 gap-4">
                                 {item.bannerImage ? (<div className="m-h-[300px] w-[300px] rounded-3xl" style={{
                                     backgroundImage: `url(${url.blogImageUrl}/${item.bannerImage})`,
                                     backgroundSize: "cover",
@@ -119,7 +119,7 @@ const Page = () => {
                                 <div className="col-span-2">
                                     <h6 className="date text-[#808080] text-[16px] font-medium mb-10">{item.postedOnVar}</h6>
                                     <h2 className="title text-[20px]  leading-[28px] font-semibold mb-10">{item.name}</h2>
-                                    <button type="button" class="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" onClick={() => router.push(`/blog/${item.blogId}`)}>Read Blog</button>
+                                    <button type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" onClick={() => router.push(`/blog/${item.blogId}`)}>Read Blog</button>
                                 </div>
                             </div>
                         </div>

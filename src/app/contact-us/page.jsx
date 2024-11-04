@@ -307,7 +307,7 @@ const ContactUs = () => {
                       name="Consent"
                       value={formData.Consent}
                       onChange={handleChange}
-                      class="default:ring-2"
+                      className="default:ring-2"
                     />
                     <p className="text-['#E4E4E4'] text-[14px] mb-6">
                       I consent to the processing of my personal data by Godrej
@@ -361,7 +361,7 @@ const ContactUs = () => {
                       {add.extension2 && <span> / {add.extension2}</span>}
                     </p>
                   )}
-                  <button type="button" class=" mt-4 text-sm text-slate-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full px-5 py-2.5 me-2 mb-2">
+                  <button type="button" className=" mt-4 text-sm text-slate-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full px-5 py-2.5 me-2 mb-2">
                     <Link href={`mailto:${add.email}`} target="_blank">{'Send Email'}</Link>
                   </button>
                 </div>
@@ -400,7 +400,7 @@ const ContactUs = () => {
                     </LinearGradient> <span className="text-base text-slate-400 font-normal">out of 5</span></h1>
                   </div>
                   <div>
-                    <button type="button" class="text-slate-500 bg-white border border-gray-300 focus:outline-none focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">Explore Job Listings</button>
+                    <button type="button" className="text-slate-500 bg-white border border-gray-300 focus:outline-none focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">Explore Job Listings</button>
                   </div>
                 </div>
 

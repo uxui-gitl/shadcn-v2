@@ -218,7 +218,7 @@ export default function Home() {
     // Add more case studies here...
   ];
 
-  const TESTIMONIAL_DATA:any = [
+  const TESTIMONIAL_DATA: any = [
     {
       id: '1',
       cardHeading: "79% Cut down in Purchase Order Processing",
@@ -426,7 +426,7 @@ export default function Home() {
 
   return (
     <>
-      <Announcement content={''} country={'IN'}/>
+      <Announcement content={''} country={'IN'} />
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
@@ -557,7 +557,7 @@ export default function Home() {
       </div>
 
       {/* end partner Section */}
-      <hr className="h-px bg-white border-1" />
+      <hr className="h-px bg-[#d3d3d3] border-1" />
       <div className=" relative z-2 bg-white" style={{ borderBottomLeftRadius: '24px', borderBottomRightRadius: "24px" }}>
         <div className="md:container mx-auto pt-32 pb-40">
           <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
@@ -575,7 +575,7 @@ export default function Home() {
             >
               <span className="text-[#5F22D9] ml-2">{items[index].content}</span>
             </motion.div>
-          <br></br>
+            <br></br>
             business with
             <motion.div
               key={items2[index].id}

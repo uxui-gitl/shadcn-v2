@@ -66,22 +66,22 @@ const Page = () => {
                 sectionHeadingLayout="center"
             >
                 <div className="">
-                    <form class="w-full grid grid-cols-4 gap-4">
-                        <select id="large" value={mainCategory} onChange={(e) => onChange(e, 'mainCategory')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                    <form className="w-full grid grid-cols-4 gap-4">
+                        <select id="large" value={mainCategory} onChange={(e) => onChange(e, 'mainCategory')} className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="Automation">Automation</option>
                             <option value="Cloud">Cloud</option>
                             <option value="Transformation">Transformation</option>
 
                         </select>
-                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="Infor">Infor</option>
                             <option value="IntelligentTechnologies">Intelligent Technologies</option>
                             <option value="Transformation">Transformation</option>
 
                         </select>
-                        <select id="large" value={vertical} onChange={(e) => onChange(e, 'vertical')} class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={vertical} onChange={(e) => onChange(e, 'vertical')} className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="LN">LN</option>
                             <option value="AI">AI</option>
@@ -89,7 +89,7 @@ const Page = () => {
 
                         </select>
                         <div className="">
-                            <button onClick={() => handleReset()} type="button" class="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
+                            <button onClick={() => handleReset()} type="button" className="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
                         </div>
                     </form>
                 </div>
@@ -97,7 +97,7 @@ const Page = () => {
                 <div className="grid grid-cols-3 gap-4 my-10">
                     {updatedCaseStudiesData.map((item) => (
                         <>
-                            <div class="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow">
+                            <div className="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow">
                                 <div className="h-[250px]" style={{
                                     backgroundImage: `url("/caseStudies/case-studies-bg1.svg")`,
                                     backgroundSize: "cover",
@@ -106,11 +106,11 @@ const Page = () => {
                                 </div>
                                 <div className="p-6">
                                     <div className="mb-6 flex flex-wrap">
-                                        <span class="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.mainCategory}</span>
-                                        <span class="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.subCategory}</span>
-                                        <span class="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.vertical}</span>
+                                        <span className="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.mainCategory}</span>
+                                        <span className="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.subCategory}</span>
+                                        <span className="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.vertical}</span>
                                     </div>
-                                    <h5 class="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.title}</h5>
+                                    <h5 className="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.title}</h5>
                                     <div className="flex justify-end">
                                         <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => router.push(`/case-studies/${item.id}?type=${item.mainCategory}`)} />
                                     </div>

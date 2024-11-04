@@ -87,10 +87,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 </p>
 
                 <div className="grid grid-cols-2 gap-4">
-                <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>
                   Real-time Monitoring 
-                    <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                    <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                       <li>Alerts </li>
                       <li>Machine parameter-wise graphical reports </li>
                       <li>Real-time asset tracking </li>
@@ -98,37 +98,37 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   </li>
                   <li>
                   Work Management 
-                    <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                       <li>Work Order Generation for Asset Maintenance  </li>
                     </ul>
                   </li>
                   <li>
                   Predictive Maintenance 
-                    <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                       <li>Multivariate Azure ML-driven predictive failure analytics </li>
                       
                     </ul>
                   </li>
                 </ul>
 
-                <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>
                   Service Management 
-                    <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                    <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                       <li>Service performance monitoring  </li>
                       <li>Expense management and Warranty tracking  </li>
                     </ol>
                   </li>
                   <li>
                   Collaboration and Integration 
-                    <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                       <li>Chat collaboration </li>
                       <li>Integration with SAP using file-based data transfer mechanism  </li>
                     </ul>
                   </li>
                   <li>
                   Customer Portal   
-                    <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                       <li>Notifications  </li>
                       <li>Reporting and analytics</li>
                       <li>Service contracts (AMC)</li>
@@ -146,10 +146,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
              </p>
 
              <div className="grid grid-cols-2 gap-4">
-             <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+             <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                <li>
                Real-time Monitoring 
-                 <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>Production monitoring  </li>
                    <li>Machine-wise, batch-wise, and part-wise production analysis  </li>
                    <li>Real-time material consumption analysis</li>
@@ -158,7 +158,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                </li>
                <li>
                Costing and Optimization 
-                 <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>Usage-based costing </li>
                    <li>Consumption-based costing analysis  </li>
                    <li>OEE (Overall Equipment Effectiveness) optimization  </li>
@@ -167,7 +167,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                </li>
                <li>
                Quality and Performance Analysis 
-                 <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>42TPM (Total Productive Maintenance) loss reports </li>
                    <li>Rejection analysis </li>
                    <li>Cycle time report analysis </li>
@@ -176,7 +176,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                </li>
                <li>
                Quality reports 
-                 <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>SPC (Statistical Process Control) reports </li>
                    <li>Defect analysis  </li>
                    <li>RCA (Root Cause Analysis) </li>
@@ -185,11 +185,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                </li>
              </ul>
 
-             <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+             <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
           
                <li>
                Tracking and Traceability 
-                 <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>Production order and item-wise tracking </li>
                    <li>MHU (Machine Hour Unit) wise tracking </li>
                    <li>Trace and tracking of MHU equipment </li>
@@ -198,7 +198,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                </li>
                <li>
                Predictive Maintenance and Uptime    
-                 <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>Predictive maintenance </li>
                    <li>MTTR (Mean Time To Repair) and MTBF (Mean Time Between Failures) reports </li>
                    <li>Safety and Compliance Reports </li>
@@ -207,7 +207,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                <li>
                Alerts and Reporting 
-                 <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                    <li>Alerts  </li>
                    <li>Energy consumption report (in kWh)  </li>
                    <li>Customized reporting and analytics </li>

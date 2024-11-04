@@ -612,17 +612,17 @@ const MicrosoftPractises = () => {
             border: '2px #EFE9FB solid',
             backdropFilter: 'blur(30px)'
           }}>
-          <div class="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <div>
               <div className={`text-3xl sm:text-2xl md:text-[54px] font-semibold leading-tight md:leading-[64px]`}>Microsoft Expertise<br></br> Recognition</div>
             </div>
-            <div class="grid grid-cols-3 gap-4 my-10">
+            <div className="grid grid-cols-3 gap-4 my-10">
               {[1, 2, 3].map((item) => (
                 <>
-                  <div class="max-w-sm bg-[transprent] border border-gray-200 rounded-lg ">
-                      <Image width={'382'} height={'200'} class="rounded-t-lg" src="/Transformation/microsoft-practices/merLogo01.png" alt="skhd" />
-                    <div class="p-5">
-                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2023</h5>
+                  <div className="max-w-sm bg-[transprent] border border-gray-200 rounded-lg ">
+                      <Image width={'382'} height={'200'} className="rounded-t-lg" src="/Transformation/microsoft-practices/merLogo01.png" alt="skhd" />
+                    <div className="p-5">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2023</h5>
                     </div>
                   </div>
                 </>

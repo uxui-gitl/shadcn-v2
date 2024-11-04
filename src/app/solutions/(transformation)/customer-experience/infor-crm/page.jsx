@@ -7,6 +7,7 @@ import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardThreeSlider';
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
+import Link from "next/link";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import SectionWrapperNew from "@/components/SectionWrapperNew";
@@ -301,7 +302,9 @@ const page = () => {
               <p className="mb-4">{casestudy[1].description}</p>
 
               <div className="absolute bottom-4 right-4">
+              <Link href={casestudy[1].link} target="_blank">
                 <OutlinedButtonWithArrow size={56} />
+              </Link>
               </div>
             </div>
 

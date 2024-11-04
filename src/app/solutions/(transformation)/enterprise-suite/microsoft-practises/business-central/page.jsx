@@ -367,12 +367,7 @@ const FinancialManagementContent = () => {
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
-        <LeftHeading
-        heading={'Financial Management'}
-        desc={''}
-        textColor={'#FFF'}
-        ></LeftHeading>
-
+         <div className={`text-xl sm:text-2xl md:text-[42px] font-semibold leading-tight md:leading-[64px] text-white mb-3`}>{'Financial Management'}</div>
         <div className="py-2">
           <ul className="text-[16px] text-white font-normal leading-[24px]">
             <li className="mb-3"><strong>Financial Data Consolidation:</strong><br/>Transfer general ledger entries from two or more companies (subsidiaries) into a consolidated company. </li>
@@ -383,7 +378,7 @@ const FinancialManagementContent = () => {
           </ul>
           </div>
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      <div className="relative w-full" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
@@ -393,12 +388,7 @@ const SupplyChainContent = () => {
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
-        <LeftHeading
-        heading={'Supply Chain'}
-        desc={''}
-        textColor={'#FFF'}
-        ></LeftHeading>
-
+      <div className={`text-xl sm:text-2xl md:text-[42px] font-semibold leading-tight md:leading-[64px] text-white mb-3`}>{'Supply Chain'}</div>
         <div className="py-2">
           <ul className="text-[16px] text-white font-normal leading-[24px]">
             <li className="mb-3"><strong>Automated Stock Management:</strong><br/> Receive automated suggestions for inventory replenishment, based on calculations of stock levels, lead times and reorder points.</li>
@@ -418,11 +408,7 @@ const SalesMarketingContent = () => {
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
-        <LeftHeading
-        heading={'Sales Marketing'}
-        desc={''}
-        textColor={'#FFF'}
-        ></LeftHeading>
+      <div className={`text-xl sm:text-2xl md:text-[42px] font-semibold leading-tight md:leading-[64px] text-white mb-3`}>{'Sales Marketing'}</div>
 
         <div className="py-2">
           <ul className="text-[16px] text-white font-normal leading-[24px]">
@@ -441,11 +427,7 @@ const ProjectManagementContent = () => {
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
-        <LeftHeading
-        heading={'Project Management'}
-        desc={''}
-        textColor={'#FFF'}
-        ></LeftHeading>
+      <div className={`text-xl sm:text-2xl md:text-[42px] font-semibold leading-tight md:leading-[64px] text-white mb-3`}>{'Project Management'}</div>
 
         <div className="py-2">
           <ul className="text-[16px] text-white font-normal leading-[24px]">
@@ -465,11 +447,7 @@ const ServiceManagementContent = () => {
   return (
     <div className="grid grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
-        <LeftHeading
-        heading={'Service Management'}
-        desc={''}
-        textColor={'#FFF'}
-        ></LeftHeading>
+      <div className={`text-xl sm:text-2xl md:text-[42px] font-semibold leading-tight md:leading-[64px] text-white mb-3`}>{'Service Management'}</div>
 
         <div className="py-2">
           <ul className="text-[16px] text-white font-normal leading-[24px]">

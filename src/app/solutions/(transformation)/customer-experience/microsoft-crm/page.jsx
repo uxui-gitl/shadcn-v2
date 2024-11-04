@@ -320,19 +320,19 @@ const page = () => {
         <Slider slidesPerView={3.2}>
           {crmOfferinfData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="max-w-sm bg-[black] rounded-3xl group overflow-hidden relative" >
+              <div className="max-w-sm bg-[black] rounded-3xl group overflow-hidden relative" >
                 <div className="py-10 px-10 ">
-                  <h5 class="mb-6 text-[42px] font-semibold text-white leading-[50px] min-h-[150px]">{item?.cardHeading}</h5>
-                  <p class="mb-3 text-[16px] font-medium text-white min-h-[72px]">{item?.cardDesc}</p>
+                  <h5 className="mb-6 text-[42px] font-semibold text-white leading-[50px] min-h-[150px]">{item?.cardHeading}</h5>
+                  <p className="mb-3 text-[16px] font-medium text-white min-h-[72px]">{item?.cardDesc}</p>
                 </div>
                 {item?.cardHoverData && (
                   <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
                     <div className="">
-                      <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                      <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
                         {item?.cardHoverData.map((item2) => (
                           <>
                             <li>
-                              <span class="font-semibold text-black">{item2}</span>
+                              <span className="font-semibold text-black">{item2}</span>
                             </li>
                           </>
                         ))}
