@@ -228,42 +228,42 @@ const UpgradeToCloud = () => {
       hoverTitle: "Infrastructure & Data Evaluation",
       description: "Assess migration readiness, identify risks and create solid plan. A clear path to a successful transition",
       content: "Additional content for Card 1",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Infra.webp'
     },
     {
       title: "Strategy Designing",
       hoverTitle: "Strategy Designing",
       description: "Align business needs & goals, set KPIs and build a tailored strategy for successful cloud adoption",
       content: "Additional content for Card 2",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Stratergy.webp'
     },
     {
       title: "Blueprint Development",
       hoverTitle: "Blueprint Development",
       description: "Define and prioritize tasks, align assets, establish milestones, iterations and timelines for upgradation journey.",
       content: "Additional content for Card 3",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Blurprint.webp'
     },
     {
       title: "Establishing Readiness",
       hoverTitle: "Establishing Readiness",
       description: "Expanding the landing zone blueprint and adequately preparing well-designed cloud environment.  ",
       content: "Additional content for Card 4",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Establishing.webp'
     },
     {
       title: "Upgrade and Execute",
       hoverTitle: "Upgrade and Execute",
       description: "Assess readiness, refactor IT architecture, rehost, and implement changes to achieve desired outcomes.",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Upgrade.webp'
     },
     {
       title: "Management and Control",
       hoverTitle: "Management and Control",
       description: "Optimize costs, mitigate risks, define policies, standardize processes & ensure governance, resources & security. ",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/managementControl.webp'
     },
     // Add more cards here...
   ];
