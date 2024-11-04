@@ -96,7 +96,7 @@ const CloudStack = () => {
       ]
     },
   ]
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/CloudStackServices/blog.webp";
 
 
   const ULTIMATE_CHOICE_DATA = [
@@ -247,7 +247,7 @@ const CloudStack = () => {
     },
 
     {
-      imageURL: "/path/to/image1.jpg",
+      imageURL: "/CloudStackServices/WildLife.Webp",
       title: "",
 
       heading: "Indian Wildlife Conservation Organization",
@@ -257,7 +257,7 @@ const CloudStack = () => {
       bgCardColor: '#FCE6F4'
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      imageURL: "/CloudStackServices/WildLife.Webp",
       title: "",
       heading: "Philippines Fresh Produce Distributor",
       description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
@@ -302,35 +302,35 @@ const CloudStack = () => {
       hoverTitle: "Cloud Consulting",
       description: "Strategic guidance and actionable plan for adoption and management of cloud while optimizing cloud investment.",
       content: "Additional content for Card 1",
-      imageURL: '/techStack1.png'
+      imageURL: '/CloudStackServices/CloudDrivenServices/CloudConsulting.webp'
     },
     {
       title: "Architect and Manage Cloud",
       hoverTitle: "Architect and Manage Cloud",
       description: "Design, develop and manage cloud infrastructure and platforms, providing 360-degree visibility into business application ecosystem.",
       content: "Additional content for Card 2",
-      imageURL: '/techStack1.png'
+      imageURL: '/CloudStackServices/CloudDrivenServices/ArchitechtManage.webp'
     },
     {
       title: "Cloud Security",
       hoverTitle: "Cloud Security",
       description: "Identify security gaps, design risk-based cloud architecture & automate deployment of security guardrails for cloud-native services.",
       content: "Additional content for Card 3",
-      imageURL: '/techStack1.png'
+      imageURL: '/CloudStackServices/CloudDrivenServices/CloudSecurity.webp'
     },
     {
       title: "Public Cloud",
       hoverTitle: "Public Cloud",
       description: "Intact cloud environment development and industry-leading practices that support cloud implementation and management.",
       content: "Additional content for Card 4",
-      imageURL: '/techStack1.png'
+      imageURL: '/CloudStackServices/CloudDrivenServices/publicCloud.webp'
     },
     {
       title: "App transformation & Cost Optimization",
       hoverTitle: "App transformation & Cost Optimization",
       description: "Transform & optimize apps with cloud-native architecture, containerization & cost optimization strategies",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/CloudStackServices/CloudDrivenServices/appTransformation.webp'
     },
     // Add more cards here...
   ];
@@ -408,7 +408,7 @@ const CloudStack = () => {
       {/* Start--Section--UltimateChoice======================================================================== */}
       <SectionWidthSlider
         ID={"ULTIMATE_CHOICE_DATA"}
-        sectionHeading={"Why Cloud is your Ultimate Choice?"}
+        sectionHeading={"Why Cloud is your Ultimate Choice?"}
         sectionDesc={
           "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
         }
