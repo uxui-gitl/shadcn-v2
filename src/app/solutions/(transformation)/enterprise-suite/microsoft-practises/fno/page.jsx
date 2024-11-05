@@ -208,16 +208,8 @@ const FNO = () => {
     <li>
         Professional services
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>Financial precision for budgeting, invoicing and expense management 
-
-Project-centric approach for professional services firms 
-
- 
-
-Projects 
-
-Financial transparency and control for budgeting and cost management /li>
-            <li>Project-centric approach for professional services firms </li>
+            <li>Financial precision for budgeting, invoicing and expense management</li>
+            <li>Project-centric approach for professional services firms</li>
         </ol>
     </li>
 </ul>`
@@ -445,7 +437,7 @@ Financial transparency and control for budgeting and cost management /li>
       cardBGImageUrl: '',
       cardBGColor: '#9F0165',
       cardHeading: 'Manufacturing',
-      cardDesc: 'Cultivate robust relationships with both customers and vendors enhancing mutual success.',
+      cardDesc: 'Optimize your manufacturing processes, streamlining production and upholding product quality to meet or exceed market standards.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
@@ -594,9 +586,10 @@ Financial transparency and control for budgeting and cost management /li>
         blogImageUrl={blogImageUrl}
         Heading={"The Future of Financial Agility: D365 Finance and Operations Insights"}
         Desc={
-          "This innovative platform, coupled with the expertise of a Microsoft Dynamics Partner Company, promises agility and operational effectiveness. Dynamics 365 Finance stands at the forefront of revolutionizing financial management, offering a comprehensive suite of tools to navigate the evolving financial terrain."
+          ""
         }
         Color={"white"}
+        readMoreUrl="https://godrejinfotech.com/blogDetails.aspx?blog=12"
       ></BlogSection>
       {/* End--Blogs-Section================================================================ */}
 
