@@ -410,7 +410,7 @@ const CloudStack = () => {
         ID={"ULTIMATE_CHOICE_DATA"}
         sectionHeading={"Why Cloud is your Ultimate Choice?"}
         sectionDesc={
-          "With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics."
+          "A fault-tolerant architecture and global data centers that helps to expand infrastructure and leverage advanced analytics."
         }
         sectionTextColor="#ffffff"
         cardData={ULTIMATE_CHOICE_DATA}
