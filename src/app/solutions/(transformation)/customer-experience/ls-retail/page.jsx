@@ -127,14 +127,14 @@ const page = () => {
     
     <li>
     Retail
-        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+        <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
             <li>Point of Sale</li>
             <li>Loyalty Management</li>
             <li>Replenishment</li>
             <li>eCommerce Integration</li>
             <li>Store Operations</li>
             <li>Store Operations</li>
-        </ol>
+        </ul>
     </li>
 </ul>`
     },
@@ -154,7 +154,7 @@ const page = () => {
        
     <li>
     Duty-Free and Travel Retail
-        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+        <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
             <li>Multi-Currency Cash Back</li>
             <li>Transit Bank Guarantee Management</li>
             <li>Customer Quota-Based Offers</li>
@@ -162,7 +162,7 @@ const page = () => {
             <li>Automated Application of Tax-Free Rules</li>
             <li>Track Travelers' Preferences and Past Purchases for stores and eCommerce</li>
             <li>Manage Product Allowance Rules Easily according to local legislation</li>
-        </ol>
+        </ul>
     </li>
 </ul>`
     },
@@ -182,13 +182,13 @@ const page = () => {
        
     <li>
     Hospitality
-        <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+        <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
             <li>Restaurant POS (Fine dining, Take away, QSR &More)</li>
             <li>Kitchen Display System (KDS)</li>
             <li>Guest Loyalty</li>
             <li>Recipe Management</li>
             <li>Split Bill & Table Transfer</li>
-          </ol>
+          </ul>
     </li>
 </ul>`
     },
