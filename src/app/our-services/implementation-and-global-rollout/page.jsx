@@ -412,6 +412,7 @@ const page = () => {
                   <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="werw" />
                   <div className="p-5">
                     <h5 className="mb-2 text-2xl font-bold">{item.cardHeading}</h5>
+                    <p>{item.cardDesc}</p>
                   </div>
                 </div>
               </SwiperSlide>
