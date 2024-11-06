@@ -7,7 +7,7 @@ import Image from "next/image";
 import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardThreeSlider';
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
@@ -232,6 +232,47 @@ const page = () => {
     },
     
   ]
+
+  const keyResponsibilityData = [
+        {
+          title: "Whatsapp Conversational Commerce",
+          desc:
+            "Seamlessly integrate WhatsApp into your ecommerce strategy, enabling personalized customer interactions, automated support, and streamlined ordering.",
+            
+        },
+    
+        {
+          title: "ERP Integration",
+          desc:
+            "Unify ecommerce operations with ERP integration, synchronizing inventory, orders and customer data",
+        },
+        {
+          title: "Order Management Solution",
+          desc:
+            "Streamline ecommerce operations with a comprehensive Order Management Solution, optimizing fulfillment, inventory management, and customer satisfaction.",
+         
+        },
+        {
+          title: "Mobile-Centric Design",
+          desc:
+            "Elevate mobile commerce with responsive, intuitive ecommerce designs.",
+        },
+          {
+          title: "SEO-Friendly",
+          desc:
+            "Develop search engine-friendly store designs to attract customers. Multi-currency Capabilities - Multilingual and multi-currency support for global audience",
+        },
+        {
+          title: "Efficient Single-Page Checkouts",
+          desc:
+            "Checkout process with customised single-page designs, eliminating lengthy forms and enhancing efficiency. ",
+        },
+           {
+          title: "Seamless App Integration",
+          desc:
+            "Integrate applications securely, lower costs, and maintain PCI compliance.",
+        },
+      ];
 
   const DATA_MGMT_DATA = [
     {
@@ -519,6 +560,28 @@ const page = () => {
       >
 
       </CommonCardThreeSlider>
+
+       {/* key responsibility */}
+        <SectionWrapperNew
+        sectionHeading={'Ecommerce Capabilities'}
+        sectionDesc={`Partner with us to leverage the full potential of online store and drive growth in the digital marketplace`}
+        sectionTextColor={'#fff'}
+        sectionHeadingLayout="horizontal"
+        style={{ backgroundColor: '#5F22D9' }}
+      >
+
+        <Slider slidesPerView={3.2}>
+          {keyResponsibilityData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                <div className="text-[28px] text-white">{item?.title}</div>
+                <p className="text-[20px] py-4 text-white">{item?.desc}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
 
       {/* <SectionWidthSlider
         ID={"ultimateChoiceData"}
