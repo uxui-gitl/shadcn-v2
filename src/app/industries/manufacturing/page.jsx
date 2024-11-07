@@ -14,7 +14,7 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { Tabs } from "@/components/ui/tabs";
 import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-
+import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 
 
@@ -31,6 +31,28 @@ function page() {
         { id: 5, title: "Limited access to real-time information hinders office and shop floor productivity ", icon: '/upgradeCloud/icons/ico--target.svg' },
         
     ];
+
+    const blogSliderData = [
+    {
+      id: 1,
+      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGColor: 'red',
+      cardHeading: "MES Impact on Manufacturing Operations ",
+      cardDesc: `'Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing.'`,
+      cardTextColor: 'white',
+      readMoreUrl: "#"
+    },
+    {
+      id: 2,
+      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGColor: 'red',
+      cardHeading: "Legacy Modernization in Manufacturing Industry",
+      cardDesc: 'The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. ',
+      cardTextColor: 'white',
+      readMoreUrl: "#"
+    },
+
+  ]
 
     const tabs = [
         {
@@ -227,7 +249,7 @@ function page() {
             id: 5,
             cardBGImageUrl: '/rpa/ArtboardBg.png',
             cardBGColor: '#EFE9FB',
-            cardHeading: 'QCAT – Quality control Analysis Testing',
+            cardHeading: 'QCAT - Quality control Analysis Testing',
             cardDesc: 'Enhance quality control efficiency with online inspections and dynamic checklists ensuring end-to-end traceability',
             isArrow: true,
             cardTextColor: 'black',
@@ -765,14 +787,18 @@ function page() {
 
             </SectionWrapperNew>
             {/* end case studies */}
-            <BlogSection
+            {/* <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
                 Heading={"MES Impact on Manufacturing Operations"}
                 Desc={"Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing. It offers real-time visibility into production activities which enables efficient control and optimization. "}
                 Color={"white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
-            ></BlogSection>
+            ></BlogSection> */}
+
+            <BlogSliderSection
+        cardData={blogSliderData}
+      ></BlogSliderSection>
 
             <ReviewSliderSection
                 ID={"TESTIMONIALS"}
