@@ -177,9 +177,9 @@ export default function Home() {
       imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
-      heading: "Project Highlights",
+      heading: "Delivering Results that Matter",
       description:
-        "World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
+        "World's top-notch businesses choose us for our industry knowledge and excellent technical acumen as we deliver high performing solutions across the spectrum of industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
@@ -246,7 +246,7 @@ export default function Home() {
     {
       id: 1,
       cardTitle: "",
-      cardHeading: "Embrace Tomorrow with AUTOMATION",
+      cardHeading: "Embrace Tomorrow with Automation",
       cardDesc: 'Accelerate operations, drive innovation and increase accuracy with AI powered solutions',
       rawData: `<div class="grid grid-cols-3 gap-4">
             <div>
@@ -642,7 +642,7 @@ export default function Home() {
       {/* hub of experties */}
       <SectionWrapperNew
         sectionHeading={"Hub of Expertise"}
-        sectionDesc={"We are here to build and edge and bring technology brilliance with the finest in the industry."}
+        sectionDesc={"We are here to build an edge and bring technology brilliance with the finest in industry"}
         sectionTextColor="white"
         sectionHeadingLayout="center"
         style={{ background: "linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)", paddingTop: '400px' }}
@@ -695,7 +695,7 @@ export default function Home() {
         blogImageUrl={'/homeNew/blog-svg.png'}
         Heading={"Step Up in Your Professional Journey"}
         Desc={
-          "Work alongside talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
+          "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future. "
         }
         Color={"white"}
         readMoreUrl={""}
@@ -731,7 +731,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"DELIGHTED CUSTOMERS SHARE THEIR SUCCESSFUL EXPERIENCE"}
+        Heading={"Delighted Customers Share Their Successful Experience"}
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}

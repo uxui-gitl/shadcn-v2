@@ -22,7 +22,7 @@ const WhySection = ({
             <>
               <div className="card py-4 md:py-12" key={index} style={{ borderBottom: '2px solid #d3d3d3'}}>
                 <div className="card-body flex items-center">
-                    <Image src={checkout} alt={checkout} className="max-w-14 md:max-w-full" width={70}/>
+                    <Image src={item.icon} alt={checkout} className="max-w-14 md:max-w-full" width={64} height={64}/>
                     <div className="md:text-xl font-medium text-sm ml-9">
                       {item.desc}
                     </div>
