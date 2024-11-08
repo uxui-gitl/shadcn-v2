@@ -313,7 +313,6 @@ const page = () => {
         sectionDesc={''}
         sectionTextColor={'#000'}
         sectionHeadingLayout="left"
-
         style={{ backgroundColor: '#E1F2EF' }}
       >
 
@@ -328,7 +327,7 @@ const page = () => {
                 {item?.cardHoverData && (
                   <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
                     <div className="">
-                      <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                         {item?.cardHoverData.map((item2) => (
                           <>
                             <li>
@@ -336,7 +335,7 @@ const page = () => {
                             </li>
                           </>
                         ))}
-                      </ol>
+                      </ul>
                     </div>
                   </div>
                 )}

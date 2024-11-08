@@ -20,7 +20,7 @@ import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 
 
 const EnterpriseSuite = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/enterprise-suite/backgrounds/DigitalTransformationBlog.webp";
   const TESTIMONIAL_DATA = [
     {
       id: 1,
@@ -45,7 +45,7 @@ const EnterpriseSuite = () => {
       description:
         "Discover right-fit solutions through tech landscape audit, inefficiency identification, and bottleneck analysis.",
       content: "Additional content for Card 1",
-      imageURL: "/techStack1.png",
+      imageURL: "/enterprise-suite/businessGoalsEveryStage/businessConsulting.webp",
     },
     {
       title: "Development Aimed at Performance Enhancement",
@@ -53,7 +53,7 @@ const EnterpriseSuite = () => {
       description:
         "We configure and manage infrastructure, streamline data management, reengineer business processes and implement automation solutions.",
       content: "Additional content for Card 2",
-      imageURL: "/techStack1.png",
+      imageURL: "/enterprise-suite/businessGoalsEveryStage/performanceEnhancement.webp",
     },
     {
       title: "Deployment to Ensure Seamless Transition",
@@ -61,7 +61,7 @@ const EnterpriseSuite = () => {
       description:
         "Our solution delivery process includes implementation, data migration, customization, rollout management and country localization.",
       content: "Additional content for Card 3",
-      imageURL: "/techStack1.png",
+      imageURL: "/enterprise-suite/businessGoalsEveryStage/sealmessTransition.webp",
     },
     {
       title: "Support for System Maintenance",
@@ -69,7 +69,7 @@ const EnterpriseSuite = () => {
       description:
         "We offer expert system support, encompassing maintenance, monitoring, troubleshooting, training, and upgrades.",
       content: "Additional content for Card 4",
-      imageURL: "/techStack1.png",
+      imageURL: "/enterprise-suite/businessGoalsEveryStage/systemMaintainance.webp",
     },
     
     // Add more cards here...
@@ -83,7 +83,7 @@ const EnterpriseSuite = () => {
         "Dot Net based Business Central-integrated solution for retail dealers, streamlining end to end inventory and order management. It eliminates manual data entry, reducing errors and streamlines processes, enabling users to access real-time insights, track inventory, monitor sales, and make data-driven decisions with ease. ",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+      cardTopImageUrl: "/enterprise-suite/accelerators/DealerManagement.webp",
     },
     {
       id: 2,
@@ -93,7 +93,7 @@ const EnterpriseSuite = () => {
         "Valve manufacturing solution with pre-configured process mapping and standardized workflows for seamless operations in complex scenarios.",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
+      cardTopImageUrl: "/enterprise-suite/accelerators/valurManufacturing.webp",
     },
     {
       id: 3,
@@ -103,7 +103,7 @@ const EnterpriseSuite = () => {
         "Pre-built customizations for metal recycling, optimizing operations backed by our process knowledge.",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
+      cardTopImageUrl: "/enterprise-suite/accelerators/MetalRecycling.webp",
     },
 
   ];

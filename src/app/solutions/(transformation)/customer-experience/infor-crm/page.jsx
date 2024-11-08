@@ -52,14 +52,14 @@ const page = () => {
       title: "Case Studies",
       heading: "Delivering Results that Matter",
       description:
-        "The world’s top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
+        "The world's top-notch businesses choose us for our technical acumen as we deliver high performing solutions across different industries.",
       link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
       imageURL: "",
       title: "",
-      heading: "360° view of Customer and Integrated Business Processes  ",
+      heading: "360° view of Customer and Integrated Business Processes",
       description:
         "Indian Offices of Leading Metal Plate Cutting Machine Manufacturer Gains 360 degree of Customer and transactional data   with Infor CRM Solution",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Metal-Plate-Machine-Manufacturer.pdf",

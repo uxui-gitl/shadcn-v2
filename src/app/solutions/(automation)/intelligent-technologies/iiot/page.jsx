@@ -13,7 +13,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 
 const IIOT = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/iiot/IIOT_base.webp";
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
@@ -27,7 +27,7 @@ const IIOT = () => {
       bgCardColor: "#2B1624",
     },
     {
-      imageURL: "/iiot/bg--bespoke--iiot-soltions.png",
+      imageURL: "/iiot/IIOT_bespoke_IIT_solution.webp",
       title: "",
       heading: "Bespoke IIOT Solutions",
       description:
@@ -54,7 +54,7 @@ const IIOT = () => {
     {
       imageURL: "",
       title: "Case Studies",
-      heading: "India’s Largest Lift Truck Manufacturer & Exporter",
+      heading: "India's Largest Lift Truck Manufacturer & Exporter",
       description:'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/India%E2%80%99s_Largest_Lift_Truck_Manufacturer_Exporter_IoT_Solution_Enterprise_Asset_Integration.pdf",
       color: "#2B1624",
@@ -75,41 +75,41 @@ const IIOT = () => {
   ];
 
   const benifitsCardsData = [
-  { id: '1', icon:'', cardDesc: 'Improvement of OEE leading to optimised throughput and enhanced quality' },
-  { id: '2', icon:'', cardDesc: 'Optimization of Total Productive Maintenance Losses across shopfloors' },
-  { id: '3', icon:'', cardDesc: 'Minimised Machine Downtime and Improved Equipment Runtime' },
-  { id: '4', icon:'', cardDesc: 'Optimised Maintenance TAT in terms of MTBF and MTTR' },
-  { id: '5', icon:'', cardDesc: 'Effective use of Equipment Service Cost and Improved Safety Compliance' },
-  { id: '6', icon:'', cardDesc: 'Connected Factory with actionable insights for Operations, Tactical and Strategic Levels of Management - Shopfloor to Top floor ' },
-  { id: '7', icon:'', cardDesc: 'Optimised Energy Consumption leading to Optimised Carbon Footprint' },
-  { id: '8', icon:'', cardDesc: 'Defect Tracking using image analytics leading to improved quality ' },
+  { id: '1', icon:'/iiot/Icons/Improvement.svg', cardDesc: 'Improvement of OEE leading to optimised throughput and enhanced quality' },
+  { id: '2', icon:'/iiot/Icons/OptimisedMaintenance.svg', cardDesc: 'Optimization of Total Productive Maintenance Losses across shopfloors' },
+  { id: '3', icon:'/iiot/Icons/MinimisedMachine.svg', cardDesc: 'Minimised Machine Downtime and Improved Equipment Runtime' },
+  { id: '4', icon:'/iiot/Icons/OptimisedMaintenance.svg', cardDesc: 'Optimised Maintenance TAT in terms of MTBF and MTTR' },
+  { id: '5', icon:'/iiot/Icons/EffectiveUse.svg', cardDesc: 'Effective use of Equipment Service Cost and Improved Safety Compliance' },
+  { id: '6', icon:'/iiot/Icons/ConnectedFactory.svg', cardDesc: 'Connected Factory with actionable insights for Operations, Tactical and Strategic Levels of Management - Shopfloor to Top floor ' },
+  { id: '7', icon:'/iiot/Icons/OptimisedEnergy.svg', cardDesc: 'Optimised Energy Consumption leading to Optimised Carbon Footprint' },
+  { id: '8', icon:'/iiot/Icons/DefectTracking.svg', cardDesc: 'Defect Tracking using image analytics leading to improved quality' },
 ]
 
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
       desc: "Actively shaping the future of manufacturing for our clients through Industry 4.0 and IoT.",
-      icon: "",
+      icon: "/iiot/Icons/TheDistinctiveEdge/ActivelyShaping.svg",
     },
     {
       _id: 2,
       desc: "Innovative IoT and Industry 4.0 solutions deployed in various manufacturing scenarios.",
-      icon: "",
+      icon: "/iiot/Icons/TheDistinctiveEdge/InnovativeIoT.svg",
     },
     {
       _id: 3,
       desc: "Ensure replicable success stories for business.",
-      icon: "",
+      icon: "/iiot/Icons/TheDistinctiveEdge/successStories.svg",
     },
     {
       _id: 4,
       desc: "Expertise in Predictive and Prescriptive analytics using IoT and AI/ML (Machine Learning) to foresee potential device failures.",
-      icon: "",
+      icon: "/iiot/Icons/TheDistinctiveEdge/machineLearning.svg",
     },
     {
       _id: 5,
       desc: "Efficiently ingests machine telemetry data across diverse PLC (Programmable Logic Controller), CNC (Computer Numerical Control) controllers, and OT (Operational Technology) network data points. ",
-      icon: "",
+      icon: "/iiot/Icons/TheDistinctiveEdge/networkDataPoints.svg",
     },
   ];
 
@@ -121,7 +121,7 @@ const IIOT = () => {
         desc="Tap into Data-Driven Insights and Drive Smart Connected Business with IIoT"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/iiot/IIOT-homeBanner.mov"
       />
       {/* End--Section--Hero-Banner====================================================================== */}
 

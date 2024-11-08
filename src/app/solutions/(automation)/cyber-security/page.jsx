@@ -61,7 +61,7 @@ const CyberSecurity = () => {
   const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGImageUrl: '/cyberSecurity/backgrounds/blog.webp',
       cardBGColor: 'red',
       cardHeading: "Cyber-Resilience Strategy Importance",
       cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large.'`,
@@ -195,7 +195,7 @@ const CyberSecurity = () => {
         desc="Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/cyberSecurity\backgrounds/homeBannerVideo.mov"
       />
 
       {/* End--Section--HeroBanner======================================================== */}

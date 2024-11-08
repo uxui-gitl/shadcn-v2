@@ -24,7 +24,7 @@ import CommonCardTwo from "@/components/CommonCardTwo";
 const RPASolution = [
   {
     id: 1,
-    cardBGImageUrl: '/rpa/RPA_01.jpg',
+    cardBGImageUrl: '/rpa/Cards/1.webp',
     cardBGColor: '#7F4EE1',
     cardHeading: 'Increase Productivity',
     cardDesc: 'Automate repetitive tasks to enhance productivity with AI-driven workflow automation and analytics',
@@ -35,7 +35,7 @@ const RPASolution = [
   {
 
     id: 2,
-    cardBGImageUrl: '/rpa/RPA_02.jpg',
+    cardBGImageUrl: '/rpa/Cards/2.webp',
     cardBGColor: '#7F4EE1',
     cardHeading: 'Accurate Outcomes',
     cardDesc: 'AI-driven workflows, OCR and rule-based system enables accurate results',
@@ -46,19 +46,19 @@ const RPASolution = [
   {
 
     id: 3,
-    cardBGImageUrl: '/rpa/RPA_03.jpg',
+    cardBGImageUrl: '',
     cardBGColor: '#fff',
     cardHeading: 'Compliance and Consistency',
     cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
     isArrow: false,
     cardTextColor: '#000',
     cardType: 2,
-    downImageUrl:'/rpa/Offering01.png',
+    downImageUrl:'/rpa/Cards/3.webp',
   },
   {
 
     id: 4,
-    cardBGImageUrl: '/rpa/RPA_04.jpg',
+    cardBGImageUrl: '/rpa/Cards/4.webp',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Strengthen Potential',
     cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
@@ -69,7 +69,7 @@ const RPASolution = [
   {
 
     id: 5,
-    cardBGImageUrl: '/rpa/RPA_05.jpg',
+    cardBGImageUrl: '/rpa/Cards/5.webp',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Enhance Flexibility',
     cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
@@ -79,23 +79,24 @@ const RPASolution = [
   },
   {
  id: 6,
-    cardBGImageUrl: '/rpa/RPA_06.jpg',
+    cardBGImageUrl: '',
     cardBGColor: '#fff',
     cardHeading: 'Reduce AHT (Average Handling Time)',
     cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
     isArrow: false,
     cardTextColor: '#000',
     cardType: 2,
+    downImageUrl:'/rpa/Cards/6.webp',
   },
   {
  id: 7,
-    cardBGImageUrl: '/rpa/RPA_07.jpg',
+    cardBGImageUrl: '/rpa/Cards/7.webp',
     cardBGColor: '#EFE9FB',
     cardHeading: 'Optimize FTE Cost)',
     cardDesc: 'Reduce additional FTE requirements to save significant cost on salaries, benefits and overheads',
     isArrow: false,
     cardTextColor: 'white',
-    cardType: 2,
+    cardType: 1,
   },
   
 ]
@@ -117,37 +118,37 @@ const offeringLinkListData = [
 ]
 
 const offeringCardData = [
-  { id: '1', cardTitle: "Consultation Services",  cardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', cardImageUrl: '/rpa/Offering01.png' },
-  { id: '2', cardTitle: "Feasibility Check Services",  cardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.',  cardImageUrl: '/rpa/Offering01.png' },
-  { id: '3', cardTitle: "RPA Deployment",  cardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.',  cardImageUrl: '/rpa/Offering01.png' },
-  { id: '4', cardTitle: "RPA Managed Services",  cardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.',  cardImageUrl: '/rpa/Offering01.png' },
+  { id: '1', cardTitle: "Consultation Services",  cardDesc: 'We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.', cardImageUrl: '/rpa/ServiceOfferings/ConsultationServices.webp' },
+  { id: '2', cardTitle: "Feasibility Check Services",  cardDesc: 'Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.',  cardImageUrl: '/rpa/ServiceOfferings/FeasibilityCheckServices.webp' },
+  { id: '3', cardTitle: "RPA Deployment",  cardDesc: 'We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.',  cardImageUrl: '/rpa/ServiceOfferings/RPA_Deployment.webp' },
+  { id: '4', cardTitle: "RPA Managed Services",  cardDesc: 'We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement.',  cardImageUrl: '/rpa/ServiceOfferings/RPA_ManagedServices.webp' },
 ];
 
 const distinctiveData = [
   {
     _id: 1,
     desc: "Employee Access Creation",
-    icon: "",
+    icon: "/rpa/Icons/EmployeeAccessCreation.svg",
   },
   {
     _id: 2,
     desc: "Ticketing system - Incident management",
-    icon: "",
+    icon: "/rpa/Icons/TicketingSystemIncidentManagement.svg",
   },
   {
     _id: 3,
     desc: "Account Payable and Receivable Process",
-    icon: "",
+    icon: "/rpa/Icons/AccountPayableReceivableProcess.svg",
   },
   {
     _id: 4,
     desc: "Vendor Onboarding Process",
-    icon: "",
+    icon: "/rpa/Icons/VendorOnboardingProcess.svg",
   },
   {
     _id: 5,
     desc: "Customer Onboarding Process",
-    icon: "",
+    icon: "/rpa/Icons/customerOnBorading.svg",
   }
 ]
 
@@ -155,7 +156,7 @@ const INDUSTRY_SPOTLIGHT = [
   {
       id: 1,
       cardBGImageUrl:
-          "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
+          "/rpa/industrySpotlight/Manufacturing.webp",
       cardBGColor: "#7F4EE1",
       cardHeading: "Manufacturing",
       cardDesc: "",
@@ -176,7 +177,7 @@ const page = () => {
         desc="Automate Operations with Our Robotic Process Automation (RPA) Solutions and Services"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/rpa/video/HeroVideo.mp4"
       />
 
       {/* Overview  */}

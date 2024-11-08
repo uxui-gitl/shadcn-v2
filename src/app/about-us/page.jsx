@@ -659,7 +659,7 @@ const ContactUs = () => {
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
                 <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{`“Supportive senior management, excellent work culture, exposure to next-generation “`}</div>
-                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{`I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.`}</h5>
+                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{`I am Akhtar Khan, In my 7 Months with this fantastic team, I've had the privilege to engage deeply in diverse sectors, including Infor LN and Other Technologies. As a Infor Technical Consultant, I've been empowered to explore innovative solutions in our services, contributing to our reputation for excellence. The company's culture fosters collaboration and open communication, creating an environment that encourages growth. Embracing diversity and inclusion, our team reflects a vibrant mix of perspectives. A typical day involves Meeting with teams and Brainstroming regarding new problems and finds a way how to tackle it, Leisure time try to learn new technologies or focus on the existing one how to improve and deliver the efficient solution to the client . The company prioritizes employee development, both professionally and personally, offering valuable learning opportunities that have tremendously enriched my journey here.`}</h5>
 
                 <div className="flex">
                   <div className="mr-4">

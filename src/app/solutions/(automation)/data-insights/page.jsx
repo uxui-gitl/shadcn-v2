@@ -13,7 +13,7 @@ import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 const DataInsights = () => {
   const sectionSliderBGImageUrl =
     "/data-insights/backgrounds/bg--data-visualization.png";
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/data-insights/blog.webp";
 
   const VISUALIZATION_DATA = [
     {
@@ -241,11 +241,11 @@ const DataInsights = () => {
   ];
 
   const ACCORDION_DATA = [
-    { id: 1, title: "Data Platform Modernization", content: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize data infrastructure on cloud platform steering optimal acceptance and performance. ", image: "/data-insights/our-capabilties/img-01.png" },
-    { id: 2, title: "Advance Analytics", content: "From planning and investigating data to developing, employing, managing and examining models, we leverage potential with AI, machine learning and automation.", image: "/data-insights/our-capabilties/img-02.png" },
-    { id: 3, title: "Business Intelligence", content: "Experience visuals of valuable insights of crucial data sets from supply chain, finance and talent domains or more.", image: "/data-insights/our-capabilties/img-03.png" },
-    { id: 4, title: "Data Governance", content: "Ensure advanced metadata controls, precise access governance and compliance mechanisms while adhering to stringent regulatory standards. We provide granular visibility and control over data landscape.", image: "/data-insights/our-capabilties/img-04.png" },
-    { id: 5, title: "Data Warehouse and Integration", content: "We build scalable data warehouse architectures custom-made to business requirements and data integration helps in a unified view of organization's information assets. ", image: "/data-insights/our-capabilties/img-05.png" },
+    { id: 1, title: "Data Platform Modernization", content: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize data infrastructure on cloud platform steering optimal acceptance and performance. ", image: "/data-insights/OurCapabilities/DataPlatform.webp" },
+    { id: 2, title: "Advance Analytics", content: "From planning and investigating data to developing, employing, managing and examining models, we leverage potential with AI, machine learning and automation.", image: "/data-insights/OurCapabilities/AdvanceAnalytics.webp" },
+    { id: 3, title: "Business Intelligence", content: "Experience visuals of valuable insights of crucial data sets from supply chain, finance and talent domains or more.", image: "/data-insights/OurCapabilities/BusinessInt.webp" },
+    { id: 4, title: "Data Governance", content: "Ensure advanced metadata controls, precise access governance and compliance mechanisms while adhering to stringent regulatory standards. We provide granular visibility and control over data landscape.", image: "/data-insights/OurCapabilities/DataGovence.webp" },
+    { id: 5, title: "Data Warehouse and Integration", content: "We build scalable data warehouse architectures custom-made to business requirements and data integration helps in a unified view of organization's information assets. ", image: "/data-insights/OurCapabilities/DataWarehouse.webp" },
   ];
 
   const DISTINCTIVE_DATA = [
@@ -284,7 +284,7 @@ const DataInsights = () => {
         desc="Discover new insights and drive business success with our data analytics solutions"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/data-insights/homeBannerVideo.mp4"
       />
 
       {/* End--Section--HeroBanner======================================================== */}

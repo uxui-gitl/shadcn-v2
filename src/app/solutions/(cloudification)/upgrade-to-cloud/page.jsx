@@ -134,8 +134,8 @@ const UpgradeToCloud = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      imageURL: "/upgradeCloud/backgrounds/CaseStudy.webp",
+      videoURL: "/upgradeCloud/video/homeBannerVideo.mov",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
@@ -228,42 +228,42 @@ const UpgradeToCloud = () => {
       hoverTitle: "Infrastructure & Data Evaluation",
       description: "Assess migration readiness, identify risks and create solid plan. A clear path to a successful transition",
       content: "Additional content for Card 1",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Infra.webp'
     },
     {
       title: "Strategy Designing",
       hoverTitle: "Strategy Designing",
       description: "Align business needs & goals, set KPIs and build a tailored strategy for successful cloud adoption",
       content: "Additional content for Card 2",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Stratergy.webp'
     },
     {
       title: "Blueprint Development",
       hoverTitle: "Blueprint Development",
       description: "Define and prioritize tasks, align assets, establish milestones, iterations and timelines for upgradation journey.",
       content: "Additional content for Card 3",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Blurprint.webp'
     },
     {
       title: "Establishing Readiness",
       hoverTitle: "Establishing Readiness",
       description: "Expanding the landing zone blueprint and adequately preparing well-designed cloud environment.  ",
       content: "Additional content for Card 4",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Establishing.webp'
     },
     {
       title: "Upgrade and Execute",
       hoverTitle: "Upgrade and Execute",
       description: "Assess readiness, refactor IT architecture, rehost, and implement changes to achieve desired outcomes.",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/Upgrade.webp'
     },
     {
       title: "Management and Control",
       hoverTitle: "Management and Control",
       description: "Optimize costs, mitigate risks, define policies, standardize processes & ensure governance, resources & security. ",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/upgradeCloud/managementControl.webp'
     },
     // Add more cards here...
   ];
@@ -288,7 +288,7 @@ const UpgradeToCloud = () => {
     { id: '8', cardDesc: 'Enhance system performance and user experience by scaling up the system' },
     { id: '9', cardDesc: 'Accelerate transformation, integrate open innovation and smart workflows' },
   ]
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/upgradeCloud/backgrounds/Blog.webp";
 
   const [showModal1, setshowModal1] = useState(false);
   const [showModal2, setshowModal2] = useState(false);
@@ -667,7 +667,7 @@ const UpgradeToCloud = () => {
         desc="Enabling businesses to scale with ease, enhance productivity and protect data with security measures. "
         cta="Schedule a call with our Cloud Expert"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/upgradeCloud/video/homeBannerVideo.mov"
       />
       {/* Section--Overview=======================================================================  */}
       <OverviewSection
