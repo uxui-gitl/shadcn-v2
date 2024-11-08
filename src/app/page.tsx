@@ -24,6 +24,7 @@ import useScrollTriggeredCountUp from "@/components/home/useScrollTriggeredCount
 import Announcement from "@/sections/announcement/Announcement";
 import Link from "next/link";
 import Icon from "@mdi/react";
+import NewNavBar from "@/components/NewNavBar";
 import { mdiArrowRight } from "@mdi/js";
 
 
@@ -426,10 +427,10 @@ export default function Home() {
 
   return (
     <>
-      <Announcement content={''} country={'IN'} />
+      {/* <Announcement content={''} country={'IN'} /> */}
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
-          <Navbar theme="light" />
+        <NewNavBar></NewNavBar>
         </div>
       </div>
       {/* banner slider */}
