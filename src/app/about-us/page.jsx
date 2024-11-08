@@ -50,6 +50,17 @@ const ContactUs = () => {
     {id:4,title:'Statutory Updates',  Desc:`Dummy Text. Dummy Text.`},
     
   ]
+
+// const empTestimonials=[
+// {id:1,
+//   title:'Godrej Infotech', 
+//   desc:`Godrej Infotech's work culture is all about collaboration and open communication, an environment that encourages growth. Our team reflects a vibrant mix of perspectives. What I admire most about Godrej Infotech is that it prioritizes employees development, both professionally and this has tremendously enriched my journey here.`,
+//   empName:'Mausami Samanta',
+//   empDesignation:'Deputy Manager, HR',
+//   empImage:'about/reviewImage.svg',
+// }
+
+// ]
   
   const DATA_2021_Present = [
     {
@@ -685,37 +696,38 @@ const ContactUs = () => {
         </div>
       </SectionWrapperNew>
 
-      {/* joy at work section */}
+      {/* joy at work section 
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
         sectionHeading="Unleashing Joy at Work"
         sectionDesc={`Discover the heartwarming stories of our employees as they reveal their joyful experiences at work. From moments of triumph to instances of camaraderie, their testimonials showcase a workplace`}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
-      >
-        <Slider>
-          {[1, 2, 3, 4]?.map((item, index) => (
+      >*/}
+        {/* <Slider>
+          {empTestimonials.map((item, index) => (
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
-                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{`“Supportive senior management, excellent work culture, exposure to next-generation “`}</div>
-                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{`I am Akhtar Khan, In my 7 Months with this fantastic team, I've had the privilege to engage deeply in diverse sectors, including Infor LN and Other Technologies. As a Infor Technical Consultant, I've been empowered to explore innovative solutions in our services, contributing to our reputation for excellence. The company's culture fosters collaboration and open communication, creating an environment that encourages growth. Embracing diversity and inclusion, our team reflects a vibrant mix of perspectives. A typical day involves Meeting with teams and Brainstroming regarding new problems and finds a way how to tackle it, Leisure time try to learn new technologies or focus on the existing one how to improve and deliver the efficient solution to the client . The company prioritizes employee development, both professionally and personally, offering valuable learning opportunities that have tremendously enriched my journey here.`}</h5>
+                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{item.title}</div>
+                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{item.desc}</h5>
 
                 <div className="flex">
                   <div className="mr-4">
-                    <Image src={'about/reviewImage.svg'} width={50} height={50} alt="img" />
+                    <Image src={item.empImage} width={50} height={50} alt={"img"} />
+                    
                   </div>
 
                   <div>
-                    <h6 className="text-[16px] font-[700] mb-1 text-white">Tejas Bhanushali</h6>
-                    <p className="text-[16px] text-white">Chief Manager Finance and Accounts</p>
+                    <h6 className="text-[16px] font-[700] mb-1 text-white">{item.empName}</h6>
+                    <p className="text-[16px] text-white">{item.empDesignation}</p>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
-        </Slider>
+        </Slider> */}
 
-      </SectionWrapperNew>
-      {/*end joy work section */}
+      {/*</SectionWrapperNew>
+      end joy work section */}
 
       {/* awards section */}
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
