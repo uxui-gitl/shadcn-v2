@@ -1,12 +1,14 @@
 'use client';
+import React, { useState } from "react";
 import Image from 'next/image';
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { useRouter } from 'next/navigation';
 
-function page() {
-  const router = useRouter();
 
+function Page() {
+    const router = useRouter()
     return (
+        
         <>
             <div className="navbar2 " style={{ borderBottom: '1px solid #E4E4E4' }}>
                 <div className="mx-auto container flex justify-between my-3">
@@ -51,7 +53,7 @@ function page() {
                                     <div className=""style={{borderBottom:'1px solid #d3d3d3'}}>
                                         <h2 className="title text-[28px] font-semibold mb-6">About the Business & Position Overview</h2>
                                        <p className="text-[32px] leading-[40px] font-medium mb-6">{'asdkmalkjsd'}</p>
-                                            <ul class="space-y-1 text-black list-disc list-outside mb-6">
+                                            <ul className="space-y-1 text-black list-disc list-outside mb-6">
                                             <li>{'item'}</li>
                                         </ul>
                                     </div>
@@ -59,7 +61,7 @@ function page() {
                                     <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
                                         <h2 className="title text-[28px] font-semibold mb-4">Business Case</h2>
                                        <p className="text-[16px] leading-[40px] font-medium mb-3">{'cription'}</p>
-                                            <ul class="space-y-1 text-black list-disc list-outside mb-3">
+                                            <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                            <li>{'alns'}</li>
                                         </ul>
                                     </div>
@@ -73,4 +75,4 @@ function page() {
     )
 }
 
-export default page;
+export default Page;

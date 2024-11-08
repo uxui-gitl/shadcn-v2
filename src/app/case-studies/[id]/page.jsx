@@ -68,7 +68,7 @@ const Page = () => {
                                         <h2 className="title text-[28px] font-semibold mb-6">Client Brief</h2>
                                        {item?.customerBrief?.description && (<p className="text-[32px] leading-[40px] font-medium mb-6">{item?.customerBrief?.description}</p>)} 
                                         {item?.customerBrief?.BriefList && (
-                                            <ul class="space-y-1 text-black list-disc list-outside mb-6">
+                                            <ul className="space-y-1 text-black list-disc list-outside mb-6">
                                             {item?.customerBrief?.BriefList.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
@@ -79,7 +79,7 @@ const Page = () => {
                                         <h2 className="title text-[28px] font-semibold mb-4">Business Case</h2>
                                        {item?.businessCase?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.businessCase?.description}</p>)} 
                                         {item?.businessCase?.businesscaseList&& (
-                                            <ul class="space-y-1 text-black list-disc list-outside mb-3">
+                                            <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.businessCase?.businesscaseList?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
@@ -89,7 +89,7 @@ const Page = () => {
                                         <h2 className="title text-[28px] font-semibold mb-4">Challenges</h2>
                                        {item?.challenges?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.challenges?.description}</p>)} 
                                         {item?.challenges?.keyChallenges && (
-                                            <ul class="space-y-1 text-black list-disc list-outside mb-3">
+                                            <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.challenges?.keyChallenges?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
@@ -100,7 +100,7 @@ const Page = () => {
                                         <h2 className="title text-[28px] font-semibold mb-4">Business Solution</h2>
                                        {item?.solution?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.solution?.description}</p>)} 
                                         {item?.solution?.features&& (
-                                            <ul class="space-y-1 text-black list-disc list-outside mb-3">
+                                            <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.solution?.features?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}
@@ -111,7 +111,7 @@ const Page = () => {
                                         <h2 className="title text-[28px] font-semibold mb-4">Benefits</h2>
                                        {item?.benefits?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.benefits?.description}</p>)} 
                                         {item?.benefits?.list&& (
-                                            <ul class=" space-y-1 text-black list-disc list-outside mb-3">
+                                            <ul className=" space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.benefits?.list?.map((item, index) => (<li key={index}>{item}</li>))}
                                         </ul>
                                         )}

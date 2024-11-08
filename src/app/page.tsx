@@ -218,7 +218,7 @@ export default function Home() {
     // Add more case studies here...
   ];
 
-  const TESTIMONIAL_DATA:any = [
+  const TESTIMONIAL_DATA: any = [
     {
       id: '1',
       cardHeading: "79% Cut down in Purchase Order Processing",
@@ -426,7 +426,7 @@ export default function Home() {
 
   return (
     <>
-      <Announcement content={''} />
+      <Announcement content={''} country={'IN'} />
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="light" />
@@ -549,7 +549,7 @@ export default function Home() {
           <Slider slidesPerView={6} autoplay={true}>
             {partnerLogo?.map((item, index) => (
               <SwiperSlide key={index}>
-                <Image src={item} width={150} height={150} alt="khbas" />
+                <Image src={item} width={150} height={150} alt="khbas" className="brightness-110 hover:brightness-0" />jhsdjahs
               </SwiperSlide>
             ))}
           </Slider>
@@ -557,7 +557,7 @@ export default function Home() {
       </div>
 
       {/* end partner Section */}
-      <hr className="h-px bg-white border-1" />
+      <hr className="h-px bg-[#d3d3d3] border-1" />
       <div className=" relative z-2 bg-white" style={{ borderBottomLeftRadius: '24px', borderBottomRightRadius: "24px" }}>
         <div className="md:container mx-auto pt-32 pb-40">
           <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
@@ -575,7 +575,7 @@ export default function Home() {
             >
               <span className="text-[#5F22D9] ml-2">{items[index].content}</span>
             </motion.div>
-          <br></br>
+            <br></br>
             business with
             <motion.div
               key={items2[index].id}
@@ -778,7 +778,7 @@ const ServiceContent = () => {
       <div className="py-10 px-10">
         {services.map((item) => (
           <>
-            <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+            <div className="list text-[18px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
               {item}
               <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
             </div>
@@ -807,7 +807,7 @@ const IndustryContent = () => {
       <div className="py-10 px-10">
         {data.map((item) => (
           <>
-            <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+            <div className="list text-[18px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
               {item}
               <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
             </div>
@@ -837,7 +837,7 @@ const ParternerContent = () => {
       <div className="py-10 px-10">
         {data.map((item) => (
           <>
-            <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+            <div className="list text-[18px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
               {item}
               <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
             </div>

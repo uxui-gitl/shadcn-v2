@@ -485,17 +485,6 @@ function page() {
             color: "#000",
             bgCardColor: "#EFE9FB",
         },
-        {
-            imageURL: "/path/to/image1.jpg",
-            title: "",
-
-            heading: "End-to-end Order Visibility and Responsive Customer Service",
-            description:
-                "Large Retailer in Mauritius Capitalizes Discount Matrix based on Operational Hierarchy with MS Dynamics & LS Retail",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LargeRetailerinMauritiusSuccessfullyImplementsMSNAV2017andLSRetail.pdf",
-            color: "#000",
-            bgCardColor: "#EFE9FB",
-        },
     ];
 
     const TESTIMONIAL_DATA = [
@@ -724,7 +713,9 @@ function page() {
                         </h1>
                         <p className="mb-4">{casestudy[2].description}</p>
                         {casestudy[2].link && <div className="absolute bottom-4 right-4">
+                            <Link href={casestudy[2].link} target="_blank">
                             <OutlinedButtonWithArrow size={56} />
+                            </Link>
                         </div>}
                     </div>
                 </div>

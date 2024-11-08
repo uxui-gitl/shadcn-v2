@@ -84,33 +84,40 @@ const CyberSecurity = () => {
     {
       id: 1,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#7F4EE1',
       cardHeading: 'Business Consulting',
       cardDesc: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.',
       isArrow: false,
-      cardTextColor: 'white',
+      cardTextColor: '#fff',
       cardType: 1,
+      cardHoverData: [
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+        'abc',
+    ]
     },
     {
 
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Implementation & Management',
       cardDesc: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while',
       isArrow: false,
-      cardTextColor: 'white',
+      cardTextColor: '#fff',
       cardType: 2,
     },
     {
 
       id: 3,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#9F0165',
       cardHeading: 'Application Security Testing',
       cardDesc: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision',
       isArrow: false,
-      cardTextColor: 'white',
+      cardTextColor: '#fff',
       cardType: 1,
     },
     {
@@ -121,7 +128,7 @@ const CyberSecurity = () => {
       cardHeading: 'Strengthen Potential',
       cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
       isArrow: false,
-      cardTextColor: 'white',
+      cardTextColor: '#fff',
       cardType: 2,
     },
     {
@@ -131,8 +138,8 @@ const CyberSecurity = () => {
       cardBGColor: '#EFE9FB',
       cardHeading: 'Enhance Flexibility',
       cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
-      isArrow: false,
-      cardTextColor: 'white',
+      isArrow: true,
+      cardTextColor: '#fff',
       cardType: 1,
     },
     {
@@ -150,30 +157,33 @@ const CyberSecurity = () => {
   ];
 
 
-  const businessData =[
-    {id:1,heading:'Identify',
-      list:[
+  const businessData = [
+    {
+      id: 1, heading: 'Identify',
+      list: [
         'Risk Assesment and Management',
         'Risk Assesment and Management',
         'Risk Assesment and Management',
       ],
-      url:'',
+      url: '',
     },
-    {id:2,heading:'Protect',
-      list:[
+    {
+      id: 2, heading: 'Protect',
+      list: [
         'Risk Assesment and Management',
         'Risk Assesment and Management',
         'Risk Assesment and Management',
       ],
-      url:'',
+      url: '',
     },
-    {id:2,heading:'Defend',
-      list:[
+    {
+      id: 2, heading: 'Defend',
+      list: [
         'Risk Assesment and Management',
         'Risk Assesment and Management',
         'Risk Assesment and Management',
       ],
-      url:'',
+      url: '',
     },
   ];
 
@@ -198,16 +208,47 @@ const CyberSecurity = () => {
       {/* End--Overview-Section======================================================== */}
       {/* Section--Hub-of-Expertise=======================================================================  */}
 
-      <CommonCardTwoSlider
-        ID={''}
-        sectionImageUrl={''}
-        sectionBGColor={'#F3F0FA'}
-        sectionHeading={'Our Offerings'}
-        sectionDesc={''}
-        sectionTextColor={'#000'}
-        cardData={CyberSecurityData}
+      <SectionWrapperNew
+        sectionHeading={"Our Offerings"}
+        sectionDesc={""}
+        sectionTextColor="black"
+        sectionHeadingLayout="left"
+        style={{ backgroundColor: "#F3F0FA" }}
       >
-      </CommonCardTwoSlider>
+        <Slider slidesPerView={3}>
+          {CyberSecurityData?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="max-w-sm bg-white rounded-3xl group overflow-hidden relative" style={{ background: `url('${item?.cardBGImageUrl}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
+                <div className={`py-10 px-10 relative min-h-[520px] flex flex-col ${item.cardType == 1 ? 'justify-start' : 'justify-end'}`}>
+                  <h5 className={`mb-6 text-[42px] leading-[48px] text-[${item?.cardTextColor}] font-semibold min-h-[40px]`}>{item?.cardHeading}</h5>
+                  <p className={`mb-3 text-[16px] font-medium min-h-[144px] text-[${item?.cardTextColor}]`}>{item?.cardDesc}</p>
+                  {item?.cardHoverData && (
+                    <div className="absolute bottom-4 right-4">
+                      <OutlinedButtonWithArrow size={48} />
+                    </div>)}
+
+                </div>
+                {item?.cardHoverData && (
+                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                    <div className="">
+                      <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                        {item?.cardHoverData.map((item2) => (
+                          <>
+                            <li>
+                              <span className="font-semibold text-black">{item2}</span>
+                            </li>
+                          </>
+                        ))}
+                      </ol>
+                     
+                    </div>
+                  </div>
+                )}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Slider>
+      </SectionWrapperNew>
       <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
@@ -251,7 +292,7 @@ const CyberSecurity = () => {
         sectionDesc={"End to End Business Security with Our Cybersecurity Suite.End to End Business Security with Our Cybersecurity Suite"}
         sectionTextColor="black"
         sectionHeadingLayout="left"
-        style={{ backgroundColor: "white"}}
+        style={{ backgroundColor: "white" }}
       >
         <Slider slidesPerView={3}>
           {businessData?.map((item, index) => (
@@ -260,14 +301,14 @@ const CyberSecurity = () => {
                 <svg className="w-10 mb-10 h-10 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
                 </svg>
-             
-                  <h5 className="mb-10 text-[42px] font-medium  text-[#1D162B] leading-[50px]">{item.heading}</h5>
-              {item?.list.map((data, index) => (
-                <p className="mb-3 font-[20px] text-gray-500 leading-[28px]" key={index}>{data}</p>
-              ))}
-          <div className="flex justify-end px-6 py-4">
-           <Link href={item?.url} target="_blank">
-                  <OutlinedButtonWithArrow arrowColor={'black'} size={48} />
+
+                <h5 className="mb-10 text-[42px] font-medium  text-[#1D162B] leading-[50px]">{item.heading}</h5>
+                {item?.list.map((data, index) => (
+                  <p className="mb-3 font-[20px] text-gray-500 leading-[28px]" key={index}>{data}</p>
+                ))}
+                <div className="flex justify-end px-6 py-4">
+                  <Link href={item?.url} target="_blank">
+                    <OutlinedButtonWithArrow arrowColor={'black'} size={48} />
                   </Link>
                 </div>
               </div>

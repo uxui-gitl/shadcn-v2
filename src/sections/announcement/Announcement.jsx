@@ -5,7 +5,7 @@ import styles from "./announcement.module.css";
 import Link from "next/link";
 
 import ReactFlagsSelect from "react-flags-select";
-const Announcement = ({ content }) => {
+const Announcement = ({ content, country }) => {
   const defaultData = [
     {
       _id: 1,
@@ -44,12 +44,12 @@ const Announcement = ({ content }) => {
   const announcements = content || defaultData;
   const [currentAnnouncementIndex, setCurrentAnnouncementIndex] = useState(0);
 
-  const [selected, setSelected] = useState("IN");
+  const [selected, setSelected] = useState(country);
 
   const handleCountrySelect = (code) => {
     setSelected(code);
     let url = "";
-    switch (code) {
+    switch (code || country) {
       case "BE":
         url = "/netherland";
         break;

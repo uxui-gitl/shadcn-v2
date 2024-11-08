@@ -32,7 +32,7 @@ const Page = () => {
                 <div className="grid grid-cols-3 gap-4 my-10">
                     {videoData.map((item) => (
                         <>
-                            <div class="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow">
+                            <div className="max-w-sm bg-white border border-[#E4E4E4] rounded-3xl shadow">
                                 <div className="h-[250px]" style={{
                                     backgroundImage: `url("/caseStudies/case-studies-bg1.svg")`,
                                     backgroundSize: "cover",
@@ -41,9 +41,9 @@ const Page = () => {
                                 </div>
                                 <div className="p-6">
                                     <div className="mb-6 flex flex-wrap">
-                                        {/* <span class="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.vertical}</span> */}
+                                        {/* <span className="mb-2 bg-[#E4E4E4] text-gray-800 text-sm font-medium me-2 px-4 py-2 rounded-full">{item.vertical}</span> */}
                                     </div>
-                                    <h5 class="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.title}</h5>
+                                    <h5 className="mb-2 font-bold tracking-tight text-['#1D162B] text-[18px] leading-[28px]">{item.title}</h5>
                                     <div className="flex justify-end">
                                         <OutlinedButtonWithArrow size={48} arrowColor={'#000'} onClick={() => handleBusinessCardClick(true)} />
                                     </div>

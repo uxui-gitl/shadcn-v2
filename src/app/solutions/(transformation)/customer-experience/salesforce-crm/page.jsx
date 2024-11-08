@@ -202,11 +202,11 @@ const page = () => {
         <Slider slidesPerView={3.2}>
           {RPASolution2?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="max-w-sm bg-white rounded-3xl group overflow-hidden relative" >
+              <div className="max-w-sm bg-white rounded-3xl group overflow-hidden relative" >
                 <div className="h-[300px] bg-slate-700" style={{background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                 <div className="py-10 px-10 relative">
-                  <h5 class="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
-                  <p class="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
+                  <h5 className="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
+                  <p className="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
                   {item?.cardHoverData && ( 
                     <div className="absolute bottom-4 right-4">
                     <OutlinedButtonWithArrow size={48} />
@@ -220,7 +220,7 @@ const page = () => {
                         {item?.cardHoverData.map((item2) => (
                           <>
                             <li className="py-3">
-                              <span class="font-semibold text-black">{item2}</span>
+                              <span className="font-semibold text-black">{item2}</span>
                             </li>
                           </>
                         ))}

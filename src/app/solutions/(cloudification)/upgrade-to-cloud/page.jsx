@@ -380,10 +380,10 @@ const UpgradeToCloud = () => {
               <div className="p-4 rounded-lg bg-gray-50">
 
                 <div className="grid grid-cols-2 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                     <li>
                     Migrate from GSuite to M 365
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Gobal collaboration capabilities  </li>
                         <li>Realize cost savings   </li>
                         <li>Hassle-free transition for the entire organization </li>
@@ -391,7 +391,7 @@ const UpgradeToCloud = () => {
                     </li>
                     <li>
                     On-premises emails to O 365 Cloud 
-                      <ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Communication infrastructure modernization  </li>
                         <li>Reinforcement of email system security   </li>
                         <li>Scalability in communication resources management   </li>
@@ -400,10 +400,10 @@ const UpgradeToCloud = () => {
                     </li>
                   </ul>
 
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                     <li>
                     Migrate M365 / O365 
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Transition of O365 emails hosted by GoDaddy on Federation tenant  </li>
                         <li>Migration to a customer-owned tenant    </li>
                         <li>Easy expansion and scalability </li>
@@ -418,7 +418,7 @@ const UpgradeToCloud = () => {
             {tabSection2 && (
               <div className="p-4 rounded-lg bg-gray-50">
                 <div className="grid grid-cols-2 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>Minimize downtime for seamless business operations </li>
                    <li>Enable digital transformation of processes </li>
                    <li>Improve customer and employee experiences </li>
@@ -485,10 +485,10 @@ const UpgradeToCloud = () => {
               <div className="p-4 rounded-lg bg-gray-50">
 
                 <div className="grid grid-cols-2 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                     <li>
                     Why Upgrade Dynamics AX?
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Mainstream support for Dynamics AX versions such as 2009, 2012 and 2012 R2 concluded in October 2018, while AX 2012 R3 mainstream support ended in October 2021.   </li>
                         <li>Dynamics AX is highly dependent on ISV and partner channels, which significantly impacts business return on investment (ROI).  </li>
                         <li>Dynamics AX on-premises has limited access to Cloud ERP and SaaS options. </li>
@@ -498,10 +498,10 @@ const UpgradeToCloud = () => {
                     </li>
                   </ul>
 
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                     <li>
                     Competitive Benefits of AX Upgrade to Cloud
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Adaptive Scalability   </li>
                         <li>Elevated Customer Experience  </li>
                         <li>Cost Effective Platform   </li>
@@ -523,10 +523,10 @@ const UpgradeToCloud = () => {
             {tabSection2 && (
               <div className="p-4 rounded-lg bg-gray-50">
                 <div className="grid grid-cols-2 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>
                   Why Upgrade Dynamics Nav?
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Microsoft has discontinued updates and customizations for Dynamics NAV versions. </li>
                         <li>NAV solution experiences significant lag for basic tasks as well.  </li>
                         <li>NAV versions lack relevant features that meet the demands of modern and evolving business requirements.  </li>
@@ -534,10 +534,10 @@ const UpgradeToCloud = () => {
                       </ol>
                     </li>
                   </ul>
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>
                   Competitive Benefits of Upgrading Nav to Cloud 
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Built-in capabilities of AI and machine learning </li>
                         <li>Enhanced reporting and analytics functionalities   </li>
                         <li>Mobile and web access, anywhere, anytime   </li>
@@ -555,11 +555,11 @@ const UpgradeToCloud = () => {
             {tabSection3 && (
               <div className="p-4 rounded-lg bg-gray-50">
                 <div className="grid grid-cols-2 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>
                   Infor On- premises Challenges
  
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Constant challenge of keeping up with the latest security and version updates. </li>
                         <li>Manual efforts required to configure dynamic workloads.   </li>
                         <li>Lack of elasticity in applications and not-so – efficient performance. </li>
@@ -567,10 +567,10 @@ const UpgradeToCloud = () => {
                       </ol>
                     </li>
                   </ul>
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>
                   Competitive Benefits of Infor Cloud 
-                      <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
                         <li>Benefit from Infor Data Lake, leveraging the power of artificial intelligence (AI) and machine learning to harness predictive data insights.  </li>
                         <li>Prepackaged industry analytics equipped with deployable data models, dashboards and key performance indicators.   </li>
                         <li>Clear production visualization through industry-specific dashboards and content.   </li>
@@ -630,7 +630,7 @@ const UpgradeToCloud = () => {
               <div className="p-4 rounded-lg bg-gray-50">
 
                 <div className="grid grid-cols-1 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                         <li>Higher cost of maintaining on-premises hardware. </li>
                         <li>Non scalability in sudden events of increased user demand or lower demand. </li>
                         <li>Need of ongoing maintenance and updates, which can be time-consuming and resource intensive. </li>
@@ -646,7 +646,7 @@ const UpgradeToCloud = () => {
             {tabSection2 && (
               <div className="p-4 rounded-lg bg-gray-50">
                 <div className="grid grid-cols-1 gap-4">
-                  <ul class="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
                   <li>Rehosting Application   </li>
                         <li>Rebuild Application    </li>
                         <li>Replace your application  </li>
@@ -694,11 +694,11 @@ const UpgradeToCloud = () => {
         style={{ backgroundColor: "#2B1624" }}
       >
         <div className="grid grid-cols-1 md:grid-cols-3  gap-10">
-          <div class="p-6 bg-[transprent]">
+          <div className="p-6 bg-[transprent]">
             <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 class="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Lift and Shift
+            <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Lift and Shift
               to Cloud</h5>
-            <p class="mb-3 text-base font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+            <p className="mb-3 text-base font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
 
 
             <div className="flex justify-end px-6 py-4" onClick={() => { setshowModal1((prev) => !prev); }}>
@@ -706,10 +706,10 @@ const UpgradeToCloud = () => {
             </div>
           </div>
           {/*  */}
-          <div class="p-6 bg-[transprent]">
+          <div className="p-6 bg-[transprent]">
             <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 class="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">ERP on Cloud</h5>
-            <p class="mb-3 text-base font-medium text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
+            <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">ERP on Cloud</h5>
+            <p className="mb-3 text-base font-medium text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
             <div className="flex justify-end px-6 py-4" onClick={() => { setshowModal2((prev) => !prev); }}>
               <OutlinedButtonWithArrow arrowColor={'white'} size={48} />
             </div>
@@ -717,10 +717,10 @@ const UpgradeToCloud = () => {
 
           {/*  */}
 
-          <div class="p-6 bg-[transprent]">
+          <div className="p-6 bg-[transprent]">
             <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 class="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
-            <p class="mb-3 text-base font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
+            <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
+            <p className="mb-3 text-base font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
             </p>
             <div className="flex justify-end px-6 py-4"  onClick={() => { setshowModal3((prev) => !prev); }}>
               <OutlinedButtonWithArrow arrowColor={'white'} size={48} />
