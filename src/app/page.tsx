@@ -166,10 +166,10 @@ export default function Home() {
     "/homeNew/partner1.svg",
     "/homeNew/partner2.svg",
     "/homeNew/partner3.svg",
-    "/homeNew/partner4.svg",
     "/homeNew/partner1.svg",
     "/homeNew/partner2.svg",
     "/homeNew/partner3.svg",
+    "/homeNew/partner1.svg",
   ];
 
   const CASE_STUDIES_DATA = [
@@ -549,7 +549,7 @@ export default function Home() {
           <Slider slidesPerView={6} autoplay={true}>
             {partnerLogo?.map((item, index) => (
               <SwiperSlide key={index}>
-                <Image src={item} width={150} height={150} alt="khbas" className="brightness-110 hover:brightness-0" />jhsdjahs
+                <Image src={item} width={150} height={150} alt="khbas" className="grayscale hover:grayscale-0" />
               </SwiperSlide>
             ))}
           </Slider>
@@ -601,7 +601,7 @@ export default function Home() {
       {/* video */}
       <div className="h-screen -mt-5" >
         <video
-          src={'https://s3-figma-videos-production-sig.figma.com/video/1327514938936607439/TEAM/cf3d/2255/-0d82-42de-b3af-a9a53cdf193e?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A~oKeONzxgirn5kceEUu7lXW87jduK69e0XZFA0KUXzdOAtpe6XBvNo5bOt9VpKwMkygF7ZenKSU5W~VdOulvLufBBHc9aIoW40wIiR254qQkrsQCxZ16xp15g6CaHqemy5gIf1nM4nP-KxFh4-Q00uy71tQYgFLRzeH7aSMvV9B27kVgzHN1sA7QfL2A46-YTgkTXa1-yWBdIFCdabXDfkAbl2uuNEXfi2ywiO3BcR-08NHN-Iv3ltpnHqodEQwfkslanjHaXujCEyudOnmD4St8MrFMB9UykKj4iYevvTkOU8jZjHu7ucTFqK6RlWlLrnHWyZmPTf6H1~OhUf6Bg__'} // Replace with your video path
+          src={'video-background-mioti-consulting-opt.mp4'} // Replace with your video path
           autoPlay
           loop
           muted
@@ -702,7 +702,7 @@ export default function Home() {
       >
         <div className="">
           <Link
-            href={``}
+            href={`/careers/why-join-us`}
             target="_blank"
             className="text-white mr-5 mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
           >
@@ -714,7 +714,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            href={''}
+            href={'careers/we-are-hiring'}
             target="_blank"
             className="text-white mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
           >

@@ -143,8 +143,9 @@ const ContactUs = () => {
             </ul>
       `
     },
-    { id: 2, title: 'Corporate Policies', Desc: `Dummy Text. Dummy Text.`,
-       rawData: ` <ol>
+    {
+      id: 2, title: 'Corporate Policies', Desc: `Dummy Text. Dummy Text.`,
+      rawData: ` <ol>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
               </li>
@@ -182,8 +183,9 @@ const ContactUs = () => {
                 <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
               </li>
             </ol>`
-     },
-    { id: 3, title: 'CSR Updates', Desc: `Dummy Text. Dummy Text.`,
+    },
+    {
+      id: 3, title: 'CSR Updates', Desc: `Dummy Text. Dummy Text.`,
       rawData: `   <ul>
                 <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                   <h3 class="mx-6 font-bold">CSR Initiatives</h3>
@@ -219,9 +221,10 @@ const ContactUs = () => {
                   <h3 class="mx-6">Mr. V. R. Mehta, Member</h3>
                 </li>
               </ul>`
-     },
-    { id: 4, title: 'Statutory Updates', Desc: `Dummy Text. Dummy Text.`,
-      rawData:`
+    },
+    {
+      id: 4, title: 'Statutory Updates', Desc: `Dummy Text. Dummy Text.`,
+      rawData: `
        <ol>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
@@ -258,7 +261,7 @@ const ContactUs = () => {
               </li>
 
             </ol>`,
-     },
+    },
 
   ]
 
@@ -499,11 +502,11 @@ const ContactUs = () => {
     },
   ];
 
-    // handle click businesstranform card click
-    function handleBusinessCardClick(modal, item) {
-      setshowModal1(modal);
-      setBusinessItem(item);
-    }
+  // handle click businesstranform card click
+  function handleBusinessCardClick(modal, item) {
+    setshowModal1(modal);
+    setBusinessItem(item);
+  }
 
   return (
     <>
@@ -515,9 +518,9 @@ const ContactUs = () => {
         title={businessItem?.title}
       >
         <div>
-        <div className="">
-          <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
-        </div>
+          <div className="">
+            <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
+          </div>
         </div>
       </Dialog>
 
@@ -622,10 +625,30 @@ const ContactUs = () => {
         sectionTextColor='#000'
         sectionHeadingLayout="center"
       >
+        <Slider slidesPerView={4}>
+          {[1, 2, 3, 4, 5].map((item, index) => (
+            <SwiperSlide key={index}>
+              <div class="bg-white border-1 border-gray-600 rounded-3xl hover:shadow-md" style={{ border: '1px solid #d3d3d3' }}>
+                <img class="rounded-t-3xl" src="about/pimp.svg" alt="" />
+                <div class="p-5">
+                  <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-600">Noteworthy technology acquisitions 2021</h5>
+                  <p class="mb-3 font-normal text-gray-600">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </SwiperSlide>
+          ))}
+        </Slider>
       </SectionWrapperNew>
       {/* end visionary minds  */}
 
-      <SectionWrapperNew style={{ backgroundColor: "#FCE6F4", position: 'relative' }}
+      {/* <SectionWrapperNew style={{ backgroundColor: "#FCE6F4", position: 'relative' }}
         sectionHeading=""
         sectionDesc=""
         sectionTextColor='#000'
@@ -645,7 +668,7 @@ const ContactUs = () => {
             <Image src="about/pimp.svg" width={500} height={500} alt={'pimp'} className="absolute right-[8%] bottom-0" />
           </div>
         </div>
-      </SectionWrapperNew>
+      </SectionWrapperNew> */}
 
       {/* joy at work section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
