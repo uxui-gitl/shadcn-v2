@@ -69,7 +69,7 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/data-insights/dataManagement/AzureSQL.svg",
       CardHeading: "Azure SQL Data Ware Housing",
       CardDesc:
         "Accelerate analytics with petabyte scale storage and high-performance querying",
@@ -84,7 +84,7 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/data-insights/dataManagement/optimizeData.svg",
       CardHeading: "AWS Redshift",
       CardDesc:
         "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
@@ -98,7 +98,7 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/data-insights/dataManagement/azureSynapse.svg",
       CardHeading: "Azure Synapse",
       CardDesc:
         "Unify analytics and data management, and integrate data warehousing and big data capabilities",
@@ -112,24 +112,10 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/data-insights/dataManagement/azureDataFactory.svg",
       CardHeading: "Azure Data Factory",
       CardDesc:
         "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
-      isArrow: "true",
-      link: [],
-    },
-    {
-      id: 4,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: "white",
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Databricks",
-      CardDesc:
-        "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
       isArrow: "true",
       link: [],
     },
@@ -140,10 +126,10 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Amazon S3",
+      CardIconUrl: "/data-insights/dataManagement/harnessUnified.svg",
+      CardHeading: "Databricks",
       CardDesc:
-        "Securely store and serve data with highly scalable and cost-effective object storage.",
+        "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
       isArrow: "true",
       link: [],
     },
@@ -154,10 +140,10 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Azure Data Lake",
+      CardIconUrl: "/data-insights/dataManagement/securelyStore.svg",
+      CardHeading: "Amazon S3",
       CardDesc:
-        "Experience high-performance and secure data management with Azure Data Lake.",
+        "Securely store and serve data with highly scalable and cost-effective object storage.",
       isArrow: "true",
       link: [],
     },
@@ -168,7 +154,21 @@ const DataInsights = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/data-insights/dataManagement/azureDataLake.svg",
+      CardHeading: "Azure Data Lake",
+      CardDesc:
+        "Experience high-performance and secure data management with Azure Data Lake.",
+      isArrow: "true",
+      link: [],
+    },
+    {
+      id: 8,
+      BGImageUrl: "",
+      BGColor: "#fff",
+      CardBGColor: "transparent",
+      CardTextColor: "white",
+      CardTitle: "",
+      CardIconUrl: "/data-insights/dataManagement/microsoftFabric.svg",
       CardHeading: "Microsoft Fabric",
       CardDesc:
         "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
@@ -228,7 +228,7 @@ const DataInsights = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      imageURL: "/data-insights/caseStudies.webp",
       title: "",
       heading: "Global fast-food chain with 170+ stores in Saudi Arabia",
       description:
@@ -284,7 +284,7 @@ const DataInsights = () => {
         desc="Discover new insights and drive business success with our data analytics solutions"
         cta="Let's Connect"
         width="60%"
-        video="/data-insights/homeBannerVideo.mp4"
+        video="/data-insights/video/pageBanner.mp4"
       />
 
       {/* End--Section--HeroBanner======================================================== */}
