@@ -61,7 +61,7 @@ const CyberSecurity = () => {
   const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/cyberSecurity/backgrounds/blog.webp',
+      cardBGImageUrl: '/cyberSecurity/backgrounds/blogbg1.webp',
       cardBGColor: 'red',
       cardHeading: "Cyber-Resilience Strategy Importance",
       cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large.'`,
@@ -70,7 +70,7 @@ const CyberSecurity = () => {
     },
     {
       id: 2,
-      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGImageUrl: '/cyberSecurity/backgrounds/blogbg2.webp',
       cardBGColor: 'red',
       cardHeading: "Step-By-Step Approach for Building Effective Privacy Programs:",
       cardDesc: 'The information revolution has transformed businesses, governments, and people in a big way. Virtually all business and government operations are now digital, resulting in everyone’s personal details being stored in information systems.',
@@ -83,7 +83,7 @@ const CyberSecurity = () => {
   const CyberSecurityData = [
     {
       id: 1,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/cyberSecurity/ourOfferings/businessConsulting.webp',
       cardHeading: 'Business Consulting',
       cardDesc: 'Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.',
       isArrow: false,
@@ -101,7 +101,7 @@ const CyberSecurity = () => {
     {
 
       id: 2,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/cyberSecurity/ourOfferings/implementationManagement.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Implementation & Management',
       cardDesc: 'Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while',
@@ -112,7 +112,7 @@ const CyberSecurity = () => {
     {
 
       id: 3,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/cyberSecurity/ourOfferings/applicationSecurity.webp',
       cardBGColor: '#9F0165',
       cardHeading: 'Application Security Testing',
       cardDesc: 'Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision',
@@ -123,7 +123,7 @@ const CyberSecurity = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/cyberSecurity/ourOfferings/strengthenPotential.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Strengthen Potential',
       cardDesc: 'Empower employees to focus on strategic tasks to deliver attentive experience to customers',
@@ -134,7 +134,7 @@ const CyberSecurity = () => {
     {
 
       id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/cyberSecurity/ourOfferings/enhanceFlexibility.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Enhance Flexibility',
       cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
@@ -146,7 +146,7 @@ const CyberSecurity = () => {
 
 
       id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/cyberSecurity/ourOfferings/reduceAHT.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Reduce AHT (Average Handling Time)',
       cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
@@ -177,7 +177,16 @@ const CyberSecurity = () => {
       url: '',
     },
     {
-      id: 2, heading: 'Defend',
+      id: 3, heading: 'Defend',
+      list: [
+        'Risk Assesment and Management',
+        'Risk Assesment and Management',
+        'Risk Assesment and Management',
+      ],
+      url: '',
+    },
+    {
+      id: 4, heading: 'SAFEGUARD',
       list: [
         'Risk Assesment and Management',
         'Risk Assesment and Management',
@@ -195,7 +204,7 @@ const CyberSecurity = () => {
         desc="Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."
         cta="Let's Connect"
         width="60%"
-        video="/cyberSecurity\backgrounds/homeBannerVideo.mov"
+        video="/cyberSecurity/video/pageBanner.mov"
       />
 
       {/* End--Section--HeroBanner======================================================== */}
