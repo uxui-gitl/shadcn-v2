@@ -135,7 +135,7 @@ const UpgradeToCloud = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "/upgradeCloud/backgrounds/CaseStudy.webp",
-      videoURL: "/upgradeCloud/video/homeBannerVideo.mov",
+      videoURL: "",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
@@ -166,7 +166,7 @@ const UpgradeToCloud = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      imageURL: "/upgradeCloud/casestudy.webp",
       title: "",
       heading: "Middle East-based Electrical Products Manufacturer",
       description:
@@ -186,27 +186,28 @@ const UpgradeToCloud = () => {
     {
       _id: 1,
       desc: "Dedicated partner for Azure Migration Services and Managed Services across Europe, APAC, ME and USA ",
-      icon: "",
+      icon: "/upgradeCloud/distinctiveEdge/dedicatedPartner.svg",
     },
     {
       _id: 2,
       desc: "Business Continuity 99.95%, on - demand scalability and best uptime performance in Industry",
-      icon: "",
+      icon: "/upgradeCloud/distinctiveEdge/businessContinuity.svg",
+
     },
     {
       _id: 3,
       desc: "Seamless upgradation to cloud platforms such as Microsoft Azure and Amazon Web Services (AWS)",
-      icon: "",
+      icon: "/upgradeCloud/distinctiveEdge/seamlessUgradation.svg",
     },
     {
       _id: 4,
       desc: "Frictionless cloud upgradation delivery",
-      icon: "",
+      icon: "/upgradeCloud/distinctiveEdge/frictionlessCloud.svg",
     },
     {
       _id: 5,
       desc: "Cost-efficient and consumption-based model under single SLA",
-      icon: "",
+      icon: "/upgradeCloud/distinctiveEdge/Cost-efficient.svg",
     },
   ];
   const reviewCardData = [
@@ -667,7 +668,7 @@ const UpgradeToCloud = () => {
         desc="Enabling businesses to scale with ease, enhance productivity and protect data with security measures. "
         cta="Schedule a call with our Cloud Expert"
         width="60%"
-        video="/upgradeCloud/video/homeBannerVideo.mov"
+        video="/upgradeCloud/video/pageBanner.mov"
       />
       {/* Section--Overview=======================================================================  */}
       <OverviewSection
@@ -695,7 +696,7 @@ const UpgradeToCloud = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-3  gap-10">
           <div className="p-6 bg-[transprent]">
-            <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
+            <Image className="pb-8" src={'/upgradeCloud/icons/liftAndShift.svg'} alt="" width={50} height={50} />
             <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Lift and Shift
               to Cloud</h5>
             <p className="mb-3 text-base font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
@@ -707,7 +708,7 @@ const UpgradeToCloud = () => {
           </div>
           {/*  */}
           <div className="p-6 bg-[transprent]">
-            <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
+            <Image className="pb-8" src={'/upgradeCloud/icons/ERPonCloud.svg'} alt="" width={50} height={50} />
             <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">ERP on Cloud</h5>
             <p className="mb-3 text-base font-medium text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
             <div className="flex justify-end px-6 py-4" onClick={() => { setshowModal2((prev) => !prev); }}>
@@ -718,7 +719,7 @@ const UpgradeToCloud = () => {
           {/*  */}
 
           <div className="p-6 bg-[transprent]">
-            <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
+            <Image className="pb-8" src={'/upgradeCloud/icons/applicationMigration.svg'} alt="" width={50} height={50} />
             <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
             <p className="mb-3 text-base font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
             </p>
