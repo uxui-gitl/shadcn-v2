@@ -107,7 +107,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/scalability.svg",
       CardHeading: "",
       CardDesc:
         "Scalability according to evolving business needs",
@@ -122,7 +122,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/fasterDevelopment.svg",
       CardHeading: "",
       CardDesc:
         "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
@@ -136,7 +136,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/driveBusiness.svg",
       CardHeading: "",
       CardDesc:
         "Drive business agility and improved ROI with automation",
@@ -150,7 +150,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/highestLevels.svg",
       CardHeading: "",
       CardDesc:
         "Highest levels of security and privacy, ensuring data is safeguarded",
@@ -164,7 +164,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/streamlineDelivery.svg",
       CardHeading: "",
       CardDesc:
         "Streamline delivery pipeline with all the essential tools covered under one umbrella",
@@ -178,7 +178,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/effortlessIntegration.svg",
       CardHeading: "",
       CardDesc:
         "Effortless integration with data solutions and Big Data",
@@ -192,7 +192,7 @@ const CloudStack = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/CloudStackServices/icons/reliableDisaster.svg",
       CardHeading: "",
       CardDesc:
         "Built-in reliable disaster recovery capabilities and integrated development framework",
@@ -272,27 +272,27 @@ const CloudStack = () => {
     {
       _id: 1,
       desc: "Comprehensive access to our cloud services across worldwide",
-      icon: "",
+      icon: "/CloudStackServices/distinctiveData/comprehensiveAccess.svg",
     },
     {
       _id: 2,
       desc: "Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications",
-      icon: "",
+      icon: "/CloudStackServices/distinctiveData/tailoredSolutions.svg",
     },
     {
       _id: 3,
       desc: "Holistic approach includes resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks ",
-      icon: "",
+      icon: "/CloudStackServices/distinctiveData/holisticApproach.svg",
     },
     {
       _id: 4,
       desc: "End-to-end strategic cloud services for complete cloud journey",
-      icon: "",
+      icon: "/CloudStackServices/distinctiveData/endToEnd.svg",
     },
     {
       _id: 5,
       desc: "Cloud expertise that offers business growth and localized requirements support ",
-      icon: "",
+      icon: "/CloudStackServices/distinctiveData/cloudExpertise.svg",
     },
   ];
 
@@ -344,7 +344,7 @@ const CloudStack = () => {
         desc="Make confident business decisions with our tailored cloud offerings, developed to drive scalability and cost savings. "
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/cloudStackServices/video/pageBanner.mov"
       />
       {/* Section Nav */}
 
