@@ -203,42 +203,44 @@ function NewNavBar() {
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 3 ? 'text-[#5F22D9]' : 'text-gray-500'}`} onClick={() => tabClickHandle(3)}>Enterprise Suite</span>
+                                                            <div className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer `} onClick={() => navLinkClick('/Solutions/Enterprise-Suite')} >Enterprise Suite</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
                                                     </div>
                                                     <div className="grid grid-cols-4 gap-10">
                                                         <div className="">
-                                                            <div className="text-[16px] text-[#1D162B] font-semibold hover:text-[#5F22D9]">Infor</div>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Infor WMS</p>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Infor LN</p>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Infor Cloudsuite</p>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">HxnEAM</p>
+                                                            <div onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Infor')} className="text-[16px] cursor-pointer text-[#1D162B] font-semibold hover:text-[#5F22D9]">Infor</div>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Infor/Infor-WMS')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Infor WMS</p>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Infor/Infor-LN')}  className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Infor LN</p>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Infor/Infor-Cloudsuite')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Infor Cloudsuite</p>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Infor/HxnEAM')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">HxnEAM</p>
                                                         </div>
                                                         <div className="">
-                                                            <div className="text-[16px] text-[#1D162B] font-semibold hover:text-[#5F22D9]">Microsoft Practices</div>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Business Central</p>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">F&O</p>
-                                                            <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">D365 Commerce</p>
+                                                            <div onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Microsoft-Practises')}  className="text-[16px] cursor-pointer text-[#1D162B] font-semibold hover:text-[#5F22D9]">Microsoft Practices</div>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Microsoft-Practises/Business-Central')}  className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Business Central</p>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Microsoft-Practises/FnO')}  className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">F&O</p>
+                                                            <p onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Microsoft-Practises/D365-Commerce')}  className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">D365 Commerce</p>
                                                         </div>
                                                         <div className="">
-                                                            <div className="text-[16px] text-[#1D162B] font-semibold hover:text-[#5F22D9]">Oracle</div>
+                                                            <div onClick={() => navLinkClick('/Solutions/Enterprise-Suite/Oracle')} className="text-[16px] cursor-pointer text-[#1D162B] font-semibold hover:text-[#5F22D9]">Oracle</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 1 ? 'text-[#5F22D9]' : 'text-[#000]'}`} onClick={() => tabClickHandle(1)}>Customer Experience</span>
+                                                            <div className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Customer Experience</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
                                                     </div>
-                                                    <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Infor WMS</p>
-                                                    <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Infor LN</p>
-                                                    <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">Infor Cloudsuite</p>
-                                                    <p className="text-[16px] text-[#808080] font-semibold hover:text-[#5F22D9]">HxnEAM</p>
+                                                    <p onClick={() => navLinkClick('/Solutions/Customer-Experience/Infor-CRM')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Infor CRM</p>
+                                                    <p onClick={() => navLinkClick('/Solutions/Customer-Experience/Microsoft-CRM')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Microsoft CRM</p>
+                                                    <p onClick={() => navLinkClick('/Solutions/Customer-Experience/Salesforce-CRM')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Salesforce CRM</p>
+                                                    <p onClick={() => navLinkClick('/Solutions/Customer-Experience/E-commerce')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">Ecommerce</p>
+                                                    <p onClick={() => navLinkClick('/Solutions/Customer-Experience/LS-retail')} className="text-[16px] cursor-pointer text-[#808080] font-semibold hover:text-[#5F22D9]">LS Retail</p>
+
 
 
                                                 </div>
