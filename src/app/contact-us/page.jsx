@@ -11,6 +11,8 @@ import ReactFlagsSelect from "react-flags-select";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import Navbar from "@/components/Navbar/Navbar";
+import NewNavBar from "@/components/NewNavBar";
+
 import Announcement from "@/sections/announcement/Announcement";
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
@@ -197,11 +199,10 @@ const ContactUs = () => {
   return (
     <>
       {/* Nav */}
-      <Announcement />
 
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
-          <Navbar theme="light" />
+          <NewNavBar />
         </div>
       </div>
 

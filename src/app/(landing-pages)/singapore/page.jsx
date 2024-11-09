@@ -20,6 +20,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
 import Navbar from "@/components/Navbar/Navbar";
+import NewNavBar from "@/components/NewNavBar";
+
 import { Tabs } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -559,7 +561,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       <Announcement content={announcemnetData} country={'SG'}/>
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
-          <Navbar theme="light" />
+          <NewNavBar />
         </div>
       </div>
       {/* banner slider */}
