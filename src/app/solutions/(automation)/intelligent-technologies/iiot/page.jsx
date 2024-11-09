@@ -13,7 +13,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 
 const IIOT = () => {
-  const blogImageUrl = "/iiot/IIOT_base.webp";
+  const blogImageUrl = "/iiot/blogBg.webp";
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
@@ -121,7 +121,7 @@ const IIOT = () => {
         desc="Tap into Data-Driven Insights and Drive Smart Connected Business with IIoT"
         cta="Let's Connect"
         width="60%"
-        video="/iiot/IIOT-homeBanner.mov"
+        video="/iiot/videos/pageBanner.mov"
       />
       {/* End--Section--Hero-Banner====================================================================== */}
 
