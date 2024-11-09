@@ -18,11 +18,11 @@ import 'swiper/css';
                 breakpoints={{
                     640: {
                         slidesPerView: 1.1,
-                        spaceBetween: 10,
+                        spaceBetween: 32,
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 24,
+                        spaceBetween: 32,
                     },
                     1024: {
                         slidesPerView: slidesPerView,

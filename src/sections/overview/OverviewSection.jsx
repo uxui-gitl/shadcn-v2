@@ -1,12 +1,11 @@
 import Overview from "@/components/OverviewText";
 
-function OverviewSection({ Text, bgColor = "white" }) { // Default to white if no bgColor prop is passed
+function OverviewSection({ Text, bgColor = 'bg-neutral-white' }) { // Default to white if no bgColor prop is passed
     return (
         <div
-            className="overViewSection w-full min-h-60 sm:min-h-96 flex justify-center items-center rounded-3xl text-center"
-            style={{ backgroundColor: bgColor }} // Set background color based on the prop
+        className={`w-full md:px-64 min-h-60 sm:min-h-96 flex justify-center items-center rounded-3xl text-center ${bgColor}`}
         >
-            <div className="sm:max-w-[900px] px-7 sm:px-0">
+            <div >
                 <Overview Text={Text}></Overview>
             </div>
         </div>

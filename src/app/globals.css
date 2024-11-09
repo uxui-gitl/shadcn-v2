@@ -953,6 +953,7 @@ h3 {
   display:none;
 }
 
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -976,4 +977,52 @@ h3 {
   -o-animation: rotating 6s linear infinite;
   animation: rotating 7s linear infinite;
 }
+
+/* Home Slider */
+.headline-position{
+  top:25%;
+  left:0;
+  right:0;
+}
+.horizontal-line{
+  top:50%;
+  left:0;
+  right:0;
+}
+
+
+/* For 'sm' (640px and above) */
+@media (min-width: 640px) {
+  .headline-position{
+    top:30%;
+    left:0;
+    right:0;
+  }
+}
+
+/* For 'md' (768px and above) */
+@media (min-width: 768px) {
+
+  
+}
+
+/* For 'lg' (1024px and above) */
+@media (min-width: 1024px) {
+
+  }
+/* For 'xl' (1280px and above) */
+@media (min-width: 1280px) {
+  
+}
+
+/* For '2xl' (1400px and above) */
+@media (min-width: 1400px) {
+
+}
+
+/* For '3xl' (1536px and above) */
+@media (min-width: 1536px) {
+
+}
+
 

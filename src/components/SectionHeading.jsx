@@ -10,19 +10,19 @@ function SectionHeading({
 }) {
   return (
     <div
-    className={`w-full pt-${paddingTop} ${center && 'flex justify-center'} ${center ? 'text-center mx-auto' : right ? 'text-right ml-auto' : 'text-center md:text-left'}`} 
+    className={`w-full`} 
     >
       {layout === 'vertical' ? (
         <div
           className={` w-full md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-center md:items-start'} `}
         >
           {Heading && <h1
-            className={`text-2xl sm:text-lg md:text-[54px] mb-6 sm:mb-10 md:mb-14 font-medium md:leading-[62px]`}
+            className={` text-neutral-white text-heading-01 leading-heading-01 mb-6 sm:mb-2 md:mb-6 font-medium text-center sm:text-center md:text-left`}
             style={{ color: Color }}
             dangerouslySetInnerHTML={{ __html: Heading }}
           />}
           {Desc &&  (<p
-            className={`text-lg sm:text-base md:text-xl font-medium mb-6 sm:mb-10 md:mb-14`}
+            className={`text-neutral-white text-subtitle-01 leading-subtitle-01 font-normal text-center md:text-left`}
             style={{ color: Color }}
             dangerouslySetInnerHTML={{__html: Desc}}
           >
@@ -30,17 +30,17 @@ function SectionHeading({
         </div>
       ) : (
         <div
-          className={`flex flex-col md:flex-row pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'}`}
+          className={`flex flex-col md:flex-row mb-6 pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'}`}
         >
           <h1
-            className={`text-2xl sm:text-lg md:text-[54px] font-medium md:leading-[62px] mb-6 md:mb-0`}
+            className={`text-heading-01 leading-heading-01 font-semibold mb-3 sm:mb-2 md:mb-6`}
             style={{ color: Color }}
           >
             {Heading}
           </h1>
          {Desc && (
           <p
-            className={`text-lg sm:text-base md:text-xl font-medium ml-4`} 
+            className={`text-subtitle-01 leading-subtitle-01 font-normal`} 
             style={{ color: Color }}
           >
             {Desc}

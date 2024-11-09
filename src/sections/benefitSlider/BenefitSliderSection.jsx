@@ -46,11 +46,11 @@ function BenefitSliderSection({
         ...style,
         backgroundImage: `url(${sectionImageUrl})`, backgroundSize: 'cover',
     }}>
-      <div ref={mainContainerRef} className="flex pt-8 gap-8">
-        <div className="md:container mx-auto flex flex-col md:flex-row h-full">
+      <div ref={mainContainerRef} className="flex py-32 ">
+        <div className="container mx-auto flex flex-col md:flex-row h-full ">
           <div
             ref={leftContainerRef}
-            className="w-full md:w-[40%] h-full flex flex-col align-top"
+            className="w-full md:w-[40%] h-full flex flex-col align-top pr-5"
           >
             <SectionHeading Heading={sectionHeading}
                             Desc={sectionDesc}
@@ -59,24 +59,24 @@ function BenefitSliderSection({
                             headingContainerWidth={sectionHeaderWidth} />
           </div>
 
-          <div className="w-full md:w-[60%]">
+          <div className="w-full md:w-[60%] pt-8 bg-primary-900 z-10">
             <div>
               {cardData.map((item) => (
                 <>
                 <div
                   key={item._id}
-                  className="flex p-5 md:p-8 w-full h-[170px] md:h-[196px] items-center bg-white border border-gray-200 rounded-[32px] mb-4 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  className="flex p-5 md:p-8 w-full h-[170px] md:h-[196px] items-center bg-neutral-white border border-neutral-light-grey rounded-[32px] mb-4 shadow hover:bg-neutral-ghost-white"
                 >
                   <Image
-                    className="mr-8 hidden md:block"
+                    className="mr-4 md:block"
                     src={checkout}
                     alt=""
                     width={72}
                     height={72}
                   />
                   <div className="flex flex-col justify-between leading-normal">
-                    <h2 className="mb-3 font-semibold text-sm md:text-2xl text-gray-700 dark:text-gray-400">{item.cardHead}</h2>
-                    <p className="mb-3 text-sm md:text-2xl text-gray-700 dark:text-gray-400">
+                    <h2 className="mb-3 text-body-01 text-neutral-darkest-grey">{item.cardHead}</h2>
+                    <p className="mb-3 text-body-01 text-neutral-darkest-grey">
                       {item.cardDesc}
                     </p>
                   </div>
