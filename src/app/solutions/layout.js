@@ -1,14 +1,15 @@
 import Navbar from "@/components/Navbar/Navbar";
 import React from "react";
 import Announcement from "@/sections/announcement/Announcement";
+import NewNavBar from "@/components/NewNavBar";
 
 const layout = ({ children }) => {
   return (
     <>
-      <Announcement />
+      {/* <Announcement /> */}
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
-          <Navbar theme="light" />
+        <NewNavBar></NewNavBar>
         </div>
       </div>
       {children}

@@ -17,6 +17,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import Dialog from "@/components/Dialog";
 import { Timeline } from "@/components/ui/timeline";
 import { title } from "process";
+import NewNavBar from "@/components/NewNavBar";
 
 
 
@@ -523,11 +524,10 @@ const ContactUs = () => {
 
       {/* dialog end */}
       {/* Nav */}
-      <Announcement />
 
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full`}>
-          <Navbar theme="light" />
+        <NewNavBar></NewNavBar>
         </div>
       </div>
 

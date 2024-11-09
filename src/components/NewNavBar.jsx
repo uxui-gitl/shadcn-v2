@@ -3,39 +3,64 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { animate, stagger } from "framer-motion/dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 
 
 function NewNavBar() {
+    const router = useRouter()
     const [isNavbarActive, setNavbarActive] = useState(false);
+    const [navName, setNavName] = useState();
 
     const [tabNumber, setTabNumber] = useState(1);
     const [link, setLink] = useState([
-        { id: '1', href: '/', text: 'Solutions', isDropDown:true },
-        { id: '2', href: '/', text: 'Services', isDropDown:true },
-        { id: '3', href: '/', text: 'Industry Focus', isDropDown:true},
-        { id: '4', href: '/about-us', text: 'About us', isDropDown:false},
-        { id: '5', href: '/contact-us', text: 'Careers', isDropDown:true},
+        { id: '1', href: '/', text: 'Solutions', value: 'solutions', isDropDown: true },
+        { id: '2', href: '/', text: 'Services', value: 'services', isDropDown: true },
+        { id: '3', href: '/', text: 'Industry Focus', value: 'industry', isDropDown: true },
+        { id: '4', href: '/about-us', text: 'About us', value: 'about', isDropDown: false },
+        { id: '5', href: '/contact-us', text: 'Insights', value: 'insights', isDropDown: true },
+        { id: '6', href: '/contact-us', text: 'Careers', value: 'careers', isDropDown: true },
     ]);
 
     function tabClickHandle(val) {
         setTabNumber(val);
     }
 
+    function handleNavClick(item) {
+        if (item.value == navName) {
+            setNavbarActive(!isNavbarActive);
+        }
+        else {
+            setNavbarActive(true);
+        }
+        setNavName(item.value)
+
+    }
+
     useEffect(() => {
-      if(isNavbarActive == true){
-       document.body.style.overflowY = 'hidden';
-      }
-      else{
-        document.body.style.overflowY = 'scroll';
-      }
+        if (isNavbarActive == true) {
+            document.body.style.overflowY = 'hidden';
+        }
+        else {
+            document.body.style.overflowY = 'scroll';
+        }
 
     }, [isNavbarActive])
-    
+
+    useEffect(() => {
+            document.body.style.overflowY = 'scroll';
+    }, [])
+
+
+   function navLinkClick(url){
+    router.push(url);
+    setNavbarActive(!isNavbarActive);
+    }
+
 
     return (
         <>
-            <div className={`${isNavbarActive ? 'bg-[#fff]' : 'bg-[#000]'} absolute top-0 z-[100] w-full`}>
+            <div className={`${isNavbarActive ? 'bg-[#fff]' : 'bg-[transparent]'} absolute top-0 z-[100] w-full`}>
                 <div className={`border-1 px-10 z-50`}>
                     <div className="container mx-auto flex flex-col sm:flex-row sm:justify-between h-lvh sm:h-[100px] sm:items-center py-5">
                         <div className="logo sm:border-b-0 border-b-4 py-3 sm:py-0">
@@ -52,17 +77,17 @@ function NewNavBar() {
                             <>
                                 {link?.map((item, index) => (
                                     <>
-                                    {item.isDropDown == true ? (
-                                        <button className={`sm:mr-10 text-[16px] font-medium py-5 hover:text-[#5F22D9] ${isNavbarActive ? 'text-[#000]' : 'text-[#fff]'}`} onClick={() => setNavbarActive(!isNavbarActive)}>{item.text} </button>
-                                    ) : (
-                                        <Link key={index} className={`sm:mr-10 text-[16px] font-medium py-5 hover:text-[#5F22D9] last:mr-0 ${isNavbarActive ? 'text-[#000]' : 'text-[#fff]'}`} href={item.href}>{item.text}</Link>
-                                    )}
-                                        
+                                        {item.isDropDown == true ? (
+                                            <button className={`sm:mr-10 text-[16px] font-medium py-5 hover:text-[#5F22D9] ${isNavbarActive ? 'text-[#000]' : 'text-[#fff]'}`} onClick={() => handleNavClick(item)}>{item.text} </button>
+                                        ) : (
+                                            <Link key={index} className={`sm:mr-10 text-[16px] font-medium py-5 hover:text-[#5F22D9] last:mr-0 ${isNavbarActive ? 'text-[#000]' : 'text-[#fff]'}`} href={item.href}>{item.text}</Link>
+                                        )}
+
                                     </>
                                 ))}
                             </>
                         </div>
-                        <button type="button" class="text-white bg-[#5F22D9] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center">Get In Touch</button>
+                        <button type="button" class="text-white bg-[#5F22D9] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center" onClick={() => navLinkClick('/contact-us')}>Get In Touch</button>
                     </div>
                 </div>
 
@@ -74,67 +99,59 @@ function NewNavBar() {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
-                                <div className="container mx-auto solution-content grid grid-cols-4 gap-8 py-6" style={{ height: `calc('100vh - 116px')`, borderTop:'1px solid #d3d3d3' }}>
+                                <div className="container mx-auto solution-content grid grid-cols-4 gap-8 py-6" style={{ height: `calc('100vh - 116px')`, borderTop: '1px solid #d3d3d3' }}>
                                     <div className="" style={{ borderRight: '1px solid #E4E4E4' }}>
-                                        <div className="grid grid-rows-3 gap-2">
-                                            <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
-                                                <img src="/navbar-icon/cube-outline.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
-                                                <div className="">
-                                                    <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 1 ? 'text-[#5F22D9]' : 'text-[#000000]'}`} onClick={() => tabClickHandle(1)}>Automation</span>
-                                                    <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
-                                                        automation</p>
+                                        {navName == 'solutions' && (
+                                            <div className="grid grid-rows-3 gap-2">
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cube-outline.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 1 ? 'text-[#5F22D9]' : 'text-[#000000]'}`} onClick={() => tabClickHandle(1)}>Automation</span>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
+                                                            automation</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
-                                                <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
-                                                <div className="">
-                                                    <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 2 ? 'text-[#5F22D9]' : 'text-[#000000]'}`} onClick={() => tabClickHandle(2)}>Cloud</span>
-                                                    <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
-                                                        automation</p>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 2 ? 'text-[#5F22D9]' : 'text-[#000000]'}`} onClick={() => tabClickHandle(2)}>Cloud</span>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
-                                                <img src="/navbar-icon/ts.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
-                                                <div className="">
-                                                    <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 3 ? 'text-[#5F22D9]' : 'text-[#000000]'}`} onClick={() => tabClickHandle(3)}>Transformation</span>
-                                                    <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
-                                                        automation</p>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/ts.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 3 ? 'text-[#5F22D9]' : 'text-[#000000]'}`} onClick={() => tabClickHandle(3)}>Transformation</span>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            {/*  */}
-                                        </div>
+                                        )}
 
                                     </div>
                                     {/* 1st column automation*/}
                                     <div className="col-span-2" style={{ borderRight: '1px solid #E4E4E4' }}>
-                                        <div className="">
+                                        {navName == 'solutions' && (<div className="">
                                             <div className={`automation grid grid-cols-1 gap-4 ${tabNumber == 1 ? 'visiable' : 'hidden'}`}>
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-6`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer mb-2 ${tabNumber == 1 ? 'text-[#5F22D9]' : 'text-gray-500'}`} onClick={() => tabClickHandle(1)}>Intelligent Technologies</span>
+                                                            <div onClick={() => navLinkClick('/solutions/intelligent-technologies')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer mb-2 `} >Intelligent Technologies</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
                                                     </div>
-                                                    <div className="text-[16px] text-[#808080] font-semibold mb-1 hover:text-[#5F22D9]">AI/ML</div>
-                                                    <div className="text-[16px] text-[#808080] font-semibold mb-1 hover:text-[#5F22D9]">RPA</div>
-                                                    <div className="text-[16px] text-[#808080] font-semibold mb-1 hover:text-[#5F22D9]">IIOT</div>
+                                                    <div onClick={() => navLinkClick('/solutions/intelligent-technologies/AI-ML')}  className="text-[16px] text-[#808080] font-semibold mb-1 hover:text-[#5F22D9]">AI/ML</div >
+                                                    <div onClick={() => navLinkClick('/solutions/intelligent-technologies/RPA')}  className="text-[16px] text-[#808080] font-semibold mb-1 hover:text-[#5F22D9]">RPA</div >
+                                                    <div onClick={() => navLinkClick('/solutions/intelligent-technologies/IIOT')}  className="text-[16px] text-[#808080] font-semibold mb-1 hover:text-[#5F22D9]">IIOT</div >
                                                 </div>
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 1 ? 'text-[#000]' : 'text-[#000]'}`} onClick={() => tabClickHandle(1)}> Data Insights</span>
-                                                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
-                                                                automation</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="">
-                                                    <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
-                                                        <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 1 ? 'text-[#000]' : 'text-gray-500'}`} onClick={() => tabClickHandle(1)}>Cyber Security</span>
+                                                            <div onClick={() => navLinkClick('/Solutions/Data-Insights')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}> Data Insights</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
@@ -143,7 +160,16 @@ function NewNavBar() {
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 1 ? 'text-[#000]' : 'text-gray-500'}`} onClick={() => tabClickHandle(1)}>Technology Stack</span>
+                                                            <div onClick={() => navLinkClick('/Solutions/Cyber-Security')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Cyber Security</div>
+                                                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
+                                                                automation</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="">
+                                                    <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
+                                                        <div className="">
+                                                            <div onClick={() => navLinkClick('/Solutions/Technology-Stack')}  className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Technology Stack</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
@@ -155,7 +181,7 @@ function NewNavBar() {
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 2 ? 'text-[#5F22D9]' : 'text-gray-500'}`} onClick={() => tabClickHandle(1)}>Upgrade to Cloud</span>
+                                                            <div onClick={() => navLinkClick('/Solutions/Upgrade-to-Cloud')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`} >Upgrade to Cloud</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
@@ -164,7 +190,7 @@ function NewNavBar() {
                                                 <div className="">
                                                     <div className={`flex leading-[28px] justify-start font-semibold mb-4`}>
                                                         <div className="">
-                                                            <span className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${tabNumber == 2 ? 'text-[#000]' : 'text-[#000]'}`} onClick={() => tabClickHandle(1)}>Cloud Stack & Services</span>
+                                                            <div onClick={() => navLinkClick('/Solutions/Cloud-Stack-and-Services')}  className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`} >Cloud Stack & Services</div>
                                                             <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with <br></br>
                                                                 automation</p>
                                                         </div>
@@ -227,7 +253,144 @@ function NewNavBar() {
                                                 </div> */}
 
                                             </div>
-                                        </div>
+                                        </div>)}
+
+                                        {navName == 'services' && (
+                                            <>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Our-Services/Business-Consulting')}  className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Business Consulting</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Our-Services/Implementation-and-Global-Rollout')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer leading-[28px]`}>Implementation & <br></br>Global Rollout</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Our-Services/Managed-Services')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Managed Services</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                            </>
+
+                                        )}
+
+
+                                        {navName == 'industry' && (
+                                            <>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Our-Services/Managed-Services')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Managed Services</div >
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Industries/Retail')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Retail</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Industries/Trading-and-Distribution')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Trading and Distribution</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/Industries/Project')}  className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Project</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div  onClick={() => navLinkClick('/Industries/Healthcare')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Healthcare</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                            </>
+                                        )}
+
+                                        {navName == 'insights' && (
+                                            <>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/videos')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Video</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div  onClick={() => navLinkClick('/blog')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Blogs</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/news-announce')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>news</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div  onClick={() => navLinkClick('/case-studies') }className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Case Studies</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+
+                                            </>)}
+
+
+                                        {navName == 'careers' && (
+                                            <>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div onClick={() => navLinkClick('/careers/we-are-hiring')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>We are hiring</div >
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+                                                <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
+                                                    <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
+                                                    <div className="">
+                                                        <div  onClick={() => navLinkClick('/careers/why-join-us')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Why Infotech?</div>
+                                                        <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
+                                                            automation</p>
+                                                    </div>
+                                                </div>
+
+                                            </>)}
+
                                         {/* services */}
                                     </div>
                                     {/* 2nd column atomation */}
@@ -245,7 +408,7 @@ function NewNavBar() {
                                                         <p className="text-[12px] text-[#808080] font-medium mb-1 leading-[16px]">Delivering business value with
                                                             automation</p>
                                                         <Link href={''} target='_blank' type="button" className="text-[#5F22D9] text-[12px] font-semibold flex items-center">Read more <svg class="w-3 h-2 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                                         </svg></Link>
                                                     </div>
                                                 </div>
@@ -263,9 +426,9 @@ function NewNavBar() {
                                                                 <div className="col-span-2">
                                                                     <div className="text-[14px] font-semibold leading-[18px] mb-2">Europe’s leading machine manufacturer achieves better</div>
                                                                     <Link href={''} target='_blank' type="button" className="text-[#5F22D9] text-[12px] font-semibold flex items-center">Read more <svg class="w-3 h-2 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                                        </svg></Link>
-                                                         </div>
+                                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                                                    </svg></Link>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </>
