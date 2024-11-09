@@ -167,47 +167,51 @@ const distinctiveData = [
   {
     _id: 1,
     desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
-    icon: "",
+    icon: "/ai-ml/distinctiveEdge/deepUnderstanding.svg",
   },
   {
     _id: 2,
     desc: "Agile approach that keeps projects on cutting edge.",
-    icon: "",
+    icon: "/ai-ml/distinctiveEdge/agileApproach.svg",
   },
   {
     _id: 3,
     desc: "Fully signed Non-Disclosure Agreement (NDA) to protect sensitive information of customer.",
-    icon: "",
+    icon: "/ai-ml/distinctiveEdge/fullySigned.svg",
   },
   {
     _id: 4,
     desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
-    icon: "",
+    icon: "/ai-ml/distinctiveEdge/exceedCustomer.svg",
   },
 
 ]
 
 const benifitsCardsData = [
   { id: '1',
-    icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+    icon: "/ai-ml/benefits/processAnalyse.svg",
     cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers' },
   { id: '2',
-    icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+    icon: "/ai-ml/benefits/anticipateFuture.svg",
      cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions' },
-  { id: '3', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+  { id: '3', 
+    icon: "/ai-ml/benefits/enablesEffortless.svg",
      cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing' },
-  { id: '4', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
-     cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
+  { id: '4', 
+    icon: "/ai-ml/benefits/optimizeSupply.svg",
+    cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
 ]
 
-const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
-const blogImageUrl = '/ai-ml/blog-bg.png';
+const yourImageUrl = '/ai-ml/AI-bgimage.webp';
+const blogImageUrl = '/ai-ml/blogBg.webp';
 
 
 const PlatFormImageList = [
-  { id: 1, url: '/ai-ml/ms-azure.png' },
-  { id: 2, url: '/ai-ml/google-ai-logo.png' },
-  { id: 3, url: '/ai-ml/tensorflow-logo.png' },
+  { id: 1, url: '/ai-ml/itPlatforms/microsoftAzureML.svg' },
+  { id: 2, url: '/ai-ml/itPlatforms/openAiChatGPT.svg' },
+  { id: 3, url: '/ai-ml/itPlatforms/googleGemini.svg' },
+  { id: 4, url: '/ai-ml/itPlatforms/metaLlama.svg' },
+  { id: 5, url: '/ai-ml/itPlatforms/replicate.svg' },
 
 ]
 

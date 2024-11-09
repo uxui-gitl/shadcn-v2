@@ -24,7 +24,7 @@ const page = () => {
       cardBGImage: '/intelligent-tech/cards-background/bg-card-machine-learning.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "Machine Learning",
-      cardIconUrl: '/icons/circletower.svg',
+      cardIconUrl: '/intelligent-tech/icons/machineLearning.svg',
       cardHeading: 'Automated Pattern Recognition',
       cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
       isArrow: false,
@@ -34,7 +34,7 @@ const page = () => {
       cardBGImage: '/intelligent-tech/cards-background/bg-card-artificial-intelligence.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "Artificial Intelligence",
-      cardIconUrl: '/icons/circletower.svg',
+      cardIconUrl: '/intelligent-tech/icons/artificialIntelligence.svg',
       cardHeading: 'Cognitive Computing Solutions',
       cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
       isArrow: false,
@@ -44,7 +44,7 @@ const page = () => {
       cardBGImage: '/intelligent-tech/cards-background/bg-card-rpa.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "Robotic Process Automation",
-      cardIconUrl: '/icons/circletower.svg',
+      cardIconUrl: '/intelligent-tech/icons/roboticProcessAutomation.svg',
       cardHeading: 'Efficient Task Automation',
       cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
       isArrow: false,
@@ -54,41 +54,41 @@ const page = () => {
       cardBGImage: '/intelligent-tech/cards-background/bg-card-asset-management.png',
       cardBGColor: '#EFE9FB',
       cardTitle: "IIoT",
-      cardIconUrl: '/icons/circletower.svg',
+      cardIconUrl: '/intelligent-tech/icons/iIoT.svg',
       cardHeading: 'Asset Optimization and Uptime',
       cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
       isArrow: false,
     },
   ];
 
-  const benefitsCardsData = [
-    { id: '1', text: 'A high degree of accuracy and consistency in business operations' },
-    { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-    { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-    { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-    { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-  ]
+  // const benefitsCardsData = [
+  //   { id: '1', text: 'high degree of accuracy and consistency in business operations' },
+  //   { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
+  //   { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
+  //   { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
+  //   { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
+  // ]
 
   const distinctiveData = [
     {
       _id: 1,
       desc: "Enables automation across diverse use cases",
-      icon: "",
+      icon: "/intelligent-tech/distinctiveEdge/enablesAutomation.svg",
     },
     {
       _id: 2,
       desc: "Help businesses achieve high productivity",
-      icon: "",
+      icon: "/intelligent-tech/distinctiveEdge/helpBusinesses.svg",
     },
     {
       _id: 3,
       desc: "Substantial improvements in return on investment (ROI)",
-      icon: "",
+      icon: "/intelligent-tech/distinctiveEdge/substantialImprovements.svg",
     },
     {
       _id: 4,
       desc: "Extensive experience in understanding industry-specific challenges and opportunities",
-      icon: "",
+      icon: "/intelligent-tech/distinctiveEdge/extensiveExperience.svg",
     },
 
   ]
@@ -96,28 +96,28 @@ const page = () => {
   const BenefitsData = [
     {
       _id: 1,
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/intelligent-tech/benefits/accuracyConsistency.svg",
       title: "",
       cardDesc:
         "A high degree of accuracy and consistency in business operations",
     },
     {
       _id: 2,
-      icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
+      icon: "/intelligent-tech/benefits/problemSolving.svg",
       title: "",
       cardDesc:
         "Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations",
     },
     {
       _id: 3,
-      icon: "benefisIntelligentTechnologies/InformedDecisionmaking",
+      icon: "/intelligent-tech/benefits/Automation.svg",
       title: "",
       cardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
     {
       _id: 4,
-      icon: "benefisIntelligentTechnologies/highDegreeAccuracyConsistency",
+      icon: "/intelligent-tech/benefits/reduceEquipment.svg",
       title: "",
       cardDesc:
         "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
