@@ -17,9 +17,16 @@ const EntIntro = ({
   alignment,
 }) => {
   return (
-   
     <div className="text-center">
-      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden md:px-20 ">
+      <div className="relative w-full h-[80vh] sm:h-[90vh] overflow-hidden">
+        {/* Video background with a linear gradient overlay */}
+        <div
+          className="absolute top-0 left-0 w-full h-full  z-10"
+          style={{
+            background: " rgba(8, 7, 8, 0.5)",
+          }}
+        ></div>
+
         <video
           className="absolute top-0 left-0 w-full h-full object-cover sm:object-fill z-0"
           autoPlay
@@ -29,42 +36,53 @@ const EntIntro = ({
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-   
-        <div className="flex justify-start items-center h-[100vh] sm:h-[90vh] md:h-[100vh]">
+
+        {/* Content Container */}
+        <div className="container flex justify-start items-center  h-[100vh] sm:h-[90vh] md:h-[100vh] z-20">
           <div
-            className={`flex text-white flex-col justify-start gap-5 px-[2rem] md:px-[4.5rem] text-center w-full md:w-[70%] md:text-left`}
+            className={`flex text-neutral-white flex-col justify-start gap-5  text-left`}
           >
+            {/* Title */}
             <h1
-              className={'w-full z-50 sm:block text-[26px] sm:text-[52px] md:text-[54px] md:leading-[64px] leading-[44px] sm:leading-[52px] text-white font-bold sm:font-semibold'}
+              className=" w-full z-50 text-neutral-white
+              text-display-01 leading-display-01 md:text-md-display-01 md:leading-md-display-01 lg:text-lg-display-01 lg:leading-lg-display-01 lg:w-[70%] mb-4 font-semibold"
+              style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{title}</Balancer>
             </h1>
 
+            {/* Description */}
             <h4
-              className={`z-50 sm:block text-white text-base sm:text-[20px]  md:leading-[28px] leading-[22px] mb-[24px]`}
+              className="z-50 text-neutral-white text-subtitle-01 leading-subtitle-01 md:text-md-subtitle-01 md:leading-md-subtitle-01 lg:text-lg-subtitle-01 lg:leading-lg-subtitle-01 lg:w-[70%] mb-24"
+              style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{desc}</Balancer>
             </h4>
 
-            <div className="z-50 flex gap-4 flex-col sm:flex-row justify-center md:justify-start items-center align-middle">
+            {/* Call-to-Action Button */}
+            <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start">
               <Link
                 href={"#Contact"}
-                className="text-white flex items-center bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 mb-2 dark:bg-[#946BE6] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-4 mb-2 group"
               >
                 {cta}
-                <Icon
-                  path={mdiArrowTopRight}
-                  style={{ marginLeft: "0.5em", transform: "rotate(45deg)", marginTop: '1px' }}
-                  size={1}
-                />
+                <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
+                  <Icon
+                    path={mdiArrowTopRight}
+                    style={{
+                      marginLeft: "0.5em",
+                      transform: "rotate(45deg)",
+                      marginTop: "1px",
+                    }}
+                    size={1}
+                  />
+                </div>
               </Link>
             </div>
-        
-        </div>
+          </div>
         </div>
       </div>
     </div>
-    
   );
 };
 

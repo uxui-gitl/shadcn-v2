@@ -34,27 +34,27 @@ function CommonCardOne({ Item }) {
                     ></div>
                 )}
 
-                <div className={`p-7 md:p-10 flex-grow ${style.cardBody}`}>
+                <div className={`p-5 flex-grow ${style.cardBody}`}>
                     {cardTitle && (
-                        <div className={`text-[#E0028E] text-[20px] mb-12 ${style.cardTitle}`}>
+                        <div className={`text-secondary-400 text-subtitle-01 leading-subtitle-01 mb-8 ${style.cardTitle}`}>
                             {cardTitle}
                         </div>
                     )}
                     {cardIconUrl && (
-                        <div className={`mb-8 ${style.cardIcon}`}>
+                        <div className={`mb-6 ${style.cardIcon}`}>
                             <Image src={cardIconUrl} alt="" width={53} height={53} />
                         </div>
                     )}
                     {cardHeading && (
                         <h5
-                            className={`text-[42px] leading-[48px] font-semibold ${style.cardHeading}`}
+                            className={`text-heading-01 leading-heading-01 font-semibold ${style.cardHeading}`}
                             dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                         />
                     )}
 
                     {cardDesc && (
                         <p
-                            className={`my-5 font-normal ${style.cardDesc}`}
+                            className={` text-body-01 leading-body-01 font-normal ${style.cardDesc}`}
                             dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                         />
                     )}

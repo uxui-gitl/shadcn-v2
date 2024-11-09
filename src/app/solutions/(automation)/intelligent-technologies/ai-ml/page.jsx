@@ -231,8 +231,7 @@ const page = () => {
           backgroundImage: `url(${yourImageUrl})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed", // This is key for the parallax effect
-          backgroundPosition: "center",
-          boxShadow: "inset 0px 0px 50px 86px rgba(0,0,0,0.4)",
+          backgroundPosition: "center",       
         }}
         sectionHeading={"Artificial Intelligence Offerings"}
         sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
@@ -302,7 +301,7 @@ const page = () => {
         <Slider>
           {PlatFormImageList?.map((item, index) => (
             <SwiperSlide key={index}>
-                <Image src={item.url} width={350} height={100} />
+                <Image src={item.url} width={350} height={100} alt="card-image"/>
             </SwiperSlide>
           ))}
         </Slider>

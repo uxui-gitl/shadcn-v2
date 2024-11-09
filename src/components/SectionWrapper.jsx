@@ -3,7 +3,7 @@ function SectionWrapper({
   style,
   BGColor = "#fff",
   ID = "",
-  Padding = true,
+  Padding = false,
 }) {
   const checkPadding = Padding
     ? "py-12 sm:py-14 md:pt-36 md:pb-40 px-10 md:px-10"
@@ -11,7 +11,7 @@ function SectionWrapper({
   return (
     <div
       id={ID}
-      className={`${checkPadding} md:rounded-3xl md:-mt-[1.8rem]`}
+      className={`${checkPadding} rounded-3xl -mt-8`}
       style={{ ...style, backgroundColor: BGColor}}
     >
       {children}

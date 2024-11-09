@@ -1,10 +1,11 @@
 "use client";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./announcement.module.css";
 import Link from "next/link";
 
 import ReactFlagsSelect from "react-flags-select";
+
 const Announcement = ({ content, country }) => {
   const defaultData = [
     {
@@ -43,8 +44,8 @@ const Announcement = ({ content, country }) => {
 
   const announcements = content || defaultData;
   const [currentAnnouncementIndex, setCurrentAnnouncementIndex] = useState(0);
-
   const [selected, setSelected] = useState(country);
+  const [isWideScreen, setIsWideScreen] = useState(false);
 
   const handleCountrySelect = (code) => {
     setSelected(code);
@@ -65,9 +66,24 @@ const Announcement = ({ content, country }) => {
       default:
         url = "/";
     }
-    // window.open(url, "_blank");
     window.open(url, "_self");
   };
+
+  useEffect(() => {
+    // Detect screen width and set the state accordingly
+    const checkScreenSize = () => {
+      setIsWideScreen(window.innerWidth >= 1024); // True for 1024px and above
+    };
+
+    // Check on initial load
+    checkScreenSize();
+
+    // Add event listener to handle window resizing
+    window.addEventListener("resize", checkScreenSize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   useEffect(() => {
     // Set up an interval to switch to the next announcement every 5 seconds (5000 milliseconds)
@@ -83,6 +99,14 @@ const Announcement = ({ content, country }) => {
 
   const currentAnnouncement = announcements[currentAnnouncementIndex];
 
+  // Function to truncate title after 30 characters (for narrow screens only)
+  const truncateTitle = (title) => {
+    if (!isWideScreen && title.length > 30) {
+      return title.slice(0, 30) + "..."; // Truncate and add ellipsis for narrow screens
+    }
+    return title; // Return full title for wide screens (1024px and above)
+  };
+
   return (
     <div className={styles["top-banner"]}>
       <div className={styles["container"]}>
@@ -90,7 +114,7 @@ const Announcement = ({ content, country }) => {
           {currentAnnouncement.cta !== "" ? (
             <>
               <span className={styles["tb-text"]}>
-                {currentAnnouncement.title}
+                {truncateTitle(currentAnnouncement.title)} {/* Truncate if necessary */}
               </span>
               <Link
                 className={styles["tb-link"]}
@@ -105,9 +129,8 @@ const Announcement = ({ content, country }) => {
                 className={styles["tb-text"]}
                 href={currentAnnouncement.link}
               >
-                {" "}
                 <span className={styles["tb-text"]}>
-                  {currentAnnouncement.title}
+                  {truncateTitle(currentAnnouncement.title)} {/* Truncate if necessary */}
                 </span>
               </Link>
             </>
@@ -118,7 +141,7 @@ const Announcement = ({ content, country }) => {
             <ReactFlagsSelect
               className={styles["tb-flags"]}
               selected={selected}
-              fullWidth={false}
+              fullWidth={true}
               countries={["BE", "SG", "US", "IN"]}
               customLabels={{
                 BE: "BEL",

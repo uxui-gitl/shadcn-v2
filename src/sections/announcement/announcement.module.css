@@ -1,26 +1,21 @@
 /* Top Banner - Announcement */
 .top-banner {
-  background: linear-gradient(90deg, #1585bb 0%, #40bbcf 100%);
-  background: #0056BC;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+  background: #5F22D9;
+  background: linear-gradient(90deg, #5F22D9 0%, #E0028E 100%);  
   color: #fff;
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing:1.45px;
   line-height: 150%;
-  text-align: center;
-  max-height: 500px;
+  text-align: left;
+  max-height:20rem;
   position: sticky;
   top: 0;
   transition: max-height 0.5s;
   z-index: 999;
   position: relative;
 }
-.top-banner span {
-  margin-right: 0.5em;
-}
-.tb-logo {
-  display: none;
-}
+
+
 #tb-close {
   position: absolute;
   right: 20px;
@@ -34,14 +29,15 @@
   color: #b2c8f8;
 }
 .top-banner .content {
-  padding: 12px 24px;
+  padding:0.5rem 1rem;
+  width:80%;
 }
 .tb-flags button {
   border: 0;
 }
 .tb-flags button span {
   margin-right: 0;
-  padding: 0 0.25em;
+  padding: 0 0.25rem;
   color: white;
 }
 .tb-flags button::after {
@@ -56,34 +52,92 @@
   border-right: 5px solid transparent;
   border-bottom: 5px solid #fbfbfb;
 }
+.tb-flags > ul{
+  margin-top:0px;
+  border-radius:0px;
+  border-radius: 0 0 4px 4px;
+}
+
 .tb-flags ul {
   color: #333333;
   z-index: 999;
   border: 0;
 }
 
-@media (min-width: 768px) {
-  .top-banner .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* For 'sm' (640px and above) */
+@media (min-width: 640px) {
+
 }
 
-@media (max-width: 767px) {
-  .top-banner .tb-link {
-    display: none;
+/* For 'md' (768px and above) */
+@media (min-width: 768px) {
+  .top-banner{
+    display:block;
   }
-  .top-banner {
-    display: none;
+  .top-banner{
+    text-align:center;
   }
+  .top-banner .content{
+    width:100%;
+  }
+  
 }
-@media (max-width: 600px) {
+
+/* For 'lg' (1024px and above) */
+@media (min-width: 1024px) {
+  .top-banner{
+    display:block;
+  }
+  .top-banner{
+    text-align:center;
+  }
+  .top-banner .content{
+    width:100%;}
+  }
+/* For 'xl' (1280px and above) */
+@media (min-width: 1280px) {
+  .top-banner{
+    display:block;
+  }
+  .top-banner{
+    text-align:center;
+  }
+  .top-banner .content{
+    width:100%;}
+}
+
+/* For '2xl' (1400px and above) */
+@media (min-width: 1400px) {
+  .top-banner{
+    display:block;
+  }
+  .top-banner{
+    text-align:center;
+  }
+  .top-banner .content{
+    width:100%;}
+}
+
+/* For '3xl' (1536px and above) */
+@media (min-width: 1536px) {
+  .top-banner{
+    display:block;
+  }
   .top-banner .tb-logo {
     position: relative;
     top: 3px;
   }
-  .top-banner {
-    display: none;
+  .top-banner{
+    text-align:center;
+  }
+  .top-banner .content{
+    width:100%;
   }
 }
+
+
+
+
+
+
+
