@@ -177,7 +177,7 @@ const page = () => {
         desc="Automate Operations with Our Robotic Process Automation (RPA) Solutions and Services"
         cta="Let's Connect"
         width="60%"
-        video="/rpa/video/HeroVideo.mp4"
+        video="/rpa/video/pageBanner.mp4"
       />
 
       {/* Overview  */}
@@ -206,8 +206,8 @@ const page = () => {
 
       {/* inteligent technologies */}
       <SectionWrapperNew
-        sectionHeading={"Intelligent Technologies Platforms"}
-        sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'}
+        sectionHeading={"RPA Platform Expertise"}
+        sectionDesc={'Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.  '}
         sectionTextColor="#000"
         sectionHeadingLayout="horizontal"
       >
