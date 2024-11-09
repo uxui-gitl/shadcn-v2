@@ -190,7 +190,7 @@ const EnterpriseSuite = () => {
     },
     {
       id: 3,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#7F4EE1",
       cardHeading: "Healthcare",
@@ -212,7 +212,7 @@ const EnterpriseSuite = () => {
     },
     {
       id: 4,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#EFE9FB",
       cardHeading: "Project",
