@@ -14,22 +14,22 @@ const page = () => {
     {
       _id: 1,
       desc: "Serving one of Asia's largest Infor LN user bases",
-      icon: "",
+      icon: "/inforLN/distinctiveEdge/servingOne.webp",
     },
     {
       _id: 2,
       desc: "Project managers take complete responsibility for timely delivery of high-quality solutions",
-      icon: "",
+      icon: "/inforLN/distinctiveEdge/projectManagers.webp",
     },
     {
       _id: 3,
       desc: "Proprietary tool integrating project management and communication, ensuring 100% transparency.",
-      icon: "",
+      icon: "/inforLN/distinctiveEdge/proprietaryTool.webp",
     },
     {
       _id: 4,
       desc: "Delivering significant advantages for complex, multi-site manufacturing operations",
-      icon: "",
+      icon: "/inforLN/distinctiveEdge/delivering.webp",
     },
 
   ]
@@ -91,7 +91,7 @@ const page = () => {
   const RPASolution = [
     {
       id: 1,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+      cardBGImageUrl: '/inforLN/keyCapabilities/masterComplexity.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Master complexity',
       cardDesc: 'Drive better customer experiences with simple and efficient management of technology, activities, information and resources.',
@@ -102,7 +102,7 @@ const page = () => {
     {
   
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/inforLN/keyCapabilities/agileSupplyChain.webp',
       cardBGColor: '#000',
       cardHeading: 'Agile supply chain',
       cardDesc: 'Optimize supply chain performance, minimize risk and enable multimodal manufacturing, mass customization and subcontractor integration.',
@@ -113,7 +113,7 @@ const page = () => {
     {
   
       id: 3,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
+      cardBGImageUrl: '/inforLN/keyCapabilities/serviceLifecycle.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Service lifecycle management',
       cardDesc: 'Maximize service effectiveness with comprehensive lifecycle management that covers service planning to performance analytics.',
@@ -124,7 +124,7 @@ const page = () => {
     {
   
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/inforLN/keyCapabilities/qualityManagement.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Quality management',
       cardDesc: 'Minimize product recalls, warranty claims and scrap costs, ensuring business requirements and effective quality control.',
@@ -135,7 +135,7 @@ const page = () => {
     {
   
       id: 5,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+      cardBGImageUrl: '/inforLN/keyCapabilities/projectLifecycle.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Project lifecycle management',
       cardDesc: 'Effectively manage project planning, tracking, and reporting, resource allocation, cost control and risk mitigation.',
@@ -145,7 +145,7 @@ const page = () => {
     },
     {
     id: 6,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/inforLN/keyCapabilities/integrationWorkflow.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Integration and workflow',
       cardDesc: 'Infor ION integrates and automates workflows, connecting people, processes and data across organization. Access tasks and critical information anywhere, anytime on mobile.',
@@ -155,7 +155,7 @@ const page = () => {
     },
         {
     id: 7,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/inforLN/keyCapabilities/businessIntelligence.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Business intelligence with Infor Birst',
       cardDesc: 'Infor Birst delivers integrated business intelligence, including financial and operational analytics with Infor LN synergy, enabling predictive insights and informed decision-making.',
@@ -165,7 +165,7 @@ const page = () => {
     },
             {
     id: 8,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/inforLN/keyCapabilities/productLifecycle.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Product lifecycle management',
       cardDesc: 'Seamless workflows, analysis, CAD integration and collaboration for reduced time-to-market and improved product quality',
@@ -184,7 +184,7 @@ const page = () => {
       cardDesc: 'Convert legacy data to new systems with automated checks and validation overcoming structural changes and master data complexities.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/inforLN/inforAccelerators/dataConversion.webp'
     },
     {
 
@@ -194,7 +194,7 @@ const page = () => {
       cardDesc: 'Auto- generation of pre-configured reports, providing real time insights into business performance, reducing time and efforts.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/inforLN/inforAccelerators/businessReporting.webp'
     },
     {
 
@@ -204,7 +204,7 @@ const page = () => {
       cardDesc: 'Simplify complex data migration with coded standards, automating validation, handling obsolete value and ensuring application compatibility.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/inforLN/inforAccelerators/inforCloud.webp'
     },
     {
 
@@ -214,7 +214,7 @@ const page = () => {
       cardDesc: 'Configure industry standard practices effortlessly, featuring pre-built functionality and expert-driven add-ons, tailored to business needs.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/inforLN/inforAccelerators/processMapping.webp'
     },
   ]
   return (
@@ -224,7 +224,7 @@ const page = () => {
         desc="We help businesses overcome complex challenges and achieve strategic objectives."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/inforLN/video/pageBanner.mov"
       />
 
       <OverviewSection Text={`Discover how our industry expertise and end-to-end services can help you derive maximum value from Infor LN investment.`} />
