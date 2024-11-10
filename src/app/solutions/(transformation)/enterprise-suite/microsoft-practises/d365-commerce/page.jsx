@@ -25,7 +25,7 @@ const D365Commerce = () => {
 
 
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/d365Commerce/blog-bg.webp";
   const imgBGURL_Challenges =
     "/upgradeCloud/backgrounds/bg--onprem-challenges-left.png";
   const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
@@ -34,32 +34,32 @@ const D365Commerce = () => {
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      icon: '',
+      icon: '/d365Commerce/benefits/reduceComplexity.svg',
       cardDesc: "Reduce complexity and total cost of ownership with a unified commerce platform.",
     },
     {
       id: "2",
-      icon: '',
+      icon: '/d365Commerce/benefits/AI-based.svg',
       cardDesc: "AI-based suggestions for cross-selling and up-selling that improves customer buying propositions.",
     },
     {
       id: "3",
-      icon: '',
+      icon: '/d365Commerce/benefits/commerceOperations.svg',
       cardDesc: "Strengthened commerce operations and customer experiences with omnichannel selling and real-time inventory visibility.",
     },
     {
       id: "4",
-      icon: '',
+      icon: '/d365Commerce/benefits/openAccess.svg',
       cardDesc: "Open access to full product catalogues and advanced in-built tools for proactive actions and decision-making.",
     },
     {
       id: "5",
-      icon: '',
+      icon: '/d365Commerce/benefits/Connected.svg',
       cardDesc: "Connected view of marketing and commerce operations for improved coordination.",
     },
     {
       id: "6",
-      icon: '',
+      icon: '/d365Commerce/benefits/engagingDigital.svg',
       cardDesc: "Engaging digital storefronts with user-friendly web authoring and development tools.",
     },
   ];
@@ -140,37 +140,37 @@ const D365Commerce = () => {
     {
       _id: 1,
       desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/strongTrack.svg",
     },
     {
       _id: 2,
       desc: "Proficiency in Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/proficiency.svg",
     },
     {
       _id: 3,
       desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/expertise.svg",
     },
     {
       _id: 4,
       desc: "Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/goldPartnership.svg",
     },
     {
       _id: 5,
       desc: "Troubleshoot, evaluates and optimizes D365 Commerce solution with expertise.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/troubleshoot.svg",
     },
     {
       _id: 6,
       desc: "Global delivery model and pool of certified D365 experts.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/globalDelivery.svg",
     },
     {
       _id: 7,
       desc: "Microsoft cloud partner and proven history of working with small, medium and large size enterprises.",
-      icon: "",
+      icon: "/d365Commerce/distinctiveEdge/microsoftCloud.svg",
     },
   ];
 
@@ -314,7 +314,7 @@ const D365Commerce = () => {
         desc="Delivering tailored solutions for eCommerce, point-of-sale and customer relationship management "
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/d365Commerce/video/pageBanner.mov"
       />
 
       <OverviewSection

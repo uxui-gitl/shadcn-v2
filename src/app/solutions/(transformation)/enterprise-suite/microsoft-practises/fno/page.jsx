@@ -355,13 +355,13 @@ const FNO = () => {
       cardHeading: "Discover how we have helped our customers to realize tangible outcomes aligned with their business goals.",
       cardDesc:
         "We are delighted to say that D365 F&O has solved our earlier performance issues and we now have an IT infrastructure that is streamlined, systematic, and secure. We would like to take this opportunity to express our gratitude to the entire team of Godrej Infotech that has worked along with our team to make this go live successful.",
-      designation:'Distributor of a popular coffee brand in Egypt and Saudi Arabia ',  
+      designation:'Distributor of a popular coffee brand in Egypt and Saudi Arabia',  
     },
     {
       id: 2,
       cardHeading: "",
       cardDesc:
-        "Godrej Infotech team’s dedication and commitment with excellent domain knowledge of our business was the key factor to our success and we cannot thank them enough for their valuable contribution. We have benefited tremendously from working with Godrej Infotech and hope to have the opportunity to continue a long-term relationship with them.",
+        "Godrej Infotech team's dedication and commitment with excellent domain knowledge of our business was the key factor to our success and we cannot thank them enough for their valuable contribution. We have benefited tremendously from working with Godrej Infotech and hope to have the opportunity to continue a long-term relationship with them.",
       designation:'General Manager',
       companyName:'Distributor of Fruits & Vegetables in the Philippines',
       },
