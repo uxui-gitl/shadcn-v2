@@ -269,7 +269,7 @@ const EnterpriseSuite = () => {
         desc="Redefining enterprise future with strategic transformation through Enterprise Solutions"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/enterpriseSuite/video/pageBanner.mov"
       />
       {/* End--HeroBanner-Section=============================================================== */}
 

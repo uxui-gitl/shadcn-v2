@@ -19,7 +19,7 @@ import Image from 'next/image'
 
 
 const Page = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/infor/blogBg.webp";
   const TESTIMONIAL_DATA = [
     {
       id: 1,
@@ -48,32 +48,32 @@ const Page = () => {
     {
       _id: 1,
       desc: "Strong legacy of our parent group - Godrej Enterprise which has succeeded for more than 125 years.",
-      icon: "",
+      icon: "/infor/disinctiveEdge/StrongLegacy.svg",
     },
     {
       _id: 2,
       desc: "Shared DNA of engineering expertise, domain knowledge and key business challenges from our parent group.",
-      icon: "",
+      icon: "/infor/disinctiveEdge/SharedDNA.svg",
     },
     {
       _id: 3,
       desc: "Proven Infor excellence of 20 + years and 300+ successful implementations",
-      icon: "",
+      icon: "/infor/disinctiveEdge/InforExcellence.svg",
     },
     {
       _id: 4,
       desc: "Comprehensive in-house Infor ecosystem delivering operational effectiveness",
-      icon: "",
+      icon: "/infor/disinctiveEdge/comprehensive.svg",
     },
     {
       _id: 5,
       desc: "Infor's Centre of Excellence and Co-development Partnership program help us to deliver innovative and industry-specific solutions ",
-      icon: "",
+      icon: "/infor/disinctiveEdge/inforCentre.svg",
     },
     {
       _id: 6,
       desc: "Repository of ready-to-use use cases guarantees swift implementation and seamless integration",
-      icon: "",
+      icon: "/infor/disinctiveEdge/repository.svg",
     },
 
   ]
@@ -215,7 +215,7 @@ const Page = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      imageURL: "/infor/caseStudy.webp",
       title: "",
       heading: "Sheet metal manufacturer",
       description:
@@ -250,7 +250,7 @@ const Page = () => {
       cardDesc: 'Streamline every phase of Infor implementation precisely and on-time',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/infor/serviceOfferings/implementation.svg'
     },
     {
 
@@ -260,7 +260,7 @@ const Page = () => {
       cardDesc: 'Manage every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/infor/serviceOfferings/managedServices.svg'
     },
     {
 
@@ -270,7 +270,7 @@ const Page = () => {
       cardDesc: 'Ensure smooth and efficient migration process with minimum business disruptions',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/infor/serviceOfferings/migrateCloud.svg'
     },
     {
 
@@ -280,30 +280,30 @@ const Page = () => {
       cardDesc: 'Experience seamless and transformative migration of different ERP to Infor LN with data integrity. ',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/infor/serviceOfferings/migrateInfor.svg'
     },
     {
 
       id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Upgrade with Infor',
       cardDesc: 'Get access to the latest Infor platform, ensuring improved overall performance',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+      cardTopImageUrl: '/infor/serviceOfferings/upgradeInfor.svg'
     },
     {
 
 
-      id: 5,
+      id: 6,
       cardBGImageUrl: '/rpa/ArtboardBg.png',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Customization & Integrations',
       cardDesc: 'Value-adding custom developments and integrations that deliver better business outcomes',
       isArrow: false,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
+      cardTopImageUrl: '/infor/serviceOfferings/customization.svg'
     },
   ]
 
@@ -315,7 +315,7 @@ const Page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#000',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/infor/icons/GITL-InsightEdge.svg",
       CardHeading: "GITL InsightEdge",
       CardDesc:
         "Industry-specific pre-built business reporting readily available on Infor Birst for MIS requirements",
@@ -330,7 +330,7 @@ const Page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#000',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/infor/icons/DataConversion.svg",
       CardHeading: "Data Conversion Utility Tool",
       CardDesc:
         "Data migration with fast & structured upload, source/target systems management, table structures, field mapping & data scripts.",
@@ -344,7 +344,7 @@ const Page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#000',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/infor/icons/CustomFit.svg",
       CardHeading: "GITL Custom Fit",
       CardDesc:
         "Industry vertical focused solution Pre-Configured Business Process Mapping and Pre-Built Industry required Customization.",
@@ -358,7 +358,7 @@ const Page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#000',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/infor/icons/cloudscapeAlign.svg",
       CardHeading: "GITL Cloudscape Align",
       CardDesc:
         "Infor cloud transition with data migration strategies, app compatibility, network architecture & security protocols",
@@ -372,7 +372,7 @@ const Page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#000',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/infor/icons/prosoft.svg",
       CardHeading: "Prosoft 2.0",
       CardDesc:
         "Customized Infor LN solution for on-site project management & inventory control to streamline operations",
@@ -401,7 +401,7 @@ const Page = () => {
         desc="Solve Unique Industry Challenges with our Expertise"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/infor/video/pageBanner.mov"
       />
       {/* Section Nav */}
       <>
@@ -476,7 +476,7 @@ const Page = () => {
             </div>
             <div className="flex items-center hidden md:block" style={{ justifyContent: 'center' }}>
               <div className="" style={{ maxHeight: '600px', overflow: 'hidden' }}>
-                <img src="https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4"></img>
+                <img src="/infor/ourCapabilities.webp"></img>
               </div>
             </div>
           </div>
