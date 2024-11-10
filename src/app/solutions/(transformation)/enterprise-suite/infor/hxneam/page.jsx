@@ -11,11 +11,11 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 const page = () => {
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/hxneam/blogBg.webp";
   const RPASolution = [
     {
       id: 1,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+      cardBGImageUrl: '/hxneam/coreCapabilities/assetManagement.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Asset Management',
       cardDesc: 'Centralized approach efficiently manages asset portfolio with accurate record, structure and standardize asset information.',
@@ -26,7 +26,7 @@ const page = () => {
     {
 
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/hxneam/coreCapabilities/assetPerformance.webp',
       cardBGColor: '#000',
       cardHeading: 'Asset Performance Management',
       cardDesc: 'Real-time monitoring, asset health tracking and lifecycle management, enables proactive potential issue identification.',
@@ -37,7 +37,7 @@ const page = () => {
     {
 
       id: 3,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
+      cardBGImageUrl: '/hxneam/coreCapabilities/automateWork.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Work Management',
       cardDesc: 'Automate work orders and monitor purchase orders. Implement preventive maintenance to minimize downtime & prolong asset life.',
@@ -48,7 +48,7 @@ const page = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/hxneam/coreCapabilities/inspectionManagement.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Inspection management',
       cardDesc: 'Simplify inspection planning and execution with easy scheduling, classification, and workflow management.',
@@ -59,7 +59,7 @@ const page = () => {
     {
 
       id: 5,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+      cardBGImageUrl: '/hxneam/coreCapabilities/intelligentNonconformity.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Intelligent nonconformity tracking',
       cardDesc: 'Quickly detect and manage nonconformities with intelligent tracking, prioritized corrective action and customizable indexing.',
@@ -70,7 +70,7 @@ const page = () => {
     {
 
       id: 6,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/hxneam/coreCapabilities/safetyManagement.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Safety management',
       cardDesc: 'Identify and control hazards, ensure HSE compliance, mitigate risks and safe work environment.',
@@ -81,7 +81,7 @@ const page = () => {
         {
 
       id: 7,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/hxneam/coreCapabilities/managementServices.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Asset management services',
       cardDesc: 'Optimize asset management financials with transparent & automated cost tracking and deliver accurate service costs to customers through invoices.',
@@ -92,7 +92,7 @@ const page = () => {
         {
 
       id: 8,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/hxneam/coreCapabilities/electronicRecords.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Electronic records and signatures',
       cardDesc: 'Electronic records, signatures, and automated audit trails, ensuring compliance and version control',
@@ -103,7 +103,7 @@ const page = () => {
         {
 
       id: 9,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/hxneam/coreCapabilities/calibration.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Calibration',
       cardDesc: 'Track calibration data, define test points, and associate with work orders to ensure equipment accuracy',
@@ -176,12 +176,12 @@ const page = () => {
   ];
 
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardDesc: '35% increase in asset uptime' },
-    { id: '2', icon:'', cardDesc: '70% improvement in labor utilisation' },
-    { id: '3', icon:'', cardDesc: '45% decrease in inventory cost' },
-    { id: '4', icon:'', cardDesc: '50% reduction in warranty cost recovery' },
-    { id: '5', icon:'', cardDesc: '20% reduction in production downtime' },
-    { id: '6', icon:'', cardDesc: '10% reduction in materials costs' },
+    { id: '1', icon:'/hxneam/benefits/assetUptime.svg', cardDesc: '35% increase in asset uptime' },
+    { id: '2', icon:'/hxneam/benefits/improvement.svg', cardDesc: '70% improvement in labor utilisation' },
+    { id: '3', icon:'/hxneam/benefits/decrease.svg', cardDesc: '45% decrease in inventory cost' },
+    { id: '4', icon:'/hxneam/benefits/reduction.svg', cardDesc: '50% reduction in warranty cost recovery' },
+    { id: '5', icon:'/hxneam/benefits/production.svg', cardDesc: '20% reduction in production downtime' },
+    { id: '6', icon:'/hxneam/benefits/materialsCost.svg', cardDesc: '10% reduction in materials costs' },
   ];
 
   const CASE_STUDIES_DATA = [
@@ -230,17 +230,17 @@ const page = () => {
     {
       _id: 1,
       desc: "Trusted global partner for Infor and Hexagon.",
-      icon: "",
+      icon: "/hxneam/distinctiveEdge/trusted.svg",
     },
     {
       _id: 2,
       desc: "Domain knowledge and a proven track record of success.",
-      icon: "",
+      icon: "/hxneam/distinctiveEdge/domainKnowledge.svg",
     },
     {
       _id: 3,
       desc: "Expertise in delivering innovative solutions that address most complex digital transformation needs.",
-      icon: "",
+      icon: "/hxneam/distinctiveEdge/expertise.svg",
     },
     
 
@@ -252,7 +252,7 @@ const page = () => {
         desc="Maximize asset lifecycles with leading asset management solution"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/hxneam/video/pageBanner.mov"
       />
 
       <OverviewSection Text={`Expert HxGN EAM implementation transforming asset management and enabling predictive maintenance & maintenance cost optimization for improved ROI.`} />
