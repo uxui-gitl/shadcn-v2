@@ -19,7 +19,7 @@ import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSli
 import AddedSolutionSection from "@/sections/microsoft-services/fno-sections/added-solution-section/addedSolutionSection";
 
 const FNO = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/fnO/blog-bg.webp";
   const highlightPromoBGURL =
     "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
   const synergeticPartnerBGURL =
@@ -96,57 +96,57 @@ const FNO = () => {
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      icon:'',
+      icon:'/fnO/benefits/enhanceEfficiency.svg',
       cardDesc: "Enhance efficiency with Microsoft 365 integration",
     },
     {
       id: "2",
-      icon:'',
+      icon:'/fnO/benefits/boostPerformance.svg',
       cardDesc: "Boost performance through data connectivity and task automation",
     },
     {
       id: "3",
-      icon:'',
+      icon:'/fnO/benefits/gain.svg',
       cardDesc: "Gain real-time insights, reporting, and AI-driven agility for growth",
     },
     {
       id: "4",
-      icon:'',
+      icon:'/fnO/benefits/achieve.svg',
       cardDesc: "Achieve on-time, on-budget project delivery with integrated teams",
     },
     {
       id: "5",
-      icon:'',
+      icon:'/fnO/benefits/transform.svg',
       cardDesc: "Transform your workforce, meet demands, and control costs",
     },
      {
       id: "6",
-      icon:'',
+      icon:'/fnO/benefits/ensureTransparency.svg',
       cardDesc: "Ensure transparency across processes, enabling informed decisions",
     },
      {
       id: "7",
-      icon:'',
+      icon:'/fnO/benefits/accessInternational.svg',
       cardDesc: "Access international functionality for global uniformity",
     },
      {
       id: "8",
-      icon:'',
+      icon:'/fnO/benefits/supplyChain.svg',
       cardDesc: "Unify supply chain operations for financial visibility, risk control and innovation.",
     },
      {
       id: "9",
-      icon:'',
+      icon:'/fnO/benefits/builtInSecurity.svg',
       cardDesc: "Built-in security safeguards data with Azure integration",
     },
      {
       id: "10",
-      icon:'',
+      icon:'/fnO/benefits/substantial.svg',
       cardDesc: "Substantial return on investment (ROI) through enhanced efficiency and automation",
     },
         {
       id: "11",
-      icon:'',
+      icon:'/fnO/benefits/comprehensiveReporting.svg',
       cardDesc: "With comprehensive reporting and analytics capabilities, companies can plan more effectively and respond to customer demands with agility",
     },
   ];
@@ -326,27 +326,27 @@ const FNO = () => {
     {
       _id: 1,
       desc: "Our Microsoft Dynamics 365 certified experts have executed projects across diverse industries across the globe. ",
-      icon: "",
+      icon: "/fnO/distinctiveEdge/microsoftDynamics.svg",
     },
     {
       _id: 2,
       desc: "We hold a prestigious Gold Partnership with Microsoft and operate global delivery models.",
-      icon: "",
+      icon: "/fnO/distinctiveEdge/goldPartnership.svg",
     },
     {
       _id: 3,
       desc: "Our toolkit includes tested, proven and reusable tools and frameworks.",
-      icon: "",
+      icon: "/fnO/distinctiveEdge/toolkit.svg",
     },
     {
       _id: 4,
       desc: "Predefined templates for onsite and offshore cost-effective models",
-      icon: "",
+      icon: "/fnO/distinctiveEdge/predefinedTemplates.svg",
     },
     {
       _id: 5,
       desc: "Extensive experience in understanding industry-specific challenges and opportunities. ",
-      icon: "",
+      icon: "/fnO/distinctiveEdge/extensiveExperience.svg",
     },
   ];
   const TESTIMONIAL_DATA = [
@@ -370,7 +370,7 @@ const FNO = () => {
   const SOLUTIONS_CARDS_DATA = [
     {
       id: 1,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/fnO/keyHighlights/assetManagement.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Asset Management',
       cardDesc: 'Effectively monitor your business assets to maintain their optimal condition, ensuring uniform business operations.',
@@ -381,7 +381,7 @@ const FNO = () => {
     {
 
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/fnO/keyHighlights/financialManagement.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Financial Management',
       cardDesc: 'Handle financial and accounting matters with precision, promoting financial stability.',
@@ -392,7 +392,7 @@ const FNO = () => {
     {
 
       id: 3,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/fnO/keyHighlights/inventory.webp',
       cardBGColor: '#9F0165',
       cardHeading: 'Inventory and Warehouse Management',
       cardDesc: 'Assure that products are precisely where they need to be, precisely when they need to be there, enhancing business efficiency.',
@@ -403,7 +403,7 @@ const FNO = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/fnO/keyHighlights/budgeting.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Budgeting',
       cardDesc: 'Skillfully plan and manage organization budgeting and allocate resources accordingly to achieve financial objectives.',
@@ -414,7 +414,7 @@ const FNO = () => {
     {
 
       id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/fnO/keyHighlights/retailCommerce.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Retail Commerce',
       cardDesc: 'Craft a seamless shopping experience both online and in-store, ensuring hassle-free shopping journey.',
@@ -424,7 +424,7 @@ const FNO = () => {
     },
     {
       id: 6,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/fnO/keyHighlights/vendor.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Vendor Collaboration)',
       cardDesc: 'Cultivate robust relationships with both customers and vendors enhancing mutual success.',
@@ -434,7 +434,7 @@ const FNO = () => {
     },
      {
       id: 7,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/fnO/keyHighlights/manufacturing.webp',
       cardBGColor: '#9F0165',
       cardHeading: 'Manufacturing',
       cardDesc: 'Optimize your manufacturing processes, streamlining production and upholding product quality to meet or exceed market standards.',
@@ -445,7 +445,7 @@ const FNO = () => {
      {
 
       id: 8,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/fnO/keyHighlights/projectManagement.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Project Management and Accounting',
       cardDesc: 'Efficiently manage projects and maintain immaculate financial records, ensuring compliance with accounting standards.',
@@ -456,7 +456,7 @@ const FNO = () => {
      {
 
       id: 9,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/fnO/keyHighlights/procurement.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Procurement and Sourcing',
       cardDesc: 'Exercise comprehensive control on procurement and sourcing process, facilitating the smooth flow of products from suppliers to customers, enhancing operational efficiency. ',
@@ -466,7 +466,7 @@ const FNO = () => {
     },
     {
       id: 10,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/fnO/keyHighlights/salesMarketing.webp',
       cardBGColor: '#9F0165',
       cardHeading: 'Sales and Marketing',
       cardDesc: 'From lead generation to campaign tracking and customer engagement, this functionality is designed to optimize every stage of the sales funnel.',
@@ -484,7 +484,7 @@ const FNO = () => {
         desc="Boost Productivity and Profit Margins"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/fno/video/pageBanner.mov"
       />
 
       {/* End--HeroBanner-Section=========================================================== */}
