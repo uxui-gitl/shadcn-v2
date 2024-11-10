@@ -15,7 +15,7 @@ import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
 const page = () => {
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/inforWMS/blogBg.webp";
   const imgBGURL_Challenges =
     "/infor/inforchallangeleftimage.svg";
   const TESTIMONIAL_DATA = [
@@ -45,14 +45,14 @@ const page = () => {
 
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon: '', cardDesc: 'Reduce fulfilment costs and minimize warehouse space needs' },
-    { id: '2', icon: '', cardDesc: 'Enhance labour productivity and expedite order fulfilment' },
-    { id: '3', icon: '', cardDesc: 'Achieve inventory and shipping accuracy' },
-    { id: '4', icon: '', cardDesc: 'Support B2B and D2C processing and omnichannel fulfilment' },
-    { id: '5', icon: '', cardDesc: 'Maintain regulatory compliance with audit trails' },
-    { id: '6', icon: '', cardDesc: 'Make data-driven decisions with integrated analytics' },
-    { id: '7', icon: '', cardDesc: 'Deploy cloud-based solutions with seamless system integration' },
-    { id: '8', icon: '', cardDesc: 'Global accessibility with 14-language UI' },
+    { id: '1', icon: '/inforWMS/benefits/reduceFulfilment.svg', cardDesc: 'Reduce fulfilment costs and minimize warehouse space needs' },
+    { id: '2', icon: '/inforWMS/benefits/enhanceLabour.svg', cardDesc: 'Enhance labour productivity and expedite order fulfilment' },
+    { id: '3', icon: '/inforWMS/benefits/achieveInventory.svg', cardDesc: 'Achieve inventory and shipping accuracy' },
+    { id: '4', icon: '/inforWMS/benefits/supportB2B.svg', cardDesc: 'Support B2B and D2C processing and omnichannel fulfilment' },
+    { id: '5', icon: '/inforWMS/benefits/maintainRegulatory.svg', cardDesc: 'Maintain regulatory compliance with audit trails' },
+    { id: '6', icon: '/inforWMS/benefits/data-drivenDecisions.svg', cardDesc: 'Make data-driven decisions with integrated analytics' },
+    { id: '7', icon: '/inforWMS/benefits/deploy.svg', cardDesc: 'Deploy cloud-based solutions with seamless system integration' },
+    { id: '8', icon: '/inforWMS/benefits/globalAccessibility.svg', cardDesc: 'Global accessibility with 14-language UI' },
   ];
 
   const CASE_STUDIES_DATA = [
@@ -207,7 +207,7 @@ const page = () => {
       cardDesc: `Infor WMS's 3D visual warehouse provides real-time insights into bottlenecks and asset utilization.`,
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/inforWMS/keyHighlights/3dVisualization.webp'
     },
     {
 
@@ -217,7 +217,7 @@ const page = () => {
       cardDesc: 'Enhance efficiency with Radio Frequency receiving, voice-enabled pick/pack operations, and dynamic put-away options.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/inforWMS/keyHighlights/advancedWarehousing.webp'
     },
     {
 
@@ -227,7 +227,7 @@ const page = () => {
       cardDesc: 'Enable precise customer billing and invoicing with multi-warehouse and owner management, tailored workflows, and full traceability.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/inforWMS/keyHighlights/3plBilling.webp'
     },
     {
 
@@ -237,7 +237,7 @@ const page = () => {
       cardDesc: 'Measure performance, identify bottlenecks and balance resources with engineered labor standards to optimize distribution center operations',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/inforWMS/keyHighlights/laborManagement.webp'
     },
     {
 
@@ -248,7 +248,7 @@ const page = () => {
       cardDesc: 'Adapt to changing business needs without hiring and training new staff, saving time and expense',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+      cardTopImageUrl: '/inforWMS/keyHighlights/enhanceFlexibility.webp'
     },
     {
 
@@ -260,7 +260,7 @@ const page = () => {
       cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
       isArrow: false,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
+      cardTopImageUrl: '/inforWMS/keyHighlights/reduceAHT.webp'
     },
   ]
 
@@ -272,7 +272,7 @@ const page = () => {
         desc="We help you to achieve faster inventory turns and take control of your warehouse operations."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/inforWMS/video/pageBanner.mov"
       />
 
       <OverviewSection Text={`Transform warehouse operations with Infor WMS, integrating labor tools, 3D analytics and end-to-end supply chain visibility.`} />
