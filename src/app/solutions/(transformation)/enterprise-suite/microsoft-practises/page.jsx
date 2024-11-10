@@ -49,7 +49,7 @@ const MicrosoftPractises = () => {
               <li>Data and Analytics</li>
           </ul>`,
       content: "Additional content for Card 1",
-      imageURL: "/techStack1.png",
+      imageURL: "/msPractises/solutions/azure.webp",
     },
     {
       title: "Microsoft Dynamics",
@@ -65,7 +65,7 @@ const MicrosoftPractises = () => {
               
           </ul>`,
       content: "Additional content for Card 2",
-      imageURL: "/techStack1.png",
+      imageURL: "/msPractises/solutions/msDynamics.webp",
     },
     {
       title: "M365",
@@ -79,7 +79,7 @@ const MicrosoftPractises = () => {
               
           </ul>`,
       content: "Additional content for Card 3",
-      imageURL: "/techStack1.png",
+      imageURL: "/msPractises/solutions/M365.webp",
     },
     {
       title: "Technologies",
@@ -92,7 +92,7 @@ const MicrosoftPractises = () => {
               
           </ul>`,
       content: "Additional content for Card 4",
-      imageURL: "/techStack1.png",
+      imageURL: "/msPractises/solutions/technologies.webp",
     },
     {
       title: "Microsoft Fabric",
@@ -108,7 +108,7 @@ const MicrosoftPractises = () => {
               
           </ul>`,
       content: "Additional content for Card 5",
-      imageURL: "/techStack1.png",
+      imageURL: "/msPractises/solutions/microsoftFabric.webp",
     },
     {
       title: "Power Platforms",
@@ -120,22 +120,22 @@ const MicrosoftPractises = () => {
               <li>Power Automate</li>
         </ul>`,
       content: "Additional content for Card 5",
-      imageURL: "/techStack1.png",
+      imageURL: "/msPractises/solutions/powerPlatforms.webp",
     },
     // Add more cards here...
   ];
 
   const serviceSliderData = [
-    { id: '1', text: 'Business Consulting' },
-    { id: '2', text: 'Implementation & Rollout' },
-    { id: '3', text: 'Upgrade & Migration' },
-    { id: '4', text: 'Development & Customization' },
-    { id: '5', text: 'Training Workshop' },
-    { id: '6', text: 'Managed Services' },
-    { id: '7', text: 'Legacy Modernization' },
-    { id: '8', text: 'Bespoke Applications' },
-    { id: '9', text: 'License sales and services' },
-    { id: '10', text: 'Data Insights' },
+    { id: '1', icon:'/msPractises/serviceExpertise/businessConsulting.svg', text: 'Business Consulting' },
+    { id: '2', icon:'/msPractises/serviceExpertise/implementationRollout.svg', text: 'Implementation & Rollout' },
+    { id: '3', icon:'/msPractises/serviceExpertise/upgradeMigration.svg', text: 'Upgrade & Migration' },
+    { id: '4', icon:'/msPractises/serviceExpertise/Development.svg', text: 'Development & Customization' },
+    { id: '5', icon:'/msPractises/serviceExpertise/Training.svg', text: 'Training Workshop' },
+    { id: '6', icon:'/msPractises/serviceExpertise/managedServices.svg', text: 'Managed Services' },
+    { id: '7', icon:'/msPractises/serviceExpertise/legacyModernization.svg', text: 'Legacy Modernization' },
+    { id: '8', icon:'/msPractises/serviceExpertise/bespokeApplications.svg', text: 'Bespoke Applications' },
+    { id: '9', icon:'/msPractises/serviceExpertise/licenseSales.svg', text: 'License sales and services' },
+    { id: '10', icon:'/msPractises/serviceExpertise/dataInsights.svg', text: 'Data Insights' },
   ]
 
   const SOLUTION_DATA = [
@@ -155,7 +155,7 @@ const MicrosoftPractises = () => {
           </ul>`,
         isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+      cardTopImageUrl: "/msPractises/customSolutions/dealerManagement.webp",
     },
     {
       id: 2,
@@ -165,7 +165,7 @@ const MicrosoftPractises = () => {
         "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
+      cardTopImageUrl: "/msPractises/customSolutions/processManagement.webp",
     },
     {
       id: 3,
@@ -175,7 +175,7 @@ const MicrosoftPractises = () => {
         "Require Development from Scratch. Customisation of manufacturing reports",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
+      cardTopImageUrl: "/msPractises/customSolutions/gatePassManagement.webp",
     },
     {
       id: 4,
@@ -185,7 +185,7 @@ const MicrosoftPractises = () => {
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+      cardTopImageUrl: "/msPractises/customSolutions/strengthenPotential.webp",
     },
     {
       id: 5,
@@ -196,7 +196,7 @@ const MicrosoftPractises = () => {
         "Adapt to changing business needs without hiring and training new staff, saving time and expense",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardTopImageUrl: "/msPractises/customSolutions/enhanceFlexibility.webp",
     },
     {
       id: 6,
@@ -207,39 +207,39 @@ const MicrosoftPractises = () => {
         "Enhance customer service quality, minimize response time and improve operational efficiency",
       isArrow: false,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-3.jpg",
+      cardTopImageUrl: "/msPractises/customSolutions/reduceAHT.webp",
     },
   ];
 
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      icon: '',
+      icon: '/msPractises/benefits/platformScalability.svg',
       cardDesc: "Platform scalability in accordance with business demands and render it suitable for varying sizes",
     },
     {
       id: "2",
-      icon: '',
+      icon: '/msPractises/benefits/liveDataAnalytics.svg',
       cardDesc: "Live data analytics and insights from reporting, enabling smarter decisions",
     },
     {
       id: "3",
-      icon: '',
+      icon: '/msPractises/benefits/cloudOnPremises.svg',
       cardDesc: "Cloud or on-premises deployment options based on business requirements and preferences.",
     },
     {
       id: "4",
-      icon: '',
+      icon: '/msPractises/benefits/manageNurture.svg',
       cardDesc: "Manage and nurture customer relationship from lead generation to post-sale support, improving customer satisfaction and retention.",
     },
     {
       id: "5",
-      icon: '',
+      icon: '/msPractises/benefits/supplyChain.svg',
       cardDesc: "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings. ",
     },
     {
       id: "6",
-      icon: '',
+      icon: '/msPractises/benefits/streamlineFinancial.svg',
       cardDesc: "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management.",
     },
   ];
@@ -395,42 +395,42 @@ const MicrosoftPractises = () => {
     {
       _id: 1,
       desc: "20 years of experience with deep understanding of Microsoft Solutions",
-      icon: "",
+      icon: "/msPractises/distinctiveData/20yrs.svg",
     },
     {
       _id: 2,
       desc: "Proactive support to clients, ensuring needs are met with attentive assistance ",
-      icon: "",
+      icon: "/msPractises/distinctiveData/proactiveSupport.svg",
     },
     {
       _id: 3,
       desc: "Project quality is ensured through milestone-wise quality checks performed by a dedicated quality team ",
-      icon: "",
+      icon: "/msPractises/distinctiveData/projectQuality.svg",
     },
     {
       _id: 4,
       desc: "Actively incorporate customer feedback obtained from unbiased third-party sources ",
-      icon: "",
+      icon: "/msPractises/distinctiveData/activelyIncorporate.svg",
     },
     {
       _id: 5,
       desc: "Stability extends to both users and consultants involved in the project",
-      icon: "",
+      icon: "/msPractises/distinctiveData/stabilityExtends.svg",
     },
     {
       _id: 6,
       desc: "Dedicated team for comprehensive project audits",
-      icon: "",
+      icon: "/msPractises/distinctiveData/dedicatedTeam.svg",
     },
     {
       _id: 7,
       desc: "Extensive domain expertise of Microsoft dynamics solutions",
-      icon: "",
+      icon: "/msPractises/distinctiveData/extensiveDomain.svg",
     },
     {
-      _id: 5,
+      _id: 8,
       desc: "Rigorous testing is conducted by standalone tester team to guarantee solution excellence",
-      icon: "",
+      icon: "/msPractises/distinctiveData/rigorousTesting.svg",
     },
   ];
 
@@ -464,7 +464,7 @@ const MicrosoftPractises = () => {
   const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGImageUrl: '/msPractises/blog-bg.webp',
       cardBGColor: 'red',
       cardHeading: "Microsoft Dynamics 365 Finance and Operations or Business Central?",
       cardDesc: 'Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world?  ',
@@ -491,7 +491,7 @@ const MicrosoftPractises = () => {
         desc="MS Dynamics 365 CRM & ERP Solutions for growing enterprises"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/msPractises/video/pageBanner.mov"
       />
 
       {/* End--HeroBanner-Section=========================================================== */}
