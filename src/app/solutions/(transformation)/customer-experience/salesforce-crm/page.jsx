@@ -17,43 +17,43 @@ import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithA
 
 
 const page = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/salesForceCRM/blog-bg.webp";
 
   const distinctiveData = [
     {
       _id: 1,
       desc: "Access to relevant information saves time, boosts customer satisfaction and streamlines issue resolution. ",
-      icon: "",
+      icon: "/salesForceCRM/distictiveEdge/access.svg",
     },
     {
       _id: 2,
       desc: "Enhance lead nurturing, consistency in interactions and lead scoring.",
-      icon: "",
+      icon: "/salesForceCRM/distictiveEdge/enhance.svg",
     },
     {
       _id: 3,
       desc: "Design effective campaigns and personalize buying experiences.",
-      icon: "",
+      icon: "/salesForceCRM/distictiveEdge/design.svg",
     },
     {
       _id: 4,
       desc: "Centralized record of customer interactions, making it accessible to all team members.",
-      icon: "",
+      icon: "/salesForceCRM/distictiveEdge/centralized.svg",
     },
     {
       _id: 5,
       desc: "Improve teamwork, allowing simultaneous work on documents and faster customer responses.",
-      icon: "",
+      icon: "/salesForceCRM/distictiveEdge/improve.svg",
     },
 
   ]
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon: '', cardHead: 'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.' },
-    { id: '2', icon: '', cardHead: 'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
-    { id: '3', icon: '', cardHead: 'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
-    { id: '1', icon: '', cardHead: `Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
-    { id: '5', icon: '', cardHead: 'Quote & Contract Management', cardDesc: 'Generate and share custom quotes with integrated forms at no additional costs.' },
-    { id: '6', icon: '', cardHead: 'Task & Activity Management', cardDesc: 'Create, assign and automate tasks for your sales representatives using industry-leading automation tools.' },
+    { id: '1', icon: '/salesForceCRM/keyCapabilities/inegration.svg', cardHead: 'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.' },
+    { id: '2', icon: '/salesForceCRM/keyCapabilities/userTraining.svg', cardHead: 'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
+    { id: '3', icon: '/salesForceCRM/keyCapabilities/salesTeam.svg', cardHead: 'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
+    { id: '1', icon: '/salesForceCRM/keyCapabilities/qualitySupport.svg', cardHead: `Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
+    { id: '5', icon: '/salesForceCRM/keyCapabilities/quoteContract.svg', cardHead: 'Quote & Contract Management', cardDesc: 'Generate and share custom quotes with integrated forms at no additional costs.' },
+    { id: '6', icon: '/salesForceCRM/keyCapabilities/taskActivity.svg', cardHead: 'Task & Activity Management', cardDesc: 'Create, assign and automate tasks for your sales representatives using industry-leading automation tools.' },
 
   ];
 
@@ -188,7 +188,7 @@ const page = () => {
         desc="Salesforce CRM: The Future of Customer Relationships"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/salesForceCRM/video/pageBanner.mp4"
       />
       <OverviewSection Text={'Salesforce, a top cloud-based CRM, streamlines customer interactions with automation, AI, and 360-degree customer views for enhanced business operations'} />
 
@@ -197,7 +197,7 @@ const page = () => {
         sectionDesc={''}
         sectionTextColor={'#fff'}
         sectionHeadingLayout="left"
-        style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+        style={{ background: `url('/salesForceCRM/moduleBg.webp')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
       >
         <Slider slidesPerView={3.2}>
           {RPASolution2?.map((item, index) => (
