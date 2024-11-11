@@ -126,6 +126,14 @@ const page = () => {
     { id: '6',icon:'/inforCloudSuite/benefits/accessibility.svg', cardDesc: 'Accessibility from anywhere with an internet connection, making it convenient for remote work and global collaboration.' },
   ];
 
+  const CLOUDSUITE_SERVICES_DATA = [
+    { id: '1',icon:'/inforCloudSuite/benefits/extensibleIntegrable.svg', cardTitle: 'Consulting' },
+    { id: '2',icon:'/inforCloudSuite/benefits/accommodatesMultiple.svg', cardTitle: 'Implementation' },
+    { id: '3',icon:'/inforCloudSuite/benefits/IndustryTailored.svg', cardTitle: 'Managed Services' },
+    { id: '4',icon:'/inforCloudSuite/benefits/cloudBasedApp.svg', cardTitle: 'Migration and Upgrade' },
+  ];
+
+
   return (
     <>
       <EntIntro
@@ -199,12 +207,12 @@ const page = () => {
               },
           }}
           >
-            {['Consulting', 'Implementation', 'Managed Services', 'Migration and Upgrade ',]?.map((item, index) => (
+            {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                    <img className="rounded-t-lg pl-4" src={item.icon} alt="" />
                   <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold">{item}</h5>
+                      <h5 className="mb-2 text-2xl font-bold">{item.cardTitle}</h5>
                   </div>
                  
                 </div>
