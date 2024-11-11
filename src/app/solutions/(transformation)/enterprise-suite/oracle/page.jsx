@@ -22,26 +22,26 @@ const page = () => {
     {
       _id: 1,
       desc: "Hassle-free Oracle implementation and migration",
-      icon: "",
+      icon: "/oracle/distinctiveEdge/hassleFree.svg",
     },
     {
       _id: 2,
       desc: "Complex financial and operational data analysis expertise",
-      icon: "",
+      icon: "/oracle/distinctiveEdge/complexFinancial.svg",
     },
     {
       _id: 3,
       desc: "Integrated cross-functional insights for informed decisions",
-      icon: "",
+      icon: "/oracle/distinctiveEdge/integrated.svg",
     },
     {
       _id: 4,
       desc: "Committed to increase operations productivity and business performance",
-      icon: "",
+      icon: "/oracle/distinctiveEdge/increaseOperations.svg",
     },
 
   ];
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/oracle/blog-bg.webp";
   const INDUSTRY_SPOTLIGHT = [
     {
       id: 1,
@@ -93,13 +93,13 @@ const page = () => {
     // Add more cards as needed
   ];
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon: '', cardDesc: 'Centralized data for insightful multidimensional reporting.' },
-    { id: '2', icon: '', cardDesc: 'Accelerated business operation with regulatory compliance.' },
-    { id: '3', icon: '', cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
-    { id: '4', icon: '', cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
-    { id: '5', icon: '', cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
-    { id: '6', icon: '', cardDesc: 'Unified financial management and streamlined procurement' },
-    { id: '7', icon: '', cardDesc: 'Efficient project management and enhanced human capital management' },
+    { id: '1', icon: '/oracle/benefits/centralized.svg', cardDesc: 'Centralized data for insightful multidimensional reporting.' },
+    { id: '2', icon: '/oracle/benefits/accelerated.svg', cardDesc: 'Accelerated business operation with regulatory compliance.' },
+    { id: '3', icon: '/oracle/benefits/blockchain.svg', cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
+    { id: '4', icon: '/oracle/benefits/applications.svg', cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
+    { id: '5', icon: '/oracle/benefits/improved.svg', cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
+    { id: '6', icon: '/oracle/benefits/unified.svg', cardDesc: 'Unified financial management and streamlined procurement' },
+    { id: '7', icon: '/oracle/benefits/efficient.svg', cardDesc: 'Efficient project management and enhanced human capital management' },
   ];
   const keyResponsibilityData = [
     {
@@ -203,7 +203,7 @@ const page = () => {
         desc="Leading Customer Centric and Cutting-Edge Solution for Enterprises"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/oracle/video/pageBanner.mp4"
       />
 
       <OverviewSection Text={`Oracle Cloud's autonomous capabilities enable self-driving databases, automated security and streamlined operations. Businesses can reduce total cost of ownership and realize faster time-to-market.`} />
@@ -214,7 +214,7 @@ const page = () => {
         sectionHeadingLayout="left"
 
         style={{
-          backgroundImage: `url(${`/solution/transformation/oracle/ofc-bg.svg`})`,
+          backgroundImage: `url(${`/oracle/ofc-bg.webp`})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
