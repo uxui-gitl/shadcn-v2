@@ -127,10 +127,10 @@ const page = () => {
   ];
 
   const CLOUDSUITE_SERVICES_DATA = [
-    { id: '1',icon:'/inforCloudSuite/benefits/extensibleIntegrable.svg', cardTitle: 'Consulting' },
-    { id: '2',icon:'/inforCloudSuite/benefits/accommodatesMultiple.svg', cardTitle: 'Implementation' },
-    { id: '3',icon:'/inforCloudSuite/benefits/IndustryTailored.svg', cardTitle: 'Managed Services' },
-    { id: '4',icon:'/inforCloudSuite/benefits/cloudBasedApp.svg', cardTitle: 'Migration and Upgrade' },
+    { id: '1',icon:'/inforCloudSuite/services/consulting.svg', cardTitle: 'Consulting' },
+    { id: '2',icon:'/inforCloudSuite/services/implementation.svg', cardTitle: 'Implementation' },
+    { id: '3',icon:'/inforCloudSuite/services/managedServices.svg', cardTitle: 'Managed Services' },
+    { id: '4',icon:'/inforCloudSuite/services/migrationUpgrade.svg', cardTitle: 'Migration and Upgrade' },
   ];
 
 
