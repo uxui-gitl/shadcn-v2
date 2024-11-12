@@ -19,7 +19,7 @@ import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 
 function page() {
-    const blogImageUrl = "/ai-ml/blog-bg.png";
+    const blogImageUrl = "/manufacturing/blog-bg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
@@ -35,7 +35,7 @@ function page() {
     const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGImageUrl: '/manufacturing/blog-bg1.webp',
       cardBGColor: 'red',
       cardHeading: "MES Impact on Manufacturing Operations ",
       cardDesc: `'Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing.'`,
@@ -44,7 +44,7 @@ function page() {
     },
     {
       id: 2,
-      cardBGImageUrl: '/ai-ml/blog-bg.png',
+      cardBGImageUrl: '/manufacturing/blog-bg2.webp',
       cardBGColor: 'red',
       cardHeading: "Legacy Modernization in Manufacturing Industry",
       cardDesc: 'The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. ',
@@ -578,7 +578,7 @@ function page() {
                 desc="Transforming Factory to Shop Floor Operations with Future-Proof Solutions"
                 cta="Let's Connect"
                 width="60%"
-                video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+                video="/manufacturing/video/pageBanner.mp4"
             />
             <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, including enhanced quality, predictable supply chain and increased profitability.`} />
 
@@ -843,7 +843,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/manufacturing/)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -871,7 +871,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/manufacturing/tab1.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -899,7 +899,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab3.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
