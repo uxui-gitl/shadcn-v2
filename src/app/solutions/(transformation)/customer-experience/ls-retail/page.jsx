@@ -17,17 +17,17 @@ const page = () => {
     {
       _id: 1,
       desc: "50+ Successful Client Engagements for LS Retail Solution across the Globe",
-      icon: "",
+      icon: "/lsRetail/distinctiveEdge/successfulClient.svg",
     },
     {
       _id: 2,
       desc: "Expert Team of Highly Skilled Functional and Technical Professionals",
-      icon: "",
+      icon: "/lsRetail/distinctiveEdge/expertTeam.svg",
     },
     {
       _id: 3,
       desc: "Profound Domain Expertise in Retail, E-Commerce, and Hospitality and Adept inDelivering Solutions Customized to Industry-Specific Requirements.",
-      icon: "",
+      icon: "/lsRetail/distinctiveEdge/profoundDomain.svg",
     },
   ];
   const TESTIMONIAL_DATA = [
@@ -50,10 +50,10 @@ const page = () => {
         "We congratulate the team from Godrej Infotech for completing the rollout of LS Central Hospitality. This solution has been deployed at our ice cream retail stores and has features to manage dining, takeaway, delivery, and cart sales for events. With this solution, the manual process for HR and Payroll activities is automated. The point-of-sale is 100% operational and has resulted in a 70% reduction in the time taken for material procurement and movement and we have also seen a 60% increase in the productivity of the finance process. Expiry date-based stock tracking and replenishment has helped in maintenance of adequate material stock levels.",
     },
   ];
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/lsRetail/blog-bg.webp";
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
+      imageURL: "/lsRetail/caseStudies.webp",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
       heading: "Elevating our customer experience with LS Retail",
@@ -99,15 +99,15 @@ const page = () => {
 
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon:'', cardDesc: 'On-demand Business Performance Insights at Convenience' },
-    { id: '2', icon:'', cardDesc: 'Improve Customer Experience with Integrated Loyalty Programs and Personalized Marketing Campaigns' },
-    { id: '3', icon:'', cardDesc: 'Access Financial Data, Point of Sale Systems, Supply Chain Management and more—all in one place' },
-    { id: '4', icon:'', cardDesc: 'Notifications and Reports at all Channels on Fingertips' },
-    { id: '5', icon:'', cardDesc: 'No More Additional Integration Cost' },
-    { id: '6', icon:'', cardDesc: 'Ensure Uniformity in Financial Information' },
-    { id: '7', icon:'', cardDesc: 'Complete Control over Pricing, Inventory, Promotions and beyond' },
-    { id: '8', icon:'', cardDesc: 'Flexible System Architecture and Modular Design to Scale Business' },
-    { id: '9', icon:'', cardDesc: 'Streamline and Optimized Retail Operations' },
+    { id: '1', icon:'/lsRetail/benefits/onDemandBusiness.svg', cardDesc: 'On-demand Business Performance Insights at Convenience' },
+    { id: '2', icon:'/lsRetail/benefits/improveCustomer.svg', cardDesc: 'Improve Customer Experience with Integrated Loyalty Programs and Personalized Marketing Campaigns' },
+    { id: '3', icon:'/lsRetail/benefits/accessFinancial.svg', cardDesc: 'Access Financial Data, Point of Sale Systems, Supply Chain Management and more—all in one place' },
+    { id: '4', icon:'/lsRetail/benefits/notifications.svg', cardDesc: 'Notifications and Reports at all Channels on Fingertips' },
+    { id: '5', icon:'/lsRetail/benefits/additionalIntegration.svg', cardDesc: 'No More Additional Integration Cost' },
+    { id: '6', icon:'/lsRetail/benefits/ensureUniformity.svg', cardDesc: 'Ensure Uniformity in Financial Information' },
+    { id: '7', icon:'/lsRetail/benefits/completeControl.svg', cardDesc: 'Complete Control over Pricing, Inventory, Promotions and beyond' },
+    { id: '8', icon:'/lsRetail/benefits/flexibleSystem.svg', cardDesc: 'Flexible System Architecture and Modular Design to Scale Business' },
+    { id: '9', icon:'/lsRetail/benefits/streamline.svg', cardDesc: 'Streamline and Optimized Retail Operations' },
     
   ];
 
@@ -198,7 +198,7 @@ const page = () => {
   const RPASolution = [
     {
       id: 1,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/pos.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Point of Sale (POS) System',
       cardDesc: 'Intuitive interfaces, supporting various payment methods and streamlined operations for a hassle-free checkout experience.',
@@ -209,7 +209,7 @@ const page = () => {
     {
 
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/inventoryManagement.webp',
       cardBGColor: '#000',
       cardHeading: 'Inventory Management',
       cardDesc: 'Capabilities include real-time tracking of stock levels, replenishment management and inventory optimization across multiple locations.',
@@ -220,7 +220,7 @@ const page = () => {
     {
 
       id: 3,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/omnichannel.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Omnichannel Retailing',
       cardDesc: 'Integrating online and offline channels seamlessly ensuring a consistent experience for shoppers across all touchpoints.',
@@ -231,7 +231,7 @@ const page = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/customerRelationship.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Customer Relationship Management (CRM)',
       cardDesc: 'Build and maintain customer relationships through personalized experiences and manage customer profiles, preferences, targeted marketing campaigns and loyalty programs to drive engagement.',
@@ -242,7 +242,7 @@ const page = () => {
     {
 
       id: 5,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/retailAnalytics.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Retail Analytics',
       cardDesc: 'Powerful analytics tools for sales trends, monitoring KPIs and identifying growth opportunities to optimize performance.',
@@ -254,7 +254,7 @@ const page = () => {
 
 
       id: 6,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/backOffice.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Back Office Management',
       cardDesc: ' Features include financial management, purchasing, and vendor management. Streamlining processes and ensuring compliance enables retailers to work hassle free.',
@@ -266,7 +266,7 @@ const page = () => {
 
 
       id: 7,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/lsRetail/featuresFunctionalities/flexibleCustomization.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Flexible Customization',
       cardDesc: 'From adding features to modifying workflows and integrating with third-party systems, retailers can adapt to changing requirements and stay competitive.',
@@ -284,10 +284,10 @@ const page = () => {
         desc="Elevate customer experience with unified retail management solutions."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/lsRetail/video/pageBanner.mp4"
       />
       <OverviewSection Text={`LS Central: Unified retail management solution integrating financials, POS, operations, supply chain, and e-commerce for seamless omnichannel experiences`} />
-      <div className="pt-36" style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <div className="pt-36" style={{ background: `url('/lsRetail/solutions/customerExperience.webp')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <div className="md:container mx-auto flex justify-center">
           <div style={{ maxWidth: '600px' }}>
             <SectionHeading
