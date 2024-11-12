@@ -20,37 +20,37 @@ const page = () => {
     {
       _id: 1,
       desc: "Prioritize incident resolution beyond SLAs and conduct thorough problem analysis using data and facts",
-      icon: "",
+      icon: "/managedServices/distictiveEdge/prioritizeIncident.svg",
     },
     {
       _id: 2,
       desc: "Ensure your IT adapts, scales and evolves with business dynamics",
-      icon: "",
+      icon: "/managedServices/distictiveEdge/ensureYour.svg",
     },
     {
       _id: 3,
       desc: "Global and Ticket-based support with weekly reviews",
-      icon: "",
+      icon: "/managedServices/distictiveEdge/global.svg",
     },
     {
       _id: 4,
       desc: "Resilient incident management and timely IT support",
-      icon: "",
+      icon: "/managedServices/distictiveEdge/resilient.svg",
     },
     {
       _id: 5,
       desc: "Reduce direct employment while maintaining effective operations",
-      icon: "",
+      icon: "/managedServices/distictiveEdge/reduce.svg",
     },
     {
       _id: 6,
       desc: "Access to specialized IT expertise and proactive solutions",
-      icon: "",
+      icon: "/managedServices/distictiveEdge/access.svg",
     },
 
   ]
 
-  const blogImageUrl = '/ai-ml/blog-bg.png';
+  const blogImageUrl = '/managedServices/blog-bg.webp';
 
   const CHALLENGES_LIST_DATA = [
     { id: 1, title: "Unplanned downtime, security risks and inefficient operations.", icon: '/upgradeCloud/icons/ico--target.svg' },
@@ -68,7 +68,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/managedServices/Cornerstones/businessContinuity.svg",
       CardHeading: "Business continuity",
       CardDesc:
         "",
@@ -83,7 +83,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/managedServices/Cornerstones/costEffectiveness.svg",
       CardHeading: "Cost effectiveness",
       CardDesc:
         "",
@@ -97,7 +97,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/managedServices/Cornerstones/contingencyManagement.svg",
       CardHeading: "Proactive contingency management",
       CardDesc:
         "",
@@ -111,7 +111,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/managedServices/Cornerstones/standardize.svg",
       CardHeading: "Standardize processes and practices",
       CardDesc:
         "",
@@ -129,7 +129,7 @@ const page = () => {
       cardDesc: 'Enhanced end-user satisfaction and experience through a responsive IT environment with minimal disruptions',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/managedServices/benefits/improved.webp'
     },
     {
 
@@ -139,7 +139,7 @@ const page = () => {
       cardDesc: 'Optimized business time and cost, allowing for strategic focus',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/managedServices/benefits/operationalEfficiency.webp'
     },
     {
 
@@ -149,7 +149,7 @@ const page = () => {
       cardDesc: 'Rapid resolution of IT challenges, reducing response time',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/managedServices/benefits/proactive.webp'
     },
     {
 
@@ -159,7 +159,7 @@ const page = () => {
       cardDesc: 'Consistent performance, reliability, and flexibility',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/managedServices/benefits/reliable.webp'
     },
     
   ]
@@ -289,7 +289,7 @@ const page = () => {
         desc="Managed IT Services Experts"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/managedServices/pageBanner.mp4"
       />
       <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you to focus on core business`} />
 
