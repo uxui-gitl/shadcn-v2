@@ -90,47 +90,47 @@ const page = () => {
   ];
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon:'', cardDesc: 'Enhanced Visibility: Increase brand visibility through online channels, reaching potential customers across various platforms.' },
-    { id: '2', icon:'', cardDesc: 'Improved Customer Experience: Convenient shopping experience with easy navigation, transactions and personalized recommendations.' },
-    { id: '3', icon:'', cardDesc: 'Data-driven Insights: Gain valuable insights into customer behaviour, preferences and purchasing patterns through analytics tools.' },
-    { id: '4', icon:'', cardDesc: 'Scalability: Easily scale online store to accommodate growing business demands without significant infrastructure investments.' },
-    { id: '5', icon:'', cardDesc: '24/7 Accessibility: Shop anytime, anywhere, leading to increased sales opportunities and revenue generation.' },
+    { id: '1', icon:'/ecommerce/benefits/enhancedVisibility.svg', cardDesc: 'Enhanced Visibility: Increase brand visibility through online channels, reaching potential customers across various platforms.' },
+    { id: '2', icon:'/ecommerce/benefits/improvedCustomer.svg', cardDesc: 'Improved Customer Experience: Convenient shopping experience with easy navigation, transactions and personalized recommendations.' },
+    { id: '3', icon:'/ecommerce/benefits/dataDrivenInsights.svg', cardDesc: 'Data-driven Insights: Gain valuable insights into customer behaviour, preferences and purchasing patterns through analytics tools.' },
+    { id: '4', icon:'/ecommerce/benefits/scalability.svg', cardDesc: 'Scalability: Easily scale online store to accommodate growing business demands without significant infrastructure investments.' },
+    { id: '5', icon:'/ecommerce/benefits/accessibility.svg', cardDesc: '24/7 Accessibility: Shop anytime, anywhere, leading to increased sales opportunities and revenue generation.' },
 
   ];
   const distinctiveData = [
     {
       _id: 1,
       desc: "Strong experience in C-Commerce (Customer & Channel Commerce) domain using Magento CE & Enterprise enabling retailers and manufacturers to digitize the end-to-end customer experience journey across all touch points.",
-      icon: "",
+      icon: "/ecommerce/distictiveEdge/strongExperience.svg",
     },
     {
       _id: 2,
       desc: "In-depth understanding of unique business requirements to deliver customized ecommerce solution.",
-      icon: "",
+      icon: "/ecommerce/distictiveEdge/strongExperience.svg",
     },
     {
       _id: 3,
       desc: "Strategic consultation on future product roadmaps to drive business growth and ecommerce success.",
-      icon: "",
+      icon: "/ecommerce/distictiveEdge/strongExperience.svg",
     },
     {
       _id: 4,
       desc: "Comprehensive troubleshooting, evaluation, and optimization of Commerce solutions to ensure seamless performance.",
-      icon: "",
+      icon: "/ecommerce/distictiveEdge/comprehensive.svg",
     },
     {
       _id: 5,
       desc: "Harnessing the full potential of ecommerce platforms for maximum growth and ROI.",
-      icon: "",
+      icon: "/ecommerce/distictiveEdge/harnessing.svg",
     },
     {
       _id: 6,
       desc: "Delivery of bespoke ecommerce solutions aligned with specific business objectives.",
-      icon: "",
+      icon: "/ecommerce/distictiveEdge/delivery.svg",
     },
   ]
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/ecommerce/blog-bg.webp";
   const ultimateChoiceData = [
     {
       id: 1,
@@ -198,7 +198,7 @@ const page = () => {
       cardDesc: `Improve user experience with data-driven design that aligns with the brand's goals'`,
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/ecommerce/services/webDesignServices.webp'
     },
     {
 
@@ -208,7 +208,7 @@ const page = () => {
       cardDesc: 'Optimize the e-commerce platform with our technical expertise',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/ecommerce/services/development.webp'
     },
     {
 
@@ -218,7 +218,7 @@ const page = () => {
       cardDesc: ' Effortlessly integrate tools and extensions, ensuring smooth operations and feature-rich e-stores',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/ecommerce/services/seamless.webp'
     },
     {
 
@@ -228,7 +228,7 @@ const page = () => {
       cardDesc: 'Gain secure and reliable cloud infrastructure to enable business growth',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/ecommerce/services/cloudInfrastructure.webp'
     },
     
   ]
@@ -418,7 +418,7 @@ const page = () => {
   const RPASolution = [
     {
       id: 1,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+      cardBGImageUrl: '/ecommerceSolutions/shopify.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Shopify',
       cardDesc: 'A comprehensive platform integrating ecommerce and point-of-sale features for streamlining operations and business expansion',
@@ -429,7 +429,7 @@ const page = () => {
     {
   
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/ecommerceSolutions/odooCommerce.webp',
       cardBGColor: '#000',
       cardHeading: 'Odoo Commerce',
       cardDesc: 'Elevate online presence with visually appealing online shops and easy checkout',
@@ -440,7 +440,7 @@ const page = () => {
     {
   
       id: 3,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-6.jpg',
+      cardBGImageUrl: '/ecommerceSolutions/adobeCommerce.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Adobe Commerce',
       cardDesc: 'Attract and engage customers and deliver better shopping experience with advanced ecommerce capabilities',
@@ -451,7 +451,7 @@ const page = () => {
     {
   
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/ecommerceSolutions/wooCommerce.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'WooCommerce',
       cardDesc: 'Experience in enterprise-grade ecommerce with secure payments, shipping, and inventory management',
@@ -462,7 +462,7 @@ const page = () => {
     {
   
       id: 5,
-      cardBGImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+      cardBGImageUrl: '/ecommerceSolutions/salesforce.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Salesforce Commerce',
       cardDesc: 'Deliver seamless experiences that appeal to and convert modern shoppers into customers effectively',
@@ -474,7 +474,7 @@ const page = () => {
   
   
       id: 6,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/ecommerceSolutions/bigCommerce.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'BigCommerce',
       cardDesc: 'Go-to ecommerce solution for established & growing businesses, with online store, SEO, hosting & marketing',
@@ -491,12 +491,12 @@ const page = () => {
         desc="Scalable and Secure Ecommerce Platform for Ambitious Businesses"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/ecommerce/video/pageBanner.mp4"
       />
       <OverviewSection Text={`Our ecommerce expertise enhances brand image, streamlines ordering & drives business growth with visually stunning, technically advanced solutions.`} />
 
       <SectionWrapper style={{
-        background: `url('/Transformation/customers/bgimage2.svg')`, backgroundRepeat: "no-repeat",
+        background: `url('/ecommerce/bgDevelopmentChallenges.webp')`, backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}>
         <div className="md:container mx-auto">
@@ -504,7 +504,7 @@ const page = () => {
             <div></div>
             <div>
               <SectionHeading
-                Heading={' E-commerce Development Challenges  '}
+                Heading={'E-commerce Development Challenges'}
                 Color={'white'}
                 Desc={''}
               />
