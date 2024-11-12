@@ -19,7 +19,7 @@ import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithA
 
 
 function page() {
-    const blogImageUrl = "/ai-ml/blog-bg.png";
+    const blogImageUrl = "/retail/blog-bg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
@@ -144,7 +144,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: '/retail/solutionOfferings/customerExperience.svg',
             cardHoverData: [
                 'Salesforce',
                 'Microsoft D365 CRM',
@@ -163,7 +163,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: '/retail/solutionOfferings/ecommerce.svg',
             cardHoverData: [
                 'Adobe Commerce Cloud',
                 'Shopify',
@@ -181,7 +181,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: '/retail/solutionOfferings/supplyChain.svg',
             cardHoverData: [
                 'Infor WMS',
                 ]
@@ -194,7 +194,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: '/retail/solutionOfferings/dataInsights.svg',
             cardHoverData: [
                 'Power BI',
                 'BIRST',
@@ -208,7 +208,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: '/retail/solutionOfferings/intelligentTech.svg',
             cardHoverData: [
                 'IoT',
                 
@@ -221,7 +221,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: '/retail/solutionOfferings/integrationServ.svg',
             cardHoverData: [
                 'Oracle',
                 'SAP',
@@ -520,7 +520,7 @@ function page() {
                 desc="Create seamless shopping experiences across channels and touchpoint"
                 cta="Let's Connect"
                 width="60%"
-                video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+                video="/retail/video/pageBanner.mp4"
             />
             <OverviewSection Text={`From adoption of CRM and e-commerce to the integration of data analytics, our expert team holds extensive experience of providing comprehensive advance solutions for global retail businesses.`} />
 
