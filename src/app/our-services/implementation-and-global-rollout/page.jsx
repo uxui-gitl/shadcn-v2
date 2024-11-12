@@ -20,35 +20,35 @@ const page = () => {
       hoverTitle: "Site Analysis and Project Planning",
       description: "Understand precise needs of business and build the foundation for an effective project execution.",
       content: "Additional content for Card 1",
-      imageURL: '/techStack1.png'
+      imageURL: '/implementation/keyImplementation/siteAnalysis.webp'
     },
     {
       title: "Design Solution Architecture and Mapping",
       hoverTitle: "Design Solution Architecture and Mapping",
       description: "Employ the latest tools and methodologies to build robust and scalable solutions tailored to business specific requirements.",
       content: "Additional content for Card 2",
-      imageURL: '/techStack1.png'
+      imageURL: '/implementation/keyImplementation/designSolution.webp'
     },
     {
       title: "Efficient Knowledge Transfer",
       hoverTitle: "Efficient Knowledge Transfer",
       description: "Offer user acceptance testing to ensure proficiency with the new application.",
       content: "Additional content for Card 3",
-      imageURL: '/techStack1.png'
+      imageURL: '/implementation/keyImplementation/efficientKnowledge.webp'
     },
     {
       title: "Data Migration & Go-Live Readiness",
       hoverTitle: "Data Migration & Go-Live Readiness",
       description: "Thoroughly assess, cleanse, transform, and migrate data from legacy systems to the new solution, ensuring system readiness for a smooth launch with minimal hiccups, as planned.",
       content: "Additional content for Card 4",
-      imageURL: '/techStack1.png'
+      imageURL: '/implementation/keyImplementation/dataMigration.webp'
     },
     {
       title: "Go-Live and Post Go Live Support",
       hoverTitle: "Go-Live and Post Go Live Support",
       description: "Launch chosen solution and provide ongoing monitoring, troubleshooting and performance -tuning to ensure peak efficiency of solution.",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/implementation/keyImplementation/GoLive.webp'
     },
     // Add more cards here...
   ];
@@ -92,7 +92,7 @@ const page = () => {
   const CyberSecurityData = [
     {
       id: 1,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/implementation/services/endToEnd.svg',
       cardBGColor: '#7F4EE1',
       cardHeading: 'End to End Implementation',
       cardDesc: 'Employing our best practices we provide effective solution deployment, risk mitigation and complete adoption of the solution.',
@@ -103,7 +103,7 @@ const page = () => {
     {
 
       id: 2,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/implementation/services/globalRollouts.svg',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Global Rollouts',
       cardDesc: 'We execute pilot implementation for a few client- designated locations. Following client approval, the solution is deployed to all locations according to the agreed timeline.',
@@ -114,7 +114,7 @@ const page = () => {
     {
 
       id: 3,
-      cardBGImageUrl: '',
+      cardBGImageUrl: '/implementation/services/customization.svg',
       cardBGColor: '#9F0165',
       cardHeading: 'Customization and Integration',
       cardDesc: 'We integrate the right fit technologies, processes, and systems to deliver valuable and unified end-user experience.',
@@ -125,7 +125,7 @@ const page = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/implementation/services/dataMigration.svg',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Data Migration',
       cardDesc: 'With the responsibility of extracting data from source systems, cleansing it, loading the combined data into the target system, and executing Master Data Governance, we facilitate a smooth transition while reducing testing requirement, downtime and cost overruns',
@@ -136,7 +136,7 @@ const page = () => {
     {
 
       id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/implementation/services/reimplementation.svg',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Reimplementation',
       cardDesc: 'Considering the current project scenario, organizational bottlenecks, and perspectives from relevant stakeholders, we eliminate erroneous transactions, re-architect and progress through the project in a simple and structured manner. This ensures that our clients can reclaim the original investments made in ERP systems.',
@@ -150,17 +150,20 @@ const page = () => {
     {
       id: 1,
       cardHeading: "Result Focused Services",
-      cardDesc: 'We measure our success, based on the tangible results we deliver for our customers.'
+      cardDesc: 'We measure our success, based on the tangible results we deliver for our customers.',
+      icon:'/implementation/virtues/resultFocusedServices.svg'
     },
     {
       id: 2,
       cardHeading: "Agile Approach",
-      cardDesc: `Repository of ready solutions enables a flexible and adaptive way of working that prioritizes customers' evolving needs.`
+      cardDesc: `Repository of ready solutions enables a flexible and adaptive way of working that prioritizes customers' evolving needs.`,
+      icon:'/implementation/virtues/agileApproach.svg'
     },
     {
       id: 3,
       cardHeading: "Quality Practice",
-      cardDesc: 'We are dedicated to maintaining the highest quality standard which is non-negotiable and is embedded in our work culture.'
+      cardDesc: 'We are dedicated to maintaining the highest quality standard which is non-negotiable and is embedded in our work culture.',
+      icon:'/implementation/virtues/qualityPractice.svg'
     },
   ];
 
@@ -188,7 +191,7 @@ const page = () => {
     },
   ];
 
-  const blogImageUrl = '/ai-ml/blog-bg.png';
+  const blogImageUrl = '/implementation/blog-bg.webp';
 
   const DATA_MGMT_DATA = [
     {
@@ -198,7 +201,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/implementation/360Degree/peopleCentricity.svg",
       CardHeading: "People Centricity",
       CardDesc:
         "We bring functional and implementation teams together and create bottom-up planning, leveraging expertise and insights for our client.",
@@ -213,7 +216,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/implementation/360Degree/processQuality.svg",
       CardHeading: "Process Quality",
       CardDesc:
         "We aim to continuously improve every implementation phase, identify areas where enhancements are required and execute them methodically that leads to greater effectiveness.",
@@ -227,7 +230,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/implementation/360Degree/technologyProficiency.svg",
       CardHeading: "Technology Proficiency",
       CardDesc:
         "Our expert team is well-versed with pioneering technologies and proficiently implements the right-fit solution to navigate business challenges.",
@@ -241,7 +244,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/implementation/360Degree/understanding.svg",
       CardHeading: "Effective Change Management",
       CardDesc:
         "Understanding the obvious resistance to the change, we exercise strong change management practices, ensuring efficient acceptance.",
@@ -255,7 +258,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/implementation/360Degree/adaptiveBusiness.svg",
       CardHeading: "Adaptive Business Environment",
       CardDesc:
         "We continuously monitor market dynamics and industry trends, adapting our approach to ensure successful implementation in a constantly evolving business landscape.",
@@ -288,52 +291,52 @@ const page = () => {
     {
       _id: 1,
       desc: "Accountability at every phase of the implementation process",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/accountability.svg",
     },
     {
       _id: 2,
       desc: "Rigorous unit testing for every configuration and customization",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/rigorousUnit.svg",
     },
     {
       _id: 3,
       desc: "End-to-end proficiency in implementing comprehensive solutions",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/proficiency.svg",
     },
     {
       _id: 4,
       desc: "Simplified data management for better decision making",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/simplified.svg",
     },
     {
       _id: 5,
       desc: "Smooth user adoption and dedicated support service",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/smooth.svg",
     },
     {
       _id: 6,
       desc: "Enhanced customer and employee satisfaction",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/enhanced.svg",
     },
     {
       _id: 7,
       desc: "Committed to punctual and on-budget implementations",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/committed.svg",
     },
     {
       _id: 8,
       desc: "Streamlined full implementation cycles for efficiency",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/streamlined.svg",
     },
     {
       _id: 9,
       desc: "Accelerated project timelines for quicker results",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/accelerated.svg",
     },
     {
       _id: 10,
       desc: "Minimum business disruption through proven methodology",
-      icon: "",
+      icon: "/implementation/distinctiveEdge/minimumBusiness.svg",
     },
 
   ]
@@ -353,7 +356,7 @@ const page = () => {
         desc="Expertly Implemented, Globally Delivered"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/implementation/video/pageBanner.mp4"
       />
       <OverviewSection Text={`25+ years expertise in implementation services, delivering secure rollouts and timely results for global clients.`} />
 
@@ -409,7 +412,7 @@ const page = () => {
             {ImplementationServiceVirtues_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-[#EFE9FB] rounded-lg">
-                  <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="werw" />
+                  <img className="rounded-t-lg pl-4" src={item.icon} alt="Img" />
                   <div className="p-5">
                     <h5 className="mb-2 text-2xl font-bold">{item.cardHeading}</h5>
                     <p>{item.cardDesc}</p>
