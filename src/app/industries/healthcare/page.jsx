@@ -18,7 +18,7 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 
 
 function page() {
-    const blogImageUrl = "/ai-ml/blog-bg.png";
+    const blogImageUrl = "/healthcare/blog-bg.webp";
 
     const tabs = [
         {
@@ -55,7 +55,8 @@ function page() {
             id: 1,
             cardHeading: "Consulting Services",
             cardDesc:
-                " Healthcare aligned digital strategy development for sustainable growth, enhancing operational efficiency.",
+                "Healthcare aligned digital strategy development for sustainable growth, enhancing operational efficiency.",
+            icon:"/healthcare/offeringData/consultingServices.svg"    
             
         },
         {
@@ -63,24 +64,28 @@ function page() {
             cardHeading: "Implementation",
             cardDesc:
                 "Deploy healthcare solutions, integrating analytics for enhanced operational efficiency.",
+            icon:"/healthcare/offeringData/implementation.svg" 
         },
         {
             id: 3,
             cardHeading: "Upgrade & Migration Services",
             cardDesc:
                 "Migrate legacy systems to cloud-based solutions, ensuring seamless data transition and optimized performance.",
+            icon:"/healthcare/offeringData/upgrade.svg" 
         },
         {
             id: 4,
             cardHeading: "Support & Maintenance Services",
             cardDesc:
                 "24/7 monitoring and prompt issue resolution, ensuring IT infrastructure uptime and performance.",
+            icon:"/healthcare/offeringData/support.svg"
         },
         {
             id: 5,
             cardHeading: "Customization Services",
             cardDesc:
                 "Tailored healthcare IT solutions to meet unique organizational needs, enhancing patient care and operational workflows.",
+            icon:"/healthcare/offeringData/customization.svg"
             
         },
     ];
@@ -410,7 +415,7 @@ function page() {
                 desc="Enhancing patient engagement, workflows and clinical outcomes"
                 cta="Let's Connect"
                 width="60%"
-                video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+                video="/healthcare/video/pageBanner.mp4"
             />
             <OverviewSection Text={`Our digital solutions and services help healthcare organisations in developing a cohesive ecosystem, fostering collaboration and ensuring data accuracy.`} />
 
@@ -508,7 +513,7 @@ function page() {
                         {OFFERING_DATA.map((item, index) => (
                             <SwiperSlide key={item}>
                                 <div className="bg-[#EFE9FB] rounded-lg">
-                                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                                    <img className="rounded-t-lg pl-4" src={item.icon} alt="" />
                                     <div className="p-5">
                                         <h5 className="mb-2 text-2xl font-bold">{item.cardHeading}</h5>
                                     </div>
