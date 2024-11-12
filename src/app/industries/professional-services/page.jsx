@@ -20,7 +20,7 @@ import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithA
 
 
 function page() {
-    const blogImageUrl = "/ai-ml/blog-bg.png";
+    const blogImageUrl = "/professionalServices/blog-bg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
@@ -471,7 +471,7 @@ function page() {
                 desc="Navigate complexities of digital change, streamline operations and enhance customer experience"
                 cta="Let's Connect"
                 width="60%"
-                video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+                video="/professionalServices/video/pageBanner.mp4"
             />
             <OverviewSection Text={`We help firms like yours to focus on improving customer-centricity and increasing business performance. Our solutions optimize timesheets, expense management & entity consolidation for improved responsiveness.`} />
 
@@ -737,7 +737,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/professionalServices/tab1.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -766,7 +766,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/professionalServices/tab2.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -798,7 +798,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/professionalServices/tab3.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
