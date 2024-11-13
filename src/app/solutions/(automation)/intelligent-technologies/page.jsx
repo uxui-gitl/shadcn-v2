@@ -14,7 +14,7 @@ import CommonCardOne from "@/components/CommonCardOne";
 
 
 const page = () => {
-  const blogImageUrl = '/intelligent-tech/Digitalized.jpg';
+  const blogImageUrl = '/intelligent-tech/Digitalized.webp';
   const formBGURL = "/formBgImage.svg";
   const yourImageUrl = '/intelligent-tech/advanceSolutions.jpg';
 
