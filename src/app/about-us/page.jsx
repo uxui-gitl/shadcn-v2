@@ -17,6 +17,7 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import Dialog from "@/components/Dialog";
 import { Timeline } from "@/components/ui/timeline";
 import { title } from "process";
+import NewNavBar from "@/components/NewNavBar";
 
 
 
@@ -24,6 +25,19 @@ import { title } from "process";
 const ContactUs = () => {
   const [showModal1, setshowModal1] = useState(false);
   const [businessItem, setBusinessItem] = useState([]);
+
+  const [showModal2, setshowModal2] = useState(false);
+  const [readMoreItem, setReadMoreItem] = useState([]);
+
+
+
+  const culture = [
+    // {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
+    {id:1, title:'', desc:'', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+    {id:2, title:'kashgdkjagdk', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+    {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
+    {id:4, title:'Work –life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  ];
 
   const GuidingPrinciples = [
     { id: 1, title: 'Purpose', desc: 'Create Sustainable Value for our Stakeholders by connecting People and Technology.' },
@@ -143,8 +157,9 @@ const ContactUs = () => {
             </ul>
       `
     },
-    { id: 2, title: 'Corporate Policies', Desc: `Dummy Text. Dummy Text.`,
-       rawData: ` <ol>
+    {
+      id: 2, title: 'Corporate Policies', Desc: `Dummy Text. Dummy Text.`,
+      rawData: ` <ol>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
               </li>
@@ -182,8 +197,9 @@ const ContactUs = () => {
                 <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
               </li>
             </ol>`
-     },
-    { id: 3, title: 'CSR Updates', Desc: `Dummy Text. Dummy Text.`,
+    },
+    {
+      id: 3, title: 'CSR Updates', Desc: `Dummy Text. Dummy Text.`,
       rawData: `   <ul>
                 <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                   <h3 class="mx-6 font-bold">CSR Initiatives</h3>
@@ -219,9 +235,10 @@ const ContactUs = () => {
                   <h3 class="mx-6">Mr. V. R. Mehta, Member</h3>
                 </li>
               </ul>`
-     },
-    { id: 4, title: 'Statutory Updates', Desc: `Dummy Text. Dummy Text.`,
-      rawData:`
+    },
+    {
+      id: 4, title: 'Statutory Updates', Desc: `Dummy Text. Dummy Text.`,
+      rawData: `
        <ol>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
@@ -258,10 +275,21 @@ const ContactUs = () => {
               </li>
 
             </ol>`,
-     },
+    },
 
   ]
 
+// const empTestimonials=[
+// {id:1,
+//   title:'Godrej Infotech', 
+//   desc:`Godrej Infotech's work culture is all about collaboration and open communication, an environment that encourages growth. Our team reflects a vibrant mix of perspectives. What I admire most about Godrej Infotech is that it prioritizes employees development, both professionally and this has tremendously enriched my journey here.`,
+//   empName:'Mausami Samanta',
+//   empDesignation:'Deputy Manager, HR',
+//   empImage:'about/reviewImage.svg',
+// }
+
+// ]
+  
   const DATA_2021_Present = [
     {
       id: 1,
@@ -499,11 +527,17 @@ const ContactUs = () => {
     },
   ];
 
-    // handle click businesstranform card click
-    function handleBusinessCardClick(modal, item) {
-      setshowModal1(modal);
-      setBusinessItem(item);
-    }
+  // handle click businesstranform card click
+  function handleBusinessCardClick(modal, item) {
+    setshowModal1(modal);
+    setBusinessItem(item);
+  }
+
+
+  function readMore(modal, item){
+    setshowModal2(modal);
+    setReadMoreItem(item);
+  }
 
   return (
     <>
@@ -515,19 +549,36 @@ const ContactUs = () => {
         title={businessItem?.title}
       >
         <div>
-        <div className="">
-          <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
-        </div>
+          <div className="">
+            <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
+          </div>
         </div>
       </Dialog>
 
       {/* dialog end */}
+      <Dialog
+        shouldShow={showModal2}
+        onRequestClose={() => {
+          setshowModal2((prev) => !prev);
+        }}
+        title={readMoreItem?.title}
+      >
+        <div>
+          <div className="">
+            <div className="flex space-between">
+              <p>{readMoreItem?.desc}</p>
+                <img src={readMoreItem?.bgImageUrl} />
+              </div>
+            {/* <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} /> */}
+          </div>
+        </div>
+      </Dialog>
+      {/* readmore dialog */}
       {/* Nav */}
-      <Announcement />
 
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full`}>
-          <Navbar theme="light" />
+        <NewNavBar></NewNavBar>
         </div>
       </div>
 
@@ -622,10 +673,34 @@ const ContactUs = () => {
         sectionTextColor='#000'
         sectionHeadingLayout="center"
       >
+        <Slider slidesPerView={3}>
+        {culture?.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className={`max-w-sm h-[512px] py-10 px-6 rounded-3xl shadow`} style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'end',
+                background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+              }}>
+                {item?.title && (
+                  <>
+                  <h5 className="mb-3 text-[42px] leading-[50px] font-medium text-white">{item?.title}</h5>
+                  </>
+                )}
+                {item?.desc && (<p className="mb-3 font-[14px] leading-[22px] text-white">{item?.desc}</p>)}
+                <div className="text-white flex items-center cursor-pointer"  onClick={() => readMore(true, item)} style={{ cursor: 'pointer' }}>
+                Read their stories <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+                  </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Slider>
       </SectionWrapperNew>
       {/* end visionary minds  */}
 
-      <SectionWrapperNew style={{ backgroundColor: "#FCE6F4", position: 'relative' }}
+      {/* <SectionWrapperNew style={{ backgroundColor: "#FCE6F4", position: 'relative' }}
         sectionHeading=""
         sectionDesc=""
         sectionTextColor='#000'
@@ -645,39 +720,40 @@ const ContactUs = () => {
             <Image src="about/pimp.svg" width={500} height={500} alt={'pimp'} className="absolute right-[8%] bottom-0" />
           </div>
         </div>
-      </SectionWrapperNew>
+      </SectionWrapperNew> */}
 
-      {/* joy at work section */}
+      {/* joy at work section 
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
         sectionHeading="Unleashing Joy at Work"
         sectionDesc={`Discover the heartwarming stories of our employees as they reveal their joyful experiences at work. From moments of triumph to instances of camaraderie, their testimonials showcase a workplace`}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
-      >
-        <Slider>
-          {[1, 2, 3, 4]?.map((item, index) => (
+      >*/}
+        {/* <Slider>
+          {empTestimonials.map((item, index) => (
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
-                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{`“Supportive senior management, excellent work culture, exposure to next-generation “`}</div>
-                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{`I am Akhtar Khan, In my 7 Months with this fantastic team, I've had the privilege to engage deeply in diverse sectors, including Infor LN and Other Technologies. As a Infor Technical Consultant, I've been empowered to explore innovative solutions in our services, contributing to our reputation for excellence. The company's culture fosters collaboration and open communication, creating an environment that encourages growth. Embracing diversity and inclusion, our team reflects a vibrant mix of perspectives. A typical day involves Meeting with teams and Brainstroming regarding new problems and finds a way how to tackle it, Leisure time try to learn new technologies or focus on the existing one how to improve and deliver the efficient solution to the client . The company prioritizes employee development, both professionally and personally, offering valuable learning opportunities that have tremendously enriched my journey here.`}</h5>
+                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{item.title}</div>
+                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{item.desc}</h5>
 
                 <div className="flex">
                   <div className="mr-4">
-                    <Image src={'about/reviewImage.svg'} width={50} height={50} alt="img" />
+                    <Image src={item.empImage} width={50} height={50} alt={"img"} />
+                    
                   </div>
 
                   <div>
-                    <h6 className="text-[16px] font-[700] mb-1 text-white">Tejas Bhanushali</h6>
-                    <p className="text-[16px] text-white">Chief Manager Finance and Accounts</p>
+                    <h6 className="text-[16px] font-[700] mb-1 text-white">{item.empName}</h6>
+                    <p className="text-[16px] text-white">{item.empDesignation}</p>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
-        </Slider>
+        </Slider> */}
 
-      </SectionWrapperNew>
-      {/*end joy work section */}
+      {/*</SectionWrapperNew>
+      end joy work section */}
 
       {/* awards section */}
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
@@ -702,7 +778,7 @@ const ContactUs = () => {
                   <td class="px-6 py-4 text-[20px] font-semibold">
                     { }
                   </td>
-                  <td class="px-6 py-4 text-[20px]">
+                  <td class="px-6 py-4 text-[20px] leading-[28px]">
                     {item.desc}
                   </td>
                 </tr>

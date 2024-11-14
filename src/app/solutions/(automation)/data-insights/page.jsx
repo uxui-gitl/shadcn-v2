@@ -292,34 +292,6 @@ const DataInsights = () => {
 
       {/* End--Section--HeroBanner======================================================== */}
 
-      {/* Start--Section-Navigation======================================================== */}
-
-      <SectionNav
-        /**
-         * ! Solutions
-         * ! Benefits
-         * ! Why Us
-         */
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-      {/* End--Section--Navigation======================================================== */}
       {/* Start--Overview-Section======================================================== */}
       <OverviewSection
         Text={
