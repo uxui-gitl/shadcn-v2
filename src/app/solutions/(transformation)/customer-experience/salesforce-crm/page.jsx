@@ -14,7 +14,7 @@ import CommonCardTwo from "@/components/CommonCardThree";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
