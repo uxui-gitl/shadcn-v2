@@ -49,69 +49,69 @@ export default function Home() {
   const items = [
     {
       id: 1,
-      content: "manufacturing"
+      content: "Healthcare"
     },
     {
       id: 2,
-      content: "retail"
+      content: "Professional Service"
     },
     {
       id: 3,
-      content: "project"
+      content: "Retail"
     },
     {
       id: 4,
-      content: "professional service"
+      content: "Manufacturing"
     },
     {
       id: 5,
-      content: "healthcare"
+      content: "Project"
     }
   ];
 
   const items2 = [
     {
       id: 6,
-      content: "smart factory"
+      content: "AI powered Care"
     },
     {
       id: 7,
-      content: "omnichannel expertise"
+      content: "Automation"
     },
     {
       id: 8,
-      content: "agility"
+      content: "Ecommerce"
     },
     {
       id: 9,
-      content: "client centric approach"
+      content: "Smart Factory"
     },
     {
       id: 10,
-      content: "streamlined operations"
+      content: "Cloud ERP"
     }
   ]
 
   const items3 = [
     {
       id: 11,
-      content: "agility"
+      content: "Quality"
     },
     {
       id: 12,
-      content: "customer loyalty"
+      content: "Competitiveness"
     },
     {
       id: 13,
-      content: "delivery speed"
+      content: "Customer Centricity"
     },
     {
       id: 14,
-      content: "competitiveness"
+      content: "Agility"
     },
     {
       id: 15,
-      content: "quality"
+      content: "Project Visibility"
     }
   ];
 
@@ -160,7 +160,7 @@ export default function Home() {
       ),
     },
   ];
-  const blogImageUrl = "/homeNew/blog.svg";
+  const blogImageUrl = "/home/images/blogBg.webp";
 
   const partnerLogo = [
     "/homeNew/partner1.svg",
@@ -174,7 +174,7 @@ export default function Home() {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
+      imageURL: "/home/images/caseStudyleft.webp",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
       heading: "Delivering Results that Matter",
@@ -206,7 +206,8 @@ export default function Home() {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      imageURL: "",
+      videoURL: "/home/videos/homeCaseStudy.mp4",
       title: "",
       heading: "Infor CloudSuite Managed Support Services ",
       description:
@@ -238,7 +239,7 @@ export default function Home() {
       cardHeading: "Salesforce Implementation within Tight Deadline",
       cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
       designation: '- Operations Head',
-      companyName: 'India’s Security Solutions Company',
+      companyName: `India's Security Solutions Company`,
     },
   ];
 
@@ -248,6 +249,7 @@ export default function Home() {
       cardTitle: "",
       cardHeading: "Embrace Tomorrow with Automation",
       cardDesc: 'Accelerate operations, drive innovation and increase accuracy with AI powered solutions',
+      cardBgImg:'/home/images/card1.webp',
       rawData: `<div class="grid grid-cols-3 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -255,7 +257,7 @@ export default function Home() {
               </div>
               <p class="text-[22px] font-medium mb-8">Artificial Intelligence & Machine Learning</p>
               <p class="text-[22px] font-medium mb-8">RPA</p>
-              <p class="text-[22px] font-medium mb-8"> IIoT</p>
+              <p class="text-[22px] font-medium mb-8">IIoT</p>
             </div>
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -263,7 +265,7 @@ export default function Home() {
               </div>
               <p class="text-[22px] font-medium mb-8">Java </p>
               <p class="text-[22px] font-medium mb-8">.Net, SharePoint</p>
-              <p class="text-[22px] font-medium mb-8"> Low code application development</p>
+              <p class="text-[22px] font-medium mb-8">Low code application development</p>
             </div>
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -271,7 +273,7 @@ export default function Home() {
               </div>
               <p class="text-[22px] font-medium mb-8">Power BI and Power Apps</p>
               <p class="text-[22px] font-medium mb-8">Birst</p>
-              <p class="text-[22px] font-medium mb-8"> Tableau</p>
+              <p class="text-[22px] font-medium mb-8">Tableau</p>
               <p class="text-[22px] font-medium mb-8">Azure and AWS data management </p>
 
             </div>
@@ -282,6 +284,7 @@ export default function Home() {
       cardTitle: "",
       cardHeading: "Cloud Enables New Possibilities",
       cardDesc: 'Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility',
+      cardBgImg:'/home/images/card2.webp',
       rawData: `<div class="grid grid-cols-2 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
@@ -309,6 +312,7 @@ export default function Home() {
       cardTitle: "",
       cardHeading: "Future Focused Transformation Solutions",
       cardDesc: 'Enhance business productivity and modernize stakeholder experience with streamlined operations',
+      cardBgImg:'/home/images/card1.webp',
       rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
         <div class="text-[40px] font-semibold mb-12">
@@ -336,9 +340,9 @@ export default function Home() {
   ]
 
   const sliderData = [
-    { id: 1, title: 'Automation Project Insight', desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer", url: 'https://png.pngtree.com/background/20230512/original/pngtree-business-meeting-room-dark-background-picture-image_2502832.jpg' },
-    { id: 2, title: 'Cloud Project Insight', desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ", url: 'https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg' },
-    { id: 3, title: 'Transformation Project Insight', desc: "8 years of Infor managed support services and migration for MT Infor cloud optimises operational cost by 25 for Europe’s maritime service provider", url: 'https://images.prismic.io/hubtic/3890db0a-cd65-45bb-8ac6-f08b971e68cb_Website+Go%CC%88rselleri+1080x608+%281%29.jpg?auto=compress,format&rect=135,0,811,608&w=2000&h=1500' },
+    { id: 1, title: 'Automation Project Insight', desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer", url: '/home/images/automation.webp' },
+    { id: 2, title: 'Cloud Project Insight', desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ", url: '/home/images/Cloud.webp' },
+    { id: 3, title: 'Transformation Project Insight', desc: "8 years of Infor managed support services and migration for MT Infor cloud optimises operational cost by 25 for Europe's maritime service provider", url: '/home/images/Transformation.webp' },
 
   ]
 
@@ -357,7 +361,7 @@ export default function Home() {
             </div>
             <p class="text-[22px] font-medium mb-8">Artificial Intelligence & Machine Learning</p>
             <p class="text-[22px] font-medium mb-8">RPA</p>
-            <p class="text-[22px] font-medium mb-8"> IIoT</p>
+            <p class="text-[22px] font-medium mb-8">IIoT</p>
           </div>
           <div>
             <div class="text-[40px] font-semibold mb-12">
@@ -448,7 +452,7 @@ export default function Home() {
 
           </div>
           <div className="container mx-auto text-[76px] leading-[86px] text-white absolute" style={{ top: '30%', left: '0', right: '0' }}>
-            Delivering Business<br></br> value with
+            Delivering Business<br></br> Value with
             <motion.div
               key={items4[index2]?.id}
               initial={{ y: 10, opacity: 0 }}
@@ -549,7 +553,7 @@ export default function Home() {
           <Slider slidesPerView={6} autoplay={true}>
             {partnerLogo?.map((item, index) => (
               <SwiperSlide key={index}>
-                <Image src={item} width={150} height={150} alt="khbas" className="brightness-110 hover:brightness-0" />jhsdjahs
+                <Image src={item} width={150} height={150} alt="Logos" className="brightness-110 hover:brightness-0" />
               </SwiperSlide>
             ))}
           </Slider>
@@ -601,7 +605,7 @@ export default function Home() {
       {/* video */}
       <div className="h-screen -mt-5" >
         <video
-          src={'https://s3-figma-videos-production-sig.figma.com/video/1327514938936607439/TEAM/cf3d/2255/-0d82-42de-b3af-a9a53cdf193e?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A~oKeONzxgirn5kceEUu7lXW87jduK69e0XZFA0KUXzdOAtpe6XBvNo5bOt9VpKwMkygF7ZenKSU5W~VdOulvLufBBHc9aIoW40wIiR254qQkrsQCxZ16xp15g6CaHqemy5gIf1nM4nP-KxFh4-Q00uy71tQYgFLRzeH7aSMvV9B27kVgzHN1sA7QfL2A46-YTgkTXa1-yWBdIFCdabXDfkAbl2uuNEXfi2ywiO3BcR-08NHN-Iv3ltpnHqodEQwfkslanjHaXujCEyudOnmD4St8MrFMB9UykKj4iYevvTkOU8jZjHu7ucTFqK6RlWlLrnHWyZmPTf6H1~OhUf6Bg__'} // Replace with your video path
+          src={'/home/videos/homePageVideo.mp4'} // Replace with your video path
           autoPlay
           loop
           muted
@@ -613,7 +617,7 @@ export default function Home() {
       {/* innovative section */}
       <SectionWrapperNew
         sectionHeading={"ACT based Approach for Leading Future Ready Business"}
-        sectionDesc={"Value – Driven Solutions for Tomorrow's Opportunities"}
+        sectionDesc={"Value - Driven Solutions for Tomorrow's Opportunities"}
         sectionTextColor="black"
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
@@ -622,7 +626,8 @@ export default function Home() {
         <Slider slidesPerView={3}>
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-8 bg-[#5F22D9] rounded-3xl ">
+              <div className="p-8 bg-[#5F22D9] rounded-3xl" style={{backgroundImage: `url(${item.cardBgImg})`,
+        }}>
                 {item?.cardTitle && <div className="text-xl text-white text-semibold mb-[100px]">
                   {item?.cardTitle}
                 </div>}
@@ -692,7 +697,7 @@ export default function Home() {
 
       <BlogSection
         ID={"blog"}
-        blogImageUrl={'/homeNew/blog-svg.png'}
+        blogImageUrl={'/home/images/blogBg.webp'}
         Heading={"Step Up in Your Professional Journey"}
         Desc={
           "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future. "
@@ -731,7 +736,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
-        Heading={"Delighted Customers Share Their Successful Experience"}
+        Heading={"Delighted Customers Share Their Successful Experiences"}
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
@@ -741,7 +746,7 @@ export default function Home() {
       <TransformBusinessForm
         Title={"Transform your Business with Us"}
         Desc={
-          "Let ‘s discuss how our ACT (Automation, Cloud and Digital Transformation) solutions can help you with rapid growth."
+          "Let's discuss how our ACT (Automation, Cloud and Digital Transformation) solutions can help you with rapid growth."
         }
       ></TransformBusinessForm>
 
@@ -786,7 +791,7 @@ const ServiceContent = () => {
         ))}
 
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      <div className="relative" style={{ backgroundImage: `url(/home/images/servives.webp)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
@@ -815,7 +820,7 @@ const IndustryContent = () => {
         ))}
 
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      <div className="relative" style={{ backgroundImage: `url(/home/images/industry.webp)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
@@ -845,7 +850,7 @@ const ParternerContent = () => {
         ))}
 
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+      <div className="relative" style={{ backgroundImage: `url(/home/images/partners.webp)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
