@@ -125,34 +125,10 @@ const IIOT = () => {
       />
       {/* End--Section--Hero-Banner====================================================================== */}
 
-      {/* Start--Section--NAV====================================================================== */}
-      <SectionNav
-        // Solutions
-        // Benefits
-        // Why Us
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-      {/* End--Section--NAV====================================================================== */}
+      
 
       {/* Start--Section--Overview====================================================================== */}
-      <OverviewSection bgColor="#F3F0FA"
+      <OverviewSection bgColor="bg-primary-10"
         Text={
           "Strengthen logistics and manufacturing supply chain resilience with Industrial Internet of Things, improving OEE, Cycle Time, Machine Throughput, Line Efficiency & Reducing TPM losses"
         }
@@ -163,7 +139,7 @@ const IIOT = () => {
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"6"}
-        bgColor="#FFFFFF"
+        bgColor="bg-neutral-white"
       />
       {/* End--Section--IIOT Soltions====================================================================== */}
 
@@ -171,10 +147,10 @@ const IIOT = () => {
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Benefits'}
         sectionDesc={'IIoT (Industrial Internet of Things) empowers businesses to thrive in the digital era in various ways, including:'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         MaxWidth={'100%'}
         cardData={benifitsCardsData}
       ></BenefitSliderSection>
@@ -188,7 +164,7 @@ const IIOT = () => {
           "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IoT) in Industry 4.0, the latest wave of technological revolution. "
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
 
             {/* Distinctive section*/}

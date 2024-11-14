@@ -495,25 +495,25 @@ const page = () => {
       />
       <OverviewSection Text={`Our ecommerce expertise enhances brand image, streamlines ordering & drives business growth with visually stunning, technically advanced solutions.`} />
 
-      <SectionWrapper style={{
-        background: `url('/Transformation/customers/bgimage2.svg')`, backgroundRepeat: "no-repeat",
+      <SectionWrapper BGColor="bg-secondary-900" style={{
+        background: `url('/Transformation/customers/bgimage2.svg')`, backgroundRepeat: "no-repeat",     
         backgroundSize: "cover",
       }}>
-        <div className="md:container mx-auto">
+        <div className="container mx-auto py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div></div>
             <div>
               <SectionHeading
                 Heading={' E-commerce Development Challenges  '}
-                Color={'white'}
+                Color={'text-neutral-white'}
                 Desc={''}
               />
 
-              <ul className="mt-2 space-y-4 w-full text-white">
+              <ul className="mt-2 space-y-4 w-full text-neutral-white">
                 {setChallengesList.map((challenge, index) => (
                   <li
                     key={challenge.id}
-                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
+                    className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
                   >
                     <div className="flex-shrink-0 mr-4">
                       <Image
@@ -524,7 +524,7 @@ const page = () => {
                       />
                     </div>
                     <div className="text-left">
-                      <h3 className="text-2xl font-normal">
+                      <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                         {challenge.title}
                       </h3>
                     </div>
@@ -540,10 +540,10 @@ const page = () => {
       <CommonCardTwoSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+        sectionBGColor={'bg-secondary-10'}
         sectionHeading={'Ecommerce Solutions'}
         sectionDesc={'Discover customizable ecommerce solutions for global reach and increased revenue'}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
       >
@@ -552,10 +552,10 @@ const page = () => {
       <CommonCardThreeSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Ecommerce Services'}
         sectionDesc={"Launch, grow and optimize online store with our comprehensive ecommerce services"}
-        sectionTextColor={'#fff'}
+        sectionTextColor={'text-neutral-white'}
         cardData={serviceOfferingData}
       >
 
@@ -565,18 +565,18 @@ const page = () => {
         <SectionWrapperNew
         sectionHeading={'Ecommerce Capabilities'}
         sectionDesc={`Partner with us to leverage the full potential of online store and drive growth in the digital marketplace`}
-        sectionTextColor={'#fff'}
+        sectionTextColor={'text-neutral-white'}
         sectionHeadingLayout="horizontal"
-        style={{ backgroundColor: '#5F22D9' }}
+       bgColor={'bg-primary-400'}
       >
 
         <Slider slidesPerView={3.2}>
           {keyResponsibilityData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+              <div className="p-6 bg-[transparent min-h-[524px] border-[0.5px] border-neutral-white border-opacity-30 rounded-3xl">
                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                <div className="text-[28px] text-white">{item?.title}</div>
-                <p className="text-[20px] py-4 text-white">{item?.desc}</p>
+                <div className="text-heading-02 leading-02 text-neutral-white">{item?.title}</div>
+                <p className="text-paragraph-01 leading-paragraph-01  py-4 text-neutral-white">{item?.desc}</p>
               </div>
             </SwiperSlide>
           ))}
@@ -622,10 +622,10 @@ const page = () => {
       
       <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Ecommerce Solution Benefits'}
         sectionDesc={'Explore how a seamless ecommerce experience can benefit your business.'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
@@ -637,7 +637,8 @@ const page = () => {
           "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model have started to enhance their online ecosystems, leading to a greater demand for e-Commerce solutions. Some interesting statistics on this topic as per IBEF (India Brand Equity Foundation) are: "
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
+        bgColor={"bg-primary-900"}
       >
 
   </BlogSection>

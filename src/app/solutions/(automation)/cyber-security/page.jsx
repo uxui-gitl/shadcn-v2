@@ -17,6 +17,7 @@ import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
 import SectionWrapperNew from "@/components/SectionWrapperNew";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "@/components/Slider";
+import Image from "next/image";
 
 import Link from "next/link";
 import Icon from "@mdi/react";
@@ -62,7 +63,7 @@ const CyberSecurity = () => {
     {
       id: 1,
       cardBGImageUrl: '/cyberSecurity/backgrounds/blog.webp',
-      cardBGColor: 'red',
+      cardBGColor: 'bg-primary-10',
       cardHeading: "Cyber-Resilience Strategy Importance",
       cardDesc: `'Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large.'`,
       cardTextColor: 'white',
@@ -71,7 +72,7 @@ const CyberSecurity = () => {
     {
       id: 2,
       cardBGImageUrl: '/ai-ml/blog-bg.png',
-      cardBGColor: 'red',
+      cardBGColor: 'bg-primary-10',
       cardHeading: "Step-By-Step Approach for Building Effective Privacy Programs:",
       cardDesc: 'The information revolution has transformed businesses, governments, and people in a big way. Virtually all business and government operations are now digital, resulting in everyone’s personal details being stored in information systems.',
       cardTextColor: 'white',
@@ -166,6 +167,7 @@ const CyberSecurity = () => {
         'Risk Assesment and Management',
       ],
       url: '',
+      icon:'https://www.svgrepo.com/show/151387/star.svg',
     },
     {
       id: 2, heading: 'Protect',
@@ -175,6 +177,7 @@ const CyberSecurity = () => {
         'Risk Assesment and Management',
       ],
       url: '',
+      icon:'https://www.svgrepo.com/show/535617/shield-check.svg',
     },
     {
       id: 2, heading: 'Defend',
@@ -184,6 +187,17 @@ const CyberSecurity = () => {
         'Risk Assesment and Management',
       ],
       url: '',
+      icon:'https://www.svgrepo.com/show/535140/aperture.svg',
+    },
+    {
+      id: 2, heading: 'Safeguard',
+      list: [
+        'Risk Assesment and Management',
+        'Risk Assesment and Management',
+        'Risk Assesment and Management',
+      ],
+      url: '',
+      icon:'https://www.svgrepo.com/show/535120/alarm-clock.svg',
     },
   ];
 
@@ -211,31 +225,31 @@ const CyberSecurity = () => {
       <SectionWrapperNew
         sectionHeading={"Our Offerings"}
         sectionDesc={""}
-        sectionTextColor="black"
+        sectionTextColor="tex-primary-900"
         sectionHeadingLayout="left"
-        style={{ backgroundColor: "#F3F0FA" }}
+        bgColor={'bg-neutral-ghost-white'}
       >
         <Slider slidesPerView={3}>
           {CyberSecurityData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="max-w-sm bg-white rounded-3xl group overflow-hidden relative" style={{ background: `url('${item?.cardBGImageUrl}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
-                <div className={`py-10 px-10 relative min-h-[520px] flex flex-col ${item.cardType == 1 ? 'justify-start' : 'justify-end'}`}>
-                  <h5 className={`mb-6 text-[42px] leading-[48px] text-[${item?.cardTextColor}] font-semibold min-h-[40px]`}>{item?.cardHeading}</h5>
-                  <p className={`mb-3 text-[16px] font-medium min-h-[144px] text-[${item?.cardTextColor}]`}>{item?.cardDesc}</p>
+              <div className="w-full rounded-3xl group overflow-hidden relative" style={{ background: `url('${item?.cardBGImageUrl}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
+                <div className={`p-5 relative min-h-[520px] flex flex-col ${item.cardType == 1 ? 'justify-start' : 'justify-end'}`}>
+                  <h5 className={`mb-4 text-heading-01 leading-heading-01 text-[${item?.cardTextColor}] font-semibold min-h-[40px]`}>{item?.cardHeading}</h5>
+                  <p className={`mb-3 text-body-01 leading-body-01 font-medium min-h-[144px] text-[${item?.cardTextColor}]`}>{item?.cardDesc}</p>
                   {item?.cardHoverData && (
-                    <div className="absolute bottom-4 right-4">
-                      <OutlinedButtonWithArrow size={48} />
+                    <div className="absolute bottom-5 right-5">
+                      <OutlinedButtonWithArrow size={32} arrowColor={item?.cardTextColor} />
                     </div>)}
 
                 </div>
                 {item?.cardHoverData && (
-                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                  <div className="bg-white p-5 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
                     <div className="">
-                      <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                      <ol className="max-w-md space-y-1 text-neutral-dark-grey list-decimal list-inside">
                         {item?.cardHoverData.map((item2) => (
                           <>
                             <li>
-                              <span className="font-semibold text-black">{item2}</span>
+                              <span className=" text-paragraph-01 leading-paragraph-01 font-semibold text-primary-900">{item2}</span>
                             </li>
                           </>
                         ))}
@@ -252,7 +266,8 @@ const CyberSecurity = () => {
       <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
+        BGColor="bg-secondary-900"
         counters={HUBEXPERTISE_COUNTER_DATA}
       />
       {/* End-Section--Hub-of-Expertise */}
@@ -265,24 +280,10 @@ const CyberSecurity = () => {
         Desc={
           "End to End Business Security with Our Cybersecurity Suite.End to End Business Security with Our Cybersecurity Suite"
         }
-        Color={"white"}
-        readMoreUrl={""}
+        Color={"text-neutral-white"}
+        readMoreUrl={"/test"}
       >
-        <div className="">
-          <Link
-            href={``}
-            target="_blank"
-            className="text-white mr-5 mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          >
-            {'Read more'}
-            <Icon
-              path={mdiArrowRight}
-              style={{ marginLeft: "0.5em", marginTop: '1px' }}
-              size={1}
-            />
-          </Link>
-
-        </div>
+        
 
       </BlogSection>
       {/*  */}
@@ -294,21 +295,22 @@ const CyberSecurity = () => {
         sectionHeadingLayout="left"
         style={{ backgroundColor: "white" }}
       >
-        <Slider slidesPerView={3}>
+        <Slider slidesPerView={4}>
           {businessData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-8 bg-white border border-gray-200 rounded-3xl">
-                <svg className="w-10 mb-10 h-10 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
-                </svg>
-
-                <h5 className="mb-10 text-[42px] font-medium  text-[#1D162B] leading-[50px]">{item.heading}</h5>
+              
+              <div className="p-5 bg-white border border-gray-200 rounded-3xl">
+              <div className="flex justify-left mb-4">
+            <Image src={item.icon} alt="icon" width={48} height={48}/> {/* Adjust size as needed */}
+          </div>
+              
+                <h5 className="mb-10 text-heading-02 leading-heading-02 font-medium  text-[#1D162B] ">{item.heading}</h5>
                 {item?.list.map((data, index) => (
-                  <p className="mb-3 font-[20px] text-gray-500 leading-[28px]" key={index}>{data}</p>
+                  <p className="mb-4 p-1 border-b border-neutral-light-grey text-body-01 leading-body-01 text-gray-500 " key={index}>{data}</p>
                 ))}
-                <div className="flex justify-end px-6 py-4">
+                <div className="flex justify-end bottom-5 right-5">
                   <Link href={item?.url} target="_blank">
-                    <OutlinedButtonWithArrow arrowColor={'black'} size={48} />
+                    <OutlinedButtonWithArrow arrowColor={'black'} size={24} />
                   </Link>
                 </div>
               </div>
@@ -323,7 +325,7 @@ const CyberSecurity = () => {
       <HighlightPromo
         setHeading="Our Partners"
         setDesc=""
-        setColor="#1D162B"
+        setColor="text-primary-900"
         setImageBGURL={imgBgURL}
         setLogoImages="true"
         setPadding={false}
@@ -355,8 +357,8 @@ const CyberSecurity = () => {
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
-        SectionHeadingMaxWidth={'70%'}
+        BGColor="bg-primary-900"
+       
       ></ReviewSliderSection>
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

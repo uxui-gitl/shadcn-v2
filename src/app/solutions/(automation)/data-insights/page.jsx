@@ -10,6 +10,8 @@ import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import OurCapabilities from "@/sections/ourcapabilities/OurCapabilities";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
+
+
 const DataInsights = () => {
   const sectionSliderBGImageUrl =
     "/data-insights/backgrounds/bg--data-visualization.png";
@@ -19,8 +21,9 @@ const DataInsights = () => {
     {
       id: 1,
       BGImageUrl: "",
-      CardBGColor: "#FFF",
-      CardTextColor: "#000",
+      
+      CardBGColor: "bg-primary-10",
+      CardTextColor: "text-primary-900",
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--power-bi.png",
       CardHeading: "Power BI",
@@ -34,7 +37,7 @@ const DataInsights = () => {
     {
       id: 2,
       BGImageUrl: "",
-      CardBGColor: "#FFF",
+      CardBGColor: "bg-primary-10",
       CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--tableau.png",
@@ -48,7 +51,7 @@ const DataInsights = () => {
     {
       id: 3,
       BGImageUrl: "",
-      CardBGColor: "#FFF",
+      CardBGColor: "bg-primary-10",
       CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--birst.png",
@@ -73,7 +76,7 @@ const DataInsights = () => {
       CardHeading: "Azure SQL Data Ware Housing",
       CardDesc:
         "Accelerate analytics with petabyte scale storage and high-performance querying",
-      isArrow: "true",
+      isArrow:false,
       link: [],
     },
 
@@ -88,7 +91,7 @@ const DataInsights = () => {
       CardHeading: "AWS Redshift",
       CardDesc:
         "Optimize data storage and queries while we provide the experience to enhance data efficiency.",
-      isArrow: "true",
+      isArrow:false,
       link: [],
     },
     {
@@ -102,7 +105,7 @@ const DataInsights = () => {
       CardHeading: "Azure Synapse",
       CardDesc:
         "Unify analytics and data management, and integrate data warehousing and big data capabilities",
-      isArrow: "true",
+      isArrow: false,
       link: [],
     },
     {
@@ -116,7 +119,7 @@ const DataInsights = () => {
       CardHeading: "Azure Data Factory",
       CardDesc:
         "Move, transform and orchestrate data across cloud and on-premises sources with automated workflows.",
-      isArrow: "true",
+      isArrow: false,
       link: [],
     },
     {
@@ -130,7 +133,7 @@ const DataInsights = () => {
       CardHeading: "Databricks",
       CardDesc:
         "Harness unified data analytics gaining deeper insights with our data-driven strategies.",
-      isArrow: "true",
+      isArrow: false,
       link: [],
     },
     {
@@ -144,7 +147,7 @@ const DataInsights = () => {
       CardHeading: "Amazon S3",
       CardDesc:
         "Securely store and serve data with highly scalable and cost-effective object storage.",
-      isArrow: "true",
+      isArrow: false,
       link: [],
     },
     {
@@ -158,7 +161,7 @@ const DataInsights = () => {
       CardHeading: "Azure Data Lake",
       CardDesc:
         "Experience high-performance and secure data management with Azure Data Lake.",
-      isArrow: "true",
+      isArrow: false,
       link: [],
     },
     {
@@ -172,7 +175,7 @@ const DataInsights = () => {
       CardHeading: "Microsoft Fabric",
       CardDesc:
         "Integrated Lakehouse, Datawarehouse & AI-powered platform driving business effectiveness.",
-      isArrow: "true",
+      isArrow:false,
       link: [],
     },
   ];
@@ -333,7 +336,7 @@ const DataInsights = () => {
         sectionDesc={
           "Real-time data access and visualization enabling insights into business operations."
         }
-        sectionTextColor={"white"}
+        sectionTextColor={"text-primary-900"}
         cardData={VISUALIZATION_DATA}
         pageID="ai-ml"
         setHeadingContainerWidth={true}
@@ -347,9 +350,9 @@ const DataInsights = () => {
         sectionDesc={
           "Scalable data management solutions leveraging analytics and business intelligence for informed decisions."
         }
-        sectionTextColor="#ffffff"
+        sectionTextColor="text-neutral-white"
         cardData={DATA_MGMT_DATA}
-        sectionBGColor="#2B1624"
+        sectionBGColor="bg-secondary-900"
         setHeadingLayout="horizontal"
       />
       {/* End--Section--DataManagement======================================================================== */}
@@ -363,7 +366,7 @@ const DataInsights = () => {
         blogImageUrl={blogImageUrl}
         Heading={"Azure Data Lake - Data Storage Solution for Big Data Analytics"}
         Desc={"Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior."}
-        Color={"white"}
+        Color={"text-neutral-white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
       ></BlogSection>
       {/* End-Section--Blog */}
@@ -371,8 +374,8 @@ const DataInsights = () => {
       <OurCapabilities
         setHeading="Our Capabilities"
         setDesc="Benefit from predictive insights and ensure data quality, security and compliance to maximize organization's data asset potential"
-        setColor="#1D162B"
-        setPadding={false}
+        setColor="bg-primary-900"
+        setTextColor="text-primary-900"
         setHeadingLayout="horizontal"
         ACCORDION_DATA={ACCORDION_DATA}
       />
@@ -382,9 +385,9 @@ const DataInsights = () => {
       ID={"TESTIMONIALS"}
       Heading={"Delighted customers share their success experience"}
       Desc={''}
-      Color="#ffffff"
+      Color="text-neutral-white"
       CardDataList={TESTIMONIAL_DATA}
-      BGColor="#1D162B"
+      BGColor="bg-primary-900"
       SectionHeadingMaxWidth={'70%'}
     ></ReviewSliderSection>
     

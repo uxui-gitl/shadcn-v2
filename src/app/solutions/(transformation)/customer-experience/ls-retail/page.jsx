@@ -120,10 +120,10 @@ const page = () => {
       cardHeading: "Retail",
       cardDesc: "",
       isArrow: false,
-      cardTextColor: "white",
+      cardTextColor: "text-primary-white",
       additionalData: `
       
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+      <ul class="space-y-4 text-neutral-darkest-grey list-disc list-inside">
     
     <li>
     Retail
@@ -150,7 +150,7 @@ const page = () => {
       isArrow: false,
       cardTextColor: "white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+       <ul class="space-y-4 text-neutral-darkest-grey list-disc list-inside">
        
     <li>
     Duty-Free and Travel Retail
@@ -178,7 +178,7 @@ const page = () => {
       isArrow: false,
       cardTextColor: "white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+      <ul class="space-y-4 text-neutral-darkest-grey list-disc list-inside">
        
     <li>
     Hospitality
@@ -287,12 +287,12 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <OverviewSection Text={`LS Central: Unified retail management solution integrating financials, POS, operations, supply chain, and e-commerce for seamless omnichannel experiences`} />
-      <div className="pt-36" style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-        <div className="md:container mx-auto flex justify-center">
+      <div className="py-32" style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+        <div className="container mx-auto flex justify-center">
           <div style={{ maxWidth: '600px' }}>
             <SectionHeading
               center={'true'}
-              Color="white"
+              Color="text-neutral-white"
               headingContainerWidth="w-full"
               Heading="Our Offerings"
               Desc="Delivering experience of unified commerce with advanced retail management applications and ensuring personalized journey for every shopper."
@@ -300,19 +300,19 @@ const page = () => {
           </div>
         </div>
 
-      <div className="md:container px-10 mx-auto pb-[40px] pt-[100px]">
+      <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <div className=" p-10 bg-[#5F22D9] rounded-3xl">
-                  <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
-                <p className="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
+              <div className=" p-5 bg-primary-400 rounded-3xl min-h-[324px]">
+                  <h5 className="mb-2 text-heading-01 leading-heading-02 font-bold text-neutral-white">LS Central for Retail</h5>
+                <p className="mb-3 text-body-01 leading-body-01 font-normal text-neutral-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
                 
               </div>
             </div>
             <div>
-            <div className=" p-10 bg-[#F18BCB] rounded-3xl">
-                  <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Restaurants</h5>
-                <p className="mb-3 font-normal text-white ">Comprehensive platform for restaurants, pubs, cafes, food halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more.</p>
+            <div className=" p-5 bg-secondary-200 rounded-3xl min-h-[324px]">
+                  <h5 className="mb-2 text-heading-01 leading-heading-02 font-bold text-neutral-white">LS Central for Restaurants</h5>
+                <p className="mb-3 text-body-01 leading-body-01 font-norma text-neutral-white ">Comprehensive platform for restaurants, pubs, cafes, food halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more.</p>
                 
               </div>
             </div>
@@ -322,23 +322,23 @@ const page = () => {
       <CommonCardTwoSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+        sectionBGColor={'bg-secondary-10'}
         sectionHeading={'LS Retail Features and Functionalities'}
         sectionDesc={`Transform retail into thriving success with LS Retail's innovative solutions and expert business guidance and support.`}
-        sectionTextColor={'#000'}
-        sectionHeaderMaxWidth={'40%'}
+        sectionTextColor={'text-primary-900'}
+        sectionHeaderMaxWidth={'w-1/2'}
         cardData={RPASolution}
       >
       </CommonCardTwoSlider>
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Retail Accelerators'} sectionDesc={'Understanding unique demands of segment and by leveraging tech capabilities, we equip businesses to thrive in competitive market.'}/>
+      <IndustrySpotlight sectionHeaderWidth= 'w-1/2' slidePerView={'3'} cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Retail Accelerators'} sectionDesc={'Understanding unique demands of segment and by leveraging tech capabilities, we equip businesses to thrive in competitive market.'}/>
       <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'LS Central Benefits'}
         sectionDesc={'LS Central is the ultimate all-in-one solution for modern retailers. Join thousands of retailers worldwide who trust LS Central to power their success.'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-white'}
         cardData={BENEFITS_CARDS_DATA}
-        sectionHeadingMaxWidth={'100%'}
+        sectionHeaderWidth=''
       />
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
@@ -353,7 +353,7 @@ const page = () => {
         Desc={
           "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model ..."
         }
-        Color={"white"}
+        Color={"text-white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=17"}
       ></BlogSection>
 
@@ -372,9 +372,9 @@ const page = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={""}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
       ></ReviewSliderSection>
       {/* End--Testimonial-Section================================================================ */}

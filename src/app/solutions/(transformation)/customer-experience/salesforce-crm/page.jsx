@@ -14,7 +14,11 @@ import CommonCardTwo from "@/components/CommonCardThree";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import { Pagination } from "swiper/modules";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const page = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
@@ -195,43 +199,69 @@ const page = () => {
       <SectionWrapperNew
         sectionHeading={'Modules'}
         sectionDesc={''}
-        sectionTextColor={'#fff'}
+        sectionTextColor={'text-neutral-white'}
         sectionHeadingLayout="left"
         style={{ background: `url('/Transformation/customers/bgimage1.png')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
       >
-        <Slider slidesPerView={3.2}>
+        <Slider slidesPerView={3}
+          spaceBetween={16}
+          autoplay={false}
+          pagination={true}
+          followFinger={true}
+          grabCursor={true}
+          modules={[Pagination, Navigation]}
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 32,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 32,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 32,
+            },
+          }}
+        >
           {RPASolution2?.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="max-w-sm bg-white rounded-3xl group overflow-hidden relative" >
-                <div className="h-[300px] bg-slate-700" style={{background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
-                <div className="py-10 px-10 relative">
-                  <h5 className="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
-                  <p className="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
-                  {item?.cardHoverData && ( 
-                    <div className="absolute bottom-4 right-4">
-                    <OutlinedButtonWithArrow size={48} />
-                  </div>)}
+           <SwiperSlide key={index}>
+  <div className="w-full bg-neutral-white rounded-3xl group overflow-hidden relative min-h-[624px]">
+    <div
+      className="h-[300px] bg-slate-700"
+      style={{
+        background: `url('/Transformation/sale-force-crm/m1.svg')`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    ></div>
+    <div className="p-5 relative">
+      <h5 className="mb-4 text-heading-02 leading-heading-02 font-semibold">{item?.cardHeading}</h5>
+      <p className="mb-2 text-body-01 leading-body-01 font-medium">{item?.cardDesc}</p>
+  
+    </div>
+    {item?.isArrow && <div className="absolute bottom-4 right-4 z-auto">
+          <OutlinedButtonWithArrow size={32} />
+        </div>}
+    {item?.cardHoverData && (
+      <div className="bg-neutral-white p-5 rounded-3xl h-full w-full absolute bottom-0 left-0 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+        <div>
+          <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            {item?.cardHoverData.map((item2, i) => (
+              <li key={i} className="py-3">
+                <span className="font-semibold text-black">{item2}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+      </div>
+    )}
+  </div>
+</SwiperSlide>
 
-                </div>
-                {item?.cardHoverData && (
-                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
-                    <div className="">
-                      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                        {item?.cardHoverData.map((item2) => (
-                          <>
-                            <li className="py-3">
-                              <span className="font-semibold text-black">{item2}</span>
-                            </li>
-                          </>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                )}
-
-              </div>
-
-            </SwiperSlide>
           ))}
         </Slider>
       </SectionWrapperNew>
@@ -239,17 +269,17 @@ const page = () => {
 
       <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Key Capabilities'}
         sectionDesc={''}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
-        bgColor="#FFFFFF"
+        bgColor="bg-neutral-white"
       />
 
 
@@ -261,7 +291,7 @@ const page = () => {
           "Salesforce Service Cloud revolutionizes customer service with social media CRM and managed services, enhancing experiences through cutting-edge integrations."
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
       <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Salesforce CRM is a thrust of innovation and efficiency designed to transform the way you do business with prospects and customers.'}
@@ -271,9 +301,9 @@ const page = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={''}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
       <TransformBusinessForm

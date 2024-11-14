@@ -9,8 +9,8 @@ function CommonCardTwo({ Item }) {
 
   const {
     cardBGImageUrl = "",
-    cardBGColor = "",
-    cardTextColor = "#000",
+    cardBGColor = "bg-primary-10",
+    cardTextColor = 'text-neutral-white',
     cardTitle = "",
     cardHeading = "",
     isArrow = true,
@@ -52,15 +52,15 @@ function CommonCardTwo({ Item }) {
       <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" style={{ height: "33%" }} /> {/* Dark overlay */}
 
       {/* Content Container */}
-      <div className="p-10 flex-grow relative z-1"> {/* Relative positioning for stacking context */}
+      <div className="p-5 flex-grow relative z-1"> {/* Relative positioning for stacking context */}
         {cardTitle && (
-          <div className="text-[#E0028E] text-[20px] mb-12">
+          <div className=" text-secondary-400 text-label-01 leading-label-01 mb-12">
             {cardTitle}
           </div>
         )}
         {cardHeading && (
           <h5
-            className={`text-[28px] leading-[36px] font-semibold ${style.cardHeading}`}
+            className={`text-heading-02 leading-heading-02 font-semibold text-neutral-white ${style.cardHeading}`}
             dangerouslySetInnerHTML={{ __html: cardHeading }}
           />
         )}
@@ -74,7 +74,7 @@ function CommonCardTwo({ Item }) {
       )}
    </div>
 
-   {additionalData && <div className={`min-h-[424px] px-5 py-10 duration-300 rounded-3xl bg-[#FCE6F4] z-20 ${isHovered ? '-translate-y-full' : 'translate-y-full'}`}>
+   {additionalData && <div className={`min-h-[424px] text-body-01 leading-body-01 p-5 duration-300 rounded-3xl bg-primary-10 text-neutral-darkest-grey z-20 ${isHovered ? '-translate-y-full' : 'translate-y-full'}`}>
         <p dangerouslySetInnerHTML={{ __html: additionalData }} />
         </div>}
     </div>

@@ -4,7 +4,8 @@ import SectionHeading from '@/components/SectionHeading';
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "@mdi/react";
-import { mdiArrowRight } from "@mdi/js";
+
+import { mdiArrowTopRight } from "@mdi/js";
 
 function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMoreUrl = "", children }) {
     return (
@@ -17,7 +18,7 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     marginTop:'-64px',
-                    minHeight: '70vh',
+                    minHeight: '540px',
                 }}
                 sectionHeading={Heading}
                 sectionDesc={Desc}
@@ -26,17 +27,22 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
             >
                 
                 {readMoreUrl && (<Link
-                    href={readMoreUrl}
-                    target="_blank"
-                    className="text-neutral-white mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2"
-                >
-                    {'Read More'}
-                    <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em", marginTop: '1px' }}
-                        size={1}
-                    />
-                </Link>)}
+                href={"#Contact"}
+                className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-4   mb-2 group"
+              >
+                Read More
+                <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
+                  <Icon
+                    path={mdiArrowTopRight}
+                    style={{
+                      marginLeft: "0.5em",
+                      transform: "rotate(45deg)",
+                      marginTop: "1px",
+                    }}
+                    size={1}
+                  />
+                </div>
+              </Link>)}
                 {children}
                 
             </SectionWrapperNew>

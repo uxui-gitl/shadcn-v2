@@ -51,7 +51,7 @@ function ReviewSliderSection(
                     borderBottomRightRadius:'0px',
 
                 }}>
-                    <div className="md:container mx-auto">
+                    <div className="container mx-auto py-32">
                 <SectionHeading
                     Heading={Heading}
                     Desc={Desc}
@@ -61,16 +61,16 @@ function ReviewSliderSection(
 
                 </SectionHeading>
 
-                <div className="flex mt-10 md:mt-20">
+                <div className="flex mt-10 md:mt-20 min-h-[540px]">
                     <div className="relative hidden md:inline w-[30%]">
                         <div className={`swiper-button-next`} style={{position:'absolute', left:'50%',top:'12%', width:'80px', height:'80px'}}>
                             <img src="/icons/btn-arrows.svg" alt="icon" />
                         </div>
-                        <div className={`swiper-button-prev`} style={{position:'absolute', left:'50%',top:'33%', width:'80px', height:'80px', transform: "rotate(180deg)",}}>
+                        <div className={`swiper-button-prev`} style={{position:'absolute', left:'50%',top:'30%', width:'80px', height:'80px', transform: "rotate(180deg)",}}>
                         <img src="/icons/btn-arrows.svg" alt="icon" />
                         </div>
                     </div>
-
+                 
                     <div className="w-full md:w-[70%]">
                     <Swiper
                         slidesPerView={SlidesPerView}
@@ -78,49 +78,36 @@ function ReviewSliderSection(
                             nextEl: ".swiper-button-next",
                             prevEl: ".swiper-button-prev",
                         }}
+                        pagination={true}
                         autoplay={Autoplay}
                         loop={true}
                         spaceBetween={30}
-                        modules={[Navigation]}
+                        modules={[Navigation, Pagination]}
                     >
+                        
                         {CardDataList?.map((item, index) => (
                             <SwiperSlide key={item.id ? item?.id : index}>
                                 <div className="w-full p-6 bg-transparent rounded-3xl">
+                               
                                     <div
-                                        className=""
-                                        style={{
-                                            fontSize: "54px",
-                                            fontWeight: 300,
-                                            lineHeight: "64px",
-                                            color: "#fff",
-                                            maxWidth:'600px'
-                                        }}
+                                        className="text-neutral-white text-heading-01 leading-heading-01 font-light"
+                                        
                                     >
                                        {item.cardHeading}
                                     </div>
                                     <div
-                                        className="my-10"
-                                        style={{
-                                            color: "#fff",
-                                            fontWeight:'300',
-                                            fontSize: "24px",
-                                            lineHeight: "36px",
-                                            // marginTop: "32px",
-                                        }}
+                                        className="text-neutral-white text-paragraph-01 leading-paragraph-01 mt-4"
+                            
                                         dangerouslySetInnerHTML={{__html:item.cardDesc}}
                                     />
                                     
                                     
                                     <div
-                                        className=""
-                                        style={{
-                                            color: "#fff",
-                                            fontSize: "16px",
-                                            marginTop: "30px",
-                                        }}
+                                        className="text-neutral-white  mt-4"
+                                     
                                     >
-                                       {item.designation}<br/>
-                                       {item.companyName}
+                                      <div className="text-label-01 leading-label-01 pb-2">{item.designation}</div> 
+                                      <div>{item.companyName}</div> 
                                     </div>
                                 </div>
 

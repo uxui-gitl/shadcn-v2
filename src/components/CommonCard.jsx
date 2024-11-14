@@ -13,20 +13,21 @@ function CommonCard({ Item, setpageID }) {
     CardIconUrl = "",
     CardHeading = "",
     CardDesc = "",
-    isArrow = "true",
+    isArrow = false,
     DownImageUrl = "",
     link = [],
     CardDownImageMinHeight = "200px",
     arrowColor = "#FFF",
     additionalData=[],
+    setMinHeight = "524px",
   } = Item;
 
-  const cardBodyMinHeight = setpageID === "ai-ml" ? "564px" : "452px";
-
+  const cardBodyMinHeight = setpageID === "ai-ml" ? "564px" : "524px";
+  console.log(isArrow);
   return (
     <>
       <div
-        className="commonCard rounded-3xl min-h-[424px] flex flex-col justify-between"
+        className="commonCard mt-5 rounded-3xl min-h-[524px] flex flex-col justify-between border-[0.5px] border-neutral-white border-opacity-10"
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,
@@ -35,22 +36,22 @@ function CommonCard({ Item, setpageID }) {
           minHeight: cardBodyMinHeight,
         }}
       >
-        <div className="card-body p-10 flex-grow">
+        <div className="card-body p-5 flex-grow">
           {CardTitle && <div className="text-[#E0028E] mb-8">{CardTitle}</div>}
           {CardIconUrl && (
             <div className="pb-8">
-              <Image src={CardIconUrl} alt="" width={50} height={50} />
+              <Image src={CardIconUrl} alt="" width={48} height={48} />
             </div>
           )}
           {CardHeading && (
             <h5
-              className="text-[42px] leading-[48px] font-semibold"
+              className={`text-heading-02 leading-heading-02 font-semibold ${CardTextColor}`}
               dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}
           {CardDesc && (
             <p
-              className="my-5 font-normal"
+              className="text-neutral-white text-body-01 leading-body-01 my-5 font-normal"
               dangerouslySetInnerHTML={{ __html: CardDesc }} // Render HTML content
             />
           )}
@@ -59,11 +60,11 @@ function CommonCard({ Item, setpageID }) {
               {link.map((list, index) => (
                 <li
                   key={index}
-                  className="border-b-2 border-[#dbdbdb3d] py-2 md:py-3"
+                  className="border-b-2 border-neutral-ghost-white py-3 md:py-3"
                 >
                   <Link
                     href={list.url}
-                    className="text-[#101828] text-[16px] md:text-[18px] font-normal leading-[28px] w-fit flex transition-all hover:opacity-75"
+                    className="text-body-01 leading-body-01 font-medium w-fit flex transition-all hover:opacity-75"
                   >
                     {list.title}
                   </Link>
@@ -91,7 +92,7 @@ function CommonCard({ Item, setpageID }) {
         )}
         {isArrow && (
           <div className="flex justify-end px-6 py-4">
-            <OutlinedButtonWithArrow arrowColor={arrowColor} size={48}/>
+            <OutlinedButtonWithArrow arrowColor={CardTextColor} size={24}/>
           </div>
         )}
       </div>

@@ -18,6 +18,7 @@ const OurCapabilities = ({
   setDesc,
   setColor,
   setPadding,
+  setTextColor,
   setHeadingContainerWidthFull,
   setHeadingLayout,
 }) => {
@@ -53,28 +54,23 @@ const OurCapabilities = ({
 
   return (
     <SectionWrapper
-      Padding={setPadding}
-      style={{
-        backgroundImage: `url(${setImageBGURL})`,
-        backgroundSize: "cover",
-      }}
+     
     >
-      <div className="md:container mx-auto">
+      <div className="container mx-auto py-32">
         <SectionHeading
           Heading={setHeading}
           Desc={setDesc}
-          Color={setColor}
+          Color={setTextColor}
           layout={setHeadingLayout}
           containerWidthFull={setHeadingContainerWidthFull}
-          paddingTop="16"
         />
-        <div className="flex flex-col md:flex-row gap-8 py-10 md:py-32">
+        <div className="flex flex-col md:flex-row gap-8  ">
           {/* Accordion div */}
-          <div className="w-full md:w-1/2 p-4">
+          <div className="w-full md:w-1/2">
             {ACCORDION_DATA.map((item, index) => (
-              <div key={item.id} className="border-b border-gray-200">
+              <div key={item.id} className="border-b border-neutral-light-grey">
                 <button
-                  className="flex justify-between items-center w-full py-3 text-left focus:outline-none min-h-[76px] text-[28px] leading-[36px]"
+                  className="flex justify-between items-center w-full py-4 text-left focus:outline-none min-h-[76px] text-paragraph-01 leading-paragraph-01"
                   onClick={() => handleToggle(index)}
                 >
                   <span>{item.title}</span>
@@ -104,7 +100,7 @@ const OurCapabilities = ({
                     transition: "height 0.5s ease-in-out",
                   }}
                 >
-                  <div className=" pb-8">
+                  <div className="text-neutral-dark-grey pt-4 pb-8">
                     <p>{item.content}</p>
                   </div>
                 </div>
@@ -114,7 +110,7 @@ const OurCapabilities = ({
 
 
           <div
-            className="w-full md:w-1/2 p-4 rounded-3xl"
+            className="w-full h-full md:w-1/2 rounded-3xl"
             style={{ backgroundColor: "#F2F4F7" }}
           >
             <div className="w-full h-full">

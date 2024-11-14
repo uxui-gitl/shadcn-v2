@@ -16,9 +16,11 @@ function SectionSliderAdditionalData({
     sectionHeaderMaxWidth,
     slidesPerView = "3",
     autoplay = "false",
+    pagination = "true",
+    modules = [ Pagination, Navigation],
     cardData = [],
-    sectionTextColor = "#000",
-    sectionBGColor = "#fff",
+    sectionTextColor = "text-primary-900",
+    sectionBGColor = "bg-neutral-white",
     setHeadingLayout,
 }) {
     return (
@@ -31,7 +33,7 @@ function SectionSliderAdditionalData({
                     backgroundSize: "cover",
                 }}
             >
-                <div className="md:container mx-auto">
+                <div className="container mx-auto py-32">
                     <div className="">
                         <SectionHeading
                             Heading={sectionHeading}
@@ -46,7 +48,8 @@ function SectionSliderAdditionalData({
                         <Swiper
                             slidesPerView={1}
                             navigation={false}
-                            pagination={{ type: "bullets", clickable: true }}
+                            pagination = {true}
+                            modules={[Pagination, Navigation]}
                             autoplay={autoplay}
                             loop={false}
                             spaceBetween={30}

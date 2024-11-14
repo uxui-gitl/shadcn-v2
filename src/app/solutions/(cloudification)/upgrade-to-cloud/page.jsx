@@ -679,7 +679,7 @@ const UpgradeToCloud = () => {
       {/* Start--Section--Challenges======================================================================== */}
       <ChallengeSection
         setHeading="On-premises Infrastructure Challenges"
-        setColor="#FFFFFF"
+        setColor="text-neutral-white"
         setImageBGURL={imgBGURL_Challenges}
         setChallengesList={CHALLENGES_LIST_DATA}
       />
@@ -689,41 +689,41 @@ const UpgradeToCloud = () => {
         sectionDesc={
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace.."
         }
-        sectionTextColor="white"
+        sectionTextColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
-        style={{ backgroundColor: "#2B1624" }}
+        bgColor={"bg-secondary-900"}
       >
-        <div className="grid grid-cols-1 md:grid-cols-3  gap-10">
-          <div className="p-6 bg-[transprent]">
-            <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Lift and Shift
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
+          <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
+            <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={56} height={56} />
+            <h5 className="mb-2 text-heading-01 leading-heading-01 font-semibold tracking-tight text-white">Lift and Shift
               to Cloud</h5>
-            <p className="mb-3 text-base font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+            <p className="mb-8 text-body-01 leading-body-01 font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
 
 
-            <div className="flex justify-end px-6 py-4" onClick={() => { setshowModal1((prev) => !prev); }}>
-              <OutlinedButtonWithArrow arrowColor={'white'} size={48} />
+            <div className="absolute bottom-2 right-2" onClick={() => { setshowModal1((prev) => !prev); }}>
+              <OutlinedButtonWithArrow arrowColor={'white'} size={24} />
             </div>
           </div>
           {/*  */}
-          <div className="p-6 bg-[transprent]">
+          <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
             <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">ERP on Cloud</h5>
-            <p className="mb-3 text-base font-medium text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
-            <div className="flex justify-end px-6 py-4" onClick={() => { setshowModal2((prev) => !prev); }}>
-              <OutlinedButtonWithArrow arrowColor={'white'} size={48} />
+            <h5 className="mb-2 text-heading-01 leading-heading-01 font-semibold tracking-tight text-white">ERP on Cloud</h5>
+            <p className="mb-8 text-body-01 leading-body-01 font-medium text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
+            <div className="absolute bottom-2 right-2" onClick={() => { setshowModal2((prev) => !prev); }}>
+              <OutlinedButtonWithArrow arrowColor={'white'} size={24} />
             </div>
           </div>
 
           {/*  */}
 
-          <div className="p-6 bg-[transprent]">
+          <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
             <Image className="pb-8" src={'/upgradeCloud/icons/ico--target.svg'} alt="" width={50} height={50} />
-            <h5 className="mb-2 text-[42px] leading-[48px] font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
-            <p className="mb-3 text-base font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
+            <h5 className="mb-2 text-heading-01 leading-heading-01 font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
+            <p className="mb-8 text-body-01 leading-body-01 font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
             </p>
-            <div className="flex justify-end px-6 py-4"  onClick={() => { setshowModal3((prev) => !prev); }}>
-              <OutlinedButtonWithArrow arrowColor={'white'} size={48} />
+            <div className="absolute bottom-0 right-0"  onClick={() => { setshowModal3((prev) => !prev); }}>
+              <OutlinedButtonWithArrow arrowColor={'white'} size={24} />
             </div>
           </div>
         </div>
@@ -743,14 +743,14 @@ const UpgradeToCloud = () => {
       /> */}
       {/* End--Section--UpgradeNow======================================================================== */}
       {/* Start--Service--Section======================================================== */}
-      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Upgrade<br/>Process Map"} desc={"A step-by-step guide featuring actionable workflows to ensure 99.9% uptime and no data loss."} color={"#1D162B"} />
+      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Upgrade<br/>Process Map"} desc={"A step-by-step guide featuring actionable workflows to ensure 99.9% uptime and no data loss."} color={"text-primary-900"} />
 
       {/* End--Service--Section======================================================== */}
 
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Upgrade to Cloud Benefits'}
         sectionDesc={'Experience business performance surge with cloud'}
         sectionTextColor={'white'}
@@ -764,7 +764,7 @@ const UpgradeToCloud = () => {
         blurEffect="blurON"
         setHeading="We are Trained and Accredited in Cloud Services"
         setDesc="We ensure that our expertise and practices fulfil highest standards of excellence."
-        setColor="#1D162B"
+        setColor="text-primary-900"
         setImageBGURL={imgBgURL}
         setLogoImages=""
         setPadding={true}
@@ -778,9 +778,10 @@ const UpgradeToCloud = () => {
       <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build an edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={2}
+        BGColor="bg-secondary-900"
       />
       {/* End-Section--Hub-of-Expertise */}
       {/* Section--Case-Studies======================================================================= */}
@@ -794,7 +795,7 @@ const UpgradeToCloud = () => {
         Desc={
           "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose. Here are the top reasons for rapid Microsoft Azure migration: "
         }
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
       {/* End-Section--Blog */}
       {/* Section--Distinctive Edge======================================================================= */}
@@ -811,7 +812,7 @@ const UpgradeToCloud = () => {
         Desc={''}
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
 

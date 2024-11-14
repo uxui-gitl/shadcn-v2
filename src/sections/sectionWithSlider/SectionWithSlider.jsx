@@ -15,10 +15,11 @@ function SectionWidthSlider({
   sectionHeading,
   sectionDesc,
   cardData = [],
-  sectionTextColor = "#000",
-  sectionBGColor = "#fff",
+  sectionTextColor = "text-neutral-white", 
+  sectionBGColor ="text-neutral-white",
   setHeadingLayout,
   moveSectionToTOP,
+  setMinHeight,
   style,
   Color
 }) {
@@ -38,9 +39,10 @@ function SectionWidthSlider({
           ...style
         }}
       >
-        <div className="md:container mx-auto">
+        <div className="container mx-auto py-32">
         <div className="">
           <SectionHeading
+          center={false}
             Heading={sectionHeading}
             Desc={sectionDesc}
             Color={sectionTextColor}
@@ -50,12 +52,13 @@ function SectionWidthSlider({
 
         <div className="my-8">
           <Swiper
-            slidesPerView={SlidesPerView}
-            navigation={false}
-            pagination={{ type: "bullets", clickable: true }}
-            autoplay={Autoplay}
+           slidesPerView={SlidesPerView}
+            navigation={true}
+            modules={[ Pagination, Navigation]}
             loop={false}
-            spaceBetween={30}
+            spaceBetween={32}
+            pagination={true}
+            followFinger={true}
             breakpoints={{
               640: {
                   slidesPerView: 1,

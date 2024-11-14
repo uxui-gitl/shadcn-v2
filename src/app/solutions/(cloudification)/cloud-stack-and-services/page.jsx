@@ -346,33 +346,7 @@ const CloudStack = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      {/* Section Nav */}
-
-      <SectionNav
-        // Solutions
-        // Benefits
-        // Why Us
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-
-      {/* Section--Overview */}
+     
       <OverviewSection
         Text={
           "Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences. Trust us to navigate the complexities of cloud technology, deliver greater business value and refine user experience."
@@ -383,8 +357,7 @@ const CloudStack = () => {
         setImageURL={imgURL}
         setHeading="Take Confident Business Decisions with Industry Tailored Cloud Technology"
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
-        setColor="#1D162B"
-        setPadding={false}
+        setColor="text-primary-900"
         sectionHeaderWidth={'w-full'}
       />
 
@@ -398,8 +371,8 @@ const CloudStack = () => {
         slidesPerView="3"
         autoplay="false"
         cardData={advanceSolutionData}
-        sectionTextColor="#000"
-        sectionBGColor="#fff"
+        sectionTextColor="text-primary-900"
+        sectionBGColor="bg-neutral-white"
       >
       </SectionSliderAdditionalData>
 
@@ -412,15 +385,15 @@ const CloudStack = () => {
         sectionDesc={
           "A fault-tolerant architecture and global data centers that helps to expand infrastructure and leverage advanced analytics."
         }
-        sectionTextColor="#ffffff"
+        sectionTextColor="text-neutral-white"
         cardData={ULTIMATE_CHOICE_DATA}
-        sectionBGColor="#2B1624"
+        sectionBGColor="bg-secondary-900"
         setHeadingLayout="horizontal"
 
       />
       {/* End--Section--UltimateChoice======================================================================== */}
            {/* Start--Service--Section======================================================== */}
-           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Driven Services"} desc={"Developing and scaling pilot into enterprise-scale implementation including all cloud-based business requirements"} color={"#1D162B"}  />
+           <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Cloud Driven Services"} desc={"Developing and scaling pilot into enterprise-scale implementation including all cloud-based business requirements"} color={"text-primary-900"}  />
 
 {/* End--Service--Section======================================================== */}
 
@@ -429,14 +402,14 @@ const CloudStack = () => {
       <HighlightPromo
         setHeading="Synergetic Partnership"
         setDesc="Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively."
-        setColor="#1D162B"
+        setColor="text-primary-900"
         setImageBGURL={imgBgURL}
         setLogoImages="true"
         setPadding={false}
       />
       {/* End-Section--Synergetic-Partnership */}
       {/* Section--Case-Studies======================================================================= */}
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor='#FFFFFF' />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor='bg-neutral-white' />
       {/* End-Section--Case-Studies */}
 
       {/* Section--Blog */}
@@ -449,6 +422,7 @@ const CloudStack = () => {
         }
         Color={"white"}
         readMoreUrl="#"
+        Color={'text-neutral-white'}
       ></BlogSection>
 
       {/* Distinctive section*/}
@@ -465,9 +439,9 @@ const CloudStack = () => {
         ID={"ULTIMATE_CHOICE_DATA"}
         Heading={"Delighted customers share their success experience"}
         Desc={'Discover how we have helped our customers to realize tangible outcomes aligned with their business goals.'}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={reviewCardData}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
       {/* transform business with us section */}

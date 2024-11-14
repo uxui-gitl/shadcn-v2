@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "./experienceSlider.module.css";
 import SectionWrapper from "@/components/SectionWrapper";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,7 +29,7 @@ const ExperienceSlider = () => {
       link: "",
       color: "#000",
       bgCardColor: "#FCE6F4",
-      CounterValue: "10000",
+      CounterValue: "10K",
     },
     {
         imageURL: "",
@@ -89,11 +90,13 @@ const ExperienceSlider = () => {
 
   return (
     <SectionWrapper BGColor={"#fff"}>
-      <div className="md:container mx-auto">
+      <div className="container mx-auto py-32">
         <Swiper
           slidesPerView={1}
           navigation={false}
-          pagination={{ type: "bullets", clickable: true }}
+          pagination={true}
+          followFinger={true}
+          modules={[Navigation, Pagination]}
           autoplay={false}
           loop={false}
           spaceBetween={30}
@@ -107,7 +110,7 @@ const ExperienceSlider = () => {
                 spaceBetween: 24,
             },
             1024: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 32,
             },
         }}
@@ -115,7 +118,7 @@ const ExperienceSlider = () => {
           {casestudy.map((caseItem, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative w-full h-full rounded-3xl px-16 py-8"
+                className="relative w-full h-full  rounded-3xl p-5"
                 style={{
                   backgroundImage: caseItem.imageURL
                     ? `url(${caseItem.imageURL})`
@@ -124,23 +127,23 @@ const ExperienceSlider = () => {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   color: caseItem.color,
-                  minHeight: "324px", // Set the minimum height for uniformity
+                  minHeight: "424px", // Set the minimum height for uniformity
                 }}
               >
                 {caseItem.title && (
-                  <h3 className="text-base font-semibold mb-4 lg:mb-12">
+                  <h3 className="text-label-01 leading-label-01 font-semibold mb-4 lg:mb-12">
                     {caseItem.title}
                   </h3>
                 )}
                
                {caseItem.CounterValue&&<h3
-                  className={`${jetBrains_mono.className} relative  text-[72px]  text-[#000] font-bold mb-8 leading-none`}
+                  className={`${jetBrains_mono.className} relative text-[96px]   font-bold`}
                 >
                   {caseItem.CounterValue}
                   <span className={Styles.superscript}>+</span>
                 </h3>
 } 
-                <h1 className="text-3xl lg:text-4xl font-medium mb-4 lg:mb-6">
+                <h1 className="relative text-heading-02 leading-heading-02 font-medium ">
                   {caseItem.heading}
                 </h1>
                 <p className="mb-4">{caseItem.description}</p>

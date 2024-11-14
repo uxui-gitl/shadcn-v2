@@ -210,32 +210,7 @@ const TechnologyStack = () => {
     {/* End--Section--HeroBanner======================================================== */}
     {/* Start--Section-Navigation======================================================== */}
 
-    <SectionNav
-      /**
-       * ! Solutions
-       * ! Benefits
-       * ! Why Us
-       */
-
-      arr={[
-        {
-          _id: 1,
-          title: "Solutions",
-          link: "#Solutions",
-        },
-        {
-          _id: 2,
-          title: "Benefits",
-          link: "#Benefits",
-        },
-        {
-          _id: 3,
-          title: "Why Us",
-          link: "#WhyUs",
-        },
-      ]}
-    />
-    {/* End--Section--Navigation======================================================== */}
+    
     {/* Start--Overview-Section======================================================== */}
     <OverviewSection
       Text={
@@ -247,10 +222,10 @@ const TechnologyStack = () => {
     <CommonCardThreeSlider
       ID={'AIOfferings'}
       sectionImageUrl={''}
-      sectionBGColor={'#fff'}
+      sectionBGColor={'bg-neutral-white'}
       sectionHeading={'Our Service Offerings'}
       sectionDesc={'Architecting secure and high-performance applications with cloud-native technologies, microservices and DevOps practices'}
-      sectionTextColor={'#000'}
+      sectionTextColor={'text-primary-900'}
       sectionHeaderMaxWidth={'40%'}
       cardData={RPASolution}
     >
@@ -262,7 +237,7 @@ const TechnologyStack = () => {
     {/* Start--Benefit--Section======================================================== */}
     <BenefitSliderSection
       ID={'BENEFIT'}
-      sectionBGColor={'#1D162B'}
+      sectionBGColor={'bg-primary-900'}
       sectionHeading={'Custom-built Application Benefits'}
       sectionDesc={'Delivering results, simplifying complex process and increasing performance with our customised applications'}
       sectionTextColor={'white'}
@@ -271,7 +246,7 @@ const TechnologyStack = () => {
     />
     {/* End--Benefit--Section======================================================== */}
     {/* Start--Service--Section======================================================== */}
-    <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Engineering Success with Our Methodology"} desc={"This approach enables us to adeptly manage software development projects of varying complexity levels."} color={"#1D162B"} />
+    <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Engineering Success with Our Methodology"} desc={"This approach enables us to adeptly manage software development projects of varying complexity levels."} color={"text-primary-900"} />
 
     {/* End--Service--Section======================================================== */}
 

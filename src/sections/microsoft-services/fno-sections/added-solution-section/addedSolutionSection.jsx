@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Image from 'next/image';
 
 // Styles
-const containerStyle = 'bg-[#FFF] py-8 rounded-md flex flex-col items-start';
+const containerStyle = 'bg-[#FFF] py-5 rounded-md flex flex-col items-start';
 const iconStyle = 'mb-4';
 const headingStyle = 'text-[28px] leading-[36px] font-semibold my-2';
 const listItemStyle = 'flex items-start border-b text-[18px] leading-[24px] py-4 cursor-pointer transition-transform duration-300'; // Added cursor pointer
@@ -55,18 +55,19 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
 
     return (
         <SectionWrapper BGColor={sectionBGColor}>
-            <div className='md:container mx-auto'>
+            <div className='container mx-auto py-32'>
                 <SectionHeading
                     Heading={'Godrej Infotech Value Added Solutions'}
                     Desc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible.'}
                     layout='horizontal'
+                    Color={'text-primary-900'}
                 />
 
-                <div className="flex flex-col md:flex-row gap-8 mt-24">
+                <div className="flex flex-col md:flex-row md:gap-8 ">
                     {/* First Container */}
                     <div className={`w-full md:w-1/3 ${containerStyle}`}>
                         {/* Icon and Heading */}
-                        <div className="flex items-center mb-8">
+                        <div className="flex items-center mb-1">
                             <div className={iconStyle}>
                                 {CONTAINER_DATA_1.icon}
                             </div>
@@ -89,7 +90,7 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
                     {/* Second Container */}
                     <div className={`w-full md:w-1/3 ${containerStyle}`}>
                         {/* Icon and Heading */}
-                        <div className="flex items-center mb-8">
+                        <div className="flex items-center mb-1">
                             <div className={iconStyle}>
                                 {CONTAINER_DATA_2.icon}
                             </div>
@@ -110,7 +111,7 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
                     </div>
 
                     {/* Third Container with Image */}
-                    <div className={`w-full md:w-1/3 ${containerStyle}`}>
+                    <div className={`w-full md:w-1/3 ${containerStyle} invisible md:visible`}>
                         <div className="relative w-full h-full overflow-hidden">
                             <div className="absolute inset-0 transition-opacity duration-300 opacity-100">
                                 <Image

@@ -292,7 +292,7 @@ const FNO = () => {
         "Indian Wildlife Nature Conservation Organization successfully upgrade to D365 F&O",
       link: "/case-study-1",
       color: "#000",
-      bgCardColor: "#FFF",
+      bgCardColor: "#fdfdfd",
     },
 
     {
@@ -489,32 +489,7 @@ const FNO = () => {
 
       {/* End--HeroBanner-Section=========================================================== */}
 
-      {/* Start--Section-Navigation-Section============================================================== */}
-      <SectionNav
-        // Solutions
-        // Benefits
-        // Why Us
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-
-      {/* End--Section-Navigation-Section================================================================ */}
+      
 
       {/* Start--Overview-Section============================================================== */}
       <OverviewSection
@@ -528,10 +503,10 @@ const FNO = () => {
       <CommonCardTwoSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#F3F0FA'}
+        sectionBGColor={'bg-secondary-10'}
         sectionHeading={'Key Highlights - D365 Finance & Supply Chain'}
         sectionDesc={'D365 F&O powers up your business with insights and comprehensive financial tools to streamline operations and adapt to changing business environments.'}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={SOLUTIONS_CARDS_DATA}
       >
@@ -547,13 +522,13 @@ const FNO = () => {
       {/* End--Microsoft-Solution-Section================================================================ */}
 
      {/* START-ADDED-SOLUTION-SECTION=================================================================== */}
-        <AddedSolutionSection sectionBGColor={'#FFFFFF'} sectionDesc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible.'}/>
+        <AddedSolutionSection sectionBGColor={'bg-neutral-white'} sectionTextColor={'text-primary-900'} sectionDesc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible.'}/>
       {/* END-ADDED-SOLUTION-SECTION=================================================================== */}
 
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
         ID={"BENEFIT"}
-        sectionBGColor={"#1D162B"}
+        sectionBGColor={"bg-primary-900"}
         sectionHeading={"Benefits of Dynamics 365 F&O"}
         sectionDesc={
           "Microsoft Dynamics 365 Finance & Operations (D365 F&O) stands out as a modern and adaptable solution, with a pivotal feature being its role-based design along with comprehensive support for all compliance-related necessities."
@@ -576,7 +551,7 @@ const FNO = () => {
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
-        bgColor={"#E4E4E4"}
+        bgColor={"bg-secondary-10"}
       />
       {/* End--Case-Study-Section================================================================ */}
 
@@ -588,7 +563,7 @@ const FNO = () => {
         Desc={
           ""
         }
-        Color={"white"}
+        Color={"text-neutral-white"}
         readMoreUrl="https://godrejinfotech.com/blogDetails.aspx?blog=12"
       ></BlogSection>
       {/* End--Blogs-Section================================================================ */}
@@ -608,9 +583,9 @@ const FNO = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={""}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
       ></ReviewSliderSection>
       {/* End--Testimonial-Section================================================================ */}

@@ -1,103 +1,57 @@
 .commonCardThree {
   overflow: hidden;
   position: relative;
+  transition: all 0.5s ease-in-out; /* Adding general smooth transition for all properties */
 }
 
 .commonCardThree .topImage {
   opacity: 1;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Smooth transition for image */
 }
 
 .commonCardThree:hover .topImage {
-  transform: scale(1.5); /* Slight scale up on hover */
-  opacity: 0; 
+  transform: scale(1.1); /* Slight scale-up on hover */
+  opacity: 0; /* Slight transparency on hover */
+}
+
+.commonCardThree .cardbody {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for card body */
 }
 
 .commonCardThree:hover .cardbody {
-  /* transform: translateY(-100%); */
-  position: absolute;
-  top: 0;
-  min-height: 540px;
-  max-height: 540px;
-  transition-timing-function: ease-out;
+  transform: translateY(-10px); /* Move the text upwards when hovering */
+  opacity: 0.8; /* Slight transparency for smooth effect */
 }
 
-.commonCardThree .isArrow {
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    right: 2%;
-  }
-
 .commonCardThree .cardHeading {
-    min-height: 72px;
-  }
+  min-height: 72px;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for heading */
+}
 
 .commonCardThree .cardDesc {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for description */
+}
+
+.commonCardThree:hover .cardHeading {
+  transform: translateY(-220px); /* Move heading upwards */
 }
 
 .commonCardThree:hover .cardDesc {
-    display: -webkit-box;
+  transform: translateY(-220px); /* Move description upwards */
+  display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  }
+  overflow: visible; /* Allow description to expand */
+}
 
-/* .commonCardThree .cardBody {
-    position: relative;
-  }
-  
-  .commonCardThree .cardTitle {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  }
-  
-  .commonCardThree:hover .cardTitle {
-    transition: 0.25;
-    opacity: 0;
-    transition-timing-function: ease-out;
-  }
-  
-  .commonCardThree .cardIcon {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  }
-  
-  .commonCardThree:hover .cardIcon {
-    transition: 0.25;
-    opacity: 0;
-    transition-timing-function: ease-out;
-  }
-  
-  .commonCardThree .cardHeading {
-    transition-timing-function: ease-out;
-    transition: 0.25s;
-  }
-  
-  .commonCardThree:hover .cardHeading {
-    transition: 0.7;
-    transform: translateY(-70px);
-    font-size: 28px;
-    line-height: normal;
-  }
-  
-  .commonCardThree .additionalDataWrapper {
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-    opacity: 0;
-    display: none;
-    position: absolute;
-    top: 30%;
-    padding-right: 34px;
-  }
-  
-  .commonCardThree:hover .additionalDataWrapper {
-    transition: 2s;
-    transition-timing-function: ease-in-out;
-    opacity: 1;
-    display: block;
-  } */
+.commonCardThree .isArrow {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  right: 2%;
+  transition: all 0.3s ease-in-out; /* Add transition for arrow on hover */
+}

@@ -5,10 +5,10 @@ function CenterHeading({
 }) {
     return (
         <>
-            <div className="flex flex-col justify-center items-center mb-16">
+            <div className="flex flex-col justify-center items-center mb-5">
                 <div className="w-full sm:w-1/2 text-center">
-                    <div className={`text-heading-01 leading-heading-01 font-semibold ${desc ? 'mb-6' : ''}`} style={{color:textColor}}>{heading}</div>
-                    <div className={`text-lg font-semibold `} style={{color:textColor}}>{desc}</div>
+                    <div className={`text-heading-01 leading-heading-01 font-semibold ${textColor} ${desc ? 'mb-6' : ''}`}>{heading}</div>
+                    <div className={`text-subtitle-01 leading-subtitle-01 font-semibold ${textColor} mb-8 `}>{desc}</div>
                 </div>
             </div>
         </>

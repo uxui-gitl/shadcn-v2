@@ -151,9 +151,9 @@ const EnterpriseSuite = () => {
       cardHeading: "Manufacturing",
       cardDesc: "jzhsdvgjh dqwjhydvikqhw dyiqbw dkhn iku",
       isArrow: true,
-      cardTextColor: "white",
+      cardTextColor: "text-neutral-white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+      <ul class="space-y-4 list-disc list-inside text-primary-900 ">
     <li>
         Manufacturing
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
@@ -175,9 +175,9 @@ const EnterpriseSuite = () => {
       cardDesc:
         "AI-driven workflows, OCR and rule-based system enables accurate results",
       isArrow: true,
-      cardTextColor: "white",
+      cardTextColor: "text-neutral-white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <ul class="space-y-4 list-disc list-inside text-primary-900 ">
     <li>
         Retail & Distribution
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
@@ -197,9 +197,9 @@ const EnterpriseSuite = () => {
       cardDesc:
         "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
       isArrow: true,
-      cardTextColor: "white",
+      cardTextColor: "text-neutral-white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+     <ul class="space-y-4 list-disc list-inside text-primary-900 ">
     <li>
         Healthcare
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
@@ -219,9 +219,9 @@ const EnterpriseSuite = () => {
       cardDesc:
         "",
       isArrow: true,
-      cardTextColor: "white",
+      cardTextColor: "text-neutral-white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+      <ul class="space-y-4 list-disc list-inside text-primary-900 ">
     <li>
         Project
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
@@ -242,9 +242,9 @@ const EnterpriseSuite = () => {
       cardHeading: "Professional services",
       cardDesc: "",
       isArrow: true,
-      cardTextColor: "white",
+      cardTextColor: "text-neutral-white",
       additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+     <ul class="space-y-4 list-disc list-inside text-primary-900 ">
     <li>
         Professional services
         <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
@@ -273,32 +273,7 @@ const EnterpriseSuite = () => {
       />
       {/* End--HeroBanner-Section=============================================================== */}
 
-      {/* Start--SectionNavigation============================================================== */}
-      <SectionNav
-        // Solutions
-        // Benefits
-        // Why Us
-
-        arr={[
-          {
-            _id: 1,
-            title: "Solutions",
-            link: "#Solutions",
-          },
-          {
-            _id: 2,
-            title: "Benefits",
-            link: "#Benefits",
-          },
-          {
-            _id: 3,
-            title: "Why Us",
-            link: "#WhyUs",
-          },
-        ]}
-      />
-
-      {/* End--SectionNavigation================================================================ */}
+      
 
       {/* Start--OverviewSection============================================================== */}
       <OverviewSection
@@ -325,7 +300,8 @@ const EnterpriseSuite = () => {
         desc={
           "We deliver high-end enterprise solutions, spanning from core ERP suite to accelerators across complete business spectrum."
         }
-        color={"#1D162B"}
+        color={"text-primary-900"}
+   
       />
 
       {/* End--Service--Section======================================================== */}
@@ -333,12 +309,12 @@ const EnterpriseSuite = () => {
       <CommonCardThreeSlider
         ID={"AIOfferings"}
         sectionImageUrl={""}
-        sectionBGColor={"#1D162B"}
+        sectionBGColor={"bg-primary-900"}
         sectionHeading={"Accelerators"}
         sectionDesc={
           "Enhancing business apps, our solutions integrate seamlessly, delivering value with expert support & streamlined processes."
         }
-        sectionTextColor={"#FFF"}
+        sectionTextColor={"text-neutral-white"}
         sectionHeaderMaxWidth={"40%"}
         x
         cardData={SOLUTION_DATA}
@@ -352,7 +328,8 @@ const EnterpriseSuite = () => {
       <HubExpertise
         setHeading="The Hub of Expertise"
         setDesc="We are here to build competitive edge with technology brilliance for businesses across the world."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
+        BGColor="bg-primary-900"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={3} //Define how many columns you want to display
       />
@@ -366,7 +343,7 @@ const EnterpriseSuite = () => {
         Desc={
           "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era."
         }
-        Color={"white"}
+        Color={"text-neutral-white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
@@ -374,9 +351,9 @@ const EnterpriseSuite = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={''}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
       {/* Section--TransformBusinessForm======================================================================= */}

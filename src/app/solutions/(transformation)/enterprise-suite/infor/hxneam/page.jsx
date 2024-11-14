@@ -260,10 +260,10 @@ const page = () => {
       <CommonCardTwoSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+        sectionBGColor={'bg-neutral-light-grey'}
         sectionHeading={'Core Capabilities'}
         sectionDesc={'HxGN EAM dynamically adapts to asset lifecycle stages ensuring higher efficiency, consistently.'}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
         setHeadingLayout="horizontal"
@@ -274,15 +274,15 @@ const page = () => {
 
       <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Benefits of HxGN EAM'}
         sectionDesc={`Hexagon EAM's modular architecture adapts to changing business needs, ensuring seamless system integration`}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BENEFITS_CARDS_DATA} 
         sectionHeadingMaxWidth={'100%'}
       />
 
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='#FFFFFF' />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='bg-neutral-white' />
 
 
       <BlogSection
@@ -293,7 +293,7 @@ const page = () => {
           "Customizing HxGN EAM is not just a desirable feature, but a strategic imperative that can propel your organization to the forefront of efficiency and productivity."
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
      <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={''}

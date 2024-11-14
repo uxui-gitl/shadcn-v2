@@ -13,6 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
 
 import Image from "next/image";
 const page = () => {
@@ -43,7 +44,7 @@ const page = () => {
       cardHeading: 'Infor CloudSuite Industrial Enterprise ',
       cardDesc: `<p>Enables manufacturing and distribution businesses with modern, scalable and agile ERP functionalities<p>
       
-<ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+<ul class=" my-2 space-y-2 text-primary-900 list-disc list-inside">
     <li>Financials</li> 
     <li> Supply Chain Management </li>
     <li>Manufacturing </li>
@@ -62,7 +63,7 @@ const page = () => {
       cardBGColor: '#fff',
       cardHeading: 'Infor CloudSuite Automotive (Infor LN)',
       cardDesc: `<div>Offers comprehensive features for automotive manufacturers, supporting everything from supply chain management to production control</div>
-      <ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+     <ul class=" my-2 space-y-2 text-primary-900 list-disc list-inside">
     <li>Quality and production</li> 
     <li> Supply chain visibility</li>
     <li>Planning and inventory </li>
@@ -81,7 +82,7 @@ const page = () => {
       cardBGColor: '#fff',
       cardHeading: 'Infor CloudSuite Aerospace & Defense (Infor LN)',
       cardDesc: `<div>Solution tailored to unique demands of highly regulated aerospace and defense industry</div>
-       <ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+      <ul class=" my-2 space-y-2 text-primary-900 list-disc list-inside">
     <li>Planning and production</li> 
     <li> Contract Management</li>
     <li>Regulations & Compliance</li>
@@ -99,7 +100,7 @@ const page = () => {
       cardBGColor: '#E4E4E4',
       cardHeading: 'Infor CS Engineering and Construction ',
       cardDesc: `Fulfils the exclusive needs of engineering and construction industry 
-      <ul class=" my-7 space-y-4 text-gray-500 list-disc list-inside text-black">
+     <ul class=" my-2 space-y-2 text-primary-900 list-disc list-inside">
     <li>Project Management </li> 
     <li> Document Management </li>
     <li>Financial Management </li>
@@ -153,17 +154,17 @@ const page = () => {
       <CommonCardThreeSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+        sectionBGColor={'bg-neutral-light-grey'}
         sectionHeading={'Our Infor CloudSuite offerings'}
         sectionDesc={""}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         cardData={serviceOfferingData}
       >
 
       </CommonCardThreeSlider>
 
-      <div className="" style={{ backgroundColor: '#1D162B'}}>
-        <div className="md:container mx-auto px-10 pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+      <div className="container mx-auto bg-primary-900 rounded-3xl">
+        <div className=" rounded-3xl py-32 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-full md:w-1/2">
             <SectionHeading
               Heading={`Infor CloudSuite Services`}
@@ -176,11 +177,13 @@ const page = () => {
             <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
         </div>
-        <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
+        <div className="container mx-auto bg-white py-20" style={{ zindex: '2', position:'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
           <Swiper
             slidesPerView={1}
             navigation={false}
             pagination={{ type: "bullets", clickable: true }}
+            followFinger={true}
+            modules={[Navigation, Pagination]}
             autoplay={true}
             loop={false}
             spaceBetween={30}
@@ -202,9 +205,9 @@ const page = () => {
             {['Consulting', 'Implementation', 'Managed Services', 'Migration and Upgrade ',]?.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                    <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                    <img className="rounded-3xl mx-auto md:mx-2" src="/infor/blackstar.svg" alt="" />
                   <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold">{item}</h5>
+                      <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">{item}</h5>
                   </div>
                  
                 </div>
@@ -216,10 +219,10 @@ const page = () => {
 
       <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Infor CloudSuite Benefits'}
         sectionDesc={'With deep industry-specific functionalities, Infor CloudSuite offers responsive business environment, driving competitive differentiation.'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
@@ -232,16 +235,16 @@ const page = () => {
           "This blog discusses the crucial role of Infor OS in enhancing user experiences within Infor CloudSuite. It also explores the significance of Infor OS and its various applications."
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
 
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted Customers share their Successful Experience"}
         Desc={''}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
 

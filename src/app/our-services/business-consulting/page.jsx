@@ -213,21 +213,21 @@ bgCardColor: '#FCE6F4'
       />
       <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
       
-      <SectionWrapper BGColor="black">
-        <div className="md:container mx-auto">
+      <SectionWrapper BGColor="bg-primary-900">
+        <div className="container mx-auto py-32">
           <SectionHeading
             layout="horizontal"
-            Color="white"
+            Color="text-neutral-white"
             headingContainerWidth="w-full"
             Heading="Knocking Business Challenges"
             Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
           ></SectionHeading>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
-            <ul className=" space-y-4 w-full text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ul className=" space-y-4 w-full text-neutral-white">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
                   key={challenge.id}
-                  className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                  className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                 >
                   <div className="flex-shrink-0 mr-4">
                     <Image
@@ -238,7 +238,7 @@ bgCardColor: '#FCE6F4'
                     />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-2xl font-normal">
+                    <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                       {challenge.title}
                     </h3>
                   </div>
@@ -253,23 +253,24 @@ bgCardColor: '#FCE6F4'
 
       </SectionWrapper>
 
-      <SectionWrapper BGColor="#5F22D9">
-        <div className="md:container mx-auto">
+      <SectionWrapper BGColor="bg-primary-500">
+        <div className="container mx-auto py-32">
           <SectionHeading
+            center={false}
             layout="horizontal"
-            Color="white"
+            Color="text-neutral-white"
             headingContainerWidth="w-full"
             Heading="Business Consulting Services"
             Desc="With deep digital experience and broad global reach, we help enterprises to embrace the digital future that enhances decision-making across the organisation."
           ></SectionHeading>
-          <div className="grid grid-cols-1 gap-4 mt-4 md:mt-16">
+          <div className="grid grid-cols-1 gap-4 mt-16">
             <div>
-              <div className="grid grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <ul className=" space-y-4 w-full text-white">
                   {ourServices1.map((challenge, index) => (
                     <li
                       key={challenge.id}
-                      className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                      className={`flex items-start py-2 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                     >
                       <div className="text-left">
                         <h3 className="text-2xl font-normal">
@@ -283,7 +284,7 @@ bgCardColor: '#FCE6F4'
                   {ourServices2.map((challenge, index) => (
                     <li
                       key={challenge.id}
-                      className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                      className={`flex items-start py-2 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                     >
                       <div className="text-left">
                         <h3 className="text-2xl font-normal">
@@ -309,13 +310,13 @@ bgCardColor: '#FCE6F4'
         sectionBGColor="#EFE9FB"
       /> */}
 
-      <SectionWrapper BGColor="#1D162B">
-        <div className="md:container mx-auto">
+      <SectionWrapper BGColor="bg-primary-900">
+        <div className="container mx-auto py-32">
           <div className="flex justify-center items-center flex-col">
             <div className="w-full md:w-1/2 mb-10">
               <SectionHeading
                 center
-                Color="white"
+                Color="text-neutral-white"
                 headingContainerWidth="w-full"
                 Heading="Consulting Service Approach"
                 Desc="The foundation of our consulting service is strengthened by our ACT model, facilitating growth and success in a dynamic competitive landscape. "
@@ -337,7 +338,8 @@ bgCardColor: '#FCE6F4'
           "One of the most effective ways to achieve this is through process improvement strategies. By refining workflows, eliminating bottlenecks, and streamlining operations, businesses can enhance productivity, reduce costs and drive growth. In this blog, we'll explore the importance of process improvement and discuss key strategies for implementing it effectively."
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
+        BGColor={"bg-primary-900"}
       ></BlogSection>
       
       <DistinctiveSection DistinctiveData={distinctiveData}
@@ -346,7 +348,7 @@ bgCardColor: '#FCE6F4'
       </DistinctiveSection>
         
  {/* Section--Case-Studies======================================================================= */}
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor='#FFFFFF' />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor='bg-neutral-white' />
       {/* End-Section--Case-Studies */}
       
       <TransformBusinessForm

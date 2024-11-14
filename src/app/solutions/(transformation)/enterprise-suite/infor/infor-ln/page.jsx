@@ -232,10 +232,10 @@ const page = () => {
  <CommonCardTwoSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
-        sectionBGColor={'#E1F2EF'}
+        sectionBGColor={'bg-primary-10'}
         sectionHeading={'Key Capabilities'}
         sectionDesc={'Infor LN is an ERP solution for operations-intensive organizations, offering advanced capabilities to optimize business performance.'}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
         setHeadingLayout='horizontal'
@@ -246,20 +246,20 @@ const page = () => {
       <CommonCardThreeSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Infor Accelerators'}
         sectionDesc={'Enhancing the functionalities of business applications, our specialized solutions intend to add value to business with handy support.'}
-        sectionTextColor={'#fff'}
+        sectionTextColor={'text-neutral-white'}
         cardData={RPASolution2}
       />
 
         <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />
         <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Benefits of Infor LN'}
         sectionDesc={''}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />

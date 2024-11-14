@@ -6,14 +6,14 @@ function CommonCardTwo({ Item }) {
     const {
         cardBGImageUrl = "",
         cardBGColor = "",
-        cardTextColor = "#000",
+        cardTextColor = "text-primary-900",
         cardTitle = "",
         cardIconUrl = "",
         cardHeading = "",
         cardDesc = "",
         isArrow = "true",
         cardType = '',
-        arrowColor = "#FFF",
+        arrowColor = "text-neutral-white",
         downImageUrl='',
     } = Item;
 
@@ -22,32 +22,32 @@ function CommonCardTwo({ Item }) {
         <>
             <div className={`${style.commonCardTwoWrapper}`}>
                 <div
-                    className={`rounded-3xl shadow min-h-[424px] flex flex-col justify-between ${style.commonCardTwo}`} style={{
+                    className={`rounded-3xl shadow min-h-[524px] flex flex-col justify-between ${style.commonCardTwo}`} style={{
                         background: `url(${cardBGImageUrl}), ${cardBGColor}`,
                         backgroundPosition:'center center',
                         backgroundSize:'cover',
                         color: cardTextColor,
                         width: "100%",
-                        minHeight: '550px',
+                        minHeight: '580px',
                     }}
                 >
-                    <div className={`p-10 flex-grow ${cardType == 2 && style.type2}`}>
-                        {cardTitle && <div className={`text-[#E0028E] text-[20px] mb-12 ${style.cardTitle}`}>{cardTitle}</div>}
+                    <div className={`p-5 flex-grow ${cardType == 2 && style.type2}`}>
+                        {cardTitle && <div className={`text-[#E0028E] text-body-01 mb-3 ${style.cardTitle}`}>{cardTitle}</div>}
                         {cardIconUrl && (
                             <div className={`mb-8 cardIcon  ${style.cardIcon}`}>
-                                <Image src={cardIconUrl} alt="" width={53} height={53} />
+                                <Image src={cardIconUrl} alt="" width={54} height={54} />
                             </div>
                         )}
                         {cardHeading && (
                             <h5
-                                className={` text-[42px] leading-[48px] font-semibold ${style.cardHeading}`}
+                                className={`text-heading-01 leading-heading-01 font-semibold ${style.cardHeading}`}
                                 dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                             />
                         )}
 
                         {cardDesc && (
                             <p
-                                className={`my-8 font-normal ${style.cardDesc}`}
+                                className={`my-4 text-body-01 leading-body-01 font-normal ${style.cardDesc}`}
                                 dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                             />
                         )}

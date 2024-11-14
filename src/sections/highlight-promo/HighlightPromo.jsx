@@ -37,7 +37,7 @@ const HighlightPromo = ({
 
   return (
     <SectionWrapper
-      BGColor="#BEBEBE"
+      BGColor="bg-primary-10"
       Padding={setPadding}
       style={{
         backgroundImage: `url(${setImageBGURL})`,
@@ -46,14 +46,13 @@ const HighlightPromo = ({
         position: 'relative',
       }}
     >
-      <div className="md:container mx-auto px-10">
+      <div className={`container mx-auto ${setPadding ? 'py-32' : ''}`}>
         <div
           className={` flex flex-col md:flex-row gap-8`}
           style={conditionalBlurStyles}
         >
           <div
-            className="flex-1 py-8 md:py-12 lg:py-48"
-            style={conditionalPadding}
+            className={`flex-1 pb-2  ${setPadding ? '' : 'py-32'}`}
           >
             <SectionHeading
               Heading={setHeading}
@@ -63,20 +62,20 @@ const HighlightPromo = ({
             />
             {setLogoImages && (
               <section className="w-full md:w-1/2">
-                <div className="flex flex-col md:flex-row gap-8 mb-8">
-                  <div className="flex-1">
-                    <Image src={logoImages[0]} alt="Logo 1" width={264} height={264} />
+                <div className="flex flex-col md:flex-row gap-8 mb-2">
+                  <div className="flex-1 bg-slate-400">
+                    <Image src={logoImages[0]} alt="image size" width={264} height={120} />
                   </div>
                   <div className="flex-1">
-                    <Image src={logoImages[1]} alt="Logo 2" width={264} height={264} />
+                    <Image src={logoImages[1]} alt="Logo 2" width={264} height={120} />
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row gap-8 mb-8">
+                <div className="flex flex-col md:flex-row gap-8 mb-2">
                   <div className="flex-1">
-                    <Image src={logoImages[2]} alt="Logo 3" width={264} height={264} />
+                    <Image src={logoImages[2]} alt="Logo 3" width={264} height={120} />
                   </div>
                   <div className="flex-1">
-                    <Image src={logoImages[3]} alt="Logo 4" width={264} height={264} />
+                    <Image src={logoImages[3]} alt="Logo 4" width={264} height={120} />
                   </div>
                 </div>
               </section>
@@ -101,25 +100,25 @@ const HighlightPromo = ({
           )}
 
           {setMSLogoURL && (
-            <div className="flex-1 flex flex-col justify-end items-end">
+            <div className="w-full flex-1 flex flex-col justify-center items-center">
               <Image
                 src={setMSLogoURL}
                 alt="MS Logo"
                 width={324}
                 height={324}
-                className="p-8"
+            
               />
             </div>
           )}
 
           {setMsAzureLogoURL && (
-            <div className="flex-1 flex flex-col justify-end items-end">
+            <div className="w-full flex-1 flex flex-col justify-center items-center mb-8">
               <Image
                 src={setMsAzureLogoURL}
                 alt="MS Logo"
                 width={324}
                 height={324}
-                className="p-8"
+             
               />
             </div>
           )}

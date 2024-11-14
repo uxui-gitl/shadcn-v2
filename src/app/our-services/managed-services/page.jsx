@@ -11,6 +11,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
+import { Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -245,7 +246,7 @@ const page = () => {
     },
     {
       id: 2,
-      cardHeading: "Ms Dynamics",
+      cardHeading: "MS Dynamics",
     },
     {
       id: 3,
@@ -294,20 +295,20 @@ const page = () => {
       <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you to focus on core business`} />
 
       <SectionWrapper style={{ background: `url(/services/mg01.svg)`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-        <div className="md:container mx-auto">
+        <div className="container mx-auto bg-[#95e0db] py-32">
           <SectionHeading
             layout="horizontal"
-            Color="white"
+            Color="text-primary-900"
             headingContainerWidth="w-full"
             Heading="Knocking Business Challenges"
             Desc="Absence of expert managed services results in various business obstacles, difficulty in transforming business operations and addressing transactional needs, ultimately impacting growth and productivity."
           ></SectionHeading>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
-            <ul className=" space-y-4 w-full text-white">
+            <ul className=" space-y-4 w-full text-primary-900">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
                   key={challenge.id}
-                  className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                  className={`flex items-start py-2 border-b-[0.5px] border-neutral-black border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                 >
                   <div className="flex-shrink-0 mr-4">
                     <Image
@@ -318,7 +319,7 @@ const page = () => {
                     />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-2xl font-normal">
+                    <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                       {challenge.title}
                     </h3>
                   </div>
@@ -333,23 +334,23 @@ const page = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <div className="InforSliderWrapper rounded-3xl" style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
+        <div className="InforSliderWrapper rounded-3xl py-32" style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
           <div className="flex md:flex-row flex-col md:py-10 px-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
             <div className="w-full md:w-3/12">
-              <h1 className="text-[54px] font-[600] leading-[64px]">Technology
+              <h1 className="text-heading-01 leading-heading-01 font-semibold text-center md:text-center">Technology
                 Spectrum</h1>
             </div>
             <div className="w-full md:w-9/12 my-6 md:my-0">
               <Swiper
                 slidesPerView={1}
-                navigation={false}
+                navigation={true}
                 pagination={{ type: "bullets", clickable: true }}
                 autoplay={true}
                 loop={false}
-                spaceBetween={30}
+                spaceBetween={32}
                 breakpoints={{
                   640: {
-                      slidesPerView: 1,
+                      slidesPerView: 2,
                       spaceBetween: 16,
                   },
                   768: {
@@ -364,7 +365,7 @@ const page = () => {
               >
                 {TECHNOLOGYSPECTRUM_DATA?.map((item, index) => (
                   <SwiperSlide key={item}>
-                    <div className="w-full text-[28px] font-semibold text-center">
+                    <div className="w-full text-heading-02 leading-heading-02 font-semibold text-center">
                       {/* <Image className="rounded-t-lg" width={100} height={50} src="" alt="" /> */}
                       {item.cardHeading}
                     </div>
@@ -376,8 +377,8 @@ const page = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper BGColor="#1D162B">
-        <div className="md:container mx-auto">
+      <SectionWrapper BGColor="bg-primary-900">
+        <div className="container mx-auto rounded-3xl py-32">
           <div className="flex justify-center items-center flex-col">
             <div className="w-full md:w-1/2 mb-10">
               <SectionHeading
@@ -402,19 +403,20 @@ const page = () => {
         sectionDesc={
           "Flexible, Scalable, and Secure Managed Solutions for Ambitious Businesses."
         }
-        sectionTextColor="#ffffff"
+        sectionTextColor="text-neutral-white"
         cardData={DATA_MGMT_DATA}
-        sectionBGColor="#5F22D9"
+        sectionBGColor="bg-primary-500"
         setHeadingLayout="horizontal"
+        setMinHeight="min-h-[40rem]"
       />
 
       <CommonCardThreeSlider
         ID={'AIOfferings'}
         sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Benefits of Managed Services'}
         sectionDesc={''}
-        sectionTextColor={'#fff'}
+        sectionTextColor={'text-neutral-white'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
       >
@@ -425,20 +427,20 @@ const page = () => {
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"2"}
-        bgColor="#FFFFFF"
+        bgColor="text-neutral-white"
       />
 
       <HubExpertise
-        BGColor="#7B014E"
+        BGColor="bg-secondary-700"
         setHeading="Hub of Expertise"
         setDesc="We are here to build edge and bring technology brilliance with the finest in the industry."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
         counters={HUBEXPERTISE_COUNTER_DATA}
       />
 
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Managed Services: The Promised Land?'}
         Desc={'Reaching the Promised land is no mean feat. Not all can endure the journey but those who do, are surely the chosen ones. With this biblical analogy let’s try to decode Managed Services.'}
-        Color={'white'}
+        Color={'text-neutral-white'}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=10"}
       ></BlogSection>
 

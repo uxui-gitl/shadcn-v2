@@ -29,7 +29,7 @@ function CommonCardAdditionalData({ Item, setpageID }) {
                     minHeight: cardBodyMinHeight,
                 }}
             >
-                <div className={`p-10 flex-grow ${style.cardBody}`}>
+                <div className={`p-5 flex-grow ${style.cardBody}`}>
                     {cardTitle && <div className={`text-[#E0028E] mb-8 ${style.cardTitle}`}>{cardTitle}</div>}
                     {cardIconUrl && (
                         <div className="pb-8 cardIcon">
@@ -38,7 +38,7 @@ function CommonCardAdditionalData({ Item, setpageID }) {
                     )}
                     {cardHeading && (
                         <h5
-                            className={` text-[42px] leading-[48px] font-semibold ${style.cardHeading}`}
+                            className={` text-heading-02 leading-heading-02 font-semibold ${style.cardHeading}`}
                             dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                         />
                     )}
@@ -48,7 +48,7 @@ function CommonCardAdditionalData({ Item, setpageID }) {
                             {additionalData?.map((data, index) => (
                                 <>
                                     <div className="" key={index} style={{ borderBottom: '1px solid #d3d3d3', padding: '10px' }}>
-                                        <p className="text-[18px] font-medium">{data?.text}</p>
+                                        <p className="text-body-01 leading-body-01 font-medium">{data?.text}</p>
                                     </div>
                                 </>
                             ))}

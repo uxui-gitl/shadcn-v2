@@ -188,20 +188,19 @@ const page = () => {
       />
 
       <SectionWrapperNew
-        sectionHeading={''}
-        sectionDesc={''
-        }
-        sectionTextColor="white"
+       
+        sectionTextColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
-        style={{ backgroundColor: "#2B1624" }}>
+        bgColor={'bg-secondary-900'}
+       >
         <Slider>
           {RPASolution?.map((item, index) => (
             <SwiperSlide key={index}>
               {index == 0 ? (
 
-                <div className="rounded-3xl shadow min-h-[540px] py-10 px-7" style={{ backgroundColor: '#5F22D9' }}>
-                  <h5 className="mb-10 text-[42px] font-semibold tracking-tight text-white leading-[50px]">Solutions for Transforming Customer Experience</h5>
-                  <p className="mb-3 text-[22px] text-white">We understand that partnering with an expert is paramount to deliver remarkable customer experiences. Thus, we partner with market-</p>
+                <div className="rounded-3xl shadow min-h-[540px] py-5 px-7 bg-primary-400">
+                  <h5 className="mb-10 text-heading-01 leading-heading-01 font-semibold text-neutral-white">Solutions for Transforming Customer Experience</h5>
+                  <p className="mb-3 text-body-01 font-medium text-neutral-white">We understand that partnering with an expert is paramount to deliver remarkable customer experiences. Thus, we partner with market-</p>
                 </div>
 
               ) : (<CommonCardThree Item={item}></CommonCardThree>)}
@@ -211,25 +210,25 @@ const page = () => {
 
       </SectionWrapperNew>
 
-      <SectionWrapperNew style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      <SectionWrapperNew style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
         sectionHeading={'Customer experience Service'}
         sectionDesc={'Delivering experience of unified commerce with advanced retail management applications and ensuring personalized journey for every shopper.'
         }
-        sectionTextColor="white"
+        sectionTextColor="text-neutral-white"
         sectionHeadingLayout="center"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <div className=" p-10 bg-[#5F22D9] rounded-3xl">
-              <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
-              <p className="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
+            <div className=" p-8 bg-[#5F22D9] rounded-3xl">
+              <h5 className="mb-2 text-heading-02 leading-heading-02 font-bold text-neutral-white">LS Central for Retail</h5>
+              <p className="mb-3 text-body-01 leading-body-01font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
 
             </div>
           </div>
           <div>
-            <div className=" p-10 bg-[#F18BCB] rounded-3xl">
-              <h5 className="mb-2 text-[42px] leading-[50px] font-bold text-white tracking-tight">LS Central for Retail</h5>
-              <p className="mb-3 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
+            <div className=" p-8 bg-[#F18BCB] rounded-3xl">
+              <h5 className="mb-2 text-heading-02 leading-heading-02 font-bold text-neutral-white">LS Central for Retail</h5>
+              <p className="mb-3 text-body-01 leading-body-01 font-normal text-white ">Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.</p>
             </div>
           </div>
         </div>
@@ -250,18 +249,18 @@ const page = () => {
 
       <BenefitSliderSection
         ID={'AIOfferings'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Customer Experience Transformation'}
         sectionDesc={'Maximizing Business Opportunities &Building Resilient Brand'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={benifitsCardsData}
       ></BenefitSliderSection>
 
       <HubExpertise
-        BGColor={'#5F22D9'}
+        BGColor={'bg-primary-400'}
         setHeading="The Hub of Expertise"
         setDesc="We are here to build competitive edge with technology brilliance for businesses across the world."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={3} //Define how many columns you want to display
       />
@@ -274,9 +273,9 @@ const page = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={''}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
       <TransformBusinessForm

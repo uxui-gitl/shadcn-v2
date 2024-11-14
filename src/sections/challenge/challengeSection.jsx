@@ -13,11 +13,11 @@ const ChallengeSection = ({
 }) => {
     return (
         <>
-            <div className="">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                    <div className="hidden md:block" style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat' }}>
+            <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-3xl min-h-[720px]">
+                    <div className="" style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat', backgroundPosition: 'center' }}>
                     </div>
-                    <div className="py-20 px-10 md:px-20" style={{ backgroundColor: bgColor }}>
+                    <div className={`px-5 py-10 rounded-3xl ${bgColor}`}>
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}
@@ -25,11 +25,11 @@ const ChallengeSection = ({
                             headingContainerWidth={'w-full'}
                         />
 
-                        <ul className="mt-2 space-y-4 w-full text-white">
+                        <ul className=" w-full text-neutral-white">
                             {setChallengesList.map((challenge, index) => (
                                 <li
                                     key={challenge.id}
-                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
+                                    className={`flex items-start py-4  border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === setChallengesList.length - 1 ? 'border-b-0' : ''}`}
                                 >
                                     <div className="flex-shrink-0 mr-4">
                                         <Image
@@ -40,7 +40,7 @@ const ChallengeSection = ({
                                         />
                                     </div>
                                     <div className="text-left">
-                                        <h3 className="text-2xl font-normal">
+                                        <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                                             {challenge?.title}
                                         </h3>
                                     </div>
@@ -51,7 +51,7 @@ const ChallengeSection = ({
                     </div>
                 </div>
             </div>
-            <div className="md:container mx-auto  justify-end hidden">
+            <div className="container mx-auto py-32 justify-end hidden">
                 <div className="w-full lg:w-1/2 flex flex-col items-start">
                     <SectionHeading
                         Heading={setHeading}
@@ -74,7 +74,7 @@ const ChallengeSection = ({
                                     />
                                 </div>
                                 <div className="text-left">
-                                    <h3 className="text-2xl font-normal">
+                                    <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                                         {challenge.title}
                                     </h3>
                                 </div>
@@ -84,7 +84,7 @@ const ChallengeSection = ({
                 </div>
             </div>
         </>
-        // </SectionWrapper>
+       
     );
 }
 

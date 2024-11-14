@@ -6,17 +6,17 @@ function CommonCardTwo({ Item }) {
     const {
         cardBGColor = "",
         cardTopImageUrl = "",
-        cardTextColor = "#000",
+        cardTextColor = "text-primary-900",
         cardHeading = "",
         cardDesc = "",
         isArrow = "true",
-        arrowColor = "#000",
+        arrowColor = {},
     } = Item;
 
 
     return (
         <>
-            <div className={`rounded-3xl shadow min-h-[424px] flex flex-col ${style.commonCardThree}`} style={{
+            <div className={`relative rounded-3xl shadow min-h-[524px] flex flex-col ${style.commonCardThree}`} style={{
                 backgroundColor: `${cardBGColor}`,
                 color: cardTextColor,
                 width: "100%",
@@ -24,13 +24,13 @@ function CommonCardTwo({ Item }) {
                 maxHeight:'540px'
             }}>
                 {cardTopImageUrl && 
-                <div style={{maxHeight: '283px', overflow:'hidden'}}>
+                <div style={{minHeight: '224px', overflow:'hidden'}}>
                 <img className={`rounded-t-3xl ${style.topImage}`} style={{width:'100%' }} src={cardTopImageUrl} alt="" />
                 </div>}
                 <div className={ `p-5 ${style.cardbody}`} style={{backgroundColor:cardBGColor}}>
                     {cardHeading && (
                         <h5
-                            className={` text-[28px] leading-[36px] font-semibold ${style.cardHeading}`}
+                            className={` text-heading-02 leading-heading-02 font-semibold mb-4 ${style.cardHeading}`}
                             dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                         />
                     )}
@@ -38,55 +38,19 @@ function CommonCardTwo({ Item }) {
 
                     {cardDesc && (
                         <p
-                            className={`my-6 font-normal ${style.cardDesc}`}
+                            className={`mb-16 text-body-01 leading-body-01 font-normal ${style.cardDesc}`}
                             dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                         />
                     )}
                 </div>
                 {isArrow && (
-                        <div className={`flex justify-end px-6 py-4 ${style.isArrow}`}>
-                            <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
+                        <div className={`absolute flex justify-end mt-4 bottom-5 right-5`}>
+                            <OutlinedButtonWithArrow arrowColor={cardTextColor} size={24} />
                         </div>
                     )}
             </div>
 
-            {/* <div
-                    className={`rounded-3xl shadow min-h-[424px] flex flex-col justify-between ${style.commonCardThree}`} style={{
-                        background: `url(${cardBGImageUrl}), ${cardBGColor}`,
-                        color: cardTextColor,
-                        width: "100%",
-                        minHeight: '550px',
-                    }}
-                >
-                    <div className={`p-10 flex-grow ${cardType == 2 && style.type2}`}>
-                        {cardTitle && <div className={`text-[#E0028E] text-[20px] mb-12 ${style.cardTitle}`}>{cardTitle}</div>}
-                        {cardIconUrl && (
-                            <div className={`mb-8 cardIcon  ${style.cardIcon}`}>
-                                <Image src={cardIconUrl} alt="" width={53} height={53} />
-                            </div>
-                        )}
-                        {cardHeading && (
-                            <h5
-                                className={` text-[42px] leading-[48px] font-semibold ${style.cardHeading}`}
-                                dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
-                            />
-                        )}
-
-                        {cardDesc && (
-                            <p
-                                className={`my-8 font-normal ${style.cardDesc}`}
-                                dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
-                            />
-                        )}
-                    </div>
-                    {isArrow && (
-                        <div className="flex justify-end px-6 py-4">
-                            <OutlinedButtonWithArrow arrowColor={arrowColor} size={48} />
-                        </div>
-                    )}
-
-
-                </div> */}
+            
         </>
     );
 }

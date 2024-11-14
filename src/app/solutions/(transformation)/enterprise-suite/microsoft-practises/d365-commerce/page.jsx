@@ -327,16 +327,16 @@ const D365Commerce = () => {
       <SectionWrapperNew
         sectionHeading={'Retail Business Challenges'}
         sectionDesc={'Retailers face a pressing need to evolve with tech-savvy customers, prioritizing personalized connections and seamless interactions. '}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeadingLayout="left"
         style={{ background: `url('/Transformation/d365/chbg1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ul className=" space-y-4 w-full text-[#000]">
+          <ul className=" space-y-4 w-full text-primary-900">
             {CHALLENGES_LIST_DATA.map((challenge, index) => (
               <li
                 key={challenge.id}
-                className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                className={`text-body-01 leading-body-01 flex items-start py-2 border-b-[0.5px] border-neutral-black border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
               >
                 <div className="flex-shrink-0 mr-4">
                   <Image
@@ -348,7 +348,7 @@ const D365Commerce = () => {
                   />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-2xl font-normal">
+                  <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                     {challenge.title}
                   </h3>
                 </div>
@@ -363,20 +363,18 @@ const D365Commerce = () => {
       {/* End--Section--Challenges======================================================================== */}
       {/* Start--Section--UltimateChoice======================================================================== */}
       {/* key section */}
-      <div className="" style={{overflow:'hidden', position:'relative'}}>
-        <div className="py-16 rounded-3xl sm:py-32 px-10" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
-          <div className="md:container mx-auto">
-            <HorizontalHeading heading={'D365 Commerce Key Capabilities'} desc={'Optimise retail business with personalized experiences & enhanced employee productivity'} textColor={'#fff'} ></HorizontalHeading>
+      <div className="rounded-3xl" style={{overflow:'hidden', position:'relative'}}>
+        <div className="" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
+          <div className="container mx-auto py-32">
+            <HorizontalHeading heading={'D365 Commerce Key Capabilities'} desc={'Optimise retail business with personalized experiences & enhanced employee productivity'} textColor={'text-neutral-white'} ></HorizontalHeading>
             <Slider slidesPerView={3.2}>
             {KEY_CAPABILITIES?.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="p-6 bg-[transparent] relative" style={{ borderRight: '1px solid #d3d3d3' }}>
+                <div className="p-6 bg-[transparent] relative " style={{ border: '1px solid #3e3e3e', borderRadius: '24px', borderOpacity: '0.3'}}>
                   <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                   <div className="text-[28px] text-white h-[84px]">{item?.CardHeading}</div>
                   <p className="text-[16px] py-4 text-white h-[104px]">{item?.CardDesc}</p>
-                  {/* <div className="flex justify-end bottom-4 right-4">
-                    <OutlinedButtonWithArrow size={48} arrowColor="white" onClick={() => handleKeyModal(true, item)} />
-                  </div> */}
+            
                 </div>
               </SwiperSlide>
             ))}
@@ -387,12 +385,12 @@ const D365Commerce = () => {
         {/* additional data flip card */}
         <div className={`bg-[white] z-10 py-10 px-10 rounded-3xl h-full w-full duration-200 left-0  absolute  ${iskeyModalActive ? '-translate-y-[95%]' : 'translate-y-full'}`} style={{backgroundImage: "linear-gradient(white 50%, #DCCFF6 100%)"}}>
           <div className="flex justify-between pb-20">
-          <Image src={"/about/whiteStar.svg"} width={50} height={50} alt={"hioasdo"} style={{filter:'brightness(0)'}} className="" />
+          <Image src={"/about/whiteStar.svg"} width={50} height={50} alt={""} style={{filter:'brightness(0)'}} className="" />
             <h1 onClick={() => handleKeyModal(false)}>close</h1>
             </div>
             {/* heading */}
             <div className="">
-            <HorizontalHeading heading={keyModalData?.CardHeading} desc={keyModalData?.CardDesc} textColor={'#000'} ></HorizontalHeading>
+            <HorizontalHeading heading={keyModalData?.CardHeading} desc={keyModalData?.CardDesc} textColor={'text-neutral-white'} ></HorizontalHeading>
               </div>
               <div className="">
               <p dangerouslySetInnerHTML={{ __html: keyModalData?.additionalData }} />
@@ -410,12 +408,12 @@ const D365Commerce = () => {
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
         ID={"BENEFIT"}
-        sectionBGColor={"#1D162B"}
+        sectionBGColor={"bg-secondary-900"}
         sectionHeading={"D365 Commerce Benefits"}
         sectionDesc={
           "Discover a scalable and secure commerce platform that empowers retailers to thrive in fast-paced digital landscape."
         }
-        sectionTextColor={"white"}
+        sectionTextColor={"text-neutral-white"}
         cardData={BENEFITS_CARDS_DATA}
         SectionHeadingMaxWidth={"100%"}
       />
@@ -436,7 +434,7 @@ const D365Commerce = () => {
         Desc={
           "In the realm of B2B digital sales, Dynamics 365 Commerce stands as a beacon of innovation. This platform plays a pivotal role in reshaping B2B sales strategies, enabling businesses to navigate the digital landscape effectively. "
         }
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
       {/* End--Blogs-Section================================================================ */}
 

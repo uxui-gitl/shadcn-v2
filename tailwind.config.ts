@@ -25,13 +25,17 @@ const config = {
     },
     extend: {
       fontSize: {
-        'display-01': 'clamp(54px, 8vw, 64px)', // font size adjusts with viewport width
+        'display-01': 'clamp(48px, 6vw, 64px)', // font size adjusts with viewport width
         'subtitle-01': 'clamp(18px, 5vw, 24px)',
         'heading-01': 'clamp(48px, 4vw, 54px)',
-        'paragraph-01': 'clamp(20px, 2.5vw, 28px)',
+        'heading-02': 'clamp(32px, 4vw, 36px)',
+        'paragraph-01': 'clamp(20px, 1.5vw, 20px)',
+        'overview-01': 'clamp(24px, 2vw, 36px)',
         'body-01': 'clamp(16px, 2.5vw, 18px)',
         'label-01': 'clamp(16px, 1.5vw, 24px)',
         'helper-text-01': 'clamp(10px, 1vw, 12px)',
+        'modal-heading-01': 'clamp(24px, 4vw, 32px)',
+        'tabs-heading-01': 'clamp(14px, 1vw, 16px)',
         
         'sm-display-01': 'clamp(44px, 8vw, 52px)',
         'sm-heading-01': 'clamp(24px, 5vw, 32px)',
@@ -75,6 +79,7 @@ const config = {
         'body-01': '-0.005em',
         'label-01': '0em',
         'helper-text-01': '0em',
+        'tabs-heading-01': '-0.012em',
         'sm-display-01': '-0.015em',
         'sm-heading-01': '-0.012em',
         'sm-paragraph-01': '-0.005em',
@@ -164,12 +169,13 @@ const config = {
       lineHeight: {
         'display-01': '1',
         'heading-01': '1.2',
-        'heading-02': '1.2',
+        'heading-02': '1.35',
         'subtitle-01': '1.5',
-        'paragraph-01': '2',
+        'paragraph-01': '1.25',
         'body-01': '1.6',
         'label-01': '1.4',
         'helper-text-01': '1.3',
+        'tabs-heading-01': '1.2',
         'sm-display-01': '1',
         'sm-heading-01': '1.5',
         'sm-paragraph-01': '1.6',

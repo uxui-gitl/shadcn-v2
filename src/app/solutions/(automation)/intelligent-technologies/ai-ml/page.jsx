@@ -200,7 +200,7 @@ const benifitsCardsData = [
      cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
 ]
 
-const yourImageUrl = '/ai-ml/AI-bgimage.jpg';
+const imageUrl = '/ai-ml/AI-bgimage.jpg';
 const blogImageUrl = '/ai-ml/blog-bg.png';
 
 
@@ -228,14 +228,14 @@ const page = () => {
 
       <SectionWrapperNew
         style={{
-          backgroundImage: `url(${yourImageUrl})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageUrl})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed", // This is key for the parallax effect
           backgroundPosition: "center",       
         }}
         sectionHeading={"Artificial Intelligence Offerings"}
         sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
-        sectionTextColor="white"
+        sectionTextColor="text-neutral-white"
         sectionHeadingLayout="left"
       >
         <Slider>
@@ -249,9 +249,9 @@ const page = () => {
 
       {/* ML Expertise */}
       <>
-        <SectionWrapper ID={'MLExpertise'} BGColor={'#5F22D9'}>
-          <div className="md:container max-auto flex flex-col md:flex-row gap-x-11">
-            <div className="text-left mb-5 pb-0 md:max-w-[489px] flex-1">
+        <SectionWrapper ID={'MLExpertise'} BGColor={'bg-primary-400'}>
+          <div className="container py-32 max-auto flex flex-col md:flex-row gap-x-11">
+            <div className="text-left  flex-1">
               <SectionHeading
                 Heading={'Machine Learning Expertise'}
                 Desc={'We specialize in developing predictive models to forecast market shifts and identify untapped opportunities.'}
@@ -265,16 +265,16 @@ const page = () => {
               {MLData.map((item, index) => (
                 <div className="flex-1 min-w-[50%]" key={index}>
                   <div className="p-4 pb-0">
-                    <div className="mb-6" style={{ width: '75px', height: '6px', backgroundColor: '#CDBAF3' }}></div>
-                    <p className="text-[#fff] font-semibold text-[28px] leading-[36px] mb-8">
+                    <div className="w-[4rem] h-[0.5rem] mb-2 bg-primary-200"></div>
+                    <p className="text-neutral-white font-semibold text-heading-02 text-leading-02 mb-3">
                       {item.title}
                     </p>
-                    <p className="text-[#fff] text-[16px] font-normal my-4 leading-[24px]">
+                    <p className=" text-neutral-white text-body-01 leading-body-01 font-normal ">
                       {item.subTitle}
                     </p>
                     <Link
                       href={item.ctaURL}
-                      className="text-[#0745D3] invisiable text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                      className="text-primary-400 invisible text-label-01 font-medium leading-label-01 w-fit  flex transition-all hover:opacity-75  "
                     >
                       Know More{" "}
                       <Icon
@@ -295,13 +295,13 @@ const page = () => {
       <SectionWrapperNew
         sectionHeading={"Intelligent Technologies Platforms"}
         sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'}
-        sectionTextColor="#000"
+        sectionTextColor="text-primary-900"
         sectionHeadingLayout="horizontal"
       >
         <Slider>
           {PlatFormImageList?.map((item, index) => (
-            <SwiperSlide key={index}>
-                <Image src={item.url} width={350} height={100} alt="card-image"/>
+            <SwiperSlide key={index} className="p-8">
+                <Image src={item.url} width={350} height={150}  alt="card-image"/>
             </SwiperSlide>
           ))}
         </Slider>
@@ -310,17 +310,17 @@ const page = () => {
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Benefits'}
         sectionDesc={'AI and ML are driving transformative changes, offering multiple benefits that redefine business.'}
-        sectionTextColor={'white'}
+        sectionTextColor="text-neutral-white"
         cardData={benifitsCardsData}
       ></BenefitSliderSection>
       {/* blog section  */}
 
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Hyper-Automation for Supply Chain Efficiency'}
         Desc={'Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices.'}
-        Color={'white'}
+        Color={'text-neutral-white'}
         readMoreUrl=""
       ></BlogSection>
 

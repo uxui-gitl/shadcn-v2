@@ -16,7 +16,7 @@ import CommonCardOne from "@/components/CommonCardOne";
 const page = () => {
   const blogImageUrl = '/intelligent-tech/Digitalized.jpg';
   const formBGURL = "/formBgImage.svg";
-  const yourImageUrl = '/intelligent-tech/advanceSolutions.jpg';
+  const imageUrl = '/intelligent-tech/advanceSolutions.jpg';
 
   const advanceSolutionCardData = [
     {
@@ -161,14 +161,14 @@ const page = () => {
       {/* solutions */}
       <SectionWrapperNew
         style={{
-          backgroundImage: `url(${yourImageUrl})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageUrl})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed", // This is key for the parallax effect
           backgroundPosition: "center",
         }}
         sectionHeading={"Advance Solutions for Business Future Readiness"}
         sectionDesc={''}
-        sectionTextColor="white"
+        sectionTextColor="text-neutral-white"
         sectionHeadingLayout="left"
       >
         <Slider>
@@ -183,10 +183,10 @@ const page = () => {
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Advantage of Intelligent Technologies'}
         sectionDesc={'Implementing intelligent technologies is crucial for businesses to fuel growth & stay relevant in digital era.'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BenefitsData}
         sectionHeaderWidth={'w-full'}
       ></BenefitSliderSection>
@@ -194,7 +194,7 @@ const page = () => {
       {/* blog */}
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Digitalization with Infor Coleman AI & ML'}
         Desc={'Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI.'}
-        Color={'white'}
+        Color={'text-neutral-white'}
       ></BlogSection>
 
       {/* Distinctive section*/}

@@ -222,15 +222,15 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
       </Dialog>
     {/* dialog  end*/}
 
-      <SectionWrapper BGColor={bgColor} Padding={true} style={{ ...style }}>
-        <div className="md:container mx-auto">
+      <SectionWrapper BGColor={bgColor} >
+        <div className="container mx-auto py-32">
           {caseStudyLayout === "1" && (
             <div
-              className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]"
+              className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px]"
               style={{ color: casestudy[0].color }}
             >
               <div
-                className="w-full md:w-1/3 h-full rounded-3xl p-8"
+                className="w-full md:w-1/3 h-full rounded-t-3xl p-5"
                 style={{
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
@@ -238,79 +238,79 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   backgroundColor: casestudy[0].bgCardColor,
                 }}
               >
-                <h3 className="text-base font-semibold mb-12">
+                <h3 className="text-body-01 leading-body-01 font-semibold mb-12">
                   {casestudy[0].title}
                 </h3>
-                <h1 className="text-5xl font-medium mb-6">
+                <h1 className="text-heading-01 leading-heading-01 font-medium ">
                   {casestudy[0].heading}
                 </h1>
-                <p className="w-[80%] mb-4">{casestudy[0].description}</p>
+                <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[0].description}</p>
               </div>
               <div
-                className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+                className="flex flex-col w-full md:w-1/3 h-full  "
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-1/2 px-5 py-10"
                   style={{
                     color: casestudy[1].color,
                     backgroundColor: casestudy[1].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-3xl font-medium mb-6">
+                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
                     {casestudy[1].heading}
                   </h1>
-                  <p className="w-[80%] mb-4">{casestudy[1].description}</p>
+                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[1].description}</p>
 
-                  <div className="absolute bottom-4 right-4">
+                  <div className="absolute bottom-5 right-5">
                   <Link href={casestudy[1].link} target="_blank">
-                    <OutlinedButtonWithArrow size={56} />
+                    <OutlinedButtonWithArrow size={32} />
                     </Link>
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-1/2 px-5 py-10"
                   style={{
                     color: casestudy[2].color,
                     backgroundColor: casestudy[2].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-3xl font-medium mb-6">
+                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
                     {casestudy[2].heading}
                   </h1>
-                  <p className="w-[80%] mb-4">{casestudy[2].description}</p>
+                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[2].description}</p>
 
-                  <div className="absolute bottom-4 right-4">
+                  <div className="absolute bottom-5 right-5">
                   <Link href={casestudy[2].link} target="_blank">
-                    <OutlinedButtonWithArrow size={56} />
+                    <OutlinedButtonWithArrow size={32} />
                     </Link>
                   </div>
                 </div>
               </div>
               <div
-                className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+                className="flex flex-col w-full md:w-1/3 h-full  "
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-full md:h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-full md:h-1/2  px-5 py-10"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-3xl font-medium mb-6">
+                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
                     {casestudy[3].heading}
                   </h1>
-                  <p className="w-[80%] mb-4">{casestudy[3].description}</p>
+                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[3].description}</p>
 
-                  <div className="absolute bottom-4 right-4">
+                  <div className="absolute bottom-5 right-5">
                   <Link href={casestudy[3].link} target="_blank">
-                    <OutlinedButtonWithArrow size={56} />
+                    <OutlinedButtonWithArrow size={32} />
                     </Link>
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-full h-min-[270px] md:h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-[350px] h-min-[270px] md:h-1/2 rounded-b-3xl"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
@@ -333,9 +333,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
             </div>
           )}
           {caseStudyLayout === "2" && (
-            <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]">
+            <div className="flex flex-col md:flex-row justify-start items-center  w-full h-full md:h-[724px]">
               <div
-                className="relative md:w-full  h-full rounded-3xl p-8 flex flex-col justify-end"
+                className="relative md:w-2/3  h-full rounded-t-3xl p-5 flex flex-col justify-end"
                 style={{
                   color: casestudy[0].color,
                   overflow: "hidden", // Ensures no overflow from the video
@@ -358,55 +358,69 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <div className="relative z-20  w-[70%] flex flex-col justify-end">
                   {" "}
                   {/* Ensure content is aligned at the bottom */}
-                  <h3 className="text-base font-semibold mb-12">
+                  <h3 className="text-label-01 leading-label-01 font-semibold mb-12">
                     {casestudy[0].title}
                   </h3>
-                  <h1 className="text-5xl font-medium mb-6">
+                  <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
                     {casestudy[0].heading}
                   </h1>
-                  <p className=" mb-4">{casestudy[0].description}</p>
+                  <p className=" text-body-01 leading-body-01 mb-4">{casestudy[0].description}</p>
                 </div>
               </div>
 
               <div
-                className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+                className="flex flex-col w-full md:w-1/3 h-full md:rounded-3xl"
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-1/2 md:rounded-3xl px-5 py-5"
                   style={{
                     color: casestudy[1].color,
                     backgroundColor: casestudy[1].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-3xl font-medium mb-6">
+                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-6">
                     {casestudy[1].heading}
                   </h1>
-                  <p className="mb-4">{casestudy[1].description}</p>
+                  <p className="text-body-01 leading-body-01 mb-10">{casestudy[1].description}</p>
 
-                  <div className="absolute bottom-4 right-4">
-                    <OutlinedButtonWithArrow size={56} />
+                  <div className="absolute bottom-5 right-5">
+                    <OutlinedButtonWithArrow size={32} />
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-1/2 rounded-3xl  p-8"
+                  className="relative w-full h-1/2 rounded-b-3xl md:rounded-3xl  px-5 py-5"
                   style={{
                     color: casestudy[2].color,
                     backgroundColor: casestudy[2].bgCardColor,
                   }}
                 >
-                  <h1 className=" text-3xl font-medium mb-6">
+                  <h1 className=" text-heading-02 leading-heading-02 font-medium mb-6">
                     {casestudy[2].heading}
                   </h1>
-                  <p className=" mb-4">{casestudy[2].description}</p>
+                  <p className=" text-body-01 leading-body-01 mb-10">{casestudy[2].description}</p>
 
-                  <div className="absolute bottom-4 right-4">
-                    <OutlinedButtonWithArrow size={56} />
+                  <div className="absolute bottom-5 right-5">
+                    <OutlinedButtonWithArrow size={32} />
                   </div>
                 </div>
               </div>
             </div>
           )}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           {caseStudyLayout === "3" && (
             <div className="flex flex-row justify-start items-center gap-8 w-full h-[724px]">
               <div
@@ -481,11 +495,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
           {caseStudyLayout === "5" && (
 
             <div
-              className="flex flex-col lg:flex-row justify-start items-center gap-8 w-full h-auto lg:h-[362px]"
+              className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto lg:h-[362px]"
               style={{ color: casestudy[0].color }}
             >
               <div
-                className="w-full relative lg:w-1/3 h-full rounded-3xl p-8"
+                className="w-full relative lg:w-1/3 h-full rounded-t-3xl md:rounded-3xl p-8"
                 style={{
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
@@ -493,51 +507,51 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   backgroundColor: casestudy[0].bgCardColor,
                 }}
               >
-                <h3 className="text-base font-semibold mb-4 lg:mb-12">
+                <h3 className="text-label-01 leading-label-01 font-semibold mb-4">
                   {casestudy[0].title}
                 </h3>
-                <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6">
+                <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
                   {casestudy[0].heading}
                 </h1>
-                <p className="w-full lg:w-[80%] mb-4">
+                <p className="text-body-01 leading-body-01 mb-4">
                   {casestudy[0].description}
                 </p>
-                {casestudy[0].link && <div className="absolute bottom-4 right-4">
+                {casestudy[0].link && <div className="absolute right-0 bottom-0">
                   <Link href={casestudy[0].link} target="_blank">
-                  <OutlinedButtonWithArrow arrowColor="white" size={56}/>
+                  <OutlinedButtonWithArrow arrowColor="white" size={32}/>
                   </Link>
                 </div>}
               </div>
               <div
-                className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
+                className="relative w-full lg:w-1/3 h-full md:rounded-3xl p-5"
                 style={{
                   color: casestudy[1].color,
                   backgroundColor: casestudy[1].bgCardColor,
                 }}
               >
-                <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
                   {casestudy[1].heading}
                 </h1>
-                <p className="mb-4">{casestudy[3].description}</p>
-                {casestudy[1].link && <div className="absolute bottom-4 right-4">
+                <p className="text-body-01 leading-body-01 mb-8">{casestudy[3].description}</p>
+                {casestudy[1].link && <div className="absolute right-4 bottom-4">
                   <Link href={casestudy[1].link} target="_blank">
-                  <OutlinedButtonWithArrow size={56}/>
+                  <OutlinedButtonWithArrow size={32}/>
                   </Link>
                 </div>}
               </div>
               <div
-                className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
+                className="relative w-full lg:w-1/3 h-full rounded-b-3xl md:rounded-3xl p-5"
                 style={{
                   color: casestudy[2].color,
                   backgroundColor: casestudy[2].bgCardColor,
                 }}
               >
-                <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
                   {casestudy[2].heading}
                 </h1>
-                <p className="mb-4">{casestudy[3].description}</p>
-                {casestudy[2].link && <div className="absolute bottom-4 right-4">
-                  <OutlinedButtonWithArrow size={56} />
+                <p className="text-body-01 leading-body-01 mb-8">{casestudy[3].description}</p>
+                {casestudy[2].link && <div className="absolute right-4 bottom-4">
+                  <OutlinedButtonWithArrow size={32} />
                 </div>}
               </div>
             </div>
@@ -554,11 +568,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 Desc={setDesc}
                 center
               ></SectionHeading>
-              <div className="flex flex-col gap-8">
-                <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-[624px]">
+              <div className="flex flex-col gap-8 mt-8">
+                <div className="flex flex-col md:flex-row justify-start items-center gap-2 w-full ">
                   {/* Grid--One */}
                   <div
-                    className="relative w-full lg:w-2/3 h-full rounded-3xl p-8 flex flex-col justify-end"
+                    className="relative w-full min-h-[624px] lg:w-2/3 h-full rounded-3xl p-5 flex flex-col justify-end"
                     style={{
                       color: casestudy[0].color,
                       overflow: "hidden", // Ensures no overflow from the video
@@ -580,43 +594,43 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     </div>
                     <div className="relative z-20  w-[100%] flex flex-col justify-end">
                       <div className="w-[70%]">
-                        <h3 className="text-base font-semibold mb-12">
+                        <h3 className="text-label-01 leading-label-01 font-semibold mb-12">
                           {casestudy[0].title}
                         </h3>
-                        <h1 className="text-5xl font-medium mb-6">
+                        <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
                           {casestudy[0].heading}
                         </h1>
-                        <p className=" mb-4">{casestudy[0].description}</p>
+                        <p className=" text-body-01 leading-body-01 mb-4">{casestudy[0].description}</p>
                       </div>
-                      <div className="absolute bottom-4 right-4" onClick={() => { setshowModal((prev) => !prev); }}>
-                        <OutlinedButtonWithArrow size={56} arrowColor="#FFFFFF" />
+                      <div className="absolute right-0 bottom-0" onClick={() => { setshowModal((prev) => !prev); }}>
+                        <OutlinedButtonWithArrow size={32} arrowColor="#FFFFFF" />
                       </div>
                     </div>
                   </div>
 
                   {/* Grid--Two */}
                   <div
-                    className="flex flex-col w-full lg:w-1/3 h-full rounded-3xl gap-8"
+                    className="flex flex-col w-full lg:w-1/3 h-full rounded-3xl "
                     style={{ backgroundColor: casestudy[1].bgCardColor }}
                   >
                     <div
-                      className="relative w-full h-1/2 rounded-3xl  p-8 overflow-hidden"
+                      className="relative w-full h-1/2 rounded-3xl p-5 overflow-hidden"
                       style={{
                         color: casestudy[1].color,
                         backgroundColor: casestudy[1].bgCardColor,
                       }}
                     >
-                      <h1 className="text-5xl font-medium mb-4 lg:mb-6">
+                      <h1 className="text-heading-02 leading-heading-02 font-medium mb-2">
                         {casestudy[1].heading}
                       </h1>
                       <p className="mb-4" dangerouslySetInnerHTML={{ __html: casestudy[1].description }}/>
                     </div>
                     <div
-                      className="w-full  h-1/2 rounded-3xl  p-8"
+                      className="w-full h-1/2 rounded-3xl min-h-[240px]"
                       style={{
                         backgroundImage: `url(${casestudy[1].imageURL})`,
                         backgroundSize: "cover",
-                        backgroundPosition: "bottom",
+                        backgroundPosition: "left ",
                         backgroundColor: casestudy[1].bgCardColor,
                       }}
                     ></div>
@@ -624,7 +638,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 </div>
 
                 <div
-                  className="flex flex-col lg:flex-row justify-start items-center gap-8 w-full h-auto lg:h-[362px]"
+                  className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto lg:h-[362px]"
                   style={{ color: casestudy[2].color }}
                 >
 
@@ -633,7 +647,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   {/* Grid--Three */}
 
                   <div
-                    className="w-full lg:w-1/3 h-full rounded-3xl p-8"
+                    className="w-full lg:w-1/3 h-full rounded-t-3xl p-5"
                     style={{
                       backgroundImage: `url(${casestudy[2].imageURL})`,
                       backgroundSize: "cover",
@@ -641,10 +655,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                       backgroundColor: casestudy[2].bgCardColor,
                     }}
                   >
-                    <h3 className="text-base font-semibold mb-4 lg:mb-12">
+                    <h3 className="text-label-01 leading-label-01 font-semibold mb-2 lg:mb-12">
                       {casestudy[2].title}
                     </h3>
-                    <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6">
+                    <h1 className="text-heading-02 leading-heading-02 font-medium mb-2 lg:mb-6">
                       {casestudy[2].heading}
                     </h1>
                     <p className="w-full lg:w-[80%] mb-4">
@@ -654,19 +668,19 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Four */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
+                    className="relative w-full lg:w-1/3 h-full px-5 py-10"
                     style={{
                       color: casestudy[3].color,
                       backgroundColor: casestudy[3].bgCardColor,
                     }}
                   >
-                    <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                    <h1 className="text-heading-02 leading-heading-02 font-medium mb-4 lg:mb-6">
                       {casestudy[3].heading}
                     </h1>
                     <p className="mb-4">{casestudy[3].description}</p>
-                    <div className="absolute bottom-4 right-4">
+                    <div className="absolute bottom-5 right-5">
                     <Link href={casestudy[3].link} target="_blank">
-                      <OutlinedButtonWithArrow size={56} />
+                      <OutlinedButtonWithArrow size={32} />
                       </Link>
                     </div>
                   </div>
@@ -674,19 +688,19 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Five */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
+                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl px-5 py-10"
                     style={{
                       color: casestudy[4].color,
                       backgroundColor: casestudy[4].bgCardColor,
                     }}
                   >
-                    <h1 className="text-3xl font-medium mb-4 lg:mb-6">
+                    <h1 className="text-heading-02 leading-heading-02 font-medium mb-4 lg:mb-6">
                       {casestudy[4].heading}
                     </h1>
                     <p className="mb-4">{casestudy[4].description}</p>
-                    <div className="absolute bottom-4 right-4">
+                    <div className="absolute bottom-5 right-5">
                     <Link href={casestudy[4].link} target="_blank">
-                      <OutlinedButtonWithArrow size={56} />
+                      <OutlinedButtonWithArrow size={32} />
                       </Link>
                     </div>
                   </div>

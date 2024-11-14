@@ -10,13 +10,14 @@ const HolisticApproach = () => {
 
     return (
         <>
-            <SectionWrapper BGColor="#000">
-                <div className="md:container mx-auto">
+            <SectionWrapper BGColor="bg-secondary-900">
+                <div className="container mx-auto py-32">
                     <SectionHeading 
                         Heading="Our Holistic Approach" 
                         Desc={"Building business impact with optimized enterprise performance through coordinated technology, processes and talent."} 
-                        Color="#fff" 
-                        center 
+                        Color="text-neutral-white" 
+                        center = {true}
+                     
                     />
                     <div className="flex justify-center mt-8"> {/* Center the SVG below the heading */}
                         <Image 

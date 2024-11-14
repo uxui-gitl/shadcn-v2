@@ -228,10 +228,10 @@ const page = () => {
       <OverviewSection Text={'Built on a scalable, cloud-based platform, Infor CRM integrates seamlessly with Infor ERP, providing real-time visibility into customer interactions, sales and service. Tailored solutions for manufacturing, distribution, healthcare and more.'} />
 
       <SectionWrapperNew
-        style={{ backgroundColor: '#1D162B' }}
+        bgColor={'bg-primary-900'}
         sectionHeading={'Infor CRM Key Capabilities'}
         sectionDesc={'We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         sectionHeadingLayout={'left'}>
           <Slider>
           {serviceOfferingData?.map((item, index) => (
@@ -249,10 +249,10 @@ const page = () => {
         sectionDesc={''}
         sectionTextColor={'white'}
         sectionHeadingLayout={'left'}>
-        <div className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]">
+        <div className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px]">
           {/* video */}
           <div
-            className="relative md:w-full  h-full rounded-3xl p-8 flex flex-col justify-end"
+            className="relative md:w-full  h-full rounded-t-3xl p-5 flex flex-col justify-end"
             style={{
               color: casestudy[0].color,
               overflow: "hidden", // Ensures no overflow from the video
@@ -286,11 +286,11 @@ const page = () => {
           </div>
           {/* one  */}
           <div
-            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            className="flex flex-col w-full md:w-1/3 h-full rounded-b-3xl "
             style={{ backgroundColor: "transparent" }}
           >
             <div
-              className="relative w-full h-full rounded-3xl p-8"
+              className="relative w-full h-full rounded-b-3xl p-5"
               style={{
                 color: casestudy[1].color,
                 backgroundColor: casestudy[1].bgCardColor,
@@ -299,11 +299,11 @@ const page = () => {
               <h1 className="w-[80%] text-2xl font-medium mb-6">
                 {casestudy[1].heading}
               </h1>
-              <p className="mb-4">{casestudy[1].description}</p>
+              <p className="mb-8">{casestudy[1].description}</p>
 
               <div className="absolute bottom-4 right-4">
               <Link href={casestudy[1].link} target="_blank">
-                <OutlinedButtonWithArrow size={56} />
+                <OutlinedButtonWithArrow size={32} />
               </Link>
               </div>
             </div>
@@ -320,7 +320,7 @@ const page = () => {
           "A successful Infor CRM implementation requires careful planning, execution, and ongoing optimization. By following these best practices and hacks, organizations can unlock the full potential of Infor CRM, driving business growth, customer satisfaction, and user adoption."
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
       <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Partner with Godrej Infotech for exceptional customer experiences and streamlined sales & marketing operations'}

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, Children } from "react";
+import React, { useRef, useEffect, useState, Children } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 
@@ -18,94 +18,159 @@ const ServicesCard = ({
   const hoverTitleRef = useRef(null);
   const descRef = useRef(null);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const duration = 0.4;
 
     // GSAP animation for card width
     gsap.to(cardRef.current, {
-      width: isActive ? "648px" : "156",
+      width: isMobile
+        ? isActive
+          ? "50%" // On mobile, full width when active
+          : "100%" // On mobile, reduced width when not active
+        : isActive
+        ? "648px" // On desktop, 648px when active
+        : "156px", // On desktop, 156px when not active
       duration: duration,
       ease: "power2.inOut",
     });
 
-    // Common properties for active and hovered states
     const commonProps = {
       duration: duration,
       ease: "power2.inOut",
     };
 
-    // Check if the card is active or hovered
     if (isActive || isHovered) {
-      // Animate image in and hide title
       gsap.to(imageRef.current, { x: 0, opacity: 1, ...commonProps });
       gsap.to(titleRef.current, { y: "-20px", opacity: 0, ...commonProps });
-
-      // Animate hover title and description in after image animation
-      gsap.to(hoverTitleRef.current, { y: "0", opacity: 1, delay: duration, ...commonProps });
-      gsap.to(descRef.current, { y: "0", opacity: 1, delay: duration, ...commonProps });
+      gsap.to(hoverTitleRef.current, {
+        y: "0",
+        opacity: 1,
+        delay: duration,
+        ...commonProps,
+      });
+      gsap.to(descRef.current, {
+        y: "0",
+        opacity: 1,
+        delay: duration,
+        ...commonProps,
+      });
     } else {
-      // Reset animations when not active or hovered
-      gsap.to(imageRef.current, { x: "100%", opacity: 0, ...commonProps }); // Start from right side
+      gsap.to(imageRef.current, { x: "100%", opacity: 0, ...commonProps });
       gsap.to(titleRef.current, { y: "0px", opacity: 1, ...commonProps });
-
-      // Hide hover title and description
-      gsap.to(hoverTitleRef.current, { y: "20px", opacity: 0, duration: duration, ...commonProps });
-      gsap.to(descRef.current, { y: "20px", opacity: 0, duration: duration, ...commonProps });
+      gsap.to(hoverTitleRef.current, {
+        y: "20px",
+        opacity: 0,
+        duration: duration,
+        ...commonProps,
+      });
+      gsap.to(descRef.current, {
+        y: "20px",
+        opacity: 0,
+        duration: duration,
+        ...commonProps,
+      });
     }
   }, [isActive, isHovered]);
 
   return (
-    <div
-      ref={cardRef}
-      className={`relative h-[424px] rounded-3xl shadow-lg overflow-hidden flex transition-colors duration-400 ease-in-out ${
-        isActive ? "bg-[#2B1624]" : "bg-[#FCE6F4]"
-      }`}
-      onMouseEnter={() => onHover(true)}
-      onMouseLeave={() => onHover(false)}
-    >
-      {/* Numbered Circle */}
-      <div className="absolute top-4 left-4 flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full text-black text-base">
-        {String(index + 1).padStart(2, "0")}
-      </div>
-
-      {!isActive && (
-        <div className="flex-1 flex flex-col justify-end p-4 h-full">
-          <h2 ref={titleRef} className="text-[20px] font-medium">
-            {title}
-          </h2>
+    <div>
+      {isMobile ? (
+        <div
+       
+        className={`relative h-[424px] w-full rounded-3xl overflow-hidden flex flex-col transition-colors duration-400 ease-in-out bg-primary-900` }
+      >
+        {/* Circle at the top-left */}
+        <div className="absolute top-4 left-4 flex items-center justify-center w-6 h-6 bg-neutral-mid-grey rounded-full text-primary-900 text-body-01 leading-sm-body-01">
+          {String(index + 1).padStart(2, "0")}
         </div>
-      )}
-
-      {isActive && (
-        <div className="w-1/2 flex-1 flex flex-col justify-end p-8 h-full text-white">
-          <h2
-            ref={hoverTitleRef}
-            className="text-[20px] font-medium py-8 translate-y-5 opacity-0"
-          >
+      
+        {/* Heading and Description in the top half */}
+        <div className="flex-1 p-5 text-neutral-white flex flex-col justify-between">
+          <h2 className="text-heading-02 leading-heading-02 font-medium">
             {hoverTitle}
           </h2>
-          <p
-            ref={descRef} 
-            className="text-[16px] translate-y-5 opacity-0"
-            dangerouslySetInnerHTML={{ __html: description }}
+          <p className="text-body-01 leading-body-01 mt-4" dangerouslySetInnerHTML={{ __html: description }}></p>
+        </div>
+      
+        {/* Image in the bottom half */}
+        {/* <div className="w-full h-1/2 overflow-hidden">
+          <Image
+            src={imageUrl}
+            alt={title}
+            layout="fill"
+            objectFit="cover"
+            className="rounded-b-3xl"
+          />
+        </div> */}
+      </div>
+      
+      ) : (
+        <div
+          ref={cardRef}
+          className={`relative h-[424px] rounded-3xl overflow-hidden flex transition-colors duration-400 ease-in-out ${
+            isActive ? "bg-primary-900" : "bg-secondary-10"
+          }`}
+          onMouseEnter={() => onHover(true)}
+          onMouseLeave={() => onHover(false)}
+        >
+          <div className="absolute top-4 left-4 flex items-center justify-center w-6 h-6 bg-neutral-mid-grey rounded-full text-primary-900 text-body-01 leading-sm-body-01">
+            {String(index + 1).padStart(2, "0")}
+          </div>
+
+          {!isActive && (
+            <div className="flex-1 flex flex-col justify-end p-4 h-full">
+              <h2
+                ref={titleRef}
+                className="text-paragraph-02 leading-paragraph-02 font-medium"
+              >
+                {title}
+              </h2>
+            </div>
+          )}
+
+          {isActive && (
+            <div className="w-1/2 flex-1 flex flex-col justify-end p-5 h-full text-neutral-white">
+              <h2
+                ref={hoverTitleRef}
+                className="text-heading-02 leading-heading-02 font-medium py-5 translate-y-5 opacity-0"
+              >
+                {hoverTitle}
+              </h2>
+              <p
+                ref={descRef}
+                className="text-body-01 leading-body-01 translate-y-5 opacity-0"
+                dangerouslySetInnerHTML={{ __html: description }}
+              ></p>
+            </div>
+          )}
+
+          <div
+            ref={imageRef}
+            className="w-1/2 h-full overflow-hidden opacity-0 transform translate-x-[100%]"
           >
-          </p>
+            <Image
+              src={imageUrl}
+              alt={title}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-l-3xl"
+            />
+          </div>
         </div>
       )}
-
-      {/* Image */}
-      <div
-        ref={imageRef}
-        className="w-1/2 h-full overflow-hidden opacity-0 transform translate-x-[100%]" // Start from 100%
-      >
-        <Image
-          src={imageUrl}
-          alt={title}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-l-3xl"
-        />
-      </div>
     </div>
   );
 };

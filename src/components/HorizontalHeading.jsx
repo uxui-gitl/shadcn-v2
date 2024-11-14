@@ -7,13 +7,13 @@ function HorizontalHeading({
     return (
         <>
         <div className="">
-            {title && <div className="text-heading-01 font-semibold mb-10">{title}</div>}
-        <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 mb-16">
+            {title && <div className="text-label-01 font-semibold text-neutral-mid-grey mb-5">{title}</div>}
+        <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 mb-5">
                 <div className="text-center sm:text-left">
-                <div className={`text-heading-01 font-semibold leading-heading-01 ${desc ? 'mb-6' : ''}`} style={{color:textColor}}>{heading}</div>
+                <div className={`text-heading-01 leading-heading-01 font-semibold  ${textColor}  ${desc ? 'mb-6' : ''}`}>{heading}</div>
                 </div>
                 <div className="text-center sm:text-left">
-                <div className={`text-lg font-semibold`} style={{color:textColor}}>{desc}</div>
+                <div className={`text-subtitle-01 leading-subtitle-01font-semibold  ${textColor} mb-8`}>{desc}</div>
                 </div>
             </div>
         </div>

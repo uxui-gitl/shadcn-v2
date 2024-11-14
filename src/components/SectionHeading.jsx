@@ -1,11 +1,11 @@
 function SectionHeading({
   Heading,
   Desc,
-  Color = 'black',
+  Color = "text-neutral-white",
   center = false,
   right = false,
   layout = 'vertical', // Default to 'vertical'
-  headingContainerWidth = 'w-1/2',
+  headingContainerWidth = '',
   paddingTop='0',
 }) {
   return (
@@ -14,16 +14,15 @@ function SectionHeading({
     >
       {layout === 'vertical' ? (
         <div
-          className={` w-full md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center' : right ? 'items-end' : 'items-center md:items-start'} `}
+          className={` w-full ${center? 'mx-auto' : ''}  md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center'   : right ? 'items-end' : 'items-center md:items-start'} `}
         >
           {Heading && <h1
-            className={` text-neutral-white text-heading-01 leading-heading-01 mb-6 sm:mb-2 md:mb-6 font-medium text-center sm:text-center md:text-left`}
-            style={{ color: Color }}
+            className={`text-neutral-white text-heading-01 leading-heading-01 font-medium text-center mb-6 ${center ? 'md:text-center' : 'md:text-left'} md:text-left ${Color} mb-6 sm:mb-2 md:mb-6`}           
             dangerouslySetInnerHTML={{ __html: Heading }}
           />}
           {Desc &&  (<p
-            className={`text-neutral-white text-subtitle-01 leading-subtitle-01 font-normal text-center md:text-left`}
-            style={{ color: Color }}
+            className={`text-neutral-white text-subtitle-01 leading-subtitle-01 font-normal text-center ${center ? 'md:text-center' : 'md:text-left'} ${Color} mb-8`}
+          
             dangerouslySetInnerHTML={{__html: Desc}}
           >
           </p>)}
@@ -33,15 +32,15 @@ function SectionHeading({
           className={`flex flex-col md:flex-row mb-6 pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'}`}
         >
           <h1
-            className={`text-heading-01 leading-heading-01 font-semibold mb-3 sm:mb-2 md:mb-6`}
-            style={{ color: Color }}
+            className={`text-heading-01 leading-heading-01 font-semibold mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
+  
           >
             {Heading}
           </h1>
          {Desc && (
           <p
-            className={`text-subtitle-01 leading-subtitle-01 font-normal`} 
-            style={{ color: Color }}
+            className={`text-subtitle-01 leading-subtitle-01 font-normal text-center  md:text-left ${Color}`} 
+
           >
             {Desc}
           </p>

@@ -318,7 +318,7 @@ const MicrosoftPractises = () => {
       description: "Projects Migrated to Microsoft",
     },
     {
-      start: 5000,
+      start:1,
       end: 10000,
       description: "Management of Microsoft License",
     },
@@ -509,8 +509,9 @@ const MicrosoftPractises = () => {
         setImageURL={highlightPromoBGURL}
         setHeading="Seamless Implementation to Customer Centric Support"
         setDesc="Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance. In instances of system issues, our team meticulously assesses the impact on business processes and prioritizes swift resolutions. Further, our adaptable support services offer both dedicated and shared teams to effectively address individual customer needs."
-        setColor="#1D162B"
-        setPadding={false}
+        setColor="text-primary-900"
+      
+
         sectionHeaderWidth={"w-full"}
       />
       {/* End--Highlight-Customer-Centeric-Section================================================================ */}
@@ -522,7 +523,7 @@ const MicrosoftPractises = () => {
         desc={
           "We bring together the power of Microsoft technologies delivering cohesive ecosystems, enabling you to achieve more."
         }
-        color={"#1D162B"}
+        color={"text-primary-900"}
       >
 
       </ServicesCardSlider>
@@ -537,10 +538,10 @@ const MicrosoftPractises = () => {
         <Slider>
           {serviceSliderData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#EFE9FB] rounded-lg">
-                <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+             <div className="bg-transparent rounded-3xl">
+              <Image className="rounded-3xl mx-auto md:mx-2" src="/infor/blackstar.svg" alt="" width={64} height={64}/>
                 <div className="p-5">
-                  <h5 className="mb-2 text-2xl font-bold">{item.text}</h5>
+                <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">{item.text}</h5>
                 </div>
               </div>
             </SwiperSlide>
@@ -553,12 +554,12 @@ const MicrosoftPractises = () => {
       <CommonCardThreeSlider
         ID={"AIOfferings"}
         sectionImageUrl={""}
-        sectionBGColor={"#1D162B"}
+        sectionBGColor={"bg-primary-900"}
         sectionHeading={"MS based Custom Solutions"}
         sectionDesc={
           "Building tailored software applications with Microsoft Azure, 365, Dynamics, and Power Platform."
         }
-        sectionTextColor={"#FFF"}
+        sectionTextColor={"text-neutral-white"}
         sectionHeaderMaxWidth={"40%"}
         x
         cardData={SOLUTION_DATA}
@@ -570,22 +571,22 @@ const MicrosoftPractises = () => {
       <HighlightPromo
         setHeading="Synergetic Partnership"
         setDesc="Our 20-year Microsoft alliance delivers industry-leading solutions, leveraging expertise and domain insight for customer success."
-        setColor="#1D162B"
+        setColor="text-primary-900"
         setImageBGURL={synergeticPartnerBGURL}
         setLogoImages="true"
-        setPadding={false}
+        setPadding={true}
       />
       {/* End--Synergetic Partnerships-Section================================================================ */}
 
       {/* Start--Benefits-Section============================================================== */}
       <BenefitSliderSection
         ID={"BENEFIT"}
-        sectionBGColor={"#1D162B"}
+        sectionBGColor={"bg-primary-900"}
         sectionHeading={"Microsoft Dynamics Benefits"}
         sectionDesc={
           "Microsoft Dynamics optimizes operations, cuts costs, and enhances employee and customer experiences for sustainable growth."
         }
-        sectionTextColor={"white"}
+        sectionTextColor={"text-neutral-white"}
         cardData={BENEFITS_CARDS_DATA}
       />
       {/* End--Benefits-Section================================================================ */}
@@ -604,34 +605,41 @@ const MicrosoftPractises = () => {
           position: 'relative',
         }}
       >
-        <div className="p-16"
-          style={{
-            background: 'linear-gradient(145deg, rgba(205, 186, 243, 0.25) 0%, rgba(205, 186, 243, 0.10) 75%)',
-            boxShadow: '0px 40px 100px rgba(0, 0, 0, 0.10)',
-            borderRadius: '24px',
-            border: '2px #EFE9FB solid',
-            backdropFilter: 'blur(30px)'
-          }}>
-          <div className="grid grid-cols-1 gap-4">
-            <div>
-              <div className={`text-3xl sm:text-2xl md:text-[54px] font-semibold leading-tight md:leading-[64px]`}>Microsoft Expertise<br></br> Recognition</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 my-10">
-              {[1, 2, 3].map((item) => (
-                <>
-                  <div className="max-w-sm bg-[transprent] border border-gray-200 rounded-lg ">
-                      <Image width={'382'} height={'200'} className="rounded-t-lg" src="/Transformation/microsoft-practices/merLogo01.png" alt="skhd" />
-                    <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">2023</h5>
-                    </div>
-                  </div>
-                </>
-              ))}
-
-
-            </div>
+       <div
+  className="container mx-auto p-5"
+  style={{
+    background: 'linear-gradient(145deg, rgba(205, 186, 243, 0.25) 0%, rgba(205, 186, 243, 0.10) 75%)',
+    boxShadow: '0px 40px 100px rgba(0, 0, 0, 0.10)',
+    borderRadius: '24px',
+    border: '2px #EFE9FB solid',
+    backdropFilter: 'blur(30px)',
+  }}
+>
+  <div className="grid grid-cols-1 gap-4">
+    <div>
+      <div className="text-heading-01 leading-heading-01 font-semibold text-primary-900 text-center md:text-left">
+        Microsoft Expertise<br /> Recognition
+      </div>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5">
+      {[1, 2, 3].map((item, index) => (
+        <div key={index} className="max-w-sm bg-neutral-white border border-gray-200 rounded-3xl">
+          <Image
+            width="382"
+            height="200"
+            className="rounded-t-3xl"
+            src="/Transformation/microsoft-practices/merLogo01.png"
+            alt="logo"
+          />
+          <div className="p-5">
+            <h5 className="mb-2 text-label-01 leading-label-01 font-semibold">2023</h5>
           </div>
         </div>
+      ))}
+    </div>
+  </div>
+</div>
+
       </SectionWrapperNew>
 
 
@@ -656,9 +664,10 @@ const MicrosoftPractises = () => {
       <HubExpertise
         setHeading="Microsoft Excellence with Godrej Infotech"
         setDesc="We are here to build an edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
         counters={HUBEXPERTISE_COUNTER_DATA}
-        columnNo={2} //Define how many columns you want to display
+        columnNo={4} //Define how many columns you want to display
+        BGColor="bg-secondary-900"
       />
       {/* End--Hub-Of-Expertise-Section================================================================ */}
 
@@ -699,9 +708,9 @@ const MicrosoftPractises = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={""}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
       ></ReviewSliderSection>
       {/* End--Testimonial-Section================================================================ */}

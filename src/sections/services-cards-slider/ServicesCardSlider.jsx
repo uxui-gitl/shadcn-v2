@@ -15,8 +15,8 @@ const CardSlider = ({cardData, heading, desc, color}) => {
   const [hoveredIndex, setHoveredIndex] = useState(null); // New state for hovered card
 
   return (
-    <SectionWrapper BGColor="#fff">
-      <div className="md:container mx-auto">
+    <SectionWrapper BGColor="bg-neutral-white">
+      <div className="container mx-auto py-32">
         <SectionHeading Heading={heading} Desc={desc} Color={color} />
         <Swiper
           spaceBetween={16}

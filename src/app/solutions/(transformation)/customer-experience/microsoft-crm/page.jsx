@@ -14,6 +14,7 @@ import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import { Pagination } from "swiper/modules";
 
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 const page = () => {
@@ -311,47 +312,49 @@ const page = () => {
       <SectionWrapperNew
         sectionHeading={'Our Microsoft CRM offerings'}
         sectionDesc={''}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeadingLayout="left"
-        style={{ backgroundColor: '#E1F2EF' }}
+        bgColor={'bg-secondary-10'}
+      
       >
 
-        <Slider slidesPerView={3.2}>
-          {crmOfferinfData?.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="max-w-sm bg-[black] rounded-3xl group overflow-hidden relative" >
-                <div className="py-10 px-10 ">
-                  <h5 className="mb-6 text-[42px] font-semibold text-white leading-[50px] min-h-[150px]">{item?.cardHeading}</h5>
-                  <p className="mb-3 text-[16px] font-medium text-white min-h-[72px]">{item?.cardDesc}</p>
-                </div>
-                {item?.cardHoverData && (
-                  <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
-                    <div className="">
-                      <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                        {item?.cardHoverData.map((item2) => (
-                          <>
-                            <li>
-                              <span className="font-semibold text-black">{item2}</span>
-                            </li>
-                          </>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                )}
+<Slider slidesPerView={3}>
+  {crmOfferinfData?.map((item, index) => (
+    <SwiperSlide key={index}>
+      <div className="w-full bg-secondary-900 rounded-3xl group overflow-hidden relative min-h-[524px]">
+        <div className="p-5">
+          <h5 className="mb-4 text-heading-01 leading-heading-01 font-semibold text-neutral-white">
+            {item?.cardHeading}
+          </h5>
+          <p className="mb-2 text-paragraph-01 leading-paragraph-01 font-normal text-neutral-white">
+            {item?.cardDesc}
+          </p>
+        </div>
+        {item?.cardHoverData && (
+          <div className="bg-neutral-white p-5 rounded-3xl h-full w-full absolute bottom-0 translate-y-full group-hover:translate-y-0 duration-300">
+            <div className="space-y-1">
+              <ul className="w-full text-neutral-dark-grey list-disc list-inside">
+                {item?.cardHoverData.map((item2, i) => (
+                  <li key={i} className=" text-body-01 leading-body-01font-semibold text-neutral-darkest-grey">
+                    {item2}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+      </div>
+    </SwiperSlide>
+  ))}
+</Slider>
 
-              </div>
-
-            </SwiperSlide>
-          ))}
-        </Slider>
 
       </SectionWrapperNew>
 
       {/* end crmOfferinfData */}
       {/* CloudSuite Services */}
-      <div className="" style={{ backgroundColor: '#1D162B' }}>
-        <div className="md:container mx-auto pt-20 px-10 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+      <div className="bg-secondary-900" >
+        <div className="container mx-auto rounded-3xl flex h-[524px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-full md:w-1/2">
             <SectionHeading
               Heading={'Microsoft CRM Services'}
@@ -366,10 +369,12 @@ const page = () => {
         </div>
         <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             navigation={false}
-            pagination={{ type: "bullets", clickable: true }}
-            autoplay={true}
+            pagination={true}
+           
+            followFinger={true}
+            modules={[ Pagination]}
             loop={false}
             spaceBetween={30}
             breakpoints={{
@@ -387,12 +392,12 @@ const page = () => {
               },
             }}
           >
-            {['Consultation', 'Implementation', 'ManagedServices']?.map((item, index) => (
+            {['Consultation', 'Implementation', 'Managed Services']?.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                  <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="" />
+                  <img className="rounded-t-lg pl-4 mx-auto md:mx-0" src="/infor/blackstar.svg" alt="" />
                   <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold">{item}</h5>
+                      <h5 className="mb-6 text-heading-02 leading-heading-02 text-center md:text-left font-bold">{item}</h5>
                   </div>
                 </div>
               </SwiperSlide>
@@ -409,38 +414,38 @@ const page = () => {
         sectionDesc={
           "Our structured implementation process involves collaboration with stakeholders to understand business goals, challenges and existing processes. "
         }
-        sectionTextColor="white"
+        sectionTextColor="text-neutral-white"
         cardData={ultimateChoiceData}
-        sectionBGColor="#5F22D9"
+        sectionBGColor="bg-primary-400"
         setHeadingLayout="horizontal"
 
       />
 
       <BenefitSliderSection
         ID={'BENEFIT'}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Advantages of D365 CRM'}
         sectionDesc={'Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape.'}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={'100%'}
       />
 
       {/* case studies  */}
       <SectionWrapperNew
-        style={{ backgroundColor: '#FFF' }}
+        bgColor={'bg-neutral-white'}
         sectionHeading={''}
         sectionDesc={''}
-        sectionTextColor={'white'}
+        sectionTextColor={'text-neutral-white'}
         sectionHeadingLayout={'left'}>
 
         <div
-          className="flex flex-col md:flex-row justify-start items-center gap-8 w-full h-full md:h-[724px]"
+          className="flex flex-col md:flex-row justify-start items-center  w-full h-full md:h-[724px]"
           style={{ color: casestudy[0]?.color }}
         >
           {/* video 1st */}
           <div
-            className="w-full md:w-1/3 h-full rounded-3xl p-8"
+            className="w-full md:w-1/3 h-full rounded-t-3xl p-5"
             style={{
               backgroundImage: `url(${casestudy[0].imageURL})`,
               backgroundSize: "cover",
@@ -457,12 +462,12 @@ const page = () => {
             <p className="w-[80%] mb-4">{casestudy[0].description}</p>
           </div>
           <div
-            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            className="flex flex-col w-full md:w-1/3 h-full  "
             style={{ backgroundColor: "transparent" }}
           >
             {/* 1 */}
             <div
-              className="relative w-full h-1/2 rounded-3xl  p-8"
+              className="relative w-full h-1/2  p-5"
               style={{
                 color: casestudy[1].color,
                 backgroundColor: casestudy[1].bgCardColor,
@@ -474,12 +479,12 @@ const page = () => {
               <p className="w-[80%] mb-4">{casestudy[1].description}</p>
 
               <div className="absolute bottom-4 right-4">
-                <OutlinedButtonWithArrow size={56} />
+                <OutlinedButtonWithArrow size={32} />
               </div>
             </div>
             {/* 2 */}
             <div
-              className="relative w-full h-1/2 rounded-3xl  p-8"
+              className="relative w-full h-1/2  p-5"
               style={{
                 color: casestudy[2].color,
                 backgroundColor: casestudy[2].bgCardColor,
@@ -491,17 +496,17 @@ const page = () => {
               <p className="w-[80%] mb-4">{casestudy[2].description}</p>
 
               <div className="absolute bottom-4 right-4">
-                <OutlinedButtonWithArrow size={56} />
+                <OutlinedButtonWithArrow size={32} />
               </div>
             </div>
           </div>
           <div
-            className="flex flex-col w-full md:w-1/3 h-full rounded-3xl gap-8"
+            className="flex flex-col w-full md:w-1/3 h-full "
             style={{ backgroundColor: "transparent" }}
           >
             {/* 3 */}
             <div
-              className="relative w-full h-full md:h-1/2 rounded-3xl  p-8"
+              className="relative w-full h-full md:h-1/2  p-5"
               style={{
                 color: casestudy[3].color,
                 backgroundColor: casestudy[3].bgCardColor,
@@ -513,12 +518,12 @@ const page = () => {
               <p className="w-[80%] mb-4">{casestudy[3].description}</p>
 
               <div className="absolute bottom-4 right-4">
-                <OutlinedButtonWithArrow size={56} />
+                <OutlinedButtonWithArrow size={32} />
               </div>
             </div>
             {/* 4 */}
             <div
-              className="relative w-full h-full md:h-1/2 rounded-3xl  p-8"
+              className="relative w-full h-full md:h-1/2 rounded-b-3xl p-5"
               style={{
                 color: casestudy[4].color,
                 backgroundColor: casestudy[4].bgCardColor,
@@ -530,7 +535,7 @@ const page = () => {
               <p className="w-[80%] mb-4">{casestudy[4].description}</p>
 
               <div className="absolute bottom-4 right-4">
-                <OutlinedButtonWithArrow size={56} />
+                <OutlinedButtonWithArrow size={32} />
               </div>
             </div>
           </div>
@@ -553,7 +558,7 @@ const page = () => {
           "AI in CRM and AI-powered CRM tools, particularly within Dynamics 365, are revolutionizing how businesses function. These advancements mark the trajectory of Microsoft CRM market while ensuring a more intuitive and personalized user experience."
         }
         maxWidth={'50%'}
-        Color={"white"}
+        Color={"text-neutral-white"}
       ></BlogSection>
       <DistinctiveSection DistinctiveData={distinctiveData}
         ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'We help businesses to streamline customer relationships, enhance productivity and drive growth.'}
@@ -563,9 +568,9 @@ const page = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
         Desc={''}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
 <TransformBusinessForm

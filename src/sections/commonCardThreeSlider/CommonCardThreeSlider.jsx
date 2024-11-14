@@ -1,10 +1,13 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import CommonCardThree from "@/components/CommonCardThree";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { Navigation } from "lucide-react";
 function CommonCardTwoSlider({
     ID,
     sectionImageUrl,
@@ -12,8 +15,8 @@ function CommonCardTwoSlider({
     sectionDesc,
     sectionHeaderMaxWidth,
     cardData = [],
-    sectionTextColor = "#000",
-    sectionBGColor = "#fff",
+    sectionTextColor = 'text-primary-900',
+    sectionBGColor = "bg-neutral-white",
     setHeadingLayout,
 }) {
 
@@ -29,7 +32,7 @@ function CommonCardTwoSlider({
                     backgroundSize: "cover",
                 }}
             >
-                <div className="md:container mx-auto">
+                <div className="container mx-auto py-32">
                     <div className="">
                         <SectionHeading
                             Heading={sectionHeading}
@@ -43,7 +46,9 @@ function CommonCardTwoSlider({
                         <Swiper
                             slidesPerView={slidesPerView}
                             navigation={false}
-                            pagination={{ type: "bullets", clickable: true }}
+                            pagination={true}
+                            followFinger={true}
+                            modules={[ Pagination]}
                             autoplay={autoplay}
                             loop={false}
                             spaceBetween={30}

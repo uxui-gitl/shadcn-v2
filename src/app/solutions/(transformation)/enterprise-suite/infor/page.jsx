@@ -403,48 +403,16 @@ const Page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      {/* Section Nav */}
-      <>
-        <SectionNav
-          arr={[
-            {
-              _id: 1,
-              title: "Infor Expertise",
-              link: "#InforExpertise",
-            },
-            {
-              _id: 2,
-              title: "Services",
-              link: "#Services",
-            },
-            {
-              _id: 3,
-              title: "Add-Ons",
-              link: "#AddOns",
-            },
-            {
-              _id: 4,
-              title: "Industry Spotlight",
-              link: "#IndustrySpotlight",
-            },
-
-            {
-              _id: 5,
-              title: "Why Us",
-              link: "#WhyUs",
-            },
-          ]}
-        />
-      </>
+    
 
       {/* Overview  */}
       <OverviewSection Text={`20+ years of Infor partnership and APAC's largest Infor implementation experience, empowers us to drive growth-focused operations globally.`} />
 
       <SectionWrapper
-        BGColor="#5F22D9"
+        BGColor="bg-primary-500"
       >
-        <div className="md:container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-16">
+        <div className="container mx-auto py-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-4">
             <div className="">
               <SectionHeading
                 Heading={'Our Infor Capabilities'}
@@ -460,11 +428,12 @@ const Page = () => {
 
                 <div className="my-5">
                   {offeringLinkListData.map((item) => (
-                    <div key={item?.id} className="flex items-center justify-center py-6 text-[24px] font-medium text-white" style={{ borderBottom: '1px solid white', cusror: 'pointer' }}>
+                    <div key={item?.id} className="flex items-center justify-center py-2 text-heading-02 leading-heading-02 font-medium text-white border-b border-neutral-white border-opacity-35
+" style={{ cusror: 'pointer' }}>
                       {item?.beforeIconUrl && <svg xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '20px' }} width="33" height="33" viewBox="0 0 32 33" fill="none">
                         <path d="M21.3331 11.1563V7.15625L25.3331 3.15625L26.6664 5.82292L29.3331 7.15625L25.3331 11.1563H21.3331ZM21.3331 11.1563L15.9998 16.4895M29.3332 16.4896C29.3332 23.8534 23.3636 29.8229 15.9998 29.8229C8.63604 29.8229 2.6665 23.8534 2.6665 16.4896C2.6665 9.12579 8.63604 3.15625 15.9998 3.15625M22.6665 16.4896C22.6665 20.1715 19.6817 23.1563 15.9998 23.1563C12.3179 23.1563 9.33317 20.1715 9.33317 16.4896C9.33317 12.8077 12.3179 9.82292 15.9998 9.82292" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>}
-                      <span className="w-full text-[20px] font-normal">{item.text}</span>
+                      <span className="w-full text-paragraph-01 leading-paragraph-01 font-normal">{item.text}</span>
                       {item?.isArrowIconVisiable && <svg className="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                       </svg>}
@@ -481,10 +450,10 @@ const Page = () => {
             </div>
           </div>
           <div className="InforSliderWrapper" style={{ zindex: "2", position: 'relative' }}>
-            <div className="flex py-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
+            <div className="flex py-5 " style={{ justifyContent: 'center', alignItems: 'center' }}>
               <div className="w-full">
                 <Swiper
-                  slidesPerView={1}
+                  slidesPerView={2}
                   navigation={false}
                   pagination={{ type: "bullets", clickable: true }}
                   autoplay={true}
@@ -492,7 +461,7 @@ const Page = () => {
                   spaceBetween={30}
                   breakpoints={{
                     640: {
-                      slidesPerView: 1,
+                      slidesPerView: 2,
                       spaceBetween: 16,
                     },
                     768: {
@@ -503,11 +472,15 @@ const Page = () => {
                       slidesPerView: 6,
                       spaceBetween: 32,
                     },
+                    1900: {
+                      slidesPerView: 6,
+                      spaceBetween: 32,
+                    },
                   }}
                 >
                   {inforText?.map((item, index) => (
                     <SwiperSlide key={item}>
-                      <div className="w-full text-[28px] font-semibold text-left text-white">
+                      <div className="w-full text-heading-02 leading-heading-02 font-semibold text-left text-white">
                         {item}
                       </div>
                     </SwiperSlide>
@@ -523,10 +496,10 @@ const Page = () => {
       <CommonCardThreeSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#1D162B'}
+        sectionBGColor={'bg-primary-900'}
         sectionHeading={'Service Offerings'}
         sectionDesc={"With extensive experience of domains and Infor solutions, we offer services to meet the growth requirements of business."}
-        sectionTextColor={'#fff'}
+        sectionTextColor={'text-neutral-white'}
         cardData={serviceOfferingData}
       >
 
@@ -541,7 +514,7 @@ const Page = () => {
         }
         sectionTextColor=""
         cardData={ultimateChoiceData}
-        sectionBGColor="#EFE9FB"
+        sectionBGColor="bg-primary-10"
         setHeadingLayout="horizontal"
 
       />
@@ -551,7 +524,8 @@ const Page = () => {
       <HubExpertise
         setHeading="Hub of Expertise"
         setDesc="We are here to build a competitive edge with technological brilliance for businesses across the world."
-        setColor="#ffffff"
+        setColor="bg-seconday-900"
+        BGColor="bg-secondary-900"
         counters={HUBEXPERTISE_COUNTER_DATA}
         columnNo={3}
       />
@@ -567,7 +541,7 @@ const Page = () => {
         Desc={
           "Many organizations struggle with inefficient processes, siloed data, and outdated technology, hindering their ability to innovate and grow. That's where Infor CloudSuite comes in – a powerful, industry-specific cloud ERP solution designed to streamline processes, enhance productivity, and drive business success."
         }
-        Color={"white"}
+        Color={"text-neutral-white"}
         readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
@@ -581,9 +555,9 @@ const Page = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their successful experience"}
         Desc={''}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
       <TransformBusinessForm

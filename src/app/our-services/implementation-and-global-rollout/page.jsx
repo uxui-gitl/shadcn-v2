@@ -360,17 +360,17 @@ const page = () => {
       <CommonCardTwoSlider
         ID={''}
         sectionImageUrl={''}
-        sectionBGColor={'#EFE9FB'}
+        sectionBGColor={'bg-secondary-10'}
         sectionHeading={'Our Services'}
         sectionDesc={'Our implementation services combine industry expertise with a customer-centric approach, ensuring minimal disruption and maximum impact.'}
-        sectionTextColor={'#000'}
+        sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         setHeadingLayout={'horizontal'}
         cardData={CyberSecurityData}
       />
 
-      <div className="" style={{ backgroundColor: '#1D162B' }}>
-        <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
+      <div className="bg-primary-900 rounded-3xl" >
+        <div className="container mx-auto  flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
           <div className="w-full md:w-1/2">
             <SectionHeading
               Heading={`Our Implementation Service Virtues`}
@@ -383,9 +383,9 @@ const page = () => {
             <img src="/infor/man.svg" style={{ width: '100%' }} />
           </div>
         </div>
-        <div className="md:container mx-auto bg-[#EFE9FB] py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
+        <div className=" bg-secondary-10 py-8 rounded-t-3xl">
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             navigation={false}
             pagination={{ type: "bullets", clickable: true }}
             autoplay={true}
@@ -408,10 +408,10 @@ const page = () => {
           >
             {ImplementationServiceVirtues_DATA.map((item, index) => (
               <SwiperSlide key={item}>
-                <div className="bg-[#EFE9FB] rounded-lg">
+                <div className="">
                   <img className="rounded-t-lg pl-4" src="/infor/blackstar.svg" alt="werw" />
                   <div className="p-5">
-                    <h5 className="mb-2 text-2xl font-bold">{item.cardHeading}</h5>
+                    <h5 className="mb-2 text-heading-02 leading-heading-02 font-bold">{item.cardHeading}</h5>
                     <p>{item.cardDesc}</p>
                   </div>
                 </div>
@@ -421,7 +421,7 @@ const page = () => {
         </div>
       </div>
 
-      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Key Implementation Phases"} desc={"Constant optimization is important during every stage, as we fine-tune the solution to maximize its value."} color={"#1D162B"} />
+      <ServicesCardSlider cardData={SERVICE_CARDS_DATA} heading={"Key Implementation Phases"} desc={"Constant optimization is important during every stage, as we fine-tune the solution to maximize its value."} color={"text-primary-900"} />
 
       <SectionWithSlider
         ID={"DATA_MGMT_DATA"}
@@ -429,23 +429,24 @@ const page = () => {
         sectionDesc={
           "Every successful implementation needs more than technology expertise. Our all-inclusive approach delivers winning implementation services for our customers."
         }
-        sectionTextColor="#ffffff"
+        sectionTextColor="text-neutral-white"
         cardData={DATA_MGMT_DATA}
-        sectionBGColor="#2B1624"
+        sectionBGColor="bg-secondary-900"
         setHeadingLayout="horizontal"
       />
 
       <HubExpertise
-        BGColor="#7B014E"
+        BGColor="bg-secondary-400"
         setHeading="Hub of Expertise"
         setDesc="We’re here to build an edge and bring technology brilliance with the finest in the industry."
-        setColor="#ffffff"
+        setColor="text-neutral-white"
         counters={HUBEXPERTISE_COUNTER_DATA}
+        columnNo={'2'}
       />
 
       <BlogSection ID={'blog'} blogImageUrl={blogImageUrl} Heading={'Key Strategies for Seamless Implementation'}
         Desc={`As organizations transit to new systems or upgrade existing ones, ensuring smooth data migration becomes imperative to maintain continuity, accuracy, and efficiency in operations. In this blog, we'll delve into the critical aspects of data migration and outline key strategies to ensure a seamless implementation process.`}
-        Color={'white'}
+        Color={'text-neutral-white'}
       ></BlogSection>
 
       <DistinctiveSection DistinctiveData={distinctiveData}
@@ -459,14 +460,14 @@ const page = () => {
         ID={"TESTIMONIALS"}
         Heading={"Delighted Customers Share their Successful Experiences"}
         Desc={'Discover how we have helped our customers to realize better results aligned with their business goals.'}
-        Color="#ffffff"
+        Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="#1D162B"
+        BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
       ></ReviewSliderSection>
 
       {/* Section--Case-Studies======================================================================= */}
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor='#FFFFFF' />
+      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"2"} bgColor='bg-neutral-white' />
       {/* End-Section--Case-Studies */}
 
       <TransformBusinessForm

@@ -16,7 +16,7 @@ function BenefitSliderSection({
   sectionHeading,
   sectionDesc,
   sectionHeadingMaxWidth,
-  sectionHeaderWidth = ["w-full"],
+  sectionHeaderWidth = '',
   cardData = [],
   sectionTextColor = "#000",
   sectionBGColor = "#000",

@@ -9,15 +9,17 @@ import 'swiper/css';
     return (
         <>
             <Swiper
-                slidesPerView={1.1}
-                navigation={false}
+                slidesPerView={1}
+                navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 autoplay={autoplay}
                 loop={false}
                 spaceBetween={16}
+                pagination={true}
+                followFinger={true}
                 breakpoints={{
                     640: {
-                        slidesPerView: 1.1,
+                        slidesPerView: 1,
                         spaceBetween: 32,
                     },
                     768: {
@@ -33,6 +35,7 @@ import 'swiper/css';
                 {children}
                
             </Swiper>
+            
         </>
     )
 }
