@@ -553,7 +553,7 @@ export default function Home() {
           <Slider slidesPerView={6} autoplay={true}>
             {partnerLogo?.map((item, index) => (
               <SwiperSlide key={index}>
-                <Image src={item} width={150} height={150} alt="Logos" className="brightness-110 hover:brightness-0" />
+                <Image src={item} width={100} height={100} alt="Logos" className="brightness-110 hover:brightness-0" />
               </SwiperSlide>
             ))}
           </Slider>
