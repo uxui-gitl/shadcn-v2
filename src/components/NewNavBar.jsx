@@ -60,7 +60,7 @@ function NewNavBar() {
 
     return (
         <>
-            <div className={`${isNavbarActive ? 'bg-[#fff]' : 'bg-[transparent]'} absolute top-0 z-[100] w-full`}>
+            <div className={`${isNavbarActive ? 'bg-[#fff]' : 'bg-[transparent]'} absolute top-0 z-[100] w-full invisible md:visible`}>
                 <div className={`border-1 px-10 z-50`}>
                     <div className="container mx-auto flex flex-col sm:flex-row sm:justify-between h-lvh sm:h-[100px] sm:items-center py-5">
                         <div className="logo sm:border-b-0 border-b-4 py-3 sm:py-0">
