@@ -420,7 +420,7 @@ const CloudStack = () => {
         Desc={
           "As cloud computing continues to transform the way organizations operate, the importance of effective cloud monitoring and maintenance cannot be overstated. In this article, we will delve into the critical aspects of cloud monitoring and maintenance, providing actionable tips and best practices to ensure optimal performance, reliability, and security in cloud environments."
         }
-        Color={"white"}
+        
         readMoreUrl="#"
         Color={'text-neutral-white'}
       ></BlogSection>
