@@ -695,6 +695,7 @@ export default function Home() {
         sectionTextColor="black"
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
+        bgColor={'bg-primary-600'}
         style={{
           backgroundColor: "white",
           position: "relative",
@@ -734,6 +735,7 @@ export default function Home() {
 
       {/* hub of experties */}
       <SectionWrapperNew
+      bgColor={'bg-primary-600'}
         sectionHeading={"Hub of Expertise"}
         sectionDesc={
           "We are here to build an edge and bring technology brilliance with the finest in industry"
@@ -791,6 +793,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
+      bgColor={'bg-primary-600'}
         sectionHeading={"Capabilities and Expertise"}
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
