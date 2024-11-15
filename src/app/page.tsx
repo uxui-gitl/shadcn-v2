@@ -302,7 +302,7 @@ export default function Home() {
               </div>
               <p class="text-[22px] font-medium mb-8">Cloud Infrastructure </p>
               <p class="text-[22px] font-medium mb-8">Business Apps on Cloud</p>
-              <p class="text-[22px] font-medium mb-8"> M365 Services</p>
+              <p class="text-[22px] font-medium mb-8">M365 Services</p>
             </div>
             <div>
           </div>`
@@ -312,7 +312,7 @@ export default function Home() {
       cardTitle: "",
       cardHeading: "Future Focused Transformation Solutions",
       cardDesc: 'Enhance business productivity and modernize stakeholder experience with streamlined operations',
-      cardBgImg:'/home/images/card1.webp',
+      cardBgImg:'/home/images/card3.webp',
       rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
         <div class="text-[40px] font-semibold mb-12">
@@ -340,7 +340,7 @@ export default function Home() {
   ]
 
   const sliderData = [
-    { id: 1, title: 'Automation Project Insight', desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer", url: '/home/images/automation.webp' },
+    { id: 1, title: 'Automation Project Insight', desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer", url: '/home/images/Automation.webp' },
     { id: 2, title: 'Cloud Project Insight', desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ", url: '/home/images/Cloud.webp' },
     { id: 3, title: 'Transformation Project Insight', desc: "8 years of Infor managed support services and migration for MT Infor cloud optimises operational cost by 25 for Europe's maritime service provider", url: '/home/images/Transformation.webp' },
 
@@ -369,7 +369,7 @@ export default function Home() {
             </div>
             <p class="text-[22px] font-medium mb-8">Java </p>
             <p class="text-[22px] font-medium mb-8">.Net, SharePoint</p>
-            <p class="text-[22px] font-medium mb-8"> Low code application development</p>
+            <p class="text-[22px] font-medium mb-8">Low code application development</p>
           </div>
           <div>
             <div class="text-[40px] font-semibold mb-12">
@@ -377,7 +377,7 @@ export default function Home() {
             </div>
             <p class="text-[22px] font-medium mb-8">Power BI and Power Apps</p>
             <p class="text-[22px] font-medium mb-8">Birst</p>
-            <p class="text-[22px] font-medium mb-8"> Tableau</p>
+            <p class="text-[22px] font-medium mb-8">Tableau</p>
             <p class="text-[22px] font-medium mb-8">Azure and AWS data management </p>
 
           </div>
@@ -791,7 +791,7 @@ const ServiceContent = () => {
         ))}
 
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/home/images/servives.webp)`, backgroundSize: 'cover' }}>
+      <div className="relative" style={{ backgroundImage: `url(/home/images/Servives.webp)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
@@ -820,7 +820,7 @@ const IndustryContent = () => {
         ))}
 
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/home/images/industry.webp)`, backgroundSize: 'cover' }}>
+      <div className="relative" style={{ backgroundImage: `url(/home/images/Industry.webp)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
@@ -850,7 +850,7 @@ const ParternerContent = () => {
         ))}
 
       </div>
-      <div className="relative" style={{ backgroundImage: `url(/home/images/partners.webp)`, backgroundSize: 'cover' }}>
+      <div className="relative" style={{ backgroundImage: `url(/home/images/Partners.webp)`, backgroundSize: 'cover' }}>
       </div>
     </div>
   );
