@@ -293,7 +293,7 @@ function NewNavBar() {
                                                 <div className={`flex leading-[28px] justify-start p-2 font-semibold`}>
                                                     <img src="/navbar-icon/cloud.svg" alt={'asdn'} className='mr-6 h-[24px] w-[24px] mt-1' />
                                                     <div className="">
-                                                        <div onClick={() => navLinkClick('/Our-Services/Managed-Services')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Managed Services</div >
+                                                        <div onClick={() => navLinkClick('/Industries/manufacturing')} className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer`}>Manufacturing</div >
                                                         <p className="text-[12px] font-medium leading-[16px] text-[#808080]">Delivering business value with<br></br>
                                                             automation</p>
                                                     </div>

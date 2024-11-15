@@ -495,7 +495,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
           {caseStudyLayout === "5" && (
 
             <div
-              className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto lg:h-[362px]"
+              className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto"
               style={{ color: casestudy[0].color }}
             >
               <div
@@ -532,7 +532,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
                   {casestudy[1].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-8">{casestudy[3].description}</p>
+                <p className="text-body-01 leading-body-01 mb-8">{casestudy[1].description}</p>
                 {casestudy[1].link && <div className="absolute right-4 bottom-4">
                   <Link href={casestudy[1].link} target="_blank">
                   <OutlinedButtonWithArrow size={32}/>
@@ -549,7 +549,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
                   {casestudy[2].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-8">{casestudy[3].description}</p>
+                <p className="text-body-01 leading-body-01 mb-8">{casestudy[2].description}</p>
                 {casestudy[2].link && <div className="absolute right-4 bottom-4">
                   <OutlinedButtonWithArrow size={32} />
                 </div>}

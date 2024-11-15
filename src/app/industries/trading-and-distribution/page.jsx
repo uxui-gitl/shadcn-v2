@@ -15,6 +15,8 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { Tabs } from "@/components/ui/tabs";
 import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
+import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+
 
 
 
@@ -420,14 +422,14 @@ function page() {
     ];
 
 
-    const casestudy = [
+    const CASE_STUDIES_DATA = [
         {
             imageURL: "",
             videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
             title: "Case Studies",
             heading: "",
             description: "Gain valuable insights on digital transformation journeys of trading & distribution businesses.",
-            link: "/case-study-1",
+            link: "",
             color: "#FFFFFF",
             bgCardColor: "#2B1624",
         },
@@ -484,20 +486,20 @@ function page() {
                 video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
             />
             <OverviewSection Text={`We offer effective solutions for trading and distribution businesses, ensuring warehouse governance, maximum perfect order fulfilment and optimized distribution operations for customers.`} />
-
-            <SectionWrapper BGColor="black">
-                <div className="md:container mx-auto">
+            <SectionWrapper BGColor="bg-primary-900">
+            <div className="container mx-auto py-32">
                     <SectionHeading
-                        Color="white"
+                        Color="text-neutral-white"
                         Heading="Knocking Business Challenges"
                         Desc=""
+                     headingContainerWidth="w-1/2"
                     ></SectionHeading>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <ul className=" space-y-4 w-full text-white">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                 <ul className=" space-y-4 w-full text-neutral-white">
                             {CHALLENGES_LIST_DATA.map((challenge, index) => (
                                 <li
                                     key={challenge.id}
-                                    className={`flex items-start py-6 border-b-[0.5px] border-white w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                    className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                                 >
                                     <div className="flex-shrink-0 mr-4">
                                         <Image
@@ -508,7 +510,7 @@ function page() {
                                         />
                                     </div>
                                     <div className="text-left">
-                                        <h3 className="text-2xl font-normal">
+                                        <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
                                             {challenge.title}
                                         </h3>
                                     </div>
@@ -527,31 +529,38 @@ function page() {
             <SectionWrapperNew
                 sectionHeading={"ACT Solution Offerings"}
                 sectionDesc={"Trading and distribution businesses must adopt innovative solutions for scalable infrastructure and increased revenue growth"}
-                sectionTextColor="black"
+                sectionTextColor="text-primary-900"
                 title="OUR OFFERINGS"
                 sectionHeadingLayout="center"
-                style={{ background: 'white' }}
+                style={{ background: '#f2f2f2' }}
             >
-                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
-                    <Tabs activeTabClassName={`!bg-[#5F22D9]`} contentClassName={`!mt-20`} tabClassName={`!px-10 hover:bg-[#5F22D9]`} containerClassName={`!my-2`} tabs={tabs} />
-                </div>
+                <div className="h-[70vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+          <Tabs
+            activeTabClassName="!bg-[#cccccc] !text-[#fff]"
+            contentClassName="!mt-5"
+            tabClassName="!px-4 hover:bg-[#ccc] "
+            containerClassName="!my-2"
+            tabs={tabs}
+          />
+        </div>
             </SectionWrapperNew>
 
             {/* end future section */}
 
-            <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
+            <SectionWrapperNew
+                bgColor={'bg-primary-500'}
                 sectionHeading="Key Capabilities"
                 sectionDesc="Evolve your trading and distribution business with our expert-led digital transformation capabilities."
-                sectionTextColor='#fff'
+                sectionTextColor='text-neutral-white'
                 sectionHeadingLayout="horizontal"
             >
                 <Slider>
                     {DATA_MGMT_DATA?.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
+                            <div className="p-6 bg-[transparent] border-[0.5px] border-white rounded-3xl border-opacity-20 min-h-[424px]">
                                 <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                                <div className="text-[28px] text-white">{item.CardHeading}</div>
-                                <p className="text-[20px] py-4 text-white">{item.CardDesc}</p>
+                                <div className="text-heading-02 leading-heading-02 font-semibold text-neutral-white">{item.CardHeading}</div>
+                                <p className="text-body-01 leading-body-01 py-4 text-neutral-white">{item.CardDesc}</p>
                                 <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
                             </div>
 
@@ -571,34 +580,44 @@ function page() {
                 }
                 Color={""}
             >
-                <p className="font-semibold">Dealer Management Desk</p>
-                <p>.NET portal integrated with Dynamics Navision streamlines dealer management through online registration, contract management. Leveraging Azure cloud infrastructure, the portal enables secure remote onboarding, efficient order processing and payment management.</p>
+                <p className="text-heading-02 leading-heading-02 font-semibold mb-4">Dealer Management Desk</p>
+                <p className="text-body-01 leading-body-01">.NET portal integrated with Dynamics Navision streamlines dealer management through online registration, contract management. Leveraging Azure cloud infrastructure, the portal enables secure remote onboarding, efficient order processing and payment management.</p>
 
             </AcceleratorSection>
 
-            <SectionWrapperNew style={{ backgroundColor: "#fff" }}
+            <SectionWrapperNew
+            bgColor={'bg-primary-900'}
                 sectionHeading="Services"
                 sectionDesc="Experience end to end services, driven by our industry knowledge, technical acumen and a customer-centric approach."
-                sectionTextColor='#000'
+                sectionTextColor='text-neutral-white'
                 sectionHeadingLayout="left"
             >
                 <Slider>
-                    {RPASolution2?.map((item, index) => (
+                {RPASolution2?.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className="max-w-sm bg-white rounded-3xl group overflow-hidden relative" >
-                                <div className="h-[300px] bg-slate-700" style={{ background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
-                                <div className="py-10 px-10 relative">
-                                    <h5 className="mb-6 text-[28px] font-semibold text-[#000] leading-[50px] min-h-[40px]">{item?.cardHeading}</h5>
-                                    <p className="mb-3 text-[16px] font-medium text-[#000] min-h-[144px]">{item?.cardDesc}</p>
+                            <div class="w-full min-h-[50vh] bg-white rounded-3xl group overflow-hidden relative border-[0.5px] border-primary-900 border-opacity-20" >
+                            <div className="h-[35vh] bg-slate-700" style={{ background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                                <div className="h-[25vh] p-5 relative">
+                                    <h5 className="mb-4 text-heading-02 leading-heading-02 text-primary-900 font-semibold ">{item?.cardHeading}</h5>
+                                    <p className="mb-6 text-body-01 leading-body-01 text-primary-900 font-normal">{item?.cardDesc}</p>
                                     {item?.cardHoverData && (
                                         <div className="absolute bottom-4 right-4">
-                                            <OutlinedButtonWithArrow size={48} />
+                                            <OutlinedButtonWithArrow size={24} />
                                         </div>)}
 
                                 </div>
                                 {item?.cardHoverData && (
-                                    <div className="bg-white py-10 px-10 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
+                                    <div className="bg-secondary-10 p-5 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
                                         <div className="">
+                                            <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                                                {item?.cardHoverData.map((item2) => (
+                                                    <>
+                                                        <li>
+                                                            <span className="font-semibold text-black">{item2}</span>
+                                                        </li>
+                                                    </>
+                                                ))}
+                                            </ol>
                                             <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
                                                 {item?.cardHoverData.map((item2) => (
                                                     <>
@@ -622,85 +641,16 @@ function page() {
             {/* custome solution */}
 
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'We leverage domain knowledge and digital transformation expertise to tackle specific challenges in multiple trading and distribution sectors.'} />
+            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='bg-neutral-white' />
 
-            <SectionWrapperNew
-                style={{ backgroundColor: '#d3d3d3' }}
-                sectionHeading={''}
-                sectionDesc={''}
-                sectionTextColor={'fff'}
-                sectionHeadingLayout={'left'}>
-
-                <div
-                    className="flex flex-col lg:flex-row justify-start items-center gap-8 w-full h-auto lg:h-[362px]"
-                    style={{ color: casestudy[0].color }}
-                >
-                    <div
-                        className="w-full relative lg:w-1/3 h-full rounded-3xl p-8"
-                        style={{
-                            backgroundImage: `url(${casestudy[0].imageURL})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "bottom",
-                            backgroundColor: casestudy[0].bgCardColor,
-                        }}
-                    >
-                        <h3 className="text-base font-semibold mb-4 lg:mb-12">
-                            {casestudy[0].title}
-                        </h3>
-                        <h1 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-6">
-                            {casestudy[0].heading}
-                        </h1>
-                        <p className="w-full lg:w-[80%] mb-4">
-                            {casestudy[0].description}
-                        </p>
-                        {casestudy[0].link && <div className="absolute bottom-4 right-4">
-                            <Link href={casestudy[0].link} target="_blank">
-                                <OutlinedButtonWithArrow arrowColor="white" size={56} />
-                            </Link>
-                        </div>}
-                    </div>
-                    <div
-                        className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
-                        style={{
-                            color: casestudy[1].color,
-                            backgroundColor: casestudy[1].bgCardColor,
-                        }}
-                    >
-                        <h1 className="text-3xl font-medium mb-4 lg:mb-6">
-                            {casestudy[1].heading}
-                        </h1>
-                        <p className="mb-4">{casestudy[1].description}</p>
-                        {casestudy[1].link && <div className="absolute bottom-4 right-4">
-                            <Link href={casestudy[1].link} target="_blank">
-                                <OutlinedButtonWithArrow size={56} />
-                            </Link>
-                        </div>}
-                    </div>
-                    <div
-                        className="relative w-full lg:w-1/3 h-full rounded-3xl p-8"
-                        style={{
-                            color: casestudy[2].color,
-                            backgroundColor: casestudy[2].bgCardColor,
-                        }}
-                    >
-                        <h1 className="text-3xl font-medium mb-4 lg:mb-6">
-                            {casestudy[2].heading}
-                        </h1>
-                        <p className="mb-4">{casestudy[2].description}</p>
-                        {casestudy[2].link && <div className="absolute bottom-4 right-4">
-                            <OutlinedButtonWithArrow size={56} />
-                        </div>}
-                    </div>
-                </div>
-
-
-            </SectionWrapperNew>
+           
             {/* end case studies */}
             <BlogSection
                 ID={"blog"}
                 blogImageUrl={blogImageUrl}
                 Heading={"Mobile Commerce: The Next Frontier for B2B Trading"}
                 Desc={"The world of B2B trading is undergoing a significant transformation, driven by the rapid adoption of mobile technology. Mobile commerce, or m-commerce, has revolutionized the way businesses interact, transact, and operate. As mobile devices become increasingly ubiquitous, B2B traders can no longer afford to ignore the potential of mobile commerce."}
-                Color={"white"}
+                Color={"text-neutral-white"}
                 readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
             ></BlogSection>
 
@@ -708,9 +658,9 @@ function page() {
                 ID={"TESTIMONIALS"}
                 Heading={"Delighted Customers share their Experiences"}
                 Desc={'Discover how we have helped our customers to realize tangible outcomes aligned with their business goals.'}
-                Color="#ffffff"
+                Color="text-neutral-white"
                 CardDataList={TESTIMONIAL_DATA}
-                BGColor="#1D162B"
+                BGColor="bg-primary-900"
                 SectionHeadingMaxWidth={'70%'}
             ></ReviewSliderSection>
 
@@ -736,11 +686,11 @@ const AutomationContent = () => {
         'Predictive Analytics for Demand Forecasting',
     ];
     return (
-        <div className="grid grid-cols-2 gap-20 h-full">
-            <div className="py-10 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
+            <div className="p-5">
                 {services.map((item) => (
                     <>
-                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                           <div className="list text-body-01 leading-body-01 py-3 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
                             {item}
                             <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
                         </div>
@@ -748,7 +698,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -765,11 +715,11 @@ const CloudContent = () => {
         'Microsoft Power BI Cloud',
     ];
     return (
-        <div className="grid grid-cols-2 gap-20 h-full">
-            <div className="py-10 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
+            <div className="p-5">
                 {data.map((item) => (
                     <>
-                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                            <div className="list text-body-01 leading-body-01 py-3 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
                             {item}
                             <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
                         </div>
@@ -777,7 +727,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -793,11 +743,11 @@ const TransformationContent = () => {
         'Managed Services',
     ];
     return (
-        <div className="grid grid-cols-2 gap-20 h-full">
-            <div className="py-10 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
+            <div className="p-5">
                 {data.map((item) => (
                     <>
-                        <div className="list text-[22px] py-4 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
+                           <div className="list text-body-01 leading-body-01 py-3 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
                             {item}
                             <Image width={35} height={35} src="/homeNew/chevron-right.svg" alt="char"></Image>
                         </div>
@@ -805,7 +755,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );

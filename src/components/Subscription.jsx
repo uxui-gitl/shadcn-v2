@@ -93,7 +93,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
   return (
     <>
       <div className={` w-full  `} id="Contact">
-        <div className="text-left px-8">
+        <div className="text-left px-4 md:px-8">
           <HorizontalHeading
             heading={title}
             desc={desc}

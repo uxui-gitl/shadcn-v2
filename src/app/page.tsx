@@ -818,7 +818,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
-        csLayout={"1"}
+        csLayout={"5"}
         bgColor={"#1D162B"}
       />
 

@@ -87,7 +87,7 @@ function ReviewSliderSection(
                         
                         {CardDataList?.map((item, index) => (
                             <SwiperSlide key={item.id ? item?.id : index}>
-                                <div className="w-full p-6 bg-transparent rounded-3xl">
+                                <div className="w-full bg-transparent rounded-3xl">
                                
                                     <div
                                         className="text-neutral-white text-heading-01 leading-heading-01 font-light"
