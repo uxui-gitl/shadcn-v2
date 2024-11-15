@@ -121,7 +121,7 @@ const IIOT = () => {
         desc="Tap into Data-Driven Insights and Drive Smart Connected Business with IIoT"
         cta="Let's Connect"
         width="60%"
-        video="/iiot/videos/pageBanner.mov"
+        video="/iiot/videos/pageBanner.mp4"
       />
       {/* End--Section--Hero-Banner====================================================================== */}
 

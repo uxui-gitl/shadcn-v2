@@ -19,7 +19,7 @@ const EntIntro = ({
   return (
    
     <div className="text-center">
-      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden md:px-20 ">
+      <div className="relative w-full h-[100vh] overflow-hidden ">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover sm:object-fill z-0"
           autoPlay
