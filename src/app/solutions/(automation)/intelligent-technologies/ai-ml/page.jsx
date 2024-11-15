@@ -223,7 +223,7 @@ const page = () => {
         desc="Revolutionise business operations, enhance productivity and save time with our Artificial Intelligence & Machine Learning offerings."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/ai-ml/videos/pageBanner.mp4"
       />
 
       {/* Overview  */}
