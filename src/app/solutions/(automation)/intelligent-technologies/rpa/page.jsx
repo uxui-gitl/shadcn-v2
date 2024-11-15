@@ -52,7 +52,7 @@ const RPASolution = [
     cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
     isArrow: false,
     cardTextColor: 'white',
-    cardType: 2,
+    cardType: 1,
     downImageUrl:'',
   },
   {
