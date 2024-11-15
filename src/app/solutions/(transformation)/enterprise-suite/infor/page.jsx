@@ -183,8 +183,8 @@ const Page = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      imageURL: "/infor/caseStudy.webp",
+      videoURL: "",
       title: "Case Studies",
       heading: "Infor Project Highlights",
       description:
@@ -204,7 +204,7 @@ const Page = () => {
     },
 
     {
-      imageURL: "/path/to/image1.jpg",
+      imageURL: "",
       title: "",
 
       heading: "Hydraulic Systems Manufacturer",
@@ -215,7 +215,7 @@ const Page = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/infor/caseStudy.webp",
+       videoURL: "/infor/caseStudyVideo.mp4",
       title: "",
       heading: "Sheet metal manufacturer",
       description:
@@ -224,6 +224,7 @@ const Page = () => {
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
+    
     // Add more case studies here...
   ];
 
@@ -250,7 +251,7 @@ const Page = () => {
       cardDesc: 'Streamline every phase of Infor implementation precisely and on-time',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/implementation.svg'
+      cardTopImageUrl: '/infor/serviceOfferings/implementation.webp'
     },
     {
 
@@ -260,7 +261,7 @@ const Page = () => {
       cardDesc: 'Manage every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/managedServices.svg'
+      cardTopImageUrl: '/infor/serviceOfferings/managedServices.webp'
     },
     {
 
@@ -270,7 +271,7 @@ const Page = () => {
       cardDesc: 'Ensure smooth and efficient migration process with minimum business disruptions',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/migrateCloud.svg'
+      cardTopImageUrl: '/infor/serviceOfferings/migrateCloud.webp'
     },
     {
 
@@ -280,7 +281,7 @@ const Page = () => {
       cardDesc: 'Experience seamless and transformative migration of different ERP to Infor LN with data integrity. ',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/migrateInfor.svg'
+      cardTopImageUrl: '/infor/serviceOfferings/migrateInfor.webp'
     },
     {
 
@@ -291,7 +292,7 @@ const Page = () => {
       cardDesc: 'Get access to the latest Infor platform, ensuring improved overall performance',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/upgradeInfor.svg'
+      cardTopImageUrl: '/infor/serviceOfferings/upgradeInfor.webp'
     },
     {
 
@@ -303,7 +304,7 @@ const Page = () => {
       cardDesc: 'Value-adding custom developments and integrations that deliver better business outcomes',
       isArrow: false,
       cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/customization.svg'
+      cardTopImageUrl: '/infor/serviceOfferings/customization.webp'
     },
   ]
 
