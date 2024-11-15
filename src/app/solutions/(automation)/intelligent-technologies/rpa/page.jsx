@@ -46,14 +46,14 @@ const RPASolution = [
   {
 
     id: 3,
-    cardBGImageUrl: '',
+    cardBGImageUrl: '/rpa/Cards/3.webp',
     cardBGColor: '#fff',
     cardHeading: 'Compliance and Consistency',
     cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
     isArrow: false,
-    cardTextColor: '#000',
+    cardTextColor: 'white',
     cardType: 2,
-    downImageUrl:'/rpa/Cards/3.webp',
+    downImageUrl:'',
   },
   {
 
@@ -79,14 +79,14 @@ const RPASolution = [
   },
   {
  id: 6,
-    cardBGImageUrl: '',
+    cardBGImageUrl: '/rpa/Cards/6.webp',
     cardBGColor: '#fff',
     cardHeading: 'Reduce AHT (Average Handling Time)',
     cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
     isArrow: false,
-    cardTextColor: '#000',
+    cardTextColor: 'white',
     cardType: 2,
-    downImageUrl:'/rpa/Cards/6.webp',
+    downImageUrl:'',
   },
   {
  id: 7,
