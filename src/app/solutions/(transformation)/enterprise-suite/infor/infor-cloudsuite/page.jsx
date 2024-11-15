@@ -17,14 +17,14 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import Image from "next/image";
 const page = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/inforCloudSuite/blogBg.webp";
 
   const TESTIMONIAL_DATA = [
     {
       id: 1,
       cardHeading: "Successful Infor Implementation",
       cardDesc: 'We would like to put on record the successful completion of our INFOR ERP LN implementation project by Godrej Infotech at our plant in Ahmedabad. We are glad to inform that the project has been completed as per our requirement.',
-       designation: 'Managing Director',
+      designation: 'Managing Director',
       companyName:'Leading Manufacturer of Power & Control Panels'
     },
     {
@@ -41,7 +41,7 @@ const page = () => {
     {
       id: 1,
       cardBGColor: '#fff',
-      cardHeading: 'Infor CloudSuite Industrial Enterprise ',
+      cardHeading: 'Infor CloudSuite Industrial Enterprise',
       cardDesc: `<p>Enables manufacturing and distribution businesses with modern, scalable and agile ERP functionalities<p>
       
 <ul class=" my-2 space-y-2 text-primary-900 list-disc list-inside">
@@ -55,7 +55,7 @@ const page = () => {
 </ul> ` ,
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/inforCloudSuite/offerings/indusrialEnterprise.webp'
     },
     {
 
@@ -74,7 +74,7 @@ const page = () => {
 </ul> `,
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/inforCloudSuite/offerings/automotive.webp'
     },
     {
 
@@ -92,7 +92,7 @@ const page = () => {
       ,
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/inforCloudSuite/offerings/aerospace.webp'
     },
     {
 
@@ -114,18 +114,26 @@ const page = () => {
       `,
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/inforCloudSuite/offerings/engineering.webp'
     },
   ]
 
   const BENEFITS_CARDS_DATA = [
-    { id: '1',icon:'', cardDesc: 'Extensible and integrable Cloud Suites through Infor OS.' },
-    { id: '2',icon:'', cardDesc: 'Accommodates multiple, intricate manufacturing scenarios.' },
-    { id: '3',icon:'', cardDesc: 'Industry-tailored features with cloud environment.' },
-    { id: '4',icon:'', cardDesc: 'Cloud-based applications less susceptible to downtime, ensuring business continuity.' },
-    { id: '5',icon:'', cardDesc: 'Tailored solutions for various industries, addressing specific needs and challenges.' },
-    { id: '6',icon:'', cardDesc: 'Accessibility from anywhere with an internet connection, making it convenient for remote work and global collaboration.' },
+    { id: '1',icon:'/inforCloudSuite/benefits/extensibleIntegrable.svg', cardDesc: 'Extensible and integrable Cloud Suites through Infor OS.' },
+    { id: '2',icon:'/inforCloudSuite/benefits/accommodatesMultiple.svg', cardDesc: 'Accommodates multiple, intricate manufacturing scenarios.' },
+    { id: '3',icon:'/inforCloudSuite/benefits/IndustryTailored.svg', cardDesc: 'Industry-tailored features with cloud environment.' },
+    { id: '4',icon:'/inforCloudSuite/benefits/cloudBasedApp.svg', cardDesc: 'Cloud-based applications less susceptible to downtime, ensuring business continuity.' },
+    { id: '5',icon:'/inforCloudSuite/benefits/tailoredSolution.svg', cardDesc: 'Tailored solutions for various industries, addressing specific needs and challenges.' },
+    { id: '6',icon:'/inforCloudSuite/benefits/accessibility.svg', cardDesc: 'Accessibility from anywhere with an internet connection, making it convenient for remote work and global collaboration.' },
   ];
+
+  const CLOUDSUITE_SERVICES_DATA = [
+    { id: '1',icon:'/inforCloudSuite/services/consulting.svg', cardTitle: 'Consulting' },
+    { id: '2',icon:'/inforCloudSuite/services/implementation.svg', cardTitle: 'Implementation' },
+    { id: '3',icon:'/inforCloudSuite/services/managedServices.svg', cardTitle: 'Managed Services' },
+    { id: '4',icon:'/inforCloudSuite/services/migrationUpgrade.svg', cardTitle: 'Migration and Upgrade' },
+  ];
+
 
   return (
     <>
@@ -134,7 +142,7 @@ const page = () => {
         desc="Cloud-based, pre-configured industry solution for faster adoption and maximum impact."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/inforCloudSuite/video/"
       />
 
       <OverviewSection Text={`Discover smarter way to manage business with Infor CloudSuite. Industry-specific cloud ERP solutions help enterprises to scale with confidence and agility.`} />
@@ -202,12 +210,12 @@ const page = () => {
               },
           }}
           >
-            {['Consulting', 'Implementation', 'Managed Services', 'Migration and Upgrade ',]?.map((item, index) => (
+            {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                    <img className="rounded-3xl mx-auto md:mx-2" src="/infor/blackstar.svg" alt="" />
+                    <img className="rounded-3xl mx-auto md:mx-2" src={item.icon} alt="" />
                   <div className="p-5">
-                      <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">{item}</h5>
+                      <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">{item.cardTitle}</h5>
                   </div>
                  
                 </div>

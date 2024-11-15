@@ -40,9 +40,9 @@ const ContactUs = () => {
   ];
 
   const GuidingPrinciples = [
-    { id: 1, title: 'Purpose', desc: 'Create Sustainable Value for our Stakeholders by connecting People and Technology.' },
-    { id: 2, title: 'Vision', desc: 'Be a world class provider of high-quality Information & Technology solutions.' },
-    { id: 3, title: 'Value', desc: 'Integrity, Responsiveness, Commitment, Teamwork' },
+    { id: 1, title: 'Purpose', desc: 'Create Sustainable Value for our Stakeholders by connecting People and Technology.', icon:'/about/Purpose.svg' },
+    { id: 2, title: 'Vision', desc: 'Be a world class provider of high-quality Information & Technology solutions.', icon:'/about/Vision.svg' },
+    { id: 3, title: 'Value', desc: 'Integrity, Responsiveness, Commitment, Teamwork', icon:'/about/Value.svg' },
   ]
 
   const AWARD_DATA = [
@@ -623,7 +623,7 @@ const ContactUs = () => {
             <SwiperSlide key={index}>
               <div class="p-6 bg-[transparent]">
                 <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
-                  <Image src={"about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
+                  <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mr-4" />
                   <div className="text-[28px] text-white">{item.title}</div>
                 </div>
                 <p class="text-[20px] py-4 text-white">{item.desc}</p>

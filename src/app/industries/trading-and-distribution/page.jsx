@@ -22,7 +22,7 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 
 
 function page() {
-    const blogImageUrl = "/ai-ml/blog-bg.png";
+    const blogImageUrl = "/tradingDistribution/blog-bg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
@@ -145,7 +145,7 @@ function page() {
             cardDesc: 'Meticulous analysis of current business operations, IT framework and accordingly develop tailored strategy for optimal business growth.',
             isArrow: false,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            cardTopImageUrl: 'retail/services/businessConsulting.svg',
             // cardHoverData: [
             //     'abc',
             //     'abc',
@@ -163,7 +163,7 @@ function page() {
             cardDesc: 'We ensure seamless solution execution and worldwide deployment leveraging our expertise.',
             isArrow: false,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
+            cardTopImageUrl: 'retail/services/implementation.svg',
             
         },
         {
@@ -174,7 +174,7 @@ function page() {
             cardDesc: 'Helping organisations to unburden their IT operations with expert-managed services, ensuring higher efficiency.',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+            cardTopImageUrl: 'retail/services/managedServices.svg'
         },
         {
 
@@ -184,7 +184,7 @@ function page() {
             cardDesc: `Effortless upgrade to advance solution and data migration for transforming business operations.`,
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+            cardTopImageUrl: 'retail/services/migration.svg'
         },
         {
 
@@ -195,7 +195,7 @@ function page() {
             cardDesc: 'Future-proof business by modernizing legacy systems and optimizing overall performance.',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+            cardTopImageUrl: 'retail/services/legacyModernization.svg'
         },
 
         {
@@ -207,7 +207,7 @@ function page() {
             cardDesc: 'Stay agile and scalable with infrastructure as a service, without the obligation of managing infrastructure and hardware maintenance.',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+            cardTopImageUrl: 'retail/services/Infrastructure.svg'
         },
 
     ]
@@ -483,7 +483,7 @@ function page() {
                 desc="Streamlining logistics, optimizing inventory and enhancing supply chain visibility"
                 cta="Let's Connect"
                 width="60%"
-                video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+                video="/tradingDistribution/video/pageBanner.mp4"
             />
             <OverviewSection Text={`We offer effective solutions for trading and distribution businesses, ensuring warehouse governance, maximum perfect order fulfilment and optimized distribution operations for customers.`} />
             <SectionWrapper BGColor="bg-primary-900">

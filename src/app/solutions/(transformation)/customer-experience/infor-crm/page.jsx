@@ -23,27 +23,27 @@ const page = () => {
     {
       _id: 1,
       desc: "Experienced team of certified Infor CRM professionals",
-      icon: "",
+      icon: "/infor-crm/distinctiveEdge/experiencedTeam.svg",
     },
     {
       _id: 2,
       desc: "In-depth knowledge of Infor CRM's capabilities and best practices",
-      icon: "",
+      icon: "/infor-crm/distinctiveEdge/InDepth.svg",
     },
     {
       _id: 3,
       desc: "Dedicated customer support, assisting businesses in implementation phase and beyond",
-      icon: "",
+      icon: "/infor-crm/distinctiveEdge/dedicated.svg",
     },
     {
       _id: 4,
       desc: "Proven track record of successful Infor CRM implementations",
-      icon: "",
+      icon: "/infor-crm/distinctiveEdge/provenTrack.svg",
     },
 
   ]
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/infor-crm/blog-bg.webp";
 
   const casestudy = [
     {
@@ -99,7 +99,7 @@ const page = () => {
       cardDesc: 'Tailored to explicit demands, workflows, and processes, delivering personalized CRM.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/infor-crm/keyCapabilities/customizable.webp'
     },
     {
 
@@ -109,7 +109,7 @@ const page = () => {
       cardDesc: 'Integrates with Microsoft Outlook and Infor CloudSuite ERP, minimizing data silos.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/infor-crm/keyCapabilities/seamlessIntegration.webp'
     },
     {
 
@@ -119,7 +119,7 @@ const page = () => {
       cardDesc: 'Dedicated mobile accessibility for real-time customer engagement and responsiveness.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/infor-crm/keyCapabilities/mobileCentric.webp'
     },
     {
 
@@ -129,7 +129,7 @@ const page = () => {
       cardDesc: 'Streamlines lead management, forecasting and opportunity tracking, with 70+ reports.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/infor-crm/keyCapabilities/automation.webp'
     },
     {
 
@@ -140,19 +140,19 @@ const page = () => {
       cardDesc: 'Prompt issue resolution, scalable with business expansion, adapting to changing markets.',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+      cardTopImageUrl: '/infor-crm/keyCapabilities/scalable.webp'
     },
     {
 
 
       id: 6,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
+      cardBGImageUrl: '/infor-crm/keyCapabilities/multiAttendee.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'New Multi-Attendee Support for Activities',
       cardDesc: 'Seamless support for multiple contacts, leads & users in activities & records, for smoother stakeholder communication.',
       isArrow: false,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-3.jpg'
+      cardTopImageUrl: '/infor-crm/keyCapabilities/multiAttendee.webp'
     },
   ]
   const ultimateChoiceData = [
@@ -223,7 +223,7 @@ const page = () => {
         desc="Deliver exceptional customer experiences through analytics and automated workflows"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="infor-crm/video/pageBanner.mp4"
       />
       <OverviewSection Text={'Built on a scalable, cloud-based platform, Infor CRM integrates seamlessly with Infor ERP, providing real-time visibility into customer interactions, sales and service. Tailored solutions for manufacturing, distribution, healthcare and more.'} />
 

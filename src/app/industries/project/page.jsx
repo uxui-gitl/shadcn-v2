@@ -19,7 +19,7 @@ import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithA
 
 
 function page() {
-    const blogImageUrl = "/ai-ml/blog-bg.png";
+    const blogImageUrl = "/project/blog-bg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
@@ -485,7 +485,7 @@ function page() {
                 desc="Enhanced project management & delivery, Improved customer satisfaction"
                 cta="Let's Connect"
                 width="60%"
-                video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+                video="/project/video/pageBanner.mp4"
             />
             <OverviewSection Text={`We enable project stakeholders to make informed decisions, streamline operations, and reduce costs, driving successful outcomes that align with business objectives.`} />
 
@@ -734,7 +734,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/project/tab1.svg)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );

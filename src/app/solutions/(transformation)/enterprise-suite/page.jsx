@@ -190,7 +190,7 @@ const EnterpriseSuite = () => {
     },
     {
       id: 3,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#7F4EE1",
       cardHeading: "Healthcare",
@@ -212,7 +212,7 @@ const EnterpriseSuite = () => {
     },
     {
       id: 4,
-      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
+      cardBGImageUrl: "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
 
       cardBGColor: "#EFE9FB",
       cardHeading: "Project",
@@ -269,7 +269,7 @@ const EnterpriseSuite = () => {
         desc="Redefining enterprise future with strategic transformation through Enterprise Solutions"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/enterpriseSuite/video/pageBanner.mov"
       />
       {/* End--HeroBanner-Section=============================================================== */}
 

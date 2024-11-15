@@ -15,32 +15,32 @@ import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardTh
 import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 const TechnologyStack = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/technology-stack/video/pageBanner.mp4";
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
       desc: "Scalable infrastructure support for your business requirements",
-      icon: "",
+      icon: "/technology-stack/distinctiveEdge/ScalableInfrastructure.svg",
     },
     {
       _id: 2,
       desc: "High agility and elevated user experience delivery while meeting timelines ",
-      icon: "",
+      icon: "/technology-stack/distinctiveEdge/HighAgility.svg",
     },
     {
       _id: 3,
       desc: "Assured continuous support through bug fixing and upgradation ",
-      icon: "",
+      icon: "/technology-stack/distinctiveEdge/assuredContinuous.svg",
     },
     {
       _id: 4,
       desc: "100% collaborative approach, quality guidelines & adherence to the right coding standards",
-      icon: "",
+      icon: "/technology-stack/distinctiveEdge/collaborativeApproach.svg",
     },
     {
       _id: 5,
       desc: "Comprehensive requirement analysis and scope-of-work documentation before designing ",
-      icon: "",
+      icon: "/technology-stack/distinctiveEdge/comprehensive.svg",
     },
 
   ];
@@ -64,13 +64,13 @@ const TechnologyStack = () => {
 
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1',icon:'', cardDesc: 'Addresses specific business challenges and goals' },
-    { id: '2',icon:'', cardDesc: 'Provides valuable business intelligence and analytics' },
-    { id: '3',icon:'', cardDesc: 'Reduce training overheads and time investment' },
-    { id: '4',icon:'', cardDesc: 'Contribution to business revenue' },
-    { id: '5',icon:'', cardDesc: 'Gain competitive edge' },
-    { id: '6',icon:'', cardDesc: 'Ensure seamless performance' },
-    { id: '7',icon:'', cardDesc: 'Automates processes, saving time and resources' },
+    { id: '1',icon:'/technology-stack/benefits/addressesSpecific.svg', cardDesc: 'Addresses specific business challenges and goals' },
+    { id: '2',icon:'/technology-stack/benefits/providesValuable.svg', cardDesc: 'Provides valuable business intelligence and analytics' },
+    { id: '3',icon:'/technology-stack/benefits/reduceTraining.svg', cardDesc: 'Reduce training overheads and time investment' },
+    { id: '4',icon:'/technology-stack/benefits/contribution.svg', cardDesc: 'Contribution to business revenue' },
+    { id: '5',icon:'/technology-stack/benefits/gainCompetitive.svg', cardDesc: 'Gain competitive edge' },
+    { id: '6',icon:'/technology-stack/benefits/ensureSeamless.svg', cardDesc: 'Ensure seamless performance' },
+    { id: '7',icon:'/technology-stack/benefits/automatesProcesses.svg', cardDesc: 'Automates processes, saving time and resources' },
   ];
 
   const SERVICE_CARDS_DATA = [
@@ -79,35 +79,35 @@ const TechnologyStack = () => {
       hoverTitle: "Planning & Designing",
       description: "Bridging the envisioned outcome with the planned application and designing application architecture.",
       content: "Additional content for Card 1",
-      imageURL: '/techStack1.png'
+      imageURL: '/technology-stack/planningDesigning.webp'
     },
     {
       title: "Define Technology Stack & Develop",
       hoverTitle: "Define Technology Stack & Develop",
       description: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
       content: "Additional content for Card 2",
-      imageURL: '/techStack1.png'
+      imageURL: '/technology-stack/defineTechnology.webp'
     },
     {
       title: "Application Testing",
       hoverTitle: "Application Testing",
       description: "Detecting defects, verifying compliance while ensuring seamless functionality and user experience.",
       content: "Additional content for Card 3",
-      imageURL: '/techStack1.png'
+      imageURL: '/technology-stack/applicationTesting.webp'
     },
     {
       title: "Application Deployment",
       hoverTitle: "Application Deployment",
       description: "Efficient release of application with a focus on automation and DevOps practice.",
       content: "Additional content for Card 4",
-      imageURL: '/techStack1.png'
+      imageURL: '/technology-stack/applicationDeployment.webp'
     },
     {
       title: "Application Maintenance",
       hoverTitle: "Application Maintenance",
       description: "Ensuring long-term stability, reliability and scalability of the application.",
       content: "Additional content for Card 5",
-      imageURL: '/techStack1.png'
+      imageURL: '/technology-stack/applicationMaintenance.webp'
     },
     // Add more cards here...
   ];
@@ -120,7 +120,7 @@ const TechnologyStack = () => {
       cardDesc: 'Transcending off-the-shelf offerings, we develop apps ensuring alignment with business needs',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/technology-stack/ourOfferings/customApplication.webp'
     },
     {
 
@@ -130,7 +130,7 @@ const TechnologyStack = () => {
       cardDesc: 'Transform legacy systems into agile solutions assuring Triple Aim goals and optimal RoI',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/technology-stack/ourOfferings/legacyModernisation.webp'
     },
     {
 
@@ -140,7 +140,7 @@ const TechnologyStack = () => {
       cardDesc: 'Right expertise and technology to drive value across the entire app lifecycle',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/technology-stack/ourOfferings/legacyModernisation.webp'
     },
     {
 
@@ -150,7 +150,7 @@ const TechnologyStack = () => {
       cardDesc: 'Mobile app with strong backend, user engagement & offers cross-platform experience',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/technology-stack/ourOfferings/MobileApplication.webp'
     },
     {
 
@@ -161,7 +161,7 @@ const TechnologyStack = () => {
       cardDesc: 'Accelerate time-to-market with seamless app integration & optimized data flow',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+      cardTopImageUrl: '/technology-stack/ourOfferings/EnterpriseApplication.webp'
     },
     
   ]
@@ -169,7 +169,7 @@ const TechnologyStack = () => {
   const blogSliderData=[
     {
     id: 1,
-    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGImageUrl: '/technology-stack/blog-bg1.webp',
     cardBGColor:'red',
     cardHeading: "Legacy Modernization in Manufacturing Industry ",
     cardDesc: 'The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. The current pandemic situation has further exacerbated the situation with hackers looking at vulnerabilities for exploitation in the Industry Infrastructure. ',
@@ -178,7 +178,7 @@ const TechnologyStack = () => {
   },
   {
     id: 2,
-    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGImageUrl: '/technology-stack/blog-bg2.webp',
     cardBGColor:'red',
     cardHeading: "ASP.Net-A popular choice for Web development",
     cardDesc: 'Most enterprises are in the process of migration from legacy systems to new, user-friendly dynamic and robust web applications. In this crowded market of different technologies such as PHP, HTML5, WordPress, Magento and several others, Microsoft’s ASP.NET has proved to be ‘the popular choice’.  ',
@@ -187,7 +187,7 @@ const TechnologyStack = () => {
   },
   {
     id: 3,
-    cardBGImageUrl: '/ai-ml/blog-bg.png',
+    cardBGImageUrl: '/technology-stack/blog-bg3.webp',
     cardBGColor:'red',
     cardHeading: "Application Modernization – Proven Growth Strategy for Progressive Organizations",
     cardDesc: 'The IT Industry has seen various phases of evolution of application development & maintenance. In the earlier days, there used to be monolithic applications that used to be deployed on physical servers. Waterfall methodology was used wherein analysis, design, development & deployment phases were done in a sequential manner one after the other, and each succeeding phase could not be started before the preceding phase was completed. ',

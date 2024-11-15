@@ -1,5 +1,19 @@
-<svg width="75" height="47" viewBox="0 0 75 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35.2098 10.264L20.1807 10.1699L11.194 14.1708L7.302 28.5052L13.3282 36.5519L27.8512 36.6338L30.273 27.1798L14.1666 34.891L20.2738 11.4217L32.2696 20.2335L35.2098 10.264Z" fill="#080708"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30.9736 36.6542V34.8911L33.3023 34.9033L39.685 11.6672L38.0447 11.6058V10.309L52.1667 10.4031L52.1546 11.6999L50.0284 11.6795L43.3623 35.0424L45.0956 35.0547L45.0835 36.7483L30.9736 36.6542Z" fill="#080708"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M46.5049 36.7483L46.517 34.9851L48.8457 34.9974L55.2324 11.7694L53.576 11.6999L53.5882 10.4031L67.698 10.4931V11.794L65.5637 11.7817L58.9057 35.1365L60.639 35.1487L60.6269 36.8424L46.5049 36.7483Z" fill="#080708"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.47 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1-2">
+    <g id="ciilogoWith_Logotype-color.eps" data-name="ciilogoWith Logotype-color.eps">
+      <polygon class="cls-1" points="34.88 .12 16.09 0 4.86 4.96 0 22.69 7.53 32.64 25.68 32.74 28.7 21.05 8.58 30.59 16.21 1.56 31.2 12.46 34.88 .12"/>
+      <polygon class="cls-1" points="29.58 32.77 29.58 30.59 32.49 30.61 40.47 1.86 38.41 1.79 38.41 .18 56.06 .3 56.05 1.91 53.4 1.87 45.06 30.78 47.22 30.79 47.21 32.89 29.58 32.77"/>
+      <polygon class="cls-1" points="48.99 32.89 49 30.71 51.92 30.72 59.89 1.99 57.82 1.91 57.84 .3 75.47 .41 75.47 2.02 72.8 2 64.48 30.9 66.65 30.91 66.64 33.01 48.99 32.89"/>
+    </g>
+  </g>
 </svg>

@@ -18,28 +18,28 @@ import { Pagination } from "swiper/modules";
 
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 const page = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/msCRM/blog-bg.webp";
 
   const distinctiveData = [
     {
       _id: 1,
       desc: "Proven Microsoft Expertise: Microsoft Gold partner with global deployment and upgrade expertise.",
-      icon: "",
+      icon: "/msCRM/distinciveEdge/proven.svg",
     },
     {
       _id: 2,
       desc: "Expert Guidance: Team of Microsoft-certified professionals providing expert support.",
-      icon: "",
+      icon: "/msCRM/distinciveEdge/expertGuidance.svg",
     },
     {
       _id: 3,
       desc: "Streamlined Solutions: Simplifying Dynamics CRM complexity for optimal results.",
-      icon: "",
+      icon: "/msCRM/distinciveEdge/streamlinedSolutions.svg",
     },
     {
       _id: 4,
       desc: "Effective Onboarding: Comprehensive training in seamless user adoption.",
-      icon: "",
+      icon: "/msCRM/distinciveEdge/effectiveOnboarding.svg",
     },
 
   ]
@@ -60,7 +60,7 @@ const page = () => {
       title: "",
       heading: "Consolidated Information in Centralized System",
       description:
-        "India’s leading integrated vending service provider leverages predictable sales operations and gains consolidated information visibility with Microsoft CRM",
+        "India's leading integrated vending service provider leverages predictable sales operations and gains consolidated information visibility with Microsoft CRM",
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LeadingTableTopBeverageVendingMachinesManufacturer.pdf ",
       color: "#000",
       bgCardColor: "#FCE6F4",
@@ -101,14 +101,14 @@ const page = () => {
   ];
   
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon:'', cardDesc: 'Scalability to adapt distinct business requirements' },
-    { id: '2', icon:'', cardDesc: 'Omni-channel capabilities for customer engagement' },
-    { id: '3', icon:'', cardDesc: 'Advanced decision-making potential through Artificial Intelligence' },
-    { id: '4', icon:'', cardDesc: 'Scope to leverage data-driven strategies with real time insights' },
-    { id: '5', icon:'', cardDesc: 'Comprehensive repository of contacts, leads and client information' },
-    { id: '6', icon:'', cardDesc: 'Data analytics helps to prioritize leads and identify opportunities' },
-    { id: '7', icon:'', cardDesc: 'Cloud-based infrastructure enables connectivity from any device and location' },
-    { id: '8', icon:'', cardDesc: 'Seamless integration with Microsoft products such as Microsoft 365 and Power BI' },
+    { id: '1', icon:'/msCRM/advantages/Scalability.svg', cardDesc: 'Scalability to adapt distinct business requirements' },
+    { id: '2', icon:'/msCRM/advantages/omniChannel.svg', cardDesc: 'Omni-channel capabilities for customer engagement' },
+    { id: '3', icon:'/msCRM/advantages/decisionMaking.svg', cardDesc: 'Advanced decision-making potential through Artificial Intelligence' },
+    { id: '4', icon:'/msCRM/advantages/scope.svg', cardDesc: 'Scope to leverage data-driven strategies with real time insights' },
+    { id: '5', icon:'/msCRM/advantages/Comprehensive.svg', cardDesc: 'Comprehensive repository of contacts, leads and client information' },
+    { id: '6', icon:'/msCRM/advantages/dataAnalytics.svg', cardDesc: 'Data analytics helps to prioritize leads and identify opportunities' },
+    { id: '7', icon:'/msCRM/advantages/cloudBased.svg', cardDesc: 'Cloud-based infrastructure enables connectivity from any device and location' },
+    { id: '8', icon:'/msCRM/advantages/integration.svg', cardDesc: 'Seamless integration with Microsoft products such as Microsoft 365 and Power BI' },
   ];
   const crmOfferinfData = [
     {
@@ -221,6 +221,12 @@ const page = () => {
     },
   ];
 
+    const CLOUDSUITE_SERVICES_DATA = [
+    { id: '1',icon:'/msCRM/services/consultation.svg', cardTitle: 'Consultation'},
+    { id: '2',icon:'/msCRM/services/implementation.svg', cardTitle: 'Implementation'},
+    { id: '3',icon:'/msCRM/services/managedServices.svg', cardTitle: 'Managed Services'},
+  ];
+
   const ultimateChoiceData = [
     {
       id: 1,
@@ -229,7 +235,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#fff',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/msCRM/D365CRM_Implementation/assess.svg",
       CardHeading: "Assess",
       CardDesc:
         "We evaluate processes to seamlessly implement Dynamics 365 CRM without workflow disruption.",
@@ -244,7 +250,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#fff',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/msCRM/D365CRM_Implementation/strategize.svg",
       CardHeading: "Strategize & Implement",
       CardDesc:
         "Clear roles, data migration and integration ensure smooth implementation.",
@@ -258,7 +264,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#fff',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/msCRM/D365CRM_Implementation/train.svg",
       CardHeading: "Train & Adopt",
       CardDesc:
         "Comprehensive training enhances user adoption, usability and confidence across sales, marketing and customer service. ",
@@ -272,7 +278,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: '#fff',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/msCRM/D365CRM_Implementation/support.svg",
       CardHeading: "Ongoing Support",
       CardDesc:
         "Expert maintenance and management ensure CRM runs smoothly, and team stays productive.",
@@ -287,7 +293,7 @@ const page = () => {
         desc="Personalized solutions for Sales Automation, Customer Insights, Marketing Automation and Service Excellence"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/msCRM/video/pageBanner.mp4"
       />
       <OverviewSection Text={`Get a single customer view with Microsoft CRM. Gain 360-degree customer insights, seamless team collaboration, personalized customer experiences and data-driven decision-making.`} />
 {/* 
@@ -392,13 +398,14 @@ const page = () => {
               },
             }}
           >
-            {['Consultation', 'Implementation', 'Managed Services']?.map((item, index) => (
+           {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                  <img className="rounded-t-lg pl-4 mx-auto md:mx-0" src="/infor/blackstar.svg" alt="" />
+                    <img className="rounded-t-lg pl-4 mx-auto md:mx-0" src={item.icon} alt="" />
                   <div className="p-5">
-                      <h5 className="mb-6 text-heading-02 leading-heading-02 text-center md:text-left font-bold">{item}</h5>
+                      <h5 className="mb-6 text-heading-02 leading-heading-02 text-center md:text-left font-bold">{item.cardTitle}</h5>
                   </div>
+                 
                 </div>
               </SwiperSlide>
             ))}

@@ -46,15 +46,14 @@ const RPASolution = [
   },
   {
     id: 3,
-    cardBGImageUrl: "",
-    cardBGColor: "#fff",
-    cardHeading: "Compliance and Consistency",
-    cardDesc:
-      "Manage contract workflows, forms and compliance with consistency and regulatory adherence",
+    cardBGImageUrl: '/rpa/Cards/3.webp',
+    cardBGColor: '#fff',
+    cardHeading: 'Compliance and Consistency',
+    cardDesc: 'Manage contract workflows, forms and compliance with consistency and regulatory adherence',
     isArrow: false,
-    cardTextColor: "#000",
-    cardType: 2,
-    downImageUrl: "/rpa/Cards/3.webp",
+    cardTextColor: 'white',
+    cardType: 1,
+    downImageUrl:'',
   },
   {
     id: 4,
@@ -79,16 +78,15 @@ const RPASolution = [
     cardType: 1,
   },
   {
-    id: 6,
-    cardBGImageUrl: "",
-    cardBGColor: "#fff",
-    cardHeading: "Reduce AHT (Average Handling Time)",
-    cardDesc:
-      "Enhance customer service quality, minimize response time and improve operational efficiency",
+ id: 6,
+    cardBGImageUrl: '/rpa/Cards/6.webp',
+    cardBGColor: '#fff',
+    cardHeading: 'Reduce AHT (Average Handling Time)',
+    cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
     isArrow: false,
-    cardTextColor: "#000",
+    cardTextColor: 'white',
     cardType: 2,
-    downImageUrl: "/rpa/Cards/6.webp",
+    downImageUrl:'',
   },
   {
     id: 7,
@@ -274,7 +272,7 @@ const page = () => {
         desc="Automate Operations with Our Robotic Process Automation (RPA) Solutions and Services"
         cta="Let's Connect"
         width="60%"
-        video="/rpa/video/HeroVideo.mp4"
+        video="/rpa/video/pageBanner.mp4"
       />
 
       {/* Overview  */}
@@ -307,9 +305,9 @@ const page = () => {
 
       {/* inteligent technologies */}
       <SectionWrapperNew
-        sectionHeading={"Intelligent Technologies Platforms"}
+        sectionHeading={"RPA Platform Expertise"}
         sectionDesc={
-          "Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency."
+          "Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.  "
         }
         sectionTextColor={"text-primary-900"}
         sectionHeadingLayout="horizontal"

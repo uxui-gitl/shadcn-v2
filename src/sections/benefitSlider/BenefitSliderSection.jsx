@@ -69,7 +69,7 @@ function BenefitSliderSection({
                 >
                   <Image
                     className="mr-4 md:block"
-                    src={checkout}
+                    src={item.icon}
                     alt=""
                     width={72}
                     height={72}

@@ -525,7 +525,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       _id: 1,
       title:
-        "11Once Again, Godrej Infotech is recognized as a Great Place to Work!",
+        "Dredging & Marine Global Giant of Netherlands",
       cta: "",
       targetBlank: true,
       link: "/",
@@ -533,27 +533,12 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
     {
       _id: 2,
       title:
-        "Economic Times Honors Godrej Infotech as Future Ready Organization – Adjudged by Ernst & Young.",
+        "Boskalis Signs 5 years of renewal contract after a successful 3-year relationship with Godrej Infotech for Infor Products & Services",
       cta: "",
       targetBlank: true,
       link: "/",
     },
-    {
-      _id: 3,
-      title:
-        "India’s Leading Fertility Healthcare Centre Finalizes Oracle Fusion Implementation Services contract.",
-      cta: "",
-      targetBlank: true,
-      link: "/",
-    },
-    {
-      _id: 4,
-      title:
-        "Renowned Dutch marine leader, Boskalis, signs 5-year Infor support renewal with LVD Godrej Infotech after successful 3-year relationship",
-      cta: "",
-      targetBlank: true,
-      link: "/",
-    },
+    
   ]
 
   return (
@@ -700,14 +685,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       </div>
       <SectionWrapperNew style={{ backgroundColor: "#ffffff", height: "70vh" }}>
         <p className="text-[#1D162B] text-[32px] font-medium leading-[46px] py-16">
-          {`Headquartered in Netherlands, Godrej Infotech is a fully owned
-          subsidiary of Godrej Infotech Limited (GITL) which is based in Mumbai,
-          India. A leading IT service provider specializing in end-to-end IT
-          solutions, GITL is part of the USD 1.7 Billion Godrej Enterprise
-          Group. The Godrej Group is one of India's leading corporate houses
-          dealing in High Tech Engineering, Consumer Products, Aerospace,
-          Chemicals, Construction, Material Handling, Storage & Security
-          Solutions.`}
+          {`Godrej Infotech (Singapore Branch) operates under the Godrej Infotech Limited brand, which is part of 1.7 USD Bn Godrej Enterprise Group.`}
         </p>
         <button
           type="button"
@@ -807,35 +785,28 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       </SectionWrapperNew>
       {/* end offerings */}
       {/* guiding section */}
-      <SectionWrapperNew
-        style={{ backgroundColor: "#000", padding:"16rem" }}
+      <SectionWrapperNew style={{ backgroundColor: "#000" }}
         sectionHeading="The Guiding Principles We Live By"
         sectionDesc={`Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth.`}
-        sectionTextColor="#fff"
+        sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
+
         <Slider>
           {GuidingPrinciples.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-6 bg-[transparent]">
-                <div
-                  className="flex py-4"
-                  style={{ borderBottom: "1px solid #CDBAF3" }}
-                >
-                  <Image
-                    src={"about/whiteStar.svg"}
-                    width={30}
-                    height={30}
-                    alt={"hioasdo"}
-                    className="mr-4"
-                  />
+              <div class="p-6 bg-[transparent]">
+                <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
+                  <Image src={"about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
                   <div className="text-[28px] text-white">{item.title}</div>
                 </div>
-                <p className="text-[20px] py-4 text-white">{item.desc}</p>
+                <p class="text-[20px] py-4 text-white">{item.desc}</p>
               </div>
+
             </SwiperSlide>
           ))}
         </Slider>
+
       </SectionWrapperNew>
       {/*end guiding section */}
 
@@ -909,10 +880,12 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         onRequestClose={() => {
           setShowReadMoreModal((prev) => !prev);
         }}
-        title={'readmore modal'}
+        title={'About Us'}
       >
         <div className="py-10">
-          <h1>data</h1>
+          <p className="mb-4">We are an automation-driven, cloud and digital transformation solutions and services company.  Our service offerings include Business Consulting, ERP Implementation & Roll Out, Web Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, e-Commerce and Managed Support Services. We have domain and technology expertise in the Manufacturing, Retail, Trading &Distribution, Retail, Logistics, Hospitality, Project and Professional Service industries. </p>
+          <p className="mb-4">Godrej Infotech’s strategic partnership with industry leaders like Microsoft, Infor, LS Retail, and Oracle have played an instrumental role in making the organization a mature IT partner that understands the value of business process automation. Headquartered in Mumbai, India, Godrej Infotech has presence in Middle East, APAC, Europe and US with customer footprints extending across multiple geographies. </p>
+          <p className="mb-4">A technology focused organization, Godrej Infotech has emerged as a pioneer in the Digital Solutions space. Our team of knowledge experts provide ready-to-deploy and customizable IT-solutions for individual business functions like Enterprise Resource Planning (ERP), Customer Relationship Management, Product Life Cycle Management, Asset Management and Business Intelligence (BI). We also have a Remote Infrastructure Management team that works as an extended IT arm for their clients and provides skilled IT proactive services of Azure Cloud, Database, Network, System and Security Administration.</p>
         </div>
       </Dialog>
 

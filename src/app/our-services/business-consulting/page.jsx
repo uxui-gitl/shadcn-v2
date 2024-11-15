@@ -94,38 +94,38 @@ bgCardColor: '#FCE6F4'
   const distinctiveData = [
     {
       _id: 1,
-      desc: "Strong legacy of our parent company – Godrej Enterprise group which has succeeded for more than 125 years.",
-      icon: "",
+      desc: "Strong legacy of our parent company - Godrej Enterprise group which has succeeded for more than 125 years.",
+      icon: "/businessConsulting/distinctiveEdge/strongLegacy.svg",
     },
     {
       _id: 2,
-      desc: "Shared DNA of engineering expertise from our parent group – Godrej Enterprise Group with 1.7Bn revenue.",
-      icon: "",
+      desc: "Shared DNA of engineering expertise from our parent group - Godrej Enterprise Group with 1.7Bn revenue.",
+      icon: "/businessConsulting/distinctiveEdge/sharedDNA.svg",
     },
     {
       _id: 3,
       desc: "Long-term global relationships built on trust, reliability and collaboration.",
-      icon: "",
+      icon: "/businessConsulting/distinctiveEdge/globalRelationships.svg",
     },
     {
       _id: 4,
       desc: "Industry-focused teams executing time-tested practices of excellence.",
-      icon: "",
+      icon: "/businessConsulting/distinctiveEdge/industryFocused.svg",
     },
     {
       _id: 5,
       desc: "Holistic ecosystem including scalable deployment, support services and diverse portfolio of ERPs and digital solutions.",
-      icon: "",
+      icon: "/businessConsulting/distinctiveEdge/holisticEcosystem.svg",
     },
     {
       _id: 6,
       desc: "Responsive approach and defined processes that set high standards.",
-      icon: "",
+      icon: "/businessConsulting/distinctiveEdge/responsiveApproach.svg",
     },
 
   ]
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/businessConsulting/blog-bg.webp";
   const HUBEXPERTISE_COUNTER_DATA = [
     {
       start: 10,
@@ -209,7 +209,7 @@ bgCardColor: '#FCE6F4'
         desc="Begin Your Digital Journey with Strategic Consulting Expertise"
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/businessConsulting/video/pageBanner.mp4"
       />
       <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
       

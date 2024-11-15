@@ -13,7 +13,8 @@ const culture = [
   {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
   {id:2, title:'', desc:'', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
   {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
-  {id:4, title:'Work –life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  {id:4, title:'Work-life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  {id:5, title:'Rewards and Recognition', desc:'Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.', bgImageUrl:'', bgColor:'#5F22D9'},
 ];
 
 
@@ -32,9 +33,11 @@ const GuidingPrinciples=[
 
 const BuildingCapability=[
   {id:1,title:'GITL Learning Academy ', desc:'An online knowledge hub offering interactive learning modules to upskill and reskill employees.'},
-  {id:2,title:'Leap', desc:'Targeted and transformative training programs for future-ready leadership'},
+  {id:2,title:'Leap', desc:'(Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression.'},
   {id:3,title:'Khoj ', desc:`A dynamic platform for celebrating and showcasing employees' talents beyond work.`},
+ {id:4,title:'Dimensions', desc:'Accelerating career for Entry-Level Trainee Programmers with comprehensive training and swift deployment'},
  
+  
 ]
 
 const CSR_DATA=[
@@ -43,12 +46,69 @@ const CSR_DATA=[
   
 ]
 
-
+const empTestimonials=[
+{id:1,
+  title:'Professional and personal development', 
+  desc:`Godrej Infotech's work culture is all about collaboration and open communication, an environment that encourages growth. Our team reflects a vibrant mix of perspectives. What I admire most about Godrej Infotech is that it prioritizes employees development, both professionally and this has tremendously enriched my journey here.`,
+  empName:'Mausami Samanta',
+  empDesignation:'Deputy Manager, HR',
+  empImage:'/careers/testimonials/mausami.png',
+},
+{id:2,
+  title:'Continuous learning and growth', 
+  desc:'It has been more than 6 years with Godrej.  My role revolves around harnessing the power of data and leveraging advanced analytics to drive insights and innovation. Working with Godrej Infotech has been a journey of continuous learning and growth, where I have had the opportunity to contribute to the evolution of analytics within the organization. The dynamic environment and emphasis on leveraging cutting-edge technologies make each day both challenging and fulfilling. I am proud to be a part of a team that values expertise and is committed to pushing the boundaries of what analytics can achieve in the industry.',
+  empName:'Milind Shigam',
+  empDesignation:'Data Solution Architect',
+  empImage:'/careers/testimonials/milind.png',
+},
+{id:3,
+  title:'Valuable learning experiences & opportunities', 
+  desc:`Godrej Infotech's work culture is characterized by passion, supportive colleagues, jolly, friendly atmosphere and hunger for continuous learning. My journey here has been incredibly rewarding, with each day presenting valuable learning experiences and opportunities for advancement.`,
+  empName:'Rahul Gorivale',
+  empDesignation:'Assitant Manager Marketing',
+  empImage:'/careers/testimonials/rahul.png',
+},
+{id:4,
+  title:'Innovation focus & collaborative culture', 
+  desc:`Collaborating with the G&B Business and Digital team on cutting-edge cloud projects has been rewarding experience for me. Godrej Infotech's commitment to employee development has allowed me to sharpen my skills and evolve as a leader. Grateful for the continuous support and opportunities for growth. Proud to be part of this dynamic organization thriving in innovation and collaboration.`,
+  empName:'Rengarajan',
+  empDesignation:'Associate Director, Cloud',
+  empImage:'/careers/testimonials/renga.png',
+},
+{id:5,
+  title:'Supportive community with passion & purpose', 
+  desc:`Godrej Infotech is a tight-knit community, cheering every team member on every step of the way. My typical day kicks off with a cup of coffee and lively brainstorming sessions. We execute our plans with passion, fueling each other's drive to succeed. And amidst the hustle, there's always time for laughter and camaraderie.  From skill-building workshops to mentorship programs, the opportunities for development are endless. Here, we're not just employees; we're dreamers, innovators, and trailblazers shaping our futures together.`,
+  empName:'Salil Gawade',
+  empDesignation:'Finance Consultant',
+  empImage:'/careers/testimonials/salil.png',
+},
+{id:6,
+  title:'Rewarding GITL journey', 
+  desc:`My journey here has been truly rewarding, contributing significantly to the growth and success of the company. Godrej Infotech provides an environment that encourages continuous learning and professional development, making every day a fulfilling experience. I take pride in being part of a team that values excellence and consistently strives for financial prowess in the industry.`,
+  empName:'Tejas Bhanushali',
+  empDesignation:'Chief Manager Finance and Accounts at Godrej Infotech',
+  empImage:'/careers/testimonials/tejas.png',
+},
+{id:7,
+  title:'Immense work satisfaction and overall development', 
+  desc:`At Godrej Infotech I take pride in not only being a functional and technical expert but also a problem solver, diplomat, and occasional miracle worker. This engaging and never monotonous working environment has not only honed my professional skills but also enhanced my personal development—improving time management, discipline, solution approach, and communication skills. There's immense satisfaction in resolving critical business issues and receiving well-deserved appreciation. Cheers to continuous growth and success!`,
+  empName:'Ujwal Bhandari',
+  empDesignation:'Solution Architect and Principal Consultant',
+  empImage:'/careers/testimonials/ujwal.png',
+},
+{id:8,
+  title:'Thriving in pogressive work culture', 
+  desc:`My favorite aspect of Godrej Infotech is its progressive and flexible work culture. My journey with Godrej Infotech has been amazing so far, filled with valuable learning experiences every day. I believe the company stands out among others because of its emphasis on overall employee development.`,
+  empName:'Vartika Kumar',
+  empDesignation:'Finance Consultant',
+  empImage:'/careers/testimonials/vartika.png',
+},
+]
 const Page = () => {
 
   return (
     <>
-      <ContactBanner bannerImage={'/careers/banner-bg.png'} title="Dive into Brilliant Career Experience to Manifest the Excellence in You" desc={"We foster culture of growth, collaboration with passion for cutting-edge technology, enabling you to shape the future with us."} />
+      <ContactBanner bannerImage={'/careers/banner-bg.png'} title="Dive into Inspiring Career Experience" desc={"Experience culture committed to growth, collaboration and technological innovation, driving holistic growth." } />
 
       <OverviewSection Text={`We foster a holistic culture, empowering individuals through cross-functional collaboration, recognition and continuous learning to drive an inclusive environment, ensuring equality.`} />
       <SectionWrapperNew style={{ backgroundColor: "#fff" }}
@@ -216,33 +276,33 @@ const Page = () => {
 
            {/* joy at work section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
-        sectionHeading={`Employee Experience - The People Behind Our Purpose`}
-        sectionDesc={`Explore glimpses of inspiring career journeys, highlighting dynamic work environment, collaborative experiences and opportunities for development and professional growth.`}
+        sectionHeading="Unleashing Joy at Work"
+        sectionDesc={`Discover the heartwarming stories of our employees as they reveal their joyful experiences at work. From moments of triumph to instances of camaraderie, their testimonials showcase a workplace`}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
         <Slider>
-          {[1, 2, 3, 4]?.map((item, index) => (
+          {empTestimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
-                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{`“Supportive senior management, excellent work culture, exposure to next-generation “`}</div>
-                <h5 className="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{`I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions.`}</h5>
+              <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
+                <div className="text-[16px] font-[700] text-[#EFE9FB] leading-[24px] mb-5">{item.title}</div>
+                <h5 class="mb-5 text-[16px] font-[400] text-[#EFE9FB]">{item.desc}</h5>
 
                 <div className="flex">
                   <div className="mr-4">
-                    <Image src={'/about/reviewImage.svg'} width={50} height={50} alt="img" />
+                    <Image src={item.empImage} width={50} height={50} alt={"img"} />
+                    
                   </div>
 
                   <div>
-                    <h6 className="text-[16px] font-[700] mb-1 text-white">Tejas Bhanushali</h6>
-                    <p className="text-[16px] text-white">Chief Manager Finance and Accounts</p>
+                    <h6 className="text-[16px] font-[700] mb-1 text-white">{item.empName}</h6>
+                    <p className="text-[16px] text-white">{item.empDesignation}</p>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Slider>
-
       </SectionWrapperNew>
       {/*end joy work section */}
       {/* find role  */}
