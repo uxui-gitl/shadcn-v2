@@ -66,54 +66,54 @@ const page = () => {
   const benifitsCardsData = [
     {
       id: "1",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc:
         "Automate workflows, streamline processes and enhance productivity",
     },
     {
       id: "2",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Configure customizable dashboards, reports and workflows",
     },
     {
       id: "3",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Access business apps anywhere, anytime via cloud mobility",
     },
     {
       id: "4",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc:
         "Automate financial processes and reconcile accounts in real-time",
     },
     {
       id: "5",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Streamline sales and customer service with integrated CRM",
     },
     {
       id: "6",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Enhance supply chain management with optimized inventory",
     },
     {
       id: "7",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Gain data-driven insights with advanced reporting & analytics",
     },
     {
       id: "8",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Collaborate seamlessly with Microsoft Office 365 integration",
     },
     {
       id: "9",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Ensure data security with multi-layered authentication",
     },
     {
       id: "10",
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: "Scale effortlessly with cloud-based deployment options",
     },
   ];

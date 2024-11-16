@@ -136,20 +136,20 @@ const page = () => {
   const benifitsCardsData = [
     {
       id: '1',
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers'
     },
     {
       id: '2',
-      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions'
     },
     {
-      id: '3', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      id: '3', icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing'
     },
     {
-      id: '4', icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      id: '4', icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity'
     },
   ];

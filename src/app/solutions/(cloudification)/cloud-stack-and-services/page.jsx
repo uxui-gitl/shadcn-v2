@@ -258,6 +258,7 @@ const CloudStack = () => {
     },
     {
       imageURL: "/CloudStackServices/WildLife.Webp",
+      videoURL:"/video-background-mioti-consulting-opt.mp4",
       title: "",
       heading: "Philippines Fresh Produce Distributor",
       description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
@@ -265,6 +266,7 @@ const CloudStack = () => {
       color: '#000',
       bgCardColor: '#e1f2ef'
     },
+    
     // Add more case studies here...
   ];
 

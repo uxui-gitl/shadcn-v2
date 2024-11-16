@@ -424,8 +424,8 @@ export default function Home() {
 
   // handle click businesstranform card click
   function handleBusinessCardClick(modal: boolean, item: any) {
-    // setshowModal1(modal);
-    // setBusinessItem(item);
+    setshowModal1(modal);
+    setBusinessItem(item);
   }
 
   // end handle click businesstranform card click
@@ -867,7 +867,7 @@ export default function Home() {
       {/* <Footer /> */}
 
       {/* modal */}
-      {/* <Dialog
+      <Dialog
         shouldShow={showModal1}
         onRequestClose={() => {
           setshowModal1((prev) => !prev);
@@ -877,7 +877,7 @@ export default function Home() {
         <div className="py-10">
           <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
         </div>
-      </Dialog> */}
+      </Dialog>
       {/* end modal */}
     </>
   );
