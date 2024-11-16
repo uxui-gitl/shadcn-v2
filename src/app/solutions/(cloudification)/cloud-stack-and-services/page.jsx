@@ -24,7 +24,7 @@ import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
   const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
-  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
+  const imgBgURL = "/CloudStackServices/background/bg_SynergeticPartnership.webp";
 
   const advanceSolutionData = [
     {
@@ -227,7 +227,7 @@ const CloudStack = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: " ",
+      imageURL: "/CloudStackServices/caseStudyRight.webp",
       videoURL: "",
       title: "Case Studies",
       heading: 'Delivering Results that Matters',
@@ -247,7 +247,8 @@ const CloudStack = () => {
     },
 
     {
-      imageURL: "/CloudStackServices/WildLife.Webp",
+      imageURL: "",
+      videoURL:"",
       title: "",
 
       heading: "Indian Wildlife Conservation Organization",
@@ -257,7 +258,7 @@ const CloudStack = () => {
       bgCardColor: '#FCE6F4'
     },
     {
-      imageURL: "/CloudStackServices/WildLife.Webp",
+      imageURL: "/CloudStackServices/videos/caseStudy.mp4",
       title: "",
       heading: "Philippines Fresh Produce Distributor",
       description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
@@ -344,7 +345,7 @@ const CloudStack = () => {
         desc="Make confident business decisions with our tailored cloud offerings, developed to drive scalability and cost savings. "
         cta="Let's Connect"
         width="60%"
-        video="/cloudStackServices/video/pageBanner.mov"
+        video="/cloudStackServices/videos/pageBanner.mp4"
       />
      
       <OverviewSection
