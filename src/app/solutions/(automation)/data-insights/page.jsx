@@ -14,16 +14,22 @@ import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 
 const DataInsights = () => {
   const sectionSliderBGImageUrl =
-    "/data-insights/backgrounds/bg--data-visualization.png";
+    "/data-insights/backgrounds/bg--data-visualization.webp";
   const blogImageUrl = "/data-insights/blog.webp";
 
   const VISUALIZATION_DATA = [
     {
       id: 1,
+<<<<<<< Updated upstream
       BGImageUrl: "",
       
       CardBGColor: "bg-primary-10",
       CardTextColor: "text-primary-900",
+=======
+      BGImageUrl: "/data-insights/card1.webp",
+      CardBGColor: "#FFF",
+      CardTextColor: "#000",
+>>>>>>> Stashed changes
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--power-bi.png",
       CardHeading: "Power BI",
@@ -36,8 +42,13 @@ const DataInsights = () => {
 
     {
       id: 2,
+<<<<<<< Updated upstream
       BGImageUrl: "",
       CardBGColor: "bg-primary-10",
+=======
+      BGImageUrl: "/data-insights/card2.webp",
+      CardBGColor: "#FFF",
+>>>>>>> Stashed changes
       CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--tableau.png",
@@ -50,8 +61,13 @@ const DataInsights = () => {
     },
     {
       id: 3,
+<<<<<<< Updated upstream
       BGImageUrl: "",
       CardBGColor: "bg-primary-10",
+=======
+      BGImageUrl: "/data-insights/card2.webp",
+      CardBGColor: "#FFF",
+>>>>>>> Stashed changes
       CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--birst.png",
@@ -201,7 +217,6 @@ const DataInsights = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
       heading: "Delivering high-performing data solutions globally",
       description: "",
@@ -230,7 +245,9 @@ const DataInsights = () => {
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
+    
     {
+      videoURL: "/data-insights/video/caseStudy.mp4",
       imageURL: "/data-insights/caseStudies.webp",
       title: "",
       heading: "Global fast-food chain with 170+ stores in Saudi Arabia",

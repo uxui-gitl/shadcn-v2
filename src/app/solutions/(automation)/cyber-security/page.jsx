@@ -25,7 +25,7 @@ import { mdiArrowRight } from "@mdi/js";
 
 const CyberSecurity = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
-  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
+  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.webp";
 
   const HUBEXPERTISE_COUNTER_DATA = [
     {
