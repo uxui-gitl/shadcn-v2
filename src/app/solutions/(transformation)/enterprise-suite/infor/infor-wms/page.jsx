@@ -286,7 +286,7 @@ const page = () => {
         desc="We help you to achieve faster inventory turns and take control of your warehouse operations."
         cta="Let's Connect"
         width="60%"
-        video="/inforWMS/video/pageBanner.mov"
+        video="/inforWMS/videos/pageBanner.mp4"
       />
 
       <OverviewSection
