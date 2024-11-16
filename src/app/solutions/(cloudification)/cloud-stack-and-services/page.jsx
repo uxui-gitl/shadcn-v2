@@ -249,7 +249,7 @@ const CloudStack = () => {
 
     {
       imageURL: "",
-      videoURL:"/CloudStackServices/videos/caseStudy.mp4",
+      
       title: "",
 
       heading: "Indian Wildlife Conservation Organization",
@@ -259,7 +259,8 @@ const CloudStack = () => {
       bgCardColor: '#FCE6F4'
     },
     {
-      imageURL: "/CloudStackServices/videos/caseStudy.mp4",
+      videoURL:"/CloudStackServices/videos/caseStudy.mp4",
+      imageURL: "",
       title: "",
       heading: "Philippines Fresh Produce Distributor",
       description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",

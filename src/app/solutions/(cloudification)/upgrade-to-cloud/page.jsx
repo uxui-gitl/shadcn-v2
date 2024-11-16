@@ -135,7 +135,6 @@ const UpgradeToCloud = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "/upgradeCloud/backgrounds/CaseStudy.webp",
-      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
@@ -145,7 +144,6 @@ const UpgradeToCloud = () => {
     },
     {
       imageURL: "",
-      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "",
       heading: "Non-government Association of Indian Industries",
       description:
@@ -157,7 +155,6 @@ const UpgradeToCloud = () => {
 
     {
       imageURL: "/path/to/image1.jpg",
-      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "",
 
       heading: "Coffee Brand Distributor in Egypt and Middle East",
@@ -168,8 +165,8 @@ const UpgradeToCloud = () => {
       bgCardColor: "#EFE9FB",
     },
     {
+      videoURL:"/upgradeCloud/videos/caseStudy.mp4",
       imageURL: "",
-      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "",
       heading: "Middle East-based Electrical Products Manufacturer",
       description:
