@@ -40,27 +40,27 @@ const page = () => {
       id: 1,
       title:
         "Meet tight turnaround times despite complex inventory and logistics",
-      icon: "/upgradeCloud/icons/ico--target.svg",
+      icon: "/inforWMS/ico-target.svg",
     },
     {
       id: 2,
       title: "Reduce manual errors and increase labour productivity",
-      icon: "/upgradeCloud/icons/ico--target.svg",
+      icon: "/inforWMS/ico-target.svg",
     },
     {
       id: 3,
       title: "Managing inventory obsolescence and waste",
-      icon: "/upgradeCloud/icons/ico--target.svg",
+      icon: "/inforWMS/ico-target.svg",
     },
     {
       id: 4,
       title: "Adopting to constantly shifting customer requirements",
-      icon: "/upgradeCloud/icons/ico--target.svg",
+      icon: "/inforWMS/ico-target.svg",
     },
     {
       id: 5,
       title: "Supply chain disruptions and delays",
-      icon: "/upgradeCloud/icons/ico--target.svg",
+      icon: "/inforWMS/ico-target.svg",
     },
   ];
 
@@ -286,7 +286,7 @@ const page = () => {
         desc="We help you to achieve faster inventory turns and take control of your warehouse operations."
         cta="Let's Connect"
         width="60%"
-        video="/inforWMS/video/pageBanner.mov"
+        video="/inforWMS/videos/pageBanner.mp4"
       />
 
       <OverviewSection

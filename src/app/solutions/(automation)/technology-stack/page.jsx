@@ -15,7 +15,7 @@ import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardTh
 import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 
 const TechnologyStack = () => {
-  const blogImageUrl = "/technology-stack/video/pageBanner.mp4";
+  const blogImageUrl = "/technology-stack/videos/pageBanner.mp4";
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
@@ -204,7 +204,7 @@ const TechnologyStack = () => {
       desc="Expertly developed solutions adapting to business needs"
       cta="Let's Connect"
       width="60%"
-      video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+      video="/technology-stack/videos/pageBanner.mp4"
     />
 
     {/* End--Section--HeroBanner======================================================== */}

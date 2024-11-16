@@ -93,7 +93,7 @@ const EnterpriseSuite = () => {
         "Valve manufacturing solution with pre-configured process mapping and standardized workflows for seamless operations in complex scenarios.",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "/enterprise-suite/accelerators/valurManufacturing.webp",
+      cardTopImageUrl: "/enterprise-suite/accelerators/valueManufacturing.webp",
     },
     {
       id: 3,
@@ -269,7 +269,7 @@ const EnterpriseSuite = () => {
         desc="Redefining enterprise future with strategic transformation through Enterprise Solutions"
         cta="Let's Connect"
         width="60%"
-        video="/enterpriseSuite/video/pageBanner.mov"
+        video="/enterprise-Suite/videos/pageBanner.mp4"
       />
       {/* End--HeroBanner-Section=============================================================== */}
 

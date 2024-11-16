@@ -23,8 +23,8 @@ import SectionSliderAdditionalData from "@/sections/sectionSliderAdditionalData/
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
-  const imgURL = "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
-  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
+  const imgURL = "/CloudStackServices/takeConfident.webp";
+  const imgBgURL = "/CloudStackServices/background/bg_SynergeticPartnership.webp";
 
   const advanceSolutionData = [
     {
@@ -227,8 +227,8 @@ const CloudStack = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: " ",
-      videoURL: "",
+      imageURL: "/CloudStackServices/caseStudyRight.webp",
+      videoURL: "/CloudStackServices/videos/caseStudy.mp4",
       title: "Case Studies",
       heading: 'Delivering Results that Matters',
       description: "",
@@ -238,6 +238,7 @@ const CloudStack = () => {
     },
     {
       imageURL: "",
+      videoURL: "/CloudStackServices/videos/caseStudy.mp4",
       title: "",
       heading: 'KSA - Electrical Components Distributor',
       description: "Greater scalability and cost-effectiveness with integration of Dynamics 365 F&O and Dynamics CRM on Cloud",
@@ -247,7 +248,8 @@ const CloudStack = () => {
     },
 
     {
-      imageURL: "/CloudStackServices/WildLife.Webp",
+      imageURL: "",
+      
       title: "",
 
       heading: "Indian Wildlife Conservation Organization",
@@ -257,8 +259,8 @@ const CloudStack = () => {
       bgCardColor: '#FCE6F4'
     },
     {
-      imageURL: "/CloudStackServices/WildLife.Webp",
-      videoURL:"/video-background-mioti-consulting-opt.mp4",
+      videoURL:"/CloudStackServices/videos/caseStudy.mp4",
+      imageURL: "",
       title: "",
       heading: "Philippines Fresh Produce Distributor",
       description: "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
@@ -346,7 +348,7 @@ const CloudStack = () => {
         desc="Make confident business decisions with our tailored cloud offerings, developed to drive scalability and cost savings. "
         cta="Let's Connect"
         width="60%"
-        video="/cloudStackServices/video/pageBanner.mov"
+        video="/cloudStackServices/videos/pageBanner.mp4"
       />
      
       <OverviewSection

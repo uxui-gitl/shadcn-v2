@@ -24,8 +24,8 @@ import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 
 const CyberSecurity = () => {
-  const blogImageUrl = "/ai-ml/blog-bg.png";
-  const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.webp";
+  const blogImageUrl = "";
+  const imgBgURL = "/cyberSecurity/video/pageBanner.mp4";
 
   const HUBEXPERTISE_COUNTER_DATA = [
     {
@@ -189,7 +189,7 @@ const CyberSecurity = () => {
       url: '',
     },
     {
-      id: 4, heading: 'SAFEGUARD',
+      id: 4, heading: 'Safeguard',
       list: [
         'Risk Assesment and Management',
         'Risk Assesment and Management',
@@ -227,7 +227,7 @@ const CyberSecurity = () => {
         desc="Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."
         cta="Let's Connect"
         width="60%"
-        video="/cyberSecurity/video/pageBanner.mov"
+        video="/cyberSecurity/video/pageBanner.mp4"
       />
 
       {/* End--Section--HeroBanner======================================================== */}

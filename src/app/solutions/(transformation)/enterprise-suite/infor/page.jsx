@@ -215,7 +215,7 @@ const Page = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-       videoURL: "/infor/caseStudyVideo.mp4",
+       videoURL: "/infor/videos/caseStudy.mp4",
       title: "",
       heading: "Sheet metal manufacturer",
       description:
@@ -402,7 +402,7 @@ const Page = () => {
         desc="Solve Unique Industry Challenges with our Expertise"
         cta="Let's Connect"
         width="60%"
-        video="/infor/video/pageBanner.mov"
+        video="/infor/videos/pageBanner.mp4"
       />
     
 
