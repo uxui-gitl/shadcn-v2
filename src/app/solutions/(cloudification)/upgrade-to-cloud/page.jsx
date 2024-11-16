@@ -135,7 +135,7 @@ const UpgradeToCloud = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "/upgradeCloud/backgrounds/CaseStudy.webp",
-      videoURL: "",
+      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
@@ -145,6 +145,7 @@ const UpgradeToCloud = () => {
     },
     {
       imageURL: "",
+      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "",
       heading: "Non-government Association of Indian Industries",
       description:
@@ -156,6 +157,7 @@ const UpgradeToCloud = () => {
 
     {
       imageURL: "/path/to/image1.jpg",
+      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "",
 
       heading: "Coffee Brand Distributor in Egypt and Middle East",
@@ -166,7 +168,8 @@ const UpgradeToCloud = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/upgradeCloud/casestudy.webp",
+      imageURL: "",
+      videoURL:"upgradeCloud/videos/caseStudy.mp4",
       title: "",
       heading: "Middle East-based Electrical Products Manufacturer",
       description:
@@ -269,25 +272,25 @@ const UpgradeToCloud = () => {
     // Add more cards here...
   ];
   const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 5, title: "Lack of Automation Capabilities", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 6, title: "Subpar IT Performance", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 7, title: "Limited Centralized Monitoring", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 8, title: "High IT Infrastructure Management Cost", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Inadequate Scalability and Availability", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 2, title: "Unreliable Backup Storage", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 5, title: "Lack of Automation Capabilities", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 6, title: "Subpar IT Performance", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 7, title: "Limited Centralized Monitoring", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 8, title: "High IT Infrastructure Management Cost", icon: '/upgradeCloud/icons/challengesIcon.svg' },
   ];
   const benifitsCardsData = [
-    { id: '1', cardDesc: 'Minimize operational expenses of IT portfolio' },
-    { id: '2', cardDesc: 'Enable user concurrency to support large-scale workloads' },
-    { id: '3', cardDesc: 'Enhanced collaboration through cross-device accessibility to information' },
-    { id: '4', cardDesc: 'Advanced data management solutions, modernized process and cloud services' },
-    { id: '5', cardDesc: 'Aptitude to respond to shifting business requirements' },
-    { id: '6', cardDesc: 'Integrate Big Data Analytics into business processes for data-driven decision-making' },
-    { id: '7', cardDesc: 'Securely stores confidential business information' },
-    { id: '8', cardDesc: 'Enhance system performance and user experience by scaling up the system' },
-    { id: '9', cardDesc: 'Accelerate transformation, integrate open innovation and smart workflows' },
+    { id: '1', cardDesc: 'Minimize operational expenses of IT portfolio', icon:'/upgradeCloud/benefits/minimizeOperational.svg' },
+    { id: '2', cardDesc: 'Enable user concurrency to support large-scale workloads', icon:'/upgradeCloud/benefits/enableUser.svg'},
+    { id: '3', cardDesc: 'Enhanced collaboration through cross-device accessibility to information', icon:'/upgradeCloud/benefits/enhanced.svg'},
+    { id: '4', cardDesc: 'Advanced data management solutions, modernized process and cloud services', icon:'/upgradeCloud/benefits/advancedData.svg'},
+    { id: '5', cardDesc: 'Aptitude to respond to shifting business requirements', icon:'/upgradeCloud/benefits/aptitude.svg' },
+    { id: '6', cardDesc: 'Integrate Big Data Analytics into business processes for data-driven decision-making', icon:'/upgradeCloud/benefits/integrateBig.svg' },
+    { id: '7', cardDesc: 'Securely stores confidential business information', icon:'/upgradeCloud/benefits/securelyStores.svg' },
+    { id: '8', cardDesc: 'Enhance system performance and user experience by scaling up the system', icon:'/upgradeCloud/benefits/enhanceSystem.svg' },
+    { id: '9', cardDesc: 'Accelerate transformation, integrate open innovation and smart workflows', icon:'/upgradeCloud/benefits/accelerate.svg' },
   ]
   const blogImageUrl = "/upgradeCloud/backgrounds/Blog.webp";
 
@@ -668,7 +671,7 @@ const UpgradeToCloud = () => {
         desc="Enabling businesses to scale with ease, enhance productivity and protect data with security measures. "
         cta="Schedule a call with our Cloud Expert"
         width="60%"
-        video="/upgradeCloud/video/pageBanner.mov"
+        video="/upgradeCloud/videos/pageBanner.mp4"
       />
       {/* Section--Overview=======================================================================  */}
       <OverviewSection
