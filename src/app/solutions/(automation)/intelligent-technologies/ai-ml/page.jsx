@@ -202,7 +202,7 @@ const benifitsCardsData = [
     cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
 ]
 
-const yourImageUrl = '/ai-ml/AI-bgimage.webp';
+const imageUrl = '/ai-ml/AI-bgimage.webp';
 const blogImageUrl = '/ai-ml/blogBg.webp';
 
 
