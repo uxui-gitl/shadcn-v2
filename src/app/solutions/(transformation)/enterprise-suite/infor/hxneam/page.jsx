@@ -48,10 +48,10 @@ const page = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/hxneam/coreCapabilities/inspectionManagement.webp',
+      cardBGImageUrl: '/hxneam/coreCapabilities/intelligentNonconformity.webp',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Inspection management',
-      cardDesc: 'Simplify inspection planning and execution with easy scheduling, classification, and workflow management.',
+      cardHeading: 'Intelligent nonconformity tracking',
+      cardDesc: 'Quickly detect and manage nonconformities with intelligent tracking, prioritized corrective action and customizable indexing.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 2,
@@ -59,39 +59,18 @@ const page = () => {
     {
 
       id: 5,
-      cardBGImageUrl: '/hxneam/coreCapabilities/intelligentNonconformity.webp',
+      cardBGImageUrl: '/hxneam/coreCapabilities/inspectionManagement.webp',
       cardBGColor: '#EFE9FB',
-      cardHeading: 'Intelligent nonconformity tracking',
-      cardDesc: 'Quickly detect and manage nonconformities with intelligent tracking, prioritized corrective action and customizable indexing.',
+      cardHeading: 'Inspection management',
+      cardDesc: 'Simplify inspection planning and execution with easy scheduling, classification, and workflow management.',
       isArrow: false,
       cardTextColor: 'white',
       cardType: 1,
     },
+
     {
 
       id: 6,
-      cardBGImageUrl: '/hxneam/coreCapabilities/safetyManagement.webp',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Safety management',
-      cardDesc: 'Identify and control hazards, ensure HSE compliance, mitigate risks and safe work environment.',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 2,
-    },
-        {
-
-      id: 7,
-      cardBGImageUrl: '/hxneam/coreCapabilities/managementServices.webp',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Asset management services',
-      cardDesc: 'Optimize asset management financials with transparent & automated cost tracking and deliver accurate service costs to customers through invoices.',
-      isArrow: false,
-      cardTextColor: 'white',
-      cardType: 1,
-    },
-        {
-
-      id: 8,
       cardBGImageUrl: '/hxneam/coreCapabilities/electronicRecords.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Electronic records and signatures',
@@ -100,17 +79,42 @@ const page = () => {
       cardTextColor: 'white',
       cardType: 2,
     },
-        {
+    
+    {
 
-      id: 9,
+      id: 7,
+      cardBGImageUrl: '/hxneam/coreCapabilities/safetyManagement.webp',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Safety management',
+      cardDesc: 'Identify and control hazards, ensure HSE compliance, mitigate risks and safe work environment.',
+      isArrow: false,
+      cardTextColor: 'white',
+      cardType: 1,
+    },
+     {
+
+      id: 8,
       cardBGImageUrl: '/hxneam/coreCapabilities/calibration.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Calibration',
       cardDesc: 'Track calibration data, define test points, and associate with work orders to ensure equipment accuracy',
       isArrow: false,
       cardTextColor: 'white',
+      cardType: 2,
+    },
+        {
+
+      id: 9,
+      cardBGImageUrl: '/hxneam/coreCapabilities/managementServices.webp',
+      cardBGColor: '#EFE9FB',
+      cardHeading: 'Asset management services',
+      cardDesc: 'Optimize asset management financials with transparent & automated cost tracking and deliver accurate service costs to customers through invoices.',
+      isArrow: false,
+      cardTextColor: 'white',
       cardType: 1,
     },
+     
+       
   ];
 
   const INDUSTRY_SPOTLIGHT = [
@@ -119,7 +123,7 @@ const page = () => {
       cardBGImageUrl:
         "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
       cardBGColor: "#7F4EE1",
-      cardHeading: "Healthcare",
+      cardHeading: "Manufacturing",
       cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
@@ -154,7 +158,7 @@ const page = () => {
         "/industry-spotlight/cards-backgrounds/card-bg--healthcare.png",
 
       cardBGColor: "#EFE9FB",
-      cardHeading: "Manufacturing",
+      cardHeading: "Healthcare",
       cardDesc:
         "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
       isArrow: false,
@@ -252,7 +256,7 @@ const page = () => {
         desc="Maximize asset lifecycles with leading asset management solution"
         cta="Let's Connect"
         width="60%"
-        video="/hxneam/video/pageBanner.mov"
+        video="/hxneam/videos/pageBanner.mp4"
       />
 
       <OverviewSection Text={`Expert HxGN EAM implementation transforming asset management and enabling predictive maintenance & maintenance cost optimization for improved ROI.`} />

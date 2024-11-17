@@ -142,7 +142,7 @@ const page = () => {
         desc="Cloud-based, pre-configured industry solution for faster adoption and maximum impact."
         cta="Let's Connect"
         width="60%"
-        video="/inforCloudSuite/video/"
+        video="/inforCloudSuite/video/pageBanner.mp4"
       />
 
       <OverviewSection Text={`Discover smarter way to manage business with Infor CloudSuite. Industry-specific cloud ERP solutions help enterprises to scale with confidence and agility.`} />
