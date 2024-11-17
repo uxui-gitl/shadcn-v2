@@ -90,23 +90,23 @@ function ReviewSliderSection(
                                 <div className="w-full bg-transparent rounded-3xl">
                                
                                     <div
-                                        className="text-neutral-white text-heading-01 leading-heading-01 font-light"
+                                        className="text-neutral-white text-heading-02 font-light  md:w-2/3"
                                         
                                     >
                                        {item.cardHeading}
                                     </div>
                                     <div
-                                        className="text-neutral-white text-paragraph-01 leading-paragraph-01 mt-4"
+                                        className="text-neutral-white text-paragraph-01 mt-4"
                             
                                         dangerouslySetInnerHTML={{__html:item.cardDesc}}
                                     />
                                     
                                     
                                     <div
-                                        className="text-neutral-white  mt-4"
+                                        className="text-neutral-white text-body-01 mt-4"
                                      
                                     >
-                                      <div className="text-label-01 leading-label-01 pb-2">{item.designation}</div> 
+                                      <div className="text-body-01 pb-2">{item.designation}</div> 
                                       <div>{item.companyName}</div> 
                                     </div>
                                 </div>

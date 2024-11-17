@@ -98,6 +98,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
             heading={title}
             desc={desc}
             textColor="text-neutral-white"
+            descColor="text-primary-10"
           >
           </HorizontalHeading>
           <div className=" md:px-5 ">

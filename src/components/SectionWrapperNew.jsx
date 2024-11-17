@@ -5,6 +5,7 @@ function SectionWrapperNew({
     sectionHeading,
     sectionDesc,
     sectionTextColor='text-neutral-white',
+    sectionDescColor='text-neutral-darkest-grey',
     sectionHeadingLayout="center",
     title="",
     style,
@@ -16,9 +17,9 @@ function SectionWrapperNew({
             <div className={`py-32 rounded-3xl ${bgColor}`} style={{...style}}>
                 
                 <div className="container mx-auto">
-                {sectionHeadingLayout == 'left'  && <LeftHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></LeftHeading>}
-                {sectionHeadingLayout == 'center'  && <CenterHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor}></CenterHeading>}
-                {sectionHeadingLayout == 'horizontal' && <HorizontalHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} title={title}></HorizontalHeading>}
+                {sectionHeadingLayout == 'left'  && <LeftHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} descColor={sectionDescColor}></LeftHeading>}
+                {sectionHeadingLayout == 'center'  && <CenterHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} descColor={sectionDescColor}></CenterHeading>}
+                {sectionHeadingLayout == 'horizontal' && <HorizontalHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} title={title} descColor={sectionDescColor}></HorizontalHeading>}
                 {children}
                 </div>
             </div>

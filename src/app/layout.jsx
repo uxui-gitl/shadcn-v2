@@ -1,6 +1,7 @@
 "use client";
 import "./globals.css";
-import { Inter_Tight } from "next/font/google";
+// import { Inter_Tight } from "next/font/google";
+
 // import Footer from "@/sections/footer/Footer";
 import Footer from "@/components/home/Footer";
 import Copyright from "@/sections/copyright/Copyright";
@@ -8,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import SplashScreen from "@/components/SplashScreen";
 import { usePathname } from "next/navigation";
 import NextTopLoader from "nextjs-toploader";
-const inter = Inter_Tight({ subsets: ["latin"] });
+// const inter = Inter_Tight({ subsets: ["latin"] });
 
 import { NextUIProvider } from "@nextui-org/react";
 import { title } from "process";
@@ -335,7 +336,7 @@ export default function RootLayout({ children, route }) {
         <meta name="apple-mobile-web-app-title" content="Godrej Infotech" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${inter.className} dark`}>
+      <body class="font-inter">
         {isLoading && isHome ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (

@@ -14,14 +14,14 @@ function SectionHeading({
     >
       {layout === 'vertical' ? (
         <div
-          className={` w-full ${center? 'mx-auto' : ''}  md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center'   : right ? 'items-end' : 'items-center md:items-start'} `}
+          className={` w-full md:w-1/2 ${center? 'mx-auto' : ''}  md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center'   : right ? 'items-end' : 'items-center md:items-start'} `}
         >
           {Heading && <h1
-            className={`text-neutral-white text-heading-01 leading-heading-01 font-medium text-center mb-6 ${center ? 'md:text-center' : 'md:text-left'} md:text-left ${Color} mb-6 sm:mb-2 md:mb-6`}           
+            className={`text-neutral-white text-heading-01 text-center mb-6 ${center ? 'md:text-center' : 'md:text-left'} md:text-left ${Color} mb-6 sm:mb-2 md:mb-6`}           
             dangerouslySetInnerHTML={{ __html: Heading }}
           />}
           {Desc &&  (<p
-            className={`text-neutral-white text-subtitle-01 leading-subtitle-01 font-normal text-center ${center ? 'md:text-center' : 'md:text-left'} ${Color} mb-8`}
+            className={`text-neutral-white text-subtitle-01   text-center ${center ? 'md:text-center' : 'md:text-left'} ${Color} mb-8`}
           
             dangerouslySetInnerHTML={{__html: Desc}}
           >
@@ -32,14 +32,14 @@ function SectionHeading({
           className={`flex flex-col md:flex-row mb-6 pt-${paddingTop} justify-end ${center ? 'justify-center' : right ? 'justify-end' : 'justify-start'}`}
         >
           <h1
-            className={`text-heading-01 leading-heading-01 font-semibold mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
+            className={`text-heading-01 mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
   
           >
             {Heading}
           </h1>
          {Desc && (
           <p
-            className={`text-subtitle-01 leading-subtitle-01 font-normal text-center  md:text-left ${Color}`} 
+            className={`text-subtitle-01  text-center  md:text-left ${Color}`} 
 
           >
             {Desc}

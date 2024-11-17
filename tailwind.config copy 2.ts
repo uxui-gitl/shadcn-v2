@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,76 +24,54 @@ const config: Config = {
       },
     },
     extend: {
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],  // Add 'Inter' font family
-      },
       fontSize: {
-       
-        'display-01': [
-          ' calc(clamp(3.25rem, 7vw, 8rem) * .875)', 
-          {
-            lineHeight: '1', 
-            letterSpacing: '-0.02em', 
-            fontWeight: '450', // Font weight for heading-01
-          },
-        ],
-        'heading-01': [
-          'calc(clamp(3.25rem, 5vw, 4.5rem) * .75)', 
-          {
-            lineHeight: '1.065', 
-            letterSpacing: '-0.02em', 
-            fontWeight: '600', // Font weight for heading-01
-          },
-        ],
-        'heading-02': [
-          'calc(clamp(2.625rem, 0.375vw + 2.55rem, 3rem))', 
-          {
-            lineHeight: '1.065', 
-            letterSpacing: '-0.02em', 
-            fontWeight: '600', // Font weight for heading-01
-          },
-        ],
-        'heading-03': [
-          'calc(clamp(1.75rem, 0.25vw + 1.7rem, 2rem))', 
-          {
-            lineHeight: '1.065', 
-            letterSpacing: '-0.02em', 
-            fontWeight: '600', // Font weight for heading-01
-          },
-        ],
-        'heading-04': [
-          'calc(clamp(1.125rem, 0.125vw + 1.1rem, 1.25rem))', 
-          {
-            lineHeight: '1.15', 
-            letterSpacing: '-0.02em', 
-            fontWeight: '400', 
-          },
-        ],
-        'paragraph-01': [
-          'calc(clamp(1.125rem, 0.125vw + 1.1rem, 1.25rem))', 
-          {
-            lineHeight: '1.5', 
-            letterSpacing: '-0.02em', 
-            fontWeight: '300', 
-          },
-        ],
-        'body-01': [
-          'calc(clamp(1rem, 0.188vw + 0.963rem, 1.188rem))', 
-          {
-            lineHeight: '1.15', 
-            letterSpacing: '-0.015em', 
-            fontWeight: '400', // Font weight for heading-01
-          },
-        ],
 
-        'subtitle-01': [
-          'calc(clamp(0.875rem, 1vw + 0.85rem, 1rem))', 
-          {
-            lineHeight: '1.15', 
-            letterSpacing: '-0.005em', 
-            fontWeight: '400', // Font weight for heading-01
-          },
-        ],
+       
+
+    
+        'heading-01': 'calc(clamp(3.25rem, 5vw, 4.5rem) * .75))',
+
+       
+        
+      },
+      letterSpacing: {
+        'display-01': '-0.015em',
+        'heading-01': '-0.012em',
+        'paragraph-01': '-0.005em',
+        'body-01': '-0.005em',
+        'label-01': '0em',
+        'helper-text-01': '0em',
+        'tabs-heading-01': '-0.012em',
+        'sm-display-01': '-0.015em',
+        'sm-heading-01': '-0.012em',
+        'sm-paragraph-01': '-0.005em',
+        'sm-body-01': '-0.005em',
+        'sm-label-01': '0em',
+        'sm-helper-text-01': '0em',
+        'md-display-01': '-0.015em',
+        'md-heading-01': '-0.012em',
+        'md-paragraph-01': '-0.005em',
+        'md-body-01': '-0.005em',
+        'md-label-01': '0em',
+        'md-helper-text-01': '0em',
+        'lg-display-01': '-0.015em',
+        'lg-heading-01': '-0.012em',
+        'lg-paragraph-01': '-0.005em',
+        'lg-body-01': '-0.005em',
+        'lg-label-01': '0em',
+        'lg-helper-text-01': '0em',
+        'xl-display-01': '-0.015em',
+        'xl-heading-01': '-0.012em',
+        'xl-paragraph-01': '-0.005em',
+        'xl-body-01': '-0.005em',
+        'xl-label-01': '0em',
+        'xl-helper-text-01': '0em',
+        '2xl-display-01': '-0.015em',
+        '2xl-heading-01': '-0.012em',
+        '2xl-paragraph-01': '-0.005em',
+        '2xl-body-01': '-0.005em',
+        '2xl-label-01': '0em',
+        '2xl-helper-text-01': '0em',
       },
       colors: {
         primary: {
@@ -149,6 +127,47 @@ const config: Config = {
         12: "96px",
         14: "112px",
         16: "128px",
+      },
+      lineHeight: {
+        'display-01': '1',
+        'heading-01': '1.2',
+        'heading-02': '1.35',
+        'subtitle-01': '1.5',
+        'paragraph-01': '1.25',
+        'body-01': '1.6',
+        'label-01': '1.4',
+        'helper-text-01': '1.3',
+        'tabs-heading-01': '1.2',
+        'sm-display-01': '1',
+        'sm-heading-01': '1.5',
+        'sm-paragraph-01': '1.6',
+        'sm-body-01': '1.6',
+        'sm-label-01': '1.4',
+        'sm-helper-text-01': '1.3',
+        'md-display-01': '1',
+        'md-heading-01': '1.5',
+        'md-paragraph-01': '1.6',
+        'md-body-01': '1.6',
+        'md-label-01': '1.4',
+        'md-helper-text-01': '1.3',
+        'lg-display-01': '1',
+        'lg-heading-01': '1.5',
+        'lg-paragraph-01': '1.6',
+        'lg-body-01': '1.6',
+        'lg-label-01': '1.4',
+        'lg-helper-text-01': '1.3',
+        'xl-display-01': '1',
+        'xl-heading-01': '1.5',
+        'xl-paragraph-01': '1.6',
+        'xl-body-01': '1.6',
+        'xl-label-01': '1.4',
+        'xl-helper-text-01': '1.3',
+        '2xl-display-01': '1',
+        '2xl-heading-01': '1.5',
+        '2xl-paragraph-01': '1.6',
+        '2xl-body-01': '1.6',
+        '2xl-label-01': '1.4',
+        '2xl-helper-text-01': '1.3',
       },
       screens: {
         sm: "640px",

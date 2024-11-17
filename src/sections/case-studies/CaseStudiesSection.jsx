@@ -527,13 +527,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   backgroundColor: casestudy[0].bgCardColor,
                 }}
               >
-                <h3 className="text-label-01 leading-label-01 font-semibold mb-4">
+                <h3 className="text-body-01 text-neutral-dark-grey mb-4">
                   {casestudy[0].title}
                 </h3>
-                <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
+                <h1 className="text-heading-01 mb-6">
                   {casestudy[0].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-4">
+                <p className="text-body-01 mb-4">
                   {casestudy[0].description}
                 </p>
                 {casestudy[0].link && (
@@ -553,10 +553,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   backgroundColor: casestudy[1].bgCardColor,
                 }}
               >
-                <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
+                <h1 className="text-heading-03 mb-6 ">
                   {casestudy[1].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-8">
+                <p className="text-body-01 mb-8">
                   {casestudy[1].description}
                 </p>
                 {casestudy[1].link && (
@@ -576,10 +576,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   backgroundColor: casestudy[2].bgCardColor,
                 }}
               >
-                <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
+                <h1 className="text-heading-03 mb-6 ">
                   {casestudy[2].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-8">
+                <p className="text-body-01 mb-8">
                   {casestudy[2].description}
                 </p>
                 {casestudy[2].link && (

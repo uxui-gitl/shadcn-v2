@@ -24,11 +24,12 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
                 sectionDesc={Desc}
                 sectionTextColor={Color}
                 sectionHeadingLayout="left"
+                sectionDescColor='text-neutral-white'
             >
                 
                 {readMoreUrl && (<Link
                 href={"#Contact"}
-                className=" w-full md:w-[20vw] text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-4   mb-2 group"
+                className=" w-full md:w-[20vw] text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500  rounded-full px-8 py-4 mb-2 group"
               >
                 Read More
                 <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
