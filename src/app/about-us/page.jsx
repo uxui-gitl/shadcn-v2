@@ -33,10 +33,10 @@ const ContactUs = () => {
 
   const culture = [
     // {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
-    {id:1, title:'', desc:'', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+    {id:1, title:'Mr. Ajay Pimparkar', desc:`Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.` , bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
     {id:2, title:'kashgdkjagdk', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
     {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
-    {id:4, title:'Work –life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+    {id:4, title:'Work - life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
   ];
 
   const GuidingPrinciples = [

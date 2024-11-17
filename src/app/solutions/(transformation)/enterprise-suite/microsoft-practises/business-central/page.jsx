@@ -294,7 +294,7 @@ const page = () => {
         desc="Simplify financial management and automate operations with our certified experts, successful implementation and upgrade experience."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/businessCentral/videos/pageBanner.mp4"
       />
 
       <OverviewSection

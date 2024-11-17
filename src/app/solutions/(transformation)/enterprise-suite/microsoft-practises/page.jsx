@@ -29,7 +29,7 @@ const MicrosoftPractises = () => {
   const highlightPromoBGURL =
     "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
   const synergeticPartnerBGURL =
-    "/CloudStackServices/background/bg--strategic-partnership.png";
+    "/msPractises/synergeticPartnership.webp";
   const awardsBGURL =
     "/transformation/microsoft-practices/backgrounds/bg--awards.png";
 
@@ -343,7 +343,7 @@ const MicrosoftPractises = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL:
-        "/transformation/microsoft-practices/case-studies-section/bg--case-study.png",
+        "/msPractises/CaseStudy.webp",
       videoURL: "",
       title: "Case Studies",
       heading: "Elevating Customer Experience with Cloud",
@@ -375,11 +375,9 @@ const MicrosoftPractises = () => {
       bgCardColor: "#FFF",
     },
     {
-      imageURL:
-        "/transformation/microsoft-practices/case-studies-section/bg--case-study.png",
-
+      imageURL:"",
       videoURL:
-        "/transformation/microsoft-practices/case-studies-section/bg--video.mp4",
+        "/msPractises/videos/caseStudyVideo.mp4",
       title: "",
       heading: "Migration  to D365 for Sales Online",
       description:
@@ -464,7 +462,7 @@ const MicrosoftPractises = () => {
   const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/msPractises/blog-bg.webp',
+      cardBGImageUrl: '/msPractises/blogbg.webp',
       cardBGColor: 'red',
       cardHeading: "Microsoft Dynamics 365 Finance and Operations or Business Central?",
       cardDesc: 'Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world?  ',
@@ -491,7 +489,7 @@ const MicrosoftPractises = () => {
         desc="MS Dynamics 365 CRM & ERP Solutions for growing enterprises"
         cta="Let's Connect"
         width="60%"
-        video="/msPractises/video/pageBanner.mov"
+        video="/msPractises/videos/pageBanner.mp4"
       />
 
       {/* End--HeroBanner-Section=========================================================== */}
