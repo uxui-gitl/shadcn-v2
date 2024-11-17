@@ -1606,44 +1606,51 @@ function NewNavBar() {
       {/* Mobile Menu  */}
 
       <nav
-      className={`${
-        isScrolled || isMobileMenuOpen ? "hidden" : "block"
-      } text-primary-900 w-full fixed top-0 left-0 xl:bg-transparent transition-all duration-300`}
+  className={`w-full fixed top-0 left-0 xl:bg-transparent transition-all duration-300 ${
+    isMobileMenuOpen ? "bg-white" : isScrolled ? "bg-white" : "bg-transparent"
+  } text-primary-900`}
+>
+<div
+  className={`flex justify-between items-left px-4 py-2 xl:invisible ${
+    isScrolled ? "" : "mt-6"
+  }`}
+>
+    {/* Company Logo */}
+    <Link href="/">
+      <Image
+        src={
+          isMobileMenuOpen || isScrolled
+            ? "/godrej-infotech-logo-dark.svg"
+            : "/godrej-infotech-logo-light.svg"
+        }
+        alt="godrej logo"
+        width="188"
+        height="96"
+      />
+    </Link>
+
+    {/* Mobile Hamburger Menu */}
+    <button
+      className={`xl:hidden text-[32px] -mt-4 ${
+        isMobileMenuOpen || isScrolled ? "text-black" : "text-white"
+      }`}
+      onClick={toggleMobileMenu}
     >
-      <div className="flex justify-between items-left px-4 py-2 xl:invisible mt-6">
-        {/* Company Logo */}
-        <Link href="/">
-          <Image
-            src={
-              isMobileMenuOpen
-                ? "/godrej-infotech-logo-dark.svg"
-                : "/godrej-infotech-logo-light.svg"
-            }
-            alt="godrej logo"
-            width="188"
-            height="96"
-          />
-        </Link>
+      {isMobileMenuOpen ? "×" : "☰"}{" "}
+      {/* Close icon when open, hamburger icon when closed */}
+    </button>
+  </div>
 
-        {/* Mobile Hamburger Menu */}
-        <button
-          className={`xl:hidden text-[32px] -mt-4 ${
-            isMobileMenuOpen ? "text-black" : "text-white"
-          }`}
-          onClick={toggleMobileMenu}
-        >
-          {isMobileMenuOpen ? "×" : "☰"}{" "}
-          {/* Close icon when open, hamburger icon when closed */}
-        </button>
-      </div>
+  {/* Mobile Menu */}
+  {isMobileMenuOpen && (
+    <div className="flex flex-col items-left space-y-4 mt-4 bg-white w-screen h-screen max-h-screen overflow-y-auto xl:hidden">
+      <NavLinks />
+    </div>
+  )}
+</nav>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="flex flex-col items-left space-y-4 mt-4 bg-white w-screen h-screen max-h-screen overflow-y-auto xl:hidden">
-          <NavLinks />
-        </div>
-      )}
-    </nav>
+
+
     </>
   );
 }
