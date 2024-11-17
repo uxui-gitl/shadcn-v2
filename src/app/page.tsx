@@ -48,90 +48,30 @@ export default function Home() {
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
-
   const items = [
-    {
-      id: 1,
-      content: "Healthcare",
-    },
-    {
-      id: 2,
-      content: "Professional Service",
-    },
-    {
-      id: 3,
-      content: "Retail",
-    },
-    {
-      id: 4,
-      content: "Manufacturing",
-    },
-    {
-      id: 5,
-      content: "Project",
-    },
+    { id: 1, content: "Healthcare" },
+    { id: 2, content: "Professional Service" },
+    { id: 3, content: "Retail" },
+    { id: 4, content: "Manufacturing" },
+    { id: 5, content: "Project" },
   ];
 
   const items2 = [
-    {
-      id: 6,
-      content: "AI powered Care",
-    },
-    {
-      id: 7,
-      content: "Automation",
-    },
-    {
-      id: 8,
-      content: "Ecommerce",
-    },
-    {
-      id: 9,
-      content: "Smart Factory",
-    },
-    {
-      id: 10,
-      content: "Cloud ERP",
-    },
+    { id: 6, content: "AI powered Care" },
+    { id: 7, content: "Automation" },
+    { id: 8, content: "Ecommerce" },
+    { id: 9, content: "Smart Factory" },
+    { id: 10, content: "Cloud ERP" },
   ];
 
   const items3 = [
-    {
-      id: 11,
-      content: "Quality",
-    },
-    {
-      id: 12,
-      content: "Competitiveness",
-    },
-    {
-      id: 13,
-      content: "Customer Centricity",
-    },
-    {
-      id: 14,
-      content: "Agility",
-    },
-    {
-      id: 15,
-      content: "Project Visibility",
-    },
+    { id: 11, content: "Quality" },
+    { id: 12, content: "Competitiveness" },
+    { id: 13, content: "Customer Centricity" },
+    { id: 14, content: "Agility" },
+    { id: 15, content: "Project Visibility" },
   ];
 
-  const items4 = [
-    {
-      id: 17,
-      content: "Automation  ",
-    },
-    {
-      id: 18,
-      content: "Cloud",
-    },
-    {
-      id: 19,
-      content: "Transformation",
-    },
-  ];
 
   const tabs = [
     {
@@ -412,27 +352,13 @@ export default function Home() {
 `,
   });
 
-  // animate text
   useEffect(() => {
-    const id = setInterval(() => {
-      setIndex((state) => {
-        if (state >= items.length - 1) return 0;
-        return state + 1;
-      });
-    }, 4500);
-    return () => clearInterval(id);
-  });
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 5000);
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [items.length]);
 
-  useEffect(() => {
-    const id2 = setInterval(() => {
-      setIndex2((state) => {
-        if (state >= items4.length - 1) return 0;
-        return state + 1;
-      });
-    }, 2500);
-    return () => clearInterval(id2);
-  });
-  // end animate text
 
   // banner Hover ReadMore
   function handleReadMoreHover(item: any, isFilled: boolean) {
@@ -485,14 +411,14 @@ export default function Home() {
           <div className="container headline-position mx-auto text-display-01 leading-display-01 text-white absolute -mt-5 ">
             Delivering Business<br></br> value with
             <motion.div
-              key={items4[index2]?.id}
+              key={items[index2]?.id}
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
               style={{ display: "inline-block" }}
             >
-              <span className="">{items4[index2]?.content}</span>
+              <span className="">{items[index2]?.content}</span>
             </motion.div>
           </div>
           <hr className="h-px top-[50vh] left-0 right-0 my-8 bg-[#e5e7eb5c] border-0 absolute horizontal-line"></hr>
@@ -652,47 +578,49 @@ export default function Home() {
           <p className="text-body-01 leading-body-01 text-neutral-dark-grey font-medium w-[214px] mb-5 md:mb-20">
             Strategic Digital Transformation across Industries
           </p>
-          <div className="text-heading-02 leading-heading-02  md:text-display-01 md:leading-display-01 font-bold">
-            Transform your
-            <motion.div
-              key={items[index].id}
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -10, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
-              style={{ display: "inline-block" }}
-            >
-              <span className="text-[#5F22D9] md:ml-2">
-                {items[index].content}
-              </span>
-            </motion.div>
-            <br></br>
-            business with
-            <motion.div
-              key={items2[index].id}
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
-              style={{ display: "inline-block" }}
-            >
-              <span className="text-[#5F22D9] md:ml-2">
-                {items2[index].content}
-              </span>{" "}
-            </motion.div>
-            <br></br>
-            enhancing{" "}
-            <motion.div
-              key={items3[index].id}
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -20, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.4 }}
-              style={{ display: "inline-block" }}
-            >
-              <span className="text-[#5F22D9]">{items3[index].content}.</span>
-            </motion.div>
-          </div>
+          <div className="text-heading-02 leading-heading-02 md:text-display-01 md:leading-display-01 font-bold">
+      Transform your{" "}
+      {items[index] && (
+        <motion.div
+          key={`item-${items[index].id}`}
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -10, opacity: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
+          style={{ display: "inline-block" }}
+        >
+          <span className="text-[#5F22D9] md:ml-2">{items[index].content}</span>
+        </motion.div>
+      )}
+      <br />
+      business with{" "}
+      {items2[index] && (
+        <motion.div
+          key={`item2-${items2[index].id}`}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
+          style={{ display: "inline-block" }}
+        >
+          <span className="text-[#5F22D9] md:ml-2">{items2[index].content}</span>
+        </motion.div>
+      )}
+      <br />
+      enhancing{" "}
+      {items3[index] && (
+        <motion.div
+          key={`item3-${items3[index].id}`}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.4 }}
+          style={{ display: "inline-block" }}
+        >
+          <span className="text-[#5F22D9]">{items3[index].content}.</span>
+        </motion.div>
+      )}
+    </div>
         </div>
       </div>
       {/* video */}
