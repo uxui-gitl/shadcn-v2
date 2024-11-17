@@ -34,7 +34,7 @@ const config: Config = {
           {
             lineHeight: '1', 
             letterSpacing: '-0.02em', 
-            fontWeight: '450', // Font weight for heading-01
+            fontWeight: '450',
           },
         ],
         'heading-01': [
@@ -42,7 +42,7 @@ const config: Config = {
           {
             lineHeight: '1.065', 
             letterSpacing: '-0.02em', 
-            fontWeight: '600', // Font weight for heading-01
+            fontWeight: '600',
           },
         ],
         'heading-02': [
@@ -50,7 +50,7 @@ const config: Config = {
           {
             lineHeight: '1.065', 
             letterSpacing: '-0.02em', 
-            fontWeight: '600', // Font weight for heading-01
+            fontWeight: '600',
           },
         ],
         'heading-03': [
@@ -58,7 +58,7 @@ const config: Config = {
           {
             lineHeight: '1.065', 
             letterSpacing: '-0.02em', 
-            fontWeight: '600', // Font weight for heading-01
+            fontWeight: '600',
           },
         ],
         'heading-04': [

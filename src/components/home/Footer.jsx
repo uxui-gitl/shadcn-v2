@@ -48,9 +48,9 @@ const Footer = () => {
     };
   }, []);
 
-  const footerHeading = "font-medium text-base  text-gray-900 dark:text-[#eef4ff] leading-4";
-  const footerSubHeading = "font-medium text-[14px]  text-gray-900 dark:text-[#eef4ff]";
-  const footerList = "font-regular text-[14px] text-gray-900 dark:text-[#CDBAF3] tracking-wider";
+  const footerHeading = "font-medium text-base  text-neutral-white ";
+  const footerSubHeading = "font-medium text-[14px]  text-neutral-white";
+  const footerList = "font-regular text-[14px] text-primary-10  tracking-wider";
 
   return (
     <>
@@ -63,16 +63,8 @@ const Footer = () => {
             <div className="mx-auto space-y-8 py-16 lg:space-y-16">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
                 <div>
-                  <div className="text-teal-600 dark:text-teal-300">
-                    <Link href="/" className="w-fit dark:hidden">
-                      <Image
-                        src={"/home/godrejLogo.svg"}
-                        alt="Godrej Infotech Logo"
-                        width={163}
-                        height={59}
-                        priority={true}
-                      />
-                    </Link>
+                  <div className="text-neutral-white">
+            
                     <Link href="/" className="w-fit dark:block">
                       <Image
                         src={"/home/godrejLogoWhite.svg"}
@@ -84,7 +76,7 @@ const Footer = () => {
                     </Link>
                   </div>
 
-                  <p className="mt-4 max-w-xs text-gray-500 dark:text-gray-400">
+                  <p className="mt-4 max-w-xs text-neutral-white">
                     Revolutionize your business operations, save time and boost
                     productivity with our cutting-edge offerings.
                   </p>
@@ -169,47 +161,24 @@ const Footer = () => {
                       <li>
                         <Link
                           href="#"
-                          className={footerSubHeading}
+                          className={footerList}
                         >
                           Intelligent Technologies
                         </Link>
                       </li>
 
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          AI/ML
-                        </Link>
-                      </li>
 
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          RPA
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          IIOT
-                        </Link>
-                      </li>
 
-                      <li className="mt-4">
+                      <li className="mt-2">
                         <Link
                           href="#"
-                          className={footerSubHeading}
+                          className={footerList}
                         >
                           Data Insights
                         </Link>
                       </li>
-                      <li>
+                      
+                      <li className="mt-2">
                         <Link
                           href="#"
                           className={footerList}
@@ -217,10 +186,11 @@ const Footer = () => {
                           Cyber Security
                         </Link>
                       </li>
-                      <li className="mt-4">
+
+                      <li className="mt-2">
                         <Link
                           href="#"
-                          className={footerSubHeading}
+                          className={footerList}
                         >
                           Technology Stack
                         </Link>
@@ -235,7 +205,7 @@ const Footer = () => {
                           Cloud
                         </p>
                       </li>
-                      <li>
+                      <li className="mt-2">
                         <Link
                           href="#"
                           className={footerList}
@@ -244,7 +214,7 @@ const Footer = () => {
                         </Link>
                       </li>
 
-                      <li>
+                      <li className="mt-2">
                         <Link
                           href="#"
                           className={footerList}
@@ -260,93 +230,29 @@ const Footer = () => {
                           Transformation
                         </p>
                       </li>
-                      <li className="mt-4">
+                      <li className="mt-2">
                         <Link
                           href="#"
-                          className={footerSubHeading}
+                          className={footerList}
                         >
                           Enterprise Suite
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Infor
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Infor WMS
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Infor LN
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Infor CloudSuite
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          HxnEAM
-                        </Link>
-                      </li>
 
               
-                      <li className="mt-4">
+                      <li className="mt-2">
                         <Link
                           href="#"
-                          className={footerSubHeading}
+                          className={footerList}
                         >
                           Microsoft Practices
                         </Link>
                       </li>
-                      <li>
+                     
+                      <li className="mt-2">
                         <Link
                           href="#"
                           className={footerList}
-                        >
-                          Business Central
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          F&O
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          D365 Commerce
-                        </Link>
-                      </li>
-                      <li className="mt-4">
-                        <Link
-                          href="#"
-                          className={footerSubHeading}
                         >
                         Oracle
                         </Link>
@@ -354,54 +260,15 @@ const Footer = () => {
 
                       
 
-                      <li className="mt-4">
+                      <li className="mt-2">
                         <Link
                           href="#"
-                          className={footerSubHeading}
+                          className={footerList}
                         >
                           Customer Experience
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Infor CRM
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Microsoft CRM
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Salesforce CRM
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                         E-Commerce
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          LS Retail
-                        </Link>
-                      </li>
+                     
                     </ul>
                   </div>
                   <div>

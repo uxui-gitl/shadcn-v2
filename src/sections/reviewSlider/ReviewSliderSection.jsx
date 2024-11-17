@@ -61,7 +61,7 @@ function ReviewSliderSection(
 
                 </SectionHeading>
 
-                <div className="flex mt-10 md:mt-20 min-h-[540px]">
+                <div className="flex mt-10 md:mt-20 min-h-[40vh]">
                     <div className="relative hidden md:inline w-[30%]">
                         <div className={`swiper-button-next`} style={{position:'absolute', left:'50%',top:'12%', width:'80px', height:'80px'}}>
                             <img src="/icons/btn-arrows.svg" alt="icon" />
