@@ -66,54 +66,54 @@ const page = () => {
   const benifitsCardsData = [
     {
       id: "1",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Automateworkflows.svg",
       cardDesc:
         "Automate workflows, streamline processes and enhance productivity",
     },
     {
       id: "2",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Configurecustomizable.svg",
       cardDesc: "Configure customizable dashboards, reports and workflows",
     },
     {
       id: "3",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Accessbusiness.svg",
       cardDesc: "Access business apps anywhere, anytime via cloud mobility",
     },
     {
       id: "4",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Automatefinancial.svg",
       cardDesc:
         "Automate financial processes and reconcile accounts in real-time",
     },
     {
       id: "5",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Streamlinesales.svg",
       cardDesc: "Streamline sales and customer service with integrated CRM",
     },
     {
       id: "6",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Enhancesupplychain.svg",
       cardDesc: "Enhance supply chain management with optimized inventory",
     },
     {
       id: "7",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Gaindata-driveninsights.svg",
       cardDesc: "Gain data-driven insights with advanced reporting & analytics",
     },
     {
       id: "8",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Collaborateseamlessly.svg",
       cardDesc: "Collaborate seamlessly with Microsoft Office 365 integration",
     },
     {
       id: "9",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Ensuredatasecurity.svg",
       cardDesc: "Ensure data security with multi-layered authentication",
     },
     {
       id: "10",
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/businessCentral/benefits/Scaleeffortlessly.svg",
       cardDesc: "Scale effortlessly with cloud-based deployment options",
     },
   ];
@@ -243,28 +243,28 @@ const page = () => {
     // Add more case studies here...
   ];
 
-  const blogImageUrl = "/ai-ml/blog-bg.png";
+  const blogImageUrl = "/businessCentral/BlogBg.webp";
 
   const DISTINCTIVE_DATA = [
     {
       _id: 1,
       desc: "D365 solutions tailored to your business needs, delivered with precision",
-      icon: "",
+      icon: "/businessCentral/DistinctiveEdge/D365solutionstailored.svg",
     },
     {
       _id: 2,
       desc: "Certified team ensures timely delivery, meeting deadlines with accuracy",
-      icon: "",
+      icon: "/businessCentral/DistinctiveEdge/Certifiedteamensures.svg",
     },
     {
       _id: 3,
       desc: "Dedicated in-house support team for prompt assistance",
-      icon: "",
+      icon: "/businessCentral/DistinctiveEdge/Dedicatedinhouse.svg",
     },
     {
       _id: 4,
       desc: "Experience in seamless integration of Business Central with CRM, E-commerce and more",
-      icon: "",
+      icon: "/businessCentral/DistinctiveEdge/ExperienceInSeamless.svg",
     },
   ];
 
@@ -294,7 +294,7 @@ const page = () => {
         desc="Simplify financial management and automate operations with our certified experts, successful implementation and upgrade experience."
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/businessCentral/videos/pageBanner.mp4"
       />
 
       <OverviewSection
@@ -434,7 +434,7 @@ const FinancialManagementContent = () => {
       <div
         className="relative w-full invisible md:visible"
         style={{
-          backgroundImage: `url(/homeNew/tab1.svg)`,
+          backgroundImage: `url(/businessCentral/keyCapabilities/FinancialManagement.webp)`,
           backgroundSize: "cover",
         }}
       ></div>
@@ -451,12 +451,13 @@ const SupplyChainContent = () => {
           {"Supply Chain"}
         </div>
         <div className="py-5">
-        <ul className="text-body-01 leading-body-01 text-white font-normal ">            <li className="mb-3">
+        <ul className="text-body-01 leading-body-01 text-white font-normal ">
+          <li className="mb-3">
               <strong>Automated Stock Management:</strong>
               <br /> Receive automated suggestions for inventory replenishment,
               based on calculations of stock levels, lead times and reorder
               points.
-            </li>
+          </li>
             <li className="mb-3">
               <strong>Approval Workflow:</strong>
               <br />
@@ -475,7 +476,7 @@ const SupplyChainContent = () => {
       <div
         className="relative w-full invisible md:visible"
         style={{
-          backgroundImage: `url(/homeNew/tab1.svg)`,
+          backgroundImage: `url(/businessCentral/keyCapabilities/supplyChain.webp)`,
           backgroundSize: "cover",
         }}
       ></div>
@@ -512,7 +513,7 @@ const SalesMarketingContent = () => {
       <div
         className="relative w-full invisible md:visible"
         style={{
-          backgroundImage: `url(/homeNew/tab1.svg)`,
+          backgroundImage: `url(/businessCentral/keyCapabilities/SalesMarketing.webp)`,
           backgroundSize: "cover",
         }}
       ></div>
@@ -556,7 +557,7 @@ const ProjectManagementContent = () => {
       <div
         className="relative w-full invisible md:visible"
         style={{
-          backgroundImage: `url(/homeNew/tab1.svg)`,
+          backgroundImage: `url(/businessCentral/keyCapabilities/projectManagement.webp)`,
           backgroundSize: "cover",
         }}
       ></div>
@@ -619,7 +620,7 @@ const ServiceManagementContent = () => {
       <div
         className="relative w-full invisible md:visible"
         style={{
-          backgroundImage: `url(/homeNew/tab1.svg)`,
+          backgroundImage: `url(/businessCentral/keyCapabilities/serviceManagement.webp)`,
           backgroundSize: "cover",
         }}
       ></div>
