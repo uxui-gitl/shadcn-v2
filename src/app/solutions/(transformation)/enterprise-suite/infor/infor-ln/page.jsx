@@ -14,30 +14,30 @@ const page = () => {
     {
       _id: 1,
       desc: "Serving one of Asia's largest Infor LN user bases",
-      icon: "/inforLN/distinctiveEdge/servingOne.webp",
+      icon: "/inforLN/distinctiveEdge/servingOne.svg",
     },
     {
       _id: 2,
       desc: "Project managers take complete responsibility for timely delivery of high-quality solutions",
-      icon: "/inforLN/distinctiveEdge/projectManagers.webp",
+      icon: "/inforLN/distinctiveEdge/projectManagers.svg",
     },
     {
       _id: 3,
       desc: "Proprietary tool integrating project management and communication, ensuring 100% transparency.",
-      icon: "/inforLN/distinctiveEdge/proprietaryTool.webp",
+      icon: "/inforLN/distinctiveEdge/proprietaryTool.svg",
     },
     {
       _id: 4,
       desc: "Delivering significant advantages for complex, multi-site manufacturing operations",
-      icon: "/inforLN/distinctiveEdge/delivering.webp",
+      icon: "/inforLN/distinctiveEdge/delivering.svg",
     },
 
   ]
   const BENEFITS_CARDS_DATA = [
 
-    { id: '1', icon:'', cardDesc: 'Access advanced features for global financials, supply chain management, manufacturing, project management, and service lifecycle management.' },
-    { id: '2', icon:'', cardDesc: 'Top-notch global ERP solution with modern user experience that offers end to end process transparency, agility and quick value delivery.' },
-    { id: '3', icon:'', cardDesc: 'Guaranteed optimal, industry- specific business operations aligned with global best practices. ' },
+    { id: '1', icon:'/inforLN/benefits/accessAdvanced.svg', cardDesc: 'Access advanced features for global financials, supply chain management, manufacturing, project management, and service lifecycle management.' },
+    { id: '2', icon:'/inforLN/benefits/globalERP.svg', cardDesc: 'Top-notch global ERP solution with modern user experience that offers end to end process transparency, agility and quick value delivery.' },
+    { id: '3', icon:'/inforLN/benefits/guaranteed.svg', cardDesc: 'Guaranteed optimal, industry- specific business operations aligned with global best practices. ' },
     
   ];
   const INDUSTRY_SPOTLIGHT = [
@@ -224,7 +224,7 @@ const page = () => {
         desc="We help businesses overcome complex challenges and achieve strategic objectives."
         cta="Let's Connect"
         width="60%"
-        video="/inforLN/video/pageBanner.mov"
+        video="/inforLN/videos/pageBanner.mp4"
       />
 
       <OverviewSection Text={`Discover how our industry expertise and end-to-end services can help you derive maximum value from Infor LN investment.`} />
