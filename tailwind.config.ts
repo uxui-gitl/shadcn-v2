@@ -32,9 +32,9 @@ const config = {
         'paragraph-01': 'clamp(20px, 1.5vw, 20px)',
         'overview-01': 'clamp(24px, 2vw, 36px)',
         'body-01': 'clamp(16px, 2.5vw, 18px)',
-        'label-01': 'clamp(16px, 1.5vw, 24px)',
+        'label-01': 'clamp(16px, 1.5vw, 18px)',
         'helper-text-01': 'clamp(10px, 1vw, 12px)',
-        'modal-heading-01': 'clamp(24px, 4vw, 32px)',
+        'modal-heading-01': 'clamp(18px, 4vw, 32px)',
         'tabs-heading-01': 'clamp(14px, 1vw, 16px)',
         
         'sm-display-01': 'clamp(44px, 8vw, 52px)',

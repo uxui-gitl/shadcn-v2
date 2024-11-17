@@ -85,6 +85,10 @@
   }
 }
 
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+
 .benefitScrollDiv::-webkit-scrollbar {
   width: 0;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
@@ -954,6 +958,9 @@ h3 {
 }
 
 
+
+
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -984,13 +991,20 @@ h3 {
   left:0;
   right:0;
 }
-.horizontal-line{
+/* .horizontal-line{
   top:50%;
   left:0;
   right:0;
+} */
+
+
+.swiper-button-prev,
+.swiper-button-next {
+
+  width:32px !important;
+  height: 32px !important;
+
 }
-
-
 /* For 'sm' (640px and above) */
 @media (min-width: 640px) {
   .headline-position{
@@ -998,12 +1012,26 @@ h3 {
     left:0;
     right:0;
   }
+
+.swiper-button-prev,
+.swiper-button-next {
+
+  width:48px !important;
+  height: 48px !important;
+
+}
 }
 
 /* For 'md' (768px and above) */
 @media (min-width: 768px) {
 
-  
+  .swiper-button-prev,
+.swiper-button-next {
+
+  width:48px !important;
+  height: 48px !important;
+
+}
 }
 
 /* For 'lg' (1024px and above) */
@@ -1012,16 +1040,37 @@ h3 {
   }
 /* For 'xl' (1280px and above) */
 @media (min-width: 1280px) {
+  .swiper-button-prev,
+.swiper-button-next {
+
+  width:56px !important;
+  height: 56px !important;
+
+}
   
 }
 
 /* For '2xl' (1400px and above) */
 @media (min-width: 1400px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+  
+    width:56px !important;
+    height: 56px !important;
+  
+  }
 
 }
 
 /* For '3xl' (1536px and above) */
 @media (min-width: 1536px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+  
+    width:56px !important;
+    height: 56px !important;
+  
+  }
 
 }
 

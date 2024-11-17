@@ -51,7 +51,7 @@ const Announcement = ({ content, country }) => {
     setSelected(code);
     let url = "";
     switch (code || country) {
-      case "BE":
+      case "NL":
         url = "/netherland";
         break;
       case "SG":
@@ -142,9 +142,9 @@ const Announcement = ({ content, country }) => {
               className={styles["tb-flags"]}
               selected={selected}
               fullWidth={true}
-              countries={["BE", "SG", "US", "IN"]}
+              countries={["NL", "SG", "US", "IN"]}
               customLabels={{
-                BE: "BEL",
+                NL: "NLD",
                 SG: "SGP",
                 US: "USA",
                 IN: "IND",

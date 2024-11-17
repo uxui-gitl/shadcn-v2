@@ -31,7 +31,7 @@ import Announcement from "@/sections/announcement/Announcement";
 import Link from "next/link";
 import Icon from "@mdi/react";
 import NewNavBar from "@/components/NewNavBar";
-import { mdiArrowTopRight } from "@mdi/js";
+import { mdiArrowRight } from "@mdi/js";
 
 export default function Home() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -182,7 +182,7 @@ export default function Home() {
       heading: "Delivering Results that Matter",
       description:
         "World's top-notch businesses choose us for our industry knowledge and excellent technical acumen as we deliver high performing solutions across the spectrum of industries.",
-      link: "",
+      link: "/case-study-1",
       color: "#FFFFFF",
     },
     {
@@ -256,9 +256,9 @@ export default function Home() {
       cardDesc:
         "Accelerate operations, drive innovation and increase accuracy with AI powered solutions",
       cardBgImg: "/home/images/card1.webp",
-      rawData: `<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      rawData: `<div class="grid grid-cols-1 gap-4">
             <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
+              <div class="text-body-01 leading-body-01 font-semibold ">
               Intelligent Technologies
               </div>
               <p class="text-body-01 font-medium mb-2">Artificial Intelligence & Machine Learning</p>
@@ -266,7 +266,7 @@ export default function Home() {
               <p class="text-body-01 font-medium mb-2">IIoT</p>
             </div>
             <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
+              <div class="text-body-01 leading-body-01 font-semibold ">
               Tech Stack
               </div>
               <p class="text-body-01 font-medium mb-2">Java </p>
@@ -274,7 +274,7 @@ export default function Home() {
               <p class="text-body-01 font-medium mb-2">Low code application development</p>
             </div>
             <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
+              <div class="text-body-01 leading-body-01 font-semibold ">
               Data Insights
               </div>
               <p class="text-body-01 font-medium mb-2">Power BI and Power Apps</p>
@@ -292,24 +292,24 @@ export default function Home() {
       cardDesc:
         "Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility",
       cardBgImg: "/home/images/card2.webp",
-      rawData: `<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      rawData: `<div class="grid grid-cols-2 gap-4">
             <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
+              <div class="text-[40px] font-semibold mb-12">
              Upgrade to Cloud
               </div>
-               <p class="text-body-01 font-medium mb-2">Dynamics AX Upgrade</p>
-               <p class="text-body-01 font-medium mb-2">Dynamics NAV Upgrade</p>
-               <p class="text-body-01 font-medium mb-2">Upgrade to Infor LN</p>
-               <p class="text-body-01 font-medium mb-2">Migrate Applications to Cloud</p>
-               <p class="text-body-01 font-medium mb-2">Lift and Shift to Cloud</p>
+              <p class="text-[22px] font-medium mb-8">Dynamics AX Upgrade</p>
+              <p class="text-[22px] font-medium mb-8">Dynamics NAV Upgrade</p>
+              <p class="text-[22px] font-medium mb-8">Upgrade to Infor LN</p>
+              <p class="text-[22px] font-medium mb-8">Migrate Applications to Cloud</p>
+              <p class="text-[22px] font-medium mb-8">Lift and Shift to Cloud</p>
             </div>
             <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
+              <div class="text-[40px] font-semibold mb-12">
               Cloud Solution and Services
               </div>
-               <p class="text-body-01 font-medium mb-2">Cloud Infrastructure </p>
-               <p class="text-body-01 font-medium mb-2">Business Apps on Cloud</p>
-               <p class="text-body-01 font-medium mb-2">M365 Services</p>
+              <p class="text-[22px] font-medium mb-8">Cloud Infrastructure </p>
+              <p class="text-[22px] font-medium mb-8">Business Apps on Cloud</p>
+              <p class="text-[22px] font-medium mb-8">M365 Services</p>
             </div>
             <div>
           </div>`,
@@ -321,25 +321,25 @@ export default function Home() {
       cardDesc:
         "Enhance business productivity and modernize stakeholder experience with streamlined operations",
       cardBgImg: "/home/images/card3.webp",
-      rawData: `<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
-        <div class="text-body-01 leading-body-01 font-semibold mb-4">
+        <div class="text-[40px] font-semibold mb-12">
       Enterprise Suite
         </div>
-         <p class="text-body-01 font-medium mb-2">Microsoft Dynamics 365</p>
-         <p class="text-body-01 font-medium mb-2">Infor</p>
-         <p class="text-body-01 font-medium mb-2">Oracle</p>
-         <p class="text-body-01 font-medium mb-2">Hexagon EAM</p>
+        <p class="text-[22px] font-medium mb-8">Microsoft Dynamics 365</p>
+        <p class="text-[22px] font-medium mb-8">Infor</p>
+        <p class="text-[22px] font-medium mb-8">Oracle</p>
+        <p class="text-[22px] font-medium mb-8">Hexagon EAM</p>
       </div>
       <div>
-        <div class="text-body-01 leading-body-01 font-semibold mb-4">
+        <div class="text-[40px] font-semibold mb-12">
         Customer Experience
         </div>
-         <p class="text-body-01 font-medium mb-2">Microsoft CRM </p>
-         <p class="text-body-01 font-medium mb-2">Infor CRM</p>
-         <p class="text-body-01 font-medium mb-2">Salesforce</p>
-         <p class="text-body-01 font-medium mb-2">LS Retail</p>
-         <p class="text-body-01 font-medium mb-2">Ecommerce</p>
+        <p class="text-[22px] font-medium mb-8">Microsoft CRM </p>
+        <p class="text-[22px] font-medium mb-8">Infor CRM</p>
+        <p class="text-[22px] font-medium mb-8">Salesforce</p>
+        <p class="text-[22px] font-medium mb-8">LS Retail</p>
+        <p class="text-[22px] font-medium mb-8">Ecommerce</p>
 
       </div>
       <div>
@@ -595,25 +595,24 @@ export default function Home() {
       {/* [partner Section] */}
 
       <div className="bg-white relative z-10">
-        <div className="container mx-auto pt-40 pb-20 relative">
+        <div className="md:container mx-auto pt-40 pb-20 relative">
           <div
             className="absolute"
             style={{
-              left:"50%",
+              left: "50%",
               transform: "translateX(-50%)",
               backgroundSize: "cover",
               background: "url('/homeNew/Union.svg')",
               backgroundRepeat: "no-repeat",
-              width: "320px",
+              width: "459px",
               height: "-webkit-fill-available",
               top: "-77px",
-              overflow: "hidden",
             }}
           >
             <Image
               className="absolute rotating"
               style={{
-                left: "30%",
+                left: "36%",
                 transform: "translateX(-50%)",
                 top: "11px",
               }}
@@ -631,7 +630,7 @@ export default function Home() {
                   width={100}
                   height={100}
                   alt="Logos"
-                  className="brightness-110 hover:brightness-0 mb-6"
+                  className="brightness-110 hover:brightness-0"
                 />
               </SwiperSlide>
             ))}
@@ -648,11 +647,11 @@ export default function Home() {
           borderBottomRightRadius: "24px",
         }}
       >
-        <div className="container mx-auto py-32">
-          <p className="text-body-01 leading-body-01 text-neutral-dark-grey font-medium w-[214px] mb-5 md:mb-20">
+        <div className="md:container mx-auto pt-32 pb-40">
+          <p className="text-[20px] text-[#808080] font-medium w-[214px] mb-20">
             Strategic Digital Transformation across Industries
           </p>
-          <div className="text-heading-02 leading-heading-02  md:text-display-01 md:leading-display-01 font-bold">
+          <div className="text-[64px] leading-[74px] font-semibold">
             Transform your
             <motion.div
               key={items[index].id}
@@ -662,7 +661,7 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
               style={{ display: "inline-block" }}
             >
-              <span className="text-[#5F22D9] md:ml-2">
+              <span className="text-[#5F22D9] ml-2">
                 {items[index].content}
               </span>
             </motion.div>
@@ -676,7 +675,7 @@ export default function Home() {
               transition={{ ease: "easeInOut", duration: 0.5, delay: 0.3 }}
               style={{ display: "inline-block" }}
             >
-              <span className="text-[#5F22D9] md:ml-2">
+              <span className="text-[#5F22D9] ml-2">
                 {items2[index].content}
               </span>{" "}
             </motion.div>
@@ -696,7 +695,7 @@ export default function Home() {
         </div>
       </div>
       {/* video */}
-      <div className="h-[75vh] w-full -mt-5">
+      <div className="h-screen w-full -mt-5">
         <video
           src={"/home/videos/homePageVideo.mp4"} // Replace with your video path
           autoPlay
@@ -720,32 +719,31 @@ export default function Home() {
           position: "relative",
           zIndex: "2",
           height: "750px",
-          
         }}
       >
         <Slider slidesPerView={3}>
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="p-5 bg-[#5F22D9] rounded-3xl"
+                className="p-8 bg-[#5F22D9] rounded-3xl"
                 style={{ backgroundImage: `url(${item.cardBgImg})` }}
               >
                 {item?.cardTitle && (
-                  <div className="text-xl text-white text-semibold mb-[100px] ">
+                  <div className="text-xl text-white text-semibold mb-[100px]">
                     {item?.cardTitle}
                   </div>
                 )}
-                <div className="my-5 text-[42px] font-medium text-white leading-[50px] min-h-[150px]">
+                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px] min-h-[150px]">
                   {item.cardHeading}
                 </div>
-                <div className="mb-8 text-xl leading-[31px] text-white h-[75px]">
+                <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">
                   {item.cardDesc}
                 </div>
-                <div className="flex justify-end right-0 bottom-0">
+                <div className="flex justify-end px-6 py-4">
                   {/* setshowModal1((prev) => !prev) */}
                   <OutlinedButtonWithArrow
                     arrowColor={"white"}
-                    size={32}
+                    size={48}
                     onClick={() => handleBusinessCardClick(true, item)}
                   />
                 </div>
@@ -756,27 +754,23 @@ export default function Home() {
       </SectionWrapperNew>
       {/* end innovative section */}
 
-    {/* hub of experties */}
-    <SectionWrapperNew
+      {/* hub of experties */}
+      <SectionWrapperNew
         bgColor={"bg-primary-600"}
         sectionHeading={"Hub of Expertise"}
         sectionDesc={
           "We are here to build an edge and bring technology brilliance with the finest in industry"
         }
-        sectionTextColor="text-neutral-white"
+        sectionTextColor="white"
         sectionHeadingLayout="center"
         style={{
-          background: `url(/homeNew/globe.svg), linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)`,
-          paddingTop: "550px",
-          backgroundPosition: "bottom center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover", // Optional: ensures the image covers the div area
-        
+          background: "linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)",
+          paddingTop: "400px",
         }}
       >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 py-6">
           <div className="" ref={ref1}>
-            <h1 className="text-[72px] md:text-[96px] font-bold text-white">
+            <h1 className="text-display-01 text-white">
               {count1}
               <sup className="text-normal">+</sup>
             </h1>
@@ -785,7 +779,7 @@ export default function Home() {
             </p>
           </div>
           <div className="" ref={ref2}>
-            <h1 className="text-[72px] md:text-[96px] font-bold text-white">
+            <h1 className="text-display-01 text-white">
               {count2}
               <sup>+</sup>
             </h1>
@@ -794,7 +788,7 @@ export default function Home() {
             </p>
           </div>
           <div className="" ref={ref3}>
-            <h1 className="text-[72px] md:text-[96px] font-bold text-white">
+            <h1 className="text-display-01 text-white">
               {count3}k<sup>+</sup>
             </h1>
             <p className="text-base font-medium text-[#EFE9FB]">
@@ -802,7 +796,7 @@ export default function Home() {
             </p>
           </div>
           <div className="" ref={ref4}>
-            <h1 className="text-[72px] md:text-[96px] font-bold text-white">
+            <h1 className="text-display-01 text-white">
               {count4}
               <sup>+</sup>
             </h1>
@@ -812,8 +806,9 @@ export default function Home() {
           </div>
         </div>
 
-
-
+        <div className="relative h-[450px] translate-y-[92px]">
+          <Image src="/homeNew/globe.svg" layout="fill" alt="globe" />
+        </div>
       </SectionWrapperNew>
       {/* end hub of experties */}
 
@@ -824,18 +819,18 @@ export default function Home() {
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
         }
-        sectionTextColor="text-primary-900"
+        sectionTextColor="black"
         title="Count on Us"
-        sectionHeadingLayout="center"
-                style={{ background: '#f2f2f2' }}
+        sectionHeadingLayout="horizontal"
+        style={{ background: "white" }}
       >
-                 <div className="h-[70vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
-                 <Tabs
-              activeTabClassName="!bg-[#cccccc] !text-[#fff]"
-              contentClassName="!mt-5"
-              tabClassName="!px-4 hover:bg-[#ccc] "
-              containerClassName="!my-2"
-              tabs={tabs}
+        <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+          <Tabs
+            activeTabClassName={`!bg-[#5F22D9]`}
+            contentClassName={`!mt-20`}
+            tabClassName={`!px-10 hover:bg-[#5F22D9]`}
+            containerClassName={`!my-2`}
+            tabs={tabs}
           />
         </div>
       </SectionWrapperNew>
@@ -845,7 +840,7 @@ export default function Home() {
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"5"}
-        bgColor={"bg-primary-900"}
+        bgColor={"#1D162B"}
       />
 
       <BlogSection
@@ -855,56 +850,44 @@ export default function Home() {
         Desc={
           "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future. "
         }
-        Color={"text-neutral-white"}
+        Color={"white"}
         readMoreUrl={""}
       >
-        <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start">
-              <Link
-                 href={`/careers/why-join-us`}
-                className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-4 mb-2 group"
-              >
-                {"Why Godrej Infotech"}
-                <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
-                  <Icon
-                    path={mdiArrowTopRight}
-                    style={{
-                      marginLeft: "0.5em",
-                      transform: "rotate(45deg)",
-                      marginTop: "1px",
-                    }}
-                    size={1}
-                  />
-                </div>
-              </Link>
-              <Link
-                 href={"careers/we-are-hiring"}
-                className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-4 mb-2 group"
-              >
-                {"Join Our Team"}
-                <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
-                  <Icon
-                    path={mdiArrowTopRight}
-                    style={{
-                      marginLeft: "0.5em",
-                      transform: "rotate(45deg)",
-                      marginTop: "1px",
-                    }}
-                    size={1}
-                  />
-                </div>
-              </Link>
-            </div>
-
-  
+        <div className="">
+          <Link
+            href={`/careers/why-join-us`}
+            target="_blank"
+            className="text-white mr-5 mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          >
+            {"Why Godrej Infotech"}
+            <Icon
+              path={mdiArrowRight}
+              style={{ marginLeft: "0.5em", marginTop: "1px" }}
+              size={1}
+            />
+          </Link>
+          <Link
+            href={"careers/we-are-hiring"}
+            target="_blank"
+            className="text-white mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          >
+            {"Join Our Team"}
+            <Icon
+              path={mdiArrowRight}
+              style={{ marginLeft: "0.5em", marginTop: "1px" }}
+              size={1}
+            />
+          </Link>
+        </div>
       </BlogSection>
       {/* @ts-ignore */}
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted Customers Share Their Successful Experiences"}
         Desc={""}
-        Color="text-neutral-white"
+        Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
-        BGColor="bg-primary-900"
+        BGColor="#1D162B"
       ></ReviewSliderSection>
 
       <TransformBusinessForm
@@ -917,7 +900,7 @@ export default function Home() {
       {/* <Footer /> */}
 
       {/* modal */}
-      <Dialog
+      {/* <Dialog
         shouldShow={showModal1}
         onRequestClose={() => {
           setshowModal1((prev) => !prev);
@@ -927,7 +910,7 @@ export default function Home() {
         <div className="py-10">
           <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
         </div>
-      </Dialog>
+      </Dialog> */}
       {/* end modal */}
     </>
   );
@@ -943,13 +926,14 @@ const ServiceContent = () => {
     "Managed Services",
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-
-<div className="p-5">
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
         {services.map((item) => (
           <>
-                                 <div className="list text-body-01 leading-body-01 py-3 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
-
+            <div
+              className="list text-[18px] py-4 flex justify-between"
+              style={{ borderBottom: "1px solid #d3d3d3" }}
+            >
               {item}
               <Image
                 width={35}
@@ -962,7 +946,7 @@ const ServiceContent = () => {
         ))}
       </div>
       <div
-        className="relative invisible md:visible"
+        className="relative"
         style={{
           backgroundImage: `url(/home/images/Servives.webp)`,
           backgroundSize: "cover",
@@ -983,12 +967,14 @@ const IndustryContent = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="p-5">
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
         {data.map((item) => (
           <>
-                                 <div className="list text-body-01 leading-body-01 py-3 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
-
+            <div
+              className="list text-[18px] py-4 flex justify-between"
+              style={{ borderBottom: "1px solid #d3d3d3" }}
+            >
               {item}
               <Image
                 width={35}
@@ -1001,7 +987,7 @@ const IndustryContent = () => {
         ))}
       </div>
       <div
-       className="relative invisible md:visible"
+        className="relative"
         style={{
           backgroundImage: `url(/home/images/Industry.webp)`,
           backgroundSize: "cover",
@@ -1023,12 +1009,14 @@ const ParternerContent = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="p-5">
+    <div className="grid grid-cols-2 gap-20 h-full">
+      <div className="py-10 px-10">
         {data.map((item) => (
           <>
-                                 <div className="list text-body-01 leading-body-01 py-3 flex justify-between" style={{ borderBottom: '1px solid #d3d3d3' }}>
-
+            <div
+              className="list text-[18px] py-4 flex justify-between"
+              style={{ borderBottom: "1px solid #d3d3d3" }}
+            >
               {item}
               <Image
                 width={35}
@@ -1041,7 +1029,7 @@ const ParternerContent = () => {
         ))}
       </div>
       <div
-       className="relative invisible md:visible"
+        className="relative"
         style={{
           backgroundImage: `url(/home/images/Partners.webp)`,
           backgroundSize: "cover",

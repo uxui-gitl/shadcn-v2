@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 import React from "react";
 import Image from "next/image";
@@ -14,8 +14,9 @@ import "swiper/css/navigation";
 import Dialog from "@/components/Dialog";
 const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
   const caseStudyLayout = csLayout;
-  const setHeading = 'IIoT  Solution Offerings';
-  const setDesc = 'Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.';
+  const setHeading = "IIoT  Solution Offerings";
+  const setDesc =
+    "Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.";
   const setColor = "#2B1624";
 
   const [showModal, setshowModal] = useState(false);
@@ -30,7 +31,6 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
       setTab2Active(false);
       setTabSection1(true);
       setTabSection2(false);
-
     } else {
       setTab1Active(false);
       setTab2Active(true);
@@ -41,7 +41,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
   return (
     <>
-    {/* dialog  */}
+      {/* dialog  */}
       <Dialog
         shouldShow={showModal}
         onRequestClose={() => {
@@ -52,30 +52,32 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
         <div className="">
           <div className="mb-4 border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px text-sm font-medium text-center">
-                <>
-                  <li className="me-2">
-                    <button
-                      onClick={() => tabsClickHandle(1)}
-                      className={`inline-block p-4 border-gray-200 border-b-2 rounded-t-lg ${tab1Active == true
+              <>
+                <li className="me-2">
+                  <button
+                    onClick={() => tabsClickHandle(1)}
+                    className={`inline-block p-4 border-gray-200 border-b-2 rounded-t-lg ${
+                      tab1Active == true
                         ? "text-indigo-500 border-b-indigo-500"
                         : "text-slate-950"
-                        }`}
-                    >
-                      {`Low Code, No Code Configurable IIoT Accelerators on Azure IoT or AWS IoT Remote Asset Tracking with Connected Field Service & Predictive Analytics `}
-                    </button>
-                  </li>
-                  <li className="me-2">
-                    <button
-                      onClick={() => tabsClickHandle(2)}
-                      className={`inline-block p-4 border-gray-200 border-b-2 rounded-t-lg ${tab2Active == true
+                    }`}
+                  >
+                    {`Low Code, No Code Configurable IIoT Accelerators on Azure IoT or AWS IoT Remote Asset Tracking with Connected Field Service & Predictive Analytics `}
+                  </button>
+                </li>
+                <li className="me-2">
+                  <button
+                    onClick={() => tabsClickHandle(2)}
+                    className={`inline-block p-4 border-gray-200 border-b-2 rounded-t-lg ${
+                      tab2Active == true
                         ? "text-indigo-500 border-b-indigo-500"
                         : "text-slate-950"
-                        }`}
-                    >
-                      {`IIoT  Accelerator for  shopfloor in  Discrete & Process Manufacturing `}
-                    </button>
-                  </li>
-                </>
+                    }`}
+                  >
+                    {`IIoT  Accelerator for  shopfloor in  Discrete & Process Manufacturing `}
+                  </button>
+                </li>
+              </>
             </ul>
           </div>
           <div>
@@ -87,142 +89,159 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 </p>
 
                 <div className="grid grid-cols-2 gap-4">
-                <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
-                  <li>
-                  Real-time Monitoring 
-                    <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                      <li>Alerts </li>
-                      <li>Machine parameter-wise graphical reports </li>
-                      <li>Real-time asset tracking </li>
-                    </ol>
-                  </li>
-                  <li>
-                  Work Management 
-                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                      <li>Work Order Generation for Asset Maintenance  </li>
-                    </ul>
-                  </li>
-                  <li>
-                  Predictive Maintenance 
-                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                      <li>Multivariate Azure ML-driven predictive failure analytics </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                    <li>
+                      Real-time Monitoring
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Alerts </li>
+                        <li>Machine parameter-wise graphical reports </li>
+                        <li>Real-time asset tracking </li>
+                      </ol>
+                    </li>
+                    <li>
+                      Work Management
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Work Order Generation for Asset Maintenance </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Predictive Maintenance
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>
+                          Multivariate Azure ML-driven predictive failure
+                          analytics{" "}
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
 
-                <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
-                  <li>
-                  Service Management 
-                    <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                      <li>Service performance monitoring  </li>
-                      <li>Expense management and Warranty tracking  </li>
-                    </ol>
-                  </li>
-                  <li>
-                  Collaboration and Integration 
-                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                      <li>Chat collaboration </li>
-                      <li>Integration with SAP using file-based data transfer mechanism  </li>
-                    </ul>
-                  </li>
-                  <li>
-                  Customer Portal   
-                    <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                      <li>Notifications  </li>
-                      <li>Reporting and analytics</li>
-                      <li>Service contracts (AMC)</li>
-                    </ul>
-                  </li>
-                </ul>
-                  </div>
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                    <li>
+                      Service Management
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Service performance monitoring </li>
+                        <li>Expense management and Warranty tracking </li>
+                      </ol>
+                    </li>
+                    <li>
+                      Collaboration and Integration
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Chat collaboration </li>
+                        <li>
+                          Integration with SAP using file-based data transfer
+                          mechanism{" "}
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Customer Portal
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Notifications </li>
+                        <li>Reporting and analytics</li>
+                        <li>Service contracts (AMC)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             )}
             {/* tab2 */}
             {tabSection2 && (
-             <div className="p-4 rounded-lg bg-gray-50">
-             <p className="text-xl font-semibold leading-relaxed text-black-500">
-               Solution Features
-             </p>
+              <div className="p-4 rounded-lg bg-gray-50">
+                <p className="text-xl font-semibold leading-relaxed text-black-500">
+                  Solution Features
+                </p>
 
-             <div className="grid grid-cols-2 gap-4">
-             <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
-               <li>
-               Real-time Monitoring 
-                 <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>Production monitoring  </li>
-                   <li>Machine-wise, batch-wise, and part-wise production analysis  </li>
-                   <li>Real-time material consumption analysis</li>
-                   <li>Energy and utility monitoring </li>
-                 </ol>
-               </li>
-               <li>
-               Costing and Optimization 
-                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>Usage-based costing </li>
-                   <li>Consumption-based costing analysis  </li>
-                   <li>OEE (Overall Equipment Effectiveness) optimization  </li>
-                   <li>Line efficiency calculation </li>
-                 </ul>
-               </li>
-               <li>
-               Quality and Performance Analysis 
-                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>42TPM (Total Productive Maintenance) loss reports </li>
-                   <li>Rejection analysis </li>
-                   <li>Cycle time report analysis </li>
-                   <li>Shot count report analysis </li>
-                 </ul>
-               </li>
-               <li>
-               Quality reports 
-                 <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>SPC (Statistical Process Control) reports </li>
-                   <li>Defect analysis  </li>
-                   <li>RCA (Root Cause Analysis) </li>
-                   <li>Machine downtime analysis </li>
-                 </ol>
-               </li>
-             </ul>
+                <div className="grid grid-cols-2 gap-4">
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                    <li>
+                      Real-time Monitoring
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Production monitoring </li>
+                        <li>
+                          Machine-wise, batch-wise, and part-wise production
+                          analysis{" "}
+                        </li>
+                        <li>Real-time material consumption analysis</li>
+                        <li>Energy and utility monitoring </li>
+                      </ol>
+                    </li>
+                    <li>
+                      Costing and Optimization
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Usage-based costing </li>
+                        <li>Consumption-based costing analysis </li>
+                        <li>
+                          OEE (Overall Equipment Effectiveness) optimization{" "}
+                        </li>
+                        <li>Line efficiency calculation </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Quality and Performance Analysis
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>
+                          42TPM (Total Productive Maintenance) loss reports{" "}
+                        </li>
+                        <li>Rejection analysis </li>
+                        <li>Cycle time report analysis </li>
+                        <li>Shot count report analysis </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Quality reports
+                      <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>SPC (Statistical Process Control) reports </li>
+                        <li>Defect analysis </li>
+                        <li>RCA (Root Cause Analysis) </li>
+                        <li>Machine downtime analysis </li>
+                      </ol>
+                    </li>
+                  </ul>
 
-             <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
-          
-               <li>
-               Tracking and Traceability 
-                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>Production order and item-wise tracking </li>
-                   <li>MHU (Machine Hour Unit) wise tracking </li>
-                   <li>Trace and tracking of MHU equipment </li>
-                   <li>Trace and track of parts across the shop floor (discrete manufacturing) </li>
-                 </ul>
-               </li>
-               <li>
-               Predictive Maintenance and Uptime    
-                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>Predictive maintenance </li>
-                   <li>MTTR (Mean Time To Repair) and MTBF (Mean Time Between Failures) reports </li>
-                   <li>Safety and Compliance Reports </li>
-                 </ul>
-               </li>
+                  <ul className="py-6 space-y-4 text-gray-500 list-disc list-inside ">
+                    <li>
+                      Tracking and Traceability
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Production order and item-wise tracking </li>
+                        <li>MHU (Machine Hour Unit) wise tracking </li>
+                        <li>Trace and tracking of MHU equipment </li>
+                        <li>
+                          Trace and track of parts across the shop floor
+                          (discrete manufacturing){" "}
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Predictive Maintenance and Uptime
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Predictive maintenance </li>
+                        <li>
+                          MTTR (Mean Time To Repair) and MTBF (Mean Time Between
+                          Failures) reports{" "}
+                        </li>
+                        <li>Safety and Compliance Reports </li>
+                      </ul>
+                    </li>
 
-               <li>
-               Alerts and Reporting 
-                 <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                   <li>Alerts  </li>
-                   <li>Energy consumption report (in kWh)  </li>
-                   <li>Customized reporting and analytics </li>
-                 </ul>
-               </li>
-             </ul>
-               </div>
-           </div>
+                    <li>
+                      Alerts and Reporting
+                      <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Alerts </li>
+                        <li>Energy consumption report (in kWh) </li>
+                        <li>Customized reporting and analytics </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             )}
           </div>
         </div>
       </Dialog>
-    {/* dialog  end*/}
+      {/* dialog  end*/}
 
-      <SectionWrapper BGColor={bgColor} >
+      <SectionWrapper BGColor={bgColor}>
         <div className="container mx-auto py-32">
           {caseStudyLayout === "1" && (
             <div
@@ -244,7 +263,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <h1 className="text-heading-01 leading-heading-01 font-medium ">
                   {casestudy[0].heading}
                 </h1>
-                <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[0].description}</p>
+                <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                  {casestudy[0].description}
+                </p>
               </div>
               <div
                 className="flex flex-col w-full md:w-1/3 h-full  "
@@ -260,11 +281,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
                     {casestudy[1].heading}
                   </h1>
-                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[1].description}</p>
+                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                    {casestudy[1].description}
+                  </p>
 
                   <div className="absolute bottom-5 right-5">
-                  <Link href={casestudy[1].link} target="_blank">
-                    <OutlinedButtonWithArrow size={32} />
+                    <Link href={casestudy[1].link} target="_blank">
+                      <OutlinedButtonWithArrow size={32} />
                     </Link>
                   </div>
                 </div>
@@ -278,11 +301,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
                     {casestudy[2].heading}
                   </h1>
-                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[2].description}</p>
+                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                    {casestudy[2].description}
+                  </p>
 
                   <div className="absolute bottom-5 right-5">
-                  <Link href={casestudy[2].link} target="_blank">
-                    <OutlinedButtonWithArrow size={32} />
+                    <Link href={casestudy[2].link} target="_blank">
+                      <OutlinedButtonWithArrow size={32} />
                     </Link>
                   </div>
                 </div>
@@ -301,11 +326,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
                     {casestudy[3].heading}
                   </h1>
-                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">{casestudy[3].description}</p>
+                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                    {casestudy[3].description}
+                  </p>
 
                   <div className="absolute bottom-5 right-5">
-                  <Link href={casestudy[3].link} target="_blank">
-                    <OutlinedButtonWithArrow size={32} />
+                    <Link href={casestudy[3].link} target="_blank">
+                      <OutlinedButtonWithArrow size={32} />
                     </Link>
                   </div>
                 </div>
@@ -364,7 +391,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
                     {casestudy[0].heading}
                   </h1>
-                  <p className=" text-body-01 leading-body-01 mb-4">{casestudy[0].description}</p>
+                  <p className=" text-body-01 leading-body-01 mb-4">
+                    {casestudy[0].description}
+                  </p>
                 </div>
               </div>
 
@@ -382,7 +411,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-6">
                     {casestudy[1].heading}
                   </h1>
-                  <p className="text-body-01 leading-body-01 mb-10">{casestudy[1].description}</p>
+                  <p className="text-body-01 leading-body-01 mb-10">
+                    {casestudy[1].description}
+                  </p>
 
                   <div className="absolute bottom-5 right-5">
                     <OutlinedButtonWithArrow size={32} />
@@ -398,7 +429,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   <h1 className=" text-heading-02 leading-heading-02 font-medium mb-6">
                     {casestudy[2].heading}
                   </h1>
-                  <p className=" text-body-01 leading-body-01 mb-10">{casestudy[2].description}</p>
+                  <p className=" text-body-01 leading-body-01 mb-10">
+                    {casestudy[2].description}
+                  </p>
 
                   <div className="absolute bottom-5 right-5">
                     <OutlinedButtonWithArrow size={32} />
@@ -407,19 +440,6 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
               </div>
             </div>
           )}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           {caseStudyLayout === "3" && (
             <div className="flex flex-row justify-start items-center gap-8 w-full h-[724px]">
@@ -493,13 +513,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
             </div>
           )}
           {caseStudyLayout === "5" && (
-
             <div
-              className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto"
+              className="flex flex-col lg:flex-row justify-start items-stretch w-full md:gap-8"
               style={{ color: casestudy[0].color }}
             >
+              {/* Card 1 */}
               <div
-                className="w-full relative lg:w-1/3 h-full rounded-t-3xl md:rounded-3xl p-8"
+                className="w-full relative lg:w-1/3 h-[450px] rounded-t-3xl md:rounded-3xl p-5 flex flex-col"
                 style={{
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
@@ -516,14 +536,18 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <p className="text-body-01 leading-body-01 mb-4">
                   {casestudy[0].description}
                 </p>
-                {casestudy[0].link && <div className="absolute right-0 bottom-0">
-                  <Link href={casestudy[0].link} target="_blank">
-                  <OutlinedButtonWithArrow arrowColor="white" size={32}/>
-                  </Link>
-                </div>}
+                {casestudy[0].link && (
+                  <div className="absolute right-0 bottom-0">
+                    <Link href={casestudy[0].link} target="_blank">
+                      <OutlinedButtonWithArrow arrowColor="white" size={32} />
+                    </Link>
+                  </div>
+                )}
               </div>
+
+              {/* Card 2 */}
               <div
-                className="relative w-full lg:w-1/3 h-full md:rounded-3xl p-5"
+                className="relative w-full lg:w-1/3 h-[450px] md:rounded-3xl p-5 flex flex-col"
                 style={{
                   color: casestudy[1].color,
                   backgroundColor: casestudy[1].bgCardColor,
@@ -532,15 +556,21 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
                   {casestudy[1].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-8">{casestudy[1].description}</p>
-                {casestudy[1].link && <div className="absolute right-4 bottom-4">
-                  <Link href={casestudy[1].link} target="_blank">
-                  <OutlinedButtonWithArrow size={32}/>
-                  </Link>
-                </div>}
+                <p className="text-body-01 leading-body-01 mb-8">
+                  {casestudy[1].description}
+                </p>
+                {casestudy[1].link && (
+                  <div className="absolute right-4 bottom-4">
+                    <Link href={casestudy[1].link} target="_blank">
+                      <OutlinedButtonWithArrow size={32} />
+                    </Link>
+                  </div>
+                )}
               </div>
+
+              {/* Card 3 */}
               <div
-                className="relative w-full lg:w-1/3 h-full rounded-b-3xl md:rounded-3xl p-5"
+                className="relative w-full lg:w-1/3 h-[450px] rounded-b-3xl md:rounded-3xl p-5 flex flex-col"
                 style={{
                   color: casestudy[2].color,
                   backgroundColor: casestudy[2].bgCardColor,
@@ -549,13 +579,16 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 <h1 className="text-heading-02 leading-heading-02 font-medium mb-6 ">
                   {casestudy[2].heading}
                 </h1>
-                <p className="text-body-01 leading-body-01 mb-8">{casestudy[2].description}</p>
-                {casestudy[2].link && <div className="absolute right-4 bottom-4">
-                  <OutlinedButtonWithArrow size={32} />
-                </div>}
+                <p className="text-body-01 leading-body-01 mb-8">
+                  {casestudy[2].description}
+                </p>
+                {casestudy[2].link && (
+                  <div className="absolute right-4 bottom-4">
+                    <OutlinedButtonWithArrow size={32} />
+                  </div>
+                )}
               </div>
             </div>
-
           )}
 
           {/* For IIoT Soltution Page */}
@@ -600,10 +633,20 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                         <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
                           {casestudy[0].heading}
                         </h1>
-                        <p className=" text-body-01 leading-body-01 mb-4">{casestudy[0].description}</p>
+                        <p className=" text-body-01 leading-body-01 mb-4">
+                          {casestudy[0].description}
+                        </p>
                       </div>
-                      <div className="absolute right-0 bottom-0" onClick={() => { setshowModal((prev) => !prev); }}>
-                        <OutlinedButtonWithArrow size={32} arrowColor="#FFFFFF" />
+                      <div
+                        className="absolute right-0 bottom-0"
+                        onClick={() => {
+                          setshowModal((prev) => !prev);
+                        }}
+                      >
+                        <OutlinedButtonWithArrow
+                          size={32}
+                          arrowColor="#FFFFFF"
+                        />
                       </div>
                     </div>
                   </div>
@@ -623,7 +666,12 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                       <h1 className="text-heading-02 leading-heading-02 font-medium mb-2">
                         {casestudy[1].heading}
                       </h1>
-                      <p className="mb-4" dangerouslySetInnerHTML={{ __html: casestudy[1].description }}/>
+                      <p
+                        className="mb-4"
+                        dangerouslySetInnerHTML={{
+                          __html: casestudy[1].description,
+                        }}
+                      />
                     </div>
                     <div
                       className="w-full h-1/2 rounded-3xl min-h-[240px]"
@@ -641,9 +689,6 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto lg:h-[362px]"
                   style={{ color: casestudy[2].color }}
                 >
-
-
-
                   {/* Grid--Three */}
 
                   <div
@@ -679,12 +724,11 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     </h1>
                     <p className="mb-4">{casestudy[3].description}</p>
                     <div className="absolute bottom-5 right-5">
-                    <Link href={casestudy[3].link} target="_blank">
-                      <OutlinedButtonWithArrow size={32} />
+                      <Link href={casestudy[3].link} target="_blank">
+                        <OutlinedButtonWithArrow size={32} />
                       </Link>
                     </div>
                   </div>
-
 
                   {/* Grid--Five */}
                   <div
@@ -699,14 +743,15 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     </h1>
                     <p className="mb-4">{casestudy[4].description}</p>
                     <div className="absolute bottom-5 right-5">
-                    <Link href={casestudy[4].link} target="_blank">
-                      <OutlinedButtonWithArrow size={32} />
+                      <Link href={casestudy[4].link} target="_blank">
+                        <OutlinedButtonWithArrow size={32} />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </>)}
+            </>
+          )}
         </div>
       </SectionWrapper>
     </>
