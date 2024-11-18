@@ -885,7 +885,7 @@ const ServiceContent = () => {
       <div
         className="relative invisible md:visible"
         style={{
-          backgroundImage: `url(/home/images/Servives.webp)`,
+          backgroundImage: `url(/home/images/Services.webp)`,
           backgroundSize: "cover",
           backgroundPosition: "top center",
         }}
