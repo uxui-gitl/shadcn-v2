@@ -50,9 +50,9 @@ const ContactUs = () => {
       shortDesc: ``,
       longDesc: `
       <p>Mr. Ashwin Mistry brings forth more than 30 years of valuable experience in the IT industry to our team. With two decades dedicated to ERP implementation, his proficiency blazes in the Discrete and Project manufacturing sectors. </p>
-      <p>In his extensive professional journey, Mr. Mistry has successfully managed ERP projects, both within the domestic and international market space, for Infor and SAP.</p>
-      <p>He plays a key role in strategizing, planning, executing and supporting numerous IT and digital transformation drives across all Business Units of Godrej & Boyce.</p>
-      <p>As a Computer Engineer from Mumbai University and an MBA graduate in Retail Management from NIMS, Mr. Mistry currently serves as the 'Head of IT Consulting & Special Projects' at Godrej Infotech, bringing his wealth of experience to our dynamic team. </p>
+      <p className="mt-4">In his extensive professional journey, Mr. Mistry has successfully managed ERP projects, both within the domestic and international market space, for Infor and SAP.</p>
+      <p className="mt-4">He plays a key role in strategizing, planning, executing and supporting numerous IT and digital transformation drives across all Business Units of Godrej & Boyce.</p>
+      <p className="mt-4">As a Computer Engineer from Mumbai University and an MBA graduate in Retail Management from NIMS, Mr. Mistry currently serves as the 'Head of IT Consulting & Special Projects' at Godrej Infotech, bringing his wealth of experience to our dynamic team. </p>
       `,
 
       bgImageUrl: "/careers/over1.svg",
@@ -65,8 +65,8 @@ const ContactUs = () => {
       shortDesc: ``,
       longDesc: `
       <p>Mr. Kingshuk Chatterjee stands as a testament to transformative leadership, boasting three decades of diverse expertise that spans Manufacturing, Advertising, Branding and Information Technology. A trailblazer with a proven track record, he drives organizational change, crafts iconic brands and brokers landmark deals with ease. </p>
-      <p>Mr. Chatterjee's innovative prowess has streamlined Procurement, Manufacturing and Logistics, yielding impressive efficiencies. As Global Head - External Business, he charts Godrej Infotech Ltd.'s strategic expansion, blazing trails in established and emerging markets. His impact resonates far beyond the bottom line, shaping culture, fostering collaboration and inspiring innovation. </p>
-      <p>A University of Calcutta alumnus, Mr. Chatterjee's academic foundation in Business Administration and Commerce paved the way for his remarkable success. Throughout his illustrious career, he has consistently demonstrated exceptional leadership, strategic flair, and an unwavering commitment to excellence. </p>
+      <p className="mt-4">Mr. Chatterjee's innovative prowess has streamlined Procurement, Manufacturing and Logistics, yielding impressive efficiencies. As Global Head - External Business, he charts Godrej Infotech Ltd.'s strategic expansion, blazing trails in established and emerging markets. His impact resonates far beyond the bottom line, shaping culture, fostering collaboration and inspiring innovation. </p>
+      <p className="mt-4">A University of Calcutta alumnus, Mr. Chatterjee's academic foundation in Business Administration and Commerce paved the way for his remarkable success. Throughout his illustrious career, he has consistently demonstrated exceptional leadership, strategic flair, and an unwavering commitment to excellence. </p>
       `,
 
       bgImageUrl: "/careers/over1.svg",
@@ -91,9 +91,9 @@ const ContactUs = () => {
       shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
       longDesc: `
       <p>An influential HR premier, with her astute vision has been an instrumental force in driving executive decisions of organisation and seamlessly integrating people and technology. With her ardent drive to thrive, she has been inspiring employees in advancing their growth. </p>
-      <p>Throughout her illustrious career, Ms. Raj has consistently demonstrated leadership excellence. Joining Godrej Group as a Management Trainee, she quickly excelled in Industrial Relations and Human Resources for Godrej & Boyce's Precision Equipment Division. Subsequent roles as Head of Recruitment (2000) and Head HRD for Godrej Infotech (2003) solidified her reputation as a strategic thinker and inspirational leader. </p>
-      <p>Ms. Raj's impact extends beyond organizational boundaries. Her commitment to corporate social responsibility, synergy development and brand awareness has created lasting value. As a respected industry expert, she influences stakeholders, builds effective relationships and encourages innovative thinking. </p>
-      <p>A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
+      <p className="mt-4">Throughout her illustrious career, Ms. Raj has consistently demonstrated leadership excellence. Joining Godrej Group as a Management Trainee, she quickly excelled in Industrial Relations and Human Resources for Godrej & Boyce's Precision Equipment Division. Subsequent roles as Head of Recruitment (2000) and Head HRD for Godrej Infotech (2003) solidified her reputation as a strategic thinker and inspirational leader. </p>
+      <p className="mt-4">Ms. Raj's impact extends beyond organizational boundaries. Her commitment to corporate social responsibility, synergy development and brand awareness has created lasting value. As a respected industry expert, she influences stakeholders, builds effective relationships and encourages innovative thinking. </p>
+      <p className="mt-4">A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
       `,
 
       bgImageUrl: "/careers/over1.svg",
