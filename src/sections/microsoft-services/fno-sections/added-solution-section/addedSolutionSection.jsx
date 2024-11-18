@@ -18,12 +18,12 @@ const CONTAINER_DATA_1 = {
     ),
     heading: 'Quality Order Mobile App',
     listItems: [
-        { text: 'Simplified Quality Order Generation', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
-        { text: 'Real-Time Data Integration', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
-        { text: 'Effortless QR Code Search to locate Quality Orders', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
-        { text: 'Mobile Inspection Updates', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
-        { text: 'Detailed Test Insights', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
-        { text: 'Order-level validation, approval, and closure', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
+        { text: 'Simplified Quality Order Generation', image: '/fnO/qualityOrderMobileApp/SimplifiedQualityOrderGeneration.webp' },
+        { text: 'Real-Time Data Integration', image: '/fnO/qualityOrderMobileApp/RealTimeDataIntegration.webp' },
+        { text: 'Effortless QR Code Search to locate Quality Orders', image: '/fnO/qualityOrderMobileApp/EffortlessQRcodeSearch.webp' },
+        { text: 'Mobile Inspection Updates', image: '/fnO/qualityOrderMobileApp/MobileInspection.webp' },
+        { text: 'Detailed Test Insights', image: '/fnO/qualityOrderMobileApp/DetailedTestInsights.webp' },
+        { text: 'Order-level validation, approval, and closure', image: '/fnO/qualityOrderMobileApp/OrderLevelValidation.webp' },
     ],
 };
 
@@ -33,13 +33,13 @@ const CONTAINER_DATA_2 = {
     ),
     heading: 'Production Order App',
     listItems: [
-        { text: 'Seamless Production Order Creation', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
-        { text: 'Real-Time Data Integration', image: '/industry-spotlight/cards-backgrounds/card-bg--healthcare.png' },
-        { text: 'Open Order Management', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
-        { text: 'Quick QR Code Searches for Production Orders', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
-        { text: 'Mobile Inspection Updates', image: '/industry-spotlight/cards-backgrounds/card-bg--professional-services.png' },
-        { text: 'Individual Test Results', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
-        { text: 'Efficient Validation', image: '/industry-spotlight/cards-backgrounds/card-bg--project.png' },
+        { text: 'Seamless Production Order Creation', image: '/fnO/productionOrderApp/SeamlessProductionOrderCreation.webp' },
+        { text: 'Real-Time Data Integration', image: '/fnO/productionOrderApp/RealTimeDataIntegration.webp' },
+        { text: 'Open Order Management', image: '/fnO/productionOrderApp/OpenOrderManagement.webp' },
+        { text: 'Quick QR Code Searches for Production Orders', image: '/fnO/productionOrderApp/QuickQRCodeSearches.webp' },
+        { text: 'Mobile Inspection Updates', image: '/fnO/productionOrderApp/MobileInspectionUpdates.webp' },
+        { text: 'Individual Test Results', image: '/fnO/productionOrderApp/IndividualTestResults.webp' },
+        { text: 'Efficient Validation', image: '/fnO/productionOrderApp/EfficientValidation.webp' },
     ],
 };
 
