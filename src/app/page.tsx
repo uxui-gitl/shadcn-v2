@@ -414,7 +414,7 @@ export default function Home() {
     ></div>
 
     {/* Headline */}
-    <div className="container headline-position mx-auto text-display-01 leading-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
+    <div className="container headline-position mx-auto text-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
       Delivering Business<br /> value with
       {items4[index] && (
         <motion.div

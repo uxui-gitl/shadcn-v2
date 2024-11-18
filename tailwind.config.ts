@@ -34,9 +34,22 @@ const config: Config = {
           {
             lineHeight: '1', 
             letterSpacing: '-0.02em', 
-            fontWeight: '450',
+            fontWeight: '500',
           },
         ],
+
+
+        'display-02': [
+          'calc(clamp(3rem, 5vw, 6rem) * .875)', 
+          {
+            lineHeight: '1', 
+            letterSpacing: '-0.02em', 
+            fontWeight: '500',
+          },
+        ],
+
+
+
         'heading-01': [
           'calc(clamp(3.25rem, 5vw, 4.5rem) * .75)', 
           {
