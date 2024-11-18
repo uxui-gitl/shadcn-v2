@@ -390,133 +390,131 @@ export default function Home() {
         </div>
       </div>
       {/* banner slider */}
-      <div className="slider-wrapper bg-black h-[95vh] md:h-[100vh]">
-        <div className="video relative" style={{ height: "inherit" }}>
-          <video
-            src="/home/1.mp4"
-            autoPlay
-            loop
-            muted
-            className="inset-0 w-full h-full object-cover"
-          ></video>
-          <div
-            className={` w-full h-full absolute top-0 transition duration-700  ${
-              sliderImageUrl
-                ? "opacity-100 ease-in-out"
-                : "opacity-0 ease-in-out"
-            }`}
-            style={{
-              backgroundImage: `url(${sliderImageUrl})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+      <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh]">
+  <div className="video relative h-full">
+    {/* Background Video */}
+    <video
+      src="/home/1.mp4"
+      autoPlay
+      loop
+      muted
+      className="absolute inset-0 w-full h-full object-cover"
+    ></video>
+
+    {/* Overlay Image */}
+    <div
+      className={`absolute inset-0 transition duration-700 ${
+        sliderImageUrl ? "opacity-100 ease-in-out" : "opacity-0 ease-in-out"
+      }`}
+      style={{
+        backgroundImage: `url(${sliderImageUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    ></div>
+
+    {/* Headline */}
+    <div className="container headline-position mx-auto text-display-01 leading-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
+      Delivering Business<br /> value with
+      {items4[index] && (
+        <motion.div
+          key={`item4-${items4[index].id}`}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.2 }}
+          className="inline-block"
+        >
+          <span className="text-neutral-white md:ml-2">
+            {items4[index].content}.
+          </span>
+        </motion.div>
+      )}
+    </div>
+
+    {/* Horizontal Line */}
+    <hr className="absolute top-[50vh] md:top-[55vh] left-0 right-0 h-px bg-white bg-opacity-20 border-0"></hr>
+
+    {/* Slider Section */}
+    <div className="container mx-auto absolute w-full left-0 right-0 bottom-[10vh] ">
+      <div className="flex flex-wrap justify-between items-center">
+        {/* Slider Content */}
+        <div className="w-full md:w-[80%]">
+          <Swiper
+            slidesPerView={1}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             }}
-          ></div>
-          <div className="container headline-position mx-auto text-display-01 leading-display-01 text-white absolute -mt-5 ">
-            Delivering Business<br></br> value with
-            {items4[index] && (
-              <motion.div
-                key={`item4-${items4[index].id}`}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.4 }}
-                style={{ display: "inline-block" }}
-              >
-                <span className="text-neutral-white md:ml-2">
-                  {items4[index].content}.
-                </span>
-              </motion.div>
-            )}
-          </div>
-          <hr className="h-px top-[45vh] left-0 right-0 my-6 bg-white bg-opacity-20 border-0 absolute horizontal-line"></hr>
-          {/* slider */}
-          <div className="container mx-auto absolute w-[100%] left-0 right-0 bottom-0 pb-[6rem]">
-            <div
-              className="flex sm:h-30 md:h-60"
-              style={{ alignItems: "baseline" }}
-            >
-              <div className=" w-[60vw]">
-                <Swiper
-                  slidesPerView={1}
-                  navigation={{
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                  }}
-                  autoplay={false}
-                  loop={true}
-                  spaceBetween={30}
-                  modules={[Navigation]}
-                >
-                  {sliderData?.map((item, index) => (
-                    <SwiperSlide key={item.id}>
-                      <div className="w-full py6 bg-transparent rounded-3xl">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                          <motion.div
-                            ref={ref}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            initial={{ y: 100, opacity: 0 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                          >
-                            <div className="case-study-title text-[#fff] text-paragraph-02 leading-paragraph-02 font-semibold ">
-                              {item.title}
-                            </div>
-                          </motion.div>
-                          <motion.div
-                            className="col-span-2"
-                            ref={ref}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            initial={{ y: 100, opacity: 0 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                          >
-                            <div className="">
-                              <p className="text-body-01 leading-body-01 font-medium  text-white mb-4">
-                                {item.desc}
-                              </p>
-                              <button
-                                type="button"
-                                className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-label-01 leading-label-01 px-4 py-2 "
-                                onMouseOver={() =>
-                                  handleReadMoreHover(item, true)
-                                }
-                                onMouseOut={() =>
-                                  handleReadMoreHover(item, false)
-                                }
-                              >
-                                Read more
-                              </button>
-                            </div>
-                          </motion.div>
-                        </div>
+            autoplay={false}
+            loop={true}
+            spaceBetween={30}
+            modules={[Navigation]}
+          >
+            {sliderData?.map((item, index) => (
+              <SwiperSlide key={item.id}>
+                <div className="w-full py-6 md:py-2 xl:py-2 bg-transparent rounded-3xl">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <motion.div
+                      ref={ref}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      initial={{ y: 100, opacity: 0 }}
+                      transition={{ duration: 0.5, delay: 0.4 }}
+                    >
+                      <div className="text-heading-04 font-bold text-neutral-white">
+                        {item.title}
                       </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-              <div className="w-[40vw] relative flex flex-col sm:flex-row">
-                {/* Previous Button */}
-                <div className="swiper-button-prev swiper-button-size flex items-center justify-center w-[56px] h-[56px] ">
-                  <Image
-                    src="/homeNew/btn-arrows-left.svg"
-                    alt="Prev"
-                    width={56}
-                    height={56}
-                  />
+                    </motion.div>
+                    <motion.div
+                      className="col-span-2"
+                      ref={ref}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      initial={{ y: 100, opacity: 0 }}
+                      transition={{ duration: 0.5, delay: 0.5 }}
+                    >
+                      <p className="text-body-01 text-white mb-6 md:mb-4">
+                        {item.desc}
+                      </p>
+                      <button
+                        type="button"
+                        className="text-body-01 text-neutral-white border border-white  hover:bg-neutral-white hover:text-primary-900 rounded-full px-4 py-2"
+                        onMouseOver={() => handleReadMoreHover(item, true)}
+                        onMouseOut={() => handleReadMoreHover(item, false)}
+                      >
+                        Read more
+                      </button>
+                    </motion.div>
+                  </div>
                 </div>
-                {/* Next Button */}
-                <div className="swiper-button-next swiper-button-size flex items-center justify-center">
-                  <Image
-                    src="/homeNew/btn-arrows-right.svg"
-                    alt="Next"
-                    width={56}
-                    height={56}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*end slider */}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* Slider Navigation Buttons */}
+        <div className="w-full absolute left-[-1rem] top-[1rem] md:w-[20%] md:relative md:left-0 md:right-0 flex justify-end space-x-4 md:p-6">
+          <button className="swiper-button-prev flex items-center justify-center !left-0 w-14 h-14">
+            <Image
+              src="/homeNew/btn-arrows-left.svg"
+              alt="Prev"
+              width={56}
+              height={56}
+            />
+          </button>
+          <button className="swiper-button-next flex items-center justify-center w-14 h-14">
+            <Image
+              src="/homeNew/btn-arrows-right.svg"
+              alt="Next"
+              width={56}
+              height={56}
+            />
+          </button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
       {/* [partner Section] */}
 
       <div className="bg-white relative z-10">
@@ -658,7 +656,7 @@ export default function Home() {
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="p-5 bg-[#5F22D9] rounded-3xl"
+                className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px]"
                 style={{ backgroundImage: `url(${item.cardBgImg})` }}
               >
                 {item?.cardTitle && (
@@ -695,7 +693,7 @@ export default function Home() {
           "We are here to build an edge and bring technology brilliance with the finest in industry"
         }
         sectionTextColor="text-neutral-white"
-        sectionDescColor='text-neutral-white'
+        sectionDescColor="text-neutral-white"
         sectionHeadingLayout="center"
         style={{
           background: `url(/homeNew/globe.svg), linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)`,
@@ -711,18 +709,14 @@ export default function Home() {
               {count1}
               <sup className="text-normal">+</sup>
             </h1>
-            <p className="text-body-01 text-primary-10">
-              Years in Business
-            </p>
+            <p className="text-body-01 text-primary-10">Years in Business</p>
           </div>
           <div className="" ref={ref2}>
             <h1 className="text-[56px] md:text-[72px] font-bold text-white">
               {count2}
               <sup>+</sup>
             </h1>
-            <p className="text-body-01 text-primary-10">
-              Customers Worldwide
-            </p>
+            <p className="text-body-01 text-primary-10">Customers Worldwide</p>
           </div>
           <div className="" ref={ref3}>
             <h1 className="text-[56px] md:text-[72px] font-bold text-white">
@@ -737,9 +731,7 @@ export default function Home() {
               {count4}
               <sup>+</sup>
             </h1>
-            <p className="text-body-01 text-primary-10">
-              Implementation Sites
-            </p>
+            <p className="text-body-01 text-primary-10">Implementation Sites</p>
           </div>
         </div>
       </SectionWrapperNew>
@@ -753,16 +745,17 @@ export default function Home() {
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
         }
         sectionTextColor="text-primary-900"
-          sectionDescColor='text-neutral-dark-grey'
+        sectionDescColor="text-neutral-dark-grey"
         title="Count on Us"
         sectionHeadingLayout="center"
-        style={{ background: "#f2f2f2" }}
+        bgColor={"bg-neutral-white"}
+      
       >
-        <div className="h-[60vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+        <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs
-            activeTabClassName="!bg-[#cccccc] !text-[#fff]"
+            activeTabClassName="!bg-[#f2f2f2] !text-[#fff]"
             contentClassName="!mt-5"
-            tabClassName="!px-4 hover:bg-[#ccc] "
+            tabClassName="!px-4 hover:bg-[#CDBAF3] hover:text-[#fff]"
             containerClassName="!my-2"
             tabs={tabs}
           />
@@ -785,12 +778,12 @@ export default function Home() {
           "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future. "
         }
         Color={"text-neutral-white"}
-        readMoreUrl={""}
+        
       >
-        <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start">
+        <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start mt-6">
           <Link
             href={`/careers/why-join-us`}
-            className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-4 mb-2 group"
+            className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-3 mb-2 group"
           >
             {"Why Godrej Infotech"}
             <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
@@ -807,7 +800,7 @@ export default function Home() {
           </Link>
           <Link
             href={"careers/we-are-hiring"}
-            className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-4 mb-2 group"
+            className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-3 mb-2 group"
           >
             {"Join Our Team"}
             <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
@@ -832,7 +825,7 @@ export default function Home() {
         Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
-        SectionHeadingMaxWidth={'w-1/2'}
+        SectionHeadingMaxWidth={"w-1/2"}
       ></ReviewSliderSection>
 
       <TransformBusinessForm
@@ -840,7 +833,6 @@ export default function Home() {
         Desc={
           "Let's discuss how our ACT (Automation, Cloud and Digital Transformation) solutions can help you with rapid growth."
         }
-       
       ></TransformBusinessForm>
 
       {/* <Footer /> */}
@@ -873,13 +865,12 @@ const ServiceContent = () => {
   ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="p-5">
+      <div className="px-5 py-8">
         {services.map((item) => (
           <>
-            <div
-              className="list text-heading-04 py-3 flex justify-between"
-              style={{ borderBottom: "1px solid #d3d3d3" }}
-            >
+                    <div
+  className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
+>
               {item}
               <Image
                 width={35}
@@ -896,6 +887,7 @@ const ServiceContent = () => {
         style={{
           backgroundImage: `url(/home/images/Servives.webp)`,
           backgroundSize: "cover",
+          backgroundPosition: "top center",
         }}
       ></div>
     </div>
@@ -914,13 +906,12 @@ const IndustryContent = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="p-5">
+      <div className="px-5 py-8">
         {data.map((item) => (
           <>
-            <div
-              className="list text-heading-04 py-3 flex justify-between"
-              style={{ borderBottom: "1px solid #d3d3d3" }}
-            >
+         <div
+  className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
+>
               {item}
               <Image
                 width={35}
@@ -937,6 +928,7 @@ const IndustryContent = () => {
         style={{
           backgroundImage: `url(/home/images/Industry.webp)`,
           backgroundSize: "cover",
+          backgroundPosition: "top center",
         }}
       ></div>
     </div>
@@ -956,13 +948,12 @@ const ParternerContent = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="p-5">
+       <div className="px-5 py-8">
         {data.map((item) => (
           <>
-            <div
-              className="list text-heading-04 py-3 flex justify-between"
-              style={{ borderBottom: "1px solid #d3d3d3" }}
-            >
+                 <div
+  className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
+>
               {item}
               <Image
                 width={35}
@@ -979,6 +970,7 @@ const ParternerContent = () => {
         style={{
           backgroundImage: `url(/home/images/Partners.webp)`,
           backgroundSize: "cover",
+          backgroundPosition: "top center",
         }}
       ></div>
     </div>

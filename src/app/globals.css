@@ -85,9 +85,10 @@
     animation-play-state: paused;
   }
 }
+/* 
+* {
+  outline: 0.25px solid rgba(255, 0, 0, 0.3) !important;
 
-/* * {
-  outline: 1px solid #f00 !important;
 } */
 
 .benefitScrollDiv::-webkit-scrollbar {
@@ -956,6 +957,10 @@ h3 {
 
 .swiper-button-prev::after{
   display:none;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  position:relative !important;
 }
 
 

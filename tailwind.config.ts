@@ -80,9 +80,9 @@ const config: Config = {
         'body-01': [
           'calc(clamp(1rem, 0.188vw + 0.963rem, 1.188rem))', 
           {
-            lineHeight: '1.15', 
+            lineHeight: '1.25', 
             letterSpacing: '-0.015em', 
-            fontWeight: '400', // Font weight for heading-01
+            fontWeight: '300', // Font weight for heading-01
           },
         ],
 
