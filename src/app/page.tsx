@@ -739,7 +739,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-      
+        bgColor={"bg-neutral-white"}
         sectionHeading={"Capabilities and Expertise"}
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
@@ -748,7 +748,7 @@ export default function Home() {
         sectionDescColor="text-neutral-dark-grey"
         title="Count on Us"
         sectionHeadingLayout="center"
-        bgColor={"bg-neutral-white"}
+       
       
       >
         <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
