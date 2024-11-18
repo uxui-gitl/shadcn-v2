@@ -10,7 +10,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                 duration-500 fixed top-0 left-0 right-0 z-[1050] w-full h-screen flex items-center justify-center  bg-gray-800 bg-opacity-50`}
             >
                 <div
-                    className="relative container mx-auto w-full h-screen bg-white rounded-lg shadow-lg"
+                    className="relative container mx-auto w-full h-screen  bg-white rounded-lg shadow-lg"
                 >
                     {/* Modal content */}
                     <div className={`relative bg-[${bgColor}] rounded-lg shadow`}>
@@ -20,11 +20,11 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                             <button
                                 type="button"
                                 className="text-neutral-white bg-primary-400 hover:bg-primary-600 hover:text-neutral-white 
-                                rounded-full  w-8 h-8 inline-flex justify-center items-center"
+                                rounded-full  w-6 h-6 inline-flex justify-center items-center"
                                 onClick={onRequestClose} // Trigger the close function
                             >
                                 <svg
-                                    className="w-4 h-4"
+                                    className="w-2 h-2"
                                     aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -34,7 +34,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                                         stroke="currentColor"
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
-                                        strokeWidth="1"
+                                        strokeWidth="2"
                                         d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                                     />
                                 </svg>
@@ -42,7 +42,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                             </button>
                         </div>
                         {/* Modal body */}
-                        <div className="p-4 md:p-5 space-y-4">{children}</div>
+                        <div className="p-4 overflow-y-scroll h-[100vh] md:p-5 space-y-4">{children}</div>
                         {/* Modal footer */}
                         <div className="hidden items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600">
                             <button

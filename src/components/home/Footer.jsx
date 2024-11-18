@@ -48,23 +48,22 @@ const Footer = () => {
     };
   }, []);
 
-  const footerHeading = "font-medium text-base  text-neutral-white ";
-  const footerSubHeading = "font-medium text-[14px]  text-neutral-white";
-  const footerList = "font-regular text-[14px] text-primary-10  tracking-wider";
+  const footerHeading = "text-helper-01 font-semibold text-neutral-white ";
+  const footerSubHeading = "text-text-helper-02  text-neutral-white";
+  const footerList = "text-helper-02 text-primary-10  tracking-wider";
 
   return (
     <>
       <div
-        className="relative h-[1000px]"
+        className="relative h-[500px]"
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
-        <div className="fixed bottom-0 h-[1000px] w-full text-sm">
+        <div className="fixed bottom-0 h-[500px] w-full text-sm">
           <footer className="container">
-            <div className="mx-auto space-y-8 py-16 lg:space-y-16">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+            <div className="mx-auto space-y-8 py-16 lg:space-y-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-7">
                 <div>
                   <div className="text-neutral-white">
-            
                     <Link href="/" className="w-fit dark:block">
                       <Image
                         src={"/home/godrejLogoWhite.svg"}
@@ -76,12 +75,12 @@ const Footer = () => {
                     </Link>
                   </div>
 
-                  <p className="mt-4 max-w-xs text-neutral-white">
+                  <p className="mt-4 max-w-xs text-helper-02 text-neutral-white">
                     Revolutionize your business operations, save time and boost
                     productivity with our cutting-edge offerings.
                   </p>
 
-                  <ul className="mt-8 flex gap-6">
+                  <ul className="mt-8 flex gap-2">
                     <li ref={facebookRef}>
                       <Link
                         href="#"
@@ -91,7 +90,7 @@ const Footer = () => {
                       >
                         <span className="sr-only">Facebook</span>
                         <svg
-                          className="h-10 w-10"
+                          className="h- w-6"
                           fill="currentColor"
                           viewBox="0 0 32 32"
                           aria-hidden="true"
@@ -113,7 +112,7 @@ const Footer = () => {
                       >
                         <span className="sr-only">Instagram</span>
                         <svg
-                          className="h-10 w-10"
+                          className="h- w-6"
                           fill="currentColor"
                           viewBox="0 0 32 32"
                           aria-hidden="true"
@@ -135,7 +134,7 @@ const Footer = () => {
                       >
                         <span className="sr-only">Twitter</span>
                         <svg
-                          className="h-10 w-10"
+                          className="h- w-6"
                           fill="currentColor"
                           viewBox="0 0 32 32"
                           aria-hidden="true"
@@ -146,277 +145,210 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
-                  <div>
-                    <p className={footerHeading}>
-                      Solutions
-                    </p>
-
-                    <ul className="mt-4">
-                      <li className="mb-3">
-                        <p className={footerHeading}>
-                          Automation
-                        </p>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Intelligent Technologies
-                        </Link>
-                      </li>
-
-
-
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Data Insights
-                        </Link>
-                      </li>
-                      
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Cyber Security
-                        </Link>
-                      </li>
-
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Technology Stack
-                        </Link>
-                      </li>
-
-
-
-                    </ul>
-                    <ul className="my-4 ">
-                      <li className="mb-3">
-                        <p className={footerHeading}>
-                          Cloud
-                        </p>
-                      </li>
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Upgrade to cloud
-                        </Link>
-                      </li>
-
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Cloud Stack & Services
-                        </Link>
-                      </li>
-                      
-                    </ul>
-                    <ul className="my-4 ">
-                      <li className="mb-3">
-                        <p className={footerHeading}>
-                          Transformation
-                        </p>
-                      </li>
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Enterprise Suite
-                        </Link>
-                      </li>
-
-              
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Microsoft Practices
-                        </Link>
-                      </li>
-                     
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                        Oracle
-                        </Link>
-                      </li>
-
-                      
-
-                      <li className="mt-2">
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Customer Experience
-                        </Link>
-                      </li>
-                     
-                    </ul>
-                  </div>
-                  <div>
-                    <p className={footerHeading}>
-                      Services
-                    </p>
-
-                    <ul className="my-6 ">
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Business Consulting
-                        </Link>
-                      </li>
-
-
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Implementation & Global Rollout
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Managed Services
-                        </Link>
-                      </li>
 
                 
-                    </ul>
-                    <p className={footerHeading}>
-                      Industry Focus
-                    </p>
 
-                    <ul className="my-4 ">
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Manufacturing
-                        </Link>
-                      </li>
+                <div className="hidden md:block">
+                  <ul>
+                    <li className="mt-2">
+                      <p className={footerHeading}>Automation</p>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Intelligent Technologies
+                      </Link>
+                    </li>
 
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Retail
-                        </Link>
-                      </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Data Insights
+                      </Link>
+                    </li>
 
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Trading & Distribution
-                        </Link>
-                      </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Cyber Security
+                      </Link>
+                    </li>
 
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Projects
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Professional Services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                         Healthcare
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className={footerHeading}>
-                      Company
-                    </p>
-
-                    <ul className="my-4 ">
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          About us
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Infotech Weekly
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Career - We are Hiring
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Why Godrej Infotech?
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
-                          className={footerList}
-                        >
-                          Contact us
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Technology Stack
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
+                {/* Second Col */}
+                <div className="hidden md:block">
+                  <ul className="">
+                    <li className="mt-2">
+                      <p className={footerHeading}>Cloud</p>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Upgrade to Cloud
+                      </Link>
+                    </li>
+
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Cloud Stack & Services
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                {/* Third Col */}
+                <div className="hidden md:block">
+                  <ul className="">
+                    <li className="mt-2">
+                      <p className={footerHeading}>Transformation</p>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Enterprise Suite
+                      </Link>
+                    </li>
+
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Microsoft Services
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Oracle
+                      </Link>
+                    </li>
+
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                        Customer Experience
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                 {/* Fourth Col */}
+                 <div className="hidden md:block">
+                  <ul className="">
+                    <li className="mt-2">
+                      <p className={footerHeading}>Services</p>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Business Consulting
+                      </Link>
+                    </li>
+
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Implementation and Global Rollout
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Managed Services
+                      </Link>
+                    </li>
+
+             
+                  </ul>
+                </div>
+
+
+                 {/* Fifth Col */}
+                 <div className="hidden md:block">
+                  <ul className="">
+                    <li className="mt-2">
+                      <p className={footerHeading}>Industry Focus</p>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Manufacturing
+                      </Link>
+                    </li>
+
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Retail
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Trading and Distribution
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Project
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Healthcare
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* SixthCol */}
+                <div className="hidden md:block">
+                  <ul className="">
+                    <li className="mt-2">
+                      <p className={footerHeading}>About</p>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                     About Us
+                      </Link>
+                    </li>
+
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      We are hiring
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Why Join us?
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Brochures
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Blogs
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      News & Announcements
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Case Studies
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Success Stories
+                      </Link>
+                    </li>
+                    <li className="mt-2">
+                      <Link href="#" className={footerList}>
+                      Videos
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+
+
+
               </div>
               <p className="text-xs text-[#EFE9FB]">
                 Copyright &copy; 2024. Godrej Infotech |{" "}

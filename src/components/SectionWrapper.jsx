@@ -10,7 +10,7 @@ function SectionWrapper({
     <div
       id={ID}
       className={`rounded-3xl ${BGColor} min-h-[540px]`}
-     
+      style={{...style}}
     >
       {children}
     </div>
