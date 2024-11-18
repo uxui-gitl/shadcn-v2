@@ -138,7 +138,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   <button
                   type="submit"
                   id='subscriptionBtn'
-                  className="text-white flex items-center bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 mb-2 dark:bg-[#946BE6] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                  className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-3 mb-2 group"
                 >
                   {'Send Message'}
                   {btnLoader && ( <svg aria-hidden="true" role="status" className="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +147,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   </svg>)}
                   {btnLoader == false && (<Icon
                     path={mdiArrowTopRight}
-                    style={{ marginLeft: "0.5em", transform: "rotate(45deg)", marginTop: '1px' }}
+                    style={{ marginLeft: "1em", transform: "rotate(45deg)", marginTop: '1px' }}
                     size={1}
                   />)}
 

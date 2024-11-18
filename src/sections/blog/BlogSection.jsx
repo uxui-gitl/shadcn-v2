@@ -14,11 +14,11 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
             <SectionWrapperNew
               
                 style={{
-                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45)), url(${blogImageUrl})`,
+                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url(${blogImageUrl})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     marginTop:'-64px',
-                    minHeight: '540px',
+                    minHeight: '624px',
                 }}
                 sectionHeading={Heading}
                 sectionDesc={Desc}

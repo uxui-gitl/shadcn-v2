@@ -9,18 +9,15 @@ import withReactContent from "sweetalert2-react-content";
 import Navbar from "@/components/Navbar/Navbar";
 import Announcement from "@/sections/announcement/Announcement";
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
-import SectionWrapperNew from '@/components/SectionWrapperNew';
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 import Slider from "@/components/Slider";
 import { SwiperSlide } from "swiper/react";
-import { LinearGradient } from 'react-text-gradients';
+import { LinearGradient } from "react-text-gradients";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import Dialog from "@/components/Dialog";
 import { Timeline } from "@/components/ui/timeline";
 import { title } from "process";
 import NewNavBar from "@/components/NewNavBar";
-
-
-
 
 const ContactUs = () => {
   const [showModal1, setshowModal1] = useState(false);
@@ -29,35 +26,125 @@ const ContactUs = () => {
   const [showModal2, setshowModal2] = useState(false);
   const [readMoreItem, setReadMoreItem] = useState([]);
 
-
-
-  const culture = [
+  const CSUITE_DATA = [
     // {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
-    {id:1, title:'Mr. Ajay Pimparkar', desc:`Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.` , bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-    {id:2, title:'kashgdkjagdk', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-    {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
-    {id:4, title:'Work - life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+    {
+      id: 1,
+      name: "Ajay Pimparkar",
+      designation: "Chief Executive Officer",
+      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
+      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+
+      bgImageUrl: "/careers/over1.svg",
+      bgColor: "#7B014E",
+    },
+    {
+      id: 2,
+      name: "Ashwin Mistry",
+      designation: "Vice President - IT, Godrej & Boyce",
+      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
+      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+
+      bgImageUrl: "/careers/over1.svg",
+      bgColor: "#7B014E",
+    },
+    {
+      id: 3,
+      name: "Kingshuk Chatterjee",
+      designation: "Vice President, External Business",
+      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
+      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+
+      bgImageUrl: "/careers/over1.svg",
+      bgColor: "#7B014E",
+    },
+    {
+      id: 4,
+      name: "Samik Bandyopadhyay",
+      designation: "Charted Accountant",
+      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
+      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+
+      bgImageUrl: "/careers/over1.svg",
+      bgColor: "#7B014E",
+    },
+    {
+      id: 4,
+      name: "Vaishali Raj",
+      designation: "Vice President, Human Resource",
+      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
+      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+
+      bgImageUrl: "/careers/over1.svg",
+      bgColor: "#7B014E",
+    },
   ];
 
   const GuidingPrinciples = [
-    { id: 1, title: 'Purpose', desc: 'Create Sustainable Value for our Stakeholders by connecting People and Technology.', icon:'/about/Purpose.svg' },
-    { id: 2, title: 'Vision', desc: 'Be a world class provider of high-quality Information & Technology solutions.', icon:'/about/Vision.svg' },
-    { id: 3, title: 'Value', desc: 'Integrity, Responsiveness, Commitment, Teamwork', icon:'/about/Value.svg' },
-  ]
+    {
+      id: 1,
+      title: "Purpose",
+      desc: "Create Sustainable Value for our Stakeholders by connecting People and Technology.",
+      icon: "/about/Purpose.svg",
+    },
+    {
+      id: 2,
+      title: "Vision",
+      desc: "Be a world class provider of high-quality Information & Technology solutions.",
+      icon: "/about/Vision.svg",
+    },
+    {
+      id: 3,
+      title: "Value",
+      desc: "Integrity, Responsiveness, Commitment, Teamwork",
+      icon: "/about/Value.svg",
+    },
+  ];
 
   const AWARD_DATA = [
-    { id: 1, Year: '2020', Name: '', desc: `Infor announced Godrej Infotech as 'Influential Partner of the year' for its outstanding contribution and partnership` },
-    { id: 2, Year: '2022', Name: '', desc: `Godrej Infotech achieved the renowned "Great Place to Work" certification for the year 2022-2023` },
-    { id: 3, Year: '2022', Name: '', desc: `Vaishali Victor Raj, our HR head, is named among India's Best People Leaders, this acknowledges her exceptional leadership and influence in the HR landscape` },
-    { id: 4, Year: '2023', Name: '', desc: `Affirming inclusivity, growth, and happiness, Godrej Infotech is proud to be Great Place to Work Certified, once again` },
-    { id: 5, Year: '2023', Name: '', desc: `Adjudged by Ernst & Young, the Official Tabulators, Economic Times Honors Godrej Infotech as ET Future ready Organization 2023-24` },
-    { id: 6, Year: '2024', Name: '', desc: `Solutions Partner designation in the Microsoft AI Cloud Partner Program` },
-
-  ]
+    {
+      id: 1,
+      Year: "2020",
+      Name: "Influential Partner",
+      desc: `Infor announced Godrej Infotech as 'Influential Partner of the year' for its outstanding contribution and partnership`,
+    },
+    {
+      id: 2,
+      Year: "2022",
+      Name: "Great Place to Work",
+      desc: `Godrej Infotech achieved the renowned "Great Place to Work" certification for the year 2022-2023`,
+    },
+    {
+      id: 3,
+      Year: "2022",
+      Name: "India's Best People Leaders",
+      desc: `Vaishali Victor Raj, our HR head, is named among India's Best People Leaders, this acknowledges her exceptional leadership and influence in the HR landscape`,
+    },
+    {
+      id: 4,
+      Year: "2023",
+      Name: "Great Place to Work",
+      desc: `Affirming inclusivity, growth, and happiness, Godrej Infotech is proud to be Great Place to Work Certified, once again`,
+    },
+    {
+      id: 5,
+      Year: "2023",
+      Name: "ET Future ready Organization",
+      desc: `Adjudged by Ernst & Young, the Official Tabulators, Economic Times Honors Godrej Infotech as ET Future ready Organization 2023-24`,
+    },
+    {
+      id: 6,
+      Year: "2024",
+      Name: "AI Cloud Partner",
+      desc: `Solutions Partner designation in the Microsoft AI Cloud Partner Program`,
+    },
+  ];
 
   const KeyPolicies_DATA = [
     {
-      id: 1, title: 'Statutory Report', Desc: `Dummy Text. Dummy Text.`,
+      id: 1,
+      title: "Statutory Report",
+      Desc: `A legally required document detailing a company's financial and operational compliance.`,
       rawData: ` <ul>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <span class="mx-12">2023-2024</span>
@@ -155,10 +242,12 @@ const ContactUs = () => {
                 </ul>
               </li>
             </ul>
-      `
+      `,
     },
     {
-      id: 2, title: 'Corporate Policies', Desc: `Dummy Text. Dummy Text.`,
+      id: 2,
+      title: "Corporate Policies",
+      Desc: `Dummy Text. Dummy Text.`,
       rawData: ` <ol>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
@@ -196,10 +285,12 @@ const ContactUs = () => {
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                 <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
               </li>
-            </ol>`
+            </ol>`,
     },
     {
-      id: 3, title: 'CSR Updates', Desc: `Dummy Text. Dummy Text.`,
+      id: 3,
+      title: "CSR Updates",
+      Desc: `Dummy Text. Dummy Text.`,
       rawData: `   <ul>
                 <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                   <h3 class="mx-6 font-bold">CSR Initiatives</h3>
@@ -234,10 +325,12 @@ const ContactUs = () => {
                 <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
                   <h3 class="mx-6">Mr. V. R. Mehta, Member</h3>
                 </li>
-              </ul>`
+              </ul>`,
     },
     {
-      id: 4, title: 'Statutory Updates', Desc: `Dummy Text. Dummy Text.`,
+      id: 4,
+      title: "Statutory Updates",
+      Desc: `Dummy Text. Dummy Text.`,
       rawData: `
        <ol>
               <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
@@ -276,174 +369,177 @@ const ContactUs = () => {
 
             </ol>`,
     },
+  ];
 
-  ]
+  // const empTestimonials=[
+  // {id:1,
+  //   title:'Godrej Infotech',
+  //   desc:`Godrej Infotech's work culture is all about collaboration and open communication, an environment that encourages growth. Our team reflects a vibrant mix of perspectives. What I admire most about Godrej Infotech is that it prioritizes employees development, both professionally and this has tremendously enriched my journey here.`,
+  //   empName:'Mausami Samanta',
+  //   empDesignation:'Deputy Manager, HR',
+  //   empImage:'about/reviewImage.svg',
+  // }
 
-// const empTestimonials=[
-// {id:1,
-//   title:'Godrej Infotech', 
-//   desc:`Godrej Infotech's work culture is all about collaboration and open communication, an environment that encourages growth. Our team reflects a vibrant mix of perspectives. What I admire most about Godrej Infotech is that it prioritizes employees development, both professionally and this has tremendously enriched my journey here.`,
-//   empName:'Mausami Samanta',
-//   empDesignation:'Deputy Manager, HR',
-//   empImage:'about/reviewImage.svg',
-// }
+  // ]
 
-// ]
-  
   const DATA_2021_Present = [
     {
       id: 1,
-      Desc: `2023 - ET Future-ready Organization`
+      Desc: `2023 - ET Future-ready Organization`,
     },
     {
       id: 2,
-      Desc: ` 2023 - Microsoft Solution Partner for Business Applications`
+      Desc: ` 2023 - Microsoft Solution Partner for Business Applications`,
     },
     {
       id: 3,
-      Desc: `2022 and 2023 - Great Place to Work Certified`
+      Desc: `2022 and 2023 - Great Place to Work Certified`,
     },
     {
       id: 4,
-      Desc: `2022 - Partnership with Hexagon`
+      Desc: `2022 - Partnership with Hexagon`,
     },
     {
       id: 5,
-      Desc: `2021 - Partnership with Salesforce`
-    }
-  ]
+      Desc: `2021 - Partnership with Salesforce`,
+    },
+  ];
 
   const DATA_2016_2020 = [
     {
       id: 1,
-      Desc: `2020 - Partnership with UiPath India and Automation`
+      Desc: `2020 - Partnership with UiPath India and Automation`,
     },
     {
       id: 2,
-      Desc: `2018 - Formation of Godrej Infotech Americas`
+      Desc: `2018 - Formation of Godrej Infotech Americas`,
     },
     {
       id: 3,
-      Desc: `2018 - Partnership with Oracle`
+      Desc: `2018 - Partnership with Oracle`,
     },
     {
       id: 4,
-      Desc: `2017 - Gold Competency for Microsoft Cloud`
+      Desc: `2017 - Gold Competency for Microsoft Cloud`,
     },
     {
       id: 5,
-      Desc: `2017 - Co-Development Engagement with Infor`
+      Desc: `2017 - Co-Development Engagement with Infor`,
     },
     {
       id: 6,
-      Desc: `2016 - LS Retail Diamond Partner`
-    }
-
-  ]
+      Desc: `2016 - LS Retail Diamond Partner`,
+    },
+  ];
 
   const DATA_2011_2015 = [
     {
       id: 1,
-      Desc: `2015 - LS Retail Platinum Partner`
+      Desc: `2015 - LS Retail Platinum Partner`,
     },
     {
       id: 2,
-      Desc: `2014 - Changed Belgium JV to Subsidiary`
+      Desc: `2014 - Changed Belgium JV to Subsidiary`,
     },
     {
       id: 3,
-      Desc: `2014 - Formation of GISPL (Singapore)`
+      Desc: `2014 - Formation of GISPL (Singapore)`,
     },
     {
       id: 4,
-      Desc: `2013 - Business Operations started in KSA`
+      Desc: `2013 - Business Operations started in KSA`,
     },
     {
       id: 5,
-      Desc: `2012 - Infor-Winner of Golden Deal of the Year`
+      Desc: `2012 - Infor-Winner of Golden Deal of the Year`,
     },
     {
       id: 6,
-      Desc: `2012 - Microsoft dynamics Reseller of the year`
+      Desc: `2012 - Microsoft dynamics Reseller of the year`,
     },
     {
       id: 7,
-      Desc: '2011 - Best Partner for LS Retail'
-    }
-
-  ]
+      Desc: "2011 - Best Partner for LS Retail",
+    },
+  ];
 
   const DATA_2005_2010 = [
     {
       id: 1,
-      Desc: `2010 - Best partner for Discrete Manufacturing by Microsoft`
+      Desc: `2010 - Best partner for Discrete Manufacturing by Microsoft`,
     },
     {
       id: 2,
-      Desc: `2010 - Partnership with LS Retail`
+      Desc: `2010 - Partnership with LS Retail`,
     },
     {
       id: 3,
-      Desc: `2009 - Microsoft Inner Circle Member Award`
+      Desc: `2009 - Microsoft Inner Circle Member Award`,
     },
     {
       id: 4,
-      Desc: `2009 - Formation of Godrej Infotech`
+      Desc: `2009 - Formation of Godrej Infotech`,
     },
     {
       id: 5,
-      Desc: `2008 - Opened Office in Sharjah`
+      Desc: `2008 - Opened Office in Sharjah`,
     },
     {
       id: 6,
-      Desc: `2007 - Best Partner Award for Infor in Asia Pacific`
+      Desc: `2007 - Best Partner Award for Infor in Asia Pacific`,
     },
     {
       id: 7,
-      Desc: '2006 - Award for Microsoft President Club Member'
-    }
-
-  ]
+      Desc: "2006 - Award for Microsoft President Club Member",
+    },
+  ];
 
   const DATA_1999_2004 = [
     {
       id: 1,
-      Desc: `2004 - Partnership with Microsoft`
+      Desc: `2004 - Partnership with Microsoft`,
     },
     {
       id: 2,
-      Desc: `2003 - Best Partner Award for Infor`
+      Desc: `2003 - Best Partner Award for Infor`,
     },
     {
       id: 3,
-      Desc: `1999 - Started BaaN (Infor ) Practice`
+      Desc: `1999 - Started BaaN (Infor ) Practice`,
     },
     {
       id: 4,
-      Desc: `1999 - Established Godrej Infotech`
+      Desc: `1999 - Established Godrej Infotech`,
     },
     {
       id: 5,
-      Desc: `1971-1999 - IT Backbone for Godrej & Boyce since`
-    }
-
-  ]
+      Desc: `1971-1999 - IT Backbone for Godrej & Boyce since`,
+    },
+  ];
   const data = [
     {
       title: "2021",
       content: (
         <>
           <div className="">
-            <h2 className="text-[28px] font-semibold leading-[36px]">2021 - Present - Sustaining Holistic Excellence</h2>
-            <div className="my-10">
+            <h2 className="text-heading-03">
+              Present - Sustaining Holistic Excellence
+            </h2>
+            <div className="my-5">
               {DATA_2021_Present.map((item, index) => (
                 <>
-                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
-                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  <div
+                    className="flex py-4"
+                    key={index}
+                    style={{ borderBottom: "1px solid #E4E4E4" }}
+                  >
+                    <span className="text-paragraph-01 text-[#808080]">{}</span>
+                    <p className="text-paragraph-01 text-[#808080]  ">
+                      {item.Desc}
+                    </p>
                   </div>
                 </>
               ))}
-
             </div>
           </div>
         </>
@@ -454,12 +550,21 @@ const ContactUs = () => {
       content: (
         <>
           <div className="">
-            <h2 className="text-[28px] font-semibold leading-[36px]">2016 - 2020 - Multi-faceted Accomplishments</h2>
-            <div className="my-10">
+            <h2 className="text-heading-03"> Multi-faceted Accomplishments</h2>
+            <div className="my-5">
               {DATA_2016_2020.map((item, index) => (
                 <>
-                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
-                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  <div
+                    className="flex py-4"
+                    key={index}
+                    style={{ borderBottom: "1px solid #E4E4E4" }}
+                  >
+                    <span className="text-paragraph-01 text-[#808080] ">
+                      {}
+                    </span>
+                    <p className="text-paragraph-01 text-[#808080]  ">
+                      {item.Desc}
+                    </p>
                   </div>
                 </>
               ))}
@@ -473,12 +578,19 @@ const ContactUs = () => {
       content: (
         <>
           <div className="">
-            <h2 className="text-[28px] font-semibold leading-[36px]">2011 - 2015 - A Triumphant Year</h2>
-            <div className="my-10">
+            <h2 className="text-heading-03">A Triumphant Year</h2>
+            <div className="my-5">
               {DATA_2011_2015.map((item, index) => (
                 <>
-                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
-                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  <div
+                    className="flex py-4"
+                    key={index}
+                    style={{ borderBottom: "1px solid #E4E4E4" }}
+                  >
+                    <span className="text-paragraph-01 text-[#808080]">{}</span>
+                    <p className="text-paragraph-01 text-[#808080] ">
+                      {item.Desc}
+                    </p>
                   </div>
                 </>
               ))}
@@ -492,12 +604,19 @@ const ContactUs = () => {
       content: (
         <>
           <div className="">
-            <h2 className="text-[28px] font-semibold leading-[36px]">2005 - 2010 – Prominent Honors</h2>
-            <div className="my-10">
+            <h2 className="text-heading-03">Prominent Honors</h2>
+            <div className="my-5">
               {DATA_2005_2010.map((item, index) => (
                 <>
-                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
-                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  <div
+                    className="flex py-4"
+                    key={index}
+                    style={{ borderBottom: "1px solid #E4E4E4" }}
+                  >
+                    <span className="text-paragraph-01 text-[#808080]">{}</span>
+                    <p className="text-paragraph-01 text-[#808080] ">
+                      {item.Desc}
+                    </p>
                   </div>
                 </>
               ))}
@@ -511,12 +630,21 @@ const ContactUs = () => {
       content: (
         <>
           <div className="">
-            <h2 className="text-[28px] font-semibold leading-[36px]">1999 - 2004 - Inception of a Technology Powerhouse, Strategi</h2>
-            <div className="my-10">
+            <h2 className="text-heading-03">
+              Inception of a Technology Powerhouse, Strategic
+            </h2>
+            <div className="my-5">
               {DATA_1999_2004.map((item, index) => (
                 <>
-                  <div className="flex py-4" key={index} style={{ borderBottom: '1px solid #E4E4E4' }}>
-                    <span className="text-[20px] text-[#808080] mr-4">{ }</span><p className="text-[20px] text-[#808080] mr-4 font-medium">{item.Desc}</p>
+                  <div
+                    className="flex py-4"
+                    key={index}
+                    style={{ borderBottom: "1px solid #E4E4E4" }}
+                  >
+                    <span className="text-paragraph-01 text-[#808080]">{}</span>
+                    <p className="text-paragraph-01 text-[#808080] ">
+                      {item.Desc}
+                    </p>{" "}
                   </div>
                 </>
               ))}
@@ -533,8 +661,7 @@ const ContactUs = () => {
     setBusinessItem(item);
   }
 
-
-  function readMore(modal, item){
+  function readMore(modal, item) {
     setshowModal2(modal);
     setReadMoreItem(item);
   }
@@ -556,6 +683,7 @@ const ContactUs = () => {
       </Dialog>
 
       {/* dialog end */}
+
       <Dialog
         shouldShow={showModal2}
         onRequestClose={() => {
@@ -563,136 +691,208 @@ const ContactUs = () => {
         }}
         title={readMoreItem?.title}
       >
-        <div>
-          <div className="">
-            <div className="flex space-between">
-              <p>{readMoreItem?.desc}</p>
-                <img src={readMoreItem?.bgImageUrl} />
-              </div>
-            {/* <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} /> */}
+        <div className="">
+          <div className="container flex flex-col md:flex-row items-center md:items-start p-2">
+            {/* Left Side: Image */}
+            <div className=" w-full md:w-1/3 mb-6 md:mb-0 flex justify-left">
+            <Image
+      src={readMoreItem?.bgImageUrl} // Using dynamic image URL
+      alt="CEO"
+      width={400}  // Set width for Image
+      height={200}  // Set height for Image
+      className="object-cover  "
+    />
+            </div>
+
+            {/* Right Side: Profile Info */}
+            <div className="ceo-info w-full md:w-2/3 pl-0 md:pl-8">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                {readMoreItem?.name}
+              </h1>
+
+              {/* CEO Designation */}
+              <h2 className="text-xl font-semibold text-primary-600 mb-4">
+                {readMoreItem?.designation}
+              </h2>
+
+              {/* Short Description */}
+              <p className="text-body-01 text-gray-700 mb-6">
+                {readMoreItem?.shortDesc}
+              </p>
+
+              {/* Long Paragraph */}
+              <p className="text-body-01 text-gray-700 leading-relaxed">
+                {readMoreItem?.longDesc}
+              </p>
+            </div>
           </div>
         </div>
       </Dialog>
       {/* readmore dialog */}
+
       {/* Nav */}
 
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full`}>
-        <NewNavBar></NewNavBar>
+          <NewNavBar></NewNavBar>
         </div>
       </div>
 
-      <ContactBanner bannerImage={'/about/banner-bg.svg'} title={`Trusted Digital Transformation Partner for Global Enterprises`} desc={`Future-focused solutions and services for Digital Edge`} />
+      <ContactBanner
+        bannerImage={"/about/banner-bg.svg"}
+        title={`Trusted Digital Transformation Partner for Global Enterprises`}
+        desc={`Future-focused solutions and services for Digital Edge`}
+      />
 
       {/* grow section  */}
 
-      <SectionWrapperNew style={{ backgroundColor: "#fff" }}
-        sectionHeading=""
-        sectionDesc=""
-        sectionTextColor='#000'
+      <SectionWrapperNew
+        bgColor={"bg-neutral-white"}
+        sectionHeading="From Humble Beginnings to Leading Tech Hub"
+        sectionDesc="Inspiring Journey of Godrej Infotech"
+        sectionTextColor="text-primary-900"
         sectionHeadingLayout="center"
+        txtLinearGradient={true}
       >
-        <div className="flex flex-col justify-center items-center mb-16">
-          <div className="w-full sm:w-1/2 text-center">
-            <div className={`text-3xl sm:text-2xl md:text-[54px] font-semibold leading-tight md:leading-[64px] mb-6`}> <LinearGradient
-              gradient={["to left", "#5F22D9 ,#E0028E"]}
-              fallbackColor="black"
-            >{'From Humble Beginnings to Leading Tech Hub'}</LinearGradient></div>
-            <div className={`text-lg font-semibold `} >{'Inspiring Journey of Godrej Infotech'}</div>
-          </div>
-        </div>
-
-        <div className="my-10">
+        <div className="">
           <Timeline data={data} />
         </div>
-
       </SectionWrapperNew>
 
       {/* end grow section */}
 
       {/* guiding section */}
-      <SectionWrapperNew style={{ backgroundColor: "#000" }}
+      <SectionWrapperNew
+        bgColor={"bg-primary-900"}
         sectionHeading="The Guiding Principles We Live By"
         sectionDesc={`Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth.`}
-        sectionTextColor='#fff'
+        sectionTextColor="text-neutral-white"
+        sectionDescColor="text-neutral-white"
         sectionHeadingLayout="center"
       >
-
         <Slider>
           {GuidingPrinciples.map((item, index) => (
             <SwiperSlide key={index}>
               <div class="p-6 bg-[transparent]">
-                <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
-                  <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mr-4" />
-                  <div className="text-[28px] text-white">{item.title}</div>
+                <div
+                  className="flex py-4"
+                  style={{ borderBottom: "1px solid #CDBAF3" }}
+                >
+                  <Image
+                    src={item.icon}
+                    width={30}
+                    height={30}
+                    alt={"hioasdo"}
+                    className="mr-4"
+                  />
+                  <div className="text-heading-02 text-white">{item.title}</div>
                 </div>
-                <p class="text-[20px] py-4 text-white">{item.desc}</p>
+                <p class="text-paragraph-01 py-4 text-white">{item.desc}</p>
               </div>
-
             </SwiperSlide>
           ))}
         </Slider>
-
       </SectionWrapperNew>
       {/*end guiding section */}
 
       {/* hub of expertise */}
-      <SectionWrapperNew style={{ backgroundColor: "#5F22D9" }}
+      <SectionWrapperNew
+        bgColor={"bg-primary-500"}
         sectionHeading="Hub of Expertise"
         sectionDesc={`We are here to build an edge and bring technology brilliance with the finest in industry`}
-        sectionTextColor='#fff'
+        sectionTextColor="text-neutral-white"
+        sectionDescColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
       >
-
-        <div className="grid grid-cols-4 gap-16 py-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 py-6">
           <div className="">
-            <h1 className="text-[64px] font-[700] text-white">25<sup className="text-normal"></sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Years in Business</p>
+            <h1 className="text-display-01 text-neutral-white font-bold">
+              25<sup className="text-normal"></sup>
+            </h1>
+            <p className="text-body-01 text-neutral-white">Years in Business</p>
           </div>
           <div className="">
-            <h1 className="text-[64px] font-[700] text-white">500<sup>+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Customers Worldwide</p>
+            <h1 className="text-display-01 text-neutral-white font-bold">
+              500<sup>+</sup>
+            </h1>
+            <p className="text-body-01 text-neutral-white">
+              Customers Worldwide
+            </p>
           </div>
           <div className="">
-            <h1 className="text-[64px] font-[700] text-white">15k<sup>+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Man years of Experience</p>
+            <h1 className="text-display-01 text-neutral-white font-bold">
+              15k<sup>+</sup>
+            </h1>
+            <p className="text-body-01 text-neutral-white">
+              Man years of Experience
+            </p>
           </div>
           <div className="">
-            <h1 className="text-[64px] font-[700] text-white">1000<sup>+</sup></h1>
-            <p className="text-base font-medium text-[#EFE9FB]">Implementation Sites</p>
+            <h1 className="text-display-01 text-neutral-white font-bold">
+              1000<sup>+</sup>
+            </h1>
+            <p className="text-body-01 text-neutral-white">
+              Implementation Sites
+            </p>
           </div>
         </div>
-
       </SectionWrapperNew>
       {/* end hub of expertise */}
 
       {/* visionary minds  */}
-      <SectionWrapperNew style={{ backgroundColor: "#fff" }}
+      <SectionWrapperNew
+        bgColor={"bg-neutral-white"}
         sectionHeading="Introducing Idealistic Minds of Godrej Infotech "
         sectionDesc={`Guided by a strategic vision and a commitment to placing people at the forefront, our leadership team places paramount importance on the well-being and professional growth of every team member, steering the company towards a trajectory of sustained success.`}
-        sectionTextColor='#000'
+        sectionTextColor="text-primary-900"
+        sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="center"
       >
-        <Slider slidesPerView={3}>
-        {culture?.map((item, index) => (
+        <Slider slidesPerView={4}>
+          {CSUITE_DATA?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className={`max-w-sm h-[512px] py-10 px-6 rounded-3xl shadow`} style={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'end',
-                background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
-              }}>
-                {item?.title && (
+              <div
+                className={`max-w-sm h-[512px] p-5 rounded-3xl shadow`}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "end",
+                  background: `linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
+                }}
+              >
+                {item?.name && (
                   <>
-                  <h5 className="mb-3 text-[42px] leading-[50px] font-medium text-white">{item?.title}</h5>
+                    <h5 className="mb-3 text-heading-03 font-medium text-white">
+                      {item?.name}
+                    </h5>
                   </>
                 )}
-                {item?.desc && (<p className="mb-3 font-[14px] leading-[22px] text-white">{item?.desc}</p>)}
-                <div className="text-white flex items-center cursor-pointer"  onClick={() => readMore(true, item)} style={{ cursor: 'pointer' }}>
-                Read their stories <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-                  </div>
+                {item?.designation && (
+                  <p className="mb-6 text-body-01 leading-[22px] text-white">
+                    {item?.designation}
+                  </p>
+                )}
+                <div
+                  className="text-white flex items-center cursor-pointer"
+                  onClick={() => readMore(true, item)}
+                >
+                  Read their stories{" "}
+                  <svg
+                    className="w-2 h-2 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </div>
               </div>
             </SwiperSlide>
           ))}
@@ -729,7 +929,7 @@ const ContactUs = () => {
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >*/}
-        {/* <Slider>
+      {/* <Slider>
           {empTestimonials.map((item, index) => (
             <SwiperSlide key={index}>
               <div class="p-8 rounded-3xl shadow" style={{ border: '1px solid #B599EE' }}>
@@ -756,73 +956,95 @@ const ContactUs = () => {
       end joy work section */}
 
       {/* awards section */}
-      <SectionWrapperNew style={{ backgroundColor: "#fff" }}
-        sectionHeading={`Awards AND Recognition `}
+      <SectionWrapperNew
+        bgColor={"bg-secondary-10"}
+        sectionHeading={`Awards & Recognition `}
         sectionDesc={`Our work culture and commitment has helped us to earn credible achievements. It is the Kaizen attitude that we infuse at every level which consistently strengthens our organisation performance.`}
-        sectionTextColor='#000'
+        sectionTextColor="text-primary-900"
+        sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="horizontal"
       >
-
-
-
         <div class="relative overflow-x-auto">
-          <table class="w-full text-sm text-left rtl:text-right">
-            <thead class="text-xs text-gray-700 uppercase bg-white">
-            </thead>
-            <tbody>
+          <div className="w-full text-sm text-left rtl:text-right">
+            {/* Header Section */}
+            <div className="hidden md:flex text-xs font-semibold text-neutral-dark-grey uppercase py-2">
+              <div className="w-[10%]">Year</div>
+              <div className="w-[20%]">Name</div>
+              <div className="w-[70%]">Description</div>
+            </div>
+
+            {/* Data Rows */}
+            <div >
               {AWARD_DATA.map((item, index) => (
-                <tr class="bg-white border-b " key={index}>
-                  <th scope="row" class="px-6 py-4 font-semibold text-[#000] text-[20px] whitespace-nowrap">
+                <div
+                  className="flex flex-wrap md:flex-nowrap border-b border-neutral-darkest-grey border-opacity-20 py-4"
+                  key={index}
+                >
+                  {/* Year */}
+                  <div className="text-body-01 font-semibold text-primary-900 w-full md:w-[10%] whitespace-nowrap mb-2 md:mb-0">
                     {item.Year}
-                  </th>
-                  <td class="px-6 py-4 text-[20px] font-semibold">
-                    { }
-                  </td>
-                  <td class="px-6 py-4 text-[20px] leading-[28px]">
+                  </div>
+
+                  {/* Name */}
+                  <div className="text-body-01 font-semibold w-full md:w-[20%] mb-2 md:mb-0">
+                    {item.Name}
+                  </div>
+
+                  {/* Description */}
+                  <div className="text-body-01 w-full md:w-[70%]">
                     {item.desc}
-                  </td>
-                </tr>
+                  </div>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
+          </div>
         </div>
-
-
-
       </SectionWrapperNew>
       {/* end awards section */}
-
+      <hr />
       {/* key policy section */}
       <SectionWrapperNew
         sectionHeading="Key Policies and Updates"
         sectionDesc=""
-        sectionTextColor='#000'
+        sectionTextColor="text-primary-900"
+        sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="left"
       >
-
-        <Slider slidesPerView={'4'}>
+        <Slider slidesPerView={"4"}>
           {KeyPolicies_DATA.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="p-8 rounded-3xl shadow " style={{ border: '1px solid #d3d3d3' }}>
-                <h6 className="text-[20px] font-semibold mb-6">{item.title}</h6>
-                <p className="text-[16px] mb-[92px]">{ }</p>
+              <div className="p-5 mt-5 rounded-3xl shadow border-[0.5px] border-neutral-light-grey transition-all duration-300 ease-in-out group hover:bg-neutral-light-grey">
+                {/* Title */}
+                <h6 className="text-heading-04 font-semibold mb-6">
+                  {item.title}
+                </h6>
+
+                {/* Description */}
+                <p className="text-body-01 text-neutral-dark-grey mb-[6rem]">
+                  {}
+                </p>
+
+                {/* Chevron Icon */}
                 <div className="flex justify-end">
-                  <Image src="/about/chevron-right.png" width={25} height={25} alt="che" onClick={() => handleBusinessCardClick(true, item)} style={{ cursor: 'pointer' }} />
+                  <Image
+                    src="/about/chevron-right.png"
+                    width={25}
+                    height={25}
+                    alt="che"
+                    onClick={() => handleBusinessCardClick(true, item)}
+                    className="curson-pointer transition-transform duration-300 ease-in-out transform group-hover:translate-x-2 cursor-pointer"
+                  />
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Slider>
-
-
       </SectionWrapperNew>
       {/* end key policy section */}
 
       <TransformBusinessForm
         Title={"Transform your Business with Us"}
-        Desc={
-          "Let us discuss how can we help you with rapid growth."
-        }
+        Desc={"Let us discuss how can we help you with rapid growth."}
       ></TransformBusinessForm>
     </>
   );
