@@ -8,7 +8,7 @@ function SectionWrapperNew({
     sectionDescColor='text-neutral-darkest-grey',
     sectionHeadingLayout="center",
     title="",
-    style,
+    style={},
     bgColor,
     children,
 }) {
