@@ -34,9 +34,22 @@ const config: Config = {
           {
             lineHeight: '1', 
             letterSpacing: '-0.02em', 
-            fontWeight: '450',
+            fontWeight: '500',
           },
         ],
+
+
+        'display-02': [
+          'calc(clamp(3rem, 5vw, 6rem) * .875)', 
+          {
+            lineHeight: '1', 
+            letterSpacing: '-0.02em', 
+            fontWeight: '500',
+          },
+        ],
+
+
+
         'heading-01': [
           'calc(clamp(3.25rem, 5vw, 4.5rem) * .75)', 
           {
@@ -86,6 +99,16 @@ const config: Config = {
           },
         ],
 
+        'body-02': [
+          'calc(clamp(0.875rem, 0.125vw + 0.85rem, 1rem))', 
+          {
+            lineHeight: '1.25', 
+            letterSpacing: '-0.015em', 
+            fontWeight: '300', // Font weight for heading-01
+          },
+        ],
+
+
         'subtitle-01': [
           'calc(clamp(0.875rem, 1vw + 0.85rem, 1rem))', 
           {
@@ -94,6 +117,27 @@ const config: Config = {
             fontWeight: '400', // Font weight for heading-01
           },
         ],
+
+        'helper-01': [
+          'calc(clamp(0.75rem, 0.125vw + 0.725rem, 0.875rem))', 
+          {
+            lineHeight: '1.15', 
+            letterSpacing: '0.05em', 
+            fontWeight: '400', // Font weight for heading-01
+          },
+        ],
+
+        'helper-02': [
+          'calc(clamp(0.625rem, 0.125vw + 0.6rem, 0.75rem))', 
+          {
+            lineHeight: '1.15', 
+            letterSpacing: '0.05em', 
+            fontWeight: '400', // Font weight for heading-01
+          },
+        ],
+
+        
+
       },
       colors: {
         primary: {
