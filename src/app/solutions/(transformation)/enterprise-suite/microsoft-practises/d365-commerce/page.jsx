@@ -28,7 +28,7 @@ const D365Commerce = () => {
   const blogImageUrl = "/d365Commerce/blog-bg.webp";
   const imgBGURL_Challenges =
     "/upgradeCloud/backgrounds/bg--onprem-challenges-left.png";
-  const defaultChallengesIcon = '/upgradeCloud/icons/ico--target.svg';
+  const defaultChallengesIcon = '/d365Commerce/challengesIcon.svg';
 
 
   const BENEFITS_CARDS_DATA = [
@@ -189,7 +189,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/ConsistentCustomer.svg",
       CardHeading: "Consistent Customer Engagement",
       CardDesc:
         "Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
@@ -205,7 +205,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/Enhanced.svg",
       CardHeading: "Enhanced B2B Engagement",
       CardDesc:
         "Tailored functionality for B2B organizations and self-service purchasing experiences.",
@@ -219,7 +219,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/DynamicWebsite.svg",
       CardHeading: "Dynamic Website Creation",
       CardDesc:
         "Launch dynamic websites effortlessly with a user-friendly visual page builder.",
@@ -233,7 +233,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/PersonalizedMultichannel.svg",
       CardHeading: "Personalized Multichannel Journeys",
       CardDesc:
         "Craft personalized journeys with Commerce and Dynamics 365 Marketing.",
@@ -247,7 +247,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/24by7.svg",
       CardHeading: "24/7 AI-Powered Support",
       CardDesc:
         "Provide round-the-clock AI-powered chatbot support with Dynamics 365 Customer Service.",
@@ -261,7 +261,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/Data-Driven.svg",
       CardHeading: "Data-Driven Targeting",
       CardDesc:
         "Target customers effectively through data-driven segmentation for relevant campaigns.",
@@ -275,7 +275,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/AdaptableCommerce.svg",
       CardHeading: "Adaptable Commerce",
       CardDesc:
         "Deploy adaptable, API-first commerce for various channels.",
@@ -289,7 +289,7 @@ const D365Commerce = () => {
       CardBGColor: "transparent",
       CardTextColor: 'white',
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/d365Commerce/keyCapabilities/dataSecurity.svg",
       CardHeading: "Data Security",
       CardDesc:
         "Go global with flexible deployment options and secure data management.",
@@ -314,7 +314,7 @@ const D365Commerce = () => {
         desc="Delivering tailored solutions for eCommerce, point-of-sale and customer relationship management "
         cta="Let's Connect"
         width="60%"
-        video="/d365Commerce/video/pageBanner.mov"
+        video="/d365Commerce/videos/pageBanner.mp4"
       />
 
       <OverviewSection
@@ -371,7 +371,7 @@ const D365Commerce = () => {
             {KEY_CAPABILITIES?.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="p-6 bg-[transparent] relative " style={{ border: '1px solid #3e3e3e', borderRadius: '24px', borderOpacity: '0.3'}}>
-                  <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                  <Image src={item.CardIconUrl} width={60} height={60} alt={"IconImg"} className="mb-4" />
                   <div className="text-[28px] text-white h-[84px]">{item?.CardHeading}</div>
                   <p className="text-[16px] py-4 text-white h-[104px]">{item?.CardDesc}</p>
             
