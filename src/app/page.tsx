@@ -739,7 +739,7 @@ export default function Home() {
 
       {/* offerings */}
       <SectionWrapperNew
-        bgColor={"bg-primary-600"}
+      
         sectionHeading={"Capabilities and Expertise"}
         sectionDesc={
           "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
