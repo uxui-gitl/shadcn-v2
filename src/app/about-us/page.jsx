@@ -30,20 +30,30 @@ const ContactUs = () => {
     // {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
     {
       id: 1,
-      name: "Ajay Pimparkar",
+      name: "Mr. Ajay Pimparkar",
       designation: "Chief Executive Officer",
-      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
-      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company`,
+      longDesc: `
+      <p>Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience. </p>
+      <p className="mt-4">Mr. Ajay Pimparkar's association with the Godrej Group started way back in the 1980's. He has been responsible for preparing and implementing the complete Information Technology roadmap for the various businesses in tune with the Strategic Business Plan of the organization. With this vast IT experience behind him, Mr. Pimparkar today heads Godrej Infotech Ltd. which is a vibrant and dynamic organization committed to continual progress and forging ahead on the path of success. His primary objective is to accomplish the mission of Godrej Infotech Ltd., which is to be a world class provider of high-quality information technology solutions. </p>
+      <p className="mt-4">A humble and down-to-earth person, with a firm yet understanding leadership style, Mr. Pimparkar is looked up to by each member of the Godrej family. A core technologist at heart, he ensures that GITL progresses on its chosen path without compromising on the values of Integrity, Responsiveness, Commitment and Teamwork. </p>
+      <p className="mt-4">An Engineering graduate from the College of Engineering (Pune), he is focused on the organization's growth by continuously improving products, services and processes, developing people, deploying new technologies and working closely with customers. </p>
+      `,
 
       bgImageUrl: "/careers/over1.svg",
       bgColor: "#7B014E",
     },
     {
       id: 2,
-      name: "Ashwin Mistry",
-      designation: "Vice President - IT, Godrej & Boyce",
-      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
-      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+      name: "Mr. Ashwin Mistry",
+      designation: "Vice President - IT",
+      shortDesc: ``,
+      longDesc: `
+      <p>Mr. Ashwin Mistry brings forth more than 30 years of valuable experience in the IT industry to our team. With two decades dedicated to ERP implementation, his proficiency blazes in the Discrete and Project manufacturing sectors. </p>
+      <p>In his extensive professional journey, Mr. Mistry has successfully managed ERP projects, both within the domestic and international market space, for Infor and SAP.</p>
+      <p>He plays a key role in strategizing, planning, executing and supporting numerous IT and digital transformation drives across all Business Units of Godrej & Boyce.</p>
+      <p>As a Computer Engineer from Mumbai University and an MBA graduate in Retail Management from NIMS, Mr. Mistry currently serves as the 'Head of IT Consulting & Special Projects' at Godrej Infotech, bringing his wealth of experience to our dynamic team. </p>
+      `,
 
       bgImageUrl: "/careers/over1.svg",
       bgColor: "#7B014E",
@@ -52,8 +62,12 @@ const ContactUs = () => {
       id: 3,
       name: "Kingshuk Chatterjee",
       designation: "Vice President, External Business",
-      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
-      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+      shortDesc: ``,
+      longDesc: `
+      <p>Mr. Kingshuk Chatterjee stands as a testament to transformative leadership, boasting three decades of diverse expertise that spans Manufacturing, Advertising, Branding and Information Technology. A trailblazer with a proven track record, he drives organizational change, crafts iconic brands and brokers landmark deals with ease. </p>
+      <p>Mr. Chatterjee's innovative prowess has streamlined Procurement, Manufacturing and Logistics, yielding impressive efficiencies. As Global Head - External Business, he charts Godrej Infotech Ltd.'s strategic expansion, blazing trails in established and emerging markets. His impact resonates far beyond the bottom line, shaping culture, fostering collaboration and inspiring innovation. </p>
+      <p>A University of Calcutta alumnus, Mr. Chatterjee's academic foundation in Business Administration and Commerce paved the way for his remarkable success. Throughout his illustrious career, he has consistently demonstrated exceptional leadership, strategic flair, and an unwavering commitment to excellence. </p>
+      `,
 
       bgImageUrl: "/careers/over1.svg",
       bgColor: "#7B014E",
@@ -62,8 +76,10 @@ const ContactUs = () => {
       id: 4,
       name: "Samik Bandyopadhyay",
       designation: "Charted Accountant",
-      shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
-      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+      shortDesc: ``,
+      longDesc: `
+      Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
+      `,
 
       bgImageUrl: "/careers/over1.svg",
       bgColor: "#7B014E",
@@ -73,7 +89,12 @@ const ContactUs = () => {
       name: "Vaishali Raj",
       designation: "Vice President, Human Resource",
       shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
-      longDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`,
+      longDesc: `
+      <p>An influential HR premier, with her astute vision has been an instrumental force in driving executive decisions of organisation and seamlessly integrating people and technology. With her ardent drive to thrive, she has been inspiring employees in advancing their growth. </p>
+      <p>Throughout her illustrious career, Ms. Raj has consistently demonstrated leadership excellence. Joining Godrej Group as a Management Trainee, she quickly excelled in Industrial Relations and Human Resources for Godrej & Boyce's Precision Equipment Division. Subsequent roles as Head of Recruitment (2000) and Head HRD for Godrej Infotech (2003) solidified her reputation as a strategic thinker and inspirational leader. </p>
+      <p>Ms. Raj's impact extends beyond organizational boundaries. Her commitment to corporate social responsibility, synergy development and brand awareness has created lasting value. As a respected industry expert, she influences stakeholders, builds effective relationships and encourages innovative thinking. </p>
+      <p>A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
+      `,
 
       bgImageUrl: "/careers/over1.svg",
       bgColor: "#7B014E",
@@ -721,9 +742,10 @@ const ContactUs = () => {
               </p>
 
               {/* Long Paragraph */}
-              <p className="text-body-01 text-gray-700 leading-relaxed">
-                {readMoreItem?.longDesc}
-              </p>
+              <p className="text-body-01 text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{
+__html: readMoreItem?.longDesc || "",
+  }}>
+             </p>
             </div>
           </div>
         </div>
