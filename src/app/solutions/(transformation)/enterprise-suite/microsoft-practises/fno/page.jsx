@@ -275,7 +275,7 @@ const FNO = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL:
-        "/transformation/microsoft-practices/case-studies-section/bg--case-study.png",
+        "/fnO/CaseStudyImage.webp",
       videoURL: "",
       title: "Case Studies",
       heading: "Dynamics 365 F&O Project Highlights",
@@ -311,7 +311,7 @@ const FNO = () => {
         "/transformation/microsoft-practices/case-studies-section/bg--case-study.png",
 
       videoURL:
-        "/transformation/microsoft-practices/case-studies-section/bg--video.mp4",
+        "/fnO/videos/CaseStudy.mp4",
       title: "",
       heading: "D365 F&O Implementation",
       description:
@@ -484,7 +484,7 @@ const FNO = () => {
         desc="Boost Productivity and Profit Margins"
         cta="Let's Connect"
         width="60%"
-        video="/fno/video/pageBanner.mov"
+        video="/fno/videos/pageBanner.mp4"
       />
 
       {/* End--HeroBanner-Section=========================================================== */}
