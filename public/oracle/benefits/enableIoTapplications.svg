@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #4170ff;
+      }
+
+      .cls-3 {
+        fill: #be00ff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 10px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="-3.58" y="-8" width="64" height="64"/>
+  <text class="cls-3" transform="translate(-9.68 -55.85)"><tspan x="0" y="0">Enable I</tspan><tspan class="cls-5" x="32.86" y="0">o</tspan><tspan x="37.95" y="0">T </tspan><tspan x="0" y="12">applic</tspan><tspan class="cls-8" x="25.38" y="12">a</tspan><tspan x="30.16" y="12">tions </tspan><tspan class="cls-4" x="52.93" y="12">f</tspan><tspan x="55.72" y="12">or </tspan><tspan x="0" y="24">enhan</tspan><tspan class="cls-7" x="26.48" y="24">c</tspan><tspan x="30.9" y="24">ed cus</tspan><tspan class="cls-6" x="57.62" y="24">t</tspan><tspan x="60.87" y="24">omer </tspan><tspan class="cls-9" x="0" y="36">e</tspan><tspan x="4.98" y="36">xpe</tspan><tspan class="cls-10" x="20.31" y="36">r</tspan><tspan x="23.62" y="36">ien</tspan><tspan class="cls-7" x="36.52" y="36">c</tspan><tspan x="40.94" y="36" xml:space="preserve">es and HR.  </tspan></text>
+  <rect class="cls-1" x="-3.1" y="-9.92" width="64" height="64"/>
+  <path class="cls-2" d="M21.67,45.81v-4.65h18.61v-16.51c0-4.54-1.58-8.38-4.74-11.54-3.16-3.16-7.01-4.74-11.54-4.74s-8.38,1.58-11.54,4.74c-3.16,3.16-4.74,7.01-4.74,11.54v14.19h-2.33c-1.28,0-2.37-.46-3.29-1.37-.91-.91-1.37-2.01-1.37-3.29v-4.65c0-.81.2-1.58.61-2.3.41-.72.98-1.29,1.72-1.72l.17-3.08c.31-2.64,1.08-5.08,2.3-7.33s2.75-4.21,4.59-5.87c1.84-1.67,3.95-2.97,6.34-3.9s4.89-1.4,7.53-1.4,5.14.47,7.5,1.4c2.36.93,4.48,2.22,6.34,3.87s3.39,3.6,4.59,5.84,1.98,4.69,2.33,7.33l.17,3.02c.74.35,1.31.87,1.72,1.57.41.7.61,1.43.61,2.21v5.35c0,.78-.2,1.51-.61,2.21-.41.7-.98,1.22-1.72,1.57v2.85c0,1.28-.46,2.37-1.37,3.29-.91.91-2.01,1.37-3.29,1.37h-18.61ZM17.02,29.53c-.66,0-1.21-.22-1.66-.67s-.67-1-.67-1.66.22-1.21.67-1.66,1-.67,1.66-.67,1.21.22,1.66.67.67,1,.67,1.66-.22,1.21-.67,1.66-1,.67-1.66.67ZM30.98,29.53c-.66,0-1.21-.22-1.66-.67s-.67-1-.67-1.66.22-1.21.67-1.66,1-.67,1.66-.67,1.21.22,1.66.67.67,1,.67,1.66-.22,1.21-.67,1.66-1,.67-1.66.67ZM10.1,25.93c-.27-4.11.97-7.64,3.72-10.58,2.75-2.95,6.18-4.42,10.29-4.42,3.45,0,6.48,1.1,9.1,3.29s4.2,4.99,4.74,8.4c-3.53-.04-6.77-.99-9.74-2.85-2.97-1.86-5.24-4.38-6.83-7.56-.62,3.1-1.93,5.86-3.92,8.29-2,2.42-4.45,4.23-7.36,5.44Z"/>
+</svg>
