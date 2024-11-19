@@ -18,7 +18,7 @@ const EntIntro = ({
 }) => {
   return (
     <div className="text-center">
-      <div className="relative w-full h-[80vh] sm:h-[90vh] overflow-hidden">
+      <div className="relative w-full h-[90vh]  overflow-hidden">
         {/* Video background with a linear gradient overlay */}
         <div
           className="absolute top-0 left-0 w-full h-full  z-10"
@@ -38,14 +38,14 @@ const EntIntro = ({
         </video>
 
         {/* Content Container */}
-        <div className="container flex justify-start items-center  h-[100vh] sm:h-[90vh] md:h-[100vh] z-20">
+        <div className="container flex justify-start items-center  h-[100vh] z-20">
           <div
-            className={`flex text-neutral-white flex-col justify-start gap-5  text-left`}
+            className={`flex text-neutral-white flex-col justify-start gap-4 mt-6  text-left`}
           >
             {/* Title */}
             <h1
               className=" w-full z-50 text-neutral-white
-              text-display-01 leading-display-01 md:text-md-display-01 md:leading-md-display-01 lg:text-lg-display-01 lg:leading-lg-display-01 lg:w-[70%] mb-4 font-semibold"
+              text-display-01"
               style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{title}</Balancer>
@@ -53,7 +53,7 @@ const EntIntro = ({
 
             {/* Description */}
             <h4
-              className="z-50 text-neutral-white text-subtitle-01 leading-subtitle-01 md:text-md-subtitle-01 md:leading-md-subtitle-01 lg:text-lg-subtitle-01 lg:leading-lg-subtitle-01 lg:w-[70%] mb-24"
+              className="z-50 text-neutral-white text-subtitle-01  lg:w-[70%] mb-8"
               style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{desc}</Balancer>
