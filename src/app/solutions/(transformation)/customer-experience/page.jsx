@@ -27,7 +27,7 @@ const page = () => {
       cardDesc: 'Transcending off-the-shelf offerings, we develop apps ensuring alignment with business needs',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/customerExperience/solutionsTransforming'
     },
     {
 
@@ -37,7 +37,7 @@ const page = () => {
       cardDesc: 'Transform legacy systems into agile solutions assuring Triple Aim goals and optimal RoI',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg'
+      cardTopImageUrl: '/customerExperience/solutionsTransforming/legacyModernisation.webp'
     },
     {
 
@@ -47,7 +47,7 @@ const page = () => {
       cardDesc: 'Right expertise and technology to drive value across the entire app lifecycle',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardTopImageUrl: '/customerExperience/solutionsTransforming/applicationManaged.webp'
     },
     {
 
@@ -57,7 +57,7 @@ const page = () => {
       cardDesc: 'Mobile app with strong backend, user engagement & offers cross-platform experience',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      cardTopImageUrl: '/customerExperience/solutionsTransforming/mobileApplication.webp'
     },
     {
 
@@ -68,7 +68,7 @@ const page = () => {
       cardDesc: '',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg'
+      cardTopImageUrl: '/customerExperience/solutionsTransforming/enterprise.webp'
     },
 
   ];
@@ -77,22 +77,22 @@ const page = () => {
     {
       _id: 1,
       desc: "Serving one of Asia's largest Infor LN user bases",
-      icon: "",
+      icon: "/customerExperience/distinctiveEdge/servingOne.svg",
     },
     {
       _id: 2,
       desc: "Project managers take complete responsibility for timely delivery of high-quality solutions",
-      icon: "",
+      icon: "/customerExperience/distinctiveEdge/projectManagers.svg",
     },
     {
       _id: 3,
       desc: "Proprietary tool integrating project management and communication, ensuring 100% transparency.",
-      icon: "",
+      icon: "/customerExperience/distinctiveEdge/proprietaryTool.svg",
     },
     {
       _id: 4,
       desc: "Delivering significant advantages for complex, multi-site manufacturing operations",
-      icon: "",
+      icon: "/customerExperience/distinctiveEdge/delivering.svg",
     },
 
   ]
@@ -136,20 +136,20 @@ const page = () => {
   const benifitsCardsData = [
     {
       id: '1',
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/customerExperience/customerExpTransformation/Process.svg",
       cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers'
     },
     {
       id: '2',
-      icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      icon: "/customerExperience/customerExpTransformation/Anticipate.svg",
       cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions'
     },
     {
-      id: '3', icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      id: '3', icon: "/customerExperience/customerExpTransformation/enablesEffortless.svg",
       cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing'
     },
     {
-      id: '4', icon: "/benefisIntelligentTechnologies/AutomationRepetitiveTasks",
+      id: '4', icon: "/customerExperience/customerExpTransformation/optimizeSupply.svg",
       cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity'
     },
   ];
@@ -178,7 +178,7 @@ const page = () => {
         desc=""
         cta="Let's Connect"
         width="60%"
-        video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
+        video="/customerExperience/videos/pageBanner.mp4"
       />
 
       <OverviewSection
@@ -210,7 +210,7 @@ const page = () => {
 
       </SectionWrapperNew>
 
-      <SectionWrapperNew style={{ background: `url('/Transformation/customers/bgimage3.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
+      <SectionWrapperNew style={{ background: `url('/customerExperience/Customer-experience-Service.webp')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
         sectionHeading={'Customer experience Service'}
         sectionDesc={'Delivering experience of unified commerce with advanced retail management applications and ensuring personalized journey for every shopper.'
         }
