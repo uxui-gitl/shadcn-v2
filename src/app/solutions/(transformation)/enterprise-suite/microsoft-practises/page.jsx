@@ -15,21 +15,20 @@ import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
-import ServiceSlider from '@/sections/serviceSlider/ServiceSlider';
+import ServiceSlider from "@/sections/serviceSlider/ServiceSlider";
 import Slider from "@/components/Slider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 
-import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
+import BlogSliderSection from "@/sections/blogSlider/BlogSliderSection";
 import SectionWrapperNew from "@/components/SectionWrapperNew";
-import LeftHeading from '@/components/LeftHeading';
+import LeftHeading from "@/components/LeftHeading";
 
 const MicrosoftPractises = () => {
   const blogImageUrl = "/ai-ml/blog-bg.png";
   const highlightPromoBGURL =
     "/CloudStackServices/smiling-businessman-standing-with-arms-folded-isolated-white.png";
-  const synergeticPartnerBGURL =
-    "/msPractises/synergeticPartnership.webp";
+  const synergeticPartnerBGURL = "/msPractises/synergeticPartnership.webp";
   const awardsBGURL =
     "/transformation/microsoft-practices/backgrounds/bg--awards.png";
 
@@ -37,8 +36,7 @@ const MicrosoftPractises = () => {
     {
       title: "Azure",
       hoverTitle: "Azure",
-      description:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+      description: `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
               <li>Virtualization</li>
               <li>Backup &Disaster Recovery</li>
               <li>Azure IoT</li>
@@ -54,8 +52,7 @@ const MicrosoftPractises = () => {
     {
       title: "Microsoft Dynamics",
       hoverTitle: "Microsoft Dynamics",
-       description:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+      description: `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
               <li>D365 Finance & Operations</li>
               <li>D365 Business Central</li>
               <li>D365 Commerce</li>
@@ -70,8 +67,7 @@ const MicrosoftPractises = () => {
     {
       title: "M365",
       hoverTitle: "M365",
-      description:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+      description: `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
               <li>Office apps and services</li>
               <li>Outlook and Exchange</li>
               <li>Cloud storage</li>
@@ -84,8 +80,7 @@ const MicrosoftPractises = () => {
     {
       title: "Technologies",
       hoverTitle: "Technologies",
-      description:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+      description: `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
               <li>Dot Net</li>
               <li>SQL</li>
               <li>Share Point </li>
@@ -97,8 +92,7 @@ const MicrosoftPractises = () => {
     {
       title: "Microsoft Fabric",
       hoverTitle: "Microsoft Fabric",
-     description:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+      description: `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
               <li>Data Factory</li>
               <li>Synapse Data Engineering</li>
               <li>Synapse5 Data Science</li>
@@ -113,8 +107,7 @@ const MicrosoftPractises = () => {
     {
       title: "Power Platforms",
       hoverTitle: "Power Platforms",
-       description:
-        `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
+      description: `<ul class="max-w-md space-y-1 text-white list-disc list-outside">
               <li>Power BI</li>
               <li>Power Apps</li>
               <li>Power Automate</li>
@@ -126,25 +119,64 @@ const MicrosoftPractises = () => {
   ];
 
   const serviceSliderData = [
-    { id: '1', icon:'/msPractises/serviceExpertise/businessConsulting.svg', text: 'Business Consulting' },
-    { id: '2', icon:'/msPractises/serviceExpertise/implementationRollout.svg', text: 'Implementation & Rollout' },
-    { id: '3', icon:'/msPractises/serviceExpertise/upgradeMigration.svg', text: 'Upgrade & Migration' },
-    { id: '4', icon:'/msPractises/serviceExpertise/Development.svg', text: 'Development & Customization' },
-    { id: '5', icon:'/msPractises/serviceExpertise/Training.svg', text: 'Training Workshop' },
-    { id: '6', icon:'/msPractises/serviceExpertise/managedServices.svg', text: 'Managed Services' },
-    { id: '7', icon:'/msPractises/serviceExpertise/legacyModernization.svg', text: 'Legacy Modernization' },
-    { id: '8', icon:'/msPractises/serviceExpertise/bespokeApplications.svg', text: 'Bespoke Applications' },
-    { id: '9', icon:'/msPractises/serviceExpertise/licenseSales.svg', text: 'License sales and services' },
-    { id: '10', icon:'/msPractises/serviceExpertise/dataInsights.svg', text: 'Data Insights' },
-  ]
+    {
+      id: "1",
+      icon: "/msPractises/serviceExpertise/businessConsulting.svg",
+      text: "Business Consulting",
+    },
+    {
+      id: "2",
+      icon: "/msPractises/serviceExpertise/implementationRollout.svg",
+      text: "Implementation & Rollout",
+    },
+    {
+      id: "3",
+      icon: "/msPractises/serviceExpertise/upgradeMigration.svg",
+      text: "Upgrade & Migration",
+    },
+    {
+      id: "4",
+      icon: "/msPractises/serviceExpertise/Development.svg",
+      text: "Development & Customization",
+    },
+    {
+      id: "5",
+      icon: "/msPractises/serviceExpertise/Training.svg",
+      text: "Training Workshop",
+    },
+    {
+      id: "6",
+      icon: "/msPractises/serviceExpertise/managedServices.svg",
+      text: "Managed Services",
+    },
+    {
+      id: "7",
+      icon: "/msPractises/serviceExpertise/legacyModernization.svg",
+      text: "Legacy Modernization",
+    },
+    {
+      id: "8",
+      icon: "/msPractises/serviceExpertise/bespokeApplications.svg",
+      text: "Bespoke Applications",
+    },
+    {
+      id: "9",
+      icon: "/msPractises/serviceExpertise/licenseSales.svg",
+      text: "License sales and services",
+    },
+    {
+      id: "10",
+      icon: "/msPractises/serviceExpertise/dataInsights.svg",
+      text: "Data Insights",
+    },
+  ];
 
   const SOLUTION_DATA = [
     {
       id: 1,
       cardBGColor: "#F5B1DC",
       cardHeading: "Dealer <br/> Management",
-      cardDesc:
-      `
+      cardDesc: `
         <ul class="min-w-[100%] space-y-1 text-black list-disc list-inside">
               <li>Data Factory</li>
               <li>Synapse Data Engineering</li>
@@ -153,7 +185,7 @@ const MicrosoftPractises = () => {
               <li>Synapse Real-Time Analytics</li>
               <li>Data Activator</li>
           </ul>`,
-        isArrow: true,
+      isArrow: true,
       cardTextColor: "black",
       cardTopImageUrl: "/msPractises/customSolutions/dealerManagement.webp",
     },
@@ -214,33 +246,39 @@ const MicrosoftPractises = () => {
   const BENEFITS_CARDS_DATA = [
     {
       id: "1",
-      icon: '/msPractises/benefits/platformScalability.svg',
-      cardDesc: "Platform scalability in accordance with business demands and render it suitable for varying sizes",
+      icon: "/msPractises/benefits/platformScalability.svg",
+      cardDesc:
+        "Platform scalability in accordance with business demands and render it suitable for varying sizes",
     },
     {
       id: "2",
-      icon: '/msPractises/benefits/liveDataAnalytics.svg',
-      cardDesc: "Live data analytics and insights from reporting, enabling smarter decisions",
+      icon: "/msPractises/benefits/liveDataAnalytics.svg",
+      cardDesc:
+        "Live data analytics and insights from reporting, enabling smarter decisions",
     },
     {
       id: "3",
-      icon: '/msPractises/benefits/cloudOnPremises.svg',
-      cardDesc: "Cloud or on-premises deployment options based on business requirements and preferences.",
+      icon: "/msPractises/benefits/cloudOnPremises.svg",
+      cardDesc:
+        "Cloud or on-premises deployment options based on business requirements and preferences.",
     },
     {
       id: "4",
-      icon: '/msPractises/benefits/manageNurture.svg',
-      cardDesc: "Manage and nurture customer relationship from lead generation to post-sale support, improving customer satisfaction and retention.",
+      icon: "/msPractises/benefits/manageNurture.svg",
+      cardDesc:
+        "Manage and nurture customer relationship from lead generation to post-sale support, improving customer satisfaction and retention.",
     },
     {
       id: "5",
-      icon: '/msPractises/benefits/supplyChain.svg',
-      cardDesc: "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings. ",
+      icon: "/msPractises/benefits/supplyChain.svg",
+      cardDesc:
+        "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings. ",
     },
     {
       id: "6",
-      icon: '/msPractises/benefits/streamlineFinancial.svg',
-      cardDesc: "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management.",
+      icon: "/msPractises/benefits/streamlineFinancial.svg",
+      cardDesc:
+        "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management.",
     },
   ];
 
@@ -262,8 +300,7 @@ const MicrosoftPractises = () => {
 
       cardBGColor: "#7F4EE1",
       cardHeading: "Retail",
-      cardDesc:
-        "",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -274,8 +311,7 @@ const MicrosoftPractises = () => {
 
       cardBGColor: "#7F4EE1",
       cardHeading: "Trading & Distribution",
-      cardDesc:
-        "",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -286,8 +322,7 @@ const MicrosoftPractises = () => {
 
       cardBGColor: "#EFE9FB",
       cardHeading: "Project",
-      cardDesc:
-        "",
+      cardDesc: "",
       isArrow: false,
       cardTextColor: "white",
     },
@@ -302,7 +337,7 @@ const MicrosoftPractises = () => {
       isArrow: false,
       cardTextColor: "white",
     },
-    
+
     // Add more cards as needed
   ];
 
@@ -318,7 +353,7 @@ const MicrosoftPractises = () => {
       description: "Projects Migrated to Microsoft",
     },
     {
-      start:1,
+      start: 1,
       end: 10000,
       description: "Management of Microsoft License",
     },
@@ -342,8 +377,7 @@ const MicrosoftPractises = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL:
-        "/msPractises/CaseStudy.webp",
+      imageURL: "/msPractises/CaseStudy.webp",
       videoURL: "",
       title: "Case Studies",
       heading: "Elevating Customer Experience with Cloud",
@@ -375,9 +409,8 @@ const MicrosoftPractises = () => {
       bgCardColor: "#FFF",
     },
     {
-      imageURL:"",
-      videoURL:
-        "/msPractises/videos/caseStudyVideo.mp4",
+      imageURL: "",
+      videoURL: "/msPractises/videos/caseStudyVideo.mp4",
       title: "",
       heading: "Migration  to D365 for Sales Online",
       description:
@@ -438,7 +471,7 @@ const MicrosoftPractises = () => {
       cardHeading: "Streamlined Operations with LS Retail",
       cardDesc:
         "We've implemented LS Retail Solution, streamlining our store and backend operations. Our association with Godrej Infotech is rooted in shared values—simplicity, affordability and top-notch quality. I look forward to continuing association with GITL as we advance our vision of tech-driven business simplicity.",
-      designation: 'IT Manager',
+      designation: "IT Manager",
       companyName: `Saudi Arabia's Hypermarket Retail Chain`,
     },
     {
@@ -446,39 +479,42 @@ const MicrosoftPractises = () => {
       cardHeading: "Seamless D365 F&O Deployment",
       cardDesc:
         "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
-      designation: 'Director of Finance',
-      companyName: 'Wildlife Conservation International NGO based in India',
+      designation: "Director of Finance",
+      companyName: "Wildlife Conservation International NGO based in India",
     },
     {
       id: 3,
       cardHeading: "Transforming Operations with Business Central",
       cardDesc:
         "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
-      designation: 'Project Manager',
-      companyName: 'Investment Holding Company in Riyadh & Dubai',
+      designation: "Project Manager",
+      companyName: "Investment Holding Company in Riyadh & Dubai",
     },
   ];
 
   const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/msPractises/blogbg.webp',
-      cardBGColor: 'red',
-      cardHeading: "Microsoft Dynamics 365 Finance and Operations or Business Central?",
-      cardDesc: 'Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world?  ',
-      cardTextColor: 'white',
-      readMoreUrl: "https://www.godrejinfotech.com/blogDetails.aspx?blog=20"
+      cardBGImageUrl: "/msPractises/blogbg.webp",
+      cardBGColor: "red",
+      cardHeading:
+        "Microsoft Dynamics 365 Finance and Operations or Business Central?",
+      cardDesc:
+        "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world?  ",
+      cardTextColor: "white",
+      readMoreUrl: "https://www.godrejinfotech.com/blogDetails.aspx?blog=20",
     },
     {
       id: 2,
-      cardBGImageUrl: '/ai-ml/blog-bg.png',
-      cardBGColor: 'red',
-      cardHeading: "Upgrading Microsoft Dynamics AX to D365 Finance & Supply Chain",
-      cardDesc: 'After successful client acquisitions and implementation projects across the globe, Microsoft Dynamics AX 2012 ERP is now entering its end-of-life phase. ',
-      cardTextColor: 'white',
-      readMoreUrl: "https://www.godrejinfotech.com/blogDetails.aspx?blog=12"
+      cardBGImageUrl: "/ai-ml/blog-bg.png",
+      cardBGColor: "red",
+      cardHeading:
+        "Upgrading Microsoft Dynamics AX to D365 Finance & Supply Chain",
+      cardDesc:
+        "After successful client acquisitions and implementation projects across the globe, Microsoft Dynamics AX 2012 ERP is now entering its end-of-life phase. ",
+      cardTextColor: "white",
+      readMoreUrl: "https://www.godrejinfotech.com/blogDetails.aspx?blog=12",
     },
-
   ];
 
   return (
@@ -508,8 +544,6 @@ const MicrosoftPractises = () => {
         setHeading="Seamless Implementation to Customer Centric Support"
         setDesc="Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance. In instances of system issues, our team meticulously assesses the impact on business processes and prioritizes swift resolutions. Further, our adaptable support services offer both dedicated and shared teams to effectively address individual customer needs."
         setColor="text-primary-900"
-      
-
         sectionHeaderWidth={"w-full"}
       />
       {/* End--Highlight-Customer-Centeric-Section================================================================ */}
@@ -522,9 +556,7 @@ const MicrosoftPractises = () => {
           "We bring together the power of Microsoft technologies delivering cohesive ecosystems, enabling you to achieve more."
         }
         color={"text-primary-900"}
-      >
-
-      </ServicesCardSlider>
+      ></ServicesCardSlider>
 
       {/* End--Solution-Section================================================================ */}
 
@@ -536,10 +568,18 @@ const MicrosoftPractises = () => {
         <Slider>
           {serviceSliderData?.map((item, index) => (
             <SwiperSlide key={index}>
-             <div className="bg-transparent rounded-3xl">
-              <Image className="rounded-3xl mx-auto md:mx-2" src="/infor/blackstar.svg" alt="" width={64} height={64}/>
+              <div className="bg-transparent rounded-3xl">
+                <Image
+                  className="rounded-3xl mx-auto md:mx-2"
+                  src={item.icon}
+                  alt=""
+                  width={64}
+                  height={64}
+                />
                 <div className="p-5">
-                <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">{item.text}</h5>
+                  <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">
+                    {item.text}
+                  </h5>
                 </div>
               </div>
             </SwiperSlide>
@@ -563,7 +603,6 @@ const MicrosoftPractises = () => {
         cardData={SOLUTION_DATA}
       ></CommonCardThreeSlider>
       {/* End--Microsoft-Solution-Section================================================================ */}
-
 
       {/* Start--Synergetic Partnerships-Section============================================================== */}
       <HighlightPromo
@@ -592,54 +631,59 @@ const MicrosoftPractises = () => {
       {/* Start--Awards-Section============================================================== */}
 
       <SectionWrapperNew
-        sectionHeading={''}
-        sectionDesc={''}
-        sectionTextColor={''}
-        sectionHeadingLayout={'left'}
+        sectionHeading={""}
+        sectionDesc={""}
+        sectionTextColor={""}
+        sectionHeadingLayout={"left"}
         style={{
           backgroundImage: `url(${awardsBGURL})`,
           backgroundSize: "cover",
           Zindex: 1,
-          position: 'relative',
+          position: "relative",
         }}
       >
-       <div
-  className="container mx-auto p-5"
-  style={{
-    background: 'linear-gradient(145deg, rgba(205, 186, 243, 0.25) 0%, rgba(205, 186, 243, 0.10) 75%)',
-    boxShadow: '0px 40px 100px rgba(0, 0, 0, 0.10)',
-    borderRadius: '24px',
-    border: '2px #EFE9FB solid',
-    backdropFilter: 'blur(30px)',
-  }}
->
-  <div className="grid grid-cols-1 gap-4">
-    <div>
-      <div className="text-heading-01 leading-heading-01 font-semibold text-primary-900 text-center md:text-left">
-        Microsoft Expertise<br /> Recognition
-      </div>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5">
-      {[1, 2, 3].map((item, index) => (
-        <div key={index} className="max-w-sm bg-neutral-white border border-gray-200 rounded-3xl">
-          <Image
-            width="382"
-            height="200"
-            className="rounded-t-3xl"
-            src="/Transformation/microsoft-practices/merLogo01.png"
-            alt="logo"
-          />
-          <div className="p-5">
-            <h5 className="mb-2 text-label-01 leading-label-01 font-semibold">2023</h5>
+        <div
+          className="container mx-auto p-5"
+          style={{
+            background:
+              "linear-gradient(145deg, rgba(205, 186, 243, 0.25) 0%, rgba(205, 186, 243, 0.10) 75%)",
+            boxShadow: "0px 40px 100px rgba(0, 0, 0, 0.10)",
+            borderRadius: "24px",
+            border: "2px #EFE9FB solid",
+            backdropFilter: "blur(30px)",
+          }}
+        >
+          <div className="grid grid-cols-1 gap-4">
+            <div>
+              <div className="text-heading-01 leading-heading-01 font-semibold text-primary-900 text-center md:text-left">
+                Microsoft Expertise
+                <br /> Recognition
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5">
+              {[1, 2, 3].map((item, index) => (
+                <div
+                  key={index}
+                  className="max-w-sm bg-neutral-white border border-gray-200 rounded-3xl"
+                >
+                  <Image
+                    width="382"
+                    height="200"
+                    className="rounded-t-3xl"
+                    src="/Transformation/microsoft-practices/merLogo01.png"
+                    alt="logo"
+                  />
+                  <div className="p-5">
+                    <h5 className="mb-2 text-label-01 leading-label-01 font-semibold">
+                      2023
+                    </h5>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</div>
-
       </SectionWrapperNew>
-
 
       {/* <HighlightPromo
         blurEffect="blurON"
@@ -655,7 +699,12 @@ const MicrosoftPractises = () => {
       {/* End--Awards-Section================================================================ */}
 
       {/* Start--Industry-Spotlight-Section============================================================== */}
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Being preferred partner of leading industries, we help in shaping specific technology prerequisites and deliver brilliant value driven solutions tailored to your industry'} />
+      <IndustrySpotlight
+        cardData={INDUSTRY_SPOTLIGHT}
+        sectionDesc={
+          "Being preferred partner of leading industries, we help in shaping specific technology prerequisites and deliver brilliant value driven solutions tailored to your industry"
+        }
+      />
       {/* End--Industry-Spotlight-Section================================================================ */}
 
       {/* Start--Hub-Of-Expertise-Section============================================================== */}
@@ -678,9 +727,7 @@ const MicrosoftPractises = () => {
       {/* End--Case-Study-Section================================================================ */}
 
       {/* Start--Blogs-Section============================================================== */}
-      <BlogSliderSection
-        cardData={blogSliderData}
-      ></BlogSliderSection>
+      <BlogSliderSection cardData={blogSliderData}></BlogSliderSection>
       {/* <BlogSection
         ID={"blog"}
         blogImageUrl={blogImageUrl}
@@ -716,9 +763,7 @@ const MicrosoftPractises = () => {
       {/* Start--Transform-Business-Form-Section============================================================== */}
       <TransformBusinessForm
         Title={"Transform your business with us"}
-        Desc={
-          "Discover how we can help you achieve exceptional results!"
-        }
+        Desc={"Discover how we can help you achieve exceptional results!"}
       ></TransformBusinessForm>
       {/* End--Transform-Business-Form-Section================================================================ */}
     </>

@@ -105,21 +105,21 @@ function NewNavBar() {
     document.body.style.overflowY = isNavbarActive ? "hidden" : "scroll";
 
     // Detect click outside
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        closeNavbar(); // Close the navbar if clicked outside
-      }
-    };
+    // const handleClickOutside = (event) => {
+    //   if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    //     closeNavbar(); // Close the navbar if clicked outside
+    //   }
+    // };
 
-    if (isNavbarActive) {
-      document.addEventListener("mousedown", handleClickOutside); // Attach event listener
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside); // Cleanup
-    }
+    // if (isNavbarActive) {
+    //   document.addEventListener("mousedown", handleClickOutside); // Attach event listener
+    // } else {
+    //   document.removeEventListener("mousedown", handleClickOutside); // Cleanup
+    // }
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside); // Cleanup on unmount
-    };
+    // return () => {
+    //   document.removeEventListener("mousedown", handleClickOutside); // Cleanup on unmount
+    // };
   }, [isNavbarActive]);
 
   function navLinkClick(url) {
@@ -219,12 +219,12 @@ function NewNavBar() {
         </div>
 
         <div
-          className={`z-[10] px-10 w-full bg-white absolute top-[0px] duration-700 rounded-b-3xl shadow-lg  shadow-gray-500/10 ${
+          className={`z-[10] px-10 w-full bg-white absolute top-[0px] duration-700 rounded-b-3xl shadow-lg  shadow-gray-500/10 overflow-y-scroll  ${
             isNavbarActive
               ? "translate-y-0 top-[100px]"
               : "-translate-y-full top-[0px]"
           }`}
-          style={{ height: `calc(80vh - 66px)` }}
+          style={{ height: `calc(100vh - 66px)` }}
         >
           <AnimatePresence>
             {isNavbarActive && (
@@ -234,25 +234,27 @@ function NewNavBar() {
                 exit={{ opacity: 0 }}
               >
                 <div
-                  className="container mx-auto solution-content grid grid-cols-4 gap-8 border-t-[0.5px] border-neutral-light-grey "
+                  className="md:container md:mx-auto solution-content grid grid-cols-4 gap-4 border-t-[0.5px] border-neutral-light-grey "
                   style={{
                     height: `calc('100vh - 116px')`,
                   }}
                 >
-                  <div className="  py-6 border-r-[0.5px] border-neutral-light-grey">
+                  <div className="  py-2 border-r-[0.5px] border-neutral-light-grey">
                     {navName == "solutions" && (
                       <div className="grid grid-rows-3 gap-2">
-                        <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
-                        >
-                          <img
+                        <div className={`flex  justify-start px-2 `}>
+                          <Image
                             src="/navbar-icon/cube-outline.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
+
                           <div className="">
                             <span
-                              className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${
+                              className={`w-full text-body-02 font-semibold hover:text-[#5F22D9] cursor-pointer ${
                                 tabNumber == 1
                                   ? "text-[#5F22D9]"
                                   : "text-[#000000]"
@@ -261,7 +263,7 @@ function NewNavBar() {
                             >
                               Automation
                             </span>
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -270,14 +272,17 @@ function NewNavBar() {
                         <div
                           className={`flex leading-[28px] justify-start p-2 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div className="">
                             <span
-                              className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${
+                              className={`w-full text-body-02 font-semibold hover:text-[#5F22D9] cursor-pointer ${
                                 tabNumber == 2
                                   ? "text-[#5F22D9]"
                                   : "text-[#000000]"
@@ -286,7 +291,7 @@ function NewNavBar() {
                             >
                               Cloud
                             </span>
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with<br></br>
                               automation
                             </p>
@@ -298,12 +303,12 @@ function NewNavBar() {
                         >
                           <img
                             src="/navbar-icon/ts.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                            alt={"icon-name"}
+                            className="mr-4 h-[24px] w-[24px] mt-1"
                           />
                           <div className="">
                             <span
-                              className={`w-full text-[20px] font-semibold hover:text-[#5F22D9] cursor-pointer ${
+                              className={`w-full text-body-02 font-semibold hover:text-[#5F22D9] cursor-pointer ${
                                 tabNumber == 3
                                   ? "text-[#5F22D9]"
                                   : "text-[#000000]"
@@ -312,7 +317,7 @@ function NewNavBar() {
                             >
                               Transformation
                             </span>
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with<br></br>
                               automation
                             </p>
@@ -322,7 +327,7 @@ function NewNavBar() {
                     )}
                   </div>
                   {/* 1st column automation*/}
-                  <div className=" py-6 col-span-2  border-r-[0.5px] border-neutral-light-grey">
+                  <div className=" py-3 col-span-2  border-r-[0.5px] border-neutral-light-grey">
                     {navName == "solutions" && (
                       <div className="">
                         <div
@@ -332,7 +337,7 @@ function NewNavBar() {
                         >
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-6`}
+                              className={`flex justify-start font-semibold mb-2`}
                             >
                               <div>
                                 <a
@@ -343,7 +348,7 @@ function NewNavBar() {
                                       "/solutions/intelligent-technologies"
                                     );
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                     activeLink ===
                                     "/solutions/intelligent-technologies"
                                       ? "text-[#5F22D9]"
@@ -353,10 +358,10 @@ function NewNavBar() {
                                   Intelligent Technologies
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                             <div>
@@ -368,7 +373,7 @@ function NewNavBar() {
                                     "/solutions/intelligent-technologies/ai-ml"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-medium cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/intelligent-technologies/ai-ml"
                                     ? "text-[#5F22D9]"
@@ -387,7 +392,7 @@ function NewNavBar() {
                                     "/solutions/intelligent-technologies/RPA"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-medium cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/intelligent-technologies/RPA"
                                     ? "text-[#5F22D9]"
@@ -406,7 +411,7 @@ function NewNavBar() {
                                     "/solutions/intelligent-technologies/IIOT"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-medium cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/intelligent-technologies/IIOT"
                                     ? "text-[#5F22D9]"
@@ -419,7 +424,7 @@ function NewNavBar() {
                           </div>
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex justify-start `}
                             >
                               <div>
                                 <a
@@ -428,7 +433,7 @@ function NewNavBar() {
                                     e.preventDefault(); // Prevent default navigation
                                     navLinkClick("/solutions/data-insights");
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer hover:text-[#5F22D9] ${
                                     activeLink === "/solutions/data-insights"
                                       ? "text-[#5F22D9]"
                                       : "text-[#1D162B]"
@@ -437,16 +442,16 @@ function NewNavBar() {
                                   Data Insights
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex leading-[28px] justify-start font-semibold `}
                             >
                               <div>
                                 <a
@@ -455,7 +460,7 @@ function NewNavBar() {
                                     e.preventDefault(); // Prevent default navigation
                                     navLinkClick("/solutions/cyber-security");
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer hover:text-[#5F22D9] ${
                                     activeLink === "/solutions/cyber-security"
                                       ? "text-[#5F22D9]"
                                       : "text-[#1D162B]"
@@ -464,16 +469,16 @@ function NewNavBar() {
                                   Cyber Security
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex  justify-start font-semibold mb-4`}
                             >
                               <div>
                                 <a
@@ -482,7 +487,7 @@ function NewNavBar() {
                                     e.preventDefault(); // Prevent default navigation
                                     navLinkClick("/solutions/technology-stack");
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                     activeLink === "/solutions/technology-stack"
                                       ? "text-[#5F22D9]"
                                       : "text-[#1D162B]"
@@ -490,11 +495,11 @@ function NewNavBar() {
                                 >
                                   Technology Stack
                                 </a>
-
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+{/* 
+                                <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
@@ -507,7 +512,7 @@ function NewNavBar() {
                         >
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex  justify-start font-semibold `}
                             >
                               <div>
                                 <a
@@ -516,7 +521,7 @@ function NewNavBar() {
                                     e.preventDefault(); // Prevent default navigation
                                     navLinkClick("/solutions/upgrade-to-cloud");
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                     activeLink === "/solutions/upgrade-to-cloud"
                                       ? "text-[#5F22D9]"
                                       : "text-[#1D162B]"
@@ -525,16 +530,16 @@ function NewNavBar() {
                                   Upgrade To Cloud
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex justify-start font-semibold`}
                             >
                               <div>
                                 <a
@@ -545,7 +550,7 @@ function NewNavBar() {
                                       "/solutions/cloud-stack-and-services"
                                     );
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                     activeLink ===
                                     "/solutions/cloud-stack-and-services"
                                       ? "text-[#5F22D9]"
@@ -555,10 +560,10 @@ function NewNavBar() {
                                   Cloud Stack & Services
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
@@ -566,12 +571,12 @@ function NewNavBar() {
 
                         <div
                           className={`transformation grid grid-cols-1 gap-4 ${
-                            tabNumber == 3 ? "visiable" : "hidden"
+                            tabNumber == 3 ? "visible" : "hidden"
                           }`}
                         >
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex justify-start font-semibold  mb-4`}
                             >
                               <div>
                                 <a
@@ -580,7 +585,7 @@ function NewNavBar() {
                                     e.preventDefault(); // Prevent default navigation
                                     navLinkClick("/solutions/enterprise-suite");
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                     activeLink === "/solutions/enterprise-suite"
                                       ? "text-[#5F22D9]"
                                       : "text-[#1D162B]"
@@ -589,13 +594,13 @@ function NewNavBar() {
                                   Enterprise Suite
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
-                            <div className="grid grid-cols-3 gap-4">
+                            <div className="grid grid-cols-3">
                               <div className="">
                                 <div>
                                   <a
@@ -606,7 +611,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/infor"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/infor"
                                         ? "text-[#5F22D9]"
@@ -625,7 +630,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/infor/infor-wms"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/infor/infor-wms"
                                         ? "text-[#5F22D9]"
@@ -644,7 +649,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/infor/infor-ln"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/infor/infor-ln"
                                         ? "text-[#5F22D9]"
@@ -663,7 +668,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/infor/infor-cloudsuite"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/infor/infor-cloudsuite"
                                         ? "text-[#5F22D9]"
@@ -682,7 +687,7 @@ function NewNavBar() {
                                         " /solutions/enterprise-suite/infor/hxneam"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       " /solutions/enterprise-suite/infor/hxneam"
                                         ? "text-[#5F22D9]"
@@ -703,7 +708,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/microsoft-practises"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/microsoft-practises"
                                         ? "text-[#5F22D9]"
@@ -722,7 +727,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/microsoft-practises/business-central"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/microsoft-practises/business-central"
                                         ? "text-[#5F22D9]"
@@ -741,7 +746,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/microsoft-practises/fno"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/microsoft-practises/fno"
                                         ? "text-[#5F22D9]"
@@ -760,7 +765,7 @@ function NewNavBar() {
                                         "/solutions/enterprise-suite/microsoft-practises/d365-commerce"
                                       );
                                     }}
-                                    className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                    className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                       activeLink ===
                                       "/solutions/enterprise-suite/microsoft-practises/d365-commerce"
                                         ? "text-[#5F22D9]"
@@ -781,7 +786,7 @@ function NewNavBar() {
                                       "/solutions/enterprise-suite/oracle"
                                     );
                                   }}
-                                  className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                     activeLink ===
                                     "/solutions/enterprise-suite/oracle"
                                       ? "text-[#5F22D9]"
@@ -795,7 +800,7 @@ function NewNavBar() {
                           </div>
                           <div className="">
                             <div
-                              className={`flex leading-[28px] justify-start font-semibold mb-4`}
+                              className={`flex leading-[28px] justify-start font-semibold`}
                             >
                               <div>
                                 <a
@@ -806,7 +811,7 @@ function NewNavBar() {
                                       "/solutions/customer-experience"
                                     );
                                   }}
-                                  className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                  className={`w-full text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                     activeLink ===
                                     "/solutions/customer-experience"
                                       ? "text-[#5F22D9]"
@@ -816,10 +821,10 @@ function NewNavBar() {
                                   Customer Experience
                                 </a>
 
-                                <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                                {/* <p className="text-helper-02 text-[#808080]">
                                   Delivering business value with <br></br>
                                   automation
-                                </p>
+                                </p> */}
                               </div>
                             </div>
 
@@ -832,7 +837,7 @@ function NewNavBar() {
                                     "/solutions/customer-experience/infor-crm"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/customer-experience/infor-crm"
                                     ? "text-[#5F22D9]"
@@ -852,7 +857,7 @@ function NewNavBar() {
                                     "/solutions/customer-experience/microsoft-crm"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/customer-experience/microsoft-crm"
                                     ? "text-[#5F22D9]"
@@ -871,7 +876,7 @@ function NewNavBar() {
                                     "/solutions/customer-experience/salesforce-crm"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/customer-experience/salesforce-crm"
                                     ? "text-[#5F22D9]"
@@ -890,7 +895,7 @@ function NewNavBar() {
                                     "/solutions/customer-experience/e-commerce"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/customer-experience/e-commerce"
                                     ? "text-[#5F22D9]"
@@ -909,7 +914,7 @@ function NewNavBar() {
                                     "/solutions/customer-experience/ls-retail"
                                   );
                                 }}
-                                className={`text-[16px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                                className={`text-body-02 font-semibold cursor-pointer  hover:text-[#5F22D9] ${
                                   activeLink ===
                                   "/solutions/customer-experience/ls-retail"
                                     ? "text-[#5F22D9]"
@@ -927,12 +932,15 @@ function NewNavBar() {
                     {navName == "services" && (
                       <>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -943,7 +951,7 @@ function NewNavBar() {
                                   "/our-services/business-consulting"
                                 );
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink ===
                                 "/our-services/business-consulting"
                                   ? "text-[#5F22D9]"
@@ -953,19 +961,22 @@ function NewNavBar() {
                               Business Consulting
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex  justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
 
                           <div>
@@ -977,7 +988,7 @@ function NewNavBar() {
                                   "/our-services/implementation-and-global-rollout"
                                 );
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink ===
                                 "/our-services/implementation-and-global-rollout"
                                   ? "text-[#5F22D9]"
@@ -987,19 +998,22 @@ function NewNavBar() {
                               Implementation and Global Rollout
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex  justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
 
                           <div>
@@ -1009,7 +1023,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/our-services/managed-services");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/our-services/managed-services"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1018,7 +1032,7 @@ function NewNavBar() {
                               Managed Services
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1030,12 +1044,15 @@ function NewNavBar() {
                     {navName == "industry" && (
                       <>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex  justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
 
                           <div>
@@ -1045,7 +1062,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/industries/manufacturing");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/industries/manufacturing"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1054,19 +1071,22 @@ function NewNavBar() {
                               Manufacturing
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1075,7 +1095,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/industries/retail");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/industries/retail"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1084,19 +1104,22 @@ function NewNavBar() {
                               Retail
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1107,7 +1130,7 @@ function NewNavBar() {
                                   "/industries/trading-and-distribution"
                                 );
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink ===
                                 "/industries/trading-and-distribution"
                                   ? "text-[#5F22D9]"
@@ -1117,19 +1140,22 @@ function NewNavBar() {
                               Trading and Distribution
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1138,7 +1164,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/industries/project");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/industries/project"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1147,19 +1173,22 @@ function NewNavBar() {
                               Project
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex leading-[28px] justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1168,7 +1197,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/industries/healthcare");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/industries/healthcare"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1177,7 +1206,7 @@ function NewNavBar() {
                               Healthcare
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1189,12 +1218,15 @@ function NewNavBar() {
                     {navName == "insights" && (
                       <>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex leading-[28px] justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
 
                           <div>
@@ -1204,7 +1236,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/brochures");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/brochures"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1213,19 +1245,22 @@ function NewNavBar() {
                               Brochures
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex leading-[28px] justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1234,7 +1269,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/blog");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/blog"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1243,19 +1278,22 @@ function NewNavBar() {
                               Blogs
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex leading-[28px] justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1264,7 +1302,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/news-and-announcements");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/news-and-announcements"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1273,7 +1311,7 @@ function NewNavBar() {
                               News & Announcements
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1281,12 +1319,15 @@ function NewNavBar() {
                         </div>
 
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex leading-[28px] justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1295,7 +1336,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/case-studies");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/case-studies"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1304,7 +1345,7 @@ function NewNavBar() {
                               Case Studies
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1314,10 +1355,13 @@ function NewNavBar() {
                         <div
                           className={`flex leading-[28px] justify-start p-2 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1326,7 +1370,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/stories");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/stories"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1335,7 +1379,7 @@ function NewNavBar() {
                               Success Stories
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1344,10 +1388,13 @@ function NewNavBar() {
                         <div
                           className={`flex leading-[28px] justify-start p-2 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1356,7 +1403,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/videos");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/videos"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1365,7 +1412,7 @@ function NewNavBar() {
                               Videos
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1377,12 +1424,15 @@ function NewNavBar() {
                     {navName == "careers" && (
                       <>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex leading-[28px] justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1391,7 +1441,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/careers/we-are-hiring");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/careers/we-are-hiring"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1400,19 +1450,22 @@ function NewNavBar() {
                               We are hiring
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
                           </div>
                         </div>
                         <div
-                          className={`flex leading-[28px] justify-start p-2 font-semibold`}
+                          className={`flex justify-start px-2 py-3 font-semibold`}
                         >
-                          <img
-                            src="/navbar-icon/cloud.svg"
-                            alt={"asdn"}
-                            className="mr-6 h-[24px] w-[24px] mt-1"
+                         <Image
+                            src="/navbar-icon/cube-outline.svg"
+                            alt="icon-name"
+                            width={24}
+                            height={24}
+                            className="mr-4 -mt-4"
+                            priority={true}
                           />
                           <div>
                             <a
@@ -1421,7 +1474,7 @@ function NewNavBar() {
                                 e.preventDefault(); // Prevent default navigation
                                 navLinkClick("/careers/why-join-us");
                               }}
-                              className={`w-full text-[20px] font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
+                              className={`w-full text-body-02 font-semibold cursor-pointer mb-2 hover:text-[#5F22D9] ${
                                 activeLink === "/careers/why-join-us"
                                   ? "text-[#5F22D9]"
                                   : "text-[#1D162B]"
@@ -1430,7 +1483,7 @@ function NewNavBar() {
                               Why Join us?
                             </a>
 
-                            <p className="text-[12px] font-medium leading-[16px] text-[#808080]">
+                            <p className="text-helper-02 text-[#808080]">
                               Delivering business value with <br></br>
                               automation
                             </p>
@@ -1442,13 +1495,13 @@ function NewNavBar() {
                     {/* services */}
                   </div>
                   {/* 2nd column atomation */}
-                  <div className=" py-6">
+                  <div className=" py-3">
                     <div className="">
-                      <div className="text-[16px] font-semibold">
+                      <div className="text-body-02 font-semibold">
                         Latest News & Announcements
                       </div>
                       <div
-                        className="cards py-5"
+                        className="cards py-2"
                         style={{ borderBottom: "1px solid #E4E4E4" }}
                       >
                         <div className="grid grid-cols-3 gap-4">
@@ -1496,16 +1549,16 @@ function NewNavBar() {
                         </div>
                       </div>
                       {/* case studies */}
-                      <div className="text-[16px] font-semibold mt-3">
+                      <div className="text-body-02 font-semibold mt-3">
                         Featured Case Studies
                       </div>
                       <div
                         className=""
                         style={{ borderBottom: "1px solid #E4E4E4" }}
                       >
-                        {[1, 2].map((item) => (
+                        {[1].map((item) => (
                           <>
-                            <div className="cards py-5">
+                            <div className="cards py-3">
                               <div className="grid grid-cols-3 gap-4">
                                 <div className="">
                                   <Image
@@ -1551,7 +1604,7 @@ function NewNavBar() {
                       </div>
 
                       {/* need to contact */}
-                      <div className="mt-4 mb-3 text-[16px] font-semibold text-[#1D162B]">
+                      <div className="mt-4 mb-3 text-body-02 font-semibold text-[#1D162B]">
                         Need to connect
                       </div>
                       <div className="grid grid-cols-2 gap-4">
@@ -1582,7 +1635,8 @@ function NewNavBar() {
                   </div>
                   {/* 3th column */}
                 </div>
-                <div className="-mt-4">
+                <hr/>
+                <div className="md:container md:mx-auto mt-4 mb-6">
                   <span className="font-medium text-[12px] text-[#808080] mr-2">
                     LinkedIn
                   </span>
