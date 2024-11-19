@@ -95,7 +95,7 @@ const config: Config = {
           {
             lineHeight: '1.25', 
             letterSpacing: '-0.015em', 
-            fontWeight: '300', // Font weight for heading-01
+            fontWeight: '300',
           },
         ],
 
@@ -104,7 +104,7 @@ const config: Config = {
           {
             lineHeight: '1.25', 
             letterSpacing: '-0.015em', 
-            fontWeight: '300', // Font weight for heading-01
+            fontWeight: '300',
           },
         ],
 
