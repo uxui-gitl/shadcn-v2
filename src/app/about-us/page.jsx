@@ -40,7 +40,7 @@ const ContactUs = () => {
       <p className="mt-4">An Engineering graduate from the College of Engineering (Pune), he is focused on the organization's growth by continuously improving products, services and processes, developing people, deploying new technologies and working closely with customers. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/AP.webp",
       bgColor: "#7B014E",
     },
     {
@@ -55,7 +55,7 @@ const ContactUs = () => {
       <p className="mt-4">As a Computer Engineer from Mumbai University and an MBA graduate in Retail Management from NIMS, Mr. Mistry currently serves as the 'Head of IT Consulting & Special Projects' at Godrej Infotech, bringing his wealth of experience to our dynamic team. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/AshwinM.webp",
       bgColor: "#7B014E",
     },
     {
@@ -69,7 +69,7 @@ const ContactUs = () => {
       <p className="mt-4">A University of Calcutta alumnus, Mr. Chatterjee's academic foundation in Business Administration and Commerce paved the way for his remarkable success. Throughout his illustrious career, he has consistently demonstrated exceptional leadership, strategic flair, and an unwavering commitment to excellence. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/KC.webp",
       bgColor: "#7B014E",
     },
     {
@@ -81,7 +81,7 @@ const ContactUs = () => {
       Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
       `,
 
-      bgImageUrl: "/about/vaishaliRaj_BW.webp",
+      bgImageUrl: "/about/managementPics/Samik.webp",
       bgColor: "#7B014E",
     },
     {
@@ -96,7 +96,7 @@ const ContactUs = () => {
       <p className="mt-4">A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
       `,
 
-      bgImageUrl: "/about/vaishaliRaj.webp",
+      bgImageUrl: "/about/managementPics/Vaishali.webp",
       bgColor: "#7B014E",
     },
   ];
@@ -879,7 +879,8 @@ __html: readMoreItem?.longDesc || "",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "end",
-                  background: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  //background: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
                   backgroundSize:'cover',
                   backgroundPosition:'center center'
                 }}
