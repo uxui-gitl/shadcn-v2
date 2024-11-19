@@ -18,7 +18,7 @@ import { Pagination } from "swiper/modules";
 
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 const page = () => {
-  const blogImageUrl = "/msCRM/blog-bg.webp";
+  const blogImageUrl = "/msCRM/blogbg.webp";
 
   const distinctiveData = [
     {
@@ -46,7 +46,7 @@ const page = () => {
 
   const casestudy = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
+      imageURL: "/msCRM/CaseStudyLeft.webp",
       videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
@@ -293,7 +293,7 @@ const page = () => {
         desc="Personalized solutions for Sales Automation, Customer Insights, Marketing Automation and Service Excellence"
         cta="Let's Connect"
         width="60%"
-        video="/msCRM/video/pageBanner.mp4"
+        video="/msCRM/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`Get a single customer view with Microsoft CRM. Gain 360-degree customer insights, seamless team collaboration, personalized customer experiences and data-driven decision-making.`} />
 {/* 
@@ -401,7 +401,7 @@ const page = () => {
            {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                    <img className="rounded-t-lg pl-4 mx-auto md:mx-0" src={item.icon} alt="" />
+                    <img className="rounded-t-lg pl-4 mx-auto md:mx-0" src={item.icon} width={100} height={100} alt="" />
                   <div className="p-5">
                       <h5 className="mb-6 text-heading-02 leading-heading-02 text-center md:text-left font-bold">{item.cardTitle}</h5>
                   </div>
