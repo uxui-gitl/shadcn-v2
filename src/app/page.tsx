@@ -657,7 +657,7 @@ export default function Home() {
             <SwiperSlide key={index}>
               <div
                 className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px]"
-                style={{ backgroundImage: `url(${item.cardBgImg})` }}
+                style={{ backgroundImage: `url(${item.cardBgImg})`, backgroundSize:'cover', backgroundPosition:'bottom center' }}
               >
                 {item?.cardTitle && (
                   <div className="text-body-01 text-neutral-white mb-[100px] ">

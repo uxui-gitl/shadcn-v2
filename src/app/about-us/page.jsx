@@ -40,7 +40,7 @@ const ContactUs = () => {
       <p className="mt-4">An Engineering graduate from the College of Engineering (Pune), he is focused on the organization's growth by continuously improving products, services and processes, developing people, deploying new technologies and working closely with customers. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/AP.webp",
       bgColor: "#7B014E",
     },
     {
@@ -55,7 +55,7 @@ const ContactUs = () => {
       <p className="mt-4">As a Computer Engineer from Mumbai University and an MBA graduate in Retail Management from NIMS, Mr. Mistry currently serves as the 'Head of IT Consulting & Special Projects' at Godrej Infotech, bringing his wealth of experience to our dynamic team. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/AshwinM.webp",
       bgColor: "#7B014E",
     },
     {
@@ -69,7 +69,7 @@ const ContactUs = () => {
       <p className="mt-4">A University of Calcutta alumnus, Mr. Chatterjee's academic foundation in Business Administration and Commerce paved the way for his remarkable success. Throughout his illustrious career, he has consistently demonstrated exceptional leadership, strategic flair, and an unwavering commitment to excellence. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/KC.webp",
       bgColor: "#7B014E",
     },
     {
@@ -81,7 +81,7 @@ const ContactUs = () => {
       Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/Samik.webp",
       bgColor: "#7B014E",
     },
     {
@@ -96,7 +96,7 @@ const ContactUs = () => {
       <p className="mt-4">A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/managementPics/Vaishali.webp",
       bgColor: "#7B014E",
     },
   ];
@@ -166,109 +166,103 @@ const ContactUs = () => {
       id: 1,
       title: "Statutory Report",
       Desc: `A legally required document detailing a company's financial and operational compliance.`,
-      rawData: ` <div class="relative overflow-x-auto mb-[10rem]">
-  <ul class="space-y-4">
-    <!-- Year 2023-2024 -->
-    <li class="flex flex-wrap items-start py-4 border-b w-full text-body-01 font-semibold text-primary-900">
-      <span class="w-full sm:w-[20%] mb-2 sm:mb-0">2023-2024</span>
-      <div class="w-full sm:w-[80%] ">
-        <ul>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAGMofGITL2023-24.pdf" target="_blank">
-              Transcript of the Annual General Meeting held on 25th July, 2024
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/Notice_27th_AGM_GITL.pdf" target="_blank">
-              Notice of 27th Annual General Meeting to be held on Thursday, 25th July, 2024
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/MGT-7.pdf" target="_blank">
-              Draft Annual Return: Form MGT-7- FY 2023-24
-            </a>
-          </li>
-        </ul>
-      </div>
-    </li>
+      rawData: ` <ul>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2023-2024</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAGMofGITL2023-24.pdf"
+                    target="_blank">Transcript
+                    of
+                    the Annual General Meeting held on 25th July, 2024</a></li>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/Notice_27th_AGM_GITL.pdf"
+                    target="_blank">Notice
+                    of 27th
+                    Annual
+                    General Meeting to be held on Thursday, 25th July, 2024</a></li>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/MGT-7.pdf" target="_blank">Draft
+                    Annual Return:
+                    Form MGT-7-
+                    FY 2023-24</a></li>
+                </ul>
+              </li>
 
-    <!-- Year 2022-2023 -->
-    <li class="flex flex-wrap items-start py-4 border-b w-full text-body-01 font-semibold text-primary-900">
-      <span class="w-full sm:w-[20%] mb-2 sm:mb-0">2022-2023</span>
-      <div class="w-full sm:w-[80%] ">
-        <ul>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/Transcript-AGM-4-July-2023.pdf" target="_blank">
-              Transcript of the Annual General Meeting held on 4th July, 2023
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2022-23.pdf" target="_blank">
-              Annual Return for FY 2022-23
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReportAccountsFY2022-23.pdf" target="_blank">
-              Notice of Annual General Meeting for FY 2022-23
-            </a>
-          </li>
-        </ul>
-      </div>
-    </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2022-2023</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/Transcript-AGM-4-July-2023.pdf"
+                    target="_blank">Transcript of the Annual General Meeting held on 4th July, 2023</a></li>
 
-    <!-- Year 2021-2022 -->
-    <li class="flex flex-wrap items-start py-4 border-b w-full text-body-01 font-semibold text-primary-900">
-      <span class="w-full sm:w-[20%] mb-2 sm:mb-0">2021-2022</span>
-      <div class="w-full sm:w-[80%] ">
-        <ul>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2021-22.pdf" target="_blank">
-              Transcript of the Annual General Meeting held on 2nd August 2022
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2021-22.pdf" target="_blank">
-              Annual Return for FY 2021-22
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/NoticeAndAnnualReport2021-22.pdf" target="_blank">
-              Notice and Annual Report for FY 2021-22
-            </a>
-          </li>
-        </ul>
-      </div>
-    </li>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2022-23.pdf"
+                    target="_blank">Annual Return for FY 2022-23</a></li>
 
-    <!-- Year 2020-2021 -->
-    <li class="flex flex-wrap items-start py-4 border-b w-full text-body-01 font-semibold text-primary-900">
-      <span class="w-full sm:w-[20%] mb-2 sm:mb-0">2020-2021</span>
-      <div class="w-full sm:w-[80%] ">
-        <ul>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2020-21.pdf" target="_blank">
-              Annual Return for FY 2020-21
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAnnualGeneralMeeting-21Jun2021.pdf" target="_blank">
-              Transcript of the Annual General Meeting held on 21st June, 2021
-            </a>
-          </li>
-          <li class="text-body-01 hover:text-primary-400 p-2 text-neutral-dark-grey border-b-[0.5px] border-neutral-light-grey">
-            <a href="assets/pdf/statutoryUpdate/statutoryReport/NoticeAndAnnualReport2020-21.pdf" target="_blank">
-              Notice and Annual Report for FY 2020-21
-            </a>
-          </li>
-        </ul>
-      </div>
-    </li>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReportAccountsFY2022-23.pdf"
+                    target="_blank">Notice of Annual General Meeting for FY 2022-23</a></li>
 
-    <!-- Add other years similarly -->
 
-  </ul>
-</div>
+                </ul>
+              </li>
 
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2021-2022</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2021-22.pdf"
+                    target="_blank">Transcript of the Annual
+                    General Meeting held on 2nd August 2022</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2021-22.pdf"
+                    target="_blank">Annual Return for
+                    FY 2021-22</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/NoticeAndAnnualReport2021-22.pdf"
+                    target="_blank">Notice and
+                    Annual Report for FY 2021-22</a></li>
+                </ul>
+              </li>
+
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2020-2021</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2020-21.pdf"
+                    target="_blank">Annual Return for FY 2020-21</a></li>
+
+                  <li class="pb-4"><a
+                    href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAnnualGeneralMeeting-21Jun2021.pdf"
+                    target="_blank">Transcript of the Annual General Meeting held on 21st June, 2021</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/NoticeAndAnnualReport2020-21.pdf"
+                    target="_blank">Notice and Annual Report for FY 2020-21</a></li>
+                </ul>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2019-2020</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReport-2019-20.pdf"
+                    target="_blank">Notice and Annual Report for FY 2019-20</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturn-2019-20.pdf"
+                    target="_blank">Extract of Annual Return in Form MGT-9 for FY 2019-20</a></li>
+
+                </ul>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2018-2019</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM2018-19.pdf"
+                    target="_blank">Notice of Annual General Meeting for FY 2018-19</a></li>
+
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturn-2018-19.pdf"
+                    target="_blank">Annual Return for FY 2018-19</a></li>
+                </ul>
+              </li>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <span class="mx-12">2017-2018</span>
+                <ul>
+                  <li class="pb-4"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2018.pdf"
+                    target="_blank">Notice of Annual General Meeting for FY 2017-18</a></li>
+
+                </ul>
+              </li>
+            </ul>
       `,
     },
     {
@@ -276,41 +270,41 @@ const ContactUs = () => {
       title: "Corporate Policies",
       Desc: `Dummy Text. Dummy Text.`,
       rawData: ` <ol>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/ABAC.pdf" target="_blank">Anti-Bribery and Anti-Corruption</a>3</h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/ABAC.pdf" target="_blank">Anti-Bribery and Anti-Corruption</a>3</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/ethics.pdf" target="_blank">Code of Ethics and Business Conduct</a></h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/ethics.pdf" target="_blank">Code of Ethics and Business Conduct</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/Corporate-Environmental-Policy.pdf" target="_blank">Corporate
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Corporate-Environmental-Policy.pdf" target="_blank">Corporate
                   Environmental Policy</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/Fraud-Investigation-Guidelines.pdf" target="_blank">Fraud
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Fraud-Investigation-Guidelines.pdf" target="_blank">Fraud
                   Investigation Guidelines</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/HIV_AIDS_Policy.pdf" target="_blank">HIV/ AIDS</a></h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/HIV_AIDS_Policy.pdf" target="_blank">HIV/ AIDS</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/NRC-Policy.pdf" target="_blank">Nomination and Remuneration
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/NRC-Policy.pdf" target="_blank">Nomination and Remuneration
                   Policy</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class="">
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">
                   <a href="assets/pdf/corporatePolicies/sexualHarassment.pdf" target="_blank">Prevention of Sexual Harassment
                     at Workplace</a>
                 </h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/Social-Media-Policy.pdf" target="_blank">Social Media Policy</a></h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Social-Media-Policy.pdf" target="_blank">Social Media Policy</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
               </li>
             </ol>`,
     },
@@ -319,38 +313,38 @@ const ContactUs = () => {
       title: "CSR Updates",
       Desc: `Dummy Text. Dummy Text.`,
       rawData: `   <ul>
-                <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                  <h3 class=" font-bold">CSR Initiatives</h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6 font-bold">CSR Initiatives</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                  <h3 class=""><a href="assets/pdf/corporatePolicies/CSR.pdf" target="_blank">CSR policy</a></h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR.pdf" target="_blank">CSR policy</a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                  <h3 class=""><a href="assets/pdf/corporatePolicies/CSR23-24.pdf" target="_blank">CSR Action Plan FY 2023-24</a></h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR23-24.pdf" target="_blank">CSR Action Plan FY 2023-24</a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                  <h3 class=""><a href="assets/pdf/corporatePolicies/CSR22-23.pdf" target="_blank">CSR Action Plan FY 2022-23 </a></h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR22-23.pdf" target="_blank">CSR Action Plan FY 2022-23 </a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                  <h3 class=""><a href="assets/pdf/corporatePolicies/CSR21-22.pdf" target="_blank">CSR Action Plan FY 2021-22 </a></h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR21-22.pdf" target="_blank">CSR Action Plan FY 2021-22 </a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                  <h3 class=""><a href="assets/pdf/corporatePolicies/CSR20-21.pdf" target="_blank">CSR Action Plan FY 2020-21 </a></h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6"><a href="assets/pdf/corporatePolicies/CSR20-21.pdf" target="_blank">CSR Action Plan FY 2020-21 </a></h3>
                 </li>
               </ul>
 
               <ul>
-                <li class="flex items-start mt-10 py-2 border-b w-full text-body-01 text-neutral-darkest-grey">
-                  <h3 class=" font-bold">CSR Commitee</h3>
+                <li class="flex items-start mt-10 py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6 font-bold">CSR Commitee</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 text-neutral-dark-grey">
-                  <h3 class="">Mrs. Nyrika Holkar, Chairperson</h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6">Mrs. Nyrika Holkar, Chairperson</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 text-neutral-dark-grey">
-                  <h3 class="">Mr. P. E. Fouzdar, Member</h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6">Mr. P. E. Fouzdar, Member</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-body-01 text-neutral-dark-grey">
-                  <h3 class="">Mr. V. R. Mehta, Member</h3>
+                <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                  <h3 class="mx-6">Mr. V. R. Mehta, Member</h3>
                 </li>
               </ul>`,
     },
@@ -360,33 +354,33 @@ const ContactUs = () => {
       Desc: `Dummy Text. Dummy Text.`,
       rawData: `
        <ol>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
                   target="_blank">Terms &amp; Conditions of appointment of Independent Directors</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Parpia.pdf"
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Parpia.pdf"
                   target="_blank">Notice of Candidature of Mr. M. M. Parpia</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Movdawalla.pdf"
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Movdawalla.pdf"
                   target="_blank">Notice of Candidature of Mr. P. P. Movdawalla</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01 font-semibold text-primary-900">
-                <h3 class=""><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Mehta.pdf"
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6"><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Mehta.pdf"
                   target="_blank">Notice of Candidature of Mr. V. R. Mehta</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01  text-neutral-dark-grey">
-                <h3 class="">Dr. K. A. Palia ceased to be a Director of the Company with effect from 10th May, 2023</h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">Dr. K. A. Palia ceased to be a Director of the Company with effect from 10th May, 2023</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01  text-neutral-dark-grey">
-                <h3 class="">Mr. K. K. Dastur ceased to a Director of the Company with effect from 10th May, 2023</h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">Mr. K. K. Dastur ceased to a Director of the Company with effect from 10th May, 2023</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01  text-neutral-dark-grey">
-                <h3 class="">Mr. S. N. Irani ceased to be a Director of the Company with effect from 25th July 2022</h3>
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">Mr. S. N. Irani ceased to be a Director of the Company with effect from 25th July 2022</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-body-01  text-neutral-dark-grey">
-                <h3 class="">
+              <li class="flex items-start py-6 border-b w-full text-[20px] text-[#808080]">
+                <h3 class="mx-6">
                   The Register of Members and Share Transfer Books of the Company will remain closed from
                   Monday, 18th July 2022 to Tuesday, 2nd August 2022 (both days inclusive). All persons whose names are
                   recorded in the Register of Members maintained by the Company/Depositories as on the cut-off date, i.e.
@@ -732,7 +726,7 @@ const ContactUs = () => {
             </div>
 
             {/* Right Side: Profile Info */}
-            <div className="ceo-info w-full md:w-2/3 mb-[10rem] pl-0 md:pl-8">
+            <div className="ceo-info w-full md:w-2/3 pl-0 md:pl-8">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                 {readMoreItem?.name}
               </h1>
@@ -808,10 +802,10 @@ __html: readMoreItem?.longDesc || "",
                 >
                   <Image
                     src={item.icon}
-                    width={30}
-                    height={30}
+                    width={64}
+                    height={64}
                     alt={"hioasdo"}
-                    className="mr-4"
+                    className="mr-4 -mt-2"
                   />
                   <div className="text-heading-02 text-white">{item.title}</div>
                 </div>
@@ -880,12 +874,15 @@ __html: readMoreItem?.longDesc || "",
           {CSUITE_DATA?.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`max-w-sm h-[512px] p-5 rounded-3xl shadow`}
+                className={`max-w-sm h-[512px] p-5 rounded-3xl border-[0.5px] border-neutral-light-grey`}
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "end",
-                  background: `linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  //background: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  backgroundSize:'cover',
+                  backgroundPosition:'center center'
                 }}
               >
                 {item?.name && (
