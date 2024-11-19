@@ -10,7 +10,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                 duration-500 fixed top-0 left-0 right-0 z-[1050] w-full h-screen flex items-center justify-center  bg-gray-800 bg-opacity-50`}
             >
                 <div
-                    className="relative container mx-auto w-full h-screen bg-white rounded-lg shadow-lg"
+                    className="relative container mx-auto w-full h-screen bg-white rounded-lg shadow-lg overflow-y-scroll"
                 >
                     {/* Modal content */}
                     <div className={`relative bg-[${bgColor}] rounded-lg shadow`}>
