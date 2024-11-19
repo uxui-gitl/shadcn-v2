@@ -18,7 +18,7 @@ function CommonCardOne({ Item }) {
     return (
         <>
             <div
-                className={`rounded-3xl shadow min-h-[524px] sm:min-h-[524px] lg:min-h-[624px] flex flex-col justify-between ${style.commonCardOne}`}
+                className={`rounded-3xl shadow min-h-[524px] md:min-h-[264px] 2xl:min-h-[524px] flex flex-col justify-between ${style.commonCardOne}`}
                 style={{
                     backgroundColor: `${cardBGColor}`,
                     color: cardTextColor,
@@ -36,25 +36,25 @@ function CommonCardOne({ Item }) {
 
                 <div className={`p-5 flex-grow ${style.cardBody}`}>
                     {cardTitle && (
-                        <div className={`text-secondary-400 text-subtitle-01 leading-subtitle-01 mb-8 ${style.cardTitle}`}>
+                        <div className={`text-secondary-400 text-body-02 mb-8 md:mb-4 2xl:mb-8 ${style.cardTitle}`}>
                             {cardTitle}
                         </div>
                     )}
                     {cardIconUrl && (
-                        <div className={`mb-6 ${style.cardIcon}`}>
+                        <div className={`mb-6 md:mb-4 2xl:mb-5 ${style.cardIcon}`}>
                             <Image src={cardIconUrl} alt="" width={53} height={53} />
                         </div>
                     )}
                     {cardHeading && (
                         <h5
-                            className={`text-heading-01 leading-heading-01 font-semibold ${style.cardHeading}`}
+                            className={`text-heading-02 ${style.cardHeading}`}
                             dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                         />
                     )}
 
                     {cardDesc && (
                         <p
-                            className={` text-body-01 leading-body-01 font-normal ${style.cardDesc}`}
+                            className={` text-body-01 ${style.cardDesc}`}
                             dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                         />
                     )}

@@ -38,14 +38,13 @@ const EntIntro = ({
         </video>
 
         {/* Content Container */}
-        <div className="container flex justify-start items-center  h-[100vh] z-20">
+        <div className="container flex justify-start items-center h-[100vh] z-20">
           <div
             className={`flex text-neutral-white flex-col justify-start gap-4 mt-6  text-left`}
           >
             {/* Title */}
             <h1
-              className=" w-full z-50 text-neutral-white
-              text-display-01"
+              className=" w-full z-50 text-neutral-white text-display-01 2xl:w-[70%]"
               style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{title}</Balancer>
@@ -53,7 +52,7 @@ const EntIntro = ({
 
             {/* Description */}
             <h4
-              className="z-50 text-neutral-white text-subtitle-01  lg:w-[70%] mb-8"
+              className="z-50 text-neutral-white text-subtitle-01  md:w-[70%] mb-8"
               style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{desc}</Balancer>
@@ -63,7 +62,7 @@ const EntIntro = ({
             <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start">
               <Link
                 href={"#Contact"}
-                className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-4 mb-2 group"
+                className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-4 md:py-3 xl:py-4 2xl:px-12 group"
               >
                 {cta}
                 <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
