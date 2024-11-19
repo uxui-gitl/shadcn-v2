@@ -47,8 +47,8 @@ const page = () => {
 
   const casestudy = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      imageURL: "",
+      videoURL: "/infor-crm/videos/CaseStudy.mp4",
       title: "Case Studies",
       heading: "Delivering Results that Matter",
       description:
@@ -223,7 +223,7 @@ const page = () => {
         desc="Deliver exceptional customer experiences through analytics and automated workflows"
         cta="Let's Connect"
         width="60%"
-        video="infor-crm/video/pageBanner.mp4"
+        video="/infor-crm/videos/pageBanner.mp4"
       />
       <OverviewSection Text={'Built on a scalable, cloud-based platform, Infor CRM integrates seamlessly with Infor ERP, providing real-time visibility into customer interactions, sales and service. Tailored solutions for manufacturing, distribution, healthcare and more.'} />
 
