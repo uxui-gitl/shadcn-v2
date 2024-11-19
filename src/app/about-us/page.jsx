@@ -81,7 +81,7 @@ const ContactUs = () => {
       Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/vaishaliRaj_BW.webp",
       bgColor: "#7B014E",
     },
     {
@@ -96,7 +96,7 @@ const ContactUs = () => {
       <p className="mt-4">A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
       `,
 
-      bgImageUrl: "/careers/over1.svg",
+      bgImageUrl: "/about/vaishaliRaj.webp",
       bgColor: "#7B014E",
     },
   ];
@@ -802,10 +802,10 @@ __html: readMoreItem?.longDesc || "",
                 >
                   <Image
                     src={item.icon}
-                    width={30}
-                    height={30}
+                    width={64}
+                    height={64}
                     alt={"hioasdo"}
-                    className="mr-4"
+                    className="mr-4 -mt-2"
                   />
                   <div className="text-heading-02 text-white">{item.title}</div>
                 </div>
@@ -874,12 +874,14 @@ __html: readMoreItem?.longDesc || "",
           {CSUITE_DATA?.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`max-w-sm h-[512px] p-5 rounded-3xl shadow`}
+                className={`max-w-sm h-[512px] p-5 rounded-3xl border-[0.5px] border-neutral-light-grey`}
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "end",
-                  background: `linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  background: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  backgroundSize:'cover',
+                  backgroundPosition:'center center'
                 }}
               >
                 {item?.name && (
