@@ -8,6 +8,7 @@ function CommonCard({ Item, setpageID }) {
     CardBGImageUrl = "",
     CardBGColor = "",
     CardTextColor = "",
+    CardDescColor = "",
     CardBGImageUrlSize = "cover",
     CardTitle = "",
     CardIconUrl = "",
@@ -51,7 +52,7 @@ function CommonCard({ Item, setpageID }) {
           )}
           {CardDesc && (
             <p
-              className="text-neutral-white text-body-01 leading-body-01 my-5 font-normal"
+              className={`${CardDescColor} text-body-01 leading-body-01 my-5 font-normal`}
               dangerouslySetInnerHTML={{ __html: CardDesc }} // Render HTML content
             />
           )}

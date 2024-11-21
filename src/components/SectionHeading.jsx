@@ -14,7 +14,7 @@ function SectionHeading({
     >
       {layout === 'vertical' ? (
         <div
-          className={` w-full md:w-1/2 ${center? 'mx-auto' : ''}  md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center'   : right ? 'items-end' : 'items-center md:items-start'} `}
+          className={` w-full  ${center? 'mx-auto' : ''}  md:${headingContainerWidth} flex flex-col justify-end ${center ? 'items-center'   : right ? 'items-end' : 'items-center md:items-start'} `}
         >
           {Heading && <h1
             className={`text-neutral-white text-heading-01 text-center mb-6 ${center ? 'md:text-center' : 'md:text-left'} md:text-left ${Color} mb-6 sm:mb-2 md:mb-6`}           
