@@ -14,16 +14,17 @@ const WhySection = ({
     <SectionWrapperNew
      sectionHeading={Title}
      sectionDesc={Desc}
-     sectionTextColor={'black'}
+     sectionTextColor={'text-primary-900'}
+     sectionDescColor={'text-neutral-darkest-grey'}
      sectionHeadingLayout="left"
     >
-<div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 mt-4 mb-8">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 2xl:gap-8">
         {arr.map((item, index) => (
             <>
-              <div className="card p-4 md:py-6 " key={index} style={{ borderBottom: '2px solid #d3d3d3'}}>
-                <div className="card-body flex items-center">
-                    <Image src={item.icon} alt={checkout} className="max-w-full" width={64} height={64}/>
-                    <div className="text-paragraph-01 leading-body-01 md:text-paragraph-01 md:leading-body-01 font-medium ml-4  ">
+              <div className="py-4 border-b-[1px] border-bg-neutral-grey" key={index} >
+                <div className="flex items-center">
+                    <Image src={item.icon} alt={checkout} className="max-w-full" width={56} height={56}/>
+                    <div className="text-body-01 ml-4">
                       {item.desc}
                     </div>
                 </div>

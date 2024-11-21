@@ -1,7 +1,7 @@
 "use client";
 // system import
 import Image from "next/image";
-import { useRef } from "react";
+import React, { useRef , useEffect, useState } from "react";
 import Slider from "@/components/Slider";
 import SectionWrapperNew from "@/components/SectionWrapperNew";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
@@ -11,19 +11,13 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
 } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
-import Navbar from "@/components/Navbar/Navbar";
 import { Tabs } from "@/components/ui/tabs";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import React, { useEffect, useState } from "react";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import Dialog from "@/components/Dialog";
 import useScrollTriggeredCountUp from "@/components/home/useScrollTriggeredCountUp";

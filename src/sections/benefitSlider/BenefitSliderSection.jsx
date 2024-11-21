@@ -18,8 +18,8 @@ function BenefitSliderSection({
   sectionHeadingMaxWidth,
   sectionHeaderWidth = '',
   cardData = [],
-  sectionTextColor = "#000",
-  sectionBGColor = "#000",
+  sectionTextColor = "text-neutral-white",
+  sectionBGColor = "bg-primary-900",
   style
 }) {
   const leftContainerRef = useRef(null);
@@ -46,7 +46,7 @@ function BenefitSliderSection({
         ...style,
         backgroundImage: `url(${sectionImageUrl})`, backgroundSize: 'cover',
     }}>
-      <div ref={mainContainerRef} className="flex py-32 ">
+      <div ref={mainContainerRef} className="flex py-32 lg:py-8 2xl:py-32 -mt-8">
         <div className="container mx-auto flex flex-col md:flex-row h-full ">
           <div
             ref={leftContainerRef}
@@ -59,20 +59,20 @@ function BenefitSliderSection({
                             headingContainerWidth={sectionHeaderWidth} />
           </div>
 
-          <div className="w-full md:w-[60%] pt-8 bg-primary-900 z-10">
+          <div className="w-full md:w-[60%] bg-primary-900 z-10">
             <div>
               {cardData.map((item) => (
                 <>
                 <div
                   key={item._id}
-                  className="flex p-5 md:p-8 w-full h-[170px] md:h-[196px] items-center bg-neutral-white border border-neutral-light-grey rounded-[32px] mb-4 shadow hover:bg-neutral-ghost-white"
+                  className="flex p-5 lg:min-h-[120px] w-full items-center bg-neutral-white border border-neutral-light-grey rounded-3xl mb-4 shadow hover:bg-neutral-ghost-white"
                 >
                   <Image
                     className="mr-4 md:block"
                     src={item.icon}
                     alt=""
-                    width={72}
-                    height={72}
+                    width={56}
+                    height={56}
                   />
                   <div className="flex flex-col justify-between leading-normal">
                     <h2 className="mb-3 text-body-01 text-neutral-darkest-grey">{item.cardHead}</h2>

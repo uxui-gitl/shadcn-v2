@@ -14,10 +14,9 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
             <SectionWrapperNew
               
                 style={{
-                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url(${blogImageUrl})`,
+                    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 60%, rgb(29, 22, 43) 100%), url(${blogImageUrl})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    marginTop:'-64px',
                     minHeight: '624px',
                 }}
                 sectionHeading={Heading}
