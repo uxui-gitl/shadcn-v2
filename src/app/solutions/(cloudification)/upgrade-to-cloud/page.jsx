@@ -243,7 +243,7 @@ const UpgradeToCloud = () => {
       hoverTitle: "Blueprint Development",
       description: "Define and prioritize tasks, align assets, establish milestones, iterations and timelines for upgradation journey.",
       content: "Additional content for Card 3",
-      imageURL: '/upgradeCloud/Blurprint.webp'
+      imageURL: '/upgradeCloud/Blueprint.webp'
     },
     {
       title: "Establishing Readiness",
