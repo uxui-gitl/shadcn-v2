@@ -4,7 +4,7 @@ import Subscription from "@/components/Subscription";
 function TransformBusinessForm({Title , Desc}) {
     return (
         <>
-            <div className="rounded-t-3xl bg-primary-900">
+            <div className="rounded-t-3xl bg-primary-900 overflow-hidden">
                 <div className="" style={{
                     backgroundImage: `url(${formBGURL})`, backgroundSize: 'cover', backgroundPosition: 'bottom'
                 }}>
