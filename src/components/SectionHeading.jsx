@@ -21,7 +21,7 @@ function SectionHeading({
             dangerouslySetInnerHTML={{ __html: Heading }}
           />}
           {Desc &&  (<p
-            className={`text-neutral-white text-subtitle-01   text-center ${center ? 'md:text-center' : 'md:text-left'} ${Color} mb-8`}
+            className={`text-neutral-white text-heading-04  text-center ${center ? 'md:text-center' : 'md:text-left'} ${Color} mb-8`}
           
             dangerouslySetInnerHTML={{__html: Desc}}
           >

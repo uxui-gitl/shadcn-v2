@@ -17,7 +17,7 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
                     backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 60%, rgb(29, 22, 43) 100%), url(${blogImageUrl})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    minHeight: '624px',
+                    minHeight: '540px',
                 }}
                 sectionHeading={Heading}
                 sectionDesc={Desc}

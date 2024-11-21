@@ -58,7 +58,7 @@ const AIOfferingsData = [
     id: 2,
     CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardTextColor:'#000',
+    CardTextColor:'text-primary-900',
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Speech & Language',
@@ -85,7 +85,7 @@ const AIOfferingsData = [
     id: 3,
     CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardTextColor:'#000',
+    CardTextColor:'#text-primary-900',
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Intelligent Scanning',
@@ -109,12 +109,11 @@ const AIOfferingsData = [
     id: 4,
     CardBGImageUrl: '',
     CardBGColor:'#FFF',
-    CardTextColor:'#000',
+    CardTextColor:'#text-primary-900',
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Conversational<br/>AI',
     CardDesc: 'Human-centric data solutions for customer-centric decision-making and enhanced engagement',
-    CardDescColor:'text-neutral-dark-grey',
     isArrow: false,
     arrowColor: '#000',
     link: [
@@ -259,8 +258,8 @@ const page = () => {
       {/* ML Expertise */}
       <>
         <SectionWrapper ID={'MLExpertise'} BGColor={'bg-primary-400'}>
-          <div className="container py-32 max-auto flex py-32 lg:py-8 2xl:py-32 -mt-8">
-            <div className="text-left w-full md:w-[40%] flex-1">
+          <div className="container py-32 max-auto flex flex-col md:flex-row gap-x-11 -mt-8">
+            <div className="text-left  flex-1">
               <SectionHeading
                 Heading={'Machine Learning Expertise'}
                 Desc={'We specialize in developing predictive models to forecast market shifts and identify untapped opportunities.'}
@@ -270,20 +269,20 @@ const page = () => {
               </SectionHeading>
             </div>
 
-            <div className=" text-left max-w-screen-xl md:max-w-screen-xl mb-5 mt-5 md:mt-20 flex flex-col md:flex-row flex-1 flex-wrap gap-y-7">
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mt-5 md:mt-20 flex flex-col md:flex-row flex-1 flex-wrap gap-y-7">
               {MLData.map((item, index) => (
                 <div className="flex-1 min-w-[50%]" key={index}>
                   <div className="p-4 pb-0">
-                    <div className="w-[5rem] h-[0.25rem] mb-4 bg-primary-200"></div>
-                    <p className="text-neutral-white text-heading-03 my-3">
+                    <div className="w-[6rem] h-[0.25rem] mb-2 bg-primary-200"></div>
+                    <p className="text-neutral-white font-semibold text-heading-03 my-3">
                       {item.title}
                     </p>
-                    <p className=" text-neutral-white text-body-01 font-normal ">
+                    <p className=" text-neutral-white text-body-01  font-normal ">
                       {item.subTitle}
                     </p>
                     <Link
                       href={item.ctaURL}
-                      className="text-primary-400 invisible text-body-01  w-fit  flex transition-all hover:opacity-75  "
+                      className="text-primary-400 invisible text-body-01 font-medium  w-fit  flex transition-all hover:opacity-75  "
                     >
                       Know More{" "}
                       <Icon
@@ -305,13 +304,11 @@ const page = () => {
         sectionHeading={"Intelligent Technologies Platforms"}
         sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'}
         sectionTextColor="text-primary-900"
-        sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="horizontal"
-        setTop="false"
       >
         <Slider>
           {PlatFormImageList?.map((item, index) => (
-            <SwiperSlide key={index} className="py-32 lg:py-8 2xl:py-32 -mt-8">
+            <SwiperSlide key={index} className="p-8">
                 <Image src={item.url} width={350} height={150}  alt="card-image"/>
             </SwiperSlide>
           ))}
