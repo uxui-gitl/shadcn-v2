@@ -17,6 +17,7 @@ const WhySection = ({
      sectionTextColor={'text-primary-900'}
      sectionDescColor={'text-neutral-darkest-grey'}
      sectionHeadingLayout="left"
+     setTop={false}
     >
 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 2xl:gap-8">
         {arr.map((item, index) => (
