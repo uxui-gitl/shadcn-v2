@@ -106,12 +106,12 @@ const page = () => {
     {
       _id: 2,
       desc: "In-depth understanding of unique business requirements to deliver customized ecommerce solution.",
-      icon: "/ecommerce/distictiveEdge/strongExperience.svg",
+      icon: "/ecommerce/distictiveEdge/In-depthUnderstanding.svg",
     },
     {
       _id: 3,
       desc: "Strategic consultation on future product roadmaps to drive business growth and ecommerce success.",
-      icon: "/ecommerce/distictiveEdge/strongExperience.svg",
+      icon: "/ecommerce/distictiveEdge/StrategicConsultation.svg",
     },
     {
       _id: 4,
@@ -130,7 +130,7 @@ const page = () => {
     },
   ]
 
-  const blogImageUrl = "/ecommerce/blog-bg.webp";
+  const blogImageUrl = "/ecommerce/blogBg.webp";
   const ultimateChoiceData = [
     {
       id: 1,
@@ -238,6 +238,7 @@ const page = () => {
           title: "Whatsapp Conversational Commerce",
           desc:
             "Seamlessly integrate WhatsApp into your ecommerce strategy, enabling personalized customer interactions, automated support, and streamlined ordering.",
+          icon:'/ecommerce/ecommerceCapabilities/whatsapp.svg',
             
         },
     
@@ -245,32 +246,37 @@ const page = () => {
           title: "ERP Integration",
           desc:
             "Unify ecommerce operations with ERP integration, synchronizing inventory, orders and customer data",
-        },
+        icon:'/ecommerce/ecommerceCapabilities/ERP.svg',
+          },
         {
           title: "Order Management Solution",
           desc:
             "Streamline ecommerce operations with a comprehensive Order Management Solution, optimizing fulfillment, inventory management, and customer satisfaction.",
-         
+          icon:'/ecommerce/ecommerceCapabilities/ordermanagement.svg',
         },
         {
           title: "Mobile-Centric Design",
           desc:
             "Elevate mobile commerce with responsive, intuitive ecommerce designs.",
+          icon:'/ecommerce/ecommerceCapabilities/MobileCentric.svg',
         },
           {
           title: "SEO-Friendly",
           desc:
             "Develop search engine-friendly store designs to attract customers. Multi-currency Capabilities - Multilingual and multi-currency support for global audience",
-        },
+        icon:'/ecommerce/ecommerceCapabilities/SEO.svg',
+          },
         {
           title: "Efficient Single-Page Checkouts",
           desc:
             "Checkout process with customised single-page designs, eliminating lengthy forms and enhancing efficiency. ",
-        },
+        icon:'/ecommerce/ecommerceCapabilities/Efficient.svg',
+          },
            {
           title: "Seamless App Integration",
           desc:
             "Integrate applications securely, lower costs, and maintain PCI compliance.",
+             icon:'/ecommerce/ecommerceCapabilities/Seamless.svg',
         },
       ];
 
@@ -403,22 +409,22 @@ const page = () => {
     },
   ]
   const setChallengesList = [
-    { id: 1, title: "Understanding user behavior and successfully converting users into buyers", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Integrating third-party services without compromising performance", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Scaling ecommerce platforms to handle sudden traffic surges", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Customer retention through effective communication strategies", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 5, title: "Ensuring secure payment gateways to protect customer data", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 6, title: "Managing complex products with multiple variants", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 7, title: "Delivering personalized customer experiences across channels", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 8, title: "Streamlining order management to reduce fulfillment times", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 9, title: "Implementing efficient inventory management to minimize stockouts", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 10, title: "Simplifying returns and refund processes for customer satisfaction", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Understanding user behavior and successfully converting users into buyers", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 2, title: "Integrating third-party services without compromising performance", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 3, title: "Scaling ecommerce platforms to handle sudden traffic surges", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 4, title: "Customer retention through effective communication strategies", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 5, title: "Ensuring secure payment gateways to protect customer data", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 6, title: "Managing complex products with multiple variants", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 7, title: "Delivering personalized customer experiences across channels", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 8, title: "Streamlining order management to reduce fulfillment times", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 9, title: "Implementing efficient inventory management to minimize stockouts", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 10, title: "Simplifying returns and refund processes for customer satisfaction", icon: '/upgradeCloud/icons/challengesIcon.svg' },
   ];
 
   const RPASolution = [
     {
       id: 1,
-      cardBGImageUrl: '/ecommerceSolutions/shopify.webp',
+      cardBGImageUrl: '/ecommerce/ecommerceSolutions/1.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Shopify',
       cardDesc: 'A comprehensive platform integrating ecommerce and point-of-sale features for streamlining operations and business expansion',
@@ -429,7 +435,7 @@ const page = () => {
     {
   
       id: 2,
-      cardBGImageUrl: '/ecommerceSolutions/odooCommerce.webp',
+      cardBGImageUrl: '/ecommerce/ecommerceSolutions/2.webp',
       cardBGColor: '#000',
       cardHeading: 'Odoo Commerce',
       cardDesc: 'Elevate online presence with visually appealing online shops and easy checkout',
@@ -440,7 +446,7 @@ const page = () => {
     {
   
       id: 3,
-      cardBGImageUrl: '/ecommerceSolutions/adobeCommerce.webp',
+      cardBGImageUrl: '/ecommerce/ecommerceSolutions/3.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Adobe Commerce',
       cardDesc: 'Attract and engage customers and deliver better shopping experience with advanced ecommerce capabilities',
@@ -451,7 +457,7 @@ const page = () => {
     {
   
       id: 4,
-      cardBGImageUrl: '/ecommerceSolutions/wooCommerce.webp',
+      cardBGImageUrl: '/ecommerce/ecommerceSolutions/4.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'WooCommerce',
       cardDesc: 'Experience in enterprise-grade ecommerce with secure payments, shipping, and inventory management',
@@ -462,7 +468,7 @@ const page = () => {
     {
   
       id: 5,
-      cardBGImageUrl: '/ecommerceSolutions/salesforce.webp',
+      cardBGImageUrl: '/ecommerce/ecommerceSolutions/5.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Salesforce Commerce',
       cardDesc: 'Deliver seamless experiences that appeal to and convert modern shoppers into customers effectively',
@@ -474,7 +480,7 @@ const page = () => {
   
   
       id: 6,
-      cardBGImageUrl: '/ecommerceSolutions/bigCommerce.webp',
+      cardBGImageUrl: '/ecommerce/ecommerceSolutions/6.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'BigCommerce',
       cardDesc: 'Go-to ecommerce solution for established & growing businesses, with online store, SEO, hosting & marketing',
@@ -491,16 +497,16 @@ const page = () => {
         desc="Scalable and Secure Ecommerce Platform for Ambitious Businesses"
         cta="Let's Connect"
         width="60%"
-        video="/ecommerce/video/pageBanner.mp4"
+        video="/ecommerce/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`Our ecommerce expertise enhances brand image, streamlines ordering & drives business growth with visually stunning, technically advanced solutions.`} />
 
       <SectionWrapper BGColor="bg-secondary-900" style={{
-        background: `url('/ecommerce/bgDevelopmentChallenges.webp')`, backgroundRepeat: "no-repeat",     
-        backgroundSize: "cover",
+        background: `url('/ecommerce/Ecommercechallenge.webp')`, backgroundRepeat: "no-repeat",     
+        backgroundSize: "object-fit", backgroundPosition:"center center",
       }}>
         <div className="container mx-auto py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
             <div></div>
             <div>
               <SectionHeading
@@ -574,7 +580,7 @@ const page = () => {
           {keyResponsibilityData?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent min-h-[524px] border-[0.5px] border-neutral-white border-opacity-30 rounded-3xl">
-                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                 <div className="text-heading-02 leading-02 text-neutral-white">{item?.title}</div>
                 <p className="text-paragraph-01 leading-paragraph-01  py-4 text-neutral-white">{item?.desc}</p>
               </div>

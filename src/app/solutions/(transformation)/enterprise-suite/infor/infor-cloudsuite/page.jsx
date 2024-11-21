@@ -213,9 +213,15 @@ const page = () => {
             {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="bg-white rounded-lg">
-                    <img className="rounded-3xl mx-auto md:mx-2" src={item.icon} alt="" />
+                    
+                       <Image className="rounded-3xl mx-auto md:mx-2"
+      src={item.icon}
+      width={48}
+      height={48}
+      alt="Img"/>
+
                   <div className="p-5">
-                      <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">{item.cardTitle}</h5>
+                      <h5 className="mb-4 text-heading-03 leading-heading-02 font-bold text-center md:text-left">{item.cardTitle}</h5>
                   </div>
                  
                 </div>
