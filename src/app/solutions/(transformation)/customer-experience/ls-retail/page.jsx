@@ -54,7 +54,6 @@ const page = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "/lsRetail/caseStudies.webp",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
       title: "Case Studies",
       heading: "Elevating our customer experience with LS Retail",
       description:
@@ -85,7 +84,7 @@ const page = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      videoURL: "/lsRetail/videos/CaseStudy.mp4",
       title: "",
       heading: "Better customer experience with end-to-end visibility",
       description:
@@ -284,10 +283,10 @@ const page = () => {
         desc="Elevate customer experience with unified retail management solutions."
         cta="Let's Connect"
         width="60%"
-        video="/lsRetail/video/pageBanner.mp4"
+        video="/lsRetail/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`LS Central: Unified retail management solution integrating financials, POS, operations, supply chain, and e-commerce for seamless omnichannel experiences`} />
-      <div className="py-32" style={{ background: `url('/lsRetail/solutions/customerExperience.webp')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <div className="py-32" style={{ background: `url('/lsRetail/customerExperience.webp')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <div className="container mx-auto flex justify-center">
           <div style={{ maxWidth: '600px' }}>
             <SectionHeading
