@@ -18,7 +18,7 @@ function CommonCardOne({ Item }) {
     return (
         <>
             <div
-                className={`rounded-3xl shadow min-h-[524px] md:min-h-[264px] 2xl:min-h-[524px] flex flex-col justify-between ${style.commonCardOne}`}
+                className={`rounded-3xl shadow min-h-[524px] md:min-h-[400px] 2xl:min-h-[524px] flex flex-col justify-between ${style.commonCardOne}`}
                 style={{
                     backgroundColor: `${cardBGColor}`,
                     color: cardTextColor,

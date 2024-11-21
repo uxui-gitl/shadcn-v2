@@ -173,7 +173,7 @@ const page = () => {
       >
         <Slider>
           {advanceSolutionCardData?.map((item, index) => (
-            <SwiperSlide key={index} className="mt-8">
+            <SwiperSlide key={index}>
               <CommonCardOne Item={item} />
             </SwiperSlide>
           ))}
