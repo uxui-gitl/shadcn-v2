@@ -512,7 +512,7 @@ export default function Home() {
       {/* [partner Section] */}
 
       <div className="bg-white relative z-10">
-        <div className="container mx-auto pt-40 pb-20 relative">
+        <div className="container mx-auto pt-40 relative">
           <div
             className="absolute"
             style={{
