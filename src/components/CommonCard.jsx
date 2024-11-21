@@ -20,21 +20,20 @@ function CommonCard({ Item, setpageID }) {
     CardDownImageMinHeight = "200px",
     arrowColor = "#FFF",
     additionalData=[],
-    setMinHeight = "524px",
+
   } = Item;
 
-  const cardBodyMinHeight = setpageID === "ai-ml" ? "564px" : "524px";
   console.log(isArrow);
   return (
     <>
       <div
-        className="commonCard mt-5 rounded-3xl min-h-[524px] flex flex-col justify-between border-[0.5px] border-neutral-white border-opacity-10"
+        className="commonCard mt-5 rounded-3xl min-h-[524px]  md:min-h-[484px] lg:min-h-[480px] 2xl:min-h-[524px]: flex flex-col justify-between border-[0.5px] border-neutral-white border-opacity-10"
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,
           color: CardTextColor,
           width: "100%",
-          minHeight: cardBodyMinHeight,
+      
         }}
       >
         <div className="card-body p-5 flex-grow">
@@ -46,13 +45,13 @@ function CommonCard({ Item, setpageID }) {
           )}
           {CardHeading && (
             <h5
-              className={`text-heading-02 leading-heading-02 font-semibold ${CardTextColor}`}
+              className={`text-heading-02 font-semibold ${CardTextColor}`}
               dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}
           {CardDesc && (
             <p
-              className={`${CardDescColor} text-body-01 leading-body-01 my-5 font-normal`}
+              className={`${CardDescColor} text-body-02 my-5 lg:my-3 2xl:my-5 font-normal`}
               dangerouslySetInnerHTML={{ __html: CardDesc }} // Render HTML content
             />
           )}
@@ -65,7 +64,7 @@ function CommonCard({ Item, setpageID }) {
                 >
                   <Link
                     href={list.url}
-                    className="text-body-01 leading-body-01 font-medium w-fit flex transition-all hover:opacity-75"
+                    className="text-body-01 font-medium w-fit flex transition-all hover:opacity-75"
                   >
                     {list.title}
                   </Link>
