@@ -12,6 +12,7 @@ import SectionWithSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import Image from 'next/image'
 const page = () => {
 
   const SERVICE_CARDS_DATA = [
@@ -56,8 +57,8 @@ const page = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: " ",
-      videoURL: "",
+      imageURL: "",
+      videoURL: "/implementation/videos/caseStudy.mp4",
       title: "Case Studies",
       heading: 'Delivering Results that Matters',
       description: "",
@@ -78,7 +79,6 @@ const page = () => {
     {
       imageURL: "/path/to/image1.jpg",
       title: "",
-
       heading: "Improved financial visibility and control",
       description: "Leading Group of Electrical & Electronic Manufacturing Companies in Kingdom of Saudi Arabia Successfully Implements Microsoft D365 Finance & Operations",
       link: "/case-study-1",
@@ -92,7 +92,7 @@ const page = () => {
   const CyberSecurityData = [
     {
       id: 1,
-      cardBGImageUrl: '/implementation/services/endToEnd.svg',
+      cardBGImageUrl: '/implementation/services/endToEnd.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'End to End Implementation',
       cardDesc: 'Employing our best practices we provide effective solution deployment, risk mitigation and complete adoption of the solution.',
@@ -103,7 +103,7 @@ const page = () => {
     {
 
       id: 2,
-      cardBGImageUrl: '/implementation/services/globalRollouts.svg',
+      cardBGImageUrl: '/implementation/services/globalRollouts.webp',
       cardBGColor: '#7F4EE1',
       cardHeading: 'Global Rollouts',
       cardDesc: 'We execute pilot implementation for a few client- designated locations. Following client approval, the solution is deployed to all locations according to the agreed timeline.',
@@ -114,7 +114,7 @@ const page = () => {
     {
 
       id: 3,
-      cardBGImageUrl: '/implementation/services/customization.svg',
+      cardBGImageUrl: '/implementation/services/customization.webp',
       cardBGColor: '#9F0165',
       cardHeading: 'Customization and Integration',
       cardDesc: 'We integrate the right fit technologies, processes, and systems to deliver valuable and unified end-user experience.',
@@ -125,7 +125,7 @@ const page = () => {
     {
 
       id: 4,
-      cardBGImageUrl: '/implementation/services/dataMigration.svg',
+      cardBGImageUrl: '/implementation/services/dataMigration.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Data Migration',
       cardDesc: 'With the responsibility of extracting data from source systems, cleansing it, loading the combined data into the target system, and executing Master Data Governance, we facilitate a smooth transition while reducing testing requirement, downtime and cost overruns',
@@ -136,7 +136,7 @@ const page = () => {
     {
 
       id: 5,
-      cardBGImageUrl: '/implementation/services/reimplementation.svg',
+      cardBGImageUrl: '/implementation/services/reimplementation.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Reimplementation',
       cardDesc: 'Considering the current project scenario, organizational bottlenecks, and perspectives from relevant stakeholders, we eliminate erroneous transactions, re-architect and progress through the project in a simple and structured manner. This ensures that our clients can reclaim the original investments made in ERP systems.',
@@ -157,7 +157,7 @@ const page = () => {
       id: 2,
       cardHeading: "Agile Approach",
       cardDesc: `Repository of ready solutions enables a flexible and adaptive way of working that prioritizes customers' evolving needs.`,
-      icon:'/implementation/virtues/agileApproach.svg'
+      icon:'/implementation/virtues/Agile.svg'
     },
     {
       id: 3,
@@ -201,7 +201,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/implementation/360Degree/peopleCentricity.svg",
+      CardIconUrl: "/implementation/360Degree/people.svg",
       CardHeading: "People Centricity",
       CardDesc:
         "We bring functional and implementation teams together and create bottom-up planning, leveraging expertise and insights for our client.",
@@ -216,7 +216,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/implementation/360Degree/processQuality.svg",
+      CardIconUrl: "/implementation/360Degree/Process.svg",
       CardHeading: "Process Quality",
       CardDesc:
         "We aim to continuously improve every implementation phase, identify areas where enhancements are required and execute them methodically that leads to greater effectiveness.",
@@ -230,7 +230,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/implementation/360Degree/technologyProficiency.svg",
+      CardIconUrl: "/implementation/360Degree/Technology.svg",
       CardHeading: "Technology Proficiency",
       CardDesc:
         "Our expert team is well-versed with pioneering technologies and proficiently implements the right-fit solution to navigate business challenges.",
@@ -244,7 +244,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "white",
       CardTitle: "",
-      CardIconUrl: "/implementation/360Degree/understanding.svg",
+      CardIconUrl: "/implementation/360Degree/Change.svg",
       CardHeading: "Effective Change Management",
       CardDesc:
         "Understanding the obvious resistance to the change, we exercise strong change management practices, ensuring efficient acceptance.",
@@ -356,7 +356,7 @@ const page = () => {
         desc="Expertly Implemented, Globally Delivered"
         cta="Let's Connect"
         width="60%"
-        video="/implementation/video/pageBanner.mp4"
+        video="/implementation/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`25+ years expertise in implementation services, delivering secure rollouts and timely results for global clients.`} />
 
@@ -412,7 +412,12 @@ const page = () => {
             {ImplementationServiceVirtues_DATA.map((item, index) => (
               <SwiperSlide key={item}>
                 <div className="">
-                  <img className="rounded-t-lg pl-4" src={item.icon} alt="Img" />
+                  <Image
+      src={item.icon}
+      width={48}
+      height={48}
+      alt="Img"
+    />
                   <div className="p-5">
                     <h5 className="mb-2 text-heading-02 leading-heading-02 font-bold">{item.cardHeading}</h5>
                     <p>{item.cardDesc}</p>
