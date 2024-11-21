@@ -71,7 +71,7 @@ const config: Config = {
           {
             lineHeight: '1.065', 
             letterSpacing: '-0.02em', 
-            fontWeight: '600',
+            fontWeight: '500',
           },
         ],
         'heading-04': [
