@@ -158,7 +158,7 @@ const Page = () => {
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent]">
                 <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
-                  <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mr-4" />
+                  <Image src={item.icon} width={64} height={64} alt={"Icon"} className="mr-4" />
                   <div className="text-[28px] text-white">{item.title}</div>
                 </div>
                 <p className="text-[20px] py-4 text-white">{item.desc}</p>
