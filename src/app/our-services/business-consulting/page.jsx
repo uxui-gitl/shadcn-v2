@@ -14,6 +14,8 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import 
 ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 
+
+
 const page = () => {
 
   const TESTIMONIAL_DATA = [
@@ -35,12 +37,12 @@ const page = () => {
   ];
 
   const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Inadequate understanding of business and customer perspectives", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Existing or upcoming market conditions ambiguity", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Discord between business vision and strategy", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Innovation challenges and new capabilities deployment", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 5, title: "Absence of enterprise-wide adaptability", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 6, title: "Ineffectual strategy implementation", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Inadequate understanding of business and customer perspectives", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 2, title: "Existing or upcoming market conditions ambiguity", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 3, title: "Discord between business vision and strategy", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 4, title: "Innovation challenges and new capabilities deployment", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 5, title: "Absence of enterprise-wide adaptability", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 6, title: "Ineffectual strategy implementation", icon: '/upgradeCloud/icons/challengesIcon.svg' },
   ];
 
   const ourServices1 = [
@@ -60,7 +62,7 @@ const page = () => {
 const CASE_STUDIES_DATA = [
 {
 imageURL: " ",
-videoURL: "",
+videoURL: "/businessConsulting/videos/caseStudy.mp4",
 title: "Case Studies",
 heading: 'Delivering Results that Matters',
 description: "",
@@ -126,6 +128,9 @@ bgCardColor: '#FCE6F4'
   ]
 
   const blogImageUrl = "/businessConsulting/blog-bg.webp";
+  const imgBGURL_Challenges =
+    "/businessConsulting/knockingBusinessChallenges.webp";
+    
   const HUBEXPERTISE_COUNTER_DATA = [
     {
       start: 10,
@@ -209,7 +214,7 @@ bgCardColor: '#FCE6F4'
         desc="Begin Your Digital Journey with Strategic Consulting Expertise"
         cta="Let's Connect"
         width="60%"
-        video="/businessConsulting/video/pageBanner.mp4"
+        video="/businessConsulting/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
       
@@ -219,6 +224,7 @@ bgCardColor: '#FCE6F4'
             layout="horizontal"
             Color="text-neutral-white"
             headingContainerWidth="w-full"
+            setImageBGURL={imgBGURL_Challenges}
             Heading="Knocking Business Challenges"
             Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
           ></SectionHeading>

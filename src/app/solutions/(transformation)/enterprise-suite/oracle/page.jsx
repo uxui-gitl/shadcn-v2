@@ -93,31 +93,35 @@ const page = () => {
     // Add more cards as needed
   ];
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon: '/oracle/benefits/centralized.svg', cardDesc: 'Centralized data for insightful multidimensional reporting.' },
-    { id: '2', icon: '/oracle/benefits/accelerated.svg', cardDesc: 'Accelerated business operation with regulatory compliance.' },
-    { id: '3', icon: '/oracle/benefits/blockchain.svg', cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
-    { id: '4', icon: '/oracle/benefits/applications.svg', cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
-    { id: '5', icon: '/oracle/benefits/improved.svg', cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
-    { id: '6', icon: '/oracle/benefits/unified.svg', cardDesc: 'Unified financial management and streamlined procurement' },
-    { id: '7', icon: '/oracle/benefits/efficient.svg', cardDesc: 'Efficient project management and enhanced human capital management' },
+    { id: '1', icon: '/oracle/benefits/centralizedData.svg', cardDesc: 'Centralized data for insightful multidimensional reporting.' },
+    { id: '2', icon: '/oracle/benefits/acceleratedBusiness.svg', cardDesc: 'Accelerated business operation with regulatory compliance.' },
+    { id: '3', icon: '/oracle/benefits/preBuiltBlockchain.svg', cardDesc: 'Pre-built blockchain applications for cost-effective, transparent operations.' },
+    { id: '4', icon: '/oracle/benefits/enableIoTapplications.svg', cardDesc: 'Enable IoT applications for enhanced customer experiences and HR.' },
+    { id: '5', icon: '/oracle/benefits/improvedDecisionMaking.svg', cardDesc: 'Improved decision-making and productivity with machine learning enablement' },
+    { id: '6', icon: '/oracle/benefits/unifiedFinancialManagement.svg', cardDesc: 'Unified financial management and streamlined procurement' },
+    { id: '7', icon: '/oracle/benefits/efficientProjectManagement.svg', cardDesc: 'Efficient project management and enhanced human capital management' },
   ];
   const keyResponsibilityData = [
     {
       title: "Financial Management",
       desc: "Track income, expenses and assets while ensuring tax compliance and enhancing forecasting precision.",
+      icon:'/oracle/keyCapabilities/financialManagement.svg'
     },
 
     {
       title: "Supply chain Management",
       desc: "Monitor and manage information and services, spanning from procurement of raw materials to delivery of the final product.",
+      icon:'/oracle/keyCapabilities/SupplyChain.svg'
     },
     {
       title: "Human Capital Management",
       desc: "Experience unified user experience, harmonized data model and integrated processes with an AI-infused infrastructure.",
+      icon:'/oracle/keyCapabilities/HumanCapital.svg'
     },
     {
       title: "Sample Heading",
       desc: "Highest levels of security and privacy, ensuring data is safeguarded",
+      icon:'/oracle/keyCapabilities/SampleHandling.svg'
     },
   ];
   const oracleOfferingData = [
@@ -198,7 +202,7 @@ const page = () => {
         desc="Leading Customer Centric and Cutting-Edge Solution for Enterprises"
         cta="Let's Connect"
         width="60%"
-        video="/oracle/video/pageBanner.mp4"
+        video="/oracle/videos/pageBanner.mp4"
       />
 
       <OverviewSection
@@ -307,9 +311,9 @@ const page = () => {
             }}
           >
             <Image
-              src="/about/whiteStar.svg"
-              width={30}
-              height={30}
+              src={item.icon}              
+              width={56}
+              height={56}
               alt="Star"
               className="mb-4"
             />

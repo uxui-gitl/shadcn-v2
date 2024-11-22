@@ -63,8 +63,7 @@ const page = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+      imageURL: "/salesForceCRM/CaseStudyLeft.webp",
       title: "Case Studies",
       heading: "Elevating Customer Experience",
       description:
@@ -95,7 +94,7 @@ const page = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-      imageURL: "/CloudStackServices/case-studies/bg--electical-devices.png",
+      videoURL: "/salesForceCRM/videos/Casestudy.mp4",
       title: "",
       heading: "Top notch Indian security solutions company implements Salesforce CRM",
       description:
@@ -192,7 +191,7 @@ const page = () => {
         desc="Salesforce CRM: The Future of Customer Relationships"
         cta="Let's Connect"
         width="60%"
-        video="/salesForceCRM/video/pageBanner.mp4"
+        video="/salesForceCRM/videos/pageBanner.mp4"
       />
       <OverviewSection Text={'Salesforce, a top cloud-based CRM, streamlines customer interactions with automation, AI, and 360-degree customer views for enhanced business operations'} />
 

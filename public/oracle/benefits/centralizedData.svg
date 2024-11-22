@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4170ff;
+      }
+
+      .cls-2 {
+        fill: #be00ff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 10px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(-5.89 -62.51)"><tspan class="cls-9" x="0" y="0">C</tspan><tspan x="5.69" y="0">e</tspan><tspan class="cls-7" x="10.7" y="0">n</tspan><tspan x="16.21" y="0">t</tspan><tspan class="cls-6" x="19.52" y="0">r</tspan><tspan x="22.74" y="0">ali</tspan><tspan class="cls-5" x="32.26" y="0">z</tspan><tspan x="36.47" y="0">ed d</tspan><tspan class="cls-8" x="54.88" y="0">a</tspan><tspan x="59.66" y="0">ta </tspan><tspan class="cls-4" x="69.91" y="0">f</tspan><tspan x="72.7" y="0">or </tspan><tspan x="0" y="12">insig</tspan><tspan class="cls-8" x="19.78" y="12">h</tspan><tspan x="25.29" y="12">tful </tspan><tspan x="0" y="24">multidimensional </tspan><tspan class="cls-10" x="0" y="36">r</tspan><tspan x="3.17" y="36">epo</tspan><tspan class="cls-11" x="19.36" y="36">r</tspan><tspan x="22.87" y="36">tin</tspan><tspan class="cls-3" x="34.07" y="36">g</tspan><tspan x="39.51" y="36">. </tspan></text>
+  <path class="cls-1" d="M15.19,37.22h17.63v-4.41H15.19v4.41ZM15.19,28.41h17.63v-4.41H15.19v4.41ZM10.78,46.03c-1.21,0-2.25-.43-3.11-1.29-.86-.86-1.29-1.9-1.29-3.11V6.37c0-1.21.43-2.25,1.29-3.11s1.9-1.29,3.11-1.29h17.63l13.22,13.22v26.44c0,1.21-.43,2.25-1.29,3.11s-1.9,1.29-3.11,1.29H10.78ZM26.2,17.39V6.37h-15.42v35.25h26.44v-24.24h-11.02ZM10.78,6.37v11.02V6.37v35.25V6.37Z"/>
+</svg>

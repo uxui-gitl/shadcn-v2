@@ -25,7 +25,7 @@ import { mdiArrowRight } from "@mdi/js";
 
 const CyberSecurity = () => {
   const blogImageUrl = "";
-  const imgBgURL = "/cyberSecurity/video/pageBanner.mp4";
+  const imgBgURL = "/cyberSecurity/OurPartners.webp";
 
   const HUBEXPERTISE_COUNTER_DATA = [
     {
@@ -146,13 +146,13 @@ const CyberSecurity = () => {
     {
 
 
-      id: 5,
+      id: 6,
       cardBGImageUrl: '/cyberSecurity/ourOfferings/reduceAHT.webp',
       cardBGColor: '#EFE9FB',
       cardHeading: 'Reduce AHT (Average Handling Time)',
       cardDesc: 'Enhance customer service quality, minimize response time and improve operational efficiency',
       isArrow: false,
-      cardTextColor: 'white',
+      cardTextColor: '#fff',
       cardType: 2,
     },
   ];
@@ -293,7 +293,7 @@ const CyberSecurity = () => {
       {/*  */}
       <BlogSection
         ID={"blog"}
-        blogImageUrl={'/homeNew/blog-svg.png'}
+        blogImageUrl={'/cyberSecurity/backgrounds/dynamicCybersecurityBg.webp'}
         Heading={"Dynamic Cybersecurity"}
         Desc={
           "End to End Business Security with Our Cybersecurity Suite.End to End Business Security with Our Cybersecurity Suite"

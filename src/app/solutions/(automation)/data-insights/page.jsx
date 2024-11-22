@@ -207,7 +207,7 @@ const DataInsights = () => {
 
   const CASE_STUDIES_DATA = [
     {
-      imageURL: "",
+      imageURL: "/data-insights/caseStudies.webp",
       title: "Case Studies",
       heading: "Delivering high-performing data solutions globally",
       description: "",

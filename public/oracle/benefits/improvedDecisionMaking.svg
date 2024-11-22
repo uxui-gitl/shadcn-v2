@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #4170ff;
+      }
+
+      .cls-3 {
+        fill: #be00ff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 10px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+
+      .cls-8 {
+        letter-spacing: .01em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="-3.58" y="-8" width="64" height="64"/>
+  <text class="cls-3" transform="translate(-7.21 -71.26)"><tspan class="cls-11" x="0" y="0">I</tspan><tspan x="2.49" y="0">mp</tspan><tspan class="cls-5" x="16.52" y="0">r</tspan><tspan class="cls-6" x="19.69" y="0">o</tspan><tspan class="cls-5" x="25.11" y="0">v</tspan><tspan x="29.82" y="0">ed </tspan><tspan x="0" y="12">decision-ma</tspan><tspan class="cls-7" x="51.04" y="12">k</tspan><tspan x="55.9" y="12">ing and </tspan><tspan x="0" y="24">p</tspan><tspan class="cls-5" x="5.69" y="24">r</tspan><tspan x="8.86" y="24">odu</tspan><tspan class="cls-8" x="25.5" y="24">c</tspan><tspan x="30.11" y="24">tivi</tspan><tspan class="cls-10" x="42.91" y="24">t</tspan><tspan x="46.31" y="24">y with </tspan><tspan x="0" y="36">machine lea</tspan><tspan class="cls-9" x="50.4" y="36">r</tspan><tspan x="53.71" y="36">ning </tspan><tspan x="0" y="48">enableme</tspan><tspan class="cls-4" x="41.79" y="48">n</tspan><tspan x="47.3" y="48">t </tspan></text>
+  <rect class="cls-1" x="-14.63" y="-9.92" width="64" height="64"/>
+  <path class="cls-2" d="M22.65,24.41v-8.61h5.86l-2.34-2.34h-3.51V4.09c0-.66.22-1.22.67-1.67.45-.45,1.01-.67,1.67-.67h5.68c.43,0,.83.11,1.2.32s.65.52.85.91l4.57,8.14h-3.4l-2.34-4.68h-5.39v2.34h3.98l2.34,4.68h6.09l3.46,6.03c-1.02-.43-2.07-.76-3.16-1-1.09-.23-2.21-.35-3.34-.35-2.62,0-5.05.57-7.29,1.7-2.24,1.13-4.11,2.65-5.59,4.57ZM17.97,39.23h-5.68c-.43,0-.83-.11-1.2-.32s-.65-.52-.85-.91l-4.57-8.14h3.4l2.34,4.68h5.39v-2.34h-3.98l-2.34-4.68h-6.09l-3.34-5.86c-.08-.2-.15-.39-.2-.59s-.09-.39-.09-.59c0-.16.1-.55.29-1.17l3.34-5.86h6.09l2.34-4.68h3.98v-2.34h-5.39l-2.34,4.68h-3.4L10.24,2.98c.2-.39.48-.69.85-.91s.77-.32,1.2-.32h5.68c.66,0,1.22.22,1.67.67s.67,1.01.67,1.67v9.37h-3.51l-2.34,2.34h5.86v7.03h-5.15l-2.34-4.68h-5.39l-2.34,2.34h6.32l2.34,4.68h6.56v3.28c-.39.94-.68,1.91-.88,2.93s-.29,2.07-.29,3.16c0,.66.03,1.33.09,1.99s.19,1.33.38,1.99c-.2.2-.44.36-.73.5s-.6.2-.91.2ZM35.54,41.57l7.03-7.03-1.64-1.64-4.22,4.22v-9.6h-2.34v9.6l-4.22-4.22-1.64,1.64,7.03,7.03ZM35.54,46.25c-3.24,0-6-1.14-8.29-3.43-2.28-2.28-3.43-5.05-3.43-8.29s1.14-6,3.43-8.29c2.28-2.28,5.05-3.43,8.29-3.43s6,1.14,8.29,3.43,3.43,5.05,3.43,8.29-1.14,6-3.43,8.29c-2.28,2.28-5.05,3.43-8.29,3.43Z"/>
+</svg>
