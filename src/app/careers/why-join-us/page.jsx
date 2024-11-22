@@ -11,23 +11,27 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 
 const culture = [
   {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
-  {id:2, title:'', desc:'', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-  {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7B014E'},
-  {id:4, title:'Work-life Alignment ', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work', bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
-  {id:5, title:'Rewards and Recognition', desc:'Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.', bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:2, title:'', desc:'', bgImageUrl:'/careers/CoCreativeWorkEnvironment.webp', bgColor:'#7B014E'},
+  {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7b014e'},
+  {id:4, title:'', desc:'', bgImageUrl:'/careers/GrowthOpportunities.webp', bgColor:'#7B014E'},
+  {id:5, title:'Work - life Alignment', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work.', bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:6, title:'', desc:'', bgImageUrl:'/careers/WorkLife.webp', bgColor:'#7B014E'},
+  {id:7, title:'Rewards and Recognition', desc:'Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.', bgImageUrl:'', bgColor:'#7b014e'},
+  {id:8, title:'', desc:'', bgImageUrl:'/careers/RewardsRecognition.webp', bgColor:'#7B014E'},
+  
 ];
 
 
 const benefits=[
-  {id:1,title:'Live Better', desc:'Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.',bgImageUrl:'', bgColor:'#5F22D9'},
-  {id:2,title:'Compassionate Care', desc:'Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.',bgImageUrl:'/careers/over1.svg', bgColor:'#7B014E'},
+  {id:1,title:'Live Better', desc:'Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.',bgImageUrl:'/careers/LiveBetter.webp', bgColor:'#5F22D9'},
+  {id:2,title:'Compassionate Care', desc:'Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.',bgImageUrl:'/careers/CompCare.webp', bgColor:'#7B014E'},
   
 ]
 
 const GuidingPrinciples=[
-  {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.'},
-  {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.'},
-  {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork'},
+  {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.', icon:'/careers/Purpose.svg'},
+  {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.', icon:'/careers/Vision.svg'},
+  {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork', icon:'/careers/Value.svg'},
  
 ]
 
@@ -127,7 +131,7 @@ const Page = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',
-                background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+                background: `url(${item.bgImageUrl}), ${item?.bgColor}`, backgroundPosition:'center center', backgroundSize:'cover',
               }}>
                 {item?.title && (
                   <>
@@ -154,7 +158,7 @@ const Page = () => {
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent]">
                 <div className="flex py-4" style={{ borderBottom: '1px solid #CDBAF3' }}>
-                  <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mr-4" />
+                  <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mr-4" />
                   <div className="text-[28px] text-white">{item.title}</div>
                 </div>
                 <p className="text-[20px] py-4 text-white">{item.desc}</p>
@@ -234,7 +238,7 @@ const Page = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',
-                background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+                background: `url(${item.bgImageUrl}), ${item?.bgColor}`, backgroundPosition:'center center', backgroundSize:'cover',
               }}>
                 <h5 className="mb-3 text-[28px] leading-[36px] max-w-[200px] font-semibold text-white">{item.title}</h5>
                 <p className="mb-3 font-[14px] leading-[22px] text-white">{item.desc}</p>
