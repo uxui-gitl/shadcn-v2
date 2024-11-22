@@ -54,11 +54,11 @@ const page = () => {
   const blogImageUrl = '/managedServices/blog-bg.webp';
 
   const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Unplanned downtime, security risks and inefficient operations.", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Prolonged resolution times, increased errors, and decreased productivity.", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Confront technological advancements and updates in the competitive landscape.", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Need for refinement in incident resolution approach and effective tracking of issues.", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 5, title: "Inconsistent formats and irregular audits of documentation for business process.", icon: '/upgradeCloud/icons/ico--target.svg' },
+    { id: 1, title: "Unplanned downtime, security risks and inefficient operations.", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 2, title: "Prolonged resolution times, increased errors, and decreased productivity.", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 3, title: "Confront technological advancements and updates in the competitive landscape.", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 4, title: "Need for refinement in incident resolution approach and effective tracking of issues.", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+    { id: 5, title: "Inconsistent formats and irregular audits of documentation for business process.", icon: '/upgradeCloud/icons/challengesIcon.svg' },
   ];
 
   const DATA_MGMT_DATA = [
@@ -168,7 +168,7 @@ const page = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
-      videoURL: "/CloudStackServices/case-studies/bg--businessman-industry.mp4",
+      videoURL: "/managedServices/videos/casestudy.mp4",
       title: "",
       heading: "Managed Services Projects Highlights",
       description:
@@ -290,7 +290,7 @@ const page = () => {
         desc="Managed IT Services Experts"
         cta="Let's Connect"
         width="60%"
-        video="/managedServices/pageBanner.mp4"
+        video="/managedServices/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you to focus on core business`} />
 
