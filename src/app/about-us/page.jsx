@@ -75,7 +75,7 @@ const ContactUs = () => {
     {
       id: 4,
       name: "Samik Bandyopadhyay",
-      designation: "Charted Accountant",
+      designation: "Finance Head",
       shortDesc: ``,
       longDesc: `
       Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
@@ -539,12 +539,12 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
   ];
   const data = [
     {
-      title: "2021",
+      title: "2021 - Present",
       content: (
         <>
           <div className="">
             <h2 className="text-heading-03">
-              Present - Sustaining Holistic Excellence
+              Sustaining Holistic Excellence
             </h2>
             <div className="my-5">
               {DATA_2021_Present.map((item, index) => (
@@ -567,7 +567,7 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
       ),
     },
     {
-      title: "2016",
+      title: "2016 - 2020",
       content: (
         <>
           <div className="">
@@ -595,7 +595,7 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
       ),
     },
     {
-      title: "2011",
+      title: "2011 - 2015",
       content: (
         <>
           <div className="">
@@ -620,8 +620,10 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
         </>
       ),
     },
+
+    
     {
-      title: "2005",
+      title: "2005 - 2010",
       content: (
         <>
           <div className="">
@@ -647,7 +649,7 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
       ),
     },
     {
-      title: "1999",
+      title: "1999 - 2004",
       content: (
         <>
           <div className="">
