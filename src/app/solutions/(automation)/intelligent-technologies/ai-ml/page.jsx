@@ -210,11 +210,12 @@ const blogImageUrl = '/ai-ml/blogBg.webp';
 
 
 const PlatFormImageList = [
-  { id: 1, url: '/ai-ml/itPlatforms/microsoftAzureML.svg' },
-  { id: 2, url: '/ai-ml/itPlatforms/openAiChatGPT.svg' },
-  { id: 3, url: '/ai-ml/itPlatforms/googleGemini.svg' },
-  { id: 4, url: '/ai-ml/itPlatforms/metaLlama.svg' },
-  { id: 5, url: '/ai-ml/itPlatforms/replicate.svg' },
+  { id: 1, url: '/ai-ml/itPlatforms/MicrosoftAzureML.svg'},
+  { id: 2, url: '/ai-ml/itPlatforms/OpenAiChatGPT.svg' },
+  { id: 3, url: '/ai-ml/itPlatforms/GoogleGemini.svg' },
+  { id: 4, url: '/ai-ml/itPlatforms/MetaLlama.svg' },
+  { id: 5, url: '/ai-ml/itPlatforms/Replicate.svg' },
+  { id: 6, url: '/ai-ml/itPlatforms/TensorFlow.svg' },
 
 ]
 
