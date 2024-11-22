@@ -33,9 +33,12 @@ const GuidingPrinciples=[
 
 const BuildingCapability=[
   {id:1,title:'GITL Learning Academy ', desc:'An online knowledge hub offering interactive learning modules to upskill and reskill employees.'},
-  {id:2,title:'Leap', desc:'(Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression.'},
+  {id:2,title:'Leap', desc:'Targeted and transformative training programs for future-ready leadership'},
   {id:3,title:'Khoj ', desc:`A dynamic platform for celebrating and showcasing employees' talents beyond work.`},
  {id:4,title:'Dimensions', desc:'Accelerating career for Entry-Level Trainee Programmers with comprehensive training and swift deployment'},
+ {id:5,title:'Speed', desc:'Internal certification program including Train-The-Trainer, Agile-SCRUM and specialized technical training.'},
+ {id:6,title:'Ignite', desc:'Stay updated, learn and grow with Annual Learning & Development Theme GITL Learning - Transform learning experience with advanced custom learning management system. '},
+ {id:7,title:'LEAP', desc:' (Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression. '},
  
   
 ]
@@ -276,8 +279,8 @@ const Page = () => {
 
            {/* joy at work section */}
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
-        sectionHeading="Unleashing Joy at Work"
-        sectionDesc={`Discover the heartwarming stories of our employees as they reveal their joyful experiences at work. From moments of triumph to instances of camaraderie, their testimonials showcase a workplace`}
+        sectionHeading="Employee Experience - The People Behind Our Purpose"
+        sectionDesc={`Explore glimpses of inspiring career journeys, highlighting dynamic work environment, collaborative experiences and opportunities for development and professional growth.  `}
         sectionTextColor='#fff'
         sectionHeadingLayout="center"
       >
