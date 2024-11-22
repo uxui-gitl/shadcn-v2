@@ -51,20 +51,20 @@ function ServiceOfferingSection({
   return (
     <>
       <SectionWrapper id={ID} BGColor={sectionBGColor}>
-        <div className="md:container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-          <div className="py-32 px-5">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+          <div className= "py-32 lg:py-8 2xl:py-32">
             <SectionHeading
               Heading={sectionHeading}
               Desc={sectionDesc}
               Color={sectionTextColor}
               headingContainerWidth="w-full"
             />
-            <div className="mt-5">
+            <div className="mt-2">
               {LinkListData.map((item) => (
                 <div
                   key={item?.id}
                   onClick={() => handleClick(item)}
-                  className="flex items-center justify-between py-5 text-[24px] font-medium text-white cursor-pointer border-b-2 border-white"
+                  className="flex items-center justify-between py-4 text-body-01 text-white cursor-pointer border-b-2 border-white"
                 >
                   {item?.beforeIconUrl && (
                     <svg
@@ -83,7 +83,7 @@ function ServiceOfferingSection({
                       />
                     </svg>
                   )}
-                  <span className="w-full text-[18px] md:text-[28px]">
+                  <span className="w-full text-body-01">
                     {item.text}
                   </span>
                   {item?.isArrowIconVisiable && (

@@ -30,7 +30,7 @@ const ContactUs = () => {
     // {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
     {
       id: 1,
-      name: "Mr. Ajay Pimparkar",
+      name: "Ajay Pimparkar",
       designation: "Chief Executive Officer",
       shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company`,
       longDesc: `
@@ -45,7 +45,7 @@ const ContactUs = () => {
     },
     {
       id: 2,
-      name: "Mr. Ashwin Mistry",
+      name: "Ashwin Mistry",
       designation: "Vice President - IT",
       shortDesc: ``,
       longDesc: `
@@ -870,11 +870,11 @@ __html: readMoreItem?.longDesc || "",
         sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="center"
       >
-        <Slider slidesPerView={4}>
+        <Slider slidesPerView={5}>
           {CSUITE_DATA?.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`max-w-sm h-[512px] p-5 rounded-3xl border-[0.5px] border-neutral-light-grey`}
+                className={`max-w-sm h-[420px] p-3 rounded-3xl border-[0.5px] border-neutral-light-grey`}
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -887,18 +887,18 @@ __html: readMoreItem?.longDesc || "",
               >
                 {item?.name && (
                   <>
-                    <h5 className="mb-3 text-heading-03 font-medium text-white">
+                    <h5 className="mb-2 text-heading-04 font-medium text-white">
                       {item?.name}
                     </h5>
                   </>
                 )}
                 {item?.designation && (
-                  <p className="mb-6 text-body-01 leading-[22px] text-white">
+                  <p className="mb-2 text-size-[12px] text-white">
                     {item?.designation}
                   </p>
                 )}
                 <div
-                  className="text-white flex items-center cursor-pointer"
+                  className="text-white text-size-[12px] flex items-center cursor-pointer"
                   onClick={() => readMore(true, item)}
                 >
                   Read their stories{" "}

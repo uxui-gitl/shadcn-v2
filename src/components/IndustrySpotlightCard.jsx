@@ -54,13 +54,13 @@ function CommonCardTwo({ Item }) {
       {/* Content Container */}
       <div className="p-5 flex-grow relative z-1"> {/* Relative positioning for stacking context */}
         {cardTitle && (
-          <div className=" text-secondary-400 text-label-01 leading-label-01 mb-12">
+          <div className=" text-secondary-400 text-body-01 mb-12">
             {cardTitle}
           </div>
         )}
         {cardHeading && (
           <h5
-            className={`text-heading-02 leading-heading-02 font-semibold text-neutral-white ${style.cardHeading}`}
+            className={`text-heading-02 font-semibold text-neutral-white ${style.cardHeading}`}
             dangerouslySetInnerHTML={{ __html: cardHeading }}
           />
         )}

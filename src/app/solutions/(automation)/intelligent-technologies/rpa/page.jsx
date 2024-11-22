@@ -6,7 +6,7 @@ import SectionNav from "@/components/SectionNav";
 
 import uiPath from "../../../../../../public/logos/rpa/uiPath.svg";
 import automationAnywhere from "../../../../../../public/logos/rpa/automation-anywhere.svg";
-import powerAutomate from "../../../../../../public/logos/rpa/microsoft-power-automate-logo.jpg";
+import powerAutomate from "../../../../../../public/logos/rpa/power-automate.svg";
 
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from "@/components/SectionHeading";
@@ -286,7 +286,7 @@ const page = () => {
       <SectionWrapperNew
         bgColor={"bg-primary-10"}
         sectionHeading={
-          "Why Consider RPA (Robotic Process Automation) for Your Business?"
+          "Why Consider RPA for Your Business?"
         }
         sectionDesc={""}
         sectionTextColor="text-primary-900"
@@ -311,11 +311,12 @@ const page = () => {
         }
         sectionTextColor={"text-primary-900"}
         sectionHeadingLayout="horizontal"
+        setTop={false}
       >
         <Slider>
           {[uiPath, powerAutomate, automationAnywhere]?.map((item, index) => (
             <SwiperSlide key={index} className="p-8">
-              <Image src={item} width={350} height={100} />
+              <Image src={item} width={320} height={100} />
             </SwiperSlide>
           ))}
         </Slider>

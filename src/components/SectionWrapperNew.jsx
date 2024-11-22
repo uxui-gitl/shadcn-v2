@@ -12,7 +12,7 @@ function SectionWrapperNew({
     bgColor,
     children,
     txtLinearGradient='',
-    setTop=true,
+    setTop='true',
 }) {
 
   
