@@ -1,7 +1,7 @@
 
 import SectionWrapperNew from '@/components/SectionWrapperNew'
 import LeftHeading from '@/components/LeftHeading';
-function ContactBanner({height='60vh' , bannerImage='/contact/contact-banner.svg', title="Let’s Connect", desc="We enable global businesses to Automate Cloud & Transform for a sustainable and inclusive future."}) {
+function ContactBanner({height='90vh' , bannerImage='/contact/contact-banner.svg', title="Let’s Connect", desc="We enable global businesses to Automate Cloud & Transform for a sustainable and inclusive future."}) {
     return (
         <>
             <div className="py-32 " style={{
