@@ -7,16 +7,16 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
             <div
                 tabIndex="-1"
                 className={`${shouldShow ? 'translate-y-0' : 'translate-y-full hidden'} 
-                duration-500 fixed top-0 left-0 right-0 z-[1050] w-full h-screen flex items-center justify-center  bg-gray-800 bg-opacity-50`}
+                duration-500 fixed top-0 left-0 right-0 z-[1050] w-full h-screen  flex items-center justify-center bg-gray-800 bg-opacity-50`}
             >
                 <div
-                    className="relative container mx-auto w-full h-screen bg-white rounded-lg shadow-lg overflow-y-scroll"
+                    className="relative container-fluid w-3/4 min-h-[50vh] bg-white rounded-3xl overflow-y-scroll"
                 >
                     {/* Modal content */}
-                    <div className={`relative bg-[${bgColor}] rounded-lg shadow`}>
+                    <div className={`relative bg-[${bgColor}] rounded-3xl`}>
                         {/* Modal header */}
                         <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                            <h3 className="text-modal-heading-01 leading-modal-heading-01 font-bold text-primary-900">{title}</h3>
+                            <h3 className="text-heading-04 font-bold text-primary-900">{title}</h3>
                             <button
                                 type="button"
                                 className="text-neutral-white bg-primary-400 hover:bg-primary-600 hover:text-neutral-white 
@@ -48,7 +48,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                             <button
                                 type="button"
                                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
-                                focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 text-center 
+                                focus:ring-blue-300  rounded-3xl text-sm px-5 py-2.5 text-center 
                                 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             >
                                 I accept

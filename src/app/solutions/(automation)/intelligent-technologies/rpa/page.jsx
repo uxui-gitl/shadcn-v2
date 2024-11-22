@@ -4,9 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import SectionNav from "@/components/SectionNav";
 
-import uiPath from "../../../../../../public/logos/rpa/uiPath.svg";
-import automationAnywhere from "../../../../../../public/logos/rpa/automation-anywhere.svg";
-import powerAutomate from "../../../../../../public/logos/rpa/power-automate.svg";
+
 
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionHeading from "@/components/SectionHeading";
@@ -20,6 +18,11 @@ import SectionWrapperNew from "@/components/SectionWrapperNew";
 import { SwiperSlide } from "swiper/react";
 import Slider from "@/components/Slider";
 import CommonCardTwo from "@/components/CommonCardTwo";
+
+
+const uiPath = '/logos/rpa/uiPath.svg';
+const automationAnywhere = '/logos/rpa/automation-anywhere.svg';
+const powerAutomate = '/logos/rpa/power-automate.svg';
 
 const RPASolution = [
   {

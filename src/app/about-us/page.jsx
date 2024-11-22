@@ -554,8 +554,8 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
                     key={index}
                     style={{ borderBottom: "1px solid #E4E4E4" }}
                   >
-                    <span className="text-paragraph-01 text-[#808080]">{}</span>
-                    <p className="text-paragraph-01 text-[#808080]  ">
+                    <span className="text-paragraph-01 text-neutral-darkest-grey">{}</span>
+                    <p className="text-paragraph-01 text-neutral-darkest-grey  ">
                       {item.Desc}
                     </p>
                   </div>
@@ -580,10 +580,10 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
                     key={index}
                     style={{ borderBottom: "1px solid #E4E4E4" }}
                   >
-                    <span className="text-paragraph-01 text-[#808080] ">
+                    <span className="text-paragraph-01 text-neutral-darkest-grey ">
                       {}
                     </span>
-                    <p className="text-paragraph-01 text-[#808080]  ">
+                    <p className="text-paragraph-01 text-neutral-darkest-grey  ">
                       {item.Desc}
                     </p>
                   </div>
@@ -608,8 +608,8 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
                     key={index}
                     style={{ borderBottom: "1px solid #E4E4E4" }}
                   >
-                    <span className="text-paragraph-01 text-[#808080]">{}</span>
-                    <p className="text-paragraph-01 text-[#808080] ">
+                    <span className="text-paragraph-01 text-neutral-darkest-grey">{}</span>
+                    <p className="text-paragraph-01 text-neutral-darkest-grey ">
                       {item.Desc}
                     </p>
                   </div>
@@ -634,8 +634,8 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
                     key={index}
                     style={{ borderBottom: "1px solid #E4E4E4" }}
                   >
-                    <span className="text-paragraph-01 text-[#808080]">{}</span>
-                    <p className="text-paragraph-01 text-[#808080] ">
+                    <span className="text-paragraph-01 text-neutral-darkest-grey">{}</span>
+                    <p className="text-paragraph-01 text-neutral-darkest-grey ">
                       {item.Desc}
                     </p>
                   </div>
@@ -662,8 +662,8 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
                     key={index}
                     style={{ borderBottom: "1px solid #E4E4E4" }}
                   >
-                    <span className="text-paragraph-01 text-[#808080]">{}</span>
-                    <p className="text-paragraph-01 text-[#808080] ">
+                    <span className="text-paragraph-01 text-neutral-darkest-grey">{}</span>
+                    <p className="text-paragraph-01 text-neutral-darkest-grey">
                       {item.Desc}
                     </p>{" "}
                   </div>
@@ -715,7 +715,7 @@ Throughout her illustrious career, Ms. Raj has consistently demonstrated leaders
         <div className="">
           <div className="container flex flex-col md:flex-row items-center md:items-start p-2">
             {/* Left Side: Image */}
-            <div className=" w-full md:w-1/3 mb-6 md:mb-0 flex justify-left">
+            <div className=" w-full md:w-1/3 mb-6 rounded-3xl md:mb-0 flex justify-left">
             <Image
       src={readMoreItem?.bgImageUrl} // Using dynamic image URL
       alt="CEO"
@@ -804,7 +804,7 @@ __html: readMoreItem?.longDesc || "",
                     src={item.icon}
                     width={64}
                     height={64}
-                    alt={"hioasdo"}
+                    alt={"icon"}
                     className="mr-4 -mt-2"
                   />
                   <div className="text-heading-02 text-white">{item.title}</div>
@@ -882,7 +882,7 @@ __html: readMoreItem?.longDesc || "",
                   background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
                   //background: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(${item.bgImageUrl}), ${item?.bgColor}`,
                   backgroundSize:'cover',
-                  backgroundPosition:'center center'
+                  backgroundPosition:'bottom center'
                 }}
               >
                 {item?.name && (
@@ -1016,7 +1016,7 @@ __html: readMoreItem?.longDesc || "",
                   </div>
 
                   {/* Description */}
-                  <div className="text-body-01 w-full md:w-[70%]">
+                  <div className="text-base w-full md:w-[70%]">
                     {item.desc}
                   </div>
                 </div>
@@ -1038,19 +1038,19 @@ __html: readMoreItem?.longDesc || "",
         <Slider slidesPerView={"4"}>
           {KeyPolicies_DATA.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-5 mt-5 rounded-3xl shadow border-[0.5px] border-neutral-light-grey transition-all duration-300 ease-in-out group hover:bg-neutral-light-grey">
+              <div className="p-5 mt-5 min-h-[300px] rounded-3xl shadow border-[0.5px] border-neutral-light-grey transition-all duration-300 ease-in-out group hover:bg-neutral-light-grey">
                 {/* Title */}
-                <h6 className="text-heading-04 font-semibold mb-6">
+                <h6 className="text-heading-04 font-semibold mb-4">
                   {item.title}
                 </h6>
 
                 {/* Description */}
-                <p className="text-body-01 text-neutral-dark-grey mb-[6rem]">
-                  {}
+                <p className="text-[14px] text-neutral-dark-grey mb-[4rem]">
+                  {item.Desc}
                 </p>
 
                 {/* Chevron Icon */}
-                <div className="flex justify-end">
+                <div className="flex justify-end absolute right-0 bottom-0 p-3">
                   <Image
                     src="/about/chevron-right.png"
                     width={25}
