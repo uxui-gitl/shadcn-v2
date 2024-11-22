@@ -181,15 +181,15 @@ const Page = () => {
             <h3 className="text-[54px] leading-[64px] font-semibold mb-3">{`From the CEO’s Desk`}</h3>
             <p className="text-[#808080] text-[32px] mb-6">{`-	Mr. Ajay Pimparkar`} </p>
 
-            <div className="text-[20px] text-[#1D162B] font-medium mb-10">
+            <div className="text-[20px] text-[#1D162B] font-medium mb-5">
             {`At Godrej Infotech, we're driven by a shared passion for delivering value to our customers. Our team is dedicated to making a meaningful impact. We believe in purpose-driven work that fosters growth, innovation and fulfillment. Godrej Infotech strives to create an environment where individuals can thrive and contribute to something larger than themselves.`}
             </div>
 
-            <div className="text-[20px] text-[#1D162B] font-medium mb-10">
+            <div className="text-[20px] text-[#1D162B] font-medium mb-5">
             {`Our culture is built on collaboration, open communication and mutual respect. We empower our teams to take ownership, experiment with new ideas and drive positive change. Professional development and well-being are integral to our values, ensuring our people flourish.`}
             </div>
 
-            <div className="text-[20px] text-[#1D162B] font-medium mb-10">
+            <div className="text-[20px] text-[#1D162B] font-medium mb-5">
             {`We invest in our people, providing opportunities for development, recognition and rewards.  Join us on this journey and contribute your unique talents and perspectives.`}
             </div>
             <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more</button>
