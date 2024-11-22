@@ -1,7 +1,7 @@
 "use client";
 // system import
 import Image from "next/image";
-import React, { useRef , useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Slider from "@/components/Slider";
 import SectionWrapperNew from "@/components/SectionWrapperNew";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
@@ -9,9 +9,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-} from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
@@ -385,129 +383,136 @@ export default function Home() {
       </div>
       {/* banner slider */}
       <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh]">
-  <div className="video relative h-full">
-    {/* Background Video */}
-    <video
-      src="/home/1.mp4"
-      autoPlay
-      loop
-      muted
-      className="absolute inset-0 w-full h-full object-cover"
-    ></video>
+        <div className="video relative h-full">
+          {/* Background Video */}
+          <video
+            src="/home/1.mp4"
+            autoPlay
+            loop
+            muted
+            className="absolute inset-0 w-full h-full object-cover"
+          ></video>
 
-    {/* Overlay Image */}
-    <div
-      className={`absolute inset-0 transition duration-700 ${
-        sliderImageUrl ? "opacity-100 ease-in-out" : "opacity-0 ease-in-out"
-      }`}
-      style={{
-        backgroundImage: `url(${sliderImageUrl})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    ></div>
-
-    {/* Headline */}
-    <div className="container headline-position mx-auto text-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
-      Delivering Business<br /> value with
-      {items4[index] && (
-        <motion.div
-          key={`item4-${items4[index].id}`}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.2 }}
-          className="inline-block"
-        >
-          <span className="text-neutral-white md:ml-2">
-            {items4[index].content}.
-          </span>
-        </motion.div>
-      )}
-    </div>
-
-    {/* Horizontal Line */}
-    <hr className="absolute top-[50vh] md:top-[55vh] left-0 right-0 h-px bg-white bg-opacity-20 border-0"></hr>
-
-    {/* Slider Section */}
-    <div className="container mx-auto absolute w-full left-0 right-0 bottom-[10vh] ">
-      <div className="flex flex-wrap justify-between items-center">
-        {/* Slider Content */}
-        <div className="w-full md:w-[80%]">
-          <Swiper
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+          {/* Overlay Image */}
+          <div
+            className={`absolute inset-0 transition duration-700 ${
+              sliderImageUrl
+                ? "opacity-100 ease-in-out"
+                : "opacity-0 ease-in-out"
+            }`}
+            style={{
+              backgroundImage: `url(${sliderImageUrl})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
-            autoplay={false}
-            loop={true}
-            spaceBetween={30}
-            modules={[Navigation]}
-          >
-            {sliderData?.map((item, index) => (
-              <SwiperSlide key={item.id}>
-                <div className="w-full py-6 md:py-2 xl:py-2 bg-transparent rounded-3xl">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <motion.div
-                      ref={ref}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      initial={{ y: 100, opacity: 0 }}
-                      transition={{ duration: 0.5, delay: 0.4 }}
-                    >
-                      <div className="text-heading-04 font-bold text-neutral-white">
-                        {item.title}
-                      </div>
-                    </motion.div>
-                    <motion.div
-                      className="col-span-2"
-                      ref={ref}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      initial={{ y: 100, opacity: 0 }}
-                      transition={{ duration: 0.5, delay: 0.5 }}
-                    >
-                      <p className="text-body-01 text-white mb-6 md:mb-4">
-                        {item.desc}
-                      </p>
-                      <button
-                        type="button"
-                        className="text-body-01 text-neutral-white border border-white  hover:bg-neutral-white hover:text-primary-900 rounded-full px-4 py-2"
-                        onMouseOver={() => handleReadMoreHover(item, true)}
-                        onMouseOut={() => handleReadMoreHover(item, false)}
-                      >
-                        Read more
-                      </button>
-                    </motion.div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+          ></div>
 
-        {/* Slider Navigation Buttons */}
-        <div className="w-full absolute left-[-1rem] top-[1rem] md:w-[20%] md:relative md:left-0 md:right-0 flex justify-end space-x-4 md:p-6">
-          <button className="swiper-button-prev flex items-center justify-center !left-0 w-14 h-14">
-            <Image
-              src="/homeNew/btn-arrows-left.svg"
-              alt="Prev"
-              width={56}
-              height={56}
-            />
-          </button>
-          <button className="swiper-button-next flex items-center justify-center w-14 h-14">
-            <Image
-              src="/homeNew/btn-arrows-right.svg"
-              alt="Next"
-              width={56}
-              height={56}
-            />
-          </button>
+          {/* Headline */}
+          <div className="container headline-position mx-auto text-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
+            Delivering Business
+            <br /> value with
+            {items4[index] && (
+              <motion.div
+                key={`item4-${items4[index].id}`}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.2 }}
+                className="inline-block"
+              >
+                <span className="text-neutral-white md:ml-2">
+                  {items4[index].content}.
+                </span>
+              </motion.div>
+            )}
+          </div>
+
+          {/* Horizontal Line */}
+          <hr className="absolute top-[50vh] md:top-[55vh] left-0 right-0 h-px bg-white bg-opacity-20 border-0"></hr>
+
+          {/* Slider Section */}
+          <div className="container mx-auto absolute w-full left-0 right-0 bottom-[10vh] ">
+            <div className="flex flex-wrap justify-between items-center">
+              {/* Slider Content */}
+              <div className="w-full md:w-[80%]">
+                <Swiper
+                  slidesPerView={1}
+                  navigation={{
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  }}
+                  autoplay={false}
+                  loop={true}
+                  spaceBetween={30}
+                  modules={[Navigation]}
+                >
+                  {sliderData?.map((item, index) => (
+                    <SwiperSlide key={item.id}>
+                      <div className="w-full py-6 md:py-2 xl:py-2 bg-transparent rounded-3xl">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <motion.div
+                            ref={ref}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            initial={{ y: 100, opacity: 0 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                          >
+                            <div className="text-heading-04 font-bold text-neutral-white">
+                              {item.title}
+                            </div>
+                          </motion.div>
+                          <motion.div
+                            className="col-span-2"
+                            ref={ref}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            initial={{ y: 100, opacity: 0 }}
+                            transition={{ duration: 0.5, delay: 0.5 }}
+                          >
+                            <p className="text-body-01 text-white mb-6 md:mb-4">
+                              {item.desc}
+                            </p>
+                            <button
+                              type="button"
+                              className="text-body-01 text-neutral-white border border-white  hover:bg-neutral-white hover:text-primary-900 rounded-full px-4 py-2"
+                              onMouseOver={() =>
+                                handleReadMoreHover(item, true)
+                              }
+                              onMouseOut={() =>
+                                handleReadMoreHover(item, false)
+                              }
+                            >
+                              Read more
+                            </button>
+                          </motion.div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+
+              {/* Slider Navigation Buttons */}
+              <div className="w-full absolute left-[-1rem] top-[1rem] md:w-[20%] md:relative md:left-0 md:right-0 flex justify-end space-x-4 md:p-6">
+                <button className="swiper-button-prev flex items-center justify-center !left-0 w-14 h-14">
+                  <Image
+                    src="/homeNew/btn-arrows-left.svg"
+                    alt="Prev"
+                    width={56}
+                    height={56}
+                  />
+                </button>
+                <button className="swiper-button-next flex items-center justify-center w-14 h-14">
+                  <Image
+                    src="/homeNew/btn-arrows-right.svg"
+                    alt="Next"
+                    width={56}
+                    height={56}
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
       {/* [partner Section] */}
 
@@ -545,10 +550,10 @@ export default function Home() {
               <SwiperSlide key={index}>
                 <Image
                   src={item}
-                  width={100}
-                  height={100}
+                  width={130}
+                  height={130}
                   alt="Logos"
-                  className="brightness-110 hover:brightness-0 mb-6"
+                  className="brightness-0 hover:brightness-100 mb-6 cursor-pointer"
                 />
               </SwiperSlide>
             ))}
@@ -651,7 +656,11 @@ export default function Home() {
             <SwiperSlide key={index}>
               <div
                 className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px]"
-                style={{ backgroundImage: `url(${item.cardBgImg})`, backgroundSize:'cover', backgroundPosition:'bottom center' }}
+                style={{
+                  backgroundImage: `url(${item.cardBgImg})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "bottom center",
+                }}
               >
                 {item?.cardTitle && (
                   <div className="text-body-01 text-neutral-white mb-[100px] ">
@@ -742,8 +751,6 @@ export default function Home() {
         sectionDescColor="text-neutral-dark-grey"
         title="Count on Us"
         sectionHeadingLayout="center"
-       
-      
       >
         <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs
@@ -772,7 +779,6 @@ export default function Home() {
           "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future. "
         }
         Color={"text-neutral-white"}
-        
       >
         <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start mt-6">
           <Link
@@ -839,7 +845,7 @@ export default function Home() {
         }}
         title={businessItem.cardHeading}
       >
-        <div className="py-10">
+        <div className="py-2">
           <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
         </div>
       </Dialog>
@@ -862,9 +868,7 @@ const ServiceContent = () => {
       <div className="px-5 py-8">
         {services.map((item) => (
           <>
-                    <div
-  className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
->
+            <div className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0">
               {item}
               <Image
                 width={35}
@@ -903,9 +907,7 @@ const IndustryContent = () => {
       <div className="px-5 py-8">
         {data.map((item) => (
           <>
-         <div
-  className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
->
+            <div className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0">
               {item}
               <Image
                 width={35}
@@ -942,12 +944,10 @@ const ParternerContent = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-       <div className="px-5 py-8">
+      <div className="px-5 py-8">
         {data.map((item) => (
           <>
-                 <div
-  className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
->
+            <div className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0">
               {item}
               <Image
                 width={35}

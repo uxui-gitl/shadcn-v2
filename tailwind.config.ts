@@ -30,7 +30,7 @@ const config: Config = {
       fontSize: {
        
         'display-01': [
-          ' calc(clamp(3.25rem, 7vw, 8rem) * .875)', 
+          ' calc(clamp(3.25rem, 6.5vw, 7rem) * .875)', 
           {
             lineHeight: '1', 
             letterSpacing: '-0.02em', 
