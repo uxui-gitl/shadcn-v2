@@ -17,7 +17,7 @@ const IIOT = () => {
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",
-      videoURL: "/CloudStackServices/case-studies/bg--businessman-industry.mp4",
+      videoURL: "/iiot/videos/LowCodeNoCode.mp4",
       title: "IIoT Solutions",
       heading: "Low Code, No Code Configurable Portals on Azure or AWS IIOT",
       description:

@@ -75,7 +75,7 @@ const ContactUs = () => {
     {
       id: 4,
       name: "Samik Bandyopadhyay",
-      designation: "VP, Finance",
+      designation: "Finance Head",
       shortDesc: ``,
       longDesc: `
       Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
@@ -90,11 +90,11 @@ const ContactUs = () => {
       designation: "VP, Human Resource",
       shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
       longDesc: `
-      <p>An influential HR premier, with her astute vision has been an instrumental force in driving executive decisions of organisation and seamlessly integrating people and technology. With her ardent drive to thrive, she has been inspiring employees in advancing their growth. </p>
-      <p className="mt-4">Throughout her illustrious career, Ms. Raj has consistently demonstrated leadership excellence. Joining Godrej Group as a Management Trainee, she quickly excelled in Industrial Relations and Human Resources for Godrej & Boyce's Precision Equipment Division. Subsequent roles as Head of Recruitment (2000) and Head HRD for Godrej Infotech (2003) solidified her reputation as a strategic thinker and inspirational leader. </p>
-      <p className="mt-4">Ms. Raj's impact extends beyond organizational boundaries. Her commitment to corporate social responsibility, synergy development and brand awareness has created lasting value. As a respected industry expert, she influences stakeholders, builds effective relationships and encourages innovative thinking. </p>
-      <p className="mt-4">A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience. </p>
-      `,
+      <p>She has been an instrumental force in driving strategic decisions for seamlessly integrating people and technology. 
+Throughout her illustrious career, Ms. Raj has consistently demonstrated leadership excellence. Joining Godrej Group as a Management Trainee, she quickly excelled in Industrial Relations and Human Resources for Godrej & Boyce's Precision Equipment Division. Subsequent roles as Head of Recruitment (2000) and Head HRD for Godrej Infotech (2003) solidified her reputation as a strategic thinker and inspirational leader.</p>
+      <p>Ms. Raj's impact extends beyond organizational boundaries. Her commitment to corporate social responsibility, synergy development and brand awareness has created lasting value. As a respected industry expert, she influences stakeholders, builds effective relationships and encourages innovative thinking.</p>
+      <p>A proud Xavierite, Ms. Raj holds degrees in MLS and LLB. An avid reader and aesthete, she balances professionalism with a passion for life. Her love for literature and the arts reflects her nuanced understanding of human experience.</p>
+`,
 
       bgImageUrl: "/about/managementPics/Vaishali.webp",
       bgColor: "#7B014E",
@@ -539,12 +539,12 @@ const ContactUs = () => {
   ];
   const data = [
     {
-      title: "2021",
+      title: "2021 - Present",
       content: (
         <>
           <div className="">
             <h2 className="text-heading-03">
-              Present - Sustaining Holistic Excellence
+              Sustaining Holistic Excellence
             </h2>
             <div className="my-5">
               {DATA_2021_Present.map((item, index) => (
@@ -567,7 +567,7 @@ const ContactUs = () => {
       ),
     },
     {
-      title: "2016",
+      title: "2016 - 2020",
       content: (
         <>
           <div className="">
@@ -595,7 +595,7 @@ const ContactUs = () => {
       ),
     },
     {
-      title: "2011",
+      title: "2011 - 2015",
       content: (
         <>
           <div className="">
@@ -620,8 +620,10 @@ const ContactUs = () => {
         </>
       ),
     },
+
+    
     {
-      title: "2005",
+      title: "2005 - 2010",
       content: (
         <>
           <div className="">
@@ -647,7 +649,7 @@ const ContactUs = () => {
       ),
     },
     {
-      title: "1999",
+      title: "1999 - 2004",
       content: (
         <>
           <div className="">

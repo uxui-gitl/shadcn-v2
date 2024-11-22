@@ -12,100 +12,41 @@ import OverviewSection from "@/sections/overview/OverviewSection";
 
 
 const culture = [
-  {
-    id: 1,
-    title: "Co-creative Work Environment",
-    desc: "Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation",
-    bgImageUrl: "",
-    bgColor: "#5F22D9",
-  },
-  {
-    id: 2,
-    title: "",
-    desc: "",
-    bgImageUrl: "/careers/over1.svg",
-    bgColor: "#7B014E",
-  },
-  {
-    id: 3,
-    title: "Growth Opportunities",
-    desc: "Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.",
-    bgImageUrl: "",
-    bgColor: "#7B014E",
-  },
-  {
-    id: 4,
-    title: "Work-life Alignment ",
-    desc: "Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work",
-    bgImageUrl: "/careers/over1.svg",
-    bgColor: "#7B014E",
-  },
-  {
-    id: 5,
-    title: "Rewards and Recognition",
-    desc: "Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.",
-    bgImageUrl: "",
-    bgColor: "#5F22D9",
-  },
+  {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:2, title:'', desc:'', bgImageUrl:'/careers/CoCreativeWorkEnvironment.webp', bgColor:'#7B014E'},
+  {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7b014e'},
+  {id:4, title:'', desc:'', bgImageUrl:'/careers/GrowthOpportunities.webp', bgColor:'#7B014E'},
+  {id:5, title:'Work - life Alignment', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work.', bgImageUrl:'', bgColor:'#5F22D9'},
+  {id:6, title:'', desc:'', bgImageUrl:'/careers/WorkLife.webp', bgColor:'#7B014E'},
+  {id:7, title:'Rewards and Recognition', desc:'Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.', bgImageUrl:'', bgColor:'#7b014e'},
+  {id:8, title:'', desc:'', bgImageUrl:'/careers/RewardsRecognition.webp', bgColor:'#7B014E'},
+  
 ];
 
-const benefits = [
-  {
-    id: 1,
-    title: "Live Better",
-    desc: "Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.",
-    bgImageUrl: "",
-    bgColor: "#5F22D9",
-  },
-  {
-    id: 2,
-    title: "Compassionate Care",
-    desc: "Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.",
-    bgImageUrl: "/careers/over1.svg",
-    bgColor: "#7B014E",
-  },
-];
+const benefits=[
+  {id:1,title:'Live Better', desc:'Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.',bgImageUrl:'/careers/LiveBetter.webp', bgColor:'#5F22D9'},
+  {id:2,title:'Compassionate Care', desc:'Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.',bgImageUrl:'/careers/CompCare.webp', bgColor:'#7B014E'},
+  
+]
 
-const GuidingPrinciples = [
-  {
-    id: 1,
-    title: "Purpose",
-    desc: "Create Sustainable Value for our Stakeholders by connecting People and Technology.",
-  },
-  {
-    id: 2,
-    title: "Vision",
-    desc: "Be a world class provider of high-quality Information & Technology solutions.",
-  },
-  {
-    id: 3,
-    title: "Value",
-    desc: "Integrity,Responsiveness,Commitment, Teamwork",
-  },
-];
+const GuidingPrinciples=[
+  {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.', icon:'/careers/Purpose.svg'},
+  {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.', icon:'/careers/Vision.svg'},
+  {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork', icon:'/careers/Value.svg'},
+ 
+]
 
-const BuildingCapability = [
-  {
-    id: 1,
-    title: "GITL Learning Academy ",
-    desc: "An online knowledge hub offering interactive learning modules to upskill and reskill employees.",
-  },
-  {
-    id: 2,
-    title: "Leap",
-    desc: "(Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression.",
-  },
-  {
-    id: 3,
-    title: "Khoj ",
-    desc: `A dynamic platform for celebrating and showcasing employees' talents beyond work.`,
-  },
-  {
-    id: 4,
-    title: "Dimensions",
-    desc: "Accelerating career for Entry-Level Trainee Programmers with comprehensive training and swift deployment",
-  },
-];
+const BuildingCapability=[
+  {id:1,title:'GITL Learning Academy ', desc:'An online knowledge hub offering interactive learning modules to upskill and reskill employees.'},
+  {id:2,title:'Leap', desc:'Targeted and transformative training programs for future-ready leadership'},
+  {id:3,title:'Khoj ', desc:`A dynamic platform for celebrating and showcasing employees' talents beyond work.`},
+ {id:4,title:'Dimensions', desc:'Accelerating career for Entry-Level Trainee Programmers with comprehensive training and swift deployment'},
+ {id:5,title:'Speed', desc:'Internal certification program including Train-The-Trainer, Agile-SCRUM and specialized technical training.'},
+ {id:6,title:'Ignite', desc:'Stay updated, learn and grow with Annual Learning & Development Theme GITL Learning - Transform learning experience with advanced custom learning management system. '},
+ {id:7,title:'LEAP', desc:' (Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression. '},
+ 
+  
+]
 
 const CSR_DATA = [
   {

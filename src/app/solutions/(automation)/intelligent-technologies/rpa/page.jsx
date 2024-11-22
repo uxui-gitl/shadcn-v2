@@ -369,7 +369,7 @@ const page = () => {
             <div
               className="flex items-end h-1/2 mt-6 bg-primary-10 rounded-3xl"
               style={{
-                backgroundImage: "url('/rpa/Offering01.png')",
+                backgroundImage: "url('/rpa/RPA_ProjectLifecycle.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
