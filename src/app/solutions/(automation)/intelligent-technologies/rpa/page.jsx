@@ -385,13 +385,13 @@ const page = () => {
               {RPALifeCycleData.map((item, index) => (
                 <div className="card bg-white rounded-3xl mb-3" key={index}>
                   <div className="card-body p-6">
-                    <div className="text-label-01 leading-label-01 text-secondary-400 mb-3">
+                    <div className="text-body-01  text-secondary-400 mb-3">
                       {item.title}
                     </div>
-                    <h5 className=" text-heading-02 leading-heading-01 font-semibold mb-3">
+                    <h5 className=" text-heading-03 font-bold mb-3">
                       {item.CardHeading}
                     </h5>
-                    <ul className="max-w-md space-y-2 text-neutral-darkest-grey  text-base leading-relaxed font-medium">
+                    <ul className="max-w-md space-y-2 text-neutral-darkest-grey  text-base font-medium">
                       {item.list &&
                         item.list.map((listItem, listIndex) => (
                           <li

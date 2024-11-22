@@ -17,7 +17,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
   const setHeading = "IIoT  Solution Offerings";
   const setDesc =
     "Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.";
-  const setColor = "#2B1624";
+  const setColor = "text-primary-900";
 
   const [showModal, setshowModal] = useState(false);
   const [tabSection1, setTabSection1] = useState(true);
@@ -242,7 +242,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
       {/* dialog  end*/}
 
       <SectionWrapper BGColor={bgColor}>
-        <div className="container mx-auto py-32">
+        <div className="container mx-auto py-32 lg:py-8 2xl:py-32 -mt-8">
           {caseStudyLayout === "1" && (
             <div
               className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px]"
@@ -600,9 +600,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 Color={setColor}
                 Desc={setDesc}
                 center
+                headingContainerWidth={'w-1/2'}
               ></SectionHeading>
-              <div className="flex flex-col gap-8 mt-8">
-                <div className="flex flex-col md:flex-row justify-start items-center gap-2 w-full ">
+              <div className="flex flex-col gap-8">
+                <div className="flex flex-col md:flex-row justify-start items-center gap-2 lg:gap-4 w-full ">
                   {/* Grid--One */}
                   <div
                     className="relative w-full min-h-[624px] lg:w-2/3 h-full rounded-3xl p-5 flex flex-col justify-end"
@@ -627,10 +628,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     </div>
                     <div className="relative z-20  w-[100%] flex flex-col justify-end">
                       <div className="w-[70%]">
-                        <h3 className="text-label-01 leading-label-01 font-semibold mb-12">
+                        <h3 className="text-label-01 text-neutral-white  font-semibold mb-12">
                           {casestudy[0].title}
                         </h3>
-                        <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
+                        <h1 className="text-heading-01 text-neutral-white font-medium mb-6">
                           {casestudy[0].heading}
                         </h1>
                         <p className=" text-body-01 leading-body-01 mb-4">
@@ -653,7 +654,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Two */}
                   <div
-                    className="flex flex-col w-full lg:w-1/3 h-full rounded-3xl "
+                    className="flex flex-col w-full lg:w-1/3 h-full rounded-3xl  "
                     style={{ backgroundColor: casestudy[1].bgCardColor }}
                   >
                     <div
@@ -674,7 +675,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                       />
                     </div>
                     <div
-                      className="w-full h-1/2 rounded-3xl min-h-[240px]"
+                      className="w-full h-1/2 rounded-3xl min-h-[240px] lg:min-h-[300px]"
                       style={{
                         backgroundImage: `url(${casestudy[1].imageURL})`,
                         backgroundSize: "cover",
@@ -686,13 +687,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 </div>
 
                 <div
-                  className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto lg:h-[362px]"
+                  className="flex flex-col lg:flex-row justify-start items-center  w-full h-auto lg:h-[362px] lg:gap-4 2xl:gap-4"
                   style={{ color: casestudy[2].color }}
                 >
                   {/* Grid--Three */}
 
                   <div
-                    className="w-full lg:w-1/3 h-full rounded-t-3xl p-5"
+                    className="w-full lg:w-1/3 h-full rounded-t-3xl lg:rounded-3xl p-5"
                     style={{
                       backgroundImage: `url(${casestudy[2].imageURL})`,
                       backgroundSize: "cover",
@@ -700,29 +701,29 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                       backgroundColor: casestudy[2].bgCardColor,
                     }}
                   >
-                    <h3 className="text-label-01 leading-label-01 font-semibold mb-2 lg:mb-12">
+                    <h3 className="text-body-01 font-semibold mb-2 lg:mb-12">
                       {casestudy[2].title}
                     </h3>
-                    <h1 className="text-heading-02 leading-heading-02 font-medium mb-2 lg:mb-6">
+                    <h1 className="text-heading-02 font-medium mb-2 lg:mb-6">
                       {casestudy[2].heading}
                     </h1>
-                    <p className="w-full lg:w-[80%] mb-4">
+                    <p className="w-full text-base lg:w-[80%] mb-4">
                       {casestudy[2].description}
                     </p>
                   </div>
 
                   {/* Grid--Four */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full px-5 py-10"
+                    className="relative w-full lg:w-1/3 h-full px-5 py-10 lg:rounded-3xl"
                     style={{
                       color: casestudy[3].color,
                       backgroundColor: casestudy[3].bgCardColor,
                     }}
                   >
-                    <h1 className="text-heading-02 leading-heading-02 font-medium mb-4 lg:mb-6">
+                    <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                       {casestudy[3].heading}
                     </h1>
-                    <p className="mb-4">{casestudy[3].description}</p>
+                    <p className="mb-4 text-body-01">{casestudy[3].description}</p>
                     <div className="absolute bottom-5 right-5">
                       <Link href={casestudy[3].link} target="_blank">
                         <OutlinedButtonWithArrow size={32} />
@@ -732,16 +733,16 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Five */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl px-5 py-10"
+                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl lg:rounded-3xl px-5 py-10"
                     style={{
                       color: casestudy[4].color,
                       backgroundColor: casestudy[4].bgCardColor,
                     }}
                   >
-                    <h1 className="text-heading-02 leading-heading-02 font-medium mb-4 lg:mb-6">
+                    <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                       {casestudy[4].heading}
                     </h1>
-                    <p className="mb-4">{casestudy[4].description}</p>
+                    <p className="mb-4 text-body-01">{casestudy[4].description}</p>
                     <div className="absolute bottom-5 right-5">
                       <Link href={casestudy[4].link} target="_blank">
                         <OutlinedButtonWithArrow size={32} />

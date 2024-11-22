@@ -23,7 +23,7 @@ const IIOT = () => {
       description:
         "Industry 4.0 Accelerator (IoT for shopfloor) for implementation of IoT in shopfloor – Both for Discrete & Process Manufacturing",
       link: "/case-study-1",
-      color: "#FFFFFF",
+      color: "text-neutral-white",
       bgCardColor: "#2B1624",
     },
     {
@@ -140,6 +140,8 @@ const IIOT = () => {
         casestudy={CASE_STUDIES_DATA}
         csLayout={"6"}
         bgColor="bg-neutral-white"
+        textColor="text-neutral-white"
+        
       />
       {/* End--Section--IIOT Soltions====================================================================== */}
 
