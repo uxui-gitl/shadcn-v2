@@ -61,7 +61,7 @@ const ContactUs = () => {
     {
       id: 3,
       name: "Kingshuk Chatterjee",
-      designation: "Vice President, External Business",
+      designation: "VP, External Business",
       shortDesc: ``,
       longDesc: `
       <p>Mr. Kingshuk Chatterjee stands as a testament to transformative leadership, boasting three decades of diverse expertise that spans Manufacturing, Advertising, Branding and Information Technology. A trailblazer with a proven track record, he drives organizational change, crafts iconic brands and brokers landmark deals with ease. </p>
@@ -75,7 +75,7 @@ const ContactUs = () => {
     {
       id: 4,
       name: "Samik Bandyopadhyay",
-      designation: "Charted Accountant",
+      designation: "VP, Finance",
       shortDesc: ``,
       longDesc: `
       Mr. Samik Bandyopadhyay is a charted accountant with over 23 years of experience in financial control, strategic planning and reporting. Mr. Bandyopadhyay has hands on experience in managing Indirect taxation compliance, Service tax issues and EA 2000 audit. He has had a fair amount of experience interacting with the overseas clients for business deals. His experience encompasses various crucial financial aspects like monitoring the revenue earnings and foreign exchange, cost analysis, budgeting, Implementation & supervision of the internal control systems, complying requirements of audit, payroll management and tax assessment and dealing with Income Tax, Service Tax, P.F. matters and attending respective assessments. 
@@ -87,7 +87,7 @@ const ContactUs = () => {
     {
       id: 4,
       name: "Vaishali Raj",
-      designation: "Vice President, Human Resource",
+      designation: "VP, Human Resource",
       shortDesc: `Mr. Ajay Pimparkar is the IT veteran and strategic visionary of o`,
       longDesc: `
       <p>An influential HR premier, with her astute vision has been an instrumental force in driving executive decisions of organisation and seamlessly integrating people and technology. With her ardent drive to thrive, she has been inspiring employees in advancing their growth. </p>
@@ -167,7 +167,7 @@ const ContactUs = () => {
       title: "Statutory Report",
       Desc: `A legally required document detailing a company's financial and operational compliance.`,
       rawData: ` <ul>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2023-2024</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/TranscriptAGMofGITL2023-24.pdf"
@@ -186,7 +186,7 @@ const ContactUs = () => {
                 </ul>
               </li>
 
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2022-2023</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/Transcript-AGM-4-July-2023.pdf"
@@ -202,7 +202,7 @@ const ContactUs = () => {
                 </ul>
               </li>
 
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2021-2022</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2021-22.pdf"
@@ -219,7 +219,7 @@ const ContactUs = () => {
                 </ul>
               </li>
 
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2020-2021</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReturnFY2020-21.pdf"
@@ -233,7 +233,7 @@ const ContactUs = () => {
                     target="_blank">Notice and Annual Report for FY 2020-21</a></li>
                 </ul>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2019-2020</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/AnnualReport-2019-20.pdf"
@@ -244,7 +244,7 @@ const ContactUs = () => {
 
                 </ul>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2018-2019</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM2018-19.pdf"
@@ -254,7 +254,7 @@ const ContactUs = () => {
                     target="_blank">Annual Return for FY 2018-19</a></li>
                 </ul>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <span class="mx-12">2017-2018</span>
                 <ul>
                   <li class="pb-2"><a href="assets/pdf/statutoryUpdate/statutoryReport/AGM-2018.pdf"
@@ -270,40 +270,40 @@ const ContactUs = () => {
       title: "Corporate Policies",
       Desc: `Dummy Text. Dummy Text.`,
       rawData: ` <ol>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/Affirmative_Action_Policy.pdf" target="_blank">Affirmation Action</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/ABAC.pdf" target="_blank">Anti-Bribery and Anti-Corruption</a>3</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/ethics.pdf" target="_blank">Code of Ethics and Business Conduct</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/Corporate-Environmental-Policy.pdf" target="_blank">Corporate
                   Environmental Policy</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/Fraud-Investigation-Guidelines.pdf" target="_blank">Fraud
                   Investigation Guidelines</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/HIV_AIDS_Policy.pdf" target="_blank">HIV/ AIDS</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/NRC-Policy.pdf" target="_blank">Nomination and Remuneration
                   Policy</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class="">
                   <a href="assets/pdf/corporatePolicies/sexualHarassment.pdf" target="_blank">Prevention of Sexual Harassment
                     at Workplace</a>
                 </h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/Social-Media-Policy.pdf" target="_blank">Social Media Policy</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/corporatePolicies/Whistle-blower.pdf" target="_blank">Whistle Blower</a></h3>
               </li>
             </ol>`,
@@ -313,37 +313,37 @@ const ContactUs = () => {
       title: "CSR Updates",
       Desc: `Dummy Text. Dummy Text.`,
       rawData: `   <ul>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class="font-bold">CSR Initiatives</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class=""><a href="assets/pdf/corporatePolicies/CSR.pdf" target="_blank">CSR policy</a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class=""><a href="assets/pdf/corporatePolicies/CSR23-24.pdf" target="_blank">CSR Action Plan FY 2023-24</a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class=""><a href="assets/pdf/corporatePolicies/CSR22-23.pdf" target="_blank">CSR Action Plan FY 2022-23 </a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class=""><a href="assets/pdf/corporatePolicies/CSR21-22.pdf" target="_blank">CSR Action Plan FY 2021-22 </a></h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class=""><a href="assets/pdf/corporatePolicies/CSR20-21.pdf" target="_blank">CSR Action Plan FY 2020-21 </a></h3>
                 </li>
               </ul>
 
               <ul>
-                <li class="flex items-start mt-10 py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start mt-10 py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class=" font-bold">CSR Commitee</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class="">Mrs. Nyrika Holkar, Chairperson</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class="">Mr. P. E. Fouzdar, Member</h3>
                 </li>
-                <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+                <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                   <h3 class="">Mr. V. R. Mehta, Member</h3>
                 </li>
               </ul>`,
@@ -354,32 +354,32 @@ const ContactUs = () => {
       Desc: `Dummy Text. Dummy Text.`,
       rawData: `
        <ol>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/statutoryUpdate/TNC-appoint-Independent-Directors.pdf"
                   target="_blank">Terms &amp; Conditions of appointment of Independent Directors</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Parpia.pdf"
                   target="_blank">Notice of Candidature of Mr. M. M. Parpia</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Movdawalla.pdf"
                   target="_blank">Notice of Candidature of Mr. P. P. Movdawalla</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class=""><a href="assets/pdf/statutoryUpdate/Notice-of-Candidature-Mehta.pdf"
                   target="_blank">Notice of Candidature of Mr. V. R. Mehta</a></h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class="">Dr. K. A. Palia ceased to be a Director of the Company with effect from 10th May, 2023</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class="">Mr. K. K. Dastur ceased to a Director of the Company with effect from 10th May, 2023</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class="">Mr. S. N. Irani ceased to be a Director of the Company with effect from 25th July 2022</h3>
               </li>
-              <li class="flex items-start py-2 border-b w-full text-[20px] text-[#808080]">
+              <li class="flex items-start py-2 border-b w-full text-base text-neutral-darkest-grey">
                 <h3 class="">
                   The Register of Members and Share Transfer Books of the Company will remain closed from
                   Monday, 18th July 2022 to Tuesday, 2nd August 2022 (both days inclusive). All persons whose names are
@@ -872,9 +872,9 @@ __html: readMoreItem?.longDesc || "",
       >
         <Slider slidesPerView={5}>
           {CSUITE_DATA?.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="lg:!mr-2 2xl:!mr-5">
               <div
-                className={`max-w-sm h-[420px] p-3 rounded-3xl border-[0.5px] border-neutral-light-grey`}
+                className={`max-w-sm h-[420px] lg:h-[300px] 2xl:h-[420px]  p-3 mb-8 rounded-3xl border-[0.5px] border-neutral-light-grey`}
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -887,18 +887,18 @@ __html: readMoreItem?.longDesc || "",
               >
                 {item?.name && (
                   <>
-                    <h5 className="mb-2 text-heading-04 font-medium text-white">
+                    <h5 className="mb-1 text-base font-bold text-white">
                       {item?.name}
                     </h5>
                   </>
                 )}
                 {item?.designation && (
-                  <p className="mb-2 text-size-[12px] text-white">
+                  <p className="mb-4 text-[12px] text-white">
                     {item?.designation}
                   </p>
                 )}
                 <div
-                  className="text-white text-size-[12px] flex items-center cursor-pointer"
+                  className="text-white text-[12px] flex justify-start items-center cursor-pointer"
                   onClick={() => readMore(true, item)}
                 >
                   Read their stories{" "}
@@ -934,9 +934,9 @@ __html: readMoreItem?.longDesc || "",
         <div class="grid grid-cols-2 gap-4">
           <div>
             <h3 className="text-[54px] leading-[64px] font-semibold mb-3">Ajay Pimparkar</h3>
-            <p className="text-[#808080] text-[32px] mb-6">Chief Executive Officer</p>
+            <p className="text-neutral-darkest-grey text-[32px] mb-6">Chief Executive Officer</p>
 
-            <div className="text-[20px] text-[#1D162B] font-medium mb-10">
+            <div className="text-base text-[#1D162B] font-medium mb-10">
               {`Mr. Ajay Pimparkar is the IT veteran and strategic visionary of our company, who has transformed Godrej Group's technology landscape for over 30 Years. His role has reinforced our IT infrastructure and enabled us to perform at the forefront of digital innovation, driving operational efficiency and enriching customer experience.`}
             </div>
             <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more</button>
@@ -1034,6 +1034,7 @@ __html: readMoreItem?.longDesc || "",
         sectionTextColor="text-primary-900"
         sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="left"
+        setTop={false}
       >
         <Slider slidesPerView={"4"}>
           {KeyPolicies_DATA.map((item, index) => (

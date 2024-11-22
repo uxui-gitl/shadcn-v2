@@ -10,10 +10,10 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                 duration-500 fixed top-0 left-0 right-0 z-[1050] w-full h-screen  flex items-center justify-center bg-gray-800 bg-opacity-50`}
             >
                 <div
-                    className="relative container-fluid w-3/4 min-h-[50vh] bg-white rounded-3xl overflow-y-scroll"
+                    className="relative container-fluid w-[80%] bg-neutral-white rounded-3xl overflow-y-scroll"
                 >
                     {/* Modal content */}
-                    <div className={`relative bg-[${bgColor}] rounded-3xl`}>
+                    <div className={`relative bg-[${bgColor}] rounded-3xl h-[500px]`}>
                         {/* Modal header */}
                         <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
                             <h3 className="text-heading-04 font-bold text-primary-900">{title}</h3>
@@ -56,7 +56,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
                             <button
                                 type="button"
                                 className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none 
-                                bg-white rounded-3xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 
+                                bg-neutral-white rounded-3xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 
                                 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 
                                 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                                 onClick={onRequestClose}

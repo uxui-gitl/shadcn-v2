@@ -205,7 +205,7 @@ const Footer = () => {
                     </li>
                     <li className="mt-2">
                       <Link href="#" className={footerList}>
-                        Enterprise Suite
+                        Infor
                       </Link>
                     </li>
 
