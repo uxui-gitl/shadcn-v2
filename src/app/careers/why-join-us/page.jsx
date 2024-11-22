@@ -531,7 +531,7 @@ const Page = () => {
                 Godrej Infotech is expanding its horizons, guided by our Brand
                 Mascot GIFFITLY. GIFFITLY symbolizes our dedication to striving
                 for extra miles, supporting and motivating us in all endeavors.
-                Together, we're on a journey to take a leap forward in pursuit
+                Together, we&apos;re on a journey to take a leap forward in pursuit
                 of top-notch results.
               </p>
 
