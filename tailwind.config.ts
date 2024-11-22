@@ -93,7 +93,7 @@ const config: Config = {
         'body-01': [
           'calc(clamp(1rem, 0.188vw + 0.963rem, 1.188rem))', 
           {
-            lineHeight: '1.25', 
+            lineHeight: '1.35', 
             letterSpacing: '-0.015em', 
             fontWeight: '300',
           },

@@ -8,56 +8,153 @@ import { LinearGradient } from "react-text-gradients";
 import Image from "next/image";
 import OverviewSection from "@/sections/overview/OverviewSection";
 
-
-
-
 const culture = [
-  {id:1, title:'Co-creative Work Environment', desc:'Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation', bgImageUrl:'', bgColor:'#5F22D9'},
-  {id:2, title:'', desc:'', bgImageUrl:'/careers/CoCreativeWorkEnvironment.webp', bgColor:'#7B014E'},
-  {id:3, title:'Growth Opportunities', desc:'Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.', bgImageUrl:'', bgColor:'#7b014e'},
-  {id:4, title:'', desc:'', bgImageUrl:'/careers/GrowthOpportunities.webp', bgColor:'#7B014E'},
-  {id:5, title:'Work - life Alignment', desc:'Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work.', bgImageUrl:'', bgColor:'#5F22D9'},
-  {id:6, title:'', desc:'', bgImageUrl:'/careers/WorkLife.webp', bgColor:'#7B014E'},
-  {id:7, title:'Rewards and Recognition', desc:'Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.', bgImageUrl:'', bgColor:'#7b014e'},
-  {id:8, title:'', desc:'', bgImageUrl:'/careers/RewardsRecognition.webp', bgColor:'#7B014E'},
-  
+  {
+    id: 1,
+    title: "Co-creative Work Environment",
+    desc: "Leverage collective excellence in an ecosystem where different perspectives converge to drive innovation",
+    bgImageUrl: "",
+    bgColor: "#5F22D9",
+  },
+  {
+    id: 2,
+    title: "",
+    desc: "",
+    bgImageUrl: "/careers/CoCreativeWorkEnvironment.webp",
+    bgColor: "#7B014E",
+  },
+  {
+    id: 3,
+    title: "Growth Opportunities",
+    desc: "Fuel your aspirations with continuous learning, mentorship and opportunities to shape the future.",
+    bgImageUrl: "",
+    bgColor: "#7b014e",
+  },
+  {
+    id: 4,
+    title: "",
+    desc: "",
+    bgImageUrl: "/careers/GrowthOpportunities.webp",
+    bgColor: "#7B014E",
+  },
+  {
+    id: 5,
+    title: "Work - life Alignment",
+    desc: "Create a balance of passion and priorities with a culture that honors well-being, flexibility and the beauty of life beyond work.",
+    bgImageUrl: "",
+    bgColor: "#5F22D9",
+  },
+  {
+    id: 6,
+    title: "",
+    desc: "",
+    bgImageUrl: "/careers/WorkLife.webp",
+    bgColor: "#7B014E",
+  },
+  {
+    id: 7,
+    title: "Rewards and Recognition",
+    desc: "Recognize exceptional employee achievements and honoring dedication with VAS, WAU-G and GITL Annual Awards.",
+    bgImageUrl: "",
+    bgColor: "#7b014e",
+  },
+  {
+    id: 8,
+    title: "",
+    desc: "",
+    bgImageUrl: "/careers/RewardsRecognition.webp",
+    bgColor: "#7B014E",
+  },
 ];
 
-const benefits=[
-  {id:1,title:'Live Better', desc:'Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.',bgImageUrl:'/careers/LiveBetter.webp', bgColor:'#5F22D9'},
-  {id:2,title:'Compassionate Care', desc:'Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.',bgImageUrl:'/careers/CompCare.webp', bgColor:'#7B014E'},
-  
-]
+const benefits = [
+  {
+    id: 1,
+    title: "Live Better",
+    desc: "Serene living facility at Pirojshanagar Colony – Vikhroli in Mumbai, saving commutation time for 5000+ Godrej employees.",
+    bgImageUrl: "/careers/LiveBetter.webp",
+    bgColor: "#5F22D9",
+  },
+  {
+    id: 2,
+    title: "Compassionate Care",
+    desc: "Along with comprehensive medical insurance benefit, we ensure employee’s best health with NABH accredited multi-specialty hospital in colony.",
+    bgImageUrl: "/careers/CompCare.webp",
+    bgColor: "#7B014E",
+  },
+];
 
-const GuidingPrinciples=[
-  {id:1,title:'Purpose', desc:'Create Sustainable Value for our Stakeholders by connecting People and Technology.', icon:'/careers/Purpose.svg'},
-  {id:2,title:'Vision', desc:'Be a world class provider of high-quality Information & Technology solutions.', icon:'/careers/Vision.svg'},
-  {id:3,title:'Value', desc:'Integrity,Responsiveness,Commitment, Teamwork', icon:'/careers/Value.svg'},
- 
-]
+const GuidingPrinciples = [
+  {
+    id: 1,
+    title: "Purpose",
+    desc: "Create Sustainable Value for our Stakeholders by connecting People and Technology.",
+    icon: "/careers/Purpose.svg",
+  },
+  {
+    id: 2,
+    title: "Vision",
+    desc: "Be a world class provider of high-quality Information & Technology solutions.",
+    icon: "/careers/Vision.svg",
+  },
+  {
+    id: 3,
+    title: "Value",
+    desc: "Integrity,Responsiveness,Commitment, Teamwork",
+    icon: "/careers/Value.svg",
+  },
+];
 
-const BuildingCapability=[
-  {id:1,title:'GITL Learning Academy ', desc:'An online knowledge hub offering interactive learning modules to upskill and reskill employees.'},
-  {id:2,title:'Leap', desc:'Targeted and transformative training programs for future-ready leadership'},
-  {id:3,title:'Khoj ', desc:`A dynamic platform for celebrating and showcasing employees' talents beyond work.`},
- {id:4,title:'Dimensions', desc:'Accelerating career for Entry-Level Trainee Programmers with comprehensive training and swift deployment'},
- {id:5,title:'Speed', desc:'Internal certification program including Train-The-Trainer, Agile-SCRUM and specialized technical training.'},
- {id:6,title:'Ignite', desc:'Stay updated, learn and grow with Annual Learning & Development Theme GITL Learning - Transform learning experience with advanced custom learning management system. '},
- {id:7,title:'LEAP', desc:' (Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression. '},
- 
-  
-]
+const BuildingCapability = [
+  {
+    id: 1,
+    title: "GITL Learning Academy ",
+    desc: "An online knowledge hub offering interactive learning modules to upskill and reskill employees.",
+  },
+  {
+    id: 2,
+    title: "Leap",
+    desc: "Targeted and transformative training programs for future-ready leadership",
+  },
+  {
+    id: 3,
+    title: "Khoj ",
+    desc: `A dynamic platform for celebrating and showcasing employees' talents beyond work.`,
+  },
+  {
+    id: 4,
+    title: "Dimensions",
+    desc: "Accelerating career for Entry-Level Trainee Programmers with comprehensive training and swift deployment",
+  },
+  {
+    id: 5,
+    title: "Speed",
+    desc: "Internal certification program including Train-The-Trainer, Agile-SCRUM and specialized technical training.",
+  },
+  {
+    id: 6,
+    title: "Ignite",
+    desc: "Stay updated, learn and grow with Annual Learning & Development Theme GITL Learning - Transform learning experience with advanced custom learning management system. ",
+  },
+  {
+    id: 7,
+    title: "LEAP",
+    desc: " (Listen, Evoke, Accelerate &Perform) Identify and nurture critical talent across all levels, empowering accelerated career progression. ",
+  },
+];
 
 const CSR_DATA = [
   {
     id: 1,
-    title: "CSR Photo line ",
+    title: "CSR",
     desc: "We execute digital literacy training and job readiness programs for disadvantaged youth.",
+    bgImageUrl: "/careers/CSR.webp",
   },
   {
     id: 2,
-    title: "Wellness Photo line ",
+    title: "Wellness",
     desc: "Holistic health and overall wellbeing of employees with different fitness initiatives and health screening",
+    bgImageUrl: "/careers/Wellness.webp",
   },
 ];
 
@@ -147,28 +244,27 @@ const CEO_TRUNCATED_MSG = `
     innovation, and fulfillment. Godrej Infotech strives to create an environment where individuals can thrive 
     and contribute to something larger than themselves. 
   `;
-  const CEOImageUrl = "/careers/CEO-AP.webp";
+const CEOImageUrl = "/careers/CEO-AP.webp";
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
-  
 
   useEffect(() => {
     // Function to check if the screen width is mobile-sized
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);  // You can adjust this threshold if needed
+      setIsMobile(window.innerWidth <= 768); // You can adjust this threshold if needed
     };
-  
+
     // Listen for window resize events
     window.addEventListener("resize", handleResize);
-  
+
     // Initial check on component mount
     handleResize();
-  
+
     // Cleanup the event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   // Video URL for desktop
   const videoURL = "/careers/giffitly.mp4";
   // Image URL for mobile
@@ -195,7 +291,7 @@ const Page = () => {
         sectionHeadingLayout="left"
         setTop={false}
         setPad={false}
-        >
+      >
         <Slider slidesPerView={4}>
           {culture?.map((item, index) => (
             <SwiperSlide key={index}>
@@ -206,6 +302,8 @@ const Page = () => {
                   flexDirection: "column",
                   justifyContent: "end",
                   background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center center",
                 }}
               >
                 {item?.title && (
@@ -228,11 +326,11 @@ const Page = () => {
 
       {/* slider guiding */}
       <SectionWrapperNew
-        style={{         
+        style={{
           marginTop: "-15rem",
           paddingTop: "15rem",
         }}
-        bgColor={'bg-primary-900'}
+        bgColor={"bg-primary-900"}
         sectionHeading={`The Guiding Principles We Live By`}
         sectionDesc={`Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth.`}
         sectionTextColor="text-neutral-white"
@@ -242,21 +340,22 @@ const Page = () => {
         <Slider>
           {GuidingPrinciples?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="px-4 py-2 bg-[transparent]">
-                <div
-                  className="flex py-4 border-b-[1px] border-bg-secondary-10 border-opacity-20"
-                 
-                >
+              <div className="px-8 py-4 bg-[transparent]">
+                <div className="flex py-4 border-b-[1px] border-secondary-10 border-opacity-20">
                   <Image
-                    src={"/about/whiteStar.svg"}
-                    width={30}
-                    height={30}
+                    src={item.icon}
+                    width={56}
+                    height={56}
                     alt={"image"}
-                    className="mr-4"
+                    className="mr-4 -mt-2"
                   />
-                  <div className="text-heading-03 text-neutral-white">{item.title}</div>
+                  <div className="text-heading-03 text-neutral-white">
+                    {item.title}
+                  </div>
                 </div>
-                <p className="text-body-01 text-neutral-white mt-4">{item.desc}</p>
+                <p className="text-body-01 text-neutral-white mt-4">
+                  {item.desc}
+                </p>
               </div>
             </SwiperSlide>
           ))}
@@ -273,31 +372,28 @@ const Page = () => {
           backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 30%), url(${CEOImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: '540px',
-      }}
-
+          minHeight: "540px",
+        }}
       >
         <div className="relative p-5 grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
             <h3 className="text-heading-02 mb-3">{`From the CEO’s Desk`}</h3>
-            <p className="text-heading-04 mb-6">
-              {`-	Mr. Ajay Pimparkar`}{" "}
-            </p>
+            <p className="text-heading-04 mb-6">{`-	Mr. Ajay Pimparkar`} </p>
 
             <div
-          className="text-body-01 text-primary-900 mb-10"
-          dangerouslySetInnerHTML={{
-            __html: isExpanded ? CEO_FULL_MSG : CEO_TRUNCATED_MSG,
-          }}
-        />
+              className="text-body-01 text-primary-900 mb-10"
+              dangerouslySetInnerHTML={{
+                __html: isExpanded ? CEO_FULL_MSG : CEO_TRUNCATED_MSG,
+              }}
+            />
 
-        <button
-          type="button"
-          onClick={() => setIsExpanded(!isExpanded)} // Toggle state when button is clicked
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          {isExpanded ? 'Read less' : 'Read more'}
-        </button>
+            <button
+              type="button"
+              onClick={() => setIsExpanded(!isExpanded)} // Toggle state when button is clicked
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              {isExpanded ? "Read less" : "Read more"}
+            </button>
           </div>
           {/* <div>
             <Image
@@ -315,7 +411,7 @@ const Page = () => {
 
       {/* growth section */}
       <SectionWrapperNew
-        bgColor={'bg-primary-500'}
+        bgColor={"bg-primary-500"}
         sectionHeading={`Nourishing Talent and Building Capability`}
         sectionDesc={`Our talent development initiatives are focused to foster professional growth, interests beyond work, technical and leadership skills.`}
         sectionTextColor="text-neutral-white"
@@ -324,11 +420,8 @@ const Page = () => {
       >
         <Slider>
           {BuildingCapability.map((item, index) => (
-            <SwiperSlide key={index}
-            >
-              <div
-                className="p-6 bg-[transparent] rounded-3xl border-[0.5px] border-primary-10 border-opacity-20 hover:bg-primary-10 hover:bg-opacity-10 cursor-grabbing"
-              >
+            <SwiperSlide key={index}>
+              <div className="p-6 min-h-[320px] bg-[transparent] rounded-3xl border-[0.5px] border-primary-10 border-opacity-20 hover:bg-primary-10 hover:bg-opacity-10 cursor-grabbing">
                 {/* <Image
                   src={"/about/whiteStar.svg"}
                   width={30}
@@ -336,8 +429,12 @@ const Page = () => {
                   alt={""}
                   className="mb-4"
                 /> */}
-                <div className="text-heading-03 text-neutral-white">{item.title}</div>
-                <p className="text-body-01 text-neutral-white py-4">{item.desc}</p>
+                <div className="text-heading-03 text-neutral-white">
+                  {item.title}
+                </div>
+                <p className="text-body-01 text-neutral-white py-4">
+                  {item.desc}
+                </p>
               </div>
             </SwiperSlide>
           ))}
@@ -357,20 +454,20 @@ const Page = () => {
           {benefits?.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="w-full py-10 px-6 h-[424px] bg-[#9F0165] border border-gray-200 rounded-3xl shadow"
+                className="w-full p-5 px-6 h-[424px] bg-[#9F0165] border border-gray-200 rounded-3xl shadow"
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "end",
-                  background: `url(${item.bgImageUrl}), ${item?.bgColor}`,
+                  background: `linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(${item.bgImageUrl}) no-repeat center center`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               >
-                <h5 className="mb-3 text-[28px] leading-[36px] max-w-[200px] font-semibold text-white">
+                <h5 className="mb-3 text-heading-03 font-semibold text-white">
                   {item.title}
                 </h5>
-                <p className="mb-3 font-[14px] leading-[22px] text-white">
-                  {item.desc}
-                </p>
+                <p className="mb-3 text-base text-white">{item.desc}</p>
               </div>
             </SwiperSlide>
           ))}
@@ -381,64 +478,77 @@ const Page = () => {
 
       {/* Gifftly */}
 
-      <div className="relative w-full h-[90vh] rounded-3xl overflow-hidden">
-  {/* Conditional rendering based on device type */}
-  {isMobile ? (
-    // For mobile: Render image background
-    <img
-      src={imageURL}
-      alt="Giffitly Mobile"
-      className="absolute top-0 left-0 w-full h-full object-cover z-0"
-    />
-  ) : (
-    // For desktop: Render video background
-    <video
-      className="absolute top-0 left-0 w-full h-full object-cover bg-left-top z-0"
-      autoPlay
-      loop
-      muted
-    >
-      <source src={videoURL} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  )}
+      <div className="relative w-full h-[90vh] lg:h-[70vh] rounded-3xl overflow-hidden">
+       
+       {isMobile ?<Image
+        src="/careers/giffitly-mobile.png" // Replace with your image URL
+        alt="Description of Image"
+        layout="responsive"
+        width={600}
+        height={400}
+        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-lg z-0"
+      />: <video
+          className="absolute top-0 left-0 w-full h-full object-cover bg-left-top z-0"
+          autoPlay
+          loop
+          muted
+        >
+          <source src={videoURL} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+}
+        {/* Gradient overlay on top of video/image */}
+        <div
+          className="absolute top-0 left-0 w-full h-full z-100"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%)",
+          }}
+        ></div>
+        <div className="relative w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* First Column: Image */}
+            <div className="relative w-full h-[400px] lg:h-auto">
+              {/* <Image
+        src="/careers/giffitly-mobile.jpg" // Replace with your image URL
+        alt="Description of Image"
+        layout="responsive"
+        width={600}
+        height={400}
+        className="object-cover rounded-lg shadow-lg"
+      /> */}
+            </div>
 
-  {/* Gradient overlay on top of video/image */}
-  <div
-    className="absolute top-0 left-0 w-full h-full z-10"
-    style={{
-      background: "linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%)",
-    }}
-  ></div>
+            {/* Second Column: Content (Title, Description, CTA) */}
+            <div className="lg:w-[70%] flex flex-col items-center lg:items-start space-y-6 px-4 lg:py-16">
+              {/* Title */}
+              <h2 className="text-3xl lg:text-4xl font-semibold text-neutral-white lg:text-primary-900 text-center lg:text-left mt-8">
+                Meet GIFFITLY!
+              </h2>
 
-  {/* Content Container */}
-  <div className="container relative w-full lg:w-1/2 flex justify-start items-center h-[100vh] z-20">
-    <div className="flex text-neutral-white flex-col justify-center gap-4 mt-6">
-      {/* Title */}
-      <h1
-        className="w-full z-50 text-neutral-black text-display-01 2xl:w-[70%]"
-        style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2) 20%" }}
-      >
-        {/* Title content here */}
-      </h1>
+              {/* Description */}
+              <p className="text-lg text-neutral-white lg:text-primary-900 text-center lg:text-left">
+                Godrej Infotech is expanding its horizons, guided by our Brand
+                Mascot GIFFITLY. GIFFITLY symbolizes our dedication to striving
+                for extra miles, supporting and motivating us in all endeavors.
+                Together, we're on a journey to take a leap forward in pursuit
+                of top-notch results.
+              </p>
 
-      {/* Description */}
-      <h4 className="absolute bottom-10 lg:bottom-[450px] lg:ml-8 left-0 z-50 text-neutral-white lg:text-neutral-black text-paragraph-01 font-semibold mb-8 w-full px-4 sm:px-8 lg:px-0">
-        Godrej Infotech is expanding its horizons, guided by our Brand
-        Mascot GIFFITLY. GIFFITLY symbolizes our dedication to striving for
-        extra miles, supporting and motivating us in all endeavors.
-        Together, we're on a journey to take a leap forward in pursuit of
-        top-notch results. Explore Opportunities.
-      </h4>
-    </div>
-  </div>
-</div>
+              {/* CTA Button */}
+              <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300">
+              Explore Opportunities
+      </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Endofgiffityl */}
 
       {/* balance section */}
       <SectionWrapperNew
-        bgColor={'bg-primary-900'}
+        bgColor={"bg-primary-900"}
         sectionHeading={`Employee Care and Social Responsibility`}
         sectionDesc={`We focus on employee's well-being and social responsibility through our wellness program and CSR initiatives.`}
         sectionTextColor="text-neutral-white"
@@ -449,21 +559,21 @@ const Page = () => {
           {CSR_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="h-[564px]  p-6 border border-gray-200 rounded-3xl shadow"
+                className="h-[564px]  p-6 rounded-3xl"
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "end",
-                  backgroundImage: `url('/careers/balance1.png')`,
+                  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%),url(${item.bgImageUrl})`,
                   backgroundSize: "cover",
                   backgroundAttachment: "fixed", // This is key for the parallax effect
                   backgroundPosition: "center",
                 }}
               >
-                <h5 className="mb-3 text-[28px] leading-[36px] font-semibold text-white">
+                <h5 className="mb-3 text-heading-03 font-semibold text-neutral-white">
                   {item.title}
                 </h5>
-                <p className="mb-3 font-[14px] leading-[22px] text-white">
+                <p className="mb-3 lg:w-1/2 text-base text-neutral-white">
                   {item.desc}
                 </p>
               </div>
@@ -481,22 +591,16 @@ const Page = () => {
         sectionTextColor="text-neutral-white"
         sectionDescColor="text-neutral-white"
         sectionHeadingLayout="center"
-        
         setPad={false}
       >
         <Slider>
           {empTestimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <div
-                class="p-8 rounded-3xl shadow border-[1px] border-secondary-10 border-opacity-10"
-               
-              >
+              <div class="p-8 rounded-3xl shadow border-[1px] border-secondary-10 border-opacity-10">
                 <div className="text-heading-03 text-neutral-white mb-5">
                   {item.title}
                 </div>
-                <h5 class="mb-5 text-base text-neutral-white">
-                  {item.desc}
-                </h5>
+                <h5 class="mb-5 text-base text-neutral-white">{item.desc}</h5>
 
                 <div className="flex">
                   <div className="mr-4">

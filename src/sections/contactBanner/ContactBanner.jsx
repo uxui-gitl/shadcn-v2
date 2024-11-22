@@ -1,19 +1,21 @@
 
 import SectionWrapperNew from '@/components/SectionWrapperNew'
 import LeftHeading from '@/components/LeftHeading';
-function ContactBanner({height='90vh' , bannerImage='/contact/contact-banner.svg', title="Let’s Connect", desc="We enable global businesses to Automate Cloud & Transform for a sustainable and inclusive future."}) {
+function ContactBanner({height='60vh' , bannerImage='/contact/contact-banner.svg', title="Let’s Connect", desc="We enable global businesses to Automate Cloud & Transform for a sustainable and inclusive future."}) {
     return (
         <>
             <div className="py-32 " style={{
-                background: `url('${bannerImage}')`, backgroundPosition: "center",
-                boxShadow: "inset 0px 0px 50px 46px rgba(0,0,0,0.1)",
+                background: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%),url('${bannerImage}'), #000000`, 
+                
                 borderRadius: "0px",
                 backgroundRepeat: "no-repeat",
                 alignItems: "center",
                 display: "flex",
-                backgroundColor: '#000',
+                backgroundColor: 'bg-primary-900',
                 height: `${height}`,
                 backgroundSize: "cover",
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat"
             }}>
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1">

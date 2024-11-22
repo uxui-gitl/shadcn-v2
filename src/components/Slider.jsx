@@ -17,7 +17,6 @@ import 'swiper/css';
                 autoplay={autoplay}
                 loop={false}
                 spaceBetween={16}
-                
                 pagination={{ clickable: true }}
                 followFinger={true}
                 breakpoints={{
