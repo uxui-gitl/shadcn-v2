@@ -6,6 +6,8 @@ import 'swiper/css';
 
     function Slider({children, slidesPerView=3, autoplay=false}) {
 
+        
+
     return (
         <>
             <Swiper
@@ -15,7 +17,8 @@ import 'swiper/css';
                 autoplay={autoplay}
                 loop={false}
                 spaceBetween={16}
-                pagination={true}
+                
+                pagination={{ clickable: true }}
                 followFinger={true}
                 breakpoints={{
                     640: {
