@@ -638,7 +638,37 @@ const Page = () => {
         sectionDesc="Chart your career growth with Godrej Infotech edge. Explore our current openings and take the first step towards a fulfilling and successful career."
         sectionTextColor="#000"
         sectionHeadingLayout="horizontal"
+        style={{
+          marginTop: "-15rem",
+          paddingTop: "15rem",
+        }}
       >
+        <div
+          className="jobcard flex justify-between items-end py-6 border-b border-neutral-light-grey"
+        >
+          <div className="">
+            <div className="text-heading-03 text-primary-900 mb-4">
+              Experienced Backend Engineer
+            </div>
+            <p className="text-base w-3/4 text-neutral-dark-grey mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}</p>
+            <div className="">
+              <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
+                Mumbai
+              </span>
+            </div>
+          </div>
+          <div className="text-center">
+            <button
+              type="button"
+              className="text-neutral-white bg-primary-400 mb-8 font-medium rounded-full text-body-01 px-6 py-3 text-center"
+            >
+              Apply Now
+            </button>
+            <p className="text-helper-01 text-neutral-dark-grey">
+              Posted within the last 24 hours
+            </p>
+          </div>
+        </div>
         <div
           className="jobcard flex justify-between items-end py-6 border-b border-neutral-light-grey"
         >
