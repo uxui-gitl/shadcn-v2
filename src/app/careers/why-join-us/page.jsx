@@ -479,24 +479,26 @@ const Page = () => {
       {/* Gifftly */}
 
       <div className="relative w-full h-[90vh] lg:h-[100vh] 2xl:h-[90vh] rounded-3xl overflow-hidden">
-       
-       {isMobile ?<Image
-        src="/careers/giffitly-mobile.png" // Replace with your image URL
-        alt="Description of Image"
-        layout="responsive"
-        width={600}
-        height={400}
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-lg z-0"
-      />: <video
-          className="absolute top-0 left-0 w-full h-full object-cover bg-left-top z-0"
-          autoPlay
-          loop
-          muted
-        >
-          <source src={videoURL} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-}
+        {isMobile ? (
+          <Image
+            src="/careers/giffitly-mobile.png" // Replace with your image URL
+            alt="Description of Image"
+            layout="responsive"
+            width={600}
+            height={400}
+            className="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-lg z-0"
+          />
+        ) : (
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover bg-left-top z-0"
+            autoPlay
+            loop
+            muted
+          >
+            <source src={videoURL} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
         {/* Gradient overlay on top of video/image */}
         <div
           className="absolute top-0 left-0 w-full h-full z-100"
@@ -531,14 +533,14 @@ const Page = () => {
                 Godrej Infotech is expanding its horizons, guided by our Brand
                 Mascot GIFFITLY. GIFFITLY symbolizes our dedication to striving
                 for extra miles, supporting and motivating us in all endeavors.
-                Together, we&apos;re on a journey to take a leap forward in pursuit
-                of top-notch results.
+                Together, we&apos;re on a journey to take a leap forward in
+                pursuit of top-notch results.
               </p>
 
               {/* CTA Button */}
               <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300">
-              Explore Opportunities
-      </button>
+                Explore Opportunities
+              </button>
             </div>
           </div>
         </div>
@@ -558,7 +560,6 @@ const Page = () => {
           marginTop: "-15rem",
           paddingTop: "15rem",
         }}
-              
       >
         <Slider slidesPerView={1.5}>
           {CSR_DATA.map((item, index) => (
@@ -605,7 +606,9 @@ const Page = () => {
                 <div className="text-heading-03 text-neutral-white mb-5">
                   {item.title}
                 </div>
-                <h5 class="mb-5 text-base lg:text-[14px] 2xl:text-base text-neutral-white">{item.desc}</h5>
+                <h5 class="mb-5 text-base lg:text-[14px] 2xl:text-base text-neutral-white">
+                  {item.desc}
+                </h5>
 
                 <div className="flex">
                   <div className="mr-4">
@@ -643,59 +646,59 @@ const Page = () => {
           paddingTop: "15rem",
         }}
       >
-        <div
-          className="jobcard flex justify-between items-end py-6 border-b border-neutral-light-grey"
-        >
-          <div className="">
-            <div className="text-heading-03 text-primary-900 mb-4">
+        <div className="jobcard flex flex-col md:flex-row justify-between items-start md:items-end py-6 border-b border-neutral-light-grey">
+          <div className="w-full mb-6 md:mb-0">
+            <div className="text-heading-03 text-primary-900 mb-4 text-left">
               Experienced Backend Engineer
             </div>
-            <p className="text-base w-3/4 text-neutral-dark-grey mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}</p>
-            <div className="">
+            <p className="text-base text-neutral-dark-grey mb-6 text-left">
+              {`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}
+            </p>
+            <div className="flex justify-left md:justify-start">
               <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
                 Mumbai
               </span>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-right w-full">
             <button
               type="button"
-              className="text-neutral-white bg-primary-400 mb-8 font-medium rounded-full text-body-01 px-6 py-3 text-center"
+              className="w-full md:w-1/3 text-neutral-white bg-primary-400 font-medium rounded-full text-body-01 px-6 py-3 mb-4 md:mb-8"
             >
               Apply Now
             </button>
-            <p className="text-helper-01 text-neutral-dark-grey">
+            <p className="text-helper-01 text-neutral-dark-grey text-center md:text-right">
               Posted within the last 24 hours
             </p>
           </div>
         </div>
-        <div
-          className="jobcard flex justify-between items-end py-6 border-b border-neutral-light-grey"
-        >
-          <div className="">
-            <div className="text-heading-03 text-primary-900 mb-4">
+
+        <div className="jobcard flex flex-col md:flex-row justify-between items-start md:items-end py-6 border-b border-neutral-light-grey">
+          <div className="w-full mb-6 md:mb-0">
+            <div className="text-heading-03 text-primary-900 mb-4 text-left">
               Experienced Backend Engineer
             </div>
-            <p className="text-base w-3/4 text-neutral-dark-grey mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}</p>
-            <div className="">
+            <p className="text-base text-neutral-dark-grey mb-6 text-left">
+              {`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}
+            </p>
+            <div className="flex justify-left md:justify-start">
               <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
                 Mumbai
               </span>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-right w-full">
             <button
               type="button"
-              className="text-neutral-white bg-primary-400 mb-8 font-medium rounded-full text-body-01 px-6 py-3 text-center"
+              className="w-full md:w-1/3 text-neutral-white bg-primary-400 font-medium rounded-full text-body-01 px-6 py-3 mb-4 md:mb-8"
             >
               Apply Now
             </button>
-            <p className="text-helper-01 text-neutral-dark-grey">
+            <p className="text-helper-01 text-neutral-dark-grey text-center md:text-right">
               Posted within the last 24 hours
             </p>
           </div>
         </div>
-       
       </SectionWrapperNew>
       {/* end find role */}
     </>
