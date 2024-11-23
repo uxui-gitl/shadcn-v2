@@ -554,6 +554,11 @@ const Page = () => {
         sectionTextColor="text-neutral-white"
         sectionDescColor="text-neutral-white"
         sectionHeadingLayout="center"
+        style={{
+          marginTop: "-15rem",
+          paddingTop: "15rem",
+        }}
+              
       >
         <Slider slidesPerView={1.5}>
           {CSR_DATA.map((item, index) => (
