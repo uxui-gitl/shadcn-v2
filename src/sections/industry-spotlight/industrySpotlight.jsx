@@ -23,11 +23,11 @@ const IndustrySpotlight = ({ cardData = [], slidePerView='4', sectionHeaderWidth
             headingContainerWidth={sectionHeaderWidth}
           />
 
-          <div className="my-8">
+          <div className="">
             <Swiper
               slidesPerView={1}
               navigation={false}
-              pagination={true}
+              pagination={{ clickable: true }}
               followFinger={true}
               modules={[Navigation, Pagination]}
               autoplay={false}

@@ -2,7 +2,7 @@
 import { LinearGradient } from "react-text-gradients";
 function Overview({ Text }) {
     return (
-        <h1 className ="text-heading-03 text-center px-6 ">
+        <h1 className ="text-heading-03 text-center px-6 min-h-[14rem] ">
             <LinearGradient
                 gradient={["to left", "#5F22D9 ,#E0028E"]}
                 fallbackColor="black"

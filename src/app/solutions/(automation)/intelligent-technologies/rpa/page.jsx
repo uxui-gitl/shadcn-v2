@@ -319,7 +319,7 @@ const page = () => {
         <Slider>
           {[uiPath, powerAutomate, automationAnywhere]?.map((item, index) => (
             <SwiperSlide key={index} className="p-8">
-              <Image src={item} width={320} height={100} />
+              <Image src={item} width={320} height={100} alt='' />
             </SwiperSlide>
           ))}
         </Slider>
