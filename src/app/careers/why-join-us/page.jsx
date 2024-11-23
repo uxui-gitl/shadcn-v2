@@ -340,7 +340,7 @@ const Page = () => {
         <Slider>
           {GuidingPrinciples?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="px-8 py-4 bg-[transparent]">
+              <div className="px-8 py-4 bg-[transparent] mb-8 lg:mb-8">
                 <div className="flex py-4 border-b-[1px] border-secondary-10 border-opacity-20">
                   <Image
                     src={item.icon}
@@ -353,7 +353,7 @@ const Page = () => {
                     {item.title}
                   </div>
                 </div>
-                <p className="text-body-01 text-neutral-white mt-4">
+                <p className="text-body-01 text-neutral-white mt-4 ">
                   {item.desc}
                 </p>
               </div>
@@ -362,7 +362,7 @@ const Page = () => {
         </Slider>
       </SectionWrapperNew>
       {/* end guiding slider */}
-      {/* pimp  */}
+      {/* AP  */}
       <SectionWrapperNew
         sectionHeading=""
         sectionDesc=""
@@ -478,7 +478,7 @@ const Page = () => {
 
       {/* Gifftly */}
 
-      <div className="relative w-full h-[90vh] lg:h-[70vh] rounded-3xl overflow-hidden">
+      <div className="relative w-full h-[90vh] lg:h-[100vh] 2xl:h-[90vh] rounded-3xl overflow-hidden">
        
        {isMobile ?<Image
         src="/careers/giffitly-mobile.png" // Replace with your image URL
@@ -520,7 +520,7 @@ const Page = () => {
             </div>
 
             {/* Second Column: Content (Title, Description, CTA) */}
-            <div className="lg:w-[70%] flex flex-col items-center lg:items-start space-y-6 px-4 lg:py-16">
+            <div className="lg:w-[70%] flex flex-col items-center lg:items-start space-y-6 px-4 lg:py-4 2xl:py-16">
               {/* Title */}
               <h2 className="text-3xl lg:text-4xl font-semibold text-neutral-white lg:text-primary-900 text-center lg:text-left mt-8">
                 Meet GIFFITLY!
@@ -559,7 +559,7 @@ const Page = () => {
           {CSR_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="h-[564px]  p-6 rounded-3xl"
+                className="h-[564px] lg:[370px] p-5 rounded-3xl"
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -596,11 +596,11 @@ const Page = () => {
         <Slider>
           {empTestimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <div class="p-8 rounded-3xl shadow border-[1px] border-secondary-10 border-opacity-10">
+              <div class="p-5 rounded-3xl shadow border-[1px] border-secondary-10 border-opacity-10">
                 <div className="text-heading-03 text-neutral-white mb-5">
                   {item.title}
                 </div>
-                <h5 class="mb-5 text-base text-neutral-white">{item.desc}</h5>
+                <h5 class="mb-5 text-base lg:text-[14px] 2xl:text-base text-neutral-white">{item.desc}</h5>
 
                 <div className="flex">
                   <div className="mr-4">
@@ -613,10 +613,10 @@ const Page = () => {
                   </div>
 
                   <div>
-                    <h6 className="text-paragraph-01 font-semibold text-neutral-white">
+                    <h6 className="text-body-01 font-semibold text-neutral-white">
                       {item.empName}
                     </h6>
-                    <p className="text-base text-white">
+                    <p className="text-[14px] text-neutral-white">
                       {item.empDesignation}
                     </p>
                   </div>
@@ -635,59 +635,32 @@ const Page = () => {
         sectionHeadingLayout="horizontal"
       >
         <div
-          className="jobcard flex justify-between items-end py-6"
-          style={{ borderBottom: "1px solid #d3d3d3" }}
+          className="jobcard flex justify-between items-end py-6 border-b border-neutral-light-grey"
         >
           <div className="">
-            <div className="text-[30px] mb-4 text-[#1D162B]">
+            <div className="text-heading-03 text-primary-900 mb-4">
               Experienced Backend Engineer
             </div>
-            <p className="text-[16px] leading-[20px] text-[#808080] mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary`}</p>
+            <p className="text-base w-3/4 text-neutral-dark-grey mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}</p>
             <div className="">
               <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
                 Mumbai
               </span>
             </div>
           </div>
-          <div className="">
+          <div className="text-center">
             <button
               type="button"
-              className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center"
+              className="text-neutral-white bg-primary-400 mb-8 font-medium rounded-full text-body-01 px-6 py-3 text-center"
             >
               Apply Now
             </button>
-            <p className="text-[14px] text-[#808080">
+            <p className="text-helper-01 text-neutral-dark-grey">
               Posted within the last 24 hours
             </p>
           </div>
         </div>
-        <div
-          className="jobcard flex justify-between items-end py-6"
-          style={{ borderBottom: "1px solid #d3d3d3" }}
-        >
-          <div className="">
-            <div className="text-[28px] mb-4 text-[#1D162B]">
-              Experienced Backend Engineer
-            </div>
-            <p className="text-[14px] leading-[20px] text-[#808080] mb-6">{`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow <br></br>into the high impact, visionary`}</p>
-            <div className="">
-              <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
-                Mumbai
-              </span>
-            </div>
-          </div>
-          <div className="">
-            <button
-              type="button"
-              className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center"
-            >
-              Apply Now
-            </button>
-            <p className="text-[14px] text-[#808080">
-              Posted within the last 24 hours
-            </p>
-          </div>
-        </div>
+       
       </SectionWrapperNew>
       {/* end find role */}
     </>
