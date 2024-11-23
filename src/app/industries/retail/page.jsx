@@ -19,17 +19,19 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 
 
 function page() {
-    const blogImageUrl = "/retail/blog-bg.webp";
+    const sectionBGImageUrl =
+    "/data-insights/backgrounds/bg--data-visualization.webp";
+    const blogImageUrl = "/retail/blogBg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inconsistent omnichannel experiences", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Limited personalization and targeted marketing", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Inaccurate inventory forecasting and stockouts", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "High operational costs and limited scalability", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Missed opportunities for cross-selling and upselling", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "High shipping costs and delayed deliveries", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Inconsistent omnichannel experiences", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 2, title: "Limited personalization and targeted marketing", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 3, title: "Inaccurate inventory forecasting and stockouts", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 4, title: "High operational costs and limited scalability", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 5, title: "Missed opportunities for cross-selling and upselling", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 6, title: "High shipping costs and delayed deliveries", icon: '/upgradeCloud/icons/challengesIcon.svg' },
 
         ];
 
@@ -144,7 +146,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: '/retail/solutionOfferings/customerExperience.svg',
+            cardTopImageUrl: '/retail/solutionOfferings/customerExperience.webp',
             cardHoverData: [
                 'Salesforce',
                 'Microsoft D365 CRM',
@@ -163,7 +165,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: '/retail/solutionOfferings/ecommerce.svg',
+            cardTopImageUrl: '/retail/solutionOfferings/ecommerce.webp',
             cardHoverData: [
                 'Adobe Commerce Cloud',
                 'Shopify',
@@ -181,7 +183,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: '/retail/solutionOfferings/supplyChain.svg',
+            cardTopImageUrl: '/retail/solutionOfferings/supplyChain.webp',
             cardHoverData: [
                 'Infor WMS',
                 ]
@@ -194,7 +196,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: '/retail/solutionOfferings/dataInsights.svg',
+            cardTopImageUrl: '/retail/solutionOfferings/dataInsights.webp',
             cardHoverData: [
                 'Power BI',
                 'BIRST',
@@ -208,7 +210,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: '/retail/solutionOfferings/intelligentTech.svg',
+            cardTopImageUrl: '/retail/solutionOfferings/intelligentTech.webp',
             cardHoverData: [
                 'IoT',
                 
@@ -221,7 +223,7 @@ function page() {
             cardDesc: '',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: '/retail/solutionOfferings/integrationServ.svg',
+            cardTopImageUrl: '/retail/solutionOfferings/integrationServ.webp',
             cardHoverData: [
                 'Oracle',
                 'SAP',
@@ -520,7 +522,7 @@ function page() {
                 desc="Create seamless shopping experiences across channels and touchpoint"
                 cta="Let's Connect"
                 width="60%"
-                video="/retail/video/pageBanner.mp4"
+                video="/retail/videos/pageBanner.mp4"
             />
             <OverviewSection Text={`From adoption of CRM and e-commerce to the integration of data analytics, our expert team holds extensive experience of providing comprehensive advance solutions for global retail businesses.`} />
 
@@ -528,6 +530,7 @@ function page() {
                 <div className="container mx-auto py-32">
                     <SectionHeading
                         Color="text-neutral-white"
+                        sectionBGImageUrl={sectionBGImageUrl}
                         Heading="Knocking Business Challenges"
                         Desc=""
                         SectionHeadingMaxWidth='w-1/2'
@@ -578,7 +581,7 @@ function page() {
                     {RPASolution2?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div class="w-full min-h-[50vh] bg-white rounded-3xl group overflow-hidden relative border-[0.5px] border-primary-900 border-opacity-20" >
-                            <div className="h-[35vh] bg-slate-700" style={{ background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                            <div className="h-[35vh] bg-slate-700" style={{ background: `url('item.cardTopImageUrl')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                                 <div className="h-[25vh] p-5 relative">
                                     <h5 className="mb-4 text-heading-02 leading-heading-02 text-primary-900 font-semibold ">{item?.cardHeading}</h5>
                                     <p className="mb-6 text-body-01 leading-body-01 text-primary-900 font-normal">{item?.cardDesc}</p>
