@@ -26,18 +26,18 @@ function page() {
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Inaccurate order-based material requirement planning and budget control", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Ensuring consistent product quality and effective defect tracking ", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Difficulty in optimizing production sequences, balancing workloads and handling disruptions ", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Hassle with equipment maintenance due to lack of tracking and schedules", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Limited access to real-time information hinders office and shop floor productivity ", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Inaccurate order-based material requirement planning and budget control", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 2, title: "Ensuring consistent product quality and effective defect tracking ", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 3, title: "Difficulty in optimizing production sequences, balancing workloads and handling disruptions ", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 4, title: "Hassle with equipment maintenance due to lack of tracking and schedules", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 5, title: "Limited access to real-time information hinders office and shop floor productivity ", icon: '/upgradeCloud/icons/challengesIcon.svg' },
         
     ];
 
     const blogSliderData = [
     {
       id: 1,
-      cardBGImageUrl: '/manufacturing/blog-bg1.webp',
+      cardBGImageUrl: '/manufacturing/blogBg.webp',
       cardBGColor: 'red',
       cardHeading: "MES Impact on Manufacturing Operations ",
       cardDesc: `'Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing.'`,
@@ -348,8 +348,8 @@ function page() {
         {
             id: 1,
             CardHeading: "Future of Factories",
-            CardDesc:
-                "",
+            icon:'/manufacturing/keyCapabilities/Futureoffactories.svg',
+            CardDesc: "",
             additionalData: `
              <ul class="max-w-md space-y-1 text-white list-disc">
                                     <li>
@@ -370,6 +370,7 @@ function page() {
         {
             id: 2,
             CardHeading: "IoT Enabled Products",
+            icon:'/manufacturing/keyCapabilities/IIOT.svg',
             CardDesc:
                 "",
                 additionalData: `
@@ -388,8 +389,8 @@ function page() {
         },
         {
             id: 3,
-            
             CardHeading: "Supply Chain Management",
+            icon:'/manufacturing/keyCapabilities/SupplyChain.svg',
             CardDesc:
                 "",
                 additionalData: `
@@ -413,6 +414,7 @@ function page() {
         {
             id: 4,
             CardHeading: "Performance Management",
+            icon:'/manufacturing/keyCapabilities/Performance.svg',
             CardDesc:
                 "",
                 additionalData: `
@@ -433,6 +435,7 @@ function page() {
             id: 5,
             
             CardHeading: "Advanced Manufacturing",
+            icon:'/manufacturing/keyCapabilities/Advance.svg',
             CardDesc:
                 "",
                 additionalData: `
@@ -579,7 +582,7 @@ function page() {
                 desc="Transforming Factory to Shop Floor Operations with Future-Proof Solutions"
                 cta="Let's Connect"
                 width="60%"
-                video="/manufacturing/video/pageBanner.mp4"
+                video="/manufacturing/videos/pageBanner.mp4"
             />
             <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, including enhanced quality, predictable supply chain and increased profitability.`} />
 
@@ -655,7 +658,7 @@ function page() {
                     {DATA_MGMT_DATA?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="p-6 bg-[transparent] border-[0.5px] border-white rounded-3xl border-opacity-20 min-h-[424px]">
-                                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                                <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                                 <div className="text-heading-02 leading-heading-02 font-semibold text-neutral-white">{item.CardHeading}</div>
                                 <p className="text-body-01 leading-body-01 py-4 text-neutral-white">{item.CardDesc}</p>
                                 <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
@@ -776,7 +779,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/manufacturing/Automation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -804,7 +807,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/manufacturing/cloud.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -832,7 +835,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/manufacturing/transformation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
