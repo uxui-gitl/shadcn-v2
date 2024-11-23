@@ -22,16 +22,16 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 
 
 function page() {
-    const blogImageUrl = "/tradingDistribution/blog-bg.webp";
+    const blogImageUrl = "/tradingDistribution/blogBg.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Overcoming tight delivery deadline constraints", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Mitigating supplier non-compliance risks", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Resolving supply chain visibility gaps", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Coping with stock management and transfer inefficiencies", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Navigating diverse product line complexities", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Overcoming tight delivery deadline constraints", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 2, title: "Mitigating supplier non-compliance risks", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 3, title: "Resolving supply chain visibility gaps", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 4, title: "Coping with stock management and transfer inefficiencies", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 5, title: "Navigating diverse product line complexities", icon: '/upgradeCloud/icons/challengesIcon.svg' },
         
     ];
 
@@ -145,7 +145,7 @@ function page() {
             cardDesc: 'Meticulous analysis of current business operations, IT framework and accordingly develop tailored strategy for optimal business growth.',
             isArrow: false,
             cardTextColor: 'black',
-            cardTopImageUrl: 'retail/services/businessConsulting.svg',
+            cardTopImageUrl: 'tradingDistribution/services/businessConsulting.webp',
             // cardHoverData: [
             //     'abc',
             //     'abc',
@@ -163,7 +163,7 @@ function page() {
             cardDesc: 'We ensure seamless solution execution and worldwide deployment leveraging our expertise.',
             isArrow: false,
             cardTextColor: 'black',
-            cardTopImageUrl: 'retail/services/implementation.svg',
+            cardTopImageUrl: 'tradingDistribution/services/implementation.webp',
             
         },
         {
@@ -174,7 +174,7 @@ function page() {
             cardDesc: 'Helping organisations to unburden their IT operations with expert-managed services, ensuring higher efficiency.',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'retail/services/managedServices.svg'
+            cardTopImageUrl: 'tradingDistribution/services/managedServices.webp'
         },
         {
 
@@ -184,7 +184,7 @@ function page() {
             cardDesc: `Effortless upgrade to advance solution and data migration for transforming business operations.`,
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'retail/services/migration.svg'
+            cardTopImageUrl: 'tradingDistribution/services/migration.webp'
         },
         {
 
@@ -195,7 +195,7 @@ function page() {
             cardDesc: 'Future-proof business by modernizing legacy systems and optimizing overall performance.',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'retail/services/legacyModernization.svg'
+            cardTopImageUrl: 'tradingDistribution/services/legacyModernization.webp'
         },
 
         {
@@ -207,7 +207,7 @@ function page() {
             cardDesc: 'Stay agile and scalable with infrastructure as a service, without the obligation of managing infrastructure and hardware maintenance.',
             isArrow: true,
             cardTextColor: 'black',
-            cardTopImageUrl: 'retail/services/Infrastructure.svg'
+            cardTopImageUrl: 'tradingDistribution/services/Infrastructure.webp'
         },
 
     ]
@@ -220,7 +220,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/supplyChain.svg",
             CardHeading: "Supply Chain Visibility",
             CardDesc:
                 "Attain accountability and gain valuable insights into inventory, warehousing and profitability for informed decision-making.",
@@ -235,7 +235,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/inventory.svg",
             CardHeading: "Inventory Optimization",
             CardDesc:
                 "Maintain optimal stock levels, decrease excess inventory and optimize cash flow with ease, ensuring healthy bottom line.",
@@ -249,7 +249,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/streamlineSupplychain.svg",
             CardHeading: "Streamlined Supply Chain",
             CardDesc:
                 "Improve coordination and automate processes for effective supply chain management and enhanced visibility.",
@@ -263,7 +263,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/increasedOperational.svg",
             CardHeading: "Increased Operational Efficiency",
             CardDesc:
                 "Streamline processes to improve accuracy, cut down costs and drive business growth, enabling scalability.",
@@ -277,7 +277,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/stratergicPlanning.svg",
             CardHeading: "Strategic Planning Support ",
             CardDesc:
                 "Leverage predictive analytics for effective planning and inventory management, making data-driven decisions a reality.",
@@ -291,7 +291,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/workforce.svg",
             CardHeading: "Workforce Productivity",
             CardDesc:
                 "Provide employees with business intelligence and real-time responses to support strategic goals, enhancing collaboration.",
@@ -305,7 +305,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/warhouse.svg",
             CardHeading: "Warehouse Automation",
             CardDesc:
                 "Implement automation solutions to improve warehouse operations and overall productivity and reducing labor costs.",
@@ -319,7 +319,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/financialReporting.svg",
             CardHeading: "Financial Reporting",
             CardDesc:
                 "Centralize financial control and inventory management with detailed reporting for improved profitability, enabling better financial decision-making.",
@@ -333,7 +333,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/international.svg",
             CardHeading: "International Compliance",
             CardDesc:
                 "Ensure record management, adheres to GDPR standards for global compliance, mitigating risks and protecting reputation.",
@@ -347,7 +347,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/tradingDistribution/keyCapabilities/vendor&customer.svg",
             CardHeading: "Vendor & Customer Management",
             CardDesc:
                 "Enhance relationship, improve supplier performance and customer service with real-time insights through mobile.",
@@ -424,8 +424,8 @@ function page() {
 
     const CASE_STUDIES_DATA = [
         {
-            imageURL: "",
-            videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+            imageURL: "/tradingDistribution/caseStudies.webp",
+            videoURL: "",
             title: "Case Studies",
             heading: "",
             description: "Gain valuable insights on digital transformation journeys of trading & distribution businesses.",
@@ -483,7 +483,7 @@ function page() {
                 desc="Streamlining logistics, optimizing inventory and enhancing supply chain visibility"
                 cta="Let's Connect"
                 width="60%"
-                video="/tradingDistribution/video/pageBanner.mp4"
+                video="/tradingDistribution/videos/pageBanner.mp4"
             />
             <OverviewSection Text={`We offer effective solutions for trading and distribution businesses, ensuring warehouse governance, maximum perfect order fulfilment and optimized distribution operations for customers.`} />
             <SectionWrapper BGColor="bg-primary-900">
@@ -558,7 +558,7 @@ function page() {
                     {DATA_MGMT_DATA?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="p-6 bg-[transparent] border-[0.5px] border-white rounded-3xl border-opacity-20 min-h-[424px]">
-                                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                                <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                                 <div className="text-heading-02 leading-heading-02 font-semibold text-neutral-white">{item.CardHeading}</div>
                                 <p className="text-body-01 leading-body-01 py-4 text-neutral-white">{item.CardDesc}</p>
                                 <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
@@ -596,7 +596,7 @@ function page() {
                 {RPASolution2?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div class="w-full min-h-[50vh] bg-white rounded-3xl group overflow-hidden relative border-[0.5px] border-primary-900 border-opacity-20" >
-                            <div className="h-[35vh] bg-slate-700" style={{ background: `url('/Transformation/sale-force-crm/m1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                            <div className="h-[35vh] bg-slate-700" style={{ background: `url{item.cardTopImageUrl}`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                                 <div className="h-[25vh] p-5 relative">
                                     <h5 className="mb-4 text-heading-02 leading-heading-02 text-primary-900 font-semibold ">{item?.cardHeading}</h5>
                                     <p className="mb-6 text-body-01 leading-body-01 text-primary-900 font-normal">{item?.cardDesc}</p>
@@ -698,7 +698,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/tradingDistribution/solutionOfferings/automation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -727,7 +727,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/tradingDistribution/solutionOfferings/cloud.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -755,7 +755,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative invisible md:visible" style={{ backgroundImage: `url(/tradingDistribution/solutionOfferings/transformation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
