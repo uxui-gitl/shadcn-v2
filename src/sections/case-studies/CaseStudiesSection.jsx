@@ -242,7 +242,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
       {/* dialog  end*/}
 
       <SectionWrapper BGColor={bgColor}>
-        <div className="container mx-auto py-32 lg:py-8 2xl:py-32 -mt-8">
+        <div className="container mx-auto py-32 lg:py-32 2xl:py-32 -mt-8">
           {caseStudyLayout === "1" && (
             <div
               className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px]"
@@ -272,7 +272,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-1/2 px-5 py-10"
+                  className="relative w-full h-1/2 px-5 py-10 lg:py-5 2xl:py-10"
                   style={{
                     color: casestudy[1].color,
                     backgroundColor: casestudy[1].bgCardColor,
@@ -292,7 +292,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-1/2 px-5 py-10"
+                  className="relative w-full h-1/2 px-5 py-10 lg:py-5 2xl:py-10"
                   style={{
                     color: casestudy[2].color,
                     backgroundColor: casestudy[2].bgCardColor,
@@ -317,7 +317,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-full md:h-1/2  px-5 py-10"
+                  className="relative w-full h-full md:h-1/2  px-5 py-10 lg:py-5 2xl:py-10"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
@@ -714,7 +714,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Four */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full px-5 py-10 lg:rounded-3xl"
+                    className="relative w-full lg:w-1/3 h-full px-5 py-10 lg:py-5 2xl:py-10 lg:rounded-3xl"
                     style={{
                       color: casestudy[3].color,
                       backgroundColor: casestudy[3].bgCardColor,
@@ -733,7 +733,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Five */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl lg:rounded-3xl px-5 py-10"
+                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl lg:rounded-3xl px-5 py-10 lg:py-5 2xl:py-10"
                     style={{
                       color: casestudy[4].color,
                       backgroundColor: casestudy[4].bgCardColor,
