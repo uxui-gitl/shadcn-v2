@@ -3,6 +3,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 
 
 /**
@@ -21,6 +22,8 @@ const OurCapabilities = ({
   setTextColor,
   setHeadingContainerWidthFull,
   setHeadingLayout,
+  setPad,
+  setTop
 }) => {
   const [activeIndex, setActiveIndex] = useState(0); // Set the first item as default open
   const [currentImage, setCurrentImage] = useState(
@@ -53,17 +56,17 @@ const OurCapabilities = ({
   }, [activeIndex]);
 
   return (
-    <SectionWrapper
+    <SectionWrapperNew
+     sectionHeading={setHeading}
+     sectionDesc={setDesc}
+     sectionTextColor={setTextColor}  
+     sectionHeadingLayout={setHeadingLayout}
+     setPad={setPad}
+     setTop={setTop}
      
     >
-      <div className="container mx-auto py-32">
-        <SectionHeading
-          Heading={setHeading}
-          Desc={setDesc}
-          Color={setTextColor}
-          layout={setHeadingLayout}
-          containerWidthFull={setHeadingContainerWidthFull}
-        />
+      <div className="">
+      
         <div className="flex flex-col md:flex-row gap-8  ">
           {/* Accordion div */}
           <div className="w-full md:w-1/2">
@@ -100,7 +103,7 @@ const OurCapabilities = ({
                     transition: "height 0.5s ease-in-out",
                   }}
                 >
-                  <div className="text-neutral-dark-grey pt-4 pb-8">
+                  <div className="text-neutral-dark-grey mb-4">
                     <p>{item.content}</p>
                   </div>
                 </div>
@@ -118,15 +121,16 @@ const OurCapabilities = ({
                 src={currentImage}
                 alt="Description of the image"
                 layout="responsive"
-                width={424}
-                height={424}
+                width={624}
+                height={1000}
+                responsive={true}
                 className="rounded-3xl object-cover"
               />
             </div>
           </div>
         </div>
       </div>
-    </SectionWrapper>
+    </SectionWrapperNew>
   );
 };
 
