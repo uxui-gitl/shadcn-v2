@@ -242,6 +242,7 @@ function page() {
           title: "Retail Store Transformation",
           desc:
             "Enabling personalization in sales process, loyalty management programs, and enhancing customer experience with retail stores modernization.",
+           icon:'/retail/keyCapabilities/Retail.svg', 
             
         },
     
@@ -249,17 +250,20 @@ function page() {
           title: "Supply Chain Management and Tracking",
           desc:
             "Increasing the responsiveness of supply chain with flexibility and effective order management.",
+          icon:'/retail/keyCapabilities/SupplyChain.svg', 
         },
         {
           title: "Commerce Transformation",
           desc:
             "Modernizing the shopping journey of customers for global customer base increasing operational effectiveness.",
+           icon:'/retail/keyCapabilities/Commerce.svg',   
          
         },
         {
           title: "Integrated Digital Functionalities",
           desc:
             "A single intelligent platform serving multiple channels, streamlining data sharing, helping in improving operational efficiency.",
+          icon:'/retail/keyCapabilities/IntegratedDigital.svg',    
         },
       ];
 
@@ -638,7 +642,7 @@ function page() {
           {keyResponsibilityData?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-6 bg-[transparent]  border-[0.5px] border-white rounded-3xl border-opacity-20 min-h-[424px] ">
-                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                 <div className="text-heading-02 leading-heading-02 font-semibold text-neutral-white">{item?.title}</div>
                 <p className="text-body-01 leading-body-01 py-4 text-neutral-white">{item?.desc}</p>
               </div>
