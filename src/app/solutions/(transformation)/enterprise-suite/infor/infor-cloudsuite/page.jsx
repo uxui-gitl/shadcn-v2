@@ -212,87 +212,86 @@ const page = () => {
         setHeadingLayout={"left"}
       ></CommonCardThreeSlider>
 
-<div className="bg-primary-900 rounded-3xl -mt-8">
-  <div
-    className="container mx-auto flex "
-    style={{ alignItems: "center", overflow: "hidden" }}
-  >
-    {/* Left Column */}
-    <div className="w-full md:w-1/2 min-h-[420px] py-8">
-      <SectionHeading
-        Heading={`Infor CloudSuite Services`}
-        Color={"white"}
-        Desc={`Leverage our understanding of industry specific business processes refined through years of experience and benefit from end-to-end Infor CloudSuite services`}
-        headingContainerWidth={"w-full"}
-      />
-    </div>
-    
-    {/* Right Column */}
-    <div
-      className="hidden md:w-1/2 lg:block"
-      style={{
-        backgroundImage: "url(/infor/Infor-Cloudsuite-Services.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "left",
-        height: "520px", // Added explicit height
-      }}
-    ></div>
-  </div>
-  
-  {/* Swiper Section */}
-  <div
-    className="container mx-auto bg-white py-5 rounded-t-3xl"
-    style={{
-      zIndex: 2,
-      position: "relative",
-    }}
-  >
-    <Swiper
-      slidesPerView={1}
-      navigation={false}
-      pagination={{ clickable: true }}
-      followFinger={true}
-      modules={[Navigation, Pagination]}
-      autoplay={true}
-      loop={false}
-      spaceBetween={30}
-      breakpoints={{
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 16,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 24,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 32,
-        },
-      }}
-    >
-      {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div className="bg-white rounded-3xl">
-            <Image
-              className="rounded-3xl mx-auto md:mx-2 ml-3"
-              src={item.icon}
-              width={48}
-              height={48}
-              alt="Img"
+      <div className="bg-primary-900 rounded-3xl -mt-8">
+        <div
+          className="container mx-auto flex "
+          style={{ alignItems: "center", overflow: "hidden" }}
+        >
+          {/* Left Column */}
+          <div className="w-full md:w-1/2 min-h-[420px] py-8">
+            <SectionHeading
+              Heading={`Infor CloudSuite Services`}
+              Color={"white"}
+              Desc={`Leverage our understanding of industry specific business processes refined through years of experience and benefit from end-to-end Infor CloudSuite services`}
+              headingContainerWidth={"w-full"}
             />
-            <div className="pt-5">
-              <h5 className="mb-4 text-heading-03 font-semibold text-center md:text-left">
-                {item.cardTitle}
-              </h5>
-            </div>
           </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </div>
-</div>
 
+          {/* Right Column */}
+          <div
+            className="hidden md:w-1/2 lg:block"
+            style={{
+              backgroundImage: "url(/infor/Infor-Cloudsuite-Services.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "left",
+              height: "520px", // Added explicit height
+            }}
+          ></div>
+        </div>
+
+        {/* Swiper Section */}
+        <div
+          className="container mx-auto bg-white py-5 rounded-t-3xl"
+          style={{
+            zIndex: 2,
+            position: "relative",
+          }}
+        >
+          <Swiper
+            slidesPerView={1}
+            navigation={false}
+            pagination={{ clickable: true }}
+            followFinger={true}
+            modules={[Navigation, Pagination]}
+            autoplay={true}
+            loop={false}
+            spaceBetween={30}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 32,
+              },
+            }}
+          >
+            {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-3xl">
+                  <Image
+                    className="rounded-3xl mx-auto md:mx-2 ml-3"
+                    src={item.icon}
+                    width={48}
+                    height={48}
+                    alt="Img"
+                  />
+                  <div className="pt-5">
+                    <h5 className="mb-4 text-heading-03 font-semibold text-center md:text-left">
+                      {item.cardTitle}
+                    </h5>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
 
       <BenefitSliderSection
         ID={"BENEFIT"}
@@ -304,7 +303,7 @@ const page = () => {
         sectionTextColor={"text-neutral-white"}
         cardData={BENEFITS_CARDS_DATA}
         sectionHeadingMaxWidth={"100%"}
-        style={{paddingTop:'10rem', paddingBottom:'4rem'}}
+        style={{ paddingTop: "10rem", paddingBottom: "4rem" }}
       />
 
       <BlogSection

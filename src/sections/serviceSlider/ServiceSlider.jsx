@@ -5,24 +5,44 @@ import SectionHeading from '@/components/SectionHeading';
 function ServiceSlider({sectionHeading , sectionDesc, children}) {
     return (
         <>
-            <div className="rounded-3xl" style={{ backgroundColor: '#1D162B', marginTop: '-35px' }}>
-                <div className="md:container mx-auto md:pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
-                    <div className="w-full md:w-1/2">
-                        <SectionHeading
-                            Heading={sectionHeading}
-                            Color={'white'}
-                            Desc={sectionDesc}
-                            headingContainerWidth={'w-full'}
-                        />
-                    </div>
-                    <div className="hidden md:w-1/2 md:block">
-                        <img src="/infor/man.svg" style={{ width: '100%' }} />
-                    </div>
-                </div>
-                <div className="md:container mx-auto bg-[#EFE9FB] py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px", transform: "translateY(-28px)" }}>
-                  {children}
-                </div>
-            </div>
+           <div className="bg-primary-900 rounded-3xl -mt-8">
+        <div
+          className="container mx-auto flex "
+          style={{ alignItems: "center", overflow: "hidden" }}
+        >
+          {/* Left Column */}
+          <div className="w-full md:w-1/2 min-h-[420px] py-8">
+            <SectionHeading
+              Heading={sectionHeading}
+              Color={"white"}
+              Desc={sectionDesc}
+              headingContainerWidth={"w-full"}
+            />
+          </div>
+
+          {/* Right Column */}
+          <div
+            className="hidden md:w-1/2 lg:block"
+            style={{
+              backgroundImage: "url(/infor/Infor-Cloudsuite-Services.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "left",
+              height: "520px", // Added explicit height
+            }}
+          ></div>
+        </div>
+
+        {/* Swiper Section */}
+        <div
+          className="container mx-auto bg-white py-5 rounded-t-3xl"
+          style={{
+            zIndex: 2,
+            position: "relative",
+          }}
+        >
+          {children}
+        </div>
+      </div>
         </>
     )
 }

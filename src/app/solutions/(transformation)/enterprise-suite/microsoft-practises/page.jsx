@@ -384,7 +384,7 @@ const MicrosoftPractises = () => {
       description:
         "The world's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries.",
       link: "/case-study-1",
-      color: "#FFFFFF",
+      color: "bg-secondary-10",
     },
     {
       imageURL: "path/to/image1.jpg",
@@ -545,6 +545,7 @@ const MicrosoftPractises = () => {
         setDesc="Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance. In instances of system issues, our team meticulously assesses the impact on business processes and prioritizes swift resolutions. Further, our adaptable support services offer both dedicated and shared teams to effectively address individual customer needs."
         setColor="text-primary-900"
         sectionHeaderWidth={"w-full"}
+        setTop={false}
       />
       {/* End--Highlight-Customer-Centeric-Section================================================================ */}
 
@@ -565,19 +566,19 @@ const MicrosoftPractises = () => {
         sectionHeading="Our Service Expertise"
         sectionDesc="Our comprehensive Microsoft services include everything that business requires to effectively digitize business operations"
       >
-        <Slider>
+        <Slider slidesPerView={4}>
           {serviceSliderData?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="bg-transparent rounded-3xl">
                 <Image
-                  className="rounded-3xl mx-auto md:mx-2"
+                  className="rounded-3xl mx-auto md:mx-2 ml-3"
                   src={item.icon}
                   alt=""
-                  width={64}
-                  height={64}
+                  width={48}
+                  height={48}
                 />
-                <div className="p-5">
-                  <h5 className="mb-4 text-heading-02 leading-heading-02 font-bold text-center md:text-left">
+                <div className="pt-5">
+                  <h5 className="mb-4 text-heading-03 font-bold text-center md:text-left">
                     {item.text}
                   </h5>
                 </div>
@@ -598,8 +599,9 @@ const MicrosoftPractises = () => {
           "Building tailored software applications with Microsoft Azure, 365, Dynamics, and Power Platform."
         }
         sectionTextColor={"text-neutral-white"}
+        sectionDescColor={"text-neutral-white"}
         sectionHeaderMaxWidth={"40%"}
-        x
+        setHeadingLayout={'horizontal'}
         cardData={SOLUTION_DATA}
       ></CommonCardThreeSlider>
       {/* End--Microsoft-Solution-Section================================================================ */}
@@ -625,6 +627,7 @@ const MicrosoftPractises = () => {
         }
         sectionTextColor={"text-neutral-white"}
         cardData={BENEFITS_CARDS_DATA}
+        style={{paddingTop:'10rem', paddingBottom:'4rem'}}
       />
       {/* End--Benefits-Section================================================================ */}
 
@@ -722,7 +725,7 @@ const MicrosoftPractises = () => {
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
-        bgColor={"#E4E4E4"}
+        bgColor={"bg-secondary-10"}
       />
       {/* End--Case-Study-Section================================================================ */}
 
@@ -757,6 +760,7 @@ const MicrosoftPractises = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
       {/* End--Testimonial-Section================================================================ */}
 
