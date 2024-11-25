@@ -28,10 +28,11 @@ function BlogSliderSection({
   cardData = [],
   SlidesPerView = "1",
   Autoplay = "false",
+  style = {},
 }) {
   return (
     <>
-      <div className="rounded-3xl h-full">
+      <div className="rounded-3xl h-full" style={{...style}}>
         <Swiper
           slidesPerView={SlidesPerView}
           navigation={false}

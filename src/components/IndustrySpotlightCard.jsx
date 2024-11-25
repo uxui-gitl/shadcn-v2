@@ -29,7 +29,7 @@ function CommonCardTwo({ Item }) {
     <div
       className="relative shadow flex flex-col justify-between overflow-hidden" 
       style={{
-        backgroundColor: cardBGColor,
+        backgroundColor: `${cardBGColor}`,
         color: cardTextColor,
         minHeight: "424px",
         width: "100%",
@@ -74,7 +74,7 @@ function CommonCardTwo({ Item }) {
       )}
    </div>
 
-   {additionalData && <div className={`min-h-[424px] text-body-01 leading-body-01 p-5 duration-300 rounded-3xl bg-primary-10 text-neutral-darkest-grey z-20 ${isHovered ? '-translate-y-full' : 'translate-y-full'}`}>
+   {additionalData && <div className={`min-h-[424px] text-body-01 leading-body-01 p-5 duration-300 rounded-3xl ${cardBGColor} text-neutral-darkest-grey z-20 ${isHovered ? '-translate-y-full' : 'translate-y-full'}`}>
         <p dangerouslySetInnerHTML={{ __html: additionalData }} />
         </div>}
     </div>

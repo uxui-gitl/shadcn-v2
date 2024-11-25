@@ -10,18 +10,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const IndustrySpotlight = ({ cardData = [], slidePerView='4', setTop='',sectionHeaderWidth='', sectionHeading="Industry Spotlights", sectionDesc="Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program."}) => {
-  
+const IndustrySpotlight = ({
+  cardData = [],
+  slidePerView = "4",
+  setTop = "",
+  sectionHeaderWidth = "",
+  setBGColor,
+  sectionHeading = "Industry Spotlights",
+  sectionDesc = "Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program.",
+}) => {
   return (
     <>
-      <SectionWrapper BGColor={'bg-neutral-white'}  setTop={setTop} >
+      <SectionWrapper BGColor={setBGColor} setTop={setTop}>
         <div className="container mx-auto py-32">
           <SectionHeading
             Heading={sectionHeading}
             Desc={sectionDesc}
-            Color={'text-primary-900'}
+            Color={"text-primary-900"}
             headingContainerWidth={sectionHeaderWidth}
-           
           />
 
           <div className="">
@@ -36,18 +42,18 @@ const IndustrySpotlight = ({ cardData = [], slidePerView='4', setTop='',sectionH
               spaceBetween={32}
               breakpoints={{
                 640: {
-                    slidesPerView: 1,
-                    spaceBetween: 16,
+                  slidesPerView: 1,
+                  spaceBetween: 16,
                 },
                 768: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
+                  slidesPerView: 2,
+                  spaceBetween: 24,
                 },
                 1024: {
-                    slidesPerView: `${slidePerView}`,
-                    spaceBetween: 32,
+                  slidesPerView: `${slidePerView}`,
+                  spaceBetween: 32,
                 },
-            }}
+              }}
             >
               {cardData?.map((item, index) => (
                 <SwiperSlide key={item.id ? item?.id : index}>

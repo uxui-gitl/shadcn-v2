@@ -18,6 +18,7 @@ function ReviewSliderSection({
   Color = "#000",
   BGColor = "",
   setHeadingLayout,
+  style = {},
 }) {
   const swiperNextBtn = {
     position: "absolute",
@@ -47,6 +48,7 @@ function ReviewSliderSection({
         bgColor={BGColor}
         sectionHeadingLayout={setHeadingLayout}
         style={{
+          ...style,
           backgroundImage: `url(${SectionImageUrl})`,
           backgroundSize: "cover",
           borderBottomLeftRadius: "0px",
@@ -54,7 +56,7 @@ function ReviewSliderSection({
         }}
       >
         <div className="">
-          <div className="flex mt-10 md:mt-20 min-h-[40vh]">
+          <div className="flex mt-10 md:mt-20 min-h-[540px]">
             <div className="relative hidden md:inline w-[30%]">
               <div
                 className={`swiper-button-next`}
