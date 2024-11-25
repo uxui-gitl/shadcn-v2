@@ -65,7 +65,7 @@ const OurCapabilities = ({
      setTop={setTop}
      
     >
-      <div className="">
+      <div className="lg:mb-8">
       
         <div className="flex flex-col md:flex-row gap-8  ">
           {/* Accordion div */}
