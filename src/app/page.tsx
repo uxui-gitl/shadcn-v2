@@ -703,6 +703,7 @@ export default function Home() {
         style={{
           background: `url(/homeNew/globe.svg), linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)`,
           paddingTop: "350px",
+          paddingBottom: "8rem",
           backgroundPosition: "bottom center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover", // Optional: ensures the image covers the div area
@@ -754,7 +755,7 @@ export default function Home() {
         title="Count on Us"
         sectionHeadingLayout="horizontal"
       >
-        <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+        <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0 lg:mb-16">
           <Tabs
             activeTabClassName="!bg-[#f2f2f2] !text-[#fff]"
             contentClassName="!mt-5"
