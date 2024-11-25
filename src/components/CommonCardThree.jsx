@@ -22,6 +22,7 @@ function CommonCardTwo({ Item }) {
                 width: "100%",
                 minHeight: '540px',
                 maxHeight:'540px',
+                cursor: 'pointer',
                
             }}>
                 {cardTopImageUrl && 

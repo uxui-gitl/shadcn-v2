@@ -81,7 +81,7 @@ const EnterpriseSuite = () => {
       cardHeading: "Dealer<br/>Management",
       cardDesc:
         "Dot Net based Business Central-integrated solution for retail dealers, streamlining end to end inventory and order management. It eliminates manual data entry, reducing errors and streamlines processes, enabling users to access real-time insights, track inventory, monitor sales, and make data-driven decisions with ease. ",
-      isArrow: true,
+      isArrow: false,
       cardTextColor: "black",
       cardTopImageUrl: "/enterprise-suite/accelerators/DealerManagement.webp",
     },
@@ -91,7 +91,7 @@ const EnterpriseSuite = () => {
       cardHeading: "Valve Manufacturing Process Management",
       cardDesc:
         "Valve manufacturing solution with pre-configured process mapping and standardized workflows for seamless operations in complex scenarios.",
-      isArrow: true,
+      isArrow: false,
       cardTextColor: "black",
       cardTopImageUrl: "/enterprise-suite/accelerators/valueManufacturing.webp",
     },
@@ -101,7 +101,7 @@ const EnterpriseSuite = () => {
       cardHeading: "Metal Recycling Operations Management",
       cardDesc:
         "Pre-built customizations for metal recycling, optimizing operations backed by our process knowledge.",
-      isArrow: true,
+      isArrow: false,
       cardTextColor: "black",
       cardTopImageUrl: "/enterprise-suite/accelerators/MetalRecycling.webp",
     },
@@ -315,8 +315,9 @@ const EnterpriseSuite = () => {
           "Enhancing business apps, our solutions integrate seamlessly, delivering value with expert support & streamlined processes."
         }
         sectionTextColor={"text-neutral-white"}
-        sectionHeaderMaxWidth={"40%"}
-        x
+        sectionDescColor={"text-neutral-white"}
+        sectionHeaderMaxWidth='w-1/2'
+        setHeadingLayout={'left'}
         cardData={SOLUTION_DATA}
       ></CommonCardThreeSlider>
       {/* End--Solution-Card-Slider======================================================== */}
@@ -355,6 +356,7 @@ const EnterpriseSuite = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
       {/* Section--TransformBusinessForm======================================================================= */}
       <TransformBusinessForm

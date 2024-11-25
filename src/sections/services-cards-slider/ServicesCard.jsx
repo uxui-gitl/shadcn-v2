@@ -89,33 +89,57 @@ const ServicesCard = ({
     <div>
       {isMobile ? (
         <div
-       
-        className={`relative h-[424px] w-full rounded-3xl overflow-hidden flex flex-col transition-colors duration-400 ease-in-out bg-primary-900` }
-      >
-        {/* Circle at the top-left */}
-        <div className="absolute top-4 left-4 flex items-center justify-center w-6 h-6 bg-neutral-mid-grey rounded-full text-primary-900 text-body-01 leading-sm-body-01">
-          {String(index + 1).padStart(2, "0")}
+          ref={cardRef}
+          className={`relative h-[424px] rounded-3xl overflow-hidden flex transition-colors duration-400 ease-in-out ${
+            isActive ? "bg-primary-900" : "bg-secondary-10"
+          }`}
+          onMouseEnter={() => onHover(true)}
+          onMouseLeave={() => onHover(false)}
+        >
+          <div className="absolute top-4 left-4 flex items-center justify-center w-6 h-6 bg-neutral-mid-grey rounded-full text-primary-900 text-body-01 leading-sm-body-01">
+            {String(index + 1).padStart(2, "0")}
+          </div>
+
+          {!isActive && (
+            <div className="flex-1 flex flex-col justify-end p-4 h-full">
+              <h2
+                ref={titleRef}
+                className="text-paragraph-02 leading-paragraph-02 font-medium"
+              >
+                {title}
+              </h2>
+            </div>
+          )}
+
+          {isActive && (
+            <div className="w-1/2 flex-1 flex flex-col justify-end p-5 h-full text-neutral-white">
+              <h2
+                ref={hoverTitleRef}
+                className="text-heading-03 font-medium py-5 translate-y-5 opacity-0"
+              >
+                {hoverTitle}
+              </h2>
+              <p
+                ref={descRef}
+                className="text-base translate-y-5 opacity-0"
+                dangerouslySetInnerHTML={{ __html: description }}
+              ></p>
+            </div>
+          )}
+
+          <div
+            ref={imageRef}
+            className="w-1/2 h-full overflow-hidden opacity-0 transform translate-x-[100%]"
+          >
+            <Image
+              src={imageUrl}
+              alt={title}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-l-3xl"
+            />
+          </div>
         </div>
-      
-        {/* Heading and Description in the top half */}
-        <div className="flex-1 p-5 text-neutral-white flex flex-col justify-between">
-          <h2 className="text-heading-02 leading-heading-02 font-medium">
-            {hoverTitle}
-          </h2>
-          <p className="text-body-01 leading-body-01 mt-4" dangerouslySetInnerHTML={{ __html: description }}></p>
-        </div>
-      
-        {/* Image in the bottom half */}
-        {/* <div className="w-full h-1/2 overflow-hidden">
-          <Image
-            src={imageUrl}
-            alt={title}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-b-3xl"
-          />
-        </div> */}
-      </div>
       
       ) : (
         <div
@@ -145,13 +169,13 @@ const ServicesCard = ({
             <div className="w-1/2 flex-1 flex flex-col justify-end p-5 h-full text-neutral-white">
               <h2
                 ref={hoverTitleRef}
-                className="text-heading-02 leading-heading-02 font-medium py-5 translate-y-5 opacity-0"
+                className="text-heading-03 font-medium py-5 translate-y-5 opacity-0"
               >
                 {hoverTitle}
               </h2>
               <p
                 ref={descRef}
-                className="text-body-01 leading-body-01 translate-y-5 opacity-0"
+                className="text-base translate-y-5 opacity-0"
                 dangerouslySetInnerHTML={{ __html: description }}
               ></p>
             </div>

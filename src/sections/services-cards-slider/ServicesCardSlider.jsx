@@ -3,6 +3,7 @@ import ServicesCard from "./ServicesCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
+import { Pagination } from "swiper/modules";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,12 +18,13 @@ const CardSlider = ({cardData, heading, desc, color}) => {
   return (
     <SectionWrapper BGColor="bg-neutral-white">
       <div className="container mx-auto py-32">
-        <SectionHeading Heading={heading} Desc={desc} Color={color} />
+        <SectionHeading Heading={heading} Desc={desc} Color={color} headingContainerWidth="w-1/2"/>
         <Swiper
           spaceBetween={16}
           slidesPerView={"auto"}
           centeredSlides={false}
           pagination={{ clickable: true }}
+          modules={[Pagination]}
           className="w-full"
         >
           {cardData.map((card, index) => (
@@ -34,6 +36,7 @@ const CardSlider = ({cardData, heading, desc, color}) => {
                 content={card.content}
                 imageUrl={card.imageURL}
                 index={index} // Pass the index here
+                cardDataLength = {cardData.length}
                 isActive={activeIndex === index} // Set active state based on index
                 isHovered={hoveredIndex === index} // Check if the card is currently hovered
                 onHover={(isHovered) => {
