@@ -45,51 +45,51 @@ const CARDS_DATA = [
 const EnterpriseTransformationCards = () => {
   return (
     <>
-      <SectionWrapper>
+      <SectionWrapper setTop={false}>
         <div className="container mx-auto py-4">
           <div className="flex flex-col md:flex-row gap-8 min-h-[324px]">
             {CARDS_DATA.map((card, index) => (
               <div
-                key={index}
-                className="flex-1 rounded-3xl border-[1px] border-neutral-light-grey p-5"
-                style={{ backgroundColor: "white" }}
+              key={index}
+              className="flex-1 flex flex-col justify-between rounded-3xl border-[1px] border-neutral-light-grey p-5"
+              style={{ backgroundColor: "white" }}
+            >
+              <Image
+                src={card.logoSrc}
+                alt={card.altText}
+                width={card.width}
+                height={card.height}
+                className="mb-2"
+              />
+              <ul>
+                {card.listItems.map((item, itemIndex) => (
+                  <li
+                    key={itemIndex}
+                    className="py-2 border-b border-neutral-light-grey last:border-b-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href={"#Contact"}
+                className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-2 mt-auto group"
               >
-                <Image
-                  src={card.logoSrc}
-                  alt={card.altText}
-                  width={card.width}
-                  height={card.height}
-                  className="mb-2"
-                />
-                <ul>
-                  {card.listItems.map((item, itemIndex) => (
-                    <li
-                      key={itemIndex}
-                      className="py-2 border-b border-gray-300"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-
-                <Link
-                  href={"#Contact"}
-                  className="text-neutral-white text-label-01 leading-label-01 flex items-center bg-primary-400 hover:bg-primary-500 font-medium rounded-full px-8 py-2 mt-4  mb-2 group"
-                >
-                  Know more
-                  <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
-                    <Icon
-                      path={mdiArrowTopRight}
-                      style={{
-                        marginLeft: "0.5em",
-                        transform: "rotate(45deg)",
-                        marginTop: "1px",
-                      }}
-                      size={1}
-                    />
-                  </div>
-                </Link>
-              </div>
+                Know more
+                <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
+                  <Icon
+                    path={mdiArrowTopRight}
+                    style={{
+                      marginLeft: "0.5em",
+                      transform: "rotate(45deg)",
+                      marginTop: "1px",
+                    }}
+                    size={1}
+                  />
+                </div>
+              </Link>
+            </div>
+            
             ))}
           </div>
         </div>

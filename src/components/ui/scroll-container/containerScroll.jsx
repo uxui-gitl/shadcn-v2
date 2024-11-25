@@ -18,8 +18,8 @@ const ContainerScroll = ({ titleComponent, children, imageSrc }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.4, 0.6], [0, 0.7, 1]); // Fade in the text faster
 
   return (
-    <SectionWrapper BGColor="bg-primary-white">
-      <div ref={containerRef} className="flex justify-center items-center pt-8">
+    <SectionWrapper BGColor="bg-primary-white" setTop={false}>
+      <div ref={containerRef} className="flex justify-center items-center ">
         <div
           className="container mx-auto w-full relative "
           style={{
@@ -54,25 +54,26 @@ export const Header = ({ translateY, opacity, children }) => {
 
 export const Card = ({ rotateX, scale, children, imageSrc }) => {
   return (
-    <motion.div
-      style={{
-        rotateX, // Perspective on scroll
-        scale, // Scale effect on scroll
-      }}
-      className="relative flex justify-center items-center h-[1000px] md:h-[920px] w-full rounded-3xl overflow-hidden p-8"
-    >
-      <Image
-        src={imageSrc}
-        alt="Background"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-        className="absolute inset-0 z-0" // Full cover image
-      />
-      <div className="relative z-10 flex flex-col justify-center items-center text-neutral-black">
-        {children}
-      </div>
-    </motion.div>
+<motion.div
+  style={{
+    rotateX, // Perspective on scroll
+    scale, // Scale effect on scroll
+    backgroundColor:'#f1f1f1'
+  }}
+  className="relative flex justify-center items-center h-[750px] lg:h-[720px] 2xl:h-[800px] w-full rounded-3xl overflow-hidden p-8"
+>
+  <Image
+    src={imageSrc}
+    alt="Background"
+    className="absolute bottom-0 left-0 w-full h-auto z-0" // Image anchored to the bottom
+    width={2560}
+    height={1200}
+  />
+  <div className="relative z-10 flex flex-col justify-center items-center text-neutral-black">
+    {children}
+  </div>
+</motion.div>
+
   );
 };
 
