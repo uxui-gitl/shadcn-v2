@@ -361,9 +361,9 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
             </div>
           )}
           {caseStudyLayout === "2" && (
-            <div className="flex flex-col md:flex-row justify-start items-center  w-full h-full md:h-[724px]">
+            <div className="flex flex-col md:flex-row justify-start items-center  w-full h-full md:h-[724px] lg:gap-4">
               <div
-                className="relative md:w-2/3  h-full rounded-t-3xl p-5 flex flex-col justify-end"
+                className="relative md:w-2/3  h-full rounded-t-3xl md:rounded-3xl p-5 flex flex-col justify-end"
                 style={{
                   color: casestudy[0].color,
                   overflow: "hidden", // Ensures no overflow from the video
@@ -383,23 +383,23 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
                     style={{ opacity: 1 }}
                   />
                 </div>
-                <div className="relative z-20  w-[70%] flex flex-col justify-end">
+                <div className="relative z-20  w-[70%] flex flex-col justify-end ">
                   {" "}
                   {/* Ensure content is aligned at the bottom */}
-                  <h3 className="text-label-01 leading-label-01 font-semibold mb-12">
-                    {casestudy[0].title}
-                  </h3>
-                  <h1 className="text-heading-01 leading-heading-01 font-medium mb-6">
-                    {casestudy[0].heading}
-                  </h1>
-                  <p className=" text-body-01 leading-body-01 mb-4">
-                    {casestudy[0].description}
-                  </p>
+                  <h3 className="text-label-01 text-neutral-white  font-semibold mb-12">
+                          {casestudy[0].title}
+                        </h3>
+                        <h1 className="text-heading-01 text-neutral-white font-medium mb-6">
+                          {casestudy[0].heading}
+                        </h1>
+                        <p className=" text-body-01 leading-body-01 mb-4">
+                          {casestudy[0].description}
+                        </p>
                 </div>
               </div>
 
               <div
-                className="flex flex-col w-full md:w-1/3 h-full md:rounded-3xl"
+                className="flex flex-col w-full md:w-1/3 h-full md:rounded-3xl md:gap-4"
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
@@ -409,10 +409,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
                     backgroundColor: casestudy[1].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-6">
+                  <h1 className="text-heading-03 font-medium mb-2 lg:mb-6">
                     {casestudy[1].heading}
                   </h1>
-                  <p className="text-body-01 leading-body-01 mb-10">
+                  <p className="w-full text-body-01 lg:w-[80%] mb-4">
                     {casestudy[1].description}
                   </p>
 
@@ -427,10 +427,10 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
                     backgroundColor: casestudy[2].bgCardColor,
                   }}
                 >
-                  <h1 className=" text-heading-02 leading-heading-02 font-medium mb-6">
+                  <h1 className="text-heading-03 font-medium mb-2 lg:mb-6">
                     {casestudy[2].heading}
                   </h1>
-                  <p className=" text-body-01 leading-body-01 mb-10">
+                  <p className=" mb-4 text-body-01">
                     {casestudy[2].description}
                   </p>
 

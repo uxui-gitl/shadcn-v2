@@ -39,6 +39,7 @@ function CommonCardTwoSlider({
                 style={{
                     backgroundImage: `url(${sectionImageUrl})`,
                     backgroundSize: "cover",
+                    paddingTop:'4rem',
                 }}
             >
                 <div className="">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import style from '../components/style/common.module.css'
 
-function CommonCard({ Item, setpageID }) {
+function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10" }) {
   const {
     CardBGImageUrl = "",
     CardBGColor = "",
@@ -20,6 +20,8 @@ function CommonCard({ Item, setpageID }) {
     CardDownImageMinHeight = "200px",
     arrowColor = "#FFF",
     additionalData=[],
+    CardMinHeight=''
+    
 
   } = Item;
 
@@ -27,7 +29,7 @@ function CommonCard({ Item, setpageID }) {
   return (
     <>
       <div
-        className="commonCard mt-5 rounded-3xl min-h-[524px]  md:min-h-[484px] lg:min-h-[480px] 2xl:min-h-[524px]: flex flex-col justify-between border-[0.5px] border-neutral-white border-opacity-10"
+        className={`commonCard mt-5 rounded-3xl min-h-[524px]  md:min-h-[484px] lg:min-h-[525px] 2xl:min-h-[524px] flex flex-col justify-between border-[1px] ${setBorderColor}`}
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,
@@ -39,13 +41,13 @@ function CommonCard({ Item, setpageID }) {
         <div className="card-body p-5 flex-grow">
           {CardTitle && <div className="text-[#E0028E] mb-8">{CardTitle}</div>}
           {CardIconUrl && (
-            <div className="pb-8">
+            <div className="pb-8 lg:pb-5 2xl:pb-8">
               <Image src={CardIconUrl} alt="" width={48} height={48} />
             </div>
           )}
           {CardHeading && (
             <h5
-              className={`text-heading-02 font-semibold ${CardTextColor}`}
+              className={`text-heading-03 font-semibold ${CardTextColor}`}
               dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}

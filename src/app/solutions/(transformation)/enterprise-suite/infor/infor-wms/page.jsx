@@ -146,13 +146,13 @@ const page = () => {
       CardDesc: `
         <div class="">
     <div class="flex py-2 border-b border-neutral-light-grey ">
-        <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Dynamic slotting to meet the changing product needs</p>
+        <p class="text-body-01 mr-4 text-primary-900 font-medium">Dynamic slotting to meet the changing product needs</p>
     </div>
    <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4  text-primary-900 font-medium">Interactive Web & Mobile Dashboards</p>
+       <p class="text-body-01 mr-4  text-primary-900 font-medium">Interactive Web & Mobile Dashboards</p>
     </div>
    <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4  text-primary-900 font-medium">Omnichannel combines in-store, depot and warehouse channels</p>
+       <p class="text-body-01 mr-4  text-primary-900 font-medium">Omnichannel combines in-store, depot and warehouse channels</p>
     </div>
 </div>
         `,
@@ -172,13 +172,13 @@ const page = () => {
       CardDesc: `
         <div class="">
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Tailored 3PL Dashboard for Intelligent Reporting </p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Tailored 3PL Dashboard for Intelligent Reporting </p>
     </div>
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Advanced Inventory, Space and Labor Optimization</p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Advanced Inventory, Space and Labor Optimization</p>
     </div>
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Multi-Warehouse, Multi-Owner Support </p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Multi-Warehouse, Multi-Owner Support </p>
     </div>
 </div>
         `,
@@ -193,20 +193,21 @@ const page = () => {
       CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Trading and Distribution",
+      CardHeading: "Trading & Distribution",
+      CardMinHeight: "525px",
       CardDesc: `
         <div class="">
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Warehouse optimisation</p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Warehouse optimisation</p>
     </div>
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Order fulfilment</p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Order fulfilment</p>
     </div>
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Inventory management</p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Inventory management</p>
     </div>
     <div class="flex py-2 border-b border-neutral-light-grey ">
-       <p class="text-paragraph-01 leading-paragraph-01 mr-4 text-primary-900 font-medium">Minimize stockouts</p>
+       <p class="text-body-01 mr-4 text-primary-900 font-medium">Minimize stockouts</p>
     </div>
 </div>
         `,
@@ -302,6 +303,7 @@ const page = () => {
         setDesc={
           "Warehouses face growing challenges to meet customer demands for speed, availability, and affordability. "
         }
+        setTop = 'false'
       />
 
       <CommonCardThreeSlider
@@ -313,7 +315,9 @@ const page = () => {
           "Infor WMS optimizes warehouse operations with goods tracking and management, from initial receipt to final dispatch."
         }
         sectionTextColor={"text-neutral-white"}
+        sectionDescColor={"text-neutral-white"}
         cardData={RPASolution}
+       
       />
 
       <SectionWithSlider
@@ -324,8 +328,11 @@ const page = () => {
         }
         sectionTextColor="text-primary-900"
         cardData={UPGRADE_NOW_DATA}
+        cardDescColor="text-neutral-dark-grey"
         sectionBGColor="white"
+        sectionDescColor="text-primary-900"
         setHeadingLayout="horizontal"
+        style={{ paddingTop:'4rem' }}
       />
 
       <BenefitSliderSection
@@ -367,6 +374,7 @@ const page = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
 
       <TransformBusinessForm

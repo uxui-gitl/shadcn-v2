@@ -27,7 +27,7 @@ const CounterSection = ({ start, end, description, counterOn, staticTitle, colum
   // Determine text size based on columnNo
   const textSizeClass =
   columnNo === 2 ? "text-[128px]" :
-  columnNo === 3 ? "text-[64px]" :
+  columnNo === 3 ? "text-[48px]" :
   columnNo === 4 ? "text-[96px]" : 
   "text-[48px]";
 

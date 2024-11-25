@@ -430,10 +430,10 @@ const Page = () => {
         Text={`20+ years of Infor partnership and APAC's largest Infor implementation experience, empowers us to drive growth-focused operations globally.`}
       />
 
-      <SectionWrapper BGColor="bg-primary-500">
+      <SectionWrapper BGColor="bg-primary-500" setTop={false}>
         <div className="container mx-auto py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-4">
-            <div className="">
+            <div>
               <SectionHeading
                 Heading={"Our Infor Capabilities"}
                 Desc={`Delivering tailored business-fit Infor solutions and support for optimal business performance.`}
@@ -450,9 +450,8 @@ const Page = () => {
                   {offeringLinkListData.map((item) => (
                     <div
                       key={item?.id}
-                      className="flex items-center justify-center py-2 text-heading-02 leading-heading-02 font-medium text-white border-b border-neutral-white border-opacity-35
-"
-                      style={{ cusror: "pointer" }}
+                      className="flex items-center justify-center py-2 text-heading-02 leading-heading-02 font-medium text-white border-b border-neutral-white border-opacity-35"
+                      style={{ cursor: "pointer" }}
                     >
                       {item?.beforeIconUrl && (
                         <svg
@@ -498,19 +497,29 @@ const Page = () => {
               </div>
             </div>
             <div
-              className="flex rounded-3xl items-center hidden md:block"
-              style={{ justifyContent: "center" }}
+              className="flex flex-col justify-between rounded-3xl hidden md:flex"
+              style={{ maxHeight: "600px", height: "100%" }}
             >
+              <div className="flex-grow"></div> {/* Pushes content above */}
               <div
-                className=""
-                style={{ maxHeight: "600px", overflow: "hidden" }}
+                className="rounded-3xl"
+                style={{
+                  overflow: "hidden",
+                }}
               >
-                <img src="/infor/ourCapabilities.webp"></img>
+                <Image
+                  layout="responsive"
+                  src="/infor/ourCapabilities.webp"
+                  alt="Infor Capabilities"
+                  width={600}
+                  height={600}
+                />
               </div>
             </div>
           </div>
+
           <div
-            className="InforSliderWrapper"
+            className="InforSliderWrapper "
             style={{ zindex: "2", position: "relative" }}
           >
             <div
@@ -546,8 +555,8 @@ const Page = () => {
                   }}
                 >
                   {inforText?.map((item, index) => (
-                    <SwiperSlide key={item}>
-                      <div className="w-full text-heading-04 font-semibold text-left text-white">
+                    <SwiperSlide key={item} >
+                      <div className="w-full text-heading-04 font-semibold text-left text-white py-4">
                         {item}
                       </div>
                     </SwiperSlide>
@@ -568,6 +577,7 @@ const Page = () => {
           "With extensive experience of domains and Infor solutions, we offer services to meet the growth requirements of business."
         }
         sectionTextColor={"text-neutral-white"}
+        sectionDescColor={"text-neutral-white"}
         cardData={serviceOfferingData}
       ></CommonCardThreeSlider>
 
@@ -577,7 +587,8 @@ const Page = () => {
         sectionDesc={
           "Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support."
         }
-        sectionTextColor=""
+        sectionTextColor="text-primary-900"
+        sectionDescColor="text-neutral-darkest-grey"
         cardData={ultimateChoiceData}
         sectionBGColor="bg-primary-10"
         setHeadingLayout="horizontal"
@@ -635,6 +646,7 @@ const Page = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
       <TransformBusinessForm
         Title={"Are you Ready for Infor-driven growth? "}

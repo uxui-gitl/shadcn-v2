@@ -10,6 +10,7 @@ const ChallengeSection = ({
     setImageBGURL,
     setChallengesList=[],
     bgColor='',
+
 }) => {
     return (
         <>

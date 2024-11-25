@@ -17,6 +17,7 @@ function SectionWidthSlider({
   sectionDesc,
   cardData = [],
   sectionTextColor = "text-neutral-white",
+  sectionDescColor = "text-neutral-white",
   sectionBGColor = "text-neutral-white",
   setHeadingLayout,
   setTop,
@@ -35,7 +36,7 @@ function SectionWidthSlider({
         id={ID}
         sectionHeading={sectionHeading}
         sectionDesc={sectionDesc}
-        sectionDescColor="text-neutral-white"
+        sectionDescColor={sectionDescColor}
         sectionTextColor={sectionTextColor}
         sectionHeadingLayout={setHeadingLayout}
         bgColor={sectionBGColor}
@@ -75,7 +76,7 @@ function SectionWidthSlider({
             >
               {cardData?.map((item, index) => (
                 <SwiperSlide key={item.id ? item?.id : index}>
-                  <CommonCard Item={item} setpageID={pageID}></CommonCard>
+                  <CommonCard Item={item} setpageID={pageID} setBorderColor={'border-primary-900 border-opacity-10'}></CommonCard>
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -327,7 +327,7 @@ const EnterpriseSuite = () => {
       {/* Section--Hub-of-Expertise=======================================================================  */}
 
       <HubExpertise
-        setHeading="The Hub of Expertise"
+        setHeading="Hub of Expertise"
         setDesc="We are here to build competitive edge with technology brilliance for businesses across the world."
         setColor="text-neutral-white"
         BGColor="bg-primary-900"
