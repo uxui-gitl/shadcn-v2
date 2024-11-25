@@ -48,11 +48,11 @@ const HighlightPromo = ({
     >
       <div className={`container mx-auto ${setPadding ? 'py-32' : ''}`}>
         <div
-          className={` flex flex-col md:flex-row gap-8`}
+          className={` flex flex-col md:flex-row gap-4`}
           style={conditionalBlurStyles}
         >
           <div
-            className={`flex-1 pb-2  ${setPadding ? '' : 'py-32'}`}
+            className={`flex-1 p-5  ${setPadding ? '' : 'py-32'}`}
           >
             <SectionHeading
               Heading={setHeading}
@@ -100,24 +100,22 @@ const HighlightPromo = ({
           )}
 
           {setMSLogoURL && (
-            <div className="w-full flex-1 flex flex-col justify-center items-center">
+            <div className="flex-1 flex flex-col justify-center items-center">
               <Image
                 src={setMSLogoURL}
                 alt="MS Logo"
-                width={324}
-                height={324}
+                width={264} height={120}
             
               />
             </div>
           )}
 
           {setMsAzureLogoURL && (
-            <div className="w-full flex-1 flex flex-col justify-center items-center mb-8">
+            <div className="flex-1 flex flex-col justify-center items-center mb-8 lg:mb-0">
               <Image
                 src={setMsAzureLogoURL}
                 alt="MS Logo"
-                width={324}
-                height={324}
+                width={264} height={120}
              
               />
             </div>
