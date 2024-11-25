@@ -232,7 +232,9 @@ const page = () => {
         sectionHeading={'Infor CRM Key Capabilities'}
         sectionDesc={'We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.'}
         sectionTextColor={'text-neutral-white'}
-        sectionHeadingLayout={'left'}>
+        sectionDescColor={'text-neutral-white'}
+        setTop={false}
+        sectionHeadingLayout={'horizontal'}>
           <Slider>
           {serviceOfferingData?.map((item, index) => (
             <SwiperSlide key={index}>
@@ -244,15 +246,18 @@ const page = () => {
 
       {/* case studies */}
       <SectionWrapperNew
-        style={{ backgroundColor: '#D3D3D3' }}
+        style={{ backgroundColor: '#D3D3D3' , paddingTop:'4rem' , paddingBottom:'4rem'}}
         sectionHeading={''}
         sectionDesc={''}
         sectionTextColor={'white'}
-        sectionHeadingLayout={'left'}>
-        <div className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px]">
+        sectionHeadingLayout={'left'}
+        
+        
+        >
+        <div className="flex flex-col md:flex-row justify-start items-center w-full h-full lg:h-[524px] lg:gap-4">
           {/* video */}
           <div
-            className="relative md:w-full  h-full rounded-t-3xl p-5 flex flex-col justify-end"
+            className="relative md:w-full  h-full rounded-t-3xl lg:rounded-3xl p-5 flex flex-col justify-end "
             style={{
               color: casestudy[0].color,
               overflow: "hidden", // Ensures no overflow from the video
@@ -278,7 +283,7 @@ const page = () => {
               <h3 className="text-base font-semibold mb-12">
                 {casestudy[0].title}
               </h3>
-              <h1 className="text-5xl font-medium mb-6">
+              <h1 className="text-heading-03 font-medium mb-6">
                 {casestudy[0].heading}
               </h1>
               <p className=" mb-4">{casestudy[0].description}</p>
@@ -286,24 +291,24 @@ const page = () => {
           </div>
           {/* one  */}
           <div
-            className="flex flex-col w-full md:w-1/3 h-full rounded-b-3xl "
+            className="flex flex-col w-full md:w-1/3 h-full rounded-b-3xl lg:rounded-3xl "
             style={{ backgroundColor: "transparent" }}
           >
             <div
-              className="relative w-full h-full rounded-b-3xl p-5"
+              className="relative w-full h-full rounded-b-3xl lg:rounded-3xl p-5"
               style={{
                 color: casestudy[1].color,
                 backgroundColor: casestudy[1].bgCardColor,
               }}
             >
-              <h1 className="w-[80%] text-2xl font-medium mb-6">
+              <h1 className="text-heading-03 font-medium mb-6">
                 {casestudy[1].heading}
               </h1>
               <p className="mb-8">{casestudy[1].description}</p>
 
               <div className="absolute bottom-4 right-4">
               <Link href={casestudy[1].link} target="_blank">
-                <OutlinedButtonWithArrow size={32} />
+                <OutlinedButtonWithArrow size={24} />
               </Link>
               </div>
             </div>
