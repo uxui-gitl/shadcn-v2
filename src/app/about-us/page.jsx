@@ -1037,11 +1037,12 @@ __html: readMoreItem?.longDesc || "",
         sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="left"
         setTop={false}
+        setPad="true"
       >
         <Slider slidesPerView={"4"}>
           {KeyPolicies_DATA.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="p-5 mt-5 min-h-[300px] rounded-3xl shadow border-[0.5px] border-neutral-light-grey transition-all duration-300 ease-in-out group hover:bg-neutral-light-grey">
+            <SwiperSlide key={index} >
+              <div className="relative p-5 mt-5 min-h-[300px] rounded-3xl shadow border-[0.5px] border-neutral-light-grey transition-all duration-300 ease-in-out group hover:bg-neutral-light-grey lg:mb-8">
                 {/* Title */}
                 <h6 className="text-heading-04 font-semibold mb-4">
                   {item.title}
