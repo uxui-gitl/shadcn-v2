@@ -329,6 +329,7 @@ const D365Commerce = () => {
         sectionDesc={'Retailers face a pressing need to evolve with tech-savvy customers, prioritizing personalized connections and seamless interactions. '}
         sectionTextColor={'text-primary-900'}
         sectionHeadingLayout="left"
+        setTop={false}
         style={{ background: `url('/Transformation/d365/chbg1.svg')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -366,14 +367,14 @@ const D365Commerce = () => {
       <div className="rounded-3xl" style={{overflow:'hidden', position:'relative'}}>
         <div className="" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
           <div className="container mx-auto py-32">
-            <HorizontalHeading heading={'D365 Commerce Key Capabilities'} desc={'Optimise retail business with personalized experiences & enhanced employee productivity'} textColor={'text-neutral-white'} ></HorizontalHeading>
+            <HorizontalHeading heading={'D365 Commerce Key Capabilities'} desc={'Optimise retail business with personalized experiences & enhanced employee productivity'} textColor={'text-neutral-white'} descColor={'text-neutral-white'} ></HorizontalHeading>
             <Slider slidesPerView={3.2}>
             {KEY_CAPABILITIES?.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="p-6 bg-[transparent] relative " style={{ border: '1px solid #3e3e3e', borderRadius: '24px', borderOpacity: '0.3'}}>
+                <div className="p-6 bg-[transparent] relative  min-h-[400px]" style={{ border: '1px solid #3e3e3e', borderRadius: '24px', borderOpacity: '0.3'}}>
                   <Image src={item.CardIconUrl} width={60} height={60} alt={"IconImg"} className="mb-4" />
-                  <div className="text-[28px] text-white h-[84px]">{item?.CardHeading}</div>
-                  <p className="text-[16px] py-4 text-white h-[104px]">{item?.CardDesc}</p>
+                  <div className="text-heading-03 text-white ">{item?.CardHeading}</div>
+                  <p className="text-base py-4 text-white ">{item?.CardDesc}</p>
             
                 </div>
               </SwiperSlide>
