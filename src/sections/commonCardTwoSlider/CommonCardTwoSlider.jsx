@@ -19,6 +19,8 @@ function CommonCardTwoSlider({
     sectionBGColor = "bg-neutral-white",
     setHeadingLayout,
     setTop,
+    style,
+
 }) {
     return (
         <SectionWrapperNew
@@ -31,6 +33,7 @@ function CommonCardTwoSlider({
             setTop={setTop}
             sectionHeadingLayout={setHeadingLayout}
             style={{
+                ...style,
                 backgroundImage: `url(${sectionImageUrl})`,
                 backgroundSize: "cover",
             }}

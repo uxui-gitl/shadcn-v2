@@ -223,7 +223,7 @@ const page = () => {
     {
 
       id: 4,
-      cardBGColor: '#E4E4E4',
+      cardBGColor: '#fff',
       cardHeading: 'Cloud Infrastructure',
       cardDesc: 'Gain secure and reliable cloud infrastructure to enable business growth',
       isArrow: true,
@@ -501,9 +501,10 @@ const page = () => {
       />
       <OverviewSection Text={`Our ecommerce expertise enhances brand image, streamlines ordering & drives business growth with visually stunning, technically advanced solutions.`} />
 
-      <SectionWrapper BGColor="bg-secondary-900" style={{
+      <SectionWrapper BGColor="bg-secondary-900 " setTop={false} style={{
         background: `url('/ecommerce/Ecommercechallenge.webp')`, backgroundRepeat: "no-repeat",     
-        backgroundSize: "object-fit", backgroundPosition:"center center",
+        backgroundSize: "cover", backgroundPosition:"center center",
+        
       }}>
         <div className="container mx-auto py-32">
           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
@@ -513,6 +514,7 @@ const page = () => {
                 Heading={'E-commerce Development Challenges'}
                 Color={'text-neutral-white'}
                 Desc={''}
+                headingContainerWidth={'w-1/2'}
               />
 
               <ul className="mt-2 space-y-4 w-full text-neutral-white">
@@ -552,6 +554,8 @@ const page = () => {
         sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
+        setHeadingLayout={'horizontal'}
+        style={{paddingBottom:'8rem'}}
       >
       </CommonCardTwoSlider>
 
@@ -562,7 +566,9 @@ const page = () => {
         sectionHeading={'Ecommerce Services'}
         sectionDesc={"Launch, grow and optimize online store with our comprehensive ecommerce services"}
         sectionTextColor={'text-neutral-white'}
+        sectionDescColor={'text-neutral-white'}
         cardData={serviceOfferingData}
+        setHeadingLayout={'left'}
       >
 
       </CommonCardThreeSlider>
@@ -572,17 +578,18 @@ const page = () => {
         sectionHeading={'Ecommerce Capabilities'}
         sectionDesc={`Partner with us to leverage the full potential of online store and drive growth in the digital marketplace`}
         sectionTextColor={'text-neutral-white'}
+        sectionDescColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
        bgColor={'bg-primary-400'}
       >
 
-        <Slider slidesPerView={3.2}>
+        <Slider slidesPerView={3}>
           {keyResponsibilityData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="p-6 bg-[transparent min-h-[524px] border-[0.5px] border-neutral-white border-opacity-30 rounded-3xl">
-                <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mb-4" />
-                <div className="text-heading-02 leading-02 text-neutral-white">{item?.title}</div>
-                <p className="text-paragraph-01 leading-paragraph-01  py-4 text-neutral-white">{item?.desc}</p>
+              <div className="p-5 bg-[transparent min-h-[524px] lg:min-h-[420px] border-[0.5px] border-neutral-white border-opacity-30 rounded-3xl">
+                <Image src={item.icon} width={56} height={56} alt={"hioasdo"} className="mb-4" />
+                <div className="text-heading-03 font-bold text-neutral-white">{item?.title}</div>
+                <p className="text-body-01  py-4 text-neutral-white">{item?.desc}</p>
               </div>
             </SwiperSlide>
           ))}
