@@ -44,11 +44,11 @@ function SectionSliderAdditionalData({
                         ></SectionHeading>
                     </div>
 
-                    <div className="my-8">
+                    <div className="">
                         <Swiper
                             slidesPerView={1}
                             navigation={false}
-                            pagination = {true}
+                            pagination = {{ clickable: true }}
                             modules={[Pagination, Navigation]}
                             autoplay={autoplay}
                             loop={false}
