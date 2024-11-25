@@ -752,7 +752,7 @@ export default function Home() {
         sectionTextColor="text-primary-900"
         sectionDescColor="text-neutral-dark-grey"
         title="Count on Us"
-        sectionHeadingLayout="center"
+        sectionHeadingLayout="horizontal"
       >
         <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs
