@@ -521,7 +521,7 @@ const MicrosoftPractises = () => {
     <>
       {/* Start--HeroBanner-Section========================================================= */}
       <EntIntro
-        title="Integrate. Automate. Accelerate:"
+        title="Integrate. Automate. Accelerate."
         desc="MS Dynamics 365 CRM & ERP Solutions for growing enterprises"
         cta="Let's Connect"
         width="60%"

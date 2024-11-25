@@ -20,7 +20,7 @@ const page = () => {
       title: "Financial Management",
       value: "Financial Management",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-heading-01 leading-heading-01 font-bold text-black font-bold bg-[#5F22D9]">
+        <div className="w-full overflow-hidden relative h-full rounded-3xl text-heading-04 text-black font-bold bg-[#5F22D9]">
           <FinancialManagementContent />
         </div>
       ),
@@ -308,9 +308,10 @@ const page = () => {
         sectionDesc="Embrace a modern, efficient and cost-effective approach to managing your business right on your fingertips."
         sectionTextColor="#000"
         sectionHeadingLayout="center"
-        style={{ backgroundColor: "#f2f2f2" }}
+        style={{ backgroundColor: "#f2f2f2" , paddingBottom:"8rem"}}
+        setTop={false}
       >
-        <div className="h-[70vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+        <div className="h-[70vh] lg:h-[100vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs
             activeTabClassName="!bg-[#cccccc] !text-[#fff]"
             contentClassName="!mt-5"
@@ -374,6 +375,7 @@ const page = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
 
       <TransformBusinessForm
@@ -387,48 +389,50 @@ const page = () => {
 };
 
 const FinancialManagementContent = () => {
+  const FMC_DATA = [
+    {
+      title: "Financial Data Consolidation:",
+      description:
+        "Transfer general ledger entries from two or more companies (subsidiaries) into a consolidated company.",
+    },
+    {
+      title: "Built-in Power BI Dashboards:",
+      description:
+        "Visualize real-time financial performance data to identify patterns and trends with precision.",
+    },
+    {
+      title: "Process Streamlining:",
+      description:
+        "Streamline essential accounting processes, such as accounts receivable and payable, Fixed Assets, Cash & Bank Management, Taxation ensuring automatic reconciliation.",
+    },
+    {
+      title: "Data Modeling and Analysis:",
+      description:
+        "Conduct multi-dimensional data analysis and improve forecasting accuracy.",
+    },
+    {
+      title: "Customized Reporting:",
+      description:
+        "Easily customize and share reports, featuring seamless Excel integration.",
+    },
+  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
       <div className="p-5">
         <div
-          className={`text-heading-02 leading-heading-02 font-semibold text-neutral-white`}
+          className={`text-heading-03 font-semibold text-neutral-white`}
         >
           {"Financial Management"}
         </div>
         <div className="py-5">
-          <ul className="text-body-01 leading-body-01 text-white font-normal ">
-            <li className="mb-3">
-              <strong>Financial Data Consolidation:</strong>
-              <br />
-              Transfer general ledger entries from two or more companies
-              (subsidiaries) into a consolidated company.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Built-in Power BI Dashboards:</strong>
-              <br />
-              Visualize real-time financial performance data to identify
-              patterns and trends with precision.
-            </li>
-            <li className="mb-3">
-              <strong>Process Streamlining:</strong>
-              <br />
-              Streamline essential accounting processes, such as accounts
-              receivable and payable, Fixed Assets, Cash & Bank Management,
-              Taxation ensuring automatic reconciliation.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Data Modeling and Analysis:</strong>
-              <br />
-              Conduct multi-dimensional data analysis and improve forecasting
-              accuracy.
-            </li>
-            <li className="mb-3">
-              <strong>Customized Reporting:</strong>
-              <br />
-              Easily customize and share reports, featuring seamless Excel
-              integration.
-            </li>
-          </ul>
+        <ul className="text-body-01 leading-body-01 text-white font-normal">
+      {FMC_DATA.map((item, index) => (
+        <li key={index} className="mb-3">
+          <h3 className="text-body-01 font-semibold">{item.title}</h3>
+          <p className="text-base">{item.description}</p>
+        </li>
+      ))}
+    </ul>
         </div>
       </div>
       <div
@@ -443,34 +447,40 @@ const FinancialManagementContent = () => {
 };
 
 const SupplyChainContent = () => {
+  const SC_DATA = [
+    {
+      title: "Automated Stock Management:",
+      description:
+        "Receive automated suggestions for inventory replenishment, based on calculations of stock levels, lead times and reorder points.",
+    },
+    {
+      title: "Approval Workflow:",
+      description:
+        "Prevent unnecessary purchases and avoid vendor overdue penalties with a structured approval workflow.",
+    },
+    {
+      title: "Built-in Intelligence:",
+      description:
+        "Make informed inventory replenishment decisions using sales forecasts and anticipated stock-outs.",
+    },
+  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-   <div className="p-5">
+      <div className="p-5">
         <div
-  className={`text-heading-02 leading-heading-02 font-semibold text-neutral-white`}        >
+          className={`text-heading-03 font-semibold text-neutral-white`}
+        >
           {"Supply Chain"}
         </div>
         <div className="py-5">
-        <ul className="text-body-01 leading-body-01 text-white font-normal ">
-          <li className="mb-3">
-              <strong>Automated Stock Management:</strong>
-              <br /> Receive automated suggestions for inventory replenishment,
-              based on calculations of stock levels, lead times and reorder
-              points.
+        <ul className="text-body-01 leading-body-01 text-white font-normal">
+        {SC_DATA.map((item, index) => (
+          <li key={index} className="mb-3">
+            <h3 className="text-body-01 font-semibold">{item.title}</h3>
+            <p className="text-base">{item.description}</p>
           </li>
-            <li className="mb-3">
-              <strong>Approval Workflow:</strong>
-              <br />
-              Prevent unnecessary purchases and avoid vendor overdue penalties
-              with a structured approval workflow.
-            </li>
-            <li className="mb-3">
-              <strong>Built-in Intelligence:</strong>
-              <br />
-              Make informed inventory replenishment decisions using sales
-              forecasts and anticipated stock-outs.
-            </li>
-          </ul>
+        ))}
+       </ul>
         </div>
       </div>
       <div
@@ -484,30 +494,39 @@ const SupplyChainContent = () => {
   );
 };
 
+
+
+
 const SalesMarketingContent = () => {
+  const SALES_MKT_DATA = [
+    {
+      title: "Client Interaction Tracking:",
+      description:
+        "Gain automated guidance on optimal upsell, cross-sell and renewal opportunities by tracking historical client data.",
+    },
+    {
+      title: "Efficient Sales Process:",
+      description:
+        "Streamline the quote-to-cash sales process and manage service requests directly through Outlook integration.",
+    },
+  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
       <div className="p-5">
-      <div
-          className={`text-heading-02 leading-heading-02 font-semibold text-neutral-white`}
-          >
+        <div
+          className={`text-heading-03 font-semibold text-neutral-white`}
+        >
           {"Sales Marketing"}
         </div>
-
         <div className="py-5">
-        <ul className="text-body-01 leading-body-01 text-white font-normal ">
-        <li className="mb-3">
-              <strong>Client Interaction Tracking:</strong>
-              <br /> Gain automated guidance on optimal upsell, cross-sell and
-              renewal opportunities by tracking historical client data.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Efficient Sales Process:</strong>
-              <br />
-              Streamline the quote-to-cash sales process and manage service
-              requests directly through Outlook integration.
-            </li>
-          </ul>
+        <ul className="text-body-01 leading-body-01 text-white font-normal">
+        {SALES_MKT_DATA.map((item, index) => (
+          <li key={index} className="mb-3">
+            <h3 className="text-body-01 font-semibold">{item.title}</h3>
+            <p className="text-base">{item.description}</p>
+          </li>
+        ))}
+       </ul>
         </div>
       </div>
       <div
@@ -521,37 +540,44 @@ const SalesMarketingContent = () => {
   );
 };
 
+
 const ProjectManagementContent = () => {
+
+const PM_DATA = [
+  {
+    title: "Timesheets:",
+    description:
+      "Manage client projects with advanced job costing and reporting capabilities, while tracking timesheets.",
+  },
+  {
+    title: "Invoice Tracking:",
+    description:
+      "Keep tabs on client invoicing in relation to planned costs on orders and quotes.",
+  },
+  {
+    title: "Real-Time Insights:",
+    description:
+      "Monitor real-time project status, profitability and resource usage metrics.",
+  },
+];
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
       <div className="p-5">
-      <div
-          className={`text-heading-02 leading-heading-02 font-semibold text-neutral-white`}
-          >
+        <div
+          className={`text-heading-03 font-semibold text-neutral-white`}
+        >
           {"Project Management"}
         </div>
-
         <div className="py-5">
-          <ul className="text-[16px] text-white font-normal leading-[24px]">
-            <li className="mb-3">
-              <strong>Timesheets:</strong>
-              <br />
-              Manage client projects with advanced job costing and reporting
-              capabilities, while tracking timesheets.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Invoice Tracking:</strong>
-              <br />
-              Keep tabs on client invoicing in relation to planned costs on
-              orders and quotes.
-            </li>
-            <li className="mb-3">
-              <strong>Real-Time Insights:</strong>
-              <br />
-              Monitor real-time project status, profitability and resource usage
-              metrics.{" "}
-            </li>
-          </ul>
+        <ul className="text-body-01 leading-body-01 text-white font-normal">
+        {PM_DATA.map((item, index) => (
+          <li key={index} className="mb-3">
+            <h3 className="text-body-01 font-semibold">{item.title}</h3>
+            <p className="text-base">{item.description}</p>
+          </li>
+        ))}
+       </ul>
         </div>
       </div>
       <div
@@ -565,56 +591,57 @@ const ProjectManagementContent = () => {
   );
 };
 
+
+
 const ServiceManagementContent = () => {
+  const SERVICE_MGMT_DATA = [
+    {
+      title: "Planning and dispatching:",
+      description:
+        "Assign personnel, log work order details and manage dispatch. Gain an overview of service task prioritization, service loads, and task escalations.",
+    },
+    {
+      title: "Service contract management:",
+      description:
+        "Agree on service levels, track contract history, renewal and warranties. Manage details, measure profitability and generate quotes.",
+    },
+    {
+      title: "Service Item Management:",
+      description:
+        "Manage service items comprehensively, recording contracts, components, BOM, and warranty data, analysing key performance indicators efficiently.",
+    },
+    {
+      title: "Service Order Management:",
+      description:
+        "Handle post-sales issues, service requests, and manage equipment loans; let customers initiate or auto-create requests based on agreements.",
+    },
+    {
+      title: "Service Price Management:",
+      description:
+        "Establish, track, and adjust prices with automated assignment based on criteria for profitability insights.",
+    },
+    {
+      title: null,
+      description: "Country specific tax localization expertise",
+    },
+  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="p-5">
-      <div
-          className={`text-xl sm:text-2xl md:text-[42px] font-semibold leading-tight md:leading-[64px] text-white mb-3`}
+      <div className="p-5 overflow-y-scroll">
+        <div
+          className={`text-heading-03 font-semibold text-neutral-white`}
         >
           {"Service Management"}
         </div>
-
         <div className="py-5">
-          <ul className="text-[16px] text-white font-normal leading-[24px]">
-            <li className="mb-3">
-              <strong>Planning and dispatching:</strong>
-              <br />
-              Assign personnel, log work order details and manage dispatch. Gain
-              an overview of service task prioritization, service loads, and
-              task escalations.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Service contract management:</strong>
-              <br />
-              Agree on service levels, track contract history, renewal and
-              warranties. Manage details, measure profitability and generate
-              quotes.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Service Item Management:</strong>
-              <br />
-              Manage service items comprehensively, recording contracts,
-              components, BOM, and warranty data, analysing key performance
-              indicators efficiently.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Service Order Management:</strong>
-              <br />
-              Handle post-sales issues, service requests, and manage equipment
-              loans; let customers initiate or auto-create requests based on
-              agreements.{" "}
-            </li>
-            <li className="mb-3">
-              <strong>Service Price Management:</strong>
-              <br />
-              Establish, track, and adjust prices with automated assignment
-              based on criteria for profitability insights.{" "}
-            </li>
-            <li className="mb-3">
-              Country specific tax localization expertise
-            </li>
-          </ul>
+        <ul className="text-body-01 leading-body-01 text-white font-normal">
+        {SERVICE_MGMT_DATA.map((item, index) => (
+          <li key={index} className="mb-3">
+            <h3 className="text-body-01 font-semibold">{item.title}</h3>
+            <p className="text-base">{item.description}</p>
+          </li>
+        ))}
+       </ul>
         </div>
       </div>
       <div
@@ -627,6 +654,8 @@ const ServiceManagementContent = () => {
     </div>
   );
 };
+
+
 
 const IndustryContent = () => {
   const data = [
