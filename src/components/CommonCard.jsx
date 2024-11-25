@@ -3,7 +3,7 @@ import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import style from '../components/style/common.module.css'
 
-function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10" }) {
+function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10",setCardsMinHeight="min-h-[524px]  md:min-h-[484px] lg:min-h-[525px] 2xl:min-h-[524px]" }) {
   const {
     CardBGImageUrl = "",
     CardBGColor = "",
@@ -29,7 +29,7 @@ function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white bord
   return (
     <>
       <div
-        className={`commonCard mt-5 rounded-3xl min-h-[524px]  md:min-h-[484px] lg:min-h-[525px] 2xl:min-h-[524px] flex flex-col justify-between border-[1px] ${setBorderColor}`}
+        className={`commonCard mt-5 rounded-3xl ${setCardsMinHeight}  flex flex-col justify-between border-[1px] ${setBorderColor}`}
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,

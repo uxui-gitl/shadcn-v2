@@ -15,6 +15,7 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import { Pagination } from "swiper/modules";
+import Image from "next/image";
 
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 const page = () => {
@@ -321,6 +322,7 @@ const page = () => {
         sectionTextColor={'text-primary-900'}
         sectionHeadingLayout="left"
         bgColor={'bg-secondary-10'}
+        setTop={false}
       
       >
 
@@ -329,19 +331,19 @@ const page = () => {
     <SwiperSlide key={index}>
       <div className="w-full bg-secondary-900 rounded-3xl group overflow-hidden relative min-h-[524px]">
         <div className="p-5">
-          <h5 className="mb-4 text-heading-01 leading-heading-01 font-semibold text-neutral-white">
+          <h5 className="mb-4 text-heading-03 font-semibold text-neutral-white">
             {item?.cardHeading}
           </h5>
-          <p className="mb-2 text-paragraph-01 leading-paragraph-01 font-normal text-neutral-white">
+          <p className="mb-2 text-body-01 font-normal text-neutral-white">
             {item?.cardDesc}
           </p>
         </div>
         {item?.cardHoverData && (
-          <div className="bg-neutral-white p-5 rounded-3xl h-full w-full absolute bottom-0 translate-y-full group-hover:translate-y-0 duration-300">
-            <div className="space-y-1">
-              <ul className="w-full text-neutral-dark-grey list-disc list-inside">
+          <div className="bg-neutral-white p-5 rounded-3xl h-full w-full absolute bottom-0 translate-y-full group-hover:translate-y-0 duration-400 cursor-pointer">
+            <div className="space-y-2">
+              <ul className="w-full text-neutral-dark-grey list-disc">
                 {item?.cardHoverData.map((item2, i) => (
-                  <li key={i} className=" text-body-01 leading-body-01font-semibold text-neutral-darkest-grey">
+                  <li key={i} className=" text-base font-normal text-neutral-darkest-grey py-1">
                     {item2}
                   </li>
                 ))}
@@ -357,30 +359,49 @@ const page = () => {
 
       </SectionWrapperNew>
 
-      {/* end crmOfferinfData */}
-      {/* CloudSuite Services */}
-      <div className="bg-secondary-900" >
-        <div className="container mx-auto rounded-3xl flex h-[524px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
-          <div className="w-full md:w-1/2">
+
+      <div className="bg-primary-900 rounded-3xl -mt-8">
+        <div
+          className="container mx-auto flex "
+          style={{ alignItems: "center", overflow: "hidden" }}
+        >
+          {/* Left Column */}
+          <div className="w-full md:w-1/2 min-h-[420px] py-8">
             <SectionHeading
-              Heading={'Microsoft CRM Services'}
-              Color={'white'}
-              Desc={'Discover how our expert services can transform customer relationships by anticipating business needs, personalizing experiences and strengthening customer connections.'}
-              headingContainerWidth={'w-full'}
+              Heading={`Microsoft CRM Services`}
+              Color={"white"}
+              Desc={`Discover how our expert services can transform customer relationships by anticipating business needs, personalizing experiences and strengthening customer connections.`}
+              headingContainerWidth={"w-full"}
             />
           </div>
-          <div className="hidden md:w-1/2">
-            <img src="/infor/man.svg" style={{ width: '100%' }} />
-          </div>
+
+          {/* Right Column */}
+          <div
+            className="hidden md:w-1/2 lg:block"
+            style={{
+              backgroundImage: "url(/infor/Infor-Cloudsuite-Services.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "left",
+              height: "520px", // Added explicit height
+            }}
+          ></div>
         </div>
-        <div className="md:container mx-auto bg-white py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px" }}>
+
+        {/* Swiper Section */}
+        <div
+          className="container mx-auto bg-white py-8 rounded-t-3xl"
+          style={{
+            
+       
+          }}
+        >
           <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             navigation={false}
-            pagination={true}
-           
+            pagination={{ clickable: true }}
             followFinger={true}
-            modules={[ Pagination]}
+            modules={[Pagination]}
+            autoplay={true}
             loop={false}
             spaceBetween={30}
             breakpoints={{
@@ -398,14 +419,21 @@ const page = () => {
               },
             }}
           >
-           {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
-              <SwiperSlide key={item}>
-                <div className="bg-white rounded-lg">
-                    <img className="rounded-t-lg pl-4 mx-auto md:mx-0" src={item.icon} width={100} height={100} alt="" />
-                  <div className="p-5">
-                      <h5 className="mb-6 text-heading-02 leading-heading-02 text-center md:text-left font-bold">{item.cardTitle}</h5>
+            {CLOUDSUITE_SERVICES_DATA.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-3xl">
+                  <Image
+                    className="rounded-3xl mx-auto md:mx-2 ml-3"
+                    src={item.icon}
+                    width={48}
+                    height={48}
+                    alt="Img"
+                  />
+                  <div className="pt-5">
+                    <h5 className="mb-4 text-heading-03 font-semibold text-center md:text-left">
+                      {item.cardTitle}
+                    </h5>
                   </div>
-                 
                 </div>
               </SwiperSlide>
             ))}
@@ -415,7 +443,11 @@ const page = () => {
 
 
 
-      <SectionWidthSlider style={{ marginTop: '-30px' }}
+     
+
+
+
+      <SectionWidthSlider 
         ID={"ultimateChoiceData"}
         sectionHeading={"D365 CRM Implementation Process"}
         sectionDesc={
@@ -425,6 +457,9 @@ const page = () => {
         cardData={ultimateChoiceData}
         sectionBGColor="bg-primary-400"
         setHeadingLayout="horizontal"
+        setBorderColor={'border-primary-100 border-opacity-30'}
+        style={{paddingTop:'4rem',paddingBottom:'4rem'}}
+        setCardsMinHeight={'min-h-[370px] md:min-h-[370px] lg:min-h-[370px] 2xl:min-h-[424px]'}
 
       />
 
@@ -444,15 +479,18 @@ const page = () => {
         sectionHeading={''}
         sectionDesc={''}
         sectionTextColor={'text-neutral-white'}
-        sectionHeadingLayout={'left'}>
-
+        sectionHeadingLayout={'left'}
+        style={{paddingTop:'2rem',paddingBottom:'4rem'}}
+        >
+       
+        
         <div
-          className="flex flex-col md:flex-row justify-start items-center  w-full h-full md:h-[724px]"
+          className="flex flex-col md:flex-row justify-start items-center  w-full h-full md:h-[724px] lg:gap-4"
           style={{ color: casestudy[0]?.color }}
         >
           {/* video 1st */}
           <div
-            className="w-full md:w-1/3 h-full rounded-t-3xl p-5"
+            className="w-full md:w-1/3 h-full rounded-t-3xl lg:rounded-3xl p-5 "
             style={{
               backgroundImage: `url(${casestudy[0].imageURL})`,
               backgroundSize: "cover",
@@ -463,27 +501,27 @@ const page = () => {
             <h3 className="text-base font-semibold mb-12">
               {casestudy[0].title}
             </h3>
-            <h1 className="text-5xl font-medium mb-6">
+            <h1 className="text-heading-02 font-medium mb-4">
               {casestudy[0].heading}
             </h1>
-            <p className="w-[80%] mb-4">{casestudy[0].description}</p>
+            <p className=" text-body-01 mb-4">{casestudy[0].description}</p>
           </div>
           <div
-            className="flex flex-col w-full md:w-1/3 h-full  "
+            className="flex flex-col w-full md:w-1/3 h-full lg:gap-4  lg:rounded-3xl"
             style={{ backgroundColor: "transparent" }}
           >
             {/* 1 */}
             <div
-              className="relative w-full h-1/2  p-5"
+              className="relative w-full h-1/2  p-5  lg:rounded-3xl"
               style={{
                 color: casestudy[1].color,
                 backgroundColor: casestudy[1].bgCardColor,
               }}
             >
-              <h1 className="w-[80%] text-3xl font-medium mb-6">
+              <h1 className="text-heading-03 font-medium mb-2">
                 {casestudy[1].heading}
               </h1>
-              <p className="w-[80%] mb-4">{casestudy[1].description}</p>
+              <p className="w-[80%] text-body-01 mb-4">{casestudy[1].description}</p>
 
               <div className="absolute bottom-4 right-4">
                 <OutlinedButtonWithArrow size={32} />
@@ -491,16 +529,16 @@ const page = () => {
             </div>
             {/* 2 */}
             <div
-              className="relative w-full h-1/2  p-5"
+              className="relative w-full h-1/2 p-5  lg:rounded-3xl "
               style={{
                 color: casestudy[2].color,
                 backgroundColor: casestudy[2].bgCardColor,
               }}
             >
-              <h1 className="w-[80%] text-3xl font-medium mb-6">
+              <h1 className=" text-heading-03 font-medium mb-2">
                 {casestudy[2].heading}
               </h1>
-              <p className="w-[80%] mb-4">{casestudy[2].description}</p>
+              <p className="w-[80%] text-body-01 mb-4">{casestudy[2].description}</p>
 
               <div className="absolute bottom-4 right-4">
                 <OutlinedButtonWithArrow size={32} />
@@ -508,21 +546,21 @@ const page = () => {
             </div>
           </div>
           <div
-            className="flex flex-col w-full md:w-1/3 h-full "
+            className="flex flex-col w-full md:w-1/3 h-full lg:gap-4  lg:rounded-3xl "
             style={{ backgroundColor: "transparent" }}
           >
             {/* 3 */}
             <div
-              className="relative w-full h-full md:h-1/2  p-5"
+              className="relative w-full h-full md:h-1/2  p-5  lg:rounded-3xl"
               style={{
                 color: casestudy[3].color,
                 backgroundColor: casestudy[3].bgCardColor,
               }}
             >
-              <h1 className="w-[80%] text-3xl font-medium mb-6">
+              <h1 className="w-[80%] text-heading-03 font-medium mb-2">
                 {casestudy[3].heading}
               </h1>
-              <p className="w-[80%] mb-4">{casestudy[3].description}</p>
+              <p className="w-[80%] text-body-01 mb-4">{casestudy[3].description}</p>
 
               <div className="absolute bottom-4 right-4">
                 <OutlinedButtonWithArrow size={32} />
@@ -530,16 +568,16 @@ const page = () => {
             </div>
             {/* 4 */}
             <div
-              className="relative w-full h-full md:h-1/2 rounded-b-3xl p-5"
+              className="relative w-full h-full md:h-1/2 rounded-b-3xl lg:rounded-3xl p-5"
               style={{
                 color: casestudy[4].color,
                 backgroundColor: casestudy[4].bgCardColor,
               }}
             >
-              <h1 className="w-[80%] text-3xl font-medium mb-6">
+              <h1 className="w-[80%] text-heading-03 font-medium mb-2">
                 {casestudy[4].heading}
               </h1>
-              <p className="w-[80%] mb-4">{casestudy[4].description}</p>
+              <p className="w-[80%] text-body-01mb-4">{casestudy[4].description}</p>
 
               <div className="absolute bottom-4 right-4">
                 <OutlinedButtonWithArrow size={32} />
@@ -579,6 +617,7 @@ const page = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
 <TransformBusinessForm
         Title={"Transform your Business with us"}
