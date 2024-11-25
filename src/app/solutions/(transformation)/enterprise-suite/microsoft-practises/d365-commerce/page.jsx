@@ -366,7 +366,7 @@ const D365Commerce = () => {
       {/* key section */}
       <div className="rounded-3xl" style={{overflow:'hidden', position:'relative'}}>
         <div className="" style={{ backgroundColor: '#2B1624', position: 'relative' }}>
-          <div className="container mx-auto py-32">
+          <div className="container mx-auto py-32 lg:py-8 2xl:py-32">
             <HorizontalHeading heading={'D365 Commerce Key Capabilities'} desc={'Optimise retail business with personalized experiences & enhanced employee productivity'} textColor={'text-neutral-white'} descColor={'text-neutral-white'} ></HorizontalHeading>
             <Slider slidesPerView={3.2}>
             {KEY_CAPABILITIES?.map((item, index) => (

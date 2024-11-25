@@ -215,10 +215,12 @@ const page = () => {
         }
         sectionTextColor={"text-primary-900"}
         sectionHeadingLayout="left"
+        setTop ={false}
         style={{
           backgroundImage: `url(${`/oracle/ofc-bg.webp`})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          minHeight: "540px",
         }}
       ></SectionWrapperNew>
       {/* our offering section */}
@@ -235,7 +237,7 @@ const page = () => {
         <Swiper
           slidesPerView={1} // Default for mobile
           spaceBetween={16} // Adjust space between slides
-          pagination={true}
+          pagination={{ clickable: true }}
           navigation={true}
           modules={[Pagination, Navigation]}
           followFinger={true}
@@ -250,15 +252,15 @@ const page = () => {
             <SwiperSlide key={index}>
               <div className="w-full bg-secondary-900 rounded-3xl group overflow-hidden relative min-h-[324px]">
                 <div className="p-5">
-                  <h5 className="mb-6 text-heading-02 leading-heading-02 font-semibold text-white">
+                  <h5 className="mb-6 text-heading-03 font-semibold text-neutral-white">
                     {item?.cardHeading}
                   </h5>
-                  <p className="mb-3 text-body-01 leading-body-01 font-medium text-white">
+                  <p className="mb-3 text-body-01  text-neutral-white">
                     {item?.cardDesc}
                   </p>
                 </div>
                 {item?.cardHoverData && (
-                  <div className="bg-white p-5 rounded-3xl h-full w-full absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
+                  <div className="bg-white cursor-pointer p-5 rounded-3xl h-full w-full absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
                     <div>
                       <ul className="max-w-md space-y-1 text-neutral-darkest-grey list-disc list-inside">
                         {item?.cardHoverData.map((item2, index) => (
@@ -283,6 +285,7 @@ const page = () => {
         sectionHeading={"Key Capabilities"}
         sectionDesc={`Streamline finance, HR, supply chain and customer experience with Oracle Fusion Cloud's integrated solutions.`}
         sectionTextColor={"text-neutral-white"}
+        sectionDescColor={"text-neutral-white"}
         sectionHeadingLayout="horizontal"
         bgColor={'bg-primary-400'}
        
@@ -317,8 +320,8 @@ const page = () => {
               alt="Star"
               className="mb-4"
             />
-            <div className="text-[28px] text-white">{item?.title}</div>
-            <p className="text-[20px] py-4 text-white">{item?.desc}</p>
+            <div className="text-heading-03 font-bold text-neutral-white mb-2">{item?.title}</div>
+            <p className="text-body-01 font-normal text-neutral-white">{item?.desc}</p>
           </div>
         </SwiperSlide>
       ))}
