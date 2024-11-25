@@ -120,7 +120,7 @@ const TechnologyStack = () => {
       cardDesc: 'Transcending off-the-shelf offerings, we develop apps ensuring alignment with business needs',
       isArrow: true,
       cardTextColor: 'black',
-      cardTopImageUrl: '/technology-stack/ourOfferings/customApplication.webp'
+      cardTopImageUrl: '/technology-stack/ourOfferings/legacyModernisation.webp'
     },
     {
 

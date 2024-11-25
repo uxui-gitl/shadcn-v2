@@ -16,7 +16,7 @@ function CommonCardTwo({ Item }) {
 
     return (
         <>
-            <div className={`relative rounded-3xl shadow min-h-[524px] flex flex-col ${style.commonCardThree}`} style={{
+            <div className={`relative rounded-3xl shadow min-h-[524px] flex flex-col lg:mb-8 ${style.commonCardThree}`} style={{
                 backgroundColor: `${cardBGColor}`,
                 color: cardTextColor,
                 width: "100%",
@@ -40,14 +40,14 @@ function CommonCardTwo({ Item }) {
 
                     {cardDesc && (
                         <p
-                            className={`mb-4 text-body-01  ${style.cardDesc}`}
+                            className={`mb-8 text-body-01  ${style.cardDesc}`}
                             dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                         />
                     )}
                 </div>
                 {isArrow && (
-                        <div className={`absolute flex justify-end mt-4 bottom-5 right-5`}>
-                            <OutlinedButtonWithArrow arrowColor={cardTextColor} size={24} />
+                        <div className={`absolute flex justify-end mt-4 bottom-2 right-2`}>
+                            <OutlinedButtonWithArrow arrowColor={cardTextColor} size={20} />
                         </div>
                     )}
             </div>

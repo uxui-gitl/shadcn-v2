@@ -695,9 +695,13 @@ const UpgradeToCloud = () => {
         sectionDescColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
         bgColor={"bg-secondary-900"}
-       style={{paddingTop:'rem',paddingBottom:'4rem'}}
+        style={{
+          paddingTop:'4rem',
+          paddingBottom:'4rem'
+        }}
+
       >
-        <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
             <Image className="pb-8" src={'/upgradeCloud/icons/liftAndShift.svg'} alt="" width={56} height={56} />
             <h5 className="mb-2 text-heading-02 font-semibold tracking-tight text-white">Lift and Shift

@@ -16,7 +16,7 @@ const logos = [
 const TechnologyStackLogos = () => {
   return (
     <>
-      <SectionWrapperNew bgColor={"bg-primary-10"} setTop={false} >
+      <SectionWrapperNew bgColor={"bg-primary-10 lg:mb-8"} setTop={false} >
         <div className="">
           <SectionHeading
             center={true}
