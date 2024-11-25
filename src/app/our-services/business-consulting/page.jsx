@@ -13,6 +13,7 @@ import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 
 import 
 ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import { Fascinate } from "next/font/google";
 
 
 
@@ -218,13 +219,19 @@ bgCardColor: '#FCE6F4'
       />
       <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
       
-      <SectionWrapper BGColor="bg-primary-900">
+      <SectionWrapper BGColor="bg-primary-900" setTop={false} 
+      style={{
+        backgroundImage: `url(${imgBGURL_Challenges})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+      >
         <div className="container mx-auto py-32">
           <SectionHeading
             layout="horizontal"
             Color="text-neutral-white"
             headingContainerWidth="w-full"
-            setImageBGURL={imgBGURL_Challenges}
             Heading="Knocking Business Challenges"
             Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
           ></SectionHeading>
