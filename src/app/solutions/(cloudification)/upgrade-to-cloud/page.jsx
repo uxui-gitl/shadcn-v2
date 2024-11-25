@@ -695,6 +695,7 @@ const UpgradeToCloud = () => {
         sectionDescColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
         bgColor={"bg-secondary-900"}
+       style={{paddingTop:'rem',paddingBottom:'4rem'}}
       >
         <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
           <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
