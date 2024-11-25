@@ -19,6 +19,7 @@ function SectionWidthSlider({
   sectionTextColor = "text-neutral-white",
   sectionBGColor = "text-neutral-white",
   setHeadingLayout,
+  setTop,
   moveSectionToTOP,
   setMinHeight,
   style,
@@ -38,6 +39,7 @@ function SectionWidthSlider({
         sectionTextColor={sectionTextColor}
         sectionHeadingLayout={setHeadingLayout}
         bgColor={sectionBGColor}
+        setTop={setTop}
         style={{
           backgroundImage: `url(${sectionBGImageUrl})`,
           backgroundSize: "cover",

@@ -19,7 +19,7 @@ const WhySection = ({
      sectionHeadingLayout="left"
      setTop={false}
     >
-<div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-3 2xl:gap-4">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-3 2xl:gap-4 lg:mb-8">
         {arr.map((item, index) => (
             <>
               <div className="py-4 border-b-[1px] border-bg-neutral-grey" key={index} >

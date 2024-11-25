@@ -294,6 +294,7 @@ const page = () => {
         sectionDesc={""}
         sectionTextColor="text-primary-900"
         sectionHeadingLayout="left"
+        setTop={false}
       >
         <Slider>
           {RPASolution?.map((item, index) => (
@@ -336,6 +337,7 @@ const page = () => {
         sectionTextColor={"text-neutral-white"}
         cardData={offeringCardData}
         LinkListData={offeringLinkListData}
+        setTop={true}
       ></ServiceOfferingSection>
 
       <IndustrySpotlight
@@ -345,6 +347,7 @@ const page = () => {
         sectionDesc={
           "Understanding unique demands of each industry vertical and capitalizing  capabilities, we equip businesses to thrive in competitive market."
         }
+        setTop={false}
       />
 
       {/* project life cycle */}

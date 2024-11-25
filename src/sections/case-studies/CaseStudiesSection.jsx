@@ -241,7 +241,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
       </Dialog>
       {/* dialog  end*/}
 
-      <SectionWrapper BGColor={bgColor}>
+      <SectionWrapper BGColor={bgColor} setTop={setTop}>
         <div className={`container mx-auto py-32 lg:py-32 2xl:py-32 ${setTop?'-mt-8':''}`}>
           {caseStudyLayout === "1" && (
             <div
@@ -603,7 +603,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
                 center
                 headingContainerWidth={'w-1/2'}
               ></SectionHeading>
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-4">
                 <div className="flex flex-col md:flex-row justify-start items-center gap-2 lg:gap-4 w-full ">
                   {/* Grid--One */}
                   <div
@@ -702,7 +702,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
                       backgroundColor: casestudy[2].bgCardColor,
                     }}
                   >
-                    <h3 className="text-body-01 font-semibold mb-2 lg:mb-12">
+                    <h3 className="text-body-01 font-semibold mb-2 lg:mb-6">
                       {casestudy[2].title}
                     </h3>
                     <h1 className="text-heading-02 font-medium mb-2 lg:mb-6">

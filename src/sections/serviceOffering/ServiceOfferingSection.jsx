@@ -11,6 +11,7 @@ function ServiceOfferingSection({
   sectionMaxWidth,
   sectionTextColor = "text-neutral-white",
   sectionBGColor = "bg-primary-900",
+  setTop='',
   cardData = [],
   LinkListData = [],
 }) {
@@ -50,7 +51,7 @@ function ServiceOfferingSection({
 
   return (
     <>
-      <SectionWrapper id={ID} BGColor={sectionBGColor}>
+      <SectionWrapper id={ID} BGColor={sectionBGColor} setTop={setTop}>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           <div className= "py-32 lg:py-8 2xl:py-32">
             <SectionHeading

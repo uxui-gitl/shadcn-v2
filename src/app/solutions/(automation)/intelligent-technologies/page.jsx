@@ -170,6 +170,7 @@ const page = () => {
         sectionDesc={''}
         sectionTextColor="text-neutral-white"
         sectionHeadingLayout="left"
+        setTop={false}
       >
         <Slider>
           {advanceSolutionCardData?.map((item, index) => (

@@ -59,7 +59,7 @@ function BenefitSliderSection({
                             headingContainerWidth={sectionHeaderWidth} />
           </div>
 
-          <div className="w-full md:w-[60%] bg-primary-900 z-10">
+          <div className="w-full md:w-[60%] bg-primary-900 z-10 lg:mb-8">
             <div>
               {cardData.map((item) => (
                 <>

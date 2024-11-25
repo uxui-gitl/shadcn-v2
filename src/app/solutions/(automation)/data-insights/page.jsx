@@ -321,6 +321,7 @@ const DataInsights = () => {
         cardData={VISUALIZATION_DATA}
         pageID="ai-ml"
         setHeadingLayout={"left"}
+        setTop={false}
 
        
       ></SectionWithSlider>

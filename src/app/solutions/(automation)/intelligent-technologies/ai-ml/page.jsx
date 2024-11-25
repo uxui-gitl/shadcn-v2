@@ -246,6 +246,7 @@ const page = () => {
         sectionTextColor="text-neutral-white"
         sectionDescColor="text-neutral-white"
         sectionHeadingLayout="left"
+        setTop={false}
       >
         <Slider>
           {AIOfferingsData?.map((item, index) => (
@@ -306,6 +307,7 @@ const page = () => {
         sectionDesc={'Our proficiency with AI/ML platforms paves the way for business progress with innovation and efficiency.'}
         sectionTextColor="text-primary-900"
         sectionHeadingLayout="horizontal"
+        setTop={false}
       >
         <Slider>
           {PlatFormImageList?.map((item, index) => (
