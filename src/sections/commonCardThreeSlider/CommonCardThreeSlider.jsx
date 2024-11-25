@@ -19,6 +19,7 @@ function CommonCardTwoSlider({
     sectionTextColor = 'text-primary-900',
     sectionBGColor = "bg-neutral-white",
     setHeadingLayout,
+    setTop
 }) {
 
     const slidesPerView = "1";
@@ -34,7 +35,7 @@ function CommonCardTwoSlider({
                 sectionDescColor={sectionDescColor}
                 BGColor={sectionBGColor}
                 sectionHeadingLayout={setHeadingLayout}
-                
+                setTop={setTop}
    
                 style={{
                     backgroundImage: `url(${sectionImageUrl})`,
