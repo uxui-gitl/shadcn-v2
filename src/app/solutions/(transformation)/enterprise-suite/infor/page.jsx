@@ -1,22 +1,21 @@
-'use client';
+"use client";
 import EntIntro from "@/components/EntIntro";
 import SectionNav from "@/components/SectionNav";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import CommonCardThreeSlider from '@/sections/commonCardThreeSlider/CommonCardThreeSlider';
+import CommonCardThreeSlider from "@/sections/commonCardThreeSlider/CommonCardThreeSlider";
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-import SectionWrapper from '@/components/SectionWrapper';
-import SectionHeading from '@/components/SectionHeading';
+import SectionWrapper from "@/components/SectionWrapper";
+import SectionHeading from "@/components/SectionHeading";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import BlogSection from "@/sections/blog/BlogSection";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import Image from 'next/image'
-
-
+import { Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const Page = () => {
   const blogImageUrl = "/infor/blogBg.webp";
@@ -24,23 +23,27 @@ const Page = () => {
     {
       id: 1,
       cardHeading: "Infor Managed Support Services",
-      cardDesc: 'In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.',
-      designation: 'Manager',
-      companyName: 'Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer'
+      cardDesc:
+        "In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.",
+      designation: "Manager",
+      companyName:
+        "Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer",
     },
     {
       id: 2,
       cardHeading: "Implementation with Better Business Understanding",
-      cardDesc: 'Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.',
-      designation: 'IT Manager',
-      companyName: 'Global Process Equipment Supplier'
+      cardDesc:
+        "Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.",
+      designation: "IT Manager",
+      companyName: "Global Process Equipment Supplier",
     },
     {
       id: 3,
       cardHeading: "Swift Implementation with Proactive Approach",
-      cardDesc: 'Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.',
-      designation: 'Executive Director',
-      companyName: 'Commercial'
+      cardDesc:
+        "Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.",
+      designation: "Executive Director",
+      companyName: "Commercial",
     },
   ];
 
@@ -75,8 +78,7 @@ const Page = () => {
       desc: "Repository of ready-to-use use cases guarantees swift implementation and seamless integration",
       icon: "/infor/disinctiveEdge/repository.svg",
     },
-
-  ]
+  ];
 
   const INDUSTRY_SPOTLIGHT = [
     {
@@ -109,7 +111,7 @@ const Page = () => {
             <li>High-Tech Electronics  </li>
         </ol>
     </li>
-</ul>`
+</ul>`,
     },
     {
       id: 2,
@@ -133,7 +135,7 @@ const Page = () => {
             <li>Trading</li>
         </ol>
     </li>
-</ul>`
+</ul>`,
     },
     {
       id: 3,
@@ -155,7 +157,7 @@ const Page = () => {
             <li>Turnkey Project</li>
         </ol>
     </li>
-</ul>`
+</ul>`,
     },
     {
       id: 4,
@@ -177,7 +179,7 @@ const Page = () => {
             <li>Logistics Services</li>
         </ol>
     </li>
-</ul>`
+</ul>`,
     },
   ];
 
@@ -215,7 +217,7 @@ const Page = () => {
       bgCardColor: "#EFE9FB",
     },
     {
-       videoURL: "/infor/videos/caseStudy.mp4",
+      videoURL: "/infor/videos/caseStudy.mp4",
       title: "",
       heading: "Sheet metal manufacturer",
       description:
@@ -224,89 +226,107 @@ const Page = () => {
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
-    
+
     // Add more case studies here...
   ];
-
 
   const HUBEXPERTISE_COUNTER_DATA = [
     { start: 290, end: 300, description: "Cloud Deployments" },
     { start: 10, end: 15, description: "Cloud Certified Professionals" },
-    { start: 0, end: 0, description: "Largest Infor Implementation Experience in Asia" },
+    {
+      start: 0,
+      end: 0,
+      description: "Largest Infor Implementation Experience in Asia",
+    },
 
     // Add more counters as needed
   ];
 
   const offeringLinkListData = [
-    { id: 1, text: 'CloudSuite™ Industrial Enterprise', beforeIconUrl: 'true', isArrowIconVisiable: false },
-    { id: 2, text: 'CloudSuite™ Automotive', beforeIconUrl: 'true', isArrowIconVisiable: false },
-    { id: 3, text: 'CloudSuite™ Aerospace & Defense', beforeIconUrl: 'true', isArrowIconVisiable: false },
-  ]
+    {
+      id: 1,
+      text: "CloudSuite™ Industrial Enterprise",
+      beforeIconUrl: "true",
+      isArrowIconVisiable: false,
+    },
+    {
+      id: 2,
+      text: "CloudSuite™ Automotive",
+      beforeIconUrl: "true",
+      isArrowIconVisiable: false,
+    },
+    {
+      id: 3,
+      text: "CloudSuite™ Aerospace & Defense",
+      beforeIconUrl: "true",
+      isArrowIconVisiable: false,
+    },
+  ];
 
   const serviceOfferingData = [
     {
       id: 1,
-      cardBGColor: '#fff',
-      cardHeading: 'Implementation',
-      cardDesc: 'Streamline every phase of Infor implementation precisely and on-time',
+      cardBGColor: "#fff",
+      cardHeading: "Implementation",
+      cardDesc:
+        "Streamline every phase of Infor implementation precisely and on-time",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/implementation.webp'
+      cardTextColor: "black",
+      cardTopImageUrl: "/infor/serviceOfferings/implementation.webp",
     },
     {
-
       id: 2,
-      cardBGColor: '#fff',
-      cardHeading: 'Managed Services',
-      cardDesc: 'Manage every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application',
+      cardBGColor: "#fff",
+      cardHeading: "Managed Services",
+      cardDesc:
+        "Manage every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/managedServices.webp'
+      cardTextColor: "black",
+      cardTopImageUrl: "/infor/serviceOfferings/managedServices.webp",
     },
     {
-
       id: 3,
-      cardBGColor: '#fff',
-      cardHeading: 'Migrate to Cloud',
-      cardDesc: 'Ensure smooth and efficient migration process with minimum business disruptions',
+      cardBGColor: "#fff",
+      cardHeading: "Migrate to Cloud",
+      cardDesc:
+        "Ensure smooth and efficient migration process with minimum business disruptions",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/migrateCloud.webp'
+      cardTextColor: "black",
+      cardTopImageUrl: "/infor/serviceOfferings/migrateCloud.webp",
     },
     {
-
       id: 4,
-      cardBGColor: '#E4E4E4',
-      cardHeading: 'Migrate to Infor',
-      cardDesc: 'Experience seamless and transformative migration of different ERP to Infor LN with data integrity. ',
+      cardBGColor: "#E4E4E4",
+      cardHeading: "Migrate to Infor",
+      cardDesc:
+        "Experience seamless and transformative migration of different ERP to Infor LN with data integrity. ",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/migrateInfor.webp'
+      cardTextColor: "black",
+      cardTopImageUrl: "/infor/serviceOfferings/migrateInfor.webp",
     },
     {
-
       id: 5,
-      cardBGImageUrl: '',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Upgrade with Infor',
-      cardDesc: 'Get access to the latest Infor platform, ensuring improved overall performance',
+      cardBGImageUrl: "",
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Upgrade with Infor",
+      cardDesc:
+        "Get access to the latest Infor platform, ensuring improved overall performance",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/upgradeInfor.webp'
+      cardTextColor: "black",
+      cardTopImageUrl: "/infor/serviceOfferings/upgradeInfor.webp",
     },
     {
-
-
       id: 6,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Customization & Integrations',
-      cardDesc: 'Value-adding custom developments and integrations that deliver better business outcomes',
+      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Customization & Integrations",
+      cardDesc:
+        "Value-adding custom developments and integrations that deliver better business outcomes",
       isArrow: false,
-      cardTextColor: 'black',
-      cardTopImageUrl: '/infor/serviceOfferings/customization.webp'
+      cardTextColor: "black",
+      cardTopImageUrl: "/infor/serviceOfferings/customization.webp",
     },
-  ]
+  ];
 
   const ultimateChoiceData = [
     {
@@ -314,7 +334,7 @@ const Page = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardTextColor: '#000',
+      CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/infor/icons/GITL-InsightEdge.svg",
       CardHeading: "GITL InsightEdge",
@@ -329,7 +349,7 @@ const Page = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardTextColor: '#000',
+      CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/infor/icons/DataConversion.svg",
       CardHeading: "Data Conversion Utility Tool",
@@ -343,7 +363,7 @@ const Page = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardTextColor: '#000',
+      CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/infor/icons/CustomFit.svg",
       CardHeading: "GITL Custom Fit",
@@ -357,7 +377,7 @@ const Page = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardTextColor: '#000',
+      CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/infor/icons/cloudscapeAlign.svg",
       CardHeading: "GITL Cloudscape Align",
@@ -371,7 +391,7 @@ const Page = () => {
       BGImageUrl: "",
       BGColor: "#fff",
       CardBGColor: "transparent",
-      CardTextColor: '#000',
+      CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/infor/icons/prosoft.svg",
       CardHeading: "Prosoft 2.0",
@@ -383,17 +403,17 @@ const Page = () => {
   ];
 
   const inforText = [
-    'Infor LN',
-    'Infor WMS',
-    'Factory Track',
-    'Infor OS',
-    'Expense Management',
-    'Infor CPQ',
-    'Infor CRM',
-    'Infor HCM',
-    'Infor d/EPM',
-    'Infor Birst',
-  ]
+    "Infor LN",
+    "Infor WMS",
+    "Factory Track",
+    "Infor OS",
+    "Expense Management",
+    "Infor CPQ",
+    "Infor CRM",
+    "Infor HCM",
+    "Infor d/EPM",
+    "Infor Birst",
+  ];
 
   return (
     <>
@@ -404,22 +424,21 @@ const Page = () => {
         width="60%"
         video="/infor/videos/pageBanner.mp4"
       />
-    
 
       {/* Overview  */}
-      <OverviewSection Text={`20+ years of Infor partnership and APAC's largest Infor implementation experience, empowers us to drive growth-focused operations globally.`} />
+      <OverviewSection
+        Text={`20+ years of Infor partnership and APAC's largest Infor implementation experience, empowers us to drive growth-focused operations globally.`}
+      />
 
-      <SectionWrapper
-        BGColor="bg-primary-500"
-      >
+      <SectionWrapper BGColor="bg-primary-500">
         <div className="container mx-auto py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-4">
             <div className="">
               <SectionHeading
-                Heading={'Our Infor Capabilities'}
+                Heading={"Our Infor Capabilities"}
                 Desc={`Delivering tailored business-fit Infor solutions and support for optimal business performance.`}
-                Color={'white'}
-                headingContainerWidth={'w-full'}
+                Color={"white"}
+                headingContainerWidth={"w-full"}
               ></SectionHeading>
 
               <div>
@@ -429,34 +448,81 @@ const Page = () => {
 
                 <div className="my-5">
                   {offeringLinkListData.map((item) => (
-                    <div key={item?.id} className="flex items-center justify-center py-2 text-heading-02 leading-heading-02 font-medium text-white border-b border-neutral-white border-opacity-35
-" style={{ cusror: 'pointer' }}>
-                      {item?.beforeIconUrl && <svg xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '20px' }} width="33" height="33" viewBox="0 0 32 33" fill="none">
-                        <path d="M21.3331 11.1563V7.15625L25.3331 3.15625L26.6664 5.82292L29.3331 7.15625L25.3331 11.1563H21.3331ZM21.3331 11.1563L15.9998 16.4895M29.3332 16.4896C29.3332 23.8534 23.3636 29.8229 15.9998 29.8229C8.63604 29.8229 2.6665 23.8534 2.6665 16.4896C2.6665 9.12579 8.63604 3.15625 15.9998 3.15625M22.6665 16.4896C22.6665 20.1715 19.6817 23.1563 15.9998 23.1563C12.3179 23.1563 9.33317 20.1715 9.33317 16.4896C9.33317 12.8077 12.3179 9.82292 15.9998 9.82292" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>}
-                      <span className="w-full text-paragraph-01 leading-paragraph-01 font-normal">{item.text}</span>
-                      {item?.isArrowIconVisiable && <svg className="w-[24px] h-[24px] ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                      </svg>}
+                    <div
+                      key={item?.id}
+                      className="flex items-center justify-center py-2 text-heading-02 leading-heading-02 font-medium text-white border-b border-neutral-white border-opacity-35
+"
+                      style={{ cusror: "pointer" }}
+                    >
+                      {item?.beforeIconUrl && (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          style={{ marginRight: "20px" }}
+                          width="33"
+                          height="33"
+                          viewBox="0 0 32 33"
+                          fill="none"
+                        >
+                          <path
+                            d="M21.3331 11.1563V7.15625L25.3331 3.15625L26.6664 5.82292L29.3331 7.15625L25.3331 11.1563H21.3331ZM21.3331 11.1563L15.9998 16.4895M29.3332 16.4896C29.3332 23.8534 23.3636 29.8229 15.9998 29.8229C8.63604 29.8229 2.6665 23.8534 2.6665 16.4896C2.6665 9.12579 8.63604 3.15625 15.9998 3.15625M22.6665 16.4896C22.6665 20.1715 19.6817 23.1563 15.9998 23.1563C12.3179 23.1563 9.33317 20.1715 9.33317 16.4896C9.33317 12.8077 12.3179 9.82292 15.9998 9.82292"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      )}
+                      <span className="w-full text-paragraph-01 leading-paragraph-01 font-normal">
+                        {item.text}
+                      </span>
+                      {item?.isArrowIconVisiable && (
+                        <svg
+                          className="w-[24px] h-[24px] ms-2 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      )}
                     </div>
                   ))}
                 </div>
-
               </div>
             </div>
-            <div className="flex items-center hidden md:block" style={{ justifyContent: 'center' }}>
-              <div className="" style={{ maxHeight: '600px', overflow: 'hidden' }}>
+            <div
+              className="flex rounded-3xl items-center hidden md:block"
+              style={{ justifyContent: "center" }}
+            >
+              <div
+                className=""
+                style={{ maxHeight: "600px", overflow: "hidden" }}
+              >
                 <img src="/infor/ourCapabilities.webp"></img>
               </div>
             </div>
           </div>
-          <div className="InforSliderWrapper" style={{ zindex: "2", position: 'relative' }}>
-            <div className="flex py-5 " style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <div
+            className="InforSliderWrapper"
+            style={{ zindex: "2", position: "relative" }}
+          >
+            <div
+              className="flex py-5 "
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <div className="w-full">
                 <Swiper
                   slidesPerView={2}
                   navigation={false}
-                  pagination={{ type: "bullets", clickable: true }}
+                  pagination={{ clickable: true }}
+                  modules={[Pagination]}
                   autoplay={true}
                   loop={true}
                   spaceBetween={30}
@@ -481,7 +547,7 @@ const Page = () => {
                 >
                   {inforText?.map((item, index) => (
                     <SwiperSlide key={item}>
-                      <div className="w-full text-heading-02 leading-heading-02 font-semibold text-left text-white">
+                      <div className="w-full text-heading-04 font-semibold text-left text-white">
                         {item}
                       </div>
                     </SwiperSlide>
@@ -490,22 +556,20 @@ const Page = () => {
               </div>
             </div>
           </div>
-
         </div>
       </SectionWrapper>
 
       <CommonCardThreeSlider
-        ID={''}
-        sectionImageUrl={''}
-        sectionBGColor={'bg-primary-900'}
-        sectionHeading={'Service Offerings'}
-        sectionDesc={"With extensive experience of domains and Infor solutions, we offer services to meet the growth requirements of business."}
-        sectionTextColor={'text-neutral-white'}
+        ID={""}
+        sectionImageUrl={""}
+        sectionBGColor={"bg-primary-900"}
+        sectionHeading={"Service Offerings"}
+        sectionDesc={
+          "With extensive experience of domains and Infor solutions, we offer services to meet the growth requirements of business."
+        }
+        sectionTextColor={"text-neutral-white"}
         cardData={serviceOfferingData}
-      >
-
-      </CommonCardThreeSlider>
-
+      ></CommonCardThreeSlider>
 
       <SectionWidthSlider
         ID={"ultimateChoiceData"}
@@ -517,10 +581,15 @@ const Page = () => {
         cardData={ultimateChoiceData}
         sectionBGColor="bg-primary-10"
         setHeadingLayout="horizontal"
-
       />
 
-      <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionHeading={'Industry Spotlight'} sectionDesc={'Understanding unique challenges of different industries, we equip businesses to thrive in competitive markets'} />
+      <IndustrySpotlight
+        cardData={INDUSTRY_SPOTLIGHT}
+        sectionHeading={"Industry Spotlight"}
+        sectionDesc={
+          "Understanding unique challenges of different industries, we equip businesses to thrive in competitive markets"
+        }
+      />
 
       <HubExpertise
         setHeading="Hub of Expertise"
@@ -531,8 +600,11 @@ const Page = () => {
         columnNo={3}
       />
 
-      <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"1"} bgColor={'#D3D3D3'} />
-
+      <CaseStudiesSection
+        casestudy={CASE_STUDIES_DATA}
+        csLayout={"1"}
+        bgColor={"#D3D3D3"}
+      />
 
       {/* Start-Section--Blog======================================================================= */}
       <BlogSection
@@ -547,27 +619,27 @@ const Page = () => {
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
 
-
-      <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Delivering complex global transformations through solution-focused approach, domain expertise & value-added services.'}
-      >
-      </DistinctiveSection>
+      <DistinctiveSection
+        DistinctiveData={distinctiveData}
+        ID={"Distinctive"}
+        Title={"The Distinctive Edge"}
+        Desc={
+          "Delivering complex global transformations through solution-focused approach, domain expertise & value-added services."
+        }
+      ></DistinctiveSection>
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their successful experience"}
-        Desc={''}
+        Desc={""}
         Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
-        SectionHeadingMaxWidth={'70%'}
+        SectionHeadingMaxWidth={"70%"}
       ></ReviewSliderSection>
       <TransformBusinessForm
         Title={"Are you Ready for Infor-driven growth? "}
-        Desc={
-          "Let's get started!"
-        }
+        Desc={"Let's get started!"}
       ></TransformBusinessForm>
-
     </>
   );
 };

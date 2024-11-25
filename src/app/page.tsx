@@ -654,35 +654,35 @@ export default function Home() {
         <Slider slidesPerView={3}>
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
-              <div
-                className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px]"
-                style={{
-                  backgroundImage: `url(${item.cardBgImg})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "bottom center",
-                }}
-              >
-                {item?.cardTitle && (
-                  <div className="text-body-01 text-neutral-white mb-[100px] ">
-                    {item?.cardTitle}
-                  </div>
-                )}
-                <div className="my-5 text-heading-02 text-neutral-white min-h-[150px]">
-                  {item.cardHeading}
+            <div
+              className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px] flex flex-col"
+              style={{
+                backgroundImage: `url(${item.cardBgImg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "bottom center",
+              }}
+            >
+              {item?.cardTitle && (
+                <div className="text-body-01 text-neutral-white mb-[100px]">
+                  {item?.cardTitle}
                 </div>
-                <div className="mb-8 text-body-01 text-neutral-white min-h-[75px]">
-                  {item.cardDesc}
-                </div>
-                <div className="flex justify-end right-0 bottom-0">
-                  {/* setshowModal1((prev) => !prev) */}
-                  <OutlinedButtonWithArrow
-                    arrowColor={"white"}
-                    size={32}
-                    onClick={() => handleBusinessCardClick(true, item)}
-                  />
-                </div>
+              )}
+              <div className="my-5 text-heading-02 text-neutral-white min-h-[150px]">
+                {item.cardHeading}
               </div>
-            </SwiperSlide>
+              <div className="mb-8 text-body-01 text-neutral-white min-h-[75px]">
+                {item.cardDesc}
+              </div>
+              <div className="mt-auto flex justify-end">
+                <OutlinedButtonWithArrow
+                  arrowColor={"white"}
+                  size={32}
+                  onClick={() => handleBusinessCardClick(true, item)}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+          
           ))}
         </Slider>
       </SectionWrapperNew>
@@ -698,6 +698,8 @@ export default function Home() {
         sectionTextColor="text-neutral-white"
         sectionDescColor="text-neutral-white"
         sectionHeadingLayout="center"
+        setTop='false'
+        setPad="false"
         style={{
           background: `url(/homeNew/globe.svg), linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)`,
           paddingTop: "350px",
@@ -826,6 +828,7 @@ export default function Home() {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"w-1/2"}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
 
       <TransformBusinessForm

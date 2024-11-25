@@ -24,6 +24,7 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
                 sectionTextColor={Color}
                 sectionDescColor={Color}
                 sectionHeadingLayout="left"
+                setTop='true'
               
             >
                 
