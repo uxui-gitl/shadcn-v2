@@ -94,7 +94,7 @@ const ExperienceSlider = () => {
         <Swiper
           slidesPerView={1}
           navigation={false}
-          pagination={true}
+          pagination={{ clickable: true }}
           followFinger={true}
           modules={[Navigation, Pagination]}
           autoplay={false}
@@ -131,19 +131,19 @@ const ExperienceSlider = () => {
                 }}
               >
                 {caseItem.title && (
-                  <h3 className="text-label-01 leading-label-01 font-semibold mb-4 lg:mb-12">
+                  <h3 className="text-label-01 font-semibold mb-4 lg:mb-12">
                     {caseItem.title}
                   </h3>
                 )}
                
                {caseItem.CounterValue&&<h3
-                  className={`${jetBrains_mono.className} relative text-[96px]   font-bold`}
+                  className={`${jetBrains_mono.className} relative text-[96px] lg:text-[72px]  font-bold`}
                 >
                   {caseItem.CounterValue}
                   <span className={Styles.superscript}>+</span>
                 </h3>
 } 
-                <h1 className="relative text-heading-02 leading-heading-02 font-medium ">
+                <h1 className="relative text-heading-03 font-semibold ">
                   {caseItem.heading}
                 </h1>
                 <p className="mb-4">{caseItem.description}</p>

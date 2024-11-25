@@ -52,7 +52,7 @@ const supTextSizeClass =
               <span>{staticTitle}</span>
             )}
           </h3>
-          <p className="text-white">{description}</p>
+          <p className="text-white ">{description}</p>
         </div>
       )}
     </div>
@@ -112,11 +112,11 @@ const HubExpertise = ({ setHeading, setDesc, setColor, counters, style, columnNo
                 Heading={setHeading}
                 Color={setColor}
                 Desc={setDesc}
-                headingContainerWidth={'w-full'}
+                headingContainerWidth={'w-2/3'}
               />
             </div>
             {/* Right Side: Counters */}
-            <div className={(columnNo === 2 ? "w-full md:w-1/2 mt-[5%]" : "w-full md:w-[70%]") + " flex flex-col justify-start"}>
+            <div className={(columnNo === 2 ? "w-full md:w-1/2" : "w-full md:w-[70%]") + " flex flex-col justify-start"}>
               <div className="flex flex-wrap gap-4">
                 {counters.map((counter, index) => (
                   <div key={index} className={columnNo === 3 ? "w-full sm:w-[calc(33.33%-1rem)]" : "w-full sm:w-[calc(50%-1rem)]"}>

@@ -90,14 +90,7 @@ const CyberSecurity = () => {
       isArrow: false,
       cardTextColor: '#fff',
       cardType: 1,
-      cardHoverData: [
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-        'abc',
-    ]
+   
     },
     {
 
@@ -187,6 +180,7 @@ const CyberSecurity = () => {
         'Risk Assesment and Management',
       ],
       url: '',
+      icon:'https://www.svgrepo.com/show/535617/shield-check.svg',
     },
     {
       id: 4, heading: 'Safeguard',
@@ -196,27 +190,9 @@ const CyberSecurity = () => {
         'Risk Assesment and Management',
       ],
       url: '',
-    },
-    {
-      id: 4, heading: 'SAFEGUARD',
-      list: [
-        'Risk Assesment and Management',
-        'Risk Assesment and Management',
-        'Risk Assesment and Management',
-      ],
-      url: '',
-      icon:'https://www.svgrepo.com/show/535140/aperture.svg',
-    },
-    {
-      id: 2, heading: 'Safeguard',
-      list: [
-        'Risk Assesment and Management',
-        'Risk Assesment and Management',
-        'Risk Assesment and Management',
-      ],
-      url: '',
-      icon:'https://www.svgrepo.com/show/535120/alarm-clock.svg',
-    },
+      icon:'https://www.svgrepo.com/show/535617/shield-check.svg',
+    }
+
   ];
 
   return (
@@ -246,14 +222,15 @@ const CyberSecurity = () => {
         sectionTextColor="tex-primary-900"
         sectionHeadingLayout="left"
         bgColor={'bg-neutral-ghost-white'}
+        setTop={false}
       >
-        <Slider slidesPerView={3}>
+        <Slider slidesPerView={4}>
           {CyberSecurityData?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="w-full rounded-3xl group overflow-hidden relative" style={{ background: `url('${item?.cardBGImageUrl}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
-                <div className={`p-5 relative min-h-[520px] flex flex-col ${item.cardType == 1 ? 'justify-start' : 'justify-end'}`}>
-                  <h5 className={`mb-4 text-heading-01 leading-heading-01 text-[${item?.cardTextColor}] font-semibold min-h-[40px]`}>{item?.cardHeading}</h5>
-                  <p className={`mb-3 text-body-01 leading-body-01 font-medium min-h-[144px] text-[${item?.cardTextColor}]`}>{item?.cardDesc}</p>
+                <div className={`p-5 relative min-h-[420px] flex flex-col ${item.cardType == 1 ? 'justify-start' : 'justify-end'}`}>
+                  <h5 className={`mb-4 text-heading-03 text-[${item?.cardTextColor}] font-semibold min-h-[40px]`}>{item?.cardHeading}</h5>
+                  <p className={`mb-3 text-base font-medium min-h-[144px] text-[${item?.cardTextColor}]`}>{item?.cardDesc}</p>
                   {item?.cardHoverData && (
                     <div className="absolute bottom-5 right-5">
                       <OutlinedButtonWithArrow size={32} arrowColor={item?.cardTextColor} />
@@ -287,6 +264,7 @@ const CyberSecurity = () => {
         setColor="text-neutral-white"
         BGColor="bg-secondary-900"
         counters={HUBEXPERTISE_COUNTER_DATA}
+        columnNo={2}
       />
       {/* End-Section--Hub-of-Expertise */}
 
@@ -304,7 +282,7 @@ const CyberSecurity = () => {
         
 
       </BlogSection>
-      {/*  */}
+    
 
       <SectionWrapperNew
         sectionHeading={"End to End Business Security"}
@@ -322,9 +300,9 @@ const CyberSecurity = () => {
             <Image src={item.icon} alt="icon" width={48} height={48}/> {/* Adjust size as needed */}
           </div>
               
-                <h5 className="mb-10 text-heading-02 leading-heading-02 font-medium  text-[#1D162B] ">{item.heading}</h5>
+                <h5 className="mb-5 text-heading-02  font-medium  text-[#1D162B] ">{item.heading}</h5>
                 {item?.list.map((data, index) => (
-                  <p className="mb-4 p-1 border-b border-neutral-light-grey text-body-01 leading-body-01 text-gray-500 " key={index}>{data}</p>
+                  <p className="mb-2 p-1 border-b border-neutral-light-grey text-body-01 text-gray-500 " key={index}>{data}</p>
                 ))}
                 <div className="flex justify-end bottom-5 right-5">
                   <Link href={item?.url} target="_blank">
@@ -376,6 +354,8 @@ const CyberSecurity = () => {
         Color="#ffffff"
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
+        setHeadingLayout='left'
+
        
       ></ReviewSliderSection>
       {/* Section--TransformBusinessForm======================================================================= */}
