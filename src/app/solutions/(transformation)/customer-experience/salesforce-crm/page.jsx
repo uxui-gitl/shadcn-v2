@@ -1,17 +1,17 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import SectionWrapper from '@/components/SectionWrapper';
-import SectionHeading from '@/components/SectionHeading';
+import SectionWrapper from "@/components/SectionWrapper";
+import SectionHeading from "@/components/SectionHeading";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
+import BenefitSliderSection from "@/sections/benefitSlider/BenefitSliderSection";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
-import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CommonCardTwo from "@/components/CommonCardThree";
-import SectionWrapperNew from '@/components/SectionWrapperNew';
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import { Navigation, Pagination } from "swiper/modules";
@@ -49,16 +49,48 @@ const page = () => {
       desc: "Improve teamwork, allowing simultaneous work on documents and faster customer responses.",
       icon: "/salesForceCRM/distictiveEdge/improve.svg",
     },
-
-  ]
+  ];
   const BENEFITS_CARDS_DATA = [
-    { id: '1', icon: '/salesForceCRM/keyCapabilities/inegration.svg', cardHead: 'Integration', cardDesc: 'We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.' },
-    { id: '2', icon: '/salesForceCRM/keyCapabilities/userTraining.svg', cardHead: 'User Training and Ease of Use', cardDesc: 'Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.' },
-    { id: '3', icon: '/salesForceCRM/keyCapabilities/salesTeam.svg', cardHead: 'Sales Team Management', cardDesc: 'Manage multiple sales teams from a single dashboard with one of the best CRMs globally.' },
-    { id: '1', icon: '/salesForceCRM/keyCapabilities/qualitySupport.svg', cardHead: `Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.` },
-    { id: '5', icon: '/salesForceCRM/keyCapabilities/quoteContract.svg', cardHead: 'Quote & Contract Management', cardDesc: 'Generate and share custom quotes with integrated forms at no additional costs.' },
-    { id: '6', icon: '/salesForceCRM/keyCapabilities/taskActivity.svg', cardHead: 'Task & Activity Management', cardDesc: 'Create, assign and automate tasks for your sales representatives using industry-leading automation tools.' },
-
+    {
+      id: "1",
+      icon: "/salesForceCRM/keyCapabilities/inegration.svg",
+      cardHead: "Integration",
+      cardDesc:
+        "We provide a range of APIs, built-in connectors and a robust developer platform for seamless integrations.",
+    },
+    {
+      id: "2",
+      icon: "/salesForceCRM/keyCapabilities/userTraining.svg",
+      cardHead: "User Training and Ease of Use",
+      cardDesc:
+        "Godrej Infotech offers easy-to-use solution with a minimal learning curve with no extensive training.",
+    },
+    {
+      id: "3",
+      icon: "/salesForceCRM/keyCapabilities/salesTeam.svg",
+      cardHead: "Sales Team Management",
+      cardDesc:
+        "Manage multiple sales teams from a single dashboard with one of the best CRMs globally.",
+    },
+    {
+      id: "1",
+      icon: "/salesForceCRM/keyCapabilities/qualitySupport.svg",
+      cardHead: `Quality Support', cardDesc: 'Benefit from speedy 24/7 support and a dedicated account manager, regardless of your business's size.`,
+    },
+    {
+      id: "5",
+      icon: "/salesForceCRM/keyCapabilities/quoteContract.svg",
+      cardHead: "Quote & Contract Management",
+      cardDesc:
+        "Generate and share custom quotes with integrated forms at no additional costs.",
+    },
+    {
+      id: "6",
+      icon: "/salesForceCRM/keyCapabilities/taskActivity.svg",
+      cardHead: "Task & Activity Management",
+      cardDesc:
+        "Create, assign and automate tasks for your sales representatives using industry-leading automation tools.",
+    },
   ];
 
   const CASE_STUDIES_DATA = [
@@ -96,7 +128,8 @@ const page = () => {
     {
       videoURL: "/salesForceCRM/videos/Casestudy.mp4",
       title: "",
-      heading: "Top notch Indian security solutions company implements Salesforce CRM",
+      heading:
+        "Top notch Indian security solutions company implements Salesforce CRM",
       description:
         "Access to relevant information saves time, boosts customer satisfaction and streamlines issue resolution.",
       link: "/case-study-1",
@@ -110,79 +143,74 @@ const page = () => {
     {
       id: 1,
       cardHeading: "Appreciate GITL's contribution to our ONE-CRM goal",
-      cardDesc: `With Salesforce Sales Cloud smooth implementation, Godrej Infotech's team allied our lead-to-order cycle. With deep Infor LN integration and fine-tuned project management, the team met aggressive go-live targets, providing us with streamlined data. Thank you GITL team for contributing to our visionary goal of a singular CRM system.`
+      cardDesc: `With Salesforce Sales Cloud smooth implementation, Godrej Infotech's team allied our lead-to-order cycle. With deep Infor LN integration and fine-tuned project management, the team met aggressive go-live targets, providing us with streamlined data. Thank you GITL team for contributing to our visionary goal of a singular CRM system.`,
     },
-
   ];
 
   const RPASolution2 = [
     {
       id: 1,
-      cardBGColor: 'white',
-      cardHeading: 'Sales CRM',
-      cardDesc: 'Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ',
+      cardBGColor: "white",
+      cardHeading: "Sales CRM",
+      cardDesc:
+        "Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives. ",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
-      cardHoverData:[
-        'Sales Cloud: Enables you to manage Lead to order contacts from any device and location.',
-        'Salesforce CPQ (Configure, Price, Quote): Allows executives to understand customer requirements, configure quotes, accordingly, apply discounts and generate accurate billing, streamlining revenue recognition.',
-      ]
+      cardTextColor: "black",
+      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+      cardHoverData: [
+        "Sales Cloud: Enables you to manage Lead to order contacts from any device and location.",
+        "Salesforce CPQ (Configure, Price, Quote): Allows executives to understand customer requirements, configure quotes, accordingly, apply discounts and generate accurate billing, streamlining revenue recognition.",
+      ],
     },
     {
-
       id: 2,
-      cardBGColor: 'white',
-      cardHeading: 'Marketing Automation',
-      cardDesc: 'Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.',
+      cardBGColor: "white",
+      cardHeading: "Marketing Automation",
+      cardDesc:
+        "Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
-      cardHoverData:[
-        'Marketing Cloud: Automate various email campaign activities, enhancing product/ service marketing for your organization. The tool also builds attractive landing pages for solutions and service information delivery.',
-        'Pardot: B2B marketing tool equipped with automation capabilities that drives increased sales and more efficient marketing planning. ',
-        
-      ]
+      cardTextColor: "black",
+      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
+      cardHoverData: [
+        "Marketing Cloud: Automate various email campaign activities, enhancing product/ service marketing for your organization. The tool also builds attractive landing pages for solutions and service information delivery.",
+        "Pardot: B2B marketing tool equipped with automation capabilities that drives increased sales and more efficient marketing planning. ",
+      ],
     },
     {
-
       id: 3,
-      cardBGColor: 'white',
-      cardHeading: 'Customer Portal',
-      cardDesc: 'Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.',
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg'
+      cardBGColor: "white",
+      cardHeading: "Customer Portal",
+      cardDesc:
+        "Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.",
+      isArrow: false,
+      cardTextColor: "black",
+      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
     },
     {
-
       id: 4,
-      cardBGColor: '#E4E4E4',
-      cardHeading: 'Mobile CRM',
+      cardBGColor: "#E4E4E4",
+      cardHeading: "Mobile CRM",
       cardDesc: `Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.`,
-      isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg'
+      isArrow: false,
+      cardTextColor: "black",
+      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
     },
     {
-
       id: 5,
-      cardBGImageUrl: '/rpa/ArtboardBg.png',
-      cardBGColor: '#EFE9FB',
-      cardHeading: 'Service Cloud',
-      cardDesc: 'Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.',
+      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGColor: "#EFE9FB",
+      cardHeading: "Service Cloud",
+      cardDesc:
+        "Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.",
       isArrow: true,
-      cardTextColor: 'black',
-      cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
-      cardHoverData:[
-        'Service - 360-degree view of customers, ensuring personalized and efficient service interactions.',
-        'Field Service - Seamlessly schedule and dispatch resources using intelligent algorithms. Equip your field service teams with real-time information with a mobile-friendly interface.',
-        
-      ]
+      cardTextColor: "black",
+      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardHoverData: [
+        "Service - 360-degree view of customers, ensuring personalized and efficient service interactions.",
+        "Field Service - Seamlessly schedule and dispatch resources using intelligent algorithms. Equip your field service teams with real-time information with a mobile-friendly interface.",
+      ],
     },
-
-  ]
-
+  ];
 
   return (
     <>
@@ -193,22 +221,35 @@ const page = () => {
         width="60%"
         video="/salesForceCRM/videos/pageBanner.mp4"
       />
-      <OverviewSection Text={'Salesforce, a top cloud-based CRM, streamlines customer interactions with automation, AI, and 360-degree customer views for enhanced business operations'} />
+      <OverviewSection
+        Text={
+          "Salesforce, a top cloud-based CRM, streamlines customer interactions with automation, AI, and 360-degree customer views for enhanced business operations"
+        }
+      />
 
       <SectionWrapperNew
-        sectionHeading={'Modules'}
-        sectionDesc={''}
-        sectionTextColor={'text-neutral-white'}
+        sectionHeading={"Modules"}
+        sectionDesc={""}
+        sectionTextColor={"text-neutral-white"}
         sectionHeadingLayout="left"
-        style={{ background: `url('/salesForceCRM/moduleBg.webp')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+        setTop={false}
+        style={{
+          background: `url('/salesForceCRM/moduleBg.webp')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "bottom center",
+          paddingTop:'30vh',
+          paddingBottom:'4rem'
+        }}
       >
-        <Slider slidesPerView={3}
+        <Slider
+          slidesPerView={3}
           spaceBetween={16}
           autoplay={false}
-          pagination={true}
+          pagination={{ clickable: true }}
           followFinger={true}
           grabCursor={true}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination]}
           navigation={true}
           breakpoints={{
             640: {
@@ -226,61 +267,65 @@ const page = () => {
           }}
         >
           {RPASolution2?.map((item, index) => (
-           <SwiperSlide key={index}>
-  <div className="w-full bg-neutral-white rounded-3xl group overflow-hidden relative min-h-[624px]">
-    <div
-      className="h-[300px] bg-slate-700"
-      style={{
-        background: `url('/Transformation/sale-force-crm/m1.svg')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    ></div>
-    <div className="p-5 relative">
-      <h5 className="mb-4 text-heading-02 leading-heading-02 font-semibold">{item?.cardHeading}</h5>
-      <p className="mb-2 text-body-01 leading-body-01 font-medium">{item?.cardDesc}</p>
-  
-    </div>
-    {item?.isArrow && <div className="absolute bottom-4 right-4 z-auto">
-          <OutlinedButtonWithArrow size={32} />
-        </div>}
-    {item?.cardHoverData && (
-      <div className="bg-neutral-white p-5 rounded-3xl h-full w-full absolute bottom-0 left-0 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
-        <div>
-          <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-            {item?.cardHoverData.map((item2, i) => (
-              <li key={i} className="py-3">
-                <span className="font-semibold text-black">{item2}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-      </div>
-    )}
-  </div>
-</SwiperSlide>
-
+            <SwiperSlide key={index}>
+              <div className="w-full bg-neutral-white rounded-3xl group overflow-hidden relative min-h-[624px] lg:min-h-[524px]">
+                <div
+                  className="h-[240px] bg-slate-700"
+                  style={{
+                    background: `url(${item?.cardTopImageUrl})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  
+                  }}
+                ></div>
+                <div className="p-5 relative">
+                  <h5 className="mb-4 text-heading-04 font-semibold">
+                    {item?.cardHeading}
+                  </h5>
+                  <p className="mb-2 text-base  text-neutral-dark-grey">
+                    {item?.cardDesc}
+                  </p>
+                </div>
+                {item?.isArrow && (
+                  <div className="absolute bottom-4 right-4 z-auto">
+                    <OutlinedButtonWithArrow size={32} />
+                  </div>
+                )}
+                {item?.cardHoverData && (
+                  <div className="bg-neutral-white p-5 rounded-3xl h-full w-full absolute bottom-0 left-0 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                    <div>
+                      <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        {item?.cardHoverData.map((item2, i) => (
+                          <li key={i} className="py-3">
+                            <span className="font-semibold text-black">
+                              {item2}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </SwiperSlide>
           ))}
         </Slider>
       </SectionWrapperNew>
 
-
       <BenefitSliderSection
-        ID={'BENEFIT'}
-        sectionBGColor={'bg-primary-900'}
-        sectionHeading={'Key Capabilities'}
-        sectionDesc={''}
-        sectionTextColor={'text-neutral-white'}
+        ID={"BENEFIT"}
+        sectionBGColor={"bg-primary-900"}
+        sectionHeading={"Key Capabilities"}
+        sectionDesc={""}
+        sectionTextColor={"text-neutral-white"}
         cardData={BENEFITS_CARDS_DATA}
-        sectionHeadingMaxWidth={'100%'}
+        sectionHeadingMaxWidth={"100%"}
       />
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
         bgColor="bg-neutral-white"
       />
-
 
       <BlogSection
         ID={"blog"}
@@ -289,21 +334,26 @@ const page = () => {
         Desc={
           "Salesforce Service Cloud revolutionizes customer service with social media CRM and managed services, enhancing experiences through cutting-edge integrations."
         }
-        maxWidth={'50%'}
+        maxWidth={"50%"}
         Color={"text-neutral-white"}
       ></BlogSection>
-      <DistinctiveSection DistinctiveData={distinctiveData}
-        ID={'Distinctive'} Title={'The Distinctive Edge'} Desc={'Salesforce CRM is a thrust of innovation and efficiency designed to transform the way you do business with prospects and customers.'}
-      >
-      </DistinctiveSection>
+      <DistinctiveSection
+        DistinctiveData={distinctiveData}
+        ID={"Distinctive"}
+        Title={"The Distinctive Edge"}
+        Desc={
+          "Salesforce CRM is a thrust of innovation and efficiency designed to transform the way you do business with prospects and customers."
+        }
+      ></DistinctiveSection>
       <ReviewSliderSection
         ID={"TESTIMONIALS"}
         Heading={"Delighted customers share their success experience"}
-        Desc={''}
+        Desc={""}
         Color="text-neutral-white"
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
-        SectionHeadingMaxWidth={'70%'}
+        SectionHeadingMaxWidth={"70%"}
+        setHeadingLayout={"left"}
       ></ReviewSliderSection>
       <TransformBusinessForm
         Title={"Transform your Business with us"}
