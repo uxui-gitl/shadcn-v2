@@ -47,13 +47,14 @@ function BlogSliderSection({
               {/* <div class="w-full p-6 border rounded-lg shadow h-[100vh]" style={{ background: `url(${item.cardBGImageUrl}), ${item.cardBGColor}`, backgroundSize: 'cover' }}> */}
               <SectionWrapperNew
                 id={"ni"}
+                setTop={false}
                 style={{
                   background: `url(${item?.cardBGImageUrl}) ${item.cardBGColor}`,
                   backgroundSize: "cover",
                 
                 }}
               >
-                <div className="container mx-auto py-32 rounded-3xl">
+                <div className="container mx-auto rounded-3xl">
                   <SectionHeading
                     Heading={item.cardHeading}
                     Desc={item.cardDesc}

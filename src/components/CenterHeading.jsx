@@ -3,7 +3,7 @@ import { LinearGradient } from "react-text-gradients";
 function CenterHeading({ heading, desc, textColor, descColor, applyGradient }) {
   return (
     <>
-      <div className="flex flex-col justify-center items-center mb-5">
+      <div className="flex flex-col justify-center items-center">
         <div className="w-full sm:w-1/2 text-center">
           <div className={`text-heading-01 ${textColor} ${desc ? "mb-6" : ""}`}>
             {applyGradient ? (

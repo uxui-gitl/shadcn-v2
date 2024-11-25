@@ -39,14 +39,15 @@ function CommonCardTwoSlider({
                             Desc={sectionDesc}
                             Color={sectionTextColor}
                             layout={setHeadingLayout}
+                            headingContainerWidth={sectionHeaderMaxWidth}
                         ></SectionHeading>
                     </div>
 
-                    <div className="my-8">
+                    <div className="">
                         <Swiper
                             slidesPerView={slidesPerView}
                             navigation={false}
-                            pagination={true}
+                            pagination={{ clickable: true }}
                             followFinger={true}
                             modules={[ Pagination]}
                             autoplay={autoplay}
