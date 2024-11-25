@@ -515,7 +515,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
           )}
           {caseStudyLayout === "5" && (
             <div
-              className="flex flex-col lg:flex-row justify-start items-stretch w-full md:gap-8"
+              className="flex flex-col lg:flex-row justify-start items-stretch w-full md:gap-4"
               style={{ color: casestudy[0].color }}
             >
               {/* Card 1 */}

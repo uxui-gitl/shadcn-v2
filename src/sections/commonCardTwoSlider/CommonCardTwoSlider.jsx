@@ -6,6 +6,7 @@ import CommonCardTwo from "@/components/CommonCardTwo";
 import { Pagination } from "swiper/modules"; // Use the specific import for modules
 import "swiper/css";
 import "swiper/css/pagination";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 
 function CommonCardTwoSlider({
     ID,
@@ -20,23 +21,22 @@ function CommonCardTwoSlider({
     setTop,
 }) {
     return (
-        <SectionWrapper
+        <SectionWrapperNew
             id={ID}
+            sectionTextColor={sectionTextColor}
+            bgColor={sectionBGColor}
+            sectionHeading={sectionHeading}
+            sectionDesc={sectionDesc}
             BGColor={sectionBGColor}
             setTop={setTop}
+            sectionHeadingLayout={setHeadingLayout}
             style={{
                 backgroundImage: `url(${sectionImageUrl})`,
                 backgroundSize: "cover",
             }}
         >
-            <div className="container mx-auto py-32">
-                <SectionHeading
-                    Heading={sectionHeading}
-                    Desc={sectionDesc}
-                    Color={sectionTextColor}
-                    layout={setHeadingLayout}
-                    headingContainerWidth={sectionHeaderMaxWidth}
-                />
+            <div className="">
+                
                 <div className="">
                     <Swiper
                         slidesPerView={1} // Using number directly for clarity
@@ -67,7 +67,7 @@ function CommonCardTwoSlider({
                     </Swiper>
                 </div>
             </div>
-        </SectionWrapper>
+        </SectionWrapperNew>
     );
 }
 

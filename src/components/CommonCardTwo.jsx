@@ -40,14 +40,14 @@ function CommonCardTwo({ Item }) {
                         )}
                         {cardHeading && (
                             <h5
-                                className={`text-heading-01 leading-heading-01 font-semibold ${style.cardHeading}`}
+                                className={`text-heading-03 font-semibold ${style.cardHeading}`}
                                 dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                             />
                         )}
 
                         {cardDesc && (
                             <p
-                                className={`my-4 text-body-01 leading-body-01 font-normal ${style.cardDesc}`}
+                                className={`my-4 text-body-01 font-normal ${style.cardDesc}`}
                                 dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                             />
                         )}

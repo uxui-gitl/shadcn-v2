@@ -270,7 +270,8 @@ const page = () => {
         sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
-        setHeadingLayout="horizontal"
+        setHeadingLayout={'horizontal'}
+        setTop={false}
       >
       </CommonCardTwoSlider>
 
