@@ -239,6 +239,7 @@ const page = () => {
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
         setHeadingLayout='horizontal'
+        setTop={false}
       >
       </CommonCardTwoSlider>
       {/* optimising rpa solution end */}
@@ -251,6 +252,8 @@ const page = () => {
         sectionDesc={'Enhancing the functionalities of business applications, our specialized solutions intend to add value to business with handy support.'}
         sectionTextColor={'text-neutral-white'}
         cardData={RPASolution2}
+        sectionDescColor={'text-neutral-white'}
+        
       />
 
         <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} />

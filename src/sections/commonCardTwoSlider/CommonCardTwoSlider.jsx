@@ -17,11 +17,13 @@ function CommonCardTwoSlider({
     sectionTextColor = "text-primary-900",
     sectionBGColor = "bg-neutral-white",
     setHeadingLayout,
+    setTop,
 }) {
     return (
         <SectionWrapper
             id={ID}
             BGColor={sectionBGColor}
+            setTop={setTop}
             style={{
                 backgroundImage: `url(${sectionImageUrl})`,
                 backgroundSize: "cover",
@@ -35,7 +37,7 @@ function CommonCardTwoSlider({
                     layout={setHeadingLayout}
                     headingContainerWidth={sectionHeaderMaxWidth}
                 />
-                <div className="my-8">
+                <div className="">
                     <Swiper
                         slidesPerView={1} // Using number directly for clarity
                         pagination={{ clickable: true }} // Explicit pagination setup
