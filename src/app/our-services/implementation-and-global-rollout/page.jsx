@@ -392,6 +392,7 @@ const page = () => {
         setHeadingLayout={"horizontal"}
         cardData={CyberSecurityData}
         setTop={false}
+        style={{paddingBottom:'8rem'}}
       />
 
 
