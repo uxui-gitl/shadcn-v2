@@ -509,6 +509,7 @@ const FNO = () => {
         sectionTextColor={'text-primary-900'}
         sectionHeaderMaxWidth={'40%'}
         cardData={SOLUTIONS_CARDS_DATA}
+        setTop={false}
       >
 
       </CommonCardTwoSlider>
@@ -587,6 +588,7 @@ const FNO = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={"70%"}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
       {/* End--Testimonial-Section================================================================ */}
 

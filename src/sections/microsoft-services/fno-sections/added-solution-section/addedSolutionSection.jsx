@@ -9,7 +9,7 @@ import Image from 'next/image';
 const containerStyle = 'bg-[#FFF] py-5 rounded-md flex flex-col items-start';
 const iconStyle = 'mb-4';
 const headingStyle = 'text-[28px] leading-[36px] font-semibold my-2';
-const listItemStyle = 'flex items-start border-b text-[18px] leading-[24px] py-4 cursor-pointer transition-transform duration-300'; // Added cursor pointer
+const listItemStyle = 'flex items-start border-b text-[18px] leading-[24px] py-3 cursor-pointer transition-transform duration-300'; // Added cursor pointer
 
 // Container Data
 const CONTAINER_DATA_1 = {
@@ -57,10 +57,11 @@ const AddedSolutionSection = ({ sectionBGColor }) => {
         <SectionWrapper BGColor={sectionBGColor}>
             <div className='container mx-auto py-32'>
                 <SectionHeading
-                    Heading={'Godrej Infotech Value Added Solutions'}
+                    Heading={'Value Added Solutions'}
                     Desc={'With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible.'}
                     layout='horizontal'
                     Color={'text-primary-900'}
+                    headingContainerWidth={'w-full'}
                 />
 
                 <div className="flex flex-col md:flex-row md:gap-8 ">
