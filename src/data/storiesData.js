@@ -1,39 +1,46 @@
 const storiesData = [
     {
-        year: 2024,
-        month: 'Oct',
-        date: '18',
-        title: 'We blend technology capabilities with a human touch to elevate your data management to new heights.',
+        year: ``,
+        month: '',
+        date: '',
+        title: `Our Customer Rated Us As 'Excellent' For Our Diligent Support!!!'`,
         readMoreUrl: '',
         imageUrl:'/caseStudies/blog.svg',
     },
 
     {
-        year: 2023,
-        month: 'JAN',
-        date: '18',
-        title: 'We blend technology capabilities with a human touch to elevate your data management to new heights.',
+        year: ``,
+        month: '',
+        date: '',
+        title: `An ERP Implementation Completed 'Ahead Of Time'`,
         readMoreUrl: '',
         imageUrl:'/caseStudies/blog.svg',
     },
     {
-        year: 2023,
-        month: 'Oct',
-        date: '18',
-        title: 'We blend technology capabilities with a human touch to elevate your data management to new heights.',
+        year: ``,
+        month: '',
+        date: '',
+        title: `An External Interface That Saved Duplication of Efforts`,
         readMoreUrl: '',
         imageUrl:'/caseStudies/blog.svg',
     },
     {
-        year: 2022,
-        month: 'FEB',
-        date: '18',
-        title: 'We blend technology capabilities with a human touch to elevate your data management to new heights.',
+        year: ``,
+        month: '',
+        date: '',
+        title: `Promoting Continuous Improvement With The Tip Of The Month Programme`,
         readMoreUrl: '',
         imageUrl:'/caseStudies/blog.svg',
     },
 
+    {
+        year: ``,
+        month: '',
+        date: '',
+        title: `Staying Positive and Breaking Prejudice in Unknown Territory`,
+        readMoreUrl: '',
+        imageUrl:'/caseStudies/blog.svg',
+    },
 ]
-
 
 export default storiesData;

@@ -5,7 +5,7 @@ const newsData = [
         month: '',
         date: '',
         title: `Godrej Infotech Implements India's First Infor LN Cloud Suite Solution`,
-        readMoreUrl: '',
+        readMoreUrl: '/news/Boskalis-IT-ManagementTeam.pdf',
         imageUrl:'/caseStudies/blog.svg',
     },
 

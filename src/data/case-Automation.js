@@ -589,6 +589,7 @@ const automationData = [
         url: "path-to-case-study-1-download.pdf"
       }
     },
+
     {
       id: "case-study-8",
       mainCategory: "Automation",
@@ -656,6 +657,404 @@ const automationData = [
           "User interface built on responsive UI",
           "Increased productivity by sharing best practices",
           "Retained tacit knowledge"
+        ]
+      },
+      meta: {
+        title: "",
+        description: "",
+        keywords: [
+          "",
+          ""
+        ]
+      },
+      downloadCTA: {
+        text: "Download Case Study",
+        url: "path-to-case-study-1-download.pdf"
+      }
+    },
+    
+    {
+      id: "case-study-9",
+      mainCategory: "Automation",
+      subCategory: "Power BI",
+      vertical: "Manufacturing",
+      title: "Leading Indian Refiner of Precious Metals Successfully Goes Live with Power BI Solution",
+      client: {
+        name: "",
+        industry: "",
+        location: "",
+        engagementSince: ""
+      },
+      images: {
+        thumbnail: "",
+        detailPageImage: ""
+      },
+      highlights: {
+        industry: "Manufacturing",
+        projectLocation: "India",
+        engagementSince: "2021",
+        solutionSnapshot: [
+          "SPRINT execution methodology",
+            "Data automation for business processes",
+            "Design of data warehouse",
+            "Dashboard development"
+        ]
+      },
+      customerBrief: {
+        description: "The Customer is a leading manufacturer and refiner of precious metal products with diverse industrial applications. Their proprietary indigenous technologies and processes, coupled with global technical partnerships have equipped them to deliver excellence in quality, quantity, and customer centric services. They have established a customer base in over 50 countries across 5 continents. Supporting its global footprint are three subsidiaries in Mauritius, UAE, and Puerto Rico.",
+        BriefList: [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      businessCase: {
+        description: "The objective was to build modern data warehouses that are scalable for accommodating future business needs. They wanted to implement the right tools and strategies for ETL / data integration and to provide Self-Service BI capability to business users.",
+        businesscaseList: [
+          ""
+        ]
+      },
+      challenges: {
+        description: "Customer was using Excel sheets that required manual data entry and complicated formulas for calculating results. This system was not real-time and was leading to issues in data accuracy and consistency ",
+        keyChallenges: [
+          ""
+        ]
+      },
+      solution: {
+        description: "We initially held a requirement understanding workshop and conducted multiple sessions with the Customer to understand the business details and specifications with respect to Power BI Implementation. Following activities were carried out: ",
+        features: [
+          "Automation: Development and scheduling of data automation for the business processes.",
+            "Data Warehouse: Design of data-warehouse for BI reports requirement",
+            "Report development: Dashboards for Sales, Purchase, Accounts, Production, Inventory, Hedging, HR & Finance."
+        ]
+      },
+      benefits: {
+        description: "",
+        list: [
+          "Improvement in the quality of the data available for analytics",
+            "Support for strategic business objectives",
+            "Data mart consolidation",
+            "Improved decision making",
+            "Time savings"
+        ]
+      },
+      meta: {
+        title: "",
+        description: "",
+        keywords: [
+          "",
+          ""
+        ]
+      },
+      downloadCTA: {
+        text: "Download Case Study",
+        url: "path-to-case-study-1-download.pdf"
+      }
+    },
+
+    {
+      id: "case-study-10",
+      mainCategory: "Automation",
+      subCategory: "Power BI",
+      vertical: "Facility Management",
+      title: "Leading Cooling Services Provider in the Middle East Successfully Implements Power BI Solution",
+      client: {
+        name: "",
+        industry: "",
+        location: "",
+        engagementSince: ""
+      },
+      images: {
+        thumbnail: "",
+        detailPageImage: ""
+      },
+      highlights: {
+        industry: "Facility Management",
+        projectLocation: "Kingdom of Saudi Arabia",
+        engagementSince: "2021",
+        solutionSnapshot: [
+          "Self-Service BI",
+            "SPRINT execution methodology",
+            "Interactive visuals",
+            "Development of 13 reports"
+        ]
+      },
+      customerBrief: {
+        description: "The Customer has three subsidiaries providing facility management and district cooling services in the Middle East region. Their target is to develop and operate high quality district cooling assets in the GCC with particular focus in UAE and KSA. ",
+        BriefList: [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      businessCase: {
+        description: "The goal was to view KPIs either at individual or consolidated group level ",
+        businesscaseList: [
+          ""
+        ]
+      },
+      challenges: {
+        description: "Earlier the Customer did not have the required filters to slice and dice data for accurate KPI measurement. They also did not have interactive visuals to view the business KPIs. The system was not real-time and hence was leading to issues in data accuracy & consistency.",
+        keyChallenges: [
+          ""
+        ]
+      },
+      solution: {
+        description: "This project was executed using a detailed and disciplined approach as per the SPRINT methodology. Following reports have been developed for viewing KPIs either at individual or consolidated group level.",
+        features: [
+          "Income statement",
+            "Cash flow statement",
+            "Balance sheet",
+            "Employee wise revenue and OPEX",
+            "Water & electricity efficiency",
+            "Plant consumption"
+        ]
+      },
+      benefits: {
+        description: "",
+        list: [
+          "Data mart consolidation",
+            "Significant productivity savings",
+            "Improved real-time decision making",
+            "Improvement in data quality"
+        ]
+      },
+      meta: {
+        title: "",
+        description: "",
+        keywords: [
+          "",
+          ""
+        ]
+      },
+      downloadCTA: {
+        text: "Download Case Study",
+        url: "path-to-case-study-1-download.pdf"
+      }
+    },
+
+    {
+      id: "case-study-11",
+      mainCategory: "Automation",
+      subCategory: "IoT",
+      vertical: "Manufacturing",
+      title: "India's Largest Lift Truck Manufacturer & Exporter Implements IoT Solution for Enterprise Asset Integration",
+      client: {
+        name: "",
+        industry: "",
+        location: "",
+        engagementSince: ""
+      },
+      images: {
+        thumbnail: "",
+        detailPageImage: ""
+      },
+      highlights: {
+        industry: "Manufacturing",
+        projectLocation: "India",
+        engagementSince: "2019",
+        solutionSnapshot: [
+          "Use of Sensor Technology",
+            "Integration with Infor EAM & Dynamics CRM",
+            "Configuration of Threshold Limits",
+            "Automated Anomaly Detection",
+            "User friendly Dashboards & Reports"
+        ]
+      },
+      customerBrief: {
+        description: "The organization ranks as the largest forklift manufacturer in the world. Established in 1963, it provides mobile path material handling solutions to the manufacturing, infrastructure, services, aviation, logistics, defence, ports, railways and power industries.",
+        BriefList: [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      businessCase: {
+        description: "The system requirements for the Forklift Equipment monitoring solution involved collecting critical machine parameter data, including vibration, noise, lubricating oil level, distance travelled, geo-location, and fuel consumption, as well as load metrics. Additionally, the system needed to enable real-time remote monitoring of assets and facilitate remote troubleshooting capabilities to optimize machine utilization, ensuring proactive maintenance, reduced downtime, and enhanced operational efficiency.",
+        businesscaseList: [
+          ""
+        ]
+      },
+      challenges: {
+        description: "The challenges faced by the GITL team during this implementation were:",
+        keyChallenges: [
+          "Real time data collection",
+            "Authentic data collection related to the machine"
+        ]
+      },
+      solution: {
+        description: "The GITL team implemented the following solution:",
+        features: [
+          "All the Forklifts have been instrumented with Sensors",
+            "Machine Parameter Data Collected by Sensors is uploaded in the Cloud using Gateway",
+            "Analytics is done on the data to detect anomalies",
+            "Application is integrated with Infor EAM and Dynamics CRM for dashboards and other reports",
+            "Digital manual, troubleshooting guide, & FAQ have been made available for dealers & forklift owners"
+        ]
+      },
+      benefits: {
+        description: "",
+        list: [
+          "Timely collection of parameter data & alerts prevents sudden break down and minimizes down time",
+            "The system generates alerts if any of the parameters like vibration & load fluctuates beyond the threshold limit",
+            "Reduces inventory of spare for maintenance and minimizes overall cost of break down maintenance"
+        ]
+      },
+      meta: {
+        title: "",
+        description: "",
+        keywords: [
+          "",
+          ""
+        ]
+      },
+      downloadCTA: {
+        text: "Download Case Study",
+        url: "path-to-case-study-1-download.pdf"
+      }
+    },
+
+    {
+      id: "case-study-12",
+      mainCategory: "Automation",
+      subCategory: "IoT",
+      vertical: "Construction",
+      title: "India’s Leading Construction Organization Implements IoT & ML Solution for Real Time Cement Inventory Calibration",
+      client: {
+        name: "",
+        industry: "",
+        location: "",
+        engagementSince: ""
+      },
+      images: {
+        thumbnail: "",
+        detailPageImage: ""
+      },
+      highlights: {
+        industry: "Construction",
+        projectLocation: "India",
+        engagementSince: "2019",
+        solutionSnapshot: [
+          "Inventory Optimization & Forecast for Process Industry",
+          "Business rules configured on Kii IoT Layer on AWS Cloud",
+          "IoT Hardware – Radar Level Meter",
+          "Edge Gateway with Wi-Fi/LAN/GPRS"
+        ]
+      },
+      customerBrief: {
+        description: "The organization is a strategic business unit of a highly diversified conglomerate headquartered in Mumbai, India. An environment friendly company, it has expertise in the fields of real estate & development of modern living spaces. It has a comprehensive portfolio of construction materials which include specially engineered ready mix concrete products, pavers, AAC (Autoclaved Aerated Concrete) blocks & recycled concrete blocks for different types of applications.",
+        BriefList: [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      businessCase: {
+        description: "The organization was finding it very difficult to ascertain cement inventory in the silo in air tight condition due to intermittent pouring of cement and its continuous dispensation at the other end. Given these constraints, it was looking for a system that could address the following requirements:",
+        businesscaseList: [
+          "Reduce excess inventory carrying cost for cement",
+            "Reduce lost business opportunity due to stock out situation"
+        ]
+      },
+      challenges: {
+        description: "",
+        keyChallenges: [
+          ""
+        ]
+      },
+      solution: {
+        description: "The solution provided by GITL has the following highlights:",
+        features: [
+          "Cement inventory is calibrated in real time in tonnes using Radar Level Meter & Business Rules are Configured on IoT Cloud",
+            "Alerts are provided for refilling if the stock plunges below ROL (re-order level) or safety stock level"
+        ]
+      },
+      benefits: {
+        description: "",
+        list: [
+          "Inventory in the silo can be calibrated with 98% accuracy",
+            "Manual & error prone checking has been eliminated",
+            "Manipulation of invoice by cement suppliers has been prevented"
+        ]
+      },
+      meta: {
+        title: "",
+        description: "",
+        keywords: [
+          "",
+          ""
+        ]
+      },
+      downloadCTA: {
+        text: "Download Case Study",
+        url: "path-to-case-study-1-download.pdf"
+      }
+    },
+
+    {
+      id: "case-study-13",
+      mainCategory: "Automation",
+      subCategory: "AI",
+      vertical: "Retail",
+      title: "Leading Retailer having country wide presence with over 800+ stores apart from ecommerce channels leverages AI",
+      client: {
+        name: "",
+        industry: "",
+        location: "",
+        engagementSince: ""
+      },
+      images: {
+        thumbnail: "",
+        detailPageImage: ""
+      },
+      highlights: {
+        industry: "Retail",
+        projectLocation: "India",
+        engagementSince: "",
+        solutionSnapshot: [
+          "AI – Powered Computer Vision",
+          "Business case",
+          "The objective is to increase in-store product visibility and optimise shelf placement",
+          "Challenges",
+          "Limited visibility of products in stores and Inability to analyse shelf placement effectively which makes it difficult to provide recommendations to store managers thereby impacting sales"
+
+        ]
+      },
+      customerBrief: {
+        description: "India's leading retailer, operates 800+ stores and a seamless multi-channel ecommerce platform, delivering unparalleled shopping experiences.",
+        BriefList: [
+          ""
+        ]
+      },
+      businessCase: {
+        description: "The objective is to increase in-store product visibility and optimise shelf placement ",
+        businesscaseList: [
+          ""
+        ]
+      },
+      challenges: {
+        description: "Limited visibility of products in stores and Inability to analyse shelf placement effectively which makes it difficult to provide recommendations to store managers thereby impacting sales.",
+        keyChallenges: [
+          ""
+        ]
+      },
+      solution: {
+        description: "AI powered Computer Vision ",
+        features: [
+          ""
+        ]
+      },
+      benefits: {
+        description: "",
+        list: [
+          "Automated the process to optimize product placement and on-shelf visibility which resulted in an increase of 5% of growth in sales revenue",
+          "Automation of the auditing process reduced by 75% of man-hour in a month",
+          "Increased allocation by 20% of the product using the data of the unoccupied space",
+          "Ability to Monitoring product availability at line of sight"
         ]
       },
       meta: {

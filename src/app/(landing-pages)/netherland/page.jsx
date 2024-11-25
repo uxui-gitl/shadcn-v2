@@ -254,7 +254,7 @@ export default function Home() {
       heading: "Increased Efficiency",
       description:
         "Belgium based Global Manufacturer of Sheet Metal Forming Machines Implements Infor LN",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
+      link: "case-studies/case-study-87?type=Transformation",
       color: "#000",
       bgCardColor: "#FCE6F4",
     },
@@ -266,7 +266,7 @@ export default function Home() {
       heading: "Streamlined Operations",
       description:
         "Europe's Leading Machine Manufacturer Automates Operations with Integrated Infor LN 10.4 Solution",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+      link: "case-studies/case-study-9?type=Transformation",
       color: "#000",
       bgCardColor: "#EFE9FB",
     },
@@ -276,7 +276,7 @@ export default function Home() {
       heading: "Optimised Operations",
       description:
         "Global Leader in Industrial Packaging Products and Services company signs contract for Infor LN rollout & support activities",
-      link: "/case-study-1",
+      link: "",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
@@ -287,7 +287,7 @@ export default function Home() {
       heading: "Optimise 25% Operational Cost",
       description:
         "Europe’s Leading Maritime Service Provider Increases Efficiency with Infor Managed Services ",
-      link: "/case-study-1",
+      link: "case-studies/case-study-3?type=Transformation",
       color: "#000",
       bgCardColor: "#E1F2EF",
     },
