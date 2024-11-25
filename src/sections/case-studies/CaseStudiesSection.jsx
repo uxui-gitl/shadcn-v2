@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Dialog from "@/components/Dialog";
-const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
+const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
   const caseStudyLayout = csLayout;
   const setHeading = "IIoT  Solution Offerings";
   const setDesc =
@@ -242,14 +242,14 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
       {/* dialog  end*/}
 
       <SectionWrapper BGColor={bgColor}>
-        <div className="container mx-auto py-32 lg:py-8 2xl:py-32 -mt-8">
+        <div className={`container mx-auto py-32 lg:py-32 2xl:py-32 ${setTop?'-mt-8':''}`}>
           {caseStudyLayout === "1" && (
             <div
-              className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px]"
+              className="flex flex-col md:flex-row justify-start items-center w-full h-full md:h-[724px] lg:gap-4"
               style={{ color: casestudy[0].color }}
             >
               <div
-                className="w-full md:w-1/3 h-full rounded-t-3xl p-5"
+                className="w-full md:w-1/3 h-full rounded-t-3xl lg:rounded-3xl p-5"
                 style={{
                   backgroundImage: `url(${casestudy[0].imageURL})`,
                   backgroundSize: "cover",
@@ -257,31 +257,32 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   backgroundColor: casestudy[0].bgCardColor,
                 }}
               >
-                <h3 className="text-body-01 leading-body-01 font-semibold mb-12">
+                <h3 className="text-label-01 text-neutral-white  font-semibold mb-12">
                   {casestudy[0].title}
                 </h3>
-                <h1 className="text-heading-01 leading-heading-01 font-medium ">
+                <h1 className="text-heading-01 text-neutral-white font-medium mb-6">
                   {casestudy[0].heading}
                 </h1>
-                <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                <p className="text-body-01 leading-body-01 mb-4">
                   {casestudy[0].description}
                 </p>
               </div>
+              
               <div
-                className="flex flex-col w-full md:w-1/3 h-full  "
+                className="flex flex-col w-full md:w-1/3 h-full lg:gap-4 "
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-1/2 px-5 py-10"
+                  className="relative w-full h-1/2 px-5 py-10 lg:py-5 2xl:py-6 lg:rounded-3xl"
                   style={{
                     color: casestudy[1].color,
                     backgroundColor: casestudy[1].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
+                  <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                     {casestudy[1].heading}
                   </h1>
-                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                  <p className="w-full text-base lg:w-[80%] mb-4">
                     {casestudy[1].description}
                   </p>
 
@@ -292,16 +293,16 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   </div>
                 </div>
                 <div
-                  className="relative w-full h-1/2 px-5 py-10"
+                  className="relative w-full h-1/2 px-5 py-10 lg:py-5 2xl:py-6 lg:rounded-3xl"
                   style={{
                     color: casestudy[2].color,
                     backgroundColor: casestudy[2].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
+                  <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                     {casestudy[2].heading}
                   </h1>
-                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                  <p className="w-full text-base lg:w-[80%] mb-4">
                     {casestudy[2].description}
                   </p>
 
@@ -313,20 +314,20 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                 </div>
               </div>
               <div
-                className="flex flex-col w-full md:w-1/3 h-full  "
+                className="flex flex-col w-full md:w-1/3 h-full lg:gap-4"
                 style={{ backgroundColor: "transparent" }}
               >
                 <div
-                  className="relative w-full h-full md:h-1/2  px-5 py-10"
+                  className="relative w-full h-full md:h-1/2  px-5 py-10 lg:py-5 2xl:py-6 lg:rounded-3xl"
                   style={{
                     color: casestudy[3].color,
                     backgroundColor: casestudy[3].bgCardColor,
                   }}
                 >
-                  <h1 className="w-[80%] text-heading-02 leading-heading-02 font-medium mb-4 ">
+                  <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                     {casestudy[3].heading}
                   </h1>
-                  <p className="w-[80%] text-body-01 leading-body-01 mb-4">
+                  <p className="w-full text-base lg:w-[80%] mb-4">
                     {casestudy[3].description}
                   </p>
 
@@ -340,8 +341,8 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                   className="relative w-full h-[350px] h-min-[270px] md:h-1/2 rounded-b-3xl"
                   style={{
                     color: casestudy[3].color,
-                    backgroundColor: casestudy[3].bgCardColor,
-                    backgroundImage: `url(${casestudy[3].imageURL})`,
+                    backgroundColor: 'transparent',
+                    backgroundImage: ``,
                     backgroundSize: "cover",
                     backgroundPosition: "bottom",
                     backgroundBlendMode: "luminosity",
@@ -353,7 +354,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
                     autoPlay
                     loop
                     muted
-                    className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+                    className="absolute inset-0 w-full h-full object-cover rounded-b-3xl lg:rounded-3xl"
                   />
                 </div>
               </div>
@@ -714,7 +715,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Four */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full px-5 py-10 lg:rounded-3xl"
+                    className="relative w-full lg:w-1/3 h-full px-5 py-10 lg:py-5 2xl:py-10 lg:rounded-3xl"
                     style={{
                       color: casestudy[3].color,
                       backgroundColor: casestudy[3].bgCardColor,
@@ -733,7 +734,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style }) => {
 
                   {/* Grid--Five */}
                   <div
-                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl lg:rounded-3xl px-5 py-10"
+                    className="relative w-full lg:w-1/3 h-full rounded-b-3xl lg:rounded-3xl px-5 py-10 lg:py-5 2xl:py-10"
                     style={{
                       color: casestudy[4].color,
                       backgroundColor: casestudy[4].bgCardColor,

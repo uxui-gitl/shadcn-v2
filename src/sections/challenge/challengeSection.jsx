@@ -9,15 +9,15 @@ const ChallengeSection = ({
     setDesc,
     setImageBGURL,
     setChallengesList=[],
-    bgColor='#3a7398',
+    bgColor='',
 }) => {
     return (
         <>
             <div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-3xl min-h-[720px]">
-                    <div className="" style={{ background: `url('${setImageBGURL}')`, minHeight: 'auto', backgroundSize: 'cover', backgroundRepeat:'no-repeat', backgroundPosition: 'center' }}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0  min-h-[720px]">
+                    <div className="rounded-l-3xl" style={{ background: `url('${setImageBGURL}')`, backgroundSize: 'cover', backgroundRepeat:'no-repeat', backgroundPosition: 'left top' }}>
                     </div>
-                    <div className={`px-5 py-10 rounded-3xl ${bgColor}`}>
+                    <div className={`px-5 py-10 rounded-r-3xl  ${bgColor}`} style={{backgroundColor: `${bgColor}`}}>
                         <SectionHeading
                             Heading={setHeading}
                             Color={setColor}

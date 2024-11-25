@@ -683,6 +683,7 @@ const UpgradeToCloud = () => {
         setColor="text-neutral-white"
         setImageBGURL={imgBGURL_Challenges}
         setChallengesList={CHALLENGES_LIST_DATA}
+        bgColor="#3a7398"
       />
       {/* End--Section--Challenges======================================================================== */}
       <SectionWrapperNew
@@ -691,15 +692,17 @@ const UpgradeToCloud = () => {
           "We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace.."
         }
         sectionTextColor="text-neutral-white"
+        sectionDescColor="text-neutral-white"
         sectionHeadingLayout="horizontal"
         bgColor={"bg-secondary-900"}
+       style={{paddingTop:'rem',paddingBottom:'4rem'}}
       >
         <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
           <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
             <Image className="pb-8" src={'/upgradeCloud/icons/liftAndShift.svg'} alt="" width={56} height={56} />
-            <h5 className="mb-2 text-heading-01 leading-heading-01 font-semibold tracking-tight text-white">Lift and Shift
+            <h5 className="mb-2 text-heading-02 font-semibold tracking-tight text-white">Lift and Shift
               to Cloud</h5>
-            <p className="mb-8 text-body-01 leading-body-01 font-medium text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+            <p className="mb-8 text-body-01  text-white">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
 
 
             <div className="absolute bottom-2 right-2" onClick={() => { setshowModal1((prev) => !prev); }}>
@@ -709,8 +712,8 @@ const UpgradeToCloud = () => {
           {/*  */}
           <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
             <Image className="pb-8" src={'/upgradeCloud/icons/ERPonCloud.svg'} alt="" width={50} height={50} />
-            <h5 className="mb-2 text-heading-01 leading-heading-01 font-semibold tracking-tight text-white">ERP on Cloud</h5>
-            <p className="mb-8 text-body-01 leading-body-01 font-medium text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
+            <h5 className="mb-2 text-heading-02 font-semibold tracking-tight text-white">ERP on Cloud</h5>
+            <p className="mb-8 text-body-01 leading-body-01  text-white">Deliver enhanced business agility, operation automation and better decision-making capability with analytics.</p>
             <div className="absolute bottom-2 right-2" onClick={() => { setshowModal2((prev) => !prev); }}>
               <OutlinedButtonWithArrow arrowColor={'white'} size={24} />
             </div>
@@ -720,10 +723,10 @@ const UpgradeToCloud = () => {
 
           <div className="relative p-5" style={{ border: '1px solid #444444', borderRadius: '24px' }}>
             <Image className="pb-8" src={'/upgradeCloud/icons/applicationMigration.svg'} alt="" width={50} height={50} />
-            <h5 className="mb-2 text-heading-01 leading-heading-01 font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
-            <p className="mb-8 text-body-01 leading-body-01 font-medium text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
+            <h5 className="mb-2 text-heading-02 font-semibold tracking-tight text-white">Application Migration to the Cloud  </h5>
+            <p className="mb-8 text-body-01 leading-body-01  text-white">Scaling resources on-demand, we specialize in effective migration of applications to the cloud.
             </p>
-            <div className="absolute bottom-0 right-0"  onClick={() => { setshowModal3((prev) => !prev); }}>
+            <div className="absolute bottom-2 right-2"  onClick={() => { setshowModal3((prev) => !prev); }}>
               <OutlinedButtonWithArrow arrowColor={'white'} size={24} />
             </div>
           </div>
@@ -771,7 +774,6 @@ const UpgradeToCloud = () => {
         setPadding={true}
         setMSLogoURL={msLogoURL}
         setMsAzureLogoURL={msAzureLogoURL}
-        lay
         sectionHeaderWidth={'w-full'}
       />
       {/* End-Section--Trained in Cloud-Services */}
@@ -796,7 +798,8 @@ const UpgradeToCloud = () => {
         Desc={
           "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose. Here are the top reasons for rapid Microsoft Azure migration: "
         }
-        Color={"text-neutral-white"}
+        Color={"text-primary-900"}
+        
       ></BlogSection>
       {/* End-Section--Blog */}
       {/* Section--Distinctive Edge======================================================================= */}
@@ -815,6 +818,8 @@ const UpgradeToCloud = () => {
         CardDataList={TESTIMONIAL_DATA}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
+        setHeadingLayout={'left'}
+
       ></ReviewSliderSection>
 
       {/* Section--TransformBusinessForm======================================================================= */}

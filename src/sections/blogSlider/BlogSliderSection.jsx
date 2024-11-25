@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Children } from "react";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 
 // {
 //     id: 1,
@@ -30,11 +31,11 @@ function BlogSliderSection({
 }) {
   return (
     <>
-      <div className="rounded-3xl bg-secondary-400">
+      <div className="rounded-3xl h-full">
         <Swiper
           slidesPerView={SlidesPerView}
           navigation={false}
-          pagination={true}
+          pagination={{ clickable: true }}
           followFinger={true}
           modules={[Navigation, Pagination]}
           autoplay={Autoplay}
@@ -44,19 +45,22 @@ function BlogSliderSection({
           {cardData?.map((item, index) => (
             <SwiperSlide key={item.id ? item?.id : index}>
               {/* <div class="w-full p-6 border rounded-lg shadow h-[100vh]" style={{ background: `url(${item.cardBGImageUrl}), ${item.cardBGColor}`, backgroundSize: 'cover' }}> */}
-              <SectionWrapper
+              <SectionWrapperNew
                 id={"ni"}
+                setTop={false}
                 style={{
                   background: `url(${item?.cardBGImageUrl}) ${item.cardBGColor}`,
                   backgroundSize: "cover",
-                  marginTop: "-2.5rem",
+                
                 }}
               >
-                <div className="container mx-auto py-32 rounded-3xl">
+                <div className="container mx-auto rounded-3xl">
                   <SectionHeading
                     Heading={item.cardHeading}
                     Desc={item.cardDesc}
                     Color={item.cardTextColor}
+                    center={false}
+                    headingContainerWidth={'w-1/2'}
                   ></SectionHeading>
                   <Link
                     href={item.readMoreUrl}
@@ -76,7 +80,7 @@ function BlogSliderSection({
                     </div>
                   </Link>
                 </div>
-              </SectionWrapper>
+              </SectionWrapperNew>
               {/* </div> */}
 
               {/* <CommonCard Item={item}></CommonCard> */}

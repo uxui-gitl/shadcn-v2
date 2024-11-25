@@ -226,8 +226,9 @@ const TechnologyStack = () => {
       sectionHeading={'Our Service Offerings'}
       sectionDesc={'Architecting secure and high-performance applications with cloud-native technologies, microservices and DevOps practices'}
       sectionTextColor={'text-primary-900'}
-      sectionHeaderMaxWidth={'40%'}
+      sectionHeaderMaxWidth={'w-1/2'}
       cardData={RPASolution}
+
     >
 
     </CommonCardThreeSlider>

@@ -60,7 +60,7 @@ function CommonCardTwo({ Item }) {
         )}
         {cardHeading && (
           <h5
-            className={`text-heading-02 font-semibold text-neutral-white ${style.cardHeading}`}
+            className={`text-heading-03 font-semibold text-neutral-white  text-center md:text-left ${style.cardHeading}`}
             dangerouslySetInnerHTML={{ __html: cardHeading }}
           />
         )}

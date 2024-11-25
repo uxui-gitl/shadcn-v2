@@ -23,7 +23,7 @@ import SectionSliderAdditionalData from "@/sections/sectionSliderAdditionalData/
 import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
 
 const CloudStack = () => {
-  const imgURL = "/CloudStackServices/takeConfident.webp";
+  const imgURL = "/CloudStackServices/Confident-Man.png";
   const imgBgURL = "/CloudStackServices/background/bg_SynergeticPartnership.webp";
 
   const advanceSolutionData = [
@@ -108,7 +108,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/scalability.svg",
-      CardHeading: "",
+      CardHeading: "Scalability",
       CardDesc:
         "Scalability according to evolving business needs",
       isArrow: "",
@@ -123,7 +123,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/fasterDevelopment.svg",
-      CardHeading: "",
+      CardHeading: "Faster Development",
       CardDesc:
         "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
       isArrow: "",
@@ -137,7 +137,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/driveBusiness.svg",
-      CardHeading: "",
+      CardHeading: "Improved ROI",
       CardDesc:
         "Drive business agility and improved ROI with automation",
       isArrow: "",
@@ -151,7 +151,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/highestLevels.svg",
-      CardHeading: "",
+      CardHeading: "Data Security",
       CardDesc:
         "Highest levels of security and privacy, ensuring data is safeguarded",
       isArrow: "",
@@ -165,7 +165,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/streamlineDelivery.svg",
-      CardHeading: "",
+      CardHeading: "Streamline Delivery",
       CardDesc:
         "Streamline delivery pipeline with all the essential tools covered under one umbrella",
       isArrow: "",
@@ -179,7 +179,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/effortlessIntegration.svg",
-      CardHeading: "",
+      CardHeading: "Effortless Integration",
       CardDesc:
         "Effortless integration with data solutions and Big Data",
       isArrow: "",
@@ -193,7 +193,7 @@ const CloudStack = () => {
       CardTextColor: 'white',
       CardTitle: "",
       CardIconUrl: "/CloudStackServices/icons/reliableDisaster.svg",
-      CardHeading: "",
+      CardHeading: "Reliable Disaster Recovery",
       CardDesc:
         "Built-in reliable disaster recovery capabilities and integrated development framework",
       isArrow: "",
@@ -363,6 +363,7 @@ const CloudStack = () => {
         setDesc="This approach helps us to adeptly manage software development projects involving complexity levels."
         setColor="text-primary-900"
         sectionHeaderWidth={'w-full'}
+        setTop={false}
       />
 
       {/* Advance Solution for Business Future */}
@@ -410,6 +411,7 @@ const CloudStack = () => {
         setImageBGURL={imgBgURL}
         setLogoImages="true"
         setPadding={false}
+        BGColor="bg-neutral-light-grey"
       />
       {/* End-Section--Synergetic-Partnership */}
       {/* Section--Case-Studies======================================================================= */}
@@ -447,6 +449,7 @@ const CloudStack = () => {
         CardDataList={reviewCardData}
         BGColor="bg-primary-900"
         SectionHeadingMaxWidth={'70%'}
+        setHeadingLayout={'left'}
       ></ReviewSliderSection>
       {/* transform business with us section */}
       

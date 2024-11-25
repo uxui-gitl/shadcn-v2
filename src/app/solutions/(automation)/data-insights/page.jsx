@@ -316,10 +316,13 @@ const DataInsights = () => {
         sectionDesc={
           "Real-time data access and visualization enabling insights into business operations."
         }
-        sectionTextColor={"text-primary-900"}
+        sectionTextColor={"text-neutral-white"}
+        sectionDescColor={"text-neutral-white"}
         cardData={VISUALIZATION_DATA}
         pageID="ai-ml"
-        setHeadingContainerWidth={true}
+        setHeadingLayout={"left"}
+
+       
       ></SectionWithSlider>
 
       {/* End--DataVisualization--Section======================================================== */}
@@ -330,10 +333,10 @@ const DataInsights = () => {
         sectionDesc={
           "Scalable data management solutions leveraging analytics and business intelligence for informed decisions."
         }
-        sectionTextColor="text-neutral-white"
+        sectionBGColor={"bg-secondary-900"}
+        sectionTextColor={"text-neutral-white"}
         cardData={DATA_MGMT_DATA}
-        sectionBGColor="bg-secondary-900"
-        setHeadingLayout="horizontal"
+        setHeadingLayout={"horizontal"}
       />
       {/* End--Section--DataManagement======================================================================== */}
 
@@ -358,6 +361,8 @@ const DataInsights = () => {
         setTextColor="text-primary-900"
         setHeadingLayout="horizontal"
         ACCORDION_DATA={ACCORDION_DATA}
+        setPad={true}
+        setTop={false}
       />
    
       {/* Start--Section--Testimonial======================================================================= */}
@@ -368,7 +373,8 @@ const DataInsights = () => {
       Color="text-neutral-white"
       CardDataList={TESTIMONIAL_DATA}
       BGColor="bg-primary-900"
-      SectionHeadingMaxWidth={'70%'}
+      SectionHeadingMaxWidth="w-1/2"
+      setHeadingLayout={'horizontal'}
     ></ReviewSliderSection>
     
       {/* End-Section--Testimonial======================================================= */}

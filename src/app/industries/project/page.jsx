@@ -19,17 +19,17 @@ import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithA
 
 
 function page() {
-    const blogImageUrl = "/project/blog-bg.webp";
+    const blogImageUrl = "/project/blogBg1.webp";
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Establishing efficient post-delivery service and maintenance", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Ensuring accurate procurement evaluation - Manpower, Machine, Material", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Streamlining distribution and delivery for project execution", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Tracking direct and indirect revenue streams", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Real-time progress tracking at work and project levels", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 6, title: "Managing complex budgets, schedules and contracts", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Establishing efficient post-delivery service and maintenance", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 2, title: "Ensuring accurate procurement evaluation - Manpower, Machine, Material", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 3, title: "Streamlining distribution and delivery for project execution", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 4, title: "Tracking direct and indirect revenue streams", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 5, title: "Real-time progress tracking at work and project levels", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 6, title: "Managing complex budgets, schedules and contracts", icon: '/upgradeCloud/icons/challengesIcon.svg' },
     
     ];
 
@@ -219,7 +219,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/project/keyCapabilities/FutureodProjcet.svg",
             CardHeading: "Future of Projects",
             CardDesc:
                 "",
@@ -260,7 +260,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+           icon: "/project/keyCapabilities/IOT.svg",
             CardHeading: "IoT Enabled Products",
             CardDesc:
                 "",
@@ -293,7 +293,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/project/keyCapabilities/SupplyChain.svg",
             CardHeading: "Supply Chain Management",
             CardDesc: 
                 "",
@@ -323,7 +323,7 @@ function page() {
             CardBGColor: "transparent",
             CardTextColor: "white",
             CardTitle: "",
-            CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+            icon: "/project/keyCapabilities/performanceManagement.svg",
             CardHeading: "Performance Management",
             CardDesc:
                 "",
@@ -414,8 +414,8 @@ function page() {
 
     const casestudy = [
         {
-            imageURL: "",
-            videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+            imageURL: "/project/caseStudy.webp",
+            videoURL: "",
             title: "Case Studies",
             heading: "",
             description: "World's top-notch businesses choose us for our industry knowledge and excellen ttechnical acumen",
@@ -485,7 +485,7 @@ function page() {
                 desc="Enhanced project management & delivery, Improved customer satisfaction"
                 cta="Let's Connect"
                 width="60%"
-                video="/project/video/pageBanner.mp4"
+                video="/project/videos/pageBanner.mp4"
             />
             <OverviewSection Text={`We enable project stakeholders to make informed decisions, streamline operations, and reduce costs, driving successful outcomes that align with business objectives.`} />
 
@@ -553,7 +553,7 @@ function page() {
                     {DATA_MGMT_DATA?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="p-6 bg-[transparent]" style={{ borderRight: '1px solid #d3d3d3' }}>
-                                <Image src={"/about/whiteStar.svg"} width={30} height={30} alt={"hioasdo"} className="mb-4" />
+                                <Image src={item.icon} width={30} height={30} alt={"hioasdo"} className="mb-4" />
                                 <div className="text-[28px] text-white">{item.CardHeading}</div>
                                 <p className="text-[20px] py-4 text-white">{item.CardDesc}</p>
                                 <div dangerouslySetInnerHTML={{ __html: item?.additionalData }} />
@@ -695,14 +695,14 @@ function page() {
             ></BlogSection>
 
             <ReviewSliderSection
-                ID={"TESTIMONIALS"}
-                Heading={"Delighted Customers Share their Successful Experiences"}
-                Desc={'Discover how we have helped our customers to realize better results aligned with their business goals.'}
-                Color="#ffffff"
-                CardDataList={TESTIMONIAL_DATA}
-                BGColor="#1D162B"
-                SectionHeadingMaxWidth={'70%'}
-            ></ReviewSliderSection>
+        ID={"TESTIMONIALS"}
+        Heading={"Delighted customers share their success experience"}
+        Desc={''}
+        Color="#ffffff"
+        CardDataList={TESTIMONIAL_DATA}
+        BGColor="bg-primary-900"
+        SectionHeadingMaxWidth={'70%'}
+      ></ReviewSliderSection>
 
             {/* transform business with us section */}
             <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how digital transformation can help your business with rapid growth."}>
@@ -734,7 +734,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/project/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/project/automation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -763,7 +763,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/project/cloud.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -792,7 +792,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/project/transformation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );

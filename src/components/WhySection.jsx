@@ -19,13 +19,13 @@ const WhySection = ({
      sectionHeadingLayout="left"
      setTop={false}
     >
-<div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 2xl:gap-8">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-3 2xl:gap-4">
         {arr.map((item, index) => (
             <>
               <div className="py-4 border-b-[1px] border-bg-neutral-grey" key={index} >
                 <div className="flex items-center">
                     <Image src={item.icon} alt={checkout} className="max-w-full" width={56} height={56}/>
-                    <div className="text-body-01 ml-4">
+                    <div className="text-body-01 2xl:text-heading-04 ml-4">
                       {item.desc}
                     </div>
                 </div>

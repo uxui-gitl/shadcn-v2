@@ -4,6 +4,7 @@ import React from "react";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 
 const logos = [
   "/technology-stack/logos/New Project.svg",
@@ -15,8 +16,8 @@ const logos = [
 const TechnologyStackLogos = () => {
   return (
     <>
-      <SectionWrapper BGColor={"bg-primary-10"}>
-        <div className="container mx-auto py-32">
+      <SectionWrapperNew bgColor={"bg-primary-10"} setTop={false} >
+        <div className="">
           <SectionHeading
             center={true}
             Heading={"Expertly Built <br/>200+ Custom Apps"}
@@ -24,7 +25,7 @@ const TechnologyStackLogos = () => {
             Color={"text-primary-900"}
             headingContainerWidth={"w-full"}
           />
- <div className="w-full mx-auto md:w-1/2 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
+ <div className="w-full mx-auto md:w-1/2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
   {logos.map((logo, index) => (
     <div key={index} className="flex justify-center">
       <Image
@@ -38,7 +39,7 @@ const TechnologyStackLogos = () => {
 </div>
 
         </div>
-      </SectionWrapper>
+      </SectionWrapperNew>
     </>
   );
 };

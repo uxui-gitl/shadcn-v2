@@ -22,8 +22,10 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
                 sectionHeading={Heading}
                 sectionDesc={Desc}
                 sectionTextColor={Color}
+                sectionDescColor={Color}
                 sectionHeadingLayout="left"
-                sectionDescColor='text-neutral-white'
+                setTop='true'
+              
             >
                 
                 {readMoreUrl && (<Link

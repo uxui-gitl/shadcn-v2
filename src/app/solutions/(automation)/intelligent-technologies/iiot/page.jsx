@@ -141,6 +141,7 @@ const IIOT = () => {
         csLayout={"6"}
         bgColor="bg-neutral-white"
         textColor="text-neutral-white"
+        setTop={false}
         
       />
       {/* End--Section--IIOT Soltions====================================================================== */}

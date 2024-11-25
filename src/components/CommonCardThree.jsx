@@ -21,16 +21,18 @@ function CommonCardTwo({ Item }) {
                 color: cardTextColor,
                 width: "100%",
                 minHeight: '540px',
-                maxHeight:'540px'
+                maxHeight:'540px',
+                cursor: 'pointer',
+               
             }}>
                 {cardTopImageUrl && 
                 <div style={{minHeight: '224px', overflow:'hidden'}}>
-                <img className={`rounded-t-3xl ${style.topImage}`} style={{width:'100%' }} src={cardTopImageUrl} alt="" />
+                <img className={`rounded-t-3xl ${style.topImage} bg-center`} style={{width:'100%' }} src={cardTopImageUrl} alt="" />
                 </div>}
                 <div className={ `p-5 ${style.cardbody}`} style={{backgroundColor:cardBGColor}}>
                     {cardHeading && (
                         <h5
-                            className={` text-heading-02 leading-heading-02 font-semibold mb-4 ${style.cardHeading}`}
+                            className={`text-heading-03 font-semibold mb-4 ${style.cardHeading}`}
                             dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                         />
                     )}
@@ -38,7 +40,7 @@ function CommonCardTwo({ Item }) {
 
                     {cardDesc && (
                         <p
-                            className={`mb-16 text-body-01 leading-body-01 font-normal ${style.cardDesc}`}
+                            className={`mb-4 text-body-01  ${style.cardDesc}`}
                             dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                         />
                     )}

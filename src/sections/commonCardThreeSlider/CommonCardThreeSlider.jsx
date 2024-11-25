@@ -8,12 +8,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Navigation } from "lucide-react";
+import SectionWrapperNew from "@/components/SectionWrapperNew";
 function CommonCardTwoSlider({
     ID,
     sectionImageUrl,
     sectionHeading,
     sectionDesc,
-    sectionHeaderMaxWidth,
+    sectionDescColor,
     cardData = [],
     sectionTextColor = 'text-primary-900',
     sectionBGColor = "bg-neutral-white",
@@ -24,34 +25,36 @@ function CommonCardTwoSlider({
     const autoplay = "false";
     return (
         <>
-            <SectionWrapper
+            <SectionWrapperNew
                 id={ID}
+                bgColor={sectionBGColor}
+                sectionHeading={sectionHeading}
+                sectionDesc={sectionDesc}
+                sectionTextColor={sectionTextColor}
+                sectionDescColor={sectionDescColor}
                 BGColor={sectionBGColor}
+                sectionHeadingLayout={setHeadingLayout}
+                
+   
                 style={{
                     backgroundImage: `url(${sectionImageUrl})`,
                     backgroundSize: "cover",
                 }}
             >
-                <div className="container mx-auto py-32">
-                    <div className="">
-                        <SectionHeading
-                            Heading={sectionHeading}
-                            Desc={sectionDesc}
-                            Color={sectionTextColor}
-                            layout={setHeadingLayout}
-                        ></SectionHeading>
-                    </div>
+                <div className="">
+           
 
-                    <div className="my-8">
+                    <div className="">
                         <Swiper
                             slidesPerView={slidesPerView}
                             navigation={false}
-                            pagination={true}
+                            pagination={{ clickable: true }}
                             followFinger={true}
                             modules={[ Pagination]}
                             autoplay={autoplay}
                             loop={false}
                             spaceBetween={30}
+                        
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,
@@ -75,7 +78,7 @@ function CommonCardTwoSlider({
                         </Swiper>
                     </div>
                 </div>
-            </SectionWrapper>
+            </SectionWrapperNew>
         </>
     );
 }
