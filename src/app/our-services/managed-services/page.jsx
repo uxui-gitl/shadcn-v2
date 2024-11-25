@@ -11,7 +11,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -294,8 +294,8 @@ const page = () => {
       />
       <OverviewSection Text={`Expert 24/7 Support: Our Managed Services ensure seamless IT operations, empowering you to focus on core business`} />
 
-      <SectionWrapper style={{ background: `url(/services/mg01.svg)`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-        <div className="container mx-auto bg-[#95e0db] py-32">
+      <SectionWrapper setTop={false} style={{ background: `url(/services/mg01.svg)`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+        <div className="container mx-auto py-32">
           <SectionHeading
             layout="horizontal"
             Color="text-primary-900"
@@ -303,7 +303,7 @@ const page = () => {
             Heading="Knocking Business Challenges"
             Desc="Absence of expert managed services results in various business obstacles, difficulty in transforming business operations and addressing transactional needs, ultimately impacting growth and productivity."
           ></SectionHeading>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <ul className=" space-y-4 w-full text-primary-900">
               {CHALLENGES_LIST_DATA.map((challenge, index) => (
                 <li
@@ -319,7 +319,7 @@ const page = () => {
                     />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
+                    <h3 className="text-body-01 font-normal">
                       {challenge.title}
                     </h3>
                   </div>
@@ -333,18 +333,18 @@ const page = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
-        <div className="InforSliderWrapper rounded-3xl py-32" style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
-          <div className="flex md:flex-row flex-col md:py-10 px-10 container" style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <SectionWrapper style={{minHeight:'auto'}}>
+        <div className="InforSliderWrapper rounded-3xl " style={{ backgroundColor: 'white', zindex: "2", position: 'relative' }}>
+          <div className="flex md:flex-row flex-col md:py-10 px-10 " style={{ justifyContent: 'center', alignItems: 'center' }}>
             <div className="w-full md:w-3/12">
-              <h1 className="text-heading-01 leading-heading-01 font-semibold text-center md:text-center">Technology
+              <h1 className="text-heading-03 font-semibold text-center md:text-left border-r-2">Technology
                 Spectrum</h1>
             </div>
             <div className="w-full md:w-9/12 my-6 md:my-0">
               <Swiper
                 slidesPerView={1}
-                navigation={true}
-                pagination={{ type: "bullets", clickable: true }}
+                modules={[Pagination, Autoplay]}
+                pagination={false}
                 autoplay={true}
                 loop={false}
                 spaceBetween={32}
@@ -364,8 +364,8 @@ const page = () => {
               }}
               >
                 {TECHNOLOGYSPECTRUM_DATA?.map((item, index) => (
-                  <SwiperSlide key={item}>
-                    <div className="w-full text-heading-02 leading-heading-02 font-semibold text-center">
+                  <SwiperSlide key={item} >
+                    <div className="w-full text-heading-04 font-semibold text-center">
                       {/* <Image className="rounded-t-lg" width={100} height={50} src="" alt="" /> */}
                       {item.cardHeading}
                     </div>
@@ -397,7 +397,7 @@ const page = () => {
       </ SectionWrapper>
 
       <SectionWithSlider
-        style={{ marginTop: '-35px' }}
+       
         ID={"DATA_MGMT_DATA"}
         sectionHeading={"Cornerstones of Managed Services"}
         sectionDesc={
@@ -407,7 +407,8 @@ const page = () => {
         cardData={DATA_MGMT_DATA}
         sectionBGColor="bg-primary-500"
         setHeadingLayout="horizontal"
-        setMinHeight="min-h-[40rem]"
+        setCardsMinHeight={"min-h-[380px] md:min-h-[380px] lg:min-h-[380px] 2xl:min-h-[420px]"}
+       
       />
 
       <CommonCardThreeSlider
@@ -419,6 +420,7 @@ const page = () => {
         sectionTextColor={'text-neutral-white'}
         sectionHeaderMaxWidth={'40%'}
         cardData={RPASolution}
+        setHeadingLayout={'left'}
       >
 
       </CommonCardThreeSlider>

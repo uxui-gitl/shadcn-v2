@@ -29,7 +29,7 @@ function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white bord
   return (
     <>
       <div
-        className={`commonCard mt-5 rounded-3xl ${setCardsMinHeight}  flex flex-col justify-between border-[1px] ${setBorderColor}`}
+        className={`commonCard mt-5 rounded-3xl ${setCardsMinHeight}  flex flex-col justify-between border-[1px] ${setBorderColor} mb-2`}
         style={{
           background: `url(${CardBGImageUrl}), ${CardBGColor}`,
           backgroundSize: CardBGImageUrlSize,
