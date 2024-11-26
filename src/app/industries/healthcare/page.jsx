@@ -20,6 +20,12 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 function page() {
     const blogImageUrl = "/healthcare/blog-bg.webp";
 
+      const imgBGURL_Challenges =
+  "/healthcare/challenges.webp";
+
+        const imgBGURL_offering =
+  "/healthcare/serviceOfferings.webp";
+
     const tabs = [
         {
             title: "Automation ",
@@ -154,11 +160,11 @@ function page() {
         },
     ];
     const CHALLENGES_LIST_DATA = [
-        { id: 1, title: "Complex billing delays payments", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 2, title: "Inadequate tech investment impacts healthcare quality", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 3, title: "Fragmented data leads to suboptimal outcomes", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 4, title: "Inefficient communication strains resource allocation", icon: '/upgradeCloud/icons/ico--target.svg' },
-        { id: 5, title: "Ineffective resource management increases costs", icon: '/upgradeCloud/icons/ico--target.svg' },
+        { id: 1, title: "Complex billing delays payments", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 2, title: "Inadequate tech investment impacts healthcare quality", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 3, title: "Fragmented data leads to suboptimal outcomes", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 4, title: "Inefficient communication strains resource allocation", icon: '/upgradeCloud/icons/challengesIcon.svg' },
+        { id: 5, title: "Ineffective resource management increases costs", icon: '/upgradeCloud/icons/challengesIcon.svg' },
         
     ];
 
@@ -347,8 +353,8 @@ function page() {
 
     const CASE_STUDIES_DATA = [
         {
-            imageURL: "/CloudStackServices/case-studies/bg--coffee-beans.png",
-            videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
+            imageURL: "/healthcare/Casestudy.webp",
+            videoURL: "",
             title: "Case Studies",
             heading: "Delivering Results that Matter",
             description:
@@ -415,11 +421,20 @@ function page() {
                 desc="Enhancing patient engagement, workflows and clinical outcomes"
                 cta="Let's Connect"
                 width="60%"
-                video="/healthcare/video/pageBanner.mp4"
+                video="/healthcare/videos/pageBanner.mp4"
             />
             <OverviewSection Text={`Our digital solutions and services help healthcare organisations in developing a cohesive ecosystem, fostering collaboration and ensuring data accuracy.`} />
 
-            <SectionWrapper BGColor="black">
+            <SectionWrapper 
+                 BGColor="bg-primary-900"
+        setTop={false}
+        style={{
+          backgroundImage: `url(${imgBGURL_Challenges})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
                 <div className="md:container mx-auto">
                     <SectionHeading
                         Color="white"
@@ -473,7 +488,11 @@ function page() {
  
             {/* act solution */}
 
-            <div className="rounded-3xl" style={{ backgroundColor: '#1D162B', marginTop: '-35px' }}>
+            <div className="rounded-3xl" 
+            style={{backgroundImage: `url(${imgBGURL_offering})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat", marginTop: '-35px' }}>
                 <div className="md:container mx-auto pt-20 flex h-[500px]" style={{ alignItems: 'center', overflow: 'hidden' }}>
                     <div className="w-full md:w-1/2">
                         <SectionHeading
@@ -483,9 +502,7 @@ function page() {
                             headingContainerWidth={'w-full'}
                         />
                     </div>
-                    <div className="hidden md:w-1/2 md:block">
-                        <img src="/infor/man.svg" style={{ width: '100%' }} />
-                    </div>
+                   
                 </div>
                 <div className="md:container mx-auto bg-[#EFE9FB] py-20" style={{ zindex: '2', position: 'relative', borderTopLeftRadius: "24px", borderTopRightRadius: "24px", transform: "translateY(-28px)" }}>
                     <Swiper
@@ -576,7 +593,7 @@ const AutomationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/healthcare/automation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -604,7 +621,7 @@ const CloudContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/healthcare/cloud.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
@@ -631,7 +648,7 @@ const TransformationContent = () => {
                 ))}
 
             </div>
-            <div className="relative" style={{ backgroundImage: `url(/homeNew/tab1.svg)`, backgroundSize: 'cover' }}>
+            <div className="relative" style={{ backgroundImage: `url(/healthcare/transformation.webp)`, backgroundSize: 'cover' }}>
             </div>
         </div>
     );
