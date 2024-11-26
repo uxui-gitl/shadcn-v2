@@ -46,8 +46,8 @@ const Page = () => {
                 sectionHeadingLayout="center"
             >
                 <div className="">
-                    <form className="w-full flex justify-end space-between">
-                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} className="block px-4 py-3 mr-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                    <form className="w-full flex flex-col sm:flex-row justify-end space-between">
+                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} className="block mb-2 sm:mb-0 px-4 py-3 mr-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="Microsoft Dynamics">Microsoft Dynamics</option>
                             <option value="Common">Common</option>
@@ -70,9 +70,9 @@ const Page = () => {
                                 </div>
                                 <div className="p-4">
                                     <div className="mb-2 flex flex-wrap">
-                                    {item.mainCategory && (<span className="mb-2 bg-[#E4E4E4] helper-02 me-2 px-4 py-2 rounded-full">{item.mainCategory}</span>)}
-                                        {item.subCategory && (<span className="mb-2 bg-[#E4E4E4] helper-02 me-2 px-4 py-2 rounded-full">{item.subCategory}</span>)}
-                                       {item.vertical && (<span className="mb-2 bg-[#E4E4E4] helper-02 me-2 px-4 py-2 rounded-full">{item.vertical}</span>)} 
+                                    {item.mainCategory && (<span className="mb-2 bg-[#E4E4E4] text-helper-02 me-2 px-4 py-2 rounded-full">{item.mainCategory}</span>)}
+                                        {item.subCategory && (<span className="mb-2 bg-[#E4E4E4] text-helper-02 me-2 px-4 py-2 rounded-full">{item.subCategory}</span>)}
+                                       {item.vertical && (<span className="mb-2 bg-[#E4E4E4] text-helper-02 me-2 px-4 py-2 rounded-full">{item.vertical}</span>)} 
                                     </div>
                                     <h5 className="mb-2 text-['#1D162B] paragraph-01">{item.title}</h5>
                                     <div className="flex justify-end">

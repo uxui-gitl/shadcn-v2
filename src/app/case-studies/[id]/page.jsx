@@ -46,10 +46,10 @@ const Page = () => {
                 <div className="next">
                     {caseData?.map((item, index) => (
                         <>
-                            {item.title && <h2 className="max-w-[80%] mb-16 text-[42px] leading-[50px] font-semibold text-[#1D162B]">{item.title}</h2>}
-                            <div className="grid grid-cols-4 gap-5">
+                            {item.title && <h2 className="w-full md:max-w-[80%] mb-4 md:mb-10 text-heading-03 sm:text-heading-02 text-[#1D162B]">{item.title}</h2>}
+                            <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
                                 <div className="">
-                                    <h2 className="text-[28px] font-semibold mb-6">Highlights</h2>
+                                    <h2 className="text-[28px] font-semibold mb-3 sm:mb-6">Highlights</h2>
                                     <div className="mb-3">
                                         <h6 className="title">Industry</h6>
                                         <p className="text-[18px] font-semibold">{item.highlights.industry}</p>
@@ -65,8 +65,8 @@ const Page = () => {
                                 </div>
                                 <div className="col-span-3">
                                     <div className=""style={{borderBottom:'1px solid #d3d3d3'}}>
-                                        <h2 className="title text-[28px] font-semibold mb-6">Client Brief</h2>
-                                       {item?.customerBrief?.description && (<p className="text-[32px] leading-[40px] font-medium mb-6">{item?.customerBrief?.description}</p>)} 
+                                        <h2 className="title text-heading-03 font-semibold mb-2">Client Brief</h2>
+                                       {item?.customerBrief?.description && (<p className="text-paragraph-01 font-medium mb-6">{item?.customerBrief?.description}</p>)} 
                                         {item?.customerBrief?.BriefList && (
                                             <ul className="space-y-1 text-black list-disc list-outside mb-6">
                                             {item?.customerBrief?.BriefList.map((item, index) => (<li key={index}>{item}</li>))}
@@ -76,8 +76,8 @@ const Page = () => {
                                     {/* business case */}
 
                                     <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
-                                        <h2 className="title text-[28px] font-semibold mb-4">Business Case</h2>
-                                       {item?.businessCase?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.businessCase?.description}</p>)} 
+                                        <h2 className="title text-heading-03 font-semibold mb-2">Business Case</h2>
+                                       {item?.businessCase?.description && (<p className="text-paragraph-01 font-medium mb-3">{item?.businessCase?.description}</p>)} 
                                         {item?.businessCase?.businesscaseList&& (
                                             <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.businessCase?.businesscaseList?.map((item, index) => (<li key={index}>{item}</li>))}
@@ -86,8 +86,8 @@ const Page = () => {
                                     </div>
                                     {/* business solution */}
                                     <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
-                                        <h2 className="title text-[28px] font-semibold mb-4">Challenges</h2>
-                                       {item?.challenges?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.challenges?.description}</p>)} 
+                                        <h2 className="title text-heading-03 font-semibold mb-2">Challenges</h2>
+                                       {item?.challenges?.description && (<p className="text-paragraph-01 font-medium mb-3">{item?.challenges?.description}</p>)} 
                                         {item?.challenges?.keyChallenges && (
                                             <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.challenges?.keyChallenges?.map((item, index) => (<li key={index}>{item}</li>))}
@@ -97,8 +97,8 @@ const Page = () => {
                                     {/* business Challenges */}
 
                                     <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
-                                        <h2 className="title text-[28px] font-semibold mb-4">Business Solution</h2>
-                                       {item?.solution?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.solution?.description}</p>)} 
+                                        <h2 className="title text-heading-03 font-semibold mb-2">Business Solution</h2>
+                                       {item?.solution?.description && (<p className="text-paragraph-01 font-medium mb-3">{item?.solution?.description}</p>)} 
                                         {item?.solution?.features&& (
                                             <ul className="space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.solution?.features?.map((item, index) => (<li key={index}>{item}</li>))}
@@ -108,8 +108,8 @@ const Page = () => {
 
                                     {/*  benefits*/}
                                     <div className="py-4" style={{borderBottom:'1px solid #d3d3d3'}}>
-                                        <h2 className="title text-[28px] font-semibold mb-4">Benefits</h2>
-                                       {item?.benefits?.description && (<p className="text-[16px] leading-[40px] font-medium mb-3">{item?.benefits?.description}</p>)} 
+                                        <h2 className="title text-heading-03 font-semibold mb-2">Benefits</h2>
+                                       {item?.benefits?.description && (<p className="text-paragraph-01 font-medium mb-3">{item?.benefits?.description}</p>)} 
                                         {item?.benefits?.list&& (
                                             <ul className=" space-y-1 text-black list-disc list-outside mb-3">
                                             {item?.benefits?.list?.map((item, index) => (<li key={index}>{item}</li>))}

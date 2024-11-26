@@ -27,6 +27,7 @@ const Page = () => {
 
     async function getBlogList() {
         try {
+            debugger;
             let response = await axios.post(`${url.blogApiUrl}/BlogDetails/BlogList`);
             let data = response?.data?.model;
             setblogList(data);
@@ -46,7 +47,7 @@ const Page = () => {
 
             <div className="bg-white py-16 rounded-3xl sm:py-32 px-10 md:-mt-[36px]">
                 <div className="md:container mx-auto">
-                    <h6 className="date text-[#808080] text-[20px] font-medium mb-10">18 October, 2024</h6>
+                    <h6 className="date text-[#808080] subtitle-01 mb-10">18 October, 2024</h6>
                     <h2 className="title text-[42px] max-w-[70%] leading-[50px] font-semibold mb-10">Leading global lifestyle distribution company successfully implements .net based dealer management system</h2>
                     <button type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 ">Read Blog</button>
                 </div>

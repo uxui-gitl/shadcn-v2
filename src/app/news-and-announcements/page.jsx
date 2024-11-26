@@ -57,10 +57,10 @@ const Page = () => {
                 inclusive future.
                 `} height={'60vh'} />
 
-            <div className="bg-white py-16 rounded-3xl sm:py-32 px-10 md:-mt-[36px]" style={{ borderBottom: '1px solid #d3d3d3', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
-                <div className="md:container mx-auto">
-                    <h6 className="date text-[#808080] text-[20px] font-medium mb-10">18 October, 2024</h6>
-                    <h2 className="title text-[42px] max-w-[70%] leading-[50px] font-semibold mb-10">Leading global lifestyle distribution company successfully implements .net based dealer management system</h2>
+            <div className="bg-white py-10 rounded-3xl md:-mt-[36px]" style={{ borderBottom: '1px solid #d3d3d3', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
+                <div className="container mx-auto">
+                    <h6 className="date text-[#808080] paragraph-01 font-medium mb-4 sm:mb-6 md:mb-7">18 October, 2024</h6>
+                    <div className="text-heading-03 sm:text-heading-02 font-semibold sm:max-w-[70%] mb-4 sm:mb-6 md:mb-7">Leading global lifestyle distribution company successfully implements .net based dealer management system</div>
                     <button type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 ">Read Blog</button>
                 </div>
             </div>
@@ -72,38 +72,38 @@ const Page = () => {
                 sectionHeadingLayout="left"
                 style={{ marginTop: 0 }}
             >
-                <div className="mb-6">
-                    <form className="w-full grid grid-cols-4 gap-4">
-                        <select id="large" value={year} onChange={(e) => onChange(e, 'year')} className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                <div className="mb-2">
+                    <form className="flex flex-col sm:flex-row justify-end">
+                        <select id="large" value={year} onChange={(e) => onChange(e, 'year')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Year</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
                             <option value="2024">2024</option>
 
                         </select>
-                        <select id="large" value={month} onChange={(e) => onChange(e, 'month')} className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={month} onChange={(e) => onChange(e, 'month')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Month</option>
                             <option value="JAN">JAN</option>
                             <option value="FEB">FEB</option>
                             <option value="MAR">MAR</option>
 
                         </select>
-                        <div className="">
-                            <button onClick={() => handleReset()} type="button" className="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
+                        <div className="text-end">
+                            <button onClick={() => handleReset()} type="button" className="w-full px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
                         </div>
                     </form>
                 </div>
                 {updatedNews?.map(item => (
                     <>
-                        <div className="cards py-10" style={{ borderBottom: '1px solid #d3d3d3' }}>
-                            <div className="grid grid-cols-3 gap-4">
-                                <div className="">
-                                    <Image src={item.imageUrl} height={300} width={300}></Image>
+                        <div className="cards py-5" style={{ borderBottom: '1px solid #E4E4E4' }}>
+                            <div className="flex flex-col md:flex-row items-center">
+                                <div className="mb-4 sm:mb-0 sm:mr-10">
+                                    <Image src={item.imageUrl} height={200} width={200} ></Image>
                                 </div>
 
-                                <div className="col-span-2">
-                                    <h6 className="date text-[#808080] text-[16px] font-medium mb-10">{item.date} {item.month}, {item.year}</h6>
-                                    <h2 className="title text-[20px]  leading-[28px] font-semibold mb-10">{item.title}</h2>
+                                <div className="text-center sm:text-left">
+                                    <h6 className="date text-[#1D162B] text-heading-05 mb-4">{item.date} {item.month}, {item.year}</h6>
+                                    <h2 className="title text-heading-04 font-bold mb-7 max-w-[700px]">{item.title}</h2>
                                     <Link href={item.readMoreUrl} target='_blank' type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Read Blog</Link>
                                 </div>
                             </div>
