@@ -43,8 +43,10 @@ function CommonCardTwo({ Item }) {
         <Image
           src={cardBGImageUrl}
           alt={cardTitle}
-          layout="fill"
-          className="object-cover rounded-3xl" 
+          layout="responsive"
+          width={600}
+          height={900}
+          className="object-cover rounded-3xl bg-center" 
         />
       </div>
 

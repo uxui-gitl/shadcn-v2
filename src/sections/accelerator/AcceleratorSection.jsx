@@ -6,15 +6,15 @@ import Image from "next/image";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 
-function AcceleratorSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMoreUrl = "", children }) {
+function AcceleratorSection({ ID, accImageURL, Heading, Desc, Color = 'white', readMoreUrl = "", children }) {
     return (
         <>
 
             <SectionWrapperNew
                 style={{
-                    // backgroundImage: `url(${blogImageUrl})`,
-                    // backgroundSize: "cover",
-                    // backgroundPosition: "center",
+                    backgroundImage: `url(${accImageURL})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
                     backgroundColor:'#EFE9FB'
                 }}
                 sectionHeading={Heading}
