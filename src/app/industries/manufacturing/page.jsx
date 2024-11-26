@@ -203,7 +203,7 @@ function page() {
         "Optimize project management and inventory control for businesses with multiple sites and warehouses",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/Prosoft2.0.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
@@ -214,7 +214,7 @@ function page() {
         "Bridge the gap between production and ERP systems, for synchronized production scheduling and inventory control",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/InterfacewithMes.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
@@ -225,7 +225,7 @@ function page() {
         "Real-time machine analytics solutions help in predictive maintenance and improve productivity",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/Industry4.0IoT.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
@@ -235,67 +235,67 @@ function page() {
       cardDesc: `Automate manual item coding and BOM creation using BOT, increasing master data accuracy`,
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/Industry4.0RPA.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
       id: 5,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardHeading: "QCAT - Quality control Analysis Testing",
       cardDesc:
         "Enhance quality control efficiency with online inspections and dynamic checklists ensuring end-to-end traceability",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/QualityControl.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
       id: 6,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardHeading: "Mobile App – Industrial Safety & Field Quality",
       cardDesc:
         "Enhance site quality control and safety, enabling prompt issue resolution and compliance",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/MobileApp.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
       id: 7,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardHeading: "Quality App",
       cardDesc:
         "Centralized solution for open quality order management and improved quality control and compliance",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/QualityApp.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
       id: 8,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardHeading: "Production App",
       cardDesc:
         "Enhanced production efficiency, enabling accurate record-keeping and improved decision-making",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/productionApp.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
     {
       id: 9,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
+      cardBGImageUrl: "",
       cardBGColor: "#EFE9FB",
       cardHeading: "CPQ – Configure Price Quote",
       cardDesc:
         "Enhance customer experience with precision product customization and efficient quote-to-order processing",
       isArrow: true,
       cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
+      cardTopImageUrl: "/manufacturing/accelerators/CPQ.webp",
       cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
     },
   ];
@@ -662,7 +662,7 @@ function page() {
                 <div
                   className="h-[220px] bg-slate-700"
                   style={{
-                    background: `url('/Transformation/sale-force-crm/m1.svg')`,
+                    background: `url(${item.cardTopImageUrl})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}
