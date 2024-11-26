@@ -25,6 +25,9 @@ function page() {
 
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
 
+     const imgBGURL_Challenges =
+  "/retail/Retail_Challnges.webp";
+
     const CHALLENGES_LIST_DATA = [
         { id: 1, title: "Inconsistent omnichannel experiences", icon: '/upgradeCloud/icons/challengesIcon.svg' },
         { id: 2, title: "Limited personalization and targeted marketing", icon: '/upgradeCloud/icons/challengesIcon.svg' },
@@ -530,7 +533,14 @@ function page() {
             />
             <OverviewSection Text={`From adoption of CRM and e-commerce to the integration of data analytics, our expert team holds extensive experience of providing comprehensive advance solutions for global retail businesses.`} />
 
-            <SectionWrapper BGColor="bg-secondary-900">
+            <SectionWrapper 
+            style={{
+          backgroundImage: `url(${imgBGURL_Challenges})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+            >
                 <div className="container mx-auto py-32">
                     <SectionHeading
                         Color="text-neutral-white"
@@ -585,7 +595,7 @@ function page() {
                     {RPASolution2?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div class="w-full min-h-[50vh] bg-white rounded-3xl group overflow-hidden relative border-[0.5px] border-primary-900 border-opacity-20" >
-                            <div className="h-[35vh] bg-slate-700" style={{ background: `url('item.cardTopImageUrl')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                            <div className="h-[35vh] bg-slate-700" style={{ background: `url(${item.cardTopImageUrl})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                                 <div className="h-[25vh] p-5 relative">
                                     <h5 className="mb-4 text-heading-02 leading-heading-02 text-primary-900 font-semibold ">{item?.cardHeading}</h5>
                                     <p className="mb-6 text-body-01 leading-body-01 text-primary-900 font-normal">{item?.cardDesc}</p>

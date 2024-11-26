@@ -24,12 +24,13 @@ const DataInsights = () => {
       
       CardBGColor: "bg-primary-10",
       CardTextColor: "text-primary-900",
-      BGImageUrl: "/data-insights/card1.webp",
+      CardBGImageUrl: "/data-insights/card1.webp",
       CardBGColor: "#FFF",
       CardTextColor: "#000",
       CardTitle: "",
       CardIconUrl: "/data-insights/logos/logo--power-bi.png",
       CardHeading: "Power BI",
+
       CardDesc:
         "Leverage data potential with robust analytics engine, scalable data modeling and advanced visualization capabilities",
       isArrow: "",
@@ -41,7 +42,7 @@ const DataInsights = () => {
       id: 2,
       BGImageUrl: "",
       CardBGColor: "bg-primary-10",
-      BGImageUrl: "/data-insights/card2.webp",
+      CardBGImageUrl: "/data-insights/card2.webp",
       CardBGColor: "#FFF",
       CardTextColor: "#000",
       CardTitle: "",
@@ -57,7 +58,7 @@ const DataInsights = () => {
       id: 3,
       BGImageUrl: "",
       CardBGColor: "bg-primary-10",
-      BGImageUrl: "/data-insights/card2.webp",
+      CardBGImageUrl: "/data-insights/card3.webp",
       CardBGColor: "#FFF",
       CardTextColor: "#000",
       CardTitle: "",
