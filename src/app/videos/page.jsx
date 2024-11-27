@@ -19,12 +19,6 @@ const Page = () => {
         setVideoUrl((pre)=> url);
     }
 
-    useEffect(() => {
-        console.log("hi");
-    }, [videoUrl])
-
-
-
 
     return (
         <>
@@ -71,7 +65,7 @@ const Page = () => {
                 title={"video"}
             >
                 <div className="py-2 mx-auto text-center">
-                    <iframe width="100%" height="415" style={{ margin: '0 auto' }} src={videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="415" style={{ margin: '0 auto' }} src={videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow='autoplay' allowfullscreen></iframe>
                 </div>
             </Dialog>
             {/* end modal */}

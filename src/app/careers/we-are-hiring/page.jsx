@@ -22,7 +22,7 @@ const Page = () => {
 
   async function getJobList() {
     try {
-      let response = await axios.post('http://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
+      let response = await axios.post('http://gnbnetdevapp1.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
       let data = response.data.model;
       SetJobList(data);
       console.log(data)

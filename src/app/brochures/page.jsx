@@ -74,7 +74,7 @@ const Page = () => {
                                         {item.subCategory && (<span className="mb-2 bg-[#E4E4E4] text-helper-02 me-2 px-4 py-2 rounded-full">{item.subCategory}</span>)}
                                        {item.vertical && (<span className="mb-2 bg-[#E4E4E4] text-helper-02 me-2 px-4 py-2 rounded-full">{item.vertical}</span>)} 
                                     </div>
-                                    <h5 className="mb-2 text-['#1D162B] paragraph-01">{item.title}</h5>
+                                    <h5 className="mb-2 text-['#1D162B] paragraph-01 min-h-[48px]">{item.title}</h5>
                                     <div className="flex justify-end">
                                         {/* <Image src="/caseStudies/downloadicon.svg" width={48} height={48}></Image> */}
                                         <Link type="button" href={item?.downloadCTA} className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" target="_blank">Download</Link>

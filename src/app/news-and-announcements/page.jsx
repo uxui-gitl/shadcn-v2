@@ -89,13 +89,13 @@ const Page = () => {
 
                         </select>
                         <div className="text-end">
-                            <button onClick={() => handleReset()} type="button" className="w-full px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
+                            <button onClick={() => handleReset()} type="button" className="w-full px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">clear</button>
                         </div>
                     </form>
                 </div>
                 {updatedNews?.map(item => (
                     <>
-                        <div className="cards py-5" style={{ borderBottom: '1px solid #E4E4E4' }}>
+                        <div className="cards py-5" style={{ borderBottom: '1px solid #E4E4E4'}}>
                             <div className="flex flex-col md:flex-row items-center">
                                 <div className="mb-4 sm:mb-0 sm:mr-10">
                                     <Image src={item.imageUrl} height={200} width={200} ></Image>
@@ -104,7 +104,7 @@ const Page = () => {
                                 <div className="text-center sm:text-left">
                                     <h6 className="date text-[#1D162B] text-heading-05 mb-4">{item.date} {item.month}, {item.year}</h6>
                                     <h2 className="title text-heading-04 font-bold mb-7 max-w-[700px]">{item.title}</h2>
-                                    <Link href={item.readMoreUrl} target='_blank' type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Read Blog</Link>
+                                    <Link href={item.readMoreUrl} target='_blank' type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Read More</Link>
                                 </div>
                             </div>
                         </div>

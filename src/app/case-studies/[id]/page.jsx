@@ -36,7 +36,7 @@ const Page = () => {
 
     return (
         <>
-            <ContactBanner title={`case studies data`} desc={``} height={'60vh'} />
+            <ContactBanner title={`case studies data`} desc={``} height={'60vh'} bannerImage={caseData[0]?.images?.detailPageImage} />
             <SectionWrapperNew
                 sectionHeading=""
                 sectionDesc=""

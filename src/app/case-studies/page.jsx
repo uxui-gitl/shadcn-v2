@@ -89,7 +89,7 @@ const Page = () => {
 
                         </select>
                         <div className="text-end">
-                            <button onClick={() => handleReset()} type="button" className="w-full px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">reset</button>
+                            <button onClick={() => handleReset()} type="button" className="w-full px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">clear</button>
                         </div>
                     </form>
                 </div>
@@ -110,7 +110,7 @@ const Page = () => {
                                        {item.subCategory && ( <span className="mb-2 bg-[#E4E4E4]  text-helper-02  me-2 px-4 py-2 rounded-full">{item.subCategory}</span>)}
                                        {item.vertical && (<span className="mb-2 bg-[#E4E4E4]  text-helper-02  me-2 px-4 py-2 rounded-full">{item.vertical}</span>)} 
                                     </div>
-                                    <h5 className="mb-2 paragraph-01 text-['#1D162B]">{item.title}</h5>
+                                    <h5 className="mb-2 paragraph-01 text-['#1D162B] sm:min-h-[72px]">{item.title}</h5>
                                     <div className="flex justify-end">
                                         <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => router.push(`/case-studies/${item.id}?type=${item.mainCategory}`)} />
                                     </div>
