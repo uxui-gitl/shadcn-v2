@@ -774,7 +774,7 @@ const AutomationContent = () => {
         {services.map((item) => (
           <>
             <div
-              className="list text-body-01 leading-body-01 py-3 flex justify-between"
+              className="list text-body-01 py-3 flex justify-between"
               style={{ borderBottom: "1px solid #d3d3d3" }}
             >
               {item}
