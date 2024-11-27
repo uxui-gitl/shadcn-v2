@@ -575,11 +575,11 @@ function page() {
 
     ];
 
-    const [showMAModal , setShowMAModal] = useState(false);
+    const [showMAModal, setShowMAModal] = useState(false);
     const [maDataItem, setMADataItem] = useState([]);
 
-    function handleMACardClick(modal, item){
-        console.log("hjbjh",item);
+    function handleMACardClick(modal, item) {
+        console.log("hjbjh", item);
         setShowMAModal(modal);
         setMADataItem(item);
     }
@@ -691,58 +691,58 @@ function page() {
                     {RPASolution2?.map((item, index) => (
                         <SwiperSlide key={index}>
                             <>
-                            <div className="sm:px-6" style={{ borderRight: '2px solid #000' }} >
-                                <Image
-                                    src={item.icon}
-                                    width={64}
-                                    height={64}
-                                    alt={"icon"}
-                                    className=""
-                                />
-                                <div className="px-4 sm:px-0">
-                                    <div className="text-heading-04 mb-2 font-semibold">{item.cardHeading}</div>
-                                    <p className="text-paragraph-02 sm:min-h-[72px] mb-4">{item.cardDesc}</p>
-                                    <div className="flex justify-end">
-                                        <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleMACardClick(true, item)} />
+                                <div className="sm:px-6" style={{ borderRight: '2px solid #000' }} >
+                                    <Image
+                                        src={item.icon}
+                                        width={64}
+                                        height={64}
+                                        alt={"icon"}
+                                        className=""
+                                    />
+                                    <div className="px-4 sm:px-0">
+                                        <div className="text-heading-04 mb-2 font-semibold">{item.cardHeading}</div>
+                                        <p className="text-paragraph-02 sm:min-h-[72px] mb-4">{item.cardDesc}</p>
+                                        <div className="flex justify-end">
+                                            <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleMACardClick(true, item)} />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </>
                         </SwiperSlide>
                     ))}
                 </Slider>
 
             </SectionWrapperNew>
-                  {/* modal bsc data */}
-      <Dialog
-        shouldShow={showMAModal}
-        onRequestClose={() => {
-          setShowMAModal((prev) => !prev);
-        }}
-        title={maDataItem?.cardHeading}
-      >
-        <div>
-          <div className="">
-            <div className="grid grid-cols-1 gap-4">
-            <ul className="space-y-2 w-full">
-                  {maDataItem.cardHoverData?.map((challenge, index) => (
-                    <li
-                      key={index}
-                      className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === maDataItem.cardHoverData?.length - 1 ? 'border-b-0' : ''}`}
-                    >
-                      <p className="text-left">
-                        <h3 className="font-normal text-paragraph-02">
-                          {challenge}
-                        </h3>
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-            </div>
-          </div>
-        </div>
-      </Dialog>
-      {/* modal end bsc data */}
+            {/* modal bsc data */}
+            <Dialog
+                shouldShow={showMAModal}
+                onRequestClose={() => {
+                    setShowMAModal((prev) => !prev);
+                }}
+                title={maDataItem?.cardHeading}
+            >
+                <div>
+                    <div className="">
+                        <div className="grid grid-cols-1 gap-4">
+                            <ul className="space-y-2 w-full">
+                                {maDataItem.cardHoverData?.map((challenge, index) => (
+                                    <li
+                                        key={index}
+                                        className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === maDataItem.cardHoverData?.length - 1 ? 'border-b-0' : ''}`}
+                                    >
+                                        <p className="text-left">
+                                            <h3 className="font-normal text-paragraph-02">
+                                                {challenge}
+                                            </h3>
+                                        </p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </Dialog>
+            {/* modal end bsc data */}
             {/* custome solution */}
 
             <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing.'} />

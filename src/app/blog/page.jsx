@@ -27,8 +27,7 @@ const Page = () => {
 
     async function getBlogList() {
         try {
-            debugger;
-            let response = await axios.post(`${url.blogApiUrl}/BlogDetails/BlogList`);
+            let response = await axios.post(`${url?.blogApiUrl}/BlogDetails/BlogList`);
             let data = response?.data?.model;
             setblogList(data);
             let topdataList = data.slice(0, 3);
@@ -85,7 +84,7 @@ const Page = () => {
                         </>
                     ))}
 
-                    {blogList?.length == 0 && (<h2 className="text-[28px] font-semibold"> No Data Found</h2>)}
+                    {blogList?.length == 0 && (<h2 className="text-[28px] font-semibold text-white"> No Data Found</h2>)}
                     {/* card */}
                 </div>
             </SectionWrapperNew>
