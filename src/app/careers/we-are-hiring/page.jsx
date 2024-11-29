@@ -9,12 +9,48 @@ import Image from "next/image";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import axios from 'axios';
-import { useRouter } from 'next/navigation';  
+import { useRouter } from 'next/navigation';
+import {Pagination} from "@nextui-org/react";
+import JobCard from '@/components/JobCard';
 
 const Page = () => {
   const router = useRouter();
   const [jobList, SetJobList] = useState([])
+  const [copyJobList, SetCopyJobList] = useState(jobList)
 
+
+  const [functionData, setFunctionData] = useState('');
+  const [loactionData, setLoactionData] = useState('');
+
+
+  const onChange = (event, type) => {
+    const value = event.target.value;
+    { type == 'function' && setFunctionData(value) }
+    { type == 'location' && setLoactionData(value) }
+};
+
+useEffect(() => {
+  filterData();
+}, [functionData, loactionData])
+
+function handleReset() {
+  SetCopyJobList(jobList);
+  setFunctionData('');
+  setLoactionData('');
+}
+
+function filterData() {
+  if (functionData != '') {
+      const data = copyJobList.filter((item) => item.functionCode == functionData);
+      console.log(data,"function data")
+      SetCopyJobList(data);
+  }
+
+  if (loactionData != '') {
+      const data = copyJobList.filter((item) => item.location == loactionData);
+      SetCopyJobList(data);
+  }
+}
 
   useEffect(() => {
     getJobList();
@@ -25,6 +61,7 @@ const Page = () => {
       let response = await axios.post('http://gnbnetdevapp1.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
       let data = response.data.model;
       SetJobList(data);
+      SetCopyJobList(data)
       console.log(data)
     } catch (error) {
       console.log(error);
@@ -43,7 +80,7 @@ const Page = () => {
         sectionHeadingLayout="center"
       >
         <div className="">
-          <form className="w-full mx-auto">
+          <form className="w-full mx-auto mb-6 hidden">
             <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div className="relative">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -56,41 +93,115 @@ const Page = () => {
             </div>
           </form>
 
-          <div className="flex w-[50%] my-6">
-            <select id="default" className="bg-[white] mr-6 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
-              <option selected>Function</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
-            </select>
-            <select id="default" className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 ">
-              <option selected>Location</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
-            </select>
+          <div className="flex flex-col sm:flex-row justify-end mb-2 sm:mb-4">
+              <select id="functionDropdown" value={functionData}  onChange={(e) => onChange(e, 'function')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
+                <option selected>Function</option>
+                <option value="A/CS">Accounts</option>
+                <option value="ADMN">Administration</option>
+                <option value="APBI">ANALYTICS - POWER BI</option>
+                <option value="AGCI">Asst. General Manager - Cloud Infrastructure</option>
+                <option value="AGDB">Asst. General Manager - Database</option>
+                <option value="AGMD">Asst. General Manager - Digital</option>
+                <option value="AGET">Asst. General Manager - Endpoint Technology</option>
+                <option value="AT">Automated Testing</option>
+                <option value="AWS">AWS</option>
+                <option value="AXAP">AXAPTA ERP</option>
+                <option value="OTG1">Backup Administrator</option>
+                <option value="BSFC">Bespoke Functional</option>
+                <option value="BSTC">BESPOKE TECHNICAL</option>
+                <option value="BSG">BUSINESS SOLUTION GROUP</option>
+                <option value="PLM">CADPLM</option>
+                <option value="COE">CENTRE OF EXCELLENCE</option>
+                <option value="CICD">CICD</option>
+                <option value="CLPT">CLIENT PARTNER</option>
+                <option value="CLD">Cloud</option>
+                <option value="CLDD">Cloud Development</option>
+                <option value="CRM">CRM</option>
+                <option value="D365">D365 Consultant</option>
+                <option value="DACW">Data COE &amp; Data Warehousing</option>
+                <option value="DSGN">Design Track</option>
+                <option value="DNET">DOT NET</option>
+                <option value="ECOM">ECOM</option>
+                <option value="Ext">External Business</option>
+                <option value="FINC">Finance</option>
+                <option value="FUSU">FUNCTIONAL SUPPORT</option>
+                <option value="OTG2">Hardware Asset Manager</option>
+                <option value="OHD">Head - Operations</option>
+                <option value="HRIS">HRIS</option>
+                <option value="BU1">Infor</option>
+                <option value="IM">INFOR &amp; Microsoft</option>
+                <option value="INFF">Infor - Functional</option>
+                <option value="INFT">Infor - Technical</option>
+                <option value="INFO">Infor LN</option>
+                <option value="ILCM">Infor LN Consultant - MFG</option>
+                <option value="ILCP">Infor LN Consultant - PLM</option>
+                <option value="INFS">Infor SCE</option>
+                <option value="INDA">Infor Technical (Development &amp; Administration)</option>
+                <option value="INXI">Infor Xi</option>
+                <option value="ITSE">IT SECURITY</option>
+                <option value="JAVA">JAVA</option>
+                <option value="JVTC">Java Technology</option>
+                <option value="LXAD">Linux Administrator</option>
+                <option value="MBSF">Manager - Bespoke Functional</option>
+                <option value="DCOE">Manager - Data CoE</option>
+                <option value="MFG">Manufacturing</option>
+                <option value="MKTG">Marketing</option>
+                <option value="MDS">Microsoft Dynamics</option>
+                <option value="MOTC">MOTC</option>
+                <option value="MSDB">MSSQL DBA</option>
+                <option value="NAV">NAVISION ERP</option>
+                <option value="NETA">NETWORK ADMINISTRATOR</option>
+                <option value="OTG">OPERATION &amp; TECHNOLOGY GROUP</option>
+                <option value="OB">OTHER BUSINESS</option>
+                <option value="OTHR">OTHERS</option>
+                <option value="PERS">Personnel</option>
+                <option value="PBID">Power BI - Digital Group</option>
+                <option value="RTL">Practice Lead - Retail</option>
+                <option value="WMS">Practice Lead - WMS &amp; SCE</option>
+                <option value="PRSL">PRESALES</option>
+                <option value="PURC">Purchase</option>
+                <option value="QUAL">Quality</option>
+                <option value="RMG">Resource Management Group</option>
+                <option value="RPA">RPA - Digital Group</option>
+                <option value="RPAC">RPA CoE</option>
+                <option value="SALS">Sales</option>
+                <option value="SFC">Salesforce</option>
+                <option value="SAP1">SAPA1</option>
+                <option value="STDN">Satellite Team Lead - .NET</option>
+                <option value="STLC">Satellite Team Lead - Cloud</option>
+                <option value="STLJ">Satellite Team Lead - Java</option>
+                <option value="STIU">Satellite Team Lead - UIUX</option>
+                <option value="SHRP">Share Point</option>
+                <option value="SMRT">Smartnet &amp; Allied Systems</option>
+                <option value="SWDL">SOFTWARE DEVELOPMENT</option>
+                <option value="SS">SOFTWARE SOLUTION</option>
+                <option value="SA">Solution Architect</option>
+                <option value="TECH">TECHNICAL</option>
+                <option value="Test">Testing</option>
+                <option value="TU1">TU1</option>
+                <option value="TU2">TU2</option>
+                <option value="WCS">WCS Developer</option>
+                <option value="WPD">Web Page Development</option>
+              </select>
+              <select id="default" value={loactionData}  onChange={(e) => onChange(e, 'location')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
+                <option selected>Loaction</option>
+                <option value="All Branches">All Branches</option>
+                <option value="GIA US">GIA US</option>
+                <option value="LVD - GI - EU">LVD - GI - EU</option>
+                <option value="OVERSEAS">OVERSEAS</option>
+                <option value="PLANT-10">PLANT-10</option>
+                <option value="Singapore">Singapore</option>
+              </select>
+            <button onClick={() => handleReset()} type="button" className="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">clear</button>
           </div>
         </div>
-        <div className="text-[14px] text-[#E0028E] mb-4">{jobList.length} jobs in all categories in all locations</div>
-        {jobList?.map(item => (
+        <div className="text-[14px] text-[#E0028E] mb-4">{copyJobList.length} jobs in all categories in all locations</div>
+        {copyJobList?.map(item => (
           <>
-            <div className="jobcard flex justify-between items-end py-6" style={{ borderBottom: '1px solid #d3d3d3' }}>
-              <div className="">
-                <div className="text-[30px] mb-4 text-[#1D162B]">{item?.designation}</div>
-                <p className="text-[16px] leading-[20px] text-[#808080] mb-6">{item?.functionsDesc}</p>
-                <div className="">
-                  <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">{item?.location}</span>
-                </div>
-              </div>
-              <div className="">
-                <button type="button" className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center" onClick={() => router.push(`/job-detail/${item.srNo}`)}>Apply Now</button>
-                <p className="text-[14px] text-[#808080">Posted {item?.insertDate}</p>
-              </div>
-            </div>
+          <JobCard props={item}></JobCard>
           </>
         ))}
+          {copyJobList.length==0 && (<h2 className="text-[28px] font-semibold"> No Data Found</h2>)}
       </SectionWrapperNew>
 
       {/* <Review /> */}

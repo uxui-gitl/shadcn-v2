@@ -35,7 +35,6 @@ const Page = () => {
             setMoreBlogList(data.slice(3, data.length-3));
         } catch (error) {
             console.log(error);
-            // error.status(error.response.status).json({ message: error.message });
         }
     }
 

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import ContactBanner from "@/sections/contactBanner/ContactBanner";
 import SectionWrapperNew from '@/components/SectionWrapperNew';
+import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import transformationData from "@/data/case-transformation";
 import automationData from "@/data/case-Automation";
