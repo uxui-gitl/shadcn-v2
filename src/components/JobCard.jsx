@@ -1,5 +1,8 @@
 import { memo } from 'react';
+import { useRouter } from 'next/navigation';
+
 function JobCard({props}) {
+  const router = useRouter();
     const {designation ,functionsDesc, location, insertDate, srNo} = {...props};
     return (
       <>
@@ -11,10 +14,10 @@ function JobCard({props}) {
                   <span className="bg-white text-[#808080] text-helper-02 font-medium me-2 px-2 py-2 rounded-3xl border">{location}</span>
                 </div>
               </div>
-              <div className="">
-                <button type="button" className="text-[#EFE9FB] text-xs bg-[#5F22D9] mb-4 font-medium rounded-full text-subtitle-01 px-4 py-2 text-center"
+              <div className="text-right">
+                <button type="button" className="text-[#EFE9FB] text-xs bg-[#5F22D9] mb-4 font-medium rounded-full text-subtitle-01 px-2 py-2 text-center"
                   onClick={() => router.push(`https://esp.godrejenterprises.com/ApplEmpQryVac.asp?srNo=${srNo}&flag=false&companyCode=GIL`)}>Apply Now</button>
-                <p className="text-[14px] text-[#808080">Posted {insertDate}</p>
+                <p className="text-[14px] text-[#808080] whitespace-nowrap" >Posted {insertDate}</p>
               </div>
             </div>
       </>

@@ -84,9 +84,10 @@ function NewNavBar() {
       setIsAnimatingOut(false);
     }, 300);
   };
+  
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -133,20 +134,19 @@ function NewNavBar() {
     <>
       <div
         className={`${
-          isNavbarActive ? "bg-[#fff]" : "bg-[transparent]"
-        } absolute top-0 z-[100] w-full hidden xl:block `}
+          isNavbarActive ? "bg-[#fff]" : isScrolled  ? "white-nav bg-[#fff]" : "bg-[transparent]"
+        } w-full hidden xl:block `}
       >
         <div className={`border-1 z-50`}>
-          <div className="container mx-auto flex flex-row justify-between h-[100px] items-center py-5">
-            <div className=" py-3 ">
+          <div className="container mx-auto flex flex-row justify-between h-[80px] items-center py-2">
+            <div className="py-3">
               <Link href="/">
                 <Image
-                  src={`${
-                    isNavbarActive ? "/logo-black.svg" : "/godrejLogoWhite.svg"
-                  }`}
+                  src={"/godrejLogoNew.svg"}
                   alt="godrej logo"
-                  width="188"
-                  height="96"
+                  width="140"
+                  height="86"
+                  className={`${isNavbarActive  ? '' : isScrolled ? '' : 'whiteLogo'}`}
                 />
               </Link>
             </div>
@@ -157,7 +157,7 @@ function NewNavBar() {
                     {item.isDropDown ? (
                       <button
                         className={`mr-6 text-center text-[16px] font-medium py-5 hover:text-[#5F22D9] ${
-                          isNavbarActive ? "text-[#000]" : "text-[#fff]"
+                          isNavbarActive ? "text-[#000]" : isScrolled ? "text-[#000]" : "text-[#fff]"
                         }`}
                         onClick={() => handleNavClick(item)}
                       >
@@ -167,7 +167,7 @@ function NewNavBar() {
                       <Link
                         key={index}
                         className={`mr-6 text-center text-[16px] font-medium py-5 hover:text-[#5F22D9]last:mr-0 ${
-                          isNavbarActive ? "text-[#000]" : "text-[#fff]"
+                          isNavbarActive ? "text-[#000]" : isScrolled ? "text-[#000]" : "text-[#fff]"
                         }`}
                         href={item.href}
                       >
@@ -221,7 +221,7 @@ function NewNavBar() {
         <div
           className={`z-[10] px-10 w-full bg-white absolute top-[0px] duration-700 rounded-b-3xl shadow-lg  shadow-gray-500/10 overflow-y-scroll  ${
             isNavbarActive
-              ? "translate-y-0 top-[100px]"
+              ? "translate-y-0 top-[80px]"
               : "-translate-y-full top-[0px]"
           }`}
           style={{ height: `calc(100vh - 66px)` }}

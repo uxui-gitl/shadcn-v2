@@ -9,6 +9,7 @@ import Image from "next/image";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import JobCard from '@/components/JobCard';
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const culture = [
   {
@@ -251,6 +252,7 @@ const CEOImageUrl = "/careers/CEO-AP.webp";
 
 
 const Page = () => {
+  const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [jobList, SetJobList] = useState([])

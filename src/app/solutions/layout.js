@@ -7,10 +7,8 @@ const layout = ({ children }) => {
   return (
     <>
       {/* <Announcement /> */}
-      <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
-        <NewNavBar></NewNavBar>
-        </div>
+      <div className={`fixed w-full z-[500] top-0`}>
+        <NewNavBar />
       </div>
       {children}
     </>

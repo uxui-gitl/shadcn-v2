@@ -376,13 +376,11 @@ export default function Home() {
   return (
     <>
       <Announcement content={""} country={"IN"} />
-      <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
-          <NewNavBar></NewNavBar>
-        </div>
+      <div className={`sticky top-0 w-full z-[500]`}>
+          <NewNavBar/>
       </div>
       {/* banner slider */}
-      <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh]">
+      <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh] -mt-10">
         <div className="video relative h-full">
           {/* Background Video */}
           <video
