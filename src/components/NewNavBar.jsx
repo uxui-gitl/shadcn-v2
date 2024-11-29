@@ -144,7 +144,7 @@ function NewNavBar() {
                 <Image
                   src={"/godrejLogoNew.svg"}
                   alt="godrej logo"
-                  width="140"
+                  width="96"
                   height="86"
                   className={`${isNavbarActive  ? '' : isScrolled ? '' : 'whiteLogo'}`}
                 />
