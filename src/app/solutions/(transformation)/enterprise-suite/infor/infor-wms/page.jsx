@@ -141,7 +141,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "#000",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/inforWMS/retail.svg",
       CardHeading: "Retail",
       CardDesc: `
         <div class="">
@@ -167,7 +167,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "#000",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/inforWMS/3PLlogistics.svg",
       CardHeading: "3 PL Logistics",
       CardDesc: `
         <div class="">
@@ -192,7 +192,7 @@ const page = () => {
       CardBGColor: "transparent",
       CardTextColor: "#000",
       CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
+      CardIconUrl: "/inforWMS/tradingDistribution.svg",
       CardHeading: "Trading & Distribution",
       CardMinHeight: "525px",
       CardDesc: `
