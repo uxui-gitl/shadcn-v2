@@ -6,7 +6,7 @@ function Dialog({ shouldShow, onRequestClose, title, children, bgColor = '#fff' 
         <>
             <div
                 tabIndex="-1"
-                className={`${shouldShow ? 'translate-y-0' : 'translate-y-full hidden'} 
+                className={`${shouldShow ? 'translate-y-0' : 'translate-y-full '} 
                 duration-500 fixed top-0 left-0 right-0 z-[1050] w-full h-screen  flex items-center justify-center bg-gray-800 bg-opacity-50`}
             >
                 <div

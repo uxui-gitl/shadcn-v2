@@ -33,11 +33,12 @@ import Announcement from "@/sections/announcement/Announcement";
 import Link from "next/link";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
+import { mdiArrowTopRight } from "@mdi/js";
 import IndustrySpotlight from "@/sections/industry-spotlight/industrySpotlight";
 
 export default function Home() {
   const [showModal1, setshowModal1] = useState(false);
-const [showReadMoreModal, setShowReadMoreModal] = useState(false);
+  const [showReadMoreModal, setShowReadMoreModal] = useState(false);
 
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
@@ -70,7 +71,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
-      pageURL:"http://google.com"
+      pageURL: "http://google.com"
     },
     {
       id: 2,
@@ -81,7 +82,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
-      pageURl:"http://google.com"
+      pageURl: "http://google.com"
     },
     {
       id: 3,
@@ -93,7 +94,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
-      pageURL:"http://google.com"
+      pageURL: "http://google.com"
     },
     {
       id: 4,
@@ -105,7 +106,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardDesc: "",
       isArrow: true,
       cardTextColor: "white",
-      pageURL:"http://google.com"
+      pageURL: "http://google.com"
     },
 
     // Add more cards as needed
@@ -327,7 +328,8 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardHeading: "Embrace Tomorrow with Automation",
       cardDesc:
         "Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), IoT & Analytics.",
-      rawData: `<div class="grid grid-cols-3 gap-4">
+        cardBgImg: "/home/images/card1.webp",
+        rawData: `<div class="grid grid-cols-3 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
               Intelligent Technologies
@@ -362,7 +364,8 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       cardHeading: "Cloud Enables New Possibilities",
       cardDesc:
         "We are committed to provide, secure, cost-effective & scalable cloud implementation, cloud migration & cloud support services to our customers.",
-      rawData: `<div class="grid grid-cols-2 gap-4">
+        cardBgImg: "/home/images/card2.webp",
+        rawData: `<div class="grid grid-cols-2 gap-4">
             <div>
               <div class="text-[40px] font-semibold mb-12">
              Upgrade to Cloud
@@ -391,7 +394,8 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         "Future-Proof Transformation Solutions ",
       cardDesc:
         "We implement digital solutions that modernize and enhance user experience, ultimately leading to a digitally- sound businesses.",
-      rawData: `<div class="grid grid-cols-2 gap-4">
+        cardBgImg: "/home/images/card3.webp",
+        rawData: `<div class="grid grid-cols-2 gap-4">
       <div>
         <div class="text-[40px] font-semibold mb-12">
       Enterprise Suite
@@ -517,7 +521,7 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
 
   // end handle click businesstranform card click
 
-  function handleReadMoreClick(){
+  function handleReadMoreClick() {
     setShowReadMoreModal(true);
   }
 
@@ -538,72 +542,68 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       targetBlank: true,
       link: "/",
     },
-    
+
   ]
 
   return (
     <>
-      <Announcement content={announcemnetData} country={'SG'}/>
-      <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
-          <NewNavBar />
-        </div>
+      <Announcement content={announcemnetData} country={'SG'} />
+      <div className={`sticky top-0 w-full z-[500]`}>
+        <NewNavBar />
       </div>
       {/* banner slider */}
-      <div className="slider-wrapper bg-black" style={{ height: "100vh" }}>
-        <div className="video relative" style={{ height: "inherit" }}>
+      <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh] -mt-10">
+        <div className="video relative h-full">
+          {/* Background Video */}
           <video
             src="/home/1.mp4"
             autoPlay
             loop
             muted
-            className="inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           ></video>
+
+          {/* Overlay Image */}
           <div
-            className={` w-full h-full absolute top-0 transition duration-700  ${
-              sliderImageUrl
-                ? "opacity-100 ease-in-out"
-                : "opacity-0 ease-in-out"
-            }`}
+            className={`absolute inset-0 transition duration-700 ${sliderImageUrl
+              ? "opacity-100 ease-in-out"
+              : "opacity-0 ease-in-out"
+              }`}
             style={{
               backgroundImage: `url(${sliderImageUrl})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           ></div>
-          <div
-            className="container mx-auto text-[76px] leading-[86px] text-white absolute"
-            style={{ top: "30%", left: "0", right: "0" }}
-          >
-            DELIVERING BUSINESS<br></br> VALUE WITH 
-            <motion.div
-              key={items4[index2]?.id}
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -10, opacity: 0 }}
-              transition={{ ease: "easeInOut", duration: 0.5, delay: 0.1 }}
-              style={{ display: "inline-block" }}
-            >
-              <span className="ml-2">{items4[index2]?.content}</span>
-            </motion.div>
+
+          {/* Headline */}
+          <div className="container headline-position mx-auto text-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
+            Delivering Business
+            <br /> value with
+            {items4[index] && (
+              <motion.div
+                key={`item4-${items4[index].id}`}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.2 }}
+                className="inline-block"
+              >
+                <span className="text-neutral-white md:ml-2">
+                  {items4[index].content}.
+                </span>
+              </motion.div>
+            )}
           </div>
-          <hr
-            className="h-px my-8 bg-[#e5e7eb5c] border-0 absolute"
-            style={{ top: "55%", left: "0", right: "0" }}
-          ></hr>
-          {/* slider */}
-          <div
-            className="container mx-auto h-60"
-            style={{
-              position: "absolute",
-              width: "100%",
-              bottom: "0",
-              left: 0,
-              right: 0,
-            }}
-          >
-            <div className="flex h-60" style={{ alignItems: "baseline" }}>
-              <div className=" w-[70%]">
+
+          {/* Horizontal Line */}
+          <hr className="absolute top-[50vh] md:top-[55vh] left-0 right-0 h-px bg-white bg-opacity-20 border-0"></hr>
+
+          {/* Slider Section */}
+          <div className="container mx-auto absolute w-full left-0 right-0 bottom-[10vh] ">
+            <div className="flex flex-wrap justify-between items-center">
+              {/* Slider Content */}
+              <div className="w-full md:w-[80%]">
                 <Swiper
                   slidesPerView={1}
                   navigation={{
@@ -617,15 +617,15 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
                 >
                   {sliderData?.map((item, index) => (
                     <SwiperSlide key={item.id}>
-                      <div className="w-full py6 bg-transparent rounded-3xl">
-                        <div className="grid grid-cols-3 gap-4">
+                      <div className="w-full py-6 md:py-2 xl:py-2 bg-transparent rounded-3xl">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           <motion.div
                             ref={ref}
                             whileInView={{ y: 0, opacity: 1 }}
                             initial={{ y: 100, opacity: 0 }}
                             transition={{ duration: 0.5, delay: 0.4 }}
                           >
-                            <div className="text-[#fff] text-[20px] font-semibold ">
+                            <div className="text-heading-04 font-bold text-neutral-white">
                               {item.title}
                             </div>
                           </motion.div>
@@ -636,23 +636,21 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
                             initial={{ y: 100, opacity: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
                           >
-                            <div className="">
-                              <p className="text-base font-medium leading-[24px] text-white mb-10">
-                                {item.desc}
-                              </p>
-                              <button
-                                type="button"
-                                className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"
-                                onMouseOver={() =>
-                                  handleReadMoreHover(item, true)
-                                }
-                                onMouseOut={() =>
-                                  handleReadMoreHover(item, false)
-                                }
-                              >
-                                Read more
-                              </button>
-                            </div>
+                            <p className="text-body-01 text-white mb-6 md:mb-4">
+                              {item.desc}
+                            </p>
+                            <button
+                              type="button"
+                              className="text-body-01 text-neutral-white border border-white  hover:bg-neutral-white hover:text-primary-900 rounded-full px-4 py-2"
+                              onMouseOver={() =>
+                                handleReadMoreHover(item, true)
+                              }
+                              onMouseOut={() =>
+                                handleReadMoreHover(item, false)
+                              }
+                            >
+                              Read more
+                            </button>
                           </motion.div>
                         </div>
                       </div>
@@ -660,41 +658,77 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
                   ))}
                 </Swiper>
               </div>
-              <div className="w-[30%] relative">
-                <div
-                  className={`swiper-button-next`}
-                  style={{ width: "48px", height: "48px" }}
-                >
-                  <img src="/homeNew/btn-arrows-right.svg" alt="icon" />
-                </div>
-                <div
-                  className={`swiper-button-prev`}
-                  style={{
-                    width: "48px",
-                    height: "48px",
-                    transform: "translateX(268px)",
-                  }}
-                >
-                  <img src="/homeNew/btn-arrows-left.svg" alt="icon" />
-                </div>
+
+              {/* Slider Navigation Buttons */}
+              <div className="w-full absolute left-[-1rem] top-[1rem] md:w-[20%] md:relative md:left-0 md:right-0 flex justify-end space-x-4 md:p-6">
+                <button className="swiper-button-prev flex items-center justify-center !left-0 w-14 h-14">
+                  <Image
+                    src="/homeNew/btn-arrows-left.svg"
+                    alt="Prev"
+                    width={56}
+                    height={56}
+                  />
+                </button>
+                <button className="swiper-button-next flex items-center justify-center w-14 h-14">
+                  <Image
+                    src="/homeNew/btn-arrows-right.svg"
+                    alt="Next"
+                    width={56}
+                    height={56}
+                  />
+                </button>
               </div>
             </div>
           </div>
-          {/*end slider */}
         </div>
       </div>
-      <SectionWrapperNew style={{ backgroundColor: "#ffffff", height: "70vh" }}>
-        <p className="text-[#1D162B] text-[32px] font-medium leading-[46px] py-16">
-          {`Godrej Infotech (Singapore Branch) operates under the Godrej Infotech Limited brand, which is part of 1.7 USD Bn Godrej Enterprise Group.`}
-        </p>
-        <button
-          type="button"
-          onClick={() => handleReadMoreClick()}
-          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"
-        >
-          Read more
-        </button>
-      </SectionWrapperNew>
+
+      <div className="bg-white relative z-10" style={{
+        borderBottomLeftRadius: "24px",
+        borderBottomRightRadius: "24px",
+      }}>
+        <div className="container mx-auto pt-40 relative">
+          <div
+            className="absolute"
+            style={{
+              left: "50%",
+              transform: "translateX(-50%)",
+              backgroundSize: "cover",
+              background: "url('/homeNew/Union.svg')",
+              backgroundRepeat: "no-repeat",
+              width: "320px",
+              height: "-webkit-fill-available",
+              top: "-77px",
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              className="absolute rotating"
+              style={{
+                left: "30%",
+                transform: "translateX(-50%)",
+                top: "11px",
+              }}
+              src={"/homeNew/partner-circle.svg"}
+              width={130}
+              height={130}
+              alt="asdjn"
+            />
+          </div>
+          <div className="pb-4">
+            <p className="text-[#1D162B] text-heading-03 font-medium mb-4">
+              {`Godrej Infotech (Singapore Branch) operates under the Godrej Infotech Limited brand, which is part of 1.7 USD Bn Godrej Enterprise Group.`}
+            </p>
+            <button
+              type="button"
+              onClick={() => handleReadMoreClick()}
+              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/* video */}
       <div className="h-[65vh] -mt-5">
@@ -711,47 +745,53 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"1"}
-        bgColor={"#1D162B"}
+        bgColor={"bg-white"}
         style={{}}
       />
 
       {/* innovative section */}
       <SectionWrapperNew
-        sectionHeading={"ACT BASED APPROACH OF BUILDING FUTURE READY SOLUTIONS"}
-        sectionDesc={""}
-        sectionTextColor="white"
+        sectionHeading={"ACT based Approach for Leading Future Ready Business"}
+        sectionDesc={"Value - Driven Solutions for Tomorrow's Opportunities"}
+        sectionTextColor="text-primary-900"
+        sectionDescColor="text-neutral-darkest-grey"
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
+        bgColor={"bg-primary-600"}
         style={{
-          //backgroundColor: "black",
-
-          background: `url('AdobeStock_339383545.jpeg') no-repeat center center / cover`,
+          backgroundColor: "white",
           position: "relative",
           zIndex: "2",
-          height: "750px",
         }}
       >
+
         <Slider slidesPerView={3}>
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="relative min-h-[600px] p-8 bg-[#5F22D9] rounded-3xl">
+              <div
+                className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px]"
+                style={{
+                  backgroundImage: `url(${item.cardBgImg})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "bottom center",
+                }}
+              >
                 {item?.cardTitle && (
-                  <div className="text-xl text-white font-semibold mb-[100px]">
+                  <div className="text-body-01 text-neutral-white mb-[100px] ">
                     {item?.cardTitle}
                   </div>
                 )}
-                <div className="mb-[50px] text-[42px] font-medium text-white leading-[50px]">
+                <div className="my-5 text-heading-02 text-neutral-white min-h-[150px]">
                   {item.cardHeading}
                 </div>
-                <div className="mb-3 text-xl leading-[31px] text-white h-[75px]">
+                <div className="mb-8 text-body-01 text-neutral-white min-h-[75px]">
                   {item.cardDesc}
                 </div>
-
-                {/* Container for the button */}
-                <div className="absolute bottom-4 right-4">
+                <div className="flex justify-end right-0 bottom-0">
+                  {/* setshowModal1((prev) => !prev) */}
                   <OutlinedButtonWithArrow
                     arrowColor={"white"}
-                    size={48}
+                    size={32}
                     onClick={() => handleBusinessCardClick(true, item)}
                   />
                 </div>
@@ -771,14 +811,14 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         sectionTextColor="black"
         title="Count on Us"
         sectionHeadingLayout="horizontal"
-        style={{ background: "white", padding:'32rem 0rem 16rem 0rem' }}
+        style={{ background: "white", padding: '0rem 0rem 8rem 0rem' }}
       >
         <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs
-            activeTabClassName={`!bg-[#5F22D9]`}
-            contentClassName={`!mt-20`}
-            tabClassName={`!px-10 hover:bg-[#5F22D9]`}
-            containerClassName={`!my-2`}
+           activeTabClassName="!bg-[#f2f2f2] !text-[#fff]"
+           contentClassName="!mt-5"
+           tabClassName="!px-4 hover:bg-[#CDBAF3] hover:text-[#fff]"
+           containerClassName="!my-2"
             tabs={tabs}
           />
         </div>
@@ -788,7 +828,8 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
       <SectionWrapperNew style={{ backgroundColor: "#000" }}
         sectionHeading="The Guiding Principles We Live By"
         sectionDesc={`Driven by our principles, we strive to make a difference in every we do, building value and enhancing growth.`}
-        sectionTextColor='#fff'
+        sectionTextColor='text-neutral-white'
+        sectionDescColor='text-neutral-white'
         sectionHeadingLayout="center"
       >
 
@@ -825,33 +866,43 @@ const [showReadMoreModal, setShowReadMoreModal] = useState(false);
         Desc={
           "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future."
         }
-        Color={"white"}
+        Color={"text-neutral-white"}
         readMoreUrl={""}
       >
-        <div className="">
+        <div className="z-50 flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start mt-6">
           <Link
-            href={``}
-            target="_blank"
-            className="text-white mr-5 mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            href={`/careers/why-join-us`}
+            className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-3 mb-2 group"
           >
             {"Why Godrej Infotech"}
-            <Icon
-              path={mdiArrowRight}
-              style={{ marginLeft: "0.5em", marginTop: "1px" }}
-              size={1}
-            />
+            <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
+              <Icon
+                path={mdiArrowTopRight}
+                style={{
+                  marginLeft: "0.5em",
+                  transform: "rotate(45deg)",
+                  marginTop: "1px",
+                }}
+                size={1}
+              />
+            </div>
           </Link>
           <Link
-            href={""}
-            target="_blank"
-            className="text-white mt-10 md:my-10 inline-flex items-center transition-all bg-[#5F22D9] hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-base px-8 py-3 me-2 dark:bg-[#5F22D9] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            href={"careers/we-are-hiring"}
+            className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-3 mb-2 group"
           >
             {"Join Our Team"}
-            <Icon
-              path={mdiArrowRight}
-              style={{ marginLeft: "0.5em", marginTop: "1px" }}
-              size={1}
-            />
+            <div className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
+              <Icon
+                path={mdiArrowTopRight}
+                style={{
+                  marginLeft: "0.5em",
+                  transform: "rotate(45deg)",
+                  marginTop: "1px",
+                }}
+                size={1}
+              />
+            </div>
           </Link>
         </div>
       </BlogSection>
@@ -916,12 +967,12 @@ const ServiceContent = () => {
     "Managed Services",
   ];
   return (
-    <div className="grid grid-cols-2 gap-20 h-full">
-      <div className="py-10 px-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
+      <div className="px-5 py-8">
         {services.map((item) => (
           <>
             <div
-              className="list text-[22px] py-4 flex justify-between"
+              className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
               style={{ borderBottom: "1px solid #d3d3d3" }}
             >
               {item}
@@ -936,7 +987,7 @@ const ServiceContent = () => {
         ))}
       </div>
       <div
-        className="relative"
+        className="relative invisible md:visible"
         style={{
           backgroundImage: `url(/homeNew/tab1.svg)`,
           backgroundSize: "cover",
@@ -954,16 +1005,16 @@ const IndustryContent = () => {
     "Trading & Distribution",
     "Professional Service",
     "Healthcare",
-    
+
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-20 h-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
         {data.map((item) => (
           <>
             <div
-              className="list text-[22px] py-4 flex justify-between"
+              className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
               style={{ borderBottom: "1px solid #d3d3d3" }}
             >
               {item}
@@ -978,7 +1029,7 @@ const IndustryContent = () => {
         ))}
       </div>
       <div
-        className="relative"
+        className="relative invisible md:visible"
         style={{
           backgroundImage: `url(/homeNew/tab1.svg)`,
           backgroundSize: "cover",
@@ -997,12 +1048,12 @@ const ParternerContent = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-20 h-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
       <div className="py-10 px-10">
         {data.map((item) => (
           <>
             <div
-              className="list text-[22px] py-4 flex justify-between"
+              className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0"
               style={{ borderBottom: "1px solid #d3d3d3" }}
             >
               {item}
@@ -1017,7 +1068,7 @@ const ParternerContent = () => {
         ))}
       </div>
       <div
-        className="relative"
+        className="relative invisible md:visible"
         style={{
           backgroundImage: `url(/homeNew/tab1.svg)`,
           backgroundSize: "cover",
