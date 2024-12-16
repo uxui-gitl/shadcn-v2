@@ -219,35 +219,35 @@ const page = () => {
     {
       id: 1, icon: '', title: 'Automation and Data Consulting ', desc: 'We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.',
       offering: [
-        {id:1 , text:'ai and rpa'},
-        {id:2 , text:'ai and rpa'},
-        {id:3 , text:'ai and rpa'},
+        { id: 1, text: 'ai and rpa' },
+        { id: 2, text: 'ai and rpa' },
+        { id: 3, text: 'ai and rpa' },
       ],
       process: [
-        {id:1 , text:'ai and rpa'},
-        {id:2 , text:'ai and rpa'},
-        {id:3 , text:'ai and rpa'},
+        { id: 1, text: 'ai and rpa' },
+        { id: 2, text: 'ai and rpa' },
+        { id: 3, text: 'ai and rpa' },
       ],
     },
     {
       id: 2, icon: '', title: 'Automation and Data Consulting ', desc: 'We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.',
       offering: [
-        {id:1 , text:'ai and rpa'},
-        {id:2 , text:'ai and rpa'},
-        {id:3 , text:'ai and rpa'},
+        { id: 1, text: 'ai and rpa' },
+        { id: 2, text: 'ai and rpa' },
+        { id: 3, text: 'ai and rpa' },
       ],
       process: [
-        {id:1 , text:'ai and rpa'},
-        {id:2 , text:'ai and rpa'},
-        {id:3 , text:'ai and rpa'},
+        { id: 1, text: 'ai and rpa' },
+        { id: 2, text: 'ai and rpa' },
+        { id: 3, text: 'ai and rpa' },
       ],
     },
   ];
 
-  const [showBscModal , setShowBscModal] = useState(false);
+  const [showBscModal, setShowBscModal] = useState(false);
   const [bscDataItem, setBscDataItem] = useState([]);
 
-  function handleBscCardClick(modal, item){
+  function handleBscCardClick(modal, item) {
     setShowBscModal(modal);
     setBscDataItem(item);
   }
@@ -262,47 +262,41 @@ const page = () => {
         video="/businessConsulting/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
-
-      <SectionWrapper BGColor="bg-primary-900">
-        <div className="container mx-auto py-32">
-          <SectionHeading
-            layout="horizontal"
-            Color="text-neutral-white"
-            headingContainerWidth="w-full"
-            setImageBGURL={imgBGURL_Challenges}
-            Heading="Knocking Business Challenges"
-            Desc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
-          ></SectionHeading>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <ul className=" space-y-4 w-full text-neutral-white">
-              {CHALLENGES_LIST_DATA.map((challenge, index) => (
-                <li
-                  key={challenge.id}
-                  className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
-                >
-                  <div className="flex-shrink-0 mr-4">
-                    <Image
-                      src={challenge.icon}
-                      alt={`${challenge.title} icon`}
-                      width={32}
-                      height={32}
-                    />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
-                      {challenge.title}
-                    </h3>
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div>
-              {/* <img src="/about/video.png" /> */}
-            </div>
+      <SectionWrapperNew
+        sectionHeading="Knocking Business Challenges"
+        sectionDesc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
+        sectionTextColor='text-neutral-white'
+        sectionDescColor='text-neutral-white'
+        sectionHeadingLayout="horizontal"
+        bgColor={'bg-primary-900'}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ul className=" space-y-4 w-full text-neutral-white">
+            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+              <li
+                key={challenge.id}
+                className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+              >
+                <div className="flex-shrink-0 mr-4">
+                  <Image
+                    src={challenge.icon}
+                    alt={`${challenge.title} icon`}
+                    width={32}
+                    height={32}
+                  />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
+                    {challenge.title}
+                  </h3>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div>
+            {/* <img src="/about/video.png" /> */}
           </div>
         </div>
-
-      </SectionWrapper>
+      </SectionWrapperNew>
 
       <SectionWrapperNew
         className=""
@@ -352,7 +346,7 @@ const page = () => {
         </div>
 
       </SectionWrapperNew>
-      
+
       <SectionWrapperNew
         sectionHeading=""
         sectionDesc=""
@@ -375,7 +369,7 @@ const page = () => {
                   <div className="text-heading-03 mb-2 font-semibold">{item.title}</div>
                   <p className="text-paragraph-02 sm:min-h-[72px] mb-4">{item.desc}</p>
                   <div className="flex justify-end">
-                    <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleBscCardClick(true ,item)} />
+                    <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleBscCardClick(true, item)} />
                   </div>
                 </div>
               </div>
@@ -394,36 +388,36 @@ const page = () => {
         <div>
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <ul className="space-y-2 w-full">
-                  <li className="text-heading-04">Offerings</li>
-                  {bscDataItem?.offering?.map((challenge, index) => (
-                    <li
-                      key={challenge.id}
-                      className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === bscDataItem?.offering.length - 1 ? 'border-b-0' : ''}`}
-                    >
-                      <div className="text-left">
-                        <h3 className="font-normal text-paragraph-02">
-                          {challenge.text}
-                        </h3>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <ul className="space-y-2 w-full">
-                  <li className="text-heading-04">Process</li>
-                  {bscDataItem?.process?.map((challenge2, index) => (
-                    <li
-                      key={challenge2.id}
-                      className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === bscDataItem?.process.length - 1 ? 'border-b-0' : ''}`}
-                    >
-                      <div className="text-left">
-                        <h3 className="text-paragraph-02 font-normal">
-                          {challenge2.text}
-                        </h3>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+              <ul className="space-y-2 w-full">
+                <li className="text-heading-04">Offerings</li>
+                {bscDataItem?.offering?.map((challenge, index) => (
+                  <li
+                    key={challenge.id}
+                    className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === bscDataItem?.offering.length - 1 ? 'border-b-0' : ''}`}
+                  >
+                    <div className="text-left">
+                      <h3 className="font-normal text-paragraph-02">
+                        {challenge.text}
+                      </h3>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <ul className="space-y-2 w-full">
+                <li className="text-heading-04">Process</li>
+                {bscDataItem?.process?.map((challenge2, index) => (
+                  <li
+                    key={challenge2.id}
+                    className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === bscDataItem?.process.length - 1 ? 'border-b-0' : ''}`}
+                  >
+                    <div className="text-left">
+                      <h3 className="text-paragraph-02 font-normal">
+                        {challenge2.text}
+                      </h3>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
