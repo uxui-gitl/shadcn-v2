@@ -63,7 +63,7 @@ const Page = () => {
                         <>
                             <div className="max-w-md bg-white border border-[#E4E4E4] shadow rounded-3xl" key={index}>
                                 <div className="h-[250px] rounded-tl-3xl rounded-tr-3xl " style={{
-                                    backgroundImage: `url("/caseStudies/case-studies-bg1.svg")`,
+                                    backgroundImage: `url(${item.image})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}>

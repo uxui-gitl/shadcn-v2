@@ -5,13 +5,14 @@ import SectionWrapperNew from '@/components/SectionWrapperNew';
 import Slider from "@/components/Slider";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import transformationData from "@/data/case-transformation";
+import cloudData from "@/data/case-Cloud";
 import automationData from "@/data/case-Automation";
 
 import { useRouter } from 'next/navigation';
 
 
 const Page = () => {
-    const caseStudiesData = [...automationData , ...transformationData];
+    const caseStudiesData = [...automationData , ...transformationData, ...cloudData];
     const router = useRouter()
     const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
     const [mainCategory, setMainCategory] = useState('');
