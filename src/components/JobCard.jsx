@@ -16,7 +16,7 @@ function JobCard({props}) {
               </div>
               <div className="text-right">
                 <button type="button" className="text-[#EFE9FB] text-xs bg-[#5F22D9] mb-4 font-medium rounded-full text-subtitle-01 px-2 py-2 text-center"
-                  onClick={() => router.push(`https://esp.godrejenterprises.com/ApplEmpQryVac.asp?srNo=${srNo}&flag=false&companyCode=GIL`)}>Apply Now</button>
+                  onClick={() => router.push(`/job-detail/${srNo}`)}>Apply Now</button>
                 <p className="text-[14px] text-[#808080] whitespace-nowrap" >Posted {insertDate}</p>
               </div>
             </div>

@@ -54,8 +54,6 @@ const Page = () => {
                     {/* card */}
                 </div>
             </SectionWrapperNew>
-
-
             {/* modal */}
             <Dialog
                 shouldShow={showModal2}

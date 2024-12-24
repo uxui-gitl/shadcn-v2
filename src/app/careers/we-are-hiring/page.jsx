@@ -12,37 +12,47 @@ import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import {Pagination} from "@nextui-org/react";
 import JobCard from '@/components/JobCard';
+import url from "@/data/url";
+
 
 const Page = () => {
   const router = useRouter();
   const [jobList, SetJobList] = useState([])
-  const [copyJobList, SetCopyJobList] = useState(jobList)
+  const [copyJobList, SetCopyJobList] = useState(jobList);
+  console.log(copyJobList, "copyJobList");
+  const [functionDropDownData, setFunctionDropDownData] = useState([]);
+  const [businessDropDownData, setBusinessDropDownData] = useState([]);
+  const [locationDropDownData, setLocationDropDownData] = useState([]);
 
 
   const [functionData, setFunctionData] = useState('');
   const [loactionData, setLoactionData] = useState('');
+  const [businessData, setBusinessData] = useState('');
+
 
 
   const onChange = (event, type) => {
     const value = event.target.value;
     { type == 'function' && setFunctionData(value) }
     { type == 'location' && setLoactionData(value) }
+    { type == 'business' && setBusinessData(value) }
+
 };
 
 useEffect(() => {
   filterData();
-}, [functionData, loactionData])
+}, [functionData, loactionData, businessData])
 
 function handleReset() {
   SetCopyJobList(jobList);
   setFunctionData('');
   setLoactionData('');
+  setBusinessData('');
 }
 
 function filterData() {
   if (functionData != '') {
       const data = copyJobList.filter((item) => item.functionCode == functionData);
-      console.log(data,"function data")
       SetCopyJobList(data);
   }
 
@@ -50,11 +60,33 @@ function filterData() {
       const data = copyJobList.filter((item) => item.location == loactionData);
       SetCopyJobList(data);
   }
+  
+  if (businessData != '') {
+    const data = copyJobList.filter((item) => item.div == businessData);
+    SetCopyJobList(data);
+}
 }
 
   useEffect(() => {
     getJobList();
+    getFilterList();
   }, []);
+
+  async function getFilterList() {
+    try {
+      const [d1, d2, d3] = await Promise.all([
+        axios.get(`${url.vacancyUrl}/GetGILFunctionDetails`),
+        axios.get(`${url.vacancyUrl}/GetGILBusinessDetails`),
+        axios.get(`${url.vacancyUrl}/GetGILLocationDetails`),
+      ]);
+      console.log(d2, "d2")
+      setFunctionDropDownData(d1?.data?.model);
+      setBusinessDropDownData(d2?.data?.model);
+      setLocationDropDownData(d3?.data.model);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   async function getJobList() {
     try {
@@ -96,101 +128,25 @@ function filterData() {
           <div className="flex flex-col sm:flex-row justify-end mb-2 sm:mb-4">
               <select id="functionDropdown" value={functionData}  onChange={(e) => onChange(e, 'function')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
                 <option selected>Function</option>
-                <option value="A/CS">Accounts</option>
-                <option value="ADMN">Administration</option>
-                <option value="APBI">ANALYTICS - POWER BI</option>
-                <option value="AGCI">Asst. General Manager - Cloud Infrastructure</option>
-                <option value="AGDB">Asst. General Manager - Database</option>
-                <option value="AGMD">Asst. General Manager - Digital</option>
-                <option value="AGET">Asst. General Manager - Endpoint Technology</option>
-                <option value="AT">Automated Testing</option>
-                <option value="AWS">AWS</option>
-                <option value="AXAP">AXAPTA ERP</option>
-                <option value="OTG1">Backup Administrator</option>
-                <option value="BSFC">Bespoke Functional</option>
-                <option value="BSTC">BESPOKE TECHNICAL</option>
-                <option value="BSG">BUSINESS SOLUTION GROUP</option>
-                <option value="PLM">CADPLM</option>
-                <option value="COE">CENTRE OF EXCELLENCE</option>
-                <option value="CICD">CICD</option>
-                <option value="CLPT">CLIENT PARTNER</option>
-                <option value="CLD">Cloud</option>
-                <option value="CLDD">Cloud Development</option>
-                <option value="CRM">CRM</option>
-                <option value="D365">D365 Consultant</option>
-                <option value="DACW">Data COE &amp; Data Warehousing</option>
-                <option value="DSGN">Design Track</option>
-                <option value="DNET">DOT NET</option>
-                <option value="ECOM">ECOM</option>
-                <option value="Ext">External Business</option>
-                <option value="FINC">Finance</option>
-                <option value="FUSU">FUNCTIONAL SUPPORT</option>
-                <option value="OTG2">Hardware Asset Manager</option>
-                <option value="OHD">Head - Operations</option>
-                <option value="HRIS">HRIS</option>
-                <option value="BU1">Infor</option>
-                <option value="IM">INFOR &amp; Microsoft</option>
-                <option value="INFF">Infor - Functional</option>
-                <option value="INFT">Infor - Technical</option>
-                <option value="INFO">Infor LN</option>
-                <option value="ILCM">Infor LN Consultant - MFG</option>
-                <option value="ILCP">Infor LN Consultant - PLM</option>
-                <option value="INFS">Infor SCE</option>
-                <option value="INDA">Infor Technical (Development &amp; Administration)</option>
-                <option value="INXI">Infor Xi</option>
-                <option value="ITSE">IT SECURITY</option>
-                <option value="JAVA">JAVA</option>
-                <option value="JVTC">Java Technology</option>
-                <option value="LXAD">Linux Administrator</option>
-                <option value="MBSF">Manager - Bespoke Functional</option>
-                <option value="DCOE">Manager - Data CoE</option>
-                <option value="MFG">Manufacturing</option>
-                <option value="MKTG">Marketing</option>
-                <option value="MDS">Microsoft Dynamics</option>
-                <option value="MOTC">MOTC</option>
-                <option value="MSDB">MSSQL DBA</option>
-                <option value="NAV">NAVISION ERP</option>
-                <option value="NETA">NETWORK ADMINISTRATOR</option>
-                <option value="OTG">OPERATION &amp; TECHNOLOGY GROUP</option>
-                <option value="OB">OTHER BUSINESS</option>
-                <option value="OTHR">OTHERS</option>
-                <option value="PERS">Personnel</option>
-                <option value="PBID">Power BI - Digital Group</option>
-                <option value="RTL">Practice Lead - Retail</option>
-                <option value="WMS">Practice Lead - WMS &amp; SCE</option>
-                <option value="PRSL">PRESALES</option>
-                <option value="PURC">Purchase</option>
-                <option value="QUAL">Quality</option>
-                <option value="RMG">Resource Management Group</option>
-                <option value="RPA">RPA - Digital Group</option>
-                <option value="RPAC">RPA CoE</option>
-                <option value="SALS">Sales</option>
-                <option value="SFC">Salesforce</option>
-                <option value="SAP1">SAPA1</option>
-                <option value="STDN">Satellite Team Lead - .NET</option>
-                <option value="STLC">Satellite Team Lead - Cloud</option>
-                <option value="STLJ">Satellite Team Lead - Java</option>
-                <option value="STIU">Satellite Team Lead - UIUX</option>
-                <option value="SHRP">Share Point</option>
-                <option value="SMRT">Smartnet &amp; Allied Systems</option>
-                <option value="SWDL">SOFTWARE DEVELOPMENT</option>
-                <option value="SS">SOFTWARE SOLUTION</option>
-                <option value="SA">Solution Architect</option>
-                <option value="TECH">TECHNICAL</option>
-                <option value="Test">Testing</option>
-                <option value="TU1">TU1</option>
-                <option value="TU2">TU2</option>
-                <option value="WCS">WCS Developer</option>
-                <option value="WPD">Web Page Development</option>
+                {functionDropDownData?.map((item) => (
+                  <>
+                <option value={item?.functionsCode}>{item?.functionsDesc}</option>
+                  </>
+                ))}
+              </select>
+              <select id="default" value={businessData}  onChange={(e) => onChange(e, 'business')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
+                <option selected>Business</option>
+                {businessDropDownData?.map((item) => (
+                <option value={item?.divDeptCode}>{item?.divDeptDesc}</option>
+                ))}
+
               </select>
               <select id="default" value={loactionData}  onChange={(e) => onChange(e, 'location')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
                 <option selected>Loaction</option>
-                <option value="All Branches">All Branches</option>
-                <option value="GIA US">GIA US</option>
-                <option value="LVD - GI - EU">LVD - GI - EU</option>
-                <option value="OVERSEAS">OVERSEAS</option>
-                <option value="PLANT-10">PLANT-10</option>
-                <option value="Singapore">Singapore</option>
+                {locationDropDownData?.map((item) => (
+                <option value={item?.locWebPageDesc}>{item?.locWebPageDesc}</option>
+                ))}
+
               </select>
             <button onClick={() => handleReset()} type="button" className="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">clear</button>
           </div>

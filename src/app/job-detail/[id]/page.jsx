@@ -1,12 +1,35 @@
 'use client';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import SectionWrapperNew from '@/components/SectionWrapperNew';
 import { useRouter } from 'next/navigation';
+import url from "@/data/url";
+import { useParams } from 'next/navigation';
+import axios from 'axios';
 
 
 function Page() {
-    const router = useRouter()
+    const { id } = useParams();
+    const router = useRouter();
+    const [jobDetail, setJobDetail] = useState([]);
+    
+    useEffect(() => {
+        getJobDetail();
+    }, [id]);
+
+    async function getJobDetail() {
+        try {
+            let response = await axios.post(`${url.vacancyUrl}/GetGILVacancyDetails`, { 'SRNO': id });
+            let data = response.data.model;
+            console.log(data, "data")
+            setJobDetail(data)
+
+        } catch (error) {
+            console.log(error);
+            // res.status(error.response.status).json({ message: error.message });
+        }
+    }
+
     return (
         
         <>
