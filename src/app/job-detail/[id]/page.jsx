@@ -10,6 +10,9 @@ import axios from 'axios';
 
 function Page() {
     const { id } = useParams();
+    const params = JSON.stringify({
+        "SRNO": id,
+        });
     const router = useRouter();
     const [jobDetail, setJobDetail] = useState([]);
     
@@ -18,8 +21,17 @@ function Page() {
     }, [id]);
 
     async function getJobDetail() {
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            data: JSON.stringify({SRNO:id}),
+            params: {
+            }
+        }
         try {
-            let response = await axios.post(`${url.vacancyUrl}/GetGILVacancyDetails`, { 'SRNO': id });
+            let response = await axios.get(`${url.vacancyUrl}/GetGILVacancyDetails`,config);
             let data = response.data.model;
             console.log(data, "data")
             setJobDetail(data)

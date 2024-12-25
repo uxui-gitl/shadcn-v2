@@ -9,10 +9,37 @@ import React, { useEffect, useState } from "react";
 import SplashScreen from "@/components/SplashScreen";
 import { usePathname } from "next/navigation";
 import NextTopLoader from "nextjs-toploader";
+import localFont from "next/font/local";
 // const inter = Inter_Tight({ subsets: ["latin"] });
 
 import { NextUIProvider } from "@nextui-org/react";
 import { title } from "process";
+
+const druk = localFont({
+  src: [
+    {
+      path: '../../public/fonts/GEG-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/GEG-BodyCopy.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/GEG-Headline.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/GEG-BodyCopyHighlight.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-druk',
+});
 
 const defaultMetadata = {
   title:
@@ -336,7 +363,7 @@ export default function RootLayout({ children, route }) {
         <meta name="apple-mobile-web-app-title" content="Godrej Infotech" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body class="font-inter">
+      <body className={`${druk.variable} font-druk`}>
         {isLoading && isHome ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
@@ -344,7 +371,7 @@ export default function RootLayout({ children, route }) {
             <NextUIProvider>
               <NextTopLoader />
               {children}
-              <div className="" style={{ backgroundColor: "#1D162B" }}>
+              <div className="" style={{ backgroundColor: "#1D162B" }} >
                 <Footer />
               </div>
               {/* <Copyright /> */}
