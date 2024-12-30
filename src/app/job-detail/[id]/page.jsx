@@ -26,8 +26,8 @@ function Page() {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
             },
-            data: JSON.stringify({SRNO:id}),
             params: {
+                'SRNO':id
             }
         }
         try {
@@ -47,7 +47,7 @@ function Page() {
         <>
             <div className="navbar2 " style={{ borderBottom: '1px solid #E4E4E4' }}>
                 <div className="mx-auto container flex justify-between my-3">
-                    <Image src="/godrejLogo.png" width={150} height={70} alt="logo" />
+                    <Image src="/godrejLogoNew.svg" width={90} height={70} alt="logo" />
                     <button className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-1 text-center  mb-2" onClick={() => router.back()}>Back to Vacancies</button>
                 </div>
             </div>
@@ -62,34 +62,35 @@ function Page() {
                             <div className="grid grid-cols-4 gap-5">
                                 <div className="">
                                     <div className="" style={{borderBottom:'1px solid #d3d3d3'}}>
-                                    <h2 className="text-[28px] font-semibold mb-6">Job Summary</h2>
+                                    <h2 className="text-heading-03 font-semibold mb-6">Job Summary</h2>
                                     <div className="mb-3">
-                                        <h6 className="title">Industry</h6>
-                                        <p className="text-[18px] font-semibold">{'jsd'}</p>
+                                        <h6 className="title">Company Name :</h6>
+                                        <p className="text-[18px] font-semibold">{jobDetail[0]?.companyCode}</p>
                                     </div>
                                     <div className="mb-3">
-                                        <h6 className="title">Project Location</h6>
-                                        <p className="text-[18px] font-semibold">{'qlwndlqjnwd'}</p>
+                                        <h6 className="title">Business:</h6>
+                                        <p className="text-[18px] font-semibold">{jobDetail[0]?.aboutBusiness}</p>
                                     </div>
                                     <div className="mb-3">
-                                        <h6 className="title">Engagement Since</h6>
-                                        <p className="text-[18px] font-semibold">{'alsjdlkajsd'}</p>
+                                        <h6 className="title">Function:</h6>
+                                        <p className="text-[18px] font-semibold">{jobDetail[0]?.functionsdesc}</p>
                                     </div>
-                                    </div>
-                                    <div className="">
-                                    <p className="text-[14px] font-semibold text-[#808080]">{'In case of any queries, please drop a mail'}</p>
                                     <div className="mb-3">
-                                        <h6 className="title">Project Location</h6>
-                                        <p className="text-[18px] font-semibold">{'qlwndlqjnwd'}</p>
+                                        <h6 className="title">Designation:</h6>
+                                        <p className="text-[18px] font-semibold">{jobDetail[0]?.designation}</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <h6 className="title">Location:</h6>
+                                        <p className="text-[18px] font-semibold">{jobDetail[0]?.location}</p>
                                     </div>
                                     </div>
                                 </div>
                                 <div className="col-span-3">
                                     <div className=""style={{borderBottom:'1px solid #d3d3d3'}}>
-                                        <h2 className="title text-[28px] font-semibold mb-6">About the Business & Position Overview</h2>
-                                       <p className="text-[32px] leading-[40px] font-medium mb-6">{'asdkmalkjsd'}</p>
+                                        <h2 className="title text-heading-03 font-semibold mb-6">About the Business & Position Overview</h2>
+                                       <p className="text-heading-04 leading-[40px] font-medium mb-6">{'Job Profile'}</p>
                                             <ul className="space-y-1 text-black list-disc list-outside mb-6">
-                                            <li>{'item'}</li>
+                                            <li>{jobDetail[0]?.jobprof}</li>
                                         </ul>
                                     </div>
                                     {/* business case */}

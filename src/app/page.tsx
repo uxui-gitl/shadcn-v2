@@ -642,6 +642,7 @@ export default function Home() {
         sectionHeadingLayout="horizontal"
         title="Business Transformation Drive"
         bgColor={"bg-primary-600"}
+        setTop={false}
         style={{
           backgroundColor: "white",
           position: "relative",
@@ -653,7 +654,7 @@ export default function Home() {
           {BusinessTransformationDrive_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[525px]"
+                className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[325px]"
                 style={{
                   backgroundImage: `url(${item.cardBgImg})`,
                   backgroundSize: "cover",
@@ -665,7 +666,7 @@ export default function Home() {
                     {item?.cardTitle}
                   </div>
                 )}
-                <div className="my-5 text-heading-02 text-neutral-white min-h-[150px]">
+                <div className="my-5 text-heading-03 text-neutral-white min-h-[150px]">
                   {item.cardHeading}
                 </div>
                 <div className="mb-8 text-body-01 text-neutral-white min-h-[75px]">
@@ -749,6 +750,7 @@ export default function Home() {
         sectionDescColor="text-neutral-dark-grey"
         title="Count on Us"
         sectionHeadingLayout="center"
+        setTop={false}
       >
         <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs

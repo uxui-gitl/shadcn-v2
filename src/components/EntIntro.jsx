@@ -44,7 +44,7 @@ const EntIntro = ({
           >
             {/* Title */}
             <h1
-              className=" w-full z-50 text-neutral-white text-display-01 2xl:w-[70%]"
+              className=" w-full z-50 text-neutral-white text-display-02 2xl:w-[70%]"
               style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}
             >
               <Balancer>{title}</Balancer>
