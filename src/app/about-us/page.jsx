@@ -21,8 +21,11 @@ import {
   DATA_1999_2004,
   data,
 } from './data';
+import { useRouter } from 'next/navigation';
+
 
 const ContactUs = () => {
+  const router = useRouter();
   const [showModal1, setshowModal1] = useState(false);
   const [businessItem, setBusinessItem] = useState([]);
 
@@ -37,8 +40,9 @@ const ContactUs = () => {
   }
 
   function readMore(modal, item) {
-    setshowModal2(modal);
-    setReadMoreItem(item);
+    router.push(`/about-us/${item?.id}`);
+    // setshowModal2(modal);
+    // setReadMoreItem(item);
   }
 
   return (
