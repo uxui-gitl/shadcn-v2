@@ -24,6 +24,18 @@ import Link from "next/link";
 import Icon from "@mdi/react";
 import NewNavBar from "@/components/NewNavBar";
 import { mdiArrowTopRight } from "@mdi/js";
+import {
+  items,
+  items2,
+  items3,
+  items4,
+  partnerLogo,
+  CASE_STUDIES_DATA,
+  TESTIMONIAL_DATA,
+  BusinessTransformationDrive_DATA,
+  sliderData,
+  
+} from "./pageData.js"
 
 export default function Home() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -40,34 +52,7 @@ export default function Home() {
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
-  const items = [
-    { id: 1, content: "Healthcare" },
-    { id: 2, content: "Professional Service" },
-    { id: 3, content: "Retail" },
-    { id: 4, content: "Manufacturing" },
-    { id: 5, content: "Project" },
-  ];
 
-  const items2 = [
-    { id: 6, content: "AI powered Care" },
-    { id: 7, content: "Automation" },
-    { id: 8, content: "Ecommerce" },
-    { id: 9, content: "Smart Factory" },
-    { id: 10, content: "Cloud ERP" },
-  ];
-
-  const items3 = [
-    { id: 11, content: "Quality" },
-    { id: 12, content: "Competitiveness" },
-    { id: 13, content: "Customer Centricity" },
-    { id: 14, content: "Agility" },
-    { id: 15, content: "Project Visibility" },
-  ];
-  const items4 = [
-    { id: 16, content: "Automation" },
-    { id: 17, content: "Cloud" },
-    { id: 18, content: "Transformation" },
-  ];
 
   const tabs = [
     {
@@ -98,211 +83,8 @@ export default function Home() {
       ),
     },
   ];
+
   const blogImageUrl = "/home/images/blogBg.webp";
-
-  const partnerLogo = [
-    "/homeNew/partner1.svg",
-    "/homeNew/partner2.svg",
-    "/homeNew/partner3.svg",
-    "/homeNew/partner1.svg",
-    "/homeNew/partner2.svg",
-    "/homeNew/partner3.svg",
-    "/homeNew/partner1.svg",
-  ];
-
-  const CASE_STUDIES_DATA = [
-    {
-      imageURL: "/home/images/caseStudyleft.webp",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
-      title: "Case Studies",
-      heading: "Delivering Results that Matter",
-      description:
-        "World's top-notch businesses choose us for our industry knowledge and excellent technical acumen as we deliver high performing solutions across the spectrum of industries.",
-      link: "",
-      color: "#FFFFFF",
-    },
-    {
-      imageURL: "",
-      title: "",
-      heading: "Speedy Analytics Report Generation",
-      description:
-        "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf ",
-      color: "#000",
-      bgCardColor: "#FCE6F4",
-    },
-
-    {
-      imageURL: "/path/to/image1.jpg",
-      title: "",
-
-      heading: "Positive ROI with Cloud Transition",
-      description:
-        "Prominent American watch and lifestyle distribution organization achieves increase in uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
-      color: "#000",
-      bgCardColor: "#EFE9FB",
-    },
-    {
-      imageURL: "",
-      videoURL: "/home/videos/homeCaseStudy.mp4",
-      title: "",
-      heading: "Infor CloudSuite Managed Support Services ",
-      description:
-        "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
-      link: "/case-study-1",
-      color: "#000",
-      bgCardColor: "#E1F2EF",
-    },
-    // Add more case studies here...
-  ];
-
-  const TESTIMONIAL_DATA: any = [
-    {
-      id: "1",
-      cardHeading: "79% Cut down in Purchase Order Processing",
-      cardDesc:
-        "GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-      designation: "-	IT Director,",
-      companyName: "Cooling Facility Management Company",
-    },
-    {
-      id: "2",
-      cardHeading: "Effective finance and budgeting management",
-      cardDesc:
-        "GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.",
-      designation: "-	IT Director",
-      companyName:
-        "Saudi Arabia’s Leading Engineering & Construction Service Provider",
-    },
-    {
-      id: 3,
-      cardHeading: "Salesforce Implementation within Tight Deadline",
-      cardDesc: `Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise and project management abilities by achieving highly challenging deadline. `,
-      designation: "- Operations Head",
-      companyName: `India's Security Solutions Company`,
-    },
-  ];
-
-  const BusinessTransformationDrive_DATA = [
-    {
-      id: 1,
-      cardTitle: "",
-      cardHeading: "Embrace Tomorrow with Automation",
-      cardDesc:
-        "Accelerate operations, drive innovation and increase accuracy with AI powered solutions",
-      cardBgImg: "/home/images/card1.webp",
-      rawData: `<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
-              Intelligent Technologies
-              </div>
-              <p class="text-body-01 font-medium mb-2">Artificial Intelligence & Machine Learning</p>
-              <p class="text-body-01 font-medium mb-2">RPA</p>
-              <p class="text-body-01 font-medium mb-2">IIoT</p>
-            </div>
-            <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
-              Tech Stack
-              </div>
-              <p class="text-body-01 font-medium mb-2">Java </p>
-              <p class="text-body-01 font-medium mb-2">.Net, SharePoint</p>
-              <p class="text-body-01 font-medium mb-2">Low code application development</p>
-            </div>
-            <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
-              Data Insights
-              </div>
-              <p class="text-body-01 font-medium mb-2">Power BI and Power Apps</p>
-              <p class="text-body-01 font-medium mb-2">Birst</p>
-              <p class="text-body-01 font-medium mb-2">Tableau</p>
-              <p class="text-body-01 font-medium mb-2">Azure and AWS data management </p>
-
-            </div>
-          </div>`,
-    },
-    {
-      id: 2,
-      cardTitle: "",
-      cardHeading: "Cloud Enables New Possibilities",
-      cardDesc:
-        "Leverage secure and cost-effective cloud solutions to improve business scalability, collaboration and agility",
-      cardBgImg: "/home/images/card2.webp",
-      rawData: `<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
-             Upgrade to Cloud
-              </div>
-               <p class="text-body-01 font-medium mb-2">Dynamics AX Upgrade</p>
-               <p class="text-body-01 font-medium mb-2">Dynamics NAV Upgrade</p>
-               <p class="text-body-01 font-medium mb-2">Upgrade to Infor LN</p>
-               <p class="text-body-01 font-medium mb-2">Migrate Applications to Cloud</p>
-               <p class="text-body-01 font-medium mb-2">Lift and Shift to Cloud</p>
-            </div>
-            <div>
-              <div class="text-body-01 leading-body-01 font-semibold mb-4">
-              Cloud Solution and Services
-              </div>
-               <p class="text-body-01 font-medium mb-2">Cloud Infrastructure </p>
-               <p class="text-body-01 font-medium mb-2">Business Apps on Cloud</p>
-               <p class="text-body-01 font-medium mb-2">M365 Services</p>
-            </div>
-            <div>
-          </div>`,
-    },
-    {
-      id: 3,
-      cardTitle: "",
-      cardHeading: "Future Focused Transformation Solutions",
-      cardDesc:
-        "Enhance business productivity and modernize stakeholder experience with streamlined operations",
-      cardBgImg: "/home/images/card3.webp",
-      rawData: `<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div>
-        <div class="text-body-01 leading-body-01 font-semibold mb-4">
-      Enterprise Suite
-        </div>
-         <p class="text-body-01 font-medium mb-2">Microsoft Dynamics 365</p>
-         <p class="text-body-01 font-medium mb-2">Infor</p>
-         <p class="text-body-01 font-medium mb-2">Oracle</p>
-         <p class="text-body-01 font-medium mb-2">Hexagon EAM</p>
-      </div>
-      <div>
-        <div class="text-body-01 leading-body-01 font-semibold mb-4">
-        Customer Experience
-        </div>
-         <p class="text-body-01 font-medium mb-2">Microsoft CRM </p>
-         <p class="text-body-01 font-medium mb-2">Infor CRM</p>
-         <p class="text-body-01 font-medium mb-2">Salesforce</p>
-         <p class="text-body-01 font-medium mb-2">LS Retail</p>
-         <p class="text-body-01 font-medium mb-2">Ecommerce</p>
-
-      </div>
-      <div>
-    </div>`,
-    },
-  ];
-
-  const sliderData = [
-    {
-      id: 1,
-      title: "Automation Project Insight",
-      desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer",
-      url: "/home/images/Automation.webp",
-    },
-    {
-      id: 2,
-      title: "Cloud Project Insight",
-      desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ",
-      url: "/home/images/Cloud.webp",
-    },
-    {
-      id: 3,
-      title: "Transformation Project Insight",
-      desc: "8 years of Infor managed support services and migration for MT Infor cloud optimises operational cost by 25 for Europe's maritime service provider",
-      url: "/home/images/Transformation.webp",
-    },
-  ];
 
   const [sliderImageUrl, setSliderImageUrl] = useState("");
   const [index, setIndex] = useState(0);
@@ -314,7 +96,6 @@ export default function Home() {
     cardDesc:
       "Accelerate operations, drive innovation and increase accuracy with AI powered solutions",
     rawData: `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-  <!-- Column 1 -->
   <div>
     <div class="text-body-01 leading-body-01font-semibold mb-6 lg:mb-12">
       Intelligent Technologies
@@ -323,8 +104,6 @@ export default function Home() {
     <p class="text-body-01 leading-body-01  font-medium mb-4">RPA</p>
     <p class="text-body-01 leading-body-01  font-medium mb-4">IIoT</p>
   </div>
-
-  <!-- Column 2 -->
   <div>
     <div class="text-body-01 leading-body-01font-semibold mb-6 lg:mb-12">
       Tech Stack
@@ -333,8 +112,6 @@ export default function Home() {
     <p class="text-body-01 leading-body-01  font-medium mb-4">.Net, SharePoint</p>
     <p class="text-body-01 leading-body-01  font-medium mb-4">Low code application development</p>
   </div>
-
-  <!-- Column 3 -->
   <div>
     <div class="text-body-01 leading-body-01font-semibold mb-6 lg:mb-12">
       Data Insights
@@ -375,9 +152,9 @@ export default function Home() {
 
   return (
     <>
-      <Announcement content={""} country={"IN"} />
+      {/* <Announcement content={""} country={"IN"} /> */}
       <div className={`sticky top-0 w-full z-[500]`}>
-          <NewNavBar/>
+        <NewNavBar />
       </div>
       {/* banner slider */}
       <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh] -mt-10">
@@ -393,11 +170,10 @@ export default function Home() {
 
           {/* Overlay Image */}
           <div
-            className={`absolute inset-0 transition duration-700 ${
-              sliderImageUrl
+            className={`absolute inset-0 transition duration-700 ${sliderImageUrl
                 ? "opacity-100 ease-in-out"
                 : "opacity-0 ease-in-out"
-            }`}
+              }`}
             style={{
               backgroundImage: `url(${sliderImageUrl})`,
               backgroundSize: "cover",
