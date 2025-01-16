@@ -37,8 +37,8 @@ import { useInView } from "react-intersection-observer";
 // 
 import ActSection from '@/sections/new/actSection/ActSection';
 import  HubExperties from '@/sections/new/hubExperties/HubExperties';
-import Capabilities from '@/Sections/new/capabilities/Capabilities';
-import ParallaxVideo from '@/Sections/new/parallaxVideo/ParallaxVideo';
+import Capabilities from '@/sections/new/capabilities/Capabilities';
+import ParallaxVideo from '@/sections/new/parallaxVideo/ParallaxVideo';
 
 
 export default function Home() {
