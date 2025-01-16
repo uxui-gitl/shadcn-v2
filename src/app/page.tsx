@@ -13,13 +13,10 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
-import { Tabs } from "@/components/ui/tabs";
+
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import Dialog from "@/components/Dialog";
-import useScrollTriggeredCountUp from "@/components/home/useScrollTriggeredCountUp";
-import Announcement from "@/sections/announcement/Announcement";
 import Link from "next/link";
 import Icon from "@mdi/react";
 import NewNavBar from "@/components/NewNavBar";
@@ -32,98 +29,30 @@ import {
   partnerLogo,
   CASE_STUDIES_DATA,
   TESTIMONIAL_DATA,
-  BusinessTransformationDrive_DATA,
   sliderData,
-  
+
 } from "./pageData.js"
+import { useInView } from "react-intersection-observer";
+
+
+// 
+import ActSection from '@/sections/new/actSection/ActSection';
+import  HubExperties from '@/sections/new/hubExperties/HubExperties';
+import Capabilities from '@/Sections/new/capabilities/Capabilities';
+import ParallaxVideo from '@/Sections/new/parallaxVideo/ParallaxVideo';
+
 
 export default function Home() {
-  const ref1 = useRef<HTMLDivElement>(null);
-  const ref2 = useRef<HTMLDivElement>(null);
-  const ref3 = useRef<HTMLDivElement>(null);
-  const ref4 = useRef<HTMLDivElement>(null);
-
-  const count1 = useScrollTriggeredCountUp(ref1, 25); // Count-up from 0 to 25
-  const count2 = useScrollTriggeredCountUp(ref2, 500); // Count-up from 0 to 500
-  const count3 = useScrollTriggeredCountUp(ref3, 15); // Count-up from 0 to 15000 (15k)
-  const count4 = useScrollTriggeredCountUp(ref4, 1000); // Count-up from 0 to 15000 (15k)
-
-  const [showModal1, setshowModal1] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
-
-
-  const tabs = [
-    {
-      title: "Services",
-      value: "services",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-body-01 text-primary-900 bg-[#FCE6F4]">
-          <ServiceContent />
-        </div>
-      ),
-    },
-    {
-      title: "Industries",
-      value: "industries",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-body-01 text-primary-900 bg-[#FCE6F4]">
-          <IndustryContent />
-        </div>
-      ),
-    },
-    {
-      title: "Partners",
-      value: "partners",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-body-01 text-primary-900 bg-[#FCE6F4]">
-          <ParternerContent />
-        </div>
-      ),
-    },
-  ];
 
   const blogImageUrl = "/home/images/blogBg.webp";
 
   const [sliderImageUrl, setSliderImageUrl] = useState("");
   const [index, setIndex] = useState(0);
   const [index2, setIndex2] = useState(0);
-  const [businessItem, setBusinessItem] = useState({
-    id: 1,
-    cardTitle: "",
-    cardHeading: "Embrace Tomorrow with AUTOMATION",
-    cardDesc:
-      "Accelerate operations, drive innovation and increase accuracy with AI powered solutions",
-    rawData: `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-  <div>
-    <div class="text-body-01 leading-body-01font-semibold mb-6 lg:mb-12">
-      Intelligent Technologies
-    </div>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Artificial Intelligence & Machine Learning</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">RPA</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">IIoT</p>
-  </div>
-  <div>
-    <div class="text-body-01 leading-body-01font-semibold mb-6 lg:mb-12">
-      Tech Stack
-    </div>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Java</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">.Net, SharePoint</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Low code application development</p>
-  </div>
-  <div>
-    <div class="text-body-01 leading-body-01font-semibold mb-6 lg:mb-12">
-      Data Insights
-    </div>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Power BI and Power Apps</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Birst</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Tableau</p>
-    <p class="text-body-01 leading-body-01  font-medium mb-4">Azure and AWS data management</p>
-  </div>
-</div>
-`,
-  });
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -142,22 +71,12 @@ export default function Home() {
   }
   // end banner Hover ReadMore
 
-  // handle click businesstranform card click
-  function handleBusinessCardClick(modal: boolean, item: any) {
-    setshowModal1(modal);
-    setBusinessItem(item);
-  }
-
-  // end handle click businesstranform card click
-
   return (
     <>
-      {/* <Announcement content={""} country={"IN"} /> */}
-      <div className={`sticky top-0 w-full z-[500]`}>
-        <NewNavBar />
-      </div>
+      {/* navbar */}
+      <NewNavBar />
       {/* banner slider */}
-      <div className="slider-wrapper bg-black h-[95vh] md:h-[90vh] -mt-10">
+      <div className="slider-wrapper bg-black h-[100vh]">
         <div className="video relative h-full">
           {/* Background Video */}
           <video
@@ -171,8 +90,8 @@ export default function Home() {
           {/* Overlay Image */}
           <div
             className={`absolute inset-0 transition duration-700 ${sliderImageUrl
-                ? "opacity-100 ease-in-out"
-                : "opacity-0 ease-in-out"
+              ? "opacity-100 ease-in-out"
+              : "opacity-0 ease-in-out"
               }`}
             style={{
               backgroundImage: `url(${sliderImageUrl})`,
@@ -182,7 +101,7 @@ export default function Home() {
           ></div>
 
           {/* Headline */}
-          <div className="container headline-position mx-auto text-display-01 text-white absolute top-[20%] left-0 right-0 text-left ">
+          <div className="container headline-position mx-auto text-display-02 text-white absolute top-[20%] left-0 right-0 text-left ">
             Delivering Business
             <br /> value with
             {items4[index] && (
@@ -344,11 +263,11 @@ export default function Home() {
           borderBottomRightRadius: "24px",
         }}
       >
-        <div className="container mx-auto py-32">
+        <div className="container mx-auto py-8">
           <p className="text-body-01 text-neutral-dark-grey w-[214px] mb-5 md:mb-20">
             Strategic Digital Transformation across Industries
           </p>
-          <div className="text-heading-01">
+          <div className="text-heading-02">
             Transform your{" "}
             {items[index] && (
               <motion.div
@@ -397,155 +316,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* video */}
-      <div className="h-[75vh] w-full -mt-5">
-        <video
-          src={"/home/videos/homePageVideo.mp4"} // Replace with your video path
-          autoPlay
-          loop
-          muted
-          className="inset-0 w-full h-full object-cover fixed -z-50"
-        />
-      </div>
-      {/* video */}
-
-      {/* innovative section */}
-      <SectionWrapperNew
-        sectionHeading={"ACT based Approach for Leading Future Ready Business"}
-        sectionDesc={"Value - Driven Solutions for Tomorrow's Opportunities"}
-        sectionTextColor="text-primary-900"
-        sectionDescColor="text-neutral-darkest-grey"
-        sectionHeadingLayout="horizontal"
-        title="Business Transformation Drive"
-        bgColor={"bg-primary-600"}
-        setTop={false}
-        style={{
-          backgroundColor: "white",
-          position: "relative",
-          zIndex: "2",
-          height: "750px",
-        }}
-      >
-        <Slider slidesPerView={3}>
-          {BusinessTransformationDrive_DATA.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div
-                className="p-5 bg-[#5F22D9] rounded-3xl md:min-h-[325px]"
-                style={{
-                  backgroundImage: `url(${item.cardBgImg})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "bottom center",
-                }}
-              >
-                {item?.cardTitle && (
-                  <div className="text-body-01 text-neutral-white mb-[100px] ">
-                    {item?.cardTitle}
-                  </div>
-                )}
-                <div className="my-5 text-heading-03 text-neutral-white min-h-[150px]">
-                  {item.cardHeading}
-                </div>
-                <div className="mb-8 text-body-01 text-neutral-white min-h-[75px]">
-                  {item.cardDesc}
-                </div>
-                <div className="flex justify-end right-0 bottom-0">
-                  {/* setshowModal1((prev) => !prev) */}
-                  <OutlinedButtonWithArrow
-                    arrowColor={"white"}
-                    size={32}
-                    onClick={() => handleBusinessCardClick(true, item)}
-                  />
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Slider>
-      </SectionWrapperNew>
-      {/* end innovative section */}
-
-      {/* hub of experties */}
-      <SectionWrapperNew
-        bgColor={"bg-primary-600"}
-        sectionHeading={"Hub of Expertise"}
-        sectionDesc={
-          "We are here to build an edge and bring technology brilliance with the finest in industry"
-        }
-        sectionTextColor="text-neutral-white"
-        sectionDescColor="text-neutral-white"
-        sectionHeadingLayout="center"
-        style={{
-          background: `url(/homeNew/globe.svg), linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)`,
-          paddingTop: "350px",
-          backgroundPosition: "bottom center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover", // Optional: ensures the image covers the div area
-        }}
-      >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-16 ">
-          <div className="" ref={ref1}>
-            <h1 className="text-[56px] md:text-[72px] font-bold text-white">
-              {count1}
-              <sup className="text-normal">+</sup>
-            </h1>
-            <p className="text-body-01 text-primary-10">Years in Business</p>
-          </div>
-          <div className="" ref={ref2}>
-            <h1 className="text-[56px] md:text-[72px] font-bold text-white">
-              {count2}
-              <sup>+</sup>
-            </h1>
-            <p className="text-body-01 text-primary-10">Customers Worldwide</p>
-          </div>
-          <div className="" ref={ref3}>
-            <h1 className="text-[56px] md:text-[72px] font-bold text-white">
-              {count3}k<sup>+</sup>
-            </h1>
-            <p className="text-body-01 text-primary-10">
-              Man years of Experience
-            </p>
-          </div>
-          <div className="" ref={ref4}>
-            <h1 className="text-[56px] md:text-[72px] font-bold text-white">
-              {count4}
-              <sup>+</sup>
-            </h1>
-            <p className="text-body-01 text-primary-10">Implementation Sites</p>
-          </div>
-        </div>
-      </SectionWrapperNew>
-      {/* end hub of experties */}
-
-      {/* offerings */}
-      <SectionWrapperNew
-        bgColor={"bg-neutral-white"}
-        sectionHeading={"Capabilities and Expertise"}
-        sectionDesc={
-          "Delivering transformative results with our industry knowledge, strategic partnership and end-to-end service offerings."
-        }
-        sectionTextColor="text-primary-900"
-        sectionDescColor="text-neutral-dark-grey"
-        title="Count on Us"
-        sectionHeadingLayout="center"
-        setTop={false}
-      >
-        <div className="h-[724px] md:h-[724px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
-          <Tabs
-            activeTabClassName="!bg-[#f2f2f2] !text-[#fff]"
-            contentClassName="!mt-5"
-            tabClassName="!px-4 hover:bg-[#CDBAF3] hover:text-[#fff]"
-            containerClassName="!my-2"
-            tabs={tabs}
-          />
-        </div>
-      </SectionWrapperNew>
-      {/* end offerings */}
+      <ParallaxVideo />
+      <ActSection />
+      <HubExperties />
+      <Capabilities />
+      
 
       {/* @ts-ignore */}
-      <CaseStudiesSection
+      {/* <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"5"}
         bgColor={"bg-primary-900"}
-      />
+      /> */}
 
       <BlogSection
         ID={"blog"}
@@ -613,136 +395,7 @@ export default function Home() {
 
       {/* <Footer /> */}
 
-      {/* modal */}
-      <Dialog
-        shouldShow={showModal1}
-        onRequestClose={() => {
-          setshowModal1((prev) => !prev);
-        }}
-        title={businessItem.cardHeading}
-      >
-        <div className="py-2">
-          <div dangerouslySetInnerHTML={{ __html: businessItem?.rawData }} />
-        </div>
-      </Dialog>
-      {/* end modal */}
     </>
   );
 }
 
-const ServiceContent = () => {
-  const services = [
-    "Business Consulting",
-    "Implementation & Global Rollout",
-    "Migration & Transformation",
-    "Legacy Modernisation",
-    "Infrastructure as a Service",
-    "Managed Services",
-  ];
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="px-5 py-8">
-        {services.map((item) => (
-          <>
-            <div className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0">
-              {item}
-              <Image
-                width={35}
-                height={35}
-                src="/homeNew/chevron-right.svg"
-                alt="char"
-              ></Image>
-            </div>
-          </>
-        ))}
-      </div>
-      <div
-        className="relative invisible md:visible"
-        style={{
-          backgroundImage: `url(/home/images/Services.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-        }}
-      ></div>
-    </div>
-  );
-};
-
-const IndustryContent = () => {
-  const data = [
-    "Manufacturing",
-    "Retail",
-    "Trading & Distribution",
-    "Healthcare",
-    "Professional Service",
-    "Project",
-  ];
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="px-5 py-8">
-        {data.map((item) => (
-          <>
-            <div className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0">
-              {item}
-              <Image
-                width={35}
-                height={35}
-                src="/homeNew/chevron-right.svg"
-                alt="char"
-              ></Image>
-            </div>
-          </>
-        ))}
-      </div>
-      <div
-        className="relative invisible md:visible"
-        style={{
-          backgroundImage: `url(/home/images/Industry.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-        }}
-      ></div>
-    </div>
-  );
-};
-
-const ParternerContent = () => {
-  const data = [
-    "Microsoft  ",
-    "Infor  ",
-    "Oracle  ",
-    "Salesforce  ",
-    "LS Retail  ",
-    "Automation Anywhere ",
-    "Ui Path",
-  ];
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 h-full">
-      <div className="px-5 py-8">
-        {data.map((item) => (
-          <>
-            <div className="list text-heading-04 py-3 flex justify-between border-b border-gray-300 last:border-b-0">
-              {item}
-              <Image
-                width={35}
-                height={35}
-                src="/homeNew/chevron-right.svg"
-                alt="char"
-              ></Image>
-            </div>
-          </>
-        ))}
-      </div>
-      <div
-        className="relative invisible md:visible"
-        style={{
-          backgroundImage: `url(/home/images/Partners.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-        }}
-      ></div>
-    </div>
-  );
-};

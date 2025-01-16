@@ -77,7 +77,7 @@
   }
 
   body {
-    @apply border;
+    /* @apply border; */
   }
 }
 @layer utilities {
