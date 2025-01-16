@@ -26,7 +26,7 @@ import { Fascinate } from "next/font/google";
 
 
 
-const page = () => {
+const Page = () => {
 
   const TESTIMONIAL_DATA = [
     {
@@ -471,4 +471,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

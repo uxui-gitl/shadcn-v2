@@ -31,7 +31,7 @@ import {
 } from './data';
 
 
-function page() {
+function Page() {
     const blogImageUrl = "/manufacturing/blog-bg.webp";
     const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
     const tabs = [

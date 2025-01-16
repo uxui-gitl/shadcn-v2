@@ -1,5 +1,4 @@
 import React from "react";
-import SectionWrapper from "@/components/SectionWrapper";
 import SectionWrapperNew from "@/components/SectionWrapperNew"
 import SectionHeading from "@/components/SectionHeading";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +6,6 @@ import CommonCardTwo from "@/components/CommonCardTwo";
 import { Pagination } from "swiper/modules"; // Use the specific import for modules
 import "swiper/css";
 import "swiper/css/pagination";
-import SectionWrapperNew from "@/components/SectionWrapperNew";
 
 function CommonCardTwoSlider({
     ID,

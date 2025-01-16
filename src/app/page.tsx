@@ -61,7 +61,7 @@ export default function Home() {
   }, [items.length]);
 
   // banner Hover ReadMore
-  function handleReadMoreHover(item: any, isFilled: boolean) {
+  function handleReadMoreHover(item:any, isFilled:Boolean) {
     if (isFilled) {
       setSliderImageUrl(item.url);
     } else {

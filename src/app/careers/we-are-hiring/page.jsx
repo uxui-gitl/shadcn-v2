@@ -128,23 +128,23 @@ function filterData() {
           <div className="flex flex-col sm:flex-row justify-end mb-2 sm:mb-4">
               <select id="functionDropdown" value={functionData}  onChange={(e) => onChange(e, 'function')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
                 <option selected>Function</option>
-                {functionDropDownData?.map((item) => (
+                {functionDropDownData?.map((item, index) => (
                   <>
-                <option value={item?.functionsCode}>{item?.functionsDesc}</option>
+                <option key={index} value={item?.functionsCode}>{item?.functionsDesc}</option>
                   </>
                 ))}
               </select>
               <select id="default" value={businessData}  onChange={(e) => onChange(e, 'business')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
                 <option selected>Business</option>
-                {businessDropDownData?.map((item) => (
-                <option value={item?.divDeptCode}>{item?.divDeptDesc}</option>
+                {businessDropDownData?.map((item,index) => (
+                <option key={index} value={item?.divDeptCode}>{item?.divDeptDesc}</option>
                 ))}
 
               </select>
               <select id="default" value={loactionData}  onChange={(e) => onChange(e, 'location')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
                 <option selected>Loaction</option>
-                {locationDropDownData?.map((item) => (
-                <option value={item?.locWebPageDesc}>{item?.locWebPageDesc}</option>
+                {locationDropDownData?.map((item, index) => (
+                <option key={index} value={item?.locWebPageDesc}>{item?.locWebPageDesc}</option>
                 ))}
 
               </select>
@@ -152,9 +152,9 @@ function filterData() {
           </div>
         </div>
         <div className="text-[14px] text-[#E0028E] mb-4">{copyJobList.length} jobs in all categories in all locations</div>
-        {copyJobList?.map(item => (
+        {copyJobList?.map((item, index) => (
           <>
-          <JobCard props={item}></JobCard>
+          <JobCard key={index} props={item}></JobCard>
           </>
         ))}
           {copyJobList.length==0 && (<h2 className="text-[28px] font-semibold"> No Data Found</h2>)}
