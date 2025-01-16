@@ -1,4 +1,6 @@
-"use client";
+
+'use client';
+import React, { useState } from "react";
 import EntIntro from "@/components/EntIntro";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import SectionWrapper from "@/components/SectionWrapper";
@@ -16,599 +18,129 @@ import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import BlogSliderSection from "@/sections/blogSlider/BlogSliderSection";
 import CaseStudiesSection from "@/sections/case-studies/CaseStudiesSection";
+import Dialog from "@/components/Dialog";
+import {
+    CHALLENGES_LIST_DATA,
+    blogSliderData,
+    INDUSTRY_SPOTLIGHT,
+    RPASolution2,
+    DATA_MGMT_DATA,
+    SOLUTION_DATA,
+    TESTIMONIAL_DATA,
+    CASE_STUDIES_DATA
+} from './data';
+
 
 function page() {
-  const blogImageUrl = "/manufacturing/blog-bg.webp";
+    const blogImageUrl = "/manufacturing/blog-bg.webp";
+    const imgBgURL = "/CloudStackServices/background/bg--strategic-partnership.png";
+    const tabs = [
+        {
+            title: "Automation",
+            value: "automation",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <AutomationContent />
+                </div>
+            ),
+        },
+        {
+            title: "Cloud",
+            value: "cloud",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <CloudContent />
+                </div>
+            ),
+        },
+        {
+            title: "Transformation",
+            value: "transformation",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
+                    <TransformationContent />
+                </div>
+            ),
+        },
+    ];
+    const [showMAModal, setShowMAModal] = useState(false);
+    const [maDataItem, setMADataItem] = useState([]);
 
-  const imgBgURL =
-    "/CloudStackServices/background/bg--strategic-partnership.png";
+    function handleMACardClick(modal, item) {
+        console.log("hjbjh", item);
+        setShowMAModal(modal);
+        setMADataItem(item);
+    }
 
-  const CHALLENGES_LIST_DATA = [
-    {
-      id: 1,
-      title:
-        "Inaccurate order-based material requirement planning and budget control",
-      icon: "/upgradeCloud/icons/challengesIcon.svg",
-    },
-    {
-      id: 2,
-      title:
-        "Ensuring consistent product quality and effective defect tracking ",
-      icon: "/upgradeCloud/icons/challengesIcon.svg",
-    },
-    {
-      id: 3,
-      title:
-        "Difficulty in optimizing production sequences, balancing workloads and handling disruptions ",
-      icon: "/upgradeCloud/icons/challengesIcon.svg",
-    },
-    {
-      id: 4,
-      title:
-        "Hassle with equipment maintenance due to lack of tracking and schedules",
-      icon: "/upgradeCloud/icons/challengesIcon.svg",
-    },
-    {
-      id: 5,
-      title:
-        "Limited access to real-time information hinders office and shop floor productivity ",
-      icon: "/upgradeCloud/icons/challengesIcon.svg",
-    },
-  ];
+    return (
+        <>
+            <EntIntro
+                title="Manufacturing Digitalization Starts Here"
+                desc="Transforming Factory to Shop Floor Operations with Future-Proof Solutions"
+                cta="Let's Connect"
+                width="60%"
+                video="/manufacturing/videos/pageBanner.mp4"
+            />
+            <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, including enhanced quality, predictable supply chain and increased profitability.`} />
 
-  const blogSliderData = [
-    {
-      id: 1,
-      cardBGImageUrl: "/manufacturing/blogBg.webp",
-      cardBGColor: "red",
-      cardHeading: "MES Impact on Manufacturing Operations ",
-      cardDesc: `'Manufacturing Execution System (MES) is pivotal in joining the gap between shop floor and enterprise-level operations in manufacturing.'`,
-      cardTextColor: "white",
-      readMoreUrl: "#",
-    },
-    {
-      id: 2,
-      cardBGImageUrl: "/manufacturing/blog-bg2.webp",
-      cardBGColor: "red",
-      cardHeading: "Legacy Modernization in Manufacturing Industry",
-      cardDesc:
-        "The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. ",
-      cardTextColor: "white",
-      readMoreUrl: "#",
-    },
-  ];
+            <SectionWrapper BGColor="bg-primary-900">
+                <div className="container mx-auto py-32">
+                    <SectionHeading
+                        Color="text-neutral-white"
+                        Heading="Challenges Faced by Manufacturing Businesses"
+                        Desc=""
+                        headingContainerWidth="w-1/2"
+                    ></SectionHeading>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <ul className=" space-y-4 w-full text-neutral-white">
+                            {CHALLENGES_LIST_DATA.map((challenge, index) => (
+                                <li
+                                    key={challenge.id}
+                                    className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
+                                >
+                                    <div className="flex-shrink-0 mr-4">
+                                        <Image
+                                            src={challenge.icon}
+                                            alt={`${challenge.title} icon`}
+                                            width={32}
+                                            height={32}
+                                        />
+                                    </div>
+                                    <div className="text-left">
+                                        <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
+                                            {challenge.title}
+                                        </h3>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                        <div>
+                            {/* <img src="/about/video.png" /> */}
+                        </div>
+                    </div>
+                </div>
 
-  const tabs = [
-    {
-      title: "Automation",
-      value: "automation",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-          <AutomationContent />
-        </div>
-      ),
-    },
-    {
-      title: "Cloud",
-      value: "cloud",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-          <CloudContent />
-        </div>
-      ),
-    },
-    {
-      title: "Transformation",
-      value: "transformation",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-3xl text-xl md:text-4xl font-bold text-black bg-[#FCE6F4]">
-          <TransformationContent />
-        </div>
-      ),
-    },
-  ];
+            </SectionWrapper>
+            {/* end challenges */}
 
-  const INDUSTRY_SPOTLIGHT = [
-    {
-      id: 1,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--manufacturing.png",
-      cardBGColor: "bg-neutral-white",
-      cardHeading: "Automotive/ Discrete/ Industrial",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-      additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
-          
-          <li>
-          Automotive/Discrete/Industrial 
-              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                  <li>Automotive OEM / Suppliers </li>
-                  <li>Industrial Manufacturing </li>
-                  <li>High-Tech & Electronics </li>
-                  <li>Machinery & Equipment</li>
-                  <li>Automotive Components</li>
-                  <li>Electricals & Electronics</li>
-                  <li>Valve</li>
-                  <li>Cables</li>
-                  <li>Optical Glass</li>
-              </ol>
-          </li>
-      </ul>`,
-    },
-    {
-      id: 2,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--retail.png",
-
-      cardBGColor: "bg-neutral-white",
-      cardHeading: "Engineering and construction",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-      additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
-          
-          <li>
-          Engineering and construction
-              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                  <li>Refinery, Petrochemical & Process Equipment </li>
-                  <li>Aerospace & Defense Equipment </li>
-                  <li>Infrastructure / EPC with Turnkey & BOOT BOLT </li>
-                  <li>Ship Design, Building & Repairs</li>
-              </ol>
-          </li>
-      </ul>`,
-    },
-    {
-      id: 3,
-      cardBGImageUrl:
-        "/industry-spotlight/cards-backgrounds/card-bg--trading-and-distribution.png",
-
-      cardBGColor: "bg-neutral-white",
-      cardHeading: "Process Manufacturing",
-      cardDesc: "",
-      isArrow: false,
-      cardTextColor: "white",
-      additionalData: `
-      <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
-          
-          <li>
-          Process Manufacturing 
-              <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-                  <li>Chemicals</li>
-                  <li>Paints</li>
-                  <li>Pharmaceutical</li>
-                  <li>Lubricants</li>
-                  <li>Fragrance</li>
-                  <li>Polymers</li>
-                  <li>Glass</li>
-                  <li>Cement</li>
-                  <li>Bottling Plant</li>
-              </ol>
-          </li>
-      </ul>`,
-    },
-
-    // Add more cards as needed
-  ];
-
-  const RPASolution2 = [
-    {
-      id: 1,
-      cardBGColor: "white",
-      cardHeading: "PS2.0 – Prosoft 2.0",
-      cardDesc:
-        "Optimize project management and inventory control for businesses with multiple sites and warehouses",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 2,
-      cardBGColor: "white",
-      cardHeading: "Industry 4.0 - Interface with MES",
-      cardDesc:
-        "Bridge the gap between production and ERP systems, for synchronized production scheduling and inventory control",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 3,
-      cardBGColor: "white",
-      cardHeading: "Industry 4.0 - IoT",
-      cardDesc:
-        "Real-time machine analytics solutions help in predictive maintenance and improve productivity",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 4,
-      cardBGColor: "#E4E4E4",
-      cardHeading: "Industry 4.0 – RPA – Robotic Process Automation",
-      cardDesc: `Automate manual item coding and BOM creation using BOT, increasing master data accuracy`,
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 5,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "QCAT - Quality control Analysis Testing",
-      cardDesc:
-        "Enhance quality control efficiency with online inspections and dynamic checklists ensuring end-to-end traceability",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 6,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Mobile App – Industrial Safety & Field Quality",
-      cardDesc:
-        "Enhance site quality control and safety, enabling prompt issue resolution and compliance",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 7,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Quality App",
-      cardDesc:
-        "Centralized solution for open quality order management and improved quality control and compliance",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 8,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Production App",
-      cardDesc:
-        "Enhanced production efficiency, enabling accurate record-keeping and improved decision-making",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-    {
-      id: 9,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "CPQ – Configure Price Quote",
-      cardDesc:
-        "Enhance customer experience with precision product customization and efficient quote-to-order processing",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-      cardHoverData: ["abc", "abc", "abc", "abc", "abc", "abc"],
-    },
-  ];
-
-  const DATA_MGMT_DATA = [
-    {
-      id: 1,
-      CardHeading: "Future of Factories",
-      icon: "/manufacturing/keyCapabilities/Futureoffactories.svg",
-      CardDesc: "",
-      additionalData: `
-             <ul class="max-w-md space-y-1 text-white list-disc">
-                                    <li>
-                                        Industry 4.0 with MES 
-                                    </li>
-                                    <li>
-                                        Factory Track
-                                    </li>
-                                    <li>
-                                        Intelligent Operations using AI and ML 
-                                    </li>
-                                   
-                                    
-                                </ul>
-            `,
-    },
-
-    {
-      id: 2,
-      CardHeading: "IoT Enabled Products",
-      icon: "/manufacturing/keyCapabilities/IIOT.svg",
-      CardDesc: "",
-      additionalData: `
-                <ul class="max-w-md space-y-1 text-white list-disc">
-                                       <li>
-                                           Industrial IoT 
-                                       </li>
-                                       <li>
-                                           Plant Efficiency with IoT
-                                       </li>
-                                       <li>
-                                           Asset PredictiveMaintenance
-                                       </li>
-                                   </ul>
-               `,
-    },
-    {
-      id: 3,
-      CardHeading: "Supply Chain Management",
-      icon: "/manufacturing/keyCapabilities/SupplyChain.svg",
-      CardDesc: "",
-      additionalData: `
-                <ul class="max-w-md space-y-1 text-white list-disc">
-                                       <li>
-                                           Inventory Management 
-                                       </li>
-                                       <li>
-                                           Fleet Management with IoT and AR
-                                       </li>
-                                       <li>
-                                           Loftware 
-                                       </li>
-                                       <li>
-                                           Production Planning and Execution Barcode & RFID
-                                       </li>
-                                       
-                                   </ul>
-               `,
-    },
-    {
-      id: 4,
-      CardHeading: "Performance Management",
-      icon: "/manufacturing/keyCapabilities/Performance.svg",
-      CardDesc: "",
-      additionalData: `
-                <ul class="max-w-md space-y-1 text-white list-disc">
-                                       <li>
-                                           Product Lifecycle Management 
-                                       </li>
-                                       <li>
-                                           Asset Management
-                                       </li>
-                                       <li>
-                                           Vendor Management
-                                       </li>
-                                   </ul>
-               `,
-    },
-    {
-      id: 5,
-
-      CardHeading: "Advanced Manufacturing",
-      icon: "/manufacturing/keyCapabilities/Advance.svg",
-      CardDesc: "",
-      additionalData: `
-                <ul class="max-w-md space-y-1 text-white list-disc">
-                                       <li>
-                                           Stock Buffer Management 
-                                       </li>
-                                       <li>
-                                           CCPM - Critical Chain Project Management
-                                       </li>
-                                       <li>
-                                           Resource constraint planning andExecution
-                                       </li>
-                                   </ul>
-               `,
-    },
-  ];
-
-  const SOLUTION_DATA = [
-    {
-      id: 1,
-      cardBGColor: "#F5B1DC",
-      cardHeading: "Dealer<br/>Management",
-      cardDesc:
-        "Require Development from Scratch. Customisation of manufacturing reports",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
-    },
-    {
-      id: 2,
-      cardBGColor: "#FCE6F4",
-      cardHeading: "Value Manufacturing Process Management",
-      cardDesc:
-        "Require Development from Scratch. Customisation of manufacturing reports",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-4.jpg",
-    },
-    {
-      id: 3,
-      cardBGColor: "#CDBAF3",
-      cardHeading: "Metal Recycling Operation Management",
-      cardDesc:
-        "Require Development from Scratch. Customisation of manufacturing reports",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-7.jpg",
-    },
-    {
-      id: 4,
-      cardBGColor: "#E4E4E4",
-      cardHeading: "Strengthen Potential",
-      cardDesc:
-        "Empower employees to focus on strategic tasks to deliver attentive experience to customers",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-1.jpg",
-    },
-    {
-      id: 5,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Enhance Flexibility",
-      cardDesc:
-        "Adapt to changing business needs without hiring and training new staff, saving time and expense",
-      isArrow: true,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-2.jpg",
-    },
-    {
-      id: 5,
-      cardBGImageUrl: "/rpa/ArtboardBg.png",
-      cardBGColor: "#EFE9FB",
-      cardHeading: "Reduce AHT (Average Handling Time)",
-      cardDesc:
-        "Enhance customer service quality, minimize response time and improve operational efficiency",
-      isArrow: false,
-      cardTextColor: "black",
-      cardTopImageUrl: "https://flowbite.com/docs/images/blog/image-3.jpg",
-    },
-  ];
-
-  const CASE_STUDIES_DATA = [
-    {
-      imageURL: "",
-      videoURL: "/CloudStackServices/case-studies/bg--video-industry.mp4",
-      title: "Case Studies",
-      heading: "Manufacturing Projects Highlights",
-      description: "",
-      link: "",
-      color: "#FFFFFF",
-      bgCardColor: "#2B1624",
-    },
-    {
-      imageURL: "",
-      title: "",
-      heading:
-        "30% Reduction in Manual Efforts for Material & Production Planning",
-      description:
-        "Leading manufacturer of Electrical components for the Automobile sector modernize its business application with successful implementation of Infor LN",
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
-      color: "#000",
-      bgCardColor: "#FCE6F4",
-    },
-
-    {
-      imageURL: "/path/to/image1.jpg",
-      title: "",
-      heading: "Better Data Security and Customer Relationship",
-      description: `India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN`,
-      link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Case-Study-Salesforce-Implementation.pdf",
-      color: "#000",
-      bgCardColor: "#EFE9FB",
-    },
-  ];
-
-  const TESTIMONIAL_DATA = [
-    {
-      id: 1,
-      cardHeading: "Expert Implementation & Support Service",
-      cardDesc: `Appreciation to Godrej Infotech Limited's effective solutions and support, we acknowledge their expertise for optimizing ERP LN FP2 since April 2009.`,
-      designation: `Global Leader,`,
-      companyName: `Ice-Cold Merchandiser & Glass Bottle Manufacturer`,
-    },
-    {
-      id: 2,
-      cardHeading: "Cost Effective Cloud Solution Implementation",
-      cardDesc:
-        "Thank you, Godrej Infotech team, for cloud-enabling our Navision system, enhancing system availability, offering cost-effective OPEX pricing, and providing anytime, anywhere accessibility.",
-      designation: `IT Manager,`,
-      companyName: ` Indian Petrochemical Manufacturer of Resins & Plastics`,
-    },
-  ];
-
-  const imgBGURL_Challenges =
-  "/manufacturing/gear.webp";
-
-  return (
-    <>
-      <EntIntro
-        title="Manufacturing Digitalization Starts Here"
-        desc="Transforming Factory to Shop Floor Operations with Future-Proof Solutions"
-        cta="Let's Connect"
-        width="60%"
-        video="/manufacturing/videos/pageBanner.mp4"
-      />
-      <OverviewSection
-        Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, including enhanced quality, predictable supply chain and increased profitability.`}
-      />
-
-      <SectionWrapper
-        BGColor="bg-primary-900"
-        setTop={false}
-        style={{
-          backgroundImage: `url(${imgBGURL_Challenges})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="container mx-auto py-32">
-          <SectionHeading
-            Color="text-neutral-white"
-            Heading="Challenges Faced by Manufacturing Businesses"
-            Desc=""
-            headingContainerWidth="w-1/2"
-          ></SectionHeading>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <ul className=" space-y-4 w-full text-neutral-white">
-              {CHALLENGES_LIST_DATA.map((challenge, index) => (
-                <li
-                  key={challenge.id}
-                  className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${
-                    index === CHALLENGES_LIST_DATA.length - 1
-                      ? "border-b-0"
-                      : ""
-                  }`}
-                >
-                  <div className="flex-shrink-0 mr-4">
-                    <Image
-                      src={challenge.icon}
-                      alt={`${challenge.title} icon`}
-                      width={32}
-                      height={32}
+            <SectionWrapperNew
+                sectionHeading={"Solution Offerings"}
+                sectionDesc={"We deploy solutions that modernize every aspect of the manufacturing value chain from design and production to supply chain management and customer delivery."}
+                sectionTextColor="text-primary-900"
+                title="OUR OFFERINGS"
+                sectionHeadingLayout="center"
+                style={{ background: '#f2f2f2' }}
+            >
+                <div className="h-[70vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
+                    <Tabs
+                        activeTabClassName="!bg-[#cccccc] !text-[#fff]"
+                        contentClassName="!mt-5"
+                        tabClassName="!px-4 hover:bg-[#ccc] "
+                        containerClassName="!my-2"
+                        tabs={tabs}
                     />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
-                      {challenge.title}
-                    </h3>
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div>{/* <img src="/about/video.png" /> */}</div>
-          </div>
-        </div>
-      </SectionWrapper>
-      {/* end challenges */}
-
-      <SectionWrapperNew
-        sectionHeading={"Solution Offerings"}
-        sectionDesc={
-          "We deploy solutions that modernize every aspect of the manufacturing value chain from design and production to supply chain management and customer delivery."
-        }
-        sectionTextColor="text-primary-900"
-        title="OUR OFFERINGS"
-        sectionHeadingLayout="center"
-        style={{ background: "#f2f2f2" }}
-      >
-        <div className="h-[70vh] lg:h-[100vh] 2xl:h-[70vh] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
-          <Tabs
-            activeTabClassName="!bg-[#cccccc] !text-[#fff]"
-            contentClassName="!mt-5"
-            tabClassName="!px-4 hover:bg-[#ccc] "
-            containerClassName="!my-2"
-            tabs={tabs}
-          />
-        </div>
-      </SectionWrapperNew>
+                </div>
+            </SectionWrapperNew>
 
       {/* end future section */}
 
@@ -730,31 +262,94 @@ function page() {
         setTop={false}
       />
 
-      <BlogSliderSection cardData={blogSliderData} ></BlogSliderSection>
+            <SectionWrapperNew
+                bgColor={"bg-neutral-white"}
+                sectionHeading="Manufacturing Accelerators"
+                sectionDesc="Our pre-configured solutions ensure seamless integration and rapid implementation."
+                sectionTextColor='text-primary-900'
+                sectionHeadingLayout="left"
+            >
+                <Slider>
+                    {RPASolution2?.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <>
+                                <div className="sm:px-6" style={{ borderRight: '2px solid #000' }} >
+                                    <Image
+                                        src={item.icon}
+                                        width={64}
+                                        height={64}
+                                        alt={"icon"}
+                                        className=""
+                                    />
+                                    <div className="px-4 sm:px-0">
+                                        <div className="text-heading-04 mb-2 font-semibold">{item.cardHeading}</div>
+                                        <p className="text-paragraph-02 sm:min-h-[72px] mb-4">{item.cardDesc}</p>
+                                        <div className="flex justify-end">
+                                            <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleMACardClick(true, item)} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </>
+                        </SwiperSlide>
+                    ))}
+                </Slider>
 
-      <ReviewSliderSection
-        ID={"TESTIMONIALS"}
-        Heading={"Delighted Customers Share their Successful Experience"}
-        Desc={""}
-        Color="text-neutral-white"
-        CardDataList={TESTIMONIAL_DATA}
-        BGColor="bg-primary-900"
-        SectionHeadingMaxWidth={"70%"}
-        setHeadingLayout={'left'}
-        style={{
-            paddingTop:"4rem"
-        }}
-      ></ReviewSliderSection>
+            </SectionWrapperNew>
+            {/* modal bsc data */}
+            <Dialog
+                shouldShow={showMAModal}
+                onRequestClose={() => {
+                    setShowMAModal((prev) => !prev);
+                }}
+                title={maDataItem?.cardHeading}
+            >
+                <div>
+                    <div className="">
+                        <div className="grid grid-cols-1 gap-4">
+                            <ul className="space-y-2 w-full">
+                                {maDataItem.cardHoverData?.map((challenge, index) => (
+                                    <li
+                                        key={index}
+                                        className={`flex items-start py-1 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === maDataItem.cardHoverData?.length - 1 ? 'border-b-0' : ''}`}
+                                    >
+                                        <p className="text-left">
+                                            <h3 className="font-normal text-paragraph-02">
+                                                {challenge}
+                                            </h3>
+                                        </p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </Dialog>
+            {/* modal end bsc data */}
+            {/* custome solution */}
 
-      {/* transform business with us section */}
-      <TransformBusinessForm
-        Title={"Transform your Business with us"}
-        Desc={
-          "Let us discuss how digital transformation solutions can help you with rapid growth. "
-        }
-      ></TransformBusinessForm>
-    </>
-  );
+            <IndustrySpotlight cardData={INDUSTRY_SPOTLIGHT} sectionDesc={'Godrej Infotech has extensive experience of working with more than 200+ customers in discrete and process manufacturing.'} />
+            <CaseStudiesSection casestudy={CASE_STUDIES_DATA} csLayout={"5"} bgColor='bg-neutral-white' />
+
+            <BlogSliderSection
+                cardData={blogSliderData}
+            ></BlogSliderSection>
+
+            <ReviewSliderSection
+                ID={"TESTIMONIALS"}
+                Heading={"Delighted Customers Share their Successful Experience"}
+                Desc={''}
+                Color="text-neutral-white"
+                CardDataList={TESTIMONIAL_DATA}
+                BGColor="bg-primary-900"
+                SectionHeadingMaxWidth={'70%'}
+            ></ReviewSliderSection>
+
+            {/* transform business with us section */}
+            <TransformBusinessForm Title={'Transform your Business with us'} Desc={"Let us discuss how digital transformation solutions can help you with rapid growth. "}>
+            </TransformBusinessForm>
+
+        </>
+    )
 }
 
 const AutomationContent = () => {

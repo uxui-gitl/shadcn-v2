@@ -9,22 +9,91 @@ import Image from "next/image";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import axios from 'axios';
-import { useRouter } from 'next/navigation';  
+import { useRouter } from 'next/navigation';
+import {Pagination} from "@nextui-org/react";
+import JobCard from '@/components/JobCard';
+import url from "@/data/url";
+
 
 const Page = () => {
   const router = useRouter();
   const [jobList, SetJobList] = useState([])
+  const [copyJobList, SetCopyJobList] = useState(jobList);
+  console.log(copyJobList, "copyJobList");
+  const [functionDropDownData, setFunctionDropDownData] = useState([]);
+  const [businessDropDownData, setBusinessDropDownData] = useState([]);
+  const [locationDropDownData, setLocationDropDownData] = useState([]);
 
+
+  const [functionData, setFunctionData] = useState('');
+  const [loactionData, setLoactionData] = useState('');
+  const [businessData, setBusinessData] = useState('');
+
+
+
+  const onChange = (event, type) => {
+    const value = event.target.value;
+    { type == 'function' && setFunctionData(value) }
+    { type == 'location' && setLoactionData(value) }
+    { type == 'business' && setBusinessData(value) }
+
+};
+
+useEffect(() => {
+  filterData();
+}, [functionData, loactionData, businessData])
+
+function handleReset() {
+  SetCopyJobList(jobList);
+  setFunctionData('');
+  setLoactionData('');
+  setBusinessData('');
+}
+
+function filterData() {
+  if (functionData != '') {
+      const data = copyJobList.filter((item) => item.functionCode == functionData);
+      SetCopyJobList(data);
+  }
+
+  if (loactionData != '') {
+      const data = copyJobList.filter((item) => item.location == loactionData);
+      SetCopyJobList(data);
+  }
+  
+  if (businessData != '') {
+    const data = copyJobList.filter((item) => item.div == businessData);
+    SetCopyJobList(data);
+}
+}
 
   useEffect(() => {
     getJobList();
+    getFilterList();
   }, []);
+
+  async function getFilterList() {
+    try {
+      const [d1, d2, d3] = await Promise.all([
+        axios.get(`${url.vacancyUrl}/GetGILFunctionDetails`),
+        axios.get(`${url.vacancyUrl}/GetGILBusinessDetails`),
+        axios.get(`${url.vacancyUrl}/GetGILLocationDetails`),
+      ]);
+      console.log(d2, "d2")
+      setFunctionDropDownData(d1?.data?.model);
+      setBusinessDropDownData(d2?.data?.model);
+      setLocationDropDownData(d3?.data.model);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   async function getJobList() {
     try {
-      let response = await axios.post('http://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
+      let response = await axios.post('http://gnbnetdevapp1.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
       let data = response.data.model;
       SetJobList(data);
+      SetCopyJobList(data)
       console.log(data)
     } catch (error) {
       console.log(error);
@@ -43,7 +112,7 @@ const Page = () => {
         sectionHeadingLayout="center"
       >
         <div className="">
-          <form className="w-full mx-auto">
+          <form className="w-full mx-auto mb-6 hidden">
             <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div className="relative">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -56,41 +125,39 @@ const Page = () => {
             </div>
           </form>
 
-          <div className="flex w-[50%] my-6">
-            <select id="default" className="bg-[white] mr-6 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
-              <option selected>Function</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
-            </select>
-            <select id="default" className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 ">
-              <option selected>Location</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
-            </select>
+          <div className="flex flex-col sm:flex-row justify-end mb-2 sm:mb-4">
+              <select id="functionDropdown" value={functionData}  onChange={(e) => onChange(e, 'function')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
+                <option selected>Function</option>
+                {functionDropDownData?.map((item) => (
+                  <>
+                <option value={item?.functionsCode}>{item?.functionsDesc}</option>
+                  </>
+                ))}
+              </select>
+              <select id="default" value={businessData}  onChange={(e) => onChange(e, 'business')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
+                <option selected>Business</option>
+                {businessDropDownData?.map((item) => (
+                <option value={item?.divDeptCode}>{item?.divDeptDesc}</option>
+                ))}
+
+              </select>
+              <select id="default" value={loactionData}  onChange={(e) => onChange(e, 'location')} className="sm:mr-2 mb-2 sm:mb-0 px-4 py-3 xs-w-full bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block ">
+                <option selected>Loaction</option>
+                {locationDropDownData?.map((item) => (
+                <option value={item?.locWebPageDesc}>{item?.locWebPageDesc}</option>
+                ))}
+
+              </select>
+            <button onClick={() => handleReset()} type="button" className="px-5 py-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-xl border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700">clear</button>
           </div>
         </div>
-        <div className="text-[14px] text-[#E0028E] mb-4">{jobList.length} jobs in all categories in all locations</div>
-        {jobList?.map(item => (
+        <div className="text-[14px] text-[#E0028E] mb-4">{copyJobList.length} jobs in all categories in all locations</div>
+        {copyJobList?.map(item => (
           <>
-            <div className="jobcard flex justify-between items-end py-6" style={{ borderBottom: '1px solid #d3d3d3' }}>
-              <div className="">
-                <div className="text-[30px] mb-4 text-[#1D162B]">{item?.designation}</div>
-                <p className="text-[16px] leading-[20px] text-[#808080] mb-6">{item?.functionsDesc}</p>
-                <div className="">
-                  <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">{item?.location}</span>
-                </div>
-              </div>
-              <div className="">
-                <button type="button" className="text-[#EFE9FB] bg-[#5F22D9] mb-8 font-medium rounded-full text-[16px] px-6 py-3 text-center" onClick={() => router.push(`/job-detail/${item.srNo}`)}>Apply Now</button>
-                <p className="text-[14px] text-[#808080">Posted {item?.insertDate}</p>
-              </div>
-            </div>
+          <JobCard props={item}></JobCard>
           </>
         ))}
+          {copyJobList.length==0 && (<h2 className="text-[28px] font-semibold"> No Data Found</h2>)}
       </SectionWrapperNew>
 
       {/* <Review /> */}

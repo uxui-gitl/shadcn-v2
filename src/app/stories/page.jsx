@@ -29,19 +29,19 @@ const page = () => {
             >
                 {storiesData?.map(item => (
                     <>
-                 <div className="cards py-10" style={{borderBottom:'1px solid #d3d3d3'}}>
-                    <div className="grid grid-cols-3 gap-4">
-                        <div className="">
-                            <Image src={item.imageUrl} height={300} width={300}></Image>
-                        </div>
+                 <div className="cards py-5" style={{ borderBottom: '1px solid #E4E4E4'}}>
+                            <div className="flex flex-col md:flex-row items-center">
+                                <div className="mb-4 sm:mb-0 sm:mr-10">
+                                    <Image src={item.imageUrl} height={200} width={200} ></Image>
+                                </div>
 
-                        <div className="col-span-2">
-                            <h6 className="date text-[#808080] text-[16px] font-medium mb-10">{item.date} {item.month}, {item.year}</h6>
-                            <h2 className="title text-[20px]  leading-[28px] font-semibold mb-10">{item.title}</h2>
-                            <Link href={item.readMoreUrl} target='_blank' type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Read Blog</Link>
+                                <div className="text-center sm:text-left">
+                                    <h6 className="date text-[#1D162B] text-heading-05 mb-4">{item.date} {item.month}, {item.year}</h6>
+                                    <h2 className="title text-heading-04 font-bold mb-7 max-w-[700px]">{item.title}</h2>
+                                    <Link href={item.readMoreUrl} target='_blank' type="button" className="py-2.5 px-7  mb-2 text-sm font-medium text-[#808080] focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Read Blog</Link>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
                     </>
                 ))}
                

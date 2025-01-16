@@ -12,15 +12,16 @@ function SectionWrapperNew({
     bgColor,
     children,
     txtLinearGradient='',
-    setTop='true',
-    setPad='true',
+    setTop=true,
+    setPad=true,
 }) {
-
+    // ${setTop?'-mt-8 sm:-mt-8 ':''}
   
     return (
         <>
-            <div className={`rounded-3xl ${setTop?'-mt-8':''} ${bgColor}`} style={{...style}}>           
-                <div className={`container mx-auto ${setPad ? 'py-32 lg:py-8 2xl:py-32' : ''}`}>
+            <div className={`rounded-3xl  ${bgColor}`} style={{...style}}>
+                
+                <div className={`container mx-auto ${setPad ? 'py-8 lg:py-8 2xl:py-8' : ''}`}>
                 {sectionHeadingLayout == 'left'  && <LeftHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} descColor={sectionDescColor}></LeftHeading>}
                 {sectionHeadingLayout == 'center'  && <CenterHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} descColor={sectionDescColor} applyGradient = {txtLinearGradient}></CenterHeading>}
                 {sectionHeadingLayout == 'horizontal' && <HorizontalHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} title={title} descColor={sectionDescColor}></HorizontalHeading>}

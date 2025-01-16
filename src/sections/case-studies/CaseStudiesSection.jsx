@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Dialog from "@/components/Dialog";
-const CaseStudiesSection = ({ casestudy, csLayout, bgColor, style ,setTop}) => {
+const CaseStudiesSection = ({ casestudy, csLayout, bgColor='bg-white', style ,setTop}) => {
   const caseStudyLayout = csLayout;
   const setHeading = "IIoT  Solution Offerings";
   const setDesc =

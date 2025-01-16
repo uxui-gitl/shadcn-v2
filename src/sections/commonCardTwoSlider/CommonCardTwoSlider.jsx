@@ -1,5 +1,6 @@
 import React from "react";
 import SectionWrapper from "@/components/SectionWrapper";
+import SectionWrapperNew from "@/components/SectionWrapperNew"
 import SectionHeading from "@/components/SectionHeading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CommonCardTwo from "@/components/CommonCardTwo";
@@ -23,25 +24,16 @@ function CommonCardTwoSlider({
 
 }) {
     return (
+        <>
         <SectionWrapperNew
-            id={ID}
-            sectionTextColor={sectionTextColor}
-            bgColor={sectionBGColor}
-            sectionHeading={sectionHeading}
-            sectionDesc={sectionDesc}
-            BGColor={sectionBGColor}
-            setTop={setTop}
-            sectionHeadingLayout={setHeadingLayout}
-            style={{
-                ...style,
-                backgroundImage: `url(${sectionImageUrl})`,
-                backgroundSize: "cover",
-            }}
-        >
-            <div className="">
-                
-                <div className="">
-                    <Swiper
+         sectionHeading={sectionHeading}
+         sectionDesc={sectionDesc}
+         sectionTextColor={sectionTextColor}
+         sectionDescColor={sectionDesc}
+         sectionHeadingLayout={setHeadingLayout}
+         bgColor={sectionBGColor}>
+
+                <Swiper
                         slidesPerView={1} // Using number directly for clarity
                         pagination={{ clickable: true }} // Explicit pagination setup
                         modules={[Pagination]} // Ensure Pagination module is listed
@@ -68,9 +60,8 @@ function CommonCardTwoSlider({
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>
-            </div>
         </SectionWrapperNew>
+        </>
     );
 }
 

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
@@ -25,7 +26,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],  // Add 'Inter' font family
+       "druk": "var(--font-druk)"
       },
       fontSize: {
        
@@ -145,7 +146,7 @@ const config: Config = {
           100: '#b599ee',
           200: '#946be6',
           300: '#7f4ee1',
-          400: '#5f22d9',
+          400: '#810055',
           500: '#561fc5',
           600: '#43189a',
           700: '#341377',
