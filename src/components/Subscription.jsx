@@ -44,7 +44,6 @@ const Subscription = ({ title, blue, title2, desc }) => {
     e.preventDefault();
     setBtnLoader(true);
     try {
-      debugger;
       let res = await axios.post(`https://mailer.godrejenterprises.com/GodrejinfotechAPI/SendEnquiry/RegistrationEnquiry`, formData, { headers: { Authorization: `Bearer ${token}` } });
       console.log(res);
       debugger;

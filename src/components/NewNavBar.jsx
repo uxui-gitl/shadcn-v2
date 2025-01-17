@@ -234,7 +234,7 @@ function NewNavBar() {
           className={`z-[10] px-10 w-full bg-white absolute top-[0px] duration-700 rounded-b-3xl shadow-lg  shadow-gray-500/10 overflow-y-scroll  ${
             isNavbarActive
               ? "translate-y-0 top-[104px]"
-              : "-translate-y-full top-[0px]"
+              : "-translate-y-full -top-[10px]"
           }`}
           style={{ height: `calc(100vh - 66px)` }}
         >
@@ -1681,7 +1681,7 @@ function NewNavBar() {
       >
         <div
           className={`flex justify-between items-left px-4 py-2 xl:invisible ${
-            isScrolled ? "" : "mt-6"
+            isScrolled ? "" : "mt-0"
           }`}
         >
           {/* Company Logo */}

@@ -1,41 +1,5 @@
-export const items = [
-    { id: 1, content: "Healthcare" },
-    { id: 2, content: "Professional Service" },
-    { id: 3, content: "Retail" },
-    { id: 4, content: "Manufacturing" },
-    { id: 5, content: "Project" },
-  ];
 
-  export const items2 = [
-    { id: 6, content: "AI powered Care" },
-    { id: 7, content: "Automation" },
-    { id: 8, content: "Ecommerce" },
-    { id: 9, content: "Smart Factory" },
-    { id: 10, content: "Cloud ERP" },
-  ];
 
-  export const items3 = [
-    { id: 11, content: "Quality" },
-    { id: 12, content: "Competitiveness" },
-    { id: 13, content: "Customer Centricity" },
-    { id: 14, content: "Agility" },
-    { id: 15, content: "Project Visibility" },
-  ];
-  export const items4 = [
-    { id: 16, content: "Automation" },
-    { id: 17, content: "Cloud" },
-    { id: 18, content: "Transformation" },
-  ];
-
-  export const partnerLogo = [
-    "/homeNew/partner1.svg",
-    "/homeNew/partner2.svg",
-    "/homeNew/partner3.svg",
-    "/homeNew/partner1.svg",
-    "/homeNew/partner2.svg",
-    "/homeNew/partner3.svg",
-    "/homeNew/partner1.svg",
-  ];
 
   export const CASE_STUDIES_DATA = [
     {
@@ -115,23 +79,3 @@ export const items = [
 
 
 
-  export const sliderData = [
-    {
-      id: 1,
-      title: "Automation Project Insight",
-      desc: "AI powered Computer vision saves 75% of monthly man hours with automated auditing for leading retailer",
-      url: "/home/images/Automation.webp",
-    },
-    {
-      id: 2,
-      title: "Cloud Project Insight",
-      desc: "- Analytical financial reporting leveraged by management with D365 F&O on Cloud for non-profit, industry managed organisation. ",
-      url: "/home/images/Cloud.webp",
-    },
-    {
-      id: 3,
-      title: "Transformation Project Insight",
-      desc: "8 years of Infor managed support services and migration for MT Infor cloud optimises operational cost by 25 for Europe's maritime service provider",
-      url: "/home/images/Transformation.webp",
-    },
-  ];

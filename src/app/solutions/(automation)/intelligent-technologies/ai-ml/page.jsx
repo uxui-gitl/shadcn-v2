@@ -226,7 +226,6 @@ const page = () => {
         title="Innovate with AI & ML -Powered Business Solutions"
         desc="Revolutionise business operations, enhance productivity and save time with our Artificial Intelligence & Machine Learning offerings."
         cta="Let's Connect"
-        width="60%"
         video="/ai-ml/videos/pageBanner.mp4"
       />
 

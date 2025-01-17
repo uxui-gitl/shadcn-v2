@@ -60,7 +60,7 @@ const Footer = () => {
       >
         <div className="fixed bottom-0 h-[500px] w-full text-sm">
           <footer className="container">
-            <div className="mx-auto space-y-8 py-16 lg:space-y-4">
+            <div className="mx-auto space-y-8 md:py-16 py-8 lg:space-y-4">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-7">
                 <div>
                   <div className="text-neutral-white">

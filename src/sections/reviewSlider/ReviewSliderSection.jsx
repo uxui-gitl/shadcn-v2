@@ -56,7 +56,7 @@ function ReviewSliderSection({
         }}
       >
         <div className="">
-          <div className="flex mt-10 md:mt-20 min-h-[540px]">
+          <div className="flex mt-10 md:mt-20">
             <div className="relative hidden md:inline w-[30%]">
               <div
                 className={`swiper-button-next`}
@@ -101,11 +101,11 @@ function ReviewSliderSection({
                 {CardDataList?.map((item, index) => (
                   <SwiperSlide key={item.id ? item?.id : index}>
                     <div className="w-full bg-transparent rounded-3xl">
-                      <div className="text-neutral-white text-heading-02 font-light  md:w-[80%]">
+                      <div className="text-neutral-white text-heading-03 font-medium md:w-[80%] line-clamp-2">
                         {item.cardHeading}
                       </div>
                       <div
-                        className="text-neutral-white text-paragraph-01 mt-4"
+                        className="text-neutral-white text-paragraph-02 mt-4 line-clamp-4"
                         dangerouslySetInnerHTML={{ __html: item.cardDesc }}
                       />
 

@@ -19,7 +19,8 @@ function SectionWrapperNew({
   
     return (
         <>
-            <div className={`rounded-3xl  ${bgColor}`} style={{...style}}>
+        {/* rounded-3xl */}
+            <div className={`  ${bgColor}`} style={{...style}}>
                 
                 <div className={`container mx-auto ${setPad ? 'py-8 lg:py-8 2xl:py-8' : ''}`}>
                 {sectionHeadingLayout == 'left'  && <LeftHeading heading={sectionHeading} desc={sectionDesc} textColor={sectionTextColor} descColor={sectionDescColor}></LeftHeading>}

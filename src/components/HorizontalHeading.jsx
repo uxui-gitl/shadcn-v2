@@ -24,7 +24,7 @@ function HorizontalHeading({
 
     {/* Right Section */}
     <div className="text-center sm:text-left flex flex-col justify-between">
-      <div className={`text-body-01 font-medium ${descColor} mb-8 mt-auto`} dangerouslySetInnerHTML={{ __html: desc }}>
+      <div className={`text-body-01 font-medium ${descColor} md:mb-8 mb-4 mt-auto`} dangerouslySetInnerHTML={{ __html: desc }}>
      
       </div>
     </div>
