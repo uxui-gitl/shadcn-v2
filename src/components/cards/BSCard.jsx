@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-import style from '../components/style/common.module.css'
 
-function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10",setCardsMinHeight="min-h-[524px]  md:min-h-[484px] lg:min-h-[525px] 2xl:min-h-[524px]" }) {
+function BSCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10", setCardsMinHeight="min-h-[524px]  md:min-h-[484px] lg:min-h-[525px] 2xl:min-h-[524px]" }) {
   const {
     CardBGImageUrl = "",
     CardBGColor = "",
@@ -21,11 +20,8 @@ function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white bord
     arrowColor = "#FFF",
     additionalData=[],
     CardMinHeight=''
-    
-
   } = Item;
 
-  console.log(isArrow);
   return (
     <>
       <div
@@ -35,7 +31,6 @@ function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white bord
           backgroundSize: CardBGImageUrlSize,
           color: CardTextColor,
           width: "100%",
-      
         }}
       >
         <div className="card-body p-5 flex-grow">
@@ -47,7 +42,7 @@ function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white bord
           )}
           {CardHeading && (
             <h5
-              className={`text-heading-03 font-semibold ${CardTextColor}`}
+              className={`text-heading-04 font-semibold ${CardTextColor}`}
               dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}
@@ -102,4 +97,4 @@ function CommonCard({ Item, setpageID, setBorderColor="border-neutral-white bord
   );
 }
 
-export default CommonCard;
+export default BSCard;

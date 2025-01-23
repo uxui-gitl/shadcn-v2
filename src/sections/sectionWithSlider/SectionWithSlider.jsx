@@ -1,8 +1,7 @@
-import SectionWrapper from "@/components/SectionWrapper";
-import SectionHeading from "@/components/SectionHeading";
 import { Autoplay, Navigation, Pagination, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import CommonCard from "@/components/CommonCard";
+import BSCard from "@/components/cards/BSCard";
+
 // import CardWidthBackground from "@/components/CardWithBackground";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -78,7 +77,7 @@ function SectionWidthSlider({
             >
               {cardData?.map((item, index) => (
                 <SwiperSlide key={item.id ? item?.id : index}>
-                  <CommonCard Item={item} setpageID={pageID} setBorderColor={setBorderColor} setCardsMinHeight={setCardsMinHeight}></CommonCard>
+                  <BSCard Item={item} setpageID={pageID} setBorderColor={setBorderColor} setCardsMinHeight={setCardsMinHeight}></BSCard>
                 </SwiperSlide>
               ))}
             </Swiper>

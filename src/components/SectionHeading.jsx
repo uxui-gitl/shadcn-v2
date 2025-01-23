@@ -24,7 +24,7 @@ function SectionHeading({
         >
           {Heading && (
             <h1
-              className={`text-neutral-white text-heading-01 text-center mb-6 ${
+              className={`text-neutral-white text-heading-03 md:text-heading-02 text-center mb-6 ${
                 center ? "md:text-center" : "md:text-left"
               } md:text-left ${Color} mb-6 sm:mb-2 md:mb-6`}
               dangerouslySetInnerHTML={{ __html: Heading }}
@@ -51,7 +51,7 @@ function SectionHeading({
           }`}
         >
           <h1
-            className={`text-heading-01 mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
+            className={`text-heading-02 mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
           >
             {Heading}
           </h1>

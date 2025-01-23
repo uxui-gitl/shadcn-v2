@@ -27,9 +27,10 @@ function HubExperties() {
       sectionHeadingLayout="center"
       style={{
         background: `url(/homeNew/globe.svg), linear-gradient(360deg, #5F22D9 12.04%, #0c031f 57.96%)`,
-        paddingTop: "50px",
-        paddingBottom: "50px",
-
+        paddingTop: "30px",
+        paddingBottom: "40px",
+        zIndex: "2",
+        position: "relative",
         backgroundPosition: "bottom center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover", // Optional: ensures the image covers the div area

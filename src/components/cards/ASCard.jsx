@@ -1,8 +1,8 @@
 import Image from "next/image";
-import OutlinedButtonWithArrow from "./ui/buttons/OutlinedButtonWithArrow";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import style from '@/components/style/commonCardOne.module.css';
-
-function CommonCardOne({ Item }) {
+// commonCardOne
+function ASCard({ Item }) {
     const {
         cardBGImage = "",
         cardBGColor = "",
@@ -18,7 +18,7 @@ function CommonCardOne({ Item }) {
     return (
         <>
             <div
-                className={`rounded-3xl shadow min-h-[524px] md:min-h-[450px] 2xl:min-h-[524px] flex flex-col justify-between ${style.commonCardOne}`}
+                className={`rounded-3xl shadow min-h-[424px] md:min-h-[450px] 2xl:min-h-[424px] flex flex-col justify-between ${style.commonCardOne}`}
                 style={{
                     backgroundColor: `${cardBGColor}`,
                     color: cardTextColor,
@@ -47,14 +47,14 @@ function CommonCardOne({ Item }) {
                     )}
                     {cardHeading && (
                         <h5
-                            className={`text-heading-02 ${style.cardHeading}`}
+                            className={`text-heading-03 line-clamp-2 ${style.cardHeading}`}
                             dangerouslySetInnerHTML={{ __html: cardHeading }} // Render HTML content
                         />
                     )}
 
                     {cardDesc && (
                         <p
-                            className={` text-body-01 ${style.cardDesc}`}
+                            className={` text-body-01 line-clamp-4 sm:line-clamp-3 ${style.cardDesc}`}
                             dangerouslySetInnerHTML={{ __html: cardDesc }} // Render HTML content
                         />
                     )}
@@ -70,4 +70,4 @@ function CommonCardOne({ Item }) {
     );
 }
 
-export default CommonCardOne;
+export default ASCard;

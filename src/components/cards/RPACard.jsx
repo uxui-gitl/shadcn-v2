@@ -1,8 +1,8 @@
 import Image from "next/image";
-import OutlinedButtonWithArrow from "./ui/buttons/OutlinedButtonWithArrow";
+import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import style from '@/components/style/commonCardTwo.module.css';
 
-function CommonCardTwo({ Item }) {
+function RPACard({ Item }) {
     const {
         cardBGImageUrl = "",
         cardBGColor = "",
@@ -28,7 +28,7 @@ function CommonCardTwo({ Item }) {
                         backgroundSize:'cover',
                         color: cardTextColor,
                         width: "100%",
-                        minHeight: '580px',
+                        minHeight: '440px',
                     }}
                 >
                     <div className={`p-5 flex-grow ${cardType == 2 && style.type2}`}>
@@ -67,4 +67,4 @@ function CommonCardTwo({ Item }) {
     );
 }
 
-export default CommonCardTwo;
+export default RPACard;

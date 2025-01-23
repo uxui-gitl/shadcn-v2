@@ -3,6 +3,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import { useState, useEffect } from "react";
 import ServiceOfferingCard from "@/components/ServiceOfferingCard";
+import {cardData, listData} from "./data.js";
 
 function ServiceOfferingSection({
   ID,
@@ -12,8 +13,6 @@ function ServiceOfferingSection({
   sectionTextColor = "text-neutral-white",
   sectionBGColor = "bg-primary-900",
   setTop='',
-  cardData = [],
-  LinkListData = [],
 }) {
   const [data, setData] = useState([cardData[0]]);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,22 +26,15 @@ function ServiceOfferingSection({
   }, []);
 
   function handleClick(item) {
-    console.log("Clicked item:", item); // Debugging output
-    console.log("Available cardData:", cardData); // Debugging output to confirm structure
-
-    // Ensure consistent ID comparison by converting to string
     const selectedData = cardData.find(
       (Item) => String(Item.id) === String(item.id)
     );
-
-    console.log("Selected Data:", selectedData); // Check if selectedData is found
 
     if (selectedData) {
       setData([selectedData]);
 
       if (isMobile) {
         setShowModal(true);
-        console.log("Mobile view detected, opening modal.");
       }
     } else {
       console.warn("No matching item found in cardData with ID:", item.id);
@@ -51,17 +43,19 @@ function ServiceOfferingSection({
 
   return (
     <>
-      <SectionWrapper id={ID} BGColor={sectionBGColor} setTop={setTop}>
+      <SectionWrapper id={ID} BGColor={'bg-primary-900'} setTop={setTop} style={{ 
+        position: "relative",
+          zIndex: "1",}}>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-          <div className= "py-32 lg:py-8 2xl:py-32">
+          <div className= "pt-8 pb-16 lg:pt-8 lg:pb-16 2xl:pt-8 2xl:pb-16">
             <SectionHeading
-              Heading={sectionHeading}
-              Desc={sectionDesc}
-              Color={sectionTextColor}
+              Heading={'Service Offerings'}
+              Desc={'"We offer AI-driven process automation, process re-engineering and seamless implementation support for transformative business results.'}
+              Color={'text-neutral-white'}
               headingContainerWidth="w-full"
             />
             <div className="mt-2">
-              {LinkListData.map((item) => (
+              {listData.map((item) => (
                 <div
                   key={item?.id}
                   onClick={() => handleClick(item)}

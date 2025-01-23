@@ -19,6 +19,7 @@ function ReviewSliderSection({
   BGColor = "",
   setHeadingLayout,
   style = {},
+  zindex
 }) {
   const swiperNextBtn = {
     position: "absolute",
@@ -53,6 +54,8 @@ function ReviewSliderSection({
           backgroundSize: "cover",
           borderBottomLeftRadius: "0px",
           borderBottomRightRadius: "0px",
+          zIndex: 9,
+          position: "relative",
         }}
       >
         <div className="">

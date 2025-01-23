@@ -16,7 +16,7 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 import SectionWrapperNew from "@/components/SectionWrapperNew";
 import { SwiperSlide } from "swiper/react";
 import Slider from "@/components/Slider";
-import CommonCard from "@/components/CommonCard";
+import BSCard from "@/components/cards/BSCard";
 import Image from "next/image";
 
 
@@ -26,17 +26,17 @@ const AIOfferingsData = [
   {
     id: 1,
     CardBGImageUrl: '',
-    CardBGColor:'#fff',
-    CardTextColor:'text-primary-900',
-    CardBGImageUrlSize:"",
+    CardBGColor: '#fff',
+    CardTextColor: 'text-primary-900',
+    CardBGImageUrlSize: "",
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Computer <br/> Vision',
     CardDesc: 'Custom video/image analysis tools leveraging OpenCV for optimized computer vision algorithms',
-    CardDescColor:'text-neutral-dark-grey',
+    CardDescColor: 'text-neutral-dark-grey',
     isArrow: false,
-    DownImageUrl : "",
-    CardDownImageMinHeight:"",
+    DownImageUrl: "",
+    CardDownImageMinHeight: "",
     arrowColor: '#000',
     link: [
       {
@@ -57,13 +57,13 @@ const AIOfferingsData = [
   {
     id: 2,
     CardBGImageUrl: '',
-    CardBGColor:'#FFF',
-    CardTextColor:'text-primary-900',
+    CardBGColor: '#FFF',
+    CardTextColor: 'text-primary-900',
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Speech & Language',
     CardDesc: 'Speech & Language AI helps businesses to elevate customer experiences and stay competitive',
-    CardDescColor:'text-neutral-dark-grey',
+    CardDescColor: 'text-neutral-dark-grey',
     isArrow: false,
     arrowColor: '#000',
     link: [
@@ -84,13 +84,13 @@ const AIOfferingsData = [
   {
     id: 3,
     CardBGImageUrl: '',
-    CardBGColor:'#FFF',
-    CardTextColor:'#text-primary-900',
+    CardBGColor: '#FFF',
+    CardTextColor: '#text-primary-900',
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Intelligent Scanning',
     CardDesc: 'AI-driven data capture from diverse documents, enabling error-free extraction of unstructured data',
-    CardDescColor:'text-neutral-dark-grey',
+    CardDescColor: 'text-neutral-dark-grey',
     isArrow: false,
     arrowColor: '#000',
     link: [
@@ -102,14 +102,14 @@ const AIOfferingsData = [
         title: "Document data Processing",
         url: "/",
       },
-      
+
     ],
   },
   {
     id: 4,
     CardBGImageUrl: '',
-    CardBGColor:'#FFF',
-    CardTextColor:'#text-primary-900',
+    CardBGColor: '#FFF',
+    CardTextColor: '#text-primary-900',
     CardTitle: "",
     CardIconUrl: '',
     CardHeading: 'Conversational<br/>AI',
@@ -125,7 +125,7 @@ const AIOfferingsData = [
         title: "Chatbots and Virtual Assistants",
         url: "/",
       },
-      
+
     ],
   },
 ]
@@ -191,18 +191,26 @@ const distinctiveData = [
 ]
 
 const benifitsCardsData = [
-  { id: '1',
+  {
+    id: '1',
     icon: "/ai-ml/benefits/processAnalyse.svg",
-    cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers' },
-  { id: '2',
+    cardDesc: 'Process and analyse vast volumes of data and offers round-the-clock assistance to customers'
+  },
+  {
+    id: '2',
     icon: "/ai-ml/benefits/anticipateFuture.svg",
-     cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions' },
-  { id: '3', 
+    cardDesc: 'Anticipate future outcomes based on historical data, making informed decisions'
+  },
+  {
+    id: '3',
     icon: "/ai-ml/benefits/enablesEffortless.svg",
-     cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing' },
-  { id: '4', 
+    cardDesc: 'Enables effortless communication and efficient information retrieval through Natural Language Processing'
+  },
+  {
+    id: '4',
     icon: "/ai-ml/benefits/optimizeSupply.svg",
-    cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity' },
+    cardDesc: 'Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity'
+  },
 ]
 
 const imageUrl = '/ai-ml/AI-bgimage.webp';
@@ -210,7 +218,7 @@ const blogImageUrl = '/ai-ml/blogBg.webp';
 
 
 const PlatFormImageList = [
-  { id: 1, url: '/ai-ml/itPlatforms/MicrosoftAzureML.svg'},
+  { id: 1, url: '/ai-ml/itPlatforms/MicrosoftAzureML.svg' },
   { id: 2, url: '/ai-ml/itPlatforms/OpenAiChatGPT.svg' },
   { id: 3, url: '/ai-ml/itPlatforms/GoogleGemini.svg' },
   { id: 4, url: '/ai-ml/itPlatforms/MetaLlama.svg' },
@@ -238,7 +246,7 @@ const page = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageUrl})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed", // This is key for the parallax effect
-          backgroundPosition: "center",       
+          backgroundPosition: "center",
         }}
         sectionHeading={"Artificial Intelligence Offerings"}
         sectionDesc={'Equipping businesses with actionable intelligence to redefine its potential and enable informed decision-making.'}
@@ -250,7 +258,7 @@ const page = () => {
         <Slider>
           {AIOfferingsData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <CommonCard Item={item}></CommonCard>
+              <BSCard Item={item}></BSCard>
             </SwiperSlide>
           ))}
         </Slider>
@@ -311,11 +319,11 @@ const page = () => {
         <Slider>
           {PlatFormImageList?.map((item, index) => (
             <SwiperSlide key={index} className="p-8">
-                <Image src={item.url} width={350} height={150}  alt="card-image"/>
+              <Image src={item.url} width={350} height={150} alt="card-image" />
             </SwiperSlide>
           ))}
         </Slider>
-      </SectionWrapperNew> 
+      </SectionWrapperNew>
 
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection

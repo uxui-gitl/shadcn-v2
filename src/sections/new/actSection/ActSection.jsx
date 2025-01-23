@@ -28,7 +28,7 @@ function ActSection() {
         style={{
           backgroundColor: "white",
           position: "relative",
-          zIndex: "2",
+          zIndex: "1",
         }}
       >
         <Slider slidesPerView={3}>

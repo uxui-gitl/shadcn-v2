@@ -48,7 +48,7 @@ function Capabilities(){
         sectionDescColor="text-neutral-dark-grey"
         title="Count on Us"
         sectionHeadingLayout="center"
-        setTop={false}
+        style={{zIndex: "3",position: "relative", paddingBottom:'40px'}}
       >
         <div className="h-[550px] md:h-[550px] [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start my-0">
           <Tabs

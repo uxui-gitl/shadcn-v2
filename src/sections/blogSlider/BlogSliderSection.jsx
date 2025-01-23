@@ -4,7 +4,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Icon from "@mdi/react";
-import CommonCard from "@/components/CommonCard";
+// import CommonCard from "@/components/CommonCard";
 import { mdiArrowTopRight } from "@mdi/js";
 // import CardWidthBackground from "@/components/CardWithBackground";
 import "swiper/css";

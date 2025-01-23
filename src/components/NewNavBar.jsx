@@ -234,7 +234,7 @@ function NewNavBar() {
           className={`z-[10] px-10 w-full bg-white absolute top-[0px] duration-700 rounded-b-3xl shadow-lg  shadow-gray-500/10 overflow-y-scroll  ${
             isNavbarActive
               ? "translate-y-0 top-[104px]"
-              : "-translate-y-full -top-[10px]"
+              : "-translate-y-full -top-[20px]"
           }`}
           style={{ height: `calc(100vh - 66px)` }}
         >
