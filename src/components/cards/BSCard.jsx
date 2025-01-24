@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 
-function BSCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10", setCardsMinHeight="min-h-[524px]  md:min-h-[484px] lg:min-h-[525px] 2xl:min-h-[524px]" }) {
+function BSCard({ Item, setpageID, setBorderColor="border-neutral-white border-opacity-10", setCardsMinHeight="min-h-[374px]  md:min-h-[374px] lg:min-h-[374px] 2xl:min-h-[374px]" }) {
   const {
     CardBGImageUrl = "",
     CardBGColor = "",
@@ -42,7 +42,7 @@ function BSCard({ Item, setpageID, setBorderColor="border-neutral-white border-o
           )}
           {CardHeading && (
             <h5
-              className={`text-heading-04 font-semibold ${CardTextColor}`}
+              className={`text-heading-03 font-semibold ${CardTextColor}`}
               dangerouslySetInnerHTML={{ __html: CardHeading }} // Render HTML content
             />
           )}

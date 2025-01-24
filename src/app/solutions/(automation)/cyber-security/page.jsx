@@ -10,7 +10,6 @@ import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBus
 import ExperienceSlider from "@/sections/experience-slider/experienceSlider";
 import CyberSecurityInfograhics from "@/sections/cyber-security-infograhic/CyberSecurityInfographic";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
-import CommonCardTwoSlider from "@/sections/commonCardTwoSlider/CommonCardTwoSlider";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import BlogSliderSection from '@/sections/blogSlider/BlogSliderSection';
 import HighlightPromo from "@/sections/highlight-promo/HighlightPromo";
@@ -222,7 +221,7 @@ const CyberSecurity = () => {
         sectionTextColor="tex-primary-900"
         sectionHeadingLayout="left"
         bgColor={'bg-neutral-ghost-white'}
-        setTop={false}
+        setTop={true}
       >
         <Slider slidesPerView={4}>
           {CyberSecurityData?.map((item, index) => (
@@ -277,7 +276,7 @@ const CyberSecurity = () => {
           "End to End Business Security with Our Cybersecurity Suite.End to End Business Security with Our Cybersecurity Suite"
         }
         Color={"text-neutral-white"}
-        readMoreUrl={"/test"}
+        readMoreUrl={[]}
       >
         
 

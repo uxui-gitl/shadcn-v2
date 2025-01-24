@@ -8,9 +8,8 @@ import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 
-
-
 const page = () => {
+  
   const blogImageUrl = '/intelligent-tech/Digitalized.webp';
 
   const distinctiveData = [
@@ -35,7 +34,7 @@ const page = () => {
       icon: "/intelligent-tech/distinctiveEdge/extensiveExperience.svg",
     },
 
-  ]
+  ];
 
   const BenefitsData = [
     {
@@ -67,6 +66,7 @@ const page = () => {
         "Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance",
     },
   ];
+
   return (
     <>
       <EntIntro

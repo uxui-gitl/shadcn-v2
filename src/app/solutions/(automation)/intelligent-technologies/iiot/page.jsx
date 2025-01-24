@@ -14,6 +14,7 @@ import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection'
 
 const IIOT = () => {
   const blogImageUrl = "/iiot/blogBg.webp";
+  
   const CASE_STUDIES_DATA = [
     {
       imageURL: "",

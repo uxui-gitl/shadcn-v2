@@ -1,10 +1,7 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import React, { useState } from "react";
-import Image from "next/image";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import SectionHeading from "@/components/SectionHeading";
-import SectionWrapper from "@/components/SectionWrapper";
 import ServiceOfferingSection from "@/sections/serviceOffering/ServiceOfferingSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
