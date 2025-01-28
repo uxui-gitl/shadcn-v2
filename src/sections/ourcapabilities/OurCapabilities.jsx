@@ -63,6 +63,11 @@ const OurCapabilities = ({
      sectionHeadingLayout={setHeadingLayout}
      setPad={setPad}
      setTop={setTop}
+     style={{
+      position:'relative',
+      zIndex:8,
+      backgroundColor:'white',
+     }}
      
     >
       <div className="lg:mb-8">

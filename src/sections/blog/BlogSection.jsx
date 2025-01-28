@@ -22,10 +22,12 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
         sectionTextColor={Color}
         sectionDescColor={Color}
         sectionHeadingLayout="left"
+        className={'md:m-h-[650px]'}
       >
-        <div className="flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start mt-6">
           {readMoreUrl.length > 0 && (
             <>
+        <div className="flex gap-4 flex-col items-left align-middle justify-left sm:flex-row sm:justify-start md:justify-start mt-6 ">
+
             {readMoreUrl.map((item, index) => (
             <>
               <Link
@@ -48,10 +50,11 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
               </Link>
             </>
           ))}
+        </div>
+
             </>
 
           )}
-        </div>
         {children}
       </SectionWrapperNew>
     </>

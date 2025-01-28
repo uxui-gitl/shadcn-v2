@@ -112,15 +112,13 @@ function ReviewSliderSection({
                         dangerouslySetInnerHTML={{ __html: item.cardDesc }}
                       />
 
-                      <div className="text-neutral-white text-body-01 mt-4">
+                      <div className="text-neutral-white text-body-01 mt-4 md:m-h-[60px]">
                         <div className="text-body-01 pb-2">
                           {item.designation}
                         </div>
                         <div>{item.companyName}</div>
                       </div>
                     </div>
-
-                    {/* <CommonCard Item={item} setpageID={pageID}></CommonCard> */}
                   </SwiperSlide>
                 ))}
               </Swiper>

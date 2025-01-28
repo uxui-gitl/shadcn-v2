@@ -2,14 +2,13 @@
 import EntIntro from "@/components/EntIntro";
 import OverviewSection from "@/sections/overview/OverviewSection";
 import AdvanceSolutionSection from '@/sections/new/advanceSolution/AdvanceSolutionSection';
-import CommonCardOneSlider from '@/sections/commonCardOneSlider/CommonCardOneSlider';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 
 const page = () => {
-  
+
   const blogImageUrl = '/intelligent-tech/Digitalized.webp';
 
   const distinctiveData = [
