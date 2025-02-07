@@ -2,10 +2,6 @@
 import React, { useState } from "react";
 import EntIntro from "@/components/EntIntro";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import SectionWrapper from '@/components/SectionWrapper';
-import SectionHeading from '@/components/SectionHeading';
-import SectionWidthSlider from "@/sections/sectionWithSlider/SectionWithSlider";
-import HubExpertise from "@/sections/hub-of-expertise/HubExpertise";
 import BlogSection from "@/sections/blog/BlogSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
@@ -16,234 +12,17 @@ import Slider from "@/components/Slider";
 import { SwiperSlide } from "swiper/react";
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 import Dialog from "@/components/Dialog";
-
-
-
-
-import
-ReviewSliderSection from '@/sections/reviewSlider/ReviewSliderSection';
+import BusinessChallenge from "@/sections/new/businessChallenge/BusinessChallenge";
 import { Fascinate } from "next/font/google";
+import { CHALLENGES_LIST_DATA, ourServices1, ourServices2, TESTIMONIAL_DATA, CASE_STUDIES_DATA, distinctiveData, HUBEXPERTISE_COUNTER_DATA, ultimateChoiceData, bscData} from './data';
+import BorderRightCard from "@/components/cards/BorderRightCard";
 
 
 
 const Page = () => {
-
-  const TESTIMONIAL_DATA = [
-    {
-      id: 1,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
-    {
-      id: 2,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
-    {
-      id: 3,
-      cardHeading: "Power BI Solution on time with quality",
-      cardDesc: 'We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualisations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.'
-    },
-  ];
-
-  const CHALLENGES_LIST_DATA = [
-    { id: 1, title: "Inadequate understanding of business and customer perspectives", icon: '/upgradeCloud/icons/challengesIcon.svg' },
-    { id: 2, title: "Existing or upcoming market conditions ambiguity", icon: '/upgradeCloud/icons/challengesIcon.svg' },
-    { id: 3, title: "Discord between business vision and strategy", icon: '/upgradeCloud/icons/challengesIcon.svg' },
-    { id: 4, title: "Innovation challenges and new capabilities deployment", icon: '/upgradeCloud/icons/challengesIcon.svg' },
-    { id: 5, title: "Absence of enterprise-wide adaptability", icon: '/upgradeCloud/icons/challengesIcon.svg' },
-    { id: 6, title: "Ineffectual strategy implementation", icon: '/upgradeCloud/icons/challengesIcon.svg' },
-  ];
-
-  const ourServices1 = [
-    { id: 1, title: "Operation Transformation (ERP) ", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Operation Transformation (ERP) ", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
-  ];
-
-  const ourServices2 = [
-    { id: 1, title: "Operation Transformation (ERP) ", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 2, title: "Operation Transformation (ERP) ", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 3, title: "Weak Disaster Recovery and Redundancy", icon: '/upgradeCloud/icons/ico--target.svg' },
-    { id: 4, title: "Inadequate Data Integrity", icon: '/upgradeCloud/icons/ico--target.svg' },
-  ];
-
-  const CASE_STUDIES_DATA = [
-    {
-      imageURL: " ",
-      videoURL: "/businessConsulting/videos/caseStudy.mp4",
-      title: "Case Studies",
-      heading: 'Delivering Results that Matters',
-      description: "",
-      link: "",
-      color: '#FFFFFF',
-      bgCardColor: '#2B1624'
-    },
-    {
-      imageURL: "",
-      title: "",
-      heading: 'Cloud Consulting Services',
-      description: "Exclusive Distributor of Renowned Coffee Brand in Egypt and Saudi Arabia Implements cloud-based D365 Finance, SCM, and Commerce.",
-      link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#E4E4E4'
-    },
-
-    {
-      imageURL: "/path/to/image1.jpg",
-      title: "",
-      heading: "Transformation Consulting",
-      description: "Leading manufacturer of Electrical components for the Automobile sector modernize its business application with successful implementation of Infor LN.",
-      link: "/case-study-1",
-      color: '#000',
-      bgCardColor: '#FCE6F4'
-    },
-
-    // Add more case studies here...
-  ];
-
-  const distinctiveData = [
-    {
-      _id: 1,
-      desc: "Strong legacy of our parent company - Godrej Enterprise group which has succeeded for more than 125 years.",
-      icon: "/businessConsulting/distinctiveEdge/strongLegacy.svg",
-    },
-    {
-      _id: 2,
-      desc: "Shared DNA of engineering expertise from our parent group - Godrej Enterprise Group with 1.7Bn revenue.",
-      icon: "/businessConsulting/distinctiveEdge/sharedDNA.svg",
-    },
-    {
-      _id: 3,
-      desc: "Long-term global relationships built on trust, reliability and collaboration.",
-      icon: "/businessConsulting/distinctiveEdge/globalRelationships.svg",
-    },
-    {
-      _id: 4,
-      desc: "Industry-focused teams executing time-tested practices of excellence.",
-      icon: "/businessConsulting/distinctiveEdge/industryFocused.svg",
-    },
-    {
-      _id: 5,
-      desc: "Holistic ecosystem including scalable deployment, support services and diverse portfolio of ERPs and digital solutions.",
-      icon: "/businessConsulting/distinctiveEdge/holisticEcosystem.svg",
-    },
-    {
-      _id: 6,
-      desc: "Responsive approach and defined processes that set high standards.",
-      icon: "/businessConsulting/distinctiveEdge/responsiveApproach.svg",
-    },
-
-  ]
-
   const blogImageUrl = "/businessConsulting/blog-bg.webp";
   const imgBGURL_Challenges =
     "/businessConsulting/knockingBusinessChallenges.webp";
-
-  const HUBEXPERTISE_COUNTER_DATA = [
-    {
-      start: 10,
-      end: 20,
-      description: "Years of Managing Global customer for Data Security",
-    },
-    {
-      start: 10,
-      end: 100,
-      description: "Cyber Security Solutions Implemented",
-    },
-    // Add more counters as needed
-  ];
-
-  const ultimateChoiceData = [
-    {
-      id: 1,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#000',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
-      CardDesc:
-        "Scalability according to evolving business needs.Scalability according to evolving business needs.",
-      isArrow: "",
-      link: [],
-    },
-
-    {
-      id: 2,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#000',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
-      CardDesc:
-        "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
-      isArrow: "",
-      link: [],
-    },
-    {
-      id: 3,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#000',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
-      CardDesc:
-        "Drive business agility and improved ROI with automation",
-      isArrow: "",
-      link: [],
-    },
-    {
-      id: 4,
-      BGImageUrl: "",
-      BGColor: "#fff",
-      CardBGColor: "transparent",
-      CardTextColor: '#000',
-      CardTitle: "",
-      CardIconUrl: "/upgradeCloud/icons/ico--target.svg",
-      CardHeading: "Sample Heading",
-      CardDesc:
-        "Highest levels of security and privacy, ensuring data is safeguarded",
-      isArrow: "",
-      link: [],
-    },
-  ];
-
-
-  const bscData = [
-    {
-      id: 1, icon: '', title: 'Automation and Data Consulting ', desc: 'We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.',
-      offering: [
-        { id: 1, text: 'ai and rpa' },
-        { id: 2, text: 'ai and rpa' },
-        { id: 3, text: 'ai and rpa' },
-      ],
-      process: [
-        { id: 1, text: 'ai and rpa' },
-        { id: 2, text: 'ai and rpa' },
-        { id: 3, text: 'ai and rpa' },
-      ],
-    },
-    {
-      id: 2, icon: '', title: 'Automation and Data Consulting ', desc: 'We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.',
-      offering: [
-        { id: 1, text: 'ai and rpa' },
-        { id: 2, text: 'ai and rpa' },
-        { id: 3, text: 'ai and rpa' },
-      ],
-      process: [
-        { id: 1, text: 'ai and rpa' },
-        { id: 2, text: 'ai and rpa' },
-        { id: 3, text: 'ai and rpa' },
-      ],
-    },
-  ];
 
   const [showBscModal, setShowBscModal] = useState(false);
   const [bscDataItem, setBscDataItem] = useState([]);
@@ -263,41 +42,8 @@ const Page = () => {
         video="/businessConsulting/videos/pageBanner.mp4"
       />
       <OverviewSection Text={`Purpose-driven strategy fuels business transformation. Our consultants design future-ready digital programs for enterprise success`} />
-      <SectionWrapperNew
-        sectionHeading="Knocking Business Challenges"
-        sectionDesc="Partner with us to navigate critical challenges, simplify complex processes, and develop a future-ready organization"
-        sectionTextColor='text-neutral-white'
-        sectionDescColor='text-neutral-white'
-        sectionHeadingLayout="horizontal"
-        bgColor={'bg-primary-900'}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ul className=" space-y-4 w-full text-neutral-white">
-            {CHALLENGES_LIST_DATA.map((challenge, index) => (
-              <li
-                key={challenge.id}
-                className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
-              >
-                <div className="flex-shrink-0 mr-4">
-                  <Image
-                    src={challenge.icon}
-                    alt={`${challenge.title} icon`}
-                    width={32}
-                    height={32}
-                  />
-                </div>
-                <div className="text-left">
-                  <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
-                    {challenge.title}
-                  </h3>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <div>
-            {/* <img src="/about/video.png" /> */}
-          </div>
-        </div>
-      </SectionWrapperNew>
+      
+      <BusinessChallenge item={CHALLENGES_LIST_DATA} setTop={false} />
 
       <SectionWrapperNew
         className=""
@@ -319,7 +65,7 @@ const Page = () => {
                       className={`flex items-start py-2 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                     >
                       <div className="text-left">
-                        <h3 className="font-normal text-paragraph-01">
+                        <h3 className="font-normal text-paragraph-02">
                           {challenge.title}
                         </h3>
                       </div>
@@ -334,7 +80,7 @@ const Page = () => {
                       className={`flex items-start py-2 border-b-[0.5px] border-text-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
                     >
                       <div className="text-left">
-                        <h3 className="text-paragraph-01 font-normal">
+                        <h3 className="text-paragraph-02 font-normal">
                           {challenge.title}
                         </h3>
                       </div>
@@ -345,7 +91,6 @@ const Page = () => {
             </div>
           </div>
         </div>
-
       </SectionWrapperNew>
 
       <SectionWrapperNew
@@ -358,22 +103,7 @@ const Page = () => {
         <Slider>
           {bscData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="sm:px-6" style={{ borderRight: '2px solid #000' }} >
-                <Image
-                  src={item.icon}
-                  width={64}
-                  height={64}
-                  alt={"icon"}
-                  className=""
-                />
-                <div className="px-4 sm:px-0">
-                  <div className="text-heading-03 mb-2 font-semibold">{item.title}</div>
-                  <p className="text-paragraph-02 sm:min-h-[72px] mb-4">{item.desc}</p>
-                  <div className="flex justify-end">
-                    <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleBscCardClick(true, item)} />
-                  </div>
-                </div>
-              </div>
+              <BorderRightCard item={item} onclick={handleBscCardClick} />
             </SwiperSlide>
           ))}
         </Slider>

@@ -30,6 +30,11 @@ import {
     CASE_STUDIES_DATA
 } from './data';
 
+import BusinessChallenge from "@/sections/new/businessChallenge/BusinessChallenge";
+import MFCard from "@/components/cards/MFCard";
+import BorderRightCard from "@/components/cards/BorderRightCard";
+
+
 
 function Page() {
     const blogImageUrl = "/manufacturing/blog-bg.webp";
@@ -82,47 +87,8 @@ function Page() {
                 video="/manufacturing/videos/pageBanner.mp4"
             />
             <OverviewSection Text={`Adopting automation enables our manufacturing clients to achieve transformative benefits, including enhanced quality, predictable supply chain and increased profitability.`} />
-
-            <SectionWrapper BGColor="bg-primary-900">
-                <div className="container mx-auto py-32">
-                    <SectionHeading
-                        Color="text-neutral-white"
-                        Heading="Challenges Faced by Manufacturing Businesses"
-                        Desc=""
-                        headingContainerWidth="w-1/2"
-                    ></SectionHeading>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <ul className=" space-y-4 w-full text-neutral-white">
-                            {CHALLENGES_LIST_DATA.map((challenge, index) => (
-                                <li
-                                    key={challenge.id}
-                                    className={`flex items-start py-2 border-b-[0.5px] border-neutral-white border-opacity-20 w-full ${index === CHALLENGES_LIST_DATA.length - 1 ? 'border-b-0' : ''}`}
-                                >
-                                    <div className="flex-shrink-0 mr-4">
-                                        <Image
-                                            src={challenge.icon}
-                                            alt={`${challenge.title} icon`}
-                                            width={32}
-                                            height={32}
-                                        />
-                                    </div>
-                                    <div className="text-left">
-                                        <h3 className="text-paragraph-01 leading-paragraph-01 font-normal">
-                                            {challenge.title}
-                                        </h3>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                        <div>
-                            {/* <img src="/about/video.png" /> */}
-                        </div>
-                    </div>
-                </div>
-
-            </SectionWrapper>
-            {/* end challenges */}
-
+            <BusinessChallenge sectionHeading={'Challenges Faced by Manufacturing Businesses'} item={CHALLENGES_LIST_DATA} setTop={false} style={{ background: `url(/services/mg01.svg)`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }} />
+            
             <SectionWrapperNew
                 sectionHeading={"Solution Offerings"}
                 sectionDesc={"We deploy solutions that modernize every aspect of the manufacturing value chain from design and production to supply chain management and customer delivery."}
@@ -190,57 +156,7 @@ function Page() {
         <Slider>
           {RPASolution2?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full min-h-[50vh] bg-white rounded-3xl group overflow-hidden relative border-[0.5px] border-primary-900 border-opacity-20">
-                <div
-                  className="h-[220px] bg-slate-700"
-                  style={{
-                    background: `url('/Transformation/sale-force-crm/m1.svg')`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                  }}
-                ></div>
-                <div className="h-[35vh] p-5 relative">
-                  <h5 className="mb-4 text-heading-03  text-primary-900 font-semibold ">
-                    {item?.cardHeading}
-                  </h5>
-                  <p className="mb-6 text-base text-neutral-darkest-grey font-normal">
-                    {item?.cardDesc}
-                  </p>
-                  {item?.cardHoverData && (
-                    <div className="absolute bottom-4 right-4">
-                      <OutlinedButtonWithArrow size={24} />
-                    </div>
-                  )}
-                </div>
-                {item?.cardHoverData && (
-                  <div className="bg-secondary-10 p-5 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
-                    <div className="">
-                      <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
-                        {item?.cardHoverData.map((item2) => (
-                          <>
-                            <li>
-                              <span className="font-semibold text-black">
-                                {item2}
-                              </span>
-                            </li>
-                          </>
-                        ))}
-                      </ol>
-                      <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
-                        {item?.cardHoverData.map((item2) => (
-                          <>
-                            <li>
-                              <span className="font-semibold text-black">
-                                {item2}
-                              </span>
-                            </li>
-                          </>
-                        ))}
-                      </ol>
-                    </div>
-                  </div>
-                )}
-              </div>
+              <MFCard item={item}></MFCard>
             </SwiperSlide>
           ))}
         </Slider>
@@ -272,24 +188,7 @@ function Page() {
                 <Slider>
                     {RPASolution2?.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <>
-                                <div className="sm:px-6" style={{ borderRight: '2px solid #000' }} >
-                                    <Image
-                                        src={item.icon}
-                                        width={64}
-                                        height={64}
-                                        alt={"icon"}
-                                        className=""
-                                    />
-                                    <div className="px-4 sm:px-0">
-                                        <div className="text-heading-04 mb-2 font-semibold">{item.cardHeading}</div>
-                                        <p className="text-paragraph-02 sm:min-h-[72px] mb-4">{item.cardDesc}</p>
-                                        <div className="flex justify-end">
-                                            <OutlinedButtonWithArrow size={20} arrowColor={'#000'} onClick={() => handleMACardClick(true, item)} />
-                                        </div>
-                                    </div>
-                                </div>
-                            </>
+                              <BorderRightCard item={item} onclick={handleMACardClick} />
                         </SwiperSlide>
                     ))}
                 </Slider>

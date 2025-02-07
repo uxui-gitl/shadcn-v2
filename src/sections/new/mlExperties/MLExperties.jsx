@@ -10,7 +10,7 @@ function MLExperties(){
         <>
   <SectionWrapper ID={'MLExpertise'} BGColor={'bg-primary-400'}>
           <div className="container pt-8 pb-16 max-auto flex flex-col md:flex-row gap-x-11 -mt-8">
-            <div className="text-left  flex-1">
+            <div className="text-left flex-1">
               <SectionHeading
                 Heading={'Machine Learning Expertise'}
                 Desc={'We specialize in developing predictive models to forecast market shifts and identify untapped opportunities.'}
@@ -24,7 +24,7 @@ function MLExperties(){
               {MLData.map((item, index) => (
                 <div className="flex-1 min-w-[50%]" key={index}>
                   <div className="p-4 pb-0">
-                    <div className="w-[6rem] h-[0.25rem] mb-2 bg-primary-200"></div>
+                    <div className="w-[6rem] h-[0.25rem] mb-2 bg-white"></div>
                     <p className="text-neutral-white font-semibold text-heading-03 my-3">
                       {item.title}
                     </p>

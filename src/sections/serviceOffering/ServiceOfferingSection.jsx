@@ -46,8 +46,8 @@ function ServiceOfferingSection({
       <SectionWrapper id={ID} BGColor={'bg-primary-900'} setTop={setTop} style={{ 
         position: "relative",
           zIndex: "1",}}>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-          <div className= "pt-8 pb-16 lg:pt-8 lg:pb-16 2xl:pt-8 2xl:pb-16">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 sm:gap-20">
+          <div className= "pt-32 pb-40">
             <SectionHeading
               Heading={'Service Offerings'}
               Desc={'"We offer AI-driven process automation, process re-engineering and seamless implementation support for transformative business results.'}

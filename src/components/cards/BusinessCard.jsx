@@ -11,7 +11,7 @@ function BusinessCard({item}){
             <Image src={item.icon} alt="icon" width={48} height={48}/> {/* Adjust size as needed */}
           </div>
               
-                <h5 className="mb-5 text-heading-03  font-medium  text-[#1D162B] ">{item.heading}</h5>
+                <h5 className="mb-5 text-heading-03 font-medium  text-[#1D162B] ">{item.heading}</h5>
                 {item?.list.map((data, index) => (
                   <p className="mb-2 p-1 border-b border-neutral-light-grey text-body-01 text-gray-500 " key={index}>{data}</p>
                 ))}

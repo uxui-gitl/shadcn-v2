@@ -7,32 +7,44 @@ import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithA
 import transformationData from "@/data/case-transformation";
 import cloudData from "@/data/case-Cloud";
 import automationData from "@/data/case-Automation";
-
 import { useRouter } from 'next/navigation';
+import axios from "axios";
+import url from "@/data/url";
+
 
 
 const Page = () => {
-    const caseStudiesData = [...automationData , ...transformationData, ...cloudData];
     const router = useRouter()
-    const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState(caseStudiesData);
+    const [updatedCaseStudiesData, setUpdatedCaseStudiesData] = useState([...transformationData,...cloudData,...automationData]);
     const [mainCategory, setMainCategory] = useState('');
     const [subCategory, setSubCategory] = useState('');
     const [vertical, setVertical] = useState('');
 
     const onChange = (event, type) => {
         const value = event.target.value;
-        { type == 'mainCategory' && setMainCategory(value) }
-        { type == 'subCategory' && setSubCategory(value) }
-        { type == 'vertical' && setVertical(value) }
+        { type == 'caseStudyCat' && setMainCategory(value) }
+        { type == 'caseStudySubCat' && setSubCategory(value) }
+        { type == 'technology' && setVertical(value) }
     };
 
     useEffect(() => {
-        console.log(transformationData)
+        getCaseStudyList();
         filterData();
     }, [mainCategory, subCategory, vertical]);
 
+    async function getCaseStudyList() {
+        try {
+          let response = await axios.get(`${url.formUrl}/CaseStudy/GetCaseStudies`);
+          let data = response.data.model;
+          setUpdatedCaseStudiesData(data);
+        } catch (error) {
+          console.log(error);
+          res.status(error.response.status).json({ message: error.message });
+        }
+      }
+
     function handleReset(){
-        setUpdatedCaseStudiesData(caseStudiesData);
+        setUpdatedCaseStudiesData(updatedCaseStudiesData);
         setMainCategory('');
         setSubCategory('');
         setVertical('');
@@ -41,17 +53,17 @@ const Page = () => {
 
     function filterData() {
         if (mainCategory != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory);
+            const data = updatedCaseStudiesData.filter((item) => item.caseStudyCat === mainCategory);
             setUpdatedCaseStudiesData(data);
         }
 
         if (subCategory != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory && item.subCategory === subCategory);
+            const data = updatedCaseStudiesData.filter((item) => item.caseStudyCat === mainCategory && item.caseStudySubCat === subCategory);
             setUpdatedCaseStudiesData(data);
         }
 
         if (vertical != '') {
-            const data = caseStudiesData.filter((item) => item.mainCategory === mainCategory && item.subCategory === subCategory && item.vertical === vertical);
+            const data = updatedCaseStudiesData.filter((item) => item.caseStudyCat === caseStudyCat && item.caseStudySubCat === subCategory && item.technology === vertical);
             setUpdatedCaseStudiesData(data);
         }
     }
@@ -66,24 +78,26 @@ const Page = () => {
                 sectionDesc="The Inspiring Journey Of Godrej Infotech"
                 sectionTextColor='#000'
                 sectionHeadingLayout="center"
+                setPad={true}
+                setTop={false}
             >
                 <div className="">
                     <form className="flex flex-col sm:flex-row justify-end">
-                        <select id="large" value={mainCategory} onChange={(e) => onChange(e, 'mainCategory')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={mainCategory} onChange={(e) => onChange(e, 'caseStudyCat')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="Automation">Automation</option>
                             <option value="Cloud">Cloud</option>
                             <option value="Transformation">Transformation</option>
 
                         </select>
-                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'subCategory')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={subCategory} onChange={(e) => onChange(e, 'caseStudySubCat')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="Infor">Infor</option>
                             <option value="IntelligentTechnologies">Intelligent Technologies</option>
                             <option value="Transformation">Transformation</option>
 
                         </select>
-                        <select id="large" value={vertical} onChange={(e) => onChange(e, 'vertical')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+                        <select id="large" value={vertical} onChange={(e) => onChange(e, 'technology')} className="block mb-2 sm:mb-0 sm:mr-2 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
                             <option value='' selected>Select Category</option>
                             <option value="LN">LN</option>
                             <option value="AI">AI</option>
@@ -96,7 +110,7 @@ const Page = () => {
                     </form>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 my-5">
                     {updatedCaseStudiesData.map((item) => (
                         <>
                             <div className="max-w-md bg-white border border-[#E4E4E4] rounded-3xl shadow">
