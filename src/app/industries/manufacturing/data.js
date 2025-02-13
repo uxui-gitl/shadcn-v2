@@ -127,14 +127,7 @@ export const RPASolution2 = [
         isArrow: true,
         cardTextColor: 'black',
         cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
-        cardHoverData: [
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-        ]
+        cardHoverData: []
     },
     {
 
@@ -145,14 +138,7 @@ export const RPASolution2 = [
         isArrow: true,
         cardTextColor: 'black',
         cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-4.jpg',
-        cardHoverData: [
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-        ]
+        cardHoverData: []
     },
     {
 
@@ -163,14 +149,7 @@ export const RPASolution2 = [
         isArrow: true,
         cardTextColor: 'black',
         cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-7.jpg',
-        cardHoverData: [
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-        ]
+        cardHoverData: []
     },
     {
 
@@ -181,14 +160,7 @@ export const RPASolution2 = [
         isArrow: true,
         cardTextColor: 'black',
         cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-1.jpg',
-        cardHoverData: [
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-        ]
+        cardHoverData: []
     },
     {
 
@@ -200,14 +172,7 @@ export const RPASolution2 = [
         isArrow: true,
         cardTextColor: 'black',
         cardTopImageUrl: 'https://flowbite.com/docs/images/blog/image-2.jpg',
-        cardHoverData: [
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-            'abc',
-        ]
+        cardHoverData: []
     },
     {
 

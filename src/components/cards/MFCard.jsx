@@ -19,13 +19,13 @@ function MFCard({item}){
                   <p className="mb-6 text-base text-neutral-darkest-grey font-normal">
                     {item?.cardDesc}
                   </p>
-                  {item?.cardHoverData && (
+                  {/* {item?.cardHoverData && (
                     <div className="absolute bottom-4 right-4">
                       <OutlinedButtonWithArrow size={24} />
                     </div>
-                  )}
+                  )} */}
                 </div>
-                {item?.cardHoverData && (
+                {item?.cardHoverData.length > 0 && (
                   <div className="bg-secondary-10 p-5 rounded-3xl h-full w-full duration-200 group-hover:-translate-y-full absolute">
                     <div className="">
                       <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">

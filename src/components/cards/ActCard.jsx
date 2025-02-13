@@ -2,11 +2,10 @@
 import OutlinedButtonWithArrow from "@/components/ui/buttons/OutlinedButtonWithArrow";
 
 function ActCard({item , onclick}) {
-    
     return (
         <>
         <div
-            className="p-5 bg-[#5F22D9] rounded-3xl "
+            className="p-5 bg-[#5F22D9] rounded-3xl"
             style={{
                 backgroundImage: `url(${item.cardBgImg})`,
                 backgroundSize: "cover",

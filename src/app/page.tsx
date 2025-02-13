@@ -12,7 +12,7 @@ import BlogSection from "@/sections/blog/BlogSection";
 import ReviewSliderSection from "@/sections/reviewSlider/ReviewSliderSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
 import NewNavBar from "@/components/NewNavBar";
-import {TESTIMONIAL_DATA} from "./pageData.js";
+import {TESTIMONIAL_DATA, CASE_STUDIES_DATA} from "./pageData.js";
 
 export default function Home() {
   return (
@@ -28,11 +28,11 @@ export default function Home() {
       <Capabilities />
       
       {/* @ts-ignore */}
-      {/* <CaseStudiesSection
+      <CaseStudiesSection
         casestudy={CASE_STUDIES_DATA}
         csLayout={"5"}
         bgColor={"bg-primary-900"}
-      /> */}
+      />
 
       <BlogSection
         ID={"blog"}
