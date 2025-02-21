@@ -32,15 +32,15 @@ const IIOT = () => {
       title: "",
       heading: "Bespoke IIOT Solutions",
       description:
-      `  <ul class="py-2 space-y-1 text-gray-700 list-disc list-inside ">
+      `  <ul class="py-2 space-y-1 text-white list-disc list-inside ">
                <li>Customization of reports </li>
                <li>IoT for Vibration Monitoring  </li>
               <li>IoT for Samrt City</li>
                <li>IoT for Vehicle tracking </li>
                </ul>`,
       link: "/case-study-1",
-      color: "#2B1624",
-      bgCardColor: "#00F8C4",
+      color: "#fff",
+      bgCardColor: "#707070",
     },
     {
       imageURL: "",
@@ -49,7 +49,7 @@ const IIOT = () => {
       description:'',
       link: "",
       color: "#FFFFFF",
-      bgCardColor: "#2B1624",
+      bgCardColor: `#810055`,
     },
 
     {
@@ -59,7 +59,7 @@ const IIOT = () => {
       description:'Gathers forklift data and enable remote monitoring, troubleshooting & optimization with IoT',
       link: "https://www.godrejinfotech.com/assets/pdf/case-studies/India%E2%80%99s_Largest_Lift_Truck_Manufacturer_Exporter_IoT_Solution_Enterprise_Asset_Integration.pdf",
       color: "#2B1624",
-      bgCardColor: "#E4E4E4",
+      bgCardColor: "#fff",
     },
 
     {
@@ -69,7 +69,7 @@ const IIOT = () => {
       description:'Implements IoT & ML Solution for Real Time Cement Inventory Calibration with 98% accuracy',
       link: "",
       color: "#2B1624",
-      bgCardColor:"#FCE6F4"
+      bgCardColor:"#F9F2F6"
     },
 
     // Add more case studies here...
@@ -151,7 +151,7 @@ const IIOT = () => {
       {/* Benefits Vertical Slider */}
       <BenefitSliderSection
         ID={'AIOfferings'}
-        sectionBGColor={'bg-primary-900'}
+        sectionBGColor={'bg-secondary-30'}
         sectionHeading={'Benefits'}
         sectionDesc={'IIoT (Industrial Internet of Things) empowers businesses to thrive in the digital era in various ways, including:'}
         sectionTextColor={'text-neutral-white'}

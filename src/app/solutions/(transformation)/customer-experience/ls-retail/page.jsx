@@ -425,7 +425,7 @@ const page = () => {
           "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model ..."
         }
         Color={"text-white"}
-        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=17"}
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=17'}]}
       ></BlogSection>
 
       {/* Start--Distinctive-Section============================================================== */}

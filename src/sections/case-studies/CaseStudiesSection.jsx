@@ -17,7 +17,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor='bg-white', style ,se
   const setHeading = "IIoT  Solution Offerings";
   const setDesc =
     "Our IIoT expertise help businesses across various sectors - Manufacturing, Supply Chain, Construction, Transportation, Power Generation, and Smart Cities.";
-  const setColor = "text-primary-900";
+  const setColor = "text-primary-400";
 
   const [showModal, setshowModal] = useState(false);
   const [tabSection1, setTabSection1] = useState(true);
@@ -669,7 +669,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor='bg-white', style ,se
                         {casestudy[1].heading}
                       </h1>
                       <p
-                        className="mb-4"
+                        className="mb-4 text-secondary-20"
                         dangerouslySetInnerHTML={{
                           __html: casestudy[1].description,
                         }}
@@ -719,12 +719,13 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor='bg-white', style ,se
                     style={{
                       color: casestudy[3].color,
                       backgroundColor: casestudy[3].bgCardColor,
+                      border:'2px solid #FCE6F4',
                     }}
                   >
                     <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                       {casestudy[3].heading}
                     </h1>
-                    <p className="mb-4 text-body-01">{casestudy[3].description}</p>
+                    <p className="mb-4 text-body-01 text-secondary-20">{casestudy[3].description}</p>
                     <div className="absolute bottom-5 right-5">
                       <Link href={casestudy[3].link} target="_blank">
                         <OutlinedButtonWithArrow size={32} />
@@ -743,7 +744,7 @@ const CaseStudiesSection = ({ casestudy, csLayout, bgColor='bg-white', style ,se
                     <h1 className="text-heading-03 font-medium mb-4 lg:mb-6">
                       {casestudy[4].heading}
                     </h1>
-                    <p className="mb-4 text-body-01">{casestudy[4].description}</p>
+                    <p className="mb-4 text-body-01 text-secondary-20">{casestudy[4].description}</p>
                     <div className="absolute bottom-5 right-5">
                       <Link href={casestudy[4].link} target="_blank">
                         <OutlinedButtonWithArrow size={32} />

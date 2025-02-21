@@ -715,7 +715,7 @@ function page() {
           "The world of B2B trading is undergoing a significant transformation, driven by the rapid adoption of mobile technology. Mobile commerce, or m-commerce, has revolutionized the way businesses interact, transact, and operate. As mobile devices become increasingly ubiquitous, B2B traders can no longer afford to ignore the potential of mobile commerce."
         }
         Color={"text-neutral-white"}
-        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=13'}]}
       ></BlogSection>
 
       <ReviewSliderSection

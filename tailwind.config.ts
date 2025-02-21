@@ -70,7 +70,7 @@ const config: Config = {
         'heading-03': [
           'calc(clamp(1.75rem, 0.25vw + 1.7rem, 2rem))', 
           {
-            lineHeight: '1.065', 
+            lineHeight: 'normal', 
             letterSpacing: '-0.02em', 
             fontWeight: '500',
           },
@@ -152,7 +152,7 @@ const config: Config = {
           700: '#341377',
           800: '#280e5b',
           900: '#1d162b',
-          10: '#efe9fb',
+          10: '#F9F2F6',
         },
         secondary: {
           50: '#f5b1dc',
@@ -166,6 +166,8 @@ const config: Config = {
           800: '#5e013c',
           900: '#2b1624',
           10: '#fce6f4',
+          20:'#707070',
+          30:'#333'
         },
         neutral: {
           'ghost-white': '#faf7ff',

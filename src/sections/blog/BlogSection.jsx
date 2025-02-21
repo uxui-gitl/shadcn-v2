@@ -5,7 +5,7 @@ import Icon from "@mdi/react";
 
 import { mdiArrowTopRight } from "@mdi/js";
 
-function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMoreUrl = [], children, }) {
+function BlogSection({ID, blogImageUrl, Heading, Desc, Color = 'white', readMoreUrl=[] }) {
   return (
     <>
 
@@ -55,7 +55,6 @@ function BlogSection({ ID, blogImageUrl, Heading, Desc, Color = 'white', readMor
             </>
 
           )}
-        {children}
       </SectionWrapperNew>
     </>
   )

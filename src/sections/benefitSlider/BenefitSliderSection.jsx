@@ -43,8 +43,8 @@ function BenefitSliderSection({
 
   return (
     <SectionWrapper id={ID} BGColor={sectionBGColor} style={{
-        ...style,
-        backgroundImage: `url(${sectionImageUrl})`, backgroundSize: 'cover',
+      ...style,
+      backgroundImage: `url(${sectionImageUrl})`, backgroundSize: 'cover',
     }}>
       <div ref={mainContainerRef} className="flex py-32 lg:py-8 2xl:py-32 -mt-8">
         <div className="container mx-auto flex flex-col md:flex-row h-full ">
@@ -53,34 +53,35 @@ function BenefitSliderSection({
             className="w-full md:w-[40%] h-full flex flex-col align-top pr-5"
           >
             <SectionHeading Heading={sectionHeading}
-                            Desc={sectionDesc}
-                            Color={sectionTextColor}
-                            MaxWidth={sectionHeadingMaxWidth}
-                            headingContainerWidth={sectionHeaderWidth} />
+              Desc={sectionDesc}
+              Color={sectionTextColor}
+              descColor={'text-neutral-white'}
+              MaxWidth={sectionHeadingMaxWidth}
+              headingContainerWidth={sectionHeaderWidth} />
           </div>
 
-          <div className="w-full md:w-[60%] bg-primary-900 z-10 lg:mb-8">
+          <div className="w-full md:w-[60%]  z-10 lg:mb-8">
             <div>
               {cardData.map((item) => (
                 <>
-                <div
-                  key={item._id}
-                  className="flex p-5 lg:min-h-[120px] w-full items-center bg-neutral-white border border-neutral-light-grey rounded-3xl mb-4 shadow hover:bg-neutral-ghost-white"
-                >
-                  <Image
-                    className="mr-4 md:block"
-                    src={item.icon}
-                    alt=""
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col justify-between leading-normal">
-                    <h2 className="mb-3 text-body-01 text-neutral-darkest-grey">{item.cardHead}</h2>
-                    <p className="mb-3 text-body-01 text-neutral-darkest-grey">
-                      {item.cardDesc}
-                    </p>
+                  <div
+                    key={item._id}
+                    className="flex p-5 lg:min-h-[120px] w-full items-center  border border-[#ffffff42] rounded-3xl mb-4 shadow "
+                  >
+                    <Image
+                      className="mr-4 md:block"
+                      src={item.icon}
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                    <div className="flex flex-col justify-between leading-normal">
+                      <h2 className="mb-3 text-body-01 text-white">{item.cardHead}</h2>
+                      <p className="mb-3 text-body-01 text-white">
+                        {item.cardDesc}
+                      </p>
+                    </div>
                   </div>
-                </div>
                 </>
               ))}
             </div>

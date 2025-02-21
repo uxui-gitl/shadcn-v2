@@ -691,7 +691,7 @@ function page() {
                 Heading={"Digital Transformation in Megaprojects"}
                 Desc={"Megaprojects stand as the epitome of complex endeavors that demand meticulous planning, precise execution, and seamless coordination. At the heart of these megaprojects lies the imperative need for digital transformation to propel success in an increasingly competitive environment."}
                 Color={"white"}
-                readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
+                readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=13'}]}
             ></BlogSection>
 
             <ReviewSliderSection

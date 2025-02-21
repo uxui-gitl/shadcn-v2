@@ -626,7 +626,7 @@ const Page = () => {
           "Many organizations struggle with inefficient processes, siloed data, and outdated technology, hindering their ability to innovate and grow. That's where Infor CloudSuite comes in – a powerful, industry-specific cloud ERP solution designed to streamline processes, enhance productivity, and drive business success."
         }
         Color={"text-neutral-white"}
-        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=7'}]}
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
 

@@ -211,7 +211,7 @@ function filterData() {
           "As a leading digital transformation company, we offer exciting opportunities for growth and development."
         }
         Color={"white"}
-        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=7'}]}
       ></BlogSection>
 
       <TransformBusinessForm

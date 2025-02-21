@@ -42,10 +42,7 @@ export default function Home() {
           "Work with talented professionals who inspire and support each other. Join our dynamic team and embark on a rewarding career journey that shapes your future. "
         }
         Color={"text-neutral-white"}
-        readMoreUrl={[
-          {id:'1', text:'Why Godrej Infotech', url:'/careers/why-join-us'},
-          {id:'2', text:'Join Our Team', url:'careers/we-are-hiring'}
-        ]} />
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'/careers/why-join-us'}, {id:'2', text:'Join Our Team', url:'careers/we-are-hiring'}]} />
 
       {/* @ts-ignore */}
       <ReviewSliderSection

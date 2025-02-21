@@ -14,7 +14,7 @@ function ReviewSliderSection({
   SectionHeadingMaxWidth,
   SlidesPerView = "1",
   Autoplay = "false",
-  CardDataList = [],
+  CardDataList=[],
   Color = "#000",
   BGColor = "",
   setHeadingLayout,

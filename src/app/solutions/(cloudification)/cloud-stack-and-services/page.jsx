@@ -427,7 +427,7 @@ const CloudStack = () => {
           "As cloud computing continues to transform the way organizations operate, the importance of effective cloud monitoring and maintenance cannot be overstated. In this article, we will delve into the critical aspects of cloud monitoring and maintenance, providing actionable tips and best practices to ensure optimal performance, reliability, and security in cloud environments."
         }
         
-        readMoreUrl="#"
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=13'}]}
         Color={'text-neutral-white'}
       ></BlogSection>
 
