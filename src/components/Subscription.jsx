@@ -44,7 +44,6 @@ const Subscription = ({ title, blue, title2, desc }) => {
     e.preventDefault();
     setBtnLoader(true);
     try {
-      debugger;
       let res = await axios.post(`https://mailer.godrejenterprises.com/GodrejinfotechAPI/SendEnquiry/RegistrationEnquiry`, formData, { headers: { Authorization: `Bearer ${token}` } });
       console.log(res);
       debugger;
@@ -101,7 +100,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
             descColor="text-primary-10"
           >
           </HorizontalHeading>
-          <div className=" md:px-5 ">
+          <div className="">
             <form className="" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 md:gap-10">
                 <div className="relative z-0 w-full mb-6 group">
@@ -110,8 +109,8 @@ const Subscription = ({ title, blue, title2, desc }) => {
                     onChange={handleChange}
                     type="text"
                     placeholder=""
-                    name="Name" id="name" className="block py-2.5 px-0 w-full text-label-01 text-neutral-white bg-transparent border-0 border-b-2 border-primary-100 appearance-none focus:outline-none focus:ring-0 focus:border-blue-100 peer" required />
-                  <label htmlFor="Name" className="peer-focus:font-medium absolute text-label-01 text-neutral-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary-100 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Enter Your Name</label>
+                    name="Name" id="name" className="block py-3 px-0 w-full text-label-01 text-secondary-20 bg-transparent border-0 border-b-[1px] border-secondary-20 appearance-none focus:text-white focus:outline-none focus:ring-0 focus:border-white peer" required />
+                  <label htmlFor="Name" className="peer-focus:font-medium absolute text-label-01 text-secondary-20 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Enter Your Name</label>
                 </div>
                 <div className="relative z-0 w-full mb-6 group">
                   <input
@@ -119,8 +118,8 @@ const Subscription = ({ title, blue, title2, desc }) => {
                     name="Email"
                     onChange={handleChange}
                     placeholder=""
-                    type="email" id="email" className="block py-2.5 px-0 w-full text-label-01 text-neutral-white bg-transparent border-0 border-b-2 border-primary-100 appearance-none focus:outline-none focus:ring-0 focus:border-blue-100 peer" required />
-                  <label htmlFor="Email" className="peer-focus:font-medium absolute text-label-01 text-neutral-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary-100 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    type="email" id="email" className="block py-3 px-0 w-full text-label-01 text-secondary-20 bg-transparent border-0 border-b-[1px] border-secondary-20 appearance-none focus:outline-none focus:ring-0 focus:border-blue-100 peer" required />
+                  <label htmlFor="Email" className="peer-focus:font-medium absolute text-label-01 text-secondary-20 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
                 </div>
               </div>
               <div className="relative z-0 w-full mb-12 group ">
@@ -130,15 +129,15 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   onChange={handleChange}
                   type="text"
                   id="message"
-                  placeholder="" className="block py-2.5 px-0 w-full text-label-01 text-neutral-white bg-transparent border-0 border-b-2 border-primary-100 appearance-none focus:outline-none focus:ring-0 focus:border-blue-100 peer" />
-                <label htmlFor="Query" className="peer-focus:font-medium absolute text-label-01 text-neutral-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary-100 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
+                  placeholder="" className="block py-3 px-0 w-full text-label-01 text-secondary-20 bg-transparent border-0 border-b-[1px] border-secondary-20 appearance-none focus:outline-none focus:ring-0 focus:border-blue-100 peer" />
+                <label htmlFor="Query" className="peer-focus:font-medium absolute text-label-01 text-secondary-20 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">  Message (Optional)</label>
               </div>
               <div className="flex justify-center md:justify-end">
               
                   <button
                   type="submit"
                   id='subscriptionBtn'
-                  className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-primary-500 rounded-full px-8 py-3 mb-2 group"
+                  className="text-neutral-white text-body-01 flex items-center bg-primary-400 hover:bg-white hover:text-black rounded-full px-8 py-3 mb-2 group"
                 >
                   {'Send Message'}
                   {btnLoader && ( <svg aria-hidden="true" role="status" className="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

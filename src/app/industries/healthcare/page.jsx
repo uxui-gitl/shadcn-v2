@@ -537,7 +537,7 @@ function page() {
                 Heading={"Asset Management for Healthcare Organizations"}
                 Desc={"Healthcare asset maintenance encompasses the strategies and practices implemented to manage and preserve medical equipment and facilities. This process is vital in ensuring the smooth functioning of healthcare services, optimizing resource utilization, and delivering quality patient care."}
                 Color={"white"}
-                readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
+                readMoreUrl={ [{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=13'}]}
             ></BlogSection>
 
             {/* <ReviewSliderSection

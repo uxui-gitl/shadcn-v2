@@ -5,10 +5,8 @@ import NewNavBar from "@/components/NewNavBar";
 const layout = ({ children }) => {
   return (
     <>
-      <div className={`relative z-[500]`}>
-        <div className={`absolute w-full  `}>
-          <NewNavBar theme="light" />
-        </div>
+      <div className={`fixed w-full z-[500] top-0`}>
+        <NewNavBar />
       </div>
 
       {children}

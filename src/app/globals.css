@@ -111,7 +111,7 @@
   }
 
   body {
-    @apply border;
+    /* @apply border; */
   }
 }
 @layer utilities {
@@ -124,6 +124,31 @@
   outline: 0.25px solid rgba(255, 0, 0, 0.3) !important;
 
 } */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: #dddcdc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7d7c7c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* scrollbar css end */
+
+.whiteLogo{
+  filter: saturate(0) brightness(100);
+}
 
 .benefitScrollDiv::-webkit-scrollbar {
   width: 0;  /* Remove scrollbar space */

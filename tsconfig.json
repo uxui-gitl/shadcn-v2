@@ -21,7 +21,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/utils.jsx", "src/components/home/Footer.jsx", "src/app/(landing-pages)/netherland/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/utils.jsx", "src/components/home/Footer.jsx", "src/app/(landing-pages)/netherland/page.jsx", "src/app/page.jsx"],
  
   "exclude": ["node_modules"]
 }

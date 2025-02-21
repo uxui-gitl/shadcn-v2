@@ -7,6 +7,9 @@ import { SwiperSlide } from "swiper/react";
 import { LinearGradient } from "react-text-gradients";
 import Image from "next/image";
 import OverviewSection from "@/sections/overview/OverviewSection";
+import JobCard from '@/components/JobCard';
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const culture = [
   {
@@ -245,9 +248,14 @@ const CEO_TRUNCATED_MSG = `
     and contribute to something larger than themselves. 
   `;
 const CEOImageUrl = "/careers/CEO-AP.webp";
+
+
+
 const Page = () => {
+  const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [jobList, SetJobList] = useState([])
 
   useEffect(() => {
     // Function to check if the screen width is mobile-sized
@@ -260,10 +268,24 @@ const Page = () => {
 
     // Initial check on component mount
     handleResize();
+    getJobList();
 
     // Cleanup the event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  async function getJobList() {
+    try {
+      let response = await axios.post('http://gnbnetdevapp1.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL');
+      let data = response.data.model;
+      SetJobList(data);
+      console.log(data)
+    } catch (error) {
+      console.log(error);
+      res.status(error.response.status).json({ message: error.message });
+    }
+  }
+
 
   // Video URL for desktop
   const videoURL = "/careers/giffitly.mp4";
@@ -646,59 +668,11 @@ const Page = () => {
           paddingTop: "15rem",
         }}
       >
-        <div className="jobcard flex flex-col md:flex-row justify-between items-start md:items-end py-6 border-b border-neutral-light-grey">
-          <div className="w-full mb-6 md:mb-0">
-            <div className="text-heading-03 text-primary-900 mb-4 text-left">
-              Experienced Backend Engineer
-            </div>
-            <p className="text-base text-neutral-dark-grey mb-6 text-left">
-              {`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}
-            </p>
-            <div className="flex justify-left md:justify-start">
-              <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
-                Mumbai
-              </span>
-            </div>
-          </div>
-          <div className="text-right w-full">
-            <button
-              type="button"
-              className="w-full md:w-1/3 text-neutral-white bg-primary-400 font-medium rounded-full text-body-01 px-6 py-3 mb-4 md:mb-8"
-            >
-              Apply Now
-            </button>
-            <p className="text-helper-01 text-neutral-dark-grey text-center md:text-right">
-              Posted within the last 24 hours
-            </p>
-          </div>
-        </div>
-
-        <div className="jobcard flex flex-col md:flex-row justify-between items-start md:items-end py-6 border-b border-neutral-light-grey">
-          <div className="w-full mb-6 md:mb-0">
-            <div className="text-heading-03 text-primary-900 mb-4 text-left">
-              Experienced Backend Engineer
-            </div>
-            <p className="text-base text-neutral-dark-grey mb-6 text-left">
-              {`We’re on the lookout for the curious, those who think big and want to define the world of tomorrow. At Amazon, you will grow into the high impact, visionary`}
-            </p>
-            <div className="flex justify-left md:justify-start">
-              <span className="bg-white text-[#808080] text-[14px] font-medium me-2 px-8 py-2 rounded-3xl border">
-                Mumbai
-              </span>
-            </div>
-          </div>
-          <div className="text-right w-full">
-            <button
-              type="button"
-              className="w-full md:w-1/3 text-neutral-white bg-primary-400 font-medium rounded-full text-body-01 px-6 py-3 mb-4 md:mb-8"
-            >
-              Apply Now
-            </button>
-            <p className="text-helper-01 text-neutral-dark-grey text-center md:text-right">
-              Posted within the last 24 hours
-            </p>
-          </div>
-        </div>
+        {jobList?.map(item => (
+          <>
+          <JobCard props={item}></JobCard>
+          </>
+        ))}
       </SectionWrapperNew>
       {/* end find role */}
     </>

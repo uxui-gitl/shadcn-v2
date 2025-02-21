@@ -14,11 +14,12 @@ function ReviewSliderSection({
   SectionHeadingMaxWidth,
   SlidesPerView = "1",
   Autoplay = "false",
-  CardDataList = [],
+  CardDataList=[],
   Color = "#000",
   BGColor = "",
   setHeadingLayout,
   style = {},
+  zindex
 }) {
   const swiperNextBtn = {
     position: "absolute",
@@ -53,10 +54,12 @@ function ReviewSliderSection({
           backgroundSize: "cover",
           borderBottomLeftRadius: "0px",
           borderBottomRightRadius: "0px",
+          zIndex: 9,
+          position: "relative",
         }}
       >
         <div className="">
-          <div className="flex mt-10 md:mt-20 min-h-[540px]">
+          <div className="flex mt-10 md:mt-20">
             <div className="relative hidden md:inline w-[30%]">
               <div
                 className={`swiper-button-next`}
@@ -101,23 +104,21 @@ function ReviewSliderSection({
                 {CardDataList?.map((item, index) => (
                   <SwiperSlide key={item.id ? item?.id : index}>
                     <div className="w-full bg-transparent rounded-3xl">
-                      <div className="text-neutral-white text-heading-02 font-light  md:w-[80%]">
+                      <div className="text-neutral-white text-heading-03 font-medium md:w-[80%] line-clamp-2">
                         {item.cardHeading}
                       </div>
                       <div
-                        className="text-neutral-white text-paragraph-01 mt-4"
+                        className="text-neutral-white text-paragraph-02 mt-4 line-clamp-4"
                         dangerouslySetInnerHTML={{ __html: item.cardDesc }}
                       />
 
-                      <div className="text-neutral-white text-body-01 mt-4">
+                      <div className="text-neutral-white text-body-01 mt-4 md:m-h-[60px]">
                         <div className="text-body-01 pb-2">
                           {item.designation}
                         </div>
                         <div>{item.companyName}</div>
                       </div>
                     </div>
-
-                    {/* <CommonCard Item={item} setpageID={pageID}></CommonCard> */}
                   </SwiperSlide>
                 ))}
               </Swiper>

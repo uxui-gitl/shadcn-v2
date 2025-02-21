@@ -345,7 +345,7 @@ const EnterpriseSuite = () => {
           "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era."
         }
         Color={"text-neutral-white"}
-        readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=7"}
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=7'}]}
       ></BlogSection>
       {/* End-Section--Blog======================================================================= */}
       <ReviewSliderSection

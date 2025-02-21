@@ -63,11 +63,16 @@ const OurCapabilities = ({
      sectionHeadingLayout={setHeadingLayout}
      setPad={setPad}
      setTop={setTop}
+     style={{
+      position:'relative',
+      zIndex:8,
+      backgroundColor:'white',
+     }}
      
     >
       <div className="lg:mb-8">
       
-        <div className="flex flex-col md:flex-row gap-8  ">
+        <div className="flex flex-col md:flex-row gap-8">
           {/* Accordion div */}
           <div className="w-full md:w-1/2">
             {ACCORDION_DATA.map((item, index) => (

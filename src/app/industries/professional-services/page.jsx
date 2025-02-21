@@ -692,7 +692,7 @@ function page() {
                 Heading={"Selecting the Right IT Partner"}
                 Desc={"It's imperative for professional services businesses to conduct a thorough assessment of their unique requirements and objectives."}
                 Color={"white"}
-                readMoreUrl={"https://www.godrejinfotech.com/blogDetails.aspx?blog=13"}
+                readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=13'}]}
             ></BlogSection>
 
             <ReviewSliderSection

@@ -6,6 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import NavLinks from "@/components/Navbar/NavUtils/NavLinks";
+import CountryDroupDown  from '@/components/CountryDroupDown';
+
+
 
 function NewNavBar() {
   const router = useRouter();
@@ -84,9 +87,10 @@ function NewNavBar() {
       setIsAnimatingOut(false);
     }, 300);
   };
+  
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -133,31 +137,71 @@ function NewNavBar() {
     <>
       <div
         className={`${
-          isNavbarActive ? "bg-[#fff]" : "bg-[transparent]"
-        } absolute top-0 z-[100] w-full hidden xl:block `}
+          isNavbarActive ? "bg-[#fff]" : isScrolled  ? "white-nav bg-[#fff] border-b-neutral-800" : "bg-[transparent]"
+        } w-full hidden xl:block fixed top-0 z-[500]`} 
       >
-        <div className={`border-1 z-50`}>
-          <div className="container mx-auto flex flex-row justify-between h-[100px] items-center py-5">
-            <div className=" py-3 ">
-              <Link href="/">
-                <Image
-                  src={`${
-                    isNavbarActive ? "/logo-black.svg" : "/godrejLogoWhite.svg"
-                  }`}
-                  alt="godrej logo"
-                  width="188"
-                  height="96"
-                />
-              </Link>
+        <div className="container mx-auto pt-[10px]">
+          <div className="flex flex-row justify-between">
+              <div className="">
+                <Link href="/">
+                  <Image
+                    src={"/godrejLogoNew.svg"}
+                    alt="godrej logo"
+                    width="72"
+                    height="72"
+                    className={`${isNavbarActive  ? '' : isScrolled ? '' : 'whiteLogo'}`}
+                  />
+                </Link>
+              </div>
+           
+              <div className="flex flex-row space-x-2 items-center">
+                <p className={`${isNavbarActive ? "text-[#000]" : isScrolled ? "text-[#000]" : 'text-white'} text-heading-05 `}>Godrej | infotech</p>
+                <button
+                  type="button"
+                  className={`${
+                    isNavbarActive
+                      ? "bg-white border border-x-neutral-light-grey text-neutral-dark-grey hover:bg-primary-400 hover:text-neutral-white"
+                      : "text-white bg-[#5F22D9] hover:bg-blue-800"
+                  } hidden focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center transition-colors duration-300`}
+                  onClick={() => navLinkClick("/contact-us")}
+                >
+                  Get In Touch
+                </button>
+                {/* Close Button */}
+                {isNavbarActive && (<button
+                  className={`text-neutral-white bg-primary-400 hover:bg-primary-600 focus:outline-none font-medium rounded-full text-sm p-2.5 flex items-center justify-center invisible xl:hidden ${
+                    isNavbarActive
+                      ? "opacity-100 visible delay-500"
+                      : "opacity-0 invisible"
+                  } transition-opacity duration-300`}
+                  onClick={() => setNavbarActive(false)}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1}
+                    stroke="currentColor"
+                    className="w-4 h-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button> )}
+              </div>
             </div>
-            <div className="links flex items-center flex-row justify-center text-center">
-              <>
-                {link?.map((item, index) => (
+            {/* 2nd row */}
+              <div className="links pb-1 flex justify-between items-center">
+                  <div className="">
+                  {link?.map((item, index) => (
                   <>
                     {item.isDropDown ? (
                       <button
-                        className={`mr-6 text-center text-[16px] font-medium py-5 hover:text-[#5F22D9] ${
-                          isNavbarActive ? "text-[#000]" : "text-[#fff]"
+                        className={`mr-5 text-center text-body-02 font-medium py-1 hover:text-[#5F22D9] ${
+                          isNavbarActive ? "text-[#000]" : isScrolled ? "text-[#000]" : "text-[#fff]"
                         }`}
                         onClick={() => handleNavClick(item)}
                       >
@@ -166,8 +210,8 @@ function NewNavBar() {
                     ) : (
                       <Link
                         key={index}
-                        className={`mr-6 text-center text-[16px] font-medium py-5 hover:text-[#5F22D9]last:mr-0 ${
-                          isNavbarActive ? "text-[#000]" : "text-[#fff]"
+                        className={`mr-5 text-center text-body-02 font-medium py-1 hover:text-[#5F22D9]last:mr-0 ${
+                          isNavbarActive ? "text-[#000]" : isScrolled ? "text-[#000]" : "text-[#fff]"
                         }`}
                         href={item.href}
                       >
@@ -176,53 +220,21 @@ function NewNavBar() {
                     )}
                   </>
                 ))}
-              </>
-            </div>
-            <div className=" py-3 flex flex-row space-x-2">
-              <button
-                type="button"
-                className={`${
-                  isNavbarActive
-                    ? "bg-white border border-x-neutral-light-grey text-neutral-dark-grey hover:bg-primary-400 hover:text-neutral-white"
-                    : "text-white bg-[#5F22D9] hover:bg-blue-800"
-                } focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center transition-colors duration-300`}
-                onClick={() => navLinkClick("/contact-us")}
-              >
-                Get In Touch
-              </button>
-              {/* Close Button */}
-              <button
-                className={`text-neutral-white bg-primary-400 hover:bg-primary-600 focus:outline-none font-medium rounded-full text-sm p-2.5 flex items-center justify-center invisible xl:visible ${
-                  isNavbarActive
-                    ? "opacity-100 visible delay-500"
-                    : "opacity-0 invisible"
-                } transition-opacity duration-300`}
-                onClick={() => setNavbarActive(false)}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1}
-                  stroke="currentColor"
-                  className="w-4 h-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
+                    </div>
+                <div className="">
+                  <CountryDroupDown scrolled={isScrolled} />
+                  </div>
+              </div>
           </div>
-        </div>
+
+          {/*  */}
+         
 
         <div
           className={`z-[10] px-10 w-full bg-white absolute top-[0px] duration-700 rounded-b-3xl shadow-lg  shadow-gray-500/10 overflow-y-scroll  ${
             isNavbarActive
-              ? "translate-y-0 top-[100px]"
-              : "-translate-y-full top-[0px]"
+              ? "translate-y-0 top-[104px]"
+              : "-translate-y-full -top-[20px]"
           }`}
           style={{ height: `calc(100vh - 66px)` }}
         >
@@ -1669,7 +1681,7 @@ function NewNavBar() {
       >
         <div
           className={`flex justify-between items-left px-4 py-2 xl:invisible ${
-            isScrolled ? "" : "mt-6"
+            isScrolled ? "" : "mt-0"
           }`}
         >
           {/* Company Logo */}

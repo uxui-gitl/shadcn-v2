@@ -1,7 +1,7 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import { Swiper, SwiperSlide } from "swiper/react";
-import CommonCardOne from "@/components/CommonCardOne";
+import ASCard from "@/components/cards/ASCard";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -68,7 +68,7 @@ function CommonCardOneSlider({
                         >
                             {cardData?.map((item, index) => (
                                 <SwiperSlide key={item.id ? item?.id : index}>
-                                    <CommonCardOne Item={item} />
+                                    <ASCard Item={item} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>

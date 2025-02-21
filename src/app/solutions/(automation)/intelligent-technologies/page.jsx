@@ -1,73 +1,15 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
-import SectionNav from "@/components/SectionNav";
-import SectionWrapperNew from "@/components/SectionWrapperNew";
 import OverviewSection from "@/sections/overview/OverviewSection";
-import CommonCardOneSlider from '@/sections/commonCardOneSlider/CommonCardOneSlider';
+import AdvanceSolutionSection from '@/sections/new/advanceSolution/AdvanceSolutionSection';
 import BenefitSliderSection from '@/sections/benefitSlider/BenefitSliderSection';
 import BlogSection from "@/sections/blog/BlogSection";
 import DistinctiveSection from "@/sections/distinctive/DistinctiveSection";
 import TransformBusinessForm from "@/sections/transformBusinessFrom/TransformBusinessFromSection";
-import { SwiperSlide } from "swiper/react";
-import Slider from "@/components/Slider";
-import CommonCardOne from "@/components/CommonCardOne";
-
 
 const page = () => {
+
   const blogImageUrl = '/intelligent-tech/Digitalized.webp';
-  const formBGURL = "/formBgImage.svg";
-  const imageUrl = '/intelligent-tech/advanceSolutions.webp';
-
-  const advanceSolutionCardData = [
-    {
-      id: 1,
-      cardBGImage: '/intelligent-tech/cards-background/bg-card-machine-learning.png',
-      cardBGColor: '#EFE9FB',
-      cardTitle: "Machine Learning",
-      cardIconUrl: '/intelligent-tech/icons/machineLearning.svg',
-      cardHeading: 'Automated Pattern Recognition',
-      cardDesc: 'Our ability in constructing, training, and deploying ML models assures an effective implementation process',
-      isArrow: false,
-    },
-    {
-      id: 2,
-      cardBGImage: '/intelligent-tech/cards-background/bg-card-artificial-intelligence.png',
-      cardBGColor: '#EFE9FB',
-      cardTitle: "Artificial Intelligence",
-      cardIconUrl: '/intelligent-tech/icons/artificialIntelligence.svg',
-      cardHeading: 'Cognitive Computing Solutions',
-      cardDesc: 'Ensure improvement in customer experiences, facilitating acceleration and optimized business operations.',
-      isArrow: false,
-    },
-    {
-      id: 3,
-      cardBGImage: '/intelligent-tech/cards-background/bg-card-rpa.png',
-      cardBGColor: '#EFE9FB',
-      cardTitle: "Robotic Process Automation",
-      cardIconUrl: '/intelligent-tech/icons/roboticProcessAutomation.svg',
-      cardHeading: 'Efficient Task Automation',
-      cardDesc: 'Minimize time-consuming repetitive tasks and dedicate more time to strategic initiatives',
-      isArrow: false,
-    },
-    {
-      id: 4,
-      cardBGImage: '/intelligent-tech/cards-background/bg-card-asset-management.png',
-      cardBGColor: '#EFE9FB',
-      cardTitle: "IIoT",
-      cardIconUrl: '/intelligent-tech/icons/iIoT.svg',
-      cardHeading: 'Asset Optimization and Uptime',
-      cardDesc: 'Optimize industrial operations with real-time machine performance data and predictive maintenance insights from our IoT services.',
-      isArrow: false,
-    },
-  ];
-
-  // const benefitsCardsData = [
-  //   { id: '1', text: 'high degree of accuracy and consistency in business operations' },
-  //   { id: '2', text: 'Informed decision-making to extract valuable insights and identify patterns, correlation, and trends' },
-  //   { id: '3', text: 'Real-time problem-solving enable minimum disruptions and ensures uninterrupted business operations' },
-  //   { id: '4', text: 'Automation of repetitive tasks, resulting in increased operational efficiency and productivity.' },
-  //   { id: '5', text: 'Reduce equipment downtime and increase operational efficiency with real-time monitoring and predictive maintenance' },
-  // ]
 
   const distinctiveData = [
     {
@@ -91,7 +33,7 @@ const page = () => {
       icon: "/intelligent-tech/distinctiveEdge/extensiveExperience.svg",
     },
 
-  ]
+  ];
 
   const BenefitsData = [
     {
@@ -124,28 +66,6 @@ const page = () => {
     },
   ];
 
-  const navLinks = [
-    {
-      _id: 1,
-      title: "Enterprise Suite",
-      link: "#about",
-    },
-    {
-      _id: 2,
-      title: "Act Cards",
-      link: "#actCards",
-    },
-    {
-      _id: 3,
-      title: "Employee Experience",
-      link: "#empExp",
-    },
-    {
-      _id: 4,
-      title: "Spotlight",
-      link: "#spotlight",
-    },
-  ];
   return (
     <>
       <EntIntro
@@ -159,27 +79,8 @@ const page = () => {
       {/* Overview  */}
       <OverviewSection Text={'Discover how AI, ML, RPA and IIoT help businesses with customer behavior prediction, process automation and generate new revenue streams with real time insights. As a strategic tech partner, Godrej Infotech ensures a future-ready foundation for clients.'} />
       {/* solutions */}
-      <SectionWrapperNew
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageUrl})`,
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed", // This is key for the parallax effect
-          backgroundPosition: "center",
-        }}
-        sectionHeading={"Advance Solutions for Business Future Readiness"}
-        sectionDesc={''}
-        sectionTextColor="text-neutral-white"
-        sectionHeadingLayout="left"
-        setTop={false}
-      >
-        <Slider>
-          {advanceSolutionCardData?.map((item, index) => (
-            <SwiperSlide key={index}>
-              <CommonCardOne Item={item} />
-            </SwiperSlide>
-          ))}
-        </Slider>
-      </SectionWrapperNew>
+
+      <AdvanceSolutionSection />
 
       {/* Advantages Vertical Slider */}
       <BenefitSliderSection

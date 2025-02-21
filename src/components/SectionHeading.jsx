@@ -2,6 +2,7 @@ function SectionHeading({
   Heading,
   Desc,
   Color = "text-neutral-white",
+  descColor = "text-secondary-30",
   center = false,
   right = false,
   layout = "vertical", // Default to 'vertical'
@@ -24,7 +25,7 @@ function SectionHeading({
         >
           {Heading && (
             <h1
-              className={`text-neutral-white text-heading-01 text-center mb-6 ${
+              className={`text-neutral-white text-heading-03 md:text-heading-02 text-center mb-6 ${
                 center ? "md:text-center" : "md:text-left"
               } md:text-left ${Color} mb-6 sm:mb-2 md:mb-6`}
               dangerouslySetInnerHTML={{ __html: Heading }}
@@ -34,7 +35,7 @@ function SectionHeading({
             <p
               className={`text-neutral-white text-heading-04  text-center ${
                 center ? "md:text-center" : "md:text-left"
-              } ${Color} mb-8`}
+              } ${descColor} mb-8`}
               dangerouslySetInnerHTML={{ __html: Desc }}
             ></p>
           )}
@@ -51,7 +52,7 @@ function SectionHeading({
           }`}
         >
           <h1
-            className={`text-heading-01 mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
+            className={`text-heading-02 mb-3 sm:mb-2 md:mb-6 text-center md:text-left ${Color}`}
           >
             {Heading}
           </h1>
@@ -61,7 +62,7 @@ function SectionHeading({
         <div className="basis-[60%] flex flex-col justify-end">
           {Desc && (
             <p
-              className={`text-subtitle-01 text-center  mb-3 sm:mb-2 md:mb-6 md:text-left ${Color}`}
+              className={`text-subtitle-01 text-center  mb-3 sm:mb-2 md:mb-6 md:text-left ${descColor}`}
               style={{ marginTop: "auto" }} // Inline style to ensure alignment
             >
               {Desc}

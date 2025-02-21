@@ -32,6 +32,18 @@
   padding:0.5rem 1rem;
   width:80%;
 }
+
+.tb-flags-black button span {
+  margin-right: 0;
+  padding: 0 0.25rem;
+  color: black;
+}
+
+
+.tb-flags-black button {
+  border: 0;
+}
+
 .tb-flags button {
   border: 0;
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import SectionWrapper from "@/components/SectionWrapper";
+import SectionWrapperNew from "@/components/SectionWrapperNew"
 import SectionHeading from "@/components/SectionHeading";
 import { Swiper, SwiperSlide } from "swiper/react";
-import CommonCardTwo from "@/components/CommonCardTwo";
+// import CommonCardTwo from "@/components/CommonCardTwo";
 import { Pagination } from "swiper/modules"; // Use the specific import for modules
 import "swiper/css";
 import "swiper/css/pagination";
-import SectionWrapperNew from "@/components/SectionWrapperNew";
+import RPACard from "@/components/cards/RPACard";
 
 function CommonCardTwoSlider({
     ID,
@@ -23,25 +23,17 @@ function CommonCardTwoSlider({
 
 }) {
     return (
+        <>
         <SectionWrapperNew
-            id={ID}
-            sectionTextColor={sectionTextColor}
-            bgColor={sectionBGColor}
-            sectionHeading={sectionHeading}
-            sectionDesc={sectionDesc}
-            BGColor={sectionBGColor}
-            setTop={setTop}
-            sectionHeadingLayout={setHeadingLayout}
-            style={{
-                ...style,
-                backgroundImage: `url(${sectionImageUrl})`,
-                backgroundSize: "cover",
-            }}
-        >
-            <div className="">
-                
-                <div className="">
-                    <Swiper
+         sectionHeading={sectionHeading}
+         sectionDesc={sectionDesc}
+         sectionTextColor={sectionTextColor}
+         sectionDescColor={sectionDesc}
+         sectionHeadingLayout={setHeadingLayout}
+         setTop={setTop}
+         bgColor={sectionBGColor}>
+
+                <Swiper
                         slidesPerView={1} // Using number directly for clarity
                         pagination={{ clickable: true }} // Explicit pagination setup
                         modules={[Pagination]} // Ensure Pagination module is listed
@@ -64,13 +56,12 @@ function CommonCardTwoSlider({
                     >
                         {cardData?.map((item, index) => (
                             <SwiperSlide key={item.id || index}>
-                                <CommonCardTwo Item={item} />
+                                <RPACard Item={item} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>
-            </div>
         </SectionWrapperNew>
+        </>
     );
 }
 

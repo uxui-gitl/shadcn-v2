@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
@@ -25,19 +26,16 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        "geg-headline": ["geg-headline", "sans-serif"],
-  
+       "druk": "var(--font-druk)"
       },
       fontSize: {
        
         'display-01': [
           ' calc(clamp(3.25rem, 6.5vw, 7rem) * .875)', 
-      
           {
             lineHeight: '1', 
             letterSpacing: '-0.02em', 
             fontWeight: '500',
-            
           },
         ],
 
@@ -72,7 +70,7 @@ const config: Config = {
         'heading-03': [
           'calc(clamp(1.75rem, 0.25vw + 1.7rem, 2rem))', 
           {
-            lineHeight: '1.065', 
+            lineHeight: 'normal', 
             letterSpacing: '-0.02em', 
             fontWeight: '500',
           },
@@ -143,38 +141,47 @@ const config: Config = {
 
       },
       colors: {
-        purple: {
-          10:"#F9F2F6",
-          50: "#FFDBF3",
-          100: "#FFB3E6",
-          200: "#FF66CC",
-          300: "#FF1AB3",
-          400: "#CC0088",
-          500: "#810055",
-          600: "#660044",
-          700: "#4D0033",
-          800: "#330022",
-          900: "#190011",
-         
+        primary: {
+          50: '#cdbaf3',
+          100: '#b599ee',
+          200: '#946be6',
+          300: '#7f4ee1',
+          400: '#810055',
+          500: '#561fc5',
+          600: '#43189a',
+          700: '#341377',
+          800: '#280e5b',
+          900: '#1d162b',
+          10: '#F9F2F6',  
         },
-
-       grey: {
-      10: "#F1F1ED",
-      50: "#F5F5F5",
-      100: "#E8E8E8",
-      200: "#D1D1D1",
-      300: "#BABABA",
-      400: "#A3A3A3",
-      500: "#8F8F8F",
-      600: "#707070",
-      700: "#616161",
-      800: "#4A4A4A",
-      900: "#333333",
-
-    },
+        secondary: {
+          50: '#f5b1dc',
+          100: '#f18bcb',
+          200: '#ea55b3',
+          300: '#e635a5',
+          400: '#e0028e',
+          500: '#cc0281',
+          600: '#9f0165',
+          700: '#7b014e',
+          800: '#5e013c',
+          900: '#2b1624',
+          10: '#fce6f4',
+          20:'#707070',
+          30:'#333'
+        },
         neutral: {
-          'white': '#FFFFFF',
-          'black': '#000000',       },
+          'ghost-white': '#faf7ff',
+          'white': '#ffffff',
+          'light-grey': '#e4e4e4',
+          'mid-grey': '#d3d3d3',
+          'dark-grey': '#808080',
+          'black': '#080708',
+          'darkest-grey': '#333333',
+        },
+        tertiary: {
+          400: '#00f8c4',
+          10: '#e1f2ef',
+        },
       },
       spacing: {
         0: "0",

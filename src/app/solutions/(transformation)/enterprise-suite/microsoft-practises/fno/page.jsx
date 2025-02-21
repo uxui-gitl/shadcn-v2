@@ -565,7 +565,7 @@ const FNO = () => {
           ""
         }
         Color={"text-neutral-white"}
-        readMoreUrl="https://godrejinfotech.com/blogDetails.aspx?blog=12"
+        readMoreUrl={[{id:'1', text:'Why Godrej Infotech', url:'https://www.godrejinfotech.com/blogDetails.aspx?blog=12'}]}
       ></BlogSection>
       {/* End--Blogs-Section================================================================ */}
 
