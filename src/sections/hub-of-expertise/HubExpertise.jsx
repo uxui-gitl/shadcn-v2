@@ -4,7 +4,6 @@ import ScrollTrigger from "react-scroll-trigger";
 import SectionHeading from "@/components/SectionHeading";
 import SectionWrapper from "@/components/SectionWrapper";
 import styles from "./hubExpertise.module.css";
-import { jetBrains_mono } from "../../app/fonts";
 
 // Helper function to detect if the screen is mobile
 const useIsMobile = () => {
@@ -42,7 +41,7 @@ const supTextSizeClass =
     <div className="text-white">
       {counterOn && (
         <div className="mb-4">
-          <h3 className={`${jetBrains_mono.className} ${textSizeClass} relative font-bold flex items-baseline text-center`}>
+          <h3 className={` ${textSizeClass} relative font-bold flex items-baseline text-center`}>
             {start !== undefined && end !== undefined ? (
               <>
                 <CountUp start={start} end={end} duration={2} />

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import useScrollTriggeredCountUp from "./useScrollTriggeredCountUp";
 import Image from "next/image";
-import { jetBrains_mono } from "../../app/fonts";
 
 const HubExpertise = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +34,7 @@ const HubExpertise = () => {
           <div className="flex flex-col sm:flex-row justify-center sm:gap-x-20 gap-y-10 my-10">
             <div ref={ref} className="text-center">
               <h3
-                className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold`}
+                className={`relative text-[72px] leading-[70px] text-[#fff] font-bold`}
               >
                 {count}
                 <span className="absolute -top-2 text-[48px] font-medium leading-[70px]">
@@ -46,7 +45,7 @@ const HubExpertise = () => {
             </div>
             <div ref={ref1} className="text-center">
               <h3
-                className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold`}
+                className={`relative text-[72px] leading-[70px] text-[#fff] font-bold`}
               >
                 {count1}
                 <span className="absolute -top-2 text-[48px] font-medium leading-[70px]">
@@ -59,7 +58,7 @@ const HubExpertise = () => {
             </div>
             <div ref={ref2} className="text-center">
               <h3
-                className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold`}
+                className={`relative text-[72px] leading-[70px] text-[#fff] font-bold`}
               >
                 {count2}k
                 <span className="absolute -top-2 text-[48px] font-medium leading-[70px]">

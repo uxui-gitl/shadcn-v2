@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { jetBrains_mono } from "../../app/fonts";
 
 const ExperienceSlider = () => {
   const casestudy = [
@@ -137,7 +136,7 @@ const ExperienceSlider = () => {
                 )}
                
                {caseItem.CounterValue&&<h3
-                  className={`${jetBrains_mono.className} relative text-[96px] lg:text-[72px]  font-bold`}
+                  className={`relative text-[96px] lg:text-[72px]  font-bold`}
                 >
                   {caseItem.CounterValue}
                   <span className={Styles.superscript}>+</span>

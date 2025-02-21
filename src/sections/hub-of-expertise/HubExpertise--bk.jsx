@@ -7,7 +7,6 @@ import ScrollTrigger from "react-scroll-trigger";
 import SectionHeading from "@/components/SectionHeading";
 import SectionWrapper from "@/components/SectionWrapper";
 import styles from "./hubExpertise.module.css";
-import { jetBrains_mono } from "../../app/fonts";
 
 
 
@@ -18,7 +17,7 @@ const CounterSection = ({ start, end, description, counterOn }) => (
     {counterOn && (
       <div>
         <h3
-          className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold mb-8`}
+          className={` relative text-[72px] leading-[70px] text-[#fff] font-bold mb-8`}
         >
           <CountUp start={start} end={end} duration={2} />
           <span className={styles.superscript}>+</span>
